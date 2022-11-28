@@ -1,0 +1,65 @@
+{
+  "Format": "1.19.0",
+  "ConfigSchema": {
+    "frame": {
+      "AllowValues": "vanilla, light, dark",
+      "Default": "vanilla",
+      "Description": "Choose which version of the frame you want to display."
+    },
+    "toggle": {
+      "AllowValues": "enabled, disabled",
+      "Default": "disabled",
+      "Description": "Toggles the frames in this mod off for compatibility with other UI mods."
+    }
+  },
+  "Changes": [
+    /* FRAME*/
+    {
+      "LogName": "Frame vanilla",
+      "Action": "EditImage",
+      "Target": "LooseSprites/daybg, LooseSprites/nightbg",
+      "FromFile": "assets/frames/frame_vanilla.png",
+      "When": {
+        "frame": "vanilla",
+        "toggle": "enabled"
+      },
+      "PatchMode": "Overlay"
+    },
+    {
+      "LogName": "Frame light",
+      "Action": "EditImage",
+      "Target": "LooseSprites/daybg, LooseSprites/nightbg",
+      "FromFile": "assets/frames/frame_light.png",
+      "When": {
+        "frame": "light",
+        "toggle": "enabled"
+      },
+      "PatchMode": "Overlay"
+    },
+    {
+      "LogName": "Frame dark",
+      "Action": "EditImage",
+      "Target": "LooseSprites/daybg, LooseSprites/nightbg",
+      "FromFile": "assets/frames/frame_dark.png",
+      "When": {
+        "frame": "dark",
+        "toggle": "enabled"
+      },
+      "PatchMode": "Overlay"
+    }
+    /* DAY BACKGROUND*/,
+    {
+      "LogName": "Day Background",
+      "Action": "Load",
+      "Target": "LooseSprites/daybg",
+      "FromFile": "assets/bg/{{season}}_daybg.png"
+    }
+    /* NIGHT BACKGROUND*/,
+    {
+      "LogName": "Night Background",
+      "Action": "Load",
+      "Target": "LooseSprites/nightbg",
+      "FromFile": "assets/bg/{{season}}_nightbg.png"
+    }
+  ]
+}

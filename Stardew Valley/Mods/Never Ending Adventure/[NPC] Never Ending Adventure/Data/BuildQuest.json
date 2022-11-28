@@ -1,0 +1,92 @@
+{
+	"Changes": [
+		{
+			"LogName": "Coastal Guild Special Order",
+			"Action": "EditData",
+			"Target": "Data/SpecialOrders",
+			"Entries": {
+				"Mateo.SpecialOrders.BuildGuild": {
+
+					// BUILDING THE COASTAL GUILD & ES SPECIAL ORDER BOARD 
+
+					"Name": "[Mateo.SpecialOrders.BuildGuild_Name]",
+					"Requester": "Mateo",
+					"Repeatable": "false",
+					"RequiredTags": "event_12360010, !dropbox_RobinWood",
+					"OrderType": "",
+					"SpecialRule": "",
+					"Text": "[Mateo.SpecialOrders.BuildGuild_Text]",
+					"ItemToRemoveOnEnd": null,
+					"MailToRemoveOnEnd": null,
+					"RandomizedElements": null,
+					"Objectives": [
+						{
+							"Type": "Donate",
+							"Text": "[Mateo.SpecialOrders.BuildGuild.Objective_0_Text]",
+							"RequiredCount": "500",
+							"Data": {
+								"DropBox": "RobinWood",
+								"DropBoxGameLocation": "ScienceHouse",
+								"DropBoxIndicatorLocation": "10.5 18",
+								"AcceptedContextTags": "item_wood"
+							}
+						},
+						{
+							"Type": "Donate",
+							"Text": "[Mateo.SpecialOrders.BuildGuild.Objective_1_Text]",
+							"RequiredCount": "300",
+							"Data": {
+								"DropBox": "RobinWood",
+								"DropBoxGameLocation": "ScienceHouse",
+								"DropBoxIndicatorLocation": "10.5 18",
+								"AcceptedContextTags": "item_stone"
+							}
+						},
+						{
+							"Type": "Donate",
+							"Text": "[Mateo.SpecialOrders.BuildGuild.Objective_2_Text]",
+							"RequiredCount": "100",
+							"Data": {
+								"DropBox": "RobinWood",
+								"DropBoxGameLocation": "ScienceHouse",
+								"DropBoxIndicatorLocation": "10.5 18",
+								"AcceptedContextTags": "item_hardwood"
+							}
+						}
+					],
+					"Rewards": [
+						{
+							"Type": "Money",
+							"Data": {
+								"Amount": "5000"
+							}
+						},
+						{
+							"Type": "Mail",
+							"Data": {
+								"MailReceived": "Mateo_SpecialOrders_BuildGuildMail",
+								"NoLetter": "true"
+							}
+						}
+					]
+				}
+			}
+		},
+
+		{
+			"Action": "EditData",
+			"Target": "Strings/SpecialOrderStrings",
+			"Entries": {
+
+				// BUILDING THE COASTAL GUILD & ES SPECIAL ORDER BOARD 
+				"Mateo.SpecialOrders.BuildGuild_Name": "马特奥的请求",
+				"Mateo.SpecialOrders.BuildGuild_Text": "马龙和我需要一些建筑用品和订单板!", 
+				"Mateo.SpecialOrders.BuildGuild.Objective_0_Text": "把500块木头放进罗宾家的仓库里。",
+				"Mateo.SpecialOrders.BuildGuild.Objective_1_Text": "把300块石头放进罗宾的房子里。",
+				"Mateo.SpecialOrders.BuildGuild.Objective_2_Text": "把100块硬木放进罗宾家里的仓库里。",
+
+				
+			}
+		}
+	]
+}

@@ -1,0 +1,1352 @@
+{
+    "Format": "1.28.0",
+
+    "ConfigSchema": {
+        "NoNose": {
+            "AllowValues": "true, false",
+            "Default": "true"
+        },
+
+        "FestivalOutfits": {
+            "AllowValues": "true, false",
+            "Default": "true"
+        },
+
+        "ExtraOutfits": {
+            "AllowValues": "true, false",
+            "Default": "true"
+        },
+
+        "OlderSophia": {
+            "AllowValues": "true, false",
+            "Default": "false"
+        },
+    },
+
+    "DynamicTokens": [
+        {
+            "Name": "IndoorVariant", // Indoors
+            "Value": "_Indoor"
+        },
+        {
+            "Name": "IndoorVariant", // Outdoors
+            "Value": "_Outdoor",
+            "When": {
+                "IsOutdoors": "true"
+            }
+        },
+
+        {
+            "Name": "Festival",
+            "Value": "FlowerDance",
+            "When": {
+                "DayEvent": "flower dance",
+                "LocationName": "Forest, temp"
+            }
+        },
+        {
+            "Name": "Festival",
+            "Value": "SpiritsEve",
+            "When": {
+                "DayEvent": "spirit's eve",
+                "LocationName": "town, temp"
+            }
+        },
+
+        {
+            "Name": "SophiaMakeup",
+            "Value": "_Makeup",
+            "When": {
+                "DayOfWeek": "Friday, Saturday, Sunday"
+            }
+        },
+    ],
+
+    "Changes": [
+//Characters
+ 
+        {
+            "LogName": "regular character",
+            "Action": "EditImage",
+            "Target": "Characters/Alesia, Characters/Andy, Characters/Camilla, Characters/Claire, Characters/FemaleFarmer, Characters/GuntherSilvian, Characters/Isaac, Characters/Jadu, Characters/Jolyne, Characters/Lance, Characters/Magnus, Characters/MaleFarmer, Characters/MarlonFay, Characters/Martin, Characters/Morgan, Characters/MorrisTod, Characters/Olivia, Characters/Scarlett, Characters/Sophia, Characters/SophiaJPKsprite, Characters/Susan, Characters/Victor, Characters/Axel, Characters/Jace, Characters/Chloe, Characters/Zoey, Characters/Brooklyn",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}.png",
+            "Update": "OnLocationChange",            
+			"When": 
+			{
+                "HasFile:{{FromFile}}": true
+            }
+        },
+
+        {
+            "LogName": "regular characters season",
+            "Action": "EditImage",
+            "Target": "Characters/Alesia, Characters/Andy, Characters/Camilla, Characters/Claire, Characters/FemaleFarmer, Characters/GuntherSilvian, Characters/Isaac, Characters/Jadu, Characters/Jolyne, Characters/Lance, Characters/Magnus, Characters/MaleFarmer, Characters/MarlonFay, Characters/Martin, Characters/Morgan, Characters/MorrisTod, Characters/Olivia, Characters/Scarlett, Characters/Sophia, Characters/SophiaJPKsprite, Characters/Susan, Characters/Victor, Characters/Axel, Characters/Jace, Characters/Chloe, Characters/Zoey, Characters/Brooklyn",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Season}}.png",
+            "Update": "OnLocationChange",                
+			"When":
+            {
+                "HasFile:{{FromFile}}": true,
+            }
+        },
+		
+        {
+            "LogName": "regular characters season/outdoor",
+            "Action": "EditImage",
+            "Target": "Characters/Alesia, Characters/Andy, Characters/Camilla, Characters/Claire, Characters/FemaleFarmer, Characters/GuntherSilvian, Characters/Isaac, Characters/Jadu, Characters/Jolyne, Characters/Lance, Characters/Magnus, Characters/MaleFarmer, Characters/MarlonFay, Characters/Martin, Characters/Morgan, Characters/MorrisTod, Characters/Olivia, Characters/Scarlett, Characters/Sophia, Characters/SophiaJPKsprite, Characters/Susan, Characters/Victor",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Season}}{{IndoorVariant}}.png",
+            "Update": "OnLocationChange",    
+            "When":
+            {
+                "HasFile:{{FromFile}}": true,
+            }
+        },
+		
+//Temp actors
+         {
+            "LogName": "temp actors",
+            "Action": "EditImage",
+            "Target": "Characters/AdventurerCosplayer, Characters/ArtGuy, Characters/ArtifactCosplayer, Characters/BaldGuy, Characters/BaldGuySittingDown, Characters/BlackhairGuy, Characters/BlueBirdCosplayer, Characters/BlueDressGirl, Characters/BlueMushroomGirlCosplayer, Characters/BrideCosplayer, Characters/CaveGirlCosplayer, Characters/ChefGuyCosplayer, Characters/ClaireJoja, Characters/ClaireTheater, Characters/ConcernedApeCosplayer, Characters/DinoGuyCosplayer, Characters/EmperorCosplayer, Characters/FairyCosplayer, Characters/FairyCosplayer2, Characters/FrogGuyCosplayer, Characters/GaldoranGirlCosplayer, Characters/GenericNPC1, Characters/GenericNPC2, Characters/GenericNPC3, Characters/GenericNPC4, Characters/GenericNPC5, Characters/GenericNPC6, Characters/GenericNPC7, Characters/GenericNPC8, Characters/GirlSittingDown, Characters/GirlSittingDown2, Characters/GoblinCosplayer, Characters/GreenBirdCosplayer, Characters/GreenDressGirl, Characters/GreenGoblinCosplayer, Characters/GreenMushroomGirlCosplayer, Characters/GreenShirtGirl, Characters/GreenShirtGuy, Characters/HamishCameo, Characters/HappyShirtCosplayer, Characters/IcePrincessCosplayer, Characters/JackThePumpkinCosplayer, Characters/JojaGirlCosplayer, Characters/JojaGuyCosplayer, Characters/JojaPetStoreEmployee, Characters/JumperCosplayer, Characters/LittleGirl, Characters/LongNoseGuy, Characters/LuauGirlCosplayer, Characters/LuauGuyCosplayer, Characters/MainStageCosplayer, Characters/MartinJoja, Characters/NewspaperGuy, Characters/NurseCosplayer, Characters/Nyx, Characters/Pirate2Cosplayer, Characters/PirateCosplayer, Characters/PrinceCosplayer, Characters/PurpleWitchCosplayer, Characters/QiBeanCosplayer, Characters/RedBeanieGuy, Characters/RedHatGuySittingDown, Characters/RedMushroomGirlCosplayer, Characters/RedShirtGuy, Characters/RedWitchCosplayer, Characters/SamJoja, Characters/ScarlettBarrel, Characters/ShaneJoja, Characters/SunglassesGuy, Characters/ThiefCosplayer, Characters/TopHatCosplayer, Characters/TotemGuyCosplayer, Characters/TrashGirlCosplayer, Characters/TurbanGuyCosplayer, Characters/VikingCosplayer, Characters/WizardCosplayer, Characters/ZoomieDoggoOwner",
+            "FromFile": "assets/Characters/Miscellaneous/{{TargetWithoutPath}}.png",         
+			"When": {
+                "HasFile:{{FromFile}}": true
+            }
+        },
+
+//Temp actors Season
+         {
+            "LogName": "temp actors season",
+            "Action": "EditImage",
+            "Target": "Characters/GilSprite, Characters/ZuzuCityBus, Characters/ZuzuCityBus2",
+            "FromFile": "assets/Characters/Miscellaneous/{{TargetWithoutPath}}_{{Season}}.png",         
+			"When": {
+                "HasFile:{{FromFile}}": true
+            }
+        },
+		
+// Temp actors Nose Overlays
+        {
+            "LogName": "Nose Variants all",
+            "Action": "EditImage",
+            "Target": "Characters/AdventurerCosplayer, Characters/ArtGuy, Characters/ArtifactCosplayer, Characters/BaldGuy, Characters/BaldGuySittingDown, Characters/BlackhairGuy, Characters/BlueBirdCosplayer, Characters/BlueDressGirl, Characters/BlueMushroomGirlCosplayer, Characters/BrideCosplayer, Characters/CaveGirlCosplayer, Characters/ChefGuyCosplayer, Characters/ClaireJoja, Characters/ClaireTheater, Characters/ConcernedApeCosplayer, Characters/DinoGuyCosplayer, Characters/EmperorCosplayer, Characters/FairyCosplayer, Characters/FairyCosplayer2, Characters/FrogGuyCosplayer, Characters/GaldoranGirlCosplayer, Characters/GenericNPC1, Characters/GenericNPC2, Characters/GenericNPC3, Characters/GenericNPC4, Characters/GenericNPC5, Characters/GenericNPC6, Characters/GenericNPC7, Characters/GenericNPC8, Characters/GirlSittingDown, Characters/GirlSittingDown2, Characters/GoblinCosplayer, Characters/GreenBirdCosplayer, Characters/GreenDressGirl, Characters/GreenGoblinCosplayer, Characters/GreenMushroomGirlCosplayer, Characters/GreenShirtGirl, Characters/GreenShirtGuy, Characters/HamishCameo, Characters/HappyShirtCosplayer, Characters/IcePrincessCosplayer, Characters/JackThePumpkinCosplayer, Characters/JojaGirlCosplayer, Characters/JojaGuyCosplayer, Characters/JojaPetStoreEmployee, Characters/JumperCosplayer, Characters/LittleGirl, Characters/LongNoseGuy, Characters/LuauGirlCosplayer, Characters/LuauGuyCosplayer, Characters/MainStageCosplayer, Characters/MartinJoja, Characters/NewspaperGuy, Characters/NurseCosplayer, Characters/Nyx, Characters/Pirate2Cosplayer, Characters/PirateCosplayer, Characters/PrinceCosplayer, Characters/PurpleWitchCosplayer, Characters/QiBeanCosplayer, Characters/RedBeanieGuy, Characters/RedHatGuySittingDown, Characters/RedMushroomGirlCosplayer, Characters/RedShirtGuy, Characters/RedWitchCosplayer, Characters/SamJoja, Characters/ScarlettBarrel, Characters/ShaneJoja, Characters/SunglassesGuy, Characters/ThiefCosplayer, Characters/TopHatCosplayer, Characters/TotemGuyCosplayer, Characters/TrashGirlCosplayer, Characters/TurbanGuyCosplayer, Characters/VikingCosplayer, Characters/WizardCosplayer, Characters/ZoomieDoggoOwner, Characters/GilSprite, Characters/ZuzuCityBus, Characters/ZuzuCityBus2",
+            "FromFile": "assets/Characters/Miscellaneous/{{TargetWithoutPath}}_Nose.png",
+            "PatchMode": "Overlay",
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "NoNose": "false"
+            }
+        },
+		
+// Adventurers
+        {
+            "LogName": "adventurers",
+            "Action": "EditImage",
+            "Target": "Characters/Adventurers/Aaron, Characters/Adventurers/Brianna, Characters/Adventurers/Brock, Characters/Adventurers/Cassandra, Characters/Adventurers/Cordelia, Characters/Adventurers/Drake, Characters/Adventurers/Edmund, Characters/Adventurers/Ekon, Characters/Adventurers/Emin, Characters/Adventurers/Freya, Characters/Adventurers/Gertrude, Characters/Adventurers/Ricken, Characters/Adventurers/Sawyer, Characters/Adventurers/Vance",
+            "FromFile": "assets/Characters/Adventurers/{{TargetWithoutPath}}.png",
+            "When": {
+                "HasFile:{{FromFile}}": true
+            }
+        },
+
+        {
+            "LogName": "adventurers nose",
+            "Action": "EditImage",
+            "Target": "Characters/Adventurers/Aaron, Characters/Adventurers/Brianna, Characters/Adventurers/Brock, Characters/Adventurers/Cassandra, Characters/Adventurers/Cordelia, Characters/Adventurers/Drake, Characters/Adventurers/Edmund, Characters/Adventurers/Ekon, Characters/Adventurers/Emin, Characters/Adventurers/Freya, Characters/Adventurers/Gertrude, Characters/Adventurers/Ricken, Characters/Adventurers/Sawyer, Characters/Adventurers/Vance",
+            "FromFile": "assets/Characters/Adventurers/{{TargetWithoutPath}}_Nose.png",
+            "PatchMode": "Overlay",
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "NoNose": "false"
+            }
+        },
+
+// Monsters
+        {
+            "LogName": "FallenAdventurer",
+            "Action": "EditImage",
+            "Target": "Characters/Monsters/FallenAdventurerFemale, Characters/Monsters/FallenAdventurerMale",
+            "FromFile": "assets/Characters/Monsters/{{TargetWithoutPath}}.png",
+            "When": {
+                "HasFile:{{FromFile}}": true
+            }
+        },
+
+        {
+            "LogName": "FallenAdventurer",
+            "Action": "EditImage",
+            "Target": "Characters/Monsters/FallenAdventurerFemale, Characters/Monsters/FallenAdventurerMale",
+            "FromFile": "assets/Characters/Monsters/{{TargetWithoutPath}}_Nose.png",
+            "PatchMode": "Overlay",
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "NoNose": "false"
+            }
+        },
+
+
+// Portraits
+
+
+        {
+            "LogName": "Portraits regular season",
+            "Action": "EditImage",
+            "Target": "Portraits/Alesia, Portraits/Andy, Portraits/Camilla, Portraits/Claire, Portraits/GuntherSilvian, Portraits/Isaac, Portraits/Jadu, Portraits/Jolyne, Portraits/Lance, Portraits/Magnus, Portraits/MarlonFay, Portraits/Martin, Portraits/Morgan, Portraits/MorrisTod, Portraits/Olivia, Portraits/Scarlett, Portraits/Sophia, Portraits/Susan, Portraits/Victor",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Season}}.png",
+            "Update": "OnLocationChange",            
+			"When": {
+                "HasFile:{{FromFile}}": true
+            }
+        },
+
+        {
+            "LogName": "Portraits regular outdoor and season",
+            "Action": "EditImage",
+            "Target": "Portraits/Alesia, Portraits/Andy, Portraits/Camilla, Portraits/Claire, Portraits/GuntherSilvian, Portraits/Isaac, Portraits/Jadu, Portraits/Jolyne, Portraits/Lance, Portraits/Magnus, Portraits/MarlonFay, Portraits/Martin, Portraits/Morgan, Portraits/MorrisTod, Portraits/Olivia, Portraits/Scarlett, Portraits/Sophia, Portraits/Susan, Portraits/Victor",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Season}}{{IndoorVariant}}.png",
+            "Update": "OnLocationChange",
+            "When": {
+                "HasFile:{{FromFile}}": true
+            }
+        },
+
+//Sophia's Makeup Portraits
+
+
+        {
+            "LogName": "Portrait Sophia Makeup Season",
+            "Action": "EditImage",
+            "Target": "Portraits/Sophia",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Season}}{{SophiaMakeup}}.png",
+            "Update": "OnLocationChange",            
+			"When": {
+                "HasFile:{{FromFile}}": true
+            }
+        },
+
+        {
+            "LogName": "Portrait Sophia Makeup Season Indoor",
+            "Action": "EditImage",
+            "Target": "Portraits/Sophia",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Season}}{{IndoorVariant}}{{SophiaMakeup}}.png",
+            "Update": "OnLocationChange",
+            "When": {
+                "HasFile:{{FromFile}}": true
+            }
+
+        },
+
+// Sophia Older Variant
+        {
+            "LogName": "Sophia Older Overlay",
+            "Action": "EditImage",
+            "Target": "Portraits/Sophia",
+            "FromFile": "assets/Portraits/Sophia/Sophia_Older_Overlay.png",
+            "PatchMode": "Overlay",
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "DayOfWeek": "Monday, Tuesday, Wednesday, Thursday",
+                "OlderSophia": "true"
+            }
+        },
+
+        {
+            "LogName": "Sophia Older Overlay Makeup",
+            "Action": "EditImage",
+            "Target": "Portraits/Sophia",
+            "FromFile": "assets/Portraits/Sophia/Sophia_Older_MU_Overlay.png",
+            "PatchMode": "Overlay",
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "DayOfWeek": "Friday, Saturday, Sunday",
+                "OlderSophia": "true"
+            }
+        },
+		
+// Work Joja		
+
+    {
+      //Claire's Joja Sprites
+      "Action": "EditImage",
+      "Target": "Characters/Claire",
+      "FromFile": "assets/Characters/Claire/Claire_Joja.png",
+      "When": { "LocationName": "JojaMart" },
+      "Update": "OnLocationChange"
+    },
+
+    {
+      //Claire's Joja Portrait
+      "Action": "EditImage",
+      "Target": "Portraits/Claire",
+      "FromFile": "assets/Portraits/Claire/Claire_Joja.png",
+      "When": { "LocationName": "JojaMart" },
+      "Update": "OnLocationChange"
+    },
+
+    {
+      //Martin's Joja Sprites
+      "Action": "EditImage",
+      "Target": "Characters/Martin",
+      "FromFile": "assets/Characters/Martin/Martin_Joja.png",
+      "When": { "LocationName": "JojaMart" },
+      "Update": "OnLocationChange"
+    },
+
+    {
+      //Martin's Joja Portrait
+      "Action": "EditImage",
+      "Target": "Portraits/Martin",
+      "FromFile": "assets/Portraits/Martin/Martin_Joja.png",
+      "When": { "LocationName": "JojaMart" },
+      "Update": "OnLocationChange"
+    },
+
+ // Work Theater
+ 
+   {
+      //Martin's Theater Portrait
+      "Action": "EditImage",
+      "Target": "Portraits/Martin",
+      "FromFile": "assets/Portraits/Martin/Martin_Theater.png",
+      "When": { "Spouse |contains=Claire": false, "DayOfWeek": "Tuesday, Saturday", "HasSeenEvent |contains=502261": false, "LocationName": "MovieTheater" },
+      "Update": "OnLocationChange"
+    },
+    {
+      //Martin's Theater Portrait 2
+      "Action": "EditImage",
+      "Target": "Portraits/Martin",
+      "FromFile": "assets/Portraits/Martin/Martin_Theater.png",
+      "When": { "Spouse": "Claire", "DayOfWeek": "Tuesday, Friday, Saturday", "HasSeenEvent |contains=502261": false, "LocationName": "MovieTheater" },
+      "Update": "OnLocationChange"
+    },
+    {
+      //Martin's Theater Sprites
+      "Action": "EditImage",
+      "Target": "Characters/Martin",
+      "FromFile": "assets/Characters/Martin/Martin_Theater.png",
+      "When": { "Spouse |contains=Claire": false, "DayOfWeek": "Tuesday, Saturday", "HasSeenEvent |contains=502261": false, "LocationName": "MovieTheater" },
+      "Update": "OnLocationChange"
+    },
+    {
+      //Martin's Theater Sprites 2
+      "Action": "EditImage",
+      "Target": "Characters/Martin",
+      "FromFile": "assets/Characters/Martin/Martin_Theater.png",
+      "When": { "Spouse": "Claire", "DayOfWeek": "Tuesday, Friday, Saturday", "HasSeenEvent |contains=502261": false, "LocationName": "MovieTheater" },
+      "Update": "OnLocationChange"
+    },
+
+
+// Work Sprites Claire
+
+{
+      //Claire's Theater Portrait
+      "Action": "EditImage",
+      "Target": "Portraits/Claire",
+      "FromFile": "assets/Portraits/Claire/Claire_Theater.png",
+      "When": { "Spouse |contains=Claire": false, "DayOfWeek": "Monday, Wednesday, Thursday, Friday, Sunday", "HasSeenEvent |contains=502261": false, "LocationName": "MovieTheater" },
+      "Update": "OnLocationChange"
+    },
+    {
+      //Claire's Theater Portrait 2
+      "Action": "EditImage",
+      "Target": "Portraits/Claire",
+      "FromFile": "assets/Portraits/Claire/Claire_Theater.png",
+      "When": { "Spouse": "Claire", "DayOfWeek": "Monday, Wednesday, Thursday, Sunday", "HasSeenEvent |contains=502261": false, "LocationName": "MovieTheater" },
+      "Update": "OnLocationChange"
+    },
+    {
+      //Claire's Theater Sprites
+      "Action": "EditImage",
+      "Target": "Characters/Claire",
+      "FromFile": "assets/Characters/Claire/Claire_Theater.png",
+      "When": { "Spouse |contains=Claire": false, "DayOfWeek": "Monday, Wednesday, Thursday, Friday, Sunday", "HasSeenEvent |contains=502261": false, "LocationName": "MovieTheater" },
+      "Update": "OnLocationChange"
+    },
+    {
+      //Claire's Theater Sprites 2
+      "Action": "EditImage",
+      "Target": "Characters/Claire",
+      "FromFile": "assets/Characters/Claire/Claire_Theater.png",
+      "When": { "Spouse": "Claire", "DayOfWeek": "Monday, Wednesday, Thursday, Sunday", "HasSeenEvent |contains=502261": false, "LocationName": "MovieTheater" },
+      "Update": "OnLocationChange"
+    },
+
+// Claire 14 heart Event
+
+	{ "LogName": "Claire's Theater Portraits 14 heart season",
+      "Action": "EditImage",
+      "Target": "Portraits/Claire",
+      "FromFile": "assets/Portraits/Claire/Claire_{{Season}}.png",
+      "When": { "Spouse |contains=Claire": true, "LocationName": "MovieTheater", "HasSeenEvent |contains=4269703": true, "HasSeenEvent |contains=4269704": false, "Time": "{{Range: 1600, 2000}}", "HasFile:{{FromFile}}": true,},
+      "Update": "OnLocationChange"
+    },
+	{ "LogName": "Claire's Theater Portraits 14 heart season outdoor",
+      "Action": "EditImage",
+      "Target": "Portraits/Claire",
+      "FromFile": "assets/Portraits/Claire/Claire_{{Season}}{{IndoorVariant}}.png",
+      "When": { "Spouse |contains=Claire": true, "LocationName": "MovieTheater", "HasSeenEvent |contains=4269703": true, "HasSeenEvent |contains=4269704": false, "Time": "{{Range: 1600, 2000}}", "HasFile:{{FromFile}}": true, },
+      "Update": "OnLocationChange"
+    },
+	{ "LogName": "Claire's Theater Sprites 14 heart season",
+      "Action": "EditImage",
+      "Target": "Characters/Claire",
+      "FromFile": "assets/Characters/Claire/Claire_{{Season}}.png",
+      "When": { "Spouse |contains=Claire": true, "LocationName": "MovieTheater", "HasSeenEvent |contains=4269703": true, "HasSeenEvent |contains=4269704": false, "Time": "{{Range: 1600, 2000}}", "HasFile:{{FromFile}}": true, },
+      "Update": "OnLocationChange"
+    },
+	{ "LogName": "Claire's Theater Sprites 14 heart season outdoor",
+      "Action": "EditImage",
+      "Target": "Characters/Claire",
+      "FromFile": "assets/Characters/Claire/Claire_{{Season}}{{IndoorVariant}}.png",
+      "When": { "Spouse |contains=Claire": true, "LocationName": "MovieTheater", "HasSeenEvent |contains=4269703": true, "HasSeenEvent |contains=4269704": false, "Time": "{{Range: 1600, 2000}}", "HasFile:{{FromFile}}": true, },
+      "Update": "OnLocationChange"
+    },	
+	
+//Scarlett Cosplay
+
+	{
+      "Action": "EditImage",
+      "Target": "Characters/Scarlett",
+	  "When": { "LocationName": "Custom_ZCCC_Entrance, Custom_ZCCC_FoodCourt, Custom_ZCCC_MainHall, Custom_ZCCC_Stage, Custom_ZCCC_VendorFloor, Custom_ZuzuCityStreet, Custom_Highway, Custom_ZCCC_Courtyard, BusStop" },
+	  "Update": "OnLocationChange",
+      "FromFile": "assets/Characters/Scarlett/Scarlett_Cosplay.png",
+    },
+
+// Aerobics Portraits 
+       {
+            "LogName": "Aerobics",
+            "Action": "EditImage",
+            "Target": "Portraits/Olivia, Portraits/Claire",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_Aerobics.png",
+            "Update": "OnLocationChange",
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "DayOfWeek": "Tuesday",
+                "LocationName": "SeedShop",
+                "ExtraOutfits": "True",
+                "Weather": "sun, wind, snow"
+            }
+        },
+
+// Aerobics Sprites 
+       {
+            "LogName": "Aerobics",
+            "Action": "EditImage",
+            "Target": "Characters/Olivia, Characters/Claire",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_Aerobics.png",
+            "Update": "OnLocationChange",
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "DayOfWeek": "Tuesday",
+                "LocationName": "SeedShop",
+                "ExtraOutfits": "True",
+                "Weather": "sun, wind, snow"
+            }
+        },
+
+// Aerobics Portraits Harvey Event 
+       {
+            "LogName": "Aerobics Harvey",
+            "Action": "EditImage",
+            "Target": "Portraits/Olivia, Portraits/Claire",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_Aerobics.png",
+            "Update": "OnLocationChange",
+			"When":
+            {
+                "HasFile:{{FromFile}}": true,
+                "Time": "{{Range: 1100, 1500}}",
+				"Hearts:Harvey": "{{range: 6, 14}}",
+                "LocationName": "SeedShop",
+                "ExtraOutfits": "True",
+                "HasSeenEvent: currentPlayer |contains=58": false,
+            }
+        },
+		
+// Aerobics Sprites Harvey Event 
+       {
+            "LogName": "Aerobics Harvey",
+            "Action": "EditImage",
+            "Target": "Characters/Olivia, Characters/Claire",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_Aerobics.png",
+            "Update": "OnLocationChange",
+			"When":
+            {
+                "HasFile:{{FromFile}}": true,
+                "Time": "{{Range: 1100, 1500}}",
+				"Hearts:Harvey": "{{range: 6, 14}}",
+                "LocationName": "SeedShop",
+                "ExtraOutfits": "True",
+                "HasSeenEvent: currentPlayer |contains=58": false,
+            }
+        },
+
+// Vanilla Character Changes
+	//Sandy
+         {
+            "LogName": "Vanilla Sandy",
+            "Action": "EditImage",
+            "Target": "Characters/Sandy, Portraits/Sandy",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Season}}.png",
+            "Update": "OnLocationChange",  
+			"When": {
+                "HasFile:{{FromFile}}": true,
+            },
+        },
+		
+	//Morris
+		{
+            "LogName": "Morris Vanilla Portrait",
+            "Action": "EditImage",
+            "Target": "Portraits/Morris",
+            "FromFile": "assets/Portraits/MorrisTod/MorrisTod_{{Season}}.png",
+            "Update": "OnLocationChange",            
+		    "When": {
+                "HasFile:{{FromFile}}": true
+            },
+        },
+	
+		{
+            "LogName": "Morris Vanilla Portrait indoor",
+            "Action": "EditImage",
+            "Target": "Portraits/Morris",
+            "FromFile": "assets/Portraits/MorrisTod/MorrisTod_{{Season}}{{IndoorVariant}}.png",
+            "Update": "OnLocationChange",            
+		    "When": {
+                "HasFile:{{FromFile}}": true,
+            },
+        },
+
+		{
+            "LogName": "Morris Vanilla Portrait Joja",
+            "Action": "EditImage",
+            "Target": "Portraits/Morris",
+            "FromFile": "assets/Portraits/MorrisTod/MorrisTod_Winter_Indoor.png",
+            "Update": "OnLocationChange",
+            "Update": "OnTimeChange",            
+		    "When": {
+                "HasFile:{{FromFile}}": true,
+                "Time": "{{Range: 0950, 2210}}",
+				"Season": "Winter",
+            },
+        },
+		
+	
+        {
+            "LogName": "Morris Vanilla Sprite",
+            "Action": "EditImage",
+            "Target": "Characters/Morris",
+            "FromFile": "assets/Characters/MorrisTod/MorrisTod_{{Season}}.png",
+            "Update": "OnLocationChange",            
+			"When": {
+                "HasFile:{{FromFile}}": true
+            },
+        },
+        {
+            "LogName": "Morris Vanilla Sprite outdoor",
+            "Action": "EditImage",
+            "Target": "Characters/Morris",
+            "FromFile": "assets/Characters/MorrisTod/MorrisTod_{{Season}}{{IndoorVariant}}.png",
+            "Update": "OnLocationChange",            
+			"When": {
+                "HasFile:{{FromFile}}": true
+            },
+        },		
+        {
+            "LogName": "Morris Nose Variant",
+            "Action": "EditImage",
+            "Target": "Characters/Morris,",
+            "FromFile": "assets/Characters/MorrisTod/MorrisTod_Nose.png",
+            "PatchMode": "Overlay",
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "NoNose": "false"
+            }
+        },
+
+	//Gunther
+        {
+            "LogName": "Gunther Vanilla Portait",
+            "Action": "EditImage",
+            "Target": "Portraits/Gunther",
+            "FromFile": "assets/Portraits/GuntherSilvian/GuntherSilvian_{{Season}}.png",
+            "Update": "OnLocationChange",            
+		    "When": {
+                "HasFile:{{FromFile}}": true
+            },
+        },
+        {
+            "LogName": "Gunther Vanilla Sprite",
+            "Action": "EditImage",
+            "Target": "Characters/Gunther",
+            "FromFile": "assets/Characters/GuntherSilvian/GuntherSilvian_{{Season}}.png",
+            "Update": "OnLocationChange",            
+			"When": {
+                "HasFile:{{FromFile}}": true
+            },
+        },
+        {
+            "LogName": "Gunther Nose Variant",
+            "Action": "EditImage",
+            "Target": "Characters/Gunther,",
+            "FromFile": "assets/Characters/GuntherSilvian/GuntherSilvian_Nose.png",
+            "PatchMode": "Overlay",
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "NoNose": "false"
+            }
+        },
+
+	//Marlon
+        {
+            "LogName": "Marlon Vanilla Portait",
+            "Action": "EditImage",
+            "Target": "Portraits/Marlon",
+            "FromFile": "assets/Portraits/MarlonFay/Marlon_{{Season}}.png",
+            "Update": "OnLocationChange",            
+		    "When": {
+                "HasFile:{{FromFile}}": true
+            },
+        },
+        {
+            "LogName": "Marlon Vanilla Sprite",
+            "Action": "EditImage",
+            "Target": "Characters/Marlon",
+            "FromFile": "assets/Characters/MarlonFay/MarlonFay_{{Season}}.png",
+            "Update": "OnLocationChange",            
+			"When": {
+                "HasFile:{{FromFile}}": true
+            },
+        },
+        {
+            "LogName": "Marlon Nose Variant",
+            "Action": "EditImage",
+            "Target": "Characters/Marlon,",
+            "FromFile": "assets/Characters/MarlonFay/MarlonFay_Nose.png",
+            "PatchMode": "Overlay",
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "NoNose": "false"
+            }
+        },
+
+
+//Wizard        
+		{
+            "LogName": "Wizard Vanilla Portait",
+            "Action": "EditImage",
+            "Target": "Portraits/Wizard",
+            "FromFile": "assets/Portraits/Magnus/Magnus_{{Season}}.png",
+            "Update": "OnLocationChange",            
+		    "When": {
+                "HasFile:{{FromFile}}": true
+            },
+        },
+        {
+            "LogName": "Wizard Vanilla Sprite",
+            "Action": "EditImage",
+            "Target": "Characters/Wizard",
+            "FromFile": "assets/Characters/Magnus/Magnus_{{Season}}.png",
+            "Update": "OnLocationChange",            
+			"When": {
+                "HasFile:{{FromFile}}": true
+            },
+        },
+        {
+            "LogName": "Wizard Nose Variant",
+            "Action": "EditImage",
+            "Target": "Characters/Wizard,",
+            "FromFile": "assets/Characters/Magnus/Magnus_Nose.png",
+            "PatchMode": "Overlay",
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "NoNose": "false"
+            }
+        },
+
+// Festivals
+        {
+            "LogName": "Festival Character Sprites",
+            "Action": "EditImage",
+            "Target": "Characters/Alesia, Characters/Andy, Characters/Camilla, Characters/Claire, Characters/GuntherSilvian, Characters/Isaac, Characters/Jadu, Characters/Lance, Characters/Magnus, Characters/MarlonFay, Characters/Martin, Characters/Morgan, Characters/MorrisTod, Characters/Olivia, Characters/Sandy, Characters/Scarlett, Characters/Sophia, Characters/Susan, Characters/Victor",
+            "FromFile": "assets/Characters/Festivals/{{Festival}}/{{TargetWithoutPath}}_{{Festival}}.png",
+            "Update": "OnLocationChange",            
+			"When": {
+                "HasFile:{{FromFile}}": true,
+                "FestivalOutfits": "True"
+            },
+        },
+        {
+            "LogName": "Festival Character Portrait",
+            "Action": "EditImage",
+            "Target": "Portraits/Alesia, Portraits/Andy, Portraits/Camilla, Portraits/Claire, Portraits/GuntherSilvian, Portraits/Isaac, Portraits/Jadu, Portraits/Lance, Portraits/Magnus, Portraits/MarlonFay, Portraits/Martin, Portraits/Morgan, Portraits/MorrisTod, Portraits/Olivia, Portraits/Sandy, Portraits/Scarlett, Portraits/Sophia, Portraits/Susan, Portraits/Victor",
+            "FromFile": "assets/Portraits/Festivals/{{Festival}}/{{TargetWithoutPath}}_{{Festival}}.png",
+            "Update": "OnLocationChange",            
+			"When": {
+                "HasFile:{{FromFile}}": true,
+                "FestivalOutfits": "True"
+            },
+        },
+
+// Beach Sprites
+
+        {
+            "LogName": "Beach Sprites",
+            "Action": "EditImage",
+            "Target": "Characters/Andy_Beach, Characters/Claire_Beach, Characters/Lance_Beach, Characters/Olivia_Beach, Characters/Scarlett_Beach, Characters/Sophia_Beach, Characters/Susan_Beach, Characters/Victor_Beach",
+            "FromFile": "assets/Characters/Beach/{{TargetWithoutPath}}.png",
+            "Update": "OnLocationChange",            
+			"When": {
+                "HasFile:{{FromFile}}": true
+            }
+        },
+
+// Beach Nose Overlays
+        {
+            "LogName": "Beach Variants all",
+            "Action": "EditImage",
+            "Target": "Characters/Andy_Beach, Characters/Claire_Beach, Characters/Lance_Beach, Characters/Olivia_Beach, Characters/Scarlett_Beach, Characters/Sophia_Beach, Characters/Victor_Beach",
+            "FromFile": "assets/Characters/Beach/{{TargetWithoutPath}}_nose.png",
+            "PatchMode": "Overlay",
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "NoNose": "false"
+            }
+        },
+
+// All Encompassing Nose Overlays
+        {
+            "LogName": "Nose Variants all",
+            "Action": "EditImage",
+            "Target": "Characters/Alesia, Characters/Andy, Characters/Camilla, Characters/Claire, Characters/FemaleFarmer, Characters/GuntherSilvian, Characters/Isaac, Characters/Jadu, Characters/Jolyne, Characters/Lance, Characters/Magnus, Characters/MaleFarmer, Characters/MarlonFay, Characters/Martin, Characters/Morgan, Characters/MorrisTod, Characters/Olivia, Characters/Scarlett, Characters/Sandy, Characters/Sophia, Characters/SophiaJPKsprite, Characters/Susan, Characters/Victor",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_nose.png",
+            "PatchMode": "Overlay",
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "NoNose": "false"
+            }
+        },
+
+// TILE SHEETS
+
+
+// festival maps
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Festivals",
+            "FromFile": "assets/{{NoNose}}/Maps/Festivals.png",
+            "FromArea": { "X": 336, "Y": 208, "Width": 96, "Height": 47 },
+            "ToArea": { "X": 336, "Y": 208, "Width": 96, "Height": 47 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Festivals",
+            "FromFile": "assets/{{NoNose}}/Maps/Festivals.png",
+            "FromArea": { "X": 480, "Y": 208, "Width": 32, "Height": 35 },
+            "ToArea": { "X": 480, "Y": 208, "Width": 32, "Height": 35 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Festivals",
+            "FromFile": "assets/{{NoNose}}/Maps/Festivals.png",
+            "FromArea": { "X": 448, "Y": 117, "Width": 16, "Height": 59 },
+            "ToArea": { "X": 448, "Y": 117, "Width": 16, "Height": 59 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Festivals",
+            "FromFile": "assets/{{NoNose}}/Maps/Festivals.png",
+            "FromArea": { "X": 289, "Y": 129, "Width": 79, "Height": 31 },
+            "ToArea": { "X": 289, "Y": 129, "Width": 79, "Height": 31 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Festivals",
+            "FromFile": "assets/{{NoNose}}/Maps/Festivals.png",
+            "FromArea": { "X": 289, "Y": 129, "Width": 79, "Height": 31 },
+            "ToArea": { "X": 289, "Y": 129, "Width": 79, "Height": 31 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Festivals",
+            "FromFile": "assets/{{NoNose}}/Maps/Festivals.png",
+            "FromArea": { "X": 289, "Y": 129, "Width": 79, "Height": 31 },
+            "ToArea": { "X": 289, "Y": 129, "Width": 79, "Height": 31 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Festivals",
+            "FromFile": "assets/{{NoNose}}/Maps/Festivals.png",
+            "FromArea": { "X": 274, "Y": 129, "Width": 13, "Height": 15 },
+            "ToArea": { "X": 274, "Y": 129, "Width": 13, "Height": 15  }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Festivals",
+            "FromFile": "assets/{{NoNose}}/Maps/Festivals.png",
+            "FromArea": { "X": 496, "Y": 0, "Width": 16, "Height": 50 },
+            "ToArea": { "X": 496, "Y": 0, "Width": 16, "Height": 50 }
+        },
+		
+//Replaces Magnus on the magic carpet with Camilla during end credits scene if players married him
+		{
+            "Action": "EditImage",
+            "Target": "Characters/KrobusRaven",
+            "FromFile": "Assets/Tilesheets/CamillaMagicCarpet_Spring.png",
+	        "ToArea": { "X": 0, "Y": 64, "Width": 160, "Height": 39 },
+            "When": { "Spouse |contains=Wizard": true, "Season |contains=Spring": true },
+         },
+		 {
+            "Action": "EditImage",
+            "Target": "Characters/KrobusRaven",
+            "FromFile": "Assets/Tilesheets/CamillaMagicCarpet_Summer.png",
+	        "ToArea": { "X": 0, "Y": 64, "Width": 160, "Height": 39 },
+            "When": { "Spouse |contains=Wizard": true, "Season |contains=Summer": true },
+         },
+		 {
+            "Action": "EditImage",
+            "Target": "Characters/KrobusRaven",
+            "FromFile": "Assets/Tilesheets/CamillaMagicCarpet_Fall.png",
+	        "ToArea": { "X": 0, "Y": 64, "Width": 160, "Height": 39 },
+            "When": { "Spouse |contains=Wizard": true, "Season |contains=Fall": true },
+         },
+		 {
+            "Action": "EditImage",
+            "Target": "Characters/KrobusRaven",
+            "FromFile": "Assets/Tilesheets/CamillaMagicCarpet_Winter.png",
+	        "ToArea": { "X": 0, "Y": 64, "Width": 160, "Height": 39 },
+            "When": { "Spouse |contains=Wizard": true, "Season |contains=Winter": true },
+         },
+		
+
+//ZuzuCity
+        {
+            "Action": "EditImage",
+            "Target": "Maps/ZuzuCity",
+            "FromFile": "assets/{{NoNose}}/Maps/ZuzuCity.png"
+        },
+
+//Stadium
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Stadium",
+            "FromFile": "assets/{{NoNose}}/Maps/Stadium.png"
+        },
+		
+//Movie Theater (community center)
+        {
+            "Action": "EditImage",
+            "Target": "Maps/MovieTheater_TileSheet",
+			"When": { "Season |contains=Spring": true },
+            "FromFile": "assets/{{NoNose}}/Maps/MovieTheater_Spring.png"
+        },
+		{
+            "Action": "EditImage",
+            "Target": "Maps/MovieTheater_TileSheet",
+			"When": { "Season |contains=Summer": true },
+            "FromFile": "assets/{{NoNose}}/Maps/MovieTheater_Summer.png"
+        },
+		{
+            "Action": "EditImage",
+            "Target": "Maps/MovieTheater_TileSheet",
+			"When": { "Season |contains=Fall": true },
+            "FromFile": "assets/{{NoNose}}/Maps/MovieTheater_Fall.png"
+        },
+		{
+            "Action": "EditImage",
+            "Target": "Maps/MovieTheater_Winter",
+			"When": { "Season |contains=Winter": true },
+            "FromFile": "assets/{{NoNose}}/Maps/MovieTheater_Winter.png"
+        },
+		
+//Movie Theater (joja)
+		{
+            "Action": "EditImage",
+            "Target": "Maps/MovieTheaterJoja_TileSheet",
+			"When": { "Season |contains=Spring": true },
+            "FromFile": "assets/{{NoNose}}/Maps/MovieTheaterJoja_Spring.png"
+        },
+		{
+            "Action": "EditImage",
+            "Target": "Maps/MovieTheaterJoja_TileSheet",
+			"When": { "Season |contains=Summer": true },
+            "FromFile": "assets/{{NoNose}}/Maps/MovieTheaterJoja_Summer.png"
+        },
+		{
+            "Action": "EditImage",
+            "Target": "Maps/MovieTheaterJoja_TileSheet",
+			"When": { "Season |contains=Fall": true },
+            "FromFile": "assets/{{NoNose}}/Maps/MovieTheaterJoja_Fall.png"
+        },
+		{
+            "Action": "EditImage",
+            "Target": "Maps/MovieTheaterJoja_TileSheet",
+			"When": { "Season |contains=Winter": true },
+            "FromFile": "assets/{{NoNose}}/Maps/MovieTheaterJoja_Winter.png"
+        },
+		
+//First Slash Guild
+        {
+            "Action": "EditImage",
+            "Target": "Maps/FirstSlashGuildBuilding",
+            "FromFile": "assets/{{NoNose}}/Maps/FirstSlashGuildBuilding.png"
+        },
+		
+//Grampleton Suburbs
+        {
+            "Action": "EditImage",
+            "Target": "Maps/spring_GrampletonSuburbsTilesheet",
+			"ToArea": { "X": 192, "Y": 288, "Width": 80, "Height": 32 },
+            "FromFile": "assets/{{NoNose}}/Maps/spring_GrampletonSuburbsTilesheet.png"
+        },
+		{
+            "Action": "EditImage",
+            "Target": "Maps/summer_GrampletonSuburbsTilesheet",
+			"ToArea": { "X": 192, "Y": 288, "Width": 80, "Height": 32 },
+            "FromFile": "assets/{{NoNose}}/Maps/summer_GrampletonSuburbsTilesheet.png"
+        },
+		{
+            "Action": "EditImage",
+            "Target": "Maps/fall_GrampletonSuburbsTilesheet",
+			"ToArea": { "X": 192, "Y": 288, "Width": 80, "Height": 32 },
+            "FromFile": "assets/{{NoNose}}/Maps/fall_GrampletonSuburbsTilesheet.png"
+        },
+		{
+            "Action": "EditImage",
+            "Target": "Maps/winter_GrampletonSuburbsTilesheet",
+			"ToArea": { "X": 192, "Y": 288, "Width": 80, "Height": 32 },
+            "FromFile": "assets/{{NoNose}}/Maps/winter_GrampletonSuburbsTilesheet.png"
+        },
+
+//Sakura Vineyard
+        {
+            "Action": "EditImage",
+            "Target": "Maps/GrampletonTrainStationTilesheet",
+            "FromFile": "assets/{{NoNose}}/Maps/GrampletonTrainStationTilesheet.png"
+        },
+		{
+            "Action": "EditImage",
+            "Target": "Maps/SakuraVineyardDiningRoomTilesheet",
+            "FromFile": "assets/{{NoNose}}/Maps/SakuraVineyardDiningRoomTilesheet.png"
+        },
+		
+//Zuzu City Comic Con
+        {
+            "Action": "EditImage",
+            "Target": "Maps/ZCCC_VendorFloor_Tilesheet",
+            "FromFile": "assets/{{NoNose}}/Maps/ZCCC_VendorFloor_Tilesheet.png"
+        },
+		{
+            "Action": "EditImage",
+            "Target": "Maps/ZCCC_FoodCourt_Tilesheet",
+            "FromFile": "assets/{{NoNose}}/Maps/ZCCC_FoodCourt_Tilesheet.png"
+        },
+		{
+            "Action": "EditImage",
+            "Target": "Maps/ZCCC_Entrance_Tilesheet",
+            "FromFile": "assets/{{NoNose}}/Maps/ZCCC_Entrance_Tilesheet.png"
+        },
+		{
+            "Action": "EditImage",
+            "Target": "Maps/ZCCC_Entrance_Tilesheet",
+            "FromFile": "assets/{{NoNose}}/Maps/ZCCC_Entrance_Tilesheet.png"
+        },
+		{
+            "Action": "EditImage",
+            "Target": "Maps/ZuzuCityStreet_Tilesheet",
+            "FromFile": "assets/{{NoNose}}/Maps/ZuzuCityStreet_Tilesheet.png"
+        },
+
+
+//Season Extras Spring
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Spring_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_a.png",
+            "ToArea": { "X": 128, "Y": 608, "Width": 64, "Height": 256 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Spring_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_b.png",
+            "ToArea": { "X": 0, "Y": 832, "Width": 128, "Height": 128 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Spring_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_d.png",
+            "ToArea": { "X": 105, "Y": 804, "Width": 13, "Height": 26 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Spring_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_e.png",
+            "ToArea": { "X": 112, "Y": 706, "Width": 16, "Height": 94 }
+        },
+		{
+            "Action": "EditImage",
+            "Target": "Maps/Spring_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_f.png",
+            "ToArea": { "X": 160, "Y": 2386, "Width": 16, "Height": 98 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Spring_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_h.png",
+            "ToArea": { "X": 96, "Y": 2386, "Width": 64, "Height": 160 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Spring_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_i.png",
+            "ToArea": { "X": 192, "Y": 2384, "Width": 64, "Height": 112 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Spring_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_j.png",
+            "ToArea": { "X": 256, "Y": 2386, "Width": 31, "Height": 62 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Spring_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_k.png",
+            "ToArea": { "X": 336, "Y": 1376, "Width": 64, "Height": 126 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Spring_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Spring_Seasonal_l.png",
+			"When": { "Season |contains=Spring": true },
+            "ToArea": { "X": 129, "Y": 913, "Width": 63, "Height": 47 }
+        },
+		{
+            "Action": "EditImage",
+            "Target": "Maps/Spring_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_m.png",
+            "ToArea": { "X": 0, "Y": 3632, "Width": 304, "Height": 176 }
+        },
+		{
+            "Action": "EditImage",
+            "Target": "Maps/Spring_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_n.png",
+            "ToArea": { "X": 304, "Y": 3680, "Width": 96, "Height": 128 }
+        },
+		
+//Season Extras Summer
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Summer_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_a.png",
+            "ToArea": { "X": 128, "Y": 608, "Width": 64, "Height": 256 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Summer_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_b.png",
+            "ToArea": { "X": 0, "Y": 832, "Width": 128, "Height": 128 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Summer_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_d.png",
+            "ToArea": { "X": 105, "Y": 804, "Width": 13, "Height": 26 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Summer_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_e.png",
+            "ToArea": { "X": 112, "Y": 706, "Width": 16, "Height": 94 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Summer_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_f.png",
+            "ToArea": { "X": 160, "Y": 2386, "Width": 16, "Height": 98 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Summer_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_h.png",
+            "ToArea": { "X": 96, "Y": 2386, "Width": 64, "Height": 160 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Summer_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_i.png",
+            "ToArea": { "X": 192, "Y": 2384, "Width": 64, "Height": 112 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Summer_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_j.png",
+            "ToArea": { "X": 256, "Y": 2386, "Width": 31, "Height": 62 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Summer_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_k.png",
+            "ToArea": { "X": 336, "Y": 1376, "Width": 64, "Height": 126 }
+        },
+		{
+            "Action": "EditImage",
+            "Target": "Maps/Spring_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Summer_Seasonal_l.png",
+			"When": { "Season |contains=Summer": true },
+            "ToArea": { "X": 129, "Y": 913, "Width": 63, "Height": 47 }
+        },
+		{
+            "Action": "EditImage",
+            "Target": "Maps/Summer_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_m.png",
+            "ToArea": { "X": 0, "Y": 3632, "Width": 304, "Height": 176 }
+        },
+		{
+            "Action": "EditImage",
+            "Target": "Maps/Summer_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_n.png",
+            "ToArea": { "X": 304, "Y": 3680, "Width": 96, "Height": 128 }
+        },
+
+//Season Extras Fall
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Fall_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_a.png",
+            "ToArea": { "X": 128, "Y": 608, "Width": 64, "Height": 256 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Fall_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_b.png",
+            "ToArea": { "X": 0, "Y": 832, "Width": 128, "Height": 128 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Fall_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_d.png",
+            "ToArea": { "X": 105, "Y": 804, "Width": 13, "Height": 26 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Fall_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_e.png",
+            "ToArea": { "X": 112, "Y": 706, "Width": 16, "Height": 94 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Fall_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_f.png",
+            "ToArea": { "X": 160, "Y": 2386, "Width": 16, "Height": 98 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Fall_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_h.png",
+            "ToArea": { "X": 96, "Y": 2386, "Width": 64, "Height": 160 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Fall_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_i.png",
+            "ToArea": { "X": 192, "Y": 2384, "Width": 64, "Height": 112 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Fall_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_j.png",
+            "ToArea": { "X": 256, "Y": 2386, "Width": 31, "Height": 62 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Fall_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_k.png",
+            "ToArea": { "X": 336, "Y": 1376, "Width": 64, "Height": 126 }
+        },
+		{
+            "Action": "EditImage",
+            "Target": "Maps/Spring_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Fall_Seasonal_l.png",
+			"When": { "Season |contains=Fall": true },
+            "ToArea": { "X": 129, "Y": 913, "Width": 63, "Height": 47 }
+        },
+		{
+            "Action": "EditImage",
+            "Target": "Maps/Fall_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_m.png",
+            "ToArea": { "X": 0, "Y": 3632, "Width": 304, "Height": 176 }
+        },
+		{
+            "Action": "EditImage",
+            "Target": "Maps/Fall_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_n.png",
+            "ToArea": { "X": 304, "Y": 3680, "Width": 96, "Height": 128 }
+        },
+
+//Season Extras Winter
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Winter_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_a.png",
+            "ToArea": { "X": 128, "Y": 608, "Width": 64, "Height": 256 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Winter_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_b.png",
+            "ToArea": { "X": 0, "Y": 832, "Width": 128, "Height": 128 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Winter_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_d.png",
+            "ToArea": { "X": 105, "Y": 804, "Width": 13, "Height": 26 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Winter_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_e.png",
+            "ToArea": { "X": 112, "Y": 706, "Width": 16, "Height": 94 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Winter_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_f.png",
+            "ToArea": { "X": 160, "Y": 2386, "Width": 16, "Height": 98 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Winter_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_h.png",
+            "ToArea": { "X": 96, "Y": 2386, "Width": 64, "Height": 160 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Winter_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_i.png",
+            "ToArea": { "X": 192, "Y": 2384, "Width": 64, "Height": 112 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Winter_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_j.png",
+            "ToArea": { "X": 256, "Y": 2386, "Width": 31, "Height": 62 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Winter_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_k.png",
+            "ToArea": { "X": 336, "Y": 1376, "Width": 64, "Height": 126 }
+        },	
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Spring_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Winter_Seasonal_l.png",
+			"When": { "Season |contains=Winter": true },
+            "ToArea": { "X": 129, "Y": 913, "Width": 63, "Height": 47 }
+        },
+		{
+            "Action": "EditImage",
+            "Target": "Maps/Winter_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_m.png",
+            "ToArea": { "X": 0, "Y": 3632, "Width": 304, "Height": 176 }
+        },
+		{
+            "Action": "EditImage",
+            "Target": "Maps/Winter_z_extras",
+            "FromFile": "assets/{{NoNose}}/Maps/Seasonal_n.png",
+            "ToArea": { "X": 304, "Y": 3680, "Width": 96, "Height": 128 }
+        },
+		
+//Cursors
+        {
+            "Action": "EditImage",
+            "Target": "Maps/VanillaCursors",
+            "FromFile": "assets/{{NoNose}}/Maps/Cursors_{{season}}.png",
+            "FromArea": { "X": 0, "Y": 1387, "Width": 114, "Height": 34 },
+            "ToArea": { "X": 0, "Y": 1387, "Width": 114, "Height": 34 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/VanillaCursors",
+            "FromFile": "assets/{{NoNose}}/Maps/Cursors_{{season}}.png",
+            "FromArea": { "X": 105, "Y": 1318, "Width": 13, "Height": 31 },
+            "ToArea": { "X": 105, "Y": 1318, "Width": 13, "Height": 31 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/VanillaCursors",
+            "FromFile": "assets/{{NoNose}}/Maps/Cursors_{{season}}.png",
+            "FromArea": { "X": 390, "Y": 1405, "Width": 36, "Height": 32 },
+            "ToArea": { "X": 390, "Y": 1405, "Width": 36, "Height": 32 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/VanillaCursors",
+            "FromFile": "assets/{{NoNose}}/Maps/Cursors_{{season}}.png",
+            "FromArea": { "X": 558, "Y": 1425, "Width": 60, "Height": 26 },
+            "ToArea": { "X": 558, "Y": 1425, "Width": 60, "Height": 26 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/VanillaCursors",
+            "FromFile": "assets/{{NoNose}}/Maps/Cursors_{{season}}.png",
+            "FromArea": { "X": 533, "Y": 1864, "Width": 19, "Height": 27 },
+            "ToArea": { "X": 533, "Y": 1864, "Width": 19, "Height": 27  }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/VanillaCursors",
+            "FromFile": "assets/{{NoNose}}/Maps/Cursors_{{season}}.png",
+            "FromArea": { "X": 405, "Y": 1854, "Width": 47, "Height": 33 },
+            "ToArea": { "X": 405, "Y": 1854, "Width": 47, "Height": 33 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/VanillaCursors",
+            "FromFile": "assets/{{NoNose}}/Maps/Cursors_{{season}}.png",
+            "FromArea": { "X": 413, "Y": 305, "Width": 253, "Height": 28 },
+            "ToArea": { "X": 413, "Y": 305, "Width": 253, "Height": 28 }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/VanillaCursors",
+            "FromFile": "assets/{{NoNose}}/Maps/Cursors_{{season}}.png",
+            "FromArea": { "X": 387, "Y": 1311, "Width": 11, "Height": 15 },
+            "ToArea": { "X": 387, "Y": 1311, "Width": 11, "Height": 15 }
+        },
+
+
+// Vineyards
+        {
+            "Action": "EditImage",
+            "Target": "maps/AuroraVineyardPicture",
+            "FromFile": "assets/{{NoNose}}/Maps/AuroraVineyardPicture.png"
+        },
+        {
+            "Action": "EditImage",
+            "Target": "maps/StardustFarmPicture",
+            "FromFile": "assets/{{NoNose}}/Maps/StardustFarmPicture.png"
+
+        },
+//add SVE character special order emojis		
+
+
+		{   "LogName": "Icons Special Orders 4",  
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+			"FromFile": "assets/{{NoNose}}/Maps/SpecialOrderEmojis.png",
+			"ToArea": {"X": 0, "Y": 126, "Width": 126, "Height": 9}
+		},
+		
+// Vanilla Changes
+
+		{  "LogName": "Cursors Morris",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"Update": "OnLocationChange",
+			"FromFile": "assets/true/Maps/Cursors_{{season}}.png",
+			"FromArea": { "X": 105, "Y": 1318, "Width": 13, "Height": 31 },
+			"ToArea": { "X": 105, "Y": 1318, "Width": 13, "Height": 31 }},	
+
+       		
+    ]
+}

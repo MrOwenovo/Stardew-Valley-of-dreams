@@ -1,0 +1,492 @@
+{
+    "Shops": [
+		{
+			"ShopName": "JosephShop",
+			"PortraitPath": "assets/Portrait.png",
+			"Quote": "出售传统种子和现代种子，以及古代种子",
+
+
+			"MaxNumItemsSoldInStore": 350,
+				"ItemStocks": [
+		//ALWAYS AVAILABLE SEEDS		
+				{
+					"ItemType": "Object",//Year Round
+					"StockPrice": 125,
+					"ItemNames": ["Cattail Shoot JSS"],
+					"When": [
+						"z winter/SkillLevel farming 3",
+						],
+					"Stock": 10,
+				},
+				{
+					"ItemType": "Object",//Year Round
+					"StockPrice": 1250,
+					"ItemNames": ["Ancient Seeds"],
+					"When": [
+						"z winter/HasCraftingRecipe Ancient-Seeds",
+						],
+					"Stock": 5,
+				},
+				{
+					"ItemType": "Object",//Year Round
+					"StockPrice": 2500,
+					"ItemNames": ["Rare Seed"],
+					"When": [
+						"z winter",
+						],
+					"Stock": 1,
+				},
+		//SPRING SEEDS
+				{
+					"ItemType": "Object",//Spring
+					"StockPrice": 25,
+					"ItemNames": ["Clover Seeds JSS"],
+					"When": [
+						"!z spring/SkillLevel farming 1",
+						],
+					"Stock": 5,
+				},
+				{
+					"ItemType": "Object",//Spring
+					"StockPrice": 150,
+					"ItemNames": ["Rhubarb Seeds"],
+					"When": [
+						"!z spring/SkillLevel farming 3",
+						],
+					"Stock": 5,
+				},
+				{
+					"ItemType": "Object",//Spring
+					"StockPrice": 225,
+					"ItemNames": ["Wild Rice Shoot JSS"],
+					"When": [
+						"!z spring/SkillLevel farming 4",
+						],
+					"Stock": 10,
+				},
+		//SUMMER SEEDS
+				{
+					"ItemType": "Object",//Summer
+					"StockPrice": 500,
+					"ItemNames": ["Starfruit Seeds"],
+					"When": [
+						"!z summer/SkillLevel farming 5",
+						],
+					"Stock": 5,
+				},
+				{
+					"ItemType": "Seed",//Summer
+					"StockPrice": 245,
+					"ItemNames": ["Millet Seeds JSS"],
+					"When": [
+						"!z summer/SkillLevel farming 3",
+						],
+					"Stock": 5,
+				},
+				{
+					"ItemType": "Object",//Summer
+					"StockPrice": 120,
+					"ItemNames": ["Sorghum Seeds JSS"],
+					"When": [
+						"!z summer/SkillLevel farming 6",
+						],
+					"Stock": 5,
+				},
+				{
+					"ItemType": "Object",//Summer
+					"StockPrice": 1150,
+					"ItemNames": ["Vanilla Bean Vine JSS"],
+					"When": [
+						"!z summer/SkillLevel farming 9",
+						],
+					"Stock": 1,
+				},
+				{
+					"ItemType": "Object",//Summer
+					"StockPrice": 235,
+					"ItemNames": ["Salmon Corn Seeds JSS"],
+					"When": [
+						"!z summer",
+						],
+					"Stock": 5,
+				},
+				{
+					"ItemType": "Object",//Summer
+					"StockPrice": 250,
+					"ItemNames": ["Ice Blue Corn Seeds JSS"],
+					"When": [
+						"!z summer/SkillLevel farming 2",
+						],
+					"Stock": 5,
+				},
+				{
+					"ItemType": "Object",//Summer
+					"StockPrice": 260,
+					"ItemNames": ["Twilight Corn Seeds JSS"],
+					"When": [
+						"!z summer/SkillLevel farming 4",
+						],
+					"Stock": 5,
+				},
+		//FALL SEEDS
+				{
+					"ItemType": "Object",//Fall
+					"StockPrice": 95,
+					"ItemNames": ["Amaranth Seeds"],
+					"When": [
+						"!z fall",
+						],
+					"Stock": 5,
+				},
+				{
+					"ItemType": "Object",//Fall
+					"StockPrice": 50,
+					"ItemNames": ["Rye Seeds JSS"],
+					"When": [
+						"!z fall/SkillLevel farming 3",
+						],
+					"Stock": 5,
+				},
+				{	
+					"ItemType": "Object",//Fall
+					"StockPrice": 45,
+					"ItemNames": ["Oat Seeds JSS"],
+					"When": [
+						"!z fall/SkillLevel farming 4",
+						],
+					"Stock": 5,
+				},
+				{	
+					"ItemType": "Object",//Fall
+					"StockPrice": 140,
+					"ItemNames": ["Acorn Squash Seeds JSS"],
+					"When": [
+						"!z fall/SkillLevel farming 5",
+						],
+					"Stock": 5,
+				},
+				{
+					"ItemType": "Object",//Fall
+					"StockPrice": 110,
+					"ItemNames": ["Butternut Squash Seeds JSS"],
+					"When": [
+						"!z fall/SkillLevel farming 6",
+						],
+					"Stock": 5,
+				},
+				{	
+					"ItemType": "Object",//Fall
+					"StockPrice": 160,
+					"ItemNames": ["Spaghetti Squash Seeds JSS"],
+					"When": [
+						"!z fall/SkillLevel farming 7",
+						],
+					"Stock": 5,
+				},
+				{	
+					"ItemType": "Object",//Fall
+					"StockPrice": 270,
+					"ItemNames": ["Blood Red Corn Seeds JSS"],
+					"When": [
+						"!z fall/SkillLevel farming 6",
+						],
+					"Stock": 5,
+				},
+				{	
+					"ItemType": "Object",//Fall
+					"StockPrice": 280,
+					"ItemNames": ["Rainbow Corn Seeds JSS"],
+					"When": [
+						"!z fall/SkillLevel farming 8",
+						],
+					"Stock": 5,
+				},
+				{	
+					"ItemType": "Object",//Fall
+					"StockPrice": 575,
+					"ItemNames": ["Stardrop Corn Seeds JSS"],
+					"When": [
+						"!z fall/SkillLevel farming 10",
+						],
+					"Stock": 1,
+				},
+		//SPRING FORAGE
+				{
+					"ItemType": "Object",//Spring Forage
+					"StockPrice": 275,
+					"Quality": 4,
+					"ItemNames": ["Clover JSS"],
+					"When": ["!z spring"],
+					"Stock": 3,
+				},
+				{
+					"ItemType": "Object",//Spring Forage
+					"StockPrice": 75,
+					"Quality": 4,
+					"ItemNames": ["Salmonberry"],
+					"When": ["!z spring"],
+					"Stock": 3,
+				},
+				{
+					"ItemType": "Object",//Spring Forage
+					"StockPrice": 175,
+					"Quality": 4,
+					"ItemNames": ["Dandelion"],
+					"When": ["!z spring"],
+					"Stock": 3,
+				},
+				{
+					"ItemType": "Object",//Spring Forage
+					"StockPrice": 500,
+					"Quality": 4,
+					"ItemNames": ["Rhubarb"],
+					"When": ["!z spring"],
+					"Stock": 3,
+				},
+		//SUMMER FORAGE
+				{
+					"ItemType": "Object",//Summer Forage
+					"StockPrice": 275,
+					"Quality": 4,
+					"ItemNames": ["Fiddlehead Fern"],
+					"When": ["!z summer"],
+					"Stock": 3,
+				},
+				{
+					"ItemType": "Object",//Summer Forage
+					"StockPrice": 225,
+					"Quality": 4,
+					"ItemNames": ["Grape"],
+					"When": ["!z summer"],
+					"Stock": 3,
+				},
+				{
+					"ItemType": "Object",//Summer Forage
+					"StockPrice": 450,
+					"Quality": 4,
+					"ItemNames": ["Morel"],
+					"When": ["!z summer"],
+					"Stock": 3,
+				},
+		//FALL FORAGE
+				{
+					"ItemType": "Object",//Fall Forage
+					"StockPrice": 150,
+					"Quality": 4,
+					"ItemNames": ["Blackberry"],
+					"When": ["!z fall"],
+					"Stock": 3,
+				},
+				{
+					"ItemType": "Object",//Fall Forage
+					"StockPrice": 150,
+					"ItemNames": ["Acorn"],
+					"When": ["!z fall"],
+					"Stock": 5,
+				},
+				{
+					"ItemType": "Object",//Fall Forage
+					"StockPrice": 150,
+					"ItemNames": ["Pine Cone"],
+					"When": ["!z fall"],
+					"Stock": 5,
+				},
+		// SPRING RECIPES
+				{
+					"ItemType": "Object",//Spring Recipe
+					"IsRecipe": true,
+					"StockPrice": 1500,
+					"ItemNames": ["Acorn Bread"],
+					"When": ["!z spring"],
+				},
+				{
+					"ItemType": "Object",//Spring Recipe
+					"IsRecipe": true,
+					"StockPrice": 3500,
+					"ItemNames": ["Deep Fried Cattails"],
+					"When": ["!z spring"],
+				},
+				{
+					"ItemType": "Object",//Spring Recipe
+					"IsRecipe": true,
+					"StockPrice": 2100,
+					"ItemNames": ["Wild Rice Cakes"],
+					"When": ["!z spring"],
+				},
+		// SUMMER RECIPES
+				{
+					"ItemType": "Object",//Summer Recipe
+					"IsRecipe": true,
+					"StockPrice": 3600,
+					"ItemNames": ["Wild Rice Soup"],
+					"When": ["!z summer/HasMod DIGUS.ANIMALHUSBANDRYMOD"],
+				},
+				{
+					"ItemType": "Object",//Summer Recipe
+					"IsRecipe": true,
+					"StockPrice": 3600,
+					"ItemNames": ["Veggie Wild Rice Soup"],
+					"When": ["!z summer/!HasMod DIGUS.ANIMALHUSBANDRYMOD"],
+				},
+				{
+					"ItemType": "Object",//Summer Recipe
+					"IsRecipe": true,
+					"StockPrice": 2375,
+					"ItemNames": ["Toasted Pine Nuts"],
+					"When": ["!z summer"],
+				},
+				{
+					"ItemType": "Object",//Summer Recipe
+					"IsRecipe": true,
+					"StockPrice": 6500,
+					"ItemNames": ["Fry Bannock"],
+					"When": ["!z summer"],
+				},
+		// FALL RECIPES
+				{
+					"ItemType": "Object",//Fall Recipe
+					"IsRecipe": true,
+					"StockPrice": 8500,
+					"ItemNames": ["Bannock and Bacon"],
+					"When": ["!z fall/HasMod DIGUS.ANIMALHUSBANDRYMOD"],
+				},
+				{
+					"ItemType": "Object",//Fall Recipe
+					"IsRecipe": true,
+					"StockPrice": 8500,
+					"ItemNames": ["Bannock and Bok Choy"],
+					"When": ["!z fall/!HasMod DIGUS.ANIMALHUSBANDRYMOD"],
+				},
+				{
+					"ItemType": "Object",//Fall Recipe
+					"IsRecipe": true,
+					"StockPrice": 4600,
+					"ItemNames": ["Hearty Maple Oatmeal"],
+					"When": ["!z fall"],
+				},
+				{
+					"ItemType": "Object",//Fall Recipe
+					"IsRecipe": true,
+					"StockPrice": 7500,
+					"ItemNames": ["Three Sisters Soup"],
+					"When": ["!z fall"],
+				},
+		// ACORN SQUASH RECIPES
+				{
+					"ItemType": "Object",//Acorn Squash Recipe
+					"IsRecipe": true,
+					"StockPrice": 6500,
+					"ItemNames": ["Apple Stuffed Squash"],
+					"When": [
+						"SkillLevel farming 6/HasMod DIGUS.ANIMALHUSBANDRYMOD"
+						],
+				},
+				{
+					"ItemType": "Object",//Acorn Squash Recipe
+					"IsRecipe": true,
+					"StockPrice": 6500,
+					"ItemNames": ["Cran-Apple Squash"],
+					"When": [
+						"SkillLevel farming 6/!HasMod DIGUS.ANIMALHUSBANDRYMOD"
+						],
+				},
+				{
+					"ItemType": "Object",//Acorn Squash Recipe
+					"IsRecipe": true,
+					"StockPrice": 8600,
+					"ItemNames": ["Fall Harvest Salad"],
+					"When": [
+						"SkillLevel farming 7"
+						],
+				},
+				{
+					"ItemType": "Object",//Acorn Squash Recipe
+					"IsRecipe": true,
+					"StockPrice": 2600,
+					"ItemNames": ["Maple Roasted Squash"],
+					"When": [
+						"SkillLevel foraging 3"
+						],
+				},
+				{
+					"ItemType": "Object",//Acorn Squash Recipe
+					"IsRecipe": true,
+					"StockPrice": 7500,
+					"ItemNames": ["Wild Rice Squash"],
+					"When": [
+						"SkillLevel mining 6"
+						],
+				},
+		// BUTTERNUT SQUASH RECIPES
+				{
+					"ItemType": "Object",//Butternut Squash Recipe
+					"IsRecipe": true,
+					"StockPrice": 4500,
+					"ItemNames": ["Cauli-Butternut Soup"],
+					"When": [
+						"SkillLevel farming 7 foraging 3"
+						],
+				},
+				{
+					"ItemType": "Object",//Butternut Squash Recipe
+					"IsRecipe": true,
+					"StockPrice": 5500,
+					"ItemNames": ["Hazelnut Squash Soup"],
+					"When": [
+						"SkillLevel farming 7 mining 5"
+						],
+				},
+		// SPAGHETTI SQUASH RECIPES
+				{
+					"ItemType": "Object",//Spaghetti Squash Recipe
+					"IsRecipe": true,
+					"StockPrice": 10500,
+					"ItemNames": ["Artichoke Squash"],
+					"When": [
+						"SkillLevel combat 8 mining 7/HasMod DIGUS.ANIMALHUSBANDRYMOD"
+						],
+				},
+				{
+					"ItemType": "Object",//Spaghetti Squash Recipe
+					"IsRecipe": true,
+					"StockPrice": 10500,
+					"ItemNames": ["Goat Cheese Squash"],
+					"When": [
+						"SkillLevel combat 8 mining 7/!HasMod DIGUS.ANIMALHUSBANDRYMOD"
+						],
+				},
+				{
+					"ItemType": "Object",//Spaghetti Squash Recipe
+					"IsRecipe": true,
+					"StockPrice": 9500,
+					"ItemNames": ["Pesto Shrimp Squash"],
+					"When": [
+						"SkillLevel fishing 6/HasMod DIGUS.ANIMALHUSBANDRYMOD"
+						],
+				},
+				{
+					"ItemType": "Object",//Spaghetti Squash Recipe
+					"IsRecipe": true,
+					"StockPrice": 12500,
+					"ItemNames": ["Beef Lasagna Squash"],
+					"When": [
+						"SkillLevel combat 9 mining 8/HasMod DIGUS.ANIMALHUSBANDRYMOD"
+						],
+				},
+				{
+					"ItemType": "Object",//Spaghetti Squash Recipe
+					"IsRecipe": true,
+					"StockPrice": 12500,
+					"ItemNames": ["Veggie Lasagna Squash"],
+					"When": [
+						"SkillLevel combat 9 mining 8/!HasMod DIGUS.ANIMALHUSBANDRYMOD"
+						],
+				},
+
+				],
+			"MaxNumItemsSoldInItemStock": 100,
+			"When": ["t 900 1800/z winter"],
+			"ClosedMessage": "Joseph's Seed Shop is open from 9AM to 6PM."
+		},
+	],
+}	

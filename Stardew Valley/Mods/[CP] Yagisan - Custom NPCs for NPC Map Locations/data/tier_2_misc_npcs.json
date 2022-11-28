@@ -1,0 +1,106 @@
+{
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "Changes": [
+        // Custom NPC - Riley - https://www.nexusmods.com/stardewvalley/mods/5811
+        {
+            "LogName": "[Yagi] Riley - Sprite Offsets",
+            "Action": "EditData",
+            "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+            "When": {
+                "HasMod: |contains=SG.Riley": true
+            },
+            "Entries": {
+                "Riley": {
+                    "MarkerCropOffset": 0
+                },
+            }
+        },
+        // College Boy Mike - Custom NPC - https://www.nexusmods.com/stardewvalley/mods/6288
+        {
+            "LogName": "[Yagi] Mike - Sprite Offsets",
+            "Action": "EditData",
+            "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+            "When": {
+                "HasMod: |contains=SYS.mike": true
+            },
+            "Entries": {
+                "Mike": {
+                    "MarkerCropOffset": -1
+                },
+            }
+        },
+        // Blanche - The librarian Custom NPC - https://blog.naver.com/blythe0kim/222121642257
+        {
+            "LogName": "[Yagi] Blanche - Sprite Offsets",
+            "Action": "EditData",
+            "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+            "When": {
+                "HasMod: |contains=MIDI.Blanche": true
+            },
+            "Entries": {
+                "Blanche": {
+                    "MarkerCropOffset": 2
+                },
+            }
+        },
+        // Shiko - New Custom NPC - https://www.nexusmods.com/stardewvalley/mods/3732
+        {
+            "LogName": "[Yagi] Shiko - Sprite Offsets",
+            "Action": "EditData",
+            "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+            "When": {
+                "HasMod: |contains=Papaya.ShikoTakahashi": true
+            },
+            "Entries": {
+                "Shiko": {
+                    "MarkerCropOffset": 1
+                },
+            }
+        },
+        // Ayeisha - The Postal Worker (Custom NPC) - https://www.nexusmods.com/stardewvalley/mods/6427
+        {
+            "LogName": "[Yagi] Ayeisha - Sprite Offsets",
+            "Action": "EditData",
+            "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+            "When": {
+                "HasMod: |contains=TheLimeyDragon.Ayeisha": true
+            },
+            "Entries": {
+                "Ayeisha": {
+                    "MarkerCropOffset": 1
+                },
+            }
+        },
+        // Lucikiel - New Custom NPC (King's Raid) - https://www.nexusmods.com/stardewvalley/mods/6307
+        {
+            "LogName": "[Yagi] Lucikiel - Sprite Offsets",
+            "Action": "EditData",
+            "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+            "When": {
+                "HasMod: |contains=Arknir.Lucikiel": true
+            },
+            "Entries": {
+                "Lucikiel": {
+                    "MarkerCropOffset": 1
+                },
+            }
+        },
+        // Lavril - East Scarp NPC (King's Raid) - https://www.nexusmods.com/stardewvalley/mods/10016
+        {
+            "LogName": "[Yagi] Lavril - Sprite Offsets",
+            "Action": "EditData",
+            "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+            "When": {
+                "HasMod: |contains=Arknir27.Lavril": true
+            },
+            "Entries": {
+                "Lavril": {
+                    "MarkerCropOffset": 8
+                },
+                "Void": {
+                    "MarkerCropOffset": 16
+                },
+            }
+        },
+    ]
+}

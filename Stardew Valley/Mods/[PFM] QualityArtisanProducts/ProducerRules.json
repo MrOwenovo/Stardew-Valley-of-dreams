@@ -1,0 +1,289 @@
+[
+	{ //Beer
+		"ProducerName": "Keg",
+		"InputIdentifier": "262",
+		"MinutesUntilReady": 1750,
+		"OutputIdentifier": "346",
+		"Sounds": ["Ship", "bubbles"],
+		"PlacingAnimation": "Bubbles",
+		"KeepInputQuality": true,
+		"PlacingAnimationColorName": "Yellow"
+	},
+	{ //Pale Ale
+		"ProducerName": "Keg",
+		"InputIdentifier": "304",
+		"MinutesUntilReady": 2250,
+		"OutputIdentifier": "303",
+		"Sounds": ["Ship", "bubbles"],
+		"PlacingAnimation": "Bubbles",
+		"KeepInputQuality": true,
+		"PlacingAnimationColorName": "Yellow"
+	},
+	{ //Mead
+		"ProducerName": "Keg",
+		"InputIdentifier": "340",
+		"MinutesUntilReady": 600,
+		"OutputIdentifier": "459",
+		"Sounds": ["Ship", "bubbles"],
+		"PlacingAnimation": "Bubbles",
+		"KeepInputQuality": true,
+		"OutputName": "{inputName} Mead",
+		"InputPriceBased": true,
+		"KeepInputParentIndex": true,
+		"OutputGenericParentName": "Wild",
+		"OutputPriceMultiplier": 2,
+		"PlacingAnimationColorName": "Yellow"
+	},
+	{ //Aged Roe
+        "ProducerName": "Preserves Jar",
+        "InputIdentifier": "812",
+        "MinutesUntilReady": 4000,
+        "OutputIdentifier": "447",
+        "PreserveType": "AgedRoe",
+        "KeepInputParentIndex": true,
+        "InputPriceBased": true,
+		"KeepInputQuality": true,
+        "OutputPriceMultiplier": 2,
+        "OutputColorConfig": {
+            "Type": "ObjectColor"
+        },
+        "AdditionalOutputs": [
+            {
+                "OutputProbability": 1,
+                "OutputIdentifier": "445",
+                "MinutesUntilReady": 6000,
+                "RequiredInputParentIdentifier": [ "698" ]
+            }
+        ],
+        "Sounds": [ "Ship" ],
+        "PlacingAnimation": "Bubbles",
+        "PlacingAnimationColorName": "LightBlue"
+    },
+	{ //Coffee
+		"ProducerName": "Keg",
+		"InputIdentifier": "433",
+		"InputStack": 5,
+		"MinutesUntilReady": 120,
+		"OutputIdentifier": "395",
+		"Sounds": ["Ship", "bubbles"],
+		"PlacingAnimation": "Bubbles",
+		"KeepInputQuality": true,
+		"PlacingAnimationColorName": "DarkGray"
+	},
+	{ //Green Tea
+		"ProducerName": "Keg",
+		"InputIdentifier": "815",
+		"MinutesUntilReady": 180,
+		"OutputIdentifier": "614",
+		"Sounds": ["Ship", "bubbles"],
+		"KeepInputQuality": true,
+		"PlacingAnimation": "Bubbles",
+		"PlacingAnimationColorName": "Lime"
+	},
+	{ //Wine
+		"ProducerName": "Keg",
+		"InputIdentifier": "-79",
+		"MinutesUntilReady": 10000,
+		"OutputIdentifier": "348",
+		"PreserveType": "Wine",
+		"InputPriceBased": true,
+		"OutputPriceMultiplier": 3,
+		"Sounds": ["Ship", "bubbles"],
+		"PlacingAnimation": "Bubbles",
+		"KeepInputQuality": true,
+		"PlacingAnimationColorName": "Lavender"
+	},
+	{ //Juice
+		"ProducerName": "Keg",
+		"InputIdentifier": "-75",
+		"MinutesUntilReady": 6000,
+		"OutputIdentifier": "350",
+		"PreserveType": "Juice",
+		"InputPriceBased": true,
+		"OutputPriceMultiplier": 2.25,
+		"Sounds": ["Ship", "bubbles"],
+	"KeepInputQuality": true,
+		"PlacingAnimation": "Bubbles",
+		"PlacingAnimationColorName": "White"
+	},
+	{ //Jelly
+		"ProducerName": "Preserves Jar",
+		"InputIdentifier": "-79",
+		"MinutesUntilReady": 4000,
+		"OutputIdentifier": "344",
+		"PreserveType": "Jelly",
+		"InputPriceBased": true,
+		"OutputPriceIncrement": 50,
+		"OutputPriceMultiplier": 2,
+		"Sounds": ["Ship"],
+	"KeepInputQuality": true,
+		"PlacingAnimation": "Bubbles",
+		"PlacingAnimationColorName": "LightBlue"
+	},
+	{ //Pickle
+		"ProducerName": "Preserves Jar",
+		"InputIdentifier": "-75",
+		"MinutesUntilReady": 4000,
+		"OutputIdentifier": "342",
+		"PreserveType": "Pickle",
+		"InputPriceBased": true,
+		"OutputPriceIncrement": 50,
+		"OutputPriceMultiplier": 2,
+	"KeepInputQuality": true,
+		"Sounds": ["Ship"],
+		"PlacingAnimation": "Bubbles"
+	},
+	//Roe and Aged Roe are not currently supported.
+	{ //Cheese
+		"ProducerName": "Cheese Press",
+		"InputIdentifier": "184",
+		"MinutesUntilReady": 200,
+		"OutputIdentifier": "424",
+		"KeepInputQuality": true,
+		"Sounds": ["Ship"]
+	},
+	{ //Gold Cheese
+		"ProducerName": "Cheese Press",
+		"InputIdentifier": "186",
+		"MinutesUntilReady": 200,
+		"OutputIdentifier": "424",
+		"OutputStack": 2,
+		"KeepInputQuality": true,
+		"Sounds": ["Ship"]
+	},
+	{ //Goat Cheese
+		"ProducerName": "Cheese Press",
+		"InputIdentifier": "436",
+		"MinutesUntilReady": 200,
+		"OutputIdentifier": "426",
+		"KeepInputQuality": true,
+		"Sounds": ["Ship"]
+	},
+	{ //Gold Goat Cheese
+		"ProducerName": "Cheese Press",
+		"InputIdentifier": "438",
+		"MinutesUntilReady": 200,
+		"OutputIdentifier": "426",
+		"OutputStack": 2,
+	"KeepInputQuality": true,
+		"Sounds": ["Ship"]
+	},
+	{ //Dinosaur Mayonnaise
+		"ProducerName": "Mayonnaise Machine",
+		"InputIdentifier": "107",
+		"MinutesUntilReady": 180,
+		"OutputIdentifier": "807",
+			"KeepInputQuality": true,
+		"Sounds": ["Ship"]
+	},
+	{ //Gold Mayonnaise
+		"ProducerName": "Mayonnaise Machine",
+		"InputIdentifier": "large_egg_item",
+		"MinutesUntilReady": 180,
+		"OutputIdentifier": "306",
+			"KeepInputQuality": true,
+		"OutputStack": 2,
+		"Sounds": ["Ship"]
+	},
+	{ 
+	"ProducerName": "Mayonnaise Machine",
+	"InputIdentifier": "289",
+	"MinutesUntilReady": 180,
+	"OutputIdentifier": "306",
+	"KeepInputQuality": true,
+	"OutputStack": 10,
+	"Sounds": ["Ship"],
+},
+{ 
+	"ProducerName": "Mayonnaise Machine",
+	"InputIdentifier": "928",
+	"MinutesUntilReady": 180,
+	"OutputIdentifier": "306",
+	"KeepInputQuality": true,
+	"OutputStack": 3,
+	"Sounds": ["Ship"],
+	},
+	{ //Mayonnaise
+		"ProducerName": "Mayonnaise Machine",
+		"InputIdentifier": "176",
+		"MinutesUntilReady": 180,
+		"OutputIdentifier": "306",
+			"KeepInputQuality": true,
+		"Sounds": ["Ship"]
+	},
+	{ //Mayonnaise
+		"ProducerName": "Mayonnaise Machine",
+		"InputIdentifier": "180",
+		"MinutesUntilReady": 180,
+		"OutputIdentifier": "306",
+			"KeepInputQuality": true,
+		"Sounds": ["Ship"]
+	},
+	{ //Void Mayonnaise
+		"ProducerName": "Mayonnaise Machine",
+		"InputIdentifier": "305",
+		"MinutesUntilReady": 180,
+		"OutputIdentifier": "308",
+			"KeepInputQuality": true,
+		"Sounds": ["Ship"]
+	},
+	{ //Duck Mayonnaise
+		"ProducerName": "Mayonnaise Machine",
+		"InputIdentifier": "442",
+		"MinutesUntilReady": 180,
+		"OutputIdentifier": "307",
+			"KeepInputQuality": true,
+		"Sounds": ["Ship"]
+	},
+	{ //Cloth
+		"ProducerName": "Loom",
+		"InputIdentifier": "440",
+		"MinutesUntilReady": 240,
+		"OutputIdentifier": "428",
+		"SilverQualityInput": { 
+			"Probability": 0.1, 
+			"OutputStack": 2
+		},		
+		"GoldQualityInput": { 
+			"Probability": 0.25,
+			"OutputStack": 2
+		},		
+		"IridiumQualityInput": { 
+			"Probability": 0.5, 
+			"OutputStack": 2
+		},
+			"KeepInputQuality": true,
+		"Sounds": ["Ship"]
+	},
+	{ //Corn Oil
+		"ProducerName": "Oil Maker",
+		"InputIdentifier": "270",
+		"MinutesUntilReady": 1000,
+		"OutputIdentifier": "247",
+		"Sounds": ["bubbles","sipTea"],
+		"PlacingAnimation": "Bubbles",
+	"KeepInputQuality": true,
+		"PlacingAnimationColorName": "Yellow"
+	},
+	{ //Sunflower Oil
+		"ProducerName": "Oil Maker",
+		"InputIdentifier": "421",
+		"MinutesUntilReady": 60,
+		"OutputIdentifier": "247",
+		"Sounds": ["bubbles","sipTea"],
+			"KeepInputQuality": true,
+		"PlacingAnimation": "Bubbles",
+		"PlacingAnimationColorName": "Yellow"
+	},
+	{ //Truffle Oil
+		"ProducerName": "Oil Maker",
+		"InputIdentifier": "430",
+		"MinutesUntilReady": 360,
+		"OutputIdentifier": "432",
+		"Sounds": ["bubbles","sipTea"],
+		"PlacingAnimation": "Bubbles",
+			"KeepInputQuality": true,
+		"PlacingAnimationColorName": "Yellow"
+	},
+
+]

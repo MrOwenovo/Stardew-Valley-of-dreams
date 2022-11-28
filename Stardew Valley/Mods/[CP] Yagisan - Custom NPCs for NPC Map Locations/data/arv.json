@@ -1,0 +1,25 @@
+{
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "Changes": [
+        // Always Raining in the Valley - Custom NPCs for ES - https://www.nexusmods.com/stardewvalley/mods/9999
+        {
+            "LogName": "[Yagi] Always Raining in the Valley - Sprite Offsets",
+            "Action": "EditData",
+            "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+            "When": {
+                "HasMod: |contains=Himetarts.ARV.CP": true
+            },
+            "Entries": {
+                "Sterling": {
+                    "MarkerCropOffset": -2
+                },
+                "Mia": {
+                    "MarkerCropOffset": 2
+                },
+                "Henry": {
+                    "MarkerCropOffset": -2
+                },
+            },
+        }
+    ]
+}

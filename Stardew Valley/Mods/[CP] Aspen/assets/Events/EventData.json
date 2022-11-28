@@ -1,0 +1,98 @@
+{
+    "Changes": [
+        //Aspen events ------------------------------------------------------------------------------
+        //Loading blank jsons to modify
+        {
+            "Action": "Load",
+            "Target": "Data/Events/Custom_AspenFarm",
+            "FromFile": "assets/Events/Custom_AspenFarm.json",
+        },
+	
+        {
+            "Action": "Load",
+            "Target": "Data/Events/Custom_AspenHouse",
+            "FromFile": "assets/Events/Custom_AspenHouse.json",
+        },
+    
+        //Aspen 1 Heart Event (not required to see other events, gain 25 friendship if watch to the end)
+        //Condition: Be in the Forest map with Aspen in Spring, Year 1, at least 1 heart
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Forest",
+            "Entries": {
+                "98590001/f Aspen 250/p Aspen/z fall summer winter/y 1": "spring_day_ambient/-100 -100/farmer 96 24 3 Aspen 93 20 1/skippable/addConversationTopic aspenFirstEventText 4/viewport 93 20 true/animate Aspen false true 200 17 17 17 18 19 18/pause 500/playSound cow/move farmer -4 0 0 false/move farmer 0 -4 1 true/pause 1200/speak Aspen \"嘿, @!$1\"/pause 500/speak Aspen \"真没想到在这儿见到你。我想出来看看这些动物。$0\"/pause 600/speak Aspen \"早上坐在格斯的酒馆里很无聊，每个人都很忙……我真的等不及要回我的农场了。$2#$b#让我恼火的是，乔佳花了很长时间来清理他们制造的烂摊子。就好像他们根本不在乎我们中的一些人不能回家一样!$3#$b#我知道我是唯一住在那里的村民之一……但你会认为他们还是会更体贴一些..$2\"/pause 800/speak Aspen \"*叹息* 我相信他们很快就会搞定的，对吧?$2\"/pause 600/emote Aspen 40/pause 600/speak Aspen \"我通常不会这样沮丧，我绝对不是有意把你牵扯进来的，所以我很抱歉!$7#$b#但是…谢谢你听我发泄， @.$7\"/pause 600/playSound SpringBirds/pause 600/speak Aspen \"介意我单独待会吗， @?$7\"/pause 1000/fade/viewport -1000 -1000/friendship Aspen 25/end position 92 20"
+            }
+        },
+        
+        //Aspen 1 Heart Event (not required to see other events, tells player she's going back to farm)
+        //Condition: Leave your farmhouse between 6-9:30 AM on Summer 3rd, Year 1, at least 1 heart
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries": {
+                "98590002/f Aspen 250/t 600 930/z spring fall winter/u 3/y 1": "continue/-100 -100/farmer 64 16 2 Aspen 64 18 0/viewport 64 15 true/pause 1500/playSound SpringBirds/speak Aspen \"早上好！, @!$1\"/pause 400/speak Aspen \"我是来告诉你我要回农场了，所以我不会再在酒吧了。$0#$b#别忘了，我住在铁路西边!$0\"/pause 200/emote Aspen 32/pause 200/speak Aspen \"今天早上我听说乔佳终于把他们在铁路旁的烂摊子收拾好了，所以我想我应该告诉你!$1\"/pause 400/speak Aspen \"不管怎样，我想我该走了!再见， @.$0\"/pause 400/move Aspen 0 2 2 false/move Aspen 5 0 1 true/fade/viewport -1000 -1000/end"
+            },
+            "When": {
+                "Hearts:Aspen": "1"
+            }
+        },	
+        
+        //Aspen 2 Heart Event (not required to see other events, tells player she's going back to farm and shows interest in player)
+        //Condition: Leave your farmhouse between 6-9:30 AM on Summer 3rd, Year 1, at least 2 hearts
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries": {
+                "98590003/f Aspen 500/t 600 930/z spring fall winter/u 3/y 1/k 98590002": "continue/-100 -100/farmer 64 16 2 Aspen 64 18 0/viewport 64 15 true/pause 1500/playSound SpringBirds/speak Aspen \"早上好, @!$1\"/pause 400/speak Aspen \"我是来告诉你我要回农场了，所以我不会再在酒吧了。$0#$b#别忘了，我住在铁路西边!$0\"/pause 200/emote Aspen 32/pause 200/speak Aspen \"今天早上我听说乔佳终于把他们在铁路旁的烂摊子收拾好了，所以我想我应该告诉你!$1#$b#我住在城里的时候，真想多了解你一些，现在我还会经常到这儿来..$4\"/pause 800/shake Aspen 800/pause 500/playSound SpringBirds/speak Aspen \"但如果你能时不时来我农场看看我，我会很感激的!$8\"/pause 400/speak Aspen \"不管怎样，我想我该走了!再见， @.$6\"/pause 400/move Aspen 0 2 2 false/move Aspen 5 0 1 true/fade/viewport -1000 -1000/end"
+            },
+            "When": {
+                "Hearts:Aspen": "{{Range: 2, 14}}"
+            }
+        },
+        
+        //Aspen 1 heart event, last week before she moves back
+        //Condition: Be in the Saloon with Aspen after 23 days, at least 1 heart
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Saloon",
+            "Entries": {
+                "98590007/f Aspen 250/p Aspen/z summer fall winter/y 1": "playful/-100 -100/farmer 14 23 0 Aspen 25 18 0/addConversationTopic aspenSaloonEventText 1/viewport 25 19 true/move farmer 0 -2 1/move farmer 9 0 0/move farmer 2 0 0 true/emote Aspen 32/shake Aspen 5000/pause 600/speak Aspen \"莉亚把这座雕像做得很好...$1\"/faceDirection Aspen 2/emote Aspen 16/jump Aspen 8/pause 300/speak Aspen \"嘿，这里, @!$5#$b#你让我有点惊讶!我没听见你进来。$8#$b#你觉得这个雕像怎么样?Leah花了很多时间在上面，我觉得它很完美!$1\"/question fork1 \"#它看起来很棒!#它看起来不像熊...\"/fork uglyBear/shake Aspen 2000/emote Aspen 32/pause 200/speak Aspen \"我真的不知道该如何表达我对格斯的感谢，但酒吧感觉少了什么!所以，我猜就是这样了!$1#$b#Leah过去几周一直在做这个，她工作的速度真让人印象深刻!$9#$b#我都快羡慕她了，哈哈!$5#$b#我想格斯喜欢它!至少比我想象的要多。$1#$b#你永远不知道当你把大熊雕像带到他们的店里时，他们会作何反应!$1#$b#不管怎样，我不想耽误你太久。我相信你有很多事情要做!回头见，@.$0\"/fade/viewport -1000 -1000/end",
+                "uglyBear": "pause 100/playMusic none/speak Aspen \"你可以撒个谎，说它看起来不错...$7#$b#但我明白，不可能每个人都喜欢。我不想麻烦你，所以我不打扰你了。再见, @.$7\"/fade/viewport -1000 -1000/end",
+            },
+            "When": {
+                "DaysPlayed |contains={{Range:23, 30}}": "true"
+            }
+        },
+        
+        //Adds in bee for temp actor
+        {
+            "Action": "Load",
+            "Target": "Characters/Bee",
+            "FromFile": "assets/Characters/Bee.png"
+        },
+        
+        //Aspen Heart Event (not required to see other events)
+        //Condition: Visit Aspen's farm while she's there in the Summer Year 1
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/AspenFarm",
+            "Entries": {
+                "98590008/p Aspen/z spring fall winter/y 1": "continue/-100 -100/farmer 38 18 0 Aspen 42 11 1/addConversationTopic aspenIsHomeText 2/addTemporaryActor Bee 16 32 43 11 3/animate Bee false true 150 0 1 2 3/viewport 43 11 true/playSound summer_day_ambient/move farmer 0 -2 0/pause 200/emote farmer 8/pause 50/speak Aspen \"嘿，小家伙!你想我吗?!$1\"/pause 100/emote Aspen 20/speak Aspen \"你们不用再担心了!$1#$b#大坏蛋乔哈收拾了他们的烂摊子，我不知道他们怎么能再把事情搞得这么糟，所以你跟我在一起!$9\"/emote Aspen 32/pause 200/speak Aspen \"我要准备回镇上见大家了，所以明天见你们这些小家伙!$1\"/move Aspen -4 0 0/move Aspen 0 1 2/emote Aspen 16/shake Aspen 800/jump Aspen 8/speak Aspen \"我没看到你在那 @!$5#$b#你吓到我了，你应该早点说的!$4\"/move Aspen 0 2 2/speak Aspen \"希望你不会觉得我和我的蜜蜂说话太奇怪!我想当我这样做的时候，他们真的很感激!$8\"/speak Aspen \"其实我正要回城里，所以，抱歉让你白跑一趟!$0\"/move Aspen 0 1 2/move farmer 1 0 3/move Aspen 0 3 0/speak Aspen \"谢谢你能过来 @!$5\"/pause 200/move Aspen 0 6 2/friendship Aspen 50/fade/viewport -1000 -1000/end"
+            },
+        },
+        
+        //Aspen 0 Heart Event (not required to see other events)
+        //Condition: Visit Aspen's house after 9 PM
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Custom_AspenHouse",
+            "Entries": {
+                "98590010/p Aspen/t 2100 2600": "sweet/-100 -100/Aspen 18 17 3 farmer 31 2 0/viewport 13 17 true/move Aspen -8 0 3/warp farmer 13 19 0/playSound doorOpen/pause 80/move farmer 0 -1 0 continue/emote Aspen 8/shake Aspen 800/speak Aspen \"...你好?$2\"/move farmer 0 -1 3/faceDirection Aspen 1/speak Aspen \"哦，谢天谢地只有你 @!$7#$b#你知道吗，你不能这么晚就闯进别人家!$3\"/question fork1 \"#我只是想打个招呼!#对不起，门没锁...\"/fork unlocked/speak Aspen \"不可能等到早上', @?$7#$b#我敢肯定没那么重要!不管是什么，绝对可以等到明天!$7#$b#好吧，既然你大老远跑到这儿来了，我就不把你赶出去了，但从现在起我一定记得锁门!$8\"/fade/viewport -1000 -1000/end",
+                "unlocked": "speak Aspen \"Uh-$7#$b#Well..$7#$b#那是个意外， @! 每个人都知道你应该在晚上9点左右锁门!$6#$b#好吧，我不会把你赶出去的，因为你走了这么远。但是从现在起我不会忘记锁门的!$5#$b#我想我很高兴是你而不是其他怪人!$1\"/fade/viewport -1000 -1000/end",
+            },
+        },
+        
+        //Aspen mandatory events ------------------------------------------------------------------------------
+
+    ]
+}

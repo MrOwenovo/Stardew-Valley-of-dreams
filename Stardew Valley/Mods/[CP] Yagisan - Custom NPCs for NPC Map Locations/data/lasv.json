@@ -1,0 +1,121 @@
+{
+	"$schema": "https://smapi.io/schemas/content-patcher.json",
+	"Changes": [
+		// Lunna - Astray in Stardew Valley - https://www.nexusmods.com/stardewvalley/mods/6626
+		{
+			"LogName": "[Yagi] Lunna Astray in Stardew Valley - Sprite Offsets",
+			"Action": "EditData",
+			"Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+			"When": {
+				"HasMod: |contains=Rafseazz.LunnaCP": true
+			},
+			"Entries": {
+				"Antiunn": {
+					"MarkerCropOffset": 10
+				},
+				"Bellia": {
+					"MarkerCropOffset": 13
+				},
+				"Bianka": {
+					"MarkerCropOffset": 5
+				},
+				"Esmeralda": {
+					"MarkerCropOffset": 5
+				},
+				"Gabbi": {
+					"MarkerCropOffset": 3
+				},
+				"Gellos": {
+					"MarkerCropOffset": 14
+				},
+				"Dianna": {
+					"MarkerCropOffset": 14
+				},
+				"Lunna": {
+					"MarkerCropOffset": 3
+				},
+				"Laarni": {
+					"MarkerCropOffset": 6
+				},
+				"Micco": {
+					"MarkerCropOffset": 8
+				},
+				"Oddi": {
+					"MarkerCropOffset": 8
+				},
+				"Raphael": {
+					"MarkerCropOffset": -1
+				},
+				"Reenus": {
+					"MarkerCropOffset": 4
+				},
+				"Salvador": {
+					"MarkerCropOffset": 0
+				},
+				"Yvenn": {
+					"MarkerCropOffset": 10
+				},
+			}
+		},
+		{
+			"LogName": "[Yagi] Lunna Astray in Stardew Valley - Location Support",
+			"Action": "EditData",
+			"Target": "Mods/Bouhm.NPCMapLocations/Locations",
+			"When": {
+				"HasMod: |contains=Rafseazz.LunnaCP": true
+			},
+			"Entries": {
+				// Lunna - Astray in Stardew Valley - https://www.nexusmods.com/stardewvalley/mods/6626
+				"Custom_LASV_LunnaWestForest": {
+					"MapVectors": [
+						{
+							"MapX": 230,
+							"MapY": 500
+						}
+					]
+				},
+				"Custom_LASV_LunnaLake": {
+					"MapVectors": [
+						{
+							"MapX": 244,
+							"MapY": 380
+						}
+					]
+				},
+				"Custom_LASV_Umuwi": {
+					"Exclude": true
+				},
+				"Custom_LASV_DiannaGreenhouse": {
+					"Exclude": true
+				},
+				"Custom_LASV_BiankaDate": {
+					"Exclude": true
+				},
+				"Custom_LASV_OddiHouse": {
+					"Exclude": true
+				},
+				"Custom_LASV_RaphaelShop": {
+					"Exclude": true
+				},
+				"Custom_LASV_BiankaHouse": {
+					"Exclude": true
+				},
+				"Custom_LASV_LaarniHouse": {
+					"Exclude": true
+				},
+				"Custom_LASV_ReenusHouse": {
+					"Exclude": true
+				},
+				"Custom_LASV_GabbiHouse": {
+					"Exclude": true
+				},
+				"Custom_LASV_DiannaHouse": {
+					"Exclude": true
+				},
+				"Custom_LASV_FallsCave": {
+					"Exclude": true
+				}
+			}
+		},
+	]
+}

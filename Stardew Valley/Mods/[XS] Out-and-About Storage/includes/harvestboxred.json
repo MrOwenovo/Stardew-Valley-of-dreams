@@ -1,0 +1,73 @@
+{
+  "Changes": [
+	//Sprite
+	{
+	  "Action": "Load",
+	  "Target": "applesauce.outstorage/harvestboxred",
+	  "FromFile": "assets/harvestboxred.png"
+	},
+
+	//Data
+	{
+	  "Action": "EditData",
+	  "Target": "furyx639.ExpandedStorage/Storages",
+	  "Entries": {
+		"harvestboxred": {
+		            "DisplayName": "{{i18n: harvestboxred.name}}",
+          		    "Description": "{{i18n: harvestboxred.description}}",
+          		    "Image": "applesauce.outstorage/harvestboxred",
+         		    "PlayerColor": false,
+          		    "OpenSound": "axe",
+        		    "IsPlaceable": false,
+			//Betterchests stuff
+        		    "BetterChestsData": {
+          		    "CollectItems": "Enabled",
+           		    "CustomColorPicker": "Disabled",
+           		    "FilterItems": "Enabled",
+        		    "FilterItemsList": [
+          			    "category_vegetable",
+           			    "category_fruits",
+           			    "category_milk",
+           			    "category_egg",
+           			    "category_meat",
+           			    "item_duck_feather",
+           			    "item_wool",
+           			    "item_rabbits_foot"
+         			   ],
+         		   "OpenHeldChest": "Enabled",
+      		           "ResizeChest": "Enabled",
+			   "ResizeChestCapacity": 60
+			  			}
+			}
+		      }
+	            },
+				{
+      	"Action": "EditData",
+     	 "Target": "furyx639.ExpandedStorage/Buy",
+    	  "Entries": {
+     	     "lunchbox": {
+     	     "ShopID": "SeedShop",
+       	     "Price": 60000
+      	    }
+     	   }
+  	  },
+      {
+        "Action": "EditData",
+        "Target": "Data/CraftingRecipes",
+        "Entries": {
+          "harvestboxred": "268 25/Home/232/true/null/{{i18n: harvestboxred.name}}"
+        }
+      },
+    
+      {
+        "Action": "EditData",
+        "Target": "furyx639.ExpandedStorage/Unlock",
+        "Entries": {
+          "harvestboxred": "true"
+        },
+        "When": {
+          "query: {{SkillLevel:Farming}} >= 7": true
+           }
+          }
+ 	 ] 
+	}

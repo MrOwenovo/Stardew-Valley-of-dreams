@@ -1,0 +1,250 @@
+{
+	"Format": "1.23.0",
+      
+
+"ConfigSchema": {
+    "White Cow": {
+	"AllowValues": "white, solid, holstein, vanilla",
+	 "Default": "white"
+	},
+    "Brown Cow": {
+	"AllowValues": "brown, solid, black, highland, vanilla",
+	 "Default": "brown"
+	},
+    "Pig": {
+	"AllowValues": "pink, black, white, tamworth, black spots, brown spots, vanilla",
+	 "Default": "pink"
+	},
+    "Goat": {
+	"AllowValues": "blonde, white, black, brown, white blaze, black blaze, vanilla",
+	 "Default": "blonde"
+	},
+    "Sheep": {
+	"AllowValues": "suffolk, black, white, vanilla",
+	 "Default": "suffolk"
+	},
+    "Duck": {
+	"AllowValues": "mallard, brown, black, white, vanilla",
+	 "Default": "mallard"
+	},
+    "Rabbit": {
+	"AllowValues": "blonde, black, white, brown, blonde blaze, brown blaze, black blaze, brown spots, black spots, vanilla",
+	 "Default": "blonde"
+	},
+    "Void Chicken": {
+	"AllowValues": "void, space, vanilla",
+	 "Default": "void"
+	},
+     "Chicken": {
+	"AllowValues": "edited, vanilla",
+	 "Default": "edited"
+	},
+      "Dinosaur": {
+	"AllowValues": "edited, vanilla",
+	 "Default": "edited"
+	},
+      "Ostrich": {
+	"AllowValues": "edited, vanilla",
+	 "Default": "edited"
+	},
+
+
+
+    },
+
+  "Changes": [
+      
+ 
+
+     {
+          "Action": "Load",
+          "Target": "Animals/White Chicken",
+		"When": { "Chicken": "edited" },
+          "FromFile": "assets/white chicken.png"
+       },
+ 	 {
+          "Action": "Load",
+          "Target": "Animals/BabyWhite Chicken",
+		"When": { "Chicken": "edited" },
+          "FromFile": "assets/white chicken_baby.png"
+       },
+	{
+          "Action": "Load",
+          "Target": "Animals/Brown Chicken",
+		"When": { "Chicken": "edited" },
+          "FromFile": "assets/brown chicken.png"
+       },
+      {
+          "Action": "Load",
+          "Target": "Animals/BabyBrown Chicken",
+		"When": { "Chicken": "edited" },
+          "FromFile": "assets/brown chicken_baby.png"
+       },
+	{
+          "Action": "Load",
+          "Target": "Animals/Blue Chicken",
+		"When": { "Chicken": "edited" },
+          "FromFile": "assets/blue chicken.png"
+       },
+     {
+          "Action": "Load",
+          "Target": "Animals/BabyBlue Chicken",
+		"When": { "Chicken": "edited" },
+          "FromFile": "assets/blue chicken_baby.png"
+       },
+	{
+          "Action": "Load",
+          "Target": "Animals/Golden Chicken",
+		"When": {"Chicken": "edited" },
+          "FromFile": "assets/golden chicken.png"
+	},
+     {
+          "Action": "Load",
+          "Target": "Animals/BabyGolden Chicken",
+		"When": { "Chicken": "edited" },
+          "FromFile": "assets/golden chicken_baby.png"
+       },
+
+
+
+      {
+          "Action": "Load",
+          "Target": "Animals/Ostrich",
+		"When": { "Ostrich": "edited" },
+          "FromFile": "assets/ostrich.png"
+       },
+      {
+          "Action": "Load",
+          "Target": "Animals/BabyOstrich",
+		"When": { "Ostrich": "edited" },
+          "FromFile": "assets/ostrich_baby.png"
+       },  
+
+     
+      {
+          "Action": "Load",
+          "Target": "Animals/Dinosaur",
+		"When": { "Dinosaur": "edited" },
+          "FromFile": "assets/dinosaur.png"
+       },
+     
+      {
+          "Action": "Load",
+          "Target": "Animals/Duck",
+          "FromFile": "assets/duck/{{Duck}}.png",
+		"When": {"Duck": "mallard, brown, black, white"}
+       },
+
+
+      {
+          "Action": "Load",
+          "Target": "Animals/Pig",
+          "FromFile": "assets/pig/{{Pig}}.png",
+		"When": {"Pig": "pink, black, white, tamworth, black spots, brown spots"}
+	},
+
+	{
+          "Action": "Load",
+          "Target": "Animals/BabyPig",
+          "FromFile": "assets/pig/{{Pig}}_baby.png",
+		"When": {"Pig": "pink, black, white, tamworth, black spots, brown spots"}
+       },
+
+
+      {
+          "Action": "Load",
+          "Target": "Animals/Goat",
+          "FromFile": "assets/goat/{{Goat}}.png",
+       		"When": {"Goat": "blonde, white, black, brown, white blaze, black blaze"}
+       },
+      {
+          "Action": "Load",
+          "Target": "Animals/BabyGoat",
+          "FromFile": "assets/goat/{{Goat}}_baby.png",
+      		"When": {"Goat": "blonde, white, black, brown, white blaze, black blaze"}
+       },
+
+
+
+      {
+          "Action": "Load",
+          "Target": "Animals/Rabbit",
+          "FromFile": "assets/rabbit/{{Rabbit}}.png",
+		"When": {"Rabbit": "blonde, black, white, brown, blonde blaze, brown blaze, black blaze, brown spots, black spots"}
+       },
+	 {
+          "Action": "Load",
+          "Target": "Animals/BabyRabbit",
+         "FromFile": "assets/rabbit/{{Rabbit}}_baby.png",
+		"When": {"Rabbit": "blonde, black, white, brown, blonde blaze, brown blaze, black blaze, brown spots, black spots"}
+       },
+
+
+
+      {
+          "Action": "Load",
+          "Target": "Animals/Sheep",
+          "FromFile": "assets/sheep/{{Sheep}}.png",
+		"When": {"Sheep": "suffolk, white, black"}
+       },
+	{
+          "Action": "Load",
+          "Target": "Animals/ShearedSheep",
+          "FromFile": "assets/sheep/{{Sheep}}_sheared.png",
+		"When": {"Sheep": "suffolk, white, black"}
+       },
+ 	{
+          "Action": "Load",
+          "Target": "Animals/BabySheep",
+          "FromFile": "assets/sheep/{{Sheep}}_baby.png",
+       		"When": {"Sheep": "suffolk, white, black"}
+       },
+
+
+
+      {
+          "Action": "Load",
+          "Target": "Animals/Void Chicken",
+          "FromFile": "assets/chicken/{{Void Chicken}}.png",
+		"When": {"Void Chicken": "void, space"}
+       },
+
+      {
+          "Action": "Load",
+          "Target": "Animals/BabyVoid Chicken",
+          "FromFile": "assets/chicken/{{Void Chicken}}_baby.png",
+		"When": {"Void Chicken": "void, space"}
+       },
+
+
+
+      {
+          "Action": "Load",
+          "Target": "Animals/White Cow",
+          "FromFile": "assets/white cow/{{White Cow}}.png",
+		"When": {"White Cow": "white, solid, holstein"}
+       },
+	{
+          "Action": "Load",
+          "Target": "Animals/BabyWhite Cow",
+	  "FromFile": "assets/white cow/{{White Cow}}_baby.png",
+		"When": {"White Cow": "white, solid, holstein"}
+       },
+
+      {
+          "Action": "Load",
+          "Target": "Animals/Brown Cow",
+ 	  "FromFile": "assets/brown cow/{{Brown Cow}}.png",
+		"When": {"Brown Cow": "brown, solid, black, highland"}
+       },
+      {
+          "Action": "Load",
+          "Target": "Animals/BabyBrown Cow",
+          "FromFile": "assets/brown cow/{{Brown Cow}}_baby.png",
+		"When": {"Brown Cow": "brown, solid, black, highland"}
+       },
+
+
+
+    ]
+}

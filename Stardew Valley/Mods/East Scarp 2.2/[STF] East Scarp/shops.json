@@ -1,0 +1,463 @@
+// Korean Translation By 팀 아빠양, 아빠양(첫째양), 마리나, 얼음꽃향초, 돌냥
+// Chinese Translation by KatherineC4
+{
+  "Shops": [
+    /// start of block for each item shop. You can have as many of these as you want
+    {
+      "ShopName": "LexiShop",
+      "CategoriesToSellHere": [],
+      "PortraitPath": "assets/LexiVendor.png",
+      "Quote": "Exchange sweet things for treasures from deep, yes?",
+      "LocalizedQuote": {
+        "ko": "렉시, 바닷속 깊은 곳에서 가져온 보물들과 뭔가 달콤한 것들을 교환하고 싶다. 어떻게 생각한다?",
+        "zh": "用甜甜的东西交换来自深处的宝藏，行不？",
+      },
+      "MaxNumItemsSoldInStore": 12,
+      "ItemStocks": [
+        ///start of block for each itemstock. Each shop can have as many of these as you want
+        {
+          "ItemType": "Object",
+          "StockCurrencyStack": 1,
+          "StockItemCurrency": "Blueberry",
+          "StockPrice": 0,
+          "ItemNames": [
+            "Conch",
+            "Cowrie",
+            "Spider Conch",
+            "Sand Bucks",
+            "Kitten Paw",
+            "Scallop",
+            "Whelk",
+            "Dotted Abalone",
+            "Trumpet Shell"
+          ],
+          "MaxNumItemsSoldInItemStock": 3
+        },
+        ///end of block for each itemstock.
+        {
+          "StockCurrencyStack": 1,
+          "StockItemCurrency": "Cranberries",
+          "StockPrice": 0,
+          "ItemType": "Object",
+          "ItemNames": [
+            "Seaweed",
+            "Driftwood",
+            "Clam",
+            "Oyster",
+            "Cockle",
+            "Mussel",
+            "Shrimp"
+          ],
+          "MaxNumItemsSoldInItemStock": 2
+        },
+        {
+          "StockCurrencyStack": 1,
+          "StockItemCurrency": "Strawberry",
+          "StockPrice": 0,
+          "Stock": 4,
+          "ItemType": "Object",
+          "ItemNames": [
+            "Seaweed",
+            "Squid Ink",
+            "Coral",
+            "Sea Urchin",
+            "Nautilus Shell",
+            "Rainbow Shell",
+            "Nautilus Fossil",
+            "Crab",
+            "Lobster",
+            "Lucky Marine"
+          ],
+          "MaxNumItemsSoldInItemStock": 3
+        },
+        {
+          "StockCurrencyStack": 1,
+          "StockItemCurrency": "Melon",
+          "StockPrice": 0,
+          "Stock": 1,
+          "ItemType": "Object",
+          "ItemNames": [
+            "Dolomite",
+            "Ocean Stone",
+            "Fairy Stone",
+            "Artifact Trove"
+          ],
+          "MaxNumItemsSoldInItemStock": 1
+        },
+        {
+          "StockCurrencyStack": 40,
+          "Stock": 1,
+          "StockItemCurrency": "Strawberry",
+          "StockPrice": 0,
+          "ItemType": "Object",
+          "ItemNames": [
+            "Treasure Chest"
+          ],
+          "When": [
+            "z spring/z winter/z fall"
+          ]
+        },
+        {
+          "StockCurrencyStack": 20,
+          "StockItemCurrency": "Strawberry",
+          "StockPrice": 0,
+          "Stock": 1,
+          "ItemType": "Object",
+          "ItemNames": [
+            "Pearl"
+          ],
+          "When": [
+            "z spring/z summer/z fall"
+          ]
+        }
+      ],
+      "When": [
+        "e 57872007/NPCAt Leximonster 35 6"
+      ],
+      "ClosedMessage": "Lexi is not trading today.",
+      "LocalizedClosedMessage": {
+        "ko": "오늘은 렉시, 교환하지 않는다.",
+        "zh": "莱西今天不做交易。",
+      }
+    },
+    /// end of block for each item shop.
+    {
+      "ShopName": "JessieShop",
+      "CategoriesToSellHere": [],
+      "PortraitPath": "assets/JessieVendor.png",
+      "Quote": "Is there anything you need today, @?",
+      "LocalizedQuote": {
+        "ko": "안녕, @. 오늘은 뭐 필요한 거라도 있니?",
+        "zh": "你今天有什么需要吗，@？",
+      },
+      "MaxNumItemsSoldInStore": 10,
+      "When": [
+        "t 1100 1300"
+      ],
+      "ItemStocks": [
+        {
+          "StockPrice": 200,
+          "Stock": 3,
+          "ItemType": "Object",
+          "ItemNames": [
+            "Poppy"
+          ]
+        },
+        {
+          "StockPrice": 100,
+          "Stock": 5,
+          "ItemType": "Object",
+          "ItemNames": [
+            "Ginger",
+            "Rhubarb Seeds"
+          ]
+        },
+        {
+          "StockPrice": 60,
+          "Stock": 10,
+          "ItemType": "Object",
+          "ItemNames": [
+            "Poppy Seeds"
+          ]
+        },
+        {
+          "StockPrice": 70,
+          "Stock": 5,
+          "ItemType": "Object",
+          "ItemNames": [
+            "Garlic Seeds"
+          ],
+          "When": [
+            "y 2"
+          ]
+        },
+        {
+          "StockPrice": 100,
+          "Stock": 5,
+          "ItemType": "Object",
+          "ItemNames": [
+            "Aloe Pod",
+            "Licorice Seeds",
+            "Elderberry Seeds"
+          ],
+          "MaxNumItemsSoldInItemStock": 1
+        },
+        {
+          "StockPrice": 30,
+          "Stock": 5,
+          "ItemType": "Object",
+          "ItemNames": [
+            "Rosemary Seeds",
+            "Thyme Seeds",
+            "Fennel Seeds",
+            "Parsley Seeds",
+            "Oregano Seeds",
+            "Ginger Seeds",
+            "Sage Seeds"
+          ],
+          "MaxNumItemsSoldInItemStock": 3
+        }
+      ],
+      "ClosedMessage": "Sorry, we are closed. Please come again tomorrow.",
+      "LocalizedClosedMessage": {
+        "ko": "미안, 오늘은 영업이 끝났어. 내일 다시 와.",
+        "zh": "不好意思，我们关门了。请明天再来吧。",
+      }
+    },
+    {
+      "ShopName": "ESInnShop",
+      "CategoriesToSellHere": [],
+      //"PortraitPath": null,
+      "PortraitPath": "assets/RosaVendor.png",
+      "Quote": "Howdy! How can I help you?",
+      "LocalizedQuote": {
+        "ko": "어서 오세요. 뭘 도와드릴까요?",
+        "zh": "你好哇！有什么需要吗？",
+      },
+      "MaxNumItemsSoldInStore": 5,
+      "When": [
+        "NPCAt Rosa 45 31"
+      ],
+      "ItemStocks": [
+        {
+          "ItemType": "Object",
+          "IsRecipe": "true",
+          "StockPrice": 1250,
+          "ItemNames": [
+            "Scarp Warp Totem"
+          ]
+        },
+        {
+          "ItemType": "Object",
+          "Stock": 1,
+          "StockPrice": 250,
+          "ItemNames": [
+            "Scarp Warp Totem"
+          ]
+        },
+        {
+          "StockPrice": 100,
+          "Stock": 1,
+          "ItemType": "Object",
+          "ItemNames": [
+            "Bread"
+          ]
+        },
+        {
+          "StockPrice": 200,
+          "Stock": 1,
+          "ItemType": "Object",
+          "ItemNames": [
+            "Coffee",
+            "Cookie"
+          ]
+        },
+        {
+          "StockPrice": 400,
+          "Stock": 1,
+          "ItemType": "Object",
+          "ItemNames": [
+            "Poppyseed Muffin",
+            "Maple Bar",
+            "Blackberry Cobbler",
+            "Rhubarb Pie",
+            "Blueberry Tart",
+            "Plum Pudding",
+            "Pink Cake"
+          ],
+          "MaxNumItemsSoldInItemStock": 1
+        }
+      ],
+      "ClosedMessage": "Sorry, no-one is here right now. Try again later.",
+      "LocalizedClosedMessage": {
+        "ko": "죄송합니다, 마이클은 지금 부재중입니다. 나중에 다시 와 주세요.",
+        "zh": "现在这里没有人，过会儿再来吧。",
+      }
+    },
+    {
+      "ShopName": "ESCoffeeShop",
+      "CategoriesToSellHere": [],
+      "PortraitPath": "assets/RosaVendor.png",
+      "Quote": "Howdy! What can I do you for today?",
+      "LocalizedQuote": {
+        "ko": "안녕! 뭘 도와줄까?",
+        "zh": "你好呀！我能为你做点什么？",
+      },
+      "MaxNumItemsSoldInStore": 5,
+      "When": [
+        "NPCAt Rosa 21 100"
+      ],
+      "ItemStocks": [
+        {
+          "StockPrice": 100,
+          "Stock": 1,
+          "ItemType": "Object",
+          "ItemNames": [
+            "Bread"
+          ]
+        },
+        {
+          "StockPrice": 200,
+          "Stock": 1,
+          "ItemType": "Object",
+          "ItemNames": [
+            "Coffee",
+            "Cookie",
+            "Ice Cream"
+          ]
+        },
+        {
+          "StockPrice": 400,
+          "Stock": 1,
+          "ItemType": "Object",
+          "ItemNames": [
+            "Poppyseed Muffin",
+            "Maple Bar",
+            "Blackberry Cobbler",
+            "Rhubarb Pie",
+            "Blueberry Tart",
+            "Plum Pudding",
+            "Pink Cake"
+          ],
+          "MaxNumItemsSoldInItemStock": 1
+        }
+      ],
+      "ClosedMessage": "Sorry, Rosa's not here right now. Try again later.",
+      "LocalizedClosedMessage": {
+        "ko": "죄송합니다, 로사는 지금 부재중입니다. 나중에 다시 와 주세요.",
+        "zh": "罗莎现在不在，过会儿再来吧。",
+      }
+    },
+    {
+      "ShopName": "ESInnSpiritsEveShop",
+      "CategoriesToSellHere": [],
+      "PortraitPath": "assets/RosaVendor.png",
+      "Quote": "Happy Spirit's Eve! Trick or Treat?",
+      "LocalizedQuote": {
+	  "zh": "万灵节快乐！不给糖就捣乱！",
+	  },
+      "MaxNumItemsSoldInStore": 5,
+      "When": [
+        "NPCAt Rosa 45 31"
+      ],
+      "ItemStocks": [
+        {
+          "StockPrice": 400,
+          "Stock": 1,
+          "ItemType": "Object",
+          "ItemNames": [
+            "Pumpkin Pie",
+            "Cranberry Candy",
+            "Blackberry Cobbler"
+          ]
+        },
+        {
+          "StockPrice": 200,
+          "Stock": 1,
+          "ItemType": "Object",
+          "ItemNames": [
+            "Coffee"
+          ]
+        },
+        {
+          "StockPrice": 750,
+          "Stock": 1,
+          "ItemType": "Object",
+          "ItemNames": [
+            "Jack-O-Lantern",
+            "Spirit Torch"
+          ]
+        }
+      ],
+      "ClosedMessage": "Sorry, Rosa's not here right now. Try again later.",
+      "LocalizedClosedMessage": {
+	  "zh": "不好意思，罗莎现在不在，过会儿再来吧。",
+	  }
+    },
+
+   
+    {
+      "ShopName": "JessieSVEShop",
+      "CategoriesToSellHere": [],
+      "PortraitPath": "assets/JessieVendor.png",
+      "Quote": "Is there anything you need today, @?",
+      "LocalizedQuote": {
+        "ko": "안녕, @. 오늘은 뭐 필요한 거라도 있니?",
+        "zh": "你今天有什么需要吗，@？",
+      },
+      "MaxNumItemsSoldInStore": 10,
+      "When": [
+        "t 1100 1300"
+      ],
+      "ItemStocks": [
+        {
+          "StockPrice": 200,
+          "Stock": 3,
+          "ItemType": "Object",
+          "ItemNames": [
+            "Poppy"
+          ]
+        },
+        {
+          "StockPrice": 100,
+          "Stock": 5,
+          "ItemType": "Object",
+          "ItemNames": [
+            "Ginger",
+            "Rhubarb Seeds"
+          ]
+        },
+        {
+          "StockPrice": 60,
+          "Stock": 10,
+          "ItemType": "Object",
+          "ItemNames": [
+            "Poppy Seeds"
+          ]
+        },
+        {
+          "StockPrice": 70,
+          "Stock": 5,
+          "ItemType": "Object",
+          "ItemNames": [
+            "Garlic Seeds"
+          ],
+          "When": [
+            "y 2"
+          ]
+        },
+        {
+          "StockPrice": 100,
+          "Stock": 5,
+          "ItemType": "Object",
+          "ItemNames": [
+            "Aloe Pod",
+            "Licorice Seeds",
+            "Elderberry Seeds"
+          ],
+          "MaxNumItemsSoldInItemStock": 1
+        },
+        {
+          "StockPrice": 30,
+          "Stock": 5,
+          "ItemType": "Object",
+          "ItemNames": [
+            "Rosemary Seeds",
+            "Thyme Seeds",
+            "Fennel Seeds",
+            "Parsley Seeds",
+            "Oregano Seeds",
+            "Ginger Seeds",
+            "Sage Seeds"
+          ],
+          "MaxNumItemsSoldInItemStock": 3
+        }
+      ],
+      "ClosedMessage": "Sorry, we are closed. Please come again tomorrow.",
+      "LocalizedClosedMessage": {
+        "ko": "미안, 오늘은 영업이 끝났어. 내일 다시 와.",
+        "zh": "不好意思，我们关门了。请明天再来吧。",
+      }
+    },
+  ]
+}

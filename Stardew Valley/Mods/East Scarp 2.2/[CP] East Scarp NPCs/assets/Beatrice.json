@@ -1,0 +1,50 @@
+{
+    "Changes": [ //Fixing Beatrice's pathing	and adding resort dialogue .................................
+        {
+            "LogName": "NPC Manifestation",
+            "Action": "EditData",
+            "Target": "Data/NPCDispositions",
+            "Entries": {
+                "Beatrice": "adult/neutral/shy/negative/female/non-datable/null/Town/spring 17//Custom_ESLighthouse 11 10/{{i18n:Name.Beatrice}}"
+            },
+        },
+        { // To activate, delete [TMX] Beatrice Festival Locations folder
+            "LogName": "BeatriceFestival",
+            "Action": "Include",
+            "FromFile": "assets/Festivals/Beatrice.json",
+        },
+        {
+            "LogName": "Beatrice Summer",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Beatrice",
+            "Entries": {
+                "rain": "610 Custom_ESLighthouse 11 10 0 Beatrice_pjs \"Strings\\schedules\\Beatrice:sleep\"/1100 Custom_ESLighthouse 5 5 0/1200 Custom_EastScarpe 60 114 2 \"Strings\\schedules\\Beatrice:rain.001\"/1400 Custom_EastScarpe 71 77 2/1500 Custom_EastScarpe 71 120 2 Beatrice_telescope \"Strings\\schedules\\Beatrice:telescope.001\"/1600 Custom_ESLighthouse 21 6 1/1900 Custom_ESLighthouse 18 4 0", // Have edited
+                "rain2": "610 Custom_ESLighthouse 11 10 0 Beatrice_pjs \"Strings\\schedules\\Beatrice:sleep\"/1100 Custom_ESLighthouse 5 5 0/1200 Custom_EastScarpe 60 114 2 \"Strings\\schedules\\Beatrice:rain.001\"/1400 Custom_EastScarpe 71 77 2/1500 Custom_EastScarpe 68 116 0 Beatrice_telescope \"Strings\\schedules\\Beatrice:telescope.002\"/1600 Custom_EastScarpe 12 111 3 \"Strings\\schedules\\Beatrice:boat.001\"/1900 Custom_ESLighthouse 18 4 0", // Have edited
+                "Mon": "610 Custom_ESLighthouse 11 10 0 Beatrice_pjs \"Strings\\schedules\\Beatrice:sleep\"/1000 SeedShop 16 29 3 Beatrice_shop/1400 Saloon 19 23 3 \"Strings\\schedules\\Beatrice:saloon.001\"/1700 Custom_ESLighthouse 18 4 0",
+                "Sun": "610 Custom_ESLighthouse 11 10 0 Beatrice_pjs \"Strings\\schedules\\Beatrice:sleep\"/1100 Custom_ESLighthouse 2 10 3/1200 Custom_ESLighthouse 4 9 2 Beatrice_read \"Strings\\schedules\\Beatrice:read.001\"/1500 Custom_ESLighthouse 5 5 0/1600 Custom_ESLighthouse 11 5 0/1800 Custom_ESLighthouse 18 4 0 \"Strings\\schedules\\Beatrice:light.001\"",
+                "spring_16": "610 Custom_ESLighthouse 18 4 0 Beatrice_pjs \"Strings\\schedules\\Beatrice:sleep\"/1000 Hospital 15 15 3 Beatrice_chair \"Strings\\schedules\\Beatrice:checkup\"/1500 Saloon 19 23 3/1900 Custom_ESLighthouse 18 4 0",
+                "spring": "610 Custom_ESLighthouse 11 10 0 Beatrice_pjs \"Strings\\schedules\\Beatrice:sleep\"/1100 Custom_ESLighthouse 5 5 0/1400 Custom_EastScarpe 68 116 0 Beatrice_telescope/1600 Custom_EastScarpe 12 111 3/1800 Custom_ESLighthouse 2 10 3/1900 Custom_ESLighthouse 18 4 0",
+                "fall": "610 Custom_ESLighthouse 11 10 0 Beatrice_pjs \"Strings\\schedules\\Beatrice:sleep\"/1200 Custom_EastScarpe 55 84 3 Beatrice_read/1500 Custom_EastScarpe 75 119 2 Beatrice_telescope/1700 Custom_ESLighthouse 21 6 1/1830 Custom_ESLighthouse 18 4 0",
+                "winter": "610 Custom_ESLighthouse 18 4 0/800 Custom_ESLighthouse 11 10 2 Beatrice_pjs \"Strings\\schedules\\Beatrice:sleep\"/1200 Custom_ESLighthouse 11 5 0/1300 Custom_EastScarpe 54 40 2 Beatrice_sit/1700 Custom_ESLighthouse 21 6 1/1800 Custom_ESLighthouse 18 4 0",
+                "spring_12": "610 Custom_ESLighthouse 11 10 0 Beatrice_pjs \"Strings\\schedules\\Beatrice:sleep\"/900 Custom_ESLighthouse 5 5 0/930 ArchaeologyHouse 18 9 2 Beatrice_stool \"Strings\\schedules\\Beatrice:read.002\"/1440 Saloon 19 23 3/1600 Custom_ESLighthouse 2 10 3/2000 Custom_ESLighthouse 18 4 0",
+                "fall_12": "610 Custom_ESLighthouse 11 10 0 Beatrice_pjs \"Strings\\schedules\\Beatrice:sleep\"/900 Custom_ESLighthouse 5 5 0/930 ArchaeologyHouse 18 9 2 Beatrice_stool \"Strings\\schedules\\Beatrice:read.002\"/1440 Saloon 19 23 3/1600 Custom_ESLighthouse 2 10 3/1900 Custom_ESLighthouse 18 4 0",
+                "winter_12": "610 Custom_ESLighthouse 11 10 0 Beatrice_pjs \"Strings\\schedules\\Beatrice:sleep\"/900 Custom_ESLighthouse 5 5 0/930 ArchaeologyHouse 18 9 2 Beatrice_stool \"Strings\\schedules\\Beatrice:read.002\"/1440 Saloon 19 23 3/1600 Custom_ESLighthouse 2 10 3/1800 Custom_ESLighthouse 18 4 0",
+                "summer": "610 Custom_ESLighthouse 11 10 0 Beatrice_pjs \"Strings\\schedules\\Beatrice:sleep\"/1100 Custom_EastScarpe 22 102 1/1300 Custom_EastScarpe 55 84 2 Beatrice_read/1500 Custom_ESLighthouse 11 5 0/1600 Custom_ESLighthouse 21 6 1/1700 Custom_ESLighthouse 5 5 0/2000 Custom_ESLighthouse 18 4 0"
+            },
+        },
+        {
+            "LogName": "Beatrice Summer",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Beatrice",
+            "Entries": {
+                "Resort_Entering": "{{i18n:Beatrice.Resort_Entering}}",
+                "Resort_Leaving": "{{i18n:Beatrice.Resort_Leaving}}",
+                "Resort_Shore": "{{i18n:Beatrice.Resort_Shore}}",
+                "Resort_Umbrella": "{{i18n:Beatrice.Resort_Umbrella}}",
+                "Resort_Wander": "{{i18n:Beatrice.Resort_Wander}}",
+                "Resort_Bar": "{{i18n:Beatrice.Resort_Bar}}",
+                "Resort": "{{i18n:Beatrice.Resort}}"
+            },
+        }
+    ]
+}

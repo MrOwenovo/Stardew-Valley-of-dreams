@@ -1,0 +1,19 @@
+{
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "Changes": [
+        // Diverse Stardew Valley - https://www.moddrop.com/stardew-valley/mods/580603-diverse-stardew-valley-dsv-seasonal
+        {
+            "LogName": "[Yagi] Diverse Stardew Valley - Sprite Offsets",
+            "Action": "EditData",
+            "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+            "When": {
+                "HasMod: |contains=DSVTeam.DiverseSeasonalOutfits": true
+            },
+            "Entries": {
+                "Marigold": {
+                    "MarkerCropOffset": 16
+                },
+            }
+        },
+    ]
+}

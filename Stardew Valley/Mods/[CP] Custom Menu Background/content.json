@@ -1,0 +1,815 @@
+{
+	"Format": "1.15.0",
+	
+	"ConfigSchema": {
+		"MainMenu": {
+			"AllowValues": "truerandom,random,vanilla,abzu,beach city,beach day,borealis,cali lifestyle,chamomile,comet,degen hours,dour,dreamy,dusk,fallout,flushed,foreboding,galactic,lo fi,malibu,mandalorian,misty eyed,morning,nocturnal,nyx,palm frond,prometheus,rose tinted,sailor moon,screwball,soul,strawberry milk,sunday morning,sunset,sweet dreams,swimming trunks,tartarus,they came from above,witching hour",
+			"Default": "random" 
+		},
+		"LoadMenu": {
+			"AllowValues": "truerandom,random,vanilla,abzu,beach city,beach day,borealis,cali lifestyle,chamomile,comet,degen hours,dour,dreamy,dusk,fallout,flushed,foreboding,galactic,lo fi,malibu,mandalorian,misty eyed,morning,nocturnal,nyx,palm frond,prometheus,rose tinted,sailor moon,screwball,soul,strawberry milk,sunday morning,sunset,sweet dreams,swimming trunks,tartarus,they came from above,witching hour",
+			"Default": "random"
+		},
+		"NightSky": {
+			"AllowValues": "truerandom,random,vanilla,abzu,beach city,beach day,borealis,cali lifestyle,chamomile,comet,degen hours,dour,dreamy,dusk,fallout,flushed,foreboding,galactic,lo fi,malibu,mandalorian,misty eyed,morning,nocturnal,nyx,palm frond,prometheus,rose tinted,sailor moon,screwball,soul,strawberry milk,sunday morning,sunset,sweet dreams,swimming trunks,tartarus,they came from above,witching hour",
+			"Default": "random"
+		},
+		"Raining": {
+			"AllowValues": "truerandom,random,vanilla,abzu,beach city,beach day,borealis,cali lifestyle,chamomile,comet,degen hours,dour,dreamy,dusk,fallout,flushed,foreboding,galactic,lo fi,malibu,mandalorian,misty eyed,morning,nocturnal,nyx,palm frond,prometheus,rose tinted,sailor moon,screwball,soul,strawberry milk,sunday morning,sunset,sweet dreams,swimming trunks,tartarus,they came from above,witching hour",
+			"Default": "random"
+		},
+		"Spring": {
+			"AllowValues": "truerandom,random,vanilla,abzu,beach city,beach day,borealis,cali lifestyle,chamomile,comet,degen hours,dour,dreamy,dusk,fallout,flushed,foreboding,galactic,lo fi,malibu,mandalorian,misty eyed,morning,nocturnal,nyx,palm frond,prometheus,rose tinted,sailor moon,screwball,soul,strawberry milk,sunday morning,sunset,sweet dreams,swimming trunks,tartarus,they came from above,witching hour",
+			"Default": "random"
+		},
+		"Summer": {
+			"AllowValues": "truerandom,random,vanilla,abzu,beach city,beach day,borealis,cali lifestyle,chamomile,comet,degen hours,dour,dreamy,dusk,fallout,flushed,foreboding,galactic,lo fi,malibu,mandalorian,misty eyed,morning,nocturnal,nyx,palm frond,prometheus,rose tinted,sailor moon,screwball,soul,strawberry milk,sunday morning,sunset,sweet dreams,swimming trunks,tartarus,they came from above,witching hour",
+			"Default": "random"
+		},
+		"Fall": {
+			"AllowValues": "truerandom,random,vanilla,abzu,beach city,beach day,borealis,cali lifestyle,chamomile,comet,degen hours,dour,dreamy,dusk,fallout,flushed,foreboding,galactic,lo fi,malibu,mandalorian,misty eyed,morning,nocturnal,nyx,palm frond,prometheus,rose tinted,sailor moon,screwball,soul,strawberry milk,sunday morning,sunset,sweet dreams,swimming trunks,tartarus,they came from above,witching hour",
+			"Default": "random"
+		},
+		"Winter": {
+			"AllowValues": "truerandom,random,vanilla,abzu,beach city,beach day,borealis,cali lifestyle,chamomile,comet,degen hours,dour,dreamy,dusk,fallout,flushed,foreboding,galactic,lo fi,malibu,mandalorian,misty eyed,morning,nocturnal,nyx,palm frond,prometheus,rose tinted,sailor moon,screwball,soul,strawberry milk,sunday morning,sunset,sweet dreams,swimming trunks,tartarus,they came from above,witching hour",
+			"Default": "random"
+		},
+		"Clouds": {
+			"AllowValues": "truerandom,random,off,vanilla,blue,cucumber,grey,hot pink,indigo,lavender,lilac,lime,mint,orange,peach,pink,strawberry,white,yellow",
+			"Default": "random"
+		},
+		"Mountains": {
+			"AllowValues": "truerandom,random,vanilla,blue,purple,pastel,peach,grey,olive,ruby,orange,pink,plum,teal,toxic,indigo",
+			"Default": "random"
+		},
+		"FrontMountain": {
+			"AllowValues": "random,1,2,3,off",
+			"Default": "random"
+		},
+		"BackMountain": {
+			"AllowValues": "random,1,2,3,off",
+			"Default": "random"
+		},
+		"Trees": {
+			"AllowValues": "truerandom,random,vanilla,blue,deep purple,grey,indigo,mulberry,olive,plum,purple,teal,off",
+			"Default": "random"
+		},
+		"Sparkles": {
+			"AllowValues": "truerandom,random,blue,cyan,fireflies,gold,green,lime,mint,pink,purple,rose gold,yellow,white,off",
+			"Default": "random"
+		},
+		"Mist": {
+			"AllowValues": "truerandom,random,aqua,blue,gold,grape,mint,green,grey,hot pink,lavender,lilac,lime,orange,peach,pink,purple,strawberry,yellow,off",
+			"Default": "random"
+		}
+	},
+	
+	"DynamicTokens": [
+		{
+		 "Name": "FrontMountainFinal",
+		 "Value": "{{FrontMountain}}"
+		},
+		{
+		 "Name": "FrontMountainFinal",
+		 "Value": "{{Random:1,2,3}}",
+		 "When": {
+			"FrontMountain": "random"
+		 }
+		},
+		{
+		 "Name": "BackMountainFinal",
+		 "Value": "{{BackMountain}}"
+		},
+		{
+		 "Name": "BackMountainFinal",
+		 "Value": "{{Random:1,2,3}}",
+		 "When": {
+			"BackMountain": "random"
+		 }
+		},
+	],
+
+	"Changes": [
+		// Main Menu Background
+		{
+			"LogName": "Main Menu Background",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/sky/main menu/{{MainMenu}}.png",
+			"ToArea": { "X": 703, "Y": 1912, "Width": 1, "Height": 264 },
+			"When":{
+				"MainMenu |contains=vanilla":false,
+				"MainMenu |contains=random":false,
+				"MainMenu |contains=truerandom":false
+			}
+		},
+		// Main Menu Background (Randomized)
+		{
+			"LogName": "Main Menu Background (Randomized)",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/sky/main menu/{{Random:beach day,cali lifestyle,chamomile,degen hours,dour,dreamy,flushed,lo fi,misty eyed,morning,palm frond,prometheus,rose tinted,sailor moon,screwball,strawberry milk,sunday morning,sunset,swimming trunks}}.png",
+			"ToArea": { "X": 703, "Y": 1912, "Width": 1, "Height": 264 },
+			"When":{
+				"MainMenu |contains=random":true,
+				"MainMenu |contains=truerandom":false
+			}
+		},
+		// Main Menu Background (Truly Randomized)
+		{
+			"LogName": "Main Menu Background (Truly Randomized)",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/sky/main menu/{{Random:abzu,beach city,beach day,borealis,cali lifestyle,chamomile,comet,degen hours,dour,dreamy,dusk,fallout,flushed,foreboding,galactic,lo fi,malibu,mandalorian,misty eyed,morning,nocturnal,nyx,palm frond,prometheus,rose tinted,sailor moon,screwball,soul,strawberry milk,sunday morning,sunset,sweet dreams,swimming trunks,tartarus,they came from above,witching hour}}.png",
+			"ToArea": { "X": 703, "Y": 1912, "Width": 1, "Height": 264 },
+			"When":{
+				"MainMenu |contains=truerandom":true
+			}
+		},
+		// Load/Co-op Menu Background
+		{
+			"LogName": "Load/Co-op Menu Background",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/sky/main menu/{{LoadMenu}}.png",
+			"ToArea": { "X": 702, "Y": 1912, "Width": 1, "Height": 264 },
+			"When":{
+				"LoadMenu |contains=vanilla":false,
+				"LoadMenu |contains=random":false,
+				"LoadMenu |contains=truerandom":false
+			}
+		},
+		// Load/Co-op Menu Background (Randomized)
+		{
+			"LogName": "Load/Co-op Menu Background (Randomized)",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/sky/main menu/{{Random:abzu,mandalorian,borealis,comet,soul,sweet dreams,nyx,nocturnal,witching hour,they came from above,malibu,dusk,galactic,beach city}}.png",
+			"ToArea": { "X": 702, "Y": 1912, "Width": 1, "Height": 264 },
+			"When":{
+				"LoadMenu |contains=random":true,
+				"LoadMenu |contains=truerandom":false
+			}
+		},
+		// Load/Co-op Menu Background (Truly Randomized)
+		{
+			"LogName": "Load/Co-op Menu Background (Truly Randomized)",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/sky/main menu/{{Random:abzu,beach city,beach day,borealis,cali lifestyle,chamomile,comet,degen hours,dour,dreamy,dusk,fallout,flushed,foreboding,galactic,lo fi,malibu,mandalorian,misty eyed,morning,nocturnal,nyx,palm frond,prometheus,rose tinted,sailor moon,screwball,soul,strawberry milk,sunday morning,sunset,sweet dreams,swimming trunks,tartarus,they came from above,witching hour}}.png",
+			"ToArea": { "X": 702, "Y": 1912, "Width": 1, "Height": 264 },
+			"When":{
+				"LoadMenu |contains=truerandom":true
+			}
+		},
+		// Night Menu Background
+		{
+			"LogName": "Night Menu Background",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/sky/pause menu - raining/{{NightSky}}.png",
+			"ToArea": { "X": 639, "Y": 858, "Width": 1, "Height": 184 },
+			"FromArea": { "X": 0, "Y": 0, "Width": 1, "Height": 184 },
+			"When":{
+				"NightSky |contains=vanilla":false,
+				"NightSky |contains=random":false,
+				"NightSky |contains=truerandom":false
+			}
+		},
+		// Night Menu Background (Randomized)
+		{
+			"LogName": "Night Menu Background (Randomized)",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/sky/pause menu - raining/{{Random:abzu,borealis,comet,dusk,galactic,mandalorian,nocturnal,soul,sweet dreams,witching hour}}.png",
+			"ToArea": { "X": 639, "Y": 858, "Width": 1, "Height": 184 },
+			"FromArea": { "X": 0, "Y": 0, "Width": 1, "Height": 184 },
+			"When":{
+				"NightSky |contains=random":true,
+				"NightSky |contains=truerandom":false
+			}
+		},
+		// Night Menu Background (Truly Randomized)
+		{
+			"LogName": "Night Menu Background (Truly Randomized)",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/sky/pause menu - raining/{{Random:abzu,beach city,beach day,borealis,cali lifestyle,chamomile,comet,degen hours,dour,dreamy,dusk,fallout,flushed,foreboding,galactic,lo fi,malibu,mandalorian,misty eyed,morning,nocturnal,nyx,palm frond,prometheus,rose tinted,sailor moon,screwball,soul,strawberry milk,sunday morning,sunset,sweet dreams,swimming trunks,tartarus,they came from above,witching hour}}.png",
+			"ToArea": { "X": 639, "Y": 858, "Width": 1, "Height": 184 },
+			"FromArea": { "X": 0, "Y": 0, "Width": 1, "Height": 184 },
+			"When":{
+				"NightSky |contains=truerandom":true
+			}
+		},
+		// Raining Menu Background
+		{
+			"LogName": "Raining Menu Background",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/sky/pause menu - raining/{{Raining}}.png",
+			"ToArea": { "X": 640, "Y": 858, "Width": 1, "Height": 184 },
+			"FromArea": { "X": 0, "Y": 0, "Width": 1, "Height": 184 },
+			"When":{
+				"Raining |contains=vanilla":false,
+				"Raining |contains=random":false,
+				"Raining |contains=truerandom":false
+			}
+		},
+		// Raining Menu Background (Randomized)
+		{
+			"LogName": "Raining Menu Background (Randomized)",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/sky/pause menu - raining/{{Random:beach day,chamomile,dour,dreamy,fallout,sunday morning,sunset,swimming trunks}}.png",
+			"ToArea": { "X": 640, "Y": 858, "Width": 1, "Height": 184 },
+			"FromArea": { "X": 0, "Y": 0, "Width": 1, "Height": 184 },
+			"When":{
+				"Raining |contains=random":true,
+				"Raining |contains=truerandom":false
+			}
+		},
+		// Raining Menu Background (Truly Randomized)
+		{
+			"LogName": "Raining Menu Background (Truly Randomized)",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/sky/pause menu - raining/{{Random:abzu,beach city,beach day,borealis,cali lifestyle,chamomile,comet,degen hours,dour,dreamy,dusk,fallout,flushed,foreboding,galactic,lo fi,malibu,mandalorian,misty eyed,morning,nocturnal,nyx,palm frond,prometheus,rose tinted,sailor moon,screwball,soul,strawberry milk,sunday morning,sunset,sweet dreams,swimming trunks,tartarus,they came from above,witching hour}}.png",
+			"ToArea": { "X": 639, "Y": 1051, "Width": 1, "Height": 184 },
+			"FromArea": { "X": 0, "Y": 0, "Width": 1, "Height": 184 },
+			"When":{
+				"Raining |contains=truerandom":true
+			}
+		},
+		// Spring Menu Background
+		{
+			"LogName": "Spring Menu Background",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/sky/pause menu - seasons/{{Spring}}.png",
+			"ToArea": { "X": 639, "Y": 1051, "Width": 1, "Height": 400 },
+			"FromArea": { "X": 0, "Y": 0, "Width": 1, "Height": 400 },
+			"When":{
+				"Spring |contains=vanilla":false,
+				"Spring |contains=random":false,
+				"Spring |contains=truerandom":false
+			}
+		},
+		// Spring Menu Background (Randomized)
+		{
+			"LogName": "Spring Menu Background (Randomized)",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/sky/pause menu - seasons/{{Random:beach day,cali lifestyle,chamomile,dour,dreamy,misty eyed,morning,prometheus,sailor moon,screwball,strawberry milk,sunday morning,sunset,swimming trunks}}.png",
+			"ToArea": { "X": 639, "Y": 1051, "Width": 1, "Height": 400 },
+			"FromArea": { "X": 0, "Y": 0, "Width": 1, "Height": 400 },
+			"When":{
+				"Spring |contains=random":true,
+				"Spring |contains=truerandom":false
+			}
+		},
+		// Spring Menu Background (Truly Randomized)
+		{
+			"LogName": "Spring Menu Background (Truly Randomized)",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/sky/pause menu - seasons/{{Random:abzu,beach city,beach day,borealis,cali lifestyle,chamomile,comet,degen hours,dour,dreamy,dusk,fallout,flushed,foreboding,galactic,lo fi,malibu,mandalorian,misty eyed,morning,nocturnal,nyx,palm frond,prometheus,rose tinted,sailor moon,screwball,soul,strawberry milk,sunday morning,sunset,sweet dreams,swimming trunks,tartarus,they came from above,witching hour}}.png",
+			"ToArea": { "X": 639, "Y": 1051, "Width": 1, "Height": 400 },
+			"FromArea": { "X": 0, "Y": 0, "Width": 1, "Height": 400 },
+			"When":{
+				"Spring |contains=truerandom":true
+			}
+		},
+		// Summer Menu Background
+		{
+			"LogName": "Summer Menu Background",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/sky/pause menu - seasons/{{Summer}}.png",
+			"ToArea": { "X": 640, "Y": 1051, "Width": 1, "Height": 400 },
+			"FromArea": { "X": 0, "Y": 0, "Width": 1, "Height": 400 },
+			"When":{
+				"Summer |contains=vanilla":false,
+				"Summer |contains=random":false,
+				"Summer |contains=truerandom":false
+			}
+		},
+		// Summer Menu Background (Randomized)
+		{
+			"LogName": "Summer Menu Background (Randomized)",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/sky/pause menu - seasons/{{Random:beach city,beach day,cali lifestyle,chamomile,degen hours,dreamy,flushed,lo fi,malibu,misty eyed,palm frond,prometheus,rose tinted,sailor moon,screwball,strawberry milk,sunday morning,sunset,swimming trunks}}.png",
+			"ToArea": { "X": 640, "Y": 1051, "Width": 1, "Height": 400 },
+			"FromArea": { "X": 0, "Y": 0, "Width": 1, "Height": 400 },
+			"When":{
+				"Summer |contains=random":true,
+				"Summer |contains=truerandom":false
+			}
+		},
+		// Summer Menu Background (Truly Randomized)
+		{
+			"LogName": "Summer Menu Background (Truly Randomized)",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/sky/pause menu - seasons/{{Random:abzu,beach city,beach day,borealis,cali lifestyle,chamomile,comet,degen hours,dour,dreamy,dusk,fallout,flushed,foreboding,galactic,lo fi,malibu,mandalorian,misty eyed,morning,nocturnal,nyx,palm frond,prometheus,rose tinted,sailor moon,screwball,soul,strawberry milk,sunday morning,sunset,sweet dreams,swimming trunks,tartarus,they came from above,witching hour}}.png",
+			"ToArea": { "X": 640, "Y": 1051, "Width": 1, "Height": 400 },
+			"FromArea": { "X": 0, "Y": 0, "Width": 1, "Height": 400 },
+			"When":{
+				"Summer |contains=truerandom":true
+			}
+		},
+		// Fall Menu Background
+		{
+			"LogName": "Fall Menu Background",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/sky/pause menu - seasons/{{Fall}}.png",
+			"ToArea": { "X": 641, "Y": 1051, "Width": 1, "Height": 400 },
+			"FromArea": { "X": 0, "Y": 0, "Width": 1, "Height": 400 },
+			"When":{
+				"Fall |contains=vanilla":false,
+				"Fall |contains=random":false,
+				"Fall |contains=truerandom":false
+			}
+		},
+		// Fall Menu Background (Randomized)
+		{
+			"LogName": "Fall Menu Background (Randomized)",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/sky/pause menu - seasons/{{Random:beach city,chamomile,dreamy,flushed,lo fi,malibu,palm frond,prometheus,sailor moon,screwball,sunset}}.png",
+			"ToArea": { "X": 641, "Y": 1051, "Width": 1, "Height": 400 },
+			"FromArea": { "X": 0, "Y": 0, "Width": 1, "Height": 400 },
+			"When":{
+				"Fall |contains=random":true,
+				"Fall |contains=truerandom":false
+			}
+		},
+		// Fall Menu Background (Truly Randomized)
+		{
+			"LogName": "Fall Menu Background (Truly Randomized)",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/sky/pause menu - seasons/{{Random:abzu,beach city,beach day,borealis,cali lifestyle,chamomile,comet,degen hours,dour,dreamy,dusk,fallout,flushed,foreboding,galactic,lo fi,malibu,mandalorian,misty eyed,morning,nocturnal,nyx,palm frond,prometheus,rose tinted,sailor moon,screwball,soul,strawberry milk,sunday morning,sunset,sweet dreams,swimming trunks,tartarus,they came from above,witching hour}}.png",
+			"ToArea": { "X": 641, "Y": 1051, "Width": 1, "Height": 400 },
+			"FromArea": { "X": 0, "Y": 0, "Width": 1, "Height": 400 },
+			"When":{
+				"Fall |contains=truerandom":true
+			}
+		},
+		// Winter Menu Background
+		{
+			"LogName": "Spring Menu Background",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/sky/pause menu - seasons/{{Winter}}.png",
+			"ToArea": { "X": 642, "Y": 1051, "Width": 1, "Height": 400 },
+			"FromArea": { "X": 0, "Y": 0, "Width": 1, "Height": 400 },
+			"When":{
+				"Winter |contains=vanilla":false,
+				"Winter |contains=random":false,
+				"Winter |contains=truerandom":false
+			}
+		},
+		// Winter Menu Background (Randomized)
+		{
+			"LogName": "Winter Menu Background (Randomized)",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/sky/pause menu - seasons/{{Random:cali lifestyle,chamomile,dour,dreamy,misty eyed,morning,rose tinted,strawberry milk,sunday morning,sweet dreams,swimming trunks}}.png",
+			"ToArea": { "X": 642, "Y": 1051, "Width": 1, "Height": 400 },
+			"FromArea": { "X": 0, "Y": 0, "Width": 1, "Height": 400 },
+			"When":{
+				"Winter |contains=random":true,
+				"Winter |contains=truerandom":false
+			}
+		},
+		// Winter Menu Background (Truly Randomized)
+		{
+			"LogName": "Winter Menu Background (Truly Randomized)",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/sky/pause menu - seasons/{{Random:abzu,beach city,beach day,borealis,cali lifestyle,chamomile,comet,degen hours,dour,dreamy,dusk,fallout,flushed,foreboding,galactic,lo fi,malibu,mandalorian,misty eyed,morning,nocturnal,nyx,palm frond,prometheus,rose tinted,sailor moon,screwball,soul,strawberry milk,sunday morning,sunset,sweet dreams,swimming trunks,tartarus,they came from above,witching hour}}.png",
+			"ToArea": { "X": 642, "Y": 1051, "Width": 1, "Height": 400 },
+			"FromArea": { "X": 0, "Y": 0, "Width": 1, "Height": 400 },
+			"When":{
+				"Winter |contains=truerandom":true
+			}
+		},
+		// MOUNTAIN 1
+		{
+			"LogName": "Front Mountains (1) Menu Background Elements",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/mountains/{{Mountains}}.png",
+			"ToArea": { "X": 0, "Y": 737, "Width": 639, "Height": 149 },
+			"FromArea": { "X": 0, "Y": 0, "Width": 639, "Height": 149 },
+			"When":{
+				"FrontMountainFinal":"1",
+				"Mountains |contains=random":false,
+				"Mountains |contains=truerandom":false
+			}
+		},
+		{
+			"LogName": "Back Mountains (1) Menu Background Elements",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/mountains/{{Mountains}}.png",
+			"ToArea": { "X": 0, "Y": 886, "Width": 639, "Height": 149 },
+			"FromArea": { "X": 0, "Y": 0, "Width": 639, "Height": 149 },
+			"When":{
+				"BackMountainFinal":"1",
+				"Mountains |contains=random":false,
+				"Mountains |contains=truerandom":false
+			}
+		},
+		// MOUNTAIN 1 (RANDOMIZED)
+		{
+			"LogName": "Front Mountains (1) Menu Background Elements (Randomized)",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/mountains/{{Random:blue,purple,pastel,peach,olive,ruby,orange,pink,plum,teal,toxic,indigo |key=mountain}}.png",
+			"ToArea": { "X": 0, "Y": 737, "Width": 639, "Height": 149 },
+			"FromArea": { "X": 0, "Y": 0, "Width": 639, "Height": 149 },
+			"When":{
+				"FrontMountainFinal":"1",
+				"Mountains |contains=random":true,
+				"Mountains |contains=truerandom":false
+			}
+		},
+		{
+			"LogName": "Back Mountains (1) Menu Background Elements (Randomized)",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/mountains/{{Random:blue,purple,pastel,peach,olive,ruby,orange,pink,plum,teal,toxic,indigo |key=mountain}}.png",
+			"ToArea": { "X": 0, "Y": 886, "Width": 639, "Height": 149 },
+			"FromArea": { "X": 0, "Y": 0, "Width": 639, "Height": 149 },
+			"When":{
+				"BackMountainFinal":"1",
+				"Mountains |contains=random":true,
+				"Mountains |contains=truerandom":false
+			}
+		},
+		// MOUNTAIN 1 (TRULY RANDOMIZED)
+		{
+			"LogName": "Front Mountains (1) Menu Background Elements (Truly Randomized)",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/mountains/{{Random:blue,purple,pastel,peach,grey,olive,ruby,orange,pink,plum,teal,toxic,indigo,vanilla}}.png",
+			"ToArea": { "X": 0, "Y": 737, "Width": 639, "Height": 149 },
+			"FromArea": { "X": 0, "Y": 0, "Width": 639, "Height": 149 },
+			"When":{
+				"FrontMountainFinal":"1",
+				"Mountains |contains=truerandom":true
+			}
+		},
+		{
+			"LogName": "Back Mountains (1) Menu Background Elements (Truly Randomized)",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/mountains/{{Random:blue,purple,pastel,peach,grey,olive,ruby,orange,pink,plum,teal,toxic,indigo,vanilla}}.png",
+			"ToArea": { "X": 0, "Y": 886, "Width": 639, "Height": 149 },
+			"FromArea": { "X": 0, "Y": 0, "Width": 639, "Height": 149 },
+			"When":{
+				"BackMountainFinal":"1",
+				"Mountains |contains=random":true,
+				"Mountains |contains=truerandom":true
+			}
+		},
+		// MOUNTAIN 2
+		{
+			"LogName": "Front Mountains (2) Menu Background Elements",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/mountains/{{Mountains}}.png",
+			"ToArea": { "X": 0, "Y": 737, "Width": 639, "Height": 149 },
+			"FromArea": { "X": 0, "Y": 149, "Width": 639, "Height": 149 },
+			"When":{
+				"FrontMountainFinal":"2",
+				"Mountains |contains=random":false,
+				"Mountains |contains=truerandom":false
+			}
+		},
+		{
+			"LogName": "Back Mountains (2) Menu Background Elements",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/mountains/{{Mountains}}.png",
+			"ToArea": { "X": 0, "Y": 886, "Width": 639, "Height": 149 },
+			"FromArea": { "X": 0, "Y": 149, "Width": 639, "Height": 149 },
+			"When":{
+				"BackMountainFinal":"2",
+				"Mountains |contains=random":false,
+				"Mountains |contains=truerandom":false
+			}
+		},
+		// MOUNTAIN 2 (RANDOMIZED)
+		{
+			"LogName": "Front Mountains (2) Menu Background Elements (Randomized)",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/mountains/{{Random:blue,purple,pastel,peach,olive,ruby,orange,pink,plum,teal,toxic,indigo |key=mountain}}.png",
+			"ToArea": { "X": 0, "Y": 737, "Width": 639, "Height": 149 },
+			"FromArea": { "X": 0, "Y": 149, "Width": 639, "Height": 149 },
+			"When":{
+				"FrontMountainFinal":"2",
+				"Mountains |contains=random":true,
+				"Mountains |contains=truerandom":false
+			}
+		},
+		{
+			"LogName": "Back Mountains (2) Menu Background Elements (Randomized)",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/mountains/{{Random:blue,purple,pastel,peach,olive,ruby,orange,pink,plum,teal,toxic,indigo |key=mountain}}.png",
+			"ToArea": { "X": 0, "Y": 886, "Width": 639, "Height": 149 },
+			"FromArea": { "X": 0, "Y": 149, "Width": 639, "Height": 149 },
+			"When":{
+				"BackMountainFinal":"2",
+				"Mountains |contains=random":true,
+				"Mountains |contains=truerandom":false
+			}
+		},
+		// MOUNTAIN 2 (TRULY RANDOMIZED)
+		{
+			"LogName": "Front Mountains (2) Menu Background Elements (Truly Randomized)",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/mountains/{{Random:blue,purple,pastel,peach,grey,olive,ruby,orange,pink,plum,teal,toxic,indigo,vanilla}}.png",
+			"ToArea": { "X": 0, "Y": 737, "Width": 639, "Height": 149 },
+			"FromArea": { "X": 0, "Y": 149, "Width": 639, "Height": 149 },
+			"When":{
+				"FrontMountainFinal":"2",
+				"Mountains |contains=truerandom":true
+			}
+		},
+		{
+			"LogName": "Back Mountains (2) Menu Background Elements (Truly Randomized)",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/mountains/{{Random:blue,purple,pastel,peach,grey,olive,ruby,orange,pink,plum,teal,toxic,indigo,vanilla}}.png",
+			"ToArea": { "X": 0, "Y": 886, "Width": 639, "Height": 149 },
+			"FromArea": { "X": 0, "Y": 149, "Width": 639, "Height": 149 },
+			"When":{
+				"BackMountainFinal":"2",
+				"Mountains |contains=truerandom":true
+			}
+		},
+		// MOUNTAIN 3
+		{
+			"LogName": "Front Mountains (3) Menu Background Elements",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/mountains/{{Mountains}}.png",
+			"ToArea": { "X": 0, "Y": 737, "Width": 639, "Height": 148 },
+			"FromArea": { "X": 0, "Y": 298, "Width": 639, "Height": 148 },
+			"When":{
+				"FrontMountainFinal":"3",
+				"Mountains |contains=random":false,
+				"Mountains |contains=truerandom":false
+			}
+		},
+		{
+			"LogName": "Back Mountains (3) Menu Background Elements",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/mountains/{{Mountains}}.png",
+			"ToArea": { "X": 0, "Y": 886, "Width": 639, "Height": 148 },
+			"FromArea": { "X": 0, "Y": 298, "Width": 639, "Height": 148 },
+			"When":{
+				"BackMountainFinal":"3",
+				"Mountains |contains=random":false,
+				"Mountains |contains=truerandom":false
+			}
+		},
+		// MOUNTAIN 3 (RANDOMIZED)
+		{
+			"LogName": "Front Mountains (3) Menu Background Elements (Randomized)",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/mountains/{{Random:blue,purple,pastel,peach,olive,ruby,orange,pink,plum,teal,toxic,indigo |key=mountain}}.png",
+			"ToArea": { "X": 0, "Y": 737, "Width": 639, "Height": 148 },
+			"FromArea": { "X": 0, "Y": 298, "Width": 639, "Height": 148 },
+			"When":{
+				"FrontMountainFinal":"3",
+				"Mountains |contains=random":true,
+				"Mountains |contains=truerandom":false
+			}
+		},
+		{
+			"LogName": "Back Mountains (3) Menu Background Elements (Randomized)",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/mountains/{{Random:blue,purple,pastel,peach,olive,ruby,orange,pink,plum,teal,toxic,indigo |key=mountain}}.png",
+			"ToArea": { "X": 0, "Y": 886, "Width": 639, "Height": 148 },
+			"FromArea": { "X": 0, "Y": 298, "Width": 639, "Height": 148 },
+			"When":{
+				"BackMountainFinal":"3",
+				"Mountains |contains=random":true,
+				"Mountains |contains=truerandom":false
+			}
+		},
+		// MOUNTAIN 3 (TRULY RANDOMIZED)
+		{
+			"LogName": "Front Mountains (3) Menu Background Elements (Truly Randomized)",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/mountains/{{Random:blue,purple,pastel,peach,grey,olive,ruby,orange,pink,plum,teal,toxic,indigo,vanilla}}.png",
+			"ToArea": { "X": 0, "Y": 737, "Width": 639, "Height": 148 },
+			"FromArea": { "X": 0, "Y": 298, "Width": 639, "Height": 148 },
+			"When":{
+				"FrontMountainFinal":"3",
+				"Mountains |contains=truerandom":true
+			}
+		},
+		{
+			"LogName": "Back Mountains (3) Menu Background Elements (Truly Randomized)",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/mountains/{{Random:blue,purple,pastel,peach,grey,olive,ruby,orange,pink,plum,teal,toxic,indigo,vanilla}}.png",
+			"ToArea": { "X": 0, "Y": 886, "Width": 639, "Height": 148 },
+			"FromArea": { "X": 0, "Y": 298, "Width": 639, "Height": 148 },
+			"When":{
+				"BackMountainFinal":"3",
+				"Mountains |contains=truerandom":true
+			}
+		},
+		// MOUNTAIN off
+		{
+			"LogName": "Front Mountains (off) Menu Background Elements",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/mountains/off.png",
+			"ToArea": { "X": 0, "Y": 737, "Width": 639, "Height": 148 },
+			"FromArea": { "X": 0, "Y": 298, "Width": 639, "Height": 148 },
+			"When":{
+				"FrontMountainFinal":"off"
+			}
+		},
+		{
+			"LogName": "Back Mountains (off) Menu Background Elements",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/mountains/off.png",
+			"ToArea": { "X": 0, "Y": 886, "Width": 639, "Height": 148 },
+			"FromArea": { "X": 0, "Y": 298, "Width": 639, "Height": 148 },
+			"When":{
+				"BackMountainFinal":"off"
+			}
+		},
+		// Clouds Menu Background Elements
+		{
+			"LogName": "Clouds Menu Background Elements",
+			"Action": "EditImage",
+			"Target": "Minigames/Clouds",
+			"FromFile": "assets/clouds/{{Clouds}}.png",
+			"ToArea": { "X": 0, "Y": 0, "Width": 512, "Height": 539 },
+			"When":{
+				"Clouds |contains=vanilla":false,
+				"Clouds |contains=random":false,
+				"Clouds |contains=truerandom":false
+			}
+		},
+		// Clouds Menu Background Elements (Randomized)
+		{
+			"LogName": "Clouds Menu Background Elements (Randomized)",
+			"Action": "EditImage",
+			"Target": "Minigames/Clouds",
+			"FromFile": "assets/clouds/{{Random:blue,cucumber,hot pink,indigo,lavender,lilac,lime,mint,orange,peach,pink,strawberry,white,yellow}}.png",
+			"ToArea": { "X": 0, "Y": 0, "Width": 512, "Height": 539 },
+			"When":{
+				"Clouds |contains=random":true,
+				"Clouds |contains=truerandom":false
+			}
+		},
+		// Clouds Menu Background Elements (Truly Randomized)
+		{
+			"LogName": "Clouds Menu Background Elements (Truly Randomized)",
+			"Action": "EditImage",
+			"Target": "Minigames/Clouds",
+			"FromFile": "assets/clouds/{{Random:off,vanilla,blue,cucumber,grey,hot pink,indigo,lavender,lilac,lime,mint,orange,peach,pink,strawberry,white,yellow}}.png",
+			"ToArea": { "X": 0, "Y": 0, "Width": 512, "Height": 539 },
+			"When":{
+				"Clouds |contains=truerandom":true
+			}
+		},
+		// Tree Facade Menu Background Elements
+		{
+			"LogName": "Tree Facade Menu Background Elements",
+			"Action": "EditImage",
+			"Target": "Minigames/Clouds",
+			"FromFile": "assets/trees_facade/{{Trees}}.png",
+			"ToArea": { "X": 0, "Y": 541, "Width": 512, "Height": 155 },
+			"When":{
+				"Trees |contains=random":false,
+				"Trees |contains=truerandom":false
+			}
+		},
+		// Tree Facade Menu Background Elements (Randomized)
+		{
+			"LogName": "Tree Facade Menu Background Elements (Randomized)",
+			"Action": "EditImage",
+			"Target": "Minigames/Clouds",
+			"FromFile": "assets/trees_facade/{{Random:blue,deep purple,grey,indigo,mulberry,olive,plum,purple,teal}}.png",
+			"ToArea": { "X": 0, "Y": 541, "Width": 512, "Height": 155 },
+			"When":{
+				"Trees |contains=random":true,
+				"Trees |contains=truerandom":false
+			}
+		},
+		// Tree Facade Menu Background Elements (Truly Randomized)
+		{
+			"LogName": "Tree Facade Menu Background Elements (Truly Randomized)",
+			"Action": "EditImage",
+			"Target": "Minigames/Clouds",
+			"FromFile": "assets/trees_facade/{{Random:off,vanilla,blue,deep purple,grey,indigo,mulberry,olive,plum,purple,teal}}.png",
+			"ToArea": { "X": 0, "Y": 541, "Width": 512, "Height": 155 },
+			"When":{
+				"Trees |contains=truerandom":true
+			}
+		},
+		
+		// Tree Facade Mist Menu Background Elements
+		{
+			"LogName": "Tree Facade Mist Menu Background Elements",
+			"Action": "EditImage",
+			"Target": "Minigames/Clouds",
+			"PatchMode": "Overlay",
+			"FromFile": "assets/mist_facade/{{Mist}}.png",
+			"ToArea": { "X": 0, "Y": 541, "Width": 512, "Height": 155 },
+			"When":{
+				"Mist |contains=off":false,
+				"Mist |contains=random":false,
+				"Mist |contains=truerandom":false
+			}
+		},
+		// Tree Facade Mist Menu Background Elements (Randomized)
+		{
+			"LogName": "Tree Facade Mist Menu Background Elements (Randomized)",
+			"Action": "EditImage",
+			"Target": "Minigames/Clouds",
+			"PatchMode": "Overlay",
+			"FromFile": "assets/mist_facade/{{Random:aqua,blue,gold,grape,mint,green,grey,hot pink,lavender,lilac,lime,orange,peach,pink,purple,strawberry,yellow}}.png",
+			"ToArea": { "X": 0, "Y": 541, "Width": 512, "Height": 155 },
+			"When":{
+				"Mist |contains=random":true,
+				"Mist |contains=truerandom":false
+			}
+		},
+		// Tree Facade Mist Menu Background Elements (Truly Randomized)
+		{
+			"LogName": "Tree Facade Mist Menu Background Elements (Truly Randomized)",
+			"Action": "EditImage",
+			"Target": "Minigames/Clouds",
+			"PatchMode": "Overlay",
+			"FromFile": "assets/mist_facade/{{Random:off,aqua,blue,gold,grape,mint,green,grey,hot pink,lavender,lilac,lime,orange,peach,pink,purple,strawberry,yellow}}.png",
+			"ToArea": { "X": 0, "Y": 541, "Width": 512, "Height": 155 },
+			"When":{
+				"Mist |contains=truerandom":true
+			}
+		},
+		
+		
+		// Tree Facade Sparkles Menu Background Elements
+		{
+			"LogName": "Tree Facade Sparkles Menu Background Elements",
+			"Action": "EditImage",
+			"Target": "Minigames/Clouds",
+			"PatchMode": "Overlay",
+			"FromFile": "assets/sparkles_facade/{{Sparkles}}.png",
+			"ToArea": { "X": 0, "Y": 541, "Width": 512, "Height": 155 },
+			"When":{
+				"Sparkles |contains=off":false,
+				"Sparkles |contains=random":false,
+				"Sparkles |contains=truerandom":false
+			}
+		},
+		
+		// Tree Facade Sparkles Menu Background Elements (Randomized)
+		{
+			"LogName": "Tree Facade Sparkles Menu Background Elements (Randomized)",
+			"Action": "EditImage",
+			"Target": "Minigames/Clouds",
+			"PatchMode": "Overlay",
+			"FromFile": "assets/sparkles_facade/{{Random:blue,cyan,fireflies,gold,green,lime,mint,pink,purple,rose gold,yellow,white}}.png",
+			"ToArea": { "X": 0, "Y": 541, "Width": 512, "Height": 155 },
+			"When":{
+				"Sparkles |contains=random":true,
+				"Sparkles |contains=truerandom":false
+			}
+		},
+		
+		// Tree Facade Sparkles Menu Background Elements (Truly Randomized)
+		{
+			"LogName": "Tree Facade Sparkles Menu Background Elements (Truly Randomized)",
+			"Action": "EditImage",
+			"Target": "Minigames/Clouds",
+			"PatchMode": "Overlay",
+			"FromFile": "assets/sparkles_facade/{{Random:off,blue,cyan,fireflies,gold,green,lime,mint,pink,purple,rose gold,yellow,white}}.png",
+			"ToArea": { "X": 0, "Y": 541, "Width": 512, "Height": 155 },
+			"When":{
+				"Sparkles |contains=truerandom":true
+			}
+		}
+     ]
+}

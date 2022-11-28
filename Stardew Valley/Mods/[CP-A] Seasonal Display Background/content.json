@@ -1,0 +1,138 @@
+{
+  "Format": "1.17.0",
+
+  "ConfigSchema": {
+    "frame": {
+      "AllowValues": "vanilla, light, dark",
+      "Default": "vanilla",
+      "Description": "Choose which version of the frame you want to display."
+    },
+    "toggle": {
+      "AllowValues": "enabled, disabled",
+      "Default": "disabled",
+      "Description": "Toggles the frames in this mod off for compatibility with other UI mods."
+    }
+  },
+
+  "Changes": [
+
+// FRAME
+
+    {
+      "LogName": "Frame vanilla",
+      "Action": "EditImage",
+      "Target": "LooseSprites/daybg, LooseSprites/nightbg",
+      "FromFile": "assets/frames/frame_vanilla.png",
+      "When": {
+        "frame": "vanilla",
+        "toggle": "enabled"
+      },
+      "PatchMode": "Overlay"
+    },
+    {
+      "LogName": "Frame light",
+      "Action": "EditImage",
+      "Target": "LooseSprites/daybg, LooseSprites/nightbg",
+      "FromFile": "assets/frames/frame_light.png",
+      "When": {
+        "frame": "light",
+        "toggle": "enabled"
+      },
+      "PatchMode": "Overlay"
+    },
+    {
+      "LogName": "Frame dark",
+      "Action": "EditImage",
+      "Target": "LooseSprites/daybg, LooseSprites/nightbg",
+      "FromFile": "assets/frames/frame_dark.png",
+      "When": {
+        "frame": "dark",
+        "toggle": "enabled"
+      },
+      "PatchMode": "Overlay"
+    },
+
+// BACKGROUNDS
+
+		{
+			"LogName": "Seasonal animation day",
+			"Action": "EditImage",
+			"Target": "LooseSprites/daybg",
+			"FromFile": "assets/bg/{{season}}_daybg_animation.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 104, "Height": 168 },
+			"ToArea": { "X": 12, "Y": 12, "Width": 104, "Height": 168 },
+			"AnimationFrameTime": 7,
+			"AnimationFrameCount": 20,
+			"When": {
+				"Weather |contains=rain, storm, snow": "false",
+			},
+		},
+		{
+			"LogName": "Seasonal rain animation day",
+			"Action": "EditImage",
+			"Target": "LooseSprites/daybg",
+			"FromFile": "assets/bg/{{season}}_daybg_rain_animation.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 104, "Height": 168 },
+			"ToArea": { "X": 12, "Y": 12, "Width": 104, "Height": 168 },
+			"AnimationFrameTime": 7,
+			"AnimationFrameCount": 20,
+			"When": {
+				"Weather |contains=rain, storm": "true",
+			},
+		},
+		{
+			"LogName": "Winter snow animation day",
+			"Action": "EditImage",
+			"Target": "LooseSprites/daybg",
+			"FromFile": "assets/bg/winter_daybg_snow_animation.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 104, "Height": 168 },
+			"ToArea": { "X": 12, "Y": 12, "Width": 104, "Height": 168 },
+			"AnimationFrameTime": 15,
+			"AnimationFrameCount": 20,
+			"When": {
+				"Weather |contains=snow": "true",
+				"Season |contains=winter": "true",
+			},
+		},
+		{
+			"LogName": "Seasonal animation night",
+			"Action": "EditImage",
+			"Target": "LooseSprites/nightbg",
+			"FromFile": "assets/bg/{{season}}_nightbg_animation.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 104, "Height": 168 },
+			"ToArea": { "X": 12, "Y": 12, "Width": 104, "Height": 168 },
+			"AnimationFrameTime": 7,
+			"AnimationFrameCount": 20,
+			"When": {
+				"Weather |contains=rain, storm, snow": "false",
+			},
+		},
+		{
+			"LogName": "Seasonal rain animation night",
+			"Action": "EditImage",
+			"Target": "LooseSprites/nightbg",
+			"FromFile": "assets/bg/{{season}}_nightbg_rain_animation.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 104, "Height": 168 },
+			"ToArea": { "X": 12, "Y": 12, "Width": 104, "Height": 168 },
+			"AnimationFrameTime": 7,
+			"AnimationFrameCount": 20,
+			"When": {
+				"Weather |contains=rain, storm": "true",
+			},
+		},
+		{
+			"LogName": "Winter snow animation night",
+			"Action": "EditImage",
+			"Target": "LooseSprites/nightbg",
+			"FromFile": "assets/bg/winter_nightbg_snow_animation.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 104, "Height": 168 },
+			"ToArea": { "X": 12, "Y": 12, "Width": 104, "Height": 168 },
+			"AnimationFrameTime": 15,
+			"AnimationFrameCount": 20,
+			"When": {
+				"Weather |contains=snow": "true",
+				"Season |contains=winter": "true",
+			},
+		},
+  ]
+}

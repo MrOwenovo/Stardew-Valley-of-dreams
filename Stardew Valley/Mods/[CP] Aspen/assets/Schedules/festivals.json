@@ -1,0 +1,90 @@
+{	//(0 = up, 1 = right, 2 = down, 3 = left)
+
+	"Changes": [
+        {	//Egg festival position
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring13",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "Aspen 30 56 3",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        {	//Flower dance position
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring24",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "Aspen 24 25 2",
+                    "Delimiter": "/"
+                },
+				//Flower dance position during the dance
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "Aspen 19 30 0",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+		{	//Luau position
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer11",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "Aspen 48 19 2",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+		{	//Jellies position
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer28",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "Aspen 25 36 2",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+		{	//Fair position
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall16",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "Aspen 80 68 1",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+    ]
+}

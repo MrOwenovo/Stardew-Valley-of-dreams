@@ -1,0 +1,327 @@
+﻿{
+"Format": "1.25",
+
+//Configuration
+
+"ConfigSchema": {
+
+	"AllowFestivals": {
+            "AllowValues": "true, false",
+            "Default": true,
+	     "Description": "Allow new NPCs to visit festivals. True by default, but can be disabled if there are tile conflicts.",
+        },
+
+	"FarmBasementEntrance": {
+            "AllowValues": "true, false",
+            "Default": true,
+	     "Description": "Toggles the farmhouse entrance for the Monster Basement. I recommend turning off if you have a custom farm map.",
+        },
+
+    },
+
+ "DynamicTokens": [
+
+//Daniel's Random Visits
+
+	{
+	"Name": "DanielVisit",
+	"Value": "{{Random: true, false, false, false, false, false, false, false, false, false}}",
+	},
+	
+//Custom Music Tokens (Changes if SAAT installed)
+	{
+         "Name": "GabrielTheme",
+         "Value": "kindadumbautumn",
+         "When": {
+             "HasMod: |contains=supert.guildexpandedsaat": false,
+         },
+	},
+
+	{
+         "Name": "GabrielTheme",
+         "Value": "GabrielTheme",
+         "When": {
+             "HasMod: |contains=supert.guildexpandedsaat": true,
+         },
+	},
+
+	{
+         "Name": "ZinniaTheme",
+         "Value": "ragtime",
+         "When": {
+             "HasMod: |contains=supert.guildexpandedsaat": false,
+         },
+	},
+
+	{
+         "Name": "ZinniaTheme",
+         "Value": "ZinniaTheme",
+         "When": {
+             "HasMod: |contains=supert.guildexpandedsaat": true,
+         },
+	},
+
+	{
+         "Name": "ZinniaSorrow",
+         "Value": "musicboxsong",
+         "When": {
+             "HasMod: |contains=supert.guildexpandedsaat": false,
+         },
+	},
+
+	{
+         "Name": "ZinniaSorrow",
+         "Value": "ZinniaSorrow",
+         "When": {
+             "HasMod: |contains=supert.guildexpandedsaat": true,
+         },
+	},
+
+	{
+         "Name": "ZinniaFieldTheme",
+         "Value": "junimoStarSong",
+         "When": {
+             "HasMod: |contains=supert.guildexpandedsaat": false,
+         },
+	},
+
+	{
+         "Name": "ZinniaFieldTheme",
+         "Value": "ZinniaSorrow",
+         "When": {
+             "HasMod: |contains=supert.guildexpandedsaat": true,
+         },
+	},
+
+	{
+         "Name": "SillyTheme",
+         "Value": "archaeo",
+         "When": {
+             "HasMod: |contains=supert.guildexpandedsaat": false,
+         },
+	},
+
+	{
+         "Name": "SillyTheme",
+         "Value": "SillyTheme",
+         "When": {
+             "HasMod: |contains=supert.guildexpandedsaat": true,
+         },
+	},
+
+	{
+         "Name": "DaisyFarewell",
+         "Value": "shaneTheme",
+         "When": {
+             "HasMod: |contains=supert.guildexpandedsaat": false,
+         },
+	},
+
+	{
+         "Name": "DaisyFarewell",
+         "Value": "DaisyFarewell",
+         "When": {
+             "HasMod: |contains=supert.guildexpandedsaat": true,
+         },
+	},
+
+	//SVE Spirit's Eve Fix
+
+	{
+   	 "Name": "IsOddYear",
+    	 "Value": "{{Query: {{Year}} % 2 = 1}}",
+  	},
+
+	//Monster House
+	{
+   	 "Name": "sillyMovedIn",
+    	 "Value": "false",
+  	},
+
+	{
+   	 "Name": "sillyMovedIn",
+    	 "Value": "true",
+	 "When": {
+             "HasActiveQuest: hostPlayer |contains=8280021": true,
+         },
+  	},
+
+	{
+   	 "Name": "sillyMovedIn",
+    	 "Value": "true",
+	 "When": {
+             "HasSeenEvent: hostPlayer |contains=8280021, 8280022": true,
+         },
+  	},
+
+	//sewer map changes
+	{
+   	 "Name": "sewerChanges",
+    	 "Value": "true",
+  	},
+
+	{
+   	 "Name": "sewerChanges",
+    	 "Value": "false",
+	 "When": {
+             "HasMod": "MouseyPounds.ShadowFestival",
+	     "DayEvent": "spirit's eve",
+         },
+  	},
+
+
+	//c
+	{
+   	 "Name": "ccOrjoja",
+    	 "Value": "false",
+  	},
+
+	{
+   	 "Name": "ccOrjoja",
+    	 "Value": "true",
+	 "When": {
+             "IsCommunityCenterComplete": "true",
+         },
+  	},
+
+	{
+   	 "Name": "ccOrjoja",
+    	 "Value": "true",
+	 "When": {
+             "IsJojaMartComplete": "true",
+         },
+  	},
+],
+
+"CustomLocations": [
+      // Monster House
+      {
+         "Name": "Custom_GE_MonsterHouse",
+         "FromMapFile": "assets/Maps/MonsterHouse.tbin"
+      },
+
+	//Guild Expansion
+      {
+         "Name": "Custom_GE_MonsterResearchWing",
+         "FromMapFile": "assets/Maps/MonsterResearchWing.tmx"
+      },
+
+	//Zinnia/Gabriel's Room
+      {
+         "Name": "Custom_GE_ZinniaRoom",
+         "FromMapFile": "assets/Maps/ZinniaRoom.tmx"
+      },
+
+	//Flower Paradise
+      {
+         "Name": "Custom_GE_FlowerParadise",
+         "FromMapFile": "assets/Maps/FlowerParadise.tbin"
+      },
+
+	//Zinnia Field
+      {
+         "Name": "Custom_GE_ZinniaField",
+         "FromMapFile": "assets/Maps/ZinniaField.tbin"
+      },
+   ],
+
+"Changes": [
+
+        {
+            "Action": "Include",
+            "FromFile": "data/Events/events.json",
+        },
+
+	{
+            "Action": "Include",
+            "FromFile": "data/Events/eventdialogue.json",
+        },
+
+	{
+            "Action": "Include",
+            "FromFile": "data/maps.json",
+        },
+
+	 {
+            "Action": "Include",
+            "FromFile": "data/quests.json",
+        },
+
+	{
+            "Action": "Include",
+            "FromFile": "data/monsterdata.json",
+        },
+
+	{
+            "Action": "Include",
+            "FromFile": "data/gifttastes.json",
+        },
+
+	{
+            "Action": "Include",
+            "FromFile": "data/festivaldata.json",
+	     "When": {
+		"AllowFestivals": "true",
+	},
+        },
+
+	{
+            "Action": "Include",
+            "FromFile": "data/moviedata.json",
+        },
+
+	{
+            "Action": "Include",
+            "FromFile": "data/recipes.json",
+        },
+
+	{
+            "Action": "Include",
+            "FromFile": "data/secretnotes.json",
+        },
+
+	{
+            "Action": "Include",
+            "FromFile": "data/mail.json",
+        },
+
+	{
+            "Action": "Include",
+            "FromFile": "data/NPCData/HumanNPCData.json",
+	
+        },
+
+	{
+            "Action": "Include",
+            "FromFile": "data/NPCData/MonsterNPCData.json",
+        },
+
+	{
+     "Action": "Load",
+	 "Target": "Data/Events/AdventureGuild",
+	 "FromFile": "assets/XNBs/Blank.xnb",
+	"When": {
+		"HasMod: |contains=FlashShifter.StardewValleyExpandedCP, Wolf.Marlon, Rafseazz.RSVCP, BlatantDecoy.BugmeatRecipes-CP": false,
+	},
+},
+
+	{
+     "Action": "Load",
+	 "Target": "Data/Events/Custom_GE_MonsterResearchWing",
+	 "FromFile": "assets/XNBs/Blank.xnb",
+	},
+
+	{
+     "Action": "Load",
+	 "Target": "Data/Events/Custom_GE_FlowerParadise",
+	 "FromFile": "assets/XNBs/Blank.xnb",
+	},
+
+	{
+     "Action": "Load",
+	 "Target": "Data/Events/Custom_GE_MonsterHouse",
+	 "FromFile": "assets/XNBs/Blank.xnb",
+	},
+
+]
+}

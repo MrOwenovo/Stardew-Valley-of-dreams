@@ -1,0 +1,745 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/ObjectContextTags",
+            "TextOperations": [
+                //Making cheese a category
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Goat Cheese"
+                    ],
+                    "Value": "cheese_item",
+                    "Delimiter": ", "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Cheese"
+                    ],
+                    "Value": "cheese_item",
+                    "Delimiter": ", "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Quartz"
+                    ],
+                    "Value": "quartz_item",
+                    "Delimiter": ", "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Fire Quartz"
+                    ],
+                    "Value": "quartz_item",
+                    "Delimiter": ", "
+                }
+            ]
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/SpecialOrders",
+            "Entries": {
+                "EastScarp.SpecialOrders.JosephineJelly": { //simply a reward
+                    "Name": "[EastScarp.SpecialOrders.JosephineJelly_Name]",
+                    "Requester": null,
+                    "Duration": "ThreeWeeks",
+                    "Repeatable": "false",
+                    "RequiredTags": "event_57873000, !mail_Josephine_Leaves, !season_winter",
+                    "OrderType": "",
+                    "SpecialRule": "",
+                    "Text": "[EastScarp.SpecialOrders.JosephineJelly_Text]",
+                    "ItemToRemoveOnEnd": null,
+                    "MailToRemoveOnEnd": null,
+                    "RandomizedElements": null,
+                    "Objectives": [
+                        {
+                            "Type": "Collect",
+                            "Text": "[EastScarp.SpecialOrders.JosephineJelly_Objective_0_Text]",
+                            "RequiredCount": "12",
+                            "Data": {
+                                "AcceptedContextTags": "fruit_item"
+                            }
+                        },
+                        {
+                            "Type": "Collect",
+                            "Text": "[EastScarp.SpecialOrders.JosephineJelly_Objective_1_Text]",
+                            "RequiredCount": "12",
+                            "Data": {
+                                "AcceptedContextTags": "jelly_item"
+                            }
+                        },
+                        {
+                            "Type": "Donate",
+                            "Text": "[EastScarp.SpecialOrders.JosephineJelly_Objective_2_Text]",
+                            "RequiredCount": "12",
+                            "Data": {
+                                "DropBox": "ESInnFridge",
+                                "DropBoxGameLocation": "Custom_EastScarpeInn",
+                                "DropBoxIndicatorLocation": "45 8",
+                                "AcceptedContextTags": "jelly_item"
+                            }
+                        }
+                    ],
+                    "Rewards": [
+                        {
+                            "Type": "Money",
+                            "Data": {
+                                "Amount": "6000"
+                            }
+                        },
+                        {
+                            "Type": "Mail",
+                            "Data": {
+                                "MailReceived": "EastScarp.SpecialOrders.JosephineJellyMail",
+                                "NoLetter": "false"
+                            }
+                        }
+                    ]
+                },
+                "EastScarp.SpecialOrders.SlayCrabs": { //unlocks penguin custom critter
+                    "Name": "[EastScarp.SpecialOrders.SlayCrabs_Name]",
+                    "Requester": null,
+                    "Duration": "TwoWeeks",
+                    "Repeatable": "true",
+                    "RequiredTags": "",
+                    "OrderType": "",
+                    "SpecialRule": "",
+                    "Text": "[EastScarp.SpecialOrders.SlayCrabs_Text]",
+                    "ItemToRemoveOnEnd": null,
+                    "MailToRemoveOnEnd": null,
+                    "RandomizedElements": null,
+                    "Objectives": [
+                        {
+                            "Type": "Slay",
+                            "Text": "[EastScarp.SpecialOrders.SlayCrabs_Objective_0_Text]",
+                            "RequiredCount": "50",
+                            "Data": {
+                                "TargetName": "Rock Crab, Lava Crab"
+                            }
+                        }
+                    ],
+                    "Rewards": [
+                        {
+                            "Type": "Money",
+                            "Data": {
+                                "Amount": "5000"
+                            }
+                        },
+                        {
+                            "Type": "Mail",
+                            "Data": {
+                                "MailReceived": "EastScarp.SpecialOrders.SlayCrabsMail",
+                                "NoLetter": "false"
+                            }
+                        }
+                    ]
+                },
+                "EastScarp.SpecialOrders.LadySheba": { // Part one of unlocking the Lady Sheba NPC/Custom critter
+                    "Name": "[EastScarp.SpecialOrders.LadySheba_Name]",
+                    "Requester": "Jas",
+                    "Duration": "OneWeek",
+                    "Repeatable": "false",
+                    "RequiredTags": "",
+                    "OrderType": "",
+                    "SpecialRule": "",
+                    "Text": "[EastScarp.SpecialOrders.LadySheba_Text]",
+                    "ItemToRemoveOnEnd": null,
+                    "MailToRemoveOnEnd": null,
+                    "RandomizedElements": [
+                        {
+                            "Name": "FishType",
+                            "Values": [
+                                {
+                                    "RequiredTags": "season_spring",
+                                    "Value": "PICK_ITEM Sunfish, Sardine, Flounder, Largemouth Bass, Halibut"
+                                },
+                                {
+                                    "RequiredTags": "season_summer",
+                                    "Value": "PICK_ITEM Rainbow Trout, Dorado, Tilapia, Tuna, Red Mullet"
+                                },
+                                {
+                                    "RequiredTags": "season_fall",
+                                    "Value": "PICK_ITEM Tiger Trout, Albacore, Salmon"
+                                },
+                                {
+                                    "RequiredTags": "season_winter",
+                                    "Value": "PICK_ITEM Squid, Perch, Lingcod"
+                                }
+                            ]
+                        }
+                    ],
+                    "Objectives": [
+                        {
+                            "Type": "Fish",
+                            "Text": "[EastScarp.SpecialOrders.LadySheba_Objective_0_Text]",
+                            "RequiredCount": "5",
+                            "Data": {
+                                "AcceptedContextTags": "{FishType:Tags}"
+                            }
+                        },
+                        {
+                            "Type": "Donate",
+                            "Text": "[EastScarp.SpecialOrders.LadySheba_Objective_1_Text]",
+                            "RequiredCount": "5",
+                            "Data": {
+                                "DropBox": "ESCrate",
+                                "DropBoxGameLocation": "Custom_EastScarpe",
+                                "DropBoxIndicatorLocation": "13 90",
+                                "MinimumCapacity": "9",
+                                "AcceptedContextTags": "{FishType:Tags}"
+                            }
+                        }
+                    ],
+                    "Rewards": [
+                        {
+                            "Type": "Money",
+                            "Data": {
+                                "Amount": "500"
+                            }
+                        },
+                        {
+                            "Type": "Mail",
+                            "Data": {
+                                "MailReceived": "EastScarp.SpecialOrders.LadyShebaMail",
+                                "NoLetter": "false"
+                            }
+                        }
+                    ]
+                },
+                "EastScarp.SpecialOrders.LadySheba2": { // Part two of unlocking the Lady Sheba NPC/Custom critter
+                    "Name": "[EastScarp.SpecialOrders.LadySheba2_Name]",
+                    "Requester": "Jas",
+                    "Duration": "TwoWeeks",
+                    "Repeatable": "false",
+                    "RequiredTags": "mail_EastScarp.SpecialOrders.LadyShebaMail",
+                    "OrderType": "",
+                    "SpecialRule": "",
+                    "Text": "[EastScarp.SpecialOrders.LadySheba2_Text]",
+                    "ItemToRemoveOnEnd": null,
+                    "MailToRemoveOnEnd": null,
+                    "RandomizedElements": null,
+                    "Objectives": [
+                        {
+                            "Type": "Collect",
+                            "Text": "[EastScarp.SpecialOrders.LadySheba2_Objective_0_Text]",
+                            "RequiredCount": "50",
+                            "Data": {
+                                "AcceptedContextTags": "item_bug_meat"
+                            }
+                        },
+                        {
+                            "Type": "Collect",
+                            "Text": "[EastScarp.SpecialOrders.LadySheba2_Objective_1_Text]",
+                            "RequiredCount": "5",
+                            "Data": {
+                                "AcceptedContextTags": "item_bug_steak"
+                            }
+                        },
+                        {
+                            "Type": "Donate",
+                            "Text": "[EastScarp.SpecialOrders.LadySheba2_Objective_2_Text]",
+                            "RequiredCount": "5",
+                            "Data": {
+                                "DropBox": "ESCrate",
+                                "DropBoxGameLocation": "Custom_EastScarpe",
+                                "DropBoxIndicatorLocation": "13 90",
+                                "MinimumCapacity": "9",
+                                "AcceptedContextTags": "item_bug_steak"
+                            }
+                        }
+                    ],
+                    "Rewards": [
+                        {
+                            "Type": "Money",
+                            "Data": {
+                                "Amount": "500"
+                            }
+                        },
+                        {
+                            "Type": "Mail",
+                            "Data": {
+                                "MailReceived": "EastScarp.SpecialOrders.LadySheba2Mail",
+                                "NoLetter": "false"
+                            }
+                        }
+                    ]
+                },
+                "EastScarp.SpecialOrders.LadySheba3": { // Part three of unlocking the Lady Sheba NPC/Custom critter
+                    "Name": "[EastScarp.SpecialOrders.LadySheba2_Name]",
+                    "Requester": "Jas",
+                    "Duration": "TwoWeeks",
+                    "Repeatable": "false",
+                    "RequiredTags": "mail_EastScarp.SpecialOrders.LadySheba2Mail",
+                    "OrderType": "",
+                    "SpecialRule": "",
+                    "Text": "[EastScarp.SpecialOrders.LadySheba3_Text]",
+                    "ItemToRemoveOnEnd": null,
+                    "MailToRemoveOnEnd": null,
+                    "RandomizedElements": null,
+                    "Objectives": [
+                        {
+                            "Type": "Collect",
+                            "Text": "[EastScarp.SpecialOrders.LadySheba3_Objective_0_Text]",
+                            "RequiredCount": "3",
+                            "Data": {
+                                "AcceptedContextTags": "milk_item"
+                            }
+                        },
+                        {
+                            "Type": "Collect",
+                            "Text": "[EastScarp.SpecialOrders.LadySheba3_Objective_1_Text]",
+                            "RequiredCount": "3",
+                            "Data": {
+                                "AcceptedContextTags": "cheese_item"
+                            }
+                        },
+                        {
+                            "Type": "Donate",
+                            "Text": "[EastScarp.SpecialOrders.LadySheba3_Objective_2_Text]",
+                            "RequiredCount": "3",
+                            "Data": {
+                                "DropBox": "ESCrate",
+                                "DropBoxGameLocation": "Custom_EastScarpe",
+                                "DropBoxIndicatorLocation": "13 90",
+                                "MinimumCapacity": "9",
+                                "AcceptedContextTags": "cheese_item"
+                            }
+                        }
+                    ],
+                    "Rewards": [
+                        {
+                            "Type": "Money",
+                            "Data": {
+                                "Amount": "600"
+                            }
+                        },
+                        {
+                            "Type": "Mail",
+                            "Data": {
+                                "MailReceived": "EastScarp.SpecialOrders.LadySheba3Mail",
+                                "NoLetter": "false"
+                            }
+                        }
+                    ]
+                },
+                "EastScarp.SpecialOrders.AideenFlowers": { //unlock bird of paradise plant
+                    "Name": "[EastScarp.SpecialOrders.AideenFlowers_Name]",
+                    "Requester": null,
+                    "Duration": "TwoWeeks",
+                    "Repeatable": "true",
+                    "RequiredTags": "season_spring",
+                    "OrderType": "",
+                    "SpecialRule": "",
+                    "Text": "[EastScarp.SpecialOrders.AideenFlowers_Text]",
+                    "ItemToRemoveOnEnd": null,
+                    "MailToRemoveOnEnd": null,
+                    "RandomizedElements": null,
+                    "Objectives": [
+                        {
+                            "Type": "Collect",
+                            "Text": "[EastScarp.SpecialOrders.AideenFlowers_Objective_0_Text]",
+                            "RequiredCount": "30",
+                            "Data": {
+                                "AcceptedContextTags": "item_daffodil"
+                            }
+                        },
+                        {
+                            "Type": "Donate",
+                            "Text": "[EastScarp.SpecialOrders.AideenFlowers_Objective_1_Text]",
+                            "RequiredCount": "30",
+                            "Data": {
+                                "DropBox": "AideenVase",
+                                "DropBoxGameLocation": "Custom_ESHouse1",
+                                "DropBoxIndicatorLocation": "23 18",
+                                "MinimumCapacity": "9",
+                                "AcceptedContextTags": "item_daffodil"
+                            }
+                        }
+                    ],
+                    "Rewards": [
+                        {
+                            "Type": "Money",
+                            "Data": {
+                                "Amount": "2000"
+                            }
+                        },
+                        {
+                            "Type": "Mail",
+                            "Data": {
+                                "MailReceived": "EastScarp.SpecialOrders.AideenFlowersMail",
+                                "NoLetter": "false"
+                            }
+                        }
+                    ]
+                },
+                "EastScarp.SpecialOrders.AideenFlowers2": { //gives the gift of seeds
+                    "Name": "[EastScarp.SpecialOrders.AideenFlowers2_Name]",
+                    "Requester": null,
+                    "Duration": "TwoWeeks",
+                    "Repeatable": "true",
+                    "RequiredTags": "season_summer",
+                    "OrderType": "",
+                    "SpecialRule": "",
+                    "Text": "[EastScarp.SpecialOrders.AideenFlowers2_Text]",
+                    "ItemToRemoveOnEnd": null,
+                    "MailToRemoveOnEnd": null,
+                    "RandomizedElements": null,
+                    "Objectives": [
+                        {
+                            "Type": "Collect",
+                            "Text": "[EastScarp.SpecialOrders.AideenFlowers2_Objective_0_Text]",
+                            "RequiredCount": "30",
+                            "Data": {
+                                "AcceptedContextTags": "item_sweet_pea"
+                            }
+                        },
+                        {
+                            "Type": "Donate",
+                            "Text": "[EastScarp.SpecialOrders.AideenFlowers2_Objective_1_Text]",
+                            "RequiredCount": "30",
+                            "Data": {
+                                "DropBox": "AideenVase",
+                                "DropBoxGameLocation": "Custom_ESHouse1",
+                                "DropBoxIndicatorLocation": "23 18",
+                                "MinimumCapacity": "9",
+                                "AcceptedContextTags": "item_sweet_pea"
+                            }
+                        }
+                    ],
+                    "Rewards": [
+                        {
+                            "Type": "Money",
+                            "Data": {
+                                "Amount": "2000"
+                            }
+                        },
+                        {
+                            "Type": "Mail",
+                            "Data": {
+                                "MailReceived": "EastScarp.SpecialOrders.AideenFlowers2Mail",
+                                "NoLetter": "false"
+                            }
+                        }
+                    ]
+                },
+                "EastScarp.SpecialOrders.JojaCola": {
+                    "Name": "[EastScarp.SpecialOrders.JojaCola_Name]",
+                    "Requester": null,
+                    "Duration": "OneWeek",
+                    "Repeatable": "true",
+                    "RequiredTags": "NOT_IMPLEMENTED",
+                    "OrderType": "",
+                    "SpecialRule": "",
+                    "Text": "[EastScarp.SpecialOrders.JojaCola_Text]",
+                    "ItemToRemoveOnEnd": null,
+                    "MailToRemoveOnEnd": null,
+                    "RandomizedElements": null,
+                    "Objectives": [
+                        {
+                            "Type": "Gift",
+                            "Text": "[EastScarp.SpecialOrders.JojaCola_Objective_0_Text]",
+                            "RequiredCount": "50",
+                            "Data": {
+                                "AcceptedContextTags": "item_joja_cola"
+                            }
+                        }
+                    ],
+                    "Rewards": [
+                        {
+                            "Type": "Money",
+                            "Data": {
+                                "Amount": "5000"
+                            }
+                        },
+                        {
+                            "Type": "Mail",
+                            "Data": {
+                                "MailReceived": "EastScarp.SpecialOrders.JojaCola",
+                                "NoLetter": "true"
+                            }
+                        }
+                    ]
+                },
+                "EastScarp.SpecialOrders.AideenFlowers3": { //gives the fit of seeds
+                    "Name": "[EastScarp.SpecialOrders.AideenFlowers3_Name]",
+                    "Requester": null,
+                    "Duration": "TwoWeeks",
+                    "Repeatable": "true",
+                    "RequiredTags": "season_winter",
+                    "OrderType": "",
+                    "SpecialRule": "",
+                    "Text": "[EastScarp.SpecialOrders.AideenFlowers3_Text]",
+                    "ItemToRemoveOnEnd": null,
+                    "MailToRemoveOnEnd": null,
+                    "RandomizedElements": null,
+                    "Objectives": [
+                        {
+                            "Type": "Collect",
+                            "Text": "[EastScarp.SpecialOrders.AideenFlowers3_Objective_0_Text]",
+                            "RequiredCount": "30",
+                            "Data": {
+                                "AcceptedContextTags": "item_crocus"
+                            }
+                        },
+                        {
+                            "Type": "Donate",
+                            "Text": "[EastScarp.SpecialOrders.AideenFlowers3_Objective_1_Text]",
+                            "RequiredCount": "30",
+                            "Data": {
+                                "DropBox": "AideenVase",
+                                "DropBoxGameLocation": "Custom_ESHouse1",
+                                "DropBoxIndicatorLocation": "23 18",
+                                "MinimumCapacity": "9",
+                                "AcceptedContextTags": "item_crocus"
+                            }
+                        }
+                    ],
+                    "Rewards": [
+                        {
+                            "Type": "Money",
+                            "Data": {
+                                "Amount": "2000"
+                            }
+                        },
+                        {
+                            "Type": "Mail",
+                            "Data": {
+                                "MailReceived": "EastScarp.SpecialOrders.AideenFlowers3Mail",
+                                "NoLetter": "false"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        { // Unlock Lantern Room (if Attonbomb permits it)
+            "Action": "EditData",
+            "Target": "Data/SpecialOrders",
+            "When": {
+                "HasMod": "attonbomb.Beatrice"
+            },
+            "Entries": {
+                "EastScarp.SpecialOrders.BeatriceQuartz": {
+                    "Name": "[EastScarp.SpecialOrders.BeatriceQuartz_Name]",
+                    "Requester": null,
+                    "Duration": "ThreeWeeks",
+                    "Repeatable": "false",
+                    "RequiredTags": "",
+                    "OrderType": "",
+                    "SpecialRule": "",
+                    "Text": "[EastScarp.SpecialOrders.BeatriceQuartz_Text]",
+                    "ItemToRemoveOnEnd": null,
+                    "MailToRemoveOnEnd": null,
+                    "RandomizedElements": null,
+                    "Objectives": [
+                        {
+                            "Type": "Collect",
+                            "Text": "[EastScarp.SpecialOrders.BeatriceQuartz_Objective_0_Text]",
+                            "RequiredCount": "12",
+                            "Data": {
+                                "AcceptedContextTags": "quartz_item"
+                            }
+                        },
+                        {
+                            "Type": "Collect",
+                            "Text": "[EastScarp.SpecialOrders.BeatriceQuartz_Objective_1_Text]",
+                            "RequiredCount": "12",
+                            "Data": {
+                                "AcceptedContextTags": "item_refined_quartz"
+                            }
+                        },
+                        {
+                            "Type": "Donate",
+                            "Text": "[EastScarp.SpecialOrders.BeatriceQuartz_Objective_2_Text]",
+                            "RequiredCount": "12",
+                            "Data": {
+                                "DropBox": "ESLighthouseChest",
+                                "DropBoxGameLocation": "Custom_ESLighthouse",
+                                "DropBoxIndicatorLocation": "20 3",
+                                "MinimumCapacity": "9",
+                                "AcceptedContextTags": "item_refined_quartz"
+                            }
+                        }
+                    ],
+                    "Rewards": [
+                        {
+                            "Type": "Money",
+                            "Data": {
+                                "Amount": "6000"
+                            }
+                        },
+                        {
+                            "Type": "Mail",
+                            "Data": {
+                                "MailReceived": "EastScarp.SpecialOrders.BeatriceQuartzMail",
+                                "NoLetter": "false"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Strings/SpecialOrderStrings",
+            "Entries": {
+                //Catch Fish for the Cat
+                "EastScarp.SpecialOrders.LadySheba_Name": "Feeding the Cat",
+                "EastScarp.SpecialOrders.LadySheba_Text": "There's a stray cat on East Scarp beach and she's hungry! Can someone give her some fish please? {FishType:Text} are her favourite! < Jas",
+                "EastScarp.SpecialOrders.LadySheba_Objective_0_Text": "Catch 5 {FishType:Text}.",
+                "EastScarp.SpecialOrders.LadySheba_Objective_1_Text": "Place 5 {FishType:Text} in the crate by Scarp Beach",
+                //Bug Meat for the Cat (part 2)
+                "EastScarp.SpecialOrders.LadySheba2_Name": "More food for the cat",
+                "EastScarp.SpecialOrders.LadySheba2_Text": "The stray cat's still hungry! Maybe some bug steak would help us make friends with her? < Jas",
+                "EastScarp.SpecialOrders.LadySheba2_Objective_0_Text": "Collect 50 wads of bug meat.",
+                "EastScarp.SpecialOrders.LadySheba2_Objective_1_Text": "Craft 5 Bug Meat Steaks",
+                "EastScarp.SpecialOrders.LadySheba2_Objective_2_Text": "Place 5 Bug Meat Steaks in the crate by Scarp Beach",
+                //Cheese for the Cat (part 2)
+                "EastScarp.SpecialOrders.LadySheba3_Name": "Cheese for the cat",
+                "EastScarp.SpecialOrders.LadySheba3_Text": "She's almost ready to be my friend. And all cats love cheese! This time it's going to work, I'm sure of it. < Jas",
+                "EastScarp.SpecialOrders.LadySheba3_Objective_0_Text": "Collect 3 milk",
+                "EastScarp.SpecialOrders.LadySheba3_Objective_1_Text": "Churn milk into cheese",
+                "EastScarp.SpecialOrders.LadySheba3_Objective_2_Text": "Place 3 pieces of cheese in the crate by Scarp Beach",
+                //Daffodils Order
+                "EastScarp.SpecialOrders.AideenFlowers_Name": "Spring Flowers for Aideen",
+                "EastScarp.SpecialOrders.AideenFlowers_Text": "Spring is here, and I am in dire need of daffodils! If someone could deliver thirty fresh-picked flowers, they would have my eternal gratitude.     - Aideen  ",
+                "EastScarp.SpecialOrders.AideenFlowers_Objective_0_Text": "Collect 30 Daffodils",
+                "EastScarp.SpecialOrders.AideenFlowers_Objective_1_Text": "Deliver 30 Daffodils to the Vase in Aideen's Kitchen",
+                // SweetPeas
+                "EastScarp.SpecialOrders.AideenFlowers2_Name": "Summer Flowers for Aideen",
+                "EastScarp.SpecialOrders.AideenFlowers2_Text": "Now it is summer, sweet hearts are seeking sweet peas. I would be most grateful if someone could deliver thirty freshly picked blooms.   - Aideen  ",
+                "EastScarp.SpecialOrders.AideenFlowers2_Objective_0_Text": "Collect 30 Sweet Peas",
+                "EastScarp.SpecialOrders.AideenFlowers2_Objective_1_Text": "Deliver 30 Sweet Peas to the Vase in Aideen's Kitchen",
+                // Crocus
+                "EastScarp.SpecialOrders.AideenFlowers3_Name": "Winter Flowers for Aideen",
+                "EastScarp.SpecialOrders.AideenFlowers3_Text": "Winter is so dreary, but flowers brighten even the most maudlin day. Help me brighten the lives of my customers, by delivering thirty freshly picked crocuses.    - Aideen  ",
+                "EastScarp.SpecialOrders.AideenFlowers3_Objective_0_Text": "Collect 30 Crocuses",
+                "EastScarp.SpecialOrders.AideenFlowers3_Objective_1_Text": "Deliver 30 Crocuses to the Vase in Aideen's Kitchen",
+                //Slay Crabs
+                "EastScarp.SpecialOrders.SlayCrabs_Name": "Reducing the Crab Menace",
+                "EastScarp.SpecialOrders.SlayCrabs_Text": "Aggressive crabs are surfacing at night across East Scarp, threatening pets and wildlife. Please help us reduce this menace, and make East Scarp safe again.                     -Dr. Jacob (DVM)",
+                "EastScarp.SpecialOrders.SlayCrabs_Objective_0_Text": "Slay 50 crabs",
+                //Josephine's Jelly Order
+                "EastScarp.SpecialOrders.JosephineJelly_Name": "Wanted: Jelly",
+                "EastScarp.SpecialOrders.JosephineJelly_Text": "I've been telling my friends back in Zuzu about the delicious local preserves, and now everyone wants some!^I will pay generously for a dozen jars of jelly made from locally grown fruit   - Josephine.",
+                "EastScarp.SpecialOrders.JosephineJelly_Objective_0_Text": "Collect 12 fruit",
+                "EastScarp.SpecialOrders.JosephineJelly_Objective_1_Text": "Preserve 12 jellies",
+                "EastScarp.SpecialOrders.JosephineJelly_Objective_2_Text": "Donate 12 jellies to the Inn fridge",
+                //Beatrice Quartz
+                "EastScarp.SpecialOrders.BeatriceQuartz_Name": "Quartz Needed",
+                "EastScarp.SpecialOrders.BeatriceQuartz_Text": "Recent storms have damaged the lighthouse lens, and we need freshly smelted refined quartz for the repairs. If anybody could drop some by, please?     - Beatrice",
+                "EastScarp.SpecialOrders.BeatriceQuartz_Objective_0_Text": "Collect 12 quartz",
+                "EastScarp.SpecialOrders.BeatriceQuartz_Objective_1_Text": "Process 12 bars of refined quartz",
+                "EastScarp.SpecialOrders.BeatriceQuartz_Objective_2_Text": "Deliver 12 refined quartz to the Lighthouse",
+                //JojaCola
+                "EastScarp.SpecialOrders.JojaCola_Name": "Joja Cola Takeover",
+                "EastScarp.SpecialOrders.JojaCola_Text": "Distribute 50 Joja Colas to the villagers",
+                "EastScarp.SpecialOrders.JojaCola_Objective_0_Text": "Give 50 Joja Cola as gifts"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Mail",
+            "Entries": {
+                "EastScarp.SpecialOrders.LadyShebaMail": "Thanks for feeding the cat! Maybe soon she'll be our friend. < Jas[#]Thanks for feeding the cat!",
+                "EastScarp.SpecialOrders.LadySheba2Mail": "I saw the cat today! She's almost ready to be our friend I think! Thanks so much. < Jas[#]Thanks for feeding the cat (again)!",
+                "EastScarp.SpecialOrders.LadySheba3Mail": "I think she's ready to come out now! You should come and meet her! Thank you for helping! < Jas [#]Thanks for feeding the cat!",
+                "EastScarp.SpecialOrders.AideenFlowersMail": "Dear @, ^I am most grateful for the daffodils. In return, I am sending you some seeds for summer.^ Regards, Aideen.%item object 431 9 %%[#]Flower Delivery Thank You",
+                "EastScarp.SpecialOrders.AideenFlowers2Mail": "Dear @, ^The sweet peas have certainly sweetened a few hearts. Thank you. In return, I am sending you some seeds for fall.^ Regards, Aideen.%item object 425 4 %%[#]Flower Delivery Thank You",
+                "EastScarp.SpecialOrders.AideenFlowers3Mail": "Dear @, ^The crocuses have brightened many a dreary day. In gratitude, please find enclosed some seeds for spring.^ Regards, Aideen.%item object 429 9 %%[#]Flower Delivery Thank You",
+                "EastScarp.SpecialOrders.SlayCrabsMail": "Thanks for your help, @. East Scarp feels a lot safer now. Please find enclosed some crab cakes.  - Dr. Jacob.%item object 732 5 %%[#]Thanks for helping with the infestation.",
+                "EastScarp.SpecialOrders.JosephineJellyMail": "Dear @, ^Your delicious jellies made such wonderful gifts, and received such praise!^Please enjoy the gift, and I hope it shall encourage you to make many more!   - Yours sincerely, Josephine%item bigobject 15 %%[#]A letter of thanks from Josephine",
+                "EastScarp.SpecialOrders.BeatriceQuartzMail": "Dear @, thanks to you, my lamp has been repaired and is good as new. The ships will be safe again. Please drop by some time soon.   - Beatrice[#]Lighthouse repair Thank You"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Mail",
+            "Entries": {
+                "EastScarp.SpecialOrders.AideenFlowersMail": "Dear @, ^I am most grateful for the daffodils. In return, I insist that you call by my house. I have acquired some new seeds, and I would appreciate your assistance growing them.^ Regards, Aideen.[#]Flower Delivery Thank You"
+            },
+            "When": {
+                "HasMod": "LemurKat.EastScarpe.JA",
+                "HasMod |contains=spacechase0.jsonAssets": true
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Mail",
+            "Entries": {
+                "EastScarp.SpecialOrders.AideenFlowers2Mail": "Dear @, ^The sweet peas have certainly sweetened a few hearts. Thank you. In return, I am sending you something glorious for fall.^ Regards, Aideen.%item object {{spacechase0.jsonAssets/ObjectId:Fall Rose Starter}} 2 %%[#]Flower Delivery Thank You",
+                "EastScarp.SpecialOrders.AideenFlowers3Mail": "Dear @, ^The crocuses have brightened many a dreary day. In gratitude, please find enclosed something beautiful for spring.^ Regards, Aideen.%item object {{spacechase0.jsonAssets/ObjectId:Spring Rose Starter}} 2 %%[#]Flower Delivery Thank You"
+            },
+            "When": {
+                "HasMod": "mizu.flowers",
+                "HasMod |contains=spacechase0.jsonAssets": true
+            }
+        },
+        //E V E N T S
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Custom_ESHouse1",
+            "Entries": {
+                "57879901/n EastScarp.SpecialOrders.AideenFlowersMail/c 1/p Aideen": "playful/9 11/Aideen 5 10 3 farmer 5 17 0/skippable/addBigProp 4 9 112/addBigProp 3 10 112/addBigProp 4 11 112/addBigProp 6 12 112/addBigProp 6 10 112/addTemporaryActor Munchboi 32 32 4 8 2 false/doAction 5 17/playSound doorOpen/pause 1000/move farmer 0 -4 0/faceDirection Aideen 2/animate Munchboi false false 120 16 17 18 18/pause 480/animate Munchboi false true 120 18/speak Aideen \"{{i18n:57879901.01}}\"/faceDirection farmer 3/jump farmer 1/emote farmer 16/pause 1000/faceDirection farmer 0/speak Aideen \"{{i18n:57879901.02}}\"/pause 1000/emote farmer 56/pause 1000/jump Aideen 3/speak Aideen \"{{i18n:57879901.03}}\"/pause 500/move Aideen 0 1 1/move Aideen 1 0 1/playSound openChest/textAboveHead Aideen \"{{i18n:57879901.04}}\"/pause 1000/move Aideen -1 0 2/move Aideen 0 1 2/pause 500/speak Aideen \"{{i18n:57879901.05}}[{{spacechase0.jsonAssets/ObjectId:Bird Of Paradise Seeds}}][0{{spacechase0.jsonAssets/ObjectId:Bird Of Paradise Seeds}}][00{{spacechase0.jsonAssets/ObjectId:Bird Of Paradise Seeds}}]\"/speak Aideen \"{{i18n:57879901.06}}\"/pause 500/emote farmer 32/pause 1000/end"
+            },
+            "When": {
+                "HasMod": "LemurKat.EastScarpe.JA",
+                "HasMod |contains=spacechase0.jsonAssets": true
+            }
+        },
+        {
+            "Action": "Load",
+            "Target": "Animals/FairyPenguin",
+            "FromFile": "assets/Images/FairyPenguin.png"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Custom_EastScarpe",
+            "Entries": {
+                "57879902/n EastScarp.SpecialOrders.SlayCrabsMail/t 800 1300/d Tue Wed Fri": "ocean/22 114/Eloise 18 112 2 Jacob 22 102 0 Rosa 22 100 2 farmer 17 102 2/skippable/addTemporaryActor FairyPenguin 16 16 -100 -100 2 false Animal Penguin1/addTemporaryActor FairyPenguin 16 16 -100 -100 2 false Animal Penguin2/showFrame Penguin1 21/showFrame Penguin2 21/move farmer 0 10 2/emote Eloise 16/jump Eloise 3/faceDirection farmer 1/emote farmer 8/pause 500/textAboveHead Eloise \"{{i18n:57879902.01}}\"/faceDirection Eloise 2/faceDirection farmer 2/viewport move 0 4 1000/pause 1000/warp Penguin1 23 124/pause 2000/animate Penguin1 false false 1000 21 22 23 23/move Penguin1 0 -6 0 true/pause 2000/speak Eloise \"{{i18n:57879902.02}}\"/move Penguin1 -5 0 2/warp Penguin2 23 124/pause 2000/animate Penguin2 false false 1000 21 22 23 23/move Penguin2 0 -6 3 true/faceDirection Eloise 3/faceDirection farmer 1/speak Eloise \"{{i18n:57879902.03}}\"/pause 500/move Penguin2 -2 0 3 true/move Penguin1 2 0 1 true/faceDirection Eloise 2/emote Eloise 20/pause 500/faceDirection farmer 2/pause 1000/emote Penguin2 56/emote Penguin1 20/pause 3000/end",
+                "57879903/n EastScarp.SpecialOrders.LadySheba3Mail/t 800 1300/d Tue Wed Fri": "{{season}}_day_ambient/11 92/Jas 13 93 3 farmer 16 83 2 LadySheba -100 -100 2/skippable/pause 500/move farmer 0 10 3/faceDirection Jas 1/speak Jas \"{{i18n:57879903.01}}\"/playSound leafrustle/playSound cat/move farmer 0 1 3/pause 500/move farmer -1 0 3/pause 500/move farmer -1 0 3/animate farmer true true 1000 58/faceDirection Jas 3/textAboveHead Jas \"{{i18n:57879903.02}}\"/playSound cat/pause 1000/emote Jas 28/pause 1000/playSound cat/pause 2000/playSound leafrustle/warp LadySheba 9 92/pause 1000/move LadySheba 0 1 1/textAboveHead Jas \"{{i18n:57879903.03}}\"/move LadySheba 1 0 1/pause 500/textAboveHead Jas \"{{i18n:57879903.04}}\"/speak Jas \"{{i18n:57879903.05}}\"/playSound cat/move LadySheba 1 0 1/shake LadySheba 240/pause 500/emote Jas 56/pause 500/move LadySheba 1 0 1/emote Jas 20/speak Jas \"{{i18n:57879903.06}}\"/positionOffset LadySheba 16 0/pause 500/speak Jas \"{{i18n:57879903.07}}\"/emote Jas 40/pause 1000/playSound cat/pause 500/speak Jas \"{{i18n:57879903.08}}\"/pause 500/playSound cat/speak LadySheba \"{{i18n:57879903.09}}\"/speak Jas \"{{i18n:57879903.10}}\"/emote LadySheba 20/pause 1500/playSound reward/message \"{{i18n:57879903.11}}\"/end"
+            }
+        },
+        {
+            "LogName": "Spawns penguins",
+            "Action": "EditMap",
+            "Target": "Maps/Custom_EastScarpe",
+            "Update": "OnTimeChange",
+            "When": {
+                "HasMod": "PeacefulEnd.CustomCompanions",
+                "HasSeenEvent": "57879902",
+                "Time": "{{Range: 1700, 2100}}"
+            },
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 15,
+                        "Y": 116
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "CustomCompanions": "Spawn 2 LemurKat.EastScarpeCompanions.Fairy_Penguin"
+                    }
+                }
+                /*  {
+                "Position": {
+                    "X": 16,
+                    "Y": 117
+                },
+                "Layer": "Back",
+                "SetProperties": {
+                    "CustomCompanions": "Spawn 1 LemurKat.EastScarpeCompanions.Fairy_Penguin_Chick"
+                }
+            }*/
+            ]
+        },
+    ]
+}

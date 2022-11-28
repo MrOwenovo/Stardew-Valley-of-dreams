@@ -1,0 +1,180 @@
+{
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "Changes": [
+        // Mister Ginger (cat NPC) - https://www.nexusmods.com/stardewvalley/mods/5295
+        // Tristan - https://www.nexusmods.com/stardewvalley/mods/6675
+        // This is a unique pair of NPCs.
+        {
+            "LogName": "[Yagi] Mr Ginger - Sprite Offsets",
+            "Action": "EditData",
+            "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+            "When": {
+                "HasMod: |contains=LemurKat.Mr.Ginger.NPC": true,
+                "HasMod: |contains=Lemurkat.Tristan.CP": false
+            },
+            "Entries": {
+                "MisterGinger": {
+                    "MarkerCropOffset": 16
+                },
+            }
+        },
+        {
+            "LogName": "[Yagi] Mr Ginger and Tristan [cat] - Sprite Offsets",
+            "Action": "EditData",
+            "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+            "When": {
+                "HasMod: |contains=LemurKat.Mr.Ginger.NPC": true,
+                "HasMod: |contains=Lemurkat.Tristan.CP": true,
+                "HasSeenEvent |contains=5295000": false
+            },
+            "Entries": {
+                "MisterGinger": {
+                    "MarkerCropOffset": 16
+                },
+            }
+        },
+        {
+            "LogName": "[Yagi] Mr Ginger and Tristan [human] - Sprite Offsets",
+            "Action": "EditData",
+            "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+            "When": {
+                "HasMod: |contains=LemurKat.Mr.Ginger.NPC": true,
+                "HasMod: |contains=Lemurkat.Tristan.CP": true,
+                "HasSeenEvent": "5295000"
+            },
+            "Entries": {
+                "MisterGinger": {
+                    "MarkerCropOffset": 0
+                },
+            }
+        },
+
+        // Jade NPC - https://www.nexusmods.com/stardewvalley/mods/5559
+        {
+            "LogName": "[Yagi] Jade - Sprite Offsets",
+            "Action": "EditData",
+            "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+            "When": {
+                "HasMod: |contains=malic.cp.jadeNPC": true
+            },
+            "Entries": {
+                "Jade": {
+                    "MarkerCropOffset": 3
+                },
+            }
+        },
+        // Professor Jasper Thomas - https://www.nexusmods.com/stardewvalley/mods/5599
+        {
+            "LogName": "[Yagi] Professor Jasper - Sprite Offsets",
+            "Action": "EditData",
+            "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+            "When": {
+                "HasMod: |contains=Lemurkat.NPCJasper": true
+            },
+            "Entries": {
+                "Jasper": {
+                    "MarkerCropOffset": 0
+                },
+            }
+        },
+        // Delores - A New Custom NPC - https://www.nexusmods.com/stardewvalley/mods/5510
+        {
+            "LogName": "[Yagi] Delores - Sprite Offsets",
+            "Action": "EditData",
+            "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+            "When": {
+                "HasMod: |contains=blaaze6.Delores": true
+            },
+            "Entries": {
+                "Delores": {
+                    "MarkerCropOffset": 3
+                },
+            }
+        },
+        // Sorren - Original NPC - https://www.nexusmods.com/stardewvalley/mods/4040
+        {
+            "LogName": "[Yagi] Sorren - Sprite Offsets",
+            "Action": "EditData",
+            "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+            "When": {
+                "HasMod: |contains=annachibi.SorrenNPC": true
+            },
+            "Entries": {
+                "Sorren": {
+                    "MarkerCropOffset": -3
+                },
+            }
+        },
+        // Custom NPC - Denver - https://www.nexusmods.com/stardewvalley/mods/4594
+        {
+            "LogName": "[Yagi] Denver (Male Default) - Sprite Offsets",
+            "Action": "EditData",
+            "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+            "When": {
+                "HasMod: |contains=balverines.Denver": true
+            },
+            "Entries": {
+                "Denver": {
+                    "MarkerCropOffset": -1
+                },
+            }
+        },
+        // New NPC - Cecilia - https://www.nexusmods.com/stardewvalley/mods/6246
+        {
+            "LogName": "[Yagi] Cecilia - Sprite Offsets",
+            "Action": "EditData",
+            "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+            "When": {
+                "HasMod: |contains=balverines.cecilia": true
+            },
+            "Entries": {
+                "Cecilia": {
+                    "MarkerCropOffset": 2
+                },
+            }
+        },
+        // Leilani (NPC for Ridgeside Village) - https://www.nexusmods.com/stardewvalley/mods/9375
+        {
+            "LogName": "[Yagi] Leilani - Sprite Offsets",
+            "Action": "EditData",
+            "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+            "When": {
+                "HasMod: |contains=ZoeDoll.NPCLeilani": true
+            },
+            "Entries": {
+                "Leilani": {
+                    "MarkerCropOffset": 4
+                },
+            }
+        },
+        // Ginger Island NPC Overhaul - https://www.nexusmods.com/stardewvalley/mods/9242
+        {
+            "LogName": "[Yagi] Ginger Island NPC Overhaul - Sprite Offsets - Before flag willyBoatFixed",
+            "Action": "EditData",
+            "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+            "When": {
+                "HasMod: |contains=ZoeDoll.GingerIslandNPCTweaks": true,
+                "HasFlag |contains=willyBoatFixed": false
+            },
+            "Entries": {
+                "ProfSnail": {
+                    "Exclude": true
+                },
+            }
+        },
+        {
+            "LogName": "[Yagi] Ginger Island NPC Overhaul - Sprite Offsets - After flag willyBoatFixed",
+            "Action": "EditData",
+            "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+            "When": {
+                "HasMod: |contains=ZoeDoll.GingerIslandNPCTweaks": true,
+                "HasFlag |contains=willyBoatFixed": true
+            },
+            "Entries": {
+                "ProfSnail": {
+                    "MarkerCropOffset": 6
+                },
+            }
+        },
+    ]
+}

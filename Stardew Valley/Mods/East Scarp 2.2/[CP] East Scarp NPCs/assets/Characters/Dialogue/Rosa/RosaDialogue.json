@@ -1,0 +1,40 @@
+{
+    "Changes": [
+        {
+            "LogName": "Schedule",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Rosa",
+            "Entries": {
+                "fall_Mon6": "Have you read the book, 'The {{random:girl,woman,man,lady}} with the %adj %noun'?#$b#It was fun - although that twist? Way predictable!$1"
+            }
+        },
+        {
+            "LogName": "Schedule",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Rosa",
+            "When": {
+                "HasMod": "LemurKat.JulietHouse.NPC"
+            },
+            "Entries": {
+                "cc_Complete": "I saw the JojaMart is all boarded up. What happened?#$b#I hope that doesn't mean Juliet's going to leave.$2",
+                "summer_Tue": "Are you friends with Juliet? Now, there's a woman who knows her own mind!$1",
+            }
+        },
+        {
+            "LogName": "Schedule",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Rosa",
+            "When": {
+                "HasMod": "LemurKat.JulietHouse.NPC",
+                "HasSeenEvent": "57874015"
+            },
+            "Entries": {
+                "Resort_Wander": "Shh, don't tell Juliet, but I'm taking her to see the mermaid later.",
+                "winter_Fri10": "Jules dropped by last night. She's convinced this place is haunted.#$b#Honestly, I'm not sure if she's here to see me, or try and catch a ghost.#$b#I'm happy for her company either way!$1",
+                "fall_Fri6": "Jules and I have been talking about a seance. Spooky time of year and all that.#$b#Not really my scene, but you know what she's like. Do you want in on it?",
+                "Sun6": "Hah, you should come join us sometime on Saturday night. Jules and me have been shooting pool down at the Stardrop.#$b#She's not quite the poolshark she thinks she is!$1#$e#But she does this cute little dance when she wins... so sometimes I miss on purpose.#$e#That's our little secret, 'k?$4",
+                "fall_Fri10": "Jules dropped by last night. We watched a movie, and she fell asleep against my shoulder.#$b#It was pretty cute, even if she did drool a bit.$1"
+            }
+        }
+    ]
+}

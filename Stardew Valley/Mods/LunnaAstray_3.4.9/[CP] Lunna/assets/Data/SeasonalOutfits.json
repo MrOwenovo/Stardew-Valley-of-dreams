@@ -1,0 +1,66 @@
+{
+	"Changes":[
+		{
+			"LogName":"Seasonal Portraits and Sprites",
+			"Action":"EditImage",
+			"Target":"Characters/Bianka, Portraits/Bianka, Characters/Raphael, Portraits/Raphael",
+			"FromFile":"assets/Seasonal/{{Target}}/{{TargetWithoutPath}}_{{Season}}{{PlaceType}}{{WeatherType}}_{{Random:1,2 |key=RandomizedOutfit}}.png",
+			"When":{
+				"HasFile:{{FromFile}}":true
+			},
+			"Update":"OnLocationChange"
+		},
+		{
+			"LogName":"Seasonal Portraits and Sprites",
+			"Action":"EditImage",
+			"Target":"Characters/Lunna, Portraits/Lunna",
+			"FromFile":"assets/Seasonal/{{Target}}/{{TargetWithoutPath}}_{{Season}}{{PlaceType}}{{WeatherType}}_1.png",
+			"When":{
+				"HasFile:{{FromFile}}":true
+			},
+			"Update":"OnLocationChange"
+		},
+		{
+			"LogName":"Festival Portraits and Sprites",
+			"Action":"EditImage",
+			"Target":"Characters/Lunna, Portraits/Lunna, Characters/Bianka, Portraits/Bianka, Characters/Raphael, Portraits/Raphael",
+			"FromFile":"assets/Seasonal/{{TargetPathOnly}}/Festivals/{{TargetWithoutPath}}_{{Festival}}.png",
+			"When":{
+				"HasFile:{{FromFile}}":true
+			},
+			"Update":"OnLocationChange"
+		},
+		{
+			"LogName":"Wedding Sprites",
+			"Action":"EditImage",
+			"Target":"Characters/Lunna, Characters/Bianka",
+			"FromFile":"assets/Seasonal/Characters/{{Wedding}}/{{TargetWithoutPath}}_Wedding.png",
+			"ToArea":{
+				"X":0,
+				"Y":288,
+				"Width":48,
+				"Height":32
+			},
+			"When":{
+				"HasFile:{{FromFile}}":true
+			},
+			"Update":"OnLocationChange"
+		},
+		{
+			"LogName":"Wedding Sprites",
+			"Action":"EditImage",
+			"Target":"Characters/Raphael",
+			"FromFile":"assets/Seasonal/Characters/{{Wedding}}/{{TargetWithoutPath}}_Wedding.png",
+			"ToArea":{
+				"X":0,
+				"Y":386,
+				"Width":48,
+				"Height":32
+			},
+			"When":{
+				"HasFile:{{FromFile}}":true
+			},
+			"Update":"OnLocationChange"
+		}
+	]
+}

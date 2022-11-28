@@ -1,0 +1,30 @@
+{
+  "Changes": [
+
+    {
+      "LogName": "Void's Spawn Indoors",
+      "Action": "EditMap",
+      "Target": "Maps/Custom_ESOrchardHouse",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": "10",
+            "Y": "21"
+          },
+          "Layer": "Back",
+          "SetProperties": {
+            "CustomCompanions": "Spawn 1 Arknir27.VoidCC.VoidSoul"
+          }
+        }
+      ],
+      "When": {
+        "DayOfWeek": "Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday",
+        "Weather": "Sun, Wind, Snow, Rain, Storm"
+      },
+      "Season": "Spring, Summer, Fall, Winter",
+      "Update": "OnLocationChange"
+    }
+
+
+  ]
+}

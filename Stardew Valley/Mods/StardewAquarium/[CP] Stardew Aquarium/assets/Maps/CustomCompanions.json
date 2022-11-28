@@ -1,0 +1,611 @@
+{
+"Changes": [
+      {
+        "LogName": "Pufferchick Custom Companion Spawn",
+        "Action": "EditMap",
+        "Target": "Maps/Custom_ExteriorMuseum",
+        "MapTiles": [
+          {
+            "Position": { "X": 72, "Y": 26 },
+            "Layer": "Back",
+            "SetProperties": {"CustomCompanions": "Spawn 1 Gervig91.StardewAquariumCC.Pufferchick"}
+          }
+        ],
+        "When": {
+          "HasFlag: hostPlayer |contains=AquariumDonated:Pufferchick": false,
+          "HasFlag: hostPlayer": "AquariumFishDonated:40"
+        },
+        "Update": "OnLocationChange"
+      },
+      {
+        "LogName": "Pufferchick Custom Companion Despawn",
+        "Action": "EditMap",
+        "Target": "Maps/Custom_ExteriorMuseum",
+        "MapTiles": [
+          {
+            "Position": { "X": 72, "Y": 26 },
+            "Layer": "Back",
+            "SetProperties": {"CustomCompanions": null }
+          }
+        ],
+        "When": {
+          "HasFlag: hostPlayer": "AquariumFishDonated:Pufferchick"
+        },
+        "Update": "OnLocationChange"
+      },
+      {
+        "LogName": "Swan Spawn",
+        "Action": "EditMap",
+        "Target": "Maps/Custom_ExteriorMuseum",
+        "MapTiles": [
+          {
+            "Position": { "X": 63, "Y": 8 },
+            "Layer": "Back",
+            "SetProperties": {"CustomCompanions": "Spawn 1 Gervig91.StardewAquariumCC.Swan"}
+          },
+          {
+            "Position": { "X": 62, "Y": 10 },
+            "Layer": "Back",
+            "SetProperties": {"CustomCompanions": "Spawn 1 Gervig91.StardewAquariumCC.Swan"}
+          },
+        ],
+        "When": {
+          "Season": "Spring, Fall"
+        },
+        "Update": "OnLocationChange"
+      },
+      {
+        "LogName": "Pelican Spawn",
+        "Action": "EditMap",
+        "Target": "Maps/Custom_ExteriorMuseum",
+        "MapTiles": [
+          {
+            "Position": { "X": 63, "Y": 8 },
+            "Layer": "Back",
+            "SetProperties": {"CustomCompanions": "Spawn 1 Gervig91.StardewAquariumCC.Pelican"}
+          },
+          {
+            "Position": { "X": 62, "Y": 10 },
+            "Layer": "Back",
+            "SetProperties": {"CustomCompanions": "Spawn 1 Gervig91.StardewAquariumCC.Pelican"}
+          },
+        ],
+        "When": {
+          "Season": "Summer"
+        },
+        "Update": "OnLocationChange"
+      },
+      {
+        "LogName": "Swan & Pelican Despawn",
+        "Action": "EditMap",
+        "Target": "Maps/Custom_ExteriorMuseum",
+        "MapTiles": [
+          {
+            "Position": { "X": 63, "Y": 8 },
+            "Layer": "Back",
+            "SetProperties": {"CustomCompanions": null}
+          },
+          {
+            "Position": { "X": 62, "Y": 10 },
+            "Layer": "Back",
+            "SetProperties": {"CustomCompanions": null}
+          }
+        ],
+        "When": {
+          "Season": "Winter"
+        },
+        "Update": "OnLocationChange"
+      },
+      { //Iridium Knight Spawn
+        "LogName": "IridiumKnight Spawn",
+        "Action": "EditMap",
+        "Target": "Maps/Custom_FishBasement",
+        "MapTiles": [
+          {
+            "Position": { "X": 24, "Y": 18 },
+            "Layer": "Back",
+            "SetProperties": {"CustomCompanions": "Spawn 1 Gervig91.StardewAquariumCC.IridiumKnight"}
+          },
+        ],
+        "When": { "HasFlag: hostPlayer": "AquariumDonated:Pufferchick", "HasFlag: hostPlayer": "AquariumFishDonated:60" },
+        "Update": "OnTimeChange, OnLocationChange"
+      },
+      {
+        "LogName": "FishMuseum Tourist Spawns 1",
+        "Action": "EditMap",
+        "Target": "Maps/Custom_FishMuseum",
+        "MapTiles": [
+          {
+            "Position": { "X": 31, "Y": 40 },
+            "Layer": "Back",
+            "SetProperties": {"CustomCompanions": "Spawn 1 {{Random:Gervig91.StardewAquariumCC.Tourist23, Gervig91.StardewAquariumCC.Tourist24}}"}
+          },
+          {
+            "Position": { "X": 6, "Y": 8 },
+            "Layer": "Back",
+            "SetProperties": {"CustomCompanions": "Spawn 1 {{Random:Gervig91.StardewAquariumCC.Tourist27, Gervig91.StardewAquariumCC.Tourist28}}"}
+          },          
+        ]
+      },
+      {
+        "LogName": "BigRoom Aquarium Tourist Spawns 1",
+        "Action": "EditMap",
+        "Target": "Maps/Custom_BigRoom",
+        "MapTiles": [
+          {
+            "Position": { "X": 23, "Y": 11 },
+            "Layer": "Back",
+            "SetProperties": {"CustomCompanions": "Spawn 1 {{Random:Gervig91.StardewAquariumCC.Catgirl, Gervig91.StardewAquariumCC.Yona}}"}
+          }
+        ]
+      },
+      {
+        "LogName": "FishMuseum Tourist Spawns 2",
+        "Action": "EditMap",
+        "Target": "Maps/Custom_FishMuseum",
+        "MapTiles": [
+          {
+            "Position": { "X": 17, "Y": 34 },
+            "Layer": "Back",
+            "SetProperties": {"CustomCompanions": "Spawn 1 {{Random:Gervig91.StardewAquariumCC.Tourist25, Gervig91.StardewAquariumCC.Tourist26}}"}
+          }
+        ],        
+        "When": { "HasFlag: hostPlayer": "AquariumFishDonated:10" }
+      },
+      {
+        "LogName": "BigRoom Aquarium Tourist Spawns 2",
+        "Action": "EditMap",
+        "Target": "Maps/Custom_BigRoom",
+        "MapTiles": [
+          {
+            "Position": { "X": 52, "Y": 11 },
+            "Layer": "Back",
+            "SetProperties": {"CustomCompanions": "Spawn 1 {{Random:Gervig91.StardewAquariumCC.Gov, Gervig91.StardewAquariumCC.Kel}}"}
+          },
+        ],        
+        "When": { "HasFlag: hostPlayer": "AquariumFishDonated:10" }
+      },
+      {
+        "LogName": "FishMuseum Tourist Spawns 3",
+        "Action": "EditMap",
+        "Target": "Maps/Custom_FishMuseum",
+        "MapTiles": [
+          {
+            "Position": { "X": 23, "Y": 34 },
+            "Layer": "Back",
+            "SetProperties": {"CustomCompanions": "Spawn 1 {{Random:Gervig91.StardewAquariumCC.Catgirl, Gervig91.StardewAquariumCC.Pumpkingirl, Gervig91.StardewAquariumCC.Dana}}"}
+          }
+        ],        
+        "When": { "HasFlag: hostPlayer": "AquariumFishDonated:20" }
+      },
+      {
+        "LogName": "BigRoom Aquarium Tourist Spawns 3",
+        "Action": "EditMap",
+        "Target": "Maps/Custom_BigRoom",
+        "MapTiles": [
+          {
+            "Position": { "X": 8, "Y": 11 },
+            "Layer": "Back",
+            "SetProperties": {"CustomCompanions": "Spawn 1 {{Random:Gervig91.StardewAquariumCC.Pirateboy, Gervig91.StardewAquariumCC.Sheriff, Gervig91.StardewAquariumCC.Dapperlady}}"}
+          },
+        ],        
+        "When": { "HasFlag: hostPlayer": "AquariumFishDonated:20" }
+      },
+      {
+        "LogName": "FishMuseum Tourist Spawns 4",
+        "Action": "EditMap",
+        "Target": "Maps/Custom_FishMuseum",
+        "MapTiles": [         
+          {
+            "Position": { "X": 39, "Y": 40 },
+            "Layer": "Back",
+            "SetProperties": {"CustomCompanions": "Spawn 1 {{Random:Gervig91.StardewAquariumCC.DinoDan, Gervig91.StardewAquariumCC.Duckguy}}"}
+          }
+        ],        
+        "When": { "HasFlag: hostPlayer": "AquariumFishDonated:30" }
+      },
+      // Legendary Mask Tourists
+      {
+        "LogName": "FishMuseum Angler Tourist Spawn",
+        "Action": "EditMap",
+        "Target": "Maps/Custom_FishMuseum",
+        "MapTiles": [
+          {
+            "Position": { "X": 17, "Y": 39 },
+            "Layer": "Back",
+            "SetProperties": {"CustomCompanions": "Spawn 1 Gervig91.StardewAquariumCC.AnglerTourist"}
+          }
+        ],
+         "When": { "HasFlag: hostPlayer": "AquariumDonated:Angler", "Day": "7" }
+      },
+      {
+        "LogName": "FishMuseum Mutant Carp Tourist Spawn",
+        "Action": "EditMap",
+        "Target": "Maps/Custom_FishMuseum",
+        "MapTiles": [
+          {
+            "Position": { "X": 20, "Y": 36 },
+            "Layer": "Back",
+            "SetProperties": {"CustomCompanions": "Spawn 1 Gervig91.StardewAquariumCC.MutantCarpTourist"}
+          }
+        ],
+         "When": { "HasFlag: hostPlayer": "AquariumDonated:MutantCarp", "Day": "14" }
+      },
+      // MNF Maps
+      {
+        "LogName": "MNFRoom Tourist Spawns 1",
+        "Action": "EditMap",
+        "Target": "Maps/Custom_MNFRoom",
+        "MapTiles": [
+          {
+            "Position": { "X": 32, "Y": 42 },
+            "Layer": "Back",
+            "SetProperties": {"CustomCompanions": "Spawn 1 {{Random:Gervig91.StardewAquariumCC.Sheriff, Gervig91.StardewAquariumCC.Tourist25}}"}
+          },
+          {
+            "Position": { "X": 53, "Y": 53 },
+            "Layer": "Back",
+            "SetProperties": {"CustomCompanions": "Spawn 1 {{Random:Gervig91.StardewAquariumCC.Tourist28, Gervig91.StardewAquariumCC.Pumpkingirl}}"}
+          },
+          {
+            "Position": { "X": 10, "Y": 42 },
+            "Layer": "Back",
+            "SetProperties": {"CustomCompanions": "Spawn 1 {{Random:Gervig91.StardewAquariumCC.Tourist29, Gervig91.StardewAquariumCC.Tourist30}}"}
+          },
+        ],
+         "When": { "HasMod": "MoreFish" }
+      },
+      {
+        "LogName": "MNFRoom Tourist Spawns 2",
+        "Action": "EditMap",
+        "Target": "Maps/Custom_MNFRoom",
+        "MapTiles": [
+          {
+            "Position": { "X": 11, "Y": 54 },
+            "Layer": "Back",
+            "SetProperties": {"CustomCompanions": "Spawn 1 {{Random:Gervig91.StardewAquariumCC.Catgirl, Gervig91.StardewAquariumCC.Cameraman}}"}
+          }
+        ],
+         "When": { "HasMod": "MoreFish", "HasFlag: hostPlayer": "AquariumFishDonated:20" }
+      },
+      {
+        "LogName": "MNFRoom Tourist Spawns 3",
+        "Action": "EditMap",
+        "Target": "Maps/Custom_MNFRoom",
+        "MapTiles": [
+          {
+            "Position": { "X": 8, "Y": 28 },
+            "Layer": "Back",
+            "SetProperties": {"CustomCompanions": "Spawn 1 {{Random:Gervig91.StardewAquariumCC.Tourist23, Gervig91.StardewAquariumCC.Tourist26}}"}
+          }
+        ],
+         "When": { "HasMod": "MoreFish", "HasFlag: hostPlayer": "AquariumFishDonated:30" }
+      },
+      {
+        "LogName": "MNFRoom Tourist Spawns 4",
+        "Action": "EditMap",
+        "Target": "Maps/Custom_MNFRoom",
+        "MapTiles": [
+          {
+            "Position": { "X": 52, "Y": 42 },
+            "Layer": "Back",
+            "SetProperties": {"CustomCompanions": "Spawn 1 Gervig91.StardewAquariumCC.Yato"}
+          },
+          {
+            "Position": { "X": 53, "Y": 42 },
+            "Layer": "Back",
+            "SetProperties": {"CustomCompanions": "Spawn 1 Gervig91.StardewAquariumCC.Hiyori"}
+          },
+          {
+            "Position": { "X": 54, "Y": 42 },
+            "Layer": "Back",
+            "SetProperties": {"CustomCompanions": "Spawn 1 Gervig91.StardewAquariumCC.Yukine"}
+          },
+        ],
+         "When": { "HasMod": "MoreFish", "HasFlag: hostPlayer": "AquariumFishDonated:40", "Weather": "Rain" }
+      },
+      {
+        "LogName": "MNFKoiRoom Tourist Spawns",
+        "Action": "EditMap",
+        "Target": "Maps/Custom_MNFKoiRoom",
+        "MapTiles": [
+          {
+            "Position": { "X": 14, "Y": 28 },
+            "Layer": "Back",
+            "SetProperties": {"CustomCompanions": "Spawn 1 Gervig91.StardewAquariumCC.Chihaya"}
+          },
+          {
+            "Position": { "X": 12, "Y": 28 },
+            "Layer": "Back",
+            "SetProperties": {"CustomCompanions": "Spawn 1 Gervig91.StardewAquariumCC.Kana"}
+          }
+        ],
+         "When": { "HasMod": "MoreFish", "HasFlag: hostPlayer": "AquariumFishDonated:40", "Weather": "Sun" }
+      },
+      // Despawns
+      /*{
+        "LogName": "FishMuseum Tourist Despawns",
+        "Action": "EditMap",
+        "Target": "Maps/Custom_FishMuseum",
+        "MapTiles": [
+          {
+            "Position": { "X": 31, "Y": 40 },
+            "Layer": "Back",
+            "SetProperties": {"CustomCompanions": null}
+          },
+          {
+            "Position": { "X": 6, "Y": 8 },
+            "Layer": "Back",
+            "SetProperties": {"CustomCompanions": null}
+          },
+          {
+            "Position": { "X": 17, "Y": 34 },
+            "Layer": "Back",
+            "SetProperties": {"CustomCompanions": null}
+          },
+          {
+            "Position": { "X": 23, "Y": 34 },
+            "Layer": "Back",
+            "SetProperties": {"CustomCompanions": null}
+          },
+          {
+            "Position": { "X": 39, "Y": 40 },
+            "Layer": "Back",
+            "SetProperties": {"CustomCompanions": null}
+          },
+          {
+            "Position": { "X": 17, "Y": 39 },
+            "Layer": "Back",
+            "SetProperties": {"CustomCompanions": null}
+          },
+          {
+            "Position": { "X": 20, "Y": 36 },
+            "Layer": "Back",
+            "SetProperties": {"CustomCompanions": null}
+          }
+        ],
+        "When": {"Time": "{{Range:1800, 2600}}"},
+        "Update": "OnLocationChange"     
+      },
+      {
+        "LogName": "BigRoom Tourist Despawns",
+        "Action": "EditMap",
+        "Target": "Maps/Custom_BigRoom",
+        "MapTiles": [
+          {
+            "Position": { "X": 23, "Y": 11 },
+            "Layer": "Back",
+            "SetProperties": {"CustomCompanions": null}
+          },
+          {
+            "Position": { "X": 8, "Y": 11 },
+            "Layer": "Back",
+            "SetProperties": {"CustomCompanions": null}
+          },
+          {
+            "Position": { "X": 52, "Y": 11 },
+            "Layer": "Back",
+            "SetProperties": {"CustomCompanions": null}
+          }
+        ],
+        "When": {"Time": "{{Range:1800, 2600}}"},
+        "Update": "OnLocationChange"     
+      },
+      {
+        "LogName": "MNFRoom Tourist Despawns",
+        "Action": "EditMap",
+        "Target": "Maps/Custom_MNFRoom",
+        "MapTiles": [
+          {
+            "Position": { "X": 32, "Y": 42 },
+            "Layer": "Back",
+            "SetProperties": {"CustomCompanions": null}
+          },
+          {
+            "Position": { "X": 53, "Y": 53 },
+            "Layer": "Back",
+            "SetProperties": {"CustomCompanions": null}
+          },
+          {
+            "Position": { "X": 10, "Y": 42 },
+            "Layer": "Back",
+            "SetProperties": {"CustomCompanions": null}
+          },
+          {
+            "Position": { "X": 11, "Y": 54 },
+            "Layer": "Back",
+            "SetProperties": {"CustomCompanions": null}
+          },
+          {
+            "Position": { "X": 8, "Y": 28 },
+            "Layer": "Back",
+            "SetProperties": {"CustomCompanions": null}
+          },
+          {
+            "Position": { "X": 52, "Y": 42 },
+            "Layer": "Back",
+            "SetProperties": {"CustomCompanions": null}
+          },
+          {
+            "Position": { "X": 53, "Y": 42 },
+            "Layer": "Back",
+            "SetProperties": {"CustomCompanions": null}
+          },
+          {
+            "Position": { "X": 54, "Y": 42 },
+            "Layer": "Back",
+            "SetProperties": {"CustomCompanions": null}
+          },
+        ],
+        "When": {"Time": "{{Range:1800, 2600}}", "HasMod": "MoreFish"},
+        "Update": "OnLocationChange"     
+      },
+      {
+        "LogName": "MNFKoiRoom Tourist Despawns",
+        "Action": "EditMap",
+        "Target": "Maps/Custom_MNFKoiRoom",
+        "MapTiles": [
+          {
+            "Position": { "X": 14, "Y": 28 },
+            "Layer": "Back",
+            "SetProperties": {"CustomCompanions": null}
+          },
+          {
+            "Position": { "X": 12, "Y": 28 },
+            "Layer": "Back",
+            "SetProperties": {"CustomCompanions": null}
+          }
+        ],
+        "When": {"Time": "{{Range:1800, 2600}}", "HasMod": "MoreFish"},
+        "Update": "OnLocationChange"     
+      },
+      {
+         "LogName": "Summer Exterior TileData Patch 1",
+         "Action": "EditMap",
+         "Target": "Maps/Custom_ExteriorMuseum",
+         "MapTiles": [
+            {
+               "Position": { "X": 43, "Y": 12 },
+               "Layer": "Buildings",
+               "SetProperties": {"Action": null}
+            },
+            {
+               "Position": { "X": 44, "Y": 12 },
+               "Layer": "Buildings",
+               "SetProperties": {"Action": null}
+            },
+            {
+               "Position": { "X": 46, "Y": 24 },
+               "Layer": "Buildings",
+               "SetProperties": {"Action": null}
+            },
+            {
+               "Position": { "X": 22, "Y": 47 },
+               "Layer": "Buildings",
+               "SetProperties": {"Action": null}
+            }
+        ],
+         "When": {
+          "Season": "Summer",
+          "Time": "{{Range:1850, 2600}}", 
+         },
+         "Update": "OnTimeChange"
+      },
+      {
+         "LogName": "Summer Exterior TileData Patch 2",
+         "Action": "EditMap",
+         "Target": "Maps/Custom_ExteriorMuseum",
+         "MapTiles": [
+            {
+               "Position": { "X": 43, "Y": 12 },
+               "Layer": "Buildings",
+               "SetProperties": {"Action": "AquariumString NPCSUMMER_8"}
+            },
+            {
+               "Position": { "X": 44, "Y": 12 },
+               "Layer": "Buildings",
+               "SetProperties": {"Action": "AquariumString NPCSUMMER_9"}
+            },
+            {
+               "Position": { "X": 46, "Y": 24 },
+               "Layer": "Buildings",
+               "SetProperties": {"Action": "AquariumString NPCSUMMER_17"}
+            },
+            {
+               "Position": { "X": 22, "Y": 47 },
+               "Layer": "Buildings",
+               "SetProperties": {"Action": "AquariumString NPCSUMMER_33"}
+            }
+        ],
+         "When": {
+          "Season": "Summer",
+          "Time": "{{Range:0600, 1900}}", 
+         },
+         "Update": "OnTimeChange"
+     },
+     {
+         "LogName": "Winter Exterior TileData Patch 1",
+         "Action": "EditMap",
+         "Target": "Maps/Custom_ExteriorMuseum",
+         "MapTiles": [
+          {
+               "Position": { "X": 72, "Y": 21 },
+               "Layer": "Buildings",
+               "SetProperties": {"Action": null}
+            },
+            {
+               "Position": { "X": 39, "Y": 38 },
+               "Layer": "Buildings",
+               "SetProperties": {"Action": null}
+            },
+            {
+               "Position": { "X": 40, "Y": 38 },
+               "Layer": "Buildings",
+               "SetProperties": {"Action": null}
+            },
+            {
+               "Position": { "X": 11, "Y": 47 },
+               "Layer": "Buildings",
+               "SetProperties": {"Action": null}
+            },
+            {
+               "Position": { "X": 38, "Y": 59 },
+               "Layer": "Buildings",
+               "SetProperties": {"Action": null}
+            },
+            {
+               "Position": { "X": 63, "Y": 55 },
+               "Layer": "Buildings",
+               "SetProperties": {"Action": null}
+            }
+        ],
+         "When": {
+          "Season": "Winter",
+          "Time": "{{Range:1850, 2600}}", 
+         },
+         "Update": "OnTimeChange"
+     },
+     {
+         "LogName": "Winter Exterior TileData Patch 2",
+         "Action": "EditMap",
+         "Target": "Maps/Custom_ExteriorMuseum",
+         "MapTiles": [
+          {
+               "Position": { "X": 72, "Y": 21 },
+               "Layer": "Buildings",
+               "SetProperties": {"AquariumString": "NPCWINTER_1"}
+            },
+            {
+               "Position": { "X": 39, "Y": 38 },
+               "Layer": "Buildings",
+               "SetProperties": {"AquariumString": "NPCWINTER_5"}
+            },
+            {
+               "Position": { "X": 40, "Y": 38 },
+               "Layer": "Buildings",
+               "SetProperties": {"AquariumString": "NPCWINTER_6"}
+            },
+            {
+               "Position": { "X": 11, "Y": 47 },
+               "Layer": "Buildings",
+               "SetProperties": {"AquariumString": "NPCWINTER_4"}
+            },
+            {
+               "Position": { "X": 38, "Y": 59 },
+               "Layer": "Buildings",
+               "SetProperties": {"AquariumString": "NPCWINTER_3"}
+            },
+            {
+               "Position": { "X": 63, "Y": 55 },
+               "Layer": "Buildings",
+               "SetProperties": {"AquariumString": "NPCWINTER_2"}
+            }
+        ],
+         "When": {
+          "Season": "Winter",
+          "Time": "{{Range:0600, 1900}}", 
+         },
+         "Update": "OnTimeChange"
+     }*/
+    ]
+}

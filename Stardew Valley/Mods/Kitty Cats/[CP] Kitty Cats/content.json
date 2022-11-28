@@ -1,0 +1,354 @@
+{
+	"Format": "1.22.0",
+
+	/*********
+	** Configuration
+	*********/
+	"ConfigSchema": {
+        "AllowCatReplacements": {
+            "AllowValues": "true, false",
+            "Default": "true",
+            "Description": "If enabled, your cat replacements (Elle's for example) will work. If disabled, it will use the original skins."
+		},
+	},
+
+	"Changes": [
+
+	{
+		"LogName": "Adds Kitty Cats in Town",
+		"Action": "EditMap",
+		"Target": "Maps/Town",
+		"MapTiles": [
+            {
+               "Position": {
+					"X": "{{Random: 29, 29, 94 |key=tile coordinate}}",
+					"Y": "{{Random: 37, 67, 88 |key=tile coordinate}}"
+            },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 1 Obamoose.KittyCatCC.{{Random: VanillaYellow, VanillaGrey, VanillaOrange, KittyWhite, KittyBlack, KittyTuxedo}}"
+               },
+            },
+         ],
+		"When": {
+			"AllowCatReplacements": "true",
+			"Weather": "Sun, Wind",
+			},
+		"Update": "OnLocationChange"
+	},
+
+//Bad Weather	
+
+	{
+		"LogName": "Adds VanillaOrange to museum during bad weather",
+		"Action": "EditMap",
+		"Target": "Maps/ArchaeologyHouse",
+		"MapTiles": [
+            {
+               "Position": { "X": 6, "Y": 11 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 1 Obamoose.KittyCatCC.VanillaOrange"
+               },
+            },
+         ],
+		"When": {
+			"AllowCatReplacements": "true",
+			"Weather: |contains=Sun,Wind": false,			
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds VanillaGrey to museum during bad weather",
+		"Action": "EditMap",
+		"Target": "Maps/ArchaeologyHouse",
+		"MapTiles": [
+            {
+               "Position": { "X": 11, "Y": 10 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 1 Obamoose.KittyCatCC.VanillaGrey"
+               },
+            },
+         ],
+		"When": {
+			"AllowCatReplacements": "true",
+			"Weather: |contains=Sun,Wind": false,		
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds VanillaYellow to museum during bad weather",
+		"Action": "EditMap",
+		"Target": "Maps/ArchaeologyHouse",
+		"MapTiles": [
+            {
+               "Position": { "X": 22, "Y": 17 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 1 Obamoose.KittyCatCC.VanillaYellow"
+               },
+            },
+         ],
+		"When": {
+			"AllowCatReplacements": "true",
+			"Weather: |contains=Sun,Wind": false,	
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds KittyWhite to Saloon during bad weather",
+		"Action": "EditMap",
+		"Target": "Maps/Saloon",
+		"MapTiles": [
+            {
+               "Position": { "X": 32, "Y": 7 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 1 Obamoose.KittyCatCC.KittyWhite"
+               },
+            },
+         ],
+		"When": {
+			"AllowCatReplacements": "true",
+			"Weather: |contains=Sun,Wind": false,	
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds KittyBlack to Pierre during bad weather",
+		"Action": "EditMap",
+		"Target": "Maps/SeedShop",
+		"MapTiles": [
+            {
+               "Position": { "X": 18, "Y": 29 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 1 Obamoose.KittyCatCC.KittyBlack"
+               },
+            },
+         ],
+		"When": {
+			"AllowCatReplacements": "true",
+			"Weather: |contains=Sun,Wind": false,	
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds KittyTuxedo to Willy during bad weather",
+		"Action": "EditMap",
+		"Target": "Maps/FishShop",
+		"MapTiles": [
+            {
+               "Position": { "X": 9, "Y": 5 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 1 Obamoose.KittyCatCC.KittyTuxedo"
+               },
+            },
+         ],
+		"When": {
+			"AllowCatReplacements": "true",
+			"Weather: |contains=Sun,Wind": false,	
+			},
+		"Update": "OnLocationChange"
+	},
+
+//Cat Replacements Off
+	{
+		"LogName": "Adds random Kitty in Town",
+		"Action": "EditMap",
+		"Target": "Maps/Town",
+		"MapTiles": [
+            {
+               "Position": {
+					"X": "{{Random: 29, 29, 94 |key=tile coordinate}}",
+					"Y": "{{Random: 37, 67, 88 |key=tile coordinate}}"
+            },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 1 Obamoose.KittyCatCC.{{Random: KittyYellow, KittyGrey, KittyOrange, KittyBlack, KittyWhite, KittyTuxedo}}"
+               },
+            },
+         ],
+		"When": {
+			"AllowCatReplacements": "false",
+			"Weather": "Sun, Wind",
+			},
+		"Update": "OnLocationChange"
+	},
+
+
+//Bad Weather	
+	{
+		"LogName": "Adds KittyOrange to museum during bad weather",
+		"Action": "EditMap",
+		"Target": "Maps/ArchaeologyHouse",
+		"MapTiles": [
+            {
+               "Position": { "X": 6, "Y": 11 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 1 Obamoose.KittyCatCC.KittyOrange"
+               },
+            },
+         ],
+		"When": {
+			"AllowCatReplacements": "false",
+			"Weather: |contains=Sun,Wind": false,			
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds KittyGrey to museum during bad weather",
+		"Action": "EditMap",
+		"Target": "Maps/ArchaeologyHouse",
+		"MapTiles": [
+            {
+               "Position": { "X": 11, "Y": 10 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 1 Obamoose.KittyCatCC.KittyGrey"
+               },
+            },
+         ],
+		"When": {
+			"AllowCatReplacements": "false",
+			"Weather: |contains=Sun,Wind": false,		
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds KittyYellow to museum during bad weather",
+		"Action": "EditMap",
+		"Target": "Maps/ArchaeologyHouse",
+		"MapTiles": [
+            {
+               "Position": { "X": 22, "Y": 17 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 1 Obamoose.KittyCatCC.KittyYellow"
+               },
+            },
+         ],
+		"When": {
+			"AllowCatReplacements": "false",
+			"Weather: |contains=Sun,Wind": false,	
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds KittyWhite to Saloon during bad weather",
+		"Action": "EditMap",
+		"Target": "Maps/Saloon",
+		"MapTiles": [
+            {
+               "Position": { "X": 32, "Y": 7 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 1 Obamoose.KittyCatCC.KittyWhite"
+               },
+            },
+         ],
+		"When": {
+			"AllowCatReplacements": "false",
+			"Weather: |contains=Sun,Wind": false,	
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds KittyBlack to Pierre during bad weather",
+		"Action": "EditMap",
+		"Target": "Maps/SeedShop",
+		"MapTiles": [
+            {
+               "Position": { "X": 18, "Y": 29 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 1 Obamoose.KittyCatCC.KittyBlack"
+               },
+            },
+         ],
+		"When": {
+			"AllowCatReplacements": "false",
+			"Weather: |contains=Sun,Wind": false,	
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds KittyTuxedo to Willy during bad weather",
+		"Action": "EditMap",
+		"Target": "Maps/FishShop",
+		"MapTiles": [
+            {
+               "Position": { "X": 9, "Y": 5 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 1 Obamoose.KittyCatCC.KittyTuxedo"
+               },
+            },
+         ],
+		"When": {
+			"AllowCatReplacements": "false",
+			"Weather: |contains=Sun,Wind": false,	
+			},
+		"Update": "OnLocationChange"
+	},
+
+//SVE AndyCat
+	{
+		"LogName": "Adds KittyAndy to Andy's Farm",
+		"Action": "EditMap",
+		"Target": "Maps/Forest",
+		"MapTiles": [
+            {
+               "Position": {
+					"X": "{{Random: 68, 82, 76 |key=tile coordinate}}",
+					"Y": "{{Random: 64, 68, 60 |key=tile coordinate}}"
+            },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 1 Obamoose.KittyCatCC.KittyAndy"
+               },
+            },
+         ],
+		"When": {
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+			"Weather": "Sun, Wind",
+			},
+		"Update": "OnLocationChange"
+	},
+
+	//Bad Weather
+	{
+		"LogName": "Adds KittyAndy to Andy's House with bad weather",
+		"Action": "EditMap",
+		"Target": "Maps/Custom_AndyHouse",
+		"MapTiles": [
+            {
+               "Position": { "X": 16, "Y": 16 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 1 Obamoose.KittyCatCC.KittyAndy"
+               },
+            },
+         ],
+		"When": {
+			"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+			"Weather: |contains=Sun,Wind": false,	
+			},
+		"Update": "OnLocationChange"
+	},
+
+	],
+}

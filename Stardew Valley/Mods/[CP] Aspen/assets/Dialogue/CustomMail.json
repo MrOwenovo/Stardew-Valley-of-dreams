@@ -1,0 +1,53 @@
+{
+    "Changes": [
+        //Custom mail ------------------------------------------------------------------------------
+        { //Makes the mail
+            "Action": "EditData",
+            "Target": "Data/Mail",
+            "Entries": 
+            {
+                "AspenHome": "嘿 @,^^我知道当我在春天待在酒吧时，我们没有走得很近，但我想我应该让你知道Joja昨天清理了他们的烂摊子。这意味着我回到了自己的地方！万一你忘了，我住在铁路以西^^希望尽快赶上，^-阿斯彭",
+                "AspenHome2": "嘿 @,^^我相信你注意到了，但我已经不在酒吧了！Joja收拾了他们的烂摊子，我回家了。前几天早上我路过你的农场，但我想你睡了，哈哈！好吧，万一你忘了，我住在铁路以西^^希望尽快赶上，^-阿斯彭",
+                "AspenSecretStash": "你好@，^^我设法让皮埃尔在鸡蛋节之前从他的秘密储藏处卖给我一些额外的种子！不要让乌鸦吃掉它们，好吗？！^^-阿斯彭 %item object 745 5 %%",
+            }
+        },
+        
+        { //Sends the mail (not as friendly)
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries": 
+            {
+                "98590004/z spring fall winter/u 4/y 1/x AspenHome": "null",
+            },
+            "When": {
+                "Hearts:Aspen": "0",
+                "HasSeenEvent |contains=98590002, 98590003, 98590008": "false"
+            }
+        },
+    
+        { //Sends the mail (friendlier)
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries": 
+            {
+                "98590005/z spring fall winter/u 4/y 1/x AspenHome2": "null",
+            },
+            "When": {
+                "Hearts:Aspen": "{{Range: 1, 10}}",
+                "HasSeenEvent |contains=98590002, 98590003, 98590008": "false"
+            }
+        },
+    
+        { //Sends seeds
+        "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries": 
+            {
+                "98590006/z summer fall winter/u 4/y 1/x AspenSecretStash": "null",
+            },
+            "When": {
+                "HasFlag": "Aspen_sendStrawberries"
+            }
+        },
+    ]
+}

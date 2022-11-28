@@ -1,0 +1,116 @@
+{
+		"Name": "Pigeon",
+		"Type": "Flying",
+
+		"FrameSizeWidth": 16,
+		"FrameSizeHeight": 16,
+		"EnableShadow": true,
+		"Shadow": {
+			"OffsetX": 0,
+			"OffsetY": -16,
+			"Scale": 1,
+			"Alpha": 100
+		},
+		"Sounds": [
+			{
+				"SoundName": "SpringBirds",
+				"WhenToPlay": "Always",
+				"TimeBetweenSound": 2500,
+				"ChanceOfPlaying": 0.15
+			}
+		],
+	"IdleBehavior": "Nothing",
+
+		// This plays when the companion travels upwards
+		"UpAnimation": {
+			"StartingFrame": 1,
+			"NumberOfFrames": 2,
+			"Duration": 100,
+			// This is the animation that plays when the companion is not moving
+			"IdleAnimation": {
+				"ManualFrames": [
+					{
+						"Frame": 0,
+						"Duration": 2500
+					},
+					{
+						"Frame": 3,
+						"Duration": 500
+					},
+					{
+						"Frame": 0,
+						"Duration": 150
+					},
+					{
+						"Frame": 3,
+						"Duration": 500
+					},
+					{
+						"Frame": 0,
+						"Duration": 4375
+					}
+				]
+			}
+		},
+
+		// This plays when the companion travels downwards
+		"DownAnimation": {
+			"StartingFrame": 9,
+			"NumberOfFrames": 2,
+			"Duration": 100,
+			// This is the animation that plays when the companion is not moving
+			"IdleAnimation": {
+				"ManualFrames": [
+					{
+						"Frame": 8,
+						"Duration": 500
+					},
+					{
+						"Frame": 11,
+						"Duration": 500
+					}
+				]
+			}
+		},
+
+		// This plays when the companion travels left
+		"LeftAnimation": {
+			"StartingFrame": 13,
+			"NumberOfFrames": 2,
+			"Duration": 100,
+			// This is the animation that plays when the companion is not moving
+			"IdleAnimation": {
+				"ManualFrames": [
+					{
+						"Frame": 12,
+						"Duration": 500
+					},
+					{
+						"Frame": 15,
+						"Duration": 500
+					}
+				]
+			}
+		},
+
+		// This plays when the companion travels right
+		"RightAnimation": {
+			"StartingFrame": 5,
+			"NumberOfFrames": 2,
+			"Duration": 100,
+			// This is the animation that plays when the companion is not moving
+			"IdleAnimation": {
+				"ManualFrames": [
+					{
+						"Frame": 4,
+						"Duration": 500
+					},
+					{
+						"Frame": 7,
+						"Duration": 500
+					}
+				]
+			}
+		}
+
+	}

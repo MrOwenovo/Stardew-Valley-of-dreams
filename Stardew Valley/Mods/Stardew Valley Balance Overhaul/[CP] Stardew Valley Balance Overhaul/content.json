@@ -1,0 +1,1767 @@
+{
+    "Format": "1.27.2",
+	"ConfigSchema": {
+        "Balance Building Construction": {
+           "AllowValues": "false, true",
+           "Default": "true"},
+        "Balance Basic Crafting": {
+           "AllowValues": "false, true",
+           "Default": "true"},
+        "Balance Flower Honey & Mead": {
+           "AllowValues": "false, true",
+           "Default": "true"},
+        "Expensive Junimo Hut": {
+           "AllowValues": "false, true",
+           "Default": "true"},
+        "Balance Sell Prices": {
+           "AllowValues": "Normal, Skip Fishing Minigame Mod, Off",
+           "Default": "Normal"},
+        "Balance Machine Crafting": {
+           "AllowValues": "Easy, Normal, Hard, Automate Mod, Off",
+           "Default": "Normal"},
+        "Balance Monsters": {
+           "AllowValues": "Normal, Hard, Master, Off",
+           "Default": "Normal"},   
+		},
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/ObjectInformation",
+            "Fields": {             
+				// Crops
+				"190": {1:"190"}, // Cauliflower
+				"248": {1:"65"}, // Garlic
+				"188": {1:"45"}, // Green Bean
+				"250": {1:"105"}, // Kale
+				"24": {1:"55"}, // Parsnip
+				"192": {1:"85"}, // Potato
+				"252": {1:"160"}, // Rhubarb
+				"400": {1:"60"}, // Strawberry
+				"433": {1:"5"}, // Coffee Bean
+				"454": {1:"115"}, // Ancient Fruit
+				"90": {1:"40"}, // Cactus Fruit
+				"258": {1:"20"}, // Blueberry
+				"270": {1:"65"}, // Corn
+				"304": {1:"15"}, // Hops
+				"260": {1:"35"}, // Hot Pepper
+				"254": {1:"145"}, // Melon
+				"264": {1:"90"}, // Radish
+				"266": {1:"150"}, // Red Cabbage
+				"268": {1:"260"}, // Starfruit
+				"256": {1:"55"}, // Tomato
+				"262": {1:"45"}, // Wheat
+				"830": {1:"75"}, // Taro Root
+				"832": {1:"110"}, // Pineapple
+				"300": {1:"130"}, // Amaranth
+				"274": {1:"95"}, // Artichoke
+				"284": {1:"75"}, // Beet
+				"278": {1:"75"}, // Bok Choy
+				"282": {1:"35"}, // Cranberries
+				"272": {1:"50"}, // Eggplant
+				"398": {1:"45"}, // Grape
+				"276": {1:"195"}, // Pumpkin
+				"280": {1:"165"}, // Yam
+				"815": {1:"50"}, // Tea Leaves
+				"271": {1:"75"}, // Unmilled Rice
+				"417": {1:"1700"}, // Sweet Gem Berry
+				// Flowers
+                "597": {1:"90"}, // Blue Jazz
+				"591": {1:"65"}, // Tulip
+				"376": {1:"160"}, // Poppy
+				"593": {1:"110"}, // Summer Spangle
+				"595": {1:"290"}, // Fairy Rose
+				"421": {1:"60"}, // Sunflower
+				// Fruit Trees
+				"634": {1:"110"}, // Apricot
+				"638": {1:"120"}, // Cherry
+				"91": {1:"135"}, // Banana
+				"834": {1:"130"}, // Mango
+				"635": {1:"120"}, // Orange
+				"636": {1:"135"}, // Peach
+				"613": {1:"120"}, // Apple
+				"637": {1:"135"}, // Pomegranate
+				// Animals
+				"176": {1:"85"}, //Egg
+				"180": {1:"85"}, //Egg
+				"305": {1:"130"}, //Void Egg
+				"442": {1:"155"}, //Duck Egg
+				"440": {1:"240"}, //Wool
+				"107": {1:"700"}, //Dinosaur Egg
+				"928": {1:"200"}, //Golden Egg
+				"184": {1:"105"}, //Milk
+				"436": {1:"160"}, //Goat Milk
+				"430": {1:"130"}, //Truffle
+				"289": {1:"875"}, //Ostrich Egg
+				"174": {1:"125"}, //Large Egg
+				"182": {1:"125"}, //Large Egg
+				"444": {1:"180"}, //Duck Feather
+				"446": {1:"380"}, //Rabbit's Foot
+				"186": {1:"155"}, //Large Milk
+				"438": {1:"240"}, //L. Goat Milk
+				"306": {1:"170"}, //Mayonnaise
+				"308": {1:"260"}, //Void Mayonnaise
+				"307": {1:"310"}, //Duck Mayonnaise
+				"428": {1:"480"}, //Cloth
+				"807": {1:"1400"}, //Dinosaur Mayonnaise
+				"424": {1:"210"}, //Cheese
+				"426": {1:"320"}, //Goat Cheese	
+				"432": {1:"260"}, //Truffle Oil
+				// Fish
+				"128": {1:"145"}, //Pufferfish
+				"129": {1:"65"}, //Anchovy
+				"130": {1:"120"}, //Tuna
+				"131": {1:"65"}, //Sardine
+				"132": {1:"70"}, //Bream
+				"136": {1:"95"}, //Largemouth Bass
+				"137": {1:"65"}, //Smallmouth Bass
+				"138": {1:"85"}, //Rainbow Trout
+				"139": {1:"95"}, //Salmon
+				"140": {1:"85"}, //Walleye
+				"141": {1:"70"}, //Perch
+				"142": {1:"60"}, //Carp
+				"143": {1:"135"}, //Catfish
+				"144": {1:"105"}, //Pike
+				"145": {1:"65"}, //Sunfish
+				"146": {1:"100"}, //Red Mullet
+				"147": {1:"65"}, //Herring
+				"148": {1:"120"}, //Eel
+				"149": {1:"170"}, //Octopus
+				"150": {1:"75"}, //Red Snapper
+				"151": {1:"135"}, //Squid
+				"154": {1:"75"}, //Sea Cucumber
+				"155": {1:"145"}, //Super Cucumber
+				"156": {1:"95"}, //Ghostfish
+				"164": {1:"110"}, //Sandfish
+				"165": {1:"155"}, //Scorpion Carp
+				"267": {1:"95"}, //Flounder 
+				"269": {1:"120"}, //Midnight Carp
+				"698": {1:"145"}, //Sturgeon
+				"699": {1:"105"}, //Tiger Trout
+				"700": {1:"95"}, //Bullhead
+				"701": {1:"95"}, //Tilapia
+				"702": {1:"70"}, //Chub
+				"704": {1:"145"}, //Dorado
+				"705": {1:"105"}, //Albacore
+				"706": {1:"85"}, //Shad
+				"707": {1:"150"}, //Lingcod
+				"708": {1:"95"}, //Halibut
+				"734": {1:"95"}, //Woodskip
+				"795": {1:"145"}, //Void Salmon
+				"796": {1:"100"}, //Slimejack
+				"836": {1:"145"}, //Stingray
+				"837": {1:"95"}, //Lionfish 
+				"838": {1:"105"}, //Blue Discus
+				"158": {1:"165"}, //Stonefish
+				"161": {1:"225"}, //Ice Pip
+				"162": {1:"235"}, //Lava Eel
+				"798": {1:"150"}, //Midnight Squid
+				"799": {1:"160"}, //Spook Fish
+				"800": {1:"205"}, //Blobfish
+				// Legendary Fish
+				"159": {1:"2000"}, //Crimsonfish
+				"160": {1:"1500"}, //Angler
+				"163": {1:"3000"}, //Legend
+				"775": {1:"2000"}, //Glacierfish
+				"682": {1:"1500"}, //Mutant Carp
+				"898": {1:"2000"}, //Son of Crimsonfish
+				"899": {1:"1500"}, //Ms. Angler
+				"900": {1:"3000"}, //Legend II
+				"902": {1:"2000"}, //Glacierfish Jr.
+				"901": {1:"1500"}, //Radioactive Carp
+				// Crab Pots
+				"715": {1:"160"}, //Lobster
+				"372": {1:"70"}, //Clam
+				"716": {1:"120"}, //Crayfish
+				"717": {1:"140"}, //Crab
+				"718": {1:"80"}, //Cockle
+				"719": {1:"60"}, //Mussel
+				"720": {1:"100"}, //Shrimp
+				"721": {1:"100"}, //Snail
+				"722": {1:"60"}, //Periwinkle
+				"723": {1:"70"}, //Oyster
+				// Mines
+				"96": {1:"150"}, // Dwarf Scroll I
+				"97": {1:"150"}, // Dwarf Scroll II
+				"98": {1:"150"}, // Dwarf Scroll III
+				"99": {1:"150"}, // Dwarf Scroll IV
+				"100": {1:"400"}, // Chipped Amphora
+				"101": {1:"400"}, // Arrowhead
+				"103": {1:"600"}, // Ancient Doll
+				"104": {1:"600"}, // Elvish Jewelry
+				"105": {1:"500"}, // Chewing Stick
+				"106": {1:"600"}, // Ornamental Fan
+				"108": {1:"600"}, // Rare Disc
+				"109": {1:"300"}, // Ancient Sword
+				"110": {1:"250"}, // Rusty Spoon
+				"111": {1:"250"}, // Rusty Spur
+				"112": {1:"250"}, // Rusty Cog
+				"113": {1:"500"}, // Chicken Statue
+				"114": {1:"100"}, // Ancient Seed
+				"115": {1:"500"}, // Prehistoric Tool
+				"116": {1:"400"}, // Dried Starfish
+				"117": {1:"500"}, // Anchor
+				"118": {1:"100"}, // Glass Shards
+				"119": {1:"500"}, // Bone Flute
+				"120": {1:"500"}, // Prehistoric Handaxe
+				"121": {1:"500"}, // Dwarvish Helm
+				"122": {1:"600"}, // Dwarf Gadget
+				"123": {1:"500"}, // Ancient Drum
+				"124": {1:"700"}, // Golden Mask
+				"125": {1:"600"}, // Golden Relic
+				"126": {1:"1000"}, // Strange Doll
+				"127": {1:"1000"}, // Strange Doll
+				"579": {1:"200"}, // Prehistoric Scapula
+				"580": {1:"150"}, // Prehistoric Tibia
+				"581": {1:"200"}, // Prehistoric Skull
+				"582": {1:"200"}, // Skeletal Hand
+				"583": {1:"150"}, // Prehistoric Rib
+				"584": {1:"150"}, // Prehistoric Vertebra
+				"585": {1:"200"}, // Skeletal Tail
+				"586": {1:"300"}, // Nautilus Fossil
+				"587": {1:"300"}, // Amphibian Fossil
+				"588": {1:"300"}, // Palm Fossil
+				"589": {1:"300"}, // Trilobite
+				"823": {1:"300"}, // Fossilized Leg
+				"824": {1:"300"}, // Fossilized Ribs
+				"820": {1:"300"}, // Fossilized Skull
+				"821": {1:"300"}, // Fossilized Spine
+				"822": {1:"300"}, // Fossilized Tail
+				"828": {1:"400"}, // Mummified Frog
+				"827": {1:"400"}, // Mummified Bat
+				"825": {1:"300"}, // Snake Skull
+				"826": {1:"400"}, // Snake Vertebrae
+				"74": {1:"1500"}, // Prismatic Shard
+				"72": {1:"500"}, // Diamond
+				"70": {1:"300"}, // Jade
+				"68": {1:"200"}, // Topaz
+				"66": {1:"200"}, // Amethyst
+				"64": {1:"350"}, // Ruby
+				"62": {1:"300"}, // Aquamarine
+				"60": {1:"350"}, // Emerald
+				"749": {1:"200"}, // Omni Geode
+				"275": {1:"300"}, // Artifact Trove
+				"82": {1:"150"}, // Fire Quartz
+				"86": {1:"120"}, // Earth Crystal
+				"80": {1:"70"}, // Quartz
+				"84": {1:"130"}, // Frozen Tear
+				"848": {1:"150"}, // Cinder Shard
+				"338": {1:"150"}, // Refined Quartz
+				"382": {1:"35"}, // Coal
+				"378": {1:"10"}, // Copper Ore
+				"380": {1:"20"}, // Iron Ore
+				"384": {1:"35"}, // Gold Ore
+				"386": {1:"50"}, // Iridium Ore
+				"909": {1:"150"}, // Radioactive Ore
+				"334": {1:"100"}, // Copper Bar
+				"335": {1:"200"}, // Iron Bar
+				"336": {1:"350"}, // Gold Bar
+				"337": {1:"500"}, // Iridium Bar
+				"910": {1:"1500"}, // Radioactive Bar
+				"769": {1:"60"}, // Void Essence
+				"768": {1:"60"}, // Solar Essence
+				"767": {1:"35"}, // Bat Wing
+				"684": {1:"20"}, // Bug Meat
+				"766": {1:"15"}, // Slime
+				"881": {1:"25"}, // Bone Fragment
+				// Geode Minerals
+				"538": {1:"300"}, // Alamite
+				"542": {1:"150"}, // Calcite
+				"548": {1:"300"}, // Jamborite
+				"549": {1:"230"}, // Jagoite
+				"552": {1:"200"}, // Malachite
+				"555": {1:"160"}, // Nekoite
+				"556": {1:"160"}, // Orpiment
+				"558": {1:"200"}, // Thunder Egg
+				"566": {1:"250"}, // Celestine
+				"568": {1:"120"}, // Sandstone
+				"569": {1:"150"}, // Granite
+				"571": {1:"100"}, // Limestone
+				"574": {1:"100"}, // Mudstone
+				"576": {1:"220"}, // Slate
+				"557": {1:"300"}, // Petrified Slime
+				"564": {1:"300"}, // Opal
+				"541": {1:"250"}, // Aerinite
+				"544": {1:"200"}, // Esperite
+				"545": {1:"300"}, // Fluorapatite
+				"546": {1:"300"}, // Geminite
+				"550": {1:"300"}, // Kyanite
+				"551": {1:"300"}, // Lunarite
+				"559": {1:"240"}, // Pyrite
+				"560": {1:"300"}, // Ocean Stone
+				"561": {1:"300"}, // Ghost Crystal
+				"567": {1:"220"}, // Marble
+				"572": {1:"240"}, // Soapstone
+				"573": {1:"300"}, // Hematite
+				"577": {1:"300"}, // Fairy Stone
+				"562": {1:"300"}, // Tigerseye
+				"565": {1:"300"}, // Fire Opal
+				"540": {1:"150"}, // Baryte
+				"543": {1:"300"}, // Dolomite
+				"547": {1:"300"}, // Helvite
+				"554": {1:"300"}, // Lemon Stone
+				"563": {1:"300"}, // Jasper
+				"570": {1:"300"}, // Basalt
+				"575": {1:"300"}, // Obsidian
+				"578": {1:"300"}, // Star Shards
+				"539": {1:"300"}, // Bixite
+				"553": {1:"300"}, // Neptunite
+				// Food
+				"194": {1:"70"}, //Fried Egg
+				"195": {1:"160"}, //Omelet
+				"196": {1:"310"}, //Salad
+				"197": {1:"385"}, //Cheese Cauliflower
+				"198": {1:"205"}, //Baked Fish
+				"199": {1:"315"}, //Parsnip Soup
+				"200": {1:"145"}, //Vegetable Medley
+				"201": {1:"555"}, //Complete Breakfast
+				"202": {1:"315"}, //Fried Calamari
+				"203": {1:"405"}, //Strange Bun
+				"204": {1:"260"}, //Lucky Lunch
+				"205": {1:"340"}, //Fried Mushroom
+				"206": {1:"290"}, //Pizza
+				"207": {1:"100"}, //Bean Hotpot
+				"208": {1:"140"}, //Glazed Yams
+				"209": {1:"265"}, //Carp Surprise
+				"210": {1:"205"}, //Hashbrowns
+				"211": {1:"150"}, //Pancakes
+				"212": {1:"365"}, //Salmon Dinner
+				"213": {1:"515"}, //Fish Taco
+				"214": {1:"270"}, //Crispy Bass
+				"215": {1:"215"}, //Pepper Poppers
+				"216": {1:"55"}, //Bread
+				"218": {1:"285"}, //Tom Kha Soup
+				"219": {1:"125"}, //Trout Soup
+				"220": {1:"180"}, //Chocolate Cake
+				"221": {1:"370"}, //Pink Cake
+				"222": {1:"285"}, //Rhubarb Pie
+				"223": {1:"180"}, //Cookie
+				"224": {1:"115"}, //Spaghetti
+				"225": {1:"240"}, //Fried Eel
+				"226": {1:"170"}, //Spicy Eel
+				"227": {1:"110"}, //Sashimi
+				"228": {1:"260"}, //Maki Roll
+				"229": {1:"70"}, //Tortilla
+				"230": {1:"265"}, //Red Plate
+				"231": {1:"155"}, //Eggplant Parmesan
+				"232": {1:"255"}, //Rice Pudding
+				"233": {1:"145"}, //Ice Cream
+				"234": {1:"205"}, //Blueberry Tart
+				"235": {1:"295"}, //Autumn's Bounty
+				"236": {1:"305"}, //Pumpkin Soup
+				"237": {1:"225"}, //Super Meal
+				"238": {1:"95"}, //Cranberry Sauce
+				"239": {1:"185"}, //Stuffing
+				"240": {1:"235"}, //Farmer's Lunch
+				"241": {1:"200"}, //Survival Burger
+				"242": {1:"200"}, //Dish O' The Sea
+				"243": {1:"310"}, //Miner's Treat
+				"244": {1:"150"}, //Roots Platter
+				"253": {1:"265"}, //Triple Shot Espresso
+				"265": {1:"360"}, //Seafoam Pudding
+				"456": {1:"130"}, //Algae Soup
+				"457": {1:"100"}, //Pale Broth
+				"604": {1:"285"}, //Plum Pudding
+				"605": {1:"195"}, //Artichoke Dip
+				"606": {1:"375"}, //Stir Fry
+				"607": {1:"265"}, //Roasted Hazelnuts
+				"608": {1:"415"}, //Pumpkin Pie
+				"609": {1:"385"}, //Radish Salad
+				"610": {1:"305"}, //Fruit Salad
+				"611": {1:"155"}, //Blackberry Cobbler
+				"612": {1:"225"}, //Cranberry Candy
+				"618": {1:"230"}, //Bruschetta
+				"648": {1:"475"}, //Coleslaw
+				"649": {1:"280"}, //Fiddlehead Risotto
+				"651": {1:"285"}, //Poppyseed Muffin
+				"727": {1:"165"}, //Chowder
+				"728": {1:"325"}, //Fish Stew
+				"729": {1:"180"}, //Escargot
+				"730": {1:"265"}, //Lobster Bisque
+				"731": {1:"330"}, //Maple Bar
+				"732": {1:"390"}, //Crab Cakes
+				"733": {1:"240"}, //Shrimp Cocktail
+				"903": {1:"160"}, //Ginger Ale
+				"904": {1:"290"}, //Banana Pudding
+				"905": {1:"365"}, //Mango Sticky Rice
+				"906": {1:"330"}, //Poi
+				"907": {1:"270"}, //Tropical Curry
+				"921": {1:"235"}, //Squid Ink Ravioli
+				"773": {1:"495"}, //Life Elixir
+				"772": {1:"825"}, //Oil of Garlic
+				// Misc
+				"303": {1:"70"}, // Pale Ale
+				"346": {1:"150"}, // Beer
+				"459": {1:"220"}, // Mead
+				"395": {1:"80"}, // Coffee
+				"614": {1:"150"}, // Green Tea
+				"787": {1:"300"}, // Battery Pack
+				"724": {1:"300"}, // Maple Syrup
+				"725": {1:"200"}, // Oak Resin
+				"726": {1:"150"}, // Pine Tar
+				"388": {1:"4"}, // Wood
+				"390": {1:"6"}, // Stone
+				"92": {1:"6"}, // Sap
+				"709": {1:"25"}, // Hardwood
+				"771": {1:"7"}, // Fiber
+				"330": {1:"30"}, // Clay
+				"812": {1:"30"}, // Roe
+				"447": {1:"60"}, // Aged Roe
+				"445": {1:"500"}, // Caviar
+				"152": {1:"35"}, // Seaweed
+				"153": {1:"30"}, // Green Algae
+				"157": {1:"45"}, // White Algae
+				"178": {1:"3"}, // Hay
+				"685": {1:"3"}, // Bait
+				"309": {1:"20"}, // Acorn
+				"310": {1:"20"}, // Maple Seed
+				"311": {1:"15"}, // Pine Cone
+				"292": {1:"80"}, // Mahogany Seed
+				"16": {1:"65"}, // Wild Horseradish
+				"18": {1:"45"}, // Daffodil
+				"20": {1:"75"}, // Leek
+				"22": {1:"55"}, // Dandelion
+				"396": {1:"75"}, // Spice Berry
+				"402": {1:"60"}, // Sweet Pea
+				"404": {1:"60"}, // Common Mushroom
+				"406": {1:"80"}, // Wild Plum
+				"408": {1:"80"}, // Hazelnut
+				"296": {1:"15"}, // Salmonberry
+				"410": {1:"20"}, // Blackberry
+				"412": {1:"60"}, // Winter Root
+				"414": {1:"75"}, // Crystal Fruit
+				"416": {1:"55"}, // Snow Yam
+				"418": {1:"50"}, // Crocus
+				"283": {1:"50"}, // Holly
+				"281": {1:"100"}, // Chanterelle
+				"422": {1:"125"}, // Purple Mushroom
+                "829": {1: "95"}, // Ginger
+                "78": {1: "75"}, // Cave Carrot
+                "791": {1: "400"}, // Golden Coconut
+				"297": {1:"10"}, // Grass Starter
+				"686": {1:"100"}, // Spinner
+				"687": {1:"150"}, // Dressed Spinner
+				"694": {1:"150"}, // Trap Bobber
+				"695": {1:"150"}, // Cork Bobber
+				"693": {1:"150"}, // Treasure Hunter
+			},
+			"When": {"Balance Sell Prices": "Normal, Skip Fishing Minigame Mod"}
+        },
+	    {
+			"Action": "EditData",
+			"Target": "Data/CraftingRecipes",
+			"Fields": {
+				// Balance Basic Crafting
+			    "Wild Bait": {0:"771 3 684 1 766 1"},
+			    "Magic Bait": {0:"909 1 684 1 766 1"},
+			    "Cherry Bomb": {0:"378 2 382 1"},
+			    "Bomb": {0:"380 2 378 1 382 1"},
+			    "Mega Bomb": {0:"384 2 380 1 382 1 768 1 769 1"},
+			    "Explosive Ammo": {0:"378 3 382 1" },				
+			    "Basic Fertilizer": {0:"92 10", 1:"Field", 2:"368 5", 3:"false", 4:"s Farming 1"}, 
+			    "Quality Fertilizer": {0:"92 10 766 5", 1:"Field", 2:"369 5", 3:"false", 4:"s Farming 9"}, 
+				"Deluxe Fertilizer": {0:"92 15 766 10 881 3 909 1"},
+			    "Speed-Gro": {0:"92 10 684 1"},
+				"Deluxe Speed-Gro": {0:"92 10 766 5 709 2 684 2"},
+			    "Hyper Speed-Gro": {0:"92 15 766 10 709 3 684 3 909 1", 1:"Field", 2:"918 5", 3:"false", 4:"null"},
+			    "Basic Retaining Soil": {0:"390 10", 1:"Field", 2:"370 5", 3:"false", 4:"s Farming 4"},
+			    "Quality Retaining Soil": {0:"390 10 330 2", 1:"Field", 2:"371 5", 3:"false", 4:"s Farming 7"},
+			    "Deluxe Retaining Soil": {0:"390 25 771 10 330 5", 1:"Field", 2:"920 5", 3:"false", 4:"null"},
+			    "Grass Starter": {0:"771 2"},
+			    "Bug Steak": {0:"684 3"},
+				"Warp Totem: Farm": {0:"709 1 330 3 771 10"},
+				"Warp Totem: Beach": {0:"709 1 330 3 393 2"},
+				"Warp Totem: Mountains": {0:"709 1 330 3 390 15"},
+				"Spinner": {0:"334 1 92 5"},
+				"Dressed Spinner": {0:"335 1 684 5"},
+				"Cork Bobber": {0:"388 10 709 2 766 5"},
+				"Treasure Hunter": {0:"336 1 766 5"},
+			},
+			"When": {"Balance Basic Crafting": true}
+		},
+	    {
+			"Action": "EditData",
+			"Target": "Data/CraftingRecipes",
+			"Fields": {
+				// Balance Machine Crafting (Easy)
+			    "Preserves Jar": {0:"388 50 390 40 709 5 726 1"},
+			    "Mayonnaise Machine": {0:"388 30 390 30 338 2 726 2"},
+			    "Cheese Press": {0:"388 45 709 10 336 2 725 2"},
+			    "Bee House": {0:"388 40 709 10 336 1 724 1"},
+			    "Seed Maker": {0:"388 30 338 1 336 1 724 1"},
+			    "Oil Maker": {0:"766 50 709 20 336 2 724 2"},
+			    "Loom": {0:"388 60 771 30 725 1 726 1"},
+				"Sprinkler": {0:"334 1 338 1"},
+				"Stone Chest": {0:"390 30"},
+			},
+			"When": {"Balance Machine Crafting": "Easy"}
+		},
+	    {
+				
+			"Action": "EditData",
+			"Target": "Data/CraftingRecipes",
+			"Fields": {
+				// Balance Machine Crafting (Normal)
+			    "Preserves Jar": {0:"388 50 390 40 709 10 726 2"},
+			    "Mayonnaise Machine": {0:"388 40 390 40 338 3 726 3"},
+			    "Cheese Press": {0:"388 50 709 15 336 3 725 3"},
+			    "Bee House": {0:"388 50 709 15 336 2 724 2"},
+			    "Seed Maker": {0:"388 40 338 2 336 2 724 2"},
+			    "Oil Maker": {0:"766 50 709 25 336 3 724 3"},
+			    "Loom": {0:"388 70 771 35 725 2 726 2"},	
+				"Keg": {0:"388 40 334 2 335 2 725 2"},
+				"Cask": {0:"388 30 709 2 726 1"},
+			    "Furnace": {0:"378 25 390 40"},
+			    "Lightning Rod": {0:"335 2 338 2 767 10"},
+			    "Crystalarium": {0:"390 125 336 5 337 5 787 3"},
+				"Sprinkler": {0:"334 2 338 1"},				
+			    "Quality Sprinkler": {0:"335 2 336 2 338 1"},
+			    "Iridium Sprinkler": {0:"336 2 337 2 338 1 787 1"},
+				"Stone Chest": {0:"390 30"},
+			},
+			"When": {"Balance Machine Crafting": "Normal"}
+		},
+	    {
+				
+			"Action": "EditData",
+			"Target": "Data/CraftingRecipes",
+			"Fields": {
+				// Balance Machine Crafting (Hard)
+			    "Preserves Jar": {0:"388 60 390 50 709 15 726 3"},
+			    "Mayonnaise Machine": {0:"388 50 390 50 338 5 726 5"},
+			    "Cheese Press": {0:"388 60 709 20 336 5 725 5"},
+			    "Bee House": {0:"388 60 709 20 336 3 724 3"},
+			    "Seed Maker": {0:"388 50 338 3 336 3 724 3"},
+			    "Oil Maker": {0:"766 60 709 30 336 5 724 5"},
+			    "Loom": {0:"388 80 771 40 725 3 726 3"},
+				"Keg": {0:"388 50 334 3 335 3 725 3"},
+				"Cask": {0:"388 50 709 3 726 2"},
+			    "Furnace": {0:"378 30 390 50"},
+			    "Lightning Rod": {0:"335 3 338 3 767 15"},
+			    "Crystalarium": {0:"390 150 336 10 337 5 787 4"},
+				"Sprinkler": {0:"334 2 338 2"},			
+			    "Quality Sprinkler": {0:"335 3 336 2 338 2"},
+			    "Iridium Sprinkler": {0:"336 3 337 2 338 2 787 1"},
+				"Chest": {0:"388 100"},
+				"Stone Chest": {0:"390 60"},
+			},
+			"When": {"Balance Machine Crafting": "Hard"}
+		},
+	    {
+				
+			"Action": "EditData",
+			"Target": "Data/CraftingRecipes",
+			"Fields": {
+				// Balance Machine Crafting (Automate Mod)
+			    "Preserves Jar": {0:"388 50 390 40 709 10 726 2"},
+			    "Mayonnaise Machine": {0:"388 50 390 50 338 5 726 5"},
+			    "Cheese Press": {0:"388 60 709 20 336 5 725 5"},
+			    "Bee House": {0:"388 50 709 15 336 2 724 2"},
+			    "Seed Maker": {0:"388 50 338 3 336 3 724 3"},
+			    "Oil Maker": {0:"766 60 709 30 336 5 724 5"},
+			    "Loom": {0:"388 80 771 40 725 3 726 3"},
+				"Keg": {0:"388 40 334 2 335 2 725 2"},
+				"Cask": {0:"388 30 709 2 726 1"},
+			    "Furnace": {0:"378 30 390 50"},
+			    "Lightning Rod": {0:"335 2 338 2 767 10"},
+			    "Crystalarium": {0:"390 125 336 5 337 5 787 3"},
+				"Sprinkler": {0:"334 2 338 1"},				
+			    "Quality Sprinkler": {0:"335 2 336 2 338 1"},
+			    "Iridium Sprinkler": {0:"336 2 337 2 338 1 787 1"},
+				"Chest": {0:"388 100"},
+				"Stone Chest": {0:"390 60"},
+			},
+			"When": {"Balance Machine Crafting": "Automate Mod"}
+		},
+		{	  		
+			"Action": "EditData",
+			"Target": "Data/Blueprints",
+			"Fields": {
+				// Balance Building Construction
+				"Coop": {0:"388 300 390 100", 17: "5000"},
+				"Big Coop": {0:"388 400 390 150", 17: "12000"},
+				"Deluxe Coop": {0:"388 500 390 200", 17: "22000"},
+				"Barn": {0:"388 350 390 150", 17: "8000"},
+				"Big Barn": {0:"388 350 390 150", 17: "16000"},
+				"Deluxe Barn": {0:"388 550 390 300", 17: "30000"},
+				"Silo": {0:"390 100 330 10 334 5", 17: "2000"},
+				"Mill": {0:"388 150 390 100 428 5", 17: "5000"},
+				"Stable": {0:"709 100 335 10", 17: "20000"},
+				"Well": {0:"390 75", 17: "1000"},
+				"Shipping Bin": {0:"388 150", 17: "500"},
+				"Slime Hutch": {0:"390 400 338 10 337 3", 17: "20000"},
+				"Shed": {0:"388 300", 17: "15000"},
+				"Big Shed": {0:"388 550 390 200", 17: "25000"},
+				"Fish Pond": {0:"390 200 152 10 153 10", 17: "10000"},
+				"Junimo Hut": {0:"390 250 268 20 771 100", 17: "40000"},
+			},
+			"When": {"Balance Building Construction": true}
+		},
+		{ 
+			"Action": "EditData",
+			"Target": "Data/Monsters",
+			"Fields": {
+				// Balance Monsters (Normal)
+				"Green Slime": {0:"25", 1:"7"},
+				"Dust Spirit": {0:"30", 1:"8"},
+				"Bat": {0:"20", 1:"9"},
+				"Frost Bat": {0:"30", 1:"10"},
+				"Lava Bat": {0:"70", 1:"20"},
+				"Iridium Bat": {0:"250", 1:"35"},
+				"Stone Golem": {0:"40", 1:"15"},
+				"Wilderness Golem": {0:"40", 1:"15"},
+				"Grub": {0:"15", 1:"6"},
+				"Fly": {0:"20", 1:"8"},
+				"Frost Jelly": {0:"80", 1:"9"},
+				"Sludge": {0:"180", 1:"18"},
+				"Shadow Guy": {0:"160", 1:"25"},
+				"Ghost": {0:"80", 1:"20"},
+				"Carbon Ghost": {0:"150", 1:"35"},
+				"Duggy": {0:"30", 1:"10"},
+				"Rock Crab": {0:"40", 1:"10"},
+				"Lava Crab": {0:"140", 1:"20"},
+				"Iridium Crab": {0:"250", 1:"25"},
+				"Squid Kid": {0:"1", 1:"25"},
+				"Skeleton Warrior": {0:"300", 1:"15"},
+				"Shadow Brute": {0:"200", 1:"25"},
+				"Shadow Shaman": {0:"100", 1:"25"},
+				"Skeleton": {0:"150", 1:"15"},
+				"Skeleton Mage": {0:"300", 1:"15"},
+				"Metal Head": {0:"100", 1:"20"},
+				"Spiker": {0:"5", 1:"15"},
+				"Bug": {0:"1", 1:"10"},
+				"Mummy": {0:"300", 1:"30"},
+				"Big Slime": {0:"100", 1:"9"},
+				"Serpent": {0:"130", 1:"30"},
+				"Pepper Rex": {0:"300", 1:"25"},
+				"Tiger Slime": {0:"250", 1:"30"},
+				"Lava Lurk": {0:"150", 1:"25"},
+				"Hot Head": {0:"250", 1:"25"},
+				"Magma Sprite": {0:"200", 1:"20"},
+				"Magma Duggy": {0:"250", 1:"25"},				
+				"Magma Sparker": {0:"250", 1:"25"},
+				"False Magma Cap": {0:"300", 1:"20"},
+				"Dwarvish Sentry": {0:"350", 1:"25"},
+				"Putrid Ghost": {0:"400", 1:"35"},
+				"Shadow Sniper": {0:"250", 1:"25"},
+				"Spider": {0:"100", 1:"17"},
+				"Royal Serpent": {0:"150", 1:"32"},
+				"Blue Squid": {0:"100", 1:"22"},
+			},
+			"When": { "Balance Monsters": "Normal" }
+		},
+		{ 
+			"Action": "EditData",
+			"Target": "Data/Monsters",
+			"Fields": {
+				// Balance Monsters (Hard)
+				"Green Slime": {0:"30", 1:"10"},
+				"Dust Spirit": {0:"40", 1:"10"},
+				"Bat": {0:"25", 1:"12"},
+				"Frost Bat": {0:"35", 1:"14"},
+				"Lava Bat": {0:"80", 1:"25"},
+				"Iridium Bat": {0:"300", 1:"40"},
+				"Stone Golem": {0:"50", 1:"20"},
+				"Wilderness Golem": {0:"50", 1:"20"},
+				"Grub": {0:"20", 1:"8"},
+				"Fly": {0:"25", 1:"12"},
+				"Frost Jelly": {0:"100", 1:"12"},
+				"Sludge": {0:"200", 1:"20"},
+				"Shadow Guy": {0:"200", 1:"30"},
+				"Ghost": {0:"95", 1:"25"},
+				"Carbon Ghost": {0:"190", 1:"40"},
+				"Duggy": {0:"40", 1:"12"},
+				"Rock Crab": {0:"40", 1:"15"},
+				"Lava Crab": {0:"140", 1:"25"},
+				"Iridium Crab": {0:"300", 1:"30"},
+				"Squid Kid": {0:"1", 1:"40"},
+				"Skeleton Warrior": {0:"300", 1:"24"},
+				"Shadow Brute": {0:"220", 1:"30"},
+				"Shadow Shaman": {0:"150", 1:"30"},
+				"Skeleton": {0:"170", 1:"20"},
+				"Skeleton Mage": {0:"320", 1:"20"},
+				"Metal Head": {0:"120", 1:"30"},
+				"Spiker": {0:"7", 1:"15"},
+				"Bug": {0:"1", 1:"14"},
+				"Mummy": {0:"300", 1:"35"},
+				"Big Slime": {0:"110", 1:"12"},
+				"Serpent": {0:"140", 1:"35"},
+				"Pepper Rex": {0:"400", 1:"35"},
+				"Tiger Slime": {0:"270", 1:"35"},
+				"Lava Lurk": {0:"180", 1:"30"},
+				"Hot Head": {0:"300", 1:"35"},
+				"Magma Sprite": {0:"220", 1:"25"},
+				"Magma Duggy": {0:"270", 1:"30"},				
+				"Magma Sparker": {0:"270", 1:"30"},
+				"False Magma Cap": {0:"350", 1:"25"},
+				"Dwarvish Sentry": {0:"370", 1:"35"},
+				"Putrid Ghost": {0:"450", 1:"50"},
+				"Shadow Sniper": {0:"270", 1:"30"},
+				"Spider": {0:"130", 1:"19"},
+				"Royal Serpent": {0:"180", 1:"35"},
+				"Blue Squid": {0:"130", 1:"24"},
+			},
+			"When": { "Balance Monsters": "Hard" }
+		},
+		{ 
+			"Action": "EditData",
+			"Target": "Data/Monsters",
+			"Fields": {
+				// Balance Monsters (Master)
+				"Green Slime": {0:"35", 1:"10"},
+				"Dust Spirit": {0:"50", 1:"10"},
+				"Bat": {0:"30", 1:"12"},
+				"Frost Bat": {0:"40", 1:"14"},
+				"Lava Bat": {0:"90", 1:"25"},
+				"Iridium Bat": {0:"330", 1:"40"},
+				"Stone Golem": {0:"60", 1:"25"},
+				"Wilderness Golem": {0:"60", 1:"25"},
+				"Grub": {0:"25", 1:"8"},
+				"Fly": {0:"30", 1:"12"},
+				"Frost Jelly": {0:"120", 1:"12"},
+				"Sludge": {0:"220", 1:"20"},
+				"Shadow Guy": {0:"230", 1:"30"},
+				"Ghost": {0:"110", 1:"25"},
+				"Carbon Ghost": {0:"210", 1:"40"},
+				"Duggy": {0:"50", 1:"12"},
+				"Rock Crab": {0:"50", 1:"15"},
+				"Lava Crab": {0:"160", 1:"25"},
+				"Iridium Crab": {0:"320", 1:"30"},
+				"Squid Kid": {0:"1", 1:"50"},
+				"Skeleton Warrior": {0:"350", 1:"24"},
+				"Shadow Brute": {0:"250", 1:"30"},
+				"Shadow Shaman": {0:"200", 1:"30"},
+				"Skeleton": {0:"200", 1:"20"},
+				"Skeleton Mage": {0:"350", 1:"20"},
+				"Metal Head": {0:"150", 1:"35"},
+				"Spiker": {0:"10", 1:"15"},
+				"Bug": {0:"1", 1:"13"},
+				"Mummy": {0:"350", 1:"35"},
+				"Big Slime": {0:"120", 1:"12"},
+				"Serpent": {0:"160", 1:"35"},
+				"Pepper Rex": {0:"450", 1:"40"},
+				"Tiger Slime": {0:"300", 1:"35"},
+				"Lava Lurk": {0:"250", 1:"30"},
+				"Hot Head": {0:"350", 1:"40"},
+				"Magma Sprite": {0:"250", 1:"25"},
+				"Magma Duggy": {0:"300", 1:"30"},				
+				"Magma Sparker": {0:"300", 1:"30"},
+				"False Magma Cap": {0:"400", 1:"25"},
+				"Dwarvish Sentry": {0:"400", 1:"40"},
+				"Putrid Ghost": {0:"500", 1:"50"},
+				"Shadow Sniper": {0:"300", 1:"30"},
+				"Spider": {0:"160", 1:"21"},
+				"Royal Serpent": {0:"220", 1:"40"},
+				"Blue Squid": {0:"160", 1:"26"},
+			},
+			"When": { "Balance Monsters": "Master" }
+		},
+
+// Stardew Valley Expanded
+
+		{
+			"Action": "EditData",
+			"Target": "Data/ObjectInformation",
+			"Fields": {
+				// Stardew Valley Expanded Crops
+				"{{spacechase0.jsonAssets/ObjectId:Ancient Fiber}}": {1:"65"},
+				"{{spacechase0.jsonAssets/ObjectId:Monster Fruit}}": {1:"480"},
+				"{{spacechase0.jsonAssets/ObjectId:Monster Mushroom}}": {1:"270"},
+				"{{spacechase0.jsonAssets/ObjectId:Salal Berry}}": {1:"20"},
+				"{{spacechase0.jsonAssets/ObjectId:Slime Berry}}": {1:"40"},
+				"{{spacechase0.jsonAssets/ObjectId:Void Root}}": {1:"160"},
+				"{{spacechase0.jsonAssets/ObjectId:Joja Berry}}": {1:"270"},
+				"{{spacechase0.jsonAssets/ObjectId:Joja Veggie}}": {1:"400"},
+				// Stardew Valley Expanded Fish
+				"{{spacechase0.jsonAssets/ObjectId:Baby Lunaloo}}": {1:"75"},	
+				"{{spacechase0.jsonAssets/ObjectId:Bonefish}}": {1:"120"},	
+                "{{spacechase0.jsonAssets/ObjectId:Bull Trout}}": {1:"120"},	
+				"{{spacechase0.jsonAssets/ObjectId:Butterfish}}": {1:"135"},	
+				"{{spacechase0.jsonAssets/ObjectId:Daggerfish}}": {1:"95"},	
+				"{{spacechase0.jsonAssets/ObjectId:Frog}}": {1:"120"},	
+                "{{spacechase0.jsonAssets/ObjectId:Goldenfish}}": {1:"160"},	
+				"{{spacechase0.jsonAssets/ObjectId:Grass Carp}}": {1:"150"},
+				"{{spacechase0.jsonAssets/ObjectId:King Salmon}}": {1:"145"},	
+				"{{spacechase0.jsonAssets/ObjectId:Kittyfish}}": {1:"150"},	
+				"{{spacechase0.jsonAssets/ObjectId:Lunaloo}}": {1:"120"},	
+				"{{spacechase0.jsonAssets/ObjectId:Meteor Carp}}": {1:"220"},	
+				"{{spacechase0.jsonAssets/ObjectId:Minnow}}": {1:"60"},	
+				"{{spacechase0.jsonAssets/ObjectId:Puppyfish}}": {1:"150"},	
+				"{{spacechase0.jsonAssets/ObjectId:Radioactive Bass}}": {1:"235"},	
+				"{{spacechase0.jsonAssets/ObjectId:Razor Trout}}": {1:"150"},	
+				"{{spacechase0.jsonAssets/ObjectId:Seahorse}}": {1:"65"},	
+				"{{spacechase0.jsonAssets/ObjectId:Sea Sponge}}": {1:"75"},	
+				"{{spacechase0.jsonAssets/ObjectId:Snatcher Worm}}": {1:"170"},		
+				"{{spacechase0.jsonAssets/ObjectId:Torpedo Trout}}": {1:"150"},		
+				"{{spacechase0.jsonAssets/ObjectId:Undeadfish}}": {1:"145"},		
+				"{{spacechase0.jsonAssets/ObjectId:Void Eel}}": {1:"225"},		
+				"{{spacechase0.jsonAssets/ObjectId:Water Grub}}": {1:"105"},
+				"{{spacechase0.jsonAssets/ObjectId:Dulse Seaweed}}": {1:"60"},	
+				"{{spacechase0.jsonAssets/ObjectId:Gemfish}}": {1:"270"},	
+				"{{spacechase0.jsonAssets/ObjectId:Shiny Lunaloo}}": {1:"220"},	
+				// Stardew Valley Expanded Food
+				"{{spacechase0.jsonAssets/ObjectId:Baked Berry Oatmeal}}": {1:"745"},	
+				"{{spacechase0.jsonAssets/ObjectId:Big Bark Burger}}": {1:"335"},	
+				"{{spacechase0.jsonAssets/ObjectId:Flower Cookie}}": {1:"715"},	
+				"{{spacechase0.jsonAssets/ObjectId:Frog Legs}}": {1:"295"},	
+				"{{spacechase0.jsonAssets/ObjectId:Glazed Butterfish}}": {1:"535"},		
+				"{{spacechase0.jsonAssets/ObjectId:Mixed Berry Pie}}": {1:"285"},	
+				"{{spacechase0.jsonAssets/ObjectId:Mushroom Berry Rice}}": {1:"640"},	
+				"{{spacechase0.jsonAssets/ObjectId:Seaweed Salad}}": {1:"320"},	
+				"{{spacechase0.jsonAssets/ObjectId:Void Delight}}": {1:"4870"},	
+				"{{spacechase0.jsonAssets/ObjectId:Void Salmon Sushi}}": {1:"560"},			
+				// Stardew Valley Expanded Misc
+				"{{spacechase0.jsonAssets/ObjectId:Mushroom Colony}}": {1:"90"},	
+				"{{spacechase0.jsonAssets/ObjectId:Smelly Rafflesia}}": {1:"125"},		
+				"{{spacechase0.jsonAssets/ObjectId:Big Conch}}": {1:"100"},	
+				"{{spacechase0.jsonAssets/ObjectId:Thistle}}": {1:"120"},
+				"{{spacechase0.jsonAssets/ObjectId:Goldenrod}}": {1:"140"},
+				"{{spacechase0.jsonAssets/ObjectId:Winter Star Rose}}": {1:"150"},				
+				"{{spacechase0.jsonAssets/ObjectId:Dewdrop Berry}}": {1:"300"},		
+				"{{spacechase0.jsonAssets/ObjectId:Void Pebble}}": {1:"400"},					
+			},		
+            "When": {"HasMod|contains=FlashShifter.JA.SVE": true, "HasMod|contains=spacechase0.JsonAssets": true, "Balance Sell Prices": "Normal, Skip Fishing Minigame Mod"}			
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/ObjectInformation",
+			"Fields": {
+				// Stardew Valley Expanded Fish (More New Fish)
+				"{{spacechase0.jsonAssets/ObjectId:Clownfish}}": {1:"60"},	
+				"{{spacechase0.jsonAssets/ObjectId:Starfish}}": {1:"135"},							
+			},		
+            "When": {"HasMod|contains=MoreFish": false, "HasMod|contains=spacechase0.JsonAssets": true, "Balance Sell Prices": "Normal, Skip Fishing Minigame Mod"}			
+		},
+		
+// Ridgeside Village
+
+		{
+			"Action": "EditData",
+			"Target": "Data/ObjectInformation",
+			"Fields": {
+				// Ridgeside Village Fruit Trees
+				"{{spacechase0.jsonAssets/ObjectId:Cherry Pluot}}": {1:"125"},		
+				"{{spacechase0.jsonAssets/ObjectId:Highland Jostaberry}}": {1:"135"},	
+				"{{spacechase0.jsonAssets/ObjectId:Mountain Plumcot}}": {1:"135"},	
+				"{{spacechase0.jsonAssets/ObjectId:Northern Limequat}}": {1:"125"},	
+				"{{spacechase0.jsonAssets/ObjectId:Paradise Rangpur}}": {1:"125"},	
+				"{{spacechase0.jsonAssets/ObjectId:Tropi Ugli Fruit}}": {1:"125"},	
+				"{{spacechase0.jsonAssets/ObjectId:Desert Tangelo}}": {1:"135"},	
+				"{{spacechase0.jsonAssets/ObjectId:Ember Blood Lime}}": {1:"125"},
+				// Ridgeside Village Fish
+				"{{spacechase0.jsonAssets/ObjectId:Bladetail Sturgeon}}": {1:"120"},
+				"{{spacechase0.jsonAssets/ObjectId:Caped Tree Frog}}": {1:"65"},
+				"{{spacechase0.jsonAssets/ObjectId:Cardia Septal Jellyfish}}": {1:"120"},
+				"{{spacechase0.jsonAssets/ObjectId:Crimson Spiked Clam}}": {1:"120"},
+				"{{spacechase0.jsonAssets/ObjectId:Cutthroat Trout}}": {1:"60"},
+				"{{spacechase0.jsonAssets/ObjectId:Fairytale Lionfish}}": {1:"120"},
+				"{{spacechase0.jsonAssets/ObjectId:Fixer Eel}}": {1:"120"},
+				"{{spacechase0.jsonAssets/ObjectId:Golden Rose Fin}}": {1:"120"},
+				"{{spacechase0.jsonAssets/ObjectId:Harvester Trout}}": {1:"75"},
+				"{{spacechase0.jsonAssets/ObjectId:Lullaby Carp}}": {1:"120"},
+				"{{spacechase0.jsonAssets/ObjectId:Mountain Redbelly Dace}}": {1:"75"},
+				"{{spacechase0.jsonAssets/ObjectId:Mountain Whitefish}}": {1:"95"},
+				"{{spacechase0.jsonAssets/ObjectId:Pebble Back Crab}}": {1:"60"},
+				"{{spacechase0.jsonAssets/ObjectId:Ridge Bluegill}}": {1:"60"},
+				"{{spacechase0.jsonAssets/ObjectId:Ridgeside Bass}}": {1:"60"},
+				"{{spacechase0.jsonAssets/ObjectId:Skulpin Fish}}": {1:"60"},
+				"{{spacechase0.jsonAssets/ObjectId:Deep Ridge Angler}}": {1:"2500"},
+				"{{spacechase0.jsonAssets/ObjectId:Sockeye Salmon}}": {1:"2500"},
+				"{{spacechase0.jsonAssets/ObjectId:Waterfall Snakehead}}": {1:"2500"},	
+				// Ridgeside Village Food
+				"{{spacechase0.jsonAssets/ObjectId:Apricot Juice}}": {1:"120"},	
+				"{{spacechase0.jsonAssets/ObjectId:Arugula Roll}}": {1:"275"},	
+				"{{spacechase0.jsonAssets/ObjectId:Autumnal Serenity}}": {1:"475"},	
+				"{{spacechase0.jsonAssets/ObjectId:Autumn Dew Drop Juice}}": {1:"170"},	
+				"{{spacechase0.jsonAssets/ObjectId:Clementine Cake}}": {1:"380"},	
+				"{{spacechase0.jsonAssets/ObjectId:Clementine Juice}}": {1:"55"},	
+				"{{spacechase0.jsonAssets/ObjectId:Cherry Berry Shakey}}": {1:"185"},	
+				"{{spacechase0.jsonAssets/ObjectId:Crunchy Bagel}}": {1:"65"},	
+				"{{spacechase0.jsonAssets/ObjectId:Fluffy Apple Crumble}}": {1:"495"},	
+				"{{spacechase0.jsonAssets/ObjectId:Forage Souffle}}": {1:"150"},	
+				"{{spacechase0.jsonAssets/ObjectId:Forest Halva}}": {1:"275"},	
+				"{{spacechase0.jsonAssets/ObjectId:Fried Fish a la Ridge}}": {1:"375"},	
+				"{{spacechase0.jsonAssets/ObjectId:Fried Mountain Greens}}": {1:"330"},	
+				"{{spacechase0.jsonAssets/ObjectId:Ginger Arugula Fried Rice}}": {1:"280"},
+				"{{spacechase0.jsonAssets/ObjectId:Ginger Rangpur Meringue}}": {1:"405"},				
+				"{{spacechase0.jsonAssets/ObjectId:Highland Blueberry Pie}}": {1:"165"},	
+				"{{spacechase0.jsonAssets/ObjectId:Highland Ice Cream}}": {1:"255"},	
+				"{{spacechase0.jsonAssets/ObjectId:Highland Revani}}": {1:"275"},	
+				"{{spacechase0.jsonAssets/ObjectId:Holiday Ice}}": {1:"370"},	
+				"{{spacechase0.jsonAssets/ObjectId:Honey Ginger Whitefish}}": {1:"320"},				
+				"{{spacechase0.jsonAssets/ObjectId:Hundred Flavor Doughnut}}": {1:"1375"},	
+				"{{spacechase0.jsonAssets/ObjectId:Honey Glazed Salad}}": {1:"405"},	
+				"{{spacechase0.jsonAssets/ObjectId:Jumpy Coffee Cake}}": {1:"195"},	
+				"{{spacechase0.jsonAssets/ObjectId:Kedi Delight}}": {1:"695"},	
+				"{{spacechase0.jsonAssets/ObjectId:Kek's Style Shortcake}}": {1:"330"},	
+				"{{spacechase0.jsonAssets/ObjectId:Kek's Small Dream}}": {1:"175"},
+				"{{spacechase0.jsonAssets/ObjectId:Matcha Latte}}": {1:"255"},	
+				"{{spacechase0.jsonAssets/ObjectId:Pillowsoft Cheezy Sandwich}}": {1:"560"},	
+				"{{spacechase0.jsonAssets/ObjectId:Pink Frosted Sprinkled Doughnut}}": {1:"545"},		
+				"{{spacechase0.jsonAssets/ObjectId:Pumpkin Darling Slice}}": {1:"540"},		
+				"{{spacechase0.jsonAssets/ObjectId:Ridge Apple Cake}}": {1:"445"},		
+				"{{spacechase0.jsonAssets/ObjectId:Ridge Fruity Plate}}": {1:"215"},		
+				"{{spacechase0.jsonAssets/ObjectId:Ridge Mosaic Cake}}": {1:"60"},		
+				"{{spacechase0.jsonAssets/ObjectId:Ridgeside Shaketini}}": {1:"250"},		
+				"{{spacechase0.jsonAssets/ObjectId:Snow Bowl Surprise}}": {1:"230"},		
+				"{{spacechase0.jsonAssets/ObjectId:Snowball Slurpee}}": {1:"255"},		
+				"{{spacechase0.jsonAssets/ObjectId:Springtime Primetime}}": {1:"485"},		
+				"{{spacechase0.jsonAssets/ObjectId:Strawberry Lover Pie}}": {1:"220"},		
+				"{{spacechase0.jsonAssets/ObjectId:Summer Mountain Blessing}}": {1:"485"},		
+				"{{spacechase0.jsonAssets/ObjectId:Summit Iced Tea}}": {1:"155"},		
+				"{{spacechase0.jsonAssets/ObjectId:Sweet Cranberry Cheesecake}}": {1:"460"},		
+				"{{spacechase0.jsonAssets/ObjectId:Tropic Mango Cake}}": {1:"405"},	
+				"{{spacechase0.jsonAssets/ObjectId:Wild Apple Juice}}": {1:"90"},	
+				"{{spacechase0.jsonAssets/ObjectId:Winter Night Feast}}": {1:"315"},	
+				"{{spacechase0.jsonAssets/ObjectId:Zesty Tuna}}": {1:"380"},					
+			},
+			"When": {"HasMod|contains=Rafseazz.RSVJA": true, "HasMod|contains=spacechase0.JsonAssets": true, "Balance Sell Prices": "Normal, Skip Fishing Minigame Mod"}
+		},
+	    {
+				// Ridgeside Village Crafting
+				"Action": "EditData",
+				"Target": "Data/CraftingRecipes",
+				"Fields": {
+					"Warp Totem: Ridgeside": { 0:"709 2 {{spacechase0.jsonAssets/ObjectId:Mountain Mistbloom}} 1 {{spacechase0.jsonAssets/ObjectId:Spiritual Essence}} 2" },			
+			},
+			"When": {"HasMod|contains=Rafseazz.RSVJA": true, "HasMod|contains=spacechase0.JsonAssets": true, "Balance Basic Crafting": true}
+		},
+		
+// Adventurer's Guild
+
+		{
+			"Action": "EditData",
+			"Target": "Data/ObjectInformation",
+			"Fields": {
+				 // Adventurer's Guild Expanded Crops
+				"{{spacechase0.jsonAssets/ObjectId:Slime Heart}}": {1:"245"},
+				"{{spacechase0.jsonAssets/ObjectId:Zinnia}}": {1:"100"},			
+				 // Adventurer's Guild Expanded Misc
+				"{{spacechase0.jsonAssets/ObjectId:Slime Gem}}": {1:"50"},
+				"{{spacechase0.jsonAssets/ObjectId:Life Essence}}": {1:"750"},
+				"{{spacechase0.jsonAssets/ObjectId:Slime Soul}}": {1:"1000"},
+				"{{spacechase0.jsonAssets/ObjectId:Frozen Slime Soul}}": {1:"1125"},
+				"{{spacechase0.jsonAssets/ObjectId:Fire Slime Soul}}": {1:"1250"},
+				"{{spacechase0.jsonAssets/ObjectId:True Slime Energy}}": {1:"3000"},	
+				"{{spacechase0.jsonAssets/ObjectId:Slime Heart Seeds}}": {1:"170"},
+				"{{spacechase0.jsonAssets/ObjectId:Zinnia Seeds}}": {1:"55"},					
+			},		
+            "When": {"HasMod|contains=supert.adventureguildexpanded": true, "HasMod|contains=spacechase0.JsonAssets": true, "Balance Sell Prices": "Normal, Skip Fishing Minigame Mod"}			
+		},
+	    {
+				// Adventuerer's Guild Crafting
+				"Action": "EditData",
+				"Target": "Data/CraftingRecipes",
+				"Fields": {
+					"Slime Heart Seeds": { 0:"{{spacechase0.jsonAssets/ObjectId:Slime Gem}} 5 766 15" },			
+			},
+			"When": {"HasMod|contains=supert.adventureguildexpanded": true, "HasMod|contains=spacechase0.JsonAssets": true, "Balance Basic Crafting": true}
+		},
+		
+// Mod Patches
+
+        {
+            "Action": "EditData",
+            "Target": "Data/ObjectInformation",
+            "Fields": {
+				// Ostrich and Golden Mayo
+				"{{spacechase0.jsonAssets/ObjectId:Golden Mayonnaise}}": {1:"400"},
+				"{{spacechase0.jsonAssets/ObjectId:Ostrich Mayonnaise}}": {1:"1750"},
+			},
+			"When": {"HasMod|contains=ughitsmegan.ostrichmayoforJsonAssets": true, "HasMod|contains=ughitsmegan.goldenmayoforJsonAssets": true, "HasMod|contains=spacechase0.JsonAssets": true, "Balance Sell Prices": "Normal, Skip Fishing Minigame Mod"}
+        },
+		{
+            "Action": "EditData",
+            "Target": "Data/ObjectInformation",
+            "Fields": {
+				// Fellowship - Immersive Rings
+				"{{spacechase0.jsonAssets/ObjectId:Garnet}}": {1:"100"},
+            },
+		    "When": {"HasMod|contains=DaLion.Arsenal.CON": true, "HasMod|contains=spacechase0.JsonAssets": true, "Balance Sell Prices": "Normal, Skip Fishing Minigame Mod"}
+        },
+		{
+            "Action": "EditData",
+            "Target": "Data/ObjectInformation",
+            "Fields": {
+				// Lumisteria Clumps and Nodes
+				"72": {1:"350"}, // Diamond
+				"70": {1:"200"}, // Jade
+				"68": {1:"150"}, // Topaz
+				"66": {1:"150"}, // Amethyst
+				"64": {1:"250"}, // Ruby
+				"62": {1:"200"}, // Aquamarine
+				"60": {1:"250"}, // Emerald
+            },
+		    "When": {"HasMod|contains=lumisteria.CON.NodesForClassicOres": true, "HasMod|contains=Lumisteria.CRC.ClumpsForClassicOres": true, "Balance Sell Prices": "Normal, Skip Fishing Minigame Mod"}
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/ObjectInformation",
+            "Fields": {
+				// Quality of Life - Immersive Tweaks
+				"176": {1:"65"}, //Egg
+				"180": {1:"65"}, //Egg
+				"184": {1:"80"}, //Milk
+				"436": {1:"120"}, //Goat Milk
+				"174": {1:"130"}, //Large Egg
+				"182": {1:"130"}, //Large Egg
+				"186": {1:"160"}, //Large Milk
+				"438": {1:"240"}, //L. Goat Milk
+				"306": {1:"130"}, //Mayonnaise
+				"424": {1:"160"}, //Cheese
+				"426": {1:"240"}, //Goat Cheese
+				"724": {1:"200"}, // Maple Syrup
+				"725": {1:"150"}, // Oak Resin
+				"726": {1:"100"}, // Pine Tar
+			},
+			"When": {"HasMod|contains=DaLion.ImmersiveTweaks": true, "Balance Sell Prices": "Normal, Skip Fishing Minigame Mod"}
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/ObjectInformation",
+            "Fields": {
+				// Aquarism - Immersive Fish Ponds
+				"812": {1:"20"}, // Roe
+				"447": {1:"30"}, // Aged Roe
+				"445": {1:"130"}, // Caviar
+			},
+			"When": {"HasMod|contains=DaLion.ImmersivePonds": true, "Balance Sell Prices": "Normal, Skip Fishing Minigame Mod"}
+        },
+		{	  		
+			"Action": "EditData",
+			"Target": "Data/Blueprints",
+			"Fields": {
+				// Aquarism - Immersive Fish Ponds
+				"Fish Pond": {0:"390 200 152 20 153 20", 17: "20000"},
+			},
+			"When": {"HasMod|contains=DaLion.ImmersivePonds": true, "Balance Building Construction": true}
+		},
+		{	  		
+			"Action": "EditData",
+			"Target": "Data/Blueprints",
+			"Fields": {
+				// Expensive Junimo Hut (Without Better Junimos)
+				"Junimo Hut": {0:"390 250 268 30 771 150", 17: "100000"},
+			},
+			"When": {"HasMod|contains=hawkfalcon.BetterJunimos": false, "Expensive Junimo Hut": true}
+		},
+		{	  		
+			"Action": "EditData",
+			"Target": "Data/Blueprints",
+			"Fields": {
+				// Expensive Junimo Hut (With Better Junimos)
+				"Junimo Hut": {0:"390 300 268 40 771 200", 17: "250000"},
+			},
+			"When": {"HasMod|contains=hawkfalcon.BetterJunimos": true, "Expensive Junimo Hut": true}
+		},
+        {
+            "Action": "EditData",
+            "Target": "Data/ObjectInformation",
+            "Fields": {
+				// Balance Flower Honey & Mead (Without Quality of Life - Immersive Tweaks)
+				"376": {1:"145"}, // Poppy
+				"595": {1:"150"}, // Fairy Rose
+			},
+			"When": {"HasMod|contains=DaLion.ImmersiveTweaks": false, "Balance Flower Honey & Mead": true}
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/ObjectInformation",
+            "Fields": {
+				// Balance Flower Honey & Mead (With Quality of Life - Immersive Tweaks)
+                "597": {1:"70"}, // Blue Jazz
+				"376": {1:"70"}, // Poppy
+				"593": {1:"70"}, // Summer Spangle
+				"595": {1:"75"}, // Fairy Rose
+			},
+			"When": {"HasMod|contains=DaLion.ImmersiveTweaks": true, "Balance Flower Honey & Mead": true}
+        },
+		
+// PPJA - Mizu's Flowers
+
+		{
+			"Action": "EditData",
+			"Target": "Data/ObjectInformation",
+			"Fields": {
+				 // PPJA - Mizu's Flowers Crops
+				"{{spacechase0.jsonAssets/ObjectId:Bee Balm}}": {1:"120"},
+				"{{spacechase0.jsonAssets/ObjectId:Blue Mist}}": {1:"240"},				
+				"{{spacechase0.jsonAssets/ObjectId:Chamomile}}": {1:"65"},
+				"{{spacechase0.jsonAssets/ObjectId:Clary Sage}}": {1:"85"},
+				"{{spacechase0.jsonAssets/ObjectId:Fairy Duster}}": {1:"90"},
+				"{{spacechase0.jsonAssets/ObjectId:Fall Rose}}": {1:"55"},				
+				"{{spacechase0.jsonAssets/ObjectId:Fragrant Lilac}}": {1:"85"},
+				"{{spacechase0.jsonAssets/ObjectId:Herbal Lavender}}": {1:"65"},				
+				"{{spacechase0.jsonAssets/ObjectId:Honeysuckle}}": {1:"30"},				
+				"{{spacechase0.jsonAssets/ObjectId:Passion Flower}}": {1:"150"},				
+				"{{spacechase0.jsonAssets/ObjectId:Pink Cat}}": {1:"65"},
+				"{{spacechase0.jsonAssets/ObjectId:Pitcher Plant}}": {1:"230"},				
+				"{{spacechase0.jsonAssets/ObjectId:Purple Coneflower}}": {1:"100"},				
+				"{{spacechase0.jsonAssets/ObjectId:Rafflesia}}": {1:"6600"},				
+				"{{spacechase0.jsonAssets/ObjectId:Rose}}": {1:"45"},				
+				"{{spacechase0.jsonAssets/ObjectId:Shaded Violet}}": {1:"90"},				
+				"{{spacechase0.jsonAssets/ObjectId:Spring Rose}}": {1:"55"},				
+				"{{spacechase0.jsonAssets/ObjectId:Summer Rose}}": {1:"55"},
+				"{{spacechase0.jsonAssets/ObjectId:Sweet Jasmine}}": {1:"55"},	
+			},		
+            "When": {"HasMod|contains=mizu.flowers": true, "HasMod|contains=spacechase0.JsonAssets": true, "Balance Sell Prices": "Normal, Skip Fishing Minigame Mod"}			
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/ObjectInformation",
+			"Fields": {
+				 // Balance Flower Honey & Mead (Without Quality of Life - Immersive Tweaks Installed)
+				"{{spacechase0.jsonAssets/ObjectId:Blue Mist}}": {1:"150"},			
+				"{{spacechase0.jsonAssets/ObjectId:Pitcher Plant}}": {1:"150"},				
+			},		
+            "When": {"HasMod|contains=DaLion.ImmersiveTweaks": false, "HasMod|contains=mizu.flowers": true, "HasMod|contains=spacechase0.JsonAssets": true, "Balance Flower Honey & Mead": true}			
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/ObjectInformation",
+			"Fields": {
+				 // Balance Flower Honey & Mead (With Quality of Life - Immersive Tweaks Installed)
+				"{{spacechase0.jsonAssets/ObjectId:Bee Balm}}": {1:"70"},
+				"{{spacechase0.jsonAssets/ObjectId:Blue Mist}}": {1:"70"},				
+				"{{spacechase0.jsonAssets/ObjectId:Clary Sage}}": {1:"70"},
+				"{{spacechase0.jsonAssets/ObjectId:Fairy Duster}}": {1:"70"},			
+				"{{spacechase0.jsonAssets/ObjectId:Fragrant Lilac}}": {1:"70"},				
+				"{{spacechase0.jsonAssets/ObjectId:Passion Flower}}": {1:"70"},				
+				"{{spacechase0.jsonAssets/ObjectId:Pitcher Plant}}": {1:"75"},				
+				"{{spacechase0.jsonAssets/ObjectId:Purple Coneflower}}": {1:"70"},								
+				"{{spacechase0.jsonAssets/ObjectId:Shaded Violet}}": {1:"70"},								
+			},		
+            "When": {"HasMod|contains=DaLion.ImmersiveTweaks": true, "HasMod|contains=mizu.flowers": true, "HasMod|contains=spacechase0.JsonAssets": true, "Balance Flower Honey & Mead": true}			
+		},
+
+// PPJA - Fruits and Veggies
+
+        {
+			"Action": "EditData",
+			"Target": "Data/ObjectInformation",
+			"Fields": {
+				// PPJA - Fruits and Veggies Crops
+				"{{spacechase0.jsonAssets/ObjectId:Adzuki Bean}}": {1:"110"},
+				"{{spacechase0.jsonAssets/ObjectId:Aloe}}": {1:"105"},
+				"{{spacechase0.jsonAssets/ObjectId:Asparagus}}": {1:"60"},
+				"{{spacechase0.jsonAssets/ObjectId:Bamboo}}": {1:"15"},
+				"{{spacechase0.jsonAssets/ObjectId:Barley}}": {1:"40"},
+				"{{spacechase0.jsonAssets/ObjectId:Basil}}": {1:"60"},
+				"{{spacechase0.jsonAssets/ObjectId:Bell Pepper}}": {1:"25"},
+				"{{spacechase0.jsonAssets/ObjectId:Blue Agave}}": {1:"300"},
+				"{{spacechase0.jsonAssets/ObjectId:Broccoli}}": {1:"140"},
+				"{{spacechase0.jsonAssets/ObjectId:Buckwheat}}": {1:"40"},
+				"{{spacechase0.jsonAssets/ObjectId:Butternut Squash}}": {1:"70"},
+				"{{spacechase0.jsonAssets/ObjectId:Cabbage}}": {1:"140"},
+				"{{spacechase0.jsonAssets/ObjectId:Cactus Flower}}": {1:"345"},
+				"{{spacechase0.jsonAssets/ObjectId:Carrot}}": {1:"95"},
+				"{{spacechase0.jsonAssets/ObjectId:Cassava}}": {1:"120"},
+				"{{spacechase0.jsonAssets/ObjectId:Celery}}": {1:"100"},
+				"{{spacechase0.jsonAssets/ObjectId:Chickpea}}": {1:"45"},
+				"{{spacechase0.jsonAssets/ObjectId:Chives}}": {1:"60"},
+				"{{spacechase0.jsonAssets/ObjectId:Cotton Boll}}": {1:"15"},
+				"{{spacechase0.jsonAssets/ObjectId:Cucumber}}": {1:"15"},
+				"{{spacechase0.jsonAssets/ObjectId:Durum}}": {1:"40"},
+				"{{spacechase0.jsonAssets/ObjectId:Elderberry}}": {1:"15"},
+				"{{spacechase0.jsonAssets/ObjectId:Fennel}}": {1:"60"},
+				"{{spacechase0.jsonAssets/ObjectId:Ginseng}}": {1:"680"},
+				"{{spacechase0.jsonAssets/ObjectId:Gooseberry}}": {1:"15"},
+				"{{spacechase0.jsonAssets/ObjectId:Green Peas}}": {1:"10"},
+				"{{spacechase0.jsonAssets/ObjectId:Habanero}}": {1:"25"},
+				"{{spacechase0.jsonAssets/ObjectId:Jalapeno}}": {1:"25"},
+				"{{spacechase0.jsonAssets/ObjectId:Juniper Berry}}": {1:"15"},
+				"{{spacechase0.jsonAssets/ObjectId:Kidney Bean}}": {1:"15"},
+				"{{spacechase0.jsonAssets/ObjectId:Kiwi}}": {1:"40"},
+				"{{spacechase0.jsonAssets/ObjectId:Lettuce}}": {1:"100"},
+				"{{spacechase0.jsonAssets/ObjectId:Licorice Root}}": {1:"160"},
+				"{{spacechase0.jsonAssets/ObjectId:Maguey}}": {1:"160"},
+				"{{spacechase0.jsonAssets/ObjectId:Mint}}": {1:"20"},
+				"{{spacechase0.jsonAssets/ObjectId:Muskmelon}}": {1:"130"},
+				"{{spacechase0.jsonAssets/ObjectId:Navy Bean}}": {1:"10"},
+				"{{spacechase0.jsonAssets/ObjectId:Oat}}": {1:"40"},
+				"{{spacechase0.jsonAssets/ObjectId:Okra}}": {1:"50"},
+				"{{spacechase0.jsonAssets/ObjectId:Onion}}": {1:"145"},
+				"{{spacechase0.jsonAssets/ObjectId:Oregano}}": {1:"60"},
+				"{{spacechase0.jsonAssets/ObjectId:Parsley}}": {1:"55"},
+				"{{spacechase0.jsonAssets/ObjectId:Passion Fruit}}": {1:"30"},
+				"{{spacechase0.jsonAssets/ObjectId:Peanut}}": {1:"40"},
+				"{{spacechase0.jsonAssets/ObjectId:Perilla leaf}}": {1:"60"},
+				"{{spacechase0.jsonAssets/ObjectId:Quinoa}}": {1:"70"},
+				"{{spacechase0.jsonAssets/ObjectId:Rapeseed Flower}}": {1:"80"},
+				"{{spacechase0.jsonAssets/ObjectId:Raspberry}}": {1:"10"},
+				"{{spacechase0.jsonAssets/ObjectId:Red Onion}}": {1:"145"},
+				"{{spacechase0.jsonAssets/ObjectId:Rosemary}}": {1:"90"},
+				"{{spacechase0.jsonAssets/ObjectId:Sage}}": {1:"80"},
+				"{{spacechase0.jsonAssets/ObjectId:Shallot}}": {1:"145"},
+				"{{spacechase0.jsonAssets/ObjectId:Shiitake Mushroom}}": {1:"160"},
+				"{{spacechase0.jsonAssets/ObjectId:Soybean}}": {1:"35"},
+				"{{spacechase0.jsonAssets/ObjectId:Spinach}}": {1:"35"},
+				"{{spacechase0.jsonAssets/ObjectId:Sugar Beet}}": {1:"160"},
+				"{{spacechase0.jsonAssets/ObjectId:Sugar Cane}}": {1:"210"},
+				"{{spacechase0.jsonAssets/ObjectId:Sulfur Shelf Mushroom}}": {1:"160"},
+				"{{spacechase0.jsonAssets/ObjectId:Sweet Canary Melon}}": {1:"85"},
+				"{{spacechase0.jsonAssets/ObjectId:Sweet Potato}}": {1:"155"},
+				"{{spacechase0.jsonAssets/ObjectId:Tabasco Pepper}}": {1:"25"},
+				"{{spacechase0.jsonAssets/ObjectId:Thyme}}": {1:"70"},
+				"{{spacechase0.jsonAssets/ObjectId:Wasabi Root}}": {1:"165"},
+				"{{spacechase0.jsonAssets/ObjectId:Watermelon}}": {1:"135"},
+				"{{spacechase0.jsonAssets/ObjectId:Zucchini}}": {1:"60"},
+			},
+			"When": {"HasMod|contains=ppja.fruitsandveggies": true, "HasMod|contains=spacechase0.JsonAssets": true, "Balance Sell Prices": "Normal, Skip Fishing Minigame Mod"}
+        },
+		{
+			"Action": "EditData",
+			"Target": "Data/ObjectInformation",
+			"Fields": {
+				 // Balance Flower Honey & Mead (Without Quality of Life - Immersive Tweaks Installed)
+				"{{spacechase0.jsonAssets/ObjectId:Cactus Flower}}": {1:"150"},			
+			},		
+            "When": {"HasMod|contains=DaLion.ImmersiveTweaks": false, "HasMod|contains=ppja.fruitsandveggies": true, "HasMod|contains=spacechase0.JsonAssets": true, "Balance Flower Honey & Mead": true}			
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/ObjectInformation",
+			"Fields": {
+				 // Balance Flower Honey & Mead (With Quality of Life - Immersive Tweaks Installed)
+				"{{spacechase0.jsonAssets/ObjectId:Cactus Flower}}": {1:"75"},	
+				"{{spacechase0.jsonAssets/ObjectId:Rapeseed Flower}}": {1:"70"},				
+			},		
+            "When": {"HasMod|contains=DaLion.ImmersiveTweaks": true, "HasMod|contains=ppja.fruitsandveggies": true, "HasMod|contains=spacechase0.JsonAssets": true, "Balance Flower Honey & Mead": true}			
+		},
+
+// More New Fish
+
+		{
+			"Action": "EditData",
+			"Target": "Data/ObjectInformation",
+			"Fields": {
+				"1120": {1:"95"}, //Ladyfish
+				"1121": {1:"85"}, //Tancho Koi
+				"1123": {1:"85"}, //Sanke Koi
+				"1122": {1:"85"}, //Kohaku Koi
+				"1124": {1:"120"}, //Zebra Tilapia
+				"1125": {1:"120"}, //Tucunare
+				"1126": {1:"235"}, //Small Goblin Shark
+				"1127": {1:"5000"}, //Tui
+				"1128": {1:"5000"}, //La
+				"1129": {1:"225"}, //Small Mantaray
+				"1130": {1:"135"}, //Piranha
+				"1131": {1:"60"}, //Blinky
+				"1132": {1:"145"}, //Arowana
+				"1133": {1:"145"}, //Arctic Char
+				"1134": {1:"85"}, //Tench
+				"1135": {1:"120"}, //Haddock
+				"1136": {1:"225"}, //Small Swordfish
+				"1137": {1:"145"}, //Barracuda
+				"1138": {1:"110"}, //Longfin Icedevil
+				"1139": {1:"225"}, //Spinny Dogfish
+				"1140": {1:"65"}, //Void Carp
+				"1141": {1:"95"}, //Water Snake
+				"1142": {1:"195"}, //Electric Catfish
+				"1143": {1:"135"}, //Sea Snake
+				"1144": {1:"125"}, //Swimmer Crab
+				"1145": {1:"110"}, //Glassfish
+				"1146": {1:"60"}, //Goldfish
+				"1147": {1:"75"}, //Lionhead
+				"1148": {1:"95"}, //Comet
+				"1149": {1:"75"}, //Telescope
+				"1150": {1:"85"}, //Celestial Eye
+				"1151": {1:"35"}, //Jellyfish
+				"1056": {1:"120"}, //Clown Knifefish
+				"1057": {1:"105"}, //Freshwater Butterflyfish
+				"1058": {1:"120"}, //Mimic Octopus
+				"1059": {1:"105"}, //Blue-Ringed Octopus
+				"1060": {1:"150"}, //Stubby Squid
+				"1061": {1:"150"}, //Dumbo Octopus
+				"1062": {1:"95"}, //Barreleye
+				"1063": {1:"120"}, //Freshwater Pufferfish
+				"1064": {1:"60"}, //Void Algae
+				"1065": {1:"170"}, //Void Evilpus
+				"1066": {1:"205"}, //Trapped Soul
+				"1067": {1:"95"}, //Lamprey
+				"1068": {1:"145"}, //Ribbon Eel
+				"1069": {1:"105"}, //Ghost Eel
+				"1070": {1:"105"}, //Robalo
+				"1071": {1:"60"}, //Anchoviella
+				"1072": {1:"95"}, //Hagfish
+				"1073": {1:"100"}, //Green Terror
+				"1074": {1:"100"}, //Clown Loach/
+				"1075": {1:"105"}, //Brain Slug
+				"1076": {1:"135"}, //Zebra Eel
+				"1077": {1:"95"}, //Yamabuki Koi
+				"1078": {1:"95"}, //Ghost Koi
+				"1079": {1:"95"}, //Hi Utsuri Koi
+				"1080": {1:"70"}, //Conger
+				"1081": {1:"95"}, //Shiro Utsuri Koi
+				"1082": {1:"95"}, //Ki Utsuri Koi
+				"1083": {1:"75"}, //Redtail Shark
+				"1084": {1:"110"}, //Elephantfish
+				"1085": {1:"75"}, //Sauger
+				"1086": {1:"75"}, //Pacu
+				"1087": {1:"100"}, //Common Pleco
+				"1088": {1:"95"}, //Siamese Algae Eater
+				"1089": {1:"85"}, //Snowball Pleco
+				"1090": {1:"65"}, //Ide
+				"1091": {1:"120"}, //Pangasius
+				"1092": {1:"95"}, //Trahira
+				"1093": {1:"175"}, //Blue Dragon Slug
+				"1094": {1:"150"}, //Nautilus
+				"1095": {1:"195"}, //Cyclops Shark
+				"1096": {1:"60"}, //Starfish
+				"1097": {1:"75"}, //Blue Starfish
+				"1098": {1:"90"}, //Royal Starfish
+				"1099": {1:"100"}, //Crown of Thorns Starfish
+				"1100": {1:"125"}, //Holy Grenade Starfish
+				"1101": {1:"50"}, //Freshwater Shrimp
+				"1102": {1:"60"}, //Red Freshwater Shrimp
+				"1103": {1:"60"}, //Blue Freshwater Shrimp
+				"1104": {1:"60"}, //Harlequin Freshwater Shrimp
+				"1105": {1:"75"}, //Red Harlequin Freshwater Shrimp
+				"1106": {1:"75"}, //Brief Squid
+				"1107": {1:"85"}, //Prawn
+				"1108": {1:"20"}, //Sand Dollar
+				"1109": {1:"145"}, //King Crab
+				"1110": {1:"120"}, //Decapod
+				"1111": {1:"105"}, //Mudskipper
+				"1184": {1:"145"}, //Coelacanth
+				"1185": {1:"65"}, //Cavefish
+				"1114": {1:"105"}, //Cave Lobster
+				"1115": {1:"80"}, //Freshwater Crab
+				"1118": {1:"2500"}, //Shinidamachu
+				"1119": {1:"310"}, //Vampire Squid
+				"1152": {1:"225"}, //Vampire Fish
+				"1153": {1:"105"}, //Lungfish
+				"1154": {1:"85"}, //Tigerfish
+				"1155": {1:"120"}, //Longnose Gar
+				"1201": {1:"105"}, //Black Ghost Knifefish
+				"1202": {1:"110"}, //Clown Triggerfish
+				"1203": {1:"255"}, //Bonnethead
+				"1204": {1:"50"}, //Goblin Shark Pup
+				"1205": {1:"50"}, //Bonnethead Pup
+				"1206": {1:"50"}, //Spiny Dogfish Pup
+				"1208": {1:"50"}, //Manta Ray Pup
+				"1116": {1:"300"}, //Fishing Elixir
+				"1117": {1:"150"}, //Warrior Elixir
+			},
+        	"When": {"HasMod|contains=MoreFish": true, "Balance Sell Prices": "Normal, Skip Fishing Minigame Mod"}		
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/ObjectInformation",
+			"Fields": {
+				"1183": {1:"3000"}, //Frilled Shark
+			},
+        	"When": {"HasMod|contains=MoreFish": true, "HasMod|contains=CPBoardingHouse": true, "Balance Sell Prices": "Normal, Skip Fishing Minigame Mod"}		
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/ObjectInformation",
+			"Fields": {
+				"1169": {1:"85"}, //Moorish Idol
+				"1170": {1:"75"}, //Royal Angelfish
+				"1172": {1:"70"}, //Banded Angelfish
+				"1174": {1:"100"}, //Flame Angelfish
+				"1162": {1:"65"}, //Maroon Clownfish
+				"1156": {1:"65"}, //Sebae Clownfish
+				"1157": {1:"70"}, //Wide-band Clownfish
+				"1161": {1:"70"}, //Pink Skunk Clownfish
+				"1165": {1:"70"}, //Two-Band Clownfish
+				"1163": {1:"70"}, //Whitesnout Clownfish
+				"1164": {1:"70"}, //Fire Clownfish
+				"1187": {1:"170"}, //Tiger Puffer
+				"1186": {1:"105"}, //Mandarinfish
+				"1179": {1:"95"}, //Soldierfish
+				"1181": {1:"95"}, //Thread-Sail Filefish
+				"1176": {1:"100"}, //Monkfish
+				"1178": {1:"85"}, //Icefish
+				"1180": {1:"105"}, //False Kelpfish
+				"1182": {1:"120"}, //Wolffish
+				"1167": {1:"75"}, //Pollock
+				"1188": {1:"3000"}, //Great Firefly Squid
+			},
+        	"When": {"HasMod|contains=MoreFish": true, "HasMod|contains=FishingIslandNPC": true, "Balance Sell Prices": "Normal, Skip Fishing Minigame Mod"}		
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/ObjectInformation",
+			"Fields": {
+				"1168": {1:"85"}, //Blue Tang
+				"1171": {1:"65"}, //Ornate Angelfish
+				"1173": {1:"95"}, //Threespot Angelfish
+				"1175": {1:"140"}, //Dwarf Stingray
+				"1159": {1:"65"}, //Orange Clownfish
+				"1158": {1:"65"}, //Saddleback Clownfish
+				"1166": {1:"65"}, //Yellowtail Clownfish
+				"1160": {1:"70"}, //Skunk Clownfish
+				"1177": {1:"95"}, //Squirrelfish
+				"1207": {1:"50"}, //Dwarf Stingray Pup
+			},
+        	"When": {"HasMod|contains=MoreFish": true, "HasMod|contains=FishingIslandNPC": true, "HasMod|contains=LemurKat.EastScarpe.CP": true, "Balance Sell Prices": "Normal, Skip Fishing Minigame Mod"}		
+		},
+		
+// Other Mods
+
+        {
+			"Action": "EditData",
+			"Target": "Data/ObjectInformation",
+			"Fields": {
+				// PPJA - More Trees
+				"{{spacechase0.jsonAssets/ObjectId:Almond}}": {1:"120"},
+				"{{spacechase0.jsonAssets/ObjectId:Asian Pear}}": {1:"120"},
+				"{{spacechase0.jsonAssets/ObjectId:Avocado}}": {1:"145"},
+				"{{spacechase0.jsonAssets/ObjectId:Breadfruit}}": {1:"145"},
+				"{{spacechase0.jsonAssets/ObjectId:Camphor Leaves}}": {1:"120"},
+				"{{spacechase0.jsonAssets/ObjectId:Cashew}}": {1:"120"},
+				"{{spacechase0.jsonAssets/ObjectId:Cinnamon Sticks}}": {1:"135"},
+				"{{spacechase0.jsonAssets/ObjectId:Cocoa Pod}}": {1:"125"},
+				"{{spacechase0.jsonAssets/ObjectId:Dragon Fruit}}": {1:"125"},
+				"{{spacechase0.jsonAssets/ObjectId:Durian}}": {1:"145"},
+				"{{spacechase0.jsonAssets/ObjectId:Eucalyptus Leaves}}": {1:"130"},
+				"{{spacechase0.jsonAssets/ObjectId:Fig}}": {1:"120"},
+				"{{spacechase0.jsonAssets/ObjectId:Fragrant Wisteria}}": {1:"115"},
+				"{{spacechase0.jsonAssets/ObjectId:Granny Smith Apple}}": {1:"120"},
+				"{{spacechase0.jsonAssets/ObjectId:Grapefruit}}": {1:"135"},
+				"{{spacechase0.jsonAssets/ObjectId:Lemon}}": {1:"110"},
+				"{{spacechase0.jsonAssets/ObjectId:Lime}}": {1:"110"},
+				"{{spacechase0.jsonAssets/ObjectId:Lychee}}": {1:"125"},
+				"{{spacechase0.jsonAssets/ObjectId:Melaleuca Leaves}}": {1:"120"},
+				"{{spacechase0.jsonAssets/ObjectId:Olive}}": {1:"110"},
+				"{{spacechase0.jsonAssets/ObjectId:Papaya}}": {1:"130"},
+				"{{spacechase0.jsonAssets/ObjectId:Pear}}": {1:"130"},
+				"{{spacechase0.jsonAssets/ObjectId:Pecan}}": {1:"125"},
+				"{{spacechase0.jsonAssets/ObjectId:Persimmon}}": {1:"140"},
+				"{{spacechase0.jsonAssets/ObjectId:Pomelo}}": {1:"120"},
+				"{{spacechase0.jsonAssets/ObjectId:Ume}}": {1:"110"},
+				"{{spacechase0.jsonAssets/ObjectId:Vanilla}}": {1:"125"},
+				"{{spacechase0.jsonAssets/ObjectId:Walnut}}": {1:"120"},
+				"{{spacechase0.jsonAssets/ObjectId:Ylang Ylang}}": {1:"115"},
+				"{{spacechase0.jsonAssets/ObjectId:Yuzu}}": {1:"110"},				
+			},
+			"When": {"HasMod|contains=ppja.moretrees": true, "HasMod|contains=spacechase0.JsonAssets": true, "Balance Sell Prices": "Normal, Skip Fishing Minigame Mod"}
+        },
+		{
+			"Action": "EditData",
+			"Target": "Data/ObjectInformation",
+			"Fields": {
+				// East Scarp Fish
+				"{{spacechase0.jsonAssets/ObjectId:Golden Trout}}": {1:"145"},
+				"{{spacechase0.jsonAssets/ObjectId:Kokanee Salmon}}": {1:"135"},
+				"{{spacechase0.jsonAssets/ObjectId:Cerulean Nudibranch}}": {1:"120"},
+				"{{spacechase0.jsonAssets/ObjectId:Ornate Nudibranch}}": {1:"145"},
+				"{{spacechase0.jsonAssets/ObjectId:Sea Bunny Nudibranch}}": {1:"145"},
+				"{{spacechase0.jsonAssets/ObjectId:Sunset Nudibranch}}": {1:"150"},			
+			},
+			"When": {"HasMod|contains=LemurKat.EastScarpe.JA": true, "HasMod|contains=spacechase0.JsonAssets": true, "Balance Sell Prices": "Normal, Skip Fishing Minigame Mod"}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/ObjectInformation",
+			"Fields": {
+				// The Love of Cooking Crops
+				"{{spacechase0.jsonAssets/ObjectId:blueberry.cac.cabbage}}": {1:"140"},
+				"{{spacechase0.jsonAssets/ObjectId:blueberry.cac.carrot}}": {1:"45"},
+				"{{spacechase0.jsonAssets/ObjectId:blueberry.cac.onion}}": {1:"55"},		
+			},
+			"When": {"HasMod|contains=blueberry.LoveOfCooking": true, "HasMod|contains=spacechase0.JsonAssets": true, "Balance Sell Prices": "Normal, Skip Fishing Minigame Mod"}
+		},
+
+// Fish (Skip Fishing Minigame Mod)
+
+        {
+            "Action": "EditData",
+            "Target": "Data/ObjectInformation",
+            "Fields": {  
+				"128": {1:"100"}, //Pufferfish
+				"129": {1:"50"}, //Anchovy
+				"130": {1:"80"}, //Tuna
+				"131": {1:"50"}, //Sardine
+				"132": {1:"50"}, //Bream
+				"136": {1:"70"}, //Largemouth Bass
+				"137": {1:"50"}, //Smallmouth Bass
+				"138": {1:"60"}, //Rainbow Trout
+				"139": {1:"70"}, //Salmon
+				"140": {1:"60"}, //Walleye
+				"141": {1:"50"}, //Perch
+				"142": {1:"40"}, //Carp
+				"143": {1:"90"}, //Catfish
+				"144": {1:"70"}, //Pike
+				"145": {1:"50"}, //Sunfish
+				"146": {1:"70"}, //Red Mullet
+				"147": {1:"50"}, //Herring
+				"148": {1:"80"}, //Eel
+				"149": {1:"120"}, //Octopus
+				"150": {1:"50"}, //Red Snapper
+				"151": {1:"90"}, //Squid
+				"154": {1:"50"}, //Sea Cucumber
+				"155": {1:"100"}, //Super Cucumber
+				"156": {1:"70"}, //Ghostfish
+				"164": {1:"80"}, //Sandfish
+				"165": {1:"110"}, //Scorpion Carp
+				"267": {1:"70"}, //Flounder 
+				"269": {1:"80"}, //Midnight Carp
+				"698": {1:"100"}, //Sturgeon
+				"699": {1:"70"}, //Tiger Trout
+				"700": {1:"70"}, //Bullhead
+				"701": {1:"70"}, //Tilapia
+				"702": {1:"50"}, //Chub
+				"704": {1:"100"}, //Dorado
+				"705": {1:"70"}, //Albacore
+				"706": {1:"60"}, //Shad
+				"707": {1:"100"}, //Lingcod
+				"708": {1:"70"}, //Halibut
+				"734": {1:"70"}, //Woodskip
+				"795": {1:"100"}, //Void Salmon
+				"796": {1:"70"}, //Slimejack
+				"836": {1:"100"}, //Stingray
+				"837": {1:"70"}, //Lionfish 
+				"838": {1:"70"}, //Blue Discus
+				"158": {1:"110"}, //Stonefish
+				"161": {1:"150"}, //Ice Pip
+				"162": {1:"160"}, //Lava Eel
+				"798": {1:"100"}, //Midnight Squid
+				"799": {1:"110"}, //Spook Fish
+				"800": {1:"140"}, //Blobfish
+				"159": {1:"1400"}, //Crimsonfish
+				"160": {1:"1000"}, //Angler
+				"163": {1:"2000"}, //Legend
+				"775": {1:"1400"}, //Glacierfish
+				"682": {1:"1000"}, //Mutant Carp
+				"898": {1:"1400"}, //Son of Crimsonfish
+				"899": {1:"1000"}, //Ms. Angler
+				"900": {1:"2000"}, //Legend II
+				"902": {1:"1400"}, //Glacierfish Jr.
+				"901": {1:"1000"}, //Radioactive Carp
+			},		
+			"When": {"Balance Sell Prices": "Skip Fishing Minigame Mod"}		
+        },
+		{
+			"Action": "EditData",
+			"Target": "Data/ObjectInformation",
+			"Fields": {
+				// Stardew Valley Expanded Fish (Skip Fishing Minigame Mod)
+				"{{spacechase0.jsonAssets/ObjectId:Baby Lunaloo}}": {1:"50"},	
+				"{{spacechase0.jsonAssets/ObjectId:Bonefish}}": {1:"80"},	
+                "{{spacechase0.jsonAssets/ObjectId:Bull Trout}}": {1:"80"},	
+				"{{spacechase0.jsonAssets/ObjectId:Butterfish}}": {1:"90"},		
+				"{{spacechase0.jsonAssets/ObjectId:Daggerfish}}": {1:"70"},	
+				"{{spacechase0.jsonAssets/ObjectId:Frog}}": {1:"80"},	
+                "{{spacechase0.jsonAssets/ObjectId:Goldenfish}}": {1:"110"},	
+				"{{spacechase0.jsonAssets/ObjectId:Grass Carp}}": {1:"100"},
+				"{{spacechase0.jsonAssets/ObjectId:King Salmon}}": {1:"100"},	
+				"{{spacechase0.jsonAssets/ObjectId:Kittyfish}}": {1:"100"},	
+				"{{spacechase0.jsonAssets/ObjectId:Lunaloo}}": {1:"80"},	
+				"{{spacechase0.jsonAssets/ObjectId:Meteor Carp}}": {1:"150"},	
+				"{{spacechase0.jsonAssets/ObjectId:Minnow}}": {1:"40"},	
+				"{{spacechase0.jsonAssets/ObjectId:Puppyfish}}": {1:"100"},	
+				"{{spacechase0.jsonAssets/ObjectId:Radioactive Bass}}": {1:"160"},	
+				"{{spacechase0.jsonAssets/ObjectId:Razor Trout}}": {1:"100"},	
+				"{{spacechase0.jsonAssets/ObjectId:Seahorse}}": {1:"50"},	
+				"{{spacechase0.jsonAssets/ObjectId:Sea Sponge}}": {1:"50"},	
+				"{{spacechase0.jsonAssets/ObjectId:Snatcher Worm}}": {1:"120"},			
+				"{{spacechase0.jsonAssets/ObjectId:Torpedo Trout}}": {1:"100"},		
+				"{{spacechase0.jsonAssets/ObjectId:Undeadfish}}": {1:"100"},		
+				"{{spacechase0.jsonAssets/ObjectId:Void Eel}}": {1:"150"},		
+				"{{spacechase0.jsonAssets/ObjectId:Water Grub}}": {1:"70"},
+				"{{spacechase0.jsonAssets/ObjectId:Dulse Seaweed}}": {1:"40"},	
+				"{{spacechase0.jsonAssets/ObjectId:Gemfish}}": {1:"180"},	
+				"{{spacechase0.jsonAssets/ObjectId:Shiny Lunaloo}}": {1:"150"},								
+			},		
+            "When": {"HasMod|contains=FlashShifter.JA.SVE": true, "HasMod|contains=spacechase0.JsonAssets": true, "Balance Sell Prices": "Skip Fishing Minigame Mod"}			
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/ObjectInformation",
+			"Fields": {
+				// Stardew Valley Expanded Fish (More New Fish - Skip Fishing Minigame Mod)
+				"{{spacechase0.jsonAssets/ObjectId:Clownfish}}": {1:"40"},	
+				"{{spacechase0.jsonAssets/ObjectId:Starfish}}": {1:"90"},							
+			},		
+            "When": {"HasMod|contains=MoreFish": false, "HasMod|contains=spacechase0.JsonAssets": true, "Balance Sell Prices": "Skip Fishing Minigame Mod"}			
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/ObjectInformation",
+			"Fields": {
+				// Ridgeside Village Fish (Skip Fishing Minigame Mod)
+				"{{spacechase0.jsonAssets/ObjectId:Bladetail Sturgeon}}": {1:"80"},
+				"{{spacechase0.jsonAssets/ObjectId:Caped Tree Frog}}": {1:"50"},
+				"{{spacechase0.jsonAssets/ObjectId:Cardia Septal Jellyfish}}": {1:"80"},
+				"{{spacechase0.jsonAssets/ObjectId:Crimson Spiked Clam}}": {1:"80"},
+				"{{spacechase0.jsonAssets/ObjectId:Cutthroat Trout}}": {1:"40"},
+				"{{spacechase0.jsonAssets/ObjectId:Fairytale Lionfish}}": {1:"80"},
+				"{{spacechase0.jsonAssets/ObjectId:Fixer Eel}}": {1:"80"},
+				"{{spacechase0.jsonAssets/ObjectId:Golden Rose Fin}}": {1:"80"},
+				"{{spacechase0.jsonAssets/ObjectId:Harvester Trout}}": {1:"50"},
+				"{{spacechase0.jsonAssets/ObjectId:Lullaby Carp}}": {1:"80"},
+				"{{spacechase0.jsonAssets/ObjectId:Mountain Redbelly Dace}}": {1:"50"},
+				"{{spacechase0.jsonAssets/ObjectId:Mountain Whitefish}}": {1:"70"},
+				"{{spacechase0.jsonAssets/ObjectId:Pebble Back Crab}}": {1:"40"},
+				"{{spacechase0.jsonAssets/ObjectId:Ridge Bluegill}}": {1:"40"},
+				"{{spacechase0.jsonAssets/ObjectId:Ridgeside Bass}}": {1:"40"},
+				"{{spacechase0.jsonAssets/ObjectId:Skulpin Fish}}": {1:"40"},
+				"{{spacechase0.jsonAssets/ObjectId:Deep Ridge Angler}}": {1:"1700"},
+				"{{spacechase0.jsonAssets/ObjectId:Sockeye Salmon}}": {1:"1700"},
+				"{{spacechase0.jsonAssets/ObjectId:Waterfall Snakehead}}": {1:"1700"},	
+			},
+			"When": {"HasMod|contains=Rafseazz.RSVJA": true, "HasMod|contains=spacechase0.JsonAssets": true, "Balance Sell Prices": "Skip Fishing Minigame Mod"}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/ObjectInformation",
+			"Fields": {
+				// East Scarp Fish (Skip Fishing Minigame Mod)
+				"{{spacechase0.jsonAssets/ObjectId:Golden Trout}}": {1:"100"},
+				"{{spacechase0.jsonAssets/ObjectId:Kokanee Salmon}}": {1:"90"},
+				"{{spacechase0.jsonAssets/ObjectId:Cerulean Nudibranch}}": {1:"80"},
+				"{{spacechase0.jsonAssets/ObjectId:Ornate Nudibranch}}": {1:"100"},
+				"{{spacechase0.jsonAssets/ObjectId:Sea Bunny Nudibranch}}": {1:"100"},
+				"{{spacechase0.jsonAssets/ObjectId:Sunset Nudibranch}}": {1:"100"},			
+			},
+			"When": {"HasMod|contains=LemurKat.EastScarpe.JA": true, "HasMod|contains=spacechase0.JsonAssets": true, "Balance Sell Prices": "Skip Fishing Minigame Mod"}
+		},
+
+// More New Fish (Skip Fishing Minigame Mod)
+
+		{
+			"Action": "EditData",
+			"Target": "Data/ObjectInformation",
+			"Fields": {
+				"1120": {1:"70"}, //Ladyfish
+				"1121": {1:"60"}, //Tancho Koi
+				"1123": {1:"60"}, //Sanke Koi
+				"1122": {1:"60"}, //Kohaku Koi
+				"1124": {1:"80"}, //Zebra Tilapia
+				"1125": {1:"80"}, //Tucunare
+				"1126": {1:"160"}, //Small Goblin Shark
+				"1127": {1:"3350"}, //Tui
+				"1128": {1:"3350"}, //La
+				"1129": {1:"150"}, //Small Mantaray
+				"1130": {1:"90"}, //Piranha
+				"1131": {1:"40"}, //Blinky
+				"1132": {1:"100"}, //Arowana
+				"1133": {1:"100"}, //Arctic Char
+				"1134": {1:"60"}, //Tench
+				"1135": {1:"80"}, //Haddock
+				"1136": {1:"150"}, //Small Swordfish
+				"1137": {1:"100"}, //Barracuda
+				"1138": {1:"80"}, //Longfin Icedevil
+				"1139": {1:"150"}, //Spinny Dogfish
+				"1140": {1:"50"}, //Void Carp
+				"1141": {1:"70"}, //Water Snake
+				"1142": {1:"130"}, //Electric Catfish
+				"1143": {1:"90"}, //Sea Snake
+				"1145": {1:"80"}, //Glassfish
+				"1146": {1:"40"}, //Goldfish
+				"1147": {1:"50"}, //Lionhead
+				"1148": {1:"70"}, //Comet
+				"1149": {1:"50"}, //Telescope
+				"1150": {1:"60"}, //Celestial Eye
+				"1056": {1:"80"}, //Clown Knifefish
+				"1057": {1:"70"}, //Freshwater Butterflyfish
+				"1058": {1:"80"}, //Mimic Octopus
+				"1059": {1:"70"}, //Blue-Ringed Octopus
+				"1060": {1:"100"}, //Stubby Squid
+				"1061": {1:"100"}, //Dumbo Octopus
+				"1062": {1:"70"}, //Barreleye
+				"1063": {1:"80"}, //Freshwater Pufferfish
+				"1064": {1:"40"}, //Void Algae
+				"1065": {1:"120"}, //Void Evilpus
+				"1066": {1:"140"}, //Trapped Soul
+				"1067": {1:"70"}, //Lamprey
+				"1068": {1:"100"}, //Ribbon Eel
+				"1069": {1:"70"}, //Ghost Eel
+				"1070": {1:"70"}, //Robalo
+				"1071": {1:"40"}, //Anchoviella
+				"1072": {1:"70"}, //Hagfish
+				"1073": {1:"70"}, //Green Terror
+				"1074": {1:"70"}, //Clown Loach/
+				"1075": {1:"70"}, //Brain Slug
+				"1076": {1:"90"}, //Zebra Eel
+				"1077": {1:"90"}, //Yamabuki Koi
+				"1078": {1:"70"}, //Ghost Koi
+				"1079": {1:"70"}, //Hi Utsuri Koi
+				"1080": {1:"50"}, //Conger
+				"1081": {1:"70"}, //Shiro Utsuri Koi
+				"1082": {1:"70"}, //Ki Utsuri Koi
+				"1083": {1:"50"}, //Redtail Shark
+				"1084": {1:"80"}, //Elephantfish
+				"1085": {1:"50"}, //Sauger
+				"1086": {1:"50"}, //Pacu
+				"1087": {1:"70"}, //Common Pleco
+				"1088": {1:"70"}, //Siamese Algae Eater
+				"1089": {1:"60"}, //Snowball Pleco
+				"1090": {1:"50"}, //Ide
+				"1091": {1:"80"}, //Pangasius
+				"1092": {1:"70"}, //Trahira
+				"1095": {1:"130"}, //Cyclops Shark
+				"1109": {1:"100"}, //King Crab
+				"1110": {1:"80"}, //Decapod
+				"1111": {1:"70"}, //Mudskipper
+				"1184": {1:"100"}, //Coelacanth
+				"1185": {1:"50"}, //Cavefish
+				"1114": {1:"70"}, //Cave Lobster
+				"1118": {1:"1700"}, //Shinidamachu
+				"1119": {1:"210"}, //Vampire Squid
+				"1152": {1:"150"}, //Vampire Fish
+				"1153": {1:"70"}, //Lungfish
+				"1154": {1:"60"}, //Tigerfish
+				"1155": {1:"80"}, //Longnose Gar
+				"1201": {1:"70"}, //Black Ghost Knifefish
+				"1202": {1:"80"}, //Clown Triggerfish
+				"1203": {1:"170"}, //Bonnethead
+			},
+        	"When": {"HasMod|contains=MoreFish": true, "Balance Sell Prices": "Skip Fishing Minigame Mod"}		
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/ObjectInformation",
+			"Fields": {
+				"1183": {1:"2000"}, //Frilled Shark
+			},
+        	"When": {"HasMod|contains=MoreFish": true, "HasMod|contains=CPBoardingHouse": true, "Balance Sell Prices": "Skip Fishing Minigame Mod"}		
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/ObjectInformation",
+			"Fields": {
+				"1169": {1:"60"}, //Moorish Idol
+				"1170": {1:"50"}, //Royal Angelfish
+				"1172": {1:"50"}, //Banded Angelfish
+				"1174": {1:"70"}, //Flame Angelfish
+				"1162": {1:"50"}, //Maroon Clownfish
+				"1156": {1:"50"}, //Sebae Clownfish
+				"1157": {1:"50"}, //Wide-band Clownfish
+				"1161": {1:"50"}, //Pink Skunk Clownfish
+				"1165": {1:"50"}, //Two-Band Clownfish
+				"1163": {1:"50"}, //Whitesnout Clownfish
+				"1164": {1:"50"}, //Fire Clownfish
+				"1187": {1:"120"}, //Tiger Puffer
+				"1186": {1:"70"}, //Mandarinfish
+				"1179": {1:"70"}, //Soldierfish
+				"1181": {1:"70"}, //Thread-Sail Filefish
+				"1176": {1:"70"}, //Monkfish
+				"1178": {1:"60"}, //Icefish
+				"1180": {1:"70"}, //False Kelpfish
+				"1182": {1:"80"}, //Wolffish
+				"1167": {1:"50"}, //Pollock
+				"1188": {1:"2000"}, //Great Firefly Squid
+			},
+        	"When": {"HasMod|contains=MoreFish": true, "HasMod|contains=FishingIslandNPC": true, "Balance Sell Prices": "Skip Fishing Minigame Mod"}		
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/ObjectInformation",
+			"Fields": {
+				"1168": {1:"60"}, //Blue Tang
+				"1171": {1:"50"}, //Ornate Angelfish
+				"1173": {1:"70"}, //Threespot Angelfish
+				"1175": {1:"100"}, //Dwarf Stingray
+				"1159": {1:"50"}, //Orange Clownfish
+				"1158": {1:"50"}, //Saddleback Clownfish
+				"1166": {1:"50"}, //Yellowtail Clownfish
+				"1160": {1:"50"}, //Skunk Clownfish
+				"1177": {1:"70"}, //Squirrelfish
+			},
+        	"When": {"HasMod|contains=MoreFish": true, "HasMod|contains=FishingIslandNPC": true, "HasMod|contains=LemurKat.EastScarpe.CP": true, "Balance Sell Prices": "Skip Fishing Minigame Mod"}		
+		},
+	]
+}

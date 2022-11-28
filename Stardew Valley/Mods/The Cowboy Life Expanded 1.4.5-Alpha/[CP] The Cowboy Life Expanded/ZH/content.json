@@ -1,0 +1,1705 @@
+{
+ "Format": "1.23.0",
+	"ConfigSchema": {
+		"FishPound": {
+			"AllowValues": "true, false",
+			"Default": "true"
+		},
+		"AquariumVanilla": {
+			"AllowValues": "true, false",
+			"Default": "true",
+		},
+		"NewFish": {
+			"AllowValues": "true, false",
+			"Default": "true",
+		},
+		"FishBalance": {
+			"AllowValues": "true, false",
+			"Default": "true",
+		},
+		"RecipesBalance": {
+			"AllowValues": "true, false",
+			"Default": "true",
+		},
+		"DinosaurEgg": {
+			"AllowValues": "true, false",
+			"Default": "true",
+		},
+		"DuckFeather": {
+			"AllowValues": "true, false",
+			"Default": "true",
+		},
+		"DinosaurMayonnaise": {
+			"AllowValues": "true, false",
+			"Default": "true",
+		},
+	},
+	
+	"CustomLocations": [
+		{
+		"Name": "Custom_DamiresHouse",
+		"FromMapFile": "Assets/Maps/DamiresHouse.tbin"
+		},
+		{
+		"Name": "Custom_OscarHouse",
+		"FromMapFile": "Assets/Maps/OscarHouse-EN.tbin"
+		},
+		{
+		"Name": "Custom_Parking",
+		"FromMapFile": "Assets/Maps/Parking-EN.tbin"
+		},
+	],
+		
+	"Changes": [
+
+	// ORDEM DE ORGANIZAÇÃO: // 1(SPRITES), // 2(PEIXES), // 3(BALANCEAMENTO GERAIS), // 4(ETIQUETAS), // 5(DIÁLOGOS) // 6(MAPAS),
+
+// 1
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~SPRITES: REFEITAS AS IMAGENS BASES~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+	
+	// PENA DE PATO BRANCA
+	{
+		"Action": "EditImage",
+		"Target": "Maps/springobjects",
+		"FromFile": "Assets/Sprites/ItemSprite/duckfeather.png",
+			"ToArea": { "X": 192, "Y": 288, "Width": 16, "Height": 16 },
+				"When": {
+					"DuckFeather": "true",
+			},
+	},
+	// OVO DE DINOSSAURO REFEITO
+	{
+		"Action": "EditImage",
+		"Target": "Maps/springobjects",
+		"FromFile": "Assets/Sprites/ItemSprite/dinosauregg.png",
+		"ToArea": { "X": 176, "Y": 64, "Width": 16, "Height": 16 },
+		"When": {
+			"DinosaurEgg": "true",
+		}
+	},
+	// MAIONESE DE OVO DE DINOSSAURO REFEITO
+	{
+		"Action": "EditImage",
+		"Target": "Maps/springobjects",
+		"FromFile": "Assets/Sprites/ItemSprite/dinosaurmayonnaise.png",
+		"ToArea": { "X": 240, "Y": 528, "Width": 16, "Height": 16 },
+		"When": {
+			"DinosaurMayonnaise": "true",
+		}
+	},
+	// BIFE REFEITO
+	{
+		"Action": "EditImage",
+		"Target": "Maps/springobjects",
+		"FromFile": "Assets/Sprites/ItemSprite/bife.png",
+			"ToArea": { "X": 240, "Y": 416, "Width": 16, "Height": 16 },
+	},
+	// PORCO REFEITO
+	{
+		"Action": "EditImage",
+		"Target": "Maps/springobjects",
+		"FromFile": "Assets/Sprites/ItemSprite/porco.png",
+			"ToArea": { "X": 256, "Y": 416, "Width": 16, "Height": 16 },
+	},
+	// GALINHA REFEITO
+	{
+		"Action": "EditImage",
+		"Target": "Maps/springobjects",
+		"FromFile": "Assets/Sprites/ItemSprite/galinha.png",
+			"ToArea": { "X": 272, "Y": 416, "Width": 16, "Height": 16 },
+	},
+	// PATO REFEITO
+	{
+		"Action": "EditImage",
+		"Target": "Maps/springobjects",
+		"FromFile": "Assets/Sprites/ItemSprite/pato.png",
+			"ToArea": { "X": 288, "Y": 416, "Width": 16, "Height": 16 },
+	},
+	// COELHO REFEITO
+	{
+		"Action": "EditImage",
+		"Target": "Maps/springobjects",
+		"FromFile": "Assets/Sprites/ItemSprite/coelho.png",
+			"ToArea": { "X": 304, "Y": 416, "Width": 16, "Height": 16 },
+	},
+	// CARNEIRO REFEITO
+	{
+		"Action": "EditImage",
+		"Target": "Maps/springobjects",
+		"FromFile": "Assets/Sprites/ItemSprite/carneiro.png",
+			"ToArea": { "X": 320, "Y": 416, "Width": 16, "Height": 16 },
+	},
+	// TINTA DE LULA REFEITO
+	{
+		"Action": "EditImage",
+		"Target": "Maps/springobjects",
+		"FromFile": "Assets/Sprites/ItemSprite/tinta.png",
+			"ToArea": { "X": 352, "Y": 528, "Width": 16, "Height": 16 },
+	},
+
+// 2
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~PEIXES: ADIÇÃO, BALANCEAMENTO, LOCALIZAÇÃO, GOSTOS DE PRESENTES~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+	// ADIÇÃO DAS IMAGENS DOS PEIXES
+	{
+		"Action": "EditImage",
+		"Target": "Maps/springobjects",
+		"FromFile": "Assets/Sprites/TCLE_Fish.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 384,  "Height": 48 },
+			"ToArea": {  "X": 0, "Y": 816, "Width": 384, "Height": 48  },
+    },
+	// ADIÇÃO DE PEIXES - DADOS GERAIS
+	{
+		"Action": "EditData",
+		"LogName": "Fish Object Data",
+		"Target": "Data/ObjectInformation",
+		"When": {"NewFish":"true"},
+			"Entries": {
+				"1224": "Sea Bream/900/18/Fish -4/金头鲷/一个狂热的鱿鱼猎人，他的大额头使他很容易被认出.",
+				"1225": "Marlim/1150/21/Fish -4/马林鱼/快速而粗暴，曾经被认为是传奇，今天他已经失去了他的皇冠.",
+				"1226": "Red Piranha/75/7/Fish -4/红食人鱼/几乎是泥泞河流的居民，它们生活在小群中，是杂食性动物，有食肉的倾向。",
+				"1227": "Warbler Ray/125/-50/Fish -4/魔鬼鱼/成体生活在珊瑚礁上，而幼体也在海滩附近发现.",
+				"1228": "Butterfly Ray/65/-25/Fish -4/蝴蝶鱼/有非常细长的鳍片，它们生活在非常接近底部的盐碱地上.",
+				"1229": "Sandpaper Ray/50/15/Fish -4/鲂仔/形状为梯形带锯齿的刺,生活在通常沙质底部的浅水区.",
+				"1230": "Blue Barracuda/150/18/Fish -4/蓝梭鱼/又细又长，其形状使它成为一种贪婪的掠夺性导弹.",
+				"1231": "Lesser Sea Bass/75/14/Fish -4/小鲈鱼/非常耐寒和耐盐碱，他喜欢虾和螃蟹.",
+				"1232": "Anaconda/800/14/Fish -4/蟒蛇/这条蛇可以达到令人难以置信的 11 米，它通过将自己包裹在受害者身上并通过勒死他们来进行捕猎.",
+				"1233": "Green River Snake/65/5/Fish -4/绿河蛇/敏捷而谨慎，这条蛇既会游泳又会捉鱼.",
+				"1234": "Fingerling/5/1/Fish -4/鱼苗/幼鱼.",
+				"1235": "Blue Pearl Shrimp/125/-300/Fish -4/蓝珍珠虾/珊瑚礁居民，在温暖的天气里，他们在大海里游泳。",
+				"1236": "Pale Blue Ringed Octopus/110/-50/Fish -4/淡蓝色环章鱼/这种小动物以其身上的蓝色环和它拥有的非常强大的毒液而闻名.",
+				"1237": "Black Piranha/110/10/Fish -4/黑食人鱼/常见于清澈或泥泞的河流，它们是贪婪的捕食者，牙齿锋利，食欲旺盛。",
+				"1238": "Blue Jellyfish/35/-25/Fish -4/蓝水母/这种腹足动物的触手有灼热的毒液.",
+				"1239": "Sea Lettuce/15/5/Fish/海莴苣/在沿海地区，它被用来代替莴苣、卷心菜和其他蔬菜。.",
+				"1240": "Jundia/60/8/Fish -4/鲇鱼/它们很容易识别，因为它们是一种没有鳞片的鱼，有很长的触须.",
+				"1241": "Sea Turtle/250/-300/Fish -4/海龟/通过海流，它在全球各地旅行.",
+				"1242": "Bicuda/90/11/Fish -4/长吻鲍氏脂鲤/它以鱼为食，利用其跳跃和杂技般的游泳来捕食。",
+				"1243": "Peacock bass/105/13/Fish -4/孔雀鲈鱼/被称为亚马逊的鳕鱼,它可以达到3米长,并有空中呼吸的适应性。",
+				"1244": "Lambari/50/6/Fish -4/盲魚/无畏的鱼，它们生活在河流、溪流、池塘，甚至水坝中，即使在有人类居住的地方也是如此。.",
+				"1245": "Acara/60/8/Fish -4/蓝宝丽鱼/非常存在于河流中，特别是在回水区或有丰富植被的河岸上.",
+				"1246": "Poraque/140/5/Fish -4/电鳗/一种以能短暂强力放电而闻名的淡水鱼类,它能够产生高达1500伏的放电。",
+				"1247": "Betrayed/120/11/Fish -4/马哈鱼/它被认为是最具攻击性和掠夺性的淡水物种之一。",
+				"1248": "Blood Lamprey/50/-5/Fish -4/鳃鳗/没有下颚，它用圆口附着在鱼身上，以液体和组织为食。",
+				"1249": "Leech/45/-300/Fish -4/水蛭/一种水生寄生虫，附着在宿主身上并吸食其血液。.",
+				"1250": "Red Starfish/65/-300/Fish -4/深红海星/尽管它们的外表无害，但他们是甲壳类动物和牡蛎的恐惧。",
+				"1251": "Orange Seahorse/100/-300/Fish -4/橙色海马/出现在地球上所有热带地区的珊瑚礁中，雄性海马会好奇地怀孕。",
+				"1252": "Sea Wasp/110/-300/Fish -4/海黄蜂/也叫箱形水母，她被认为是世界上最毒的动物。",
+				"1253": "Lion Jellyfish Cub/45/-150/Fish -4/狮鬃水母/当幼崽生活在温暖的水域时,它们的直径可以长到4.5米。",
+				"1254": "Blue Crab/95/-300/Fish -4/蓝蟹/它们喜欢生活在泥泞的海滩上，但在普通的海里也能见到。",
+				"1255": "Violet Flame Jellyfish/75/-150/Fish -4/紫罗兰火焰水母/仅仅触摸它的触手就可以造成3度灼伤。",
+				"1256": "Water Worm/20/-300/Fish -4/水虫/一种已经适应完全生活在水中的小型环节动物。",
+				"1257": "Sea Slug/85/-300/Fish -4/海蛞蝓/类似于陆地上的蛞蝓，其外观很有吸引力。",
+				"1258": "Dark Stone Hedgehog/100/-300/Fish/黑石海胆/曾经是一个入侵物种，今天它已经适应并成为姜岛上的特有物种。",
+				"1259": "Clown fish/120/3/Fish -4/大小丑鱼/它们喜欢呆在海洋中温暖的浅水区的珊瑚礁上。",
+				"1260": "Void Fingerling/15/1/Fish -4/虚空鱼苗/这只小鱼苗散发出虚空能量.",
+				"1261": "Mutant Fingerling/10/1/Fish -4/突变鱼苗/相当诡异，会分泌出大量的粘液。",
+				"1262": "Snake Egg/30/3/Egg -5/蛇蛋/绿河蛇往往在河床上筑巢.",
+				"1263": "Turtle Egg/30/3/Egg -5/龟蛋/海龟上岸，挖掘并掩埋它们。",
+				"1264": "Turtle Scale/100/-300/AnimalGoods -18/龟鳞/小碎片，但相当结实。",
+				"1265": "Snake Nest/210/80/Cooking -7/蛇窝/渔民从有蛇出没的河流中创造出来的一种不寻常的菜肴。/food/0 0 0 0 1 0 0 0 0 1 0 1/420",
+				"1266": "Hermit/65/-300/Fish -4/寄居蟹/住在他的小房子里的小甲壳动物.",
+				"1267": "Agaricia coral/80/-300/Basic -23/莴苣珊瑚/俗称生菜珊瑚或菜叶珊瑚，是珊瑚纲家族的一种殖民地石珊瑚。",
+				"1268": "Fire coral/90/-300/Basic -23/火珊瑚/这种小生命的集合体会分泌一种粘液，导致灼伤。",
+				"1269": "Tube Coral/80/-300/Basic -23/管状珊瑚/这种小生命的群落形成拉长的管状物。",
+				"1270": "Moose Horns Coral/90/-300/Basic -23/鹿角珊瑚/延长的形状，这个珊瑚礁看起来像麋鹿的鹿角。.",
+				"1271": "Stony Coral/90/-300/Basic -23/Stony Coral/This set of little beings looks like a brain.",
+				"1272": "Snake Scale/60/-300/AnimalGoods -18/Snake Scale/A small fragment, extremely smooth.",
+				"1273": "Midnight Squid Ink/105/-300/Basic -23/Midnight Squid Ink/This ink is used to stun predators from the deep.",
+				"1274": "Fish catalog/1/-300/Basic -23/Fish catalog/It was an old catalog from Oscar's father.",
+				"1275": "Old bait suitcase/1/-300/Basic -23/Old bait suitcase/It was an old suitcase from Oscar's father.",
+		}
+	},
+	// ADIÇÃO DE PEIXES - DADOS DE PESCARIA
+	{
+		"Action": "EditData",
+		"LogName": "Fish Data",
+		"Target": "Data/Fish",
+		"When": {"NewFish":"true"},
+			"Entries": {
+				"1224": "Sea Bream/100/sinker/45/71/600 2600/spring fall/both/681 .35/5/.1/.15/9",
+				"1225": "Marlim/108/dart/79/177/600 1000/spring/both/685 .35/5/.1/.15/10",
+				"1226": "Red Piranha/30/sinker/5/13/900 1800/fall winter/both/685 .35/2/.33/.1/0",
+				"1227": "Warbler Ray/50/sinker/21/77/600 2600/spring summer fall winter/sunny/685 .35/1/.2/.15/2",
+				"1228": "Butterfly Ray/25/sinker/26/80/1800 2600/spring summer fall winter/both/685 .35/1/.2/.1/0",
+				"1229": "Sandpaper Ray/20/sinker/20/80/900 2000/spring summer fall winter/sunny/685 .35/1/.3/.1/0",
+				"1230": "Blue Barracuda/80/dart/35/119/1000 2000/spring/both/685 .35/4/.2/.15/2",
+				"1231": "Lesser Sea Bass/50/mixer/14/60/1800 2600/fall/both/685 .35/3/.3/.3/0",
+				"1232": "Anaconda/98/smooth/138/315/1000 2600/spring summer/both/685 .35/5/.15/.15/8",
+				"1233": "Green River Snake/50/mixed/118/197/600 2600/spring summer fall winter/both/685 .35/2/.3/.1/0",
+				"1234": "Fingerling/5/mixed/1/1/600 2600/spring summer fall winter/both/683 .4/1/.1/.1/0",
+				"1236": "Pale Blue-Ringed Octopus/90/sinker/5/8/600 2600/spring summer fall winter/both/685 .35/3/.25/.2/4",
+				"1237": "Black Piranha/45/mixed/7/16/900 1800/spring fall winter/both/685 .35/2/.3/.15/2",
+				"1239": "Sea Lettuce/5/floater/1/5/600 2600/spring summer fall winter/both/-1/0/.3/0/0",
+				"1240": "Jundia/35/smooth/6/20/600 2600/spring summer fall winter/both/685 .35/2/.33/.2/0",
+				"1241": "Sea Turtle/70/mixed/25/79/600 2600/spring summer fall winter/both/682 .2/4/.2/.15/2",
+				"1242": "Bicuda/65/dart/12/39/1000 1800/summer fall/both/682 .2/3/.2/.15/0",
+				"1243": "Peacock bass/65/mixed/16/39/600 2600/summer fall/both/689 .35/2/.25/.2/4",
+				"1244": "Lambari/35/sinker/4/8/600 2600/spring summer/both/682 .2/1/.4/.2/0",
+				"1245": "Acara/28/floater/4/11/600 1000/spring fall/both/682 .2/1/.4/.2/0",
+				"1246": "Poraque/56/smooth/23/99/1800 2600/spring summer winter/both/682 .2/3/.25/.15/4",
+				"1247": "Betrayed/65/mixed/10/24/1200 2400/spring summer fall winter/both/682 .2/2/.4/.15/0",
+				"1248": "Blood Lamprey/25/dart/16/28/600 2600/summer fall/rainy/682 .2/3/.2/.15/0",
+				"1258": "Dark Stone Hedgehog/30/sinker/2/5/600 2600/spring summer fall winter/both/682 .2/3/.25/.15/0",
+				"1259": "Clown fish/60/smooth/1/4/600 2600/spring summer fall winter/sunny/682 .2/3/.2/.15/0",
+				"1260": "Void Fingerling/5/mixed/1/1/600 2600/spring summer fall winter/both/683 .4/1/.1/.1/0",
+				"1261": "Mutant Fingerling/5/mixed/1/1/600 2600/spring summer fall winter/both/683 .4/1/.1/.1/0",
+		},
+	},
+	// ADIÇÃO DE COVO NA PRIMAVERA
+	{
+		"Action": "EditData",
+		"LogName": "Crabpot Spring",
+		"Target": "Data/Fish",
+		"When": {"Season":"spring","NewFish":"true"},
+			"Entries": {
+				"1249": "Leech/trap/.15/682 .35/freshwater/2/12", //spring
+				"1251": "Orange Seahorse/trap/.2/682 .45/ocean/1/10", //spring
+				"1253": "Lion Jellyfish Cub/trap/.55/682 .35/ocean/33/79", //spring
+				"1254": "Blue Crab/trap/.25/680 .35/freshwater/3/6", //spring
+				"1256": "Water Worm/trap/.35/682 .4/freshwater/1/12", //spring
+				"1257": "Sea Slug/trap/.15/682 .35/ocean/3/16", //spring
+				"1266": "Hermit/trap/.25/682 .35/ocean/1/5", //spring
+		},
+	},
+	// ADIÇÃO DE COVO NO VERÃO
+	{
+		"Action": "EditData",
+		"LogName": "Crabpot Summer",
+		"Target": "Data/Fish",
+		"When": {"Season":"summer","NewFish":"true"},
+			"Entries": {
+				"1235": "Blue Pearl Shrimp/trap/.1/682 .45/ocean/1/20", //summer
+				"1249": "Leech/trap/.15/682 .35/freshwater/1/8", //summer
+				"1250": "Red Starfish/trap/.25/682 .45/ocean/8/12", //summer
+				"1251": "Orange Seahorse/trap/.2/682 .45/ocean/2/20", //summer
+				"1255": "Violet Flame Jellyfish/trap/.2/681 .35/ocean/57/120", //summer
+				"1256": "Water Worm/trap/.35/682 .4/freshwater/1/8", //summer
+				"1257": "Sea Slug/trap/.15/682 .35/ocean/1/8", //summer
+		},
+	},
+	// ADIÇÃO DE COVO NO OUTONO
+	{
+		"Action": "EditData",
+		"LogName": "Crabpot Fall",
+		"Target": "Data/Fish",
+		"When": {"Season":"fall","NewFish":"true"},
+			"Entries": {
+				"1238": "Blue Jellyfish/trap/.2/681 .35/ocean/46/111", //fall
+				"1249": "Leech/trap/.15/682 .35/freshwater/1/8", //falll
+				"1254": "Blue Crab/trap/.25/680 .35/freshwater/1/8", //fall
+				"1256": "Water Worm/trap/.35/682 .4/freshwater/1/8", //fall
+				"1257": "Sea Slug/trap/.15/682 .35/ocean/1/8", //fall
+		},
+	},
+	// ADIÇÃO DE COVO NO INVERNO
+	{
+		"Action": "EditData",
+		"LogName": "Crabpot Winter",
+		"Target": "Data/Fish",
+		"When": {"Season":"winter","NewFish":"true"},
+			"Entries": {
+				"1249": "Leech/trap/.15/682 .35/freshwater/1/8", //winter
+				"1252": "Sea Wasp/trap/.1/682 .45/ocean/10/40", //winter
+				"1256": "Water Worm/trap/.35/682 .4/freshwater/1/8", //winter
+		},
+	},
+	// ADIÇÃO DE NOVOS TIPOS DE LAGOS DE PEIXES
+	{   
+		"Action": "EditData",
+		"LogName": "Fishpond",
+		"Target": "Data/FishPondData",
+		"When": {"NewFish":"true"},
+		"Entries": {
+			"fish_fallenlegendary": {
+			"RequiredTags": ["fish_fallenlegendary"],
+			"SpawnTime": -1,
+				"ProducedItems": [
+					{"RequiredPopulation": 10,"Chance": 0.03,"ItemID": 166,"MinQuantity": 3,"MaxQuantity": 8},
+					
+					{"RequiredPopulation": 10,"Chance": 0.045,"ItemID": 166,"MinQuantity": 1,"MaxQuantity": 4},
+					{"RequiredPopulation": 9,"Chance": 0.045,"ItemID": 166,"MinQuantity": 1,"MaxQuantity": 2},
+		  
+					{"RequiredPopulation": 10,"Chance": 0.065,"ItemID": 166,"MinQuantity": 1,"MaxQuantity": 2},
+					{"RequiredPopulation": 9,"Chance": 0.065,"ItemID": 166,"MinQuantity": 1,"MaxQuantity": 1},
+					
+					{"RequiredPopulation": 10,"Chance": 0.25,"ItemID": 213,"MinQuantity": 3,"MaxQuantity": 6},
+					{"RequiredPopulation": 9,"Chance": 0.25,"ItemID": 213,"MinQuantity": 2,"MaxQuantity": 5},
+					{"RequiredPopulation": 8,"Chance": 0.25,"ItemID": 213,"MinQuantity": 1,"MaxQuantity": 4},
+					{"RequiredPopulation": 7,"Chance": 0.25,"ItemID": 213,"MinQuantity": 1,"MaxQuantity": 3},
+					{"RequiredPopulation": 6,"Chance": 0.25,"ItemID": 213,"MinQuantity": 1,"MaxQuantity": 2},
+					{"RequiredPopulation": 5,"Chance": 0.25,"ItemID": 213,"MinQuantity": 1,"MaxQuantity": 1},
+					
+					{"RequiredPopulation": 10,"Chance": 0.033,"ItemID": 812,"MinQuantity": 3,"MaxQuantity": 9},
+					{"RequiredPopulation": 9,"Chance": 0.033,"ItemID": 812,"MinQuantity": 2,"MaxQuantity": 6},
+					
+					{"RequiredPopulation": 10,"Chance": 0.15,"ItemID": 812,"MinQuantity": 3,"MaxQuantity": 6},
+					{"RequiredPopulation": 9,"Chance": 0.15,"ItemID": 812,"MinQuantity": 1,"MaxQuantity": 3},
+
+					{"RequiredPopulation": 10,"Chance": 0.8,"ItemID": 812,"MinQuantity": 1,"MaxQuantity": 4},
+					{"RequiredPopulation": 9,"Chance": 0.8,"ItemID": 812,"MinQuantity": 1,"MaxQuantity": 3},
+					{"RequiredPopulation": 8,"Chance": 0.8,"ItemID": 812,"MinQuantity": 1,"MaxQuantity": 3},
+					{"RequiredPopulation": 7,"Chance": 0.8,"ItemID": 812,"MinQuantity": 1,"MaxQuantity": 3},
+					{"RequiredPopulation": 6,"Chance": 0.8,"ItemID": 812,"MinQuantity": 1,"MaxQuantity": 2},
+					{"RequiredPopulation": 5,"Chance": 0.8,"ItemID": 812,"MinQuantity": 1,"MaxQuantity": 2},
+					{"RequiredPopulation": 4,"Chance": 0.8,"ItemID": 812,"MinQuantity": 1,"MaxQuantity": 2},
+					{"RequiredPopulation": 3,"Chance": 0.8,"ItemID": 812,"MinQuantity": 1,"MaxQuantity": 1},
+					{"RequiredPopulation": 2,"Chance": 0.8,"ItemID": 812,"MinQuantity": 1,"MaxQuantity": 1},
+					{"RequiredPopulation": 1,"Chance": 0.8,"ItemID": 812,"MinQuantity": 1,"MaxQuantity": 1},
+					{"RequiredPopulation": 0,"Chance": 0.8,"ItemID": 812,"MinQuantity": 0,"MaxQuantity": 0}
+					],
+			"PopulationGates": {
+				"2": ["149 2"],
+				"3": ["149 6","130 6"],
+				"4": ["149 8","130 8"],
+				"5": ["149 10","130 10"],
+				"6": ["149 14","130 14","704 28"],
+				"7": ["149 16","130 16","704 32"],
+				"8": ["149 18","130 18","704 36"],
+				"9": ["149 22","130 22","704 44","151 22"]
+				}
+			},
+			"fish_pseudolegendary": {
+			"RequiredTags": ["fish_pseudolegendary"],
+			"SpawnTime": -1,
+				"ProducedItems": [
+					{"RequiredPopulation": 10,"Chance": 0.01,"ItemID": 166,"MinQuantity": 3,"MaxQuantity": 8},
+					
+					{"RequiredPopulation": 10,"Chance": 0.02,"ItemID": 166,"MinQuantity": 1,"MaxQuantity": 4},
+					{"RequiredPopulation": 9,"Chance": 0.02,"ItemID": 166,"MinQuantity": 1,"MaxQuantity": 2},
+		  
+					{"RequiredPopulation": 10,"Chance": 0.04,"ItemID": 166,"MinQuantity": 1,"MaxQuantity": 2},
+					{"RequiredPopulation": 9,"Chance": 0.04,"ItemID": 166,"MinQuantity": 1,"MaxQuantity": 1},
+					
+					{"RequiredPopulation": 10,"Chance": 0.15,"ItemID": 213,"MinQuantity": 3,"MaxQuantity": 6},
+					{"RequiredPopulation": 9,"Chance": 0.15,"ItemID": 213,"MinQuantity": 2,"MaxQuantity": 5},
+					{"RequiredPopulation": 8,"Chance": 0.15,"ItemID": 213,"MinQuantity": 1,"MaxQuantity": 4},
+					{"RequiredPopulation": 7,"Chance": 0.15,"ItemID": 213,"MinQuantity": 1,"MaxQuantity": 3},
+					
+					{"RequiredPopulation": 10,"Chance": 0.033,"ItemID": 812,"MinQuantity": 3,"MaxQuantity": 9},
+					{"RequiredPopulation": 9,"Chance": 0.033,"ItemID": 812,"MinQuantity": 2,"MaxQuantity": 6},
+					
+					{"RequiredPopulation": 10,"Chance": 0.15,"ItemID": 812,"MinQuantity": 3,"MaxQuantity": 6},
+					{"RequiredPopulation": 9,"Chance": 0.15,"ItemID": 812,"MinQuantity": 1,"MaxQuantity": 3},
+
+					{"RequiredPopulation": 10,"Chance": 0.8,"ItemID": 812,"MinQuantity": 1,"MaxQuantity": 4},
+					{"RequiredPopulation": 9,"Chance": 0.8,"ItemID": 812,"MinQuantity": 1,"MaxQuantity": 3},
+					{"RequiredPopulation": 8,"Chance": 0.8,"ItemID": 812,"MinQuantity": 1,"MaxQuantity": 3},
+					{"RequiredPopulation": 7,"Chance": 0.8,"ItemID": 812,"MinQuantity": 1,"MaxQuantity": 3},
+					{"RequiredPopulation": 6,"Chance": 0.8,"ItemID": 812,"MinQuantity": 1,"MaxQuantity": 2},
+					{"RequiredPopulation": 5,"Chance": 0.8,"ItemID": 812,"MinQuantity": 1,"MaxQuantity": 2},
+					{"RequiredPopulation": 4,"Chance": 0.8,"ItemID": 812,"MinQuantity": 1,"MaxQuantity": 2},
+					{"RequiredPopulation": 3,"Chance": 0.8,"ItemID": 812,"MinQuantity": 1,"MaxQuantity": 1},
+					{"RequiredPopulation": 2,"Chance": 0.8,"ItemID": 812,"MinQuantity": 1,"MaxQuantity": 1},
+					{"RequiredPopulation": 1,"Chance": 0.8,"ItemID": 812,"MinQuantity": 1,"MaxQuantity": 1},
+					{"RequiredPopulation": 0,"Chance": 0.8,"ItemID": 812,"MinQuantity": 0,"MaxQuantity": 0}
+					],
+			"PopulationGates": {
+				"2": ["149 1"],
+				"3": ["149 3","130 3"],
+				"4": ["149 4","130 4"],
+				"5": ["149 5","130 5"],
+				"6": ["149 7","130 7","704 14"],
+				"7": ["149 8","130 8","704 16"],
+				"8": ["149 9","130 9","704 18"],
+				"9": ["149 11","130 11","704 22","151 11"]
+				}
+			},	
+			"fish_snakepseudolegendary": {
+			"RequiredTags": ["fish_snakepseudolegendary"],
+			"SpawnTime": -1,
+				"ProducedItems": [
+					{"RequiredPopulation": 10,"Chance": 0.01,"ItemID": 166,"MinQuantity": 3,"MaxQuantity": 8},
+					
+					{"RequiredPopulation": 10,"Chance": 0.02,"ItemID": 166,"MinQuantity": 1,"MaxQuantity": 4},
+					{"RequiredPopulation": 9,"Chance": 0.02,"ItemID": 166,"MinQuantity": 1,"MaxQuantity": 2},
+		  
+					{"RequiredPopulation": 10,"Chance": 0.04,"ItemID": 166,"MinQuantity": 1,"MaxQuantity": 2},
+					{"RequiredPopulation": 9,"Chance": 0.04,"ItemID": 166,"MinQuantity": 1,"MaxQuantity": 1},
+					
+					{"RequiredPopulation": 10,"Chance": 0.1,"ItemID": 1265,"MinQuantity": 3,"MaxQuantity": 6},
+					{"RequiredPopulation": 9,"Chance": 0.1,"ItemID": 1265,"MinQuantity": 2,"MaxQuantity": 5},
+					{"RequiredPopulation": 8,"Chance": 0.1,"ItemID": 1265,"MinQuantity": 1,"MaxQuantity": 4},
+					{"RequiredPopulation": 7,"Chance": 0.1,"ItemID": 1265,"MinQuantity": 1,"MaxQuantity": 3},
+					
+					{"RequiredPopulation": 10,"Chance": 0.033,"ItemID": 1262,"MinQuantity": 9,"MaxQuantity": 15},
+					{"RequiredPopulation": 9,"Chance": 0.033,"ItemID": 1262,"MinQuantity": 4,"MaxQuantity": 9},
+					
+					{"RequiredPopulation": 10,"Chance": 0.15,"ItemID": 1262,"MinQuantity": 6,"MaxQuantity": 12},
+					{"RequiredPopulation": 9,"Chance": 0.15,"ItemID": 1262,"MinQuantity": 2,"MaxQuantity": 6},
+
+					{"RequiredPopulation": 10,"Chance": 0.8,"ItemID": 1262,"MinQuantity": 4,"MaxQuantity": 8},
+					{"RequiredPopulation": 9,"Chance": 0.8,"ItemID": 1262,"MinQuantity": 3,"MaxQuantity": 7},
+					{"RequiredPopulation": 8,"Chance": 0.8,"ItemID": 1262,"MinQuantity": 3,"MaxQuantity": 6},
+					{"RequiredPopulation": 7,"Chance": 0.8,"ItemID": 1262,"MinQuantity": 3,"MaxQuantity": 6},
+					{"RequiredPopulation": 6,"Chance": 0.8,"ItemID": 1262,"MinQuantity": 2,"MaxQuantity": 5},
+					{"RequiredPopulation": 5,"Chance": 0.8,"ItemID": 1262,"MinQuantity": 2,"MaxQuantity": 4},
+					{"RequiredPopulation": 4,"Chance": 0.8,"ItemID": 1262,"MinQuantity": 2,"MaxQuantity": 4},
+					{"RequiredPopulation": 3,"Chance": 0.8,"ItemID": 1262,"MinQuantity": 1,"MaxQuantity": 3},
+					{"RequiredPopulation": 2,"Chance": 0.8,"ItemID": 1262,"MinQuantity": 1,"MaxQuantity": 2},
+					{"RequiredPopulation": 1,"Chance": 0.8,"ItemID": 1262,"MinQuantity": 1,"MaxQuantity": 2},
+					{"RequiredPopulation": 0,"Chance": 0.8,"ItemID": 1262,"MinQuantity": 0,"MaxQuantity": 0}
+					],
+			"PopulationGates": {
+				"2": ["143 1"],
+				"3": ["143 3","734 5"],
+				"4": ["143 4","734 6"],
+				"5": ["143 5","734 7"],
+				"6": ["143 7","734 10","139 14"],
+				"7": ["143 8","734 11","139 16"],
+				"8": ["143 9","734 12","139 18"],
+				"9": ["143 11","734 15","139 22","699 15"]
+				}
+			},
+			"fish_ray": {
+			"RequiredTags": ["fish_ray"],
+			"SpawnTime": -1,
+				"ProducedItems": [
+					{"RequiredPopulation": 10,"Chance": 0.02,"ItemID": 589,"MinQuantity": 1,"MaxQuantity": 3},
+					{"RequiredPopulation": 9,"Chance": 0.02,"ItemID": 589,"MinQuantity": 1,"MaxQuantity": 1},
+					
+					{"RequiredPopulation": 10,"Chance": 0.02,"ItemID": 588,"MinQuantity": 1,"MaxQuantity": 3},
+					{"RequiredPopulation": 9,"Chance": 0.02,"ItemID": 588,"MinQuantity": 1,"MaxQuantity": 1},
+					
+					{"RequiredPopulation": 10,"Chance": 0.02,"ItemID": 587,"MinQuantity": 1,"MaxQuantity": 3},
+					{"RequiredPopulation": 9,"Chance": 0.02,"ItemID": 587,"MinQuantity": 1,"MaxQuantity": 1},
+					
+					{"RequiredPopulation": 10,"Chance": 0.02,"ItemID": 586,"MinQuantity": 1,"MaxQuantity": 3},
+					{"RequiredPopulation": 9,"Chance": 0.02,"ItemID": 586,"MinQuantity": 1,"MaxQuantity": 1},
+					
+					{"RequiredPopulation": 10,"Chance": 0.08,"ItemID": 394,"MinQuantity": 1,"MaxQuantity": 4},
+					{"RequiredPopulation": 9,"Chance": 0.08,"ItemID": 394,"MinQuantity": 1,"MaxQuantity": 3},
+		  
+					{"RequiredPopulation": 10,"Chance": 0.12,"ItemID": 392,"MinQuantity": 1,"MaxQuantity": 4},
+					{"RequiredPopulation": 9,"Chance": 0.12,"ItemID": 392,"MinQuantity": 1,"MaxQuantity": 3},
+		  
+					{"RequiredPopulation": 10,"Chance": 0.1,"ItemID": 152,"MinQuantity": 5,"MaxQuantity": 15},
+					{"RequiredPopulation": 9,"Chance": 0.1,"ItemID": 152,"MinQuantity": 4,"MaxQuantity": 10},
+					{"RequiredPopulation": 8,"Chance": 0.1,"ItemID": 152,"MinQuantity": 4,"MaxQuantity": 10},
+					{"RequiredPopulation": 7,"Chance": 0.1,"ItemID": 152,"MinQuantity": 3,"MaxQuantity": 8},
+					{"RequiredPopulation": 6,"Chance": 0.1,"ItemID": 152,"MinQuantity": 3,"MaxQuantity": 8},
+					{"RequiredPopulation": 5,"Chance": 0.1,"ItemID": 152,"MinQuantity": 2,"MaxQuantity": 6},
+					{"RequiredPopulation": 4,"Chance": 0.1,"ItemID": 152,"MinQuantity": 2,"MaxQuantity": 6},
+		  
+					{"RequiredPopulation": 10,"Chance": 0.15,"ItemID": 812,"MinQuantity": 7,"MaxQuantity": 8},
+					{"RequiredPopulation": 9,"Chance": 0.15,"ItemID": 812,"MinQuantity": 6,"MaxQuantity": 6},
+		  
+					{"RequiredPopulation": 10,"Chance": 0.25,"ItemID": 812,"MinQuantity": 1,"MaxQuantity": 4},
+					{"RequiredPopulation": 9,"Chance": 0.25,"ItemID": 812,"MinQuantity": 1,"MaxQuantity": 3},
+					{"RequiredPopulation": 8,"Chance": 0.25,"ItemID": 812,"MinQuantity": 1,"MaxQuantity": 3},
+					{"RequiredPopulation": 7,"Chance": 0.25,"ItemID": 812,"MinQuantity": 1,"MaxQuantity": 3},
+					{"RequiredPopulation": 6,"Chance": 0.25,"ItemID": 812,"MinQuantity": 1,"MaxQuantity": 2},
+					{"RequiredPopulation": 5,"Chance": 0.25,"ItemID": 812,"MinQuantity": 1,"MaxQuantity": 2},
+					{"RequiredPopulation": 4,"Chance": 0.25,"ItemID": 812,"MinQuantity": 1,"MaxQuantity": 2},
+					{"RequiredPopulation": 3,"Chance": 0.25,"ItemID": 812,"MinQuantity": 1,"MaxQuantity": 1},
+					{"RequiredPopulation": 2,"Chance": 0.25,"ItemID": 812,"MinQuantity": 1,"MaxQuantity": 1},
+					{"RequiredPopulation": 1,"Chance": 0.25,"ItemID": 812,"MinQuantity": 1,"MaxQuantity": 1},
+					{"RequiredPopulation": 0,"Chance": 0.25,"ItemID": 812,"MinQuantity": 0,"MaxQuantity": 0}
+					],
+			"PopulationGates": {
+				"2": ["717 2"],
+				"4": ["717 5","720 8"],
+				"6": ["717 8","720 11"],
+				"8": ["717 11","720 15"]
+				}
+			},
+			"fish_jellyfish": {
+			"RequiredTags": ["fish_jellyfish"],
+			"SpawnTime": -1,
+				"ProducedItems": [
+					{"RequiredPopulation": 10,"Chance": 0.01,"ItemID": 437,"MinQuantity": 1,"MaxQuantity": 2},
+					{"RequiredPopulation": 9,"Chance": 0.01,"ItemID": 437,"MinQuantity": 1,"MaxQuantity": 1},
+
+					{"RequiredPopulation": 10,"Chance": 0.033,"ItemID": 413,"MinQuantity": 1,"MaxQuantity": 2},
+					{"RequiredPopulation": 9,"Chance": 0.033,"ItemID": 413,"MinQuantity": 1,"MaxQuantity": 1},
+
+					{"RequiredPopulation": 10,"Chance": 0.05,"ItemID": 680,"MinQuantity": 1,"MaxQuantity": 2},
+					{"RequiredPopulation": 9,"Chance": 0.05,"ItemID": 680,"MinQuantity": 1,"MaxQuantity": 1},
+					
+					{"RequiredPopulation": 10,"Chance": 0.12,"ItemID": 766,"MinQuantity": 6,"MaxQuantity": 12},
+					{"RequiredPopulation": 9,"Chance": 0.12,"ItemID": 766,"MinQuantity": 5,"MaxQuantity": 10},
+					{"RequiredPopulation": 8,"Chance": 0.12,"ItemID": 766,"MinQuantity": 4,"MaxQuantity": 8},
+					{"RequiredPopulation": 7,"Chance": 0.12,"ItemID": 766,"MinQuantity": 3,"MaxQuantity": 6},
+					{"RequiredPopulation": 6,"Chance": 0.12,"ItemID": 766,"MinQuantity": 2,"MaxQuantity": 4},
+					{"RequiredPopulation": 5,"Chance": 0.12,"ItemID": 766,"MinQuantity": 1,"MaxQuantity": 2},
+
+					{"RequiredPopulation": 10,"Chance": 0.8,"ItemID": 812,"MinQuantity": 1,"MaxQuantity": 4},
+					{"RequiredPopulation": 9,"Chance": 0.8,"ItemID": 812,"MinQuantity": 1,"MaxQuantity": 3},
+					{"RequiredPopulation": 8,"Chance": 0.8,"ItemID": 812,"MinQuantity": 1,"MaxQuantity": 3},
+					{"RequiredPopulation": 7,"Chance": 0.8,"ItemID": 812,"MinQuantity": 1,"MaxQuantity": 3},
+					{"RequiredPopulation": 6,"Chance": 0.8,"ItemID": 812,"MinQuantity": 1,"MaxQuantity": 2},
+					{"RequiredPopulation": 5,"Chance": 0.8,"ItemID": 812,"MinQuantity": 1,"MaxQuantity": 2},
+					{"RequiredPopulation": 4,"Chance": 0.8,"ItemID": 812,"MinQuantity": 1,"MaxQuantity": 2},
+					{"RequiredPopulation": 3,"Chance": 0.8,"ItemID": 812,"MinQuantity": 1,"MaxQuantity": 1},
+					{"RequiredPopulation": 2,"Chance": 0.8,"ItemID": 812,"MinQuantity": 1,"MaxQuantity": 1},
+					{"RequiredPopulation": 1,"Chance": 0.8,"ItemID": 812,"MinQuantity": 1,"MaxQuantity": 1},
+					{"RequiredPopulation": 0,"Chance": 0.8,"ItemID": 812,"MinQuantity": 0,"MaxQuantity": 0}
+					],
+			"PopulationGates": {
+				"2": ["153 2"],
+				"4": ["153 4","157 3"],
+				"6": ["153 6","157 5","720 9"],
+				"8": ["153 8","157 7","720 15","397 20"],
+				}
+			},
+			"fish_snake": {
+			"RequiredTags": ["fish_snake"],
+			"SpawnTime": -1,
+				"ProducedItems": [
+					{"RequiredPopulation": 10,"Chance": 0.05,"ItemID": 1262,"MinQuantity": 4,"MaxQuantity": 8},
+					{"RequiredPopulation": 9,"Chance": 0.05,"ItemID": 1262,"MinQuantity": 3,"MaxQuantity": 6},
+
+					{"RequiredPopulation": 10,"Chance": 0.30,"ItemID": 1272,"MinQuantity": 3,"MaxQuantity": 7},
+					{"RequiredPopulation": 9,"Chance": 0.25,"ItemID": 1272,"MinQuantity": 2,"MaxQuantity": 5},
+					{"RequiredPopulation": 8,"Chance": 0.25,"ItemID": 1272,"MinQuantity": 1,"MaxQuantity": 3},
+					{"RequiredPopulation": 7,"Chance": 0.25,"ItemID": 1272,"MinQuantity": 1,"MaxQuantity": 2},
+					{"RequiredPopulation": 6,"Chance": 0.25,"ItemID": 1272,"MinQuantity": 1,"MaxQuantity": 1},
+
+					{"RequiredPopulation": 10,"Chance": 0.55,"ItemID": 1262,"MinQuantity": 1,"MaxQuantity": 4},
+					{"RequiredPopulation": 9,"Chance": 0.45,"ItemID": 1262,"MinQuantity": 1,"MaxQuantity": 3},
+					{"RequiredPopulation": 8,"Chance": 0.35,"ItemID": 1262,"MinQuantity": 1,"MaxQuantity": 3},
+					{"RequiredPopulation": 7,"Chance": 0.35,"ItemID": 1262,"MinQuantity": 1,"MaxQuantity": 3},
+					{"RequiredPopulation": 6,"Chance": 0.35,"ItemID": 1262,"MinQuantity": 1,"MaxQuantity": 2},
+					{"RequiredPopulation": 5,"Chance": 0.25,"ItemID": 1262,"MinQuantity": 1,"MaxQuantity": 2},
+					{"RequiredPopulation": 4,"Chance": 0.25,"ItemID": 1262,"MinQuantity": 1,"MaxQuantity": 2},
+					{"RequiredPopulation": 3,"Chance": 0.25,"ItemID": 1262,"MinQuantity": 1,"MaxQuantity": 1},
+					{"RequiredPopulation": 2,"Chance": 0.20,"ItemID": 1262,"MinQuantity": 1,"MaxQuantity": 1},
+					{"RequiredPopulation": 1,"Chance": 1.00,"ItemID": 1262,"MinQuantity": 1,"MaxQuantity": 1},
+					{"RequiredPopulation": 0,"Chance": 0.20,"ItemID": 1262,"MinQuantity": 0,"MaxQuantity": 0}
+					],
+			"PopulationGates": {
+				"2": ["1240","1234 2"],
+				"4": ["1240 2","1234 5","137 3"],
+				"6": ["1240 3","1234 7","137 5"],
+				"8": ["1240 4","1234 10","137 7"]
+				}
+			},
+			"fish_amphibian": {
+			"RequiredTags": ["fish_amphibian"],
+			"SpawnTime": -1,
+				"ProducedItems": [
+					{"RequiredPopulation": 10,"Chance": 0.05,"ItemID": 812,"MinQuantity": 4,"MaxQuantity": 8},
+					{"RequiredPopulation": 9,"Chance": 0.05,"ItemID": 812,"MinQuantity": 3,"MaxQuantity": 6},
+		  
+					{"RequiredPopulation": 10,"Chance": 0.55,"ItemID": 812,"MinQuantity": 1,"MaxQuantity": 4},
+					{"RequiredPopulation": 9,"Chance": 0.45,"ItemID": 812,"MinQuantity": 1,"MaxQuantity": 3},
+					{"RequiredPopulation": 8,"Chance": 0.35,"ItemID": 812,"MinQuantity": 1,"MaxQuantity": 3},
+					{"RequiredPopulation": 7,"Chance": 0.35,"ItemID": 812,"MinQuantity": 1,"MaxQuantity": 3},
+					{"RequiredPopulation": 6,"Chance": 0.35,"ItemID": 812,"MinQuantity": 1,"MaxQuantity": 2},
+					{"RequiredPopulation": 5,"Chance": 0.25,"ItemID": 812,"MinQuantity": 1,"MaxQuantity": 2},
+					{"RequiredPopulation": 4,"Chance": 0.25,"ItemID": 812,"MinQuantity": 1,"MaxQuantity": 2},
+					{"RequiredPopulation": 3,"Chance": 0.25,"ItemID": 812,"MinQuantity": 1,"MaxQuantity": 1},
+					{"RequiredPopulation": 2,"Chance": 0.20,"ItemID": 812,"MinQuantity": 1,"MaxQuantity": 1},
+					{"RequiredPopulation": 1,"Chance": 0.20,"ItemID": 812,"MinQuantity": 1,"MaxQuantity": 1},
+					{"RequiredPopulation": 0,"Chance": 0.20,"ItemID": 812,"MinQuantity": 0,"MaxQuantity": 0}
+					],
+			"PopulationGates": {
+				"4": ["685 3","774 2","1243 1"],
+				"8": ["685 7","774 5","1243 3"]
+				}
+			},
+			"fish_turtle": {
+			"RequiredTags": ["fish_turtle"],
+			"SpawnTime": -1,
+				"ProducedItems": [
+					{"RequiredPopulation": 10,"Chance": 0.15,"ItemID": 1263,"MinQuantity": 4,"MaxQuantity": 8},
+					{"RequiredPopulation": 9,"Chance": 0.15,"ItemID": 1263,"MinQuantity": 3,"MaxQuantity": 6},
+					
+					{"RequiredPopulation": 10,"Chance": 0.30,"ItemID": 1264,"MinQuantity": 3,"MaxQuantity": 7},
+					{"RequiredPopulation": 9,"Chance": 0.25,"ItemID": 1264,"MinQuantity": 2,"MaxQuantity": 5},
+					{"RequiredPopulation": 8,"Chance": 0.25,"ItemID": 1264,"MinQuantity": 1,"MaxQuantity": 3},
+					{"RequiredPopulation": 7,"Chance": 0.25,"ItemID": 1264,"MinQuantity": 1,"MaxQuantity": 2},
+					{"RequiredPopulation": 6,"Chance": 0.25,"ItemID": 1264,"MinQuantity": 1,"MaxQuantity": 1},
+		  
+					{"RequiredPopulation": 10,"Chance": 0.55,"ItemID": 1263,"MinQuantity": 1,"MaxQuantity": 4},
+					{"RequiredPopulation": 9,"Chance": 0.45,"ItemID": 1263,"MinQuantity": 1,"MaxQuantity": 3},
+					{"RequiredPopulation": 8,"Chance": 0.35,"ItemID": 1263,"MinQuantity": 1,"MaxQuantity": 3},
+					{"RequiredPopulation": 7,"Chance": 0.35,"ItemID": 1263,"MinQuantity": 1,"MaxQuantity": 3},
+					{"RequiredPopulation": 6,"Chance": 0.35,"ItemID": 1263,"MinQuantity": 1,"MaxQuantity": 2},
+					{"RequiredPopulation": 5,"Chance": 0.25,"ItemID": 1263,"MinQuantity": 1,"MaxQuantity": 2},
+					{"RequiredPopulation": 4,"Chance": 0.25,"ItemID": 1263,"MinQuantity": 1,"MaxQuantity": 2},
+					{"RequiredPopulation": 3,"Chance": 0.25,"ItemID": 1263,"MinQuantity": 1,"MaxQuantity": 1},
+					{"RequiredPopulation": 2,"Chance": 0.20,"ItemID": 1263,"MinQuantity": 1,"MaxQuantity": 1},
+					{"RequiredPopulation": 1,"Chance": 0.20,"ItemID": 1263,"MinQuantity": 1,"MaxQuantity": 1},
+					{"RequiredPopulation": 0,"Chance": 0.20,"ItemID": 1263,"MinQuantity": 0,"MaxQuantity": 0}
+					],
+			"PopulationGates": {
+				"4": ["1239 3","152 3","153 3"],
+				"6": ["1239 5","152 5","153 5"],
+				"8": ["1239 7","152 7","153 7"]
+				}
+			},
+			"fish_eel": {
+			"RequiredTags": ["fish_eel"],
+			"SpawnTime": -1,
+				"ProducedItems": [
+					{"RequiredPopulation": 10,"Chance": 0.05,"ItemID": 787,"MinQuantity": 1,"MaxQuantity": 4},
+					{"RequiredPopulation": 9,"Chance": 0.05,"ItemID": 787,"MinQuantity": 1,"MaxQuantity": 3},
+					{"RequiredPopulation": 8,"Chance": 0.05,"ItemID": 787,"MinQuantity": 1,"MaxQuantity": 3},
+					{"RequiredPopulation": 7,"Chance": 0.05,"ItemID": 787,"MinQuantity": 1,"MaxQuantity": 3},
+					
+					{"RequiredPopulation": 10,"Chance": 0.05,"ItemID": 812,"MinQuantity": 4,"MaxQuantity": 8},
+					{"RequiredPopulation": 9,"Chance": 0.05,"ItemID": 812,"MinQuantity": 3,"MaxQuantity": 6},
+		  
+					{"RequiredPopulation": 10,"Chance": 0.75,"ItemID": 812,"MinQuantity": 1,"MaxQuantity": 4},
+					{"RequiredPopulation": 9,"Chance": 0.65,"ItemID": 812,"MinQuantity": 1,"MaxQuantity": 3},
+					{"RequiredPopulation": 8,"Chance": 0.55,"ItemID": 812,"MinQuantity": 1,"MaxQuantity": 3},
+					{"RequiredPopulation": 7,"Chance": 0.55,"ItemID": 812,"MinQuantity": 1,"MaxQuantity": 3},
+					{"RequiredPopulation": 6,"Chance": 0.55,"ItemID": 812,"MinQuantity": 1,"MaxQuantity": 2},
+					{"RequiredPopulation": 5,"Chance": 0.45,"ItemID": 812,"MinQuantity": 1,"MaxQuantity": 2},
+					{"RequiredPopulation": 4,"Chance": 0.45,"ItemID": 812,"MinQuantity": 1,"MaxQuantity": 2},
+					{"RequiredPopulation": 3,"Chance": 0.45,"ItemID": 812,"MinQuantity": 1,"MaxQuantity": 1},
+					{"RequiredPopulation": 2,"Chance": 0.40,"ItemID": 812,"MinQuantity": 1,"MaxQuantity": 1},
+					{"RequiredPopulation": 1,"Chance": 0.40,"ItemID": 812,"MinQuantity": 1,"MaxQuantity": 1},
+					{"RequiredPopulation": 0,"Chance": 0.40,"ItemID": 812,"MinQuantity": 0,"MaxQuantity": 0}
+					],
+			"PopulationGates": {
+				"4": ["716 3","721 6","1254 3"],
+				"6": ["716 5","721 10","1254 5"],
+				"8": ["716 7","721 14","1254 7"]
+				}
+			},
+		},
+	},
+	// ADIÇÃO DAS NOVAS ETIQUETAS AOS LAGOS DE PEIXES 
+	{
+		"Action": "EditData",
+		"LogName": "Fishpond Entries Handler",
+		"Target": "Data/FishPondData",
+			"MoveEntries": [
+				{"ID": "fish_fallenlegendary", "ToPosition": "Top"},
+				{"ID": "fish_pseudolegendary", "AfterID": "fish_fallenlegendary"},
+				{"ID": "fish_snakepseudolegendary", "AfterID": "fish_pseudolegendary"},
+				{"ID": "fish_ray", "AfterID": "fish_snakepseudolegendary"},
+				{"ID": "fish_jellyfish", "AfterID": "fish_ray"},
+				{"ID": "fish_snake", "AfterID": "fish_jellyfish"},
+				{"ID": "fish_amphibian", "AfterID": "fish_snake"},
+				{"ID": "fish_turtle", "AfterID": "fish_amphibian"},
+				{"ID": "fish_eel", "AfterID": "fish_turtle"},
+		],
+	},
+	// ADIÇÃO DA CONFIGURAÇÃO DE PEIXES E ITENS AO AQUÁRIO
+	{
+		"Action": "EditImage",
+		"Target": "LooseSprites/AquariumFish",
+		"FromFile": "Assets/TileSheets/TCLE_AquariumFish.png",
+			"ToArea": { "X": 0, "Y": 1248, "Width": 480, "Height": 240 },
+	},
+	// ADIÇÃO DAS IMAGENS DE PEIXES E ITENS AO AQUÁRIO
+	{
+		"Action": "EditData",
+		"Target": "Data/AquariumFish",
+		"When": {"NewFish":"true"},
+		"Entries": {
+			"1266": "520/front_crawl/520//520 520 521 521 522 522 523 523 523",
+			"1255": "524/float/524/524 525/525 525 526 526/526 527",
+			"1238": "528/float/528/528 529/529 529 530 530/530 531",
+			"1253": "532/float/532/532 533/533 533 534 534/534 535",
+			"1254": "536/ground/536/536 537 537 538 538 539 539",
+			"1236": "540/cephalopod/540/540 541/541 541 542 542/543 543",
+			"1229": "544/fish/544/544 545/545 545 546 546/546 547",
+			"1228": "548/fish/548/548 549/549 549 550 550/550 551",
+			"1227": "552/fish/552/552 553/553 553 554 554/554 555",
+			"1241": "556/fish/556/556 557/557 557 558 558/558 559",
+			"1252": "560/float/560/560 561/561 561 562 562/562 563",
+			"1257": "564/front_crawl/564//564 564 565 565 566 566 567 567 567",
+			"1235": "568/float/568/568 568 569 569 569",
+			"1250": "570/crawl/570//570 570 570 571 571 571 571",
+			"1245": "572/fish",
+			"1261": "573/fish",
+			"1260": "574/fish",
+			"1234": "575/fish",
+			"1230": "576/fish",
+			"1242": "577/fish",
+			"1251": "578/fish",
+			"1240": "579/fish",
+			"1231": "580/fish",
+			"1259": "581/fish",
+			"1237": "582/fish",
+			"1226": "583/fish",
+			"1247": "584/fish",
+			"1243": "585/fish",
+			"1244": "586/fish",
+			"1224": "587/fish",
+			"1246": "588/eel",
+			"1248": "589/eel",
+			"1233": "590/eel",
+			"1258": "591/static",
+			"1267": "592/static",
+			"1268": "593/static",
+			"1269": "594/static",
+			"1270": "595/static",
+			"1239": "596/static",
+			"1271": "597/static",
+		  }
+    },
+	// ADIÇÃO DAS ITENS DO VANILLA
+	{
+		"Action": "EditData",
+		"Target": "Data/AquariumFish",
+		"When": {"AquariumVanilla":"true"},
+		"Entries": {
+			"117": "598/static",
+			"394": "599/static",
+			"586": "600/static",
+			"392": "601/static",
+			"100": "602/static",
+			"109": "603/static",
+			"153": "604/static",
+			"157": "605/static",
+			"388": "606/static",
+		  }
+    },
+	
+	// BALANCEAMENTO DE PEIXES BÁSICOS
+	{
+		"Action": "EditData",
+		"Target": "Data/Fish",
+		"When": {"FishBalance":"true"},
+		"Entries": {
+			"149": "Octopus/92/sinker/12/48/600 1300/summer/both/688 .6 684 .1/5/.55/.08/0",
+			"159": "Crimsonfish/125/mixed/20/20/600 2000/winter/both/690 .15/4/.1/.1/12",
+			"160": "Angler/115/sinker/18/18/600 2600/spring summer fall winter/both/690 .1/4/.05/.1/11",
+			"161": "Ice Pip/80/dart/8/8/600 2600/spring summer fall winter/both/682 .1/2/.95/.1/5",
+			"162": "Lava Eel/90/mixed/32/32/600 2600/spring summer fall winter/both/684 .1/2/.95/.1/7",
+			"163": "Legend/145/mixed/50/50/600 2000/spring summer fall winter/rainy/688 .05/5/0/.1/14",
+			"165": "Scorpion Carp/90/dart/12/32/600 2000/spring summer fall winter/both/683 .4/2/.35/.1/4",
+			"682": "Mutant Carp/110/dart/36/36/600 2600/spring summer fall winter/both/688 .1/5/0/.02/10",
+			"775": "Glacierfish/135/mixed/27/27/600 2000/winter/sunny/688 .1/5/0/.02/13",
+			"898": "Son of Crimsonfish/125/mixed/20/20/600 2000/winter/both/690 .15/4/.1/.1/12",
+			"899": "Ms. Angler/115/smooth/18/18/600 2600/spring summer fall winter/both/690 .1/4/.05/.1/11",
+			"900": "Legend II/145/mixed/50/50/600 2000/spring summer fall winter/rainy/688 .05/5/0/.1/14",
+			"901": "Radioactive Carp/110/dart/36/36/600 2600/spring summer fall winter/both/688 .1/5/0/.02/10",
+			"902": "Glacierfish Jr./135/mixed/27/27/600 2000/winter/sunny/688 .1/5/0/.02/13",
+		}
+	},
+	// BALANCEAMENTO DO LAGO DE PEIXES BASES
+	{
+        "Action": "Load",
+        "Target": "Data/FishPondData",
+		"FromFile": "overrides/FishPondData.json",
+		"When": {"FishPound":"false"},
+	},
+	
+	// LOCALIZAÇÃO DOS PEIXES
+    {
+		"Action": "EditData",
+		"LogName": "Fish Location Data",
+		"Target": "Data/Locations",
+		"When": {"NewFish":"true"},
+			"TextOperations": [
+			{
+			"Operation": "Append",
+			"Target": ["Fields", "Desert", 4],
+			"Value": "1229 -1 1234 -1",
+			"Delimiter": " " // if there are already values, add a space between them and the new ones
+			},
+			{
+			"Operation": "Append",
+			"Target": ["Fields", "Desert", 5],
+			"Value": "1229 -1 1234 -1",
+			"Delimiter": " " // if there are already values, add a space between them and the new ones
+			},
+			{
+			"Operation": "Append",
+			"Target": ["Fields", "Desert", 6],
+			"Value": "1229 -1 1234 -1",
+			"Delimiter": " " // if there are already values, add a space between them and the new ones
+			},
+			{
+			"Operation": "Append",
+			"Target": ["Fields", "Desert", 7],
+			"Value": "1229 -1 1234 -1",
+			"Delimiter": " " // if there are already values, add a space between them and the new ones
+			},
+			{
+			"Operation": "Append",
+			"Target": ["Fields", "Forest", 4],
+			"Value": "1233 -1 1234 -1 1237 -1 1240 -1 1242 -1 1244 -1 1245 -1 1246 -1",
+			"Delimiter": " " // if there are already values, add a space between them and the new ones
+			},
+			{
+			"Operation": "Append",
+			"Target": ["Fields", "Forest", 5],
+			"Value": "1232 -1 1233 -1 1234 -1 1240 -1 1242 -1 1243 -1 1244 -1 1246 -1 1248 -1",
+			"Delimiter": " " // if there are already values, add a space between them and the new ones
+			},
+			{
+			"Operation": "Append",
+			"Target": ["Fields", "Forest", 6],
+			"Value": "1233 -1 1234 -1 1237 -1 1240 -1 1242 -1 1243 -1 1245 -1 1248 -1",
+			"Delimiter": " " // if there are already values, add a space between them and the new ones
+			},
+			{
+			"Operation": "Append",
+			"Target": ["Fields", "Forest", 7],
+			"Value": "1232 -1 1233 -1 1234 -1 1237 -1 1240 -1 1242 -1 1246 -1",
+			"Delimiter": " " // if there are already values, add a space between them and the new ones
+			},
+			{
+			"Operation": "Append",
+			"Target": ["Fields", "Beach", 0],
+			"Value": "1250 .3 1266 .3",
+			"Delimiter": " " // if there are already values, add a space between them and the new ones
+			},
+			{
+			"Operation": "Append",
+			"Target": ["Fields", "Beach", 1],
+			"Value": "1250 .3 1266 .3",
+			"Delimiter": " " // if there are already values, add a space between them and the new ones
+			},
+			{
+			"Operation": "Append",
+			"Target": ["Fields", "Beach", 2],
+			"Value": "1250 .3",
+			"Delimiter": " " // if there are already values, add a space between them and the new ones
+			},
+			{
+			"Operation": "Append",
+			"Target": ["Fields", "Beach", 3],
+			"Value": "1250 .3",
+			"Delimiter": " " // if there are already values, add a space between them and the new ones
+			},
+			{
+			"Operation": "Append",
+			"Target": ["Fields", "Beach", 4],
+			"Value": "1224 -1 1225 -1 1228 -1 1229 -1 1230 -1 1234 -1 1239 -1",
+			"Delimiter": " " // if there are already values, add a space between them and the new ones
+			},
+			{
+			"Operation": "Append",
+			"Target": ["Fields", "Beach", 5],
+			"Value": "1228 -1 1229 -1 1234 -1 1239 -1",
+			"Delimiter": " " // if there are already values, add a space between them and the new ones
+			},
+			{
+			"Operation": "Append",
+			"Target": ["Fields", "Beach", 6],
+			"Value": "1224 -1 1228 -1 1229 -1 1231 -1 1234 -1 1239 -1",
+			"Delimiter": " " // if there are already values, add a space between them and the new ones
+			},
+			{
+			"Operation": "Append",
+			"Target": ["Fields", "Beach", 7],
+			"Value": "1228 -1 1229 -1 1234 -1 1239 -1",
+			"Delimiter": " " // if there are already values, add a space between them and the new ones
+			},
+			{
+			"Operation": "Append",
+			"Target": ["Fields", "Town", 4],
+			"Value": "1234 -1 1240 -1 1242 -1 1244 -1 1245 -1",
+			"Delimiter": " " // if there are already values, add a space between them and the new ones
+			},
+			{
+			"Operation": "Append",
+			"Target": ["Fields", "Town", 5],
+			"Value": "1234 -1 1240 -1 1242 -1 1243 -1 1244 -1 1248 -1",
+			"Delimiter": " " // if there are already values, add a space between them and the new ones
+			},
+			{
+			"Operation": "Append",
+			"Target": ["Fields", "Town", 6],
+			"Value": "1234 -1 1240 -1 1242 -1 1243 -1 1244 -1 1245 -1 1248 -1",
+			"Delimiter": " " // if there are already values, add a space between them and the new ones
+			},
+			{
+			"Operation": "Append",
+			"Target": ["Fields", "Town", 7],
+			"Value": "1234 -1 1240 -1 1242 -1 1244 -1",
+			"Delimiter": " " // if there are already values, add a space between them and the new ones
+			},
+			{
+			"Operation": "Append",
+			"Target": ["Fields", "Woods", 4],
+			"Value": "1232 -1 1233 -1 1234 -1 1243 -1",
+			"Delimiter": " " // if there are already values, add a space between them and the new ones
+			},
+			{
+			"Operation": "Append",
+			"Target": ["Fields", "Woods", 5],
+			"Value": "1233 -1 1234 -1 1243 -1",
+			"Delimiter": " " // if there are already values, add a space between them and the new ones
+			},
+			{
+			"Operation": "Append",
+			"Target": ["Fields", "Woods", 6],
+			"Value": "1232 -1 1233 -1 1234 -1 1243 -1",
+			"Delimiter": " " // if there are already values, add a space between them and the new ones
+			},
+			{
+			"Operation": "Append",
+			"Target": ["Fields", "Woods", 7],
+			"Value": "1233 -1 1234 -1 1243 -1",
+			"Delimiter": " " // if there are already values, add a space between them and the new ones
+			},
+			{
+			"Operation": "Append",
+			"Target": ["Fields", "Mountain", 4],
+			"Value": "1234 -1 1243 -1 1242 -1 1244 -1 1246 -1 1247 -1",
+			"Delimiter": " " // if there are already values, add a space between them and the new ones
+			},
+			{
+			"Operation": "Append",
+			"Target": ["Fields", "Mountain", 5],
+			"Value": "1234 -1 1243 -1 1242 -1 1244 -1 1246 -1 1247 -1 1248 -1",
+			"Delimiter": " " // if there are already values, add a space between them and the new ones
+			},
+			{
+			"Operation": "Append",
+			"Target": ["Fields", "Mountain", 6],
+			"Value": "1226 -1 1234 -1 1243 -1 1242 -1 1247 -1 1248 -1",
+			"Delimiter": " " // if there are already values, add a space between them and the new ones
+			},
+			{
+			"Operation": "Append",
+			"Target": ["Fields", "Mountain", 7],
+			"Value": "1226 -1 1234 -1 1243 -1 1242 -1 1246 -1 1247 -1",
+			"Delimiter": " " // if there are already values, add a space between them and the new ones
+			},
+			{
+			"Operation": "Append",
+			"Target": ["Fields", "Sewer", 4],
+			"Value": "1261 -1",
+			"Delimiter": " " // if there are already values, add a space between them and the new ones
+			},
+			{
+			"Operation": "Append",
+			"Target": ["Fields", "Sewer", 5],
+			"Value": "1261 -1",
+			"Delimiter": " " // if there are already values, add a space between them and the new ones
+			},
+			{
+			"Operation": "Append",
+			"Target": ["Fields", "Sewer", 6],
+			"Value": "1261 -1",
+			"Delimiter": " " // if there are already values, add a space between them and the new ones
+			},
+			{
+			"Operation": "Append",
+			"Target": ["Fields", "Sewer", 7],
+			"Value": "1261 -1",
+			"Delimiter": " " // if there are already values, add a space between them and the new ones
+			},
+			{
+			"Operation": "Append",
+			"Target": ["Fields", "BugLand", 4],
+			"Value": "1261 -1",
+			"Delimiter": " " // if there are already values, add a space between them and the new ones
+			},
+			{
+			"Operation": "Append",
+			"Target": ["Fields", "BugLand", 5],
+			"Value": "1261 -1",
+			"Delimiter": " " // if there are already values, add a space between them and the new ones
+			},
+			{
+			"Operation": "Append",
+			"Target": ["Fields", "BugLand", 6],
+			"Value": "1261 -1",
+			"Delimiter": " " // if there are already values, add a space between them and the new ones
+			},
+			{
+			"Operation": "Append",
+			"Target": ["Fields", "BugLand", 7],
+			"Value": "1261 -1",
+			"Delimiter": " " // if there are already values, add a space between them and the new ones
+			},
+			{
+			"Operation": "Append",
+			"Target": ["Fields", "WitchSwamp", 4],
+			"Value": "1260 -1",
+			"Delimiter": " " // if there are already values, add a space between them and the new ones
+			},
+			{
+			"Operation": "Append",
+			"Target": ["Fields", "WitchSwamp", 5],
+			"Value": "1260 -1",
+			"Delimiter": " " // if there are already values, add a space between them and the new ones
+			},
+			{
+			"Operation": "Append",
+			"Target": ["Fields", "WitchSwamp", 6],
+			"Value": "1260 -1",
+			"Delimiter": " " // if there are already values, add a space between them and the new ones
+			},
+			{
+			"Operation": "Append",
+			"Target": ["Fields", "WitchSwamp", 7],
+			"Value": "1260 -1",
+			"Delimiter": " " // if there are already values, add a space between them and the new ones
+			},
+			{
+			"Operation": "Append",
+			"Target": ["Fields", "IslandNorth", 4], // Acima, nos lagos do entorno do vulcão.
+			"Value": "1234 -1",
+			"Delimiter": " " // if there are already values, add a space between them and the new ones
+			},
+			{
+			"Operation": "Append",
+			"Target": ["Fields", "IslandNorth", 5],
+			"Value": "1234 -1",
+			"Delimiter": " " // if there are already values, add a space between them and the new ones
+			},
+			{
+			"Operation": "Append",
+			"Target": ["Fields", "IslandNorth", 6],
+			"Value": "1234 -1",
+			"Delimiter": " " // if there are already values, add a space between them and the new ones
+			},
+			{
+			"Operation": "Append",
+			"Target": ["Fields", "IslandNorth", 7],
+			"Value": "1234 -1",
+			"Delimiter": " " // if there are already values, add a space between them and the new ones
+			},
+			{
+			"Operation": "Append",
+			"Target": ["Fields", "IslandSouth", 4],	// Parte inicial da ilha & Resort
+			"Value": "1227 -1 1234 -1 1236 -1 1259 -1",
+			"Delimiter": " " // if there are already values, add a space between them and the new ones
+			},
+			{
+			"Operation": "Append",
+			"Target": ["Fields", "IslandSouth", 5],
+			"Value": "1227 -1 1234 -1 1236 -1 1259 -1",
+			"Delimiter": " " // if there are already values, add a space between them and the new ones
+			},
+			{
+			"Operation": "Append",
+			"Target": ["Fields", "IslandSouth", 6],
+			"Value": "1227 -1 1234 -1 1236 -1 1259 -1",
+			"Delimiter": " " // if there are already values, add a space between them and the new ones
+			},
+			{
+			"Operation": "Append",
+			"Target": ["Fields", "IslandSouth", 7],
+			"Value": "1227 -1 1234 -1 1236 -1 1259 -1",
+			"Delimiter": " " // if there are already values, add a space between them and the new ones
+			},
+			{
+			"Operation": "Append",
+			"Target": ["Fields", "IslandWest", 4], 	// A esquerda, abaixo da Fazenda da praia
+			"Value": "1227 -1 1234 -1 1236 -1 1241 -1 1259 -1",
+			"Delimiter": " " // if there are already values, add a space between them and the new ones
+			},
+			{
+			"Operation": "Append",
+			"Target": ["Fields", "IslandWest", 5],
+			"Value": "1227 -1 1234 -1 1236 -1 1241 -1 1259 -1",
+			"Delimiter": " " // if there are already values, add a space between them and the new ones
+			},
+			{
+			"Operation": "Append",
+			"Target": ["Fields", "IslandWest", 6],
+			"Value": "1227 -1 1234 -1 1236 -1 1241 -1 1259 -1",
+			"Delimiter": " " // if there are already values, add a space between them and the new ones
+			},
+			{
+			"Operation": "Append",
+			"Target": ["Fields", "IslandWest", 7],
+			"Value": "1227 -1 1234 -1 1236 -1 1241 -1 1259 -1",
+			"Delimiter": " " // if there are already values, add a space between them and the new ones
+			},
+			{
+			"Operation": "Append",
+			"Target": ["Fields", "IslandSouthEast", 4],   // A direita, local da sereia.
+			"Value": "1227 -1 1234 -1 1236 -1 1241 -1 1259 -1",
+			"Delimiter": " " // if there are already values, add a space between them and the new ones
+			},
+			{
+			"Operation": "Append",
+			"Target": ["Fields", "IslandSouthEast", 5],
+			"Value": "1227 -1 1234 -1 1236 -1 1241 -1 1259 -1",
+			"Delimiter": " " // if there are already values, add a space between them and the new ones
+			},
+			{
+			"Operation": "Append",
+			"Target": ["Fields", "IslandSouthEast", 6],
+			"Value": "1227 -1 1234 -1 1236 -1 1241 -1 1259 -1",
+			"Delimiter": " " // if there are already values, add a space between them and the new ones
+			},
+			{
+			"Operation": "Append",
+			"Target": ["Fields", "IslandSouthEast", 7],
+			"Value": "1227 -1 1234 -1 1236 -1 1241 -1 1259 -1",
+			"Delimiter": " " // if there are already values, add a space between them and the new ones
+			},
+			{
+			"Operation": "Append",
+			"Target": ["Fields", "IslandSouthEastCave", 4], // A Direita+Direita, caverna dos piratas.
+			"Value": "1258 -1",
+			"Delimiter": " " // if there are already values, add a space between them and the new ones
+			},
+			{
+			"Operation": "Append",
+			"Target": ["Fields", "IslandSouthEastCave", 5],
+			"Value": "1258 -1",
+			"Delimiter": " " // if there are already values, add a space between them and the new ones
+			},
+			{
+			"Operation": "Append",
+			"Target": ["Fields", "IslandSouthEastCave", 6],
+			"Value": "1258 -1",
+			"Delimiter": " " // if there are already values, add a space between them and the new ones
+			},
+			{
+			"Operation": "Append",
+			"Target": ["Fields", "IslandSouthEastCave", 7],
+			"Value": "1258 -1",
+			"Delimiter": " " // if there are already values, add a space between them and the new ones
+			},
+			{
+			"Operation": "Append",
+			"Target": ["Fields", "IslandSecret", 4],
+			"Value": "1227 -1 1234 -1 1236 -1 1241 -1 1259 -1",
+			"Delimiter": " " // if there are already values, add a space between them and the new ones
+			},
+			{
+			"Operation": "Append",
+			"Target": ["Fields", "IslandSecret", 5],
+			"Value": "1227 -1 1234 -1 1236 -1 1241 -1 1259 -1",
+			"Delimiter": " " // if there are already values, add a space between them and the new ones
+			},
+			{
+			"Operation": "Append",
+			"Target": ["Fields", "IslandSecret", 6],
+			"Value": "1227 -1 1234 -1 1236 -1 1241 -1 1259 -1",
+			"Delimiter": " " // if there are already values, add a space between them and the new ones
+			},
+			{
+			"Operation": "Append",
+			"Target": ["Fields", "IslandSecret", 7],
+			"Value": "1227 -1 1234 -1 1236 -1 1241 -1 1259 -1",
+			"Delimiter": " " // if there are already values, add a space between them and the new ones
+			},
+		]
+	},
+	
+	// GOSTOS DE PRESENTES
+	{
+		"Action": "EditData",
+		"Target": "Data/NPCGiftTastes",
+		"When": {"NewFish":"true"},
+		"LogName": "GiftTastes",
+			"Fields": {
+				"Abigail": {1:"1265",3:"1264 1251",7:"1261 1262"},
+				"Alex": {3:"1265",7:"1240 1241"},
+				"Caroline": {3:"1264 1265",7:"1240 1241"},
+				"Clint": {3:"1265",7:"1240 1241"},
+				"Damires": {1:"1259",7:"1262 1263 1264 1265"},
+				"Demetrius": {3:"1262 1261 1264 1251 1257 1265"},
+				"Dwarf": {5:"1261 1262"},
+				"Elliott": {1:"1264",3:"1251 1257 1265",7:"1240 1241"},
+				"Emily": {1:"1264 1251 1257",5:"1265"},
+				"Evelyn": {3:"1264",5:"1265",7:"1240 1241"},
+				"George": {3:"1265",7:"1240 1241"},
+				"Gus": {3:"1238 1265",5:"1240 1241"},
+				"Haley": {3:"1264 1265",5:"1261 1262",7:"1240 1241"},
+				"Harvey": {3:"1264 1265",5:"1240 1241"},
+				"Jas": {1:"1250",3:"1264 1238 1251 1265",5:"1261 1262 1257 1240 1241"},
+				"Jodi": {3:"1264 1250 1265",7:"1240 1241"},
+				"Kent": {3:"1264 1250 1265",5:"1240 1241"},
+				"Krobus": {3:"1240 1241",5:"1265"},
+				"Leah": {3:"1262 1261 1264 1250 1265",5:"1240 1241"},
+				"Leo": {1:"1264",3:"1251 1257 1250"},
+				"Lewis": {3:"1264 1250 1265",5:"1240 1241"},
+				"Linus": {3:"1262 1261 1264 1265"},
+				"Marnie": {3:"1264 1265",5:"1261 1262 1250",7:"1240 1241"},
+				"Maru": {3:"1264 1250 1265",7:"1240 1241"},
+				"Pam": {7:"1261 1262 1240 1241 1265"},
+				"Penny": {3:"1264 1250 1265",7:"1240 1241"},
+				"Pierre": {3:"1265",7:"1240 1241"},
+				"Robin": {3:"1264 1265",7:"1240 1241"},
+				"Sam": {3:"1262 1261 1250 1265",5:"1240 1241"},
+				"Sandy": {3:"1264 1257 1250 1265",7:"1240 1241"},
+				"Sebastian": {3:"1264 1250 1265",7:"1261 1262"},
+				"Shane": {3:"1265",5:"1240 1241"},
+				"Vincent": {1:"1250 1240 1241",3:"1264 1238 1251 1257 1265",5:"1261 1262"},
+				"Willy": {1:"1224 1225 1241 1264",3:"1251 1257",5:"1240 1241 1265"},
+				"Wizard": {3:"1264",5:"1261 1262 1240 1241"},
+		},
+	},
+
+// 3
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~BALANCEAMENTO GERAL: RECEITAS, ANIMAIS E PREÇOS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+	// RECEITAS DE COZINHA	
+	{
+        "Action": "EditData",
+        "Target": "Data/CookingRecipes",
+		"When": {"NewFish":"true"},
+        "Entries": {
+			"Chowder": "372 1 -6 1/1 10/727/海鲜杂烩汤",
+			"Lobster Bisque": "715 1 -6 1/1 10/730/龙虾浓汤",
+			"Snake Nest": "1262 1 1233 1 247 1/1 10/1265/l 100/蛇窝",
+		}
+	},
+	// RECEITAS DE ITENS
+	{
+		"Action": "EditData",
+		"Target": "Data/CraftingRecipes",
+		"When": {"RecipesBalance":"true"},
+		"Entries": {
+			"Warp Totem: Island": "709 1 829 5 771 30 768 20/Field/886/false/null/传送图腾：姜岛",
+			"Bee House": "388 40 330 5 335 1 724 1/Home/10/true/Farming 3/蜂房",
+			"Cheese Press": "388 45 390 45 709 10 334 1/Home/16/true/Farming 6/压酪机",
+			"Warp Totem: Beach": "709 1 372 1 771 10 768 5/Field/690/false/Foraging 6/传送图腾：海滩",
+			"Wild Bait": "771 2 685 5 766 2/Home/774 5/false/null/万能鱼饵",
+			"Leech Bait": "1249 1/Home/685 3/false/Fishing 2/水蛭诱饵",
+			"Worm Bait": "1256 1/Home/685 2/false/Fishing 2/虫饵",
+			"Worm Bin": "709 5 330 15 684 5 771 30/Home/154/true/Fishing 8/虫饵盒",
+			"Spinner": "334 1 771 5/Home/686/false/Fishing 6/旋式鱼饵",
+			"Trap Bobber": "335 1 334 1 92 15/Home/694/false/Fishing 6/陷阱浮标",
+			"Cork Bobber": "388 10 709 1 766 5/Home/695/false/Fishing 7/软木塞浮标",
+			"Treasure Hunter": "336 1 338 2/Home/693/false/Fishing 7/寻宝者",
+			"Barbed Hook": "334 1 335 1/Home/691/false/Fishing 8/倒刺钩",
+			"Dressed Spinner": "335 1 338 1 767 5/Home/687/false/Fishing 8/精装旋式鱼饵",
+			"Magnet": "335 1/Home/703 5/false/Fishing 9/磁铁",
+		}
+	},
+	
+	// ANIMAIS
+	{
+		"Action": "EditData",
+		"Target": "Data/FarmAnimals",
+		"Entries": {
+			"White Chicken": "1/3/176/174/cluck/8/32/48/32/8/32/48/32/0/false/Coop/16/16/16/16/6/5/null/641/800/White Chicken/Coop",
+			"Brown Chicken": "1/3/180/182/cluck/8/32/48/32/8/32/48/32/0/false/Coop/16/16/16/16/6/5/null/641/800/Brown Chicken/Coop",
+			"Blue Chicken": "1/3/Blue egg/Blue egg/cluck/8/32/48/32/8/32/48/32/0/false/Coop/16/16/16/16/6/5/null/641/800/Blue Chicken/Coop",
+			"Golden Chicken": "1/3/928/928/cluck/8/32/48/32/8/32/48/32/0/false/Coop/16/16/16/16/15/10/null/641/800/Golden Chicken/Coop",
+			"Void Chicken": "1/3/305/305/cluck/8/32/48/32/8/32/48/32/0/false/Coop/16/16/16/16/21/48/null/641/800/Void Chicken/Coop",
+			"Duck": "2/5/442/444/Duck/8/32/48/32/8/32/48/32/0/false/Coop/16/16/16/16/7/6/null/642/1200/Duck/Coop",
+			"White Cow": "1/5/184/186/cow/36/64/64/64/36/64/64/64/1/false/Barn/32/32/32/32/15/5/Milk Pail/639/1500/White Cow/Barn",
+			"Brown Cow": "1/5/184/186/cow/36/64/64/64/36/64/64/64/1/false/Barn/32/32/32/32/15/5/Milk Pail/639/1500/Brown Cow/Barn",
+			"Rabbit": "4/6/440/446/rabbit/8/32/48/32/8/32/48/32/0/false/Coop/16/16/16/16/12/11/null/643/6400/Rabbit/Coop",
+			"Goat": "2/5/436/438/goat/24/64/84/64/24/64/84/64/1/false/Barn/32/32/32/32/10/10/Milk Pail/644/3000/Goat/Barn",
+			"Sheep": "3/4/440/-1/sheep/24/64/84/64/24/64/84/64/1/true/Barn/32/32/32/32/15/10/Shears/644/6000/Sheep/Barn",
+			"Pig": "1/10/430/-1/pig/24/64/84/64/24/64/84/64/1/false/Barn/32/32/32/32/20/5/null/640/15000/Pig/Barn",
+			"Ostrich": "7/7/289/-1/Ostrich/24/64/84/64/24/64/84/64/0/false/Barn/32/32/32/32/20/10/null/644/12000/Ostrich/Barn"
+		}
+	},
+	
+	// PREÇOS
+	{
+		"Action": "EditData",
+		"Target": "Data/ObjectInformation",		
+		"Fields": {
+			"107": {1:"650"},
+			"149": {1:"205"},
+			"159": {1:"3500"},
+			"160": {1:"2750"},
+			"165": {1:"200"},
+			"424": {1:"235"},
+			"426": {1:"465"},
+			"428": {1:"595"},
+			"430": {1:"550"},
+			"432": {1:"990"},
+			"436": {1:"245"},
+			"438": {1:"365"},
+			"445": {1:"950"},
+			"446": {1:"690"},
+			"682": {1:"2000"},
+			"715": {1:"150"},
+			"717": {1:"85"},
+			"720": {1:"90"},
+			"722": {1:"45"},
+			"775": {1:"4250"},
+			"807": {1:"2300"},
+			"901": {1:"2000"},
+			"898": {1:"3500"},
+			"899": {1:"2750"},
+			"902": {1:"4250"},
+		}
+	},
+	
+// 4
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ETIQUETAS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	
+	// ETIQUETA
+	{
+		"Action": "EditData",
+		"LogName": "Context Tags",
+		"Target": "Data/ObjectContextTags",
+		"When": {"NewFish":"true"},
+			"Entries": { 
+				"Sea Bream": "color_gold,fish_pseudolegendary,fish_ocean",
+				"Marlim": "color_light_blue,fish_fallenlegendary,fish_ocean",
+				"Red Piranha": "color_red,fish_lake,fish_carnivorous",
+				"Warbler Ray": "color_sand,fish_ray,fish_lake",
+				"Butterfly Ray": "color_brown,fish_ray,fish_ocean",
+				"Sandpaper Ray": "color_light_brown,fish_ray,fish_ocean",
+				"Blue Barracuda": "color_blue,fish_ocean,fish_carnivorous",
+				"Lesser Sea Bass": "color_gray,fish_ocean",
+				"Anaconda": "color_yellow,fish_snakepseudolegendary",
+				"Green River Snake": "color_green,fish_snake",	 
+				"Fingerling": "color_gray,fish_fingerling",
+				"Blue Pearl Shrimp": "color_blue,fish_ocean,fish_crabpot",
+				"Pale Blue-Ringed Octopus": "color_yellow,fish_octopus",
+				"Black Piranha": "color_dark_green,fish_carnivorous",
+				"Blue Jellyfish": "color_light_cyan,fish_jellyfish,fish_crabpot",
+				"Sea Lettuce": "color_green,fish_nonfish,algae_item",
+				"Jundia": "color_sand,fish_lake",
+				"Sea Turtle": "color_green,fish_turtle",
+				"Bicuda": "color_brown,fish_river,fish_lake",
+				"Peacock bass": "color_green,fish_river",
+				"Lambari": "color_light_brown,fish_river,fish_lake",
+				"Acara": "color_light_blue,fish_river",
+				"Poraque": "color_dark_brown,fish_river,fish_eel",
+				"Betrayed": "color_brown,fish_lake",
+				"Blood Lamprey": "color_red,fish_river,fish_lake",
+				"Leech": "color_brown,fish_freshwater,fish_crabpot",
+				"Red Starfish": "color_red,fish_starfish",
+				"Orange Seahorse": "color_orange,fish_ocean,fish_Seahorse,fish_crabpot",
+				"Sea Wasp": "color_sand,fish_jellyfish",
+				"Lion Jellyfish Cub": "color_yellow,fish_jellyfish,fish_ocean,fish_crabpot",
+				"Blue Crab": "color_dark_red,fish_ocean,fish_freshwater,fish_crabpot",
+				"Violet Flame Jellyfish": "color_dark_red,fish_jellyfish,fish_crabpot",
+				"Water Worm": "color_pink,fish_nonfish,fish_crabpot",
+				"Sea Slug": "color_pink,fish_ocean,fish_crabpot",
+				"Dark Stone Hedgehog": "color_black,fish_nonfish,item_sea_urchin",
+				"Clown fish": "color_red,fish_ocean",
+				"Void Fingerling": "color_dark_purple,fish_fingerling",
+				"Mutant Fingerling": "color_light_green,fish_fingerling",
+				"Snake Egg": "color_light_brown,egg_item",
+				"Turtle Egg": "color_white,egg_item",
+				"Turtle Scale": "color_green",
+				"Snake Nest": "color_yellow",
+				"Hermit": "color_orange,fish_ocean,fish_crabpot",
+				"Agaricia coral": "color_light_yellow,item_coralforage_item,forage_item_beach",
+				"Fire coral": "color_dark_red,item_coral,forage_item,forage_item_island",
+				"Tube Coral": "color_orange,item_coral,forage_item,forage_item_beach",
+				"Moose Horns Coral": "color_light_orange,item_coral,forage_item,forage_item_island",
+				"Stony Coral": "color_light_yellow,item_coral,island_item,forage_item,forage_item_island",
+				"Snake Scale": "color_green",
+				"Midnight Squid Ink": "color_dark_blue",
+				"Fish catalog": "color_white",
+				"Old bait suitcase": "color_gray",
+		},
+	},
+
+// 5
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~DIÁLOGOS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+	// NOVOS DIÁLOGOS
+	{
+        "Action": "EditData",
+        "Target": "Characters/Dialogue/Alex",
+        "Entries":
+        {
+		"Wed4": "吃鸡蛋！ 它们很好地补充和增强了它们，但不要滥用，特别是如果它是一个很大的鹅蛋。",
+		"Thu8": "如果我努力训练，我就能牵制一头大公牛，这是肯定的."
+        }
+	},
+	{
+        "Action": "EditData",
+        "Target": "Characters/Dialogue/Demetrius",
+        "Entries":
+		{
+            "Thu2": "种一些绿豆吗？我总是在个人食谱中使用它们。它也可以用作鹅，几内亚鸟和鸡等鸟类的饲料。",
+			"Fri8": "昨天我看到了一个罕见的标本Alphenios Ovino Petium ...我应该做更多的研究，或者尝试找到一种方法来获取更多的信息。",
+			"summer_Mon6": "这些天我看见一头紫色的猪，他绝对……很有吸引力，我想再次见到他，他似乎是个身份不明的人。",
+			"summer_Tue4": "肥料有利于生产优质水果，你用了吗？ #$b# 你甚至可以从中赚更多的钱。 如果你有一头牛，这对你来说很容易.",
+			"summer_Fri": "您在那个农场有动物吗？我对研究标本感兴趣，特别是如果它们是稀有标本的话。",
+			"fall_Sun": "“在每年的这个时候，我将注意力转向真菌。但是，观察森林使我更接近几内亚鸟这样的动物。",
+			"winter_Thu4": "我喜欢分析一些标本，如果您有任何动物产品，我想测试一些滴定度."
+        }
+    },
+	{
+        "Action": "EditData",
+        "Target": "Characters/Dialogue/Dwarf",
+        "Entries":
+        {
+			"Thu4": "我觉得这里很舒服，这里很安静，很古老，即使有你们人类的动作。#$b#早上鸭子和鹅在前面的湖里唱歌很多.",
+			"Fri8": "有时我不确定是否要到山上寻找东西，一些不同几内亚鸟的夜歌……吓到我了.",
+			"Sun6": "我想念我的文明...一个模糊的记忆是山上行走的山羊...#$b#你要买东西吗?",
+			"winter_Sun": "昨天在我的山游中看到一只山羊，它们是优雅的动物，擅长爬山.",
+			"summer_Thu6": "有时我看到一只蓝嘴鸭在池塘里游泳……我觉得他……很有趣."
+        }
+    },
+	{
+        "Action": "EditData",
+        "Target": "Characters/Dialogue/Emily",
+        "Entries":
+        {
+			"Wed2": "有时我看着蓝绿色天空，它们美丽的颜色照亮了我的一天.",
+			"Fri2": "@，您照顾动物吗？照顾动物很有趣吗？我想养一些鸡或牛，我看到玛妮，我发现她的工作很有趣。",
+			"Sun2": "我从父母那里听说他们的度假情况很好，他们甚至给我发了几内亚鸟的照片，这些几内亚鸟在他们住的酒店附近的树林中。",
+			"summer_Sat10": "今天进行得很顺利，我感到一种积极的能量，我认为我看到的鸭子在水中嬉戏，给了我很好的能量。",
+			"summer_Tue2": "在这个暖色调的时代，一根孔雀的羽毛，冷暖的颜色搭配在一起，很美你不觉得吗?$1",
+			"fall_Fri8": "Hey @, 我找到了一根金色的羽毛，看起来像一只鹅……#$b#啊，这和你有什么关系？ 我记得你像羽毛一样容光焕发.",
+			"winter_Sun6": "您听说过金鹅吗？$l#$b#这是一个我记得这几天的故事，当时我看到鹅在河里游泳...如果真的存在，那不是神奇吗？",
+			"spring_1_2": "不错，又是一年开始，又是一次迁徙归来的鸟群。#$b#今天早些时候看到一群鹅在飞，其中一只似乎有一条金色的尾巴，但我认为这只是一个印象，那么一会儿见."
+        }
+    },
+	{
+        "Action": "EditData",
+        "Target": "Characters/Dialogue/Krobus",
+        "Entries":
+        {
+			"Tue10": " ...非常感谢您来我这里，这里非常寂寞。#$e#我从没想过我会成为人类的朋友...如果您想取悦我，深色的物品通常会让我高兴。",
+			"spring_1_2": "我想告诉你我将要出售一个新产品，而你是一个很好的朋友和商人，所以我想带来新的东西。",
+			"summer_Fri2": "呃……嗯……虚空鸡很可爱不是吗?"
+        }
+    },
+	{
+        "Action": "EditData",
+        "Target": "Characters/Dialogue/Leah",
+        "Entries":
+        {
+			"Mon6": "嗨@，喜欢休息吗？您在饲养很多动物吗？玛妮有各种各样的动物，不是吗？",
+			"Tue4": "我昨天出去在森林里收集了一些东西，它真的有很多东西可以提供。#$b#野猪足迹总是帮助我找到巧克力松露.$1",
+			"Wed8": "让心灵与自然交流是件好事，你让它焕发活力，野鸭和青蛙等野生动物的声音.",
+			"Thu2": "有时下雨的时候，还能看到螃蟹从湖里出来，上岸在森林里走来走去，真的很有趣.",
+			"Fri6": "只要有可能，我就去沙龙，那里的食物很好，价格便宜，那里总是有人，我喜欢和艾米丽说话，实际上，我发现了一动物毛，我会把它给她，她必须喜欢它。",
+			"summer_Thu8": "最好早点离开屋子，看看自然，这几天中，我看到一群鹅在飞翔，其中一只似乎散发出金色的光芒，一定是个好兆头。",
+            "fall_Tue8": "这几天我出去走在森林里寻找灵感……我看到一些鹅在湖里游泳……#$b#我得到了灵感，做了一个雕塑，叫做：斜鸟.",
+			"fall_Wed2": "绿头鸭有棕色和有光泽的绿色，令人惊叹，不是吗?",
+            "winter_Fri2": "嘿，@，您听说过金鹅吗？艾米丽（Emily）去年告诉我这个故事，是我去年看到的那个奇妙的生物之一吗？"
+        }
+    },
+	{
+        "Action": "EditData",
+        "Target": "Characters/Dialogue/Leo",
+        "Entries":
+        {
+			"Mon2": "岛上有很多鸵鸟……不过很隐蔽，不太喜欢非鹦鹉的人.",
+			"Tue2": "羽毛，羽毛，羽毛，羽毛...#$b#Hm，你好@，今天早些时候我发现了一个孔雀羽毛，是不是很漂亮?.$1"
+        }
+    },
+	{
+        "Action": "EditData",
+        "Target": "Characters/Dialogue/Marnie",
+        "Entries":
+        {
+			"Mon2": "我从我的一个老熟人那里订购了我们所有的用品，他有时会过来给我介绍新的动物......但我更愿意把它留在那里，我没有足够的市场来购买一些动物，比如：美洲驼.",
+			"Mon8": "我认为照顾动物是我的血液。有人必须维持这一工作，我从不厌倦地醒来并照顾我的牛和公牛。",
+			"Mon6": "鸡是简单且要求不高的鸟类，它们的稻草饲料足以产卵.",
+			"Mon10": "我最近和 达米雷斯 进行了一次谈话，她告诉我一些小社区靠出售动物产品生存.",
+			"Tue2": "贾斯喜欢羽毛，你知道吗？用彩色羽毛和她成为朋友很容易。",	
+			"Tue4": "我一直在测试养几内亚鸟是什么感觉，他们很可爱，他们的歌声很有趣#$b#我觉得他们很可爱，还有你?",
+			"Tue6": "几内亚鸟是对他们的住房有点挑剔的鸟，一个大鸡舍是必要的。#$b#但他们的鸡蛋和蛋黄酱做得更多.",
+			"Tue8": "牛、绵羊和山羊虽然体型比较大，但它们都是简单的动物。#$b#因为它们是雄性，它们不产奶，但是它们的粪便非常适合生产肥料.",
+			"Wed2": "我一直住在农场，这个牧场属于我的父母……他们留下了照顾动物的遗产，如今我在商店里增加了更多的朋友。",			
+			"Wed4": "我喜欢异国情调的猪的创造，他们擅长寻找不同的松露，我相信一个好的厨师可以发明出将所有猪都混合在一起的美味佳肴。",
+			"Wed6": "鸭子和野鸭是要求不高的鸟类，它们需要一个大鸡舍。#$b#它们的蛋比母鸡更值钱，它们掉下的羽毛有时是很好的礼物.",
+			"Wed8": "奶牛是我最喜欢的哺乳动物。#$b#它们很可爱，很容易饲养，它们不需要太多，而且在喂饱的情况下它们的产奶量非常好.",
+			"Thu": "鹅是大型鸟类，这就是为什么它们住在谷仓而不是鸡舍里的原因。#$b#它们的蛋很大而且看起来很棒，而且它们制作的蛋黄酱很棒.",
+			"Thu2": "提示，要在卵生谷仓饲养动物，你需要一个大的育雏器。#$b#但是，你可以使用你已经拥有的鸡舍中的育雏器来孵化这个蛋，然后将新生儿转移到谷仓.",
+			"Fri": "有时我想知道我是否可以在 芬吉尔共和国畜牧业委员会找到一份工作，我在这里会很开心吗...$3#$b#钱会多很多...但我无法照顾 动物，只是文书工作...... $ 2",
+			"Sat2": "在我的店里养鹅很有趣，因为它们产下的蛋很大，对于稳定的饲料来说确实是一个不错的选择.",
+			"Sat4": "有时我和我从在同一领域工作的熟人那里买宠物，但我必须说，它们有一些副本...有点奇怪...",
+			"Sat6": "火鸡体型很大，要求很高，需要一个豪华的鸡舍。#$b#他们的鸡蛋非常有利可图.",
+			"Sat8": "山羊是要求很高的哺乳动物，但不是那么多，它们需要一个大谷仓。#$b#它们的产奶量比奶牛慢，但是，利润要高得多.",
+			"Sun2": "你知道吗，我已经看到几内亚鸟和鸡有很多共同点，你知道吗？ 他们甚至拥有较暗的品种...好吧，让我们将这些紧张的话题放在一边，为什么不停下来在我的商店买东西呢？",
+			"Sun4": "兔子是可爱但要求苛刻的动物，你需要一个豪华的鸡舍来容纳它们。#$b#它们的毛簇可以转化为织物，有时它们会留下一个特殊的毛簇，称为：兔脚。 #$b#几乎每个人都喜欢这种特殊的簇绒.",
+			"Sun6": "绵羊是非常苛刻的哺乳动物，它们需要豪华谷仓的空间。#$b#它们以一定的频率生产羊毛，您可以将羊毛纺成织物，无论是出售还是制作衣服.",
+			"Sun8": "猪是非常苛刻的哺乳动物，大地块和豪华的谷仓可以处理它。#$b#它们是伟大的松露嗅探器和挖掘者，因此需要广阔的地形，松露可以变成松露油.",
+			"summer_Mon": "昨晚我们的一头奶牛生了，看到一头赫里福德小牛，我很惊讶，它们很漂亮.",
+			"summer_Tue": "我有时会想如何照顾好一些动物。#$b#这个夏天的炎热会给它们带来很大的热应激.",
+			"fall_Wed": "你在囤干草过冬吗@？，动物们在冬天吃很多东西。#$b#哦，别忘了买一个加热器，这样它们就不会感冒了.",
+            "fall_Fri": "孔雀是大型鸟类，需要一个大谷仓，尤其是雄性。#$b#雄性产生美丽的羽毛，是很好的礼物，需要剪掉，而雌性产下的蛋可以制作出色的蛋黄酱.",
+			"fall_Sat": "达米雷斯 一直在向我推荐一些动物出售...我不知道。#$b#但无论如何，如果我决定这样做，她会帮助我处理卖家和许可证.",
+			"spring_10_2": "我的朋友达米雷斯一直在和我联系，我正在考虑开始卖一些新的动物...",
+			"winter_16_2": "你好！ 这天气很冷吧？ 希望你的动物足够温暖.$1"
+        }
+    },
+	{
+        "Action": "EditData",
+        "Target": "Characters/Dialogue/Penny",
+        "Entries":
+        {
+			"Thu8": "我喜欢阅读，占据思想是很好的，主要是想像一下在现实之外的世界中，我最近阅读：丑小鸭。",
+			"summer_Mon2": "白天，我喜欢教孩子有一个美好的未来，难的是引起他们的注意，就像鸭子在水中玩耍一样.",
+            "fall_Mon6": "最近我读了一部小说：特雷米亚的公牛。#$e#谈论爱情和克服...#$e#这是一本好书...",
+			"winter_Mon8": "最近看了一些生物书籍，惊讶于孔雀的生机勃勃."
+		}
+	},
+	{
+        "Action": "EditData",
+        "Target": "Characters/Dialogue/Sebastian",
+        "Entries":
+        {
+			"Wed10": "有时我出去看山，看过高山山羊，也许正在看东西，但我认为其中一个像黑夜一样黑，有紫水晶的黑眼睛。",
+			"Sat4": "我正在做一些编程工作，我没有灵感，但是昨晚在河里看到几内亚鸟之后，我有了很好的灵感。",
+			"Sat10": "Hi @, 好几天没听到夜里走路的笑声了，看起来像恐怖片，女巫出没村子，嗯，听起来更像是小说吧?",
+			"fall_Wed6": "互联网上有很多东西，我看了一部纪录片，讲述了各种物种以及它们有时如何适应新环境。#$b#许多可以在与原来不同的环境中新肤色.",
+			"winter_Mon8": "我一直在想这个世界上一定有什么奇怪的东西……我看到了一只看起来像鸡的鸟，然而，一双黑红的眼睛.",
+			"spring_12": "我不喜欢过节……要不是身边有朋友，我什至都不想起来，我会像泥里的猪一样躺在床上."
+		},
+	},
+	{
+        "Action": "EditData",
+        "Target": "Characters/Dialogue/Shane",
+        "Entries":
+        {
+            "summer_Tue10": "我帮我姑姑养鸡，有时我看到她正在与她谈判，其中一位商人是黑牛，他很气势。",
+			"winter_Wed6": "又是在 Joja 的一天，又是浪费在平庸的日常生活上的一天。 对我来说，生活似乎停滞了，就像一头不想起来的泥猪.",
+            "spring_1_2": "又是一年的开始，又是无用的一年，至少我肯定会看到一些商人带来的鸟，例如鹅和几内亚鸟，尤其是母鸡",
+			"fall_Sat10": "@，嗨，我希望每个人都好，因为对我来说，它就像一个无底洞，我像高山山羊一样下山。",
+			"Wed10": "有时我会错过至少稍微正确的事情。#$b#即使是蓬海德拉也比我的生活更有可能下蛋."
+        }
+    },
+	{
+        "Action": "EditData",
+        "Target": "Characters/Dialogue/Willy",
+        "Entries":
+        {
+			"Mon2": "你喜欢水族馆吗？ 他们很可爱。#$b#如果你放一块石头或海藻，它会看起来更漂亮.",
+			"Wed2": "你可以把一些非常奇怪的鱼放在水族箱里，你试过了吗？ @?",
+			"Sat2": "当你想让你的水族箱更有活力时，放一些珊瑚，它会太漂亮了.",
+			"Sun8": "我的老爸爸曾经说过，在春天的日子里，哦，赞誉的马林，我父亲的钓鱼梦...",
+			"summer_Mon": "听说森林水域有一条米长的蛇.",
+			"summer_Wed": "他们说当水变绿时，一条虫鱼可能会出现在你面前。#$b#直到今天，它都将鱼竿全部撕裂或轻松逃脱.",
+			"fall_Tue": "据说山脚下有一条奇怪的鱼，因为它的肝脏不一样.",
+			"fall_Sun": "那段时间很容易看到鱼在游，前一天看到一条金黄的绿鱼，太可爱了.$1",
+			"winter_Sat": "有一个传说告诉我，在冬天，如果你去一个像箭一样的地方，你会找到他.#$b#传说这条鱼来自北极最冷的水域，它的蓝色很深." ,
+			"spring_1_2": "我不只是最大的渔夫，但今年我会努力钓到被认为是最困难的鱼。#$b#他一定在山谷湖泊的某个地方."
+        }
+    }, 
+	{
+        "Action": "EditData",
+        "Target": "Characters/Dialogue/Wizard",
+        "Entries":
+        {
+			"Fri2": "当我认为她仅限于鸡时，她又包含了一只鸟......她在想什么？......#$b#啊，你好@，我在大声思考，你是在学习魔法知识吗？?",
+			"fall_Mon": "这次鸟类开始向南迁徙，逃离冰元素的能量...#$b#我将尝试购买一些鸭子和鹅毛来进行我的神秘仪式.",
+			"fall_Wed": "我看了你的熟人，玛妮，她卖各种动物……有些动物物品有很好的魔力.",
+			"winter_Mon": "好冷……冰系的能量流终于来了，小丑一样的鸟儿都不见了.",
+			"Sun2": "你见过皮米修斯饲养室吗，它们可以在小结构中的炎热地方孵化。#$b#在较大的结构中孵化时不要忘记放置它们.",
+			"Wed2": "(耳语) (耳语) ...也许是它的奥术能量……那个迪之蛋...#$b#Ah, @, 那是什么?",
+			"spring_1_2": "我今天看到一个Avenungansai-ouros，这个神秘的人物在很大程度上说明了他今年年初的情况",
+			"summer_20_2": "当时神秘地点的活动非常频繁，与我的商人询问验证后属于同一物种，他们发现一种松露几乎和稀有的珠宝樱桃一样甜。"
+        }
+    },
+
+// 6
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~MAPAS: MAPA E TILESET~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+	// EDIÇÃO DE MAPA//*****
+	{
+		"Action": "EditMap",
+        "Target": "Maps/BusStop",
+        "AddWarps": [
+			"-1 6 Custom_Parking 25 12",
+			"-1 7 Custom_Parking 25 13",
+			"-1 8 Custom_Parking 25 14",
+			"-1 9 Custom_Parking 25 15"
+		]
+    },
+	{
+		"Action": "EditMap",
+        "Target": "Maps/Backwoods",
+        "AddWarps": [
+			"49 28 Custom_Parking 0 12",
+			"49 29 Custom_Parking 0 12",
+			"49 30 Custom_Parking 0 13",
+			"49 31 Custom_Parking 0 14",
+			"49 32 Custom_Parking 0 14"
+		]
+    },
+	{
+		"Action": "EditMap",
+		"Target": "Maps/Custom_Parking",
+		"FromFile": "assets/Maps/TrafficCone.tbin",
+		"ToArea": { "X": 24, "Y": 10, "Width": 1, "Height": 2 },
+		"PatchMode": "Overlay",
+		"When": {
+			"DayOfWeek": "Monday, Tuesday, Thursday, Friday"
+		}
+	},
+	{
+		"Action": "EditMap",
+		"Target": "Maps/Custom_Parking",
+		"FromFile": "assets/Maps/WallCone.tbin",
+		"ToArea": { "X": 20, "Y": 5, "Width": 4, "Height": 7 },
+		"PatchMode": "Overlay",
+		"When": {
+			"DayOfWeek": "Monday, Tuesday, Thursday, Friday"
+		}
+	},
+	{
+		"Action": "EditMap",
+		"Target": "Maps/Custom_Parking",
+		"FromFile": "assets/Maps/RemoveCone.tbin",
+		"ToArea": { "X": 4, "Y": 4, "Width": 2, "Height": 4 },
+		"When": {
+			"DayOfWeek": "Monday, Tuesday, Thursday, Friday"
+		}
+	},
+	{
+		"Action": "EditMap",
+		"Target": "Maps/Beach",
+		"FromFile": "assets/Maps/Harbor.tbin",
+		"ToArea": { "X": 35, "Y": 37, "Width": 1, "Height": 1 },
+		"When": {
+			"DayOfWeek": "Thursday, Friday, Saturday"
+		}
+	},
+	{
+		"Action": "EditMap",
+		"Target": "Maps/Beach",
+		"FromFile": "assets/Maps/OscarShip.tbin",
+		"ToArea": { "X": 24, "Y": 37, "Width": 14, "Height": 7 },
+		"PatchMode": "Overlay",
+		"When": {
+			"DayOfWeek": "Thursday, Friday, Saturday"
+		}
+	},
+	{
+		"Action": "EditMap",
+		"Target": "Maps/Beach",
+		"FromFile": "assets/Maps/RoofShip.tbin",
+		"ToArea": { "X": 29, "Y": 36, "Width": 6, "Height": 2 },
+		"PatchMode": "Overlay",
+		"When": {
+			"DayOfWeek": "Thursday, Friday, Saturday"
+		}
+	},
+	{
+		"Action": "EditMap",
+		"Target": "Maps/Beach",
+		"FromFile": "assets/Maps/Floater.tbin",
+		"ToArea": { "X": 24, "Y": 38, "Width": 14, "Height": 6 },
+		"PatchMode": "Overlay",
+		"When": {
+			"DayOfWeek": "Monday, Tuesday, Wednesday, Sunday"
+		}
+	},
+	{
+		"Action": "EditMap",
+		"Target": "Maps/Town",
+		"FromFile": "assets/Maps/LewisVehicleRemove.tbin",
+		"ToArea": { "X": 65, "Y": 79, "Width": 4, "Height": 7 },
+	},
+	{
+		"Action": "EditMap",
+		"Target": "Maps/Town-Christmas",
+		"FromFile": "assets/Maps/LewisVehicleRemoveChristmas.tbin",
+		"ToArea": { "X": 65, "Y": 79, "Width": 4, "Height": 7 },
+	},
+	{
+		"Action": "EditMap",
+		"Target": "Maps/Town-EggFestival",
+		"FromFile": "assets/Maps/LewisVehicleRemoveEggFestival.tbin",
+		"ToArea": { "X": 65, "Y": 79, "Width": 4, "Height": 7 },
+	},
+	{
+		"Action": "EditMap",
+		"Target": "Maps/Town-Fair",
+		"FromFile": "assets/Maps/LewisVehicleRemoveFair.tbin",
+		"ToArea": { "X": 65, "Y": 79, "Width": 4, "Height": 7 },
+	},
+	
+	// TILESHEETS
+	{
+		"Action": "Load",
+		"Target": "Maps/vehicle_z",
+		"FromFile": "assets/Tilesheets/vehicle_z.png",
+	},
+	{
+		"Action": "Load",
+		"Target": "Maps/ShipHouse_z",
+		"FromFile": "assets/Tilesheets/ShipHouse_z.png",
+	},
+	]
+}

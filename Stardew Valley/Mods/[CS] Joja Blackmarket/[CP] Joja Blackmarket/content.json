@@ -1,0 +1,186 @@
+{
+"Format": "1.19.0",
+   
+   
+  "ConfigSchema": { 
+  
+		"MorrisAfterCC": {"AllowValues": "True, False",
+		"Description": "Morris will man the blackmarket shop if the community center has been completed. Set to 'False' if Morris is doing something else.",
+		"Default": "True"},
+		
+		"Show Vendor": {"AllowValues": "True, False",
+		"Description": "Show either a Joja employee or Morris as the shop vendor. Set to 'False' to use an NPC instead.",
+		"Default": "True"},
+  },
+   
+   "Changes": [
+    
+	{
+         "Action": "EditMap",
+         "Target": "Maps/Tunnel",
+         
+		 "FromFile": "assets/Tunnel_JojaMarket.tmx",
+            "FromArea": {
+                "X": 24,
+                "Y": 6,
+                "Width": 4,
+                "Height": 2,
+            },
+            "ToArea": {
+                "X": 24,
+                "Y": 6,
+                "Width": 4,
+                "Height": 2,
+            },
+			
+			"When": { "IsCommunityCenterComplete": "False", "Show Vendor": "True", },
+	},
+		
+	{
+         "Action": "EditMap",
+         "Target": "Maps/Tunnel",
+         
+		 "FromFile": "assets/Tunnel_JojaMarket.tmx", 
+            "FromArea": {
+                "X": 24,
+                "Y": 6,
+                "Width": 4,
+                "Height": 2,
+            },
+            "ToArea": {
+                "X": 24,
+                "Y": 6,
+                "Width": 4,
+                "Height": 2,
+            },
+			
+			"When": { "MorrisAfterCC": "False", "Show Vendor": "True", },
+	},
+		
+	{
+         "Action": "EditMap",
+         "Target": "Maps/Tunnel",
+         
+		 "FromFile": "assets/Tunnel_JojaMarket_Morris.tmx",
+            "FromArea": {
+                "X": 24,
+                "Y": 6,
+                "Width": 4,
+                "Height": 2,
+            },
+            "ToArea": {
+                "X": 24,
+                "Y": 6,
+                "Width": 4,
+                "Height": 2,
+            },
+		
+			"When": {
+				"IsCommunityCenterComplete": "True",
+				"MorrisAfterCC": "True", 
+				"Show Vendor": "True",
+			},
+	},
+	
+	{
+         "Action": "EditMap",
+         "Target": "Maps/Tunnel",
+         
+		 "FromFile": "assets/Tunnel_JojaMarket.tmx", 
+            "FromArea": {
+                "X": 25,
+                "Y": 6,
+                "Width": 3,
+                "Height": 2,
+            },
+            "ToArea": {
+                "X": 25,
+                "Y": 6,
+                "Width": 3,
+                "Height": 2,
+            },
+			
+			"When": { "Show Vendor": "False", },
+	},
+	
+	
+	{ 
+	
+	"Action": "EditData",
+	"Target": "Data/Events/Farm",
+
+	"Entries": {
+		
+		"26437666/e 191393/A cc_Complete/x blackmarket_Invite_Letter": "null",
+		
+			}
+	},
+	
+	
+	{
+        "Action": "EditData",
+        "Target": "data/mail",
+		
+        "Entries": {
+				
+			"blackmarket_Invite_Letter": "^^^    When you realize what you're missing, visit me in the tunnel.%item conversationTopic blackmarketpostCC 7 %%[#]Suspicious Note",
+			
+			}
+	},
+	
+	{ 
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Lewis",
+		"Entries": { "blackmarketpostCC": "@, you haven't seen any... shady characters around, have you?#$b#No, no, nothing you need to be concerned about.#$b#Just a little matter of tax evasion...$3", }
+	},
+	
+	{ 
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Pierre",
+		"Entries": { "blackmarketpostCC": "With Joja's inferior goods off the market, it's time for Pierre's to shine!$h", }
+	},
+	
+	{ 
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Pam",
+		"Entries": { "blackmarketpostCC": "You ever walk down the road a ways, kid?#$b#Thought I saw someone down the tunnel, hiding in the dark.$4#$b#Maybe Penny's right and I should take a night off from the saloon...$2", }
+	},
+	
+	{ 
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Willy",
+		"Entries": { "blackmarketpostCC": "These are normally quiet waters, but there's been a boat coming in at odd hours lately.#$b#What kind of cargo could they be carrying?$2", }
+	},
+	
+	{ 
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Sebastian",
+		"Entries": { "blackmarketpostCC": "I saw a Joja truck on the highway near town last night.#$b#I didn't think there was another JojaMart anywhere near here though.#$b#Maybe someone looted it from the abandoned parking lot.", }
+	},
+	
+	{ 
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Kent",
+		"Entries": { "blackmarketpostCC": "You seem like a decent person, @, so I'm going to warn you.#$b#Don't get mixed up in anything shady, even if it seems like no one's getting hurt.#$b#You never know what's hiding behind the scenes.$2", }
+	},
+	
+	{ 
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Sam",
+		"Entries": { "blackmarket_postCC": "Man, I'm going to miss those sweet Joja berries.$10#$b#Do you think they're still available anywhere?$10", }
+	},
+	
+	{ 
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Krobus",
+		"Entries": { "blackmarketpostCC": "There have been people passing through the sewers lately.$3#$b#I do not know who they were, but they had many large blue boxes with them.#3", }
+	},
+	
+	{ 
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Shane",
+		"Entries": { "blackmarketpostCC": "Regrets about Joja closing? Ha!$1#$b#Just one. We had a list of these really awful recipes in the breakroom.#$b#Absolutely terrible stuff, but some of them really packed a kick.#$b#Sam swore by this one purple drink. Looked disgusting.$1", }
+	},
+		
+ ]
+}

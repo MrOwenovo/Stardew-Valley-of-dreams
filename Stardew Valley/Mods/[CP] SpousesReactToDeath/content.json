@@ -1,0 +1,437 @@
+{
+    "Format": "1.19.0",
+    "ConfigSchema": {
+        "ExInvolvement": {
+            "AllowValues": "true, false",
+            "Default": "true",
+            "Description": "When not remarried, allows ex-spouse to visit hospital after player 'death' for extra cutscene."
+            },
+        },
+    "DynamicTokens": [
+        {
+            "Name": "SpouseName",
+            "Value": "default"
+        },
+        {
+            "Name": "SpouseName",
+            "Value": "{{Spouse}}",
+            "When": {
+                "Spouse": "Shane, Sam, Abigail, Leah, Elliott, Alex, Haley, Sebastian, Emily, Maru, Penny, Harvey, Olivia, Victor, Claire, Sophia, Wizard, Krobus, Willy, Pam, Clint"
+            }
+        },
+        {
+            "Name": "ExSpouse",
+            "Value": "Abigail",
+            "When": {
+                "Relationship:Abigail": "Divorced"
+                },
+        },
+        {
+            "Name": "ExSpouse",
+            "Value": "Sam",
+            "When": {
+                "Relationship:Sam": "Divorced"
+                },
+        },
+        {
+            "Name": "ExSpouse",
+            "Value": "Sebastian",
+            "When": {
+                "Relationship:Sebastian": "Divorced"
+                },
+        },
+        {
+            "Name": "ExSpouse",
+            "Value": "Harvey",
+            "When": {
+                "Relationship:Harvey": "Divorced"
+                },
+        },
+        {
+            "Name": "ExSpouse",
+            "Value": "Elliott",
+            "When": {
+                "Relationship:Elliott": "Divorced"
+                },
+        },
+        {
+            "Name": "ExSpouse",
+            "Value": "Shane",
+            "When": {
+                "Relationship:Shane": "Divorced"
+                },
+        },
+        {
+            "Name": "ExSpouse",
+            "Value": "Leah",
+            "When": {
+                "Relationship:Leah": "Divorced"
+                },
+        },
+        {
+            "Name": "ExSpouse",
+            "Value": "Emily",
+            "When": {
+                "Relationship:Emily": "Divorced"
+                },
+        },
+        {
+            "Name": "ExSpouse",
+            "Value": "Haley",
+            "When": {
+                "Relationship:Haley": "Divorced"
+                },
+        },
+        {
+            "Name": "ExSpouse",
+            "Value": "Alex",
+            "When": {
+                "Relationship:Alex": "Divorced"
+                },
+        },
+        {
+            "Name": "ExSpouse",
+            "Value": "Maru",
+            "When": {
+                "Relationship:Maru": "Divorced"
+                },
+        },
+        {
+            "Name": "ExSpouse",
+            "Value": "Penny",
+            "When": {
+                "Relationship:Penny": "Divorced"
+                },
+        },
+        {
+            "Name": "ExSpouse",
+            "Value": "Victor",
+            "When": {
+                "Relationship:Victor": "Divorced"
+                },
+        },
+        {
+            "Name": "ExSpouse",
+            "Value": "Olivia",
+            "When": {
+                "Relationship:Olivia": "Divorced"
+                },
+        },
+        {
+            "Name": "ExSpouse",
+            "Value": "Claire",
+            "When": {
+                "Relationship:Claire": "Divorced"
+                },
+        },
+        {
+            "Name": "ExSpouse",
+            "Value": "Sophia",
+            "When": {
+                "Relationship:Sophia": "Divorced"
+                },
+        },
+        {
+            "Name": "ExSpouse",
+            "Value": "Wizard",
+            "When": {
+                "Relationship:Wizard": "Divorced"
+                },
+        },
+        {
+            "Name": "ExSpouse",
+            "Value": "Willy",
+            "When": {
+                "Relationship:Willy": "Divorced"
+                },
+        },
+        {
+            "Name": "ExSpouse",
+            "Value": "Pam",
+            "When": {
+                "Relationship:Pam": "Divorced"
+                },
+        },
+        {
+            "Name": "ExSpouse",
+            "Value": "Clint",
+            "When": {
+                "Relationship:Clint": "Divorced"
+                },
+        },
+    ],
+    "Changes": [
+//Hospitaldeath Events
+    {       //Hospital Death- All spouses
+            "LogName": "Player 'Killed'- All Spouses",
+            "Action": "EditData",
+            "Target": "Data/Events/Hospital",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 20 12 2 Harvey 21 12 3 {{Spouse}} 22 8 2/skippable/pause 1500/showFrame 5/message \"{{i18n:PlayerKilled.doctor.01}}\"/pause 1000/message \"{{i18n:PlayerKilled.doctor.02}}\"/viewport 20 12 true/pause 1000/speak Harvey \"{{i18n:PlayerKilled.doctor.03}}\"/speed {{Spouse}} 5/move {{Spouse}} 0 3 2/textAboveHead {{Spouse}} \"{0}!\"/emote farmer 16/move {{Spouse}} -1 0 2/faceDirection farmer 1/move Harvey 1 0 3/move {{Spouse}} 0 1 3/speak {{Spouse}} \"{{i18n:PlayerKilled.{{SpouseName}}.04}}\"/emote farmer 60/pause 500/speak {{Spouse}} \"{{i18n:PlayerKilled.{{SpouseName}}.05}}\"/emote {{Spouse}} 40/pause 1500/emote farmer 28/pause 500/pause 500/speak Harvey \"{{i18n:PlayerKilled.doctor.06}}\"/pause 500/speak Harvey \"{{i18n:PlayerKilled.doctor.07}}\"/pause 500/move Harvey 0 -4 0/move Harvey -8 0 0 true/move Harvey 0 -1 0/move Harvey -4 0 0/move Harvey 0 -1 0/playSound doorClose/warp Harvey -100 -100/pause 500/faceDirection {{Spouse}} 3/speak {{Spouse}} \"{{i18n:PlayerKilled.{{SpouseName}}.08}}\"/faceDirection farmer 2/pause 1000/emote farmer 28/hospitaldeath/end dialogue {{Spouse}} \"{{i18n:HospitalEnd.{{SpouseName}}.01}}#$c 0.7#{{i18n:HospitalEnd.{{SpouseName}}.02}}\"",  
+            },
+            "When": {
+                "Spouse": "{{Spouse}}, default"
+            },
+         },
+    {       //Hospital death- Elliott on tour
+            "LogName": "Player 'Killed'-ElliottGone",
+            "Action": "EditData",
+            "Target": "Data/Events/Hospital",
+            "Entries": {
+		        "PlayerKilled": "none/-100 -100/farmer 20 12 2 Harvey 21 12 3/skippable/pause 1500/showFrame 5/message \"{{i18n:PlayerKilled.doctor.01}}\"/pause 1000/message \"{{i18n:PlayerKilled.doctor.02}}\"/viewport 20 12 true/pause 1000/speak Harvey \"{{i18n:PlayerKilled.doctor.03}}\"/emote farmer 16/faceDirection farmer 1/pause 500/speak Harvey \"{{i18n:PlayerKilled.doctor.05}}\"/pause 500/speak Harvey \"Elliott was prepared to drop everything and return home to you...$2\"/pause 500/emote farmer 60/pause 1000/speak Harvey \"{{i18n:PlayerKilled.doctor.06}}\"/pause 500/speak Harvey \"Well, if you're feeling alright, you can go home. Elliott said he would write you a letter soon, so keep an eye on your mail.\"/textAboveHead Harvey \"Take care!\"/move Harvey 1 0 0/move Harvey 0 -4 0/move Harvey -8 0 0 true/move Harvey 0 -1 0/move Harvey -4 0 0/move Harvey 0 -1 0/playSound doorClose/warp Harvey -100 -100/emote farmer 40/pause 500/message \"I feel well enough to return home, but...\"/pause 1000/emote farmer 28/message \"At a time like this, I miss Elliott more than ever.\"/mail ElliottReactionHospital/hospitaldeath/end",
+            },
+            "When": {
+                "HasConversationtopic": "elliottGone"
+            }
+         },
+    {        //Hospital death- Harvey
+            "LogName": "Player 'Killed'- Harvey",
+            "Action": "EditData",
+            "Target": "Data/Events/Hospital",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 20 12 2 Harvey 21 9 2/skippable/pause 1500/showFrame 5/message \"{{i18n:PlayerKilled.{{SpouseName}}.01}}\"/pause 1000/message \"{{i18n:PlayerKilled.{{SpouseName}}.02}}\"/viewport 20 12 true/pause 1000/speak Harvey \"{{i18n:PlayerKilled.{{SpouseName}}.03}}\"/move {{Spouse}} 1 0 2/move {{Spouse}} 0 3 3/faceDirection farmer 1/textAboveHead {{Spouse}} \"My goodness, look at you...\"/move Harvey -1 0 3/pause 1500/speak {{Spouse}} \"{{i18n:PlayerKilled.{{SpouseName}}.04}}\"/emote farmer 16/pause 500/speak {{Spouse}} \"{{i18n:PlayerKilled.{{SpouseName}}.05}}\"/emote {{Spouse}} 40/pause 1500/emote farmer 28/pause 500/pause 500/speak Harvey \"{{i18n:PlayerKilled.{{SpouseName}}.06}}\"/pause 500/speak Harvey \"{{i18n:PlayerKilled.{{SpouseName}}.07}}\"/pause 500/move Harvey 1 0 0/move Harvey 0 -4 0/pause 500/faceDirection {{Spouse}} 3/speak {{Spouse}} \"{{i18n:PlayerKilled.{{SpouseName}}.08}}\"/move Harvey -8 0 0 true/move Harvey 0 -1 0/move Harvey -4 0 0/move Harvey 0 -1 0/playSound doorClose/warp Harvey -100 -100/faceDirection farmer 2/pause 1000/emote farmer 28/hospitaldeath/end dialogue {{Spouse}} \"{{i18n:HospitalEnd.{{SpouseName}}.01}}#$c 0.7#{{i18n:HospitalEnd.{{SpouseName}}.02}}\"",
+            },
+            "When": {
+                "Spouse": "Harvey"
+            }
+         },
+    {       //Hospital death- Maru
+            "LogName": "Player 'Killed'- Maru",
+            "Action": "EditData",
+            "Target": "Data/Events/Hospital",
+            "Entries": {
+		        "PlayerKilled": "none/-100 -100/farmer 20 12 2 Harvey 21 12 3 Maru 22 8 2/skippable/pause 1500/showFrame 5/message \"{{i18n:PlayerKilled.doctor.01}}\"/pause 1000/message \"{{i18n:PlayerKilled.doctor.02}}\"/viewport 20 12 true/pause 1000/speak Harvey \"{{i18n:PlayerKilled.doctor.04}}\"/move {{Spouse}} 0 3 2/textAboveHead {{Spouse}} \"I'm coming in, {0}!\"/emote farmer 16/move {{Spouse}} -1 0 2/faceDirection farmer 1/move Harvey 1 0 3/move {{Spouse}} 0 1 3/speak {{Spouse}} \"{{i18n:PlayerKilled.Maru.04}}\"/emote farmer 60/pause 500/speak {{Spouse}} \"{{i18n:PlayerKilled.Maru.05}}\"/emote {{Spouse}} 40/pause 1500/emote farmer 28/pause 500/pause 500/speak Harvey \"{{i18n:PlayerKilled.doctor.08}}\"/pause 500/speak Harvey \"{{i18n:PlayerKilled.doctor.09}}\"/pause 500/faceDirection {{Spouse}} 1/textAboveHead {{Spouse}} \"...Thanks, Doc.\"/move Harvey 0 -4 0/move Harvey -8 0 0 true/faceDirection {{Spouse}} 3/move Harvey 0 -1 0/move Harvey -4 0 0/move Harvey 0 -1 0/playSound doorClose/warp Harvey -100 -100/pause 500/speak {{Spouse}} \"{{i18n:PlayerKilled.{{SpouseName}}.08}}\"/faceDirection farmer 2/pause 500/speak Maru \"{{i18n:PlayerKilled.Maru.09}}\"/pause 1000/emote farmer 28/hospitaldeath/end dialogue {{Spouse}} \"{{i18n:HospitalEnd.{{SpouseName}}.01}}#$c 0.7#{{i18n:HospitalEnd.{{SpouseName}}.02}}\"",
+            },
+            "When": {
+                "Spouse": "Maru"
+            }
+         }, 
+    {       //Ex-Spouse Events
+            "LogName": "Player 'Killed'- Ex-Spouse",
+            "Action": "EditData",
+            "Target": "Data/Events/Hospital",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 20 12 2 Harvey 21 12 3 {{ExSpouse}} 22 8 2/skippable/pause 1500/showFrame 5/message \"{{i18n:PlayerKilled.doctor.01}}\"/pause 1000/message \"{{i18n:PlayerKilled.doctor.02}}\"/viewport 20 12 true/pause 1000/speak Harvey \"{{i18n:PlayerKilled.doctor.03}}\"/faceDirection farmer 1/emote farmer 16/pause 500/speak Harvey \"{{i18n:PlayerKilled.doctor.06}}\"/pause 500/emote Harvey 40/pause 500/faceDirection Harvey 0/faceDirection Harvey 3/pause 500/speak Harvey \"{{i18n:PlayerKilled.doctor.10}}\"/move Harvey 1 0 1/move Harvey 0 -3 0/pause 1000/speak Harvey \"{{i18n:PlayerKilled.doctor.11}}\"/pause 500/speak {{ExSpouse}} \"{{i18n:PlayerKilled.{{ExSpouse}}.20}}\"/pause 500/textAboveHead Harvey \"Alright. Take care.\"/move Harvey -7 0 0 true/move Harvey 0 -4 0/warp Harvey -100 -100/move {{ExSpouse}} 0 4 3/emote farmer 16/faceDirection {{ExSpouse}} 3/pause 1000/speak {{ExSpouse}} \"{{i18n:PlayerKilled.{{ExSpouse}}.21}}\"/emote farmer 16/pause 1000/speak {{ExSpouse}} \"{{i18n:PlayerKilled.{{ExSpouse}}.22}}\"/pause 500/move {{ExSpouse}} 0 -4 0/move {{ExSpouse}} -8 0 0/move {{ExSpouse}} 0 -3 0/warp {{ExSpouse}} -100 -100/emote farmer 28/hospitaldeath/end dialogue {{ExSpouse}} \"{{i18n:DivorcedEnd.{{ExSpouse}}.01}}\"",
+            },        
+            "When": {
+                "ExInvolvement": "true",
+                "HasValue:{{spouse}}": "false",
+                "HasValue:{{ExSpouse}}": "true",
+                "query: '{{ExSpouse}}' NOT IN ('Harvey')": true
+            }
+         },
+    {       //Ex-Spouse Event- Harvey
+            "LogName": "Player 'Killed'- Ex Harvey",
+            "Action": "EditData",
+            "Target": "Data/Events/Hospital",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 20 12 2 Harvey 21 12 3/skippable/pause 1500/showFrame 5/message \"{{i18n:PlayerKilled.doctor.01}}\"/pause 1000/message \"{{i18n:PlayerKilled.doctor.02}}\"/viewport 20 12 true/pause 1000/speak Harvey \"{{i18n:PlayerKilled.doctor.03}}\"/faceDirection farmer 1/emote farmer 16/pause 1000/speak Harvey \"{{i18n:PlayerKilled.doctor.06}}\"/pause 500/emote Harvey 40/pause 500/faceDirection Harvey 0/faceDirection Harvey 3/pause 500/speak Harvey \"{{i18n:PlayerKilled.Harvey.20}}\"/move Harvey 1 0 1/pause 1000/speak Harvey \"{{i18n:PlayerKilled.Harvey.21}}\"/move Harvey 0 -4 0/move Harvey -8 0 0 true/move Harvey 0 -3 0/warp Harvey -100 -100/pause 500/message \"I'd better return home and rest...\"/emote farmer 28/hospitaldeath/end dialogue Harvey \"{{i18n:DivorcedEnd.Harvey.01}}\"",
+            },
+                "When": {
+                "ExInvolvement": "true",
+                "HasValue:{{spouse}}": "false",
+                "query: '{{ExSpouse}}' IN ('Harvey')": true
+            }
+         },
+     {       //Hospital death- Krobus
+            "LogName": "Player 'Killed'- Krobus",
+            "Action": "EditData",
+            "Target": "Data/Events/Hospital",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 20 12 2 Harvey 21 12 3 Krobus -50 -50 2/skippable/pause 1500/showFrame 5/message \"{{i18n:PlayerKilled.doctor.01}}\"/pause 1000/message \"{{i18n:PlayerKilled.doctor.02}}\"/viewport 20 12 true/pause 1000/speak Harvey \"{{i18n:PlayerKilled.doctor.03}}\"/faceDirection farmer 1/emote farmer 16/pause 500/speak Harvey \"{{i18n:PlayerKilled.doctor.06}}\"/pause 500/move Harvey 1 0 1/textAboveHead Harvey \"Take care.\"/move Harvey 0 -4 0/move Harvey -8 0 0 true/move Harvey 0 -1 0/move Harvey -4 0 0/move Harvey 0 -1 0/playSound doorClose/warp Harvey -100 -100/pause 1500/warp Krobus 21 7 2/playSound dwop/move Krobus -1 0 0/pause 500/speed Krobus 5/move Krobus 0 2 1/speed Krobus 5/move Krobus 2 0 3/speed Krobus 5/move Krobus 0 3 3/jump farmer/emote farmer 16/move farmer 1 0 1/pause 500/speak Krobus \"{{i18n:PlayerKilled.Krobus.01}}\"/pause 500/emote farmer 60/speak Krobus \"{{i18n:PlayerKilled.Krobus.02}}\"/pause 500/faceDirection Krobus 0/faceDirection Krobus 3/pause 500/speak Krobus \"{{i18n:PlayerKilled.Krobus.03}}\"/emote farmer 28/pause 500/hospitaldeath/end dialogue Krobus \"{{i18n:HospitalEnd.Krobus.01}}#$c 0.7#{{i18n:HospitalEnd.Krobus.02}}\"",
+            },      
+            "When": {
+                "Spouse": "Krobus",
+                "DayOfWeek": "Monday, Tuesday, Wednesday, Thursday, Saturday, Sunday"
+            }
+         },
+     {       //Hospital death- Krobus Friday
+            "LogName": "Player 'Killed'- Krobus Friday",
+            "Action": "EditData",
+            "Target": "Data/Events/Hospital",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 20 12 2 Harvey 21 12 3 Krobus -50 -50 2/skippable/pause 1500/showFrame 5/message \"{{i18n:PlayerKilled.doctor.01}}\"/pause 1000/message \"{{i18n:PlayerKilled.doctor.02}}\"/viewport 20 12 true/pause 1000/speak Harvey \"{{i18n:PlayerKilled.doctor.03}}\"/faceDirection farmer 1/emote farmer 16/pause 500/speak Harvey \"{{i18n:PlayerKilled.doctor.06}}\"/pause 500/move Harvey 1 0 1/textAboveHead Harvey \"Take care.\"/move Harvey 0 -4 0/move Harvey -8 0 0 true/move Harvey 0 -1 0/move Harvey -4 0 0/move Harvey 0 -1 0/playSound doorClose/warp Harvey -100 -100/pause 1500/warp Krobus 21 7 2/playSound dwop/move Krobus -1 0 0/pause 500/speed Krobus 5/move Krobus 0 2 1/speed Krobus 5/move Krobus 2 0 3/speed Krobus 5/move Krobus 0 3 3/jump farmer/emote farmer 16/move farmer 1 0 1/pause 500/speak Krobus \"{{i18n:PlayerKilled.Krobus.04}}\"/pause 500/emote Krobus 16/speak Krobus \"{{i18n:PlayerKilled.Krobus.05}}\"/pause 500/message \"Krobus seems shocked by his own voice... that's right! Today is Friday.\"/emote farmer 16/pause 500/speak Krobus \"{{i18n:PlayerKilled.Krobus.06}}\"/message \"Krobus doesn't say anything, but he looks like there's a lot weighing on him. I'd better be careful next time, if only for his sake.\"/pause 500/hospitaldeath/end dialogue Krobus \"{{i18n:HospitalEnd.Krobus.03}}#$c 0.7#{{i18n:HospitalEnd.Krobus.04}}\"",
+            },      
+            "When": {
+                "Spouse": "Krobus",
+                "DayOfWeek": "Friday"
+            }
+         },
+//Minedeath Events
+    {       //Mine death with courageous spouse
+	        "LogName": "KO Mines- Married Group A",
+            "Action": "EditData",
+            "Target": "Data/Events/Mine",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 20 10 2 {{Spouse}} 19 10 1 Marlon 18 10 3/skippable/pause 1500/showFrame 5/message \" ...{2}?\"/pause 1000/message \" Darling, wake up!\"/viewport 19 10 true/pause 1500/speak {{Spouse}} \"{{i18n:MineKilled.{{SpouseName}}.01}}\"/pause 500/emote farmer 40/pause 500/faceDirection farmer 1/faceDirection farmer 3/pause 500/emote farmer 8/pause 1000/speak {{Spouse}} \"{{i18n:MineKilled.{{SpouseName}}.02}}\"/pause 1000/speak Marlon \"{{i18n:MineKilled.Marlon.03}}\"/emote {{Spouse}} 16/pause 500/speak {{Spouse}} \"{{i18n:MineKilled.{{SpouseName}}.04}}\"/pause 1000/speak Marlon \"{{i18n:MineKilled.Marlon.05}}\"/pause 500/move Marlon 0 0 1/pause 500/faceDirection Marlon 3/speak Marlon \"{{i18n:MineKilled.Marlon.06}}\"/pause 500/textAboveHead Marlon \"Farewell.\"/move Marlon 0 4 0/warp Marlon -100 -100/pause 1500/speak {{Spouse}} \"{{i18n:MineKilled.{{SpouseName}}.07}}\"/pause 500/emote farmer 20/faceDirection farmer 2/showFrame 0/pause 500/minedeath/end dialogue {{Spouse}} \"{{i18n:MineEnd.{{SpouseName}}.01}}#$c 0.7#{{i18n:MineEnd.{{SpouseName}}.02}}\"",
+    		},
+		    "When": {
+		        "Spouse": "Shane, Sam, Abigail, Alex, Sebastian, Emily, Maru, Victor, Clint"
+		    }
+	     },
+    {       //Mine death with compassionate spouse
+	        "LogName": "KO Mines- Married Group B",
+            "Action": "EditData",
+            "Target": "Data/Events/Mine",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 20 10 2 {{Spouse}} 19 10 1 Marlon 18 10 3/skippable/pause 1500/showFrame 5/message \" ...{2}?\"/pause 1000/message \" Darling, wake up!\"/viewport 19 10 true/pause 1500/speak {{Spouse}} \"{{i18n:MineKilled.{{SpouseName}}.01}}\"/pause 500/emote farmer 40/pause 500/faceDirection farmer 1/faceDirection farmer 3/pause 500/emote farmer 8/pause 1000/speak {{Spouse}} \"{{i18n:MineKilled.{{SpouseName}}.02}}\"/pause 1000/speak Marlon \"{{i18n:MineKilled.Marlon.07}}\"/emote {{Spouse}} 16/pause 500/speak {{Spouse}} \"{{i18n:MineKilled.{{SpouseName}}.04}}\"/pause 1000/speak Marlon \"{{i18n:MineKilled.Marlon.08}}\"/pause 500/move Marlon 0 0 1/pause 500/faceDirection Marlon 3/speak Marlon \"{{i18n:MineKilled.Marlon.06}}\"/pause 500/textAboveHead Marlon \"Farewell.\"/move Marlon 0 4 0/warp Marlon -100 -100/pause 1500/speak {{Spouse}} \"{{i18n:MineKilled.{{SpouseName}}.07}}\"/pause 500/emote farmer 20/faceDirection farmer 2/showFrame 0/pause 500/minedeath/end dialogue {{Spouse}} \"{{i18n:MineEnd.{{SpouseName}}.01}}#$c 0.7#{{i18n:MineEnd.{{SpouseName}}.02}}\"",
+                        },
+		    "When": {
+		        "Spouse": "Leah, Elliott, Harvey, Haley, Penny, Olivia, Claire, Sophia, Willy, Pam"
+		    }
+         },
+    {       //Mine death with generic spouse
+	        "LogName": "KO Mines- Married Default",
+            "Action": "EditData",
+            "Target": "Data/Events/Mine",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 20 10 2 {{Spouse}} 19 10 1 Marlon 18 10 3/skippable/pause 1500/showFrame 5/message \" ...{2}?\"/pause 1000/message \" Darling, wake up!\"/viewport 19 10 true/pause 1500/speak {{Spouse}} \"{{i18n:MineKilled.{{SpouseName}}.01}}\"/pause 500/emote farmer 40/pause 500/faceDirection farmer 1/faceDirection farmer 3/pause 500/emote farmer 8/pause 1000/speak {{Spouse}} \"{{i18n:MineKilled.{{SpouseName}}.02}}\"/pause 1000/speak Marlon \"{{i18n:MineKilled.Marlon.04}}\"/pause 500/move Marlon 0 0 1/pause 500/faceDirection Marlon 3/speak Marlon \"{{i18n:MineKilled.Marlon.06}}\"/pause 500/textAboveHead Marlon \"Farewell.\"/move Marlon 0 4 0/warp Marlon -100 -100/pause 1500/speak {{Spouse}} \"{{i18n:MineKilled.{{SpouseName}}.07}}\"/pause 500/emote farmer 20/faceDirection farmer 2/showFrame 0/pause 500/minedeath/end dialogue {{Spouse}} \"{{i18n:MineEnd.{{SpouseName}}.01}}#$c 0.7#{{i18n:MineEnd.{{SpouseName}}.02}}\"",
+    		},
+		    "When": {
+                "HasValue: {{spouse}}": "true",
+		        "query: '{{Spouse}}' NOT IN ('{{SpouseName}}')": true
+		    }
+	     },
+    {       //Mine death- Elliott on tour
+	        "LogName": "KO Mines- ElliottGone",
+            "Action": "EditData",
+            "Target": "Data/Events/Mine",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 19 10 2 Marlon 18 10 3/skippable/pause 1500/showFrame 5/message \" ...{2}?\"/pause 1000/message \"Open your eyes, {2}.\"/viewport 19 10 true/pause 1500/speak Marlon \"{{i18n:MineKilled.Marlon.01}}\"/pause 500/emote farmer 40/pause 500/faceDirection farmer 1/faceDirection farmer 3/pause 500/emote farmer 8/pause 1000/speak Marlon \"{{i18n:MineKilled.Marlon.02}}\"/pause 500/speak Marlon \"{{i18n:MineKilled.Marlon.09}}\"/faceDirection Marlon 2/pause 500/speak Marlon \"{{i18n:MineKilled.Marlon.10}}\"/emote farmer 16/pause 500/textAboveHead Marlon \"Farewell.\"/move Marlon 0 4 0/warp Marlon -100 -100/pause 1500/message \"I do feel exhausted, but not terribly injured, as he said.\"/message \"Hopefully, that will be enough to reassure Elliott, wherever he is now...\"/mail ElliottReactionMine/minedeath/end",
+    		},
+		    "When": {
+		        "HasConversationtopic":"elliottGone"
+		    }
+	     },
+    {       //Mine death Krobus Friday
+	        "LogName": "KO Mines- Krobus Friday",
+            "Action": "EditData",
+            "Target": "Data/Events/Mine",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 20 10 2 Krobus 19 10 1/skippable/pause 1500/showFrame 5/message \" ...?\"/pause 1000/message \"Something is shaking me by the shoulders...\"/viewport 19 10 true/pause 1500/speak Krobus \"{{i18n:MineKilled.Krobus.05}}\"/pause 500/faceDirection farmer 1/faceDirection farmer 3/pause 500/emote farmer 8/pause 1000/message \"Oh, that's right. Today is Friday, so Krobus can't answer any of my questions.\"/pause 500/speak Krobus \"{{i18n:MineKilled.Krobus.06}}\"/pause 500/message \"I must have gotten knocked out... But Krobus doesn't seem worried, and that'll have to be enough for now. We should return home.\"/pause 500/emote farmer 20/faceDirection farmer 2/showFrame 0/pause 500/minedeath/end dialogue Krobus \"{{i18n:MineEnd.Krobus.03}}#$c 0.7#{{i18n:MineEnd.Krobus.04}}\"",
+            },
+		    "When": {
+		        "Spouse": "Krobus",
+                "DayOfWeek": "Friday"
+		    }
+	     },
+    {       //Mine death Krobus Regular
+	        "LogName": "KO Mines- Krobus",
+            "Action": "EditData",
+            "Target": "Data/Events/Mine",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 20 10 2 Krobus 19 10 1/skippable/pause 1500/showFrame 5/message \" ...{2}?\"/pause 1000/message \" {2}, wake up!\"/viewport 19 10 true/pause 1500/speak Krobus \"{{i18n:MineKilled.Krobus.01}}\"/pause 500/emote farmer 40/pause 500/faceDirection farmer 1/faceDirection farmer 3/pause 500/emote farmer 8/pause 1000/speak Krobus \"{{i18n:MineKilled.Krobus.02}}\"/emote farmer 16/pause 1000/speak Krobus \"{{i18n:MineKilled.Krobus.03}}\"/emote Krobus 40/speak Krobus \"{{i18n:MineKilled.Krobus.04}}\"/pause 500/emote farmer 20/faceDirection farmer 2/showFrame 0/pause 500/minedeath/end dialogue Krobus \"{{i18n:MineEnd.Krobus.01}}#$c 0.7#{{i18n:MineEnd.Krobus.02}}\"",
+    		},
+		    "When": {
+		        "Spouse": "Krobus",
+                "DayOfWeek": "Monday, Tuesday, Wednesday, Thursday, Saturday, Sunday"
+		    }
+	     },
+    {       //Mine death Wizard
+	        "LogName": "KO Mines- Wizard",
+            "Action": "EditData",
+            "Target": "Data/Events/Mine",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 20 10 2 Wizard 19 10 1/skippable/pause 1500/showFrame 5/message \" ...{2}?\"/pause 1000/message \" Hm, perhaps this will help...\"/viewport 19 10 true/pause 1500/speak Wizard \"{{i18n:MineKilled.Wizard.01}}\"/pause 500/emote farmer 40/pause 500/faceDirection farmer 1/faceDirection farmer 3/pause 500/emote farmer 8/pause 1000/speak Wizard \"{{i18n:MineKilled.Wizard.02}}\"/emote farmer 16/pause 1000/speak Wizard \"{{i18n:MineKilled.Wizard.03}}\"/emote Wizard 20/pause 500/emote farmer 20/faceDirection farmer 2/pause 500/minedeath/end dialogue Wizard \"{{i18n:MineEnd.Wizard.01}}#$c 0.7#{{i18n:MineEnd.Wizard.02}}\"",
+    		},
+		    "When": {
+		        "Spouse": "Wizard",
+		    }
+	     },
+//Misc Patches
+    {       //Elliott Letter
+            "LogName": "ElliottGone Letters",
+            "Action": "EditData",
+            "Target": "Data/Mail",
+            "Entries": {
+                 "ElliottReactionHospital": "My dearest @,^^Dr. Harvey contacted me yesterday to ask for surgical consent on your behalf while you were unresponsive, and has since updated me on your condition. I was ready to cancel my tour and return home at once, although he assured me that you would be fine.^Truly, darling, I was frightened for you, but all I can do from so far away is ask you to be careful.^I miss you and wish I could have been with you when you needed me the most.^^All my love, your devoted husband Elliott.[#]A Very Worried Husband",
+                 "ElliottReactionMine": "Dear @,^^Imagine my surprise when I received a letter from Marlon yesterday! He informed me that you'd collapsed in the mines, although I was relieved to know that your injuries were only minor.^Still, I wish I had been able to be by your side, even for such a tiny mishap. I will have a lot of doting to catch up on once I return home.^^Be safe, and I shall see you soon, darling.^-Love, Elliott[#]A Worried Husband",
+                 }
+         },
+//Island Death Events
+     {       //Island death before Leo
+	        "LogName": "Island Death",
+            "Action": "EditData",
+            "Target": "Data/Events/IslandSouth",
+            "Entries": {
+                 "PlayerKilled": "none/-100 -100/farmer 13 33 2 {0} 15 33 3/pause 1500/showFrame 5/message \" ...{2}?\"/pause 1000/message \" {2}, wake up!\"/viewport 13 33 clamp true/pause 1000/speak {0} {1}/showFrame 0/pause 1000/emote farmer 28/minedeath/end dialogue {{Spouse}} \"{{i18n:IslandEnd.{{SpouseName}}.01}}\"",
+   		    },
+		    "When": {
+		        "Spouse": "{{Spouse}}, default"
+		    }
+	     },     
+     {       //Island death before Leo- Krobus Friday
+	        "LogName": "Island Death- Krobus",
+            "Action": "EditData",
+            "Target": "Data/Events/IslandSouth",
+            "Entries": {
+                 "PlayerKilled": "none/-100 -100/farmer 13 33 2 {0} 15 33 3/pause 1500/showFrame 5/message \" ...{2}?\"/pause 1000/message \" {2}, wake up!\"/viewport 13 33 clamp true/pause 1000/speak {0} {1}/showFrame 0/pause 1000/emote farmer 28/minedeath/end dialogue {{Spouse}} \"{{i18n:IslandEnd.{{SpouseName}}.02}}\"",
+   		    },
+		    "When": {
+		        "Spouse": "Krobus",
+                "DayOfWeek": "Friday"
+		    }
+	     },     
+     {       //Island death with Leo
+	        "LogName": "Island Death- Leo",
+            "Action": "EditData",
+            "Target": "Data/Events/IslandSouth",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 13 33 2 Leo 15 33 3/pause 1500/showFrame 5/message \" ...{2}?\"/pause 1000/message \" ...!\"/playSound parrot_squawk/pause 500/viewport 13 33 clamp true/pause 1000/speak Leo \"{{i18n:IslandKilled.Leo.01}}\"/emote farmer 16/faceDirection farmer 1/pause 500/speak Leo \"{{i18n:IslandKilled.Leo.02}}\"/pause 500/message \"I'm going to get a worried look if I go home like this...\"/pause 500/emote farmer 40/message \"I definitely look worse than I feel, though. That's reassuring.\"/pause 500/speak Leo \"{{i18n:IslandKilled.Leo.03}}\"/faceDirection farmer 2/showFrame 0/pause 1000/emote farmer 12/minedeath/end dialogue {{Spouse}} \"{{i18n:IslandEnd.{{SpouseName}}.01}}\"",
+    		},
+		    "When": {
+		        "HasFlag": "addedParrotBoy",
+                "query: '{{Spouse}}' NOT IN ('Willy')": true
+		    }
+	     },
+     {       //Island death with Leo- Krobus Friday
+	        "LogName": "Island Death- Leo Krobus",
+            "Action": "EditData",
+            "Target": "Data/Events/IslandSouth",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 13 33 2 Leo 15 33 3/pause 1500/showFrame 5/message \" ...{2}?\"/pause 1000/message \" ...!\"/playSound parrot_squawk/pause 500/viewport 13 33 clamp true/pause 1000/speak Leo \"{{i18n:IslandKilled.Leo.01}}\"/emote farmer 16/faceDirection farmer 1/pause 500/speak Leo \"{{i18n:IslandKilled.Leo.02}}\"/pause 500/message \"I'm going to get a worried look if I go home like this...\"/pause 500/emote farmer 40/message \"I definitely look worse than I feel, though. That's reassuring.\"/pause 500/speak Leo \"{{i18n:IslandKilled.Leo.03}}\"/faceDirection farmer 2/showFrame 0/pause 1000/emote farmer 12/minedeath/end dialogue {{Spouse}} \"{{i18n:IslandEnd.{{SpouseName}}.02}}\"",
+    		},
+		    "When": {
+		        "HasFlag": "addedParrotBoy",
+                "Spouse": "Krobus",
+                "DayOfWeek": "Friday"
+		    }
+	     },
+     {       //Island death after Leo
+	        "LogName": "Island Death- LeoMoved",
+            "Action": "EditData",
+            "Target": "Data/Events/IslandSouth",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 13 33 2 Willy 15 33 3/pause 1500/showFrame 5/message \" ...{2}?\"/pause 1000/message \" {2}, wake up!\"/viewport 13 33 clamp true/pause 1000/speak Willy \"{{i18n:IslandKilled.Willy.01}}\"/emote farmer 16/faceDirection farmer 1/pause 500/speak Willy \"{{i18n:IslandKilled.Willy.02}}\"/faceDirection farmer 2/showFrame 0/pause 1000/emote farmer 28/minedeath/end dialogue {{Spouse}} \"{{i18n:IslandEnd.{{SpouseName}}.01}}\"",
+   		    },
+		    "When": {
+		        "HasFlag": "leoMoved",
+                "query: '{{Spouse}}' NOT IN ('Willy')": true
+		    }
+	     },
+     {       //Island death after Leo- Krobus Friday
+	        "LogName": "Island Death- LeoMoved Krobus",
+            "Action": "EditData",
+            "Target": "Data/Events/IslandSouth",
+            "Entries": {
+                "PlayerKilled": "none/-100 -100/farmer 13 33 2 Willy 15 33 3/pause 1500/showFrame 5/message \" ...{2}?\"/pause 1000/message \" {2}, wake up!\"/viewport 13 33 clamp true/pause 1000/speak Willy \"{{i18n:IslandKilled.Willy.01}}\"/emote farmer 16/faceDirection farmer 1/pause 500/speak Willy \"{{i18n:IslandKilled.Willy.02}}\"/faceDirection farmer 2/showFrame 0/pause 1000/emote farmer 28/minedeath/end dialogue {{Spouse}} \"{{i18n:IslandEnd.{{SpouseName}}.02}}\"",
+   		    },
+		    "When": {
+		        "HasFlag": "leoMoved",
+                "Spouse": "Krobus",
+                "DayOfWeek": "Friday"
+		    }
+	     },
+     {       //Island death with Willy
+	        "LogName": "Island Death- Willy",
+            "Action": "EditData",
+            "Target": "Data/Events/IslandSouth",
+            "Entries": {
+                "PlayerKilled": "none/-1000 -1000/farmer 13 33 2 Willy 15 33 3/pause 1500/showFrame 5/message \" ...{2}?\"/pause 1000/message \"Please wake up, my sweet!\"/pause 500/viewport 13 33 clamp true/pause 1000/speak Willy \"{{i18n:IslandKilled.Willy.03}}\"/emote farmer 16/faceDirection farmer 1/pause 500/speak Willy \"{{i18n:IslandKilled.Willy.04}}\"/pause 500/emote farmer 28/pause 500/speak Willy \"{{i18n:IslandKilled.Willy.05}}\"/faceDirection farmer 2/showFrame 0/pause 1000/emote farmer 32/minedeath/end dialogue Willy \"{{i18n:IslandEnd.Willy.01}}\"",
+    		},
+		    "When": {
+                "Spouse": "Willy"
+		    }
+	     },
+],
+}

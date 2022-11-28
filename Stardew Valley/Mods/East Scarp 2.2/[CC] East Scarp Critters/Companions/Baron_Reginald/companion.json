@@ -1,0 +1,84 @@
+{
+  "Name": "Baron_Reginald",
+  "Type": "Walking",
+  "TravelSpeed": 1,
+  "Scale": 1.0,
+  "FrameSizeWidth": 32,
+  "FrameSizeHeight": 32,
+  "TileSheetPath": "Animals\\Reginald",
+  "EnableSpawnAtDayStart": true,
+  "IdleBehavior": "Wander",
+  "MaxIdleDistance": "128",
+  "MaxDistanceBeforeTeleport": "4000",
+  "EnableFarmerCollision": false,
+  "EnableEventAppearance":false,
+  "EnableShadow": true,
+  "Shadow": {
+  "OffsetX": 0,
+  "OffsetY": 0,
+  "Scale": 1.5,
+  "Alpha": 255
+  },
+  "ChanceForHalting": 0.8,
+  "MinHaltTime": 3000,
+  "MaxHaltTime": 10000,
+
+  "UpAnimation": {
+    "StartingFrame": 4,
+    "NumberOfFrames": 4,
+    "Duration": 200,
+
+  "IdleAnimation": {
+    "ManualFrames": [
+      {
+        "Frame": 4,
+        "Duration": 1000
+      },
+      {
+        "Frame": 8,
+        "Duration": 400
+      }
+    ]
+   }
+  },
+  "DownAnimation": {
+    "StartingFrame": 0,
+    "NumberOfFrames": 4,
+    "Duration": 200,
+
+  "IdleAnimation": {
+    "ManualFrames": [
+      {
+        "Frame": 0,
+        "Duration": 400
+      },
+      {
+        "Frame": 2,
+        "Duration": 400
+      }
+    ]
+  },
+  },  
+  "LeftAnimation": {
+    "StartingFrame": 18,
+    "NumberOfFrames": 9,
+    "Duration": 200,
+
+  "IdleAnimation": {
+    "StartingFrame": 27,
+    "NumberOfFrames": 5,
+    "Duration": 200
+    }
+  },
+  "RightAnimation": {
+    "StartingFrame": 9,
+    "NumberOfFrames": 9,
+    "Duration": 200,
+
+  "IdleAnimation": {
+    "StartingFrame": 32,
+    "NumberOfFrames": 4,
+    "Duration": 600
+    }
+  }
+}

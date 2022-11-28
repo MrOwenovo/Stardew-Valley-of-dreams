@@ -1,0 +1,55 @@
+{
+	"$schema": "https://smapi.io/schemas/content-patcher.json",
+	"Changes": [
+		// Juliet and Jessie the Joja Clerks - https://www.nexusmods.com/stardewvalley/mods/6398
+		{
+			"LogName": "[Yagi] Juliet and Jessie - Sprite Offsets",
+			"Action": "EditData",
+			"Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+			"When": {
+				"HasMod: |contains=LemurKat.JulietHouse.NPC": true
+			},
+			"Entries": {
+				"Juliet": {
+					"MarkerCropOffset": 2
+				},
+				"Jessie": {
+					"MarkerCropOffset": 2
+				},
+				"Gremlin": {
+					"MarkerCropOffset": 8
+				},
+			}
+		},
+		// This is an SVE location. Used only for SVE installs.
+		{
+			"LogName": "[Yagi] Juliet and Jessie - SVE Location Support",
+			"Action": "EditData",
+			"Target": "Mods/Bouhm.NPCMapLocations/Locations",
+			"When": {
+				"HasMod: |contains=LemurKat.EastScarpe.CP": false,
+				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+				"HasMod: |contains=LemurKat.JulietHouse.NPC": true
+			},
+			"Entries": {
+				// Juliet and Jessie the Joja Clerks - https://www.nexusmods.com/stardewvalley/mods/6398
+				"Custom_LK_ClearingHouse": {
+					"MapVectors": [
+						{
+							"TileX": 0,
+							"TileY": 0,
+							"MapX": 680,
+							"MapY": 172
+						},
+						{
+							"TileX": 59,
+							"TileY": 29,
+							"MapX": 703,
+							"MapY": 194
+						},
+					]
+				}
+			}
+		},
+	]
+}

@@ -1,0 +1,76 @@
+{
+  "Name": "BabyChick",
+  "Type": "Walking",
+  "EnableCharacterCollision": true,
+  "EnableFarmerCollision": false,
+  "EnableEventAppearance": false,
+  "EnableShadow": true,
+  "Shadow": {
+    "OffsetX": 0,
+    "OffsetY": 0,
+    "Scale": 1,
+    "Alpha": 255
+  },
+  "TravelSpeed": 2,
+  "SpawnOffsetX": 0,
+  "SpawnOffsetY": 0,
+  "MaxIdleDistance": -1,
+  "MaxDistanceBeforeTeleport": -1,
+  "IdleBehavior": "Wander",
+  "IsPrismatic": false,
+  "AppearUnderwater": false,
+  "FrameSizeWidth": 16,
+  "FrameSizeHeight": 16,
+  // This plays when the companion travels upwards
+  "UpAnimation": {
+    "StartingFrame": 8,
+    "NumberOfFrames": 4,
+    "Duration": 100,
+    "IdleAnimation": {
+      "StartingFrame": 8,
+      "NumberOfFrames": 1,
+      "Duration": 100
+    }
+  },
+  // This plays when the companion travels downwards
+  "DownAnimation": {
+    "StartingFrame": 0,
+    "NumberOfFrames": 4,
+    "Duration": 100,
+    "IdleAnimation": {
+      "StartingFrame": 0,
+      "NumberOfFrames": 1,
+      "Duration": 100
+    }
+  },
+  // This plays when the companion travels left
+  "LeftAnimation": {
+    "StartingFrame": 12,
+    "NumberOfFrames": 4,
+    "Duration": 100,
+    "IdleAnimation": {
+      "StartingFrame": 12,
+      "NumberOfFrames": 1,
+      "Duration": 500
+    }
+  },
+  // This plays when the companion travels right
+  "RightAnimation": {
+    "StartingFrame": 4,
+    "NumberOfFrames": 4,
+    "Duration": 100,
+    "IdleAnimation": {
+      "StartingFrame": 4,
+      "NumberOfFrames": 1,
+      "Duration": 500
+    }
+  },
+  "Sounds": [
+    {
+      "SoundName": "SpringBirds",
+      "WhenToPlay": "Idle",
+      "TimeBetweenSound": 5000,
+      "ChanceOfPlaying": 0.3
+    }
+  ]
+}

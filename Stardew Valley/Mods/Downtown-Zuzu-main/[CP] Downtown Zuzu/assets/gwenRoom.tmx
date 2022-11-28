@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="6" height="9" tilewidth="16" tileheight="16" infinite="0" nextlayerid="15" nextobjectid="2">
+ <properties>
+  <property name="AmbientLight" value="40 40 40"/>
+  <property name="Doors" value="14 16 indoor 120 30 30 indoor 120 11 16 indoor 120"/>
+ </properties>
+ <tileset firstgid="1" name="indoor" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="townInterior.png" width="512" height="1088"/>
+ </tileset>
+ <tileset firstgid="2177" name="zfurniture" tilewidth="16" tileheight="16" tilecount="2976" columns="32">
+  <image source="furniture.png" width="512" height="1488"/>
+ </tileset>
+ <tileset firstgid="5153" name="spring_outdoorsTileSheet" tilewidth="16" tileheight="16" tilecount="1975" columns="25">
+  <image source="spring_outdoorsTileSheet.png" width="400" height="1264"/>
+ </tileset>
+ <tileset firstgid="7128" name="paths" tilewidth="16" tileheight="16" tilecount="36" columns="4">
+  <image source="paths.png" width="64" height="144"/>
+ </tileset>
+ <tileset firstgid="7164" name="z_extra3" tilewidth="16" tileheight="16" tilecount="10000" columns="100">
+  <image source="spring_extra3.png" width="1600" height="1600"/>
+ </tileset>
+ <tileset firstgid="17164" name="zDesertTiles" tilewidth="16" tileheight="16" tilecount="368" columns="16">
+  <image source="DesertTiles.png" width="256" height="368"/>
+ </tileset>
+ <tileset firstgid="17532" name="zFestivals" tilewidth="16" tileheight="16" tilecount="1024" columns="32">
+  <image source="Festivals.png" width="512" height="512"/>
+ </tileset>
+ <tileset firstgid="18556" name="walls_and_floors" tilewidth="16" tileheight="16" tilecount="560" columns="16">
+  <image source="walls_and_floors.png" width="256" height="560"/>
+ </tileset>
+ <tileset firstgid="19116" name="z_CharwiesExtras" tilewidth="16" tileheight="16" tilecount="1152" columns="24">
+  <image source="CharwiesExtras.png" width="384" height="768"/>
+ </tileset>
+ <tileset firstgid="20268" name="zCraftables" tilewidth="16" tileheight="16" tilecount="576" columns="8">
+  <image source="Craftables.png" width="128" height="1152"/>
+ </tileset>
+ <layer id="1" name="Back" width="6" height="9">
+  <data encoding="csv">
+302,302,302,302,302,302,
+302,302,302,302,302,302,
+302,302,302,302,302,302,
+19078,19079,19078,19079,19078,19079,
+19062,19063,19062,19063,19062,19063,
+19078,19079,19078,19079,19078,19079,
+19062,19063,19062,19063,19062,19063,
+19078,19079,19078,19079,19078,19079,
+19062,19063,19062,19063,19062,19063
+</data>
+ </layer>
+ <objectgroup id="2" name="Back"/>
+ <layer id="3" name="Back1" width="6" height="9">
+  <properties>
+   <property name="DrawAbove" value="Back"/>
+  </properties>
+  <data encoding="csv">
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,5052,5053,5054,5055,5056,
+0,5084,5085,5086,5087,5088,
+0,5116,5117,5118,5119,5120,
+0,5148,5149,5150,5151,5152,
+0,0,0,0,10501,0
+</data>
+ </layer>
+ <objectgroup id="4" name="Back1"/>
+ <layer id="5" name="Buildings" width="6" height="9">
+  <data encoding="csv">
+0,0,0,0,0,0,
+81,81,81,81,81,81,
+113,113,113,113,113,113,
+521,1179,0,3508,3530,3531,
+0,0,0,0,0,0,
+0,0,1180,2729,2730,2731,
+0,0,0,0,0,0,
+0,0,0,0,10401,816,
+0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="6" name="Buildings">
+  <object id="1" name="TileData" x="0" y="48" width="16" height="16">
+   <properties>
+    <property name="Action" value="Jukebox"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="7" name="Buildings1" width="6" height="9">
+  <properties>
+   <property name="DrawAbove" value="Buildings"/>
+  </properties>
+  <data encoding="csv">
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+489,0,215,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="8" name="Buildings1"/>
+ <layer id="9" name="Front" width="6" height="9">
+  <data encoding="csv">
+19438,19439,0,345,0,0,
+19462,19463,375,377,3466,3467,
+513,0,0,3476,3498,3499,
+0,0,0,0,0,0,
+0,0,0,2697,2698,2699,
+0,0,0,0,0,0,
+0,0,0,0,10301,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="10" name="Front"/>
+ <layer id="11" name="Paths" width="6" height="9">
+  <data encoding="csv">
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="12" name="Paths"/>
+ <layer id="13" name="AlwaysFront" width="6" height="9">
+  <data encoding="csv">
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+164,166,166,166,166,167
+</data>
+ </layer>
+ <objectgroup id="14" name="AlwaysFront"/>
+</map>

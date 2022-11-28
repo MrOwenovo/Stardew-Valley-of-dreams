@@ -1,0 +1,3894 @@
+{
+    "Format": "1.19.0",
+    "ConfigSchema": {
+        //General
+	"Enable This Mod": {
+        "AllowValues": "true, false",
+        "Default": "true"},
+	"1.5 version": {
+            "AllowValues": "true, false",
+            "Default": "false"},
+        //Farming
+        "Farming Style": {
+            "AllowValues": "Normal, Realistic, Deadline, Disable",
+            "Default": "Normal"},
+        "Balanced Artisan Goods": {
+           "AllowValues": "true, false",
+           "Default": "true"},
+        "Balanced Mill": {
+           "AllowValues": "true, false",
+           "Default": "true"},
+        "Balanced Fruit Trees": {
+           "AllowValues": "true, false",
+           "Default": "true"},
+        "Corrected Categories": {
+           "AllowValues": "true, false",
+           "Default": "true"},
+        //Animals
+        "Ranching Style": {
+            "AllowValues": "Normal, Realistic, Disable",
+            "Default": "Normal"},
+        "Big Dinos": {
+            "AllowValues": "true, false",
+            "Default": "true"},
+        "Better Grass": {
+            "AllowValues": "true, false",
+            "Default": "true"},
+         "Ostrich and Golden Mayo": {
+           "AllowValues": "true, false",
+           "Default": "true"},
+        //Fishing
+        "Fishing Mode": {
+           "AllowValues": "Easy, Normal, Hard, Disable",
+           "Default": "Normal"},
+        "Challenging Legendary Fish": {
+           "AllowValues": "true, false",
+           "Default": "false"},
+        "Balanced Crab Pots": {
+           "AllowValues": "true, false",
+           "Default": "true"},
+        //Mining
+        "Combat Mode": {
+           "AllowValues": "Easy, Normal, Hard, Nightmare",
+           "Default": "Normal"},
+        "Monsters Speed Changes": {
+            "AllowValues": "true, false",
+            "Default": "true"},
+        "Balanced Minerals": {
+            "AllowValues": "true, false",
+            "Default": "true"},
+        "Balanced Artifacts": {
+            "AllowValues": "true, false",
+            "Default": "true"},
+        "Balanced Gemstones": {
+            "AllowValues": "true, false",
+            "Default": "true"},
+        "Balanced Ores": {
+            "AllowValues": "true, false",
+            "Default": "true"},
+        "Balanced Monster Loot": {
+            "AllowValues": "true, false",
+            "Default": "true"},
+            //Others
+        "Building Mode": {
+            "AllowValues": "Easy, Normal, Hard, Professional",
+            "Default": "Normal"},
+        //Supported Mods
+        "Stardew Valley Expanded": {
+           "AllowValues": "true, false",
+           "Default": "true"},
+	"Ridgeside Village": {
+           "AllowValues": "true, false",
+           "Default": "true"},
+	"East Scarp": {
+           "AllowValues": "true, false",
+           "Default": "true"},
+	"Lunna Astray": {
+           "AllowValues": "true, false",
+           "Default": "true"},
+	"Adventurer's Guild Expanded": {
+           "AllowValues": "true, false",
+           "Default": "true"},
+	"Winter Crops": {
+           "AllowValues": "true, false",
+           "Default": "true"},
+	"The Love Of Cooking": {
+           "AllowValues": "true, false",
+           "Default": "true"},
+        "PPJA Fruits and Veggies": {
+               "AllowValues": "true, false",
+               "Default": "true"},
+        "PPJA Mizus Flowers": {
+                "AllowValues": "true, false",
+                "Default": "true"},
+        "PPJA More Trees": {
+                "AllowValues": "true, false",
+                "Default": "true"},
+        "More New Fish": {
+                "AllowValues": "true, false",
+                "Default": "true"}
+         },
+        //Farming
+        /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    "Changes": [
+        //Corrected Categories
+        {
+            "Action": "EditData",
+            "Target": "Data/ObjectInformation",
+            "Fields": {
+		"256": {3:"Basic -79"}, //Tomato is a fruit
+		"272": {3:"Basic -79"}, //Eggplant is a fruit
+		"276": {3:"Basic -79"}, //Pumpkin is a fruit
+		"252": {3:"Basic -75"} //Rhubarb is NOT a fruit
+            },
+            "When": {"Corrected Categories": "true", "Enable This Mod":"true"}
+	},
+     //Normal Mode
+        {
+                            "Action": "EditData",
+                            "Target": "Data/ObjectInformation",
+                            "Fields": {    
+				// Crops
+				"190": {1:"170"}, // Cauliflower
+				"248": {1:"75"}, // Garlic
+				"188": {1:"40"}, // Green Bean
+				"250": {1:"115"}, // Kale
+				"24": {1:"50"}, // Parsnip
+				"192": {1:"85"}, // Potato
+				"252": {1:"190"}, // Rhubarb
+				"400": {1:"55"}, // Strawberry
+				"433": {1:"4"}, // Coffee Bean
+				"454": {1:"70"}, // Ancient Fruit
+				"90": {1:"40"}, // Cactus Fruit
+				"258": {1:"22"}, // Blueberry
+				"270": {1:"65"}, // Corn
+				"304": {1:"10"}, // Hops
+				"260": {1:"28"}, // Hot Pepper
+				"254": {1:"170"}, // Melon
+				"264": {1:"90"}, // Radish
+				"266": {1:"160"}, // Red Cabbage
+				"268": {1:"300"}, // Starfruit
+				"256": {1:"45"}, // Tomato
+				"262": {1:"35"}, // Wheat
+				"830": {1:"65"}, // Taro Root
+				"832": {1:"85"}, // Pineapple
+				"300": {1:"135"}, // Amaranth
+				"274": {1:"95"}, // Artichoke
+				"284": {1:"70"}, // Beet
+				"278": {1:"85"}, // Bok Choy
+				"282": {1:"40"}, // Cranberries
+				"272": {1:"40"}, // Eggplant
+				"398": {1:"40"}, // Grape
+				"276": {1:"190"}, // Pumpkin
+				"280": {1:"155"}, // Yam
+				"815": {1:"25"}, // Tea Leaves
+				"271": {1:"80"}, // Unmilled Rice
+				"417": {1:"1500"}, // Sweet Gem Berry
+				// Flowers
+                "597": {1:"80"}, // Blue Jazz
+				"591": {1:"55"}, // Tulip
+				"376": {1:"150"}, // Poppy
+				"593": {1:"100"}, // Summer Spangle
+				"595": {1:"260"}, // Fairy Rose
+				"421": {1:"100"} // Sunflower
+                            },
+                            "When": {"Farming Style": "Normal", "1.5 version":"true", "Enable This Mod":"true"}
+        },
+        {
+                            "Action": "EditData",
+                            "Target": "Data/ObjectInformation",
+                            "Fields": {    
+				// Crops
+				"190": {1:"170"}, // Cauliflower
+				"248": {1:"75"}, // Garlic
+				"188": {1:"40"}, // Green Bean
+				"250": {1:"115"}, // Kale
+				"24": {1:"50"}, // Parsnip
+				"192": {1:"85"}, // Potato
+				"252": {1:"190"}, // Rhubarb
+				"400": {1:"55"}, // Strawberry
+				"433": {1:"4"}, // Coffee Bean
+				"454": {1:"70"}, // Ancient Fruit
+				"90": {1:"40"}, // Cactus Fruit
+				"258": {1:"22"}, // Blueberry
+				"270": {1:"65"}, // Corn
+				"304": {1:"10"}, // Hops
+				"260": {1:"28"}, // Hot Pepper
+				"254": {1:"170"}, // Melon
+				"264": {1:"90"}, // Radish
+				"266": {1:"160"}, // Red Cabbage
+				"268": {1:"300"}, // Starfruit
+				"256": {1:"45"}, // Tomato
+				"262": {1:"35"}, // Wheat
+				"300": {1:"135"}, // Amaranth
+				"274": {1:"95"}, // Artichoke
+				"284": {1:"70"}, // Beet
+				"278": {1:"85"}, // Bok Choy
+				"282": {1:"40"}, // Cranberries
+				"272": {1:"40"}, // Eggplant
+				"398": {1:"40"}, // Grape
+				"276": {1:"190"}, // Pumpkin
+				"280": {1:"155"}, // Yam
+				"815": {1:"25"}, // Tea Leaves
+				"271": {1:"80"}, // Unmilled Rice
+				"417": {1:"1500"}, // Sweet Gem Berry
+				// Flowers
+                "597": {1:"80"}, // Blue Jazz
+				"591": {1:"55"}, // Tulip
+				"376": {1:"150"}, // Poppy
+				"593": {1:"100"}, // Summer Spangle
+				"595": {1:"260"}, // Fairy Rose
+				"421": {1:"100"} // Sunflower
+                            },
+                            "When": {"Farming Style": "Normal", "1.5 version":"false", "Enable This Mod":"true"}
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/ObjectInformation",
+            "Fields": {
+	     	"340": {1:"125"}, // Honey
+		"303": {1:"100"}, // Pale Ale
+		"346": {1:"175"}, // Beer
+		"459": {1:"250"}, // Mead
+		"395": {1:"60"}, // Coffee
+		"614": {1:"125"} // Tea
+            },
+            "When": {"Farming Style": "Normal", "Balanced Artisan Goods": "true", "Enable This Mod":"true"}
+	},
+        {
+            "Action": "EditData",
+            "Target": "Data/ObjectInformation",
+            "Fields": {
+		"423": {1:"160"}, // Rice
+		"245": {1:"140"}, // Sugar
+		"246": {1:"80"} // Wheat Flour
+            },
+            "When": {"Farming Style": "Normal", "Balanced Mill": "true", "Enable This Mod":"true"}
+	},
+    //Realistic Mode
+        {
+            "Action": "EditData",
+            "Target": "Data/ObjectInformation",
+            "Fields": {        
+				// Crops
+				"190": {1:"105"}, // Cauliflower
+				"248": {1:"200"}, // Garlic
+				"188": {1:"30"}, // Green Bean
+				"250": {1:"50"}, // Kale
+				"24": {1:"150"}, // Parsnip
+				"192": {1:"100"}, // Potato
+				"252": {1:"165"}, // Rhubarb
+				"400": {1:"60"}, // Strawberry
+				"433": {1:"8"}, // Coffee Bean
+				"454": {1:"150"}, // Ancient Fruit
+				"90": {1:"75"}, // Cactus Fruit
+				"258": {1:"22"}, // Blueberry
+				"270": {1:"195"}, // Corn
+				"304": {1:"25"}, // Hops
+				"260": {1:"45"}, // Hot Pepper
+				"254": {1:"160"}, // Melon
+				"264": {1:"75"}, // Radish
+				"266": {1:"45"}, // Red Cabbage
+				"268": {1:"350"}, // Starfruit
+				"256": {1:"45"}, // Tomato
+				"262": {1:"150"}, // Wheat
+				"830": {1:"100"}, // Taro Root
+				"832": {1:"200"}, // Pineapple
+				"300": {1:"32"}, // Amaranth
+				"274": {1:"35"}, // Artichoke
+				"284": {1:"30"}, // Beet
+				"278": {1:"27"}, // Bok Choy
+				"282": {1:"40"}, // Cranberries
+				"272": {1:"40"}, // Eggplant
+				"398": {1:"49"}, // Grape
+				"276": {1:"140"}, // Pumpkin
+				"280": {1:"160"}, // Yam
+				"815": {1:"20"}, // Tea Leaves
+				"271": {1:"100"}, // Unmilled Rice
+				"417": {1:"1500"}, // Sweet Gem Berry
+				// Flowers
+                "597": {1:"80"}, // Blue Jazz
+				"591": {1:"70"}, // Tulip
+				"376": {1:"150"}, // Poppy
+				"593": {1:"100"}, // Summer Spangle
+				"595": {1:"260"}, // Fairy Rose
+				"421": {1:"120"} // Sunflower
+            },
+            "When": {"Farming Style": "Realistic", "1.5 version": "true", "Enable This Mod":"true"}
+	},
+        {
+            "Action": "EditData",
+            "Target": "Data/ObjectInformation",
+            "Fields": {        
+				// Crops
+				"190": {1:"105"}, // Cauliflower
+				"248": {1:"200"}, // Garlic
+				"188": {1:"30"}, // Green Bean
+				"250": {1:"50"}, // Kale
+				"24": {1:"150"}, // Parsnip
+				"192": {1:"100"}, // Potato
+				"252": {1:"165"}, // Rhubarb
+				"400": {1:"60"}, // Strawberry
+				"433": {1:"8"}, // Coffee Bean
+				"454": {1:"150"}, // Ancient Fruit
+				"90": {1:"75"}, // Cactus Fruit
+				"258": {1:"22"}, // Blueberry
+				"270": {1:"195"}, // Corn
+				"304": {1:"25"}, // Hops
+				"260": {1:"45"}, // Hot Pepper
+				"254": {1:"160"}, // Melon
+				"264": {1:"75"}, // Radish
+				"266": {1:"45"}, // Red Cabbage
+				"268": {1:"350"}, // Starfruit
+				"256": {1:"45"}, // Tomato
+				"262": {1:"150"}, // Wheat
+				"300": {1:"32"}, // Amaranth
+				"274": {1:"35"}, // Artichoke
+				"284": {1:"30"}, // Beet
+				"278": {1:"27"}, // Bok Choy
+				"282": {1:"40"}, // Cranberries
+				"272": {1:"40"}, // Eggplant
+				"398": {1:"49"}, // Grape
+				"276": {1:"140"}, // Pumpkin
+				"280": {1:"160"}, // Yam
+				"815": {1:"20"}, // Tea Leaves
+				"271": {1:"125"}, // Unmilled Rice
+				"417": {1:"1500"}, // Sweet Gem Berry
+				// Flowers
+                "597": {1:"80"}, // Blue Jazz
+				"591": {1:"70"}, // Tulip
+				"376": {1:"150"}, // Poppy
+				"593": {1:"100"}, // Summer Spangle
+				"595": {1:"260"}, // Fairy Rose
+				"421": {1:"120"} // Sunflower
+            },
+            "When": {"Farming Style": "Realistic", "1.5 version": "false", "Enable This Mod":"true"}
+	},
+        {
+            "Action": "EditData",
+            "Target": "Data/ObjectInformation",
+            "Fields": {
+		"340": {1:"130"}, // Honey
+		"303": {1:"250"}, // Pale Ale
+		"346": {1:"300"}, // Beer
+		"459": {1:"260"}, // Mead
+		"395": {1:"120"}, // Coffee
+		"614": {1:"110"} // Tea
+            },
+            "When": {"Farming Style": "Realistic", "Balanced Artisan Goods": "true", "Enable This Mod":"true"}
+	},
+        {
+            "Action": "EditData",
+            "Target": "Data/ObjectInformation",
+            "Fields": {
+		"423": {1:"250"}, // Rice
+		"245": {1:"150"}, // Sugar
+		"246": {1:"225"} // Wheat Flour
+            },
+            "When": {"Farming Style": "Realistic", "Balanced Mill": "true", "Enable This Mod":"true"}
+	},
+	{
+		"Action": "EditData",
+		"Target": "Data/Crops",
+		"Entries": {
+  "499": "3 6 7 7 5/summer fall/24/454/14/0/false/false/false", // Ancient Fruit
+  "472": "3 4 4 4/spring/0/24/-1/0/false/false/false", // Parsnip
+  "473": "1 1 1 1 2/spring/1/188/3/0/false/true/false", // Green Bean
+  "474": "3 4 4 5 5/spring summer/2/190/7/0/false/false/false", // Cauliflower
+  "475": "1 2 2 2 2/spring/3/192/-1/0/true 1 1 0 .2/false/false", // Potato
+  "476": "6 7 7 7/spring winter/4/248/-1/0/false/false/false", // Garlic
+  "831": "1 2 3 4/summer/42/830/-1/0/true 1 1 0 .2/false/false", // Taro Root
+  "477": "1 2 2 2/spring fall/5/250/5/1/false/false/false", // Kale
+  "478": "1 2 2 2 2/spring fall/6/252/-1/0/false/false/false", // Rhubarb
+  "745": "1 2 2 2 2/spring summer/36/400/5/0/true 1 1 0 .02/false/false", // Strawberry
+  "479": "4 4 4 5 5/spring summer fall/7/254/10/0/false/false/false", // Melon
+  "480": "1 2 2 2 2/summer/8/256/4/0/true 1 1 0 .05/false/false", // Tomato
+  "481": "1 2 2 3 2/summer/9/258/5/0/true 3 3 0 .02/false/false", // Blueberry
+  "482": "1 2 4 4 4/summer/10/260/3/0/true 1 1 0 .03/false/false", // Hot Pepper
+  "483": "7 7 7 7/spring summer fall winter/11/262/-1/1/false/false/false", // Wheat
+  "484": "1 1 1 1/spring/12/264/-1/0/false/false/false", // Radish
+  "485": "1 1 1 2 2/summer fall/13/266/4/0/false/false/false", // Red Cabbage
+  "486": "3 4 4 4 4/summer fall/14/268/-1/0/false/false/false", // Starfruit
+  "833": "2 4 4 4 4/spring summer/43/832/-1/0/false/false/false", // Pineapple
+  "433": "5 5 5 5 6/spring summer fall/40/433/4/0/true 3 3 0 .02/false/false", // Coffee Bean
+  "802": "3 3 3 3 3/summer fall winter/41/90/5/0/false/false/false", // Cactus Fruit
+  "487": "2 1 1 1 1/summer fall/15/270/-1/0/false/false/false", // Corn
+  "302": "2 3 3 3 4/summer fall/37/304/3/0/false/true/false", // Hops
+  "301": "1 1 2 2 2/fall/38/398/4/0/false/true/false", // Grape
+  "299": "1 1 1 2/summer/39/300/3/1/false/false/false", // Amaranth
+  "488": "1 1 1 1 1/summer fall/16/272/5/0/true 1 1 0 .002/false/false", // Eggplant
+  "489": "2 2 1 2 1/spring fall/17/274/4/0/false/false/false", // Artichoke
+  "490": "1 2 3 3 3/fall/18/276/10/0/false/false/false", // Pumpkin
+  "491": "1 1 1 1/spring fall/19/278/3/0/false/false/false", // Bok Choy
+  "492": "1 3 3 3/fall/20/280/-1/0/false/false/false", // Yam
+  "493": "1 1 1 1 2/fall/21/282/5/0/true 2 2 0 .1/false/false", // Cranberries
+  "494": "1 1 2 2/spring fall/22/284/4/0/false/false/false", // Beet
+  "427": "2 2 2 2/spring/26/591/-1/0/false/false/true 255 186 255 223 191 255 255 246 0 255 80 0 255 158 193", // Tulip
+  "429": "1 2 2 2/spring/27/597/-1/0/false/false/true 35 127 255 109 131 255 112 207 255 191 228 255 94 121 255 40 150 255", // Blue Jazz
+  "453": "1 2 2 2/summer/28/376/-1/0/false/false/true 255 0 0 254 254 254 255 170 0", // Poppy
+  "455": "1 2 3 2/summer/29/593/-1/0/false/false/true 0 208 255 99 255 210 255 212 0 255 144 122 255 0 238 206 91 255", // Summer Spangle
+  "431": "2 2 2 2/summer fall/30/421/-1/0/false/false/false", // Sunflower
+  "425": "1 4 4 3/fall/31/595/-1/0/false/false/true 187 0 255 119 137 255 71 227 255 255 127 144 205 178 255 140 119 255", // Fairy Rose
+  "347": "2 4 6 6 6/spring winter/32/417/-1/0/false/false/false", // Sweet Gem Berry
+  "495": "3 4/spring/23/16/-1/0/false/false/false",
+  "496": "3 4/summer/23/396/-1/0/false/false/false",
+  "497": "3 4/fall/23/404/-1/0/false/false/false",
+  "498": "3 4/winter/23/412/-1/0/false/false/false",
+  "885": "1 2 2 2/spring summer fall winter/44/771/-1/1/true 4 7 0 .01/false/false",
+  "890": "1 1 1 1/spring summer fall winter/47/889/-1/0/false/false/false",
+  "273": "3 3 3 3/spring/34/271/-1/1/true 1 1 10 .1/false/false" // Rice
+      },
+      "When": {"Farming Style": "Realistic", "Enable This Mod":"true"}
+},
+{
+		"Action": "EditData",
+		"Target": "Data/ObjectInformation",
+		"Fields": {
+            "299": {5:"{{i18n:Real.Seed.Amaranth}}"},
+            "301": {5:"{{i18n:Real.Seed.Grape}}"},
+            "302": {5:"{{i18n:Real.Seed.Hops}}"},
+            "347": {5:"{{i18n:Real.Seed.SweetGem}}"},
+            "425": {5:"{{i18n:Real.Seed.Fairy}}"},
+            "427": {5:"{{i18n:Real.Seed.Tulip}}"},
+            "429": {5:"{{i18n:Real.Seed.Jazz}}"},
+            "431": {5:"{{i18n:Real.Seed.Sunflower}}"},
+            "433": {5:"{{i18n:Real.Seed.Coffee}}"},
+            "453": {5:"{{i18n:Real.Seed.Poppy}}"},
+            "455": {5:"{{i18n:Real.Seed.Spangle}}"},
+            "472": {5:"{{i18n:Real.Seed.Parsnip}}"},
+            "473": {5:"{{i18n:Real.Seed.Bean}}"},
+            "474": {5:"{{i18n:Real.Seed.Cauliflower}}"},
+            "475": {5:"{{i18n:Real.Seed.Potato}}"},
+            "476": {5:"{{i18n:Real.Seed.Garlic}}"},
+            "477": {5:"{{i18n:Real.Seed.Kale}}"},
+            "478": {5:"{{i18n:Real.Seed.Rhubarb}}"},
+            "479": {5:"{{i18n:Real.Seed.Melon}}"},
+            "480": {5:"{{i18n:Real.Seed.Tomato}}"},
+            "481": {5:"{{i18n:Real.Seed.Blueberry}}"},
+            "482": {5:"{{i18n:Real.Seed.Pepper}}"},
+            "483": {5:"{{i18n:Real.Seed.Wheat}}"},
+            "484": {5:"{{i18n:Real.Seed.Radish}}"},
+            "485": {5:"{{i18n:Real.Seed.Cabbage}}"},
+            "486": {5:"{{i18n:Real.Seed.Starfruit}}"},
+            "487": {5:"{{i18n:Real.Seed.Corn}}"},
+            "488": {5:"{{i18n:Real.Seed.Eggplant}}"},
+            "489": {5:"{{i18n:Real.Seed.Artichoke}}"},
+            "490": {5:"{{i18n:Real.Seed.Pumpkin}}"},
+            "491": {5:"{{i18n:Real.Seed.Bok}}"},
+            "492": {5:"{{i18n:Real.Seed.Yam}}"},
+            "493": {5:"{{i18n:Real.Seed.Cranberry}}"},
+            "494": {5:"{{i18n:Real.Seed.Beet}}"},
+            "499": {5:"{{i18n:Real.Seed.Ancient}}"},
+            "745": {5:"{{i18n:Real.Seed.Strawberry}}"},
+            "802": {5:"{{i18n:Real.Seed.Cactus}}"},
+            "831": {5:"{{i18n:Real.Seed.Taro}}"},
+            "833": {5:"{{i18n:Real.Seed.Pineapple}}"},
+            "273": {5:"{{i18n:Real.Seed.Rice}}"}
+      },
+      "When": {"Farming Style": "Realistic", "Enable This Mod":"true"}
+	},
+    // Adding the regrow-able crops
+        {
+                "Action": "EditImage",
+                "Target": "TileSheets/crops",
+                "FromFile": "assets/Crops.png",
+                "When": {"Farming Style": "Realistic", "Enable This Mod":"true"}
+        },
+    //Deadline Mode
+        {
+                            "Action": "EditData",
+                            "Target": "Data/ObjectInformation",
+                            "Fields": {    
+				// Crops
+				"190": {1:"350"}, // Cauliflower
+				"248": {1:"350"}, // Garlic
+				"188": {1:"350"}, // Green Bean
+				"250": {1:"350"}, // Kale
+				"24": {1:"150"}, // Parsnip
+				"192": {1:"350"}, // Potato
+				"252": {1:"350"}, // Rhubarb
+				"400": {1:"350"}, // Strawberry
+				"433": {1:"110"}, // Coffee Bean
+				"454": {1:"6000"}, // Ancient Fruit
+				"90": {1:"350"}, // Cactus Fruit
+				"258": {1:"350"}, // Blueberry
+				"270": {1:"650"}, // Corn
+				"304": {1:"350"}, // Hops
+				"260": {1:"350"}, // Hot Pepper
+				"254": {1:"350"}, // Melon
+				"264": {1:"350"}, // Radish
+				"266": {1:"350"}, // Red Cabbage
+				"268": {1:"650"}, // Starfruit
+				"256": {1:"150"}, // Tomato
+				"262": {1:"650"}, // Wheat
+				"830": {1:"200"}, // Taro Root
+				"832": {1:"400"}, // Pineapple
+				"300": {1:"350"}, // Amaranth
+				"274": {1:"350"}, // Artichoke
+				"284": {1:"350"}, // Beet
+				"278": {1:"150"}, // Bok Choy
+				"282": {1:"350"}, // Cranberries
+				"272": {1:"350"}, // Eggplant
+				"398": {1:"350"}, // Grape
+				"276": {1:"350"}, // Pumpkin
+				"280": {1:"350"}, // Yam
+				"815": {1:"5"}, // Tea Leaves
+				"271": {1:"350"}, // Unmilled Rice
+				"417": {1:"3000"}, // Sweet Gem Berry
+				// Flowers
+                "597": {1:"200"}, // Blue Jazz
+				"591": {1:"200"}, // Tulip
+				"376": {1:"200"}, // Poppy
+				"593": {1:"200"}, // Summer Spangle
+				"595": {1:"200"}, // Fairy Rose
+				"421": {1:"300"} // Sunflower
+                            },
+                            "When": {"Farming Style": "Deadline", "1.5 version":"true", "Enable This Mod":"true"}
+        },
+        {
+                            "Action": "EditData",
+                            "Target": "Data/ObjectInformation",
+                            "Fields": {  
+				// Crops
+				"190": {1:"350"}, // Cauliflower
+				"248": {1:"350"}, // Garlic
+				"188": {1:"350"}, // Green Bean
+				"250": {1:"350"}, // Kale
+				"24": {1:"150"}, // Parsnip
+				"192": {1:"350"}, // Potato
+				"252": {1:"350"}, // Rhubarb
+				"400": {1:"350"}, // Strawberry
+				"433": {1:"110"}, // Coffee Bean
+				"454": {1:"6000"}, // Ancient Fruit
+				"90": {1:"350"}, // Cactus Fruit
+				"258": {1:"350"}, // Blueberry
+				"270": {1:"650"}, // Corn
+				"304": {1:"350"}, // Hops
+				"260": {1:"350"}, // Hot Pepper
+				"254": {1:"350"}, // Melon
+				"264": {1:"350"}, // Radish
+				"266": {1:"350"}, // Red Cabbage
+				"268": {1:"650"}, // Starfruit
+				"256": {1:"150"}, // Tomato
+				"262": {1:"650"}, // Wheat
+				"300": {1:"350"}, // Amaranth
+				"274": {1:"350"}, // Artichoke
+				"284": {1:"350"}, // Beet
+				"278": {1:"150"}, // Bok Choy
+				"282": {1:"350"}, // Cranberries
+				"272": {1:"350"}, // Eggplant
+				"398": {1:"350"}, // Grape
+				"276": {1:"350"}, // Pumpkin
+				"280": {1:"350"}, // Yam
+				"815": {1:"5"}, // Tea Leaves
+				"271": {1:"350"}, // Unmilled Rice
+				"417": {1:"3000"}, // Sweet Gem Berry
+				// Flowers
+                "597": {1:"200"}, // Blue Jazz
+				"591": {1:"200"}, // Tulip
+				"376": {1:"200"}, // Poppy
+				"593": {1:"200"}, // Summer Spangle
+				"595": {1:"200"}, // Fairy Rose
+				"421": {1:"300"} // Sunflower
+                            },
+                            "When": {"Farming Style": "Deadline", "1.5 version":"false", "Enable This Mod":"true"}
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/ObjectInformation",
+            "Fields": {
+		"340": {1:"200"}, // Honey
+		"303": {1:"700"}, // Pale Ale
+		"346": {1:"975"}, // Beer
+		"459": {1:"400"}, // Mead
+		"395": {1:"660"}, // Coffee
+		"614": {1:"30"} // Tea
+            },
+            "When": {"Farming Style": "Deadline", "Balanced Artisan Goods": "true", "Enable This Mod":"true"}
+	},
+        {
+            "Action": "EditData",
+            "Target": "Data/ObjectInformation",
+            "Fields": {
+		"423": {1:"700"}, // Rice
+		"245": {1:"700"}, // Sugar
+		"246": {1:"975"} // Wheat Flour
+            },
+            "When": {"Farming Style": "Deadline", "Balanced Mill": "true", "Enable This Mod":"true"}
+	},
+        {
+                    "Action": "EditData",
+                    "Target": "Data/Crops",
+                    "Fields": {
+      "499": {0:"17 17 17 16 16", 4:"-1", 6:"false"}, // Ancient Fruit
+      "472": {0:"5 4 4 4", 4:"-1", 6:"false"}, // Parsnip
+      "473": {0:"6 6 5 5 5", 4:"-1", 6:"false"}, // Green Bean
+      "474": {0:"6 6 5 5 5", 4:"-1", 6:"false"}, // Cauliflower
+      "475": {0:"6 6 5 5 5", 4:"-1", 6:"false"}, // Potato
+      "476": {0:"7 7 7 6", 4:"-1", 6:"false"}, // Garlic
+      "831": {0:"7 7 7 6", 4:"-1", 6:"false"}, // Taro Root
+      "477": {0:"7 7 7 6", 4:"-1", 6:"false"}, // Kale
+      "478": {0:"6 6 5 5 5", 4:"-1", 6:"false"}, // Rhubarb
+      "745": {0:"6 6 5 5 5", 4:"-1", 6:"false"}, // Strawberry
+      "479": {0:"6 6 5 5 5", 4:"-1", 6:"false"}, // Melon
+      "480": {0:"3 3 2 2 2", 4:"-1", 6:"false"}, // Tomato
+      "481": {0:"6 6 5 5 5", 4:"-1", 6:"false"}, // Blueberry
+      "482": {0:"6 6 5 5 5", 4:"-1", 6:"false"}, // Hot Pepper
+      "483": {0:"14 14 14 13", 4:"-1", 6:"false"}, // Wheat
+      "484": {0:"7 7 7 6", 4:"-1", 6:"false"}, // Radish
+      "485": {0:"6 6 5 5 5", 4:"-1", 6:"false"}, // Red Cabbage
+      "486": {0:"6 6 5 5 5", 4:"-1", 6:"false"}, // Starfruit
+      "833": {0:"6 6 5 5 5", 4:"-1", 6:"false"}, // Pineapple
+      "433": {0:"11 11 11 11 11", 4:"-1"}, // Coffee Bean
+      "802": {0:"6 6 5 5 5", 4:"-1", 6:"false"}, // Cactus Fruit
+      "487": {0:"11 11 11 11 11", 4:"-1", 6:"false"}, // Corn
+      "302": {0:"6 6 5 5 5", 4:"-1", 6:"false"}, // Hops
+      "301": {0:"6 6 5 5 5", 4:"-1", 6:"false"}, // Grape
+      "299": {0:"7 7 7 6", 4:"-1", 6:"false"}, // Amaranth
+      "488": {0:"6 6 5 5 5", 4:"-1", 6:"false"}, // Eggplant
+      "489": {0:"6 6 5 5 5", 4:"-1", 6:"false"}, // Artichoke
+      "490": {0:"6 6 5 5 5", 4:"-1", 6:"false"}, // Pumpkin
+      "491": {0:"5 4 4 4", 4:"-1", 6:"false"}, // Bok Choy
+      "492": {0:"7 7 7 6", 4:"-1", 6:"false"}, // Yam
+      "493": {0:"6 6 5 5 5", 4:"-1", 6:"false"}, // Cranberries
+      "494": {0:"7 7 7 6", 4:"-1", 6:"false"}, // Beet
+      "427": {0:"5 5 5 5", 4:"-1", 6:"false"}, // Tulip
+      "429": {0:"5 5 5 5", 4:"-1", 6:"false"}, // Blue Jazz
+      "453": {0:"5 5 5 5", 4:"-1", 6:"false"},  // Poppy
+      "455": {0:"5 5 5 5", 4:"-1", 6:"false"}, // Summer Spangle
+      "431": {0:"5 5 5 5", 4:"-1", 6:"false"}, // Sunflower
+      "425": {0:"5 5 5 5", 4:"-1", 6:"false"},  // Fairy Rose
+      "347": {0:"6 6 5 5 5", 4:"-1", 6:"false"},  // Sweet Gem Berry
+      "273": {0:"7 7 7 6", 4:"-1", 6:"false"} // Rice
+          },
+          "When": {"Farming Style": "Deadline", "Enable This Mod":"true"}
+    },
+    {
+                    "Action": "EditData",
+                    "Target": "Data/ObjectInformation",
+                    "Fields": {
+                        "299": {1:"50", 5:"{{i18n:Dead.Seed.Amaranth}}"},
+                        "301": {1:"50", 5:"{{i18n:Dead.Seed.Grape}}"},
+                        "302": {1:"50", 5:"{{i18n:Dead.Seed.Hops}}"},
+                        "347": {5:"{{i18n:Dead.Seed.SweetGem}}"},
+                        "425": {1:"50", 5:"{{i18n:Dead.Seed.Fairy}}"},
+                        "427": {1:"50", 5:"{{i18n:Dead.Seed.Tulip}}"},
+                        "429": {1:"50", 5:"{{i18n:Dead.Seed.Jazz}}"},
+                        "431": {1:"100", 5:"{{i18n:Dead.Seed.Sunflower}}"},
+                        "433": {5:"{{i18n:Dead.Seed.Coffee}}"},
+                        "453": {1:"50", 5:"{{i18n:Dead.Seed.Poppy}}"},
+                        "455": {1:"50", 5:"{{i18n:Dead.Seed.Spangle}}"},
+                        "472": {1:"50", 5:"{{i18n:Dead.Seed.Parsnip}}"},
+                        "473": {1:"50", 5:"{{i18n:Dead.Seed.Bean}}"},
+                        "474": {1:"50", 5:"{{i18n:Dead.Seed.Cauliflower}}"},
+                        "475": {1:"50", 5:"{{i18n:Dead.Seed.Potato}}"},
+                        "476": {1:"50", 5:"{{i18n:Dead.Seed.Garlic}}"},
+                        "477": {1:"50", 5:"{{i18n:Dead.Seed.Kale}}"},
+                        "478": {1:"50", 5:"{{i18n:Dead.Seed.Rhubarb}}"},
+                        "479": {1:"50", 5:"{{i18n:Dead.Seed.Melon}}"},
+                        "480": {1:"50", 5:"{{i18n:Dead.Seed.Tomato}}"},
+                        "481": {1:"50", 5:"{{i18n:Dead.Seed.Blueberry}}"},
+                        "482": {1:"50", 5:"{{i18n:Dead.Seed.Pepper}}"},
+                        "483": {1:"100", 5:"{{i18n:Dead.Seed.Wheat}}"},
+                        "484": {1:"50", 5:"{{i18n:Dead.Seed.Radish}}"},
+                        "485": {1:"50", 5:"{{i18n:Dead.Seed.Cabbage}}"},
+                        "486": {5:"{{i18n:Dead.Seed.Starfruit}}"},
+                        "487": {1:"100", 5:"{{i18n:Dead.Seed.Corn}}"},
+                        "488": {1:"50", 5:"{{i18n:Dead.Seed.Eggplant}}"},
+                        "489": {1:"50", 5:"{{i18n:Dead.Seed.Artichoke}}"},
+                        "490": {1:"50", 5:"{{i18n:Dead.Seed.Pumpkin}}"},
+                        "491": {1:"50", 5:"{{i18n:Dead.Seed.Bok}}"},
+                        "492": {1:"50", 5:"{{i18n:Dead.Seed.Yam}}"},
+                        "493": {1:"50", 5:"{{i18n:Dead.Seed.Cranberry}}"},
+                        "494": {1:"50", 5:"{{i18n:Dead.Seed.Beet}}"},
+                        "499": {5:"{{i18n:Dead.Seed.Ancient}}"},
+                        "745": {1:"50", 5:"{{i18n:Dead.Seed.Strawberry}}"},
+                        "802": {1:"50", 5:"{{i18n:Dead.Seed.Cactus}}"},
+                        "831": {5:"{{i18n:Dead.Seed.Taro}}"},
+                        "833": {5:"{{i18n:Dead.Seed.Pineapple}}"},
+                        "273": {1:"50", 5:"{{i18n:Dead.Seed.Rice}}"}
+          },
+          "When": {"Farming Style": "Deadline", "Enable This Mod":"true"}
+        },
+        //Modded Crops
+        // PPJA Fruits and Veggies
+        {
+                "Action": "EditData",
+                "Target": "Data/ObjectInformation",
+                "Fields": {
+                        "{{spacechase0.jsonAssets/ObjectId:Adzuki Bean}}": {1: "110"},
+                        "{{spacechase0.jsonAssets/ObjectId:Aloe}}": {1: "130"},
+                        "{{spacechase0.jsonAssets/ObjectId:Asparagus}}": {1: "60"},
+                        "{{spacechase0.jsonAssets/ObjectId:Bamboo}}": {1: "22"},
+                        "{{spacechase0.jsonAssets/ObjectId:Barley}}": {1: "40"},
+                        "{{spacechase0.jsonAssets/ObjectId:Basil}}": {1: "60"},
+                        "{{spacechase0.jsonAssets/ObjectId:Bell Pepper}}": {1: "25"},
+                        "{{spacechase0.jsonAssets/ObjectId:Blue Agave}}": {1: "280"},
+                        "{{spacechase0.jsonAssets/ObjectId:Broccoli}}": {1: "145"},
+                        "{{spacechase0.jsonAssets/ObjectId:Buckwheat}}": {1: "40"},
+                        "{{spacechase0.jsonAssets/ObjectId:Butternut Squash}}": {1: "60"},
+                        "{{spacechase0.jsonAssets/ObjectId:Cabbage}}": {1: "145"},
+                        "{{spacechase0.jsonAssets/ObjectId:Cactus Flower}}": {1: "330"},
+                        "{{spacechase0.jsonAssets/ObjectId:Carrot}}": {1: "100"},
+                        "{{spacechase0.jsonAssets/ObjectId:Cassava}}": {1: "125"},
+                        "{{spacechase0.jsonAssets/ObjectId:Celery}}": {1: "105"},
+                        "{{spacechase0.jsonAssets/ObjectId:Chickpea}}": {1: "45"},
+                        "{{spacechase0.jsonAssets/ObjectId:Chives}}": {1: "60"},
+                        "{{spacechase0.jsonAssets/ObjectId:Cotton Boll}}": {1: "15"},
+                        "{{spacechase0.jsonAssets/ObjectId:Cucumber}}": {1: "15"},
+                        "{{spacechase0.jsonAssets/ObjectId:Durum}}": {1: "40"},
+                        "{{spacechase0.jsonAssets/ObjectId:Elderberry}}": {1: "15"},
+                        "{{spacechase0.jsonAssets/ObjectId:Fennel}}": {1: "60"},
+                        "{{spacechase0.jsonAssets/ObjectId:Ginseng}}": {1: "600"},
+                        "{{spacechase0.jsonAssets/ObjectId:Gooseberry}}": {1: "20"},
+                        "{{spacechase0.jsonAssets/ObjectId:Green Peas}}": {1: "9"},
+                        "{{spacechase0.jsonAssets/ObjectId:Habanero}}": {1: "25"},
+                        "{{spacechase0.jsonAssets/ObjectId:Jalapeno}}": {1: "25"},
+                        "{{spacechase0.jsonAssets/ObjectId:Juniper Berry}}": {1: "20"},
+                        "{{spacechase0.jsonAssets/ObjectId:Kidney Bean}}": {1: "25"},
+                        "{{spacechase0.jsonAssets/ObjectId:Kiwi}}": {1: "50"},
+                        "{{spacechase0.jsonAssets/ObjectId:Lettuce}}": {1: "105"},
+                        "{{spacechase0.jsonAssets/ObjectId:Licorice Root}}": {1: "165"},
+                        "{{spacechase0.jsonAssets/ObjectId:Maguey}}": {1: "165"},
+                        "{{spacechase0.jsonAssets/ObjectId:Mint}}": {1: "30"},
+                        "{{spacechase0.jsonAssets/ObjectId:Muskmelon}}": {1: "145"},
+                        "{{spacechase0.jsonAssets/ObjectId:Navy Bean}}": {1: "15"},
+                        "{{spacechase0.jsonAssets/ObjectId:Oat}}": {1: "40"},
+                        "{{spacechase0.jsonAssets/ObjectId:Okra}}": {1: "45"},
+                        "{{spacechase0.jsonAssets/ObjectId:Onion}}": {1: "145"},
+                        "{{spacechase0.jsonAssets/ObjectId:Oregano}}": {1: "60"},
+                        "{{spacechase0.jsonAssets/ObjectId:Parsley}}": {1: "55"},
+                        "{{spacechase0.jsonAssets/ObjectId:Passion Fruit}}": {1: "30"},
+                        "{{spacechase0.jsonAssets/ObjectId:Peanut}}": {1: "45"},
+                        "{{spacechase0.jsonAssets/ObjectId:Perilla leaf}}": {1: "60"},
+                        "{{spacechase0.jsonAssets/ObjectId:Quinoa}}": {1: "70"},
+                        "{{spacechase0.jsonAssets/ObjectId:Rapeseed Flower}}": {1: "80"},
+                        "{{spacechase0.jsonAssets/ObjectId:Raspberry}}": {1: "10"},
+                        "{{spacechase0.jsonAssets/ObjectId:Red Onion}}": {1: "145"},
+                        "{{spacechase0.jsonAssets/ObjectId:Rosemary}}": {1: "90"},
+                        "{{spacechase0.jsonAssets/ObjectId:Sage}}": {1: "80"},
+                        "{{spacechase0.jsonAssets/ObjectId:Shallot}}": {1: "145"},
+                        "{{spacechase0.jsonAssets/ObjectId:Shiitake Mushroom}}": {1: "200"},
+                        "{{spacechase0.jsonAssets/ObjectId:Soybean}}": {1: "35"},
+                        "{{spacechase0.jsonAssets/ObjectId:Spinach}}": {1: "35"},
+                        "{{spacechase0.jsonAssets/ObjectId:Sugar Beet}}": {1: "160"},
+                        "{{spacechase0.jsonAssets/ObjectId:Sugar Cane}}": {1: "210"},
+                        "{{spacechase0.jsonAssets/ObjectId:Sulfur Shelf Mushroom}}": {1: "200"},
+                        "{{spacechase0.jsonAssets/ObjectId:Sweet Canary Melon}}": {1: "80"},
+                        "{{spacechase0.jsonAssets/ObjectId:Sweet Potato}}": {1: "155"},
+                        "{{spacechase0.jsonAssets/ObjectId:Tabasco Pepper}}": {1: "25"},
+                        "{{spacechase0.jsonAssets/ObjectId:Thyme}}": {1: "70"},
+                        "{{spacechase0.jsonAssets/ObjectId:Wasabi Root}}": {1: "165"},
+                        "{{spacechase0.jsonAssets/ObjectId:Watermelon}}": {1: "135"},
+                        "{{spacechase0.jsonAssets/ObjectId:Zucchini}}": {1: "55"}
+                },
+                "When": {"HasMod": "ppja.fruitsandveggies, spacechase0.JsonAssets",
+                         "PPJA Fruits and Veggies": "true", "Enable This Mod":"true"}
+        },
+        {
+                "Action": "EditData",
+                "Target": "Data/ObjectInformation",
+                "Fields": {
+                        "410": {1: "22"}, // Blacberry
+                        "829": {1: "80"} // Ginger
+                },
+                "When": {"HasMod": "ppja.fruitsandveggies, spacechase0.JsonAssets",
+                         "PPJA Fruits and Veggies": "true", "1.5 version":"true", "Enable This Mod":"true"}   
+            },
+        {
+                "Action": "EditData",
+                "Target": "Data/ObjectInformation",
+                "Fields": {
+                        "410": {1: "22"} // Blacberry
+                },
+                "When": {"HasMod": "ppja.fruitsandveggies, spacechase0.JsonAssets",
+                         "PPJA Fruits and Veggies": "true", "1.5 version":"false", "Enable This Mod":"true"}
+        },
+        // PPJA Mizus Flowers
+		{
+			"Action": "EditData",
+			"Target": "Data/ObjectInformation",
+			"Fields": {
+				"{{spacechase0.jsonAssets/ObjectId:Bee Balm}}": {1: "120"},
+				"{{spacechase0.jsonAssets/ObjectId:Blue Mist}}": {1: "240"},
+				"{{spacechase0.jsonAssets/ObjectId:Chamomile}}": {1: "65"},
+				"{{spacechase0.jsonAssets/ObjectId:Clary Sage}}": {1: "80"},
+				"{{spacechase0.jsonAssets/ObjectId:Fairy Duster}}": {1: "90"},
+				"{{spacechase0.jsonAssets/ObjectId:Fall Rose}}": {1: "55"},
+				"{{spacechase0.jsonAssets/ObjectId:Fragrant Lilac}}": {1: "85"},
+				"{{spacechase0.jsonAssets/ObjectId:Herbal Lavender}}": {1: "65"},
+				"{{spacechase0.jsonAssets/ObjectId:Honeysuckle}}": {1: "30"},
+				"{{spacechase0.jsonAssets/ObjectId:Passion Flower}}": {1: "150"},
+				"{{spacechase0.jsonAssets/ObjectId:Pink Cat}}": {1: "65"},
+				"{{spacechase0.jsonAssets/ObjectId:Pitcher Plant}}": {1: "225"},
+				"{{spacechase0.jsonAssets/ObjectId:Purple Coneflower}}": {1: "100"},
+				"{{spacechase0.jsonAssets/ObjectId:Rafflesia}}": {1: "6500"},
+				"{{spacechase0.jsonAssets/ObjectId:Rose}}": {1: "45"},
+				"{{spacechase0.jsonAssets/ObjectId:Shaded Violet}}": {1: "90"},
+				"{{spacechase0.jsonAssets/ObjectId:Spring Rose}}": {1: "55"},
+				"{{spacechase0.jsonAssets/ObjectId:Summer Rose}}": {1: "55"},
+				"{{spacechase0.jsonAssets/ObjectId:Sweet Jasmine}}": {1: "50"}
+			},
+			"When": {"HasMod": "mizu.flowers, spacechase0.JsonAssets",
+                        "PPJA Mizus Flowers": "true", "Enable This Mod":"true"}
+		},
+        // Stardew Valley Expanded
+                {
+                        "Action": "EditData",
+                        "Target": "Data/ObjectInformation",
+                        "Fields": {
+                        "{{spacechase0.jsonAssets/ObjectId:Ancient Fiber}}": {1: "30"},
+                        "{{spacechase0.jsonAssets/ObjectId:Monster Fruit}}": {1: "400"},
+                        "{{spacechase0.jsonAssets/ObjectId:Monster Mushroom}}": {1: "200"},
+                        "{{spacechase0.jsonAssets/ObjectId:Salal Berry}}": {1: "10"},
+                        "{{spacechase0.jsonAssets/ObjectId:Slime Berry}}": {1: "20"},
+                        "{{spacechase0.jsonAssets/ObjectId:Void Root}}": {1: "130"},
+                        "{{spacechase0.jsonAssets/ObjectId:Joja Berry}}": {1: "250"},
+                        "{{spacechase0.jsonAssets/ObjectId:Joja Veggie}}": {1: "300"}
+                        },						
+                        "When": {"HasMod": "FlashShifter.JA.SVE, spacechase0.JsonAssets",
+                                 "Stardew Valley Expanded": "true", "Enable This Mod":"true"}
+                },
+                // East Scarp
+		{
+                "Action": "EditData",
+                "Target": "Data/ObjectInformation",
+                "Fields": {					
+			"{{spacechase0.jsonAssets/ObjectId:Bird Of Paradise Flower}}": {1: "75"}
+                },
+                "When": {"HasMod": "LemurKat.EastScarpe.JA, spacechase0.JsonAssets",
+                         "East Scarp": "true", "Enable This Mod":"true"}
+		},
+		{
+                "Action": "EditData",
+                "Target": "Data/ObjectInformation",
+                "Fields": {					
+			"797": {1: "1500"},		
+			"78": {1: "50"}
+                },
+                "When": {"HasMod": "LemurKat.EastScarpe.JA, spacechase0.JsonAssets",
+                         "East Scarp": "true", "Enable This Mod":"true"}
+		},
+        // Lunna Astray
+		{
+                "Action": "EditData",
+                "Target": "Data/ObjectInformation",
+                "Fields": {					
+			"{{spacechase0.jsonAssets/ObjectId:Eggroot}}": {1: "300"},
+			"{{spacechase0.jsonAssets/ObjectId:Ghost Cabbage}}": {1: "150"},
+			"{{spacechase0.jsonAssets/ObjectId:Pale Berry}}": {1: "22"},
+			"{{spacechase0.jsonAssets/ObjectId:Sour Potato}}": {1: "125"},
+			"{{spacechase0.jsonAssets/ObjectId:Thorn Pepper}}": {1: "55"},
+			"{{spacechase0.jsonAssets/ObjectId:Umuwi Lanzones}}": {1: "170"},
+			"{{spacechase0.jsonAssets/ObjectId:Umuwi Rambutan}}": {1: "210"}
+                },
+                "When": {"HasMod": "Rafseazz.LunnaItems, spacechase0.JsonAssets",
+                         "Lunna Astray": "true", "Enable This Mod":"true"}
+		},
+        // Adventurer's Guild Expanded
+                {
+                        "Action": "EditData",
+                        "Target": "Data/ObjectInformation",
+                        "Fields": {
+                                "{{spacechase0.jsonAssets/ObjectId:Slime Heart}}": {1: "300"},
+                                "{{spacechase0.jsonAssets/ObjectId:Zinnia}}": {1: "100"}
+                        },
+                        "When": {"HasMod": "supert.guildexpandedja, spacechase0.JsonAssets",
+                                 "Adventurer's Guild Expanded": "true", "Enable This Mod":"true"}
+                },
+                // Winter Crops
+		{
+                "Action": "EditData",
+                "Target": "Data/ObjectInformation",
+                "Fields": {					
+			"{{spacechase0.jsonAssets/ObjectId:Brussel Sprout}}": {1: "10"},
+			"{{spacechase0.jsonAssets/ObjectId:Iceberg Lettuce}}": {1: "110"},
+			"{{spacechase0.jsonAssets/ObjectId:Winter Squash}}": {1: "180"},
+			"{{spacechase0.jsonAssets/ObjectId:Winter Spinach}}": {1: "50"},
+			"{{spacechase0.jsonAssets/ObjectId:Winter Onion}}": {1: "80"},
+			"{{spacechase0.jsonAssets/ObjectId:Winter Carrot}}": {1: "60"},
+			"{{spacechase0.jsonAssets/ObjectId:Nettle Leaves}}": {1: "25"},
+			"{{spacechase0.jsonAssets/ObjectId:Mahonia}}": {1: "40"},
+			"{{spacechase0.jsonAssets/ObjectId:Christmas Rose}}": {1: "60"}
+                },
+                "When": {"HasMod": "bluechicken.wintercrops, spacechase0.JsonAssets",
+                         "Winter Crops": "true", "Enable This Mod":"true"}
+		},
+        // The Love of Cooking
+		{
+			"Action": "EditData",
+			"Target": "Data/ObjectInformation",
+			"Fields": {
+				"{{spacechase0.jsonAssets/ObjectId:blueberry.cac.cabbage}}": {1:"140"},
+				"{{spacechase0.jsonAssets/ObjectId:blueberry.cac.carrot}}": {1:"45"},
+				"{{spacechase0.jsonAssets/ObjectId:blueberry.cac.onion}}": {1:"65"},		
+			},
+			"When": {"HasMod|contains=blueberry.LoveOfCooking": true, "HasMod|contains=spacechase0.JsonAssets": true, "The Love of Cooking": "true", "Enable This Mod":"true"}
+		},
+        // Fruit Trees
+        {
+                            "Action": "EditData",
+                            "Target": "Data/ObjectInformation",
+                            "Fields": {
+                                "634": {1:"110"}, // Apricot
+                                "635": {1:"150"}, // Orange
+                                "636": {1:"190"}, // Peach
+                                "637": {1:"190"}, // Pomegranate
+                                "638": {1:"150"}, // Cherry
+                                "91": {1:"190"}, // Banana
+                                "834": {1:"180"}, // Mango 
+                                "613": {1:"150"} // Apple
+                            },
+                            "When": {"Balanced Fruit Trees": "true", "1.5 version":"true", "Enable This Mod":"true"}
+        },
+        {
+                            "Action": "EditData",
+                            "Target": "Data/ObjectInformation",
+                            "Fields": {
+                                "634": {1:"110"}, // Apricot
+                                "635": {1:"150"}, // Orange
+                                "636": {1:"190"}, // Peach
+                                "637": {1:"190"}, // Pomegranate
+                                "638": {1:"150"}, // Cherry
+                                "613": {1:"150"} // Apple
+                            },
+                            "When": {"Balanced Fruit Trees": "true", "1.5 version":"false", "Enable This Mod":"true"}
+        },
+        // Ridgeside Village
+		{
+			"Action": "EditData",
+			"Target": "Data/ObjectInformation",
+			"Fields": {
+                        "{{spacechase0.jsonAssets/ObjectId:Cherry Pluot}}": {1: "170"},		
+                        "{{spacechase0.jsonAssets/ObjectId:Highland Jostaberry}}": {1: "190"},	
+                        "{{spacechase0.jsonAssets/ObjectId:Mountain Plumcot}}": {1: "190"},	
+                        "{{spacechase0.jsonAssets/ObjectId:Northern Limequat}}": {1: "170"},	
+                        "{{spacechase0.jsonAssets/ObjectId:Paradise Rangpur}}": {1: "170"},	
+                        "{{spacechase0.jsonAssets/ObjectId:Tropi Ugli Fruit}}": {1: "170"},	
+                        "{{spacechase0.jsonAssets/ObjectId:Desert Tangelo}}": {1: "190"},	
+                        "{{spacechase0.jsonAssets/ObjectId:Ember Blood Lime}}": {1: "170"}
+			},
+			"When": {"HasMod": "Rafseazz.RSVJA, spacechase0.JsonAssets",
+                        "Ridgeside Village": "true", "Enable This Mod":"true"}
+		},
+        // PPJA - More Trees
+        {
+                "Action": "EditData",
+                "Target": "Data/ObjectInformation",
+                "Fields": {
+                        "{{spacechase0.jsonAssets/ObjectId:Almond}}": {1:"150"},
+                        "{{spacechase0.jsonAssets/ObjectId:Asian Pear}}": {1:"150"},
+                        "{{spacechase0.jsonAssets/ObjectId:Avocado}}": {1:"230"},
+                        "{{spacechase0.jsonAssets/ObjectId:Breadfruit}}": {1:"230"},
+                        "{{spacechase0.jsonAssets/ObjectId:Camphor Leaves}}": {1:"150"},
+                        "{{spacechase0.jsonAssets/ObjectId:Cashew}}": {1:"150"},
+                        "{{spacechase0.jsonAssets/ObjectId:Cinnamon Sticks}}": {1:"190"},
+                        "{{spacechase0.jsonAssets/ObjectId:Cocoa Pod}}": {1:"170"},
+                        "{{spacechase0.jsonAssets/ObjectId:Dragon Fruit}}": {1:"170"},
+                        "{{spacechase0.jsonAssets/ObjectId:Durian}}": {1:"230"},
+                        "{{spacechase0.jsonAssets/ObjectId:Eucalyptus Leaves}}": {1:"180"},
+                        "{{spacechase0.jsonAssets/ObjectId:Fig}}": {1:"150"},
+                        "{{spacechase0.jsonAssets/ObjectId:Fragrant Wisteria}}": {1:"130"},
+                        "{{spacechase0.jsonAssets/ObjectId:Granny Smith Apple}}": {1:"150"},
+                        "{{spacechase0.jsonAssets/ObjectId:Grapefruit}}": {1:"190"},
+                        "{{spacechase0.jsonAssets/ObjectId:Lemon}}": {1:"110"},
+                        "{{spacechase0.jsonAssets/ObjectId:Lime}}": {1:"110"},
+                        "{{spacechase0.jsonAssets/ObjectId:Lychee}}": {1:"170"},
+                        "{{spacechase0.jsonAssets/ObjectId:Melaleuca Leaves}}": {1:"150"},
+                        "{{spacechase0.jsonAssets/ObjectId:Olive}}": {1:"110"},
+                        "{{spacechase0.jsonAssets/ObjectId:Papaya}}": {1:"180"},
+                        "{{spacechase0.jsonAssets/ObjectId:Pear}}": {1:"180"},
+                        "{{spacechase0.jsonAssets/ObjectId:Pecan}}": {1:"170"},
+                        "{{spacechase0.jsonAssets/ObjectId:Persimmon}}": {1:"210"},
+                        "{{spacechase0.jsonAssets/ObjectId:Pomelo}}": {1:"150"},
+                        "{{spacechase0.jsonAssets/ObjectId:Ume}}": {1:"110"},
+                        "{{spacechase0.jsonAssets/ObjectId:Vanilla}}": {1:"170"},
+                        "{{spacechase0.jsonAssets/ObjectId:Walnut}}": {1:"150"},
+                        "{{spacechase0.jsonAssets/ObjectId:Ylang Ylang}}": {1:"130"},
+                        "{{spacechase0.jsonAssets/ObjectId:Yuzu}}": {1:"110"}				
+                },
+                "When": {"HasMod|contains=ppja.moretrees": true, "HasMod|contains=spacechase0.JsonAssets": true, "PPJA More Trees": "true", "Enable This Mod":"true"}
+},
+        //Animals
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		// Better Grass
+		{
+				"Action": "EditData",
+				"Target": "Data/CraftingRecipes",
+				"Entries": {"Grass Starter": "771 2/Field/297/false/null"}
+		},
+		{
+                "Action": "EditData",
+                "Target": "Data/ObjectInformation",
+                "Fields": {					
+			"297": {1: "8"}},
+                "When": {"Better Grass": "true", "Enable This Mod":"true"}
+		},
+        //Normal Mode
+        //Without Immersive Tweaks
+        {
+                "Action": "EditData",
+                "Target": "Data/ObjectInformation",
+                "Fields": {
+				"176": {1:"75"}, //Egg
+				"180": {1:"75"}, //Egg
+				"305": {1:"110"}, //Void Egg
+				"442": {1:"130"}, //Duck Egg
+				"440": {1:"300"}, //Wool
+				"107": {1:"800"}, //Dinosaur Egg
+				"928": {1:"200"}, //Golden Egg
+				"184": {1:"100"}, //Milk
+				"436": {1:"210"}, //Goat Milk
+				"430": {1:"150"}, //Truffle
+				"289": {1:"900"}, //Ostrich Egg
+				"174": {1:"100"}, //Large Egg
+				"182": {1:"100"}, //Large Egg
+				"444": {1:"300"}, //Duck Feather
+				"446": {1:"400"}, //Rabbit's Foot
+				"186": {1:"140"}, //Large Milk
+				"438": {1:"290"}, //L. Goat Milk
+				"306": {1:"160"}, //Mayonnaise
+				"308": {1:"240"}, //Void Mayonnaise
+				"307": {1:"300"}, //Duck Mayonnaise
+				"428": {1:"500"}, //Cloth
+				"807": {1:"1700"}, //Dinosaur Mayonnaise
+				"424": {1:"165"}, //Cheese
+				"426": {1:"330"}, //Goat Cheese	
+				"432": {1:"250"} //Truffle Oil
+                },
+                            "When": {"Ranching Style": "Normal", "HasMod|contains=DaLion.ImmersiveTweaks": false, "1.5 version":"true", "Enable This Mod":"true"}
+            },
+            {
+                    "Action": "EditData",
+                    "Target": "Data/ObjectInformation",
+                    "Fields": {
+                    "176": {1:"75"}, //Egg
+                    "180": {1:"75"}, //Egg
+                    "305": {1:"110"}, //Void Egg
+                    "442": {1:"130"}, //Duck Egg
+                    "440": {1:"300"}, //Wool
+                    "107": {1:"800"}, //Dinosaur Egg
+                    "184": {1:"100"}, //Milk
+                    "436": {1:"210"}, //Goat Milk
+                    "430": {1:"150"}, //Truffle
+                    "174": {1:"100"}, //Large Egg
+                    "182": {1:"100"}, //Large Egg
+                    "444": {1:"300"}, //Duck Feather
+                    "446": {1:"400"}, //Rabbit's Foot
+                    "186": {1:"140"}, //Large Milk
+                    "438": {1:"290"}, //L. Goat Milk
+                    "306": {1:"160"}, //Mayonnaise
+                    "308": {1:"240"}, //Void Mayonnaise
+                    "307": {1:"300"}, //Duck Mayonnaise
+                    "428": {1:"500"}, //Cloth
+                    "807": {1:"1700"}, //Dinosaur Mayonnaise
+                    "424": {1:"165"}, //Cheese
+                    "426": {1:"330"}, //Goat Cheese	
+                    "432": {1:"250"} //Truffle Oil
+                    },
+                                "When": {"Ranching Style": "Normal", "HasMod|contains=DaLion.ImmersiveTweaks": false, "1.5 version":"false", "Enable This Mod":"true"}
+                },
+            //With Immersive Tweaks
+        {
+            "Action": "EditData",
+            "Target": "Data/ObjectInformation",
+            "Fields": {
+				"176": {1:"50"}, //Egg
+				"180": {1:"50"}, //Egg
+				"305": {1:"110"}, //Void Egg
+				"442": {1:"130"}, //Duck Egg
+				"440": {1:"300"}, //Wool
+				"107": {1:"800"}, //Dinosaur Egg
+				"928": {1:"200"}, //Golden Egg
+				"184": {1:"75"}, //Milk
+				"436": {1:"150"}, //Goat Milk
+				"430": {1:"150"}, //Truffle
+				"289": {1:"900"}, //Ostrich Egg
+				"174": {1:"100"}, //Large Egg
+				"182": {1:"100"}, //Large Egg
+				"444": {1:"300"}, //Duck Feather
+				"446": {1:"400"}, //Rabbit's Foot
+				"186": {1:"150"}, //Large Milk
+				"438": {1:"300"}, //L. Goat Milk
+				"306": {1:"120"}, //Mayonnaise
+				"308": {1:"240"}, //Void Mayonnaise
+				"307": {1:"300"}, //Duck Mayonnaise
+				"428": {1:"500"}, //Cloth
+				"807": {1:"1700"}, //Dinosaur Mayonnaise
+				"424": {1:"125"}, //Cheese
+				"426": {1:"250"}, //Goat Cheese	
+				"432": {1:"250"} //Truffle Oil
+            },
+                        "When": {"Ranching Style": "Normal", "HasMod|contains=DaLion.ImmersiveTweaks": true, "Enable This Mod":"true"}
+        },
+        // Ostrich Mayo and Golden Mayo
+            {
+                "Action": "EditData",
+                "Target": "Data/ObjectInformation",
+                "Fields": {
+                                    "{{spacechase0.jsonAssets/ObjectId:Golden Mayonnaise}}": {1: "400"},
+                                    "{{spacechase0.jsonAssets/ObjectId:Ostrich Mayonnaise}}": {1: "1800"}
+                    },
+                    "When": {"HasMod": "ughitsmegan.ostrichmayoforJsonAssets, ughitsmegan.goldenmayoforJsonAssets, spacechase0.JsonAssets",
+                                     "Ostrich and Golden Mayo": "true", "Ranching Style": "Normal", "Enable This Mod":"true"}
+            },
+        // Realistic Mode   
+            {
+                "Action": "EditData",
+                "Target": "Data/FarmAnimals",
+                "Fields": {
+                    "White Chicken": {0:"1",1:"14",24:"1500"},
+                    "Brown Chicken": {0:"1",1:"14",24:"1500"},
+                    "Blue Chicken": {0:"1",1:"14",24:"2000"},
+                    "Void Chicken": {0:"1",1:"14",24:"1000"},
+                    "Golden Chicken": {0:"1",1:"14",24:"20000"},
+                    "Duck": {0:"1",1:"16",24:"3000"},
+                    "Rabbit": {0:"12",1:"18",24:"15000"},
+                    "Dinosaur": {0:"56",1:"0",24:"40000"},
+                    "White Cow": {0:"1",1:"72",24:"15000"},
+                    "Brown Cow": {0:"1",1:"72",24:"15000"},
+                    "Goat": {0:"1",1:"36",24:"10000"},
+                    "Pig": {0:"1",1:"54",24:"20000"},
+                    "Sheep": {0:"28",1:"24",24:"30000"},
+                    "Ostrich": {0:"7",1:"112",24:"50000"},
+                    },
+                    "When": {"Ranching Style":"Realistic", "1.5 version":"true", "Enable This Mod":"true"}
+            },   
+            {
+                "Action": "EditData",
+                "Target": "Data/FarmAnimals",
+                "Fields": {
+                    "White Chicken": {0:"1",1:"14",24:"1500"},
+                    "Brown Chicken": {0:"1",1:"14",24:"1500"},
+                    "Blue Chicken": {0:"1",1:"14",24:"2000"},
+                    "Void Chicken": {0:"1",1:"14",24:"1000"},
+                    "Duck": {0:"1",1:"16",24:"3000"},
+                    "Rabbit": {0:"12",1:"18",24:"15000"},
+                    "Dinosaur": {0:"56",1:"0",24:"40000"},
+                    "White Cow": {0:"1",1:"72",24:"15000"},
+                    "Brown Cow": {0:"1",1:"72",24:"15000"},
+                    "Goat": {0:"1",1:"36",24:"10000"},
+                    "Pig": {0:"1",1:"54",24:"20000"},
+                    "Sheep": {0:"28",1:"24",24:"30000"},
+                    },
+                    "When": {"Ranching Style":"Realistic", "1.5 version":"false", "Enable This Mod":"true"}
+            },
+        //Big Dinos
+	    {
+        "Action": "Load",
+        "Target": "Animals/Dinosaur",
+        "FromFile": "assets/Dinosaur.png",
+        "When": {"Big Dinos": "true", "Enable This Mod":"true"}
+},
+{
+    "Action": "EditData",
+    "Target": "Data/FarmAnimals",
+    "Fields": {
+        "Dinosaur": {15:"Barn"},
+        },
+        "When": {"Big Dinos": "true", "Enable This Mod":"true"}
+},
+        //Without Immersive Tweaks
+        {
+                "Action": "EditData",
+                "Target": "Data/ObjectInformation",
+                "Fields": {
+				"176": {1:"100"}, //Egg
+				"180": {1:"100"}, //Egg
+				"305": {1:"140"}, //Void Egg
+				"442": {1:"110"}, //Duck Egg
+				"440": {1:"500"}, //Wool
+				"107": {1:"25000"}, //Dinosaur Egg
+				"928": {1:"500"}, //Golden Egg
+				"184": {1:"250"}, //Milk
+				"436": {1:"150"}, //Goat Milk
+				"430": {1:"400"}, //Truffle
+				"289": {1:"5000"}, //Ostrich Egg
+				"174": {1:"140"}, //Large Egg
+				"182": {1:"140"}, //Large Egg
+				"444": {1:"300"}, //Duck Feather
+				"446": {1:"600"}, //Rabbit's Foot
+				"186": {1:"400"}, //Large Milk
+				"438": {1:"250"}, //L. Goat Milk
+				"306": {1:"190"}, //Mayonnaise
+				"308": {1:"270"}, //Void Mayonnaise
+				"307": {1:"220"}, //Duck Mayonnaise
+				"428": {1:"800"}, //Cloth
+				"807": {1:"40000"}, //Dinosaur Mayonnaise
+				"424": {1:"300"}, //Cheese
+				"426": {1:"200"}, //Goat Cheese	
+				"432": {1:"600"} //Truffle Oil
+                },
+                            "When": {"Ranching Style": "Realistic", "HasMod|contains=DaLion.ImmersiveTweaks": false, "1.5 version":"true", "Enable This Mod":"true"}
+            },
+            {
+                    "Action": "EditData",
+                    "Target": "Data/ObjectInformation",
+                    "Fields": {
+				"176": {1:"100"}, //Egg
+				"180": {1:"100"}, //Egg
+				"305": {1:"140"}, //Void Egg
+				"442": {1:"110"}, //Duck Egg
+				"440": {1:"500"}, //Wool
+				"107": {1:"25000"}, //Dinosaur Egg
+				"184": {1:"250"}, //Milk
+				"436": {1:"150"}, //Goat Milk
+				"430": {1:"400"}, //Truffle
+				"174": {1:"140"}, //Large Egg
+				"182": {1:"140"}, //Large Egg
+				"444": {1:"300"}, //Duck Feather
+				"446": {1:"600"}, //Rabbit's Foot
+				"186": {1:"400"}, //Large Milk
+				"438": {1:"250"}, //L. Goat Milk
+				"306": {1:"190"}, //Mayonnaise
+				"308": {1:"270"}, //Void Mayonnaise
+				"307": {1:"220"}, //Duck Mayonnaise
+				"428": {1:"800"}, //Cloth
+				"807": {1:"40000"}, //Dinosaur Mayonnaise
+				"424": {1:"300"}, //Cheese
+				"426": {1:"200"}, //Goat Cheese	
+				"432": {1:"600"} //Truffle Oil
+                    },
+                                "When": {"Ranching Style": "Realistic", "HasMod|contains=DaLion.ImmersiveTweaks": false, "1.5 version":"false", "Enable This Mod":"true"}
+                },
+            //With Immersive Tweaks
+        {
+            "Action": "EditData",
+            "Target": "Data/ObjectInformation",
+            "Fields": {
+				"176": {1:"75"}, //Egg
+				"180": {1:"75"}, //Egg
+				"305": {1:"140"}, //Void Egg
+				"442": {1:"110"}, //Duck Egg
+				"440": {1:"500"}, //Wool
+				"107": {1:"25000"}, //Dinosaur Egg
+				"928": {1:"500"}, //Golden Egg
+				"184": {1:"150"}, //Milk
+				"436": {1:"100"}, //Goat Milk
+				"430": {1:"400"}, //Truffle
+				"289": {1:"5000"}, //Ostrich Egg
+				"174": {1:"120"}, //Large Egg
+				"182": {1:"120"}, //Large Egg
+				"444": {1:"300"}, //Duck Feather
+				"446": {1:"600"}, //Rabbit's Foot
+				"186": {1:"225"}, //Large Milk
+				"438": {1:"150"}, //L. Goat Milk
+				"306": {1:"150"}, //Mayonnaise
+				"308": {1:"270"}, //Void Mayonnaise
+				"307": {1:"220"}, //Duck Mayonnaise
+				"428": {1:"800"}, //Cloth
+				"807": {1:"40000"}, //Dinosaur Mayonnaise
+				"424": {1:"200"}, //Cheese
+				"426": {1:"150"}, //Goat Cheese	
+				"432": {1:"600"} //Truffle Oil
+            },
+                        "When": {"Ranching Style": "Realistic", "HasMod|contains=DaLion.ImmersiveTweaks": true, "Enable This Mod":"true"}
+        },
+        // Ostrich Mayo and Golden Mayo
+            {
+                "Action": "EditData",
+                "Target": "Data/ObjectInformation",
+                "Fields": {
+                                    "{{spacechase0.jsonAssets/ObjectId:Golden Mayonnaise}}": {1: "900"},
+                                    "{{spacechase0.jsonAssets/ObjectId:Ostrich Mayonnaise}}": {1: "7500"}
+                    },
+                    "When": {"HasMod": "ughitsmegan.ostrichmayoforJsonAssets, ughitsmegan.goldenmayoforJsonAssets, spacechase0.JsonAssets",
+                                     "Ostrich and Golden Mayo": "true", "Ranching Style": "Realistic", "Enable This Mod":"true"}
+            },
+            //Fishing
+            //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            //Easy Mode
+            //Fish Price
+        {
+            "Action": "EditData",
+            "Target": "Data/ObjectInformation",
+            "Fields": {
+                "128": {1:"110"}, //Pufferfish
+                "129": {1:"50"}, //Anchovy
+                "130": {1:"90"}, //Tuna
+                "131": {1:"50"}, //Sardine
+                "132": {1:"50"}, //Bream
+                "136": {1:"60"}, //Largemouth Bass
+                "137": {1:"50"}, //Smallmouth Bass
+                "138": {1:"70"}, //Rainbow Trout
+                "139": {1:"60"}, //Salmon
+                "140": {1:"60"}, //Walleye
+                "141": {1:"50"}, //Perch
+                "142": {1:"40"}, //Carp
+                "143": {1:"90"}, //Catfish
+                "144": {1:"80"}, //Pike
+                "145": {1:"50"}, //Sunfish
+                "146": {1:"70"}, //Red Mullet
+                "147": {1:"50"}, //Herring
+                "148": {1:"100"}, //Eel
+                "149": {1:"120"}, //Octopus
+                "150": {1:"50"}, //Red Snapper
+                "151": {1:"100"}, //Squid
+                "154": {1:"50"}, //Sea Cucumber
+                "155": {1:"110"}, //Super Cucumber
+                "156": {1:"70"}, //Ghostfish
+                "164": {1:"90"}, //Sandfish
+                "165": {1:"120"}, //Scorpion Carp
+                "267": {1:"70"}, //Flounder 
+                "269": {1:"100"}, //Midnight Carp
+                "698": {1:"130"}, //Sturgeon
+                "699": {1:"90"}, //Tiger Trout
+                "700": {1:"70"}, //Bullhead
+                "701": {1:"70"}, //Tilapia
+                "702": {1:"50"}, //Chub
+                "704": {1:"130"}, //Dorado
+                "705": {1:"90"}, //Albacore
+                "706": {1:"70"}, //Shad
+                "707": {1:"130"}, //Lingcod
+                "708": {1:"70"}, //Halibut
+                "734": {1:"70"}, //Woodskip
+                "795": {1:"120"}, //Void Salmon
+                "796": {1:"80"}, //Slimejack
+                "836": {1:"120"}, //Stingray
+                "837": {1:"70"}, //Lionfish 
+                "838": {1:"80"}, //Blue Discus
+                "158": {1:"120"}, //Stonefish
+                "161": {1:"225"}, //Ice Pip
+                "162": {1:"225"}, //Lava Eel
+                "798": {1:"120"}, //Midnight Squid
+                "799": {1:"120"}, //Spook Fish
+                "800": {1:"150"}, //Blobfish
+            },
+			"When": {"Fishing Mode": "Easy", "1.5 version":"true", "Enable This Mod":"true"}
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/ObjectInformation",
+            "Fields": {
+                "128": {1:"110"}, //Pufferfish
+                "129": {1:"50"}, //Anchovy
+                "130": {1:"90"}, //Tuna
+                "131": {1:"50"}, //Sardine
+                "132": {1:"50"}, //Bream
+                "136": {1:"60"}, //Largemouth Bass
+                "137": {1:"50"}, //Smallmouth Bass
+                "138": {1:"70"}, //Rainbow Trout
+                "139": {1:"60"}, //Salmon
+                "140": {1:"60"}, //Walleye
+                "141": {1:"50"}, //Perch
+                "142": {1:"40"}, //Carp
+                "143": {1:"90"}, //Catfish
+                "144": {1:"80"}, //Pike
+                "145": {1:"50"}, //Sunfish
+                "146": {1:"70"}, //Red Mullet
+                "147": {1:"50"}, //Herring
+                "148": {1:"100"}, //Eel
+                "149": {1:"120"}, //Octopus
+                "150": {1:"50"}, //Red Snapper
+                "151": {1:"100"}, //Squid
+                "154": {1:"50"}, //Sea Cucumber
+                "155": {1:"110"}, //Super Cucumber
+                "156": {1:"70"}, //Ghostfish
+                "164": {1:"90"}, //Sandfish
+                "165": {1:"120"}, //Scorpion Carp
+                "267": {1:"70"}, //Flounder 
+                "269": {1:"100"}, //Midnight Carp
+                "698": {1:"130"}, //Sturgeon
+                "699": {1:"90"}, //Tiger Trout
+                "700": {1:"70"}, //Bullhead
+                "701": {1:"70"}, //Tilapia
+                "702": {1:"50"}, //Chub
+                "704": {1:"130"}, //Dorado
+                "705": {1:"90"}, //Albacore
+                "706": {1:"70"}, //Shad
+                "707": {1:"130"}, //Lingcod
+                "708": {1:"70"}, //Halibut
+                "734": {1:"70"}, //Woodskip
+                "795": {1:"120"}, //Void Salmon
+                "796": {1:"80"}, //Slimejack
+                "158": {1:"120"}, //Stonefish
+                "161": {1:"225"}, //Ice Pip
+                "162": {1:"225"}, //Lava Eel
+                "798": {1:"120"}, //Midnight Squid
+                "799": {1:"120"}, //Spook Fish
+                "800": {1:"150"}, //Blobfish
+            },
+			"When": {"Fishing Mode": "Easy", "1.5 version":"false", "Enable This Mod":"true"}
+        },
+        //Legendary Fish
+		{
+            "Action": "EditData",
+            "Target": "Data/ObjectInformation",
+            "Fields": {
+                "159": {1:"1500"}, //Crimsonfish
+                "160": {1:"1500"}, //Angler
+                "163": {1:"2000"}, //Legend
+                "775": {1:"1500"}, //Glacierfish
+                "682": {1:"1500"}, //Mutant Carp
+                "898": {1:"1500"}, //Son of Crimsonfish
+                "899": {1:"1500"}, //Ms. Angler
+                "900": {1:"2000"}, //Legend II
+                "902": {1:"1500"}, //Glacierfish Jr.
+                "901": {1:"1500"}, //Radioactive Carp
+            },
+			"When": {"Fishing Mode": "Easy", "Challenging Legendary Fish": "false", "1.5 version":"true", "Enable This Mod":"true"}
+        },
+		{
+            "Action": "EditData",
+            "Target": "Data/ObjectInformation",
+            "Fields": {
+                "159": {1:"2000"}, //Crimsonfish
+                "160": {1:"2000"}, //Angler
+                "163": {1:"2000"}, //Legend
+                "775": {1:"2000"}, //Glacierfish
+                "682": {1:"2000"}, //Mutant Carp
+                "898": {1:"2000"}, //Son of Crimsonfish
+                "899": {1:"2000"}, //Ms. Angler
+                "900": {1:"2000"}, //Legend II
+                "902": {1:"2000"}, //Glacierfish Jr.
+                "901": {1:"2000"}, //Radioactive Carp
+            },
+			"When": {"Fishing Mode": "Easy", "Challenging Legendary Fish": "true", "1.5 version":"true", "Enable This Mod":"true"}
+        },
+		{
+            "Action": "EditData",
+            "Target": "Data/ObjectInformation",
+            "Fields": {
+                "159": {1:"1500"}, //Crimsonfish
+                "160": {1:"1500"}, //Angler
+                "163": {1:"2000"}, //Legend
+                "775": {1:"1500"}, //Glacierfish
+                "682": {1:"1500"}, //Mutant Carp
+            },
+			"When": {"Fishing Mode": "Easy", "Challenging Legendary Fish": "false", "1.5 version":"false", "Enable This Mod":"true"}
+        },
+		{
+            "Action": "EditData",
+            "Target": "Data/ObjectInformation",
+            "Fields": {
+                "159": {1:"2000"}, //Crimsonfish
+                "160": {1:"2000"}, //Angler
+                "163": {1:"2000"}, //Legend
+                "775": {1:"2000"}, //Glacierfish
+                "682": {1:"2000"}, //Mutant Carp
+            },
+			"When": {"Fishing Mode": "Easy", "Challenging Legendary Fish": "true", "1.5 version":"false", "Enable This Mod":"true"}
+        },
+        //Fish Difficulty
+		{
+            "Action": "EditData",
+            "Target": "Data/fish",
+            "Fields": {
+                "128": {1:"60"}, //Pufferfish
+                "129": {1:"20"}, //Anchovy
+                "130": {1:"50"}, //Tuna
+                "131": {1:"20"}, //Sardine
+                "132": {1:"23"}, //Bream
+                "136": {1:"35"}, //Largemouth Bass
+                "137": {1:"23"}, //Smallmouth Bass
+                "138": {1:"40"}, //Rainbow Trout
+                "139": {1:"35"}, //Salmon
+                "140": {1:"35"}, //Walleye
+                "141": {1:"25"}, //Perch
+                "142": {1:"15"}, //Carp
+                "143": {1:"50"}, //Catfish
+                "144": {1:"45"}, //Pike
+                "145": {1:"20"}, //Sunfish
+                "146": {1:"40"}, //Red Mullet
+                "147": {1:"18"}, //Herring
+                "148": {1:"55"}, //Eel
+                "149": {1:"65"}, //Octopus
+                "150": {1:"25"}, //Red Snapper
+                "151": {1:"55"}, //Squid
+                "154": {1:"30"}, //Sea Cucumber
+                "155": {1:"60"}, //Super Cucumber
+                "156": {1:"38"}, //Ghostfish
+                "158": {1:"45"}, //Stonefish
+                "161": {1:"80"}, //Ice Pip
+                "162": {1:"80"}, //Lava Eel
+                "164": {1:"50"}, //Sandfish
+                "165": {1:"65"}, //Scorpion Carp
+                "267": {1:"40"}, //Flounder
+                "269": {1:"45"}, //Midnight Carp
+                "698": {1:"68"}, //Sturgeon
+                "699": {1:"48"}, //Tiger Trout
+                "700": {1:"36"}, //Bullhead
+                "701": {1:"40"}, //Tilapia
+                "702": {1:"25"}, //Chub
+                "704": {1:"68"}, //Dorado
+                "705": {1:"50"}, //Albacore
+                "706": {1:"40"}, //Shad
+                "707": {1:"70"}, //Lingcod
+                "708": {1:"40"}, //Halibut
+                "734": {1:"40"}, //Woodskip
+                "795": {1:"65"}, //Void Salmon
+                "796": {1:"45"}, //Slimejack
+                "798": {1:"45"}, //Midnight Squid
+                "799": {1:"45"}, //Spook Fish
+                "800": {1:"55"}, //Blobfish
+                "836": {1:"65"}, //Stingray
+                "837": {1:"40"}, //Lionfish
+                "838": {1:"45"}, //Blue Discus
+			},
+			"When": {"Fishing Mode": "Easy", "1.5 version":"true", "Enable This Mod":"true"}
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/fish",
+            "Fields": {
+                "128": {1:"60"}, //Pufferfish
+                "129": {1:"20"}, //Anchovy
+                "130": {1:"50"}, //Tuna
+                "131": {1:"20"}, //Sardine
+                "132": {1:"23"}, //Bream
+                "136": {1:"35"}, //Largemouth Bass
+                "137": {1:"23"}, //Smallmouth Bass
+                "138": {1:"40"}, //Rainbow Trout
+                "139": {1:"35"}, //Salmon
+                "140": {1:"35"}, //Walleye
+                "141": {1:"25"}, //Perch
+                "142": {1:"15"}, //Carp
+                "143": {1:"50"}, //Catfish
+                "144": {1:"45"}, //Pike
+                "145": {1:"20"}, //Sunfish
+                "146": {1:"40"}, //Red Mullet
+                "147": {1:"18"}, //Herring
+                "148": {1:"55"}, //Eel
+                "149": {1:"65"}, //Octopus
+                "150": {1:"25"}, //Red Snapper
+                "151": {1:"55"}, //Squid
+                "154": {1:"30"}, //Sea Cucumber
+                "155": {1:"60"}, //Super Cucumber
+                "156": {1:"38"}, //Ghostfish
+                "158": {1:"45"}, //Stonefish
+                "161": {1:"80"}, //Ice Pip
+                "162": {1:"80"}, //Lava Eel
+                "164": {1:"50"}, //Sandfish
+                "165": {1:"65"}, //Scorpion Carp
+                "267": {1:"40"}, //Flounder
+                "269": {1:"45"}, //Midnight Carp
+                "698": {1:"68"}, //Sturgeon
+                "699": {1:"48"}, //Tiger Trout
+                "700": {1:"36"}, //Bullhead
+                "701": {1:"40"}, //Tilapia
+                "702": {1:"25"}, //Chub
+                "704": {1:"68"}, //Dorado
+                "705": {1:"50"}, //Albacore
+                "706": {1:"40"}, //Shad
+                "707": {1:"70"}, //Lingcod
+                "708": {1:"40"}, //Halibut
+                "734": {1:"40"}, //Woodskip
+                "795": {1:"65"}, //Void Salmon
+                "796": {1:"45"}, //Slimejack
+                "798": {1:"45"}, //Midnight Squid
+                "799": {1:"45"}, //Spook Fish
+                "800": {1:"55"}, //Blobfish
+			},
+			"When": {"Fishing Mode": "Easy", "1.5 version":"false", "Enable This Mod":"true"}
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/fish",
+            "Fields": {
+                "159": {1:"80"}, //Crimsonfish
+                "160": {1:"80"}, //Angler
+                "163": {1:"80"}, //Legend
+                "682": {1:"80"}, //Mutant Carp
+                "775": {1:"80"}, //Glacierfish
+                "898": {1:"80"}, //Son of Crimsonfish
+                "899": {1:"80"}, //Ms. Angler
+                "900": {1:"80"}, //Legend II
+                "901": {1:"80"}, //Radioactive Carp
+                "902": {1:"80"}, //Glacierfish Jr.
+			},
+			"When": {"Fishing Mode": "Easy", "1.5 version":"true", "Enable This Mod":"true"}
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/fish",
+            "Fields": {
+                "159": {1:"80"}, //Crimsonfish
+                "160": {1:"80"}, //Angler
+                "163": {1:"80"}, //Legend
+                "682": {1:"80"}, //Mutant Carp
+                "775": {1:"80"}, //Glacierfish
+			},
+			"When": {"Fishing Mode": "Easy", "1.5 version":"false", "Enable This Mod":"true"}
+		},
+                //Normal Mode
+        {
+            "Action": "EditData",
+            "Target": "Data/ObjectInformation",
+            "Fields": {
+                "128": {1:"150"}, //Pufferfish
+                "129": {1:"50"}, //Anchovy
+                "130": {1:"130"}, //Tuna
+                "131": {1:"50"}, //Sardine
+                "132": {1:"60"}, //Bream
+                "136": {1:"90"}, //Largemouth Bass
+                "137": {1:"50"}, //Smallmouth Bass
+                "138": {1:"80"}, //Rainbow Trout
+                "139": {1:"90"}, //Salmon
+                "140": {1:"80"}, //Walleye
+                "141": {1:"60"}, //Perch
+                "142": {1:"40"}, //Carp
+                "143": {1:"140"}, //Catfish
+                "144": {1:"110"}, //Pike
+                "145": {1:"50"}, //Sunfish
+                "146": {1:"100"}, //Red Mullet
+                "147": {1:"50"}, //Herring
+                "148": {1:"130"}, //Eel
+                "149": {1:"180"}, //Octopus
+                "150": {1:"70"}, //Red Snapper
+                "151": {1:"140"}, //Squid
+                "154": {1:"70"}, //Sea Cucumber
+                "155": {1:"150"}, //Super Cucumber
+                "156": {1:"90"}, //Ghostfish
+                "164": {1:"120"}, //Sandfish
+                "165": {1:"170"}, //Scorpion Carp
+                "267": {1:"90"}, //Flounder 
+                "269": {1:"120"}, //Midnight Carp
+                "698": {1:"150"}, //Sturgeon
+                "699": {1:"110"}, //Tiger Trout
+                "700": {1:"90"}, //Bullhead
+                "701": {1:"90"}, //Tilapia
+                "702": {1:"60"}, //Chub
+                "704": {1:"150"}, //Dorado
+                "705": {1:"110"}, //Albacore
+                "706": {1:"80"}, //Shad
+                "707": {1:"160"}, //Lingcod
+                "708": {1:"90"}, //Halibut
+                "734": {1:"90"}, //Woodskip
+                "795": {1:"150"}, //Void Salmon
+                "796": {1:"100"}, //Slimejack
+                "836": {1:"150"}, //Stingray
+                "837": {1:"90"}, //Lionfish 
+                "838": {1:"110"}, //Blue Discus
+                "158": {1:"180"}, //Stonefish
+                "161": {1:"240"}, //Ice Pip
+                "162": {1:"255"}, //Lava Eel
+                "798": {1:"150"}, //Midnight Squid
+                "799": {1:"165"}, //Spook Fish
+                "800": {1:"210"}, //Blobfish
+            },
+			"When": {"Fishing Mode": "Normal", "1.5 version":"true", "Enable This Mod":"true"}
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/ObjectInformation",
+            "Fields": {
+                "128": {1:"150"}, //Pufferfish
+                "129": {1:"50"}, //Anchovy
+                "130": {1:"130"}, //Tuna
+                "131": {1:"50"}, //Sardine
+                "132": {1:"60"}, //Bream
+                "136": {1:"90"}, //Largemouth Bass
+                "137": {1:"50"}, //Smallmouth Bass
+                "138": {1:"80"}, //Rainbow Trout
+                "139": {1:"90"}, //Salmon
+                "140": {1:"80"}, //Walleye
+                "141": {1:"60"}, //Perch
+                "142": {1:"40"}, //Carp
+                "143": {1:"140"}, //Catfish
+                "144": {1:"110"}, //Pike
+                "145": {1:"50"}, //Sunfish
+                "146": {1:"100"}, //Red Mullet
+                "147": {1:"50"}, //Herring
+                "148": {1:"130"}, //Eel
+                "149": {1:"180"}, //Octopus
+                "150": {1:"70"}, //Red Snapper
+                "151": {1:"140"}, //Squid
+                "154": {1:"70"}, //Sea Cucumber
+                "155": {1:"150"}, //Super Cucumber
+                "156": {1:"90"}, //Ghostfish
+                "164": {1:"120"}, //Sandfish
+                "165": {1:"170"}, //Scorpion Carp
+                "267": {1:"90"}, //Flounder 
+                "269": {1:"120"}, //Midnight Carp
+                "698": {1:"150"}, //Sturgeon
+                "699": {1:"110"}, //Tiger Trout
+                "700": {1:"90"}, //Bullhead
+                "701": {1:"90"}, //Tilapia
+                "702": {1:"60"}, //Chub
+                "704": {1:"150"}, //Dorado
+                "705": {1:"110"}, //Albacore
+                "706": {1:"80"}, //Shad
+                "707": {1:"160"}, //Lingcod
+                "708": {1:"90"}, //Halibut
+                "734": {1:"90"}, //Woodskip
+                "795": {1:"150"}, //Void Salmon
+                "796": {1:"100"}, //Slimejack
+                "158": {1:"180"}, //Stonefish
+                "161": {1:"240"}, //Ice Pip
+                "162": {1:"255"}, //Lava Eel
+                "798": {1:"150"}, //Midnight Squid
+                "799": {1:"165"}, //Spook Fish
+                "800": {1:"210"}, //Blobfish
+            },
+			"When": {"Fishing Mode": "Normal", "1.5 version":"false", "Enable This Mod":"true"}
+        },
+        //Legendary Fish
+		{
+            "Action": "EditData",
+            "Target": "Data/ObjectInformation",
+            "Fields": {
+                "159": {1:"2000"}, //Crimsonfish
+                "160": {1:"1500"}, //Angler
+                "163": {1:"3000"}, //Legend
+                "775": {1:"2000"}, //Glacierfish
+                "682": {1:"1500"}, //Mutant Carp
+                "898": {1:"2000"}, //Son of Crimsonfish
+                "899": {1:"1500"}, //Ms. Angler
+                "900": {1:"3000"}, //Legend II
+                "902": {1:"2000"}, //Glacierfish Jr.
+                "901": {1:"1500"}, //Radioactive Carp
+            },
+			"When": {"Fishing Mode": "Normal", "Challenging Legendary Fish": "false", "1.5 version":"true", "Enable This Mod":"true"}
+        },
+		{
+            "Action": "EditData",
+            "Target": "Data/ObjectInformation",
+            "Fields": {
+                "159": {1:"3000"}, //Crimsonfish
+                "160": {1:"3000"}, //Angler
+                "163": {1:"3000"}, //Legend
+                "775": {1:"3000"}, //Glacierfish
+                "682": {1:"3000"}, //Mutant Carp
+                "898": {1:"3000"}, //Son of Crimsonfish
+                "899": {1:"3000"}, //Ms. Angler
+                "900": {1:"3000"}, //Legend II
+                "902": {1:"3000"}, //Glacierfish Jr.
+                "901": {1:"3000"}, //Radioactive Carp
+            },
+			"When": {"Fishing Mode": "Normal", "Challenging Legendary Fish": "true", "1.5 version":"true", "Enable This Mod":"true"}
+        },
+		{
+            "Action": "EditData",
+            "Target": "Data/ObjectInformation",
+            "Fields": {
+                "159": {1:"2000"}, //Crimsonfish
+                "160": {1:"1500"}, //Angler
+                "163": {1:"3000"}, //Legend
+                "775": {1:"2000"}, //Glacierfish
+                "682": {1:"1500"}, //Mutant Carp
+            },
+			"When": {"Fishing Mode": "Normal", "Challenging Legendary Fish": "false", "1.5 version":"false", "Enable This Mod":"true"}
+        },
+		{
+            "Action": "EditData",
+            "Target": "Data/ObjectInformation",
+            "Fields": {
+                "159": {1:"3000"}, //Crimsonfish
+                "160": {1:"3000"}, //Angler
+                "163": {1:"3000"}, //Legend
+                "775": {1:"3000"}, //Glacierfish
+                "682": {1:"3000"}, //Mutant Carp
+            },
+			"When": {"Fishing Mode": "Normal", "Challenging Legendary Fish": "true", "1.5 version":"false", "Enable This Mod":"true"}
+        },
+        //Fish Difficulty
+		{
+            "Action": "EditData",
+            "Target": "Data/fish",
+            "Fields": {
+                "159": {1:"110"}, //Crimsonfish
+                "160": {1:"110"}, //Angler
+                "163": {1:"110"}, //Legend
+                "682": {1:"110"}, //Mutant Carp
+                "775": {1:"110"}, //Glacierfish
+                "898": {1:"110"}, //Son of Crimsonfish
+                "899": {1:"110"}, //Ms. Angler
+                "900": {1:"110"}, //Legend II
+                "901": {1:"110"}, //Radioactive Carp
+                "902": {1:"110"}, //Glacierfish Jr.
+			},
+			"When": {"Fishing Mode": "Normal", "Challenging Legendary Fish": "true", "1.5 version":"true", "Enable This Mod":"true"}
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/fish",
+            "Fields": {
+                "159": {1:"110"}, //Crimsonfish
+                "160": {1:"110"}, //Angler
+                "163": {1:"110"}, //Legend
+                "682": {1:"110"}, //Mutant Carp
+                "775": {1:"110"}, //Glacierfish
+			},
+			"When": {"Fishing Mode": "Normal", "Challenging Legendary Fish": "true", "1.5 version":"false", "Enable This Mod":"true"}
+		},
+                //Hard Mode
+        {
+            "Action": "EditData",
+            "Target": "Data/ObjectInformation",
+            "Fields": {
+                "128": {1:"170"}, //Pufferfish
+                "129": {1:"90"}, //Anchovy
+                "130": {1:"150"}, //Tuna
+                "131": {1:"90"}, //Sardine
+                "132": {1:"100"}, //Bream
+                "136": {1:"130"}, //Largemouth Bass
+                "137": {1:"80"}, //Smallmouth Bass
+                "138": {1:"120"}, //Rainbow Trout
+                "139": {1:"130"}, //Salmon
+                "140": {1:"120"}, //Walleye
+                "141": {1:"100"}, //Perch
+                "142": {1:"60"}, //Carp
+                "143": {1:"170"}, //Catfish
+                "144": {1:"130"}, //Pike
+                "145": {1:"90"}, //Sunfish
+                "146": {1:"130"}, //Red Mullet
+                "147": {1:"80"}, //Herring
+                "148": {1:"160"}, //Eel
+                "149": {1:"190"}, //Octopus
+                "150": {1:"100"}, //Red Snapper
+                "151": {1:"170"}, //Squid
+                "154": {1:"100"}, //Sea Cucumber
+                "155": {1:"180"}, //Super Cucumber
+                "156": {1:"120"}, //Ghostfish
+                "164": {1:"140"}, //Sandfish
+                "165": {1:"190"}, //Scorpion Carp
+                "267": {1:"120"}, //Flounder 
+                "269": {1:"160"}, //Midnight Carp
+                "698": {1:"170"}, //Sturgeon
+                "699": {1:"140"}, //Tiger Trout
+                "700": {1:"110"}, //Bullhead
+                "701": {1:"120"}, //Tilapia
+                "702": {1:"80"}, //Chub
+                "704": {1:"170"}, //Dorado
+                "705": {1:"140"}, //Albacore
+                "706": {1:"110"}, //Shad
+                "707": {1:"180"}, //Lingcod
+                "708": {1:"110"}, //Halibut
+                "734": {1:"120"}, //Woodskip
+                "795": {1:"170"}, //Void Salmon
+                "796": {1:"120"}, //Slimejack
+                "836": {1:"170"}, //Stingray
+                "837": {1:"130"}, //Lionfish 
+                "838": {1:"130"}, //Blue Discus
+                "158": {1:"210"}, //Stonefish
+                "161": {1:"270"}, //Ice Pip
+                "162": {1:"285"}, //Lava Eel
+                "798": {1:"195"}, //Midnight Squid
+                "799": {1:"195"}, //Spook Fish
+                "800": {1:"240"}, //Blobfish
+            },
+			"When": {"Fishing Mode": "Hard", "1.5 version":"true", "Enable This Mod":"true"}
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/ObjectInformation",
+            "Fields": {
+                "128": {1:"170"}, //Pufferfish
+                "129": {1:"90"}, //Anchovy
+                "130": {1:"150"}, //Tuna
+                "131": {1:"90"}, //Sardine
+                "132": {1:"100"}, //Bream
+                "136": {1:"130"}, //Largemouth Bass
+                "137": {1:"80"}, //Smallmouth Bass
+                "138": {1:"120"}, //Rainbow Trout
+                "139": {1:"130"}, //Salmon
+                "140": {1:"120"}, //Walleye
+                "141": {1:"100"}, //Perch
+                "142": {1:"60"}, //Carp
+                "143": {1:"170"}, //Catfish
+                "144": {1:"130"}, //Pike
+                "145": {1:"90"}, //Sunfish
+                "146": {1:"130"}, //Red Mullet
+                "147": {1:"80"}, //Herring
+                "148": {1:"160"}, //Eel
+                "149": {1:"190"}, //Octopus
+                "150": {1:"100"}, //Red Snapper
+                "151": {1:"170"}, //Squid
+                "154": {1:"100"}, //Sea Cucumber
+                "155": {1:"180"}, //Super Cucumber
+                "156": {1:"120"}, //Ghostfish
+                "164": {1:"140"}, //Sandfish
+                "165": {1:"190"}, //Scorpion Carp
+                "267": {1:"120"}, //Flounder 
+                "269": {1:"160"}, //Midnight Carp
+                "698": {1:"170"}, //Sturgeon
+                "699": {1:"140"}, //Tiger Trout
+                "700": {1:"110"}, //Bullhead
+                "701": {1:"120"}, //Tilapia
+                "702": {1:"80"}, //Chub
+                "704": {1:"170"}, //Dorado
+                "705": {1:"140"}, //Albacore
+                "706": {1:"110"}, //Shad
+                "707": {1:"180"}, //Lingcod
+                "708": {1:"110"}, //Halibut
+                "734": {1:"120"}, //Woodskip
+                "795": {1:"170"}, //Void Salmon
+                "796": {1:"120"}, //Slimejack
+                "158": {1:"210"}, //Stonefish
+                "161": {1:"270"}, //Ice Pip
+                "162": {1:"285"}, //Lava Eel
+                "798": {1:"195"}, //Midnight Squid
+                "799": {1:"195"}, //Spook Fish
+                "800": {1:"240"}, //Blobfish
+            },
+			"When": {"Fishing Mode": "Hard", "1.5 version":"false", "Enable This Mod":"true"}
+        },
+        //Legendary Fish
+		{
+            "Action": "EditData",
+            "Target": "Data/ObjectInformation",
+            "Fields": {
+                "159": {1:"2500"}, //Crimsonfish
+                "160": {1:"2000"}, //Angler
+                "163": {1:"3000"}, //Legend
+                "775": {1:"3000"}, //Glacierfish
+                "682": {1:"1750"}, //Mutant Carp
+                "898": {1:"2500"}, //Son of Crimsonfish
+                "899": {1:"2000"}, //Ms. Angler
+                "900": {1:"3000"}, //Legend II
+                "902": {1:"3000"}, //Glacierfish Jr.
+                "901": {1:"1750"}, //Radioactive Carp
+            },
+			"When": {"Fishing Mode": "Hard", "Challenging Legendary Fish": "false", "1.5 version":"true", "Enable This Mod":"true"}
+        },
+		{
+            "Action": "EditData",
+            "Target": "Data/ObjectInformation",
+            "Fields": {
+                "159": {1:"3000"}, //Crimsonfish
+                "160": {1:"3000"}, //Angler
+                "163": {1:"3000"}, //Legend
+                "775": {1:"3000"}, //Glacierfish
+                "682": {1:"3000"}, //Mutant Carp
+                "898": {1:"3000"}, //Son of Crimsonfish
+                "899": {1:"3000"}, //Ms. Angler
+                "900": {1:"3000"}, //Legend II
+                "902": {1:"3000"}, //Glacierfish Jr.
+                "901": {1:"3000"}, //Radioactive Carp
+            },
+			"When": {"Fishing Mode": "Hard", "Challenging Legendary Fish": "true", "1.5 version":"true", "Enable This Mod":"true"}
+        },
+		{
+            "Action": "EditData",
+            "Target": "Data/ObjectInformation",
+            "Fields": {
+                "159": {1:"2500"}, //Crimsonfish
+                "160": {1:"2000"}, //Angler
+                "163": {1:"3000"}, //Legend
+                "775": {1:"3000"}, //Glacierfish
+                "682": {1:"1750"}, //Mutant Carp
+            },
+			"When": {"Fishing Mode": "Hard", "Challenging Legendary Fish": "false", "1.5 version":"false", "Enable This Mod":"true"}
+        },
+		{
+            "Action": "EditData",
+            "Target": "Data/ObjectInformation",
+            "Fields": {
+                "159": {1:"3000"}, //Crimsonfish
+                "160": {1:"3000"}, //Angler
+                "163": {1:"3000"}, //Legend
+                "775": {1:"3000"}, //Glacierfish
+                "682": {1:"3000"}, //Mutant Carp
+            },
+			"When": {"Fishing Mode": "Hard", "Challenging Legendary Fish": "true", "1.5 version":"false", "Enable This Mod":"true"}
+        },
+        //Fish Difficulty
+		{
+                        "Action": "EditData",
+                        "Target": "Data/fish",
+                        "Fields": {
+                            "128": {1:"90"}, //Pufferfish
+                            "129": {1:"50"}, //Anchovy
+                            "130": {1:"80"}, //Tuna
+                            "131": {1:"50"}, //Sardine
+                            "132": {1:"55"}, //Bream
+                            "136": {1:"70"}, //Largemouth Bass
+                            "137": {1:"45"}, //Smallmouth Bass
+                            "138": {1:"65"}, //Rainbow Trout
+                            "139": {1:"70"}, //Salmon
+                            "140": {1:"65"}, //Walleye
+                            "141": {1:"55"}, //Perch
+                            "142": {1:"35"}, //Carp
+                            "143": {1:"90"}, //Catfish
+                            "144": {1:"70"}, //Pike
+                            "145": {1:"50"}, //Sunfish
+                            "146": {1:"70"}, //Red Mullet
+                            "147": {1:"45"}, //Herring
+                            "148": {1:"85"}, //Eel
+                            "149": {1:"100"}, //Octopus
+                            "150": {1:"55"}, //Red Snapper
+                            "151": {1:"90"}, //Squid
+                            "154": {1:"55"}, //Sea Cucumber
+                            "155": {1:"95"}, //Super Cucumber
+                            "156": {1:"65"}, //Ghostfish
+                            "158": {1:"75"}, //Stonefish
+                            "161": {1:"95"}, //Ice Pip
+                            "162": {1:"100"}, //Lava Eel
+                            "164": {1:"75"}, //Sandfish
+                            "165": {1:"100"}, //Scorpion Carp
+                            "267": {1:"65"}, //Flounder
+                            "269": {1:"70"}, //Midnight Carp
+                            "698": {1:"90"}, //Sturgeon
+                            "699": {1:"75"}, //Tiger Trout
+                            "700": {1:"60"}, //Bullhead
+                            "701": {1:"65"}, //Tilapia
+                            "702": {1:"45"}, //Chub
+                            "704": {1:"88"}, //Dorado
+                            "705": {1:"75"}, //Albacore
+                            "706": {1:"60"}, //Shad
+                            "707": {1:"95"}, //Lingcod
+                            "708": {1:"60"}, //Halibut
+                            "734": {1:"65"}, //Woodskip
+                            "795": {1:"90"}, //Void Salmon
+                            "796": {1:"65"}, //Slimejack
+                            "798": {1:"70"}, //Midnight Squid
+                            "799": {1:"70"}, //Spook Fish
+                            "800": {1:"85"}, //Blobfish
+                            "836": {1:"90"}, //Stingray
+                            "837": {1:"70"}, //Lionfish
+                            "838": {1:"70"}, //Blue Discus
+			},
+			"When": {"Fishing Mode": "Hard", "1.5 version":"true", "Enable This Mod":"true"}
+		},
+		{
+                        "Action": "EditData",
+                        "Target": "Data/fish",
+                        "Fields": {
+                            "128": {1:"90"}, //Pufferfish
+                            "129": {1:"50"}, //Anchovy
+                            "130": {1:"80"}, //Tuna
+                            "131": {1:"50"}, //Sardine
+                            "132": {1:"55"}, //Bream
+                            "136": {1:"70"}, //Largemouth Bass
+                            "137": {1:"45"}, //Smallmouth Bass
+                            "138": {1:"65"}, //Rainbow Trout
+                            "139": {1:"70"}, //Salmon
+                            "140": {1:"65"}, //Walleye
+                            "141": {1:"55"}, //Perch
+                            "142": {1:"35"}, //Carp
+                            "143": {1:"90"}, //Catfish
+                            "144": {1:"70"}, //Pike
+                            "145": {1:"50"}, //Sunfish
+                            "146": {1:"70"}, //Red Mullet
+                            "147": {1:"45"}, //Herring
+                            "148": {1:"85"}, //Eel
+                            "149": {1:"100"}, //Octopus
+                            "150": {1:"55"}, //Red Snapper
+                            "151": {1:"90"}, //Squid
+                            "154": {1:"55"}, //Sea Cucumber
+                            "155": {1:"95"}, //Super Cucumber
+                            "156": {1:"65"}, //Ghostfish
+                            "158": {1:"75"}, //Stonefish
+                            "161": {1:"95"}, //Ice Pip
+                            "162": {1:"100"}, //Lava Eel
+                            "164": {1:"75"}, //Sandfish
+                            "165": {1:"100"}, //Scorpion Carp
+                            "267": {1:"65"}, //Flounder
+                            "269": {1:"70"}, //Midnight Carp
+                            "698": {1:"90"}, //Sturgeon
+                            "699": {1:"75"}, //Tiger Trout
+                            "700": {1:"60"}, //Bullhead
+                            "701": {1:"65"}, //Tilapia
+                            "702": {1:"45"}, //Chub
+                            "704": {1:"88"}, //Dorado
+                            "705": {1:"75"}, //Albacore
+                            "706": {1:"60"}, //Shad
+                            "707": {1:"95"}, //Lingcod
+                            "708": {1:"60"}, //Halibut
+                            "734": {1:"65"}, //Woodskip
+                            "795": {1:"90"}, //Void Salmon
+                            "796": {1:"65"}, //Slimejack
+                            "798": {1:"70"}, //Midnight Squid
+                            "799": {1:"70"}, //Spook Fish
+                            "800": {1:"85"}, //Blobfish
+			},
+			"When": {"Fishing Mode": "Hard", "1.5 version":"false", "Enable This Mod":"true"}
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/fish",
+            "Fields": {
+                "159": {1:"105"}, //Crimsonfish
+                "160": {1:"95"}, //Angler
+                "163": {1:"110"}, //Legend
+                "682": {1:"90"}, //Mutant Carp
+                "775": {1:"110"}, //Glacierfish
+                "898": {1:"105"}, //Son of Crimsonfish
+                "899": {1:"95"}, //Ms. Angler
+                "900": {1:"110"}, //Legend II
+                "901": {1:"90"}, //Radioactive Carp
+                "902": {1:"110"}, //Glacierfish Jr.
+			},
+			"When": {"Fishing Mode": "Hard", "Challenging Legendary Fish": "false", "1.5 version":"true", "Enable This Mod":"true"}
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/fish",
+            "Fields": {
+                "159": {1:"110"}, //Crimsonfish
+                "160": {1:"110"}, //Angler
+                "163": {1:"110"}, //Legend
+                "682": {1:"110"}, //Mutant Carp
+                "775": {1:"110"}, //Glacierfish
+                "898": {1:"110"}, //Son of Crimsonfish
+                "899": {1:"110"}, //Ms. Angler
+                "900": {1:"110"}, //Legend II
+                "901": {1:"110"}, //Radioactive Carp
+                "902": {1:"110"}, //Glacierfish Jr.
+			},
+			"When": {"Fishing Mode": "Hard", "Challenging Legendary Fish": "true", "1.5 version":"true", "Enable This Mod":"true"}
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/fish",
+            "Fields": {
+                "159": {1:"105"}, //Crimsonfish
+                "160": {1:"95"}, //Angler
+                "163": {1:"110"}, //Legend
+                "682": {1:"90"}, //Mutant Carp
+                "775": {1:"110"}, //Glacierfish
+			},
+			"When": {"Fishing Mode": "Hard", "Challenging Legendary Fish": "false", "1.5 version":"false", "Enable This Mod":"true"}
+		},
+		{
+            "Action": "EditData",
+            "Target": "Data/fish",
+            "Fields": {
+                "159": {1:"110"}, //Crimsonfish
+                "160": {1:"110"}, //Angler
+                "163": {1:"110"}, //Legend
+                "682": {1:"110"}, //Mutant Carp
+                "775": {1:"110"}, //Glacierfish
+			},
+			"When": {"Fishing Mode": "Hard", "Challenging Legendary Fish": "true", "1.5 version":"false", "Enable This Mod":"true"}
+		},
+        //Crap Pots
+        {
+                "Action": "EditData",
+                "Target": "Data/ObjectInformation",
+                "Fields": {
+                        "715": {1:"140"}, //Lobster
+                        "372": {1:"80"}, //Clam
+                        "716": {1:"110"}, //Crayfish
+                        "717": {1:"130"}, //Crab
+                        "718": {1:"85"}, //Cockle
+                        "719": {1:"50"}, //Mussel
+                        "720": {1:"100"}, //Shrimp
+                        "721": {1:"80"}, //Snail
+                        "722": {1:"60"}, //Periwinkle
+                        "723": {1:"70"}, //Oyster
+                },						
+                "When": {"HasMod": "FlashShifter.JA.SVE, spacechase0.JsonAssets",
+                         "Balanced Crab Pots": "true", "Enable This Mod":"true"}
+		},
+        //Modded Fish
+        //Stardew Valley Expanded
+        {
+                "Action": "EditData",
+                "Target": "Data/ObjectInformation",
+                "Fields": {
+                        "{{spacechase0.jsonAssets/ObjectId:Baby Lunaloo}}": {1: "70"},	
+                        "{{spacechase0.jsonAssets/ObjectId:Bonefish}}": {1: "130"},	
+                        "{{spacechase0.jsonAssets/ObjectId:Bull Trout}}": {1: "120"},	
+                        "{{spacechase0.jsonAssets/ObjectId:Butterfish}}": {1: "140"},	
+                        "{{spacechase0.jsonAssets/ObjectId:Clownfish}}": {1: "40"},	
+                        "{{spacechase0.jsonAssets/ObjectId:Daggerfish}}": {1: "90"},	
+                        "{{spacechase0.jsonAssets/ObjectId:Frog}}": {1: "130"},	
+                        "{{spacechase0.jsonAssets/ObjectId:Gemfish}}": {1: "285"},	
+                        "{{spacechase0.jsonAssets/ObjectId:Goldenfish}}": {1: "165"},	
+                        "{{spacechase0.jsonAssets/ObjectId:Grass Carp}}": {1: "160"},
+                        "{{spacechase0.jsonAssets/ObjectId:King Salmon}}": {1: "150"},	
+                        "{{spacechase0.jsonAssets/ObjectId:Kittyfish}}": {1: "160"},	
+                        "{{spacechase0.jsonAssets/ObjectId:Lunaloo}}": {1: "130"},	
+                        "{{spacechase0.jsonAssets/ObjectId:Meteor Carp}}": {1: "225"},	
+                        "{{spacechase0.jsonAssets/ObjectId:Minnow}}": {1: "40"},	
+                        "{{spacechase0.jsonAssets/ObjectId:Puppyfish}}": {1: "160"},	
+                        "{{spacechase0.jsonAssets/ObjectId:Radioactive Bass}}": {1: "255"},	
+                        "{{spacechase0.jsonAssets/ObjectId:Razor Trout}}": {1: "160"},	
+                        "{{spacechase0.jsonAssets/ObjectId:Seahorse}}": {1: "50"},	
+                        "{{spacechase0.jsonAssets/ObjectId:Sea Sponge}}": {1: "70"},	
+                        "{{spacechase0.jsonAssets/ObjectId:Shiny Lunaloo}}": {1: "230"},	
+                        "{{spacechase0.jsonAssets/ObjectId:Snatcher Worm}}": {1: "175"},	
+                        "{{spacechase0.jsonAssets/ObjectId:Starfish}}": {1: "140"},		
+                        "{{spacechase0.jsonAssets/ObjectId:Torpedo Trout}}": {1: "165"},		
+                        "{{spacechase0.jsonAssets/ObjectId:Undeadfish}}": {1: "150"},		
+                        "{{spacechase0.jsonAssets/ObjectId:Void Eel}}": {1: "240"},
+                        "{{spacechase0.jsonAssets/ObjectId:Dulse Seaweed}}": {1:"40"},		
+                        "{{spacechase0.jsonAssets/ObjectId:Water Grub}}": {1: "110"}
+                },						
+                "When": {"HasMod": "FlashShifter.JA.SVE, spacechase0.JsonAssets",
+                         "Stardew Valley Expanded": "true", "Enable This Mod":"true"}
+		},
+        //Ridgeside Village
+		{
+                "Action": "EditData",
+                "Target": "Data/ObjectInformation",
+                "Fields": {
+                        "{{spacechase0.jsonAssets/ObjectId:Bladetail Sturgeon}}": {1: "130"},
+                        "{{spacechase0.jsonAssets/ObjectId:Caped Tree Frog}}": {1: "50"},
+                        "{{spacechase0.jsonAssets/ObjectId:Cardia Septal Jellyfish}}": {1: "130"},
+                        "{{spacechase0.jsonAssets/ObjectId:Crimson Spiked Clam}}": {1: "130"},
+                        "{{spacechase0.jsonAssets/ObjectId:Cutthroat Trout}}": {1: "40"},
+                        "{{spacechase0.jsonAssets/ObjectId:Fairytale Lionfish}}": {1: "130"},
+                        "{{spacechase0.jsonAssets/ObjectId:Fixer Eel}}": {1: "130"},
+                        "{{spacechase0.jsonAssets/ObjectId:Golden Rose Fin}}": {1: "130"},
+                        "{{spacechase0.jsonAssets/ObjectId:Harvester Trout}}": {1: "70"},
+                        "{{spacechase0.jsonAssets/ObjectId:Lullaby Carp}}": {1: "130"},
+                        "{{spacechase0.jsonAssets/ObjectId:Mountain Redbelly Dace}}": {1: "70"},
+                        "{{spacechase0.jsonAssets/ObjectId:Mountain Whitefish}}": {1: "90"},
+                        "{{spacechase0.jsonAssets/ObjectId:Pebble Back Crab}}": {1: "40"},
+                        "{{spacechase0.jsonAssets/ObjectId:Ridge Bluegill}}": {1: "40"},
+                        "{{spacechase0.jsonAssets/ObjectId:Ridgeside Bass}}": {1: "40"},
+                        "{{spacechase0.jsonAssets/ObjectId:Skulpin Fish}}": {1: "40"},
+                        "{{spacechase0.jsonAssets/ObjectId:Deep Ridge Angler}}": {1: "2500"},
+                        "{{spacechase0.jsonAssets/ObjectId:Sockeye Salmon}}": {1: "2500"},
+                        "{{spacechase0.jsonAssets/ObjectId:Waterfall Snakehead}}": {1: "2500"}					
+                },
+                "When": {"HasMod": "Rafseazz.RSVJA, spacechase0.JsonAssets",
+                         "Ridgeside Village": "true", "Enable This Mod":"true"}
+		},
+        //East Scarp
+		{
+                "Action": "EditData",
+                "Target": "Data/ObjectInformation",
+                "Fields": {
+                        "{{spacechase0.jsonAssets/ObjectId:Golden Trout}}": {1: "150"},
+                        "{{spacechase0.jsonAssets/ObjectId:Kokanee Salmon}}": {1: "140"},
+                        "{{spacechase0.jsonAssets/ObjectId:Cerulean Nudibranch}}": {1: "130"},
+                        "{{spacechase0.jsonAssets/ObjectId:Ornate Nudibranch}}": {1: "150"},
+                        "{{spacechase0.jsonAssets/ObjectId:Sea Bunny Nudibranch}}": {1: "150"},
+                        "{{spacechase0.jsonAssets/ObjectId:Sunset Nudibranch}}": {1: "160"}					
+                },
+                "When": {"HasMod": "LemurKat.EastScarpe.JA, spacechase0.JsonAssets",
+                         "East Scarp": "true", "Enable This Mod":"true"}
+		},
+        //More New Fish
+		{
+			"Action": "EditData",
+			"Target": "Data/ObjectInformation",
+			"Fields": {
+				"1120": {1:"90"}, //Ladyfish
+				"1121": {1:"80"}, //Tancho Koi
+				"1123": {1:"80"}, //Sanke Koi
+				"1122": {1:"80"}, //Kohaku Koi
+				"1124": {1:"130"}, //Zebra Tilapia
+				"1125": {1:"130"}, //Tucunare
+				"1126": {1:"255"}, //Small Goblin Shark
+				"1127": {1:"5000"}, //Tui
+				"1128": {1:"5000"}, //La
+				"1129": {1:"240"}, //Small Mantaray
+				"1130": {1:"140"}, //Piranha
+				"1131": {1:"40"}, //Blinky
+				"1132": {1:"150"}, //Arowana
+				"1133": {1:"150"}, //Arctic Char
+				"1134": {1:"80"}, //Tench
+				"1135": {1:"130"}, //Haddock
+				"1136": {1:"240"}, //Small Swordfish
+				"1137": {1:"150"}, //Barracuda
+				"1138": {1:"120"}, //Longfin Icedevil
+				"1139": {1:"240"}, //Spinny Dogfish
+				"1140": {1:"50"}, //Void Carp
+				"1141": {1:"90"}, //Water Snake
+				"1142": {1:"215"}, //Electric Catfish
+				"1143": {1:"140"}, //Sea Snake
+				"1144": {1:"125"}, //Swimmer Crab
+				"1145": {1:"120"}, //Glassfish
+				"1146": {1:"40"}, //Goldfish
+				"1147": {1:"70"}, //Lionhead
+				"1148": {1:"90"}, //Comet
+				"1149": {1:"70"}, //Telescope
+				"1150": {1:"80"}, //Celestial Eye
+				"1151": {1:"35"}, //Jellyfish
+				"1056": {1:"130"}, //Clown Knifefish
+				"1057": {1:"110"}, //Freshwater Butterflyfish
+				"1058": {1:"130"}, //Mimic Octopus
+				"1059": {1:"110"}, //Blue-Ringed Octopus
+				"1060": {1:"160"}, //Stubby Squid
+				"1061": {1:"160"}, //Dumbo Octopus
+				"1062": {1:"90"}, //Barreleye
+				"1063": {1:"130"}, //Freshwater Pufferfish
+				"1064": {1:"40"}, //Void Algae
+				"1065": {1:"130"}, //Void Evilpus
+				"1066": {1:"220"}, //Trapped Soul
+				"1067": {1:"90"}, //Lamprey
+				"1068": {1:"150"}, //Ribbon Eel
+				"1069": {1:"110"}, //Ghost Eel
+				"1070": {1:"110"}, //Robalo
+				"1071": {1:"40"}, //Anchoviella
+				"1072": {1:"90"}, //Hagfish
+				"1073": {1:"100"}, //Green Terror
+				"1074": {1:"100"}, //Clown Loach/
+				"1075": {1:"110"}, //Brain Slug
+				"1076": {1:"140"}, //Zebra Eel
+				"1077": {1:"90"}, //Yamabuki Koi
+				"1078": {1:"90"}, //Ghost Koi
+				"1079": {1:"90"}, //Hi Utsuri Koi
+				"1080": {1:"60"}, //Conger
+				"1081": {1:"90"}, //Shiro Utsuri Koi
+				"1082": {1:"90"}, //Ki Utsuri Koi
+				"1083": {1:"70"}, //Redtail Shark
+				"1084": {1:"120"}, //Elephantfish
+				"1085": {1:"70"}, //Sauger
+				"1086": {1:"70"}, //Pacu
+				"1087": {1:"100"}, //Common Pleco
+				"1088": {1:"90"}, //Siamese Algae Eater
+				"1089": {1:"80"}, //Snowball Pleco
+				"1090": {1:"50"}, //Ide
+				"1091": {1:"130"}, //Pangasius
+				"1092": {1:"90"}, //Trahira
+				"1093": {1:"175"}, //Blue Dragon Slug
+				"1094": {1:"150"}, //Nautilus
+				"1095": {1:"215"}, //Cyclops Shark
+				"1096": {1:"60"}, //Starfish
+				"1097": {1:"75"}, //Blue Starfish
+				"1098": {1:"90"}, //Royal Starfish
+				"1099": {1:"100"}, //Crown of Thorns Starfish
+				"1100": {1:"125"}, //Holy Grenade Starfish
+				"1101": {1:"50"}, //Freshwater Shrimp
+				"1102": {1:"60"}, //Red Freshwater Shrimp
+				"1103": {1:"60"}, //Blue Freshwater Shrimp
+				"1104": {1:"60"}, //Harlequin Freshwater Shrimp
+				"1105": {1:"75"}, //Red Harlequin Freshwater Shrimp
+				"1106": {1:"75"}, //Brief Squid
+				"1107": {1:"85"}, //Prawn
+				"1108": {1:"20"}, //Sand Dollar
+				"1109": {1:"150"}, //King Crab
+				"1110": {1:"130"}, //Decapod
+				"1111": {1:"110"}, //Mudskipper
+				"1184": {1:"150"}, //Coelacanth
+				"1185": {1:"50"}, //Cavefish
+				"1114": {1:"110"}, //Cave Lobster
+				"1115": {1:"80"}, //Freshwater Crab
+				"1118": {1:"2500"}, //Shinidamachu
+				"1119": {1:"340"}, //Vampire Squid
+				"1152": {1:"240"}, //Vampire Fish
+				"1153": {1:"110"}, //Lungfish
+				"1154": {1:"80"}, //Tigerfish
+				"1155": {1:"130"}, //Longnose Gar
+				"1201": {1:"110"}, //Black Ghost Knifefish
+				"1202": {1:"120"}, //Clown Triggerfish
+				"1203": {1:"255"}, //Bonnethead
+				"1204": {1:"50"}, //Goblin Shark Pup
+				"1205": {1:"50"}, //Bonnethead Pup
+				"1206": {1:"50"}, //Spiny Dogfish Pup
+				"1208": {1:"50"}, //Manta Ray Pup
+				"1116": {1:"1000"}, //Fishing Elixir
+				"1117": {1:"400"}, //Warrior Elixir
+			},
+        	"When": {"HasMod":"MoreFish", "More New Fish": "true", "Enable This Mod":"true"}		
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/ObjectInformation",
+			"Fields": {
+				"1183": {1:"3000"}, //Frilled Shark
+			},
+        	"When": {"HasMod|contains=MoreFish": true, "HasMod|contains=CPBoardingHouse": true, "More New Fish": "true", "Enable This Mod":"true"}		
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/ObjectInformation",
+			"Fields": {
+				"1169": {1:"80"}, //Moorish Idol
+				"1170": {1:"70"}, //Royal Angelfish
+				"1172": {1:"60"}, //Banded Angelfish
+				"1174": {1:"100"}, //Flame Angelfish
+				"1162": {1:"50"}, //Maroon Clownfish
+				"1156": {1:"50"}, //Sebae Clownfish
+				"1157": {1:"60"}, //Wide-band Clownfish
+				"1161": {1:"60"}, //Pink Skunk Clownfish
+				"1165": {1:"60"}, //Two-Band Clownfish
+				"1163": {1:"60"}, //Whitesnout Clownfish
+				"1164": {1:"60"}, //Fire Clownfish
+				"1187": {1:"175"}, //Tiger Puffer
+				"1186": {1:"110"}, //Mandarinfish
+				"1179": {1:"90"}, //Soldierfish
+				"1181": {1:"90"}, //Thread-Sail Filefish
+				"1176": {1:"100"}, //Monkfish
+				"1178": {1:"80"}, //Icefish
+				"1180": {1:"110"}, //False Kelpfish
+				"1182": {1:"130"}, //Wolffish
+				"1167": {1:"70"}, //Pollock
+				"1188": {1:"3000"}, //Great Firefly Squid
+			},
+        	"When": {"HasMod|contains=MoreFish": true, "HasMod|contains=FishingIslandNPC": true, "More New Fish": "true", "Enable This Mod":"true"}		
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/ObjectInformation",
+			"Fields": {
+				"1168": {1:"80"}, //Blue Tang
+				"1171": {1:"50"}, //Ornate Angelfish
+				"1173": {1:"90"}, //Threespot Angelfish
+				"1175": {1:"150"}, //Dwarf Stingray
+				"1159": {1:"50"}, //Orange Clownfish
+				"1158": {1:"50"}, //Saddleback Clownfish
+				"1166": {1:"50"}, //Yellowtail Clownfish
+				"1160": {1:"60"}, //Skunk Clownfish
+				"1177": {1:"90"}, //Squirrelfish
+				"1207": {1:"50"}, //Dwarf Stingray Pup
+			},
+        	"When": {"HasMod|contains=MoreFish": true, "HasMod|contains=FishingIslandNPC": true, "HasMod|contains=LemurKat.EastScarpe.CP": true, "More New Fish": "true", "Enable This Mod":"true"}
+		},
+                //Mining
+                ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                //Class System
+        {
+                "Action": "EditData",
+                "Target": "Data/ObjectInformation",
+                "Fields": {
+                            "749": {6: "578 575 539 561 547 553 548 543 565 564 82 74 386"}, // Omni Geode
+                            "537": {6: "577 572 567 563 557 554 551 550 541 562 84 122 384"}, // Magma Geode
+                            "536": {6: "576 573 568 560 559 549 556 545 566 540 86 123 378 380"}, // Frozen Geode
+                            "535": {6: "574 571 570 569 558 555 552 546 544 542 538 80 121 330 382"} // "Regular Geode
+                        },
+                        "When": {"Balanced Minerals": "true", "Enable This Mod":"true"}
+                    },
+                    // Mineral Prices
+                    // Easy Mode
+                    {
+                "Action": "EditData",
+                "Target": "Data/ObjectInformation",
+                "Fields": {
+                        //D Class
+                        "538": {1:"50"}, // Alamite
+                        "542": {1:"50"}, // Calcite
+                        "552": {1:"50"}, // Malachite
+                        "555": {1:"50"}, // Nekoite
+                        "558": {1:"50"}, // Thunder Egg
+                        "544": {1:"50"}, // Esperite
+                        "569": {1:"50"}, // Granite
+                        "571": {1:"50"}, // Limestone
+                        "574": {1:"50"}, // Mudstone
+                        "546": {1:"50"}, // Geminite
+                        "570": {1:"50"}, // Basalt
+                        //C Class
+                        "549": {1:"150"}, // Jagoite
+                        "556": {1:"150"}, // Orpiment
+                        "566": {1:"150"}, // Celestine
+                        "568": {1:"150"}, // Sandstone
+                        "545": {1:"150"}, // Fluorapatite
+                        "576": {1:"150"}, // Slate
+                        "573": {1:"150"}, // Hematite
+                        "540": {1:"150"}, // Baryte
+                        "559": {1:"150"}, // Pyrite
+                        "560": {1:"150"}, // Ocean Stone
+                        //B Class
+                        "557": {1:"250"}, // Petrified Slime
+                        "541": {1:"250"}, // Aerinite
+                        "550": {1:"250"}, // Kyanite
+                        "551": {1:"250"}, // Lunarite
+                        "567": {1:"250"}, // Marble
+                        "572": {1:"250"}, // Soapstone
+                        "577": {1:"250"}, // Fairy Stone
+                        "562": {1:"250"}, // Tigerseye
+                        "554": {1:"250"}, // Lemon Stone
+                        "563": {1:"250"}, // Jasper
+                        //A Class
+                        "575": {1:"350"}, // Obsidian
+                        "564": {1:"350"}, // Opal
+                        "578": {1:"350"}, // Star Shards
+                        "561": {1:"350"}, // Ghost Crystal
+                        "565": {1:"350"}, // Fire Opal
+                        "543": {1:"350"}, // Dolomite
+                        "547": {1:"350"}, // Helvite
+                        "539": {1:"350"}, // Bixite
+                        "553": {1:"350"}, // Neptunite
+                        "548": {1:"350"}, // Jamborite
+                },
+                            "When": {"Balanced Minerals": "true", "Combat Mode": "Easy", "Enable This Mod":"true"}
+            },
+            // Normal Mode
+            {
+        "Action": "EditData",
+        "Target": "Data/ObjectInformation",
+        "Fields": {
+                //D Class
+                "538": {1:"100"}, // Alamite
+                "542": {1:"100"}, // Calcite
+                "552": {1:"100"}, // Malachite
+                "555": {1:"100"}, // Nekoite
+                "558": {1:"100"}, // Thunder Egg
+                "544": {1:"100"}, // Esperite
+                "569": {1:"100"}, // Granite
+                "571": {1:"100"}, // Limestone
+                "574": {1:"100"}, // Mudstone
+                "546": {1:"100"}, // Geminite
+                "570": {1:"100"}, // Basalt
+                //C Class
+                "549": {1:"200"}, // Jagoite
+                "556": {1:"200"}, // Orpiment
+                "566": {1:"200"}, // Celestine
+                "568": {1:"200"}, // Sandstone
+                "545": {1:"200"}, // Fluorapatite
+                "576": {1:"200"}, // Slate
+                "573": {1:"200"}, // Hematite
+                "540": {1:"200"}, // Baryte
+                "559": {1:"200"}, // Pyrite
+                "560": {1:"200"}, // Ocean Stone
+                //B Class
+                "557": {1:"300"}, // Petrified Slime
+                "541": {1:"300"}, // Aerinite
+                "550": {1:"300"}, // Kyanite
+                "551": {1:"300"}, // Lunarite
+                "567": {1:"300"}, // Marble
+                "572": {1:"300"}, // Soapstone
+                "577": {1:"300"}, // Fairy Stone
+                "562": {1:"300"}, // Tigerseye
+                "554": {1:"300"}, // Lemon Stone
+                "563": {1:"300"}, // Jasper
+                //A Class
+                "575": {1:"400"}, // Obsidian
+                "564": {1:"400"}, // Opal
+                "578": {1:"400"}, // Star Shards
+                "561": {1:"400"}, // Ghost Crystal
+                "565": {1:"400"}, // Fire Opal
+                "543": {1:"400"}, // Dolomite
+                "547": {1:"400"}, // Helvite
+                "539": {1:"400"}, // Bixite
+                "553": {1:"400"}, // Neptunite
+                "548": {1:"400"}, // Jamborite
+        },
+                    "When": {"Balanced Minerals": "true", "Combat Mode": "Normal", "Enable This Mod":"true"}
+    },
+    // Hard Mode
+                    {
+                "Action": "EditData",
+                "Target": "Data/ObjectInformation",
+                "Fields": {
+                        //D Class
+                        "538": {1:"150"}, // Alamite
+                        "542": {1:"150"}, // Calcite
+                        "552": {1:"150"}, // Malachite
+                        "555": {1:"150"}, // Nekoite
+                        "558": {1:"150"}, // Thunder Egg
+                        "544": {1:"150"}, // Esperite
+                        "569": {1:"150"}, // Granite
+                        "571": {1:"150"}, // Limestone
+                        "574": {1:"150"}, // Mudstone
+                        "546": {1:"150"}, // Geminite
+                        "570": {1:"150"}, // Basalt
+                        //C Class
+                        "549": {1:"250"}, // Jagoite
+                        "556": {1:"250"}, // Orpiment
+                        "566": {1:"250"}, // Celestine
+                        "568": {1:"250"}, // Sandstone
+                        "545": {1:"250"}, // Fluorapatite
+                        "576": {1:"250"}, // Slate
+                        "573": {1:"250"}, // Hematite
+                        "540": {1:"250"}, // Baryte
+                        "559": {1:"250"}, // Pyrite
+                        "560": {1:"250"}, // Ocean Stone
+                        //B Class
+                        "557": {1:"350"}, // Petrified Slime
+                        "541": {1:"350"}, // Aerinite
+                        "550": {1:"350"}, // Kyanite
+                        "551": {1:"350"}, // Lunarite
+                        "567": {1:"350"}, // Marble
+                        "572": {1:"350"}, // Soapstone
+                        "577": {1:"350"}, // Fairy Stone
+                        "562": {1:"350"}, // Tigerseye
+                        "554": {1:"350"}, // Lemon Stone
+                        "563": {1:"350"}, // Jasper
+                        //A Class
+                        "575": {1:"450"}, // Obsidian
+                        "564": {1:"450"}, // Opal
+                        "578": {1:"450"}, // Star Shards
+                        "561": {1:"450"}, // Ghost Crystal
+                        "565": {1:"450"}, // Fire Opal
+                        "543": {1:"450"}, // Dolomite
+                        "547": {1:"450"}, // Helvite
+                        "539": {1:"450"}, // Bixite
+                        "553": {1:"450"}, // Neptunite
+                        "548": {1:"450"}, // Jamborite
+                },
+                            "When": {"Balanced Minerals": "true", "Combat Mode": "Hard", "Enable This Mod":"true"}
+            },
+            // Nightmare Mode
+            {
+        "Action": "EditData",
+        "Target": "Data/ObjectInformation",
+        "Fields": {
+                //D Class
+                "538": {1:"200"}, // Alamite
+                "542": {1:"200"}, // Calcite
+                "552": {1:"200"}, // Malachite
+                "555": {1:"200"}, // Nekoite
+                "558": {1:"200"}, // Thunder Egg
+                "544": {1:"200"}, // Esperite
+                "569": {1:"200"}, // Granite
+                "571": {1:"200"}, // Limestone
+                "574": {1:"200"}, // Mudstone
+                "546": {1:"200"}, // Geminite
+                "570": {1:"200"}, // Basalt
+                //C Class
+                "549": {1:"300"}, // Jagoite
+                "556": {1:"300"}, // Orpiment
+                "566": {1:"300"}, // Celestine
+                "568": {1:"300"}, // Sandstone
+                "545": {1:"300"}, // Fluorapatite
+                "576": {1:"300"}, // Slate
+                "573": {1:"300"}, // Hematite
+                "540": {1:"300"}, // Baryte
+                "559": {1:"300"}, // Pyrite
+                "560": {1:"300"}, // Ocean Stone
+                //B Class
+                "557": {1:"400"}, // Petrified Slime
+                "541": {1:"400"}, // Aerinite
+                "550": {1:"400"}, // Kyanite
+                "551": {1:"400"}, // Lunarite
+                "567": {1:"400"}, // Marble
+                "572": {1:"400"}, // Soapstone
+                "577": {1:"400"}, // Fairy Stone
+                "562": {1:"400"}, // Tigerseye
+                "554": {1:"400"}, // Lemon Stone
+                "563": {1:"400"}, // Jasper
+                //A Class
+                "575": {1:"500"}, // Obsidian
+                "564": {1:"500"}, // Opal
+                "578": {1:"500"}, // Star Shards
+                "561": {1:"500"}, // Ghost Crystal
+                "565": {1:"500"}, // Fire Opal
+                "543": {1:"500"}, // Dolomite
+                "547": {1:"500"}, // Helvite
+                "539": {1:"500"}, // Bixite
+                "553": {1:"500"}, // Neptunite
+                "548": {1:"500"}, // Jamborite
+        },
+                    "When": {"Balanced Minerals": "true", "Combat Mode": "Nightmare", "Enable This Mod":"true"}
+    },
+    // Artifacts & Stuff
+        // Easy Mode
+        // Artifacts
+        {
+            "Action": "EditData",
+            "Target": "Data/ObjectInformation",
+            "Fields": {             
+				"96": {1:"70"}, // Dwarf Scroll I
+				"97": {1:"70"}, // Dwarf Scroll II
+				"98": {1:"70"}, // Dwarf Scroll III
+				"99": {1:"70"}, // Dwarf Scroll IV
+				"100": {1:"140"}, // Chipped Amphora
+				"101": {1:"210"}, // Arrowhead
+				"103": {1:"420"}, // Ancient Doll
+				"104": {1:"455"}, // Elvish Jewelry
+				"105": {1:"280"}, // Chewing Stick
+				"106": {1:"420"}, // Ornamental Fan
+				"108": {1:"280"}, // Rare Disc
+				"109": {1:"280"}, // Ancient Sword
+				"110": {1:"105"}, // Rusty Spoon
+				"111": {1:"105"}, // Rusty Spur
+				"112": {1:"105"}, // Rusty Cog
+				"113": {1:"350"}, // Chicken Statue
+				"114": {1:"70"}, // Ancient Seed
+				"115": {1:"210"}, // Prehistoric Tool
+				"116": {1:"280"}, // Dried Starfish
+				"117": {1:"350"}, // Anchor
+				"118": {1:"70"}, // Glass Shards
+				"119": {1:"350"}, // Bone Flute
+				"120": {1:"210"}, // Prehistoric Handaxe
+				"121": {1:"350"}, // Dwarvish Helm
+				"122": {1:"420"}, // Dwarf Gadget
+				"123": {1:"350"}, // Ancient Drum
+				"124": {1:"560"}, // Golden Mask
+				"125": {1:"490"}, // Golden Relic
+				"126": {1:"1050"}, // Strange Doll
+				"127": {1:"1050"}, // Strange Doll
+				"579": {1:"140"}, // Prehistoric Scapula
+				"580": {1:"140"}, // Prehistoric Tibia
+				"581": {1:"140"}, // Prehistoric Skull
+				"582": {1:"140"}, // Skeletal Hand
+				"583": {1:"140"}, // Prehistoric Rib
+				"584": {1:"140"}, // Prehistoric Vertebra
+				"585": {1:"140"}, // Skeletal Tail
+				"586": {1:"175"}, // Nautilus Fossil
+				"587": {1:"175"}, // Amphibian Fossil
+				"588": {1:"175"}, // Palm Fossil
+				"589": {1:"175"}, // Trilobite
+				"823": {1:"250"}, // Fossilized Leg
+				"824": {1:"250"}, // Fossilized Ribs
+				"820": {1:"250"}, // Fossilized Skull
+				"821": {1:"250"}, // Fossilized Spine
+				"822": {1:"250"}, // Fossilized Tail
+				"828": {1:"250"}, // Mummified Frog
+				"827": {1:"250"}, // Mummified Bat
+				"825": {1:"250"}, // Snake Skull
+				"826": {1:"300"}, // Snake Vertebrae
+			},
+			"When": {"Combat Mode": "Easy", "Balanced Artifacts": "true", "1.5 version":"true", "Enable This Mod":"true"}
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/ObjectInformation",
+            "Fields": {             
+				"96": {1:"70"}, // Dwarf Scroll I
+				"97": {1:"70"}, // Dwarf Scroll II
+				"98": {1:"70"}, // Dwarf Scroll III
+				"99": {1:"70"}, // Dwarf Scroll IV
+				"100": {1:"140"}, // Chipped Amphora
+				"101": {1:"210"}, // Arrowhead
+				"103": {1:"420"}, // Ancient Doll
+				"104": {1:"455"}, // Elvish Jewelry
+				"105": {1:"280"}, // Chewing Stick
+				"106": {1:"420"}, // Ornamental Fan
+				"108": {1:"280"}, // Rare Disc
+				"109": {1:"280"}, // Ancient Sword
+				"110": {1:"105"}, // Rusty Spoon
+				"111": {1:"105"}, // Rusty Spur
+				"112": {1:"105"}, // Rusty Cog
+				"113": {1:"350"}, // Chicken Statue
+				"114": {1:"70"}, // Ancient Seed
+				"115": {1:"210"}, // Prehistoric Tool
+				"116": {1:"280"}, // Dried Starfish
+				"117": {1:"350"}, // Anchor
+				"118": {1:"70"}, // Glass Shards
+				"119": {1:"350"}, // Bone Flute
+				"120": {1:"210"}, // Prehistoric Handaxe
+				"121": {1:"350"}, // Dwarvish Helm
+				"122": {1:"420"}, // Dwarf Gadget
+				"123": {1:"350"}, // Ancient Drum
+				"124": {1:"560"}, // Golden Mask
+				"125": {1:"490"}, // Golden Relic
+				"126": {1:"1050"}, // Strange Doll
+				"127": {1:"1050"}, // Strange Doll
+				"579": {1:"140"}, // Prehistoric Scapula
+				"580": {1:"140"}, // Prehistoric Tibia
+				"581": {1:"140"}, // Prehistoric Skull
+				"582": {1:"140"}, // Skeletal Hand
+				"583": {1:"140"}, // Prehistoric Rib
+				"584": {1:"140"}, // Prehistoric Vertebra
+				"585": {1:"140"}, // Skeletal Tail
+				"586": {1:"175"}, // Nautilus Fossil
+				"587": {1:"175"}, // Amphibian Fossil
+				"588": {1:"175"}, // Palm Fossil
+				"589": {1:"175"}, // Trilobite
+			},
+			"When": {"Combat Mode": "Easy", "Balanced Artifacts": "true", "1.5 version":"false", "Enable This Mod":"true"}
+        },
+        // Gemstones
+        {
+            "Action": "EditData",
+            "Target": "Data/ObjectInformation",
+            "Fields": {            
+				"74": {1:"1400"}, // Prismatic Shard
+				"72": {1:"350"}, // Diamond
+				"70": {1:"175"}, // Jade
+				"68": {1:"105"}, // Topaz
+				"66": {1:"105"}, // Amethyst
+				"64": {1:"210"}, // Ruby
+				"62": {1:"175"}, // Aquamarine
+				"60": {1:"210"}, // Emerald
+				"749": {1:"200"}, // Omni Geode
+				"275": {1:"300"}, // Artifact Trove
+				"82": {1:"105"}, // Fire Quartz
+				"86": {1:"84"}, // Earth Crystal
+				"80": {1:"56"}, // Quartz
+				"84": {1:"91"}, // Frozen Tear
+				"848": {1:"70"}, // Cinder Shard
+				"338": {1:"105"}, // Refined Quartz
+			},
+			"When": {"Combat Mode": "Easy", "Balanced Gemstones": "true", "Enable This Mod":"true"}
+        },
+        // Ores
+        {
+            "Action": "EditData",
+            "Target": "Data/ObjectInformation",
+            "Fields": {            
+				"382": {1:"25"}, // Coal
+				"378": {1:"7"}, // Copper Ore
+				"380": {1:"14"}, // Iron Ore
+				"384": {1:"25"}, // Gold Ore
+				"386": {1:"35"}, // Iridium Ore
+				"909": {1:"140"}, // Radioactive Ore
+				"334": {1:"70"}, // Copper Bar
+				"335": {1:"140"}, // Iron Bar
+				"336": {1:"245"}, // Gold Bar
+				"337": {1:"350"}, // Iridium Bar
+				"910": {1:"1400"}, // Radioactive Bar
+			},
+			"When": {"Combat Mode": "Easy", "Balanced Ores": "true", "1.5 version":"true", "Enable This Mod":"true"}
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/ObjectInformation",
+            "Fields": {            
+				"382": {1:"25"}, // Coal
+				"378": {1:"7"}, // Copper Ore
+				"380": {1:"14"}, // Iron Ore
+				"384": {1:"25"}, // Gold Ore
+				"386": {1:"35"}, // Iridium Ore
+				"334": {1:"70"}, // Copper Bar
+				"335": {1:"140"}, // Iron Bar
+				"336": {1:"245"}, // Gold Bar
+				"337": {1:"350"}, // Iridium Bar
+			},
+			"When": {"Combat Mode": "Easy", "Balanced Ores": "true", "1.5 version":"false", "Enable This Mod":"true"}
+        },
+        // Monster Loot
+        {
+            "Action": "EditData",
+            "Target": "Data/ObjectInformation",
+            "Fields": {           
+				"769": {1:"42"}, // Void Essence
+				"768": {1:"42"}, // Solar Essence
+				"767": {1:"25"}, // Bat Wing
+				"684": {1:"14"}, // Bug Meat
+				"766": {1:"11"}, // Slime
+				"881": {1:"18"}, // Bone Fragment
+			},
+			"When": {"Combat Mode": "Easy", "Balanced Monster Loot": "true", "1.5 version":"true", "Enable This Mod":"true"}
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/ObjectInformation",
+            "Fields": {           
+				"769": {1:"42"}, // Void Essence
+				"768": {1:"42"}, // Solar Essence
+				"767": {1:"25"}, // Bat Wing
+				"684": {1:"14"}, // Bug Meat
+				"766": {1:"11"}, // Slime
+			},
+			"When": {"Combat Mode": "Easy", "Balanced Monster Loot": "true", "1.5 version":"false", "Enable This Mod":"true"}
+        },
+        // Normal Mode
+        // Artifacts
+        {
+            "Action": "EditData",
+            "Target": "Data/ObjectInformation",
+            "Fields": {             
+				"96": {1:"100"}, // Dwarf Scroll I
+				"97": {1:"100"}, // Dwarf Scroll II
+				"98": {1:"100"}, // Dwarf Scroll III
+				"99": {1:"100"}, // Dwarf Scroll IV
+				"100": {1:"200"}, // Chipped Amphora
+				"101": {1:"300"}, // Arrowhead
+				"103": {1:"600"}, // Ancient Doll
+				"104": {1:"650"}, // Elvish Jewelry
+				"105": {1:"400"}, // Chewing Stick
+				"106": {1:"600"}, // Ornamental Fan
+				"108": {1:"400"}, // Rare Disc
+				"109": {1:"400"}, // Ancient Sword
+				"110": {1:"150"}, // Rusty Spoon
+				"111": {1:"150"}, // Rusty Spur
+				"112": {1:"150"}, // Rusty Cog
+				"113": {1:"500"}, // Chicken Statue
+				"114": {1:"100"}, // Ancient Seed
+				"115": {1:"300"}, // Prehistoric Tool
+				"116": {1:"400"}, // Dried Starfish
+				"117": {1:"500"}, // Anchor
+				"118": {1:"100"}, // Glass Shards
+				"119": {1:"500"}, // Bone Flute
+				"120": {1:"300"}, // Prehistoric Handaxe
+				"121": {1:"500"}, // Dwarvish Helm
+				"122": {1:"600"}, // Dwarf Gadget
+				"123": {1:"500"}, // Ancient Drum
+				"124": {1:"800"}, // Golden Mask
+				"125": {1:"700"}, // Golden Relic
+				"126": {1:"1500"}, // Strange Doll
+				"127": {1:"1500"}, // Strange Doll
+				"579": {1:"200"}, // Prehistoric Scapula
+				"580": {1:"200"}, // Prehistoric Tibia
+				"581": {1:"200"}, // Prehistoric Skull
+				"582": {1:"200"}, // Skeletal Hand
+				"583": {1:"200"}, // Prehistoric Rib
+				"584": {1:"200"}, // Prehistoric Vertebra
+				"585": {1:"200"}, // Skeletal Tail
+				"586": {1:"250"}, // Nautilus Fossil
+				"587": {1:"250"}, // Amphibian Fossil
+				"588": {1:"250"}, // Palm Fossil
+				"589": {1:"250"}, // Trilobite
+				"823": {1:"250"}, // Fossilized Leg
+				"824": {1:"250"}, // Fossilized Ribs
+				"820": {1:"250"}, // Fossilized Skull
+				"821": {1:"250"}, // Fossilized Spine
+				"822": {1:"250"}, // Fossilized Tail
+				"828": {1:"250"}, // Mummified Frog
+				"827": {1:"250"}, // Mummified Bat
+				"825": {1:"250"}, // Snake Skull
+				"826": {1:"300"}, // Snake Vertebrae
+			},
+			"When": {"Combat Mode": "Normal", "Balanced Artifacts": "true", "1.5 version":"true", "Enable This Mod":"true"}
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/ObjectInformation",
+            "Fields": {             
+				"96": {1:"100"}, // Dwarf Scroll I
+				"97": {1:"100"}, // Dwarf Scroll II
+				"98": {1:"100"}, // Dwarf Scroll III
+				"99": {1:"100"}, // Dwarf Scroll IV
+				"100": {1:"200"}, // Chipped Amphora
+				"101": {1:"300"}, // Arrowhead
+				"103": {1:"600"}, // Ancient Doll
+				"104": {1:"650"}, // Elvish Jewelry
+				"105": {1:"400"}, // Chewing Stick
+				"106": {1:"600"}, // Ornamental Fan
+				"108": {1:"400"}, // Rare Disc
+				"109": {1:"400"}, // Ancient Sword
+				"110": {1:"150"}, // Rusty Spoon
+				"111": {1:"150"}, // Rusty Spur
+				"112": {1:"150"}, // Rusty Cog
+				"113": {1:"500"}, // Chicken Statue
+				"114": {1:"100"}, // Ancient Seed
+				"115": {1:"300"}, // Prehistoric Tool
+				"116": {1:"400"}, // Dried Starfish
+				"117": {1:"500"}, // Anchor
+				"118": {1:"100"}, // Glass Shards
+				"119": {1:"500"}, // Bone Flute
+				"120": {1:"300"}, // Prehistoric Handaxe
+				"121": {1:"500"}, // Dwarvish Helm
+				"122": {1:"600"}, // Dwarf Gadget
+				"123": {1:"500"}, // Ancient Drum
+				"124": {1:"800"}, // Golden Mask
+				"125": {1:"700"}, // Golden Relic
+				"126": {1:"1500"}, // Strange Doll
+				"127": {1:"1500"}, // Strange Doll
+				"579": {1:"200"}, // Prehistoric Scapula
+				"580": {1:"200"}, // Prehistoric Tibia
+				"581": {1:"200"}, // Prehistoric Skull
+				"582": {1:"200"}, // Skeletal Hand
+				"583": {1:"200"}, // Prehistoric Rib
+				"584": {1:"200"}, // Prehistoric Vertebra
+				"585": {1:"200"}, // Skeletal Tail
+				"586": {1:"250"}, // Nautilus Fossil
+				"587": {1:"250"}, // Amphibian Fossil
+				"588": {1:"250"}, // Palm Fossil
+				"589": {1:"250"}, // Trilobite
+			},
+			"When": {"Combat Mode": "Normal", "Balanced Artifacts": "true", "1.5 version":"false", "Enable This Mod":"true"}
+        },
+        // Gemstones
+        {
+            "Action": "EditData",
+            "Target": "Data/ObjectInformation",
+            "Fields": {            
+				"74": {1:"2000"}, // Prismatic Shard
+				"72": {1:"500"}, // Diamond
+				"70": {1:"250"}, // Jade
+				"68": {1:"150"}, // Topaz
+				"66": {1:"150"}, // Amethyst
+				"64": {1:"300"}, // Ruby
+				"62": {1:"250"}, // Aquamarine
+				"60": {1:"300"}, // Emerald
+				"749": {1:"200"}, // Omni Geode
+				"275": {1:"300"}, // Artifact Trove
+				"82": {1:"150"}, // Fire Quartz
+				"86": {1:"120"}, // Earth Crystal
+				"80": {1:"80"}, // Quartz
+				"84": {1:"130"}, // Frozen Tear
+				"848": {1:"100"}, // Cinder Shard
+				"338": {1:"150"}, // Refined Quartz
+			},
+			"When": {"Combat Mode": "Normal", "Balanced Gemstones": "true", "Enable This Mod":"true"}
+        },
+        // Ores
+        {
+            "Action": "EditData",
+            "Target": "Data/ObjectInformation",
+            "Fields": {            
+				"382": {1:"35"}, // Coal
+				"378": {1:"10"}, // Copper Ore
+				"380": {1:"20"}, // Iron Ore
+				"384": {1:"35"}, // Gold Ore
+				"386": {1:"50"}, // Iridium Ore
+				"909": {1:"200"}, // Radioactive Ore
+				"334": {1:"100"}, // Copper Bar
+				"335": {1:"200"}, // Iron Bar
+				"336": {1:"350"}, // Gold Bar
+				"337": {1:"500"}, // Iridium Bar
+				"910": {1:"2000"}, // Radioactive Bar
+			},
+			"When": {"Combat Mode": "Normal", "Balanced Ores": "true", "1.5 version":"true", "Enable This Mod":"true"}
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/ObjectInformation",
+            "Fields": {            
+				"382": {1:"35"}, // Coal
+				"378": {1:"10"}, // Copper Ore
+				"380": {1:"20"}, // Iron Ore
+				"384": {1:"35"}, // Gold Ore
+				"386": {1:"50"}, // Iridium Ore
+				"334": {1:"100"}, // Copper Bar
+				"335": {1:"200"}, // Iron Bar
+				"336": {1:"350"}, // Gold Bar
+				"337": {1:"500"}, // Iridium Bar
+			},
+			"When": {"Combat Mode": "Normal", "Balanced Ores": "true", "1.5 version":"false", "Enable This Mod":"true"}
+        },
+        // Monster Loot
+        {
+            "Action": "EditData",
+            "Target": "Data/ObjectInformation",
+            "Fields": {           
+				"769": {1:"60"}, // Void Essence
+				"768": {1:"60"}, // Solar Essence
+				"767": {1:"35"}, // Bat Wing
+				"684": {1:"20"}, // Bug Meat
+				"766": {1:"15"}, // Slime
+				"881": {1:"25"}, // Bone Fragment
+			},
+			"When": {"Combat Mode": "Normal", "Balanced Monster Loot": "true", "1.5 version":"true", "Enable This Mod":"true"}
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/ObjectInformation",
+            "Fields": {           
+				"769": {1:"60"}, // Void Essence
+				"768": {1:"60"}, // Solar Essence
+				"767": {1:"35"}, // Bat Wing
+				"684": {1:"20"}, // Bug Meat
+				"766": {1:"15"}, // Slime
+			},
+			"When": {"Combat Mode": "Normal", "Balanced Monster Loot": "true", "1.5 version":"false", "Enable This Mod":"true"}
+        },
+        // Hard Mode
+        // Artifacts
+        {
+            "Action": "EditData",
+            "Target": "Data/ObjectInformation",
+            "Fields": {             
+				"96": {1:"120"}, // Dwarf Scroll I
+				"97": {1:"120"}, // Dwarf Scroll II
+				"98": {1:"120"}, // Dwarf Scroll III
+				"99": {1:"120"}, // Dwarf Scroll IV
+				"100": {1:"240"}, // Chipped Amphora
+				"101": {1:"360"}, // Arrowhead
+				"103": {1:"720"}, // Ancient Doll
+				"104": {1:"780"}, // Elvish Jewelry
+				"105": {1:"480"}, // Chewing Stick
+				"106": {1:"720"}, // Ornamental Fan
+				"108": {1:"480"}, // Rare Disc
+				"109": {1:"480"}, // Ancient Sword
+				"110": {1:"180"}, // Rusty Spoon
+				"111": {1:"180"}, // Rusty Spur
+				"112": {1:"180"}, // Rusty Cog
+				"113": {1:"600"}, // Chicken Statue
+				"114": {1:"120"}, // Ancient Seed
+				"115": {1:"360"}, // Prehistoric Tool
+				"116": {1:"480"}, // Dried Starfish
+				"117": {1:"600"}, // Anchor
+				"118": {1:"120"}, // Glass Shards
+				"119": {1:"600"}, // Bone Flute
+				"120": {1:"360"}, // Prehistoric Handaxe
+				"121": {1:"600"}, // Dwarvish Helm
+				"122": {1:"720"}, // Dwarf Gadget
+				"123": {1:"600"}, // Ancient Drum
+				"124": {1:"960"}, // Golden Mask
+				"125": {1:"840"}, // Golden Relic
+				"126": {1:"1800"}, // Strange Doll
+				"127": {1:"1800"}, // Strange Doll
+				"579": {1:"240"}, // Prehistoric Scapula
+				"580": {1:"240"}, // Prehistoric Tibia
+				"581": {1:"240"}, // Prehistoric Skull
+				"582": {1:"240"}, // Skeletal Hand
+				"583": {1:"240"}, // Prehistoric Rib
+				"584": {1:"240"}, // Prehistoric Vertebra
+				"585": {1:"240"}, // Skeletal Tail
+				"586": {1:"300"}, // Nautilus Fossil
+				"587": {1:"300"}, // Amphibian Fossil
+				"588": {1:"300"}, // Palm Fossil
+				"589": {1:"300"}, // Trilobite
+				"823": {1:"250"}, // Fossilized Leg
+				"824": {1:"250"}, // Fossilized Ribs
+				"820": {1:"250"}, // Fossilized Skull
+				"821": {1:"250"}, // Fossilized Spine
+				"822": {1:"250"}, // Fossilized Tail
+				"828": {1:"250"}, // Mummified Frog
+				"827": {1:"250"}, // Mummified Bat
+				"825": {1:"250"}, // Snake Skull
+				"826": {1:"300"}, // Snake Vertebrae
+			},
+			"When": {"Combat Mode": "Hard", "Balanced Artifacts": "true", "1.5 version":"true", "Enable This Mod":"true"}
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/ObjectInformation",
+            "Fields": {             
+				"96": {1:"120"}, // Dwarf Scroll I
+				"97": {1:"120"}, // Dwarf Scroll II
+				"98": {1:"120"}, // Dwarf Scroll III
+				"99": {1:"120"}, // Dwarf Scroll IV
+				"100": {1:"240"}, // Chipped Amphora
+				"101": {1:"360"}, // Arrowhead
+				"103": {1:"720"}, // Ancient Doll
+				"104": {1:"780"}, // Elvish Jewelry
+				"105": {1:"480"}, // Chewing Stick
+				"106": {1:"720"}, // Ornamental Fan
+				"108": {1:"480"}, // Rare Disc
+				"109": {1:"480"}, // Ancient Sword
+				"110": {1:"180"}, // Rusty Spoon
+				"111": {1:"180"}, // Rusty Spur
+				"112": {1:"180"}, // Rusty Cog
+				"113": {1:"600"}, // Chicken Statue
+				"114": {1:"120"}, // Ancient Seed
+				"115": {1:"360"}, // Prehistoric Tool
+				"116": {1:"480"}, // Dried Starfish
+				"117": {1:"600"}, // Anchor
+				"118": {1:"120"}, // Glass Shards
+				"119": {1:"600"}, // Bone Flute
+				"120": {1:"360"}, // Prehistoric Handaxe
+				"121": {1:"600"}, // Dwarvish Helm
+				"122": {1:"720"}, // Dwarf Gadget
+				"123": {1:"600"}, // Ancient Drum
+				"124": {1:"960"}, // Golden Mask
+				"125": {1:"840"}, // Golden Relic
+				"126": {1:"1800"}, // Strange Doll
+				"127": {1:"1800"}, // Strange Doll
+				"579": {1:"240"}, // Prehistoric Scapula
+				"580": {1:"240"}, // Prehistoric Tibia
+				"581": {1:"240"}, // Prehistoric Skull
+				"582": {1:"240"}, // Skeletal Hand
+				"583": {1:"240"}, // Prehistoric Rib
+				"584": {1:"240"}, // Prehistoric Vertebra
+				"585": {1:"240"}, // Skeletal Tail
+				"586": {1:"300"}, // Nautilus Fossil
+				"587": {1:"300"}, // Amphibian Fossil
+				"588": {1:"300"}, // Palm Fossil
+				"589": {1:"300"}, // Trilobite
+			},
+			"When": {"Combat Mode": "Hard", "Balanced Artifacts": "true", "1.5 version":"false", "Enable This Mod":"true"}
+        },
+        // Gemstones
+        {
+            "Action": "EditData",
+            "Target": "Data/ObjectInformation",
+            "Fields": {            
+				"74": {1:"2400"}, // Prismatic Shard
+				"72": {1:"600"}, // Diamond
+				"70": {1:"300"}, // Jade
+				"68": {1:"180"}, // Topaz
+				"66": {1:"180"}, // Amethyst
+				"64": {1:"360"}, // Ruby
+				"62": {1:"300"}, // Aquamarine
+				"60": {1:"360"}, // Emerald
+				"749": {1:"200"}, // Omni Geode
+				"275": {1:"300"}, // Artifact Trove
+				"82": {1:"180"}, // Fire Quartz
+				"86": {1:"144"}, // Earth Crystal
+				"80": {1:"96"}, // Quartz
+				"84": {1:"156"}, // Frozen Tear
+				"848": {1:"120"}, // Cinder Shard
+				"338": {1:"180"}, // Refined Quartz
+			},
+			"When": {"Combat Mode": "Hard", "Balanced Gemstones": "true", "Enable This Mod":"true"}
+        },
+        // Ores
+        {
+            "Action": "EditData",
+            "Target": "Data/ObjectInformation",
+            "Fields": {            
+				"382": {1:"42"}, // Coal
+				"378": {1:"12"}, // Copper Ore
+				"380": {1:"24"}, // Iron Ore
+				"384": {1:"42"}, // Gold Ore
+				"386": {1:"60"}, // Iridium Ore
+				"909": {1:"240"}, // Radioactive Ore
+				"334": {1:"120"}, // Copper Bar
+				"335": {1:"240"}, // Iron Bar
+				"336": {1:"420"}, // Gold Bar
+				"337": {1:"600"}, // Iridium Bar
+				"910": {1:"2400"}, // Radioactive Bar
+			},
+			"When": {"Combat Mode": "Hard", "Balanced Ores": "true", "1.5 version":"true", "Enable This Mod":"true"}
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/ObjectInformation",
+            "Fields": {            
+				"382": {1:"42"}, // Coal
+				"378": {1:"12"}, // Copper Ore
+				"380": {1:"24"}, // Iron Ore
+				"384": {1:"42"}, // Gold Ore
+				"386": {1:"60"}, // Iridium Ore
+				"334": {1:"120"}, // Copper Bar
+				"335": {1:"240"}, // Iron Bar
+				"336": {1:"420"}, // Gold Bar
+				"337": {1:"600"}, // Iridium Bar
+			},
+			"When": {"Combat Mode": "Hard", "Balanced Ores": "true", "1.5 version":"false", "Enable This Mod":"true"}
+        },
+        // Monster Loot
+        {
+            "Action": "EditData",
+            "Target": "Data/ObjectInformation",
+            "Fields": {           
+				"769": {1:"72"}, // Void Essence
+				"768": {1:"72"}, // Solar Essence
+				"767": {1:"42"}, // Bat Wing
+				"684": {1:"24"}, // Bug Meat
+				"766": {1:"18"}, // Slime
+				"881": {1:"30"}, // Bone Fragment
+			},
+			"When": {"Combat Mode": "Hard", "Balanced Monster Loot": "true", "1.5 version":"true", "Enable This Mod":"true"}
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/ObjectInformation",
+            "Fields": {           
+				"769": {1:"72"}, // Void Essence
+				"768": {1:"72"}, // Solar Essence
+				"767": {1:"42"}, // Bat Wing
+				"684": {1:"24"}, // Bug Meat
+				"766": {1:"18"}, // Slime
+			},
+			"When": {"Combat Mode": "Hard", "Balanced Monster Loot": "true", "1.5 version":"false", "Enable This Mod":"true"}
+        },
+        // Nightmare Mode
+        // Artifacts
+        {
+            "Action": "EditData",
+            "Target": "Data/ObjectInformation",
+            "Fields": {             
+				"96": {1:"150"}, // Dwarf Scroll I
+				"97": {1:"150"}, // Dwarf Scroll II
+				"98": {1:"150"}, // Dwarf Scroll III
+				"99": {1:"150"}, // Dwarf Scroll IV
+				"100": {1:"300"}, // Chipped Amphora
+				"101": {1:"450"}, // Arrowhead
+				"103": {1:"900"}, // Ancient Doll
+				"104": {1:"975"}, // Elvish Jewelry
+				"105": {1:"600"}, // Chewing Stick
+				"106": {1:"900"}, // Ornamental Fan
+				"108": {1:"600"}, // Rare Disc
+				"109": {1:"600"}, // Ancient Sword
+				"110": {1:"225"}, // Rusty Spoon
+				"111": {1:"225"}, // Rusty Spur
+				"112": {1:"225"}, // Rusty Cog
+				"113": {1:"750"}, // Chicken Statue
+				"114": {1:"150"}, // Ancient Seed
+				"115": {1:"450"}, // Prehistoric Tool
+				"116": {1:"600"}, // Dried Starfish
+				"117": {1:"750"}, // Anchor
+				"118": {1:"150"}, // Glass Shards
+				"119": {1:"750"}, // Bone Flute
+				"120": {1:"450"}, // Prehistoric Handaxe
+				"121": {1:"750"}, // Dwarvish Helm
+				"122": {1:"900"}, // Dwarf Gadget
+				"123": {1:"750"}, // Ancient Drum
+				"124": {1:"1200"}, // Golden Mask
+				"125": {1:"1050"}, // Golden Relic
+				"126": {1:"2250"}, // Strange Doll
+				"127": {1:"2250"}, // Strange Doll
+				"579": {1:"300"}, // Prehistoric Scapula
+				"580": {1:"300"}, // Prehistoric Tibia
+				"581": {1:"300"}, // Prehistoric Skull
+				"582": {1:"300"}, // Skeletal Hand
+				"583": {1:"300"}, // Prehistoric Rib
+				"584": {1:"300"}, // Prehistoric Vertebra
+				"585": {1:"300"}, // Skeletal Tail
+				"586": {1:"375"}, // Nautilus Fossil
+				"587": {1:"375"}, // Amphibian Fossil
+				"588": {1:"375"}, // Palm Fossil
+				"589": {1:"375"}, // Trilobite
+				"823": {1:"250"}, // Fossilized Leg
+				"824": {1:"250"}, // Fossilized Ribs
+				"820": {1:"250"}, // Fossilized Skull
+				"821": {1:"250"}, // Fossilized Spine
+				"822": {1:"250"}, // Fossilized Tail
+				"828": {1:"250"}, // Mummified Frog
+				"827": {1:"250"}, // Mummified Bat
+				"825": {1:"250"}, // Snake Skull
+				"826": {1:"300"}, // Snake Vertebrae
+			},
+			"When": {"Combat Mode": "Nightmare", "Balanced Artifacts": "true", "1.5 version":"true", "Enable This Mod":"true"}
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/ObjectInformation",
+            "Fields": {             
+				"96": {1:"150"}, // Dwarf Scroll I
+				"97": {1:"150"}, // Dwarf Scroll II
+				"98": {1:"150"}, // Dwarf Scroll III
+				"99": {1:"150"}, // Dwarf Scroll IV
+				"100": {1:"300"}, // Chipped Amphora
+				"101": {1:"450"}, // Arrowhead
+				"103": {1:"900"}, // Ancient Doll
+				"104": {1:"975"}, // Elvish Jewelry
+				"105": {1:"600"}, // Chewing Stick
+				"106": {1:"900"}, // Ornamental Fan
+				"108": {1:"600"}, // Rare Disc
+				"109": {1:"600"}, // Ancient Sword
+				"110": {1:"225"}, // Rusty Spoon
+				"111": {1:"225"}, // Rusty Spur
+				"112": {1:"225"}, // Rusty Cog
+				"113": {1:"750"}, // Chicken Statue
+				"114": {1:"150"}, // Ancient Seed
+				"115": {1:"450"}, // Prehistoric Tool
+				"116": {1:"600"}, // Dried Starfish
+				"117": {1:"750"}, // Anchor
+				"118": {1:"150"}, // Glass Shards
+				"119": {1:"750"}, // Bone Flute
+				"120": {1:"450"}, // Prehistoric Handaxe
+				"121": {1:"750"}, // Dwarvish Helm
+				"122": {1:"900"}, // Dwarf Gadget
+				"123": {1:"750"}, // Ancient Drum
+				"124": {1:"1200"}, // Golden Mask
+				"125": {1:"1050"}, // Golden Relic
+				"126": {1:"2250"}, // Strange Doll
+				"127": {1:"2250"}, // Strange Doll
+				"579": {1:"300"}, // Prehistoric Scapula
+				"580": {1:"300"}, // Prehistoric Tibia
+				"581": {1:"300"}, // Prehistoric Skull
+				"582": {1:"300"}, // Skeletal Hand
+				"583": {1:"300"}, // Prehistoric Rib
+				"584": {1:"300"}, // Prehistoric Vertebra
+				"585": {1:"300"}, // Skeletal Tail
+				"586": {1:"375"}, // Nautilus Fossil
+				"587": {1:"375"}, // Amphibian Fossil
+				"588": {1:"375"}, // Palm Fossil
+				"589": {1:"375"}, // Trilobite
+			},
+			"When": {"Combat Mode": "Nightmare", "Balanced Artifacts": "true", "1.5 version":"false", "Enable This Mod":"true"}
+        },
+        // Gemstones
+        {
+            "Action": "EditData",
+            "Target": "Data/ObjectInformation",
+            "Fields": {            
+				"74": {1:"3000"}, // Prismatic Shard
+				"72": {1:"750"}, // Diamond
+				"70": {1:"375"}, // Jade
+				"68": {1:"225"}, // Topaz
+				"66": {1:"225"}, // Amethyst
+				"64": {1:"450"}, // Ruby
+				"62": {1:"375"}, // Aquamarine
+				"60": {1:"450"}, // Emerald
+				"749": {1:"200"}, // Omni Geode
+				"275": {1:"300"}, // Artifact Trove
+				"82": {1:"225"}, // Fire Quartz
+				"86": {1:"180"}, // Earth Crystal
+				"80": {1:"120"}, // Quartz
+				"84": {1:"195"}, // Frozen Tear
+				"848": {1:"150"}, // Cinder Shard
+				"338": {1:"225"}, // Refined Quartz
+			},
+			"When": {"Combat Mode": "Nightmare", "Balanced Gemstones": "true", "Enable This Mod":"true"}
+        },
+        // Ores
+        {
+            "Action": "EditData",
+            "Target": "Data/ObjectInformation",
+            "Fields": {            
+				"382": {1:"53"}, // Coal
+				"378": {1:"15"}, // Copper Ore
+				"380": {1:"30"}, // Iron Ore
+				"384": {1:"53"}, // Gold Ore
+				"386": {1:"75"}, // Iridium Ore
+				"909": {1:"300"}, // Radioactive Ore
+				"334": {1:"150"}, // Copper Bar
+				"335": {1:"300"}, // Iron Bar
+				"336": {1:"525"}, // Gold Bar
+				"337": {1:"750"}, // Iridium Bar
+				"910": {1:"3000"}, // Radioactive Bar
+			},
+			"When": {"Combat Mode": "Nightmare", "Balanced Ores": "true", "1.5 version":"true", "Enable This Mod":"true"}
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/ObjectInformation",
+            "Fields": {            
+				"382": {1:"53"}, // Coal
+				"378": {1:"15"}, // Copper Ore
+				"380": {1:"30"}, // Iron Ore
+				"384": {1:"53"}, // Gold Ore
+				"386": {1:"75"}, // Iridium Ore
+				"334": {1:"150"}, // Copper Bar
+				"335": {1:"300"}, // Iron Bar
+				"336": {1:"525"}, // Gold Bar
+				"337": {1:"750"}, // Iridium Bar
+			},
+			"When": {"Combat Mode": "Nightmare", "Balanced Ores": "true", "1.5 version":"false", "Enable This Mod":"true"}
+        },
+        // Monster Loot
+        {
+            "Action": "EditData",
+            "Target": "Data/ObjectInformation",
+            "Fields": {           
+				"769": {1:"90"}, // Void Essence
+				"768": {1:"90"}, // Solar Essence
+				"767": {1:"53"}, // Bat Wing
+				"684": {1:"30"}, // Bug Meat
+				"766": {1:"23"}, // Slime
+				"881": {1:"38"}, // Bone Fragment
+			},
+			"When": {"Combat Mode": "Nightmare", "Balanced Monster Loot": "true", "1.5 version":"true", "Enable This Mod":"true"}
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/ObjectInformation",
+            "Fields": {           
+				"769": {1:"90"}, // Void Essence
+				"768": {1:"90"}, // Solar Essence
+				"767": {1:"53"}, // Bat Wing
+				"684": {1:"30"}, // Bug Meat
+				"766": {1:"23"}, // Slime
+			},
+			"When": {"Combat Mode": "Nightmare", "Balanced Monster Loot": "true", "1.5 version":"false", "Enable This Mod":"true"}
+        },
+       //Monsters
+		{ 
+			"Action": "EditData",
+			"Target": "Data/Monsters",
+			"Fields": {
+				// Balance Monsters (Easy)
+				"Green Slime": {0:"10", 1:"2"},
+				"Dust Spirit": {0:"10", 1:"1"},
+				"Bat": {0:"10", 1:"2"},
+				"Frost Bat": {0:"15", 1:"4"},
+				"Lava Bat": {0:"20", 1:"6"},
+				"Iridium Bat": {0:"25", 1:"8"},
+				"Stone Golem": {0:"15", 1:"4"},
+				"Wilderness Golem": {0:"15", 1:"4"},
+				"Grub": {0:"10", 1:"2"},
+				"Fly": {0:"11", 1:"3"},
+				"Frost Jelly": {0:"20", 1:"4"},
+				"Sludge": {0:"30", 1:"6"},
+				"Shadow Guy": {0:"125", 1:"25"},
+				"Ghost": {0:"10", 1:"5"},
+				"Carbon Ghost": {0:"20", 1:"10"},
+				"Duggy": {0:"5", 1:"1"},
+				"Rock Crab": {0:"10", 1:"2"},
+				"Lava Crab": {0:"20", 1:"4"},
+				"Iridium Crab": {0:"30", 1:"6"},
+				"Squid Kid": {0:"1", 1:"5"},
+				"Skeleton Warrior": {0:"300", 1:"12"},
+				"Shadow Brute": {0:"20", 1:"5"},
+				"Shadow Shaman": {0:"15", 1:"5"},
+				"Skeleton": {0:"20", 1:"5"},
+				"Skeleton Mage": {0:"40", 1:"5"},
+				"Metal Head": {0:"20", 1:"5"},
+				"Spiker": {0:"10", 1:"15"},
+				"Bug": {0:"1", 1:"2"},
+				"Mummy": {0:"40", 1:"10"},
+				"Big Slime": {0:"40", 1:"6"},
+				"Serpent": {0:"30", 1:"10"},
+				"Pepper Rex": {0:"50", 1:"10"},
+				"Tiger Slime": {0:"50", 1:"10"},
+				"Lava Lurk": {0:"15", 1:"10"},
+				"Hot Head": {0:"40", 1:"10"},
+				"Magma Sprite": {0:"15", 1:"10"},
+				"Magma Duggy": {0:"30", 1:"10"},				
+				"Magma Sparker": {0:"30", 1:"10"},
+				"False Magma Cap": {0:"50", 1:"5"},
+				"Dwarvish Sentry": {0:"80", 1:"10"},
+				"Putrid Ghost": {0:"50", 1:"15"},
+				"Shadow Sniper": {0:"40", 1:"10"},
+				"Spider": {0:"5", 1:"2"},
+				"Royal Serpent": {0:"30", 1:"10"},
+				"Blue Squid": {0:"40", 1:"5"},
+			},
+			"When": { "Combat Mode": "Easy", "Enable This Mod":"true"}
+		},
+		{ 
+			"Action": "EditData",
+			"Target": "Data/Monsters",
+			"Fields": {
+				// Monsters Speed (Easy)
+				"Green Slime": {10:"1"},
+				"Dust Spirit": {10:"1"},
+				"Bat": {10:"1"},
+				"Frost Bat": {10:"1"},
+				"Lava Bat": {10:"1"},
+				"Iridium Bat": {10:"1"},
+				"Stone Golem": {10:"1"},
+				"Wilderness Golem": {10:"1"},
+				"Grub": {10:"1"},
+				"Fly": {10:"1"},
+				"Frost Jelly": {10:"1"},
+				"Sludge": {10:"1"},
+				"Shadow Guy": {10:"1"},
+				"Ghost": {10:"1"},
+				"Carbon Ghost": {10:"1"},
+				"Duggy": {10:"1"},
+				"Rock Crab": {10:"1"},
+				"Lava Crab": {10:"1"},
+				"Iridium Crab": {10:"1"},
+				"Squid Kid": {10:"1"},
+				"Skeleton Warrior": {10:"1"},
+				"Shadow Brute": {10:"1"},
+				"Shadow Shaman": {10:"1"},
+				"Skeleton": {10:"1"},
+				"Skeleton Mage": {10:"1"},
+				"Metal Head": {10:"1"},
+				"Spiker": {10:"1"},
+				"Bug": {10:"1"},
+				"Mummy": {10:"1"},
+				"Big Slime": {10:"1"},
+				"Serpent": {10:"1"},
+				"Pepper Rex": {10:"1"},
+				"Tiger Slime": {10:"1"},
+				"Lava Lurk": {10:"1"},
+				"Hot Head": {10:"1"},
+				"Magma Sprite": {10:"1"},
+				"Magma Duggy": {10:"1"},				
+				"Magma Sparker": {10:"1"},
+				"False Magma Cap": {10:"1"},
+				"Dwarvish Sentry": {10:"1"},
+				"Putrid Ghost": {10:"1"},
+				"Shadow Sniper": {10:"1"},
+				"Spider": {10:"1"},
+				"Royal Serpent": {10:"1"},
+				"Blue Squid": {10:"1"},
+			},
+			"When": { "Combat Mode": "Easy", "Monsters Speed Changes":"true", "Enable This Mod":"true"}
+		},
+		{ 
+			"Action": "EditData",
+			"Target": "Data/Monsters",
+			"Fields": {
+				// Balance Monsters (Hard)
+				"Green Slime": {0:"50", 1:"15"},
+				"Dust Spirit": {0:"60", 1:"15"},
+				"Bat": {0:"50", 1:"18"},
+				"Frost Bat": {0:"70", 1:"20"},
+				"Lava Bat": {0:"120", 1:"30"},
+				"Iridium Bat": {0:"360", 1:"50"},
+				"Stone Golem": {0:"90", 1:"30"},
+				"Wilderness Golem": {0:"80", 1:"30"},
+				"Grub": {0:"40", 1:"16"},
+				"Fly": {0:"50", 1:"20"},
+				"Frost Jelly": {0:"160", 1:"20"},
+				"Sludge": {0:"260", 1:"30"},
+				"Shadow Guy": {0:"230", 1:"30"},
+				"Ghost": {0:"130", 1:"30"},
+				"Carbon Ghost": {0:"250", 1:"50"},
+				"Duggy": {0:"60", 1:"20"},
+				"Rock Crab": {0:"80", 1:"20"},
+				"Lava Crab": {0:"200", 1:"30"},
+				"Iridium Crab": {0:"350", 1:"40"},
+				"Squid Kid": {0:"1", 1:"80"},
+				"Skeleton Warrior": {0:"170", 1:"24"},
+				"Shadow Brute": {0:"290", 1:"40"},
+				"Shadow Shaman": {0:"250", 1:"40"},
+				"Skeleton": {0:"250", 1:"30"},
+				"Skeleton Mage": {0:"400", 1:"30"},
+				"Metal Head": {0:"150", 1:"40"},
+				"Spiker": {0:"100", 1:"30"},
+				"Bug": {0:"1", 1:"30"},
+				"Mummy": {0:"350", 1:"40"},
+				"Big Slime": {0:"180", 1:"25"},
+				"Serpent": {0:"200", 1:"50"},
+				"Pepper Rex": {0:"450", 1:"40"},
+				"Tiger Slime": {0:"500", 1:"45"},
+				"Lava Lurk": {0:"300", 1:"40"},
+				"Hot Head": {0:"350", 1:"45"},
+				"Magma Sprite": {0:"300", 1:"45"},
+				"Magma Duggy": {0:"450", 1:"40"},				
+				"Magma Sparker": {0:"350", 1:"40"},
+				"False Magma Cap": {0:"400", 1:"35"},
+				"Dwarvish Sentry": {0:"600", 1:"50"},
+				"Putrid Ghost": {0:"600", 1:"80"},
+				"Shadow Sniper": {0:"350", 1:"40"},
+				"Spider": {0:"260", 1:"35"},
+				"Royal Serpent": {0:"300", 1:"50"},
+				"Blue Squid": {0:"350", 1:"40"},
+			},
+			"When": { "Combat Mode": "Hard", "Enable This Mod":"true"}
+		},
+		{ 
+			"Action": "EditData",
+			"Target": "Data/Monsters",
+			"Fields": {
+				// Monsters Speed (Hard)
+				"Green Slime": {10:"10"},
+				"Dust Spirit": {10:"10"},
+				"Bat": {10:"10"},
+				"Frost Bat": {10:"10"},
+				"Lava Bat": {10:"10"},
+				"Iridium Bat": {10:"10"},
+				"Stone Golem": {10:"10"},
+				"Wilderness Golem": {10:"10"},
+				"Grub": {10:"10"},
+				"Fly": {10:"10"},
+				"Frost Jelly": {10:"10"},
+				"Sludge": {10:"10"},
+				"Shadow Guy": {10:"10"},
+				"Ghost": {10:"10"},
+				"Carbon Ghost": {10:"10"},
+				"Duggy": {10:"10"},
+				"Rock Crab": {10:"10"},
+				"Lava Crab": {10:"10"},
+				"Iridium Crab": {10:"10"},
+				"Squid Kid": {10:"10"},
+				"Skeleton Warrior": {10:"10"},
+				"Shadow Brute": {10:"10"},
+				"Shadow Shaman": {10:"10"},
+				"Skeleton": {10:"10"},
+				"Skeleton Mage": {10:"10"},
+				"Metal Head": {10:"10"},
+				"Spiker": {10:"10"},
+				"Bug": {10:"10"},
+				"Mummy": {10:"10"},
+				"Big Slime": {10:"10"},
+				"Serpent": {10:"10"},
+				"Pepper Rex": {10:"10"},
+				"Tiger Slime": {10:"10"},
+				"Lava Lurk": {10:"10"},
+				"Hot Head": {10:"10"},
+				"Magma Sprite": {10:"10"},
+				"Magma Duggy": {10:"10"},			
+				"Magma Sparker": {10:"10"},
+				"False Magma Cap": {10:"10"},
+				"Dwarvish Sentry": {10:"10"},
+				"Putrid Ghost": {10:"10"},
+				"Shadow Sniper": {10:"10"},
+				"Spider": {10:"10"},
+				"Royal Serpent": {10:"10"},
+				"Blue Squid": {10:"10"},
+			},
+			"When": { "Combat Mode": "Hard", "Monsters Speed Changes":"true", "Enable This Mod":"true"}
+		},
+		{ 
+			"Action": "EditData",
+			"Target": "Data/Monsters",
+			"Fields": {
+				// Balance Monsters (Nightmare)
+				"Green Slime": {0:"100", 1:"30"},
+				"Dust Spirit": {0:"120", 1:"30"},
+				"Bat": {0:"100", 1:"40"},
+				"Frost Bat": {0:"130", 1:"45"},
+				"Lava Bat": {0:"240", 1:"60"},
+				"Iridium Bat": {0:"700", 1:"100"},
+				"Stone Golem": {0:"180", 1:"60"},
+				"Wilderness Golem": {0:"160", 1:"60"},
+				"Grub": {0:"80", 1:"32"},
+				"Fly": {0:"100", 1:"40"},
+				"Frost Jelly": {0:"320", 1:"40"},
+				"Sludge": {0:"570", 1:"60"},
+				"Shadow Guy": {0:"500", 1:"60"},
+				"Ghost": {0:"260", 1:"60"},
+				"Carbon Ghost": {0:"500", 1:"100"},
+				"Duggy": {0:"120", 1:"40"},
+				"Rock Crab": {0:"160", 1:"40"},
+				"Lava Crab": {0:"400", 1:"60"},
+				"Iridium Crab": {0:"700", 1:"80"},
+				"Squid Kid": {0:"1", 1:"200"},
+				"Skeleton Warrior": {0:"600", 1:"80"},
+				"Shadow Brute": {0:"580", 1:"80"},
+				"Shadow Shaman": {0:"500", 1:"80"},
+				"Skeleton": {0:"500", 1:"60"},
+				"Skeleton Mage": {0:"800", 1:"60"},
+				"Metal Head": {0:"300", 1:"80"},
+				"Spiker": {0:"120", 1:"60"},
+				"Bug": {0:"1", 1:"100"},
+				"Mummy": {0:"700", 1:"80"},
+				"Big Slime": {0:"360", 1:"50"},
+				"Serpent": {0:"400", 1:"100"},
+				"Pepper Rex": {0:"900", 1:"80"},
+				"Tiger Slime": {0:"1000", 1:"90"},
+				"Lava Lurk": {0:"600", 1:"800"},
+				"Hot Head": {0:"700", 1:"90"},
+				"Magma Sprite": {0:"600", 1:"60"},
+				"Magma Duggy": {0:"900", 1:"80"},				
+				"Magma Sparker": {0:"700", 1:"80"},
+				"False Magma Cap": {0:"800", 1:"70"},
+				"Dwarvish Sentry": {0:"1200", 1:"100"},
+				"Putrid Ghost": {0:"1200", 1:"160"},
+				"Shadow Sniper": {0:"700", 1:"80"},
+				"Spider": {0:"570", 1:"70"},
+				"Royal Serpent": {0:"600", 1:"100"},
+				"Blue Squid": {0:"700", 1:"80"},
+			},
+			"When": { "Combat Mode": "Nightmare", "Enable This Mod":"true"}
+		},
+		{ 
+			"Action": "EditData",
+			"Target": "Data/Monsters",
+			"Fields": {
+				// Monsters Speed (Nightmare)
+				"Green Slime": {10:"15"},
+				"Dust Spirit": {10:"15"},
+				"Bat": {10:"15"},
+				"Frost Bat": {10:"15"},
+				"Lava Bat": {10:"15"},
+				"Iridium Bat": {10:"15"},
+				"Stone Golem": {10:"15"},
+				"Wilderness Golem": {10:"15"},
+				"Grub": {10:"15"},
+				"Fly": {10:"15"},
+				"Frost Jelly": {10:"15"},
+				"Sludge": {10:"15"},
+				"Shadow Guy": {10:"15"},
+				"Ghost": {10:"15"},
+				"Carbon Ghost": {10:"15"},
+				"Duggy": {10:"15"},
+				"Rock Crab": {10:"15"},
+				"Lava Crab": {10:"15"},
+				"Iridium Crab": {10:"15"},
+				"Squid Kid": {10:"15"},
+				"Skeleton Warrior": {10:"15"},
+				"Shadow Brute": {10:"15"},
+				"Shadow Shaman": {10:"15"},
+				"Skeleton": {10:"15"},
+				"Skeleton Mage": {10:"15"},
+				"Metal Head": {10:"15"},
+				"Spiker": {10:"15"},
+				"Bug": {10:"15"},
+				"Mummy": {10:"15"},
+				"Big Slime": {10:"15"},
+				"Serpent": {10:"15"},
+				"Pepper Rex": {10:"15"},
+				"Tiger Slime": {10:"15"},
+				"Lava Lurk": {10:"15"},
+				"Hot Head": {10:"15"},
+				"Magma Sprite": {10:"15"},
+				"Magma Duggy": {10:"15"},				
+				"Magma Sparker": {10:"15"},
+				"False Magma Cap": {10:"15"},
+				"Dwarvish Sentry": {10:"15"},
+				"Putrid Ghost": {10:"15"},
+				"Shadow Sniper": {10:"15"},
+				"Spider": {10:"15"},
+				"Royal Serpent": {10:"15"},
+				"Blue Squid": {10:"15"},
+			},
+			"When": {"Combat Mode": "Nightmare", "Monsters Speed Changes": "true", "Enable This Mod":"true"}
+		},
+        
+		// Building
+        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		//Easy Mode
+        {	  		
+			"Action": "EditData",
+			"Target": "Data/Blueprints",
+			"Fields": {
+				"Coop": {0:"388 150 390 50", 17: "2000"},
+				"Big Coop": {0:"388 250 390 100", 17: "5000"},
+				"Deluxe Coop": {0:"388 350 390 150", 17: "10000"},
+				"Barn": {0:"388 250 390 50", 17: "3000"},
+				"Big Barn": {0:"388 300 390 100", 17: "8000"},
+				"Deluxe Barn": {0:"388 350 390 150", 17: "15000"},
+				"Silo": {0:"390 100 330 10", 17: "100"},
+				"Mill": {0:"388 100 390 50 428 4", 17: "1500"},
+				"Stable": {0:"709 50 335 5", 17: "5000"},
+				"Well": {0:"390 50", 17: "1000"},
+				"Shipping Bin": {0:"388 100", 17: "100"},
+				"Slime Hutch": {0:"390 250 338 10", 17: "5000"},
+				"Shed": {0:"388 200", 17: "10000"},
+				"Big Shed": {0:"388 400 390 100", 17: "15000"},
+				"Fish Pond": {0:"390 100 152 5", 17: "5000"},
+				"Junimo Hut": {0:"390 200 771 100", 17: "20000"},
+				"Earth Obelisk": {0:"337 5 86 10", 17: "500000"},
+				"Water Obelisk": {0:"337 5 372 10 393 10", 17: "500000"},
+				"Desert Obelisk": {0:"337 10 88 10 90 10", 17: "500000"},
+				"Island Obelisk": {0:"337 10 852 5 91 5", 17: "500000"},
+				"Gold Clock": {17: "2000000"},
+			},
+			"When": {"Building Mode": "Easy", "HasMod|contains=hawkfalcon.BetterJunimos": false, "Enable This Mod":"true"}
+		},
+		{	  		
+			"Action": "EditData",
+			"Target": "Data/Blueprints",
+			"Fields": {
+				"Coop": {0:"388 150 390 50", 17: "2000"},
+				"Big Coop": {0:"388 250 390 100", 17: "5000"},
+				"Deluxe Coop": {0:"388 350 390 150", 17: "10000"},
+				"Barn": {0:"388 250 390 50", 17: "3000"},
+				"Big Barn": {0:"388 300 390 100", 17: "8000"},
+				"Deluxe Barn": {0:"388 350 390 150", 17: "15000"},
+				"Silo": {0:"390 100 330 10", 17: "100"},
+				"Mill": {0:"388 100 390 50 428 4", 17: "1500"},
+				"Stable": {0:"709 50 335 5", 17: "5000"},
+				"Well": {0:"390 50", 17: "1000"},
+				"Shipping Bin": {0:"388 100", 17: "100"},
+				"Slime Hutch": {0:"390 250 338 10", 17: "5000"},
+				"Shed": {0:"388 200", 17: "10000"},
+				"Big Shed": {0:"388 400 390 100", 17: "15000"},
+				"Fish Pond": {0:"390 100 152 5", 17: "5000"},
+				"Junimo Hut": {0:"390 250 268 15 771 100", 17: "40000"},
+				"Earth Obelisk": {0:"337 5 86 10", 17: "500000"},
+				"Water Obelisk": {0:"337 5 372 10 393 10", 17: "500000"},
+				"Desert Obelisk": {0:"337 10 88 10 90 10", 17: "500000"},
+				"Island Obelisk": {0:"337 10 852 5 91 5", 17: "500000"},
+				"Gold Clock": {17: "2000000"},
+			},
+			"When": {"Building Mode": "Easy", "HasMod|contains=hawkfalcon.BetterJunimos": true, "Enable This Mod":"true"}
+		},
+        
+        //Hard Mode
+        {	  		
+			"Action": "EditData",
+			"Target": "Data/Blueprints",
+			"Fields": {
+				"Coop": {0:"388 500 390 100 335 4", 17: "5000"},
+				"Big Coop": {0:"388 600 390 150 335 8", 17: "15000"},
+				"Deluxe Coop": {0:"388 700 390 200 335 12", 17: "25000"},
+				"Barn": {0:"388 600 390 100 335 4", 17: "10000"},
+				"Big Barn": {0:"388 700 390 150 335 8", 17: "20000"},
+				"Deluxe Barn": {0:"388 800 390 200 335 16", 17: "30000"},
+				"Silo": {0:"390 250 330 20 334 10", 17: "2000"},
+				"Mill": {0:"388 200 390 100 428 8", 17: "5000"},
+				"Stable": {0:"709 150 335 10 771 50", 17: "25000"},
+				"Well": {0:"390 100 388 50 335 5", 17: "2000"},
+				"Shipping Bin": {0:"388 200", 17: "1000"},
+				"Slime Hutch": {0:"390 600 338 10 337 3", 17: "20000"},
+				"Shed": {0:"388 500 390 100 709 50", 17: "20000"},
+				"Big Shed": {0:"388 600 390 200 709 50", 17: "30000"},
+				"Fish Pond": {0:"390 200 152 15 153 15", 17: "10000"},
+				"Junimo Hut": {0:"390 600 268 20 771 150", 17: "200000"},
+				"Earth Obelisk": {0:"337 20 86 50 420 50", 17: "1000000"},
+				"Water Obelisk": {0:"337 20 394 50 393 50", 17: "1000000"},
+				"Desert Obelisk": {0:"337 30 275 50 90 25", 17: "1500000"},
+				"Island Obelisk": {0:"337 30 852 50 848 100", 17: "1500000"},
+				"Gold Clock": {0:"336 5000 338 100 337 10", 17: "1000000"},
+			},
+			"When": {"Building Mode": "Hard", "HasMod|contains=hawkfalcon.BetterJunimos": false, "Enable This Mod":"true"}
+		},
+		{	  		
+			"Action": "EditData",
+			"Target": "Data/Blueprints",
+			"Fields": {
+				"Coop": {0:"388 500 390 100 335 4", 17: "5000"},
+				"Big Coop": {0:"388 600 390 150 335 8", 17: "15000"},
+				"Deluxe Coop": {0:"388 700 390 200 335 12", 17: "25000"},
+				"Barn": {0:"388 600 390 100 335 4", 17: "10000"},
+				"Big Barn": {0:"388 700 390 150 335 8", 17: "20000"},
+				"Deluxe Barn": {0:"388 800 390 200 335 16", 17: "30000"},
+				"Silo": {0:"390 250 330 20 334 10", 17: "2000"},
+				"Mill": {0:"388 200 390 100 428 8", 17: "5000"},
+				"Stable": {0:"709 150 335 10 771 50", 17: "25000"},
+				"Well": {0:"390 100 388 50 335 5", 17: "2000"},
+				"Shipping Bin": {0:"388 200", 17: "1000"},
+				"Slime Hutch": {0:"390 600 338 10 337 3", 17: "20000"},
+				"Shed": {0:"388 500 390 100 709 50", 17: "20000"},
+				"Big Shed": {0:"388 600 390 200 709 50", 17: "30000"},
+				"Fish Pond": {0:"390 200 152 15 153 15", 17: "10000"},
+				"Junimo Hut": {0:"390 800 268 40 771 200", 17: "500000"},
+				"Earth Obelisk": {0:"337 20 86 50 420 50", 17: "1000000"},
+				"Water Obelisk": {0:"337 20 394 50 393 50", 17: "1000000"},
+				"Desert Obelisk": {0:"337 30 275 50 90 25", 17: "1500000"},
+				"Island Obelisk": {0:"337 30 852 50 848 100", 17: "1500000"},
+				"Gold Clock": {0:"336 5000 338 100 337 10", 17: "1000000"},
+			},
+			"When": {"Building Mode": "Hard", "HasMod|contains=hawkfalcon.BetterJunimos": true, "Enable This Mod":"true"}
+		},
+        //Professional Mode
+        {	  		
+			"Action": "EditData",
+			"Target": "Data/Blueprints",
+			"Fields": {
+				"Coop": {0:"388 600 390 200 335 10", 17: "10000"},
+				"Big Coop": {0:"388 700 390 300 335 20", 17: "20000"},
+				"Deluxe Coop": {0:"388 800 390 400 335 30", 17: "30000"},
+				"Barn": {0:"388 700 390 200 335 10", 17: "20000"},
+				"Big Barn": {0:"388 800 390 300 335 20", 17: "30000"},
+				"Deluxe Barn": {0:"388 900 390 400 335 30", 17: "40000"},
+				"Silo": {0:"390 500 330 50 334 25", 17: "10000"},
+				"Mill": {0:"388 300 390 150 428 16", 17: "15000"},
+				"Stable": {0:"709 200 335 50 771 100", 17: "50000"},
+				"Well": {0:"390 300 388 100 335 10", 17: "10000"},
+				"Shipping Bin": {0:"388 250", 17: "5000"},
+				"Slime Hutch": {0:"390 800 338 50 337 10", 17: "30000"},
+				"Shed": {0:"388 600 390 200 709 100", 17: "30000"},
+				"Big Shed": {0:"388 800 390 300 709 100", 17: "40000"},
+				"Fish Pond": {0:"390 350 152 30 153 30", 17: "15000"},
+				"Junimo Hut": {0:"390 800 268 100 771 400", 17: "1000000"},
+				"Earth Obelisk": {0:"337 100 86 100 74 5", 17: "2000000"},
+				"Water Obelisk": {0:"337 100 394 100 74 5", 17: "2000000"},
+				"Desert Obelisk": {0:"337 100 275 100 74 5", 17: "2500000"},
+				"Island Obelisk": {0:"74 10 852 100 848 150", 17: "3000000"},
+				"Gold Clock": {0:"336 10000 338 500 337 100", 17: "1000000"},
+			},
+			"When": {"Building Mode": "Professional", "HasMod|contains=hawkfalcon.BetterJunimos": false, "Enable This Mod":"true"}
+		},
+		{	  		
+			"Action": "EditData",
+			"Target": "Data/Blueprints",
+			"Fields": {
+				"Coop": {0:"388 600 390 200 335 10", 17: "10000"},
+				"Big Coop": {0:"388 700 390 300 335 20", 17: "20000"},
+				"Deluxe Coop": {0:"388 800 390 400 335 30", 17: "30000"},
+				"Barn": {0:"388 700 390 200 335 10", 17: "20000"},
+				"Big Barn": {0:"388 800 390 300 335 20", 17: "30000"},
+				"Deluxe Barn": {0:"388 900 390 400 335 30", 17: "40000"},
+				"Silo": {0:"390 500 330 50 334 25", 17: "10000"},
+				"Mill": {0:"388 300 390 150 428 16", 17: "15000"},
+				"Stable": {0:"709 200 335 50 771 100", 17: "50000"},
+				"Well": {0:"390 300 388 100 335 10", 17: "10000"},
+				"Shipping Bin": {0:"388 250", 17: "5000"},
+				"Slime Hutch": {0:"390 800 338 50 337 10", 17: "30000"},
+				"Shed": {0:"388 600 390 200 709 100", 17: "30000"},
+				"Big Shed": {0:"388 800 390 300 709 100", 17: "40000"},
+				"Fish Pond": {0:"390 350 152 30 153 30", 17: "15000"},
+				"Junimo Hut": {0:"390 1000 268 150 771 500", 17: "1500000"},
+				"Earth Obelisk": {0:"337 100 86 100 74 5", 17: "2000000"},
+				"Water Obelisk": {0:"337 100 394 100 74 5", 17: "2000000"},
+				"Desert Obelisk": {0:"337 100 275 100 74 5", 17: "2500000"},
+				"Island Obelisk": {0:"74 10 852 100 848 150", 17: "3000000"},
+				"Gold Clock": {0:"336 10000 338 500 337 100", 17: "1000000"},
+			},
+			"When": {"Building Mode": "Professional", "HasMod|contains=hawkfalcon.BetterJunimos": true, "Enable This Mod":"true"}
+		}
+  ]
+}

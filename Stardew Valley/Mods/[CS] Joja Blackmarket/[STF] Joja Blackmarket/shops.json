@@ -1,0 +1,346 @@
+//shops.json for CopperSun's Joja Seeds mod
+
+{
+	"Shops": 
+	[ 
+	{ 
+	 
+		"ShopName": "Blackmarket",
+		
+		"PriceMultiplierWhen": { 
+					"1.25": [ "!CommunityCenterComplete" ],
+					"2.00": [ "CommunityCenterComplete" ], 
+		}, //player has seen community center completion event
+		
+		"CategoriesToSellHere": [ -2, -28, -29, -96, -98 ],
+		
+		"ItemStocks": [
+			
+			
+			//vanilla JojaMart items			
+			{
+				"StockPrice": 75,
+				"ItemType": "Object",
+				"ItemNames": [ "Joja Cola", ]
+			},
+			
+			{
+				"StockPrice": 500,
+				"ItemType": "Furniture",
+				"ItemIDs": [ 1609, ],				
+			},
+			
+			{
+			  "StockPrice": 50000,
+			  "ItemType": "BigCraftable",
+			  "ItemNames": [ "Auto-Petter" ],
+			  "Stock": 1,
+			  "When": ["CommunityCenterComplete"]
+			},
+			
+			//random gem
+			{
+			  "StockPrice": 320,
+			  "ItemType": "Object",
+			  "ItemNames": ["Topaz"],
+			  "Stock": 5,
+			  "When": [ "SeededRandom 58 Day 0.0 0.20", ],
+			},
+			
+			{
+			  "StockPrice": 400,
+			  "ItemType": "Object",
+			  "ItemNames": ["Amethyst"],
+			  "Stock": 5,
+			  "When": [ "SeededRandom 58 Day 0.20 0.40", ],
+			},
+			
+			{
+			  "StockPrice": 720,
+			  "ItemType": "Object",
+			  "ItemNames": ["Aquamarine"],
+			  "Stock": 5,
+			  "When": [ "SeededRandom 58 Day 0.40 0.60", ],
+			},
+			
+			{
+			  "StockPrice": 800,
+			  "ItemType": "Object",
+			  "ItemNames": ["Jade"],
+			  "Stock": 5,
+			  "When": [ "SeededRandom 58 Day 0.60 0.75", ],
+			},
+			
+			{
+			  "StockPrice": 1000,
+			  "ItemType": "Object",
+			  "ItemNames": ["Emerald"],
+			  "Stock": 5,
+			  "When": [ "SeededRandom 58 Day 0.75 0.85", ],
+			},
+			
+			{
+			  "StockPrice": 1000,
+			  "ItemType": "Object",
+			  "ItemNames": ["Ruby"],
+			  "Stock": 5,
+			  "When": [ "SeededRandom 58 Day 0.85 0.95", ],
+			},
+						
+			{
+			  "StockPrice": 3000,
+			  "ItemType": "Object",
+			  "ItemNames": ["Diamond"],
+			  "Stock": 5,
+			  "When": [ "SeededRandom 58 Day 0.95 1.0", ],
+			},
+			
+			
+			//random artifact or other nice item
+			
+			{
+			  "StockPrice": 1000,
+			  "ItemType": "Object",
+			  "ItemNames": ["Dwarf Scroll I", "Dwarf Scroll II", "Dwarf Scroll III", "Dwarf Scroll IV", "Chicken Statue","Glass Shards","Rusty Cog", "Rusty Spoon", "Rusty Spur", ],
+			  "Stock": 1,
+			  "MaxNumItemsSoldInItemStock": 1,
+			  "When": [ "SeededRandom 44 Day 0.00 0.30", ],
+			},
+			
+			{
+			  "StockPrice": 3500,
+			  "ItemType": "Object",
+			  "ItemIDs": [117, 103,123,101,119, 105,100,116,121,120,583, 579, 581, 580, 115, 584,582, 585,126, 127, 680, 413,],
+			  //"ItemNames": ["Anchor","Ancient Doll","Ancient Drum","Arrowhead","Bone Flute", "Chewing Stick","Chipped Amphora","Dried Starfish","Dwarvish Helm","Prehistoric Handaxe","Prehistoric Rib", "Prehistoric Scapula", "Prehistoric Skull", "Prehistoric Tibia", "Prehistoric Tool", "Prehistoric Vertebra","Skeletal Hand", "Skeletal Tail","Strange Doll (green)", "Strange Doll (yellow)", "Green Slime Egg", "Blue Slime Egg", ],
+			  "Stock": 1,
+			  "MaxNumItemsSoldInItemStock": 1,
+			  "When": [ "SeededRandom 44 Day 0.30 0.75", ],
+			},
+			
+			{
+			  "StockPrice": 7500,
+			  "ItemType": "Object",
+			  "ItemNames": ["Amphibian Fossil","Ancient Seed","Ancient Sword","Dinosaur Egg","Nautilus Fossil","Ornamental Fan","Palm Fossil","Rare Disc","Trilobite", "Red Slime Egg", "Purple Slime Egg", "Tiger Slime Egg",],
+			  "Stock": 1,
+			  "MaxNumItemsSoldInItemStock": 1,
+			  "When": [ "SeededRandom 44 Day 0.75 0.92", ],
+			},
+			
+			{
+			  "StockPrice": 15000,
+			  "ItemType": "Object",
+			  "ItemNames": [ "Elvish Jewelry","Dwarf Gadget","Golden Mask","Golden Relic", "Pearl", "Golden Pumpkin", "Dragon Tooth", ],
+			  "Stock": 1,
+			  "MaxNumItemsSoldInItemStock": 1,
+			  "When": [ "SeededRandom 44 Day 0.92 1.0", ],
+			},
+			
+			
+			
+			//Joja Seeds items - must have Joja Seeds installed
+			{
+			  "StockPrice": 90,
+			  "ItemType": "Object",
+			  "ItemNames": [ "Broccoflower (Joja) Seeds" ],
+			  "When": ["!z spring"]
+			},
+			{
+			  "StockPrice": 80,
+			  "ItemType": "Object",
+			  "ItemNames": [ "Cauliflower (Joja) Seeds" ],
+			  "When": ["!z spring"]
+			},
+			
+			{
+			  "StockPrice": 75,
+			  "ItemType": "Object",
+			  "ItemNames": [ "Corn (Joja) Seeds" ],
+			  "When": ["!z summer", "!z fall",]
+			},
+			
+			{
+			  "StockPrice": 300,
+			  "ItemType": "Object",
+			  "ItemNames": [ "Cranberry (Joja) Seeds" ],
+			  "When": [ "!z fall",]
+			},
+			
+			{
+			  "StockPrice": 80,
+			  "ItemType": "Object",
+			  "ItemNames": [ "Melon (Joja) Seeds" ],
+			  "When": [ "!z summer",]
+			},
+			
+			{
+			  "StockPrice": 20,
+			  "ItemType": "Object",
+			  "ItemNames": [ "Parsnip (Joja) Seeds" ],
+			  "When": ["!z spring", "!z fall",]
+			},
+			
+			{
+			  "StockPrice": 120,
+			  "ItemType": "Object",
+			  "ItemNames": [ "Poppy (Joja) Seeds" ],
+			  "When": [ "!z fall",]
+			},
+			
+			{
+			  "StockPrice": 50,
+			  "ItemType": "Object",
+			  "ItemNames": [ "Potato (Joja) Seeds" ],
+			  "When": ["!z spring", "!z winter",]
+			},
+			
+			{
+			  "StockPrice": 120,
+			  "ItemType": "Object",
+			  "ItemNames": [ "Pumpkin (Joja) Seeds" ],
+			  "When": [ "!z fall", ]
+			},
+			
+			{
+			  "StockPrice": 40,
+			  "ItemType": "Object",
+			  "ItemNames": [ "Radish (Joja) Seeds" ],
+			  "When": [ "!z spring", "!z summer", ]
+			},
+			
+			{
+			  "StockPrice": 250,
+			  "ItemType": "Object",
+			  "ItemNames": [ "Sweet Joja Berry Seeds" ],
+			  "When": [ "!z summer", ]
+			},
+			
+			{
+			  "StockPrice": 50,
+			  "ItemType": "Object",
+			  "ItemNames": [ "Tomato (Joja) Seeds" ],
+			  "When": [ "!z summer", ]
+			},
+			
+			{
+			  "StockPrice": 25,
+			  "ItemType": "Object",
+			  "ItemNames": [ "Tulip (Joja) Bulbs" ],
+			  "When": ["!z spring"]
+			},
+			
+			{
+			  "StockPrice": 15,
+			  "ItemType": "Object",
+			  "ItemNames": [ "Wheat (Joja) Seeds" ],
+			  "When": [ "!z spring", "!z summer", "!z fall", ]
+			},
+			
+			{
+			  "StockPrice": 500,
+			  "ItemType": "Object",
+			  "ItemNames": [ "Winterstar Fruit (Joja) Seeds" ],
+			  "When": [ "!z winter", ]
+			},
+			
+			{
+			  "StockPrice": 1000,
+			  "ItemType": "Object",
+			  "IsRecipe": true,
+			  "ItemNames": [ "Cheese Broccoflower" ],
+			},
+			
+			{
+			  "StockPrice": 1000,
+			  "ItemType": "Object",
+			  "IsRecipe": true,
+			  "ItemNames": [ "Smothered Garlic Potatoes" ],
+			},
+			
+			{
+			  "StockPrice": 1500,
+			  "ItemType": "Object",
+			  "IsRecipe": true,
+			  "ItemNames": [ "Void Garlic Potatoes" ],
+			  "When": [ "f Krobus 1", ]
+			},
+			
+			//Asters Fruit Trees as Crops
+			
+			{
+			  "StockPrice": 2999,
+			  "ItemType": "Object",
+			  "ItemNames": [ "Joja Apricrop" ],
+			  "When": ["!z spring"]
+			},
+			
+			{
+			  "StockPrice": 3999,
+			  "ItemType": "Object",
+			  "ItemNames": [ "Joja Cherry Cute" ],
+			  "When": ["!z spring"]
+			},
+			
+			{
+			  "StockPrice": 4999,
+			  "ItemType": "Object",
+			  "ItemNames": [ "Joja Dwarf Orange" ],
+			  "When": ["!z summer"]
+			},
+			
+			{
+			  "StockPrice": 6999,
+			  "ItemType": "Object",
+			  "ItemNames": [ "Joja Baby Banana" ],
+			  "When": ["Hn Island_UpgradeTrader"]
+			},
+			
+			{
+			  "StockPrice": 6999,
+			  "ItemType": "Object",
+			  "ItemNames": [ "Joja Mini Mango" ],
+			  "When": ["Hn Island_UpgradeTrader"]
+			},
+			
+			{
+			  "StockPrice": 6999,
+			  "ItemType": "Object",
+			  "ItemNames": [ "Joja Peatree" ],
+			  "When": ["!z summer"]
+			},
+			
+			{
+			  "StockPrice": 4999,
+			  "ItemType": "Object",
+			  "ItemNames": [ "Joja Applemini" ],
+			  "When": ["!z fall"]
+			},
+			
+			{
+			  "StockPrice": 6999,
+			  "ItemType": "Object",
+			  "ItemNames": [ "Joja Pominiature" ],
+			  "When": ["!z fall"]
+			},
+			
+			//SVE MMO Joja 'crops'
+			{
+			  "StockPrice": 6500,
+			  "ItemType": "Object",
+			  "ItemNames": [ "Joja Berry Starter" ],
+			  "When": ["CommunityCenterComplete"],
+			},
+			
+			{
+			  "StockPrice": 600,
+			  "ItemType": "Object",
+			  "ItemNames": [ "Joja Veggie Seeds" ],
+			  "When": ["CommunityCenterComplete"],
+			},
+
+
+		],
+	 
+	 },	
+	 ]
+
+}

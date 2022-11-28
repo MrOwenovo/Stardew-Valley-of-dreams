@@ -1,0 +1,103 @@
+{
+	"Format": "1.18.0",
+	
+			"ConfigSchema": 
+		{
+			"DewdropFish":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				}, 
+			"PurpleSpottedTrout":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				}, 
+			"Relicantlette":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				}, 
+			"Serafin":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				}, 
+			"UmuwiCarp":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				},
+		},
+	"Changes": [
+		{
+			"LogName": "Dewdrop Fish",
+			"Action": "EditImage",
+			"Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Dewdrop Fish}}",
+			"FromFile": "dewdrop_fish.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Dewdrop Fish}}", "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Dewdrop Fish}}", "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 20,
+			"AnimationFrameCount": 4,
+			"When":
+				{"DewdropFish": "true"},
+		},
+		{
+
+			"LogName": "Purple Spotted Trout",
+			"Action": "EditImage",
+			"Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Purple Spotted Trout}}",
+			"FromFile": "purple_spotted_trout.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Purple Spotted Trout}}", "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Purple Spotted Trout}}", "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 20,
+			"AnimationFrameCount": 4,
+			"When":
+				{"PurpleSpottedTrout": "true"},
+		},
+		{
+			
+			"LogName": "Relicantlette",
+			"Action": "EditImage",
+			"Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Relicantlette}}",
+			"FromFile": "relicantlette.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Relicantlette}}", "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Relicantlette}}", "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 20,
+			"AnimationFrameCount": 4,
+			"When":
+				{"Relicantlette": "true"},
+		},
+		{
+
+			"LogName": "Serafin",
+			"Action": "EditImage",
+			"Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Serafin}}",
+			"FromFile": "serafin.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Serafin}}", "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Serafin}}", "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 20,
+			"AnimationFrameCount": 4,
+			"When":
+				{"Serafin": "true"},
+		},
+		{
+			
+			"LogName": "Umuwi Carp",
+			"Action": "EditImage",
+			"Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Umuwi Carp}}",
+			"FromFile": "umuwi_carp.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Umuwi Carp}}", "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Umuwi Carp}}", "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 20,
+			"AnimationFrameCount": 4,
+			"When":
+				{"UmuwiCarp": "true"},
+		}
+	]
+}

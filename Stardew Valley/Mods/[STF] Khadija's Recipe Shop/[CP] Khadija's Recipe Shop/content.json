@@ -1,0 +1,216 @@
+{
+    "Format": "1.19.0",
+    "Changes": [
+    {
+        "LogName": "English Strings",
+        "Action": "EditData",
+        "Target": "Strings/StringsFromMaps",
+        "Entries":
+        {
+            "Zamir.1": "{{i18n: Zamir-1}}",
+            "Zamir.2": "{{i18n: Zamir-2}}",
+            "Zamir.3": "{{i18n: Zamir-3}}",
+            "Nasira.1": "{{i18n: Nasira-1}}",
+            "Nasira.2": "{{i18n: Nasira-2}}",
+            "Nasira.3": "{{i18n: Nasira-3}}",
+            "Nasira.4": "{{i18n: Nasira-4}}",
+            "Summer.1": "{{i18n: Summer-1}}",
+            "Summer.2": "{{i18n: Summer-2}}",
+            "Summer.3": "{{i18n: Summer-3}}",
+            "SummerSat.1": "{{i18n: SummerSat-1}}",
+            "SummerSat.2": "{{i18n: SummerSat-2}}",
+            "SummerSat.3": "{{i18n: SummerSat-3}}",
+            "SummerSat.4": "{{i18n: SummerSat-4}}",
+        }
+    },
+    {
+        "LogName": "Khadija Tilesheets, No NPCs",
+        "Action": "Load",
+        "Target": "Maps/spring_recipes, Maps/spring_recipes_Sat, Maps/summer_recipes, Maps/summer_recipes_Sat, Maps/fall_recipes, Maps/fall_recipes_Sat, Maps/winter_recipes, Maps/winter_recipes_Sat",
+        "FromFile": "assets/NPCless/{{TargetWithoutPath}}.png",
+        "When": {
+        	"HasMod |contains=Hadi.DesertCaravan": false,
+        	"HasMod |contains=Hadi.valleymarketCP": false
+        }
+    },
+    {
+        "LogName": "Khadija Tilesheets, NPCs",
+        "Action": "Load",
+        "Target": "Maps/spring_recipes, Maps/spring_recipes_Sat, Maps/summer_recipes, Maps/summer_recipes_Sat, Maps/fall_recipes, Maps/fall_recipes_Sat, Maps/winter_recipes, Maps/winter_recipes_Sat",
+        "FromFile": "assets/NPC/{{TargetWithoutPath}}.png",
+        "When": {
+        	"HasMod |contains=Hadi.DesertCaravan": true,
+        	"HasMod |contains=Hadi.valleymarketCP": false
+        	
+        }
+    },
+    {
+        "LogName": "Khadija Map Patch, No NPCs",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/NPCless/RecipeShop.tbin",
+        "PatchMode": "Overlay",
+        "ToArea":
+        {
+            "X": 86,
+            "Y": 89,
+            "Width": 4,
+            "Height": 4
+        },
+        "When":
+        {
+            "Season": "Spring, Fall, Winter",
+            "DayOfWeek": "Monday, Tuesday, Wednesday, Thursday, Friday, Sunday",
+            "HasMod |contains=Hadi.DesertCaravan": false,
+        	"HasMod |contains=Hadi.valleymarketCP": false
+        }
+    },
+    {
+        "LogName": "Khadija Map Patch, NPCs",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/NPC/RecipeShop.tbin",
+        "PatchMode": "Overlay",
+        "ToArea":
+        {
+            "X": 86,
+            "Y": 89,
+            "Width": 4,
+            "Height": 4
+        },
+        "When":
+        {
+            "Season": "Spring, Fall, Winter",
+            "DayOfWeek": "Monday, Tuesday, Wednesday, Thursday, Friday, Sunday",
+            "HasMod |contains=Hadi.DesertCaravan": true,
+        	"HasMod |contains=Hadi.valleymarketCP": false
+        }
+    },
+    {
+        "LogName": "Khadija Summer Map Patch, No NPCs",
+        "Action": "EditMap",
+        "Target": "Maps/Desert",
+        "FromFile": "assets/NPCless/RecipeShopSummer.tbin",
+        "PatchMode": "Overlay",
+        "ToArea":
+        {
+            "X": 5,
+            "Y": 20,
+            "Width": 4,
+            "Height": 2
+        },
+        "When":
+        {
+            "Season": "Summer",
+            "DayOfWeek": "Monday, Tuesday, Wednesday, Thursday, Friday, Sunday",
+            "HasMod |contains=Hadi.DesertCaravan": false,
+        	"HasMod |contains=Hadi.valleymarketCP": false
+        }
+    },
+    {
+        "LogName": "Khadija Summer Map Patch, NPCs",
+        "Action": "EditMap",
+        "Target": "Maps/Desert",
+        "FromFile": "assets/NPC/RecipeShopSummer.tbin",
+        "PatchMode": "Overlay",
+        "ToArea":
+        {
+            "X": 5,
+            "Y": 20,
+            "Width": 4,
+            "Height": 2
+        },
+        "When":
+        {
+            "Season": "Summer",
+            "DayOfWeek": "Monday, Tuesday, Wednesday, Thursday, Friday, Sunday",
+            "HasMod |contains=Hadi.DesertCaravan": true,
+        	"HasMod |contains=Hadi.valleymarketCP": false
+        }
+    },
+    {
+        "LogName": "Khadija Saturday Map Patch, No NPCs",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/NPCless/RecipeShop_Saturday.tbin",
+        "PatchMode": "Overlay",
+        "ToArea":
+        {
+            "X": 86,
+            "Y": 89,
+            "Width": 4,
+            "Height": 4
+        },
+        "When":
+        {
+            "Season": "Spring, Fall, Winter",
+            "DayOfWeek": "Saturday",
+            "HasMod |contains=Hadi.DesertCaravan": false,
+        	"HasMod |contains=Hadi.valleymarketCP": false
+        }
+    },
+    {
+        "LogName": "Khadija Saturday Map Patch, NPCs",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/NPC/RecipeShop_Saturday.tbin",
+        "PatchMode": "Overlay",
+        "ToArea":
+        {
+            "X": 86,
+            "Y": 89,
+            "Width": 4,
+            "Height": 4
+        },
+        "When":
+        {
+            "Season": "Spring, Fall, Winter",
+            "DayOfWeek": "Saturday",
+            "HasMod |contains=Hadi.DesertCaravan": true,
+        	"HasMod |contains=Hadi.valleymarketCP": false
+        }
+    },
+    {
+        "LogName": "Khadija Summer Saturday Map Patch, No NPCs",
+        "Action": "EditMap",
+        "Target": "Maps/Desert",
+        "FromFile": "assets/NPCless/RecipeShopSummer_Saturday.tbin",
+        "PatchMode": "Overlay",
+        "ToArea":
+        {
+            "X": 5,
+            "Y": 20,
+            "Width": 4,
+            "Height": 2
+        },
+        "When":
+        {
+            "Season": "Summer",
+            "DayOfWeek": "Saturday",
+            "HasMod |contains=Hadi.DesertCaravan": false,
+        	"HasMod |contains=Hadi.valleymarketCP": false
+        }
+    }, 
+    {
+        "LogName": "Khadija Summer Saturday Map Patch, NPCs",
+        "Action": "EditMap",
+        "Target": "Maps/Desert",
+        "FromFile": "assets/NPC/RecipeShopSummer_Saturday.tbin",
+        "PatchMode": "Overlay",
+        "ToArea":
+        {
+            "X": 5,
+            "Y": 20,
+            "Width": 4,
+            "Height": 2
+        },
+        "When":
+        {
+            "Season": "Summer",
+            "DayOfWeek": "Saturday",
+            "HasMod |contains=Hadi.DesertCaravan": true,
+        	"HasMod |contains=Hadi.valleymarketCP": false
+        }
+    }, 
+    ]
+}

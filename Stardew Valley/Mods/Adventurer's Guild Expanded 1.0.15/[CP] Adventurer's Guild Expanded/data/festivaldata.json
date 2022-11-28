@@ -1,0 +1,624 @@
+{
+"Changes": [
+
+
+//****************************
+//******* EGG FESTIVAL *******
+//****************************
+	{
+
+   "Action": "EditData",
+   "When": { "HasSeenEvent: hostPlayer |contains=9280002": "true", },
+   "Target": "Data/Festivals/spring13",
+   "TextOperations": [
+
+   //SetUp
+		{
+         "Operation": "Append",
+         "Target": ["Entries", "Set-Up_additionalCharacters"],
+         "Value": "Zinnia 15 73 left/Gabriel 13 73 right",
+         "Delimiter": "/"
+		},
+
+   //Main Event
+		{
+         "Operation": "Append",
+         "Target": ["Entries", "MainEvent_additionalCharacters"],
+         "Value": "Zinnia 15 73 right/Gabriel 13 73 right",
+         "Delimiter": "/"
+		},
+
+	],
+	},
+
+	{
+	"LogName": "EggFestival",
+	"Action": "EditData",
+	"When": { "HasSeenEvent: hostPlayer |contains=9280002": "true", },
+	"Target": "Data/Festivals/spring13",
+	"Entries": {
+		"Zinnia": "你好，@！你今天要参加彩蛋大寻宝吗？#$b#我也帮忙涂了几个彩蛋。等你看到的时候，你就知道是哪几个了，哈哈！$h",
+		"Zinnia_spouse": "嗨，亲爱的！我准备好在今天的彩蛋大寻宝里为你加油了。我知道你一定能赢！",
+		"Gabriel": "希妮亚想让我们也参加彩蛋大寻宝，但我觉得我们年龄有点大了。#$b#我-我不是在反对你参加！$u",
+		"Gabriel_spouse": "嗨，亲爱的。准备好参加彩蛋大寻宝了吗？我会全程为你加油的！$h",
+		},
+	},
+
+	//SILLY
+	{
+
+   "Action": "EditData",
+   "When": { "HasSeenEvent: hostPlayer |contains=9280017": "true", },
+   "Target": "Data/Festivals/spring13",
+   "TextOperations": [
+
+   //SetUp
+		{
+         "Operation": "Append",
+         "Target": ["Entries", "Set-Up_additionalCharacters"],
+         "Value": "Silly 14 72 down",
+         "Delimiter": "/"
+		},
+
+   //Main Event
+		{
+         "Operation": "Append",
+         "Target": ["Entries", "MainEvent_additionalCharacters"],
+         "Value": "Silly 14 72 right", 
+         "Delimiter": "/"
+		},
+
+	],
+	},
+
+	{
+	"LogName": "EggFestival",
+	"Action": "EditData",
+	"When": { "HasSeenEvent: hostPlayer |contains=9280017": "true", },
+	"Target": "Data/Festivals/spring13",
+	"Entries": {
+		"Silly": "笨笨也藏了几个彩蛋！$h#$b#农夫@找到了吗？笨笨已经努力藏好了！",
+		},
+	},
+
+//****************************
+//******* FLOWER DANCE *******
+//****************************
+	{
+
+   "Action": "EditData",
+   "When": { "HasSeenEvent: hostPlayer |contains=9280002": "true", },
+   "Target": "Data/Festivals/spring24",
+   "TextOperations": [
+
+   //SetUp
+		{
+         "Operation": "Append",
+         "Target": ["Entries", "Set-Up_additionalCharacters"],
+         "Value": "Zinnia 19 39 right/Gabriel 20 39 left",
+         "Delimiter": "/"
+		},
+
+   //Main Event
+		{
+         "Operation": "Append",
+         "Target": ["Entries", "MainEvent_additionalCharacters"],
+         "Value": "Zinnia 19 34 up/Gabriel 20 34 up",
+         "Delimiter": "/"
+		},
+
+	],
+	},
+
+	{
+	"Action": "EditData",
+	"When": { "HasSeenEvent: hostPlayer |contains=9280002": "true", },
+	"Target": "Data/Festivals/spring24",
+	"Entries": {
+		"Zinnia": "嗨，@！你今天要跳舞吗？$h#$b#我本来想来点freestyle，但刘易斯说不能跳这种舞……",
+		"Zinnia_spouse": "今天的花真美啊……#$b#虽然没有你好看！$h#$b#怎么样，亲爱的？难道你没有话想问我吗？*咯咯笑*$l",
+		"Gabriel": "我不知道我要不要邀请别人跳舞……$s#$b#但我和这里的人都不太熟，你明白吗？$s",
+		"Gabriel_spouse": "嗨，亲爱的。以前我很不喜欢这个节日，但我后来遇见了你……$l#$b#你愿意和我一起跳舞吗，亲爱的？$l",
+		},
+	},
+
+	//SILLY
+	{
+
+   "Action": "EditData",
+   "When": { "HasSeenEvent: hostPlayer |contains=9280017": "true", },
+   "Target": "Data/Festivals/spring24",
+   "TextOperations": [
+
+   //SetUp
+		{
+         "Operation": "Append",
+         "Target": ["Entries", "Set-Up_additionalCharacters"],
+         "Value": "Silly 18 39 down",
+         "Delimiter": "/"
+		},
+
+   //Main Event
+		{
+         "Operation": "Append",
+         "Target": ["Entries", "MainEvent_additionalCharacters"],
+         "Value": "Silly 18 39 up",
+         "Delimiter": "/"
+		},
+
+	],
+	},
+
+	{
+	"Action": "EditData",
+	"When": { "HasSeenEvent: hostPlayer |contains=9280017": "true", },
+	"Target": "Data/Festivals/spring24",
+	"Entries": {
+		"Silly": "@可以和笨笨跳舞吗？$l#$b#@是什么意思？笨笨不能跳舞吗？$s",
+		},
+	},
+
+//****************************
+//*********** LUAU ***********
+//****************************
+	{
+
+   "Action": "EditData",
+   "When": { "HasSeenEvent: hostPlayer |contains=9280002": "true", },
+   "Target": "Data/Festivals/summer11",
+   "TextOperations": [
+
+   //SetUp
+		{
+         "Operation": "Append",
+         "Target": ["Entries", "Set-Up_additionalCharacters"],
+         "Value": "Zinnia 37 24 down/Gabriel 35 23 left",
+         "Delimiter": "/"
+		},
+
+   //Main Event
+		{
+         "Operation": "Append",
+         "Target": ["Entries", "MainEvent_additionalCharacters"],
+         "Value": "Zinnia 36 23 up/Gabriel 35 23 up",
+         "Delimiter": "/"
+		},
+
+	],
+	},
+
+	{
+	"Action": "EditData",
+	"When": { "HasSeenEvent: hostPlayer |contains=9280002": "true", },
+	"Target": "Data/Festivals/summer11",
+	"Entries": {
+		"Zinnia": "嗯……这里的食物真是太美味了！哪天我得让格斯教我几个食谱。",
+		"Zinnia_spouse": "嗨，亲爱的！你加了%farm农场的什么好东西到汤里吗？毕竟我们得让小镇看看你的农场有多棒！$h",
+		"Gabriel": "你好，@，你往汤里加了什么？我想放点咖啡进去，但我意识到这样对孩子们不太好。那好吧！",
+		"Gabriel_spouse": "@！我正想见到你呢！#$b#%加布里埃尔亲吻了你。#$b#嗯……看来你吃了不少美味的烧烤，哈哈！$h",
+		},
+	},
+
+	//SILLY
+	{
+
+   "Action": "EditData",
+   "When": { "HasSeenEvent: hostPlayer |contains=9280017": "true", },
+   "Target": "Data/Festivals/summer11",
+   "TextOperations": [
+
+   //SetUp
+		{
+         "Operation": "Append",
+         "Target": ["Entries", "Set-Up_additionalCharacters"],
+         "Value": "Silly 38 24 down",
+         "Delimiter": "/"
+		},
+
+   //Main Event
+		{
+         "Operation": "Append",
+         "Target": ["Entries", "MainEvent_additionalCharacters"],
+         "Value": "Silly 38 24 up",
+         "Delimiter": "/"
+		},
+
+	],
+	},
+
+	{
+	"Action": "EditData",
+	"When": { "HasSeenEvent: hostPlayer |contains=9280017": "true", },
+	"Target": "Data/Festivals/summer11",
+	"Entries": {
+		"Silly": "等一下，农夫！不要靠近，笨笨的黏液在太阳下变得很烫……",
+		},
+	},
+
+//****************************
+//***** MOONLIGHT JELLIES ****
+//****************************
+
+	{
+
+   "Action": "EditData",
+   "When": { "HasSeenEvent: hostPlayer |contains=9280002": "true", },
+   "Target": "Data/Festivals/summer28",
+   "TextOperations": [
+
+   //SetUp
+		{
+         "Operation": "Append",
+         "Target": ["Entries", "Set-Up_additionalCharacters"],
+         "Value": "Zinnia 38 34 down/Gabriel 39 34 down",
+         "Delimiter": "/"
+		},
+	],
+	},
+
+	{
+	"Action": "EditData",
+	"When": { "HasSeenEvent: hostPlayer |contains=9280002": "true", },
+	"Target": "Data/Festivals/summer28",
+	"Entries": {
+		"Zinnia": "很高兴能见到这些可爱的小水母。你觉得它们见到我们也会开心吗？",
+		"Zinnia_spouse": "嗨，亲爱的。今晚我想牵着你的手，和你一起欣赏这些美丽的月光水母。$l",
+		"Gabriel": "你知道月光水母曾经和矿洞里的怪物一样富有攻击性吗？#$b#后来我们渐渐和它们交好，现在才有了这个奇妙的节日。",
+		"Gabriel_spouse": "嗨，亲爱的。今晚月光水母来到的时候，我会想着你的。你就像它们一样美丽而有魔力。$l",
+		},
+	},
+
+	//SILLY
+	{
+
+   "Action": "EditData",
+   "When": { "HasSeenEvent: hostPlayer |contains=9280017": "true", },
+   "Target": "Data/Festivals/summer28",
+   "TextOperations": [
+
+   //SetUp
+		{
+         "Operation": "Append",
+         "Target": ["Entries", "Set-Up_additionalCharacters"],
+         "Value": "Silly 37 34 down",
+         "Delimiter": "/"
+		},
+	],
+	},
+
+	{
+	"Action": "EditData",
+	"When": { "HasSeenEvent: hostPlayer |contains=9280017": "true", },
+	"Target": "Data/Festivals/summer28",
+	"Entries": {
+		"Silly": "笨笨等不及想看看海里的史莱姆了！#$b#它们会和笨笨交朋友吗？",
+		},
+	},
+
+//****************************
+//*** STARDEW VALLEY FAIR ****
+//****************************
+
+	{
+
+   "Action": "EditData",
+   "When": { "HasSeenEvent: hostPlayer |contains=9280002": "true", },
+   "Target": "Data/Festivals/fall16",
+   "TextOperations": [
+
+   //SetUp
+		{
+         "Operation": "Append",
+         "Target": ["Entries", "Set-Up_additionalCharacters"],
+         "Value": "Zinnia 29 82 right/Gabriel 30 82 left",
+         "Delimiter": "/"
+		},
+	],
+	},
+
+	{
+	"Action": "EditData",
+	"When": { "HasSeenEvent: hostPlayer |contains=9280002": "true", },
+	"Target": "Data/Festivals/fall16",
+	"Entries": {
+		"Zinnia": "我从领奖台那里赢来了最后一只泰迪熊，只花了几个小时玩弹弓游戏……#$b#我会永远珍惜它的！",
+		"Zinnia_spouse": "你布置好%farm农场的展台了吗，亲爱的？我知道你会赢的！#$b#你是有史以来最棒的农夫！$h",
+		"Gabriel": "我觉得探险家公会应该要有自己的展台，我们一定会赢的！#$b#至少我是这么觉得的。我也不知道评分标准是什么……$s",
+		"Gabriel_spouse": "嗨，亲爱的，我很期待你在秋季展会里获胜。我相信你！#$b#毕竟你是有史以来最棒的农夫！$l",
+		},
+	},
+
+	//SILLY
+	{
+
+   "Action": "EditData",
+   "When": { "HasSeenEvent: hostPlayer |contains=9280017": "true", },
+   "Target": "Data/Festivals/fall16",
+   "TextOperations": [
+
+   //SetUp
+		{
+         "Operation": "Append",
+         "Target": ["Entries", "Set-Up_additionalCharacters"],
+         "Value": "Silly 29 83 down",
+         "Delimiter": "/"
+		},
+	],
+	},
+
+	{
+	"Action": "EditData",
+	"When": { "HasSeenEvent: hostPlayer |contains=9280017": "true", },
+	"Target": "Data/Festivals/fall16",
+	"Entries": {
+		"Silly": "来啊，希妮亚！笨笨还想玩节日游戏嘛！#$b#呜哇哇！$s",
+		},
+	},
+
+//****************************
+//******* SPIRIT'S EVE *******
+//****************************
+
+	{
+
+   "Action": "EditData",
+   "When": { "HasSeenEvent: hostPlayer |contains=9280002": "true", "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false"},
+   "Target": "Data/Festivals/fall27",
+   "TextOperations": [
+
+   //SetUp
+		{
+         "Operation": "Append",
+         "Target": ["Entries", "Set-Up_additionalCharacters"],
+         "Value": "Zinnia 24 55 down/Gabriel 24 56 up",
+         "Delimiter": "/"
+		},
+	],
+	},
+
+	{
+
+   "Action": "EditData",
+   "When": { "HasSeenEvent: hostPlayer |contains=9280002": "true", "IsOddYear": "true", "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true"},
+   "Target": "Data/Festivals/fall27",
+   "TextOperations": [
+
+   //SetUp
+		{
+         "Operation": "Append",
+         "Target": ["Entries", "Set-Up_additionalCharacters"],
+         "Value": "Zinnia 24 55 down/Gabriel 24 56 up",
+         "Delimiter": "/"
+		},
+	],
+	},
+
+	{
+
+   "Action": "EditData",
+   "When": { "HasSeenEvent: hostPlayer |contains=9280002": "true", "IsOddYear": "false", "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true"},
+   "Target": "Data/Festivals/fall27",
+   "TextOperations": [
+
+   //SetUp
+		{
+         "Operation": "Append",
+         "Target": ["Entries", "Set-Up_additionalCharacters"],
+         "Value": "Zinnia 32 66 down/Gabriel 31 66 down",
+         "Delimiter": "/"
+		},
+	],
+	},
+
+	{
+	"Action": "EditData",
+	"When": { "HasSeenEvent: hostPlayer |contains=9280002": "true", },
+	"Target": "Data/Festivals/fall27",
+	"Entries": {
+		"Zinnia": "为什么他们要把怪物锁起来？真是太可怕了！希望他们能回到自己的家。$s",
+		"Zinnia_spouse": "嗨，亲爱的。我打算就待在这里不进迷宫了，哈哈。$h#$b#在里面要注意安全！我很担心你的。",
+		"Gabriel": "这些怪物是从格兰普顿的探险家公会运来的。希望我能让它们留下，好好研究一番……",
+		"Gabriel_spouse": "@！嗨！#$b#我在试着不让这些怪物分心，好好享受节日。你去过迷宫了吗？#$b#你一定能轻易通过迷宫吧！$h",
+		},
+	},
+
+	//SILLY
+	{
+
+   "Action": "EditData",
+   "When": { "HasSeenEvent: hostPlayer |contains=9280017": "true", "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false"},
+   "Target": "Data/Festivals/fall27",
+   "TextOperations": [
+
+   //SetUp
+		{
+         "Operation": "Append",
+         "Target": ["Entries", "Set-Up_additionalCharacters"],
+         "Value": "Silly 23 55 left",
+         "Delimiter": "/"
+		},
+	],
+	},
+
+	{
+
+   "Action": "EditData",
+   "When": { "HasSeenEvent: hostPlayer |contains=9280017": "true", "IsOddYear": "true", "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true"},
+   "Target": "Data/Festivals/fall27",
+   "TextOperations": [
+
+   //SetUp
+		{
+         "Operation": "Append",
+         "Target": ["Entries", "Set-Up_additionalCharacters"],
+         "Value": "Silly 23 55 left",
+         "Delimiter": "/"
+		},
+	],
+	},
+
+	{
+
+   "Action": "EditData",
+   "When": { "HasSeenEvent: hostPlayer |contains=9280017": "true", "IsOddYear": "false", "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true"},
+   "Target": "Data/Festivals/fall27",
+   "TextOperations": [
+
+   //SetUp
+		{
+         "Operation": "Append",
+         "Target": ["Entries", "Set-Up_additionalCharacters"],
+         "Value": "Silly 33 66 down",
+         "Delimiter": "/"
+		},
+	],
+	},
+
+	{
+	"Action": "EditData",
+	"When": { "HasSeenEvent: hostPlayer |contains=9280017": "true", },
+	"Target": "Data/Festivals/fall27",
+	"Entries": {
+		"Silly": "他们把怪物都关起来了……$s#$b#他们也会把笨笨关起来吗？$s#$b#呜哇哇……$s",
+		},
+	},
+
+//****************************
+//***** FESTIVAL OF ICE ******
+//****************************
+	{
+
+   "Action": "EditData",
+   "When": { "HasSeenEvent: hostPlayer |contains=9280002": "true", },
+   "Target": "Data/Festivals/winter8",
+   "TextOperations": [
+
+   //SetUp
+		{
+         "Operation": "Append",
+         "Target": ["Entries", "Set-Up_additionalCharacters"],
+         "Value": "Zinnia 64 24 right/Gabriel 65 24 left",
+         "Delimiter": "/"
+		},
+
+   //Main Event
+		{
+         "Operation": "Append",
+         "Target": ["Entries", "Main-Event_additionalCharacters"],
+         "Value": "Zinnia 64 24 down/Gabriel 65 24 down",
+         "Delimiter": "/"
+		},
+
+	],
+	},
+
+	{
+	"Action": "EditData",
+	"When": { "HasSeenEvent: hostPlayer |contains=9280002": "true", },
+	"Target": "Data/Festivals/winter8",
+	"Entries": {
+		"Zinnia": "啊……外面好冷！#$b#虽然戴着我忠实的帽子，我还是觉得大脑快被冻僵了！",
+		"Zinnia_spouse": "记得把钓上来的鱼放生，亲爱的。我不希望它们或者它们的家人受到伤害。#$b#要是有人把你从我身边夺走，我也会很恐慌的！",
+		"Gabriel": "我从来不擅长钓鱼。你喜欢钓鱼吗，@？#$b#我在书上读到过，曾经有人在芬恩群岛钓上了一只巨大的怪物。",
+		"Gabriel_spouse": "我准备好为你加油了，亲爱的。你一定能赢！#$b#如果你想要的话，我可以在比赛以后给你奖励……$l",
+		},
+	},
+
+	//SILLY
+	{
+
+   "Action": "EditData",
+   "When": { "HasSeenEvent: hostPlayer |contains=9280017": "true", },
+   "Target": "Data/Festivals/winter8",
+   "TextOperations": [
+
+   //SetUp
+		{
+         "Operation": "Append",
+         "Target": ["Entries", "Set-Up_additionalCharacters"],
+         "Value": "Silly 63 24 down",
+         "Delimiter": "/"
+		},
+
+   //Main Event
+		{
+         "Operation": "Append",
+         "Target": ["Entries", "Main-Event_additionalCharacters"],
+         "Value": "Silly 63 24 down",
+         "Delimiter": "/"
+		},
+
+	],
+	},
+
+	{
+	"Action": "EditData",
+	"When": { "HasSeenEvent: hostPlayer |contains=9280017": "true", },
+	"Target": "Data/Festivals/winter8",
+	"Entries": {
+		"Silly": "这里真冷啊……#$b#笨笨不是冰霜史莱姆……笨笨的黏液会被冻住的！$s"
+		},
+	},
+
+//****************************
+//* FEAST OF THE WINTER STAR *
+//****************************
+
+	{
+
+   "Action": "EditData",
+   "When": { "HasSeenEvent: hostPlayer |contains=9280002": "true", },
+   "Target": "Data/Festivals/winter25",
+   "TextOperations": [
+
+   //SetUp
+		{
+         "Operation": "Append",
+         "Target": ["Entries", "Set-Up_additionalCharacters"],
+         "Value": "Zinnia 25 57 right/Gabriel 26 57 left",
+         "Delimiter": "/"
+		},
+	],
+	},
+
+	{
+	"Action": "EditData",
+	"When": { "HasSeenEvent: hostPlayer |contains=9280002": "true", },
+	"Target": "Data/Festivals/winter25",
+	"Entries": {
+		"Zinnia": "我喜欢这个节日！它能让我珍惜当下……#$b#……比如友好的社区，还有美味的食物！$h",
+		"Zinnia_spouse": "嗨，亲爱的，这里的食物格外美味！#$b#不过别吃得太多，不然就吃不下甜点了……$l",
+		"Gabriel": "我一般不喜欢太煽情的节日，但我的确很喜欢这个。家庭对我来说很重要，你明白吗？",
+		"Gabriel_spouse": "嘿，@。我正在感谢我们生活里拥有的东西。#$b#当然，我觉得今晚会比一切更好……$l",
+		},
+	},
+
+	//SILLY
+	{
+
+   "Action": "EditData",
+   "When": { "HasSeenEvent: hostPlayer |contains=9280017": "true", },
+   "Target": "Data/Festivals/winter25",
+   "TextOperations": [
+
+   //SetUp
+		{
+         "Operation": "Append",
+         "Target": ["Entries", "Set-Up_additionalCharacters"],
+         "Value": "Silly 25 58 right",
+         "Delimiter": "/"
+		},
+	],
+	},
+
+	{
+	"Action": "EditData",
+	"When": { "HasSeenEvent: hostPlayer |contains=9280017": "true", },
+	"Target": "Data/Festivals/winter25",
+	"Entries": {
+		"Silly": "笨笨喜欢这个节日！好有意思啊！#$b#农夫@给笨笨准备礼物了吗？$h",
+		},
+	},
+
+]
+}

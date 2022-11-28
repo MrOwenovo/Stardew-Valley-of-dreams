@@ -1,0 +1,188 @@
+{
+    "Changes": [
+        // F E S T I V A L S
+        //Aideen does not attend: Ice Festival, Egg Festival (that might change), Spirit's Eve
+        //Currently only Winter Star, Luau and Flower Festival are programmed in.
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter25",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "Aideen 45 60 3",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        {
+            "LogName": "Winter Star Dialogue",
+            "Action": "EditData",
+            "Target": "data/festivals/winter25",
+            "Entries": {
+                "Aideen": "{{i18n:festivals.aideen.winter25}}"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring24",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "Aideen 5 31 3",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "Aideen 19 32 0",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        {
+            "LogName": "Flower Dance Dialogue",
+            "Action": "EditData",
+            "Target": "data/festivals/spring24",
+            "Entries": {
+                "Aideen": "{{i18n:festivals.aideen.spring24}}"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer11",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "Aideen 14 5 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "Aideen 14 5 3",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        {
+            "LogName": "Luau Dialogue",
+            "Action": "EditData",
+            "Target": "data/festivals/summer11",
+            "Entries": {
+                "Aideen": "{{i18n:festivals.aideen.summer11}}"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer28",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "Aideen 22 4 2",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        {
+            "LogName": "JelliesAid Dialogue",
+            "Action": "EditData",
+            "Target": "data/festivals/summer28",
+            "Entries": {
+                "Aideen": "{{i18n:festivals.aideen.summer28}}"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall16",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "Aideen 45 88 1",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        {
+            "LogName": "Fair Dialogue",
+            "Action": "EditData",
+            "Target": "data/festivals/fall16",
+            "Entries": {
+                "Aideen": "{{i18n:festivals.aideen.fall16}}",
+                "Aideen_spouse": "{{i18n:festivals.aideen.fall16.spouse}}"
+            }
+        },
+        {
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter8",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Main-Event_additionalCharacters"
+					],
+					"Value": "Jacob 69 12 2",
+					"Delimiter": "/"
+				}
+                
+			],
+            "When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "Spouse |contains=Aideen":false
+			}
+		},
+        {
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter8",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Main-Event_additionalCharacters"
+					],
+					"Value": "Aideen 70 12 2",
+					"Delimiter": "/"
+				}
+			],
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "Spouse |contains=Aideen":false
+			}
+		},
+        {
+            "LogName": "Ice Festival",
+            "Action": "EditData",
+            "Target": "data/festivals/winter8",
+            "Entries": {
+                "Aideen": "{{i18n:festivals.aideen.winter8}}"
+            }
+        }
+    ]
+}

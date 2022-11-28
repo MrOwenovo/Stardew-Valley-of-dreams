@@ -1,0 +1,84 @@
+{
+	"$schema": "https://smapi.io/schemas/content-patcher.json",
+	"Changes": [
+		// Stardew Valley Expanded - https://www.nexusmods.com/stardewvalley/mods/3753
+		{
+			"LogName": "[Yagi] Stardew Valley Expanded - Sprite Offsets",
+			"Action": "EditData",
+			"Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+			"When": {
+				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true
+			},
+			"Entries": {
+				"Alesia": {
+					"Exclude": true
+				},
+				"Andy": {
+					"MarkerCropOffset": -1
+				},
+				"Apples": {
+					"MarkerCropOffset": 16
+				},
+				"Camilla": {
+					"Exclude": true
+				},
+				"Claire": {
+					"MarkerCropOffset": 3
+				},
+				"Claire_Joja": {
+					"MarkerCropOffset": 3
+				},
+				"GuntherSilvian": {
+					"MarkerCropOffset": 3
+				},
+				"Isaac": {
+					"Exclude": true
+				},
+				"Jadu": {
+					"Exclude": true
+				},
+				"Lance": {
+					"MarkerCropOffset": 0
+				},
+				"MarlonFay": {
+					"MarkerCropOffset": 1
+				},
+				"Martin": {
+					"MarkerCropOffset": 1
+				},
+				"Morgan": {
+					"MarkerCropOffset": 8
+				},
+				"Olivia": {
+					"MarkerCropOffset": 1
+				},
+				"Scarlett": {
+					"MarkerCropOffset": 4
+				},
+				"Susan": {
+					"MarkerCropOffset": 1
+				},
+				"Sophia": {
+					"MarkerCropOffset": 3
+				},
+				"Victor": {
+					"MarkerCropOffset": 0
+				},
+			}
+		},
+		{
+			"LogName": "[Yagi] Stardew Valley Expanded - Sprite Offsets - After event 191393",
+			"Action": "EditData",
+			"Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+			"When": {
+				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+				"HasSeenEvent": "191393"
+			},
+			"Entries": {
+				"MorrisTod": {
+					"Exclude": true
+				},
+			}
+		}
+	]
+}

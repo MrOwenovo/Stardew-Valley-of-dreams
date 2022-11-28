@@ -1,0 +1,135 @@
+{
+  "Name": "Junimo",
+  "Type": "Walking",
+  "EnableCharacterCollision": true,
+  "EnableFarmerCollision": false,
+  "EnableShadow": true,
+  "Shadow": {
+    "OffsetX": 0,
+    "OffsetY": 0,
+    "Scale": 1,
+    "Alpha": 255
+  },
+  "TravelSpeed": 2,
+  "SpawnOffsetX": 0,
+  "SpawnOffsetY": 0,
+  "MaxIdleDistance": -1,
+  "MaxDistanceBeforeTeleport": -1,
+  "IdleBehavior": "Wander",
+  "IsPrismatic": false,
+  "AppearUnderwater": false,
+  "Colors": [
+	[ 255, 255, 255, 255 ],
+	[ 102, 255, 255, 255 ],
+	[ 255, 190, 250, 255 ],
+	[ 175, 118, 223, 255 ],
+	[ 183, 246, 211, 255 ],
+	[ 143, 255, 97, 255 ],
+	[ 227, 193, 85, 255 ],
+	[ 66, 168, 82, 255 ],
+	[ 255, 255, 0, 255 ]
+	],
+  "FrameSizeWidth": 16,
+  "FrameSizeHeight": 16,
+  "TileSheetPath": "Characters\\Junimo",
+
+  // This plays when the companion travels upwards
+  "UpAnimation": {
+    "StartingFrame": 32,
+    "NumberOfFrames": 8,
+    "Duration": 100,
+
+    "IdleAnimation": {
+      "StartingFrame": 32,
+      "NumberOfFrames": 8,
+      "Duration": 100
+    }
+  },
+
+  // This plays when the companion travels downwards
+  "DownAnimation": {
+    "StartingFrame": 0,
+    "NumberOfFrames": 8,
+    "Duration": 100,
+
+    "IdleAnimation": {
+      "StartingFrame": 44,
+      "NumberOfFrames": 4,
+      "Duration": 100
+    }
+  },
+
+  // This plays when the companion travels left
+	"LeftAnimation": {
+		"ManualFrames": [
+      {
+        "Frame": 23,
+        "Duration": 100,
+        "Flip": true
+      },
+      {
+        "Frame": 22,
+        "Duration": 100,
+        "Flip": true
+      },
+      {
+        "Frame": 21,
+        "Duration": 100,
+        "Flip": true
+      },
+      {
+        "Frame": 20,
+        "Duration": 100,
+        "Flip": true
+      },
+      {
+        "Frame": 19,
+        "Duration": 100,
+        "Flip": true
+      },
+      {
+        "Frame": 18,
+        "Duration": 100,
+        "Flip": true
+      },
+      {
+        "Frame": 17,
+        "Duration": 100,
+        "Flip": true
+      },
+      {
+        "Frame": 16,
+        "Duration": 100,
+        "Flip": true
+      }
+    ],
+
+    "IdleAnimation": {
+      "StartingFrame": 28,
+      "NumberOfFrames": 4,
+      "Duration": 100
+    }
+  },
+
+  // This plays when the companion travels right
+  "RightAnimation": {
+    "StartingFrame": 16,
+    "NumberOfFrames": 8,
+    "Duration": 100,
+
+    "IdleAnimation": {
+      "StartingFrame": 16,
+      "NumberOfFrames": 8,
+      "Duration": 100
+    }
+  },
+
+"Sounds": [
+  {
+    "SoundName": "junimoMeep1",
+    "WhenToPlay": "Idle",
+    "TimeBetweenSound": 5000,
+    "ChanceOfPlaying": 0.3
+  }
+]  
+}

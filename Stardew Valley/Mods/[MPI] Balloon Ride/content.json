@@ -1,0 +1,719 @@
+﻿{
+	invites: [
+		{
+			name: "Balloon Ride",
+			location: "Railroad",
+			allowedNPCs:"Alex,Elliott,Harvey,Sam,Sebastian,Shane,Abigail,Emily,Haley,Leah,Maru,Penny",
+			allowMarried: false,
+			incompatibleMods:[
+				"FlashShifter.StardewValleyExpandedALL"
+			],
+			date: true,
+			nodes: [
+				{
+					defaultNode: "playful/26 38/{name} 24 41 0 farmer 24 50 0/skippable/move farmer 0 -8 0/faceDirection {name} 2",
+				},
+				{
+					defaultNode: "speak {name} \"你来了...正好！$l\"",
+				},
+				{
+					defaultNode: "faceDirection {name} 3/jump {name}/pause 800",
+				},
+				{
+					defaultNode: "speak {name} \"看，它来了！$h\"",
+				},
+				{
+					defaultNode: "pause 300/move farmer 0 0 3/pause 400/emote farmer 16/pause 300/addTemporaryActor Marcello 16 32 25 19 2 true/positionOffset Marcello 36 558/animate Marcello false true 400 16 17/specificTemporarySprite marcelloLand/null/pause 1000/stopAnimation Marcello/pause 500/message \"马塞洛气球租赁公司随时为您服务！\"/pause 1000/positionOffset Marcello -4 0/pause 20/positionOffset Marcello -4 0/pause 20/positionOffset Marcello -4 0/pause 20/positionOffset Marcello -4 0/pause 20/positionOffset Marcello -4 0/pause 20/positionOffset Marcello -4 0/pause 20/positionOffset Marcello -4 0/pause 20/positionOffset Marcello -4 0/pause 20/positionOffset Marcello -4 0/pause 20/jump Marcello 12/move Marcello 0 3 3/move Marcello -2 0 0/faceDirection {name} 2/faceDirection farmer 2/message \"马塞洛：那么在接下来的两个小时里，这里属于你了。\"/faceDirection Marcello 3/faceDirection Marcello 2/message \"马塞洛：哇哦......我听说这附近有个酒吧？\"/move Marcello 0 9 1/warp Marcello -100 -100/faceDirection farmer 1/faceDirection {name} 3/pause 500",
+				},
+				{
+					defaultNode: "speak {name} \"我在报纸上看到过乘坐热气球的广告! 我很高兴能和你一起去玩！$h\"",
+					customNodes: {
+						"Alex": "speak {name} \"天啊，海莉跟我说了有关热气球旅行的事！这看起来棒极了！$h\"",
+						"Elliott": "speak {name} \"难以置信! 我们......我们要坐那个东西飞到天上去是吗！？好吧，我想我会去的，不入虎穴，焉得虎子！\"",
+						"Harvey": "speak {name} \"我在报纸上看到过乘坐热气球的广告! 我很高兴能和你一起去玩！$h\"",
+						"Sam": "speak {name} \"哇！一个热气球？？这真是太不可思议了！$h\"",
+						"Sebastian": "speak {name} \"哦，天呐......这个......这真的很酷。 我很兴奋！\"",
+						"Shane": "speak {name} \"哇，你一定在某方面影响到我了，否则我怎么会这么想去坐那个东西呢！真希望我不会因此生病......$s\"",
+						"Abigail": "speak {name} \"我简直不敢相信！一个真正的热气球，多么刺激的冒险！$h\"",
+						"Emily": "speak {name} \"哦！我迫不及待地想像鸟儿一样翱翔在云层之上！谢谢你邀请我，@！$h\"",
+						"Haley": "speak {name} \"哦！我的—天哪——你真的想让我坐那东西到天上去？哼哼，我一定很喜欢你，否则我怎么会真的考虑要试试这个！$l\"",
+						"Leah": "speak {name} \"这将是非常棒的体验！也许它会给我带来新的雕塑灵感！\"",
+						"Maru": "speak {name} \"这不是很令人兴奋吗？想想看，仅仅凭借热空气的力量，就能将我们悬浮在空中！我已经等不及了！$h\"",
+						"Penny": "speak {name} \"我在报纸上看到过乘坐热气球的广告，但我付不起这笔费用！谢谢你@，你对我太好了。$l\"",
+					}
+				},
+				{	
+					defaultNode: "pause 800/question fork1 \"#这看起来很有趣! 让我们试试看吧！#你有恐高症吗？\"/fork BalloonRideEventInvite_afraid/pause 500",
+				},
+				{
+					defaultNode: "speak {name} \"好吧......你先来。$l\"",
+					customNodes: {
+						"Alex": "speak {name} \"快点！上去！$h\"",
+						"Elliott": "speak {name} \"嗯......#$b#男士优先？^女士优先？\"",
+						"Harvey": "speak {name} \"好吧......你先来。$l\"",
+						"Sam": "speak {name} \"出发！\"",
+						"Sebastian": "speak {name} \"好吧，你先上去......\"",
+						"Shane": "speak {name} \"很好，那我们走吧......\"",
+						"Abigail": "speak {name} \"快点！我们走吧！\"",
+						"Emily": "speak {name} \"来吧，@！带我前往无尽的天空中去！$h\"",
+						"Haley": "speak {name} \"你最好先上去......\"",
+						"Leah": "speak {name} \"这有点可怕，不是吗？你能先上去吗？\"",
+						"Maru": "speak {name} \"上去吧，我们还等什么呢？$h\"",
+						"Penny": "speak {name} \"好吧......带路吧！\"",
+					}
+				},
+				{
+					defaultNode: "pause 400/move farmer 0 1 1/faceDirection {name} 1/move farmer 3 0 0/move farmer 0 -1 0/jump farmer 14/move farmer 0 -1 2/move {name} 0 1 1/move {name} 3 0 0/move {name} 0 -1 0/jump {name} 14/move {name} 0 -1 2/pause 1000/pause 300/playSound openBox/pause 300/playSound furnace/playMusic none/cutscene EventInvite_balloonDepart/viewport move 0 -1 6000/pause 2000",
+				},
+				{
+					defaultNode: "jump {name} 5/shake {name} 7000",
+					customNodes: {
+						"Alex": "jump {name} 5",
+						"Abigail": "jump {name} 5",
+						"Emily": "jump {name} 5",
+						"Haley": "jump {name} 5",
+						"Leah": "jump {name} 5",
+						"Maru": "jump {name} 5",
+					}
+				},
+				{
+					defaultNode: "pause 7000/globalFade/viewport -2000 -2000/playMusic 50s/pause 2000/cutscene clearTempSprites/changeToTemporaryMap HarveyBalloon/cutscene EventInvite_balloonChangeMap/warp farmer 22 36/warp {name} 22 36/positionOffset farmer 24 570/positionOffset {name} 96 554/positionOffset farmer -8 -8/positionOffset {name} -24 -8/pause 1000/shake {name} 19000/viewport 23 39 clamp true/viewport move 0 -1 17000/pause 18000/faceDirection farmer 1/pause 1000/jump {name}/pause 800/positionOffset {name} -4 2/pause 30/positionOffset {name} -4 2/pause 30/positionOffset {name} -4 2/pause 30/positionOffset {name} -4 2/pause 30/positionOffset {name} -4 2/pause 30/positionOffset {name} -4 2/pause 30/positionOffset {name} -4 2/pause 30/positionOffset {name} -4 2/pause 30/positionOffset {name} -4 0/playSound fishSlap/eyes 1 -2000/pause 2000",
+				},
+				{
+					defaultNode: "speak {name} \"我们... 我们在这么高的地方... *咽口水*$8\"/shake {name} 2000/pause 800/speak {name} \"我想在这里和你一起留下深刻的回忆... 但是看看我，我就是个浑身发抖的胆小鬼。$7\"/emote {name} 28/pause 500/speak {name} \"好吧，你有足够的勇气，正好和我互补，@...这是......这也是我喜欢你的原因之一。$11\"/pause 1000/speak {name} \"好了，我要睁开眼睛往下看了......不要放开我的手。$4\"/pause 800/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 0/pause 30/positionOffset {name} 4 0/pause 30/faceDirection farmer 2/pause 500/shake {name} 4000/pause 500/pause 3500/speak {name} \"我......我想我现在可以做到。$8\"",
+					customNodes: {
+						"Alex": "speak {name} \"哇哦......\"/shake {name} 2000/pause 800/emote farmer 28/speak {name} \"我很好，只是有点冷。我想我应该带件暖和点的衣服来。\"/shake {name} 2000/emote farmer 28/pause 500/speak {name} \"虽然这里的景色的确很美，但我还是无法相信我们真的在这里，单独在一起......$l\"/pause 1000/shake {name} 2000/shake farmer 2000/speak {name} \"也许我们可以互相取暖？$l\"/pause 800/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 0/pause 30/positionOffset {name} 4 0/pause 30/faceDirection farmer 2/pause 500/shake {name} 4000/pause 3500/speak {name} \"好多了，谢谢你。$l\"",
+						"Elliott": "speak {name} \"哦，天啊...真是太美了......我希望我没有因为害怕而发抖。\"/shake {name} 2000/pause 800/emote farmer 28/speak {name} \"不，别难过！我很高兴有机会和你共度时光，@。$l\"/emote {name} 32/pause 500/speak {name} \"这样的经历虽然有些可怕，但一定能激发我的想象力。\"/pause 1000/speak {name} \"好了，是时候让我直面恐惧，尽情享受这一刻了！只是......请不要放开我的手。$l\"/pause 800/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 0/pause 30/positionOffset {name} 4 0/pause 30/faceDirection farmer 2/pause 500/shake {name} 4000/pause 3500/speak {name} \"我......我想我现在可以做到。\"",
+						"Harvey": "speak {name} \"我们......我们在这么高的地方............*咽口水*$8\"/shake {name} 2000/pause 800/speak {name} \"我想在这里和你一起留下深刻的回忆...... 但是看看我，我就是个浑身发抖的胆小鬼。$7\"/emote {name} 28/pause 500/speak {name} \"好吧，你有足够的勇气，正好和我互补，@...这是......这也是我喜欢你的原因之一。$11\"/pause 1000/speak {name} \"好了，我要睁开眼睛往下看了......不要放开我的手。$4\"/pause 800/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 0/pause 30/positionOffset {name} 4 0/pause 30/faceDirection farmer 2/showFrame {name} 0/pause 500/showFrame {name} 33/pause 500/shake {name} 4000/pause 500/showFrame {name} 30/pause 2000/showFrame {name} 33/pause 3500/speak {name} \"我......我想我现在可以做到。\"",
+						"Sam": "speak {name} \"哇哦，真是哇哦。\"/shake {name} 2000/pause 800/emote farmer 28/speak {name} \"好吧，这比我想象的要高一些......但是，这一定是我今年做的最酷的事情！$h\"/emote {name} 32/pause 500/speak {name} \"我真的很高兴你邀请我，@。和你在一起真的很有趣。$l\"/pause 1000/speak {name} \"好吧，我想我现在可以往下看了，只是......不要突然移动，好吗？$l\"/pause 800/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 0/pause 30/positionOffset {name} 4 0/pause 30/faceDirection farmer 2/pause 500/shake {name} 4000/pause 3500/speak {name} \"真是棒极了！$h\"",
+						"Sebastian":"speak {name} \"这真的很酷，@。\"/shake {name} 2000/pause 800/emote farmer 28/speak {name} \"我很好，只是不习惯离地面那么远。 但是你让我感觉很踏实，@。$l\"/emote {name} 32/pause 500/speak {name} \"此外，生活中一定有比工作更重要的东西，对吧？\"/pause 1000/speak {name} \"好了，该去看看风景了。来，握住我的手。$l\"/pause 800/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 0/pause 30/positionOffset {name} 4 0/pause 30/faceDirection farmer 2/pause 500/shake {name} 4000/pause 3500/speak {name} \"好吧，这还不算太坏。\"",
+						"Shane": "speak {name} \"和你在一起的感觉很好......我甚至不觉得恶心......只是有点头晕。\"/shake {name} 2000/pause 800/emote farmer 28/speak {name} \"我很好，只是不习惯离地面那么远。 但是你让我感觉很踏实，@。$l\"/emote {name} 32/pause 500/speak {name} \"而且，休息一段时间也不错，对吧？\"/pause 1000/speak {name} \"好了，该去看看风景了。来，握住我的手。$l\"/pause 800/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 0/pause 30/positionOffset {name} 4 0/pause 30/faceDirection farmer 2/pause 500/shake {name} 4000/pause 3500/speak {name} \"真不错。\"",
+						"Abigail": "speak {name} \"这太令人兴奋了！感觉我们正在进行一场伟大的冒险。\"/shake {name} 2000/pause 800/emote farmer 28/speak {name} \"哦，不，别担心，我只是有点不知所措！我很高兴你邀请我，@。你是我......最好的朋友，你知道吗？$l\"/emote {name} 32/pause 500/speak {name} \"和你在一起，让我真的感觉自己已经来到了世界之巅！$l\"/pause 1000/speak {name} \"好吧，让我们看看下面发生了什么！来，握住我的手！$l\"/pause 800/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 0/pause 30/positionOffset {name} 4 0/pause 30/faceDirection farmer 2/pause 500/emote {name} 32/pause 3500/speak {name} \"真是一场冒险啊！$h\"",
+						"Emily": "speak {name} \"这是一个多么美好的梦啊......\"/shake {name} 2000/pause 800/emote farmer 28/speak {name} \"哦，对不起，只是有点冷......#$b#我很高兴有你在这里给我取暖......$l\"/emote {name} 32/pause 500/speak {name} \"我爱你的能量，@...我想我们之间一定有着某种更深的联系......$l\"/pause 1000/speak {name} \"好吧，让我们假装自己是鸟儿，在下面的世界上翱翔！来，握住我的手！$l\"/pause 800/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 0/pause 30/positionOffset {name} 4 0/pause 30/faceDirection farmer 2/pause 500/emote {name} 32/pause 3500/speak {name} \"这太不真实了！$h\"",
+						"Haley": "speak {name} \"这里真的很美，很抱歉我之前听起来不是很热情。我想我只是有点恐高。\"/shake {name} 2000/pause 800/emote farmer 28/speak {name} \"哦，没关系的，@。当我和你在一起时总能感觉很安全。$l\"/emote {name} 32/pause 500/speak {name} \"此外，想想看，当艾米丽发现你带我去坐热气球时，她会有多嫉妒啊！$h\"/pause 1000/speak {name} \"只是开个玩笑。嘿，你能不能......握住我的手？我想看看风景。$l\"/pause 800/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 0/pause 30/positionOffset {name} 4 0/pause 30/faceDirection farmer 2/pause 500/shake {name} 4000/pause 3500/speak {name} \"好吧，这真的很棒。$l\"",
+						"Leah": "speak {name} \"What a pleasant way to spend the day.\"/shake {name} 2000/pause 800/emote farmer 28/speak {name} \"嘿嘿，是啊，这有点吓人，但有时候直面自己的恐惧也不错，对吧？$l\"/emote {name} 32/pause 500/speak {name} \"谢谢你今天邀请我，@。我真的觉得在有了你之后生活变得更丰富多彩了。$l\"/pause 1000/speak {name} \"好吧，让我们向灵感敞开心扉吧！现在，让我们牵起手来。$l\"/pause 800/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 0/pause 30/positionOffset {name} 4 0/pause 30/faceDirection farmer 2/pause 500/emote {name} 32/pause 3500/speak {name} \"自然界中究竟存在着怎样的艺术呢！$h\"",
+						"Maru": "speak {name} \"这太鼓舞人心了！想想看，我们可以驾驭自然元素，让它们服从我们的意志，以违抗自然法则！\"/shake {name} 2000/pause 800/emote farmer 28/speak {name} \"害怕？不，我只感到兴奋！#$b#好吧，确实有点害怕......$l\"/emote {name} 32/pause 500/speak {name} \"但也很高兴...#$b#很高兴和你在一起，一起挑战自然法则......$l\"/pause 1000/speak {name} \"你可以从这里看到一切......\"/pause 800/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 0/pause 30/positionOffset {name} 4 0/pause 30/faceDirection farmer 2/pause 500/emote {name} 32/pause 3500/speak {name} \"这给了我很多科学实验的好点子！$h\"",
+						"Penny": "speak {name} \"噢，@。这太棒了。\"/shake {name} 2000/pause 800/emote farmer 28/speak {name} \"我很好，只是有点冷。我想我应该带件暖和点的衣服来。\"/shake {name} 2000/emote farmer 28/pause 500/speak {name} \"虽然这里的景色的确很美，但我还是无法相信我们真的在这里，单独在一起......$l\"/pause 1000/shake {name} 2000/shake farmer 2000/speak {name} \"呼......也许我们可以互相取暖？$l\"/pause 1800/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 0/pause 30/positionOffset {name} 4 0/pause 30/faceDirection farmer 2/pause 500/shake {name} 4000/pause 3500/speak {name} \"好多了，谢谢你。$l\"",
+					}
+				},
+				{
+					defaultNode: "specificTemporarySprite balloonBirds/faceDirection farmer 2/pause 3000/faceDirection {name} 1/faceDirection farmer 1/emote farmer 16 true/emote {name} 16/pause 4000/faceDirection farmer 0/faceDirection {name} 2/pause 10000",
+				},
+				{
+					defaultNode: "speak {name} \"嘿，这太不可思议了！我甚至可以清楚地看到刘易斯镇长正站在小镇广场上。$h\"",
+					customNodes: {
+						"Alex": "speak {name} \"嘿，我好像看到小灰的狗窝了！$h\"",
+						"Elliott": "speak {name} \"这......真是个观察世界的独特视角......我们甚至能从这里看到大海！\"",
+						"Sam": "speak {name} \"嘿，你觉得我们可以在热气球上朝刘易斯镇长吐口水吗？$h#$b#我只是在开玩笑......\"",
+						"Sebastian": "speak {name} \"这真的能让你意识到这个世界是多么微不足道，对吧？\"",
+						"Shane": "speak {name} \"多么美丽的景色。\"",
+						"Abigail": "speak {name} \"你能想象到从这里跳下去是什么感觉吗？#$b#不是说我想跳下去！ 只是......我们在这么高的地方！\"",
+						"Emily": "speak {name} \"这太神奇了！我敢打赌，这就是女神在俯视自己的创造物时的感受！$h\"",
+						"Haley": "speak {name} \"嘿，我想我可以从这里看到我们的房子......那是你的农场吗？\"",
+						"Leah": "speak {name} \"等我们回去之后，我一定要把这副场景画下来......\"",
+						"Maru": "speak {name} \"你甚至可以从这里看到地球的曲率。想象一下，热气球的发明使科学的进一步发展成为可能！$h\"",
+						"Penny": "speak {name} \"我们从这里可以看到整个小镇！ 你认为大家现在在做什么？\"",
+					}
+				},
+				{
+					defaultNode: "faceDirection farmer 2/pause 3000",
+				},
+				{
+					defaultNode: "speak {name} \"哦，亲爱的......我们的时间快到了。$s\"",
+					customNodes: {
+						"Alex": "speak {name} \"哦，伙计，我们的时间快到了，嗯？$s\"",
+						"Elliott": "speak {name} \"啊，我们的时间快到头了......#$b#'明天，又一个明天，又一个明天，一天天偷搬着这种琐碎的脚步，直到时间记录的末一个音节。'莎士比亚这样说。$s\"",
+						"Sam": "speak {name} \"这真是一段美好的时光......我很遗憾我们这么快就要回去了......$s\"",
+						"Sebastian": "speak {name} \"哇，当你玩得很开心的时候，时间总会飞逝而过。$s\"",
+						"Shane": "speak {name} \"时间已经到了吗？ 哇，我想他们在玩得开心时说的都是真的。$s\"",
+						"Abigail": "speak {name} \"噢，时间就快到了。真希望我们的冒险能一直持续下去！\"",
+						"Emily": "speak {name} \"啊，好吧， 一切美好的事物都会结束。 想想我们会拥有的所有美好回忆，对吧？\"",
+						"Haley": "speak {name} \"噢，我不想让它结束......和你在一起的时候，我感到如此......自由。$l\"",
+						"Leah": "speak {name} \"时间已经到了，嗯？我已经开始珍惜我们在一起的时光了，@。$l\"",
+						"Maru": "speak {name} \"时间有时过得如此之快，是不是很奇怪？感觉我们已经完全脱离了时间和空间。$h\"",
+						"Penny": "speak {name} \"时间快到了？很好，想想我们回家后要告诉大家的故事吧！$h\"",
+					}
+				},
+				{
+					defaultNode: "pause 400/faceDirection {name} 3/faceDirection farmer 1/playMusic none/pause 500",
+				},
+				{
+					defaultNode: "speak {name} \"嗯...@？ 我们认识有一段时间了，而且...我...呃......$11\"",
+					customNodes: {
+						"Alex": "speak {name} \"所以，嗯... 我在想。你知道，@... 我...... $l\"",
+						"Elliott": "speak {name} \"所以， @... 你知道... 我...... $l\"",
+						"Sam": "speak {name} \"嘿，@... 我在想一件事... 你是否......$l\"",
+						"Sebastian": "speak {name} \"所以，我知道这有点超前，但......$l\"",
+						"Shane": "speak {name} \"嘿，@？你怎么想......$l\"",
+						"Abigail": "speak {name} \"那个，嗯，@...... 我知道我们已经变得非常亲密了，所以我在想......$l\"",
+						"Emily": "speak {name} \"嘿，@？ 你如何看待灵魂伴侣这个概念？$1#$b#我只是想知道......$l\"",
+						"Haley": "speak {name} \"嗯，@？我知道你已经送过我一束花，但我只是想知道......$l\"",
+						"Leah": "speak {name} \"所以，告诉我，@...我...我们是不是......？$l\"",
+						"Maru": "speak {name} \"说到万有引力和引力定律... 哈！嗯......$l\"",
+						"Penny": "speak {name} \"@？你认为我们俩可能......$l\"",
+					}
+				},
+				{
+					defaultNode: "playMusic musicboxsong/pause 400/faceDirection {name} 2/pause 500/faceDirection {name} 3",
+				},
+				{
+					defaultNode: "speak {name} \"......$l\"",
+				},
+				{
+					defaultNode: "specificTemporarySprite balloonBirds 2/pause 1000/positionOffset {name} -1 0/pause 30/positionOffset {name} -1 -2/pause 30/positionOffset {name} -1 -2/pause 30/positionOffset {name} -1 0/pause 30/positionOffset {name} -1 0/pause 30/positionOffset {name} -1 0/pause 30/positionOffset {name} -1 0/pause 30/positionOffset {name} -1 0/pause 30/pause 5000/globalFade/viewport -1000 -1000/pause 2000",
+				},
+				{
+					defaultNode: "speak {name} \"呼...我们的游玩时间在半小时前就已经结束了，也该降落了。$l\"",
+					customNodes: {
+						"Alex": "speak {name} \"噢，嘿，我们已经超过游玩时限了！$s\"",
+						"Elliott": "speak {name} \"啊，为什么在我最需要语言的时候，我却说不出话来？就这样吧，我们的时间到了。$s\"",
+						"Sam": "speak {name} \"啊！时间到了。我想我们也该回去了。$s\"",
+						"Sebastian": "speak {name} \"嘿，看来我们的时间到了，嗯？让我们......回家吧。$s\"",
+						"Shane": "speak {name} \"啊，算了......时间到了，我们回家吧。$s\"",
+						"Abigail": "speak {name} \"哦，看看时间。好吧，该回家了。$l\"",
+						"Emily": "speak {name} \"看我们在天堂的时间已经结束了。该回到现实中来了，对吧？$s\"",
+						"Haley": "speak {name} \"哦，该走了吗？我... 我想......没什么。$s\"",
+						"Leah": "speak {name} \"总之......我想我们该回去了，嗯？\"",
+						"Maru": "speak {name} \"好吧，太尴尬了......话说回来，我该回到我的机器人身边去了。$h\"",
+						"Penny": "speak {name} \"啊，该走了？也对......当然了。梦境不可能永远延续下去。$s\"",
+					}
+				},
+				{
+					defaultNode: "pause 2000/friendship {name} 75",
+				},
+				{
+					defaultNode: "end dialogue {name} \"在我记忆中，我从未没有过如此美妙的一天。$l\"",
+					customNodes: {
+						"Alex": "end dialogue {name} \"这次的热气球旅行是我这么长时间以来度过的最美好的时光！$l\"",
+						"Elliott": "end dialogue {name} \"我们在天空中度过了一段多么鼓舞人心的时光，是吧，@？ 我一定会以某种形式把它写进我的下一本书。$l\"",
+						"Sam": "end dialogue {name} \"这次的热气球旅行真是太有趣了！和你在一起让它变得更加美好！$l\"",
+						"Sebastian": "end dialogue {name} \"嘿，我只是想告诉你我在热气球上玩得有多开心。你真的很棒，你知道吗？$l\"",
+						"Shane": "end dialogue {name} \"嘿，我只是想说我在我们的......旅行中玩得非常开心。永远不要改变，@。$l\"",
+						"Abigail": "end dialogue {name} \"嘿，我只是想再次感谢你今天带我去空中探险。$h\"",
+						"Emily": "end dialogue {name} \"嘿，@！还在回味我们在云端的时光吗？我也一样！多么神奇的旅行啊！$h\"",
+						"Haley": "end dialogue {name} \"嘿，那个，我只是想让你知道我在热气球上玩得有多开心。#$b#我知道一开始我表现得有点害怕，但我不想让你觉得我玩得不开心。$l\"",
+						"Leah": "end dialogue {name} \"嘿，@！我还是觉得有点头晕！$h#$b#但我对新的艺术作品有了很多新想法，谢谢你带我进行了一场这么美丽的约会...呃...旅行。$l\"",
+						"Maru": "end dialogue {name} \"嘿，@ ！我已经开始为未来的飞艇式飞行器原型画草图了！我大受启发！我喜欢和你在一起，那是最棒的一天。$l\"",
+						"Penny": "end dialogue {name} \"我只是想再次感谢你...谢谢你特意今天约我一起去坐热气球。我...你对我来说真的很重要。所以，谢谢你。$l\"",
+					}
+				},
+			],
+			forks: [
+				{
+					key: "BalloonRideEventInvite_afraid",
+					nodes: [
+						{
+							defaultNode: "pause 500/speak {name} \"我......是的。$s#$b#但我决心不让它阻止我做自己想做的事......我是指我想和你一起经历这些。$1#$b#我会试着不害怕的。\"",
+							customNodes: {
+								"Alex": "speak {name} \"谁？我？当然不......#$b#我想我只是有一点紧张。$l#$b#这一定是因为你在潜移默化之中影响了我。$l\"",
+								"Elliott": "pause 500/speak {name} \"害怕？我吗？当然......$h#$b#好吧，我很害怕......但如果是为了你，@，我愿意做任何事。$1#$b#你给我带来了勇气，我从未想过自己居然能这么勇敢。$l\"",
+								"Sam": "speak {name} \"害怕？完全不。$h#$b#好吧，也许有一点......但现在我和你在一起，所以一切都很顺利。$1#$b#只要我们齐心协力，就能征服世界！$h\"",
+								"Sebastian": "speak {name} \"不，也许我有点紧张，但并不严重。#$b#不管怎样，就算我真的摔倒了，你也会接住我的，对吧？$1#$b#我......尽量不摔倒。$l\"",
+								"Shane": "speak {name} \"害怕吗？我不知道...... 说实话，我现在有点想吐。$s#$b#离我近一点，好吗？$l#$b#我很高兴能和你在一起。$l\"",
+								"Abigail": "speak {name} \"怎么可能，你在跟我开玩笑吗？这将是一次绝佳的冒险！$h#$b#怎么了，你害怕吗？别担心，@，我会保护你的。$l#$b#我们可以互相保护。$l\"",
+								"Emily": "speak {name} \"哦，也许我有点焦虑，当然。#$b#但这将是一次绝无仅有的神奇经历，@！$h#$b#只有你，我，和无限的天堂！$l\"",
+								"Haley": "pause 500/speak {name} \"嗯...是的......你看过那东西吗？$s#$b#但我太高兴了，因为要和你约会，所以我不在乎。$l#$b#我猜你是想和我一起做一些疯狂的事，对吧。$l\"",
+								"Leah": "speak {name} \"我想是的......#$b#但这不正是吸引力的一部分吗？能从一个全新的角度看世界是多么激动人心啊！$h#$b#此外，还有你会和我一起去，所以还有什么好怕的？$l\"",
+								"Maru": "speak {name} \"哦，拜托。#$b#你觉得宇航员恐高吗？$h#$b#这太棒了！\"",
+								"Penny": "pause 500/speak {name} \"有点...可以吗？$s#$b#对不起，我不想在约会开始之前毁掉它。我真的不想把事情搞砸。$l#$b#我真的很喜欢你，@。$l\"",
+							}
+						},
+						{
+							defaultNode: "pause 400/move farmer 0 1 1/faceDirection {name} 1/move farmer 3 0 0/move farmer 0 -1 0/jump farmer 14/move farmer 0 -1 2/move {name} 0 1 1/move {name} 3 0 0/move {name} 0 -1 0/jump {name} 14/move {name} 0 -1 2/pause 1000/pause 300/playSound openBox/pause 300/playSound furnace/playMusic none/cutscene EventInvite_balloonDepart/viewport move 0 -1 6000/pause 2000",
+						},
+						{
+							defaultNode: "jump {name} 5/shake {name} 7000",
+							customNodes: {
+								"Alex": "jump {name} 5",
+								"Abigail": "jump {name} 5",
+								"Emily": "jump {name} 5",
+								"Haley": "jump {name} 5",
+								"Leah": "jump {name} 5",
+								"Maru": "jump {name} 5",
+							}
+						},
+						{
+							defaultNode: "pause 7000/globalFade/viewport -2000 -2000/playMusic 50s/pause 2000/cutscene clearTempSprites/changeToTemporaryMap HarveyBalloon/cutscene EventInvite_balloonChangeMap/warp farmer 22 36/warp {name} 22 36/positionOffset farmer 24 570/positionOffset {name} 96 554/positionOffset farmer -8 -8/positionOffset {name} -24 -8/pause 1000/shake {name} 19000/viewport 23 39 clamp true/viewport move 0 -1 17000/pause 18000/faceDirection farmer 1/pause 1000/jump {name}/pause 800/positionOffset {name} -4 2/pause 30/positionOffset {name} -4 2/pause 30/positionOffset {name} -4 2/pause 30/positionOffset {name} -4 2/pause 30/positionOffset {name} -4 2/pause 30/positionOffset {name} -4 2/pause 30/positionOffset {name} -4 2/pause 30/positionOffset {name} -4 2/pause 30/positionOffset {name} -4 0/playSound fishSlap/eyes 1 -2000/pause 2000",
+						},
+						{
+							defaultNode: "speak {name} \"我们... 我们在这么高的地方... *咽口水*$8\"/shake {name} 2000/pause 800/speak {name} \"我想在这里和你一起留下深刻的回忆... 但是看看我，我就是个浑身发抖的胆小鬼。$7\"/emote {name} 28/pause 500/speak {name} \"好吧，你有足够的勇气，正好和我互补，@...这是......这也是我喜欢你的原因之一。$11\"/pause 1000/speak {name} \"好了，我要睁开眼睛往下看了......不要放开我的手。$4\"/pause 800/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 0/pause 30/positionOffset {name} 4 0/pause 30/faceDirection farmer 2/pause 500/shake {name} 4000/pause 500/pause 3500/speak {name} \"我......我想我现在可以做到。$8\"",
+							customNodes: {
+								"Alex": "speak {name} \"哇哦......\"/shake {name} 2000/pause 800/emote farmer 28/speak {name} \"我很好，只是有点冷。我想我应该带件暖和点的衣服来。\"/shake {name} 2000/emote farmer 28/pause 500/speak {name} \"虽然这里的景色的确很美，但我还是无法相信我们真的在这里，单独在一起......$l\"/pause 1000/shake {name} 2000/shake farmer 2000/speak {name} \"也许我们可以互相取暖？$l\"/pause 800/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 0/pause 30/positionOffset {name} 4 0/pause 30/faceDirection farmer 2/pause 500/shake {name} 4000/pause 3500/speak {name} \"好多了，谢谢你。$l\"",
+								"Elliott": "speak {name} \"哦，天啊...真是太美了......我希望我没有因为害怕而发抖。\"/shake {name} 2000/pause 800/emote farmer 28/speak {name} \"不，别难过！我很高兴有机会和你共度时光，@。$l\"/emote {name} 32/pause 500/speak {name} \"这样的经历虽然有些可怕，但一定能激发我的想象力。\"/pause 1000/speak {name} \"好了，是时候让我直面恐惧，尽情享受这一刻了！只是......请不要放开我的手。$l\"/pause 800/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 0/pause 30/positionOffset {name} 4 0/pause 30/faceDirection farmer 2/pause 500/shake {name} 4000/pause 3500/speak {name} \"我......我想我现在可以做到。\"",
+								"Harvey": "speak {name} \"我们......我们在这么高的地方............*咽口水*$8\"/shake {name} 2000/pause 800/speak {name} \"我想在这里和你一起留下深刻的回忆...... 但是看看我，我就是个浑身发抖的胆小鬼。$7\"/emote {name} 28/pause 500/speak {name} \"好吧，你有足够的勇气，正好和我互补，@...这是......这也是我喜欢你的原因之一。$11\"/pause 1000/speak {name} \"好了，我要睁开眼睛往下看了......不要放开我的手。$4\"/pause 800/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 0/pause 30/positionOffset {name} 4 0/pause 30/faceDirection farmer 2/showFrame {name} 0/pause 500/showFrame {name} 33/pause 500/shake {name} 4000/pause 500/showFrame {name} 30/pause 2000/showFrame {name} 33/pause 3500/speak {name} \"我......我想我现在可以做到。\"",
+								"Sam": "speak {name} \"哇哦，真是哇哦。\"/shake {name} 2000/pause 800/emote farmer 28/speak {name} \"好吧，这比我想象的要高一些......但是，这一定是我今年做的最酷的事情！$h\"/emote {name} 32/pause 500/speak {name} \"我真的很高兴你邀请我，@。和你在一起真的很有趣。$l\"/pause 1000/speak {name} \"好吧，我想我现在可以往下看了，只是......不要突然移动，好吗？$l\"/pause 800/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 0/pause 30/positionOffset {name} 4 0/pause 30/faceDirection farmer 2/pause 500/shake {name} 4000/pause 3500/speak {name} \"真是棒极了！$h\"",
+								"Sebastian":"speak {name} \"这真的很酷，@。\"/shake {name} 2000/pause 800/emote farmer 28/speak {name} \"我很好，只是不习惯离地面那么远。 但是你让我感觉很踏实，@。$l\"/emote {name} 32/pause 500/speak {name} \"此外，生活中一定有比工作更重要的东西，对吧？\"/pause 1000/speak {name} \"好了，该去看看风景了。来，握住我的手。$l\"/pause 800/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 0/pause 30/positionOffset {name} 4 0/pause 30/faceDirection farmer 2/pause 500/shake {name} 4000/pause 3500/speak {name} \"好吧，这还不算太坏。\"",
+								"Shane": "speak {name} \"和你在一起的感觉很好......我甚至不觉得恶心......只是有点头晕。\"/shake {name} 2000/pause 800/emote farmer 28/speak {name} \"我很好，只是不习惯离地面那么远。 但是你让我感觉很踏实，@。$l\"/emote {name} 32/pause 500/speak {name} \"而且，休息一段时间也不错，对吧？\"/pause 1000/speak {name} \"好了，该去看看风景了。来，握住我的手。$l\"/pause 800/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 0/pause 30/positionOffset {name} 4 0/pause 30/faceDirection farmer 2/pause 500/shake {name} 4000/pause 3500/speak {name} \"真不错。\"",
+								"Abigail": "speak {name} \"这太令人兴奋了！感觉我们正在进行一场伟大的冒险。\"/shake {name} 2000/pause 800/emote farmer 28/speak {name} \"哦，不，别担心，我只是有点不知所措！我很高兴你邀请我，@。你是我......最好的朋友，你知道吗？$l\"/emote {name} 32/pause 500/speak {name} \"和你在一起，让我真的感觉自己已经来到了世界之巅！$l\"/pause 1000/speak {name} \"好吧，让我们看看下面发生了什么！来，握住我的手！$l\"/pause 800/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 0/pause 30/positionOffset {name} 4 0/pause 30/faceDirection farmer 2/pause 500/emote {name} 32/pause 3500/speak {name} \"真是一场冒险啊！$h\"",
+								"Emily": "speak {name} \"这是一个多么美好的梦啊......\"/shake {name} 2000/pause 800/emote farmer 28/speak {name} \"哦，对不起，只是有点冷......#$b#我很高兴有你在这里给我取暖......$l\"/emote {name} 32/pause 500/speak {name} \"我爱你的能量，@...我想我们之间一定有着某种更深的联系......$l\"/pause 1000/speak {name} \"好吧，让我们假装自己是鸟儿，在下面的世界上翱翔！来，握住我的手！$l\"/pause 800/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 0/pause 30/positionOffset {name} 4 0/pause 30/faceDirection farmer 2/pause 500/emote {name} 32/pause 3500/speak {name} \"这太不真实了！$h\"",
+								"Haley": "speak {name} \"这里真的很美，很抱歉我之前听起来不是很热情。我想我只是有点恐高。\"/shake {name} 2000/pause 800/emote farmer 28/speak {name} \"哦，没关系的，@。当我和你在一起时总能感觉很安全。$l\"/emote {name} 32/pause 500/speak {name} \"此外，想想看，当艾米丽发现你带我去坐热气球时，她会有多嫉妒啊！$h\"/pause 1000/speak {name} \"只是开个玩笑。嘿，你能不能......握住我的手？我想看看风景。$l\"/pause 800/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 0/pause 30/positionOffset {name} 4 0/pause 30/faceDirection farmer 2/pause 500/shake {name} 4000/pause 3500/speak {name} \"好吧，这真的很棒。$l\"",
+								"Leah": "speak {name} \"What a pleasant way to spend the day.\"/shake {name} 2000/pause 800/emote farmer 28/speak {name} \"嘿嘿，是啊，这有点吓人，但有时候直面自己的恐惧也不错，对吧？$l\"/emote {name} 32/pause 500/speak {name} \"谢谢你今天邀请我，@。我真的觉得在有了你之后生活变得更丰富多彩了。$l\"/pause 1000/speak {name} \"好吧，让我们向灵感敞开心扉吧！现在，让我们牵起手来。$l\"/pause 800/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 0/pause 30/positionOffset {name} 4 0/pause 30/faceDirection farmer 2/pause 500/emote {name} 32/pause 3500/speak {name} \"自然界中究竟存在着怎样的艺术呢！$h\"",
+								"Maru": "speak {name} \"这太鼓舞人心了！想想看，我们可以驾驭自然元素，让它们服从我们的意志，以违抗自然法则！\"/shake {name} 2000/pause 800/emote farmer 28/speak {name} \"害怕？不，我只感到兴奋！#$b#好吧，确实有点害怕......$l\"/emote {name} 32/pause 500/speak {name} \"但也很高兴...#$b#很高兴和你在一起，一起挑战自然法则......$l\"/pause 1000/speak {name} \"你可以从这里看到一切......\"/pause 800/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 0/pause 30/positionOffset {name} 4 0/pause 30/faceDirection farmer 2/pause 500/emote {name} 32/pause 3500/speak {name} \"这给了我很多科学实验的好点子！$h\"",
+								"Penny": "speak {name} \"噢，@。这太棒了。\"/shake {name} 2000/pause 800/emote farmer 28/speak {name} \"我很好，只是有点冷。我想我应该带件暖和点的衣服来。\"/shake {name} 2000/emote farmer 28/pause 500/speak {name} \"虽然这里的景色的确很美，但我还是无法相信我们真的在这里，单独在一起......$l\"/pause 1000/shake {name} 2000/shake farmer 2000/speak {name} \"呼......也许我们可以互相取暖？$l\"/pause 1800/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 0/pause 30/positionOffset {name} 4 0/pause 30/faceDirection farmer 2/pause 500/shake {name} 4000/pause 3500/speak {name} \"好多了，谢谢你。$l\"",
+							}
+						},
+						{
+							defaultNode: "specificTemporarySprite balloonBirds/faceDirection farmer 2/pause 3000/faceDirection {name} 1/faceDirection farmer 1/emote farmer 16 true/emote {name} 16/pause 4000/faceDirection farmer 0/faceDirection {name} 2/pause 10000",
+						},
+						{
+							defaultNode: "speak {name} \"嘿，这太不可思议了！我甚至可以清楚地看到刘易斯镇长正站在小镇广场上。$h\"",
+							customNodes: {
+								"Alex": "speak {name} \"嘿，我好像看到小灰的狗窝了！$h\"",
+								"Elliott": "speak {name} \"这......真是个观察世界的独特视角......我们甚至能从这里看到大海！\"",
+								"Sam": "speak {name} \"嘿，你觉得我们可以在热气球上朝刘易斯镇长吐口水吗？$h#$b#我只是在开玩笑......\"",
+								"Sebastian": "speak {name} \"这真的能让你意识到这个世界是多么微不足道，对吧？\"",
+								"Shane": "speak {name} \"多么美丽的景色。\"",
+								"Abigail": "speak {name} \"你能想象到从这里跳下去是什么感觉吗？#$b#不是说我想跳下去！ 只是......我们在这么高的地方！\"",
+								"Emily": "speak {name} \"这太神奇了！我敢打赌，这就是女神在俯视自己的创造物时的感受！$h\"",
+								"Haley": "speak {name} \"嘿，我想我可以从这里看到我们的房子......那是你的农场吗？\"",
+								"Leah": "speak {name} \"等我们回去之后，我一定要把这副场景画下来......\"",
+								"Maru": "speak {name} \"你甚至可以从这里看到地球的曲率。想象一下，热气球的发明使科学的进一步发展成为可能！$h\"",
+								"Penny": "speak {name} \"我们从这里可以看到整个小镇！ 你认为大家现在在做什么？\"",
+							}
+						},
+						{
+							defaultNode: "faceDirection farmer 2/pause 3000",
+						},
+						{
+							defaultNode: "speak {name} \"哦，亲爱的......我们的时间快到了。$s\"",
+							customNodes: {
+								"Alex": "speak {name} \"哦，伙计，我们的时间快到了，嗯？$s\"",
+								"Elliott": "speak {name} \"啊，我们的时间快到头了......#$b#'明天，又一个明天，又一个明天，一天天偷搬着这种琐碎的脚步，直到时间记录的末一个音节。'莎士比亚这样说。$s\"",
+								"Sam": "speak {name} \"这真是一段美好的时光......我很遗憾我们这么快就要回去了......$s\"",
+								"Sebastian": "speak {name} \"哇，当你玩得很开心的时候，时间总会飞逝而过。$s\"",
+								"Shane": "speak {name} \"时间已经到了吗？ 哇，我想他们在玩得开心时说的都是真的。$s\"",
+								"Abigail": "speak {name} \"噢，时间就快到了。真希望我们的冒险能一直持续下去！\"",
+								"Emily": "speak {name} \"啊，好吧， 一切美好的事物都会结束。 想想我们会拥有的所有美好回忆，对吧？\"",
+								"Haley": "speak {name} \"噢，我不想让它结束......和你在一起的时候，我感到如此......自由。$l\"",
+								"Leah": "speak {name} \"时间已经到了，嗯？我已经开始珍惜我们在一起的时光了，@。$l\"",
+								"Maru": "speak {name} \"时间有时过得如此之快，是不是很奇怪？感觉我们已经完全脱离了时间和空间。$h\"",
+								"Penny": "speak {name} \"时间快到了？很好，想想我们回家后要告诉大家的故事吧！$h\"",
+							}
+						},
+						{
+							defaultNode: "pause 400/faceDirection {name} 3/faceDirection farmer 1/playMusic none/pause 500",
+						},
+						{
+							defaultNode: "speak {name} \"嗯...@？ 我们认识有一段时间了，而且...我...呃......$11\"",
+							customNodes: {
+								"Alex": "speak {name} \"所以，嗯... 我在想。你知道，@... 我...... $l\"",
+								"Elliott": "speak {name} \"所以， @... 你知道... 我...... $l\"",
+								"Sam": "speak {name} \"嘿，@... 我在想一件事... 你是否......$l\"",
+								"Sebastian": "speak {name} \"所以，我知道这有点超前，但......$l\"",
+								"Shane": "speak {name} \"嘿，@？你怎么想......$l\"",
+								"Abigail": "speak {name} \"那个，嗯，@...... 我知道我们已经变得非常亲密了，所以我在想......$l\"",
+								"Emily": "speak {name} \"嘿，@？ 你如何看待灵魂伴侣这个概念？$1#$b#我只是想知道......$l\"",
+								"Haley": "speak {name} \"嗯，@？我知道你已经送过我一束花，但我只是想知道......$l\"",
+								"Leah": "speak {name} \"所以，告诉我，@...我...我们是不是......？$l\"",
+								"Maru": "speak {name} \"说到万有引力和引力定律... 哈！嗯......$l\"",
+								"Penny": "speak {name} \"@？你认为我们俩可能......$l\"",
+							}
+						},
+						{
+							defaultNode: "playMusic musicboxsong/pause 400/faceDirection {name} 2/pause 500/faceDirection {name} 3",
+						},
+						{
+							defaultNode: "speak {name} \"......$l\"",
+						},
+						{
+							defaultNode: "specificTemporarySprite balloonBirds 2/pause 1000/showFrame {name} 31/pause 500/showFrame 101/positionOffset {name} -1 0/pause 30/positionOffset {name} -1 -2/pause 30/positionOffset {name} -1 -2/pause 30/positionOffset {name} -1 0/pause 30/positionOffset {name} -1 0/pause 30/positionOffset {name} -1 0/pause 30/positionOffset {name} -1 0/pause 30/positionOffset {name} -1 0/pause 30/pause 5000/globalFade/viewport -1000 -1000/pause 2000",
+						},
+						{
+							defaultNode: "speak {name} \"呼...我们的游玩时间在半小时前就已经结束了，也该降落了。$l\"",
+							customNodes: {
+								"Alex": "speak {name} \"噢，嘿，我们已经超过游玩时限了！$s\"",
+								"Elliott": "speak {name} \"啊，为什么在我最需要语言的时候，我却说不出话来？就这样吧，我们的时间到了。$s\"",
+								"Sam": "speak {name} \"啊！时间到了。我想我们也该回去了。$s\"",
+								"Sebastian": "speak {name} \"嘿，看来我们的时间到了，嗯？让我们......回家吧。$s\"",
+								"Shane": "speak {name} \"啊，算了......时间到了，我们回家吧。$s\"",
+								"Abigail": "speak {name} \"哦，看看时间。好吧，该回家了。$l\"",
+								"Emily": "speak {name} \"看我们在天堂的时间已经结束了。该回到现实中来了，对吧？$s\"",
+								"Haley": "speak {name} \"哦，该走了吗？我... 我想......没什么。$s\"",
+								"Leah": "speak {name} \"总之......我想我们该回去了，嗯？\"",
+								"Maru": "speak {name} \"好吧，太尴尬了......话说回来，我该回到我的机器人身边去了。$h\"",
+								"Penny": "speak {name} \"啊，该走了？也对......当然了。梦境不可能永远延续下去。$s\"",
+							}
+						},
+						{
+							defaultNode: "pause 2000/friendship {name} 75",
+						},
+						{
+							defaultNode: "end dialogue {name} \"在我记忆中，我从未没有过如此美妙的一天。$l\"",
+							customNodes: {
+								"Alex": "end dialogue {name} \"这次的热气球旅行是我这么长时间以来度过的最美好的时光！$l\"",
+								"Elliott": "end dialogue {name} \"我们在天空中度过了一段多么鼓舞人心的时光，是吧，@？ 我一定会以某种形式把它写进我的下一本书。$l\"",
+								"Sam": "end dialogue {name} \"这次的热气球旅行真是太有趣了！和你在一起让它变得更加美好！$l\"",
+								"Sebastian": "end dialogue {name} \"嘿，我只是想告诉你我在热气球上玩得有多开心。你真的很棒，你知道吗？$l\"",
+								"Shane": "end dialogue {name} \"嘿，我只是想说我在我们的......旅行中玩得非常开心。永远不要改变，@。$l\"",
+								"Abigail": "end dialogue {name} \"嘿，我只是想再次感谢你今天带我去空中探险。$h\"",
+								"Emily": "end dialogue {name} \"嘿，@！还在回味我们在云端的时光吗？我也一样！多么神奇的旅行啊！$h\"",
+								"Haley": "end dialogue {name} \"嘿，那个，我只是想让你知道我在热气球上玩得有多开心。#$b#我知道一开始我表现得有点害怕，但我不想让你觉得我玩得不开心。$l\"",
+								"Leah": "end dialogue {name} \"嘿，@！我还是觉得有点头晕！$h#$b#但我对新的艺术作品有了很多新想法，谢谢你带我进行了一场这么美丽的约会...呃...旅行。$l\"",
+								"Maru": "end dialogue {name} \"嘿，@ ！我已经开始为未来的飞艇式飞行器原型画草图了！我大受启发！我喜欢和你在一起，那是最棒的一天。$l\"",
+								"Penny": "end dialogue {name} \"我只是想再次感谢你...谢谢你特意今天约我一起去坐热气球。我...你对我来说真的很重要。所以，谢谢你。$l\"",
+							}
+						},
+					],
+				},
+			],
+		},
+		{
+			name: "Balloon Ride",
+			location: "Railroad",
+			allowedNPCs:"Alex,Elliott,Harvey,Sam,Sebastian,Shane,Abigail,Emily,Haley,Leah,Maru,Penny",
+			allowMarried: false,
+			requiredMods: [
+				"FlashShifter.StardewValleyExpandedALL"
+			],
+			date: true,
+			nodes: [
+				{
+					defaultNode: "playful/26 38/{name} 29 41 3 farmer 29 49 0/skippable/move farmer 0 -7 0/faceDirection {name} 2",
+				},
+				{
+					defaultNode: "speak {name} \"你来了...正好！$l\"",
+				},
+				{
+					defaultNode: "faceDirection {name} 3/jump {name}/pause 800",
+				},
+				{
+					defaultNode: "speak {name} \"看，它来了！$h\"",
+				},
+				{
+					defaultNode: "pause 300/move farmer 0 0 3/pause 400/emote farmer 16/pause 300/addTemporaryActor Marcello 16 32 25 19 2 true/positionOffset Marcello 36 558/animate Marcello false true 400 16 17/specificTemporarySprite marcelloLand/null/pause 1000/stopAnimation Marcello/pause 500/message \"马塞洛气球租赁公司随时为您服务！\"/pause 1000/positionOffset Marcello -4 0/pause 20/positionOffset Marcello -4 0/pause 20/positionOffset Marcello -4 0/pause 20/positionOffset Marcello -4 0/pause 20/positionOffset Marcello -4 0/pause 20/positionOffset Marcello -4 0/pause 20/positionOffset Marcello -4 0/pause 20/positionOffset Marcello -4 0/pause 20/positionOffset Marcello -4 0/pause 20/jump Marcello 12/move Marcello 0 1 2/pause 700/move Marcello 0 0 1/pause 800/move Marcello 3 0 1/pause 500/message \"马塞洛：那么在接下来的两个小时里，这里属于你了。\"/faceDirection Marcello 3/pause 1000/faceDirection Marcello 2/message \"马塞洛：哇哦......我听说这附近有个酒吧？\"/pause 500/move Marcello 0 1 2/move farmer 0 0 2/move Marcello 0 8 2/warp Marcello -100 -100/faceDirection farmer 0/pause 500/faceDirection {name} 2/pause 500",
+				},
+				{
+					defaultNode: "speak {name} \"我在报纸上看到过乘坐热气球的广告! 我很高兴能和你一起去玩！$h\"",
+					customNodes: {
+						"Alex": "speak {name} \"天啊，海莉跟我说了有关热气球旅行的事！这看起来棒极了！$h\"",
+						"Elliott": "speak {name} \"难以置信! 我们......我们要坐那个东西飞到天上去是吗！？好吧，我想我会去的，不入虎穴，焉得虎子！\"",
+						"Harvey": "speak {name} \"我在报纸上看到过乘坐热气球的广告! 我很高兴能和你一起去玩！$h\"",
+						"Sam": "speak {name} \"哇！一个热气球？？这真是太不可思议了！$h\"",
+						"Sebastian": "speak {name} \"哦，天呐......这个......这真的很酷。 我很兴奋！\"",
+						"Shane": "speak {name} \"哇，你一定在某方面影响到我了，否则我怎么会这么想去坐那个东西呢！真希望我不会因此生病......$s\"",
+						"Abigail": "speak {name} \"我简直不敢相信！一个真正的热气球，多么刺激的冒险！$h\"",
+						"Emily": "speak {name} \"哦哦哦哦哦哦！我迫不及待地想像鸟儿一样飞到云端之上!！谢谢你邀请我，@！$h\"",
+						"Haley": "speak {name} \"哦！我的—天哪——你真的想让我坐那东西到天上去？哼哼，我一定很喜欢你，否则我怎么会真的考虑要试试这个！$l\"",
+						"Leah": "speak {name} \"这将是非常棒的体验！也许它会给我带来新的雕塑灵感！\"",
+						"Maru": "speak {name} \"这不是很令人兴奋吗？想想看，仅仅凭借热空气的力量，就能将我们悬浮在空中！我已经等不及了！$h\"",
+						"Penny": "speak {name} \"我在报纸上看到过乘坐热气球的广告，但我付不起这笔费用！谢谢你@，你对我太好了。$l\"",
+					}
+				},
+				{	
+					defaultNode: "pause 800/question fork1 \"#这看起来很有趣! 让我们试试看吧！#你有恐高症吗？\"/fork BalloonRideEventInvite_afraid/pause 500",
+				},
+				{
+					defaultNode: "speak {name} \"好吧......你先来。$l\"",
+					customNodes: {
+						"Alex": "speak {name} \"快点！上去！$h\"",
+						"Elliott": "speak {name} \"嗯......#$b#男士优先？^女士优先？\"",
+						"Harvey": "speak {name} \"好吧......你先来。$l\"",
+						"Sam": "speak {name} \"出发！\"",
+						"Sebastian": "speak {name} \"好吧，你先上去......\"",
+						"Shane": "speak {name} \"很好，那我们走吧......\"",
+						"Abigail": "speak {name} \"快点！我们走吧！\"",
+						"Emily": "speak {name} \"来吧，@！带我前往无尽的天空中去！$h\"",
+						"Haley": "speak {name} \"你最好先上去......\"",
+						"Leah": "speak {name} \"这有点可怕，不是吗？你能先上去吗？\"",
+						"Maru": "speak {name} \"上去吧，我们还等什么呢？$h\"",
+						"Penny": "speak {name} \"好吧......带路吧！\"",
+					}
+				},
+				{
+					defaultNode: "pause 400/move farmer -1 0 0/move farmer 0 -1 1/move {name} 0 0 3/pause 500/emote farmer 32/emote {name} 32/pause 500/move farmer -3 0 0/jump farmer 10/move farmer 0 -1 2/move {name} -3 0 0/jump {name} 10/move {name} 0 -1 2/pause 1000/playSound openBox/pause 300/playSound furnace/playMusic none/cutscene EventInvite_balloonDepart/viewport move 0 -1 6000/pause 2000",
+				},
+				{
+					defaultNode: "jump {name} 5/shake {name} 7000",
+					customNodes: {
+						"Alex": "jump {name} 5",
+						"Abigail": "jump {name} 5",
+						"Emily": "jump {name} 5",
+						"Haley": "jump {name} 5",
+						"Leah": "jump {name} 5",
+						"Maru": "jump {name} 5",
+					}
+				},
+				{
+					defaultNode: "pause 7000/globalFade/viewport -2000 -2000/playMusic 50s/pause 2000/cutscene clearTempSprites/changeToTemporaryMap HarveyBalloon/cutscene EventInvite_balloonChangeMap/warp farmer 22 36/warp {name} 22 36/positionOffset farmer 24 570/positionOffset {name} 96 554/positionOffset farmer -8 -8/positionOffset {name} -24 -8/pause 1000/shake {name} 19000/viewport 23 39 clamp true/viewport move 0 -1 17000/pause 18000/faceDirection farmer 1/pause 1000/jump {name}/pause 800/positionOffset {name} -4 2/pause 30/positionOffset {name} -4 2/pause 30/positionOffset {name} -4 2/pause 30/positionOffset {name} -4 2/pause 30/positionOffset {name} -4 2/pause 30/positionOffset {name} -4 2/pause 30/positionOffset {name} -4 2/pause 30/positionOffset {name} -4 2/pause 30/positionOffset {name} -4 0/playSound fishSlap/eyes 1 -2000/pause 2000",
+				},
+				{
+					defaultNode: "speak {name} \"我们... 我们在这么高的地方... *咽口水*$8\"/shake {name} 2000/pause 800/speak {name} \"我想在这里和你一起留下深刻的回忆... 但是看看我，我就是个浑身发抖的胆小鬼。$7\"/emote {name} 28/pause 500/speak {name} \"好吧，你有足够的勇气，正好和我互补，@...这是......这也是我喜欢你的原因之一。$11\"/pause 1000/speak {name} \"好了，我要睁开眼睛往下看了......不要放开我的手。$4\"/pause 800/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 0/pause 30/positionOffset {name} 4 0/pause 30/faceDirection farmer 2/pause 500/shake {name} 4000/pause 500/pause 3500/speak {name} \"我......我想我现在可以做到。$8\"",
+					customNodes: {
+						"Alex": "speak {name} \"哇哦......\"/shake {name} 2000/pause 800/emote farmer 28/speak {name} \"我很好，只是有点冷。我想我应该带件暖和点的衣服来。\"/shake {name} 2000/emote farmer 28/pause 500/speak {name} \"虽然这里的景色的确很美，但我还是无法相信我们真的在这里，单独在一起......$l\"/pause 1000/shake {name} 2000/shake farmer 2000/speak {name} \"也许我们可以互相取暖？$l\"/pause 800/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 0/pause 30/positionOffset {name} 4 0/pause 30/faceDirection farmer 2/pause 500/shake {name} 4000/pause 3500/speak {name} \"好多了，谢谢你。$l\"",
+						"Elliott": "speak {name} \"哦，天啊...真是太美了......我希望我没有因为害怕而发抖。\"/shake {name} 2000/pause 800/emote farmer 28/speak {name} \"不，别难过！我很高兴有机会和你共度时光，@。$l\"/emote {name} 32/pause 500/speak {name} \"这样的经历虽然有些可怕，但一定能激发我的想象力。\"/pause 1000/speak {name} \"好了，是时候让我直面恐惧，尽情享受这一刻了！只是......请不要放开我的手。$l\"/pause 800/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 0/pause 30/positionOffset {name} 4 0/pause 30/faceDirection farmer 2/pause 500/shake {name} 4000/pause 3500/speak {name} \"我......我想我现在可以做到。\"",
+						"Harvey": "speak {name} \"我们......我们在这么高的地方............*咽口水*$8\"/shake {name} 2000/pause 800/speak {name} \"我想在这里和你一起留下深刻的回忆...... 但是看看我，我就是个浑身发抖的胆小鬼。$7\"/emote {name} 28/pause 500/speak {name} \"好吧，你有足够的勇气，正好和我互补，@...这是......这也是我喜欢你的原因之一。$11\"/pause 1000/speak {name} \"好了，我要睁开眼睛往下看了......不要放开我的手。$4\"/pause 800/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 0/pause 30/positionOffset {name} 4 0/pause 30/faceDirection farmer 2/showFrame {name} 0/pause 500/showFrame {name} 33/pause 500/shake {name} 4000/pause 500/showFrame {name} 30/pause 2000/showFrame {name} 33/pause 3500/speak {name} \"我......我想我现在可以做到。\"",
+						"Sam": "speak {name} \"哇哦，真是哇哦。\"/shake {name} 2000/pause 800/emote farmer 28/speak {name} \"好吧，这比我想象的要高一些......但是，这一定是我今年做的最酷的事情！$h\"/emote {name} 32/pause 500/speak {name} \"我真的很高兴你邀请我，@。和你在一起真的很有趣。$l\"/pause 1000/speak {name} \"好吧，我想我现在可以往下看了，只是......不要突然移动，好吗？$l\"/pause 800/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 0/pause 30/positionOffset {name} 4 0/pause 30/faceDirection farmer 2/pause 500/shake {name} 4000/pause 3500/speak {name} \"真是棒极了！$h\"",
+						"Sebastian":"speak {name} \"这真的很酷，@。\"/shake {name} 2000/pause 800/emote farmer 28/speak {name} \"我很好，只是不习惯离地面那么远。 但是你让我感觉很踏实，@。$l\"/emote {name} 32/pause 500/speak {name} \"此外，生活中一定有比工作更重要的东西，对吧？\"/pause 1000/speak {name} \"好了，该去看看风景了。来，握住我的手。$l\"/pause 800/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 0/pause 30/positionOffset {name} 4 0/pause 30/faceDirection farmer 2/pause 500/shake {name} 4000/pause 3500/speak {name} \"好吧，这还不算太坏。\"",
+						"Shane": "speak {name} \"和你在一起的感觉很好......我甚至不觉得恶心......只是有点头晕。\"/shake {name} 2000/pause 800/emote farmer 28/speak {name} \"我很好，只是不习惯离地面那么远。 但是你让我感觉很踏实，@。$l\"/emote {name} 32/pause 500/speak {name} \"而且，休息一段时间也不错，对吧？\"/pause 1000/speak {name} \"好了，该去看看风景了。来，握住我的手。$l\"/pause 800/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 0/pause 30/positionOffset {name} 4 0/pause 30/faceDirection farmer 2/pause 500/shake {name} 4000/pause 3500/speak {name} \"真不错。\"",
+						"Abigail": "speak {name} \"这太令人兴奋了！感觉我们正在进行一场伟大的冒险。\"/shake {name} 2000/pause 800/emote farmer 28/speak {name} \"哦，不，别担心，我只是有点不知所措！我很高兴你邀请我，@。你是我......最好的朋友，你知道吗？$l\"/emote {name} 32/pause 500/speak {name} \"和你在一起，让我真的感觉自己已经来到了世界之巅！$l\"/pause 1000/speak {name} \"好吧，让我们看看下面发生了什么！来，握住我的手！$l\"/pause 800/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 0/pause 30/positionOffset {name} 4 0/pause 30/faceDirection farmer 2/pause 500/emote {name} 32/pause 3500/speak {name} \"真是一场冒险啊！$h\"",
+						"Emily": "speak {name} \"这是一个多么美好的梦啊......\"/shake {name} 2000/pause 800/emote farmer 28/speak {name} \"哦，对不起，只是有点冷......#$b#我很高兴有你在这里给我取暖......$l\"/emote {name} 32/pause 500/speak {name} \"我爱你的能量，@...我想我们之间一定有着某种更深的联系......$l\"/pause 1000/speak {name} \"好吧，让我们假装自己是鸟儿，在下面的世界上翱翔！来，握住我的手！$l\"/pause 800/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 0/pause 30/positionOffset {name} 4 0/pause 30/faceDirection farmer 2/pause 500/emote {name} 32/pause 3500/speak {name} \"这太不真实了！$h\"",
+						"Haley": "speak {name} \"这里真的很美，很抱歉我之前听起来不是很热情。我想我只是有点恐高。\"/shake {name} 2000/pause 800/emote farmer 28/speak {name} \"哦，没关系的，@。当我和你在一起时总能感觉很安全。$l\"/emote {name} 32/pause 500/speak {name} \"And besides, just think how jealous Emily will be when she finds out you took me on a balloon ride!$h\"/pause 1000/speak {name} \"只是开个玩笑。嘿，你能不能......握住我的手？我想看看风景。$l\"/pause 800/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 0/pause 30/positionOffset {name} 4 0/pause 30/faceDirection farmer 2/pause 500/shake {name} 4000/pause 3500/speak {name} \"好吧，这真的很棒。$l\"",
+						"Leah": "speak {name} \"What a pleasant way to spend the day.\"/shake {name} 2000/pause 800/emote farmer 28/speak {name} \"嘿嘿，是啊，这有点吓人，但有时候直面自己的恐惧也不错，对吧？$l\"/emote {name} 32/pause 500/speak {name} \"谢谢你今天邀请我，@。我真的觉得在有了你之后生活变得更丰富多彩了。$l\"/pause 1000/speak {name} \"好吧，让我们向灵感敞开心扉吧！现在，让我们牵起手来。$l\"/pause 800/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 0/pause 30/positionOffset {name} 4 0/pause 30/faceDirection farmer 2/pause 500/emote {name} 32/pause 3500/speak {name} \"自然界中究竟存在着怎样的艺术呢！$h\"",
+						"Maru": "speak {name} \"这太鼓舞人心了！想想看，我们可以驾驭自然元素，让它们服从我们的意志，以违抗自然法则！\"/shake {name} 2000/pause 800/emote farmer 28/speak {name} \"害怕？不，我只感到兴奋！#$b#好吧，确实有点害怕......$l\"/emote {name} 32/pause 500/speak {name} \"但也很高兴...#$b#很高兴和你在一起，一起挑战自然法则......$l\"/pause 1000/speak {name} \"你可以从这里看到一切......\"/pause 800/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 0/pause 30/positionOffset {name} 4 0/pause 30/faceDirection farmer 2/pause 500/emote {name} 32/pause 3500/speak {name} \"这给了我很多科学实验的好点子！$h\"",
+						"Penny": "speak {name} \"噢，@。这太棒了。\"/shake {name} 2000/pause 800/emote farmer 28/speak {name} \"我很好，只是有点冷。我想我应该带件暖和点的衣服来。\"/shake {name} 2000/emote farmer 28/pause 500/speak {name} \"虽然这里的景色的确很美，但我还是无法相信我们真的在这里，单独在一起......$l\"/pause 1000/shake {name} 2000/shake farmer 2000/speak {name} \"呼......也许我们可以互相取暖？$l\"/pause 1800/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 0/pause 30/positionOffset {name} 4 0/pause 30/faceDirection farmer 2/pause 500/shake {name} 4000/pause 3500/speak {name} \"好多了，谢谢你。$l\"",
+					}
+				},
+				{
+					defaultNode: "specificTemporarySprite balloonBirds/faceDirection farmer 2/pause 3000/faceDirection {name} 1/faceDirection farmer 1/emote farmer 16 true/emote {name} 16/pause 4000/faceDirection farmer 0/faceDirection {name} 2/pause 10000",
+				},
+				{
+					defaultNode: "speak {name} \"嘿，这太不可思议了！我甚至可以清楚地看到刘易斯镇长正站在小镇广场上。$h\"",
+					customNodes: {
+						"Alex": "speak {name} \"嘿，我好像看到小灰的狗窝了！$h\"",
+						"Elliott": "speak {name} \"这......真是个观察世界的独特视角......我们甚至能从这里看到大海！\"",
+						"Sam": "speak {name} \"嘿，你觉得我们可以在热气球上朝刘易斯镇长吐口水吗？$h#$b#我只是在开玩笑......\"",
+						"Sebastian": "speak {name} \"这真的能让你意识到这个世界是多么微不足道，对吧？\"",
+						"Shane": "speak {name} \"多么美丽的景色。\"",
+						"Abigail": "speak {name} \"你能想象到从这里跳下去是什么感觉吗？#$b#不是说我想跳下去！ 只是......我们在这么高的地方！\"",
+						"Emily": "speak {name} \"这太神奇了！我敢打赌，这就是女神在俯视自己的创造物时的感受！$h\"",
+						"Haley": "speak {name} \"嘿，我想我可以从这里看到我们的房子......那是你的农场吗？\"",
+						"Leah": "speak {name} \"等我们回去之后，我一定要把这副场景画下来......\"",
+						"Maru": "speak {name} \"你甚至可以从这里看到地球的曲率。想象一下，热气球的发明使科学的进一步发展成为可能！$h\"",
+						"Penny": "speak {name} \"我们从这里可以看到整个小镇！ 你认为大家现在在做什么？\"",
+					}
+				},
+				{
+					defaultNode: "faceDirection farmer 2/pause 3000",
+				},
+				{
+					defaultNode: "speak {name} \"哦，亲爱的......我们的时间快到了。$s\"",
+					customNodes: {
+						"Alex": "speak {name} \"哦，伙计，我们的时间快到了，嗯？$s\"",
+						"Elliott": "speak {name} \"啊，我们的时间快到头了......#$b#'明天，又一个明天，又一个明天，一天天偷搬着这种琐碎的脚步，直到时间记录的末一个音节。'莎士比亚这样说。$s\"",
+						"Sam": "speak {name} \"这真是一段美好的时光......我很遗憾我们这么快就要回去了......$s\"",
+						"Sebastian": "speak {name} \"哇，当你玩得很开心的时候，时间总会飞逝而过。$s\"",
+						"Shane": "speak {name} \"时间已经到了吗？ 哇，我想他们在玩得开心时说的都是真的。$s\"",
+						"Abigail": "speak {name} \"噢，时间就快到了。真希望我们的冒险能一直持续下去！\"",
+						"Emily": "speak {name} \"啊，好吧， 一切美好的事物都会结束。 想想我们会拥有的所有美好回忆，对吧？\"",
+						"Haley": "speak {name} \"噢，我不想让它结束......和你在一起的时候，我感到如此......自由。$l\"",
+						"Leah": "speak {name} \"时间已经到了，嗯？我已经开始珍惜我们在一起的时光了，@。$l\"",
+						"Maru": "speak {name} \"时间有时过得如此之快，是不是很奇怪？感觉我们已经完全脱离了时间和空间。$h\"",
+						"Penny": "speak {name} \"时间快到了？很好，想想我们回家后要告诉大家的故事吧！$h\"",
+					}
+				},
+				{
+					defaultNode: "pause 400/faceDirection {name} 3/faceDirection farmer 1/playMusic none/pause 500",
+				},
+				{
+					defaultNode: "speak {name} \"嗯...@？ 我们认识有一段时间了，而且...我...呃......$11\"",
+					customNodes: {
+						"Alex": "speak {name} \"所以，嗯... 我在想。你知道，@... 我...... $l\"",
+						"Elliott": "speak {name} \"所以， @... 你知道... 我...... $l\"",
+						"Sam": "speak {name} \"嘿，@... 我在想一件事... 你是否......$l\"",
+						"Sebastian": "speak {name} \"所以，我知道这有点超前，但......$l\"",
+						"Shane": "speak {name} \"嘿，@？你怎么想......$l\"",
+						"Abigail": "speak {name} \"那个，嗯，@...... 我知道我们已经变得非常亲密了，所以我在想......$l\"",
+						"Emily": "speak {name} \"嘿，@？ 你如何看待灵魂伴侣这个概念？$1#$b#我只是想知道......$l\"",
+						"Haley": "speak {name} \"嗯，@？我知道你已经送过我一束花，但我只是想知道......$l\"",
+						"Leah": "speak {name} \"所以，告诉我，@...我...我们是不是......？$l\"",
+						"Maru": "speak {name} \"说到万有引力和引力定律... 哈！嗯......$l\"",
+						"Penny": "speak {name} \"@？你认为我们俩可能......$l\"",
+					}
+				},
+				{
+					defaultNode: "playMusic musicboxsong/pause 400/faceDirection {name} 2/pause 500/faceDirection {name} 3",
+				},
+				{
+					defaultNode: "speak {name} \"......$l\"",
+				},
+				{
+					defaultNode: "specificTemporarySprite balloonBirds 2/pause 1000/showFrame {name} 31/pause 500/showFrame 101/positionOffset {name} -1 0/pause 30/positionOffset {name} -1 -2/pause 30/positionOffset {name} -1 -2/pause 30/positionOffset {name} -1 0/pause 30/positionOffset {name} -1 0/pause 30/positionOffset {name} -1 0/pause 30/positionOffset {name} -1 0/pause 30/positionOffset {name} -1 0/pause 30/pause 5000/globalFade/viewport -1000 -1000/pause 2000",
+				},
+				{
+					defaultNode: "speak {name} \"呼...我们的游玩时间在半小时前就已经结束了，也该降落了。$l\"",
+					customNodes: {
+						"Alex": "speak {name} \"噢，嘿，我们已经超过游玩时限了！$s\"",
+						"Elliott": "speak {name} \"啊，为什么在我最需要语言的时候，我却说不出话来？就这样吧，我们的时间到了。$s\"",
+						"Sam": "speak {name} \"啊！时间到了。我想我们也该回去了。$s\"",
+						"Sebastian": "speak {name} \"嘿，看来我们的时间到了，嗯？让我们......回家吧。$s\"",
+						"Shane": "speak {name} \"啊，算了......时间到了，我们回家吧。$s\"",
+						"Abigail": "speak {name} \"哦，看看时间。好吧，该回家了。$l\"",
+						"Emily": "speak {name} \"看我们在天堂的时间已经结束了。该回到现实中来了，对吧？$s\"",
+						"Haley": "speak {name} \"哦，该走了吗？我... 我想......没什么。$s\"",
+						"Leah": "speak {name} \"总之......我想我们该回去了，嗯？\"",
+						"Maru": "speak {name} \"好吧，太尴尬了......话说回来，我该回到我的机器人身边去了。$h\"",
+						"Penny": "speak {name} \"啊，该走了？也对......当然了。梦境不可能永远延续下去。$s\"",
+					}
+				},
+				{
+					defaultNode: "pause 2000/friendship {name} 75",
+				},
+				{
+					defaultNode: "end dialogue {name} \"在我记忆中，我从未没有过如此美妙的一天。$l\"",
+					customNodes: {
+						"Alex": "end dialogue {name} \"这次的热气球旅行是我这么长时间以来度过的最美好的时光！$l\"",
+						"Elliott": "end dialogue {name} \"我们在天空中度过了一段多么鼓舞人心的时光，是吧，@？ 我一定会以某种形式把它写进我的下一本书。$l\"",
+						"Sam": "end dialogue {name} \"这次的热气球旅行真是太有趣了！和你在一起让它变得更加美好！$l\"",
+						"Sebastian": "end dialogue {name} \"嘿，我只是想告诉你我在热气球上玩得有多开心。你真的很棒，你知道吗？$l\"",
+						"Shane": "end dialogue {name} \"嘿，我只是想说我在我们的......旅行中玩得非常开心。永远不要改变，@。$l\"",
+						"Abigail": "end dialogue {name} \"嘿，我只是想再次感谢你今天带我去空中探险。$h\"",
+						"Emily": "end dialogue {name} \"嘿，@！还在回味我们在云端的时光吗？我也一样！多么神奇的旅行啊！$h\"",
+						"Haley": "end dialogue {name} \"嘿，那个，我只是想让你知道我在热气球上玩得有多开心。#$b#我知道一开始我表现得有点害怕，但我不想让你觉得我玩得不开心。$l\"",
+						"Leah": "end dialogue {name} \"嘿，@！我还是觉得有点头晕！$h#$b#但我对新的艺术作品有了很多新想法，谢谢你带我进行了一场这么美丽的约会...呃...旅行。$l\"",
+						"Maru": "end dialogue {name} \"嘿，@ ！我已经开始为未来的飞艇式飞行器原型画草图了！我大受启发！我喜欢和你在一起，那是最棒的一天。$l\"",
+						"Penny": "end dialogue {name} \"我只是想再次感谢你...谢谢你特意今天约我一起去坐热气球。我...你对我来说真的很重要。所以，谢谢你。$l\"",
+					}
+				},
+			],
+			forks: [
+				{
+					key: "BalloonRideEventInvite_afraid",
+					nodes: [
+						{
+							defaultNode: "pause 500/speak {name} \"我......是的。$s#$b#但我决心不让它阻止我做自己想做的事......我是指和你一起经历这些。$1#$b#我会试着不害怕的。\"",
+							customNodes: {
+								"Alex": "speak {name} \"谁？我？当然不......#$b#我想我只是有一点紧张。$l#$b#这一定是因为你在潜移默化之中影响了我。$l\"",
+								"Elliott": "pause 500/speak {name} \"害怕？我吗？当然......$h#$b#好吧，我很害怕......但如果是为了你，@，我愿意做任何事。$1#$b#你给我带来了勇气，我从未想过自己居然能这么勇敢。$l\"",
+								"Sam": "speak {name} \"害怕？完全不。$h#$b#好吧，也许有一点......但现在我和你在一起，所以一切都很顺利。$1#$b#只要我们齐心协力，就能征服世界！$h\"",
+								"Sebastian": "speak {name} \"不，也许我有点紧张，但并不严重。#$b#不管怎样，就算我真的摔倒了，你也会接住我的，对吧？$1#$b#我......尽量不摔倒。$l\"",
+								"Shane": "speak {name} \"害怕吗？我不知道...... 说实话，我现在有点想吐。$s#$b#离我近一点，好吗？$l#$b#我很高兴能和你在一起。$l\"",
+								"Abigail": "speak {name} \"怎么可能，你在跟我开玩笑吗？这将是一次绝佳的冒险！$h#$b#怎么了，你害怕吗？别担心，@，我会保护你的。$l#$b#我们可以互相保护。$l\"",
+								"Emily": "speak {name} \"哦，也许我有点焦虑，当然。#$b#但这将是一次绝无仅有的神奇经历，@！$h#$b#只有你，我，和无限的天堂！$l\"",
+								"Haley": "pause 500/speak {name} \"嗯...是的......你看过那东西吗？$s#$b#但我太高兴了，因为要和你约会，所以我不在乎。$l#$b#我猜你是想和我一起做一些疯狂的事，对吧。$l\"",
+								"Leah": "speak {name} \"我想是的......#$b#但这不正是吸引力的一部分吗？能从一个全新的角度看世界是多么激动人心啊！$h#$b#此外，还有你会和我一起去，所以还有什么好怕的？$l\"",
+								"Maru": "speak {name} \"哦，拜托。#$b#你觉得宇航员恐高吗？$h#$b#这太棒了！\"",
+								"Penny": "pause 500/speak {name} \"有点...可以吗？$s#$b#对不起，我不想在约会开始之前毁掉它。我真的不想把事情搞砸。$l#$b#我真的很喜欢你，@。$l\"",
+							}
+						},
+						{
+					defaultNode: "pause 400/move farmer -1 0 0/move farmer 0 -1 1/move {name} 0 0 3/pause 500/emote farmer 32/emote {name} 32/pause 500/move farmer -3 0 0/jump farmer 10/move farmer 0 -1 2/move {name} -3 0 0/jump {name} 10/move {name} 0 -1 2/pause 1000/playSound openBox/pause 300/playSound furnace/playMusic none/cutscene EventInvite_balloonDepart/viewport move 0 -1 6000/pause 2000",
+					},
+					{
+						defaultNode: "jump {name} 5/shake {name} 7000",
+						customNodes: {
+							"Alex": "jump {name} 5",
+							"Abigail": "jump {name} 5",
+							"Emily": "jump {name} 5",
+							"Haley": "jump {name} 5",
+							"Leah": "jump {name} 5",
+							"Maru": "jump {name} 5",
+						}
+					},
+					{
+						defaultNode: "pause 7000/globalFade/viewport -2000 -2000/playMusic 50s/pause 2000/cutscene clearTempSprites/changeToTemporaryMap HarveyBalloon/cutscene EventInvite_balloonChangeMap/warp farmer 22 36/warp {name} 22 36/positionOffset farmer 24 570/positionOffset {name} 96 554/positionOffset farmer -8 -8/positionOffset {name} -24 -8/pause 1000/shake {name} 19000/viewport 23 39 clamp true/viewport move 0 -1 17000/pause 18000/faceDirection farmer 1/pause 1000/jump {name}/pause 800/positionOffset {name} -4 2/pause 30/positionOffset {name} -4 2/pause 30/positionOffset {name} -4 2/pause 30/positionOffset {name} -4 2/pause 30/positionOffset {name} -4 2/pause 30/positionOffset {name} -4 2/pause 30/positionOffset {name} -4 2/pause 30/positionOffset {name} -4 2/pause 30/positionOffset {name} -4 0/playSound fishSlap/eyes 1 -2000/pause 2000",
+					},
+					{
+						defaultNode: "speak {name} \"我们... 我们在这么高的地方... *咽口水*$8\"/shake {name} 2000/pause 800/speak {name} \"我想在这里和你一起留下深刻的回忆... 但是看看我，我就是个浑身发抖的胆小鬼。$7\"/emote {name} 28/pause 500/speak {name} \"好吧，你有足够的勇气，正好和我互补，@...这是......这也是我喜欢你的原因之一。$11\"/pause 1000/speak {name} \"好了，我要睁开眼睛往下看了......不要放开我的手。$4\"/pause 800/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 0/pause 30/positionOffset {name} 4 0/pause 30/faceDirection farmer 2/pause 500/shake {name} 4000/pause 500/pause 3500/speak {name} \"我......我想我现在可以做到。$8\"",
+						customNodes: {
+							"Alex": "speak {name} \"哇哦......\"/shake {name} 2000/pause 800/emote farmer 28/speak {name} \"我很好，只是有点冷。我想我应该带件暖和点的衣服来。\"/shake {name} 2000/emote farmer 28/pause 500/speak {name} \"虽然这里的景色的确很美，但我还是无法相信我们真的在这里，单独在一起......$l\"/pause 1000/shake {name} 2000/shake farmer 2000/speak {name} \"也许我们可以互相取暖？$l\"/pause 800/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 0/pause 30/positionOffset {name} 4 0/pause 30/faceDirection farmer 2/pause 500/shake {name} 4000/pause 3500/speak {name} \"好多了，谢谢你。$l\"",
+							"Elliott": "speak {name} \"哦，天啊...真是太美了......我希望我没有因为害怕而发抖。\"/shake {name} 2000/pause 800/emote farmer 28/speak {name} \"不，别难过！我很高兴有机会和你共度时光，@。$l\"/emote {name} 32/pause 500/speak {name} \"这样的经历虽然有些可怕，但一定能激发我的想象力。\"/pause 1000/speak {name} \"好了，是时候让我直面恐惧，尽情享受这一刻了！只是......请不要放开我的手。$l\"/pause 800/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 0/pause 30/positionOffset {name} 4 0/pause 30/faceDirection farmer 2/pause 500/shake {name} 4000/pause 3500/speak {name} \"我......我想我现在可以做到。\"",
+							"Harvey": "speak {name} \"我们......我们在这么高的地方............*咽口水*$8\"/shake {name} 2000/pause 800/speak {name} \"我想在这里和你一起留下深刻的回忆...... 但是看看我，我就是个浑身发抖的胆小鬼。$7\"/emote {name} 28/pause 500/speak {name} \"好吧，你有足够的勇气，正好和我互补，@...这是......这也是我喜欢你的原因之一。$11\"/pause 1000/speak {name} \"好了，我要睁开眼睛往下看了......不要放开我的手。$4\"/pause 800/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 0/pause 30/positionOffset {name} 4 0/pause 30/faceDirection farmer 2/showFrame {name} 0/pause 500/showFrame {name} 33/pause 500/shake {name} 4000/pause 500/showFrame {name} 30/pause 2000/showFrame {name} 33/pause 3500/speak {name} \"我......我想我现在可以做到。\"",
+							"Sam": "speak {name} \"哇哦，真是哇哦。\"/shake {name} 2000/pause 800/emote farmer 28/speak {name} \"好吧，这比我想象的要高一些......但是，这一定是我今年做的最酷的事情！$h\"/emote {name} 32/pause 500/speak {name} \"我真的很高兴你邀请我，@。和你在一起真的很有趣。$l\"/pause 1000/speak {name} \"好吧，我想我现在可以往下看了，只是......不要突然移动，好吗？$l\"/pause 800/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 0/pause 30/positionOffset {name} 4 0/pause 30/faceDirection farmer 2/pause 500/shake {name} 4000/pause 3500/speak {name} \"真是棒极了！$h\"",
+							"Sebastian":"speak {name} \"这真的很酷，@。\"/shake {name} 2000/pause 800/emote farmer 28/speak {name} \"我很好，只是不习惯离地面那么远。 但是你让我感觉很踏实，@。$l\"/emote {name} 32/pause 500/speak {name} \"此外，生活中一定有比工作更重要的东西，对吧？\"/pause 1000/speak {name} \"好了，该去看看风景了。来，握住我的手。$l\"/pause 800/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 0/pause 30/positionOffset {name} 4 0/pause 30/faceDirection farmer 2/pause 500/shake {name} 4000/pause 3500/speak {name} \"好吧，这还不算太坏。\"",
+							"Shane": "speak {name} \"和你在一起的感觉很好......我甚至不觉得恶心......只是有点头晕。\"/shake {name} 2000/pause 800/emote farmer 28/speak {name} \"我很好，只是不习惯离地面那么远。 但是你让我感觉很踏实，@。$l\"/emote {name} 32/pause 500/speak {name} \"而且，休息一段时间也不错，对吧？\"/pause 1000/speak {name} \"好了，该去看看风景了。来，握住我的手。$l\"/pause 800/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 0/pause 30/positionOffset {name} 4 0/pause 30/faceDirection farmer 2/pause 500/shake {name} 4000/pause 3500/speak {name} \"真不错。\"",
+							"Abigail": "speak {name} \"这太令人兴奋了！感觉我们正在进行一场伟大的冒险。\"/shake {name} 2000/pause 800/emote farmer 28/speak {name} \"哦，不，别担心，我只是有点不知所措！我很高兴你邀请我，@。你是我......最好的朋友，你知道吗？$l\"/emote {name} 32/pause 500/speak {name} \"和你在一起，让我真的感觉自己已经来到了世界之巅！$l\"/pause 1000/speak {name} \"好吧，让我们看看下面发生了什么！来，握住我的手！$l\"/pause 800/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 0/pause 30/positionOffset {name} 4 0/pause 30/faceDirection farmer 2/pause 500/emote {name} 32/pause 3500/speak {name} \"真是一场冒险啊！$h\"",
+							"Emily": "speak {name} \"这是一个多么美好的梦啊......\"/shake {name} 2000/pause 800/emote farmer 28/speak {name} \"哦，对不起，只是有点冷......#$b#我很高兴有你在这里给我取暖......$l\"/emote {name} 32/pause 500/speak {name} \"我爱你的能量，@...我想我们之间一定有着某种更深的联系......$l\"/pause 1000/speak {name} \"好吧，让我们假装自己是鸟儿，在下面的世界上翱翔！来，握住我的手！$l\"/pause 800/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 0/pause 30/positionOffset {name} 4 0/pause 30/faceDirection farmer 2/pause 500/emote {name} 32/pause 3500/speak {name} \"这太不真实了！$h\"",
+							"Haley": "speak {name} \"这里真的很美，很抱歉我之前听起来不是很热情。我想我只是有点恐高。\"/shake {name} 2000/pause 800/emote farmer 28/speak {name} \"哦，没关系的，@。当我和你在一起时总能感觉很安全。$l\"/emote {name} 32/pause 500/speak {name} \"此外，想想看，当艾米丽发现你带我去坐热气球时，她会有多嫉妒啊！$h\"/pause 1000/speak {name} \"只是开个玩笑。嘿，你能不能......握住我的手？我想看看风景。$l\"/pause 800/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 0/pause 30/positionOffset {name} 4 0/pause 30/faceDirection farmer 2/pause 500/shake {name} 4000/pause 3500/speak {name} \"好吧，这真的很棒。$l\"",
+							"Leah": "speak {name} \"What a pleasant way to spend the day.\"/shake {name} 2000/pause 800/emote farmer 28/speak {name} \"嘿嘿，是啊，这有点吓人，但有时候直面自己的恐惧也不错，对吧？$l\"/emote {name} 32/pause 500/speak {name} \"谢谢你今天邀请我，@。我真的觉得在有了你之后生活变得更丰富多彩了。$l\"/pause 1000/speak {name} \"好吧，让我们向灵感敞开心扉吧！现在，让我们牵起手来。$l\"/pause 800/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 0/pause 30/positionOffset {name} 4 0/pause 30/faceDirection farmer 2/pause 500/emote {name} 32/pause 3500/speak {name} \"自然界中究竟存在着怎样的艺术呢！$h\"",
+							"Maru": "speak {name} \"这太鼓舞人心了！想想看，我们可以驾驭自然元素，让它们服从我们的意志，以违抗自然法则！\"/shake {name} 2000/pause 800/emote farmer 28/speak {name} \"害怕？不，我只感到兴奋！#$b#好吧，确实有点害怕......$l\"/emote {name} 32/pause 500/speak {name} \"但也很高兴...#$b#很高兴和你在一起，一起挑战自然法则......$l\"/pause 1000/speak {name} \"你可以从这里看到一切......\"/pause 800/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 0/pause 30/positionOffset {name} 4 0/pause 30/faceDirection farmer 2/pause 500/emote {name} 32/pause 3500/speak {name} \"这给了我很多科学实验的好点子！$h\"",
+							"Penny": "speak {name} \"噢，@。这太棒了。\"/shake {name} 2000/pause 800/emote farmer 28/speak {name} \"我很好，只是有点冷。我想我应该带件暖和点的衣服来。\"/shake {name} 2000/emote farmer 28/pause 500/speak {name} \"虽然这里的景色的确很美，但我还是无法相信我们真的在这里，单独在一起......$l\"/pause 1000/shake {name} 2000/shake farmer 2000/speak {name} \"呼......也许我们可以互相取暖？$l\"/pause 1800/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 -2/pause 30/positionOffset {name} 4 0/pause 30/positionOffset {name} 4 0/pause 30/faceDirection farmer 2/pause 500/shake {name} 4000/pause 3500/speak {name} \"好多了，谢谢你。$l\"",
+						}
+					},
+					{
+						defaultNode: "specificTemporarySprite balloonBirds/faceDirection farmer 2/pause 3000/faceDirection {name} 1/faceDirection farmer 1/emote farmer 16 true/emote {name} 16/pause 4000/faceDirection farmer 0/faceDirection {name} 2/pause 10000",
+					},
+					{
+						defaultNode: "speak {name} \"嘿，这太不可思议了！我甚至可以清楚地看到刘易斯镇长正站在小镇广场上。$h\"",
+						customNodes: {
+							"Alex": "speak {name} \"嘿，我好像看到小灰的狗窝了！$h\"",
+							"Elliott": "speak {name} \"这......真是个观察世界的独特视角......我们甚至能从这里看到大海！\"",
+							"Sam": "speak {name} \"嘿，你觉得我们可以在热气球上朝刘易斯镇长吐口水吗？$h#$b#我只是在开玩笑......\"",
+							"Sebastian": "speak {name} \"这真的能让你意识到这个世界是多么微不足道，对吧？\"",
+							"Shane": "speak {name} \"多么美丽的景色。\"",
+							"Abigail": "speak {name} \"你能想象到从这里跳下去是什么感觉吗？#$b#不是说我想跳下去！ 只是......我们在这么高的地方！\"",
+							"Emily": "speak {name} \"这太神奇了！我敢打赌，这就是女神在俯视自己的创造物时的感受！$h\"",
+							"Haley": "speak {name} \"嘿，我想我可以从这里看到我们的房子......那是你的农场吗？\"",
+							"Leah": "speak {name} \"等我们回去之后，我一定要把这副场景画下来......\"",
+							"Maru": "speak {name} \"你甚至可以从这里看到地球的曲率。想象一下，热气球的发明使科学的进一步发展成为可能！$h\"",
+							"Penny": "speak {name} \"我们从这里可以看到整个小镇！ 你认为大家现在在做什么？\"",
+						}
+					},
+					{
+						defaultNode: "faceDirection farmer 2/pause 3000",
+					},
+					{
+						defaultNode: "speak {name} \"哦，亲爱的......我们的时间快到了。$s\"",
+						customNodes: {
+							"Alex": "speak {name} \"哦，伙计，我们的时间快到了，嗯？$s\"",
+							"Elliott": "speak {name} \"啊，我们的时间快到头了......#$b#'明天，又一个明天，又一个明天，一天天偷搬着这种琐碎的脚步，直到时间记录的末一个音节。'莎士比亚这样说。$s\"",
+							"Sam": "speak {name} \"这真是一段美好的时光......我很遗憾我们这么快就要回去了......$s\"",
+							"Sebastian": "speak {name} \"哇，当你玩得很开心的时候，时间总会飞逝而过。$s\"",
+							"Shane": "speak {name} \"时间已经到了吗？ 哇，我想他们在玩得开心时说的都是真的。$s\"",
+							"Abigail": "speak {name} \"噢，时间就快到了。真希望我们的冒险能一直持续下去！\"",
+							"Emily": "speak {name} \"啊，好吧， 一切美好的事物都会结束。 想想我们会拥有的所有美好回忆，对吧？\"",
+							"Haley": "speak {name} \"噢，我不想让它结束......和你在一起的时候，我感到如此......自由。$l\"",
+							"Leah": "speak {name} \"时间已经到了，嗯？我已经开始珍惜我们在一起的时光了，@。$l\"",
+							"Maru": "speak {name} \"时间有时过得如此之快，是不是很奇怪？感觉我们已经完全脱离了时间和空间。$h\"",
+							"Penny": "speak {name} \"时间快到了？很好，想想我们回家后要告诉大家的故事吧！$h\"",
+						}
+					},
+					{
+						defaultNode: "pause 400/faceDirection {name} 3/faceDirection farmer 1/playMusic none/pause 500",
+					},
+					{
+						defaultNode: "speak {name} \"嗯...@？ 我们认识有一段时间了，而且...我...呃......$11\"",
+						customNodes: {
+							"Alex": "speak {name} \"所以，嗯... 我在想。你知道，@... 我...... $l\"",
+							"Elliott": "speak {name} \"所以， @... 你知道... 我...... $l\"",
+							"Sam": "speak {name} \"嘿，@... 我在想一件事... 你是否......$l\"",
+							"Sebastian": "speak {name} \"所以，我知道这有点超前，但......$l\"",
+							"Shane": "speak {name} \"嘿，@？你怎么想......$l\"",
+							"Abigail": "speak {name} \"那个，嗯，@...... 我知道我们已经变得非常亲密了，所以我在想......$l\"",
+							"Emily": "speak {name} \"嘿，@？ 你如何看待灵魂伴侣这个概念？$1#$b#我只是想知道......$l\"",
+							"Haley": "speak {name} \"嗯，@？我知道你已经送过我一束花，但我只是想知道......$l\"",
+							"Leah": "speak {name} \"所以，告诉我，@...我...我们是不是......？$l\"",
+							"Maru": "speak {name} \"说到万有引力和引力定律... 哈！嗯......$l\"",
+							"Penny": "speak {name} \"@？你认为我们俩可能......$l\"",
+						}
+					},
+					{
+						defaultNode: "playMusic musicboxsong/pause 400/faceDirection {name} 2/pause 500/faceDirection {name} 3",
+					},
+					{
+						defaultNode: "speak {name} \"......$l\"",
+					},
+					{
+						defaultNode: "specificTemporarySprite balloonBirds 2/pause 1000/showFrame {name} 31/pause 500/showFrame 101/positionOffset {name} -1 0/pause 30/positionOffset {name} -1 -2/pause 30/positionOffset {name} -1 -2/pause 30/positionOffset {name} -1 0/pause 30/positionOffset {name} -1 0/pause 30/positionOffset {name} -1 0/pause 30/positionOffset {name} -1 0/pause 30/positionOffset {name} -1 0/pause 30/pause 5000/globalFade/viewport -1000 -1000/pause 2000",
+					},
+					{
+						defaultNode: "speak {name} \"呼...我们的游玩时间在半小时前就已经结束了，也该降落了。$l\"",
+						customNodes: {
+							"Alex": "speak {name} \"噢，嘿，我们已经超过游玩时限了！$s\"",
+							"Elliott": "speak {name} \"啊，为什么在我最需要语言的时候，我却说不出话来？就这样吧，我们的时间到了。$s\"",
+							"Sam": "speak {name} \"啊！时间到了。我想我们也该回去了。$s\"",
+							"Sebastian": "speak {name} \"嘿，看来我们的时间到了，嗯？让我们......回家吧。$s\"",
+							"Shane": "speak {name} \"啊，算了......时间到了，我们回家吧。$s\"",
+							"Abigail": "speak {name} \"哦，看看时间。好吧，该回家了。$l\"",
+							"Emily": "speak {name} \"看我们在天堂的时间已经结束了。该回到现实中来了，对吧？$s\"",
+							"Haley": "speak {name} \"哦，该走了吗？我... 我想......没什么。$s\"",
+							"Leah": "speak {name} \"总之......我想我们该回去了，嗯？\"",
+							"Maru": "speak {name} \"好吧，太尴尬了......话说回来，我该回到我的机器人身边去了。$h\"",
+							"Penny": "speak {name} \"啊，该走了？也对......当然了。梦境不可能永远延续下去。$s\"",
+						}
+					},
+					{
+						defaultNode: "pause 2000/friendship {name} 75",
+					},
+					{
+						defaultNode: "end dialogue {name} \"在我记忆中，我从未没有过如此美妙的一天。$l\"",
+						customNodes: {
+							"Alex": "end dialogue {name} \"这次的热气球旅行是我这么长时间以来度过的最美好的时光！$l\"",
+							"Elliott": "end dialogue {name} \"我们在天空中度过了一段多么鼓舞人心的时光，是吧，@？ 我一定会以某种形式把它写进我的下一本书。$l\"",
+							"Sam": "end dialogue {name} \"这次的热气球旅行真是太有趣了！和你在一起让它变得更加美好！$l\"",
+							"Sebastian": "end dialogue {name} \"嘿，我只是想告诉你我在热气球上玩得有多开心。你真的很棒，你知道吗？$l\"",
+							"Shane": "end dialogue {name} \"嘿，我只是想说我在我们的......旅行中玩得非常开心。永远不要改变，@。$l\"",
+							"Abigail": "end dialogue {name} \"嘿，我只是想再次感谢你今天带我去空中探险。$h\"",
+							"Emily": "end dialogue {name} \"嘿，@！还在回味我们在云端的时光吗？我也一样！多么神奇的旅行啊！$h\"",
+							"Haley": "end dialogue {name} \"嘿，那个，我只是想让你知道我在热气球上玩得有多开心。#$b#我知道一开始我表现得有点害怕，但我不想让你觉得我玩得不开心。$l\"",
+							"Leah": "end dialogue {name} \"嘿，@！我还是觉得有点头晕！$h#$b#但我对新的艺术作品有了很多新想法，谢谢你带我进行了一场这么美丽的约会...呃...旅行。$l\"",
+							"Maru": "end dialogue {name} \"嘿，@ ！我已经开始为未来的飞艇式飞行器原型画草图了！我大受启发！我喜欢和你在一起，那是最棒的一天。$l\"",
+							"Penny": "end dialogue {name} \"我只是想再次感谢你...谢谢你特意今天约我一起去坐热气球。我...你对我来说真的很重要。所以，谢谢你。$l\"",
+						}
+					},
+					],
+				},
+			],
+			
+		},
+	],
+}

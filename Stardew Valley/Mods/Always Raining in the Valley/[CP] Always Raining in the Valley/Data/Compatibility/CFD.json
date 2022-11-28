@@ -1,0 +1,151 @@
+﻿{
+    "Changes": [
+
+        //MARRIAGE
+        {
+            "LogName": "Sterling - Marriage Fix",
+            "Action": "EditData",
+            "Target": "strings/StringsFromCSFiles",
+            "Entries": {
+                "Utility.cs.5371": "@...斯特林... #$b#作为鹈鹕镇的镇长，以及地区婚姻负责人，我现在宣布你们结为夫妻！$h",
+                "Utility.cs.5377": "@...斯特林... #$b#作为鹈鹕镇的镇长，以及地区婚姻负责人，我现在宣布你们结为丈夫和...好吧，丈夫！$h",
+                "Utility.cs.5367": "每个人的人生中都有过这样的经历，发现自己走在了意料之外的道路上。有些时候，当时的我们甚至没法理解那些原因。#$b#然而今天，我要宣布两个人的婚姻。他们都逃离了自己过去的生活，来到山谷加入了我们。#$b#没错，就是斯特林和@。$h#$b#我很荣幸地宣布，在{1}{0}这一天，@和斯特林结为连理。",
+                "Utility.cs.5369": "当@第一次来到鹈鹕镇时，没有热知道她是否能融入社区...#$b#但从今天开始，她将和我们其他人一样，正式成为小镇的一员！$h#$b#我很荣幸地宣布，在{1}{0}这一天，@和斯特林结为连理。",
+            },
+            "When": {
+                "Relationship:Sterling": "Engaged, Married"
+            }
+        },
+
+
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Sterling",
+            "Entries": {
+                "Event.cs.1801": "噢！所以原来是你？$h#$b#啊...{1} {0}！谢谢。",
+                "NPC.cs.4001": "亲爱的...我想给你这个果实，作为我对你爱意的象征。$l",
+                "NPC.cs.4440": "{0}，想到我们要开始组建一个家庭，我就会觉得很...感动。希望我们的领养申请能通过。$4",
+                "NPC.cs.4441": "{0}，我填好了我们的领养文件。现在我们需要做的就是祈祷与等待。$l",
+ 
+                
+            }
+        },
+   
+	
+/*	//FLOWER DANCE
+		{
+			"LogName": "Flower Dance Just Met",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sterling",
+			"Entries": {
+				"Event.cs.1736": "$q -1 null#...怎么了？#$r -1 0 danceAsk#（邀请斯特林成为你的舞伴）#$r -1 0 null#没事...",
+				"Event.cs.1738": "$q -1 null#...怎么了？#$r -1 0 danceAsk#（邀请斯特林成为你的舞伴）#$r -1 0 null#没事...",
+				"Event.cs.1635": "...不行。",
+			},
+			"When": {
+				"Hearts:Sterling": "0, 1, 2"
+			}
+		},
+		{
+			"LogName": "CFD Flower Dance Friendliest",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sterling",
+			"Entries": {
+				"Event.cs.1736": "$q -1 null#...怎么了，@？#$r -1 0 danceAsk#（邀请斯特林成为你的舞伴）#$r -1 0 null#没事...",
+				"Event.cs.1738": "$q -1 null#...怎么了，@？#$r -1 0 danceAsk#（邀请斯特林成为你的舞伴）#$r -1 0 null#没事...",
+				"Event.cs.1632": "好吧，不过因为是你我才答应的。$6",
+				"Event.cs.1633": "好吧，不过因为是你我才答应的。$6",
+				"Event.cs.1634": "好吧，不过因为是你我才答应的。$6",
+				"Event.cs.1635": "不好意思，@。我已经答应了和别人跳舞。",
+			},
+			"When": {
+				"Hearts:Sterling": "3, 4, 5, 6, 7, 8"
+			}
+		},
+		{
+			"LogName": "CFD Flower Dance Romantic",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sterling",
+			"Entries": {
+				"Event.cs.1736": "$q -1 null#...怎么了，伙计？#$r -1 0 danceAsk#（邀请斯特林成为你的舞伴）#$r -1 0 null#没事...",
+				"Event.cs.1738": "$q -1 null#...怎么了，伙计？#$r -1 0 danceAsk#（邀请斯特林成为你的舞伴）#$r -1 0 null#没事...",
+				"Event.cs.1632": "跳舞？好家伙。行吧，给我一分钟，让我看看自己还记不记得怎么跳舞...$6",
+				"Event.cs.1633": "跳舞？好家伙。行吧，给我一分钟，让我看看自己还记不记得怎么跳舞...$6",
+				"Event.cs.1634": "跳舞？好家伙。行吧，给我一分钟，让我看看自己还记不记得怎么跳舞...$6",
+				"Event.cs.1635": "跳舞？好家伙。行吧，给我一分钟，让我看看自己还记不记得怎么跳舞...$6",
+			},
+			"When": {
+				"Relationship:Sterling": "Dating, Engaged, Married",
+			},
+		},
+
+//EXTRA DIALOGUE
+		{
+			"LogName": "CFD Extra Dialogue",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sterling",
+			"Entries": {
+				"ExtraDialogue_NewChild_SecondChild1": "看看我们这一大家子...我们真是经历了很多啊，对吧？$6",
+				"ExtraDialogue_NewChild_SecondChild2": "两个可爱的孩子...我们真是经历了很多啊，对吧？$6",
+				"ExtraDialogue_NewChild_Adoption": "所以，你准备好做%kid1的好爸爸了吗？$6^所以，你准备好做%kid1的好妈妈了吗？$6#$b#这可是个高要求，但我想我们会做到的。$h",
+				"ExtraDialogue_NewChild_FirstChild": "所以，你准备好做%kid1的好爸爸了吗？$6^所以，你准备好做%kid1的好妈妈了吗？$6#$b#这可是个高要求，但我想我们会做到的。$h",
+				"ExtraDialogue_Spouse_KitchenBlocked": "你堆在厨房里的东西还挺多的...我不知道你想把它们放在哪儿，所以你能整理一下吗？",
+				"ExtraDialogue_Spouse_MonstersInHouse": "呃...我的小蜜桃？为什么我们家里会有怪物？",
+				"ExtraDialogue_Mines_PlayerKilled_Spouse_PlayerMale": "你离开了太久，我都开始担心你了！矿洞下面发生了什么？你还能走路吗？$10",
+				"ExtraDialogue_Mines_PlayerKilled_Spouse_PlayerFemale": "你离开了太久，我都开始担心你了！矿洞下面发生了什么？你还能走路吗？$10",
+				},
+			},*/
+		{
+			"LogName": "CFD Dumpster Dive Strangers",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sterling",
+			"Entries": {
+				"ExtraDialogue_Town_DumpsterDiveComment_Adult": "！$7#$b#...星露谷里的家伙还真奇怪。$3",
+			},
+			"When": {
+				"Hearts:Sterling": "{{Range: 0, 1,}}",
+			},
+		},
+		{
+			"LogName": "CFD Dumpster Dive Friends",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sterling",
+			"Entries": {
+				"ExtraDialogue_Town_DumpsterDiveComment_Adult": "别担心，伙计。我这就回头，假装什么都没看见。$1",
+			},
+			"When": {
+				"Hearts:Sterling": "{{Range: 2, 3, 4, 5, 6, 7, 8}}",
+			},
+		},
+		{
+			"LogName": "CFD Dumpster Dive Dating",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sterling",
+			"Entries": {
+				"ExtraDialogue_Town_DumpsterDiveComment_Adult": "噢，你好呀！是在找什么特别的东西吗？$1",
+			},
+			"When": {
+				"Relationship:Sterling": "Dating, Engaged, Married",
+			},
+		},
+//Movie Invite
+		{
+			"LogName": "Movie Invitation Reactions Married",
+			"Action": "EditData",
+			"Target": "Strings/Characters",
+			"Entries": {
+				"Characters_MovieInvite_Spouse_Sterling": "在电影院的约会之夜吗？$1#$b#我再乐意不过了，甜心。不如你先准备，我去拿点能偷偷带进去的零食？$10",
+			},
+		}, 
+//Summit Event
+
+		{
+			"LogName": "Summit Event Dialogue",
+			"Action": "EditData",
+			"Target": "Data/ExtraDialogue",
+			"Entries": {
+				"SummitEvent_Dialogue3_Sterling": "当我们相遇后，我让你看到了我最糟糕的一面...$3#$b#但无论如何，你还是选择了陪在我身边。\"/pause 500/speak Sterling \"然后你选择和我在一起，还有...还有爱我。尽管你已经看到了我本来的样子。$3#$b#或者正是因为这个原因，你才会爱我。$6\"/pause 1000/speak Sterling \"你没有放弃我，我也永远不会对你放手...#$b#...就算你睡觉的时候会放屁也一样。$6\"/pause 100/emote farmer 12/pause 200/speak Sterling \"我在开玩笑，是开玩笑的啦。$h\"/pause 1000/emote Sterling 40/pause 1000/speak Sterling \"看看这里的一切......$6#$b#我只是--\"/faceDirection Sterling 3/speak Sterling \"我也看到了你，你明白吗？$l",
+			},
+		},
+	]
+}

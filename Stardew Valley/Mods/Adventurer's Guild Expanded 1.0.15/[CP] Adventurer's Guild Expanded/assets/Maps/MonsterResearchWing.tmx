@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.4" tiledversion="1.4.3" orientation="orthogonal" renderorder="right-down" width="37" height="17" tilewidth="16" tileheight="16" infinite="0" nextlayerid="7" nextobjectid="20">
+ <properties>
+  <property name="AmbientLight" value="255 255 255"/>
+  <property name="DayTiles" value="Front 10 6 256"/>
+  <property name="Doors" value="17 9 dummy 120 24 9 dummy 120 31 9 dummy 120"/>
+  <property name="Light" value="2 6 4 6 6 4 9 6 4 11 6 4 13 9 4 16 9 4 18 9 4 23 9 4 25 9 4 30 9 4 32 9 4 34 9 4 10 6 2 6 8 5 1 13 5 12 13 5"/>
+  <property name="Music" value="MarlonsTheme"/>
+  <property name="NightTiles" value="Front 10 6 1253"/>
+ </properties>
+ <tileset firstgid="1" name="dummy" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="townInterior" width="512" height="1088"/>
+ </tileset>
+ <tileset firstgid="2177" name="walls_and_floors" tilewidth="16" tileheight="16" tilecount="560" columns="16">
+  <image source="walls_and_floors" width="256" height="560"/>
+ </tileset>
+ <layer id="1" name="Back" width="37" height="17">
+  <data encoding="base64" compression="zlib">
+   eJzdVdsNwjAMdKWWCXg1OwA/PETn4CEYgS+yBmPBGDAI8IWtpsJyHk1VIRAnndz6FPVyTluA/0GeAYwSgDHjJHnrLm2c1GttsPxBT7+aU5HZNUavWxvCIwV4GkpQTiqza4xet5ZwxPtDx2Y3Lcl7OnKvbXMiT6eOzcoT7+nIveZCkzn5NO7JxcqTNvc6i8+JcIGyd7ZHH9QI9/R9dniVPeLQMWflmX1TTbM9+fbM6w65NznLGSvP7Jtq3BM9p4vsIfvIgeesKONP5ke+ZcZUb2Y+V7Czd2kypylyhpwjF568CuNPPtvVq6oKaK51PKcVco3cILeBnOQ7U2Xnew+LgOZa1+Q8Fez6G3B9L76NJv+fT+AFvOiFlA==
+  </data>
+ </layer>
+ <objectgroup id="2" name="Back"/>
+ <layer id="3" name="Buildings" width="37" height="17">
+  <data encoding="base64" compression="zlib">
+   eJzFVT1LxEAU3ERvi9M/IFYWNrb+giuu96O0EhQVLDw76ztROxG0uWsEwfgbtFIE/Q36I2wsxMZ57j4yhEsCu/EcGBbeJHlzeZN3xoQjBaeI0w1oMVjw59CfI38uRmix6IAr4D24Cj6Aa2A3QmvC0wH4BvbAd/CQ+oZodWiDM56zJZ7OC7UL6huiMYqZEz6R/ui9cR47Jb+lG6EpJHNXLZe5HWvMLrhn8+wJOI+XLZfHv/TEmTuBl1PwzLrsKcbl8brk2VmExp40c7fwkoF31mVPIdoWBrydujzqLIU6Y66FapwLydxHYswnihn6thGc5yT3tIF5DVA/Tl0eh7n0O8+jQi1U41zsU/8X9H1NxzzE48bms9R5CrgWqvEOWy4s96UKTwLdLbpfirVQjXeYeKry8YX3+A2OmvpjKgHvsPWKXuJjDn7na95dU9Bvk/NcB7lW7ksmyE3fu19z3aTwn70ZP9HsbVc=
+  </data>
+ </layer>
+ <objectgroup id="4" name="Buildings">
+  <object id="1" name="TileData" x="32" y="144" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;ResearchWing.3&quot;"/>
+   </properties>
+  </object>
+  <object id="2" name="TileData" x="64" y="144" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;ResearchWing.2&quot;"/>
+   </properties>
+  </object>
+  <object id="3" name="TileData" x="80" y="144" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;ResearchWing.7&quot;"/>
+   </properties>
+  </object>
+  <object id="4" name="TileData" x="160" y="144" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;ResearchWing.4&quot;"/>
+   </properties>
+  </object>
+  <object id="5" name="TileData" x="176" y="144" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;ResearchWing.4&quot;"/>
+   </properties>
+  </object>
+  <object id="6" name="TileData" x="272" y="144" width="16" height="16">
+   <properties>
+    <property name="Action" value="Door"/>
+   </properties>
+  </object>
+  <object id="7" name="TileData" x="384" y="144" width="16" height="16">
+   <properties>
+    <property name="Action" value="Door"/>
+   </properties>
+  </object>
+  <object id="8" name="TileData" x="496" y="144" width="16" height="16">
+   <properties>
+    <property name="Action" value="Door"/>
+   </properties>
+  </object>
+  <object id="9" name="TileData" x="64" y="160" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;ResearchWing.2&quot;"/>
+   </properties>
+  </object>
+  <object id="10" name="TileData" x="80" y="160" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;ResearchWing.7&quot;"/>
+   </properties>
+  </object>
+  <object id="11" name="TileData" x="192" y="160" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;ResearchWing.6&quot;"/>
+   </properties>
+  </object>
+  <object id="12" name="TileData" x="288" y="160" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;ResearchWing.1&quot;"/>
+   </properties>
+  </object>
+  <object id="13" name="TileData" x="400" y="160" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;ResearchWing.1&quot;"/>
+   </properties>
+  </object>
+  <object id="14" name="TileData" x="512" y="160" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;ResearchWing.1&quot;"/>
+   </properties>
+  </object>
+  <object id="15" name="TileData" x="288" y="176" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;ResearchWing.1&quot;"/>
+   </properties>
+  </object>
+  <object id="16" name="TileData" x="400" y="176" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;ResearchWing.1&quot;"/>
+   </properties>
+  </object>
+  <object id="17" name="TileData" x="512" y="176" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;ResearchWing.1&quot;"/>
+   </properties>
+  </object>
+  <object id="18" name="TileData" x="16" y="192" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;ResearchWing.2&quot;"/>
+   </properties>
+  </object>
+  <object id="19" name="TileData" x="160" y="192" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;ResearchWing.5&quot;"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="5" name="Front" width="37" height="17">
+  <data encoding="base64" compression="zlib">
+   eJxjYBheQAuNr0MFuVEwCmgBQGkunxVVDJkPYjMyQujBkh6lgW5xYWJgcGVCFV8ExIuB2BKIlwDxcirIIYMLwHC4ysLAEMIC4TsjhZM1K3Y9MBBJAzkfRgS7BOimUhbcalvYIHF4ERhml5gQcQyjYeLIYoTkTLGkC2E8biAWbMdjBjlyXUzYxWHgJtAftxnxq6E2eEHATSCQwEF7dyADZwJpGF0tKK8cpSJeBsXoeRMmvhgqhs1edH30BMsGyN7BDABKWDpl
+  </data>
+ </layer>
+ <objectgroup id="6" name="Front"/>
+</map>

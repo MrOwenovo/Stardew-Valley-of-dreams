@@ -1,0 +1,152 @@
+{
+    "Changes": [
+        {
+            "LogName": "Edit NPC display names",
+            "Action": "EditData",
+            "Target": "Data/NPCDispositions",
+            "Fields": {
+                "Curator": {
+                    11: "館長"
+                },
+                "Goldie": {
+                    11: "ゴールディ"
+                }
+            }
+        },
+        {
+            "LogName": "Curator Japanese Dialogue",
+            "Target": "Characters/Dialogue/Curator",
+            "Action": "EditData",
+            "Entries": {
+                "Mon": "お元気ですか？町ではうまくいってますかな。^お元気ですか？町ではうまくいってますかな。",
+                "Tue": "いいタイミングですね！今ちょうどお茶をいれていた所です。一杯どうです？ [614]$3",
+                "Wed": "そういえば旧友のウィリーは元気にしてますか？今度お会いしたら、おいぼれヘンリーがよろしくと言っていたと伝えておいてください！",
+                "Thu": "こんにちは！^こんにちはお嬢さん#$b#あなたが当プロジェクトに協力していただける事にとても感激しています。$1",
+                "Fri": "%館長は新聞を読んでいる。#$b#やぁ、どうもお兄さん。^やぁ、どうもお嬢さん。#$b#最新のニュースをお伝えしましょう。セルリアン海岸で人魚が目撃されているそうですがご存じですか？$3",
+                "Sat": "私も若い頃は釣りの腕前はかなりのものだったんですよ。$3#$b#それはもう沢山の大物を釣り上げたものです！#$b#それについては何度も言ってましたか！$1",
+                "Sun": "かわいいゴールディに「こんにちは」と挨拶を欠かさないでください。彼女はかまってもらうのが大好きなんです。#$b#金魚はなんと43年も長生きして、そして記憶力がとても良い事を知っていましたか？$1"
+            }
+        },
+        {
+            "LogName": "Goldie Japanese Dialogue",
+            "Target": "Characters/Dialogue/Goldie",
+            "Action": "EditData",
+            "Entries": {
+                "Mon": "...$0#$b#(ゴールディはあなたの顔を覚えようとしているかのように、あなたをじっと観察しています。)$1",
+                "Tue": "...$2#$b#...!$0#$b#(ゴールディは飾りの水草の後ろに隠れた。)$5",
+                "Wed": "...$2#$b#(ゴールディはぐるぐると泳ぎ回っている。落ち着かないようだ。)$1",
+                "Thu": "...$0#$b#(ゴールディは泳いでガラスに近寄ってあなたに向かってキスをした。)$4",
+                "Fri": "...$3#$b#(ゴールディは水から飛び上がっている。)$0",
+                "Sat": "...$2#$b#(ゴールディはあなたに会えてうれしそうだ。)$3",
+                "Sun": "...$6#$b#(ゴールディは眠っているようだ。)$6"
+            }
+        },
+        {
+            "LogName": "FishMuseum Japanese Events",
+            "Target": "Data/Events/Custom_FishMuseum",
+            "Action": "EditData",
+            "Entries": {
+                "6372001/t 1000 2100": "50s/20 49/Curator 16 46 3 farmer -100 -100 0 Goldie 15 46 0/skippable/pause 500/speak Curator \"さあどうぞ、ゴールディ。新しい住み家はワクワクするだろう？$0\"/pause 500/playSound dropItemInWater/speak Goldie \"...$0#$b#...$1\"/pause 500/emote Goldie 32/pause 500/playSound stoneStep/pause 500/jump Curator 3/emote Curator 28/pause 1500/textAboveHead Curator \"初めてのお客様だね！\"/pause 500/playSound doorOpen/warp farmer 16 52/faceDirection Curator 2/speak Curator \"初めまして、そしてようこそ、スターデュー水族館へ！$4\"/pause 1500/move Curator 3 0 2/move Curator 0 3 2/move farmer 0 -1 0/speak Curator \"あなたがウィリーの話していた農家さんですね！ お会いできて光栄です！$0\"/pause 500/speak Curator \"あなたのご活躍はかねがねお聞きしていますよ、ええ！^あなたのご活躍はかねがねお聞きしていますよ、ええ！$0\"/emote farmer 60/pause 500/speak Curator \"ご協力していただけると伺っていますが、どうでしょうか？$3\"/emote farmer 8/pause 500/move farmer 0 -2 1 true/move Curator -2 0 2 true/speak Curator \"ご覧の通り、現状では展示する魚が不足しているんですよ。$2\"/pause 500/faceDirection Curator 0/faceDirection farmer 0/speak Curator \"そこにいるかわいいゴールディを除いてはね。$1\"/pause 500/playSound dropItemInWater/speak Goldie \"...$1#$b#...$2/pause 500/faceDirection Curator 2 true/faceDirection farmer 1 true/speak Curator \"あなたが高名な釣り人だという話を聞いています。$0\"/pause 500/emote Curator 28/speak Curator \"あなたが釣り上げた魚介類のいくつかをこちらに寄付していただけませんでしょうか？$0\"/pause 500/emote farmer 32/pause 500/speak Curator \"こちらのカウンターで寄付ができます。お預かりした魚の設置は速やかに行います。$0#$b#ご心配はいりません、当館は彼らが長生きできるための最先端の技術を持っていますので。#$b#このいとしきゴールディのようにね。$1\"/playSound dropItemInWater/speak Goldie \"...$2#$b#...$3\"/pause 500/emote Goldie 20/pause 500/emote farmer 56/speak Curator \"すばらしい！ありがとうございます！$4#$b#こちらで展示予定のすべての魚のカタログを用意しておきます。$0\"/pause 1500/pause 500/faceDirection farmer 2/move farmer 0 1 2/textAboveHead Curator \"あとはそうですね！\"/pause 500/faceDirection farmer 1/pause 500/emote farmer 8/pause 500/speak Curator \"入口の潜水艦を見ましたか？あれは当館のギフトショップなんですよ！$0#$b#今はまだ在庫は少ないですが、展示物が揃い客様が増えるつれて商品も充実していきますよ！$1\"/pause 500/emote farmer 32/pause 1000/end",
+                "6372002/t 1000 2100/Hn AquariumCompleted": "junimoStarSong/20 49/Marnie -100 -100 2 Marlon -100 -100 2 Emily -100 -100 0 Harvey -100 -100 0 Alex -100 -100 0 Wizard -100 -100 2 Shane 16 33 2 Harvey -100 -100 0 Emily -100 -100 0 Haley -100 -100 0 Maru -100 -100 0 Governor 26 29 2 Krobus -100 -100 2 Penny -100 -100 0 Jodi 17 35 2 Jas 17 33 0 Vincent 18 35 1 Willy 18 29 2 Lewis 22 29 2 Dwarf 15 19 3 Sandy 34 20 0 Sebastian 34 30 0 Sam 35 30 0 Elliott 23 33 0 Abigail 25 32 3 Leah 7 30 0 Curator 20 30 2 farmer -100 -100 0/broadcastEvent/addConversationTopic AquariumCompletedCT 7/pause 500/playSound doorOpen/warp farmer 16 52/pause 500/move farmer 0 -3 0/pause 500/faceDirection farmer 3/pause 250/faceDirection farmer 1/pause 250/faceDirection farmer 0/pause 750/fade/viewport -1000 -1000/viewport 17 35/viewport move -2 -1 3000/pause 400/emote Leah 32/pause 250/jump Vincent 8/pause 400/faceDirection Jodi 1/pause 250/emote Vincent 16/pause 1000/fade/viewport -1000 -1000/pause 500/fade/viewport -1000 -1000/viewport 18 18/pause 500/viewport move -2 -2 5000/pause 200/emote Dwarf 32/pause 5500/fade/viewport -1000 -1000/pause 500/viewport 34 22/pause 500/viewport move 0 2 6500/pause 10000/fade/viewport -1000 -1000/pause 500/changeLocation Custom_Slimejack/viewport 22 15/changeSprite Krobus Trenchcoat/warp Krobus 22 13/warp Dwarf -100 -100/warp Sandy -100 -100/pause 1500/faceDirection Krobus 0/pause 500/emote Krobus 32/pause 500/fade/viewport -1000 -1000/pause 500/changeLocation Custom_VerySwamp/viewport 21 19/warp Wizard 21 17/warp Krobus -100 -100/pause 1000/faceDirection Wizard 0/pause 500/emote Wizard 40/pause 1000/fade/viewport -1000 -1000/pause 500/changeLocation Custom_FishBasement/warp Wizard -100 -100/viewport 25 18/pause 2000/fade/viewport -1000 -1000/pause 500/changeToTemporaryMap Custom_BigRoom/viewport 8 9 true/warp Alex 7 9/warp Harvey 9 9/warp Maru 23 9/warp Penny 24 9/warp Haley 36 9/warp Emily 38 9/warp Marnie 51 9/warp Marlon 52 9/pause 500/viewport move 3 0 12500/pause 1500/faceDirection Maru 1/faceDirection Penny 3/emote Maru 32/pause 50/emote Penny 32/pause 50/faceDirection Maru 0/pause 50/faceDirection Penny 0/pause 10000/fade/viewport -1000 -1000/pause 500/changeLocation Custom_FishMuseum/viewport 20 33/warp farmer 20 32/warp Sandy 34 20/warp Dwarf 15 19/pause 1500/jump Curator 5/pause 1000/playSound crystal/pause 250/playSound crystal/textAboveHead Curator \"みなさん！\"/pause 500/advancedMove Sandy false -4 0 0 3 -6 0 0 5/advancedMove Leah false 2 0 0 4 5 0/advancedMove Sebastian false 0 2 -8 0 0 -1/advancedMove Sam false 0 2 -9 0 0 1/faceDirection Elliott 3 true/faceDirection Shane 1 true/faceDirection Vincent 0 true/faceDirection Jodi 0 true/faceDirection Jas 1 true/faceDirection Abigail 3 true/pause 6000/stopAdvancedMoves/showFrame Leah 4/showFrame Sebastian 12/showFrame Sam 12/advancedMove Sandy false -1 0 0 5/pause 3000/stopAdvancedMoves/showFrame Sandy 0/speak Curator \"(ゴホン) どうも…$0#$b#まず、この式典におこしくださった皆さんに感謝したいと思います。$1#$b#私がこの水族館をオープンした時、私とゴールディだけでした。$0\"/pause 500/speak Curator \"しかし私は@さんに出会えました。当館の発展にはなにより彼の助けがあった事が欠かせません！^しかし私は@さんに出会えました。当館の発展にはなにより彼女の助けがあった事が欠かせません！$1\"/pause 500/jump Curator 5/pause 500/speak Curator \"そのおかげで私たちの水族館のコレクションが完成したのです！$0#$b#これはすべてあなたのおかげです、@。なぜなら、今日私たちが見ることができる展示はすべて@さんの寄付があったからなのです。$1\"/pause 250/textAboveHead Willy \"いいぞ！\"/pause 250/emote Abigail 32/pause 100/emote Elliott 56/pause 100/textAboveHead Governor \"よくやった！\"/pause 1500/speak Curator \"@、この偉業はなによりあなたが居なければなしえなかったでしょう。^@、この偉業はなによりあなたが居なければなしえなかったでしょう。$0#$b#こうやってこの賞を送れる事をとても誇りに思います！$1\"/pause 500/jump farmer 5/pause 500/speak Curator \"「スターディー水族館トロフィー」です、おめでとうございます！^「スターディー水族館トロフィー」です、おめでとうございます！$4\"/move farmer 0 -1 0/faceDirection farmer 2/pause 250/showFrame 57/pause 100/GiveAquariumTrophy1/null/GiveAquariumTrophy2/null/pause 2000/end"
+            }
+        },
+        {
+            "LogName": "FishMuseum Special Events",
+            "Action": "EditData",
+            "Target": "Data/Events/Custom_FishMuseum",
+            "Entries": {
+            "6372003/t 1000 2100/i {{spacechase0.JsonAssets/ObjectId:Razor Trout}}": "50s/20 49/Curator 15 47 2 farmer -100 -100 0 Goldie 15 46 0/skippable/pause 500/playSound stoneStep/playSound doorOpen/warp farmer 16 52/speak Curator \"あぁ@さん、こんにちは！$0\"/pause 500/move farmer 0 -3 0/pause 500/move Curator 1 0 2/speak Curator \"今日はどういった魚を寄付していただけるんでしょう？$1\"/pause 500/showFrame farmer 15/pause 200/playSound fishSlap/addObject 16 47 {{spacechase0.JsonAssets/ObjectId:Razor Trout}} 1/pause 100/showFrame farmer 12/pause 100/faceDirection farmer 3/move farmer -1 0 0/pause 200/jump Curator 4/pause 100/faceDirection farmer 1/pause 200/emote Curator 16/pause 500/move Curator -1 0 2 true/faceDirection farmer 0/speak Curator \"あぁ、これはよくないですね！$6^あぁ、これはよくないですね！$6\"/pause 500/emote farmer 8/pause 500/speak Curator \"見た事があります、カミソリウオですね。$2#$b#これはいわゆる外来種でして…$5\"/pause 500/emote farmer 28/pause 500/speak Curator \"他の魚を食べてしまうんです！$0\"/pause 200/jump farmer 5/pause 200/speak Goldie \"...$0#$b#(ゴールディが怖がっている)$7\"/pause 500/emote Goldie 16/pause 500/speak Curator \"水族館という場所はそういった生き物を見せるための所ではないと思っています…$2#$b#できればお引き取りいただきたい。$0\"/move farmer 1 0 0/pause 500/showFrame farmer 15/pause 200/removeSprite 16 47/playSound pickUpItem/pause 200/showFrame farmer 12/pause 500/speak Curator \"お気になさらずに。あなたご自身には悪気はなかったんです。^お気になさらずに。あなたご自身には悪気はなかったんです。$0\"/pause 500/emote farmer 60/pause 1000/end"
+                        },
+            "When": {
+                "HasMod": "spacechase0.JsonAssets", 
+                "HasMod": "FlashShifter.JA.SVE",
+                "HasMod |contains=Hana.GenderNeutralityMod": false
+                    }
+        },
+        {
+            "LogName": "Willy Japanese Legendary Fish Conversation Topics",
+            "Target": "Characters/Dialogue/Willy",
+            "Action": "EditData",
+            "Entries": {
+                "AquariumDonated:Legend": "あのレジェンドって魚はすげーもんだな。$0#$b#この前水族館で見てきたんだよ！$1",
+                "AquariumDonated:Crimsonfish": "水族館のクリムゾンフィッシュは見たかい？$0#$b#館長から教えてもらったんだが、オレの店の隣の桟橋で釣れたもんなんだそうだ！$1",
+                "AquariumDonated:Angler": "水族館にいるツリビトアンコウはこのペリカンタウンで釣れたんだそうだよ！$0",
+                "AquariumDonated:MutantCarp": "水族館のあのミュータントゴイはまるでバケモンだな、見た事あるかい？$0",
+                "AquariumDonated:Glacierfish": "最近、水族館には行ったかい？$0#$b#展示されてるアイスフィッシュを見てきたんだが、まぁーキレイだったよ！$1",
+                "AquariumDonated:Pufferchick": "水族館の地下室にしのび込んでニワトリフグを見に行ってきたんだよ。$0#$b#あれは確かに変わった生き物だな。$0",
+                "AquariumCompletedCT": "水族館の展示物がすべて集まったんだって聞いたかい？$0#$b#すごい事だな！$1"
+            }
+        },
+        // 1.1.0
+        {   
+            "LogName": "Abigail Fish Conversation Topics",
+            "Target": "Characters/Dialogue/Abigail",
+            "Action": "EditData",
+            "Entries": {
+                "AquariumDonated:Pufferfish": "水族館のフグを見たことある？$0#$b#わたし大好きなのよね！$1",
+            }
+        },
+        {   
+            "LogName": "Penny Fish Conversation Topics",
+            "Target": "Characters/Dialogue/Penny",
+            "Action": "EditData",
+            "Entries": {
+                "AquariumDonated:Sandfish": "この前ジャスとヴィンセントを水族館に連れて行ったの。$0#$b#子供たちにとって良い学習遠足だったわ。私はスナゴチが好きになっちゃった。とってもかわいかったわ！$1",
+            }
+        },
+        {   
+            "LogName": "Sebastian Fish Conversation Topics",
+            "Target": "Characters/Dialogue/Sebastian",
+            "Action": "EditData",
+            "Entries": {
+                "AquariumDonated:Frog": "最近水族館に行った事ある？$0#$b#水槽にカエルがいたんだけど、さみしそうだったから飼ってたカエルを1匹入れてあげたんだ…$7#$b#きっと友だちになれたよね。$1",
+                },
+            "When": {
+                "HasMod": "FlashShifter.JA.SVE"
+            }
+        },
+        {   
+            "LogName": "Wizard Fish Conversation Topics",
+            "Target": "Characters/Dialogue/Wizard",
+            "Action": "EditData",
+            "Entries": {
+                "AquariumDonated:SuperCucumber": "水族館にスーパーナマコが展示されているのを見た。$0#$b#普通のナマコの亜種だとは思うが、何か奇怪な性質を持っている様に感じるのだ…$0#$b#%魔術師は考え込んでいるようだ。",
+            }
+        },
+        // 1.3.0  
+        {
+            "LogName": "MNF Koi Room Japanese Events",
+            "Target": "Data/Events/Custom_MNFKoiRoom",
+            "Action": "EditData",
+            "Entries":{
+                "6372005/t 1000 2100/Hn AquariumDonated:La/Hl AquariumDonated:Tui/k 6372006": "SunRoom/13 31/Curator 16 21 1 farmer -100 -100 0 Wizard -100 -100 0/skippable/animate Curator false true 300 28 29 30 31 30 29 30 31 30 29 28 28 28 28/pause 500/playSound doorOpen/warp farmer 13 37/pause 500/move farmer 0 -8 0 true/viewport move 0 -1 4000/pause 4000/faceDirection farmer 3/pause 400/faceDirection farmer 1/pause 400/faceDirection farmer 2/pause 400/emote farmer 32/pause 500/move farmer 0 -8 1 true/viewport move 0 -1 4000/pause 4000/playSound dwop/pause 500/stopAnimation Curator 3/warp Curator 15 21 3/pause 100/faceDirection Curator 3/showFrame Curator 12/pause 500/speak Curator \"おや、@！ お越しになっていたとは気付きませんでした。$0#$b#おいしいお茶を楽しんでいたところです。$1\"/pause 750/speak Curator \"あぁ…仕事が残っているんでした。$0#$b#実は、この前いただいた寄付を展示しようとしていたところです。$0#$b#どうです、見て行かれますか？$3\"/pause 250/emote farmer 32/pause 500/speak Curator \"すばらしい。こちらです…$0\"/pause 250/viewport move 0 -1 4000/move Curator -1 0 3 true/move farmer -1 0 1 true/move Curator 0 -3 3/move farmer 0 -3 1/pause 500/stopMusic/pause 2000/speak Curator \"この魔法陣を通って、ある場所にテレポートする必要があります。$0\"/pause 500/emote farmer 28/pause 500/speak Curator \"ご心配なく、完璧に安全ですから！$1#$b#まず私が先に行きますので、その後について来てください。$0\"/pause 500/move Curator -1 0 3/screenflash 2/warp Curator -100 -100 0/playSound wand/pause 250/jump farmer 9/pause 250/emote farmer 16/pause 750/emote farmer 40/pause 1000/move farmer 1 0 1/screenflash 2/warp farmer -100 -100/playSound wand/pause 1000/fade/viewport -1000 -1000/pause 500/changeLocation Custom_SpiritOasis/viewport 24 23/warp Curator 22 22 1/faceDirection Curator 1/pause 250/warp farmer 24 22 2/playSound wand/pause 250/playMusic EmilyDream/jump Curator 7/emote farmer 16/pause 500/faceDirection farmer 3/speak Curator \"ほら、なんともなかったでしょう？$0\"/pause 500/quickquestion #怖かったです！#何が起こったんだ！？#そうですね…#ええ、なんとも無かったですね。(break)speak Curator \"おやまぁ、無事ですよ。$0\"(break)speak Curator \"新しい場所に多レポートしたんですよ。$0\"(break)speak Curator \"よろしい。$0\"(break)speak Curator \"ふっふっふ、その調子です！$1\"/pause 500/speak Curator \"あなたが来るまでの間に作業を済ませておきました。$0#$b#どうぞご覧ください。$0\"/pause 250/viewport move 0 1 2000/move Curator 1 0 1 true/move farmer 1 0 3 true/pause 250/move Curator 0 1 2/move farmer 0 2 2/pause 500/speak Curator \"この「ラー」は実に美しい生き物です…$0\"/pause 500/stopMusic/pause 500/playSound thunder_small/ambientLight 0 255 255/jump Curator 7 true/jump farmer 7 true/showFrame farmer 94/pause 250/showFrame farmer 0/pause 250/faceDirection Curator 1/faceDirection farmer 3/screenflash 2/showFrame Wizard 16/warp Wizard 24 22/faceDirection Curator 0 true/faceDirection farmer 0 true/jump Curator 7 true/jump farmer 7 true/pause 250/showFrame Wizard 0/pause 500/speak Wizard \"何をしている！？$1\"/pause 500/emote farmer 28 true/emote Curator 28 true/pause 500/speak Wizard \"この魚が海の精霊である事を知らんのか！？$0\"/pause 500/quickquestion #なにごと！？#何もしてないよ！#海の精霊？それはどういう意味？(break)speak Wizard \"お主は自分が何を扱ってるのかさえ分かっていない…$0\"(break)speak Wizard \"もう結構！$0\"(break)speak Wizard \"歴史の授業をする暇は無い…$0\"/pause 500/speak Wizard \"お主は月の精霊と海の精霊を再び結び付けなければいけない。$0\"/pause 250/emote farmer 8/showFrame Curator 20/pause 50/showFrame Curator 21/pause 50/animate Curator false true 500 22 23/pause 500/speak Curator \"私は何をしてしまったのでしょうか…$7\"/pause 250/speak Wizard \"これまでは月と海の精霊はまだつながっていたのだ。$0#$b#この魚を発見した場所に戻り、月の精霊を見付けるのだ。$0#$b#そしてここに戻り海の精霊と再び結び付けるのだ！$0\"/pause 500/question fork0 \"...#その魚は見付けられなかった、どこを探せばいいか分からない！#秘密の森の小さな池の事ですね？\"/fork 6372005_LaHint/pause 500/speak Wizard \"秘密の森？無論の事、お主は再びそこへ赴かなければならない！$1#$b#月の精霊を見付け、ここに納めに戻って来るのだ。私はその間ここで調和を保つための出来る限りの事をしておく。$0\"/pause 500/stopAnimation Curator 0/pause 250/showFrame Wizard 16/pause 250/screenflash 2/playSound wand/warp Wizard -100 -100/pause 500/faceDirection Curator 1 true/faceDirection farmer 3 true/pause 250/emote Curator 60 true/emote farmer 60/pause 1000/end",
+                "6372006/t 1000 2100/Hn AquariumDonated:Tui/Hl AquariumDonated:La/k 6372005": "SunRoom/13 31/Curator 16 21 1 farmer -100 -100 0 Wizard -100 -100 0/skippable/animate Curator false true 300 28 29 30 31 30 29 30 31 30 29 28 28 28 28/pause 500/playSound doorOpen/warp farmer 13 37/pause 500/move farmer 0 -8 0 true/viewport move 0 -1 4000/pause 4000/faceDirection farmer 3/pause 400/faceDirection farmer 1/pause 400/faceDirection farmer 2/pause 400/emote farmer 32/pause 500/move farmer 0 -8 1 true/viewport move 0 -1 4000/pause 4000/playSound dwop/pause 500/stopAnimation Curator 3/warp Curator 15 21 3/pause 100/faceDirection Curator 3/showFrame Curator 12/pause 500/speak Curator \"おや、@！ お越しになっていたとは気付きませんでした。$0#$b#おいしいお茶を楽しんでいたところです。$1\"/pause 750/speak Curator \"あぁ…仕事が残っているんでした。$0#$b#実は、この前いただいた寄付を展示しようとしていたところです。$0#$b#どうです、見て行かれますか？$3\"/pause 250/emote farmer 32/pause 500/speak Curator \"すばらしい。こちらです…$0\"/pause 250/viewport move 0 -1 4000/move Curator -1 0 3 true/move farmer -1 0 1 true/move Curator 0 -3 3/move farmer 0 -3 1/pause 500/stopMusic/pause 2000/speak Curator \"この魔法陣を通って、ある場所にテレポートする必要があります。$0\"/pause 500/emote farmer 28/pause 500/speak Curator \"ご心配なく、完璧に安全ですから！$1#$b#まず私が先に行きますので、その後について来てください。$0\"/pause 500/move Curator -1 0 3/screenflash 2/warp Curator -100 -100 0/playSound wand/pause 250/jump farmer 9/pause 250/emote farmer 16/pause 750/emote farmer 40/pause 1000/move farmer 1 0 1/screenflash 2/warp farmer -100 -100/playSound wand/pause 1000/fade/viewport -1000 -1000/pause 500/changeLocation Custom_SpiritOasis/viewport 24 23/warp Curator 22 22 1/faceDirection Curator 1/pause 250/warp farmer 24 22 2/playSound wand/pause 250/playMusic EmilyDream/jump Curator 7/emote farmer 16/pause 500/faceDirection farmer 3/speak Curator \"ほら、なんともなかったでしょう？$0\"/pause 500/quickquestion #怖かったです！#何が起こったんだ！？#そうですね…#ええ、なんとも無かったですね。(break)speak Curator \"おやまぁ、無事ですよ。$0\"(break)speak Curator \"新しい場所に多レポートしたんですよ。$0\"(break)speak Curator \"よろしい。$0\"(break)speak Curator \"ふっふっふ、その調子です！$1\"/pause 500/speak Curator \"あなたが来るまでの間に作業を済ませておきました。$0#$b#どうぞご覧ください。$0\"/pause 250/viewport move 0 1 2000/move Curator 1 0 1 true/move farmer 1 0 3 true/pause 250/move Curator 0 1 2/move farmer 0 2 2/pause 500/speak Curator \"この「トゥイ」は実に美しい生き物です…$0\"/pause 500/stopMusic/pause 500/playSound thunder_small/ambientLight 0 255 255/jump Curator 7 true/jump farmer 7 true/showFrame farmer 94/pause 250/showFrame farmer 0/pause 250/faceDirection Curator 1/faceDirection farmer 3/screenflash 2/showFrame Wizard 16/warp Wizard 24 22/faceDirection Curator 0 true/faceDirection farmer 0 true/jump Curator 7 true/jump farmer 7 true/pause 250/showFrame Wizard 0/pause 500/speak Wizard \"何をしている！？$1\"/pause 500/emote farmer 28 true/emote Curator 28 true/pause 500/speak Wizard \"この魚が月の精霊である事を知らんのか！？$0\"/pause 500/quickquestion #なにごと！？#何もしてないよ！#月の精霊？それはどういう意味？(break)speak Wizard \"お主は自分が何を扱ってるのかさえ分かっていない…$0\"(break)speak Wizard \"もう結構！$0\"(break)speak Wizard \"歴史の授業をする暇は無い…$0\"/pause 500/speak Wizard \"お主は月の精霊と海の精霊を再び結び付けなければいけない。$0\"/pause 250/emote farmer 8/showFrame Curator 20/pause 50/showFrame Curator 21/pause 50/animate Curator false true 500 22 23/pause 500/speak Curator \"私は何をしてしまったのでしょうか…$7\"/pause 250/speak Wizard \"これまでは月と海の精霊はまだつながっていたのだ。$0#$b#この魚を発見した場所に戻り、海の精霊を見付けるのだ。$0#$b#そしてここに戻り月の精霊と再び結び付けるのだ！$0\"/pause 500/question fork0 \"...#その魚は見付けられなかった、どこを探せばいいか分からない！#秘密の森の小さな池の事ですね？\"/fork 6372005_LaHint/pause 500/speak Wizard \"秘密の森？無論の事、お主は再びそこへ赴かなければならない！$1#$b#海の精霊を見付け、ここに納めに戻って来るのだ。私はその間ここで調和を保つための出来る限りの事をしておく。$0\"/pause 500/stopAnimation Curator 0/pause 250/showFrame Wizard 16/pause 250/screenflash 2/playSound wand/warp Wizard -100 -100/pause 500/faceDirection Curator 1 true/faceDirection farmer 3 true/pause 250/emote Curator 60 true/emote farmer 60/pause 1000/end",
+                "6372007/t 1000 2100/Hn AquariumDonated:Tui/Hn AquariumDonated:La": "SunRoom/13 31/Curator 13 21 1 farmer -100 -100 0 Wizard -100 -100 0/skippable/pause 500/playSound doorOpen/warp farmer 13 37/pause 500/move farmer 0 -7 0 true/viewport move 0 -1 2000/pause 500/move Curator 0 1 2/speak Curator \"戻られましたか@さん！$0\"/pause 500/speak Curator \"魔術師があちらの方で私たちを待っています。彼を待たせてはいけません。$0\"/pause 250/jump farmer 5/move Curator 0 -3 2 true/move farmer 0 -3 2 true/viewport move 0 -1 2000 true/stopMusic/fade/viewport -1000 -1000/playSound wand/pause 500/warp Curator -100 -100 0/pause 250/playSound wand/warp farmer -100 -100 0/pause 500/changeLocation Custom_SpiritOasis/ambientLight 0 255 255/viewport 24 25/warp Wizard 24 24 2/animate Wizard false true 500 16 18 18 20 20 18 18 16 16 16 16/playMusic WizardSong/pause 1000/playSound thunder/pause 5000/playSound thunder/pause 750/playSound thunder/pause 1000/screenflash 2/playSound wand/warp Curator 23 22 2/pause 500/stopAnimation Wizard 8/pause 250/screenflash 2/playSound wand/warp farmer 25 22 2/pause 500/speak Wizard \"来たかご両人。$0\"/pause 500/playSound thunder/speak Wizard \"私はすでにトゥイとラーをこの池で再会させていた。$0#$b#あとは最後の儀式を残すのみだ。$0\"/pause 250/faceDirection farmer 3/faceDirection Curator 1/pause 250/emote farmer 16/emote Curator 16/faceDirection Wizard 0/pause 250/faceDirection farmer 2/faceDirection Curator 2/pause 250/animate Wizard false true 500 16 18 18 20 20 18 18 16 16 16 16/pause 500/playSound thunder/message \"魔術師はトランス状態に入り、聞き取れない呪文をつぶやいている。\"/pause 200/playSound healSound/jump Curator 5/jump farmer 5/pause 100/playSound healSound/stopMusic/ambientLight 0 200 200/pause 500/ambientLight 0 100 100/pause 500/ambientLight 0 0 0/pause 500/stopAnimation Wizard 18/pause 500/playMusic EmilyDream/speak Wizard \"完了した…$0\"/pause 500/faceDirection farmer 3/faceDirection Curator 1/pause 250/emote farmer 40/emote Curator 40/pause 500/faceDirection farmer 2/faceDirection Curator 2/faceDirection Wizard 0/pause 500/speak Wizard \"もしこの二匹の魚が離れている状態がこれ以上続いていたら、相当な大惨事が引き起こされた事だろう！$0\"/pause 500/emote farmer 28/emote Curator 28/pause 500/speak Wizard \"このエリアの保全はお主に任せるとしよう。$0\"/pause 500/showFrame Wizard 0/pause 250/showFrame Wizard 16/pause 500/screenflash 2/playSound wand/warp Wizard -100 -100/pause 500/faceDirection farmer 3/faceDirection Curator 1/pause 500/speak Curator \"何もかもが衝撃的でした…$0\"/pause 500/speak Curator \"この場所を保つために、あなたに協力をお願いしてもいいでしょうか？^この場所を保つために、あなたに協力をお願いしてもいいでしょうか？$0\"/pause 500/quickquestion #ええ、もちろんです。#いや、館長がやってくださいよ。(break)emote Curator 32(break)emote Curator 60/pause 1000/end"
+            },
+            "When": {
+                "HasMod |contains=Hana.GenderNeutralityMod": false
+                    }
+        },      
+        {
+            "LogName": "MNF Room Japanese Events",
+            "Target": "Data/Events/Custom_MNFRoom",
+            "Action": "EditData",
+            "Entries": {
+                "6372004/t 1000 2100/Hn AquariumDonated:SmallMantaray": "EmilyTheme/31 54/Curator 33 52 0 farmer -100 -100 0/skippable/pause 500/playSound doorOpen/warp farmer 31 59/pause 500/move farmer 0 -3 0/pause 300/faceDirection Curator 2/speak Curator \"あぁ@さん！ごきげんいかがですか？$0\"/pause 250/move farmer 0 -2 1/move Curator 0 2 3/pause 250/speak Curator \"私はいまちょうど新しい展示の一つを確認するところです。ご一緒しませんか？$0\"/pause 250/emote farmer 32/pause 500/speak Curator \"すばらしい！こちらです。$1\"/pause 250/move Curator 3 0 0 true/move farmer 3 0 0 true/pause 250/fade/viewport -1000 -1000/warp Curator 30 40 0/warp farmer 33 40 0/pause 500/viewport 31 40/pause 500/speak Curator \"このマンタの大きさを見て下さい。実に雄大な生き物と思いませんか？$0#$b#私はこの巨大な水槽をこのために作らせたんです。$1\"/pause 500/faceDirection farmer 3 true/emote farmer 16/pause 250/faceDirection Curator 1 true/speak Curator \"ところで教えてください…^ところで教えてください…$0#$b#これをあなたが捕まえたんですか？$3\"/pause 250/question fork0 \"...#はい、釣り竿で釣ったんですよ！#いや、自分ではないです…\"/fork 6372004_MantaYes/pause 500/speak Curator \"おやそれは残念…$0#$b#捕まえた方が一体どうやってこのマンタを捕まえたのか、話をうかがいたかったのですが…$4\"/pause 250/faceDirection Curator 0 true/emote farmer 40/pause 100/faceDirection farmer 0/pause 500/speak Curator \"ここで順調に育っているようです。$0\"/pause 250/faceDirection Curator 1 true/pause 50/faceDirection farmer 3 true/pause 500/speak Curator \"もう戻らないと。水族館鑑賞を楽しんでいってください！$1\"/pause 250/move Curator -6 0 3 true/faceDirection farmer 0/emote farmer 32/pause 1000/end",
+                "6372004_MantaYes": "pause 500/jump Curator 7/pause 250/speak Curator \"釣り竿でですって！？$6#$b#釣り竿でこんなに大きな怪物が釣れるなんて…$2\"/pause 500/speak Curator \"ウィリーの目に狂いはなかったようですね…$0#$b#あなたは偉大なアングラーです！$4\"/pause 100/jump farmer 5/pause 500/emote farmer 20/pause 500/faceDirection Curator 0 true/pause 100/faceDirection farmer 0/pause 500/speak Curator \"ここは順調に育っているようです。$0\"/pause 250/faceDirection Curator 1 true/pause 50/faceDirection farmer 3 true/pause 500/speak Curator \"もう戻らないと。水族館鑑賞を楽しんでいってください！$1\"/pause 250/move Curator -6 0 3 true/faceDirection farmer 0/emote farmer 32/pause 1000/end"
+            },
+            "When": {
+                "HasMod |contains=Hana.GenderNeutralityMod": false
+                    }
+        },
+        {
+            "LogName": "Spirit Oasis Japanese Events",
+            "Target": "Data/Events/Custom_SpiritOasis",
+            "Action": "EditData",
+            "Entries": {
+                "6372005_LaHint": "pause 500/stopAnimation Curator 0/pause 250/jump Curator 7/pause 250/faceDirection farmer 3 true/faceDirection Curator 1/pause 250/speak Curator \"この魚がどこのものか知っていますよ！$6\"/pause 500/emote farmer 8 true/emote Wizard 8 true/pause 250/speak Curator \"「秘密の森」という場所だそうです。これを寄贈してくれた方がそうおっしゃっていましたが…$2\"/pause 500/emote Wizard 40/pause 500/faceDirection farmer 0 true/faceDirection Curator 0 true/pause 500/speak Wizard \"秘密の森？なるほどその場所は知っている…。谷にある私の住まいの塔のすぐ北側にある隠された場所だ。$0#$b#再びそこに赴くのだ！月の精霊を見付け、ここに持って来るのだ。私はその間ここで調和を保つための出来る限りの事をしておく。$0\"/pause 500/showFrame Wizard 16/pause 250/screenflash 2/warp Wizard -100 -100/playSound wand/pause 500/faceDirection Curator 1 true/faceDirection farmer 3 true/pause 250/emote Curator 60 true/emote farmer 60/pause 1000/end",
+                "6372006_TuiHint": "pause 500/stopAnimation Curator 0/pause 250/jump Curator 7/pause 250/faceDirection farmer 3 true/faceDirection Curator 1/pause 250/speak Curator \"この魚がどこのものか知っていますよ！$6\"/pause 500/emote farmer 8 true/emote Wizard 8 true/pause 250/speak Curator \"「秘密の森」という場所だそうです。これを寄贈してくれた方がそうおっしゃっていましたが…$2\"/pause 500/emote Wizard 40/pause 500/faceDirection farmer 0 true/faceDirection Curator 0 true/pause 500/speak Wizard \"秘密の森？なるほどその場所は知っている…。谷にある私の住まいの塔のすぐ北側にある隠された場所だ。$0#$b#再びそこに赴くのだ！海の精霊を見付け、ここに持って来るのだ。私はその間ここで調和を保つための出来る限りの事をしておく。$0\"/pause 500/showFrame Wizard 16/pause 250/screenflash 2/warp Wizard -100 -100/playSound wand/pause 500/faceDirection Curator 1 true/faceDirection farmer 3 true/pause 250/emote Curator 60 true/emote farmer 60/pause 1000/end",
+            }
+        },
+    ]
+}

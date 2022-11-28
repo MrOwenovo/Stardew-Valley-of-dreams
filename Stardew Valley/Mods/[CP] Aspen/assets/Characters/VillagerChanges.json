@@ -1,0 +1,88 @@
+{
+    "Changes": [
+        //Schedule changes ------------------------------------------------------------------------------
+	    //Leah Year 1 meets with Aspen at Saloon on Mondays
+        {
+            "Action": "EditData",
+            "Target": "Characters/schedules/Leah",
+            "Entries": {
+                "Mon": "900 LeahHouse 3 7 3 leah_sculpt/1100 SeedShop 11 23 0 square_3_1_0/1700 Saloon 2 20 1/2200 LeahHouse 13 10 2/2400 LeahHouse 2 4 3 leah_sleep",
+                "Sun": "900 LeahHouse 3 7 3 leah_sculpt/1300 Forest 68 50 2/1500 Forest 33 25 2 leah_draw/1830 Forest 21 29 1/1930 LeahHouse 8 5 0/2200 LeahHouse 13 10 2/2400 LeahHouse 2 4 3 leah_sleep"
+            },
+            "When": {
+                "DaysPlayed |contains={{Range:0, 30}}": "true" // railroad blocked
+            }
+        },
+        
+        //Pierre Year 1 Aspen buys grocieries on Monday, stays a little later
+        {
+            "Action": "EditData",
+            "Target": "Characters/schedules/Pierre",
+            "Entries": {
+                "Mon": "700 SeedShop 10 20 0/830 SeedShop 4 17 2/1730 SeedShop 11 20 0/1900 SeedShop 37 5 0/2100 SeedShop 20 5 0/2300 SeedShop 24 4 1 pierre_sleep",
+            },
+            "When": {
+                "DaysPlayed |contains={{Range:0, 30}}": "true" // railroad blocked
+            }
+        },
+        
+        //Gus Year 1 Aspen buys Groceries so Gus stays at Saloon on Mondays until she leaves
+        {
+            "Action": "EditData",
+            "Target": "Characters/schedules/Gus",
+            "Entries": {
+                "Mon": "800 Saloon 16 4 2 gus_sit_down/1100 Saloon 10 18 2/1830 Saloon 12 18 0/1850 Saloon 10 18 2/1940 Saloon 12 18 0/1950 Saloon 10 18 2/2030 Saloon 12 18 0/2040 Saloon 10 18 2/2400 Saloon 23 4 1 gus_sleep",
+            },
+            "When": {
+                "DaysPlayed |contains={{Range:0, 30}}": "true" // railroad blocked
+            }
+        },
+
+        //Other villager dialogue changes ------------------------------------------------------------
+	    //Minor change to Jas's dialogue in Spring
+        {
+            "LogName": "Jas's Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Jas",
+            "Entries": {
+                "Mon": "哦...你是在找玛妮阿姨吗？$u#$e#自从阿斯彭被困在这里以后，她来的次数多了。我想玛尔妮阿姨很感激她的到来!$1",
+            },
+            "When": {
+                "DaysPlayed |contains={{Range:0, 30}}": "true" // railroad blocked
+            }
+        },
+        
+        //Additions to Gus's dialogue
+        {
+            "LogName": "Gus's Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Gus",
+            "Entries": {
+                "aspenSaloonEventText": "你看到酒吧角落里的那尊雕像了吗?这可能是我收到的最好的礼物之一!$h",
+            }
+        },
+        
+        //Changes to Gus's dialogue
+        {
+            "LogName": "Gus's Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Gus",
+            "Entries": {
+                "Mon": "有阿斯彭在身边真是太方便了。她甚至主动提出今天去买杂货!$h",
+            },
+            "When": {
+                "DaysPlayed |contains={{Range:0, 30}}": "true" // railroad blocked
+            }
+        },
+        
+        //Additions to Leah's dialogue
+        {
+            "LogName": "Leah's Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Leah",
+            "Entries": {
+                "aspenSaloonEventText": "你看到我的小艺术项目了吗?这都是阿斯彭的主意，但我非常愿意帮忙!$h",
+            }
+        },
+    ]
+}

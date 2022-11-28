@@ -1,0 +1,886 @@
+{
+    "Format": "1.19.0",
+    "DynamicTokens": [
+    {
+        "Name": "LouvierFromagerie",
+        "Value": ""
+    },
+	],
+	
+   "Changes": [ 
+	
+	//Fall Cheese Shop - Saturdays - Closed
+	{
+        "LogName": "Louvier Fromagerie- Fall Saturday - Closed Day",
+        "Action": "Load",
+        "Target": "fromagerie_Fall_Closed_Sat",
+        "FromFile": "assets/louvier_fall_closed.png",
+    },
+    {
+        "LogName": "Fromagerie Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/fromagerie_Fall_Closed_Sat.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "6,20",
+                "Season": "fall",
+                "Time": "{{Range: 0600, 0850}}",
+				"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 29,
+            "Y": 60,
+            "Width": 5,
+            "Height": 5
+        },
+
+    },
+	{
+        "LogName": "Louvier Fromagerie- Fall Saturday - Closed Night",
+        "Action": "Load",
+        "Target": "fromagerie_Fall_Closed_Sat",
+        "FromFile": "assets/louvier_fall_closed.png",
+    },
+    {
+        "LogName": "Fromagerie Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/fromagerie_Fall_Closed_Sat.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "6,20",
+                "Season": "fall",
+                "Time": "{{Range: 1810, 2600}}",
+            	"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 29,
+            "Y": 60,
+            "Width": 5,
+            "Height": 5
+        },
+
+    },
+		//Fall Cheese Shop - Sundays - Closed
+	{
+        "LogName": "Louvier Fromagerie- Fall Sunday - Closed Day",
+        "Action": "Load",
+        "Target": "fromagerie_Fall_Closed_Sun",
+        "FromFile": "assets/louvier_fall_closed.png",
+    },
+    {
+        "LogName": "Fromagerie Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/fromagerie_Fall_Closed_Sun.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "7,21",
+                "Season": "fall",
+                "Time": "{{Range: 0600, 0850}}",
+				"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 29,
+            "Y": 60,
+            "Width": 5,
+            "Height": 5
+        },
+
+    },
+	{
+        "LogName": "Louvier Fromagerie- Fall Sunday - Day Close Transition",
+        "Action": "Load",
+        "Target": "fromagerie_Fall_Closed_Sun",
+        "FromFile": "assets/louvier_fall_closed.png",
+    },
+    {
+        "LogName": "Fromagerie Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/fromagerie_Fall_Closed_Sun.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "7,21",
+                "Season": "fall",
+                "Time": "{{Range: 1110, 1120}}",
+            	"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 29,
+            "Y": 60,
+            "Width": 5,
+            "Height": 5
+        },
+
+    },
+	{
+        "LogName": "Louvier Fromagerie- Fall Sunday - Day Close Transition",
+        "Action": "Load",
+        "Target": "fromagerie_Fall_Closed_Sun",
+        "FromFile": "assets/louvier_fall_closed.png",
+    },
+    {
+        "LogName": "Fromagerie Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/fromagerie_Fall_Closed_Sun.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "7,21",
+                "Season": "fall",
+                "Time": "{{Range: 1500, 1510}}",
+            	"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 29,
+            "Y": 60,
+            "Width": 5,
+            "Height": 5
+        },
+    },
+	{
+        "LogName": "Louvier Fromagerie- Fall Sunday - Closed Night",
+        "Action": "Load",
+        "Target": "fromagerie_Fall_Closed_Sun",
+        "FromFile": "assets/louvier_fall_closed.png",
+    },
+    {
+        "LogName": "Fromagerie Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/fromagerie_Fall_Closed_Sun.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "7,21",
+                "Season": "fall",
+                "Time": "{{Range: 1810, 2600}}",
+            	"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 29,
+            "Y": 60,
+            "Width": 5,
+            "Height": 5
+        },
+
+    },
+	//Fall Cheese Shop - Saturdays- Fall
+		{
+        "LogName": "Louvier Fromagerie- Fall Saturday Open",
+        "Action": "Load",
+        "Target": "fromagerie_Fall_Sat",
+        "FromFile": "assets/louvier_fall_amelie.png",
+    },
+    {
+        "LogName": "Fromagerie Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/fromagerie_Fall_Sat.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "6,20",
+                "Season": "fall",
+                "Time": "{{Range: 0900, 1800}}",
+            	"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 29,
+            "Y": 60,
+            "Width": 5,
+            "Height": 5
+        },
+	},
+		
+	//Fall Cheese Shop - Sundays- Fall - Patrice 
+		{
+        "LogName": "Louvier Fromagerie- Fall Sunday Open- Augustin + Amelie",
+        "Action": "Load",
+        "Target": "fromagerie_Fall_Sat",
+        "FromFile": "assets/louvier_fall_amelie.png",
+    },
+    {
+        "LogName": "Fromagerie Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/fromagerie_Fall_Sat.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "7,21",
+                "Season": "fall",
+                "Time": "{{Range: 0900, 1100}}",
+            	"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 29,
+            "Y": 60,
+            "Width": 5,
+            "Height": 5
+        },
+	},
+		{
+        "LogName": "Louvier Fromagerie- Fall Sunday Open- Patrice",
+        "Action": "Load",
+        "Target": "fromagerie_Fall_Sun",
+        "FromFile": "assets/louvier_fall_patrice.png",
+    },
+    {
+        "LogName": "Fromagerie Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/fromagerie_Fall_Sun.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "7,21",
+                "Season": "fall",
+                "Time": "{{Range: 1130, 1450}}",
+            	"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 29,
+            "Y": 60,
+            "Width": 5,
+            "Height": 5
+        },
+	},
+{
+        "LogName": "Louvier Fromagerie- Fall Sunday Open- Augustin + Amelie",
+        "Action": "Load",
+        "Target": "fromagerie_Fall_Sat",
+        "FromFile": "assets/louvier_fall_amelie.png",
+    },
+    {
+        "LogName": "Fromagerie Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/fromagerie_Fall_Sat.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "7,21",
+                "Season": "fall",
+                "Time": "{{Range: 1520, 1800}}",
+            	"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 29,
+            "Y": 60,
+            "Width": 5,
+            "Height": 5
+        },
+	},
+	//Spring Cheese Shop - Saturdays - Closed
+	{
+        "LogName": "Louvier Fromagerie- Spring Saturday - Closed Day",
+        "Action": "Load",
+        "Target": "fromagerie_Closed_Sat_Spring",
+        "FromFile": "assets/louvier_closed.png",
+    },
+    {
+        "LogName": "Fromagerie Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/fromagerie_Closed_Sat_Spring.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "6,20",
+                "Season": "spring",
+                "Time": "{{Range: 0600, 0850}}",
+				"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 29,
+            "Y": 60,
+            "Width": 5,
+            "Height": 5
+        },
+
+    },
+	{
+        "LogName": "Louvier Fromagerie- Spring Saturday - Closed Night",
+        "Action": "Load",
+        "Target": "fromagerie_Closed_Sat_Spring",
+        "FromFile": "assets/louvier_closed.png",
+    },
+    {
+        "LogName": "Fromagerie Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/fromagerie_Closed_Sat_Spring.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "6,20",
+                "Season": "spring",
+                "Time": "{{Range: 1810, 2600}}",
+            	"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 29,
+            "Y": 60,
+            "Width": 5,
+            "Height": 5
+        },
+
+    },
+		//Spring Cheese Shop - Sundays - Closed
+	{
+        "LogName": "Louvier Fromagerie- Spring Sunday - Closed Day",
+        "Action": "Load",
+        "Target": "fromagerie_Closed_Sun_Spring",
+        "FromFile": "assets/louvier_closed.png",
+    },
+    {
+        "LogName": "Fromagerie Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/fromagerie_Closed_Sun_Spring.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "7,21",
+                "Season": "spring",
+                "Time": "{{Range: 0600, 0850}}",
+				"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 29,
+            "Y": 60,
+            "Width": 5,
+            "Height": 5
+        },
+
+    },
+	{
+        "LogName": "Louvier Fromagerie- Spring Sunday - Closed Day",
+        "Action": "Load",
+        "Target": "fromagerie_Closed_Sun_Spring",
+        "FromFile": "assets/louvier_closed.png",
+    },
+    {
+        "LogName": "Fromagerie Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/fromagerie_Closed_Sun_Spring.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "7,21",
+                "Season": "spring",
+                "Time": "{{Range: 1110, 1120}}",
+				"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 29,
+            "Y": 60,
+            "Width": 5,
+            "Height": 5
+        },
+
+    },
+		{
+        "LogName": "Louvier Fromagerie- Spring Sunday - Closed Day",
+        "Action": "Load",
+        "Target": "fromagerie_Closed_Sun_Spring",
+        "FromFile": "assets/louvier_closed.png",
+    },
+    {
+        "LogName": "Fromagerie Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/fromagerie_Closed_Sun_Spring.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "7,21",
+                "Season": "spring",
+                "Time": "{{Range: 1500, 1510}}",
+				"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 29,
+            "Y": 60,
+            "Width": 5,
+            "Height": 5
+        },
+
+    },
+	{
+        "LogName": "Louvier Fromagerie- Spring Sunday - Closed Night",
+        "Action": "Load",
+        "Target": "fromagerie_Closed_Sun_Spring",
+        "FromFile": "assets/louvier_closed.png",
+    },
+    {
+        "LogName": "Fromagerie Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/fromagerie_Closed_Sun_Spring.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "7,21",
+                "Season": "spring",
+                "Time": "{{Range: 1810, 2600}}",
+            	"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 29,
+            "Y": 60,
+            "Width": 5,
+            "Height": 5
+        },
+
+    },
+	//Spring Cheese Shop - Saturdays
+		{
+        "LogName": "Louvier Fromagerie- Spring Saturday Open",
+        "Action": "Load",
+        "Target": "fromagerie_Spring_Sat",
+        "FromFile": "assets/louvier_spring_amelie.png",
+    },
+    {
+        "LogName": "Fromagerie Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/fromagerie_Spring_Sat.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "6,20",
+                "Season": "spring",
+                "Time": "{{Range: 0900, 1800}}",
+            	"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 29,
+            "Y": 60,
+            "Width": 5,
+            "Height": 5
+        },
+	},
+		
+	//Spring Cheese Shop - Sundays
+		{
+        "LogName": "Louvier Fromagerie- Spring Sunday Open- Amelie + Augstin",
+        "Action": "Load",
+        "Target": "fromagerie_Spring_Sat",
+        "FromFile": "assets/louvier_spring_amelie.png",
+    },
+    {
+        "LogName": "Fromagerie Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/fromagerie_Spring_Sat.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "7,21",
+                "Season": "spring",
+                "Time": "{{Range: 0900, 1100}}",
+            	"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 29,
+            "Y": 60,
+            "Width": 5,
+            "Height": 5
+        },
+	},
+		{
+        "LogName": "Louvier Fromagerie- Spring Sunday Open - Patrice",
+        "Action": "Load",
+        "Target": "fromagerie_Spring_Sun",
+        "FromFile": "assets/louvier_spring_patrice.png",
+    },
+    {
+        "LogName": "Fromagerie Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/fromagerie_Spring_Sun.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "7,21",
+                "Season": "spring",
+                "Time": "{{Range: 1130, 1450}}",
+            	"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 29,
+            "Y": 60,
+            "Width": 5,
+            "Height": 5
+        },
+	},
+		{
+        "LogName": "Louvier Fromagerie- Spring Sunday Open - Amelie + Augustin",
+        "Action": "Load",
+        "Target": "fromagerie_Spring_Sat",
+        "FromFile": "assets/louvier_spring_amelie.png",
+    },
+    {
+        "LogName": "Fromagerie Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/fromagerie_Spring_Sat.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "7,21",
+                "Season": "spring",
+                "Time": "{{Range: 1520, 1800}}",
+            	"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 29,
+            "Y": 60,
+            "Width": 5,
+            "Height": 5
+        },
+	},
+	//Summer Cheese Shop - Saturdays - Closed
+	{
+        "LogName": "Louvier Fromagerie- Summer Saturday - Closed Day",
+        "Action": "Load",
+        "Target": "fromagerie_Closed_Sat_Summer",
+        "FromFile": "assets/louvier_closed.png",
+    },
+    {
+        "LogName": "Fromagerie Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/fromagerie_Closed_Sat_Summer.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "6,20",
+                "Season": "summer",
+                "Time": "{{Range: 0600, 0850}}",
+				"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 29,
+            "Y": 60,
+            "Width": 5,
+            "Height": 5
+        },
+
+    },
+	{
+        "LogName": "Louvier Fromagerie- Summer Saturday - Closed Night",
+        "Action": "Load",
+        "Target": "fromagerie_Closed_Sat_Summer",
+        "FromFile": "assets/louvier_closed.png",
+    },
+    {
+        "LogName": "Fromagerie Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/fromagerie_Closed_Sat_Summer.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "6,20",
+                "Season": "summer",
+                "Time": "{{Range: 1810, 2600}}",
+            	"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 29,
+            "Y": 60,
+            "Width": 5,
+            "Height": 5
+        },
+
+    },
+		//Summer Cheese Shop - Sundays - Closed
+	{
+        "LogName": "Louvier Fromagerie- Summer Sunday- Closed Day",
+        "Action": "Load",
+        "Target": "fromagerie_Closed_Sun_Summer",
+        "FromFile": "assets/louvier_closed.png",
+    },
+    {
+        "LogName": "Fromagerie Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/fromagerie_Closed_Sun_Summer.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "7,21",
+                "Season": "summer",
+                "Time": "{{Range: 0600, 0850}}",
+				"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 29,
+            "Y": 60,
+            "Width": 5,
+            "Height": 5
+        },
+
+    },
+	{
+        "LogName": "Louvier Fromagerie- Summer Sunday- Closed Day",
+        "Action": "Load",
+        "Target": "fromagerie_Closed_Sun_Summer",
+        "FromFile": "assets/louvier_closed.png",
+    },
+    {
+        "LogName": "Fromagerie Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/fromagerie_Closed_Sun_Summer.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "7,21",
+                "Season": "summer",
+                "Time": "{{Range: 1110, 1120}}",
+				"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 29,
+            "Y": 60,
+            "Width": 5,
+            "Height": 5
+        },
+
+    },
+	{
+        "LogName": "Louvier Fromagerie- Summer Sunday- Closed Day",
+        "Action": "Load",
+        "Target": "fromagerie_Closed_Sun_Summer",
+        "FromFile": "assets/louvier_closed.png",
+    },
+    {
+        "LogName": "Fromagerie Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/fromagerie_Closed_Sun_Summer.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "7,21",
+                "Season": "summer",
+                "Time": "{{Range: 1500, 1510}}",
+				"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 29,
+            "Y": 60,
+            "Width": 5,
+            "Height": 5
+        },
+
+    },
+	{
+        "LogName": "Louvier Fromagerie- Summer Sunday - Closed Night",
+        "Action": "Load",
+        "Target": "fromagerie_Closed_Sun_Summer",
+        "FromFile": "assets/louvier_closed.png",
+    },
+    {
+        "LogName": "Fromagerie Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/fromagerie_Closed_Sun_Summer.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "7,21",
+                "Season": "summer",
+                "Time": "{{Range: 1810, 2600}}",
+            	"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 29,
+            "Y": 60,
+            "Width": 5,
+            "Height": 5
+        },
+
+    },
+	//Summer Cheese Shop - Saturdays
+		{
+        "LogName": "Louvier Fromagerie- Summer Saturday Open",
+        "Action": "Load",
+        "Target": "fromagerie_Summer_Sat",
+        "FromFile": "assets/louvier_summer_amlie.png",
+    },
+    {
+        "LogName": "Fromagerie Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/fromagerie_Summer_Sat.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "6,20",
+                "Season": "summer",
+                "Time": "{{Range: 0900, 1800}}",
+            	"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 29,
+            "Y": 60,
+            "Width": 5,
+            "Height": 5
+        },
+	},
+		
+	//Spring Cheese Shop - Sundays
+		{
+        "LogName": "Louvier Fromagerie- Summer Saturday Open",
+        "Action": "Load",
+        "Target": "fromagerie_Summer_Sat",
+        "FromFile": "assets/louvier_summer_amlie.png",
+    },
+    {
+        "LogName": "Fromagerie Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/fromagerie_Summer_Sat.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "7,21",
+                "Season": "summer",
+                "Time": "{{Range: 0900, 1100}}",
+            	"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 29,
+            "Y": 60,
+            "Width": 5,
+            "Height": 5
+        },
+	},	
+		{
+        "LogName": "Louvier Fromagerie- Summer Sunday Open",
+        "Action": "Load",
+        "Target": "fromagerie_Summer_Sun",
+        "FromFile": "assets/louvier_summer_patrice.png",
+    },
+    {
+        "LogName": "Fromagerie Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/fromagerie_Summer_Sun.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+		"Day": "7,21",
+                "Season": "summer",
+                "Time": "{{Range: 1130, 1450}}",
+            	"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 29,
+            "Y": 60,
+            "Width": 5,
+            "Height": 5
+        },
+	},
+		{
+        "LogName": "Louvier Fromagerie- Summer Saturday Open",
+        "Action": "Load",
+        "Target": "fromagerie_Summer_Sat",
+        "FromFile": "assets/louvier_summer_amlie.png",
+    },
+    {
+        "LogName": "Fromagerie Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/fromagerie_Summer_Sat.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "7,21",
+                "Season": "summer",
+                "Time": "{{Range: 1520, 1800}}",
+            	"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 29,
+            "Y": 60,
+            "Width": 5,
+            "Height": 5
+        },
+	},
+  ]
+	//**LOUVIER FROMAGERIE**END**//	
+}	

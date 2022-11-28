@@ -1,0 +1,10 @@
+{
+	/*sadie vlog*/
+	"85870009/F/f Sadie 500/t 1200 2200": "50s/23 10/David 26 10 3 farmer 9 11 1 Sadie 24 10 2/skippable/removeTile 24 10 Buildings/removeTile 24 9 Front/addBigProp 24 12 106/pause 1000/speak Sadie \"...这里是庇护所，一家位于祖祖沙漠的咖啡店，因为新鲜的食材和新颖的菜肴而深受当地人的喜爱。\"/move farmer 13 0 1/faceDirection Sadie 3/addMailReceived DTZ.AAAAAAAAAAAA1/emote Sadie 16/speak Sadie \"噢，@！你也在这儿？$h\"/quickQuestion 要留下来和我一起拍vlog吗？#当然，我会留下的。#不行，我现在很忙。#为什么我会想和你留在这里？(break)fork DTZ.AAAAAAAAAAAA1 DTZ.SadieVlog.Option1a(break)fork DTZ.AAAAAAAAAAAA1 DTZ.SadieVlog.Option1b(break)fork DTZ.AAAAAAAAAAAA1 DTZ.SadieVlog.Option1c",
+	// say you'll stay
+	"DTZ.SadieVlog.Option1a": "emote Sadie 20/speak Sadie \"真的吗？你真的会留下来吗？耶！$h\"/emote farmer 40/move farmer 1 0 0/move farmer 0 -1 2/faceDirection Sadie 2/pause 1000/speak Sadie \"嘿，大家，这是@。来打个招呼~！\"/pause 500/emote farmer 40/pause 500/speak Sadie \"所以@，这里是“和莎迪迷失在饥肠辘辘中”。当我拜访不同的地方时，人们可以投票决定我买什么吃。#$b#我们有世界各地的观众，所以能看到不同人对食物的观点真的很有意思！$h#$b#今天的vlog是出于慈善目的的，一切收益都归祖祖城食物银行所有。所以大家尽管投票选出你想要我们尝试的食物，以及哪种食物是你的最爱吧！#$b#还有，如果你想看到更多有趣内容，记得点击喜欢，并订阅我们的频道！$h\"/pause 500/emote Sadie 40/pause 500/speak Sadie \"旅行者们，@是星露谷的一位农夫。那是沿海一片安宁的乡村地带，还有一座古雅的小镇，叫作鹈鹕镇。#$b#他们在秋季16日会举办一场美妙的节日，当地的人们可以展出他们的产品，也包括在这里的@。所以如果你想品尝美食，你可以去那儿看看！$h\"/pause 1000/quickQuestion 你想和大家介绍一下自己吗？#说你是怎么开始在农场工作的。#说你最喜欢的食物。#说你正在和莎迪约会。(break)speak Sadie \"这真有意思。如果你愿意的话，我们可以什么时候去拜访你的农场。$h\"\\friendship Sadie 50(break)friendship Sadie 25(break)stopMusic\\speak Sadie \"哇哦，@。你真爱开玩笑。嘿，看，我想投票结果已经出来了。我要去点吃的了。$h\"\\friendship Sadie -500\\faceDirection Sadie 1\\move David -1 0 3\\speak Sadie \"是的，大卫。我想我们要点...\"\\end invisible Sadie/faceDirection Sadie 1/move David -1 0 3/speak Sadie \"嘿，你好啊，托马斯先生。我和一些饥肠辘辘的旅行者正想来点你这里的美味食物呢！$h\"/speak David \"噢，拜托，叫我大卫就好！$h#$b#你今天想来点什么？\"/end warpOut",
+	// don't stay
+	"DTZ.SadieVlog.Option1b": "speak Sadie \"当然。祝你农场工作愉快！\"/end warpOut",
+	// insult her and don't stay
+	"DTZ.SadieVlog.Option1c": "stopMusic/speak David \"嘿，@。这么说可不太好。$a/speak Sadie \"天哪，@。我就问问而已。好吧，没有你我也能继续...$s\"/friendship Sadie -250/friendship David -250/move farmer -13 0 3 true/end warpOut"
+}

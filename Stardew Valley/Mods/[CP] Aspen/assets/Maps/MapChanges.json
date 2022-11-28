@@ -1,0 +1,486 @@
+{
+    "Changes": [
+        //Load spouseroom
+        {
+            "Action": "EditData",
+            "Target": "Data/SpouseRooms",
+            "Entries":
+            {
+                "Aspen": "AspensRoom/0",
+            }
+        },
+    
+        // Load SpouseRoom Map
+        {
+            "Action": "Load",
+            "Target": "Maps/AspensRoom",
+            "FromFile": "assets/Maps/{{TargetWithoutPath}}.tmx"
+        },
+
+		//Adds warp from railroad
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Railroad",
+			"AddWarps": [
+				"-1 33 Custom_AspenFarm 59 23",
+				"-1 34 Custom_AspenFarm 59 23", 
+				"-1 35 Custom_AspenFarm 59 23",
+				"-1 36 Custom_AspenFarm 59 23",
+			]
+		},
+
+         // register outside area
+         {
+            "Action": "EditData",
+            "Target": "Data/SpousePatios",
+            "Entries": {
+                "Aspen": "Aspen_OutsideArea/0/8 8"
+            }
+        },
+
+        // load spouse map
+        {
+            "Action": "Load",
+            "Target": "Maps/Aspen_OutsideArea",
+            "FromFile": "assets/Maps/AspenPatio.tbin"
+        },
+
+		//Edits map text
+		{
+			"Action": "EditData",
+			"Target": "Strings/StringsFromMaps",
+			"Entries": {
+				"AspenFarmSign.1": "@ 阿斯彭农场",
+				"AspenSaloon.1": "这一定是阿斯彭目前所处的位置。",
+				"AspenSaloon.2": "你可以看到这些词 \"鹈鹕镇最善良的酒保，我对你感激不尽。 -阿斯彭\" 雕刻在上面。",
+				"RailRoad.1": "@ 浴室^> 翡翠农场^` 火车站^` 阿斯彭农场^` 峰会",
+				"SaloonSVE.3": "你可以看到这些字 \"鹈鹕镇最善良的酒保，我对你感激不尽。 -阿斯彭\" 雕刻在上面。",
+				"AspenHouse.1": "这肯定是阿斯彭在花舞节上从皮埃尔那里买的。",
+				"AspenHouse.2": "窥探别人的电脑是不对的!",
+				"AspenHouse.3": "标题是 \"傻瓜的业余农场。\"",
+				"AspenHouse.4": "阿斯彭似乎有很多书。",
+				"AspenHouse.5": "这垃圾看起来像是最近才扔的。",
+				"AspenHouse.6": "你打开冰箱，让你惊讶的是里面装满了东西!",
+				"AspenHouse.7": "一只粉色超大的毛茸茸的兔子。可爱。",
+				"AspenHouse.8": "我绝对不应该偷看阿斯彭的梳妆台。",
+				"AspenHouse.9": "又一个超大的毛绒玩具!",
+				"Mountain.1": "` 铁路^` 阿斯彭农场",
+				"AspenSpouseRoom.1": "阿斯彭在这里存放她的藏书。",
+				"AspenSpouseRoom.2": "看来阿斯彭在这里种了些花。",
+				"AspenSpouseRoom.3": "一堆便利贴写满了提醒。",
+                "AspenPatio.1": "阿斯彭的蜜蜂似乎总是很忙。"
+			}
+		},	
+	
+        //Edits replaces Railroad map to support Aspen's farm going West (NO SVE or SVR2)
+        {
+            "LogName": "Majority Map Change for vanilla",
+            "Action": "EditMap",
+            "Target": "Maps/Railroad",
+            "FromFile": "assets/Maps/RailroadAspen.tbin",
+            "FromArea": { "X": 0, "Y": 0, "Width": 32, "Height": 36},
+            "ToArea": { "X": 0, "Y": 0, "Width": 32, "Height": 36},
+            "PatchMode": "Replace",
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP, DaisyNiko.SVR2": "false"
+            }            
+        },
+        
+        //Edits Railroad map to support Aspen's farm going West (NO SVE or SVR2)
+        {
+            "LogName": "Cliff fix for vanilla",
+            "Action": "EditMap",
+            "Target": "Maps/Railroad",
+            "FromFile": "assets/Maps/RailroadAspen.tbin",
+            "FromArea": { "X": 0, "Y": 36, "Width": 1, "Height": 4},
+            "ToArea": { "X": 0, "Y": 36, "Width": 1, "Height": 4},
+            "PatchMode": "Replace",
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP, DaisyNiko.SVR2": "false"
+            }
+        },
+        
+        //Changes the rock to disappear when completionist no SVE
+        {
+            "LogName": "BoulderChange",
+            "Action": "EditMap",
+            "Target": "Maps/Railroad",
+            "FromFile": "assets/Maps/RailroadAspen.tbin",
+            "FromArea": { "X": 33, "Y": 26, "Width": 2, "Height": 2},
+            "ToArea": { "X": 33, "Y": 26, "Width": 2, "Height": 2},
+            "PatchMode": "Replace",
+            "When": {
+                "HasFlag |contains=Farm_Eternal": "false",
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false"
+            }
+        },
+        
+        //Changes warps & edits Railroad map to support Aspen's farm going West (WITH SVR2)
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Railroad",
+            "FromFile": "assets/Maps/CompatibilityPatches/RailroadSVRCompatible.tbin",
+            "FromArea": { "X": 0, "Y": 21, "Width": 15, "Height": 18},
+            "ToArea": { "X": 0, "Y": 21, "Width": 15, "Height": 18},
+            "PatchMode": "Replace",
+            "When": {
+                "HasMod |contains=DaisyNiko.SVR2": "true"
+            }
+        },
+        
+        //Changes warps & edits Railroad map to support Aspen's farm going West (WITH SVE)
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Railroad",
+            "FromFile": "assets/Maps/CompatibilityPatches/RailroadSVECompatible.tbin",
+            "FromArea": { "X": 0, "Y": 20, "Width": 20, "Height": 14},
+            "ToArea": { "X": 0, "Y": 20, "Width": 20, "Height": 14},
+            "PatchMode": "ReplaceByLayer",
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true"
+            }
+        },
+        
+        //Changes warps & edits Railroad map to support Aspen's farm going West (WITH SVE)
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Railroad",
+            "FromFile": "assets/Maps/CompatibilityPatches/RailroadSVECompatible.tbin",
+            "FromArea": { "X": 0, "Y": 20, "Width": 10, "Height": 20},
+            "ToArea": { "X": 0, "Y": 20, "Width": 10, "Height": 20},
+            "PatchMode": "ReplaceByLayer",
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true"
+            }
+        },
+        
+        //Changes warps & edits Railroad map to support Aspen's farm going West (WITH EAM)
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Railroad",
+            "FromFile": "assets/Maps/CompatibilityPatches/RailroadEAMCompatible.tbin",
+            "FromArea": { "X": 0, "Y": 8, "Width": 20, "Height": 20},
+            "ToArea": { "X": 0, "Y": 8, "Width": 20, "Height": 20},
+            "PatchMode": "Replace",
+            "When": {
+                "HasMod |contains=Allayna.Extended": "true"
+            }
+        },
+        
+        //Edits the chair north of the fountain (NO SVE)
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "FromFile": "assets/Maps/Town.tbin",
+            "FromArea": { "X": 25, "Y": 20, "Width": 3, "Height": 1},
+            "ToArea": { "X": 25, "Y": 20, "Width": 3, "Height": 1},
+            "PatchMode": "Replace",
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false"
+            }
+        },
+        
+        //Edits the chair north of the fountain (NO SVE)
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "FromFile": "assets/Maps/Town.tbin",
+            "FromArea": { "X": 23, "Y": 20, "Width": 4, "Height": 1},
+            "ToArea": { "X": 23, "Y": 20, "Width": 4, "Height": 1},
+            "PatchMode": "Replace",
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false"
+            }
+        },
+        
+        //Edits the chair north of the fountain (NO SVE)
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "FromFile": "assets/Maps/Town.tbin",
+            "FromArea": { "X": 25, "Y": 19, "Width": 1, "Height": 1},
+            "ToArea": { "X": 25, "Y": 19, "Width": 1, "Height": 1},
+            "PatchMode": "Replace",
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false"
+            }
+        },
+        
+        //Edits the chair north of the fountain (W/ SVE)
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "FromFile": "assets/Maps/CompatibilityPatches/TownSVECompatible.tbin",
+            "FromArea": { "X": 25, "Y": 21, "Width": 3, "Height": 2},
+            "ToArea": { "X": 25, "Y": 21, "Width": 3, "Height": 2},
+            "PatchMode": "Replace",
+            "When": {
+            "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true"
+            }
+        },
+        
+        //Edits the Saloon removing the statue (NO SVE)
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Saloon",
+            "FromFile": "assets/Maps/SaloonAspen.tbin",
+            "FromArea": { "X": 24, "Y": 14, "Width": 3, "Height": 4},
+            "ToArea": { "X": 24, "Y": 14, "Width": 3, "Height": 4},
+            "PatchMode": "Replace",
+            "When": {
+                "DaysPlayed |contains={{Range:0, 22}}": "true", //before aspen gives statue
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false"
+            }
+        },
+        
+        //Edits the Saloon adding the statue and the message (NO SVE)
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Saloon",
+            "FromFile": "assets/Maps/Saloon.tbin",
+            "FromArea": { "X": 24, "Y": 14, "Width": 3, "Height": 4},
+            "ToArea": { "X": 24, "Y": 14, "Width": 3, "Height": 4},
+            "PatchMode": "Replace",
+            "When": {
+                "DaysPlayed |contains={{Range:0, 22}}": "false", //after aspen gives statue
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false"
+            }
+        },
+        
+        //Edits the Saloon removing the statue (SVE)
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Saloon",
+            "FromFile": "assets/Maps/CompatibilityPatches/SaloonSVECompatible_nb.tbin",
+            "FromArea": { "X": 24, "Y": 14, "Width": 3, "Height": 4},
+            "ToArea": { "X": 24, "Y": 14, "Width": 3, "Height": 4},
+            "PatchMode": "Replace",
+            "When": {
+                "DaysPlayed |contains={{Range:0, 22}}": "true", //before aspen gives statue
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true"
+            }
+        },
+        
+        //Edits the Saloon adding the statue and the message (SVE)
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Saloon",
+            "FromFile": "assets/Maps/CompatibilityPatches/SaloonSVECompatible.tbin",
+            "FromArea": { "X": 24, "Y": 14, "Width": 3, "Height": 4},
+            "ToArea": { "X": 24, "Y": 14, "Width": 3, "Height": 4},
+            "PatchMode": "Replace",
+            "When": {
+                "DaysPlayed |contains={{Range:0, 22}}": "false", //after aspen gives statue
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true"
+            }
+        },
+        
+        //Edits the Saloon putting a sleeping bag in the back while Aspen is there
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Saloon",
+            "FromFile": "assets/Maps/SaloonAspen.tbin",
+            "FromArea": { "X": 36, "Y": 8, "Width": 1, "Height": 2},
+            "ToArea": { "X": 36, "Y": 8, "Width": 1, "Height": 2},
+            "PatchMode": "Replace",
+            "When": {
+                "DaysPlayed |contains={{Range:0, 30}}": "true" // railroad blocked
+            }
+        },
+        
+        //Edits Aspen's crops 
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_AspenFarm",
+            "FromFile": "assets/Maps/{{color}}/AspenFarmRedux_{{Season}}_{{DayOfWeek}}.tbin",
+            "FromArea": { "X": 37, "Y": 8, "Width": 15, "Height": 10},
+            "ToArea": { "X": 37, "Y": 8, "Width": 15, "Height": 10},
+            "PatchMode": "ReplaceByLayer",
+            "When": {
+                "Season": "spring, summer, fall",
+                "Day": "{{Range: 1, 6}}"
+            }
+        },
+        
+        //Randomizes Aspen's crops color on Sunday
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_AspenFarm",
+            "FromFile": "assets/Maps/{{color}}/AspenFarmRedux_{{Season}}_Sunday_{{Random: 1, 2, 3, 4}}.tbin",
+            "FromArea": { "X": 37, "Y": 8, "Width": 15, "Height": 10},
+            "ToArea": { "X": 37, "Y": 8, "Width": 15, "Height": 10},
+            "PatchMode": "ReplaceByLayer",
+            "When": {
+                "Season": "spring, summer, fall",
+                "Day": "{{Range: 7, 28}}"
+            }
+        },
+        
+        //Edits Aspen's door (unlocked)
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_AspenFarm",
+            "FromFile": "assets/Maps/AspenFarmRedux_Unlocked.tbin",
+            "FromArea": { "X": 30, "Y": 16, "Width": 1, "Height": 1},
+            "ToArea": { "X": 30, "Y": 16, "Width": 1, "Height": 1},
+            "PatchMode": "Replace",
+        },
+        
+        //Edits Aspen's door (locked)
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_AspenFarm",
+            "FromFile": "assets/Maps/AspenFarmRedux.tbin",
+            "FromArea": { "X": 30, "Y": 16, "Width": 1, "Height": 1},
+            "ToArea": { "X": 30, "Y": 16, "Width": 1, "Height": 1},
+            "PatchMode": "Replace",
+            "When": {
+                "HasSeenEvent |contains=98590010": "true",
+            }
+        },
+        
+        //Edits the mountain near Linus's tent (W/ SVE)
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Mountain",
+            "FromFile": "assets/Maps/CompatibilityPatches/MountainSVECompatible.tbin",
+            "FromArea": { "X": 27, "Y": 0, "Width": 13, "Height": 19},
+            "ToArea": { "X": 27, "Y": 0, "Width": 13, "Height": 19},
+            "PatchMode": "ReplaceByLayer",
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true"
+            }
+        },
+        
+        //Fixes a minor visual bug at the rockfall with SVE installed
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Mountain",
+            "FromFile": "assets/Maps/CompatibilityPatches/MountainSVECompatible.tbin",
+            "FromArea": { "X": 9, "Y": 5, "Width": 2, "Height": 1},
+            "ToArea": { "X": 9, "Y": 5, "Width": 2, "Height": 1},
+            "PatchMode": "ReplaceByLayer",
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true",
+                "DaysPlayed |contains={{Range:0, 30}}": "true" // railroad blocked
+            }
+        },
+        
+        //Fixes a minor visual bug at the town fair for aspen's position (NO SVE)
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Town-Fair",
+            "FromFile": "assets/Maps/Town-Fair_Aspen.tbin",
+            "FromArea": { "X": 43, "Y": 76, "Width": 2, "Height": 1},
+            "ToArea": { "X": 43, "Y": 76, "Width": 2, "Height": 1},
+            "PatchMode": "Replace",
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false"
+            }
+        },
+        
+        //Fixes a minor visual bug at the town fair for aspen's position (W/ SVE)
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Town-Fair",
+            "FromFile": "assets/Maps/CompatibilityPatches/TownFairSVECompatible.tbin",
+            "FromArea": { "X": 43, "Y": 76, "Width": 1, "Height": 1},
+            "ToArea": { "X": 43, "Y": 76, "Width": 1, "Height": 1},
+            "PatchMode": "Replace",
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true"
+            }
+        },
+        
+        //Adds custom tilesheets and allows other modders to target assets
+        {
+            "Action": "Load",
+            "Target": "Maps/CustomTiles",
+            "FromFile": "assets/Maps/.CustomTiles.png"
+        },
+        
+    //World map changes -------------------------------------------------------------------------------------------------------
+    
+    //Adds Locations to World Map
+        {
+            "LogName": "Adds Aspen's Farm to World Map",
+            "Action": "EditData",
+            "Target": "Mods/Bouhm.NPCMapLocations/Locations",
+            "When": { "HasMod: |contains=Yagisan.NPCMapLocationsForNPCs": false, "HasMod: |contains=Bouhm.NPCMapLocations": true },	 
+            "Entries": {
+                // Locations
+                "Custom_AspenFarm": {
+                    "MapVectors": [
+                    {//Top left
+                        "MapX": 471,
+                        "MapY": 1,
+                        "TileX": 0,
+                        "TileY": 0
+                    },
+                    {//Bot right
+                        "MapX": 577,
+                        "MapY": 45,
+                        "TileX": 60,
+                        "TileY": 43
+                    }
+                    ],
+                    "MapTooltip": {
+                    "X": 471,
+                    "Y": 1,
+                    "Width": 106,
+                    "Height": 44,
+                    "PrimaryText": "Aspen's Farm"
+                    }
+                },
+            }
+        },
+        
+        {
+            "LogName": "NPCMapLocations Sprite Offset", 
+            "Action": "EditData",
+            "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+            "When": { "HasMod: |contains=Bouhm.NPCMapLocations": true },
+            "Entries": {
+                "Aspen": {
+                    "MarkerCropOffset": 3
+                },
+            }
+        },
+        
+        //Vanilla map change
+        {
+            "LogName": "Overlays the vanilla map",
+            "Action": "EditImage",
+            "Target": "LooseSprites/map",
+            "FromFile": "assets/Maps/WorldMap/map.png",
+            "FromArea": { "X": 90, "Y": 0, "Width": 109, "Height": 20 }, 
+            "ToArea": { "X": 90, "Y": 0, "Width": 109, "Height": 20 }, 
+            "PatchMode": "Overlay",
+            "When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false, "HasMod: |contains=Bouhm.NPCMapLocations": false },
+        },
+        
+        //Vanilla w/ NPCMapLocations
+        {
+            "LogName": "Overlays the map for NPCMapLocations",
+            "Action": "EditImage",
+            "Target": "LooseSprites/map",
+            "FromFile": "assets/Maps/WorldMap/{{season}}_map.png",
+            "FromArea": { "X": 90, "Y": 0, "Width": 109, "Height": 20 }, 
+            "ToArea": { "X": 90, "Y": 0, "Width": 109, "Height": 20 },		
+            "PatchMode": "Overlay",
+            "When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false, "HasMod: |contains=Bouhm.NPCMapLocations": true },
+        },	
+        
+        //SVE w/ NPCMapLocations
+        {
+            "LogName": "Overlays the map for SVE",
+            "Action": "EditImage",
+            "Target": "LooseSprites/map",
+            "FromFile": "assets/Maps/WorldMap/SVE/{{season}}_map.png",
+            "FromArea": { "X": 90, "Y": 0, "Width": 109, "Height": 20 }, 
+            "ToArea": { "X": 90, "Y": 0, "Width": 109, "Height": 20 },		
+            "PatchMode": "Overlay",
+            "When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true, "HasMod: |contains=Bouhm.NPCMapLocations": true },
+        },	
+    ]
+}

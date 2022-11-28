@@ -1,0 +1,46 @@
+{
+  "Format": "1.19",
+  "Changes": [
+       {
+        "Action": "EditImage",
+        "Target": "Animals/Pig",
+        "FromFile": "assets/Fox.png",  	
+        },
+	   {
+	   	  "Action": "EditImage",
+          "Target": "Animals/BabyPig",
+          "FromFile": "assets/BabyFox.png"
+        },
+
+      {
+            "Action": "EditImage",
+            "Target": "LooseSprites/Cursors",
+            "FromFile": "assets/ShopIcon.png",
+            "FromArea":
+            {
+                "X": 0,
+                "Y": 0,
+                "Width": 32,
+                "Height": 16
+            },
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 480,
+                "Width": 32,
+                "Height": 16
+            }
+        },
+
+		{
+	   	  "Action": "EditData",
+          "Target": "Strings/StringsFromCSFiles",
+          "Entries": {
+  "Utility.cs.5948": "Fox", 
+  "PurchaseAnimalsMenu.cs.11346": "These foxes are trained to find truffles!",      
+}
+        }
+
+
+    ]
+}

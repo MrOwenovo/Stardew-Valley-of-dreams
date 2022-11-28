@@ -1,0 +1,178 @@
+{
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "Changes": [
+        // Custom Npc Nikolai - https://www.nexusmods.com/stardewvalley/mods/4882
+        {
+            "LogName": "[Yagi] Nikolai - Sprite Offsets",
+            "Action": "EditData",
+            "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+            "When": {
+                "HasMod: |contains=Fellowclown.Nikolai": true
+            },
+            "Entries": {
+                "Nikolai": {
+                    "MarkerCropOffset": 0
+                },
+                "Boxy": {
+                    "MarkerCropOffset": 16
+                },
+            }
+        },
+        {
+            "LogName": "[Yagi] Nikolai - Location Support",
+            "Action": "EditData",
+            "Target": "Mods/Bouhm.NPCMapLocations/Locations",
+            "When": {
+                "HasMod: |contains=Fellowclown.Nikolai": true
+            },
+            "Entries": {
+                // Custom Npc Nikolai - https://www.nexusmods.com/stardewvalley/mods/4882
+                // NPC Map Locations complains if any maps don't have a location.  Put a fake entry in to hide these for now.
+                "Custom_Fellowclown.Nikolai_NikolaisPropertySell": {
+                    "MapVectors": [
+                        {
+                            "TileX": 0,
+                            "TileY": 0,
+                            "MapX": 0,
+                            "MapY": 0
+                        },
+                        {
+                            "TileX": 0,
+                            "TileY": 0,
+                            "MapX": 0,
+                            "MapY": 0
+                        }
+                    ]
+                },
+                "Custom_Fellowclown.Nikolai_ForesteventNik": {
+                    "MapVectors": [
+                        {
+                            "TileX": 0,
+                            "TileY": 0,
+                            "MapX": 0,
+                            "MapY": 0
+                        },
+                        {
+                            "TileX": 0,
+                            "TileY": 0,
+                            "MapX": 0,
+                            "MapY": 0
+                        }
+                    ]
+                },
+                "Custom_Fellowclown.Nikolai_Forestlake": {
+                    "MapVectors": [
+                        {
+                            "TileX": 0,
+                            "TileY": 0,
+                            "MapX": 0,
+                            "MapY": 0
+                        },
+                        {
+                            "TileX": 0,
+                            "TileY": 0,
+                            "MapX": 0,
+                            "MapY": 0
+                        }
+                    ]
+                },
+                "Custom_Fellowclown.Nikolai_NikolaisPropertyEvent": {
+                    "MapVectors": [
+                        {
+                            "TileX": 0,
+                            "TileY": 0,
+                            "MapX": 0,
+                            "MapY": 0
+                        },
+                        {
+                            "TileX": 0,
+                            "TileY": 0,
+                            "MapX": 0,
+                            "MapY": 0
+                        }
+                    ]
+                },
+                "Custom_Fellowclown.Nikolai_NikolaisPropertyEvent2": {
+                    "MapVectors": [
+                        {
+                            "TileX": 0,
+                            "TileY": 0,
+                            "MapX": 0,
+                            "MapY": 0
+                        },
+                        {
+                            "TileX": 0,
+                            "TileY": 0,
+                            "MapX": 0,
+                            "MapY": 0
+                        }
+                    ]
+                },
+                "Custom_Fellowclown.Nikolai_Marketpalooza": {
+                    "MapVectors": [
+                        {
+                            "TileX": 0,
+                            "TileY": 0,
+                            "MapX": 0,
+                            "MapY": 0
+                        },
+                        {
+                            "TileX": 0,
+                            "TileY": 0,
+                            "MapX": 0,
+                            "MapY": 0
+                        }
+                    ]
+                },
+                "Custom_Fellowclown.Nikolai_CatEvent": {
+                    "MapVectors": [
+                        {
+                            "TileX": 0,
+                            "TileY": 0,
+                            "MapX": 0,
+                            "MapY": 0
+                        },
+                        {
+                            "TileX": 0,
+                            "TileY": 0,
+                            "MapX": 0,
+                            "MapY": 0
+                        }
+                    ]
+                },
+                "Custom_Fellowclown.Nikolai_CatBeach": {
+                    "MapVectors": [
+                        {
+                            "TileX": 0,
+                            "TileY": 0,
+                            "MapX": 0,
+                            "MapY": 0
+                        },
+                        {
+                            "TileX": 0,
+                            "TileY": 0,
+                            "MapX": 0,
+                            "MapY": 0
+                        }
+                    ]
+                },
+                "Custom_Fellowclown.Nikolai_NikolaisProperty": {
+                    "MapVectors": [
+                        {
+                            "MapX": 689,
+                            "MapY": 163,
+                            "TileX": 0,
+                            "TileY": 0
+                        },
+                        {
+                            "MapX": 722,
+                            "MapY": 180,
+                            "TileX": 31,
+                            "TileY": 35
+                        }
+                    ],
+                }
+            }
+        },
+    ]
+}

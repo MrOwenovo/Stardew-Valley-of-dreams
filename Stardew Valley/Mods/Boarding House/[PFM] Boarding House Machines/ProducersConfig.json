@@ -1,0 +1,24 @@
+﻿[
+	{
+		"ProducerName": "Bug Trap", //Only 1 frame
+		"AlternateFrameProducing": false, 
+		"AlternateFrameWhenReady": false, 
+		"NoInputStartMode": "Placement",
+		"WorkingWeather": [ "Sunny", "Windy"],
+		"WorkingSeason": [ "spring", "summer", "fall" ],
+		"LightSource": { // Defines the light source the producer should use when working. Default is null.
+			"TextureIndex": 4, // Shape of the light source. All vanilla machines uses "sconceLight". 1=lantern, 2=windowLight, 4=sconceLight, 5=cauldronLight, 6=indoorWindowLight, 7=projectorLight. Default is 4.
+			"Radius": 1.5, // The actual size of the light source depends on the texture used. Default is 1.5 (the size of the furnace light source with the sconceLight texture)
+			"OffsetX": 8, // The horizontal offset from the center of the producer tile. Default is 0.
+			"OffsetY": 20, // The vertical offset from the top of the producer tile. Default is 0.
+			// Light color work differently than object color. It's best to test the effect to find what looks best. (0,0,0,255) is white light and will keep the original color of objects lit by it.
+			"ColorRed": 0, // The red value of the light color. Default is 0.
+			"ColorGreen": 0, // The green value of the light color. Default is 0.
+			"ColorBlue": 0, // The blue value of the light color. Default is 0.
+			"ColorAlpha": 255, // The transparency value of the light color. 0 is fully transparent, 255 is fully opaque. Default is 255.
+			"ColorFactor": 0.75, // The factor that will multiply all other colors parameters. Default is 1.
+			"AlwaysOn": true // If true, the light source will be lit even while not producing. Default is false. 
+		},
+		"WorkingOutdoors": true, 
+	},
+]

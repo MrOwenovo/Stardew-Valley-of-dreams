@@ -1,0 +1,56 @@
+{
+    "Changes":[
+            {
+            "LogName": "Add warp",
+            "Action": "EditMap",
+            "Target": "Maps/Custom_EastScarpe",
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 24,
+                        "Y": 96
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "WarpNetwork scarp"
+                    }
+                }
+            ]
+        },
+        {
+            "LogName": "Register location with warp network",
+            "Action": "EditData",
+            "Target": "Data/WarpNetwork/Destinations",
+            "Entries": {
+                "scarp": {
+                    "location": "Custom_EastScarpe",
+                    "x": 24,
+                    "y": 97,
+                    "enabled": true,
+                    "label": "{{i18n:LocationName.EastScarp}}",
+		    "icon": "EastScarp"
+                }
+            }
+        },
+        {
+            "LogName": "Register warp item",
+            "Action": "EditData",
+            "Target": "Data/WarpNetwork/WarpItems",
+            "Entries": {
+                "{{spacechase0.JsonAssets/ObjectId:Scarp Warp Totem}}": {
+                    "Destination": "scarp",
+                    "IgnoreDisabled": true,
+                    "Color": "#b602e2"
+                }
+            },
+            "When": {
+                "HasMod": "spacechase0.JsonAssets"
+            }
+        },
+ {
+        "Action":"Load",
+        "Target":"Data/WarpNetwork/Icons/EastScarp",
+        "FromFile":"assets/EastScarpIcon.png"
+        },
+    ]
+}

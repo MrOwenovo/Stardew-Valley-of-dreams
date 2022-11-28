@@ -1,0 +1,337 @@
+﻿[
+
+    // Butter Churn
+
+    {
+        "ProducerName": "Traditional Butter Churn LF", //Butter
+        "InputIdentifier": "Milk",
+        "InputStack": 2,
+        "MinutesUntilReady": 600,
+        "OutputIdentifier": "Butter LF",
+        "Sounds": ["Ship"],
+    },
+    {
+        "ProducerName": "Traditional Butter Churn LF", //Butter
+        "InputIdentifier": "Large Milk",
+        "InputStack": 1,
+        "MinutesUntilReady": 600,
+        "OutputIdentifier": "Butter LF",
+        "Sounds": ["Ship"],
+    },
+    {
+        "ProducerName": "Traditional Butter Churn LF", //Goat Butter
+        "InputIdentifier": "Goat Milk",
+        "InputStack": 2,
+        "MinutesUntilReady": 600,
+        "OutputIdentifier": "Goat Butter LF",
+        "Sounds": ["Ship"],
+    },
+    {
+        "ProducerName": "Traditional Butter Churn LF", //Goat Butter
+        "InputIdentifier": "L. Goat Milk",
+        "InputStack": 1,
+        "MinutesUntilReady": 600,
+        "OutputIdentifier": "Goat Butter LF",
+        "Sounds": ["Ship"],
+    },
+
+    // Cheese Press - Cheddar
+
+    {
+        "ProducerName": "Cheddar Cheese Press LF", //Cheddar
+        "InputIdentifier": "Milk",
+        "InputStack": 4,
+        "MinutesUntilReady": 11200, //1 week
+        "OutputIdentifier": "Cheddar LF",
+	"OutputStack": 2,
+        "Sounds": ["Ship"],
+    },
+    {
+        "ProducerName": "Cheddar Cheese Press LF", //Cheddar
+        "InputIdentifier": "Large Milk",
+        "InputStack": 2,
+        "MinutesUntilReady": 11200, //1 week
+        "OutputIdentifier": "Cheddar LF",
+	"OutputStack": 2,
+        "Sounds": ["Ship"],
+    },
+    {
+        "ProducerName": "Cheddar Cheese Press LF", //Florette
+        "InputIdentifier": "Goat Milk",
+        "InputStack": 4,
+        "MinutesUntilReady": 11200, //1 week
+        "OutputIdentifier": "Florette LF",
+	"AdditionalOutputs": [
+	  {
+	     "OutputIdentifier": "Florette LF",
+	     "RequiredInputQuality": [2, 4],
+	  }
+	],
+	"OutputStack": 2,
+        "Sounds": ["Ship"],
+    },
+    {
+        "ProducerName": "Cheddar Cheese Press LF", //Florette
+        "InputIdentifier": "L. Goat Milk",
+        "InputStack": 2,
+        "MinutesUntilReady": 11200, // 1 week
+        "OutputIdentifier": "Florette LF",
+	"AdditionalOutputs": [
+	  {
+	     "OutputIdentifier": "Florette LF",
+	     "RequiredInputQuality": [2, 4],
+	  }
+	],
+	"OutputStack": 2,
+        "Sounds": ["Ship"],
+    },
+
+    // Cheese Press - Emmental
+
+    {
+        "ProducerName": "Emmental Cheese Press LF", //Emmental
+        "InputIdentifier": "Milk",
+        "InputStack": 4,
+        "MinutesUntilReady": 16000, //1.5 weeks
+        "OutputIdentifier": "Emmental LF",
+	"OutputStack": 2,
+        "Sounds": ["Ship"],
+    },
+    {
+        "ProducerName": "Emmental Cheese Press LF", //Emmental
+        "InputIdentifier": "Large Milk",
+        "InputStack": 2,
+        "MinutesUntilReady": 16000, //1.5 weeks
+        "OutputIdentifier": "Emmental LF",
+	"OutputStack": 2,
+        "Sounds": ["Ship"],
+    },
+    {
+        "ProducerName": "Emmental Cheese Press LF", //Goat Feta
+        "InputIdentifier": "Goat Milk",
+        "InputStack": 4,
+        "MinutesUntilReady": 16000, //1.5 weeks
+        "OutputIdentifier": "Goat Feta LF",
+	"OutputStack": 2,
+        "Sounds": ["Ship"],
+    },
+    {
+        "ProducerName": "Emmental Cheese Press LF", //Goat Feta
+        "InputIdentifier": "L. Goat Milk",
+        "InputStack": 2,
+        "MinutesUntilReady": 16000, //1.5 weeks
+        "OutputIdentifier": "Goat Feta LF",
+	"OutputStack": 2,
+        "Sounds": ["Ship"],
+    },
+
+
+    // Cheese Press - Gorgonzola
+
+    {
+        "ProducerName": "Gorgonzola Cheese Press LF", //Gorgonzola
+        "InputIdentifier": "Milk",
+        "InputStack": 4,
+        "MinutesUntilReady": 22400, //2 weeks
+        "OutputIdentifier": "Gorgonzola LF",
+	"OutputStack": 2,
+        "Sounds": ["Ship"],
+    },
+    {
+        "ProducerName": "Gorgonzola Cheese Press LF", //Gorgonzola
+        "InputIdentifier": "Large Milk",
+        "InputStack": 2,
+        "MinutesUntilReady": 22400, //2 weeks
+        "OutputIdentifier": "Gorgonzola LF",
+	"OutputStack": 2,
+        "Sounds": ["Ship"],
+    },
+    {
+        "ProducerName": "Gorgonzola Cheese Press LF", //Cathare
+        "InputIdentifier": "Goat Milk",
+        "InputStack": 4,
+        "MinutesUntilReady": 22400, //2 weeks
+        "OutputIdentifier": "Cathare LF",
+	"AdditionalOutputs": [
+	  {
+	     "OutputIdentifier": "Cathare LF",
+	     "RequiredInputQuality": [2, 4],
+	  }
+	],
+	"OutputStack": 2,
+        "Sounds": ["Ship"],
+    },
+    {
+        "ProducerName": "Gorgonzola Cheese Press LF", //Cathare
+        "InputIdentifier": "L. Goat Milk",
+        "InputStack": 2,
+        "MinutesUntilReady": 22400, //2 weeks
+        "OutputIdentifier": "Cathare LF",
+	"AdditionalOutputs": [
+	  {
+	     "OutputIdentifier": "Cathare LF",
+	     "RequiredInputQuality": [2, 4],
+	  }
+	],
+	"OutputStack": 2,
+        "Sounds": ["Ship"],
+    },
+
+
+    // Cheese Press - Gouda
+
+    {
+        "ProducerName": "Gouda Cheese Press LF", //Gouda
+        "InputIdentifier": "Milk",
+        "InputStack": 4,
+        "MinutesUntilReady": 22400, //2 weeks
+        "OutputIdentifier": "Gouda LF",
+	"OutputStack": 2,
+        "Sounds": ["Ship"],
+    },
+    {
+        "ProducerName": "Gouda Cheese Press LF", //Gouda
+        "InputIdentifier": "Large Milk",
+        "InputStack": 4,
+        "MinutesUntilReady": 22400, //2 weeks
+        "OutputIdentifier": "Gouda LF",
+	"OutputStack": 2,
+        "Sounds": ["Ship"],
+    },
+    {
+        "ProducerName": "Gouda Cheese Press LF", //Chabichou
+        "InputIdentifier": "Goat Milk",
+        "InputStack": 4,
+        "MinutesUntilReady": 11200, //1 week
+        "OutputIdentifier": "Chabichou LF",
+	"AdditionalOutputs": [
+	  {
+	     "OutputIdentifier": "Chabichou LF",
+	     "RequiredInputQuality": [2, 4],
+	  }
+	],
+	"OutputStack": 2,
+        "Sounds": ["Ship"],
+    },
+    {
+        "ProducerName": "Gouda Cheese Press LF", //Chabichou
+        "InputIdentifier": "L. Goat Milk",
+        "InputStack": 2,
+        "MinutesUntilReady": 11200, // 1 week
+        "OutputIdentifier": "Chabichou LF",
+	"AdditionalOutputs": [
+	  {
+	     "OutputIdentifier": "Chabichou LF",
+	     "RequiredInputQuality": [2, 4],
+	  }
+	],
+	"OutputStack": 2,
+        "Sounds": ["Ship"],
+    },
+
+
+
+
+   // Cheese Press - Mozzarella
+
+    {
+        "ProducerName": "Mozzarella Cheese Press LF", //Mozzarella
+        "InputIdentifier": "Milk",
+        "InputStack": 4,
+        "MinutesUntilReady": 4800, //3 days
+        "OutputIdentifier": "Mozzarella LF",
+	"OutputStack": 2,
+        "Sounds": ["Ship"],
+    },
+    {
+        "ProducerName": "Mozzarella Cheese Press LF", //Mozzarella
+        "InputIdentifier": "Large Milk",
+        "InputStack": 2,
+        "MinutesUntilReady": 4800, //3 days
+        "OutputIdentifier": "Mozzarella LF",
+	"OutputStack": 2,
+        "Sounds": ["Ship"],
+    },
+    {
+        "ProducerName": "Mozzarella Cheese Press LF", //Goat Brie
+        "InputIdentifier": "Goat Milk",
+        "InputStack": 4,
+        "MinutesUntilReady": 4800, //3 days
+        "OutputIdentifier": "Goat Brie LF",
+	"AdditionalOutputs": [
+	  {
+	     "OutputIdentifier": "Goat Brie LF",
+	     "RequiredInputQuality": [2, 4],
+	  }
+	],
+	"OutputStack": 2,
+        "Sounds": ["Ship"],
+    },
+    {
+        "ProducerName": "Mozzarella Cheese Press LF", //Goat Brie
+        "InputIdentifier": "L. Goat Milk",
+        "InputStack": 2,
+        "MinutesUntilReady": 4800, //3 days
+        "OutputIdentifier": "Goat Brie LF",
+	"AdditionalOutputs": [
+	  {
+	     "OutputIdentifier": "Goat Brie LF",
+	     "RequiredInputQuality": [2, 4],
+	  }
+	],
+	"OutputStack": 2,
+        "Sounds": ["Ship"],
+    },
+
+
+   // Cheese Press - Parmesan
+
+    {
+        "ProducerName": "Parmesan Cheese Press LF", //Parmesan
+        "InputIdentifier": "Milk",
+        "InputStack": 4,
+        "MinutesUntilReady": 33600, //3 weeks
+        "OutputIdentifier": "Parmesan LF",
+	"OutputStack": 2,
+        "Sounds": ["Ship"],
+    },
+    {
+        "ProducerName": "Parmesan Cheese Press LF", //Parmesan
+        "InputIdentifier": "Large Milk",
+        "InputStack": 2,
+        "MinutesUntilReady": 33600, //3 weeks
+        "OutputIdentifier": "Parmesan LF",
+	"OutputStack": 2,
+        "Sounds": ["Ship"],
+    },
+    {
+        "ProducerName": "Parmesan Cheese Press LF", //Valencay
+        "InputIdentifier": "Goat Milk",
+        "InputStack": 4,
+        "MinutesUntilReady": 33600, //3 weeks
+        "OutputIdentifier": "Valencay LF",
+	"AdditionalOutputs": [
+	  {
+	     "OutputIdentifier": "Valencay LF",
+	     "RequiredInputQuality": [2, 4],
+	  }
+	],
+	"OutputStack": 2,
+        "Sounds": ["Ship"],
+    },
+    {
+        "ProducerName": "Parmesan Cheese Press LF", //Valencay
+        "InputIdentifier": "L. Goat Milk",
+        "InputStack": 2,
+        "MinutesUntilReady": 33600, //3 weeks
+        "OutputIdentifier": "Valencay LF",
+	"AdditionalOutputs": [
+	  {
+	     "OutputIdentifier": "Valencay LF",
+	     "RequiredInputQuality": [2, 4],
+	  }
+	],
+	"OutputStack": 2,
+        "Sounds": ["Ship"],
+    },
+]

@@ -1,0 +1,133 @@
+{
+	"$schema": "https://smapi.io/schemas/content-patcher.json",
+	"Changes": [
+		// East Scarp - https://www.nexusmods.com/stardewvalley/mods/5787
+		{
+			"LogName": "[Yagi] East Scarp 1.7 - Sprite Offsets",
+			"Action": "EditData",
+			"Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+			"When": {
+				"HasMod: |contains=LemurKat.EastScarpe.CP": true
+			},
+			"Entries": {
+				"Jacob": {
+					"MarkerCropOffset": -1
+				},
+				"Eloise": {
+					"MarkerCropOffset": 7
+				},
+				"Aideen": {
+					"MarkerCropOffset": 2
+				},
+				"Dao": {
+					"MarkerCropOffset": 1
+				},
+				"Rosa": {
+					"MarkerCropOffset": 2
+				},
+				"Leximonster": {
+					"Exclude": true
+				},
+				"DuckNPC": {
+					"Exclude": true
+				},
+				"Duck2NPC": {
+					"Exclude": true
+				},
+				"OliverK": {
+					"Exclude": true
+				},
+				"JosephineK": {
+					"Exclude": true
+				},
+				"Kataryna": {
+					"Exclude": true
+				},
+				"RichieTheMacaw": {
+					"Exclude": true
+				},
+			}
+		},
+		{
+			"LogName": "[Yagi] East Scarp 1.7 - Legacy Location Support",
+			"Action": "EditData",
+			"Target": "Mods/Bouhm.NPCMapLocations/Locations",
+			"When": {
+				"HasMod: |contains=LemurKat.EastScarpe.CP": true
+			},
+			"Entries": {
+				// East Scarp - https://www.nexusmods.com/stardewvalley/mods/5787
+				"DeepMountains": {
+					"Exclude": true
+				},
+				"ESOrchard": {
+					"Exclude": true
+				},
+				"ESShack": {
+					"Exclude": true
+				},
+				"OrchardHouse": {
+					"Exclude": true
+				},
+				"EastScarpe": {
+					"MapVectors": [
+						{
+							"MapX": 1150,
+							"MapY": 393
+						}
+					],
+					"MapTooltip": {
+						"X": 1150,
+						"Y": 393,
+						"Width": 20,
+						"Height": 20,
+						"PrimaryText": "East Scarp"
+					}
+				}
+			}
+		},
+		{
+			"LogName": "[Yagi] East Scarp 1.7 Vineyard - Legacy Location Support",
+			"Action": "EditData",
+			"Target": "Mods/Bouhm.NPCMapLocations/Locations",
+			"When": {
+				"HasMod: |contains=LemurKat.EastScarpe.CP": true,
+				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false
+			},
+			"Entries": {
+				// East Scarpe - https://www.nexusmods.com/stardewvalley/mods/5787
+				"ESVineyard": {
+					"MapVectors": [
+						{
+							"TileX": 0,
+							"TileY": 0,
+							"MapX": 1050,
+							"MapY": 363
+						},
+						{
+							"TileX": 80,
+							"TileY": 40,
+							"MapX": 1165,
+							"MapY": 414
+						}
+					]
+				}
+			}
+		},
+		{
+			"LogName": "[Yagi] East Scarp 1.7 - Vineyard + Stardew Valley Expanded - Legacy Location Support",
+			"Action": "EditData",
+			"Target": "Mods/Bouhm.NPCMapLocations/Locations",
+			"When": {
+				"HasMod: |contains=LemurKat.EastScarpe.CP": true,
+				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true
+			},
+			"Entries": {
+				// East Scarpe - https://www.nexusmods.com/stardewvalley/mods/5787
+				"ESVineyard": {
+					"Exclude": true
+				}
+			}
+		},
+	]
+}

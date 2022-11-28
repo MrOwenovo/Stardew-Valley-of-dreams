@@ -1,0 +1,333 @@
+{
+	"Format":"1.24.0",
+	"ConfigSchema":{
+		"Seasonal_Outfits":{
+			"AllowValues":"true, false",
+			"Default":"false",
+			"Description":"Use the seasonal legacy portraits!",
+			"AllowBlank":false
+		},
+		"UmuwiColors":{
+			"AllowValues":"true, false",
+			"Default":"false",
+			"Description":"Change Umuwi's Colors",
+			"AllowBlank":false
+		}
+	},
+	"DynamicTokens":[
+		{
+			"Name":"PlaceType",
+			"Value":"_Indoor"
+		},
+		{
+			"Name":"PlaceType",
+			"Value":"_Outdoor",
+			"When":{
+				"IsOutdoors":"true"
+			}
+		},
+		{
+			"Name":"WeatherType",
+			"Value":"_Sun"
+		},
+		{
+			"Name":"WeatherType",
+			"Value":"_Rain",
+			"When":{
+				"Weather":"rain, storm"
+			}
+		},
+		{
+			"Name":"WeatherType",
+			"Value":"_Snow",
+			"When":{
+				"Weather":"snow"
+			}
+		},
+		{
+			"Name":"Festival",
+			"Value":"EggFestival",
+			"When":{
+				"DayEvent":"egg festival",
+				"LocationName":"town, temp"
+			}
+		},
+		{
+			"Name":"Festival",
+			"Value":"FlowerDance",
+			"When":{
+				"DayEvent":"flower dance",
+				"LocationName":"Forest, temp"
+			}
+		},
+		{
+			"Name":"Festival",
+			"Value":"IceFestival",
+			"When":{
+				"DayEvent":"festival of ice",
+				"LocationName":"Forest, temp"
+			}
+		},
+		{
+			"Name":"Festival",
+			"Value":"Luau",
+			"When":{
+				"DayEvent":"luau",
+				"LocationName":"Beach, temp"
+			}
+		},
+		{
+			"Name":"Festival",
+			"Value":"MoonlightJellies",
+			"When":{
+				"DayEvent":"dance of the moonlight jellies",
+				"LocationName":"Beach, temp"
+			}
+		},
+		{
+			"Name":"Festival",
+			"Value":"SpiritsEve",
+			"When":{
+				"DayEvent":"spirit's eve",
+				"LocationName":"town, temp"
+			}
+		},
+		{
+			"Name":"Festival",
+			"Value":"SVFair",
+			"When":{
+				"DayEvent":"stardew valley fair",
+				"LocationName":"town, temp"
+			}
+		},
+		{
+			"Name":"Festival",
+			"Value":"WinterStar",
+			"When":{
+				"DayEvent":"feast of the winter star",
+				"LocationName":"town, temp"
+			}
+		},
+		{
+			"Name":"Wedding",
+			"Value":"WeddingOutfits",
+			"When":{
+				"DayEvent":"wedding"
+			}
+		},
+		{
+			"Name":"EsmeraldaRandomSchedule",
+			"Value":"{{Random: 0 Custom_LASV_BiankaHouse 4 11 3/700 Custom_LASV_BiankaHouse 4 11 3/2600 Custom_LASV_Umuwi 3 60 0, 0 Custom_LASV_Umuwi 3 59 0/2600 Custom_LASV_Umuwi 3 60 0, 0 Custom_LASV_RaphaelShop 14 13 1/700 Custom_LASV_RaphaelShop 14 13 1/2600 Custom_LASV_Umuwi 3 60 0}}"
+		},
+		{
+			"Name":"SalvadorRandomSchedule",
+			"Value":"{{Random: 0 Custom_LASV_RaphaelShop 15 7 1/700 Custom_LASV_RaphaelShop 15 7 1/2600 Custom_LASV_Umuwi 4 60 0, 0 Custom_LASV_Umuwi 4 59 0/2600 Custom_LASV_Umuwi 4 60 0, 0 Custom_LASV_BiankaHouse 10 10 3/700 Custom_LASV_BiankaHouse 10 10 3/2600 Custom_LASV_Umuwi 4 60 0}}"
+		}
+	],
+	"CustomLocations":[
+		{
+			"Name":"Custom_LASV_LunnaWestForest",
+			"FromMapFile":"assets/Maps/LunnaWestForest.tbin",
+			"MigrateLegacyNames":[
+				"LunnaWestForest"
+			]
+		},
+		{
+			"Name":"Custom_LASV_LunnaHouse",
+			"FromMapFile":"assets/Maps/LunnaHouseInteriorBroken.tbin",
+			"MigrateLegacyNames":[
+				"LunnaHousena"
+			]
+		},
+		{
+			"Name":"Custom_LASV_FallsCave",
+			"FromMapFile":"assets/Maps/FallsCave.tbin",
+			"MigrateLegacyNames":[
+				"FallsCave"
+			]
+		},
+		{
+			"Name":"Custom_LASV_DiannaHouse",
+			"FromMapFile":"assets/Maps/DiannaHouse.tbin",
+			"MigrateLegacyNames":[
+				"DiannaHouse"
+			]
+		},
+		{
+			"Name":"Custom_LASV_GabbiHouse",
+			"FromMapFile":"assets/Maps/GabbiHouse.tbin",
+			"MigrateLegacyNames":[
+				"GabbiHouse"
+			]
+		},
+		{
+			"Name":"Custom_LASV_ReenusHouse",
+			"FromMapFile":"assets/Maps/ReenusHouse.tbin",
+			"MigrateLegacyNames":[
+				"ReenusHouse"
+			]
+		},
+		{
+			"Name":"Custom_LASV_LaarniHouse",
+			"FromMapFile":"assets/Maps/LaarniHouse.tbin",
+			"MigrateLegacyNames":[
+				"LaarniHouse"
+			]
+		},
+		{
+			"Name":"Custom_LASV_BiankaHouse",
+			"FromMapFile":"assets/Maps/BiankaHouse.tbin",
+			"MigrateLegacyNames":[
+				"BiankaHouseka"
+			]
+		},
+		{
+			"Name":"Custom_LASV_RaphaelShop",
+			"FromMapFile":"assets/Maps/RaphaelShop.tbin",
+			"MigrateLegacyNames":[
+				"RaphaelShop"
+			]
+		},
+		{
+			"Name":"Custom_LASV_OddiHouse",
+			"FromMapFile":"assets/Maps/OddiHouse.tbin",
+			"MigrateLegacyNames":[
+				"OddiHouse"
+			]
+		},
+		{
+			"Name":"Custom_LASV_Umuwi",
+			"FromMapFile":"assets/Maps/Umuwi.tbin",
+			"MigrateLegacyNames":[
+				"Umuwi"
+			]
+		},
+		{
+			"Name":"Custom_LASV_LunnaLake",
+			"FromMapFile":"assets/Maps/LunnaLake.tbin",
+			"MigrateLegacyNames":[
+				"LunnaLake"
+			]
+		},
+		{
+			"Name":"Custom_LASV_DiannaGreenhouse",
+			"FromMapFile":"assets/Maps/DiannaGreenhouse.tbin",
+			"MigrateLegacyNames":[
+				"DiannaGreenhouse"
+			]
+		},
+		{
+			"Name":"Custom_LASV_BiankaDate",
+			"FromMapFile":"assets/Maps/BiankaDate.tbin",
+			"MigrateLegacyNames":[
+				"BiankaDate"
+			]
+		}
+	],
+	"Changes":[
+		{
+			"LogName":"LunnaHouse Events",
+			"Action":"Load",
+			"Target":"Data/Events/Custom_LASV_LunnaHouse",
+			"FromFile":"assets/Events/Blank/LunnaHouse.json"
+		},
+		{
+			"LogName":"LunnaWestForest Events",
+			"Action":"Load",
+			"Target":"Data/Events/Custom_LASV_LunnaWestForest",
+			"FromFile":"assets/Events/Blank/LunnaWestForest.json"
+		},
+		{
+			"LogName":"Umuwi Events",
+			"Action":"Load",
+			"Target":"Data/Events/Custom_LASV_Umuwi",
+			"FromFile":"assets/Events/Blank/Umuwi.json"
+		},
+		{
+			"LogName":"FallsCave Events",
+			"Action":"Load",
+			"Target":"Data/Events/Custom_LASV_FallsCave",
+			"FromFile":"assets/Events/Blank/FallsCave.json"
+		},
+		{
+			"LogName":"LunnaLake Events",
+			"Action":"Load",
+			"Target":"Data/Events/Custom_LASV_LunnaLake",
+			"FromFile":"assets/Events/Blank/LunnaLake.json"
+		},
+		{
+			"LogName":"RaphaelShop Events",
+			"Action":"Load",
+			"Target":"Data/Events/Custom_LASV_RaphaelShop",
+			"FromFile":"assets/Events/Blank/RaphaelShop.json"
+		},
+		{
+			"LogName":"Include NPCData",
+			"Action":"Include",
+			"FromFile":"assets/Data/NPCData.json"
+		},
+		{
+			"LogName":"Include GiftTaste",
+			"Action":"Include",
+			"FromFile":"assets/Data/GiftTaste.json"
+		},
+		{
+			"LogName":"Include MovieData",
+			"Action":"Include",
+			"FromFile":"assets/Data/MovieData.json"
+		},
+		{
+			"LogName":"Include RomanceData",
+			"Action":"Include",
+			"FromFile":"assets/Data/RomanceData.json"
+		},
+		{
+			"LogName":"Include FestivalDialogue",
+			"Action":"Include",
+			"FromFile":"assets/Data/FestivalDialogue.json"
+		},
+		{
+			"LogName":"Include FestivalData",
+			"Action":"Include",
+			"FromFile":"assets/Data/FestivalData.json"
+		},
+		{
+			"LogName":"Include MapData",
+			"Action":"Include",
+			"FromFile":"assets/Data/MapData.json"
+		},
+		{
+			"LogName":"Include Strings",
+			"Action":"Include",
+			"FromFile":"assets/Data/Strings.json"
+		},
+		{
+			"LogName":"Include FishData",
+			"Action":"Include",
+			"FromFile":"assets/Data/FishData.json"
+		},
+		{
+			"LogName":"Include Event Data",
+			"Action":"Include",
+			"FromFile":"assets/Events/EventData.json"
+		},
+		{
+			"LogName":"Include PlatonicRecipes Events",
+			"Action":"Include",
+			"FromFile":"assets/Events/PlatonicRecipes.json"
+		},
+		{
+			"LogName":"Seasonal Outfits",
+			"Action":"Include",
+			"FromFile":"assets/Data/SeasonalOutfits.json",
+			"When":{
+				"Seasonal_Outfits":"true"
+			}
+		},
+		{
+			"LogName":"Include Intermod Patches",
+			"Action":"Include",
+			"FromFile":"assets/Data/IntermodPatches.json"
+		}
+	]
+}

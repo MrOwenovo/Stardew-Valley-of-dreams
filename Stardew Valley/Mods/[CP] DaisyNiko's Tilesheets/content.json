@@ -1,0 +1,267 @@
+{
+    "Format": "1.15",
+    "ConfigSchema": {
+        "ManualRecolourSelection":{
+            "AllowValues":"Off, Vanilla, Earthy, Eemie, Starblue, VibrantPastoral, WittilyNamed",
+            "Default":"Off"
+        },
+        "ManualInterfaceSelection":{
+            "AllowValues":"Off, Vanilla, Earthy, OvergrownFlowery, StarrySky, StarrySkyDark, Vintage",
+            "Default":"Off"
+        },
+        "EemieFallVariant": {
+            "AllowValues": "Green, Orange",
+            "Default": "Green"
+        },
+        "VibrantPastoralFallVariant": {
+            "AllowValues": "Green, Orange",
+            "Default": "Green"
+        },
+        "EnableArrows":{
+            "AllowValues":"true, false",
+            "Default":"true"
+        },
+        "StarrySkyInterfaceDarkerFont":{
+            "AllowValues":"true, false",
+            "Default":"false"
+        }
+    },
+
+    "DynamicTokens": [
+        //recolours        
+        {
+            "Name": "recolour",
+            "Value": "Vanilla",
+            "When":{
+                "ManualRecolourSelection":"Off, Vanilla"
+            }
+        },
+        {
+            "Name": "recolour",
+            "Value": "Eemie",
+            "When": {
+                "HasMod": "minervamaga.CP.eemieMapRecolour",
+                "ManualRecolourSelection":"Off"
+            }
+        },
+        {
+            "Name": "recolour",
+            "Value": "Starblue",
+            "When": {
+                "HasMod": "Lita.StarblueValley",
+                "ManualRecolourSelection":"Off"
+            }
+        },
+        {
+            "Name": "recolour",
+            "Value": "WittilyNamed",
+            "When": {
+                "HasMod": "Acerbicon.Recolor",
+                "ManualRecolourSelection":"Off"
+            }
+        },
+        {
+            "Name": "recolour",
+            "Value": "Earthy",
+            "When": {
+                "HasMod": "DaisyNiko.EarthyRecolour",
+                "ManualRecolourSelection":"Off"
+            }
+        },
+        {
+            "Name": "recolour",
+            "Value": "VibrantPastoral",
+            "When": {
+                "HasMod": "grapeponta.VibrantPastoralRecolor",
+                "ManualRecolourSelection":"Off"
+            }
+        },
+        /*{
+            "Name":"recolour",
+            "Value":"ProjectYellog",
+            "When":{
+                "HasMod":"yri.ProjectYellogTownOverhaul",
+                "ManualRecolourSelection":"Off"
+            }
+        },*/
+        {
+            "Name":"recolour",
+            "Value":"{{ManualRecolourSelection}}",
+            "When":{
+                "ManualRecolourSelection |contains=Off":"false"
+            }
+        },
+        // ui mods        
+        {
+            "Name":"ui",
+            "Value":"Vanilla",
+            "When":{
+                "ManualInterfaceSelection":"Off, Vanilla"
+            }
+        },
+        {
+            "Name":"ui",
+            "Value":"OvergrownFlowery",
+            "When":{
+                "HasMod":"Amaryn.OvergrownFloweryInterface",
+                "ManualInterfaceSelection":"Off"
+            }
+        },
+        {
+            "Name":"ui",
+            "Value":"Vintage",
+            "When":{
+                "HasMod |contains=ManaKirel.VMI, ManaKirel.VintageInterface2, Maythorn.VintageInterfaceMultipack":"True",
+                "ManualInterfaceSelection":"Off"
+            }
+        },
+        {
+            "Name":"ui",
+            "Value":"StarrySky",
+            "When":{
+                "HasMod":"BeneathThePlass.StarrySkyInterfaceCP",
+                "StarrySkyInterfaceDarkerFont":"false",
+                "ManualInterfaceSelection":"Off"
+            }
+        },
+        {
+            "Name":"ui",
+            "Value":"StarrySkyDark",
+            "When":{
+                "HasMod":"BeneathThePlass.StarrySkyInterfaceCP",
+                "StarrySkyInterfaceDarkerFont":"True",
+                "ManualInterfaceSelection":"Off"
+            }
+        },
+        {
+            "Name":"ui",
+            "Value":"Earthy",
+            "When":{
+                "HasMod":"DaisyNiko.EarthyInterface",
+                "ManualInterfaceSelection":"Off"
+            }
+        },
+        {
+            "Name":"ui",
+            "Value":"{{ManualInterfaceSelection}}",
+            "When":{
+                "ManualInterfaceSelection |contains=Off":"false"
+            }
+        }
+    ],
+    "Changes": [
+        //seasonal
+        {
+            "Action": "Load",
+            "Target": "Maps/spring_daisyextras, Maps/summer_daisyextras, Maps/fall_daisyextras, Maps/winter_daisyextras",
+            "FromFile": "assets/{{recolour}}/{{TargetWithoutPath}}.png"
+        },
+        //orange fall edits
+        {
+            "Action":"EditImage",
+            "Target":"Maps/fall_daisyextras",
+            "FromFile":"assets/{{recolour}}/orange_fall_daisyextras.png",
+            "When":{
+                "EemieFallVariant":"Orange",
+                "recolour":"Eemie"
+            }
+        },
+        {
+            "Action":"EditImage",
+            "Target":"Maps/fall_daisyextras",
+            "FromFile":"assets/{{recolour}}/orange_fall_daisyextras.png",
+            "When":{
+                "VibrantPastoralFallVariant":"Orange",
+                "recolour":"VibrantPastoral"
+            }
+        },
+        //cave
+        {
+            "Action": "Load",
+            "Target": "Maps/cave_daisyextras",
+            "FromFile": "assets/Vanilla/cave_daisyextras.png"
+        },
+        //desert
+        {
+            "Action":"Load",
+            "Target":"Maps/desert_daisyextras",
+            "FromFile":"assets/{{recolour}}/desert_daisyextras.png"
+        },
+       //arrows       
+       //down replaces _       
+       {
+            "Action":"EditImage",
+            "Target":"LooseSprites/font_bold",
+            "FromFile":"assets/Arrows/{{ui}}_Down.png",
+            "ToArea":{
+                "X":120,
+                "Y":48,
+                "Width":8,
+                "Height":16
+            },
+            "When":{
+                "EnableArrows":"true"
+            }
+       },
+       //up left replaces [
+       {
+            "Action":"EditImage",
+            "Target":"LooseSprites/font_bold",
+            "FromFile":"assets/Arrows/{{ui}}_UpLeft.png",
+            "ToArea":{
+                "X":88,
+                "Y":48,
+                "Width":8,
+                "Height":16
+            },
+            "When":{
+                "EnableArrows":"true"
+            }
+       },
+       //up right replaces ]
+       {
+            "Action":"EditImage",
+            "Target":"LooseSprites/font_bold",
+            "FromFile":"assets/Arrows/{{ui}}_UpRight.png",
+            "ToArea":{
+                "X":104,
+                "Y":48,
+                "Width":8,
+                "Height":16
+            },
+            "When":{
+                "EnableArrows":"true"
+            }
+       },
+       //down left replaces {
+       {
+            "Action":"EditImage",
+            "Target":"LooseSprites/font_bold",
+            "FromFile":"assets/Arrows/{{ui}}_DownLeft.png",
+            "ToArea":{
+                "X":88,
+                "Y":80,
+                "Width":8,
+                "Height":16
+            },
+            "When":{
+                "EnableArrows":"true"
+            }
+       },
+       //down right replaces }
+       {
+            "Action":"EditImage",
+            "Target":"LooseSprites/font_bold",
+            "FromFile":"assets/Arrows/{{ui}}_DownRight.png",
+            "ToArea":{
+                "X":104,
+                "Y":80,
+                "Width":8,
+                "Height":16
+            },
+            "When":{
+                "EnableArrows":"true"
+            }
+       },
+    ]
+}

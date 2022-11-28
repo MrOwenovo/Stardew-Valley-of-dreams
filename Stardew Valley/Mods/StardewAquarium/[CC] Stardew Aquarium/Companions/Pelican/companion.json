@@ -1,0 +1,63 @@
+{
+  "Name": "Pelican",
+  "Type": "Jumping",
+  "TravelSpeed": 1,
+  "Scale": 1.0,
+  "AppearUnderwater": false,
+  "IsPrismatic": false,
+  "FrameSizeWidth": 16,
+  "FrameSizeHeight": 16,
+  "IdleBehavior": "Wander",
+  "MaxIdleDistance": "128",
+  "MaxDistanceBeforeTeleport": "4000",
+  "EnableFarmerCollision": true,
+  "EnableShadow": true,
+  "ChanceForHalting": 0.5,
+  "MinHaltTime": 3000,
+  "MaxHaltTime": 10000,
+
+  "UpAnimation": {
+    "StartingFrame": 0,
+    "NumberOfFrames": 3,
+    "Duration": 200,  
+
+      "IdleAnimation": {
+        "StartingFrame": 6,
+        "NumberOfFrames": 6,
+        "Duration": 400     
+        }   
+    },
+    "DownAnimation": {
+    "StartingFrame": 3,
+    "NumberOfFrames": 3,
+    "Duration": 200,
+
+    "IdleAnimation": {
+      "StartingFrame": 3,
+      "NumberOfFrames": 1,
+      "Duration": 200
+    }
+  },
+  "LeftAnimation": {
+    "StartingFrame": 0,
+    "NumberOfFrames": 3,
+    "Duration": 200,
+
+    "IdleAnimation": {
+      "StartingFrame": 0,
+      "NumberOfFrames": 1,
+      "Duration": 200
+    }
+  },
+  "RightAnimation": {
+    "StartingFrame": 3,
+    "NumberOfFrames": 3,
+    "Duration": 200,
+
+    "IdleAnimation": {
+      "StartingFrame": 12,
+      "NumberOfFrames": 6,
+      "Duration": 400
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+
+	//Spring	
+	"spring_3": "610 Forest 33 25 2 lunna_sit \"Strings\\schedules\\Lunna:spring_3.000\"/900 Town 72 9 2/1300 Town 32 27 3/1700 Forest 25 36 1/2200 Custom_LASV_LunnaHouse 12 8 3 lunna_sleep",
+	"spring": "610 Custom_LASV_LunnaHouse 4 5 2/750 Custom_LASV_LunnaHouse 2 6 3 \"Strings\\schedules\\Lunna:Sun.000\"/900 Town 72 9 2/1300 Town 32 27 3/1700 Forest 25 36 1 \"Strings\\schedules\\Lunna:Mon.000\"/2200 Custom_LASV_LunnaHouse 12 8 3 lunna_sleep",
+	"spring_Tue": "610 Custom_LASV_LunnaHouse 4 5 2/750 Custom_LASV_LunnaHouse 10 5 0/1000 Forest 35 9 3 lunna_eat/1300 Town 26 12 3/1700 Forest 25 36 1/2200 Custom_LASV_LunnaHouse 12 8 3 lunna_sleep",
+	"spring_Thu": "GOTO spring_Tue",
+	"spring_Fri": "610 Forest 33 25 2 lunna_sit/800 WizardHouse 9 13 2/1700 Forest 25 36 1/2200 Custom_LASV_LunnaHouse 12 8 3 lunna_sleep",
+	"spring_Sun": "610 Custom_LASV_LunnaHouse 10 5 0/1200 Forest 42 59 2/1700 Forest 25 36 1/2200 Custom_LASV_LunnaHouse 12 8 3 lunna_sleep",
+	"spring_27": "610 Custom_LASV_LunnaHouse 4 5 2/750 Custom_LASV_LunnaHouse 10 5 0 \"Strings\\schedules\\Lunna:Sun.000\"/1000 Forest 35 9 3 lunna_eat/1300 Town 26 12 3/1700 Saloon 26 21 3/2200 Custom_LASV_LunnaHouse 12 8 3 lunna_sleep",
+	
+	//Summer
+	"summer": "610 Custom_LASV_LunnaHouse 4 5 2/800 Forest 51 30 2 lunna_sit/1200 ArchaeologyHouse 21 5 0/1500 Beach 40 12 3 lunna_sit/1900 Forest 25 36 1 \"Strings\\schedules\\Lunna:Mon.000\"/2200 Custom_LASV_LunnaHouse 12 8 3 lunna_sleep",
+	"summer_Wed": "610 Custom_LASV_LunnaHouse 4 5 2/900 Forest 103 23 0/1200 Beach 40 12 3 lunna_sit/1500 Town 72 9 2/1700 Forest 25 36 1 \"Strings\\schedules\\Lunna:Mon.000\"/2200 Custom_LASV_LunnaHouse 12 8 3 lunna_sleep",
+	"summer_Fri": "GOTO spring_Fri",
+	"summer_Sat": "610 Custom_LASV_LunnaHouse 4 5 2/750 Custom_LASV_LunnaHouse 10 5 0\"Strings\\schedules\\Lunna:Sun.000\"/1000 Beach 39 12 3 lunna_eat/1300 Town 26 12 3/1700 Forest 25 36 1 \"Strings\\schedules\\Lunna:Mon.000\"/2200 Custom_LASV_LunnaHouse 12 8 3 lunna_sleep",
+	"summer_Sun": "GOTO spring_Sun",
+	
+	//Fall
+	"fall": "610 Custom_LASV_LunnaHouse 10 5 0/1000 Forest 42 59 2/1300 Mountain 16 8 2 lunna_eat/1700 Saloon 26 21 3/2200 Custom_LASV_LunnaHouse 12 8 3 lunna_sleep",
+	"fall_Mon": "610 Custom_LASV_LunnaHouse 10 5 0\"Strings\\schedules\\Lunna:Sun.000\"/1200 Mountain 57 21 2 lunna_lie/1500 Mountain 59 10 0/2200 Custom_LASV_LunnaHouse 12 8 3 lunna_sleep",
+	"fall_Thu": "610 Mountain 15 8 2 lunna_sit/1200 Town 72 9 2/1500 Town 32 27 3/1700 Forest 25 36 1 \"Strings\\schedules\\Lunna:Mon.000\"/2200 Custom_LASV_LunnaHouse 12 8 3 lunna_sleep",
+	"fall_Fri": "GOTO spring_Fri",
+	"fall_Sun": "GOTO spring_Sun",
+	
+	//Winter
+	"winter": "GOTO spring_Sun",
+	"winter_Wed": "GOTO summer_Wed",
+	"winter_Fri": "GOTO spring_Fri",
+	"winter_Sun": "GOTO spring_Sun",
+	
+	//Rain
+	"rain": "610 Custom_LASV_LunnaHouse 4 5 2/750 Custom_LASV_LunnaHouse 2 6 3/1200 Custom_LASV_LunnaHouse 10 5 0 \"Strings\\schedules\\Lunna:Sun.000\"/1700 Forest 25 36 1 \"Strings\\schedules\\Lunna:Mon.000\"/2200 Custom_LASV_LunnaHouse 12 8 3 lunna_sleep",
+	"rain2": "610 Custom_LASV_LunnaHouse 4 5 2/750 Custom_LASV_LunnaHouse 2 6 3/1200 Forest 33 25 2 lunna_sit/1600 Custom_LASV_LunnaHouse 10 5 0 \"Strings\\schedules\\Lunna:Sun.000\"/2200 Custom_LASV_LunnaHouse 12 8 3 lunna_sleep",
+	
+	//Marriage Schedule
+	"marriage_Tue": "830 SeedShop 3 23 0 \"Strings\\schedules\\Lunna:marriage_Tue.001\"/1200 Town 26 12 3/1400 Forest 36 9 2 lunna_sit/1800 BusStop -1 23 3",
+	"marriage_Thu": "800 Forest 33 25 2 lunna_sit/1200 Mountain 14 7 lunna_eat/1700 Saloon 26 21 3 \"Strings\\schedules\\Lunna:marriage_Thu.001\"/1800 BusStop -1 21 3",
+	"marriage_Fri": "1000 WizardHouse 9 13 2 \"Strings\\schedules\\Lunna:marriage_Fri.001\"/1500 Custom_LASV_LunnaWestForest 10 11 0 \"Strings\\schedules\\Lunna:marriage_Fri.002\"/1800 BusStop -1 21 3",
+}

@@ -1,0 +1,135 @@
+{
+	"Format": "1.19.0",
+	
+			"ConfigSchema": 
+		{
+			"Cerulean Nudibranch":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				}, 
+			"Golden Trout":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				}, 
+			"Kokanee Salmon":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				}, 
+			"Ornate Nudibranch":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				}, /*
+			"Red Herring":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				}, */ 
+			"Sea Bunny Nudibranch":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				}, 
+			"Sunset Nudibranch":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				},
+		},
+	"Changes": [
+		{
+			"LogName": "Cerulean Nudibranch",
+			"Action": "EditImage",
+			"Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Cerulean Nudibranch}}",
+			"FromFile": "cerulean_nudibranch.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Cerulean Nudibranch}}", "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Cerulean Nudibranch}}", "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 30,
+			"AnimationFrameCount": 4,
+			"When":
+				{"Cerulean Nudibranch": "true"},
+		},
+		{
+			"LogName": "Golden Trout",
+			"Action": "EditImage",
+			"Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Golden Trout}}",
+			"FromFile": "golden_trout.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Golden Trout}}", "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Golden Trout}}", "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 20,
+			"AnimationFrameCount": 4,
+			"When":
+				{"Golden Trout": "true"},
+		},
+		{
+			"LogName": "Kokanee Salmon",
+			"Action": "EditImage",
+			"Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Kokanee Salmon}}",
+			"FromFile": "kokanee_salmon.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Kokanee Salmon}}", "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Kokanee Salmon}}", "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 20,
+			"AnimationFrameCount": 4,
+			"When":
+				{"Kokanee Salmon": "true"},
+		},
+		{
+			"LogName": "Ornate Nudibranch",
+			"Action": "EditImage",
+			"Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Ornate Nudibranch}}",
+			"FromFile": "ornate_nudibranch.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Ornate Nudibranch}}", "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Ornate Nudibranch}}", "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 30,
+			"AnimationFrameCount": 4,
+			"When":
+				{"Ornate Nudibranch": "true"},
+		},/*
+		{
+			"LogName": "",
+			"Action": "EditImage",
+			"Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:}}",
+			"FromFile": ".png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": "{{spacechase0.JsonAssets/ObjectSpriteX:}}", "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:}}", "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 20,
+			"AnimationFrameCount": 4,
+			"When":
+				{"": "true"},
+		},*/
+		{
+			"LogName": "Sea Bunny Nudibranch",
+			"Action": "EditImage",
+			"Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Sea Bunny Nudibranch}}",
+			"FromFile": "sea_bunny_nudibranch.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Sea Bunny Nudibranch}}", "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Sea Bunny Nudibranch}}", "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 30,
+			"AnimationFrameCount": 4,
+			"When":
+				{"Sea Bunny Nudibranch": "true"},
+		},
+		{
+			"LogName": "Sunset Nudibranch",
+			"Action": "EditImage",
+			"Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Sunset Nudibranch}}",
+			"FromFile": "sunset_nudibranch.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Sunset Nudibranch}}", "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Sunset Nudibranch}}", "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 30,
+			"AnimationFrameCount": 4,
+			"When":
+				{"Sunset Nudibranch": "true"},
+		}
+	]
+}

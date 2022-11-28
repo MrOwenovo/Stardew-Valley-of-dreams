@@ -1,0 +1,68 @@
+{
+  "Changes": [
+	//Sprite
+	{
+	  "Action": "Load",
+	  "Target": "applesauce.outstorage/foragebasketgreenplaced",
+	  "FromFile": "assets/foragebasketgreenplaced.png"
+	},
+
+	//Data
+	{
+	  "Action": "EditData",
+	  "Target": "furyx639.ExpandedStorage/Storages",
+	  "Entries": {
+		"foragebasketgreenplaced": {
+		            "DisplayName": "{{i18n: foragebasketgreenplaced.name}}",
+          		    "Description": "{{i18n: foragebasketgreenplaced.description}}",
+          		    "Image": "applesauce.outstorage/foragebasketgreenplaced",
+                            "Frames": 1,
+         		    "PlayerColor": false,
+          		    "OpenSound": "leafrustle",
+			//Betterchests stuff
+        		    "BetterChestsData": {
+          		    "CollectItems": "Enabled",
+           		    "CustomColorPicker": "Disabled",
+           		    "FilterItems": "Enabled",
+        		    "FilterItemsList": [
+          			    "category_greens",
+           			    "category_flowers",
+           			    "category_fruits"
+         			   ],
+         		   "OpenHeldChest": "Enabled",
+      		           "ResizeChest": "Enabled",
+			   "ResizeChestCapacity": 48
+			  			}
+			}
+		      }
+	            },
+				{
+      	"Action": "EditData",
+     	 "Target": "furyx639.ExpandedStorage/Buy",
+    	  "Entries": {
+     	     "lunchbox": {
+     	     "ShopID": "SeedShop",
+       	     "Price": 50000
+      	    }
+     	   }
+  	  },
+      {
+        "Action": "EditData",
+        "Target": "Data/CraftingRecipes",
+        "Entries": {
+          "foragebasketgreenplaced": "454 40/Home/232/true/null/{{i18n: foragebasketgreenplaced.name}}"
+        }
+      },
+    
+      {
+        "Action": "EditData",
+        "Target": "furyx639.ExpandedStorage/Unlock",
+        "Entries": {
+          "foragebasketgreenplaced": "true"
+        },
+        "When": {
+          "query: {{SkillLevel:Foraging}} >= 7": true
+           }
+          }
+ 	 ] 
+	}

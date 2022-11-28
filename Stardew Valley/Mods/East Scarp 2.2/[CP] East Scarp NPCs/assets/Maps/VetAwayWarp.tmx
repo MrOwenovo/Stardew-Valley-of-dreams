@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.4" tiledversion="1.4.2" orientation="orthogonal" renderorder="right-down" width="12" height="10" tilewidth="16" tileheight="16" infinite="0" nextlayerid="7" nextobjectid="2">
+ <properties>
+  <property name="AmbientLight" value="110 110 110"/>
+  <property name="DayTiles_Asdf" value="Back 2 4 12 Back 6 4 46 Back 10 4 46 Buildings 2 1 24 Buildings 6 1 24 Buildings 10 1 24"/>
+  <property name="Feed" value="3 2"/>
+  <property name="Light_asdf" value="2 2 6 6 2 6 10 2 6 2 9 6 7 6 4"/>
+  <property name="NightTiles_asdf" value="Back 2 4 25 Back 6 4 53 Back 10 4 53 Buildings 2 1 26 Buildings 6 1 26 Buildings 10 1 26"/>
+  <property name="ProduceArea" value="2 4 8 4"/>
+  <property name="Warp" value="2 10 Custom_EastScarpe 33 32"/>
+ </properties>
+ <tileset firstgid="1" name="Coop" tilewidth="16" tileheight="16" tilecount="84" columns="4">
+  <image source="coopTiles" width="64" height="336"/>
+  <tile id="12">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+  <tile id="33">
+   <properties>
+    <property name="Passable" type="int" value="0"/>
+    <property name="Trough" value="T"/>
+   </properties>
+  </tile>
+  <tile id="53">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+  <tile id="54">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="85" name="springobjects" tilewidth="16" tileheight="16" tilecount="816" columns="24">
+  <image source="springobjects.png" width="384" height="544"/>
+ </tileset>
+ <tileset firstgid="901" name="coopchooks" tilewidth="16" tileheight="16" tilecount="56" columns="8">
+  <image source="coopchooks.png" width="128" height="112"/>
+ </tileset>
+ <layer id="1" name="Back" width="12" height="10">
+  <data encoding="csv">
+17,13,13,13,13,13,13,13,13,13,13,17,
+17,13,13,13,13,13,13,13,13,13,13,17,
+21,13,13,13,13,13,13,13,13,13,13,21,
+54,57,54,54,54,54,34,34,34,34,54,54,
+13,13,26,55,53,57,47,54,54,54,47,13,
+13,55,13,13,13,13,13,55,13,55,13,13,
+13,55,37,55,13,13,55,13,53,14,16,13,
+13,53,55,13,13,55,14,16,14,19,20,13,
+55,55,13,55,13,56,22,24,22,23,24,13,
+13,54,54,54,13,13,13,13,13,13,13,13
+</data>
+ </layer>
+ <objectgroup id="2" name="Back"/>
+ <layer id="3" name="Buildings" width="12" height="10">
+  <data encoding="csv">
+1,2,2,2,2,2,2,2,2,2,2,3,
+5,62,25,17,17,17,25,62,17,61,25,7,
+5,21,48,21,21,29,30,30,30,30,31,7,
+5,936,938,0,929,33,263,263,263,263,35,7,
+5,0,0,0,0,0,921,0,0,905,0,7,
+5,919,0,0,0,0,0,0,0,0,58,7,
+5,60,0,0,0,0,0,0,0,0,0,7,
+5,64,0,0,0,0,0,0,953,265,904,7,
+5,63,0,0,0,0,0,0,0,0,0,7,
+49,5,0,7,49,49,49,49,49,49,49,49
+</data>
+ </layer>
+ <objectgroup id="4" name="Buildings"/>
+ <layer id="5" name="Front" width="12" height="10">
+  <data encoding="csv">
+1,2,2,2,2,2,2,2,2,2,2,3,
+5,0,0,0,0,0,0,0,0,0,0,7,
+5,0,0,0,0,0,0,0,0,0,0,7,
+5,0,0,0,0,0,0,0,0,0,0,7,
+5,0,0,0,0,0,0,0,0,0,0,7,
+5,0,0,0,0,0,0,0,0,0,0,7,
+5,0,0,0,0,0,0,0,0,0,0,7,
+5,59,0,0,0,0,0,0,0,0,0,7,
+9,4,0,8,10,10,10,10,10,10,10,11,
+49,9,10,11,49,49,49,49,49,49,49,49
+</data>
+ </layer>
+ <objectgroup id="6" name="Front"/>
+</map>

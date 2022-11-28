@@ -1,0 +1,130 @@
+{
+  "Format": "1.21.0",
+  "Changes": [
+    //Shay
+    //Disposition
+    {
+      "Logname": "ShayDispo",
+      "Action": "EditData",
+      "Target": "data/NPCDispositions",
+      "Entries": {
+        "Shay": "adult/neutral/neutral/neutral/female/non-datable/null/Town/spring 20//Custom_BoardingHouse_BoardingHouse2 5 19/{{i18n:Shay.ShayName}}"
+      },
+      "When": {
+        "HasSeenEvent |contains=1426001": "true"
+      }
+    },
+    //Gift Taste
+    {
+      "LogName": "ShayGiftTastes",
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "Entries": {
+        "Shay": "{{i18n:Shay.GiftLove}}/206 260 215/{{i18n:Shay.GiftLike}}/-5 -79 342/{{i18n:Shay.GiftDislike}}/80 281 404 18 408 20 257 422 416 16 412/{{i18n:Shay.GiftHate}}/346/{{i18n:Shay.GiftNeutral}}/-6/"
+      }
+    },
+    //Sprite & Portrait (Credit to exrenkon/rekooooon)
+    {
+      "LogName": "ShaySprite",
+      "Action": "Load",
+      "Target": "Characters/Shay",
+      "FromFile": "assets/Character/Shay.png"
+    },
+    {
+      "LogName": "ShayPortrait",
+      "Action": "Load",
+      "Target": "Portraits/Shay",
+      "FromFile": "assets/Portrait/Shay.png"
+    },
+    //Schedule
+    {
+      "LogName": "ShaySchedule",
+      "Action": "Load",
+      "Target": "Characters/schedules/Shay",
+      "FromFile": "assets/schedules/schedule.json"
+    },
+    //Dialogue
+    {
+      "LogName": "ShayDialogue",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/Shay",
+      "FromFile": "assets/dialogue/Dialogue.json"
+    },
+    //Exclusions
+    {
+      "Action": "EditData",
+      "Target": "Data/CustomNPCExclusions",
+      "Entries": {
+        "Shay": "WinterStar Socialize IslandVisit Greet"
+      }
+    },
+    //Intro Part1
+    {
+      "LogName": "ShayIntro1",
+      "Action": "EditData",
+      "Target": "Data/Events/AnimalShop",
+      "Entries": {
+        "1426000/e 3910975/t 1700 2230": "shaneTheme/15 13/farmer -100 -100 0 Marnie 15 13 1 Jas 2 7 3/skippable/pause 500/speak Marnie \"{{i18n:Shay.Intro101}}\"/emote Marnie 40/speak Marnie \"{{i18n:Shay.Intro102}}\"/emote Marnie 40/speak Marnie \"{{i18n:Shay.Intro103}}\"/pause 50/playSound closeDoor/warp farmer 13 19/pause 100/faceDirection Marnie 2/pause 100/speak Marnie \"{{i18n:Shay.Intro104}}\"/pause 250/move farmer 0 -3 0 true/faceDirection Marnie 1/pause 250/speak Marnie \"{{i18n:Shay.Intro105}}\"/pause 50/playSound shiny4/pause 500/move Marnie -2 0 3/move Marnie 0 1 2/pause 100/speak Marnie \"{{i18n:Shay.Intro106}}\"/message \"{{i18n:Shay.Intro107}}\"/quickQuestion {{i18n:Shay.Intro108}}#{{i18n:Shay.Intro109}}#{{i18n:Shay.Intro110}}#{{i18n:Shay.Intro111}}(break)friendship Marnie -25\\speak Marnie \"{{i18n:Shay.Intro112}}\"(break)friendship Marnie 25\\speak Marnie \"{{i18n:Shay.Intro113}}\"(break)speak Marnie \"{{i18n:Shay.Intro114}}\"/pause 150/move farmer 0 3 2/pause 50/warp farmer -100 -100/playSound doorClose/pause 500/emote Marnie 40/pause 150/speak Marnie \"{{i18n:Shay.Intro115}}\"/pause 500/globalFade/viewport -1000 -1000/end"
+      }
+    },
+    //Intro Part2
+    {
+      "LogName": "ShayIntro2",
+      "Action": "EditData",
+      "Target": "Data/Events/BusStop",
+      "Entries": {
+        "1426001/e 1426000/t 600 900/d Sun/d Mon/d Thu/d Sat/F": "CloudCountry/13 22/farmer 11 23 1 Shay -100 -100 2 Marnie -100 -100 2 Jas -100 -100 1/skippable/move farmer 3 0 1/playSound busDoorOpen/pause 100/faceDirection farmer 0/pause 100/emote farmer 8/pause 100/viewport move 0 -4 1500 true/pause 150/move farmer 0 -8 0/move farmer -2 0 3/faceDirection farmer 0/pause 500/warp Shay 12 9/pause 100/move Shay 0 2 2/emote Shay 16/pause 150/speak Shay \"{{i18n:Shay.Intro201}}\"/move Shay 0 2 2/pause 150/speak Shay \"{{i18n:Shay.Intro202}}\"/question fork0 \"{{i18n:Shay.Intro203}}#{{i18n:Shay.Intro204}}#{{i18n:Shay.Intro205}}\"/fork ShayIntro2Lead/pause 100/emote farmer 40/pause 100/speak Shay \"{{i18n:Shay.Intro206}}\"/pause 200/emote Shay 16/pause 50/speak Shay \"{{i18n:Shay.Intro207}}\"/pause 100/emote farmer 40/pause 100/speak Shay \"{{i18n:Shay.Intro208}}\"/pause 500/globalFade/viewport -1000 -1000/end",
+        "ShayIntro2Lead": "friendship Shay 125/pause 200/speak Shay \"{{i18n:Shay.Intro209}}\"/fade/pause 500/changeLocation AnimalShop 13 16/warp farmer -100 -100/warp Shay -100 -100/faceDirection Shay 0/warp Marnie 12 14/warp Jas 6 14/fade unfade/pause 500/warp farmer 13 19/pause 50/move farmer 0 -1 0/move farmer 1 0 0/warp Shay 13 19/playSound doorClose/move Shay 0 -1 0/pause 100/emote Marnie 16/pause 50/speak Marnie \"{{i18n:Shay.Intro210}}\"/pause 100/speak Shay \"{{i18n:Shay.Intro211}}\"/faceDirection Jas 2/emote Jas 8 true/pause 50/move Marnie 1 0 1/move Marnie 0 -1 0/move Marnie 2 0 1/move Marnie 0 3 2/move Marnie -2 0 2/pause 50/speak Marnie \"{{i18n:Shay.Intro212}}\"/pause 100/speak Shay \"{{i18n:Shay.Intro213}}\"/speed Jas 4/move Jas 0 4 2 true/pause 250/textAboveHead Marnie \"{{i18n:Shay.Intro214}}\"/speed Jas 4/move Jas 4 0 1/speed Jas 2/move Jas 1 0 1/pause 100/speak Jas \"{{i18n:Shay.Intro215}}\"/faceDirection Shay 3/emote Shay 16/pause 50/speak Shay \"{{i18n:Shay.Intro216}}\"/pause 50/move Shay -1 0 3/pause 50/speak Shay \"{{i18n:Shay.Intro217}}\"/pause 50/faceDirection Shay 1/pause 1000/faceDirection Shay 0/pause 250/speak Shay \"{{i18n:Shay.Intro218}}\"/speak Marnie \"{{i18n:Shay.Intro219}}\"/speak Shay \"{{i18n:Shay.Intro220}}\"/pause 200/faceDirection Jas 0/pause 150/speak Jas \"{{i18n:Shay.Intro221}}\"/pause 200/speak Marnie \"{{i18n:Shay.Intro222}}\"/pause 250/speak Jas \"{{i18n:Shay.Intro223}}\"/pause 250/speak Shay \"{{i18n:Shay.Intro224}}\"/pause 250/emote Marnie 28/pause 250/speak Marnie \"{{i18n:Shay.Intro225}}\"/pause 100/textAboveHead Jas \"{{i18n:Shay.Intro226}}\"/faceDirection Shay 1/pause 100/speak Shay \"{{i18n:Shay.Intro227}}\"/pause 250/faceDirection Jas 1/pause 250/speak Jas \"{{i18n:Shay.Intro228}}\"/pause 100/emote Shay 16/pause 100/speak Shay \"{{i18n:Shay.Intro229}}\"/pause 250/speak Marnie \"{{i18n:Shay.Intro230}}\"/faceDirection Shay 0/pause 100/speak Shay \"{{i18n:Shay.Intro231}}\"/faceDirection Shay 1/pause 125/speak Shay \"{{i18n:Shay.Intro232}}\"/pause 500/globalFade/viewport -1000 -1000/end"
+      },
+      "When": {
+        "HasSeenEvent |contains=191393": "false"
+      }
+    },
+    //Intro Part2 (Post-CC)
+    {
+      "LogName": "ShayIntro2",
+      "Action": "EditData",
+      "Target": "Data/Events/BusStop",
+      "Entries": {
+        "1426001/e 1426000/t 600 900/d Sun/d Mon/d Thu/d Sat/F": "CloudCountry/13 22/farmer 11 23 1 Shay -100 -100 2 Marnie -100 -100 2 Jas -100 -100 1/skippable/move farmer 3 0 1/playSound busDoorOpen/pause 100/faceDirection farmer 0/pause 100/emote farmer 8/pause 100/viewport move 0 -4 1500 true/pause 150/move farmer 0 -8 0/move farmer -2 0 3/faceDirection farmer 0/pause 500/warp Shay 12 9/pause 100/move Shay 0 2 2/emote Shay 16/pause 150/speak Shay \"{{i18n:Shay.Intro201}}\"/move Shay 0 2 2/pause 150/speak Shay \"{{i18n:Shay.Intro202}}\"/question fork0 \"{{i18n:Shay.Intro203}}#{{i18n:Shay.Intro204}}#{{i18n:Shay.Intro205}}\"/fork ShayIntro2Lead/pause 100/emote farmer 40/pause 100/speak Shay \"{{i18n:Shay.Intro206}}\"/pause 200/emote Shay 16/pause 50/speak Shay \"{{i18n:Shay.Intro207}}\"/pause 100/emote farmer 40/pause 100/speak Shay \"{{i18n:Shay.Intro208}}\"/pause 500/globalFade/viewport -1000 -1000/end",
+        "ShayIntro2Lead": "friendship Shay 125/pause 200/speak Shay \"{{i18n:Shay.Intro209}}\"/fade/pause 500/changeLocation AnimalShop 13 16/warp farmer -100 -100/warp Shay -100 -100/faceDirection Shay 0/warp Marnie 12 14/warp Jas 6 14/fade unfade/pause 500/warp farmer 13 19/pause 50/move farmer 0 -1 0/move farmer 1 0 0/warp Shay 13 19/playSound doorClose/move Shay 0 -1 0/pause 100/emote Marnie 16/pause 50/speak Marnie \"{{i18n:Shay.Intro210}}\"/pause 100/speak Shay \"{{i18n:Shay.Intro211}}\"/faceDirection Jas 2/emote Jas 8 true/pause 50/move Marnie 1 0 1/move Marnie 0 -1 0/move Marnie 2 0 1/move Marnie 0 3 2/move Marnie -2 0 2/pause 50/speak Marnie \"{{i18n:Shay.Intro212}}\"/pause 100/speak Shay \"{{i18n:Shay.Intro213}}\"/speed Jas 4/move Jas 0 4 2 true/pause 250/textAboveHead Marnie \"{{i18n:Shay.Intro214}}\"/speed Jas 4/move Jas 4 0 1/speed Jas 2/move Jas 1 0 1/pause 100/speak Jas \"{{i18n:Shay.Intro215}}\"/faceDirection Shay 3/emote Shay 16/pause 50/speak Shay \"{{i18n:Shay.Intro216}}\"/pause 50/move Shay -1 0 3/pause 50/speak Shay \"{{i18n:Shay.Intro217}}\"/pause 50/faceDirection Shay 1/pause 1000/faceDirection Shay 0/pause 250/speak Shay \"{{i18n:Shay.Intro218}}\"/pause 500/speak Jas \"{{i18n:Shay.Intro233}}\"/pause 250/move Jas 0 -1 0/move Jas 6 0 1/move Jas 0 -3 2/move Jas 4 0 1/move Jas 0 -4 0 true/speak Shay \"{{i18n:Shay.Intro234}}\"pause 250/emote farmer 40/pause 500/pause 100/emote Shay 16/pause 100/speak Shay \"{{i18n:Shay.Intro235}}\"/pause 250/speak Marnie \"{{i18n:Shay.Intro236}}\"/faceDirection Shay 0/pause 100/speak Shay \"{{i18n:Shay.Intro237}}\"/faceDirection Shay 1/pause 125/speak Shay \"{{i18n:Shay.Intro238}}\"/pause 500/globalFade/viewport -1000 -1000/end"
+      },
+      "When": {
+        "HasSeenEvent |contains=191393": "true"
+      }
+    },
+    //2-Heart Event
+    {
+      "LogName": "Shay2Heart",
+      "Action": "EditData",
+      "Target": "Data/Events/Beach",
+      "When": {
+        "HasFlag": "beachBridgeFixed"
+      },
+      "Entries": {
+        "1426002/f Shay 500/t 1900 2300": "ocean/86 39/farmer 87 36 2 Shay 88 40 2/skippable/pause 500/move farmer 0 3 2/pause 2000/faceDirection Shay 3/pause 500/speak Shay \"{{i18n:Shay.2H01}}\"/pause 500/emote farmer 56/pause 500/move farmer 0 1 2/pause 1000/faceDirection Shay 2/pause 4000/speak Shay \"{{i18n:Shay.2H02}}\"/pause 2000/speak Shay \"{{i18n:Shay.2H03}}\"/pause 500/emote farmer 28/pause 1000/faceDirection Shay 3/pause 1000/speak Shay \"{{i18n:Shay.2H04}}\"/pause 1000/faceDirection Shay 2/pause 3000/speak Shay \"{{i18n:Shay.2H05}}\"/pause 2000/quickquestion {{i18n:Shay.2H06}}#{{i18n:Shay.2H07}}#{{i18n:Shay.2H08}}(break)friendship Shay 50\\pause 5000(break)speak Shay \"{{i18n:Shay.2H09}}\"\\pause 1000\\move farmer 0 -4 0/pause 500/globalFade/viewport -1000 -1000/end"
+      }
+    },
+    //4-Heart Event
+    {
+      "LogName": "Shay4Heart",
+      "Action": "EditData",
+      "Target": "Data/Events/Town",
+      "Entries": {
+        "1426003/f Shay 1000/e 3900074/t 1800 2300": "sweet/44 80/farmer 48 81 3 Shay 45 78 2/skippable/move farmer -4 0 3/pause 500/speak Shay \"{{i18n:Shay.4H01}}\"/pause 250/faceDirection farmer 0/pause 1000/speak Shay \"{{i18n:Shay.4H02}}\"/pause 1000/emote farmer 56/pause 500/move farmer 0 -3 2/pause 3000/speak Shay \"{{i18n:Shay.4H03}}\"/pause 2000/speak Shay \"{{i18n:Shay.4H04}}\"/pause 3000/speak Shay \"{{i18n:Shay.4H05}}\"/pause 1500/emote Shay 28/pause 1000/speak Shay \"{{i18n:Shay.4H06}}\"/pause 500/question fork1 \"#{{i18n:Shay.4H07}}#{{i18n:Shay.4H08}}\"/fork ShayListen/pause 1000/speak Shay \"{{i18n:Shay.4H09}}\"/pause 500/globalFade/viewport -1000 -1000/end",
+        "ShayListen": "friendship Shay 100/pause 1000/faceDirection Shay 3/pause 1000/speak Shay \"{{i18n:Shay.4H10}}\"/pause 500/faceDirection farmer 1/pause 250/emote farmer 56/pause 1000/speak Shay \"{{i18n:Shay.4H11}}\"/pause 250/faceDirection Shay 2/pause 250/speak Shay \"{{i18n:Shay.4H12}}\"/pause 500/faceDirection Shay 3/pause 250/speak Shay \"{{i18n:Shay.4H13}}\"/pause 500/faceDirection Shay 0/pause 250/speak Shay \"{{i18n:Shay.4H14}}\"/pause 250/faceDirection Shay 3/pause 250/speak Shay \"{{i18n:Shay.4H15}}\"/pause 500/globalFade/viewport -1000 -1000/end"
+      }
+    }
+    //6-Heart Event (WIP)
+    /*
+    {
+      "LogName": "Shay6Heart",
+      "Action": "EditData",
+      "Target": "Data/Events/Town",
+      "Entries": {
+        "1426002/f Shay 1500/t 1900 2300": "ocean/86 39/farmer 87 36 2 Shay 88 40 2/skippable//pause 500/globalFade/viewport -1000 -1000/end"
+      }
+    }
+    */
+  ]
+}

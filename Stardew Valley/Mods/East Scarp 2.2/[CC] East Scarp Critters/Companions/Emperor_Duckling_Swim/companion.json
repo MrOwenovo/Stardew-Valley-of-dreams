@@ -1,0 +1,85 @@
+{
+  "Name": "Emperor_Duckling_Swim",
+  "Type": "Walking",
+  "EnableFarmerCollision": false,
+  "EnableShadow": false,
+  "Shadow": {
+    "OffsetX": 0,
+    "OffsetY": 0,
+    "Scale": 1,
+    "Alpha": 255
+  },
+  "TravelSpeed": 1,
+  "SpawnDirection": 2,
+  "SpawnOffsetX": 0,
+  "SpawnOffsetY": 0,
+  "MaxIdleDistance": -1,
+  "MaxDistanceBeforeTeleport": -1,
+  "IdleBehavior": "Wander",
+  "IsPrismatic": false,
+  "AppearUnderwater": false,
+  "FrameSizeWidth": 16,
+  "FrameSizeHeight": 16,
+
+  // This plays when the companion travels upwards
+  "UpAnimation": {
+    "StartingFrame": 36,
+    "NumberOfFrames": 4,
+    "Duration": 500,
+
+    "IdleAnimation": {
+      "StartingFrame": 36,
+      "NumberOfFrames": 4,
+      "Duration": 500
+    }
+  },
+
+  // This plays when the companion travels downwards
+  "DownAnimation": {
+    "StartingFrame": 28,
+    "NumberOfFrames": 4,
+    "Duration": 500,
+
+    "IdleAnimation": {
+      "StartingFrame": 28,
+      "NumberOfFrames": 4,
+      "Duration": 500
+    }
+  },
+
+  // This plays when the companion travels left
+  "LeftAnimation": {
+    "StartingFrame": 40,
+    "NumberOfFrames": 4,
+    "Duration": 500,
+
+    "IdleAnimation": {
+      "StartingFrame": 40,
+      "NumberOfFrames": 4,
+      "Duration": 500
+    }
+  },
+
+  // This plays when the companion travels right
+  "RightAnimation": {
+    "StartingFrame": 32,
+    "NumberOfFrames": 4,
+    "Duration": 500,
+
+    "IdleAnimation": {
+      "StartingFrame": 32,
+      "NumberOfFrames": 4,
+      "Duration": 500
+    }
+  },
+
+"Sounds": [
+  {
+    "SoundName": "Duck",
+    "WhenToPlay": "Idle",
+    "TimeBetweenSound": 5000,
+    "ChanceOfPlaying": 0.3,
+    "Pitch": 10
+  }
+]  
+}

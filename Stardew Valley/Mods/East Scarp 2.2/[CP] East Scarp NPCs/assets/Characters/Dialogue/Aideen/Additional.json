@@ -1,0 +1,45 @@
+{
+    "Changes": [
+        {
+            "LogName": "Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Aideen",
+            "Entries": {
+                //Additional Dialogue for Aideen
+                //Referencing Tristan
+                "summer_Mon8": "Oh, Tristan is positively infuriating! Do you know what he did the other day?#$b#Oh, you would not believe it!",
+                "fall_Sat6": "Tristan insisted on giving Baron Munchington a fish. A fish?!#$b#Oh, the poor boy did not know what to do with it, and made a horrible mess!#$b#I shall not return inside until it is all cleaned up.",
+                "winter_Wed6": "",
+                //Referencing Sterling or other custom NPCs
+                "fall_Wed2": "",
+                "fall_Tue4": "",
+                "summer_Thu4": "",
+                "fall_Fri6": "",
+                "winter_Tue4": "",
+                "winter_Sat6": "",
+            }
+        },
+        {
+            "LogName": "Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Aideen",
+            "Entries": {
+                "spring_23_2": "Hello @! I cannot chat. I am most horrendously busy preparing arrangements for the dance tomorrow.#$b#I do hope you shall attend, for I am somewhat eager to dance with you."
+            },
+            "When": {
+                "Relationship:Aideen": "dating"
+            }
+        },
+        {
+            "LogName": "Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Aideen",
+            "Entries": {
+                "MateoPain": "Have you heard? Something terrible happened to that scruffy rabscallion, Mateo!$2#$b#I should send them flowers, don't you think? Or is that too presumptuous?$3"
+            },
+            "When": {
+                "HasSeenEvent": "57871052"
+            }
+        }
+    ]
+}

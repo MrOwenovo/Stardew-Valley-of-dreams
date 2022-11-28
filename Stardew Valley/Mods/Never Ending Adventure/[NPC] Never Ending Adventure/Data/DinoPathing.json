@@ -1,0 +1,50 @@
+{
+    "Changes": [
+        {
+            "LogName": "EmeritusInside",
+            "Action": "EditMap",
+            "Target": "Maps/Custom_ESCoastalGuild",
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": "2",
+                        "Y": "17"
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "CustomCompanions": "Spawn 1 DestyNova.NEACC.EmeritusInside"
+                    }
+                }
+            ],
+            "Update": "OnLocationChange",
+            "When": {
+                "HasSeenEvent |contains=12360012": true,
+                "Weather":"Rain, Storm, Wind, Snow"
+              }
+        },
+        
+        {
+            "LogName": "EmeritusOutside",
+            "Action": "EditMap",
+            "Target": "Maps/Custom_EastScarpe",
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": "14",
+                        "Y": "117"
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "CustomCompanions": "Spawn 1 DestyNova.NEACC.EmeritusOutside"
+                    }
+                }
+            ],
+            "Update": "OnLocationChange",
+            "When": {
+              "Weather": "Sun",
+              "HasSeenEvent |contains=12360012": true,
+            }
+        }
+    ]
+}
+

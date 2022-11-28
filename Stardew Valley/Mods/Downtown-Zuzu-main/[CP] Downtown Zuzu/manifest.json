@@ -1,0 +1,26 @@
+{
+	"Name": "[CP] Downtown Zuzu",
+	"Author": "Zuzu Development Team",
+	"Version": "0.8.2",
+	"Description": "Adds a medium location that is supposed to be the outskirts of Zuzu City. It runs via BusLocations and CP.",
+	"UniqueID": "DTZ.DowntownZuzuCP",
+	"MinimumApiVersion": "3.5.0",
+	"UpdateKeys": [ "Nexus:8587" ],
+	"Dependencies": [
+		{
+			"UniqueID": "DTZ.DowntownZuzuDLL",
+			"IsRequired": true
+		},
+		{
+			"UniqueID": "spacechase0.SpaceCore",
+			"IsRequired": true
+		},
+    {
+      "UniqueID": "spacechase0.JsonAssets",
+      "IsRequired": true
+    }
+	],
+	"ContentPackFor": {
+		"UniqueID": "Pathoschild.ContentPatcher"
+	}
+}

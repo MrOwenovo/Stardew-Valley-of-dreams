@@ -1,0 +1,111 @@
+{
+  "Name": "Building.Name.Aviary",
+  "Description": "Building.Description.Aviary",
+  "DrawShadow": true,
+
+  "Size": {
+    "X": 6,
+    "Y": 3
+  },
+  "Id": "Zilch.AviaryBuillding",
+  "DrawLayers": [
+    {
+      "Texture": "Buildings\\Deluxe Coop",
+      "SourceRect": "0 112 16 16",
+      "DrawPosition": "48, 96",
+      "DrawInBackground": false,
+      "SortTileOffset": 0.02,
+      "OnlyDrawIfChestHasContents": null,
+      "FrameDuration": 90,
+      "FrameCount": 1,
+      "FramesPerRow": -1,
+      "AnimalDoorOffset": {
+        "X": 0,
+        "Y": -19
+      }
+    },
+    {
+      "Texture": "Buildings\\Deluxe Coop",
+      "SourceRect": "16 113 16 16",
+      "DrawPosition": "48, 96",
+      "DrawInBackground": false,
+      "SortTileOffset": 1.0,
+      "OnlyDrawIfChestHasContents": null,
+      "FrameDuration": 90,
+      "FrameCount": 1,
+      "FramesPerRow": -1,
+      "AnimalDoorOffset": {
+        "X": 0,
+        "Y": 0
+      }
+    }
+  ],
+
+  "PaintMasks": [
+    {
+      "Name": "Building",
+      "MinBrightness": -15,
+      "MaxBrightness": 0
+    },
+    {
+      "Name": "Roof",
+      "MinBrightness": -10,
+      "MaxBrightness": 5
+    },
+    {
+      "Name": "Trim",
+      "MinBrightness": -10,
+      "MaxBrightness": 5
+    }
+  ],
+
+  "IndoorMap": "Aviaryindoor",
+  "CollisionMap": "nXXXXXX\nXXXXXX\nXXXXXX",
+  "IndoorMapType": "StardewValley.AnimalHouse",
+  "HumanDoor": {
+    "X": 2,
+    "Y": 3
+  },
+
+  "AnimalDoor": "3 3 1 1",
+  "AnimalDoorOpenDuration": 0.4,
+  "AnimalDoorOpenSound": "doorCreak",
+  "AnimalDoorCloseDuration": 0.6,
+  "AnimalDoorCloseSound": "doorCreakReverse",
+  "NonInstancedIndoorLocation": null,
+  "MaxOccupants": 12,
+  "ValidOccupantTypes": [ "Barn", "Coop" ],
+
+  "IndoorItems": [
+    {
+      "ItemID": "(BC)99",
+      "Tile": {
+        "X": 3,
+        "Y": 4
+      },
+      "Indestructible": true
+    },
+	{
+      "ItemID": "(BC)101",
+      "Tile": {
+        "X": 2,
+        "Y": 4
+      },
+      "Indestructible": true
+    }
+  ],
+
+  "BuildCost": 15000,
+  "Builder": "Robin",
+  "BuildMaterials": [
+    {
+      "ItemID": 709,
+      "Amount": 250
+    },
+	{
+      "ItemID": 335,
+      "Amount": 10
+    }
+  ],
+  "BuildDays": 2
+}

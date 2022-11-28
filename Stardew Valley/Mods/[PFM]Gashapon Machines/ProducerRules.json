@@ -1,0 +1,741 @@
+/*
+trash
+[168垃圾/169浮木/170眼镜/171CD/172报纸]
+product
+[垃圾:390石头1-3/382煤矿2-3/380铁矿1-3]
+[浮木:338精炼石英1-2/388木材1-3/382煤矿2-3]
+[眼镜:338精炼石英]
+[CD:338精炼石英]
+[报纸:93火把3/428布料1]
+*/
+[//Recycle
+	{ 
+		"ProducerName": "Recycling Machine",
+		"InputIdentifier": "168",
+		"MinutesUntilReady": 60,
+		"OutputIdentifier": "390",
+		"OutputStack": 1,
+		"OutputMaxStack": 3,
+		"AdditionalOutputs": [
+			{
+				"OutputProbability": 0.2,
+				"OutputIdentifier": "382",
+				"OutputStack": 2,
+				"OutputMaxStack": 3,
+			},
+			{
+				"OutputProbability": 0.2,
+				"OutputIdentifier": "380",
+				"OutputStack": 1,
+				"OutputMaxStack": 3,
+			},
+				{
+				"OutputProbability": 0.3,
+				"OutputIdentifier": "Game Coin",
+				"OutputStack": 2,
+				"OutputMaxStack": 3,
+			},
+		],
+	},
+	{ 
+		"ProducerName": "Recycling Machine",
+		"InputIdentifier": "169",
+		"MinutesUntilReady": 60,
+		"OutputIdentifier": "338",
+		"OutputStack": 1,
+		"OutputMaxStack": 2,
+		"AdditionalOutputs": [
+			{
+				"OutputProbability": 0.2,
+				"OutputIdentifier": "388",
+				"OutputStack": 1,
+				"OutputMaxStack": 3,
+			},
+			{
+				"OutputProbability": 0.2,
+				"OutputIdentifier": "382",
+				"OutputStack": 2,
+				"OutputMaxStack": 3,
+			},
+				{
+				"OutputProbability": 0.3,
+				"OutputIdentifier": "Game Coin",
+				"OutputStack": 2,
+				"OutputMaxStack": 3,
+			},
+		],
+	},	
+	{ 
+		"ProducerName": "Recycling Machine",
+		"InputIdentifier": "170",
+		"MinutesUntilReady": 60,
+		"OutputIdentifier": "338",
+		"OutputStack": 1,
+		"OutputMaxStack": 2,
+		"AdditionalOutputs": [
+			{
+				"OutputProbability": 0.5,
+				"OutputIdentifier": "Game Coin",
+				"OutputStack": 2,
+				"OutputMaxStack": 3,
+			},
+		],
+	},
+		{ 
+		"ProducerName": "Recycling Machine",
+		"InputIdentifier": "171",
+		"MinutesUntilReady": 60,
+		"OutputIdentifier": "338",
+		"OutputStack": 1,
+		"OutputMaxStack": 2,
+		"AdditionalOutputs": [
+			{
+				"OutputProbability": 0.5,
+				"OutputIdentifier": "Game Coin",
+				"OutputStack": 2,
+				"OutputMaxStack": 3,
+			},
+		],
+	},
+		{ 
+		"ProducerName": "Recycling Machine",
+		"InputIdentifier": "172",
+		"MinutesUntilReady": 60,
+		"OutputIdentifier": "93",
+		"OutputStack": 3,
+		"AdditionalOutputs": [
+			{
+				"OutputProbability": 0.3,
+				"OutputIdentifier": "428",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.4,
+				"OutputIdentifier": "Game Coin",
+				"OutputStack": 2,
+				"OutputMaxStack": 3,
+			},
+		],
+	},
+		{ 
+		"ProducerName": "Gashapon Machines",
+		"InputIdentifier": "Game Coin",
+		"MinutesUntilReady": 10,
+		"OutputIdentifier": "167",
+		"OutputStack": 1,
+		"AdditionalOutputs": [
+			{
+				"OutputProbability":0.008 ,
+				"OutputIdentifier": "60",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "62",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "64",
+				"OutputStack": 1,
+			},
+				{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "66",
+				"OutputStack": 1,
+			},
+				{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "68",
+				"OutputStack": 1,
+			},
+				{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "70",
+				"OutputStack": 1,
+			},
+				{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "72",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.001,
+				"OutputIdentifier": "74",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "80",
+				"OutputStack": 1,
+			},
+		{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "82",
+				"OutputStack": 1,
+			},
+		{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "84",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "86",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "96",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "97",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "98",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "99",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "100",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "101",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "102",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "103",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "104",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "105",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "106",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "107",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "108",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "109",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "110",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "111",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "112",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "113",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "114",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "115",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "116",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "117",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "118",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "119",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "120",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "121",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "122",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "123",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "124",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "125",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "126",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "127",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.002,
+				"OutputIdentifier": "166",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "168",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "169",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "170",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "171",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "172",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "286",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "287",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "288",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "330",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "334",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "335",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "336",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "337",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "338",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "347",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "372",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "373",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "378",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "380",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "382",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "384",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "386",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "392",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "393",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "394",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "428",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.001,
+				"OutputIdentifier": "434",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "444",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "446",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.001,
+				"OutputIdentifier": "789",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "787",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "538",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "539",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "540",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "541",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "542",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "543",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "544",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "545",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "546",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "547",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "548",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "549",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "550",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "551",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "552",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "553",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "554",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "555",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "556",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "557",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "558",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "559",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "560",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "561",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "562",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "563",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "564",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "565",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "566",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "567",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "568",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "569",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "570",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "571",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "572",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "573",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "574",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "575",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.008,
+				"OutputIdentifier": "576",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.004,
+				"OutputIdentifier": "577",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.004,
+				"OutputIdentifier": "578",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.004,
+				"OutputIdentifier": "275",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.002,
+				"OutputIdentifier": "461",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.002,
+				"OutputIdentifier": "463",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.002,
+				"OutputIdentifier": "464",
+				"OutputStack": 1,
+			},
+			{
+				"OutputProbability": 0.002,
+				"OutputIdentifier": "499",
+				"OutputStack": 1,
+			},
+		],
+		"Sounds": ["Ship"],
+		"DelayedSounds":  [{"dirtyHit": 250}],
+	},
+]

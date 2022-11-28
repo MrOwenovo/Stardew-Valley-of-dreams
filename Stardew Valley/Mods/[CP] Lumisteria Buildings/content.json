@@ -1,0 +1,2788 @@
+{
+
+   "Format": "1.18.0",
+   
+    "DynamicTokens": [
+        {
+            "Name": "SeasonalVariant",
+            "Value": "_spring",
+            "When":
+            {
+                "Season": "spring",
+                "Weather": "sun, rain"
+            },
+        },
+        {
+            "Name": "SeasonalVariant",
+            "Value": "_spring_wind",
+            "When":
+            {
+                "Season": "spring",
+                "Weather": "wind, storm"
+            },
+        },
+        {
+            "Name": "SeasonalVariant",
+            "Value": "_summer",
+            "When":
+            {
+                "Season": "summer",
+            },
+        },
+        {
+            "Name": "SeasonalVariant",
+            "Value": "_fall",
+            "When":
+            {
+                "Season": "fall",
+            },
+        },
+        {
+            "Name": "SeasonalVariant",
+            "Value": "_winter_sun",
+            "When":
+            {
+                "Season": "winter",
+                "Weather": "sun, wind, rain"
+            },
+        },
+        {
+            "Name": "SeasonalVariant",
+            "Value": "_winter_snow",
+            "When":
+            {
+                "Season": "winter",
+                "Weather": "snow, storm"
+            },
+        },
+        {
+            "Name": "Festival",
+            "Value": "eggfestival",
+            "When":
+            {
+                "DayEvent": "egg festival",
+            },
+        },
+        {
+            "Name": "Festival",
+            "Value": "flowerdance",
+            "When":
+            {
+                "DayEvent": "flower dance",
+            },
+        },
+        {
+            "Name": "Festival",
+            "Value": "winterstar",
+            "When":
+            {
+                "DayEvent": "feast of the winter star",
+            },
+        },
+        {
+            "Name": "PotDisabled",
+            "Value": "false",
+        },
+        {
+            "Name": "PotDisabled",
+            "Value": "true",
+            "When":
+            {
+				"HouseSeasonOptions": "festival",
+                "DayEvent": "feast of the winter star",
+            },
+        },
+		
+		//House
+		
+		{
+			"Name": "TypeHouse",
+			"Value": "coloredA",
+			"When": {
+			"HouseStyle": "recolor",
+			"RecolorStyle": "A",
+			}
+		},
+		{
+			"Name": "TypeHouse",
+			"Value": "coloredB",
+			"When": {
+			"HouseStyle": "recolor",
+			"RecolorStyle": "B",
+			}
+		},
+		{
+            "Name": "TypeHouse",
+            "Value": "farmstyle",
+			"When": {
+			"HouseStyle": "style",
+			"Style": "farmstyle",
+			}
+		},
+		{
+            "Name": "TypeHouse",
+            "Value": "minestyle",
+			"When": {
+			"HouseStyle": "style",
+			"Style": "minestyle",
+			}
+		},
+		{
+            "Name": "TypeHouse",
+            "Value": "fishstyle",
+			"When": {
+			"HouseStyle": "style",
+			"Style": "fishstyle",
+			}
+		},
+		
+		//Cabin
+		
+		
+		
+		{
+			"Name": "TypeLogCabinOverlay",
+			"Value": "{{StyleLogCabin}}"
+		},
+		{
+            "Name": "TypeLogCabinOverlay",
+            "Value": "plank",
+			"When": {
+			"StyleLogCabin": "plankblue, plankgolden, plankgreen, plankpurple, plankred, plankteal",
+			}
+		},
+		{
+            "Name": "TypeLogCabinOverlay",
+            "Value": "brick",
+			"When": {
+			"StyleLogCabin": "bricklight, brickdark",
+			}
+		},
+		
+		{
+			"Name": "TypePlankCabinOverlay",
+			"Value": "{{StylePlankCabin}}"
+		},
+		{
+            "Name": "TypePlankCabinOverlay",
+            "Value": "plank",
+			"When": {
+			"StylePlankCabin": "plankblue, plankgolden, plankgreen, plankpurple, plankred, plankteal",
+			}
+		},
+		{
+            "Name": "TypePlankCabinOverlay",
+            "Value": "brick",
+			"When": {
+			"StylePlankCabin": "bricklight, brickdark",
+			}
+		},
+		
+		{
+			"Name": "TypeStoneCabinOverlay",
+			"Value": "{{StyleStoneCabin}}"
+		},
+		{
+            "Name": "TypeStoneCabinOverlay",
+            "Value": "plank",
+			"When": {
+			"StyleStoneCabin": "plankblue, plankgolden, plankgreen, plankpurple, plankred, plankteal",
+			}
+		},
+		{
+            "Name": "TypeStoneCabinOverlay",
+            "Value": "brick",
+			"When": {
+			"StyleStoneCabin": "bricklight, brickdark",
+			}
+		},
+		
+		
+		//Barn
+		
+		{
+			"Name": "TypeBarnOverlay",
+			"Value": "{{StyleBarn}}"
+		},
+		{
+            "Name": "TypeBarnOverlay",
+            "Value": "colored",
+			"When": {
+			"StyleBarn": "darkbrown, gold, green, peach, purple, red",
+			}
+		},
+		
+		//Coop
+		
+		{
+			"Name": "TypeCoopOverlay",
+			"Value": "{{StyleCoop}}"
+		},
+		{
+            "Name": "TypeCoopOverlay",
+            "Value": "default",
+			"When": {
+			"StyleCoop": "darkbrown, gold, green, peach, purple, red, white",
+			}
+		},
+		{
+            "Name": "TypeCoopOverlay",
+            "Value": "asymmetrical",
+			"When": {
+			"StyleCoop": "darkbrown_asymmetrical, gold_asymmetrical, green_asymmetrical, peach_asymmetrical, purple_asymmetrical, red_asymmetrical, white_asymmetrical",
+			}
+		},
+		{
+            "Name": "TypeCoopOverlay",
+            "Value": "flat",
+			"When": {
+			"StyleCoop": "darkbrown_flat, gold_flat, green_flat, peach_flat, purple_flat, red_flat, white_flat",
+			}
+		},
+		
+		
+		
+		//Fish Pond
+		
+		{
+			"Name": "TypePondOverlay",
+			"Value": "{{StyleFishPond}}"
+		},
+		{
+            "Name": "TypePondOverlay",
+            "Value": "colored",
+			"When": {
+			"StyleFishPond": "darkbrown, gold, green, peach, purple, red, wood",
+			}
+		},
+		
+		
+		//Mill
+		{
+			"Name": "TypeMillOverlay",
+			"Value": "{{StyleMill}}"
+		},
+		{
+            "Name": "TypeMillOverlay",
+            "Value": "colored",
+			"When": {
+			"StyleMill": "darkbrown, gold, green, peach, purple, red",
+			}
+		},
+		
+		//Silo
+		{
+			"Name": "TypeSiloOverlay",
+			"Value": "{{StyleSilo}}"
+		},
+		{
+            "Name": "TypeSiloOverlay",
+            "Value": "colored",
+			"When": {
+			"StyleSilo": "darkbrown, gold, green, peach, purple, red",
+			}
+		},
+		{
+            "Name": "TypeSiloOverlay",
+            "Value": "coloredB",
+			"When": {
+			"StyleSilo": "darkbrownB, goldB, greenB, peachB, purpleB, redB",
+			}
+		},
+		
+		//Shed
+		{
+			"Name": "TypeShedOverlay",
+			"Value": "{{StyleShed}}"
+		},
+		{
+            "Name": "TypeShedOverlay",
+            "Value": "colored",
+			"When": {
+			"StyleShed": "darkbrown, gold, green, peach, purple, red",
+			}
+		},
+		//Big Shed
+		{
+			"Name": "TypeBigShedOverlay",
+			"Value": "{{StyleBigShed}}"
+		},
+		{
+            "Name": "TypeBigShedOverlay",
+            "Value": "colored",
+			"When": {
+			"StyleBigShed": "darkbrown, gold, green, peach, purple, red",
+			}
+		},
+		
+		
+		//SlimeHutch
+		{
+			"Name": "TypeSlimeHutchOverlay",
+			"Value": "{{StyleSlimeHutch}}"
+		},
+		{
+            "Name": "TypeSlimeHutchOverlay",
+            "Value": "colored",
+			"When": {
+			"StyleSlimeHutch": "darkbrown, darkbrownB, gold, goldB, green, greenB, peach, peachB, purple, purpleB, red, redB",
+			}
+		},
+		
+		//Stable
+		{
+			"Name": "TypeStableMaskOverlay",
+			"Value": "{{StyleStable}}"
+		},
+		{
+            "Name": "TypeStableMaskOverlay",
+            "Value": "colored",
+			"When": {
+			"StyleStable": "darkbrown, gold, green, peach, purple, red, white",
+			}
+		},
+		{
+            "Name": "TypeStableMaskOverlay",
+            "Value": "coloredB",
+			"When": {
+			"StyleStable": "darkbrownB, goldB, greenB, peachB, purpleB, redB, whiteB",
+			}
+		},
+		
+		{
+			"Name": "TypeStableOverlay",
+			"Value": "{{StyleStable}}"
+		},
+		{
+            "Name": "TypeStableOverlay",
+            "Value": "colored",
+			"When": {
+			"StyleStable": "darkbrown, darkbrownB, gold, goldB, green, greenB, peach, peachB, purple, purpleB, red, redB, white, whiteB",
+			}
+		},
+		
+		
+		// Well
+		{
+			"Name": "TypeWellOverlay",
+			"Value": "{{StyleWell}}"
+		},
+		{
+            "Name": "TypeWellOverlay",
+            "Value": "colored",
+			"When": {
+			"StyleWell": "darkbrown, gold, green, peach, purple, red",
+			}
+		},
+		{
+            "Name": "TypeWellOverlay",
+            "Value": "coloredB",
+			"When": {
+			"StyleWell": "darkbrownB, goldB, greenB, peachB, purpleB, redB",
+			}
+		},
+		{
+            "Name": "TypeWellOverlay",
+            "Value": "coloredC",
+			"When": {
+			"StyleWell": "darkbrownC, goldC, greenC, peachC, purpleC, redC",
+			}
+		},
+		
+		//Fence wood
+		
+		{
+            "Name": "TypeFenceWoodOverlay",
+            "Value": "wood",
+			"When": {
+			"StyleFenceWood": "darkbrownwood, goldwood, greenwood, peachwood, purplewood, redwood",
+			}
+		},
+		{
+            "Name": "TypeFenceWoodOverlay",
+            "Value": "brick",
+			"When": {
+			"StyleFenceWood": "brick, bricksilo, brickslimehutch, brickstone",
+			}
+		},
+		{
+            "Name": "TypeFenceWoodOverlay",
+            "Value": "metal",
+			"When": {
+			"StyleFenceWood": "goldmetal, greenmetal",
+			}
+		},
+		{
+            "Name": "TypeFenceWoodOverlay",
+            "Value": "hardwood",
+			"When": {
+			"StyleFenceWood": "darkbrownhardwood, goldhardwood, greenhardwood, peachhardwood, purplehardwood, redhardwood",
+			}
+		},
+		
+		//Fence stone
+		{
+            "Name": "TypeFenceStoneOverlay",
+            "Value": "wood",
+			"When": {
+			"StyleFenceStone": "darkbrownwood, goldwood, greenwood, peachwood, purplewood, redwood",
+			}
+		},
+		{
+            "Name": "TypeFenceStoneOverlay",
+            "Value": "stone",
+			"When": {
+			"StyleFenceStone": "brick, bricksilo, brickslimehutch, brickstone",
+			}
+		},
+		{
+            "Name": "TypeFenceStoneOverlay",
+            "Value": "metal",
+			"When": {
+			"StyleFenceStone": "goldmetal, greenmetal",
+			}
+		},
+		{
+            "Name": "TypeFenceStoneOverlay",
+            "Value": "hardwood",
+			"When": {
+			"StyleFenceStone": "darkbrownhardwood, goldhardwood, greenhardwood, peachhardwood, purplehardwood, redhardwood",
+			}
+		},
+		
+		//Fence Iron
+		{
+            "Name": "TypeFenceIronOverlay",
+            "Value": "wood",
+			"When": {
+			"StyleFenceIron": "darkbrownwood, goldwood, greenwood, peachwood, purplewood, redwood",
+			}
+		},
+		{
+            "Name": "TypeFenceIronOverlay",
+            "Value": "stone",
+			"When": {
+			"StyleFenceIron": "brick, bricksilo, brickslimehutch, brickstone",
+			}
+		},
+		{
+            "Name": "TypeFenceIronOverlay",
+            "Value": "metal",
+			"When": {
+			"StyleFenceIron": "goldmetal, greenmetal",
+			}
+		},
+		{
+            "Name": "TypeFenceIronOverlay",
+            "Value": "hardwood",
+			"When": {
+			"StyleFenceIron": "darkbrownhardwood, goldhardwood, greenhardwood, peachhardwood, purplehardwood, redhardwood",
+			}
+		},
+		//Fence Hardwood
+		{
+            "Name": "TypeFenceHardwoodOverlay",
+            "Value": "wood",
+			"When": {
+			"StyleFenceHardwood": "darkbrownwood, goldwood, greenwood, peachwood, purplewood, redwood",
+			}
+		},
+		{
+            "Name": "TypeFenceHardwoodOverlay",
+            "Value": "stone",
+			"When": {
+			"StyleFenceHardwood": "brick, bricksilo, brickslimehutch, brickstone",
+			}
+		},
+		{
+            "Name": "TypeFenceHardwoodOverlay",
+            "Value": "metal",
+			"When": {
+			"StyleFenceHardwood": "goldmetal, greenmetal",
+			}
+		},
+		{
+            "Name": "TypeFenceHardwoodOverlay",
+            "Value": "hardwood",
+			"When": {
+			"StyleFenceHardwood": "darkbrownhardwood, goldhardwood, greenhardwood, peachhardwood, purplehardwood, redhardwood",
+			}
+		},
+		
+		
+    ],
+
+	"ConfigSchema": {
+	"HouseStyle": {"AllowValues": "style, recolor, none",
+	"Default": "style"},
+	
+	"Style": {"AllowValues": "@default, farmstyle, fishstyle, minestyle",		
+	"Default": "farmstyle"},
+	
+	"RecolorStyle": {"AllowValues": "A, B",		
+	"Default": "A"},
+	
+	"RecolorWallStyle": {"AllowValues": "1, 2, 3",		
+	"Default": "1"},
+	
+	"RecolorWall": {"AllowValues": "basic, beige, darkblue, darkbrown, darkred, taupe",		
+	"Default": "darkred"},
+	
+	"RecolorRoof": {"AllowValues": "basic, darkbrown, gold, green, peach, purple",		
+	"Default": "darkbrown"},
+	
+	
+	"HouseSeasonOptions": {
+		"AllowValues": "seasonal, moreflowers, flowerpot, festival",
+		"AllowBlank":"true",
+		"AllowMultiple":"true",
+		"Default": "seasonal, moreflowers, flowerpot, festival"
+		},
+	
+	//Greenhouse
+	
+	"StyleGreenhouse": {"AllowValues": "artnouveau, default, none",		
+	"Default": "artnouveau"},
+	"StyleFrameGreenhouse": {"AllowValues": "greenmetal, darkbrown, gold, green, peach, purple, red, none",		
+	"Default": "greenmetal"},
+	
+	"GreenhouseSeasonOptions": {
+		"AllowValues": "seasonal, moreflowers, flowerpot",
+		"AllowBlank":"true",
+		"AllowMultiple":"true",
+		"Default": "seasonal, moreflowers, flowerpot"
+		},
+	
+	//Cabin
+	
+	"StylePlankCabin": {"AllowValues": "plankblue, plankgolden, plankgreen, plankpurple, plankred, plankteal, bricklight, brickdark, none",		
+	"Default": "plankblue"},
+	
+	"StyleStoneCabin": {"AllowValues": "plankblue, plankgolden, plankgreen, plankpurple, plankred, plankteal, bricklight, brickdark, none",		
+	"Default": "bricklight"},
+	
+	"StyleLogCabin": {"AllowValues": "plankblue, plankgolden, plankgreen, plankpurple, plankred, plankteal, bricklight, brickdark, none",		
+	"Default": "none"},
+	
+	"CabinSeasonOptions": {
+		"AllowValues": "seasonal, moreflowers, flowerpot",
+		"AllowBlank":"true",
+		"AllowMultiple":"true",
+		"Default": "seasonal, moreflowers, flowerpot"
+		},
+	
+	
+	//Coop
+	
+	"StyleCoop": {"AllowValues": "darkbrown, darkbrown_asymmetrical, darkbrown_flat, gold, gold_asymmetrical, gold_flat, green, green_asymmetrical, green_flat, peach, peach_asymmetrical, peach_flat, purple, purple_asymmetrical, purple_flat, red, red_asymmetrical, red_flat, white, white_asymmetrical, white_flat, none",		
+	"Default": "red_asymmetrical"},
+	
+	"CoopSeasonOptions": {
+		"AllowValues": "seasonal, moreflowers, flowerpot",
+		"AllowBlank":"true",
+		"AllowMultiple":"true",
+		"Default": "seasonal, moreflowers, flowerpot"
+		},
+	
+	
+	"StyleCoopShane": {"AllowValues": "default, asymmetrical, flat, none",		
+	"Default": "asymmetrical"},
+	
+	"CoopShaneSeasonOptions": {
+		"AllowValues": "seasonal",
+		"AllowBlank":"true",
+		"AllowMultiple":"true",
+		"Default": "seasonal"
+		},
+	
+	//Barn
+	
+	"StyleBarn": {"AllowValues": "darkbrown, gold, green, peach, purple, red, none",		
+	"Default": "red"},
+	
+	"BarnSeasonOptions": {
+		"AllowValues": "seasonal, moreflowers, flowerpot",
+		"AllowBlank":"true",
+		"AllowMultiple":"true",
+		"Default": "seasonal, moreflowers, flowerpot"
+		},
+	
+	
+	//fish pond 
+	"StyleFishPond": {"AllowValues": "default, darkbrown, gold, green, peach, purple, red, wood, flatstones, none",		
+	"Default": "flatstones"},
+	
+	"FishPondSeasonOptions": {
+		"AllowValues": "seasonal, moreflowers",
+		"AllowBlank":"true",
+		"AllowMultiple":"true",
+		"Default": "seasonal, moreflowers"
+		},
+	
+	
+	//gold clock
+	"StyleGoldClock": {"AllowValues": "default, none",		
+	"Default": "default"},
+	
+	"GoldClockSeasonOptions": {
+		"AllowValues": "seasonal, moreflowers",
+		"AllowBlank":"true",
+		"AllowMultiple":"true",
+		"Default": "seasonal, moreflowers"
+		},
+	
+	
+	
+	//junimo hut
+	"StyleJunimoHut": {"AllowValues": "tree, none",		
+	"Default": "tree"},
+	
+	"JunimoHutSeasonOptions": {
+		"AllowValues": "moreflowers",
+		"AllowBlank":"true",
+		"AllowMultiple":"true",
+		"Default": "moreflowers"
+		},
+	
+	//Mill
+	"StyleMill": {"AllowValues": "darkbrown, gold, green, peach, purple, red, none",		
+	"Default": "red"},
+	
+	"MillSeasonOptions": {
+		"AllowValues": "seasonal, moreflowers, flowerpot",
+		"AllowBlank":"true",
+		"AllowMultiple":"true",
+		"Default": "seasonal, moreflowers, flowerpot"
+		},
+	
+	
+	
+	//obelisks
+	"StyleObeliskDesert": {"AllowValues": "garden, glass, none",		
+	"Default": "garden"},
+	
+	"StyleObeliskEarth": {"AllowValues": "garden, glass, none",		
+	"Default": "garden"},
+	
+	"StyleObeliskIsland": {"AllowValues": "garden, glass, none",		
+	"Default": "garden"},
+	
+	"StyleObeliskWater": {"AllowValues": "garden, glass, none",		
+	"Default": "garden"},
+	
+	
+	//shed
+	
+	"StyleShed": {"AllowValues": "farmstyle, fishstyle, minestyle, darkbrown, gold, green, peach, purple, red, none",		
+	"Default": "farmstyle"},
+	
+	
+	"StyleBigShed": {"AllowValues": "farmstyle, fishstyle, minestyle, darkbrown, gold, green, peach, purple, red, none",		
+	"Default": "farmstyle"},
+	
+	"ShedSeasonOptions": {
+		"AllowValues": "seasonal, moreflowers, flowerpot",
+		"AllowBlank":"true",
+		"AllowMultiple":"true",
+		"Default": "seasonal, moreflowers, flowerpot"
+		},
+	
+	
+	//
+	
+	"StyleSilo": {"AllowValues": "farmstyle, fishstyle, darkbrown, darkbrownB, gold, goldB, green, greenB, peach, peachB, purple, purpleB, red, redB, none",		
+	"Default": "red"},
+	
+	"SiloSeasonOptions": {
+		"AllowValues": "seasonal, moreflowers, flowerpot",
+		"AllowBlank":"true",
+		"AllowMultiple":"true",
+		"Default": "seasonal, moreflowers, flowerpot"
+		},
+	
+	// Slime Hutch
+	"StyleSlimeHutch": {"AllowValues": "01, darkbrown, darkbrownB, gold, goldB, green, greenB, peach, peachB, purple, purpleB, red, redB, none",		
+	"Default": "red"},
+	
+	"SlimeHutchSeasonOptions": {
+		"AllowValues": "seasonal, moreflowers, flowerpot",
+		"AllowBlank":"true",
+		"AllowMultiple":"true",
+		"Default": "seasonal, moreflowers, flowerpot"
+		},
+	
+	//Stable 
+	
+	"StyleStable": {"AllowValues": "darkbrown, darkbrownB, gold, goldB, green, greenB, peach, peachB, purple, purpleB, red, redB, white, whiteB, none",		
+	"Default": "redB"},
+	
+	"StableSeasonOptions": {
+		"AllowValues": "seasonal, moreflowers, flowerpot",
+		"AllowBlank":"true",
+		"AllowMultiple":"true",
+		"Default": "seasonal, moreflowers, flowerpot"
+		},
+	
+	
+	"StyleWell": {"AllowValues": "01, 02, 03, 04, 05, 06, darkbrown, darkbrownB, darkbrownC, gold, goldB, goldC, green, greenB, greenC, peach, peachB, peachC, purple, purpleB, purpleC, red, redB, redC, none",		
+	"Default": "04"},
+	
+	"WellSeasonOptions": {
+		"AllowValues": "seasonal, moreflowers, flowerpot",
+		"AllowBlank":"true",
+		"AllowMultiple":"true",
+		"Default": "seasonal, moreflowers, flowerpot"
+		},
+	
+	"StyleFenceWood": {"AllowValues": "brick, bricksilo, brickslimehutch, brickstone, darkbrownhardwood, darkbrownwood, goldhardwood, goldmetal, goldwood, greenhardwood, greenmetal, greenwood, peachhardwood, peachwood, purplehardwood, purplewood, redhardwood, redwood, none",		
+	"Default": "redwood"},
+	
+	"FenceWoodSeasonOptions": {
+		"AllowValues": "seasonal, moreflowers",
+		"AllowBlank":"true",
+		"AllowMultiple":"true",
+		"Default": "seasonal, moreflowers"
+		},
+	
+	
+	"StyleFenceStone": {"AllowValues": "brick, bricksilo, brickslimehutch, brickstone, darkbrownhardwood, darkbrownwood, goldhardwood, goldmetal, goldwood, greenhardwood, greenmetal, greenwood, peachhardwood, peachwood, purplehardwood, purplewood, redhardwood, redwood, none",		
+	"Default": "bricksilo"},
+	
+	"FenceStoneSeasonOptions": {
+		"AllowValues": "seasonal, moreflowers",
+		"AllowBlank":"true",
+		"AllowMultiple":"true",
+		"Default": "seasonal, moreflowers"
+		},
+	
+	"StyleFenceIron": {"AllowValues": "brick, bricksilo, brickslimehutch, brickstone, darkbrownhardwood, darkbrownwood, goldhardwood, goldmetal, goldwood, greenhardwood, greenmetal, greenwood, peachhardwood, peachwood, purplehardwood, purplewood, redhardwood, redwood, none",		
+	"Default": "greenmetal"},
+	
+	"FenceIronSeasonOptions": {
+		"AllowValues": "seasonal, moreflowers",
+		"AllowBlank":"true",
+		"AllowMultiple":"true",
+		"Default": "seasonal, moreflowers"
+		},
+	
+	"StyleFenceHardwood": {"AllowValues": "brick, bricksilo, brickslimehutch, brickstone, darkbrownhardwood, darkbrownwood, goldhardwood, goldmetal, goldwood, greenhardwood, greenmetal, greenwood, peachhardwood, peachwood, purplehardwood, purplewood, redhardwood, redwood, none",		
+	"Default": "redhardwood"},
+	
+	"FenceHardwoodSeasonOptions": {
+		"AllowValues": "seasonal, moreflowers",
+		"AllowBlank":"true",
+		"AllowMultiple":"true",
+		"Default": "seasonal, moreflowers"
+		},
+	
+	
+	
+	
+	},
+
+		
+		
+   "Changes": [
+   	   //house style
+
+       {
+           "Action": "EditImage",
+           "Target": "Buildings/houses",
+           "FromFile": "assets/house/{{Style}}.png",
+           "ToArea": { "X":0, "Y":0, "Width":160, "Height":432 },
+           "FromArea": { "X":0, "Y":0, "Width":160, "Height":432 },
+			"When": {
+				"HouseStyle |contains=none": "false",
+				"HouseStyle": "style",
+		  }
+       },
+	   
+	   
+	 	   //house recolor
+  
+       {
+			"Action": "EditImage",
+			"Target": "Buildings/houses",
+			"FromFile": "assets/recolor/{{RecolorStyle}}/houses.png",
+			"ToArea": { "X":0, "Y":0, "Width":160, "Height":432 },
+			"When": {
+				"HouseStyle |contains=none": "false",
+				"HouseStyle": "recolor",
+		  }
+       },   
+       {
+           "Action": "EditImage",
+           "Target": "Buildings/houses",
+           "FromFile": "assets/recolor/{{RecolorStyle}}/wall/{{RecolorWallStyle}}/{{RecolorWall}}.png",
+			"PatchMode": "Overlay",
+           "ToArea": { "X":0, "Y":0, "Width":160, "Height":432 },
+		  "When": {
+				"HouseStyle |contains=none": "false",
+				"HouseStyle": "recolor",
+		  }
+       },
+	   
+	   
+       {
+			"Action": "EditImage",
+			"Target": "Buildings/houses",
+			"FromFile": "assets/recolor/{{RecolorStyle}}/roof/{{RecolorRoof}}.png",
+			"PatchMode": "Overlay",
+			"ToArea": { "X":0, "Y":0, "Width":160, "Height":432 },
+			"When": {
+				"HouseStyle |contains=none": "false",
+				"HouseStyle": "recolor",
+			}
+       },
+	   
+		//mask
+
+       {
+			"LogName": "Mask House",
+           "Action": "EditImage",
+           "Target": "Buildings/houses_PaintMask",
+           "FromFile": "assets/house/Mask/{{Style}}_mask.png",
+           "ToArea": { "X":0, "Y":0, "Width":160, "Height":432 },
+           "FromArea": { "X":0, "Y":0, "Width":160, "Height":432 },
+			"When": {
+				"HouseStyle |contains=none": "false",
+				"HouseStyle": "style",
+		  }
+       },
+	   
+	   
+	 	   //house recolor mask
+  
+       {
+			"LogName": "Mask House",
+			"Action": "EditImage",
+			"Target": "Buildings/houses_PaintMask",
+			"FromFile": "assets/recolor/{{RecolorStyle}}/Mask/{{RecolorStyle}}_mask.png",
+			"ToArea": { "X":0, "Y":0, "Width":160, "Height":432 },
+			"When": {
+				"HouseStyle |contains=none": "false",
+				"HouseStyle": "recolor",
+		  }
+       },  	   
+	  
+	   
+	   //seasonal
+	   
+       {
+			"LogName": "House Overlay",
+			"Action": "EditImage",
+			"Target": "Buildings/houses",
+			"FromFile": "assets/season/house/{{TypeHouse}}{{SeasonalVariant}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HouseStyle |contains=none": "false",
+				"HouseSeasonOptions": "seasonal",
+				"HasFile:assets/season/house/{{TypeHouse}}{{SeasonalVariant}}.png": "true"
+			}
+       },
+       {
+			"LogName": "House Pot",
+			"Action": "EditImage",
+			"Target": "Buildings/houses",
+			"FromFile": "assets/season/house/{{TypeHouse}}_pot.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HouseStyle |contains=none": "false",
+				"HouseSeasonOptions": "flowerpot",
+				"PotDisabled": "false",
+				"HasFile:assets/season/house/{{TypeHouse}}_pot.png": "true"
+			}
+       },
+       {
+			"LogName": "House Seasonal Flower Overlay",
+			"Action": "EditImage",
+			"Target": "Buildings/houses",
+			"FromFile": "assets/season/house/{{TypeHouse}}_flowers_{{Season}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HouseStyle |contains=none": "false",
+				"HouseSeasonOptions": "flowerpot",
+				"PotDisabled": "false",
+				"HasFile:assets/season/house/{{TypeHouse}}_flowers_{{Season}}.png": "true"
+			}
+       },
+       {
+			"LogName": "House Seasonal More Flower Overlay",
+			"Action": "EditImage",
+			"Target": "Buildings/houses",
+			"FromFile": "assets/season/house/{{TypeHouse}}_moreflowers_{{Season}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HouseStyle |contains=none": "false",
+				"HouseSeasonOptions": "moreflowers",
+				"HasFile:assets/season/house/{{TypeHouse}}_moreflowers_{{Season}}.png": "true"
+			}
+       },
+       {
+			"LogName": "House Seasonal Festival Overlay",
+			"Action": "EditImage",
+			"Target": "Buildings/houses",
+			"FromFile": "assets/season/house/{{TypeHouse}}_{{Festival}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HouseStyle |contains=none": "false",
+				"HouseSeasonOptions": "festival",
+				"HasValue |contains=DayEvent": true,
+				"HasFile:assets/season/house/{{TypeHouse}}_{{Festival}}.png": "true"
+			}
+       },
+	   
+	   // Mask Overlay 
+       {
+			"LogName": "House Mask Overlay",
+			"Action": "EditImage",
+			"Target": "Buildings/houses_PaintMask",
+			"FromFile": "assets/season/house/mask/{{TypeHouse}}{{SeasonalVariant}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HouseStyle |contains=none": "false",
+				"HouseSeasonOptions": "seasonal",
+				"HasFile:assets/season/house/mask/{{TypeHouse}}{{SeasonalVariant}}.png": "true"
+			}
+       },
+       {
+			"LogName": "House Mask Pot",
+			"Action": "EditImage",
+			"Target": "Buildings/houses_PaintMask",
+			"FromFile": "assets/season/house/mask/{{TypeHouse}}_pot.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HouseStyle |contains=none": "false",
+				"HouseSeasonOptions": "flowerpot",
+				"PotDisabled": "false",
+				"HasFile:assets/season/house/mask/{{TypeHouse}}_pot.png": "true"
+			}
+       },
+       {
+			"LogName": "House Mask Seasonal Flower Overlay",
+			"Action": "EditImage",
+			"Target": "Buildings/houses_PaintMask",
+			"FromFile": "assets/season/house/mask/{{TypeHouse}}_flowers_{{Season}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HouseStyle |contains=none": "false",
+				"HouseSeasonOptions": "flowerpot",
+				"PotDisabled": "false",
+				"HasFile:assets/season/house/mask/{{TypeHouse}}_flowers_{{Season}}.png": "true"
+			}
+       },
+       {
+			"LogName": "House Mask Seasonal More Flower Overlay",
+			"Action": "EditImage",
+			"Target": "Buildings/houses_PaintMask",
+			"FromFile": "assets/season/house/mask/{{TypeHouse}}_moreflowers_{{Season}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HouseStyle |contains=none": "false",
+				"HouseSeasonOptions": "moreflowers",
+				"HasFile:assets/season/house/mask/{{TypeHouse}}_moreflowers_{{Season}}.png": "true"
+			}
+       },
+       {
+			"LogName": "House Mask Seasonal Festival Overlay",
+			"Action": "EditImage",
+			"Target": "Buildings/houses_PaintMask",
+			"FromFile": "assets/season/house/mask/{{TypeHouse}}_{{Festival}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"HouseStyle |contains=none": "false",
+				"HouseSeasonOptions": "festival",
+				"HasValue |contains=DayEvent": true,
+				"HasFile:assets/season/house/mask/{{TypeHouse}}_{{Festival}}.png": "true"
+			}
+       },
+	   
+	   
+	   //greenhouse
+	   
+	   
+      {
+			"LogName": "Greenhouse Fixed",
+			"Action": "EditImage",
+			"Target": "Buildings/Greenhouse",
+			"FromFile": "assets/greenhouse/{{StyleGreenhouse}}.png",
+			"FromArea": { "X":0, "Y":0, "Width":112, "Height":320 },
+			"ToArea": { "X":0, "Y":0, "Width":112, "Height":320 },
+			"When": {
+			"StyleGreenhouse |contains=none": "false",
+
+		  }
+       },
+	   
+      /* {
+			"LogName": "Greenhouse",
+			"Action": "EditImage",
+			"Target": "Buildings/houses",
+			"FromFile": "assets/greenhouse/{{StyleGreenhouse}}.png",
+			"ToArea": { "X":160, "Y":0, "Width":112, "Height":432 },
+			"When": {
+			"StyleGreenhouse |contains=none": "false",
+
+		  }
+       }, */
+	   
+       {			
+			"LogName": "Greenhouse Frame",
+			"Action": "EditImage",
+			"Target": "Buildings/Greenhouse",
+			"FromFile": "assets/greenhouse/{{StyleGreenhouse}}_{{StyleFrameGreenhouse}}.png",
+			"PatchMode": "Overlay",
+			"FromArea": { "X":0, "Y":0, "Width":112, "Height":320 },
+			"ToArea": { "X":0, "Y":0, "Width":112, "Height":320 },
+			"When": {
+			"StyleGreenhouse |contains=none": "false",
+			"StyleFrameGreenhouse |contains=none": "false",
+
+		  }
+       },
+	   
+       {
+			"LogName": "Greenhouse Seasonal Overlay",
+			"Action": "EditImage",
+			"Target": "Buildings/Greenhouse",
+			"FromFile": "assets/season/greenhouse/{{StyleGreenhouse}}{{SeasonalVariant}}.png",
+			"PatchMode": "Overlay",
+			"FromArea": { "X":0, "Y":0, "Width":112, "Height":320 },
+			"ToArea": { "X":0, "Y":0, "Width":112, "Height":320 },
+			"When": {
+				"StyleGreenhouse |contains=none": "false",
+				"GreenhouseSeasonOptions": "seasonal",
+				"HasFile:assets/season/greenhouse/{{StyleGreenhouse}}{{SeasonalVariant}}.png": "true"
+			}
+       },
+       {
+			"LogName": "Greenhouse Seasonal Pot Overlay",
+			"Action": "EditImage",
+			"Target": "Buildings/Greenhouse",
+			"FromFile": "assets/season/greenhouse/{{StyleGreenhouse}}_pot.png",
+			"PatchMode": "Overlay",
+			"FromArea": { "X":0, "Y":0, "Width":112, "Height":320 },
+			"ToArea": { "X":0, "Y":0, "Width":112, "Height":320 },
+			"When": {
+				"StyleGreenhouse |contains=none": "false",
+				"GreenhouseSeasonOptions": "flowerpot",
+				"HasFile:assets/season/greenhouse/{{StyleGreenhouse}}_pot.png": "true"
+			}
+       },
+       {
+			"LogName": "Greenhouse Seasonal Flower Overlay",
+			"Action": "EditImage",
+			"Target": "Buildings/Greenhouse",
+			"FromFile": "assets/season/greenhouse/{{StyleGreenhouse}}_flowers_{{season}}.png",
+			"PatchMode": "Overlay",
+			"FromArea": { "X":0, "Y":0, "Width":112, "Height":320 },
+			"ToArea": { "X":0, "Y":0, "Width":112, "Height":320 },
+			"When": {
+				"StyleGreenhouse |contains=none": "false",
+				"GreenhouseSeasonOptions": "flowerpot",
+				"HasFile:assets/season/greenhouse/{{StyleGreenhouse}}_flowers_{{season}}.png": "true"
+			}
+       },
+       {
+			"LogName": "Greenhouse Seasonal More Flower Overlay",
+			"Action": "EditImage",
+			"Target": "Buildings/Greenhouse",
+			"FromFile": "assets/season/greenhouse/{{StyleGreenhouse}}_moreflowers_{{season}}.png",
+			"PatchMode": "Overlay",
+			"FromArea": { "X":0, "Y":0, "Width":112, "Height":320 },
+			"ToArea": { "X":0, "Y":0, "Width":112, "Height":320 },
+			"When": {
+				"StyleGreenhouse |contains=none": "false",
+				"GreenhouseSeasonOptions": "moreflowers",
+				"HasFile:assets/season/greenhouse/{{StyleGreenhouse}}_moreflowers_{{season}}.png": "true"
+			}
+       },
+	   
+	   
+	   
+	   
+	   //cabin log
+	   {
+			"LogName": "Cabin Log",
+			"Action": "EditImage",
+			"Target": "Buildings/Log Cabin",
+			"FromFile": "assets/cabin/{{StyleLogCabin}}.png",
+			"When": {
+				"StyleLogCabin |contains=none": "false",
+			}
+       },	
+       {
+			"LogName": "Cabin Seasonal Garden Pot Overlay Log Style",
+			"Action": "EditImage",
+			"Target": "Buildings/Log Cabin",
+			"FromFile": "assets/season/cabin/{{TypeLogCabinOverlay}}_pot.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleLogCabin |contains=none": "false",
+				"CabinSeasonOptions": "flowerpot",
+				"HasFile:assets/season/cabin/{{TypeLogCabinOverlay}}_pot.png": "true"
+			}
+       },
+       {
+			"LogName": "Cabin Seasonal Garden Flower Overlay Log Style",
+			"Action": "EditImage",
+			"Target": "Buildings/Log Cabin",
+			"FromFile": "assets/season/cabin/{{TypeLogCabinOverlay}}_flowers_{{Season}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleLogCabin |contains=none": "false",
+				"CabinSeasonOptions": "flowerpot",
+				"HasFile:assets/season/cabin/{{TypeLogCabinOverlay}}_flowers_{{Season}}.png": "true"
+			}
+       },
+       {
+			"LogName": "Cabin Seasonal Overlay Log Style",
+			"Action": "EditImage",
+			"Target": "Buildings/Log Cabin",
+			"FromFile": "assets/season/cabin/{{TypeLogCabinOverlay}}{{SeasonalVariant}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleLogCabin |contains=none": "false",
+				"CabinSeasonOptions": "seasonal",
+				"HasFile:assets/season/cabin/{{TypeLogCabinOverlay}}{{SeasonalVariant}}.png": "true"
+			}
+       },
+       {
+			"LogName": "Cabin Seasonal More Flowers Overlay Log Style",
+			"Action": "EditImage",
+			"Target": "Buildings/Log Cabin",
+			"FromFile": "assets/season/cabin/{{TypeLogCabinOverlay}}_moreflowers_{{Season}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleLogCabin |contains=none": "false",
+				"CabinSeasonOptions": "moreflowers",
+				"HasFile:assets/season/cabin/{{TypeLogCabinOverlay}}_moreflowers_{{Season}}.png": "true"
+			}
+       },
+	   
+	   //cabin plank
+	   
+	   
+	   {
+			"LogName": "Cabin Plank",
+			"Action": "EditImage",
+			"Target": "Buildings/Plank Cabin",
+			"FromFile": "assets/cabin/{{StylePlankCabin}}.png",
+			"When": {
+				"StylePlankCabin |contains=none": "false",
+			}
+       },	
+       {
+			"LogName": "Cabin Seasonal Garden Pot Overlay Plank Style",
+			"Action": "EditImage",
+			"Target": "Buildings/Plank Cabin",
+			"FromFile": "assets/season/cabin/{{TypePlankCabinOverlay}}_pot.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StylePlankCabin |contains=none": "false",
+				"CabinSeasonOptions": "flowerpot",
+				"HasFile:assets/season/cabin/{{TypePlankCabinOverlay}}_pot.png": "true"
+			}
+       },
+       {
+			"LogName": "Cabin Seasonal Garden Flower Overlay Plank Style",
+			"Action": "EditImage",
+			"Target": "Buildings/Plank Cabin",
+			"FromFile": "assets/season/cabin/{{TypePlankCabinOverlay}}_flowers_{{Season}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StylePlankCabin |contains=none": "false",
+				"CabinSeasonOptions": "flowerpot",
+				"HasFile:assets/season/cabin/{{TypePlankCabinOverlay}}_flowers_{{Season}}.png": "true"
+			}
+       },
+       {
+			"LogName": "Cabin Seasonal Overlay Plank Style",
+			"Action": "EditImage",
+			"Target": "Buildings/Plank Cabin",
+			"FromFile": "assets/season/cabin/{{TypePlankCabinOverlay}}{{SeasonalVariant}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StylePlankCabin |contains=none": "false",
+				"CabinSeasonOptions": "seasonal",
+				"HasFile:assets/season/cabin/{{TypePlankCabinOverlay}}{{SeasonalVariant}}.png": "true"
+			}
+       },
+       {
+			"LogName": "Cabin Seasonal More Flowers Overlay Plank Style",
+			"Action": "EditImage",
+			"Target": "Buildings/Plank Cabin",
+			"FromFile": "assets/season/cabin/{{TypePlankCabinOverlay}}_moreflowers_{{Season}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StylePlankCabin |contains=none": "false",
+				"CabinSeasonOptions": "moreflowers",
+				"HasFile:assets/season/cabin/{{TypePlankCabinOverlay}}_moreflowers_{{Season}}.png": "true"
+			}
+       },
+	   
+	   
+	   //cabin Stone
+	   {
+			"LogName": "Cabin Stone",
+			"Action": "EditImage",
+			"Target": "Buildings/Stone Cabin",
+			"FromFile": "assets/cabin/{{StyleStoneCabin}}.png",
+			"When": {
+				"StyleStoneCabin |contains=none": "false",
+			}
+       },	 
+	   
+       {
+			"LogName": "Cabin Seasonal Garden Pot Overlay Stone Style",
+			"Action": "EditImage",
+			"Target": "Buildings/Stone Cabin",
+			"FromFile": "assets/season/cabin/{{TypeStoneCabinOverlay}}_pot.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleStoneCabin |contains=none": "false",
+				"CabinSeasonOptions": "flowerpot",
+				"HasFile:assets/season/cabin/{{TypeStoneCabinOverlay}}_pot.png": "true"
+			}
+       },
+       {
+			"LogName": "Cabin Seasonal Garden Flower Overlay Stone Style",
+			"Action": "EditImage",
+			"Target": "Buildings/Stone Cabin",
+			"FromFile": "assets/season/cabin/{{TypeStoneCabinOverlay}}_flowers_{{Season}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleStoneCabin |contains=none": "false",
+				"CabinSeasonOptions": "flowerpot",
+				"HasFile:assets/season/cabin/{{TypeStoneCabinOverlay}}_flowers_{{Season}}.png": "true"
+			}
+       },
+       {
+			"LogName": "Cabin Seasonal Overlay Stone Style",
+			"Action": "EditImage",
+			"Target": "Buildings/Stone Cabin",
+			"FromFile": "assets/season/cabin/{{TypeStoneCabinOverlay}}{{SeasonalVariant}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleStoneCabin |contains=none": "false",
+				"CabinSeasonOptions": "seasonal",
+				"HasFile:assets/season/cabin/{{TypeStoneCabinOverlay}}{{SeasonalVariant}}.png": "true"
+			}
+       },
+       {
+			"LogName": "Cabin Seasonal More Flowers Overlay Stone Style",
+			"Action": "EditImage",
+			"Target": "Buildings/Stone Cabin",
+			"FromFile": "assets/season/cabin/{{TypeStoneCabinOverlay}}_moreflowers_{{Season}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleStoneCabin |contains=none": "false",
+				"CabinSeasonOptions": "moreflowers",
+				"HasFile:assets/season/cabin/{{TypeStoneCabinOverlay}}_moreflowers_{{Season}}.png": "true"
+			}
+       },
+	   
+	   
+	   //cabin mask log
+	   {
+			"LogName": "Cabin Mask Log",
+			"Action": "EditImage",
+			"Target": "Buildings/Log Cabin_PaintMask",
+			"FromFile": "assets/cabin/mask/{{TypeLogCabinOverlay}}_mask.png",
+			"When": {
+				"StyleLogCabin |contains=none": "false",
+			}
+       },	
+       {
+			"LogName": "Cabin Mask Seasonal Garden Pot Overlay Log Style",
+			"Action": "EditImage",
+			"Target": "Buildings/Log Cabin_PaintMask",
+			"FromFile": "assets/season/cabin/mask/{{TypeLogCabinOverlay}}_pot.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleLogCabin |contains=none": "false",
+				"CabinSeasonOptions": "flowerpot",
+				"HasFile:assets/season/cabin/mask/{{TypeLogCabinOverlay}}_pot.png": "true"
+			}
+       },
+       {
+			"LogName": "Cabin Mask Seasonal Garden Flower Overlay Log Style",
+			"Action": "EditImage",
+			"Target": "Buildings/Log Cabin_PaintMask",
+			"FromFile": "assets/season/cabin/mask/{{TypeLogCabinOverlay}}_flowers_{{Season}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleLogCabin |contains=none": "false",
+				"CabinSeasonOptions": "flowerpot",
+				"HasFile:assets/season/cabin/mask/{{TypeLogCabinOverlay}}_flowers_{{Season}}.png": "true"
+			}
+       },
+       {
+			"LogName": "Cabin Mask Seasonal Overlay Log Style",
+			"Action": "EditImage",
+			"Target": "Buildings/Log Cabin_PaintMask",
+			"FromFile": "assets/season/cabin/mask/{{TypeLogCabinOverlay}}{{SeasonalVariant}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleLogCabin |contains=none": "false",
+				"CabinSeasonOptions": "seasonal",
+				"HasFile:assets/season/cabin/mask/{{TypeLogCabinOverlay}}{{SeasonalVariant}}.png": "true"
+			}
+       },
+       {
+			"LogName": "Cabin Mask Seasonal More Flowers Overlay Log Style",
+			"Action": "EditImage",
+			"Target": "Buildings/Log Cabin_PaintMask",
+			"FromFile": "assets/season/cabin/mask/{{TypeLogCabinOverlay}}_moreflowers_{{Season}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleLogCabin |contains=none": "false",
+				"CabinSeasonOptions": "moreflowers",
+				"HasFile:assets/season/cabin/mask/{{TypeLogCabinOverlay}}_moreflowers_{{Season}}.png": "true"
+			}
+       },
+	   
+	   //cabin plank
+	   
+	   
+	   {
+			"LogName": "Cabin Mask Plank",
+			"Action": "EditImage",
+			"Target": "Buildings/Plank Cabin_PaintMask",
+			"FromFile": "assets/cabin/mask/{{TypePlankCabinOverlay}}_mask.png",
+			"When": {
+				"StylePlankCabin |contains=none": "false",
+			}
+       },	
+       {
+			"LogName": "Cabin Mask Seasonal Garden Pot Overlay Plank Style",
+			"Action": "EditImage",
+			"Target": "Buildings/Plank Cabin_PaintMask",
+			"FromFile": "assets/season/cabin/mask/{{TypePlankCabinOverlay}}_pot.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StylePlankCabin |contains=none": "false",
+				"CabinSeasonOptions": "flowerpot",
+				"HasFile:assets/season/cabin/mask/{{TypePlankCabinOverlay}}_pot.png": "true"
+			}
+       },
+       {
+			"LogName": "Cabin Mask Seasonal Garden Flower Overlay Plank Style",
+			"Action": "EditImage",
+			"Target": "Buildings/Plank Cabin_PaintMask",
+			"FromFile": "assets/season/cabin/mask/{{TypePlankCabinOverlay}}_flowers_{{Season}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StylePlankCabin |contains=none": "false",
+				"CabinSeasonOptions": "flowerpot",
+				"HasFile:assets/season/cabin/mask/{{TypePlankCabinOverlay}}_flowers_{{Season}}.png": "true"
+			}
+       },
+       {
+			"LogName": "Cabin Mask Seasonal Overlay Plank Style",
+			"Action": "EditImage",
+			"Target": "Buildings/Plank Cabin_PaintMask",
+			"FromFile": "assets/season/cabin/mask/{{TypePlankCabinOverlay}}{{SeasonalVariant}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StylePlankCabin |contains=none": "false",
+				"CabinSeasonOptions": "seasonal",
+				"HasFile:assets/season/cabin/mask/{{TypePlankCabinOverlay}}{{SeasonalVariant}}.png": "true"
+			}
+       },
+       {
+			"LogName": "Cabin Mask Seasonal More Flowers Overlay Plank Style",
+			"Action": "EditImage",
+			"Target": "Buildings/Plank Cabin_PaintMask",
+			"FromFile": "assets/season/cabin/mask/{{TypePlankCabinOverlay}}_moreflowers_{{Season}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StylePlankCabin |contains=none": "false",
+				"CabinSeasonOptions": "moreflowers",
+				"HasFile:assets/season/cabin/mask/{{TypePlankCabinOverlay}}_moreflowers_{{Season}}.png": "true"
+			}
+       },
+	   
+	   
+	   //cabin Stone
+	   {
+			"LogName": "Cabin Mask Stone",
+			"Action": "EditImage",
+			"Target": "Buildings/Stone Cabin_PaintMask",
+			"FromFile": "assets/cabin/mask/{{TypeStoneCabinOverlay}}_mask.png",
+			"When": {
+				"StyleStoneCabin |contains=none": "false",
+			}
+       },	 
+	   
+       {
+			"LogName": "Cabin Mask Seasonal Garden Pot Overlay Stone Style",
+			"Action": "EditImage",
+			"Target": "Buildings/Stone Cabin_PaintMask",
+			"FromFile": "assets/season/cabin/mask/{{TypeStoneCabinOverlay}}_pot.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleStoneCabin |contains=none": "false",
+				"CabinSeasonOptions": "flowerpot",
+				"HasFile:assets/season/cabin/mask/{{TypeStoneCabinOverlay}}_pot.png": "true"
+			}
+       },
+       {
+			"LogName": "Cabin Mask Seasonal Garden Flower Overlay Stone Style",
+			"Action": "EditImage",
+			"Target": "Buildings/Stone Cabin_PaintMask",
+			"FromFile": "assets/season/cabin/mask/{{TypeStoneCabinOverlay}}_flowers_{{Season}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleStoneCabin |contains=none": "false",
+				"CabinSeasonOptions": "flowerpot",
+				"HasFile:assets/season/cabin/mask/{{TypeStoneCabinOverlay}}_flowers_{{Season}}.png": "true"
+			}
+       },
+       {
+			"LogName": "Cabin Mask Seasonal Overlay Stone Style",
+			"Action": "EditImage",
+			"Target": "Buildings/Stone Cabin_PaintMask",
+			"FromFile": "assets/season/cabin/mask/{{TypeStoneCabinOverlay}}{{SeasonalVariant}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleStoneCabin |contains=none": "false",
+				"CabinSeasonOptions": "seasonal",
+				"HasFile:assets/season/cabin/mask/{{TypeStoneCabinOverlay}}{{SeasonalVariant}}.png": "true"
+			}
+       },
+       {
+			"LogName": "Cabin Mask Seasonal More Flowers Overlay Stone Style",
+			"Action": "EditImage",
+			"Target": "Buildings/Stone Cabin_PaintMask",
+			"FromFile": "assets/season/cabin/mask/{{TypeStoneCabinOverlay}}_moreflowers_{{Season}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleStoneCabin |contains=none": "false",
+				"CabinSeasonOptions": "moreflowers",
+				"HasFile:assets/season/cabin/mask/{{TypeStoneCabinOverlay}}_moreflowers_{{Season}}.png": "true"
+			}
+       },
+	   
+	   
+	   
+
+	   //barn	   	   
+	   {
+           "Action": "EditImage",
+           "Target": "Buildings/Barn",
+           "FromFile": "assets/barn/{{StyleBarn}}.png",
+		   "When": {
+				"StyleBarn |contains=none": "false",
+		}
+       },	 
+       {
+			"LogName": "Barn Seasonal Overlay",
+			"Action": "EditImage",
+           "Target": "Buildings/Barn",
+			"FromFile": "assets/season/barn/{{TypeBarnOverlay}}{{SeasonalVariant}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleBarn |contains=none": "false",
+				"BarnSeasonOptions": "seasonal",
+				"HasFile:assets/season/barn/{{TypeBarnOverlay}}{{SeasonalVariant}}.png": "true"
+			}
+       }, 
+       {
+			"LogName": "Barn Seasonal Pot Overlay",
+			"Action": "EditImage",
+			"Target": "Buildings/Barn",
+			"FromFile": "assets/season/barn/{{TypeBarnOverlay}}_pot.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleBarn |contains=none": "false",
+				"BarnSeasonOptions": "flowerpot",
+				"HasFile:assets/season/barn/{{TypeBarnOverlay}}_pot.png": "true"
+			}
+       },
+       {
+			"LogName": "Barn Seasonal Flower Overlay",
+			"Action": "EditImage",
+			"Target": "Buildings/Barn",
+			"FromFile": "assets/season/barn/{{TypeBarnOverlay}}_flowers_{{season}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleBarn |contains=none": "false",
+				"BarnSeasonOptions": "flowerpot",
+				"HasFile:assets/season/barn/{{TypeBarnOverlay}}_flowers_{{season}}.png": "true"
+			}
+       },
+       {
+			"LogName": "Barn Seasonal More Flower Overlay",
+			"Action": "EditImage",
+			"Target": "Buildings/Barn",
+			"FromFile": "assets/season/barn/{{TypeBarnOverlay}}_moreflowers_{{season}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleBarn |contains=none": "false",
+				"BarnSeasonOptions": "moreflowers",
+				"HasFile:assets/season/barn/{{TypeBarnOverlay}}_moreflowers_{{season}}.png": "true"
+			}
+       },
+	   
+	   
+	   //big barn
+	   {
+           "Action": "EditImage",
+           "Target": "Buildings/Big Barn",
+           "FromFile": "assets/bigbarn/{{StyleBarn}}.png",
+		   "When": {
+				"StyleBarn |contains=none": "false",
+		  }
+       },  
+       {
+			"LogName": "Big Barn Seasonal Overlay",
+			"Action": "EditImage",
+           "Target": "Buildings/Big Barn",
+			"FromFile": "assets/season/bigbarn/{{TypeBarnOverlay}}{{SeasonalVariant}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleBarn |contains=none": "false",
+				"BarnSeasonOptions": "seasonal",
+				"HasFile:assets/season/bigbarn/{{TypeBarnOverlay}}{{SeasonalVariant}}.png": "true"
+			}
+       },
+       {
+			"LogName": "Big Barn Seasonal Pot Overlay",
+			"Action": "EditImage",
+			"Target": "Buildings/Big Barn",
+			"FromFile": "assets/season/bigbarn/{{TypeBarnOverlay}}_pot.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleBarn |contains=none": "false",
+				"BarnSeasonOptions": "flowerpot",
+				"HasFile:assets/season/bigbarn/{{TypeBarnOverlay}}_pot.png": "true"
+			}
+       },
+       {
+			"LogName": "Big Barn Seasonal Flower Overlay",
+			"Action": "EditImage",
+			"Target": "Buildings/Big Barn",
+			"FromFile": "assets/season/bigbarn/{{TypeBarnOverlay}}_flowers_{{season}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleBarn |contains=none": "false",
+				"BarnSeasonOptions": "flowerpot",
+				"HasFile:assets/season/bigbarn/{{TypeBarnOverlay}}_flowers_{{season}}.png": "true"
+			}
+       },
+       {
+			"LogName": "Big Barn Seasonal More Flower Overlay",
+			"Action": "EditImage",
+			"Target": "Buildings/Big Barn",
+			"FromFile": "assets/season/bigbarn/{{TypeBarnOverlay}}_moreflowers_{{season}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleBarn |contains=none": "false",
+				"BarnSeasonOptions": "moreflowers",
+				"HasFile:assets/season/bigbarn/{{TypeBarnOverlay}}_moreflowers_{{season}}.png": "true"
+			}
+       },
+	   
+	   
+	   
+	   //deluxe barn
+	   {
+           "Action": "EditImage",
+           "Target": "Buildings/Deluxe Barn",
+           "FromFile": "assets/deluxebarn/{{StyleBarn}}.png",
+		   "When": {
+				"StyleBarn |contains=none": "false",
+		  }
+       },
+	   
+       {
+			"LogName": "Deluxe Barn Seasonal Overlay",
+			"Action": "EditImage",
+			"Target": "Buildings/Deluxe Barn",
+			"FromFile": "assets/season/deluxebarn/{{TypeBarnOverlay}}{{SeasonalVariant}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleBarn |contains=none": "false",
+				"BarnSeasonOptions": "seasonal",
+				"HasFile:assets/season/deluxebarn/{{TypeBarnOverlay}}{{SeasonalVariant}}.png": "true"
+			}
+       },
+       {
+			"LogName": "Deluxe Barn Seasonal Pot Overlay",
+			"Action": "EditImage",
+			"Target": "Buildings/Deluxe Barn",
+			"FromFile": "assets/season/deluxebarn/{{TypeBarnOverlay}}_pot.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleBarn |contains=none": "false",
+				"BarnSeasonOptions": "flowerpot",
+				"HasFile:assets/season/deluxebarn/{{TypeBarnOverlay}}_pot.png": "true"
+			}
+       },
+       {
+			"LogName": "Deluxe Barn Seasonal Flower Overlay",
+			"Action": "EditImage",
+			"Target": "Buildings/Deluxe Barn",
+			"FromFile": "assets/season/deluxebarn/{{TypeBarnOverlay}}_flowers_{{season}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleBarn |contains=none": "false",
+				"BarnSeasonOptions": "flowerpot",
+				"HasFile:assets/season/deluxebarn/{{TypeBarnOverlay}}_flowers_{{season}}.png": "true"
+			}
+       },
+       {
+			"LogName": "Deluxe Barn Seasonal More Flower Overlay",
+			"Action": "EditImage",
+			"Target": "Buildings/Deluxe Barn",
+			"FromFile": "assets/season/deluxebarn/{{TypeBarnOverlay}}_moreflowers_{{season}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleBarn |contains=none": "false",
+				"BarnSeasonOptions": "moreflowers",
+				"HasFile:assets/season/deluxebarn/{{TypeBarnOverlay}}_moreflowers_{{season}}.png": "true"
+			}
+       },
+	   
+	   //Mask
+	   
+       {
+			"LogName": "Deluxe Barn Seasonal Overlay Mask",
+			"Action": "EditImage",
+			"Target": "Buildings/Deluxe Barn_PaintMask",
+			"FromFile": "assets/season/deluxebarn/mask/{{TypeBarnOverlay}}{{SeasonalVariant}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleBarn |contains=none": "false",
+				"BarnSeasonOptions": "seasonal",
+				"HasFile:assets/season/deluxebarn/mask/{{TypeBarnOverlay}}{{SeasonalVariant}}.png": "true"
+			}
+       },
+       {
+			"LogName": "Deluxe Barn Seasonal Pot Overlay Mask",
+			"Action": "EditImage",
+			"Target": "Buildings/Deluxe Barn_PaintMask",
+			"FromFile": "assets/season/deluxebarn/mask/{{TypeBarnOverlay}}_pot.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleBarn |contains=none": "false",
+				"BarnSeasonOptions": "flowerpot",
+				"HasFile:assets/season/deluxebarn/mask/{{TypeBarnOverlay}}_pot.png": "true"
+			}
+       },
+       {
+			"LogName": "Deluxe Barn Seasonal Flower Overlay Mask",
+			"Action": "EditImage",
+			"Target": "Buildings/Deluxe Barn_PaintMask",
+			"FromFile": "assets/season/deluxebarn/mask/{{TypeBarnOverlay}}_flowers_{{season}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleBarn |contains=none": "false",
+				"BarnSeasonOptions": "flowerpot",
+				"HasFile:assets/season/deluxebarn/mask/{{TypeBarnOverlay}}_flowers_{{season}}.png": "true"
+			}
+       },
+       {
+			"LogName": "Deluxe Barn Seasonal More Flower Overlay Mask",
+			"Action": "EditImage",
+			"Target": "Buildings/Deluxe Barn_PaintMask",
+			"FromFile": "assets/season/deluxebarn/mask/{{TypeBarnOverlay}}_moreflowers_{{season}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleBarn |contains=none": "false",
+				"BarnSeasonOptions": "moreflowers",
+				"HasFile:assets/season/deluxebarn/mask/{{TypeBarnOverlay}}_moreflowers_{{season}}.png": "true"
+			}
+       },
+	   
+	   
+	   
+	   
+	   
+	   //coop
+	   {
+           "Action": "EditImage",
+           "Target": "Buildings/Coop",
+           "FromFile": "assets/coop/{{StyleCoop}}.png",
+		   "When": {
+				"StyleCoop |contains=none": "false",
+		  }
+       },	  
+	   //Seasonal
+       {
+			"LogName": "Coop Seasonal Overlay",
+			"Action": "EditImage",
+			"Target": "Buildings/Coop",
+			"FromFile": "assets/season/coop/{{TypeCoopOverlay}}{{SeasonalVariant}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleCoop |contains=none": "false",
+				"CoopSeasonOptions": "seasonal",
+				"HasFile:assets/season/coop/{{TypeCoopOverlay}}{{SeasonalVariant}}.png": "true"
+			}
+       },
+       {
+			"LogName": "Coop Pot",
+			"Action": "EditImage",
+			"Target": "Buildings/Coop",
+			"FromFile": "assets/season/coop/{{TypeCoopOverlay}}_pot.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleCoop |contains=none": "false",
+				"CoopSeasonOptions": "flowerpot",
+				"HasFile:assets/season/coop/{{TypeCoopOverlay}}_pot.png": "true"
+			}
+       },
+       {
+			"LogName": "Coop Seasonal Flower Overlay",
+			"Action": "EditImage",
+			"Target": "Buildings/Coop",
+			"FromFile": "assets/season/coop/{{TypeCoopOverlay}}_flowers_{{Season}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleCoop |contains=none": "false",
+				"CoopSeasonOptions": "flowerpot",
+				"HasFile:assets/season/coop/{{TypeCoopOverlay}}_flowers_{{Season}}.png": "true"
+			}
+       },
+       {
+			"LogName": "Coop More Flowers",
+			"Action": "EditImage",
+			"Target": "Buildings/Coop",
+			"FromFile": "assets/season/coop/{{TypeCoopOverlay}}_moreflowers_{{season}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleCoop |contains=none": "false",
+				"CoopSeasonOptions": "moreflowers",
+				"HasFile:assets/season/coop/{{TypeCoopOverlay}}_moreflowers_{{season}}.png": "true"
+			}
+       },
+	   
+	   //Big Coop
+	   {
+           "Action": "EditImage",
+           "Target": "Buildings/Big Coop",
+           "FromFile": "assets/bigcoop/{{StyleCoop}}.png",
+		   "When": {
+				"StyleCoop |contains=none": "false",
+		  }
+       },  
+	   //Seasonal
+       {
+			"LogName": "Big Coop Seasonal Overlay",
+			"Action": "EditImage",
+			"Target": "Buildings/Big Coop",
+			"FromFile": "assets/season/bigcoop/{{TypeCoopOverlay}}{{SeasonalVariant}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleCoop |contains=none": "false",
+				"CoopSeasonOptions": "seasonal",
+				"HasFile:assets/season/bigcoop/{{TypeCoopOverlay}}{{SeasonalVariant}}.png": "true"
+			}
+       },       {
+			"LogName": "Big Coop Pot",
+			"Action": "EditImage",
+			"Target": "Buildings/Big Coop",
+			"FromFile": "assets/season/bigcoop/{{TypeCoopOverlay}}_pot.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleCoop |contains=none": "false",
+				"CoopSeasonOptions": "flowerpot",
+				"HasFile:assets/season/bigcoop/{{TypeCoopOverlay}}_pot.png": "true"
+			}
+       },
+       {
+			"LogName": "Big Coop Seasonal Flower Overlay",
+			"Action": "EditImage",
+			"Target": "Buildings/Big Coop",
+			"FromFile": "assets/season/bigcoop/{{TypeCoopOverlay}}_flowers_{{Season}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleCoop |contains=none": "false",
+				"CoopSeasonOptions": "flowerpot",
+				"HasFile:assets/season/bigcoop/{{TypeCoopOverlay}}_flowers_{{Season}}.png": "true"
+			}
+       },
+       {
+			"LogName": "Big Coop More Flowers",
+			"Action": "EditImage",
+			"Target": "Buildings/Big Coop",
+			"FromFile": "assets/season/bigcoop/{{TypeCoopOverlay}}_moreflowers_{{season}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleCoop |contains=none": "false",
+				"CoopSeasonOptions": "moreflowers",
+				"HasFile:assets/season/bigcoop/{{TypeCoopOverlay}}_moreflowers_{{season}}.png": "true"
+			}
+       },
+	   
+	   //Deluxe Coop
+	   {
+           "Action": "EditImage",
+           "Target": "Buildings/Deluxe Coop",
+           "FromFile": "assets/deluxecoop/{{StyleCoop}}.png",
+		   "When": {
+				"StyleCoop |contains=none": "false",
+		}
+       }, 
+	   //Deluxe Coop Mask
+	   
+	   {
+           "Action": "EditImage",
+           "Target": "Buildings/Deluxe Coop_PaintMask",
+           "FromFile": "assets/deluxecoop/mask/{{TypeCoopOverlay}}_mask.png",
+		   "When": {
+				"StyleCoop |contains=none": "false",
+				"HasFile:assets/deluxecoop/mask/{{TypeCoopOverlay}}_mask.png": "true"
+
+		}
+       },  
+	   
+	   //Seasonal
+       {
+			"LogName": "Deluxe Coop Seasonal Overlay",
+			"Action": "EditImage",
+			"Target": "Buildings/Deluxe Coop",
+			"FromFile": "assets/season/deluxecoop/{{TypeCoopOverlay}}{{SeasonalVariant}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleCoop |contains=none": "false",
+				"CoopSeasonOptions": "seasonal",
+				"HasFile:assets/season/deluxecoop/{{TypeCoopOverlay}}{{SeasonalVariant}}.png": "true"
+			}
+       },
+       {
+			"LogName": "Deluxe Coop Pot",
+			"Action": "EditImage",
+			"Target": "Buildings/Deluxe Coop",
+			"FromFile": "assets/season/deluxecoop/{{TypeCoopOverlay}}_pot.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleCoop |contains=none": "false",
+				"CoopSeasonOptions": "flowerpot",
+				"HasFile:assets/season/deluxecoop/{{TypeCoopOverlay}}_pot.png": "true"
+			}
+       },
+       {
+			"LogName": "Deluxe Coop Seasonal Flower Overlay",
+			"Action": "EditImage",
+			"Target": "Buildings/Deluxe Coop",
+			"FromFile": "assets/season/deluxecoop/{{TypeCoopOverlay}}_flowers_{{Season}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleCoop |contains=none": "false",
+				"CoopSeasonOptions": "flowerpot",
+				"HasFile:assets/season/deluxecoop/{{TypeCoopOverlay}}_flowers_{{Season}}.png": "true"
+			}
+       },
+       {
+			"LogName": "Deluxe Coop More Flowers",
+			"Action": "EditImage",
+			"Target": "Buildings/Deluxe Coop",
+			"FromFile": "assets/season/deluxecoop/{{TypeCoopOverlay}}_moreflowers_{{season}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleCoop |contains=none": "false",
+				"CoopSeasonOptions": "moreflowers",
+				"HasFile:assets/season/deluxecoop/{{TypeCoopOverlay}}_moreflowers_{{season}}.png": "true"
+			}
+       },
+	   
+	   //Deluxe Coop Overlay Mask
+	   
+       {
+			"LogName": "Deluxe Coop Seasonal Overlay Mask",
+			"Action": "EditImage",
+           "Target": "Buildings/Deluxe Coop_PaintMask",
+			"FromFile": "assets/season/deluxecoop/mask/{{TypeCoopOverlay}}{{SeasonalVariant}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleCoop |contains=none": "false",
+				"CoopSeasonOptions": "seasonal",
+				"HasFile:assets/season/deluxecoop/mask/{{TypeCoopOverlay}}{{SeasonalVariant}}.png": "true"
+			}
+       },
+       {
+			"LogName": "Deluxe Coop Pot Mask",
+			"Action": "EditImage",
+           "Target": "Buildings/Deluxe Coop_PaintMask",
+			"FromFile": "assets/season/deluxecoop/mask/{{TypeCoopOverlay}}_pot.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleCoop |contains=none": "false",
+				"CoopSeasonOptions": "flowerpot",
+				"HasFile:assets/season/deluxecoop/mask/{{TypeCoopOverlay}}_pot.png": "true"
+			}
+       },
+       {
+			"LogName": "Deluxe Coop Seasonal Flower Overlay Mask",
+			"Action": "EditImage",
+           "Target": "Buildings/Deluxe Coop_PaintMask",
+			"FromFile": "assets/season/deluxecoop/mask/{{TypeCoopOverlay}}_flowers_{{Season}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleCoop |contains=none": "false",
+				"CoopSeasonOptions": "flowerpot",
+				"HasFile:assets/season/deluxecoop/mask/{{TypeCoopOverlay}}_flowers_{{Season}}.png": "true"
+			}
+       },
+       {
+			"LogName": "Deluxe Coop More Flowers Mask",
+			"Action": "EditImage",
+           "Target": "Buildings/Deluxe Coop_PaintMask",
+			"FromFile": "assets/season/deluxecoop/mask/{{TypeCoopOverlay}}_moreflowers_{{season}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleCoop |contains=none": "false",
+				"CoopSeasonOptions": "moreflowers",
+				"HasFile:assets/season/deluxecoop/mask/{{TypeCoopOverlay}}_moreflowers_{{season}}.png": "true"
+			}
+       },
+	   
+	   //Shane coop
+	   
+	   {
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_outdoorsTileSheet",
+			"FromFile": "assets/shanecoop/{{StyleCoopShane}}.png",
+			"FromArea": { "X":0, "Y":0, "Width":48, "Height":32 },
+			"ToArea": { "X":352, "Y":1104, "Width":48, "Height":32 },
+			"When": {
+				"StyleCoopShane |contains=none": "false",
+			}
+       },	
+	   {
+           "Action": "EditImage",
+           "Target": "Maps/{{season}}_outdoorsTileSheet",
+           "FromFile": "assets/shanecoop/{{StyleCoopShane}}.png",
+			"FromArea": { "X":0, "Y":32, "Width":48, "Height":32 },
+			"ToArea": { "X":240, "Y":1216, "Width":48, "Height":32 },
+		   "When": {
+				"StyleCoopShane |contains=none": "false",
+		  }
+       },	    
+	   
+	   {
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_outdoorsTileSheet",
+			"FromFile": "assets/season/shanecoop/{{StyleCoopShane}}{{SeasonalVariant}}.png",
+			"PatchMode": "Overlay",
+			"FromArea": { "X":0, "Y":0, "Width":48, "Height":32 },
+			"ToArea": { "X":352, "Y":1104, "Width":48, "Height":32 },
+			"When": {
+				"StyleCoopShane |contains=none": "false",
+				"CoopShaneSeasonOptions": "seasonal",
+				"HasFile:assets/season/shanecoop/{{StyleCoopShane}}{{SeasonalVariant}}.png": "true"
+		  }
+       },	  
+	   {
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_outdoorsTileSheet",
+			"FromFile": "assets/season/shanecoop/{{StyleCoopShane}}{{SeasonalVariant}}.png",
+			"PatchMode": "Overlay",
+			"FromArea": { "X":0, "Y":32, "Width":48, "Height":32 },
+			"ToArea": { "X":240, "Y":1216, "Width":48, "Height":32 },
+			"When": {
+				"StyleCoopShane |contains=none": "false",
+				"CoopShaneSeasonOptions": "seasonal",
+				"HasFile:assets/season/shanecoop/{{StyleCoopShane}}{{SeasonalVariant}}.png": "true"
+		  }
+       },	  
+	   
+	   
+	   //fishpond
+       {
+			"LogName": "Fish Pond",
+			"Action": "EditImage",
+			"Target": "Buildings/Fish Pond",
+			"FromArea": { "X":0, "Y":0, "Width":80, "Height":80 },
+			"ToArea": { "X":0, "Y":0, "Width":80, "Height":80 },
+			"FromFile": "assets/fishpond/{{StyleFishPond}}.png",
+			"When": {
+				"StyleFishPond |contains=none": "false",
+				"StyleFishPond |contains=default": "false",
+				"HasFile:assets/fishpond/{{StyleFishPond}}.png": "true"
+			}
+       },
+	   
+	   //fish pond seasonal
+       {
+			"LogName": "Fish Pond Seasonal",
+			"Action": "EditImage",
+			"Target": "Buildings/Fish Pond",
+			"FromFile": "assets/season/fishpond/{{TypePondOverlay}}{{SeasonalVariant}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleFishPond |contains=none": "false",
+				"FishPondSeasonOptions": "seasonal",
+				"HasFile:assets/season/fishpond/{{TypePondOverlay}}{{SeasonalVariant}}.png": "true"
+			}
+       },
+       {
+			"LogName": "Fish Pond More Flowers Seasonal",
+			"Action": "EditImage",
+			"Target": "Buildings/Fish Pond",
+			"FromFile": "assets/season/fishpond/{{TypePondOverlay}}_moreflowers_{{season}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleFishPond |contains=none": "false",
+				"FishPondSeasonOptions": "moreflowers",
+				"HasFile:assets/season/fishpond/{{TypePondOverlay}}_moreflowers_{{season}}.png": "true"
+			}
+       },
+	   
+	   //junimo hut
+	   
+	   
+	   {
+			"LogName": "Junimo Hut",
+			"Action": "EditImage",
+			"Target": "Buildings/Junimo Hut",
+			"FromFile": "assets/junimohut/{{StyleJunimoHut}}.png",
+			"When": {
+					"StyleJunimoHut |contains=none": "false",
+			}
+       },	  
+       {
+			"LogName": "Junimo Hut More Flowers",
+			"Action": "EditImage",
+			"Target": "Buildings/Junimo Hut",
+			"FromFile": "assets/season/junimohut/moreflowers.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleJunimoHut |contains=none": "false",
+				"JunimoHutSeasonOptions": "moreflowers",
+				"HasFile:assets/season/junimohut/moreflowers.png": "true"
+			}
+       },
+	   
+	   //golden clock
+	   
+       {
+			"LogName": "Gold Clock Seasonal",
+			"Action": "EditImage",
+			"Target": "Buildings/Gold Clock",
+			"FromFile": "assets/season/goldclock/{{StyleGoldClock}}{{SeasonalVariant}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleGoldClock |contains=none": "false",
+				"GoldClockSeasonOptions": "seasonal",
+				"HasFile:assets/season/fishpond/{{StyleGoldClock}}{{SeasonalVariant}}.png": "true"
+			}
+       },
+	   
+       {
+			"LogName": "Gold Clock More Flower",
+			"Action": "EditImage",
+			"Target": "Buildings/Gold Clock",
+			"FromFile": "assets/season/goldclock/{{StyleGoldClock}}_moreflowers_{{season}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleGoldClock |contains=none": "false",
+				"GoldClockSeasonOptions": "moreflowers",
+				"HasFile:assets/season/goldclock/{{StyleGoldClock}}_moreflowers_{{season}}.png": "true"
+			}
+       },
+	 
+	 
+	   
+	   //mill
+       {
+			"LogName": "Mill",
+			"Action": "EditImage",
+			"Target": "Buildings/Mill",
+			"FromFile": "assets/mill/{{Stylemill}}.png",
+			"When": {
+				"Stylemill |contains=none": "false",
+				"HasFile:assets/mill/{{Stylemill}}.png": "true"
+			}
+       },
+	   
+	   //mill seasonal
+       {
+			"LogName": "Mill Seasonal",
+			"Action": "EditImage",
+			"Target": "Buildings/Mill",
+			"FromFile": "assets/season/mill/{{TypeMillOverlay}}{{SeasonalVariant}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"Stylemill |contains=none": "false",
+				"MillSeasonOptions": "seasonal",
+				"HasFile:assets/season/mill/{{TypeMillOverlay}}{{SeasonalVariant}}.png": "true"
+			}
+       },
+       {
+			"LogName": "Mill More Flowers Seasonal",
+			"Action": "EditImage",
+			"Target": "Buildings/Mill",
+			"FromFile": "assets/season/mill/{{TypeMillOverlay}}_moreflowers_{{season}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"Stylemill |contains=none": "false",
+				"MillSeasonOptions": "moreflowers",
+				"HasFile:assets/season/mill/{{TypeMillOverlay}}_moreflowers_{{season}}.png": "true"
+			}
+       },
+       {
+			"LogName": "Mill Flower Pot Seasonal",
+			"Action": "EditImage",
+			"Target": "Buildings/Mill",
+			"FromFile": "assets/season/mill/{{TypeMillOverlay}}_flowers_{{season}}.png",
+			"ToArea": { "X":48, "Y":64, "Width":16, "Height":34 },
+
+			"PatchMode": "Overlay",
+			"When": {
+				"Stylemill |contains=none": "false",
+				"MillSeasonOptions": "flowerpot",
+				"HasFile:assets/season/mill/{{TypeMillOverlay}}_flowers_{{season}}.png": "true"
+			}
+       },
+	   
+	   
+	   
+	   //obelisks	   
+	   {
+			"LogName": "obelisk desert",
+			"Action": "EditImage",
+			"Target": "Buildings/Desert Obelisk",
+			"FromFile": "assets/desertobelisk/{{StyleObeliskDesert}}.png",
+			"When": {
+				"StyleObeliskDesert |contains=none": "false",
+		  }
+       },
+	   {
+			"LogName": "obelisk earth",
+			"Action": "EditImage",
+			"Target": "Buildings/Earth Obelisk",
+			"FromFile": "assets/earthobelisk/{{StyleObeliskEarth}}.png",
+			"When": {
+				"StyleObeliskEarth |contains=none": "false",
+		  }
+       },
+	   {
+			"LogName": "obelisk island",
+			"Action": "EditImage",
+			"Target": "Buildings/Island Obelisk",
+			"FromFile": "assets/islandobelisk/{{StyleObeliskIsland}}.png",
+			"When": {
+				"StyleObeliskIsland |contains=none": "false",
+		  }
+       },
+	   {
+			"LogName": "obelisk water",
+			"Action": "EditImage",
+			"Target": "Buildings/Water Obelisk",
+			"FromFile": "assets/waterobelisk/{{StyleObeliskWater}}.png",
+			"When": {
+				"StyleObeliskWater |contains=none": "false",
+		  }
+       },
+	   
+	   
+	   
+	   //shed	   
+	   {
+			"LogName": "Shed",
+           "Action": "EditImage",
+           "Target": "Buildings/Shed",
+           "FromFile": "assets/shed/{{StyleShed}}.png",
+		   "When": {
+				"StyleShed |contains=none": "false",
+		  }
+       },
+       {
+			"LogName": "Shed Seasonal Overlay",
+			"Action": "EditImage",
+           "Target": "Buildings/Shed",
+			"FromFile": "assets/season/shed/{{TypeShedOverlay}}{{SeasonalVariant}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleShed |contains=none": "false",
+				"ShedSeasonOptions": "seasonal",
+				"HasFile:assets/season/shed/{{TypeShedOverlay}}{{SeasonalVariant}}.png": "true"
+			}
+       },
+       {
+			"LogName": "Shed Pot Overlay",
+			"Action": "EditImage",
+           "Target": "Buildings/Shed",
+			"FromFile": "assets/season/shed/{{TypeShedOverlay}}_pot.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleShed |contains=none": "false",
+				"ShedSeasonOptions": "flowerpot",
+				"HasFile:assets/season/shed/{{TypeShedOverlay}}_pot.png": "true"
+			}
+       },
+       {
+			"LogName": "Shed Pot Overlay",
+			"Action": "EditImage",
+           "Target": "Buildings/Shed",
+			"FromFile": "assets/season/shed/{{TypeShedOverlay}}_flowers_{{season}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleShed |contains=none": "false",
+				"ShedSeasonOptions": "flowerpot",
+				"HasFile:assets/season/shed/{{TypeShedOverlay}}_flowers_{{season}}.png": "true"
+			}
+       },
+       {
+			"LogName": "Shed More Flowers Overlay",
+			"Action": "EditImage",
+           "Target": "Buildings/Shed",
+			"FromFile": "assets/season/shed/{{TypeShedOverlay}}_moreflowers_{{season}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleShed |contains=none": "false",
+				"ShedSeasonOptions": "moreflowers",
+				"HasFile:assets/season/shed/{{TypeShedOverlay}}_moreflowers_{{season}}.png": "true"
+			}
+       },
+	   //big shed
+	   {
+			"LogName": "Big Shed",
+           "Action": "EditImage",
+           "Target": "Buildings/Big Shed",
+           "FromFile": "assets/bigshed/{{StyleBigShed}}.png",
+		   "When": {
+				"StyleBigShed |contains=none": "false",
+		  }
+       },
+       {
+			"LogName": "Big Shed Seasonal Overlay",
+			"Action": "EditImage",
+           "Target": "Buildings/Big Shed",
+			"FromFile": "assets/season/bigshed/{{TypeBigShedOverlay}}{{SeasonalVariant}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleBigShed |contains=none": "false",
+				"ShedSeasonOptions": "seasonal",
+				"HasFile:assets/season/bigshed/{{TypeBigShedOverlay}}{{SeasonalVariant}}.png": "true"
+			}
+       },
+       {
+			"LogName": "Big Shed Pot Overlay",
+			"Action": "EditImage",
+           "Target": "Buildings/Big Shed",
+			"FromFile": "assets/season/bigshed/{{TypeBigShedOverlay}}_pot.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleBigShed |contains=none": "false",
+				"ShedSeasonOptions": "flowerpot",
+				"HasFile:assets/season/bigshed/{{TypeBigShedOverlay}}_pot.png": "true"
+			}
+       },
+       {
+			"LogName": "Big Shed Flower Pot Overlay",
+			"Action": "EditImage",
+           "Target": "Buildings/Big Shed",
+			"FromFile": "assets/season/bigshed/{{TypeBigShedOverlay}}_flowers_{{season}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleBigShed |contains=none": "false",
+				"ShedSeasonOptions": "flowerpot",
+				"HasFile:assets/season/bigshed/{{TypeBigShedOverlay}}_flowers_{{season}}.png": "true"
+			}
+       },
+       {
+			"LogName": "Big Shed More Flowers Overlay",
+			"Action": "EditImage",
+           "Target": "Buildings/Big Shed",
+			"FromFile": "assets/season/bigshed/{{TypeBigShedOverlay}}_moreflowers_{{season}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleBigShed |contains=none": "false",
+				"ShedSeasonOptions": "moreflowers",
+				"HasFile:assets/season/bigshed/{{TypeBigShedOverlay}}_moreflowers_{{season}}.png": "true"
+			}
+       },
+	   
+	   
+	   //big shed mask
+	   {
+			"LogName": "Big Shed Mask",
+           "Action": "EditImage",
+           "Target": "Buildings/Big Shed_PaintMask",
+           "FromFile": "assets/bigshed/mask/{{StyleBigShed}}_mask.png",
+		   "When": {
+				"StyleBigShed |contains=darkbrown, gold, green, peach, purple, red, none": "false",
+				"HasFile:assets/bigshed/mask/{{StyleBigShed}}_mask.png": "true"
+		  }
+       },
+       {
+			"LogName": "Big Shed Seasonal Overlay Mask",
+			"Action": "EditImage",
+           "Target": "Buildings/Big Shed_PaintMask",
+			"FromFile": "assets/season/bigshed/{{TypeBigShedOverlay}}{{SeasonalVariant}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleBigShed |contains=none": "false",
+				"ShedSeasonOptions": "seasonal",
+				"HasFile:assets/season/bigshed/{{TypeBigShedOverlay}}{{SeasonalVariant}}.png": "true"
+			}
+       },
+       {
+			"LogName": "Big Shed Pot Overlay Mask",
+			"Action": "EditImage",
+           "Target": "Buildings/Big Shed_PaintMask",
+			"FromFile": "assets/season/bigshed/{{TypeBigShedOverlay}}_pot.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleBigShed |contains=none": "false",
+				"ShedSeasonOptions": "flowerpot",
+				"HasFile:assets/season/bigshed/{{TypeBigShedOverlay}}_pot.png": "true"
+			}
+       },
+       {
+			"LogName": "Big Shed Flower Pot Overlay Mask",
+			"Action": "EditImage",
+           "Target": "Buildings/Big Shed_PaintMask",
+			"FromFile": "assets/season/bigshed/{{TypeBigShedOverlay}}_flowers_{{season}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleBigShed |contains=none": "false",
+				"ShedSeasonOptions": "flowerpot",
+				"HasFile:assets/season/bigshed/{{TypeBigShedOverlay}}_flowers_{{season}}.png": "true"
+			}
+       },
+       {
+			"LogName": "Big Shed More Flowers Overlay Mask",
+			"Action": "EditImage",
+           "Target": "Buildings/Big Shed_PaintMask",
+			"FromFile": "assets/season/bigshed/{{TypeBigShedOverlay}}_moreflowers_{{season}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleBigShed |contains=none": "false",
+				"ShedSeasonOptions": "moreflowers",
+				"HasFile:assets/season/bigshed/{{TypeBigShedOverlay}}_moreflowers_{{season}}.png": "true"
+			}
+       },
+	   
+	   
+		//silo
+	   {
+			"LogName": "Silo",
+			"Action": "EditImage",
+			"Target": "Buildings/Silo",
+			"FromFile": "assets/silo/{{StyleSilo}}.png",
+			"When": {
+				"StyleSilo |contains=none": "false",
+			}
+       },
+       {
+			"LogName": "Silo Seasonal Overlay",
+			"Action": "EditImage",
+			"Target": "Buildings/Silo",
+			"FromFile": "assets/season/silo/{{TypeSiloOverlay}}{{SeasonalVariant}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleSilo |contains=none": "false",
+				"SiloSeasonOptions": "seasonal",
+				"HasFile:assets/season/silo/{{TypeSiloOverlay}}{{SeasonalVariant}}.png": "true"
+			}
+       },
+       {
+			"LogName": "Silo Seasonal Foliage Overlay",
+			"Action": "EditImage",
+			"Target": "Buildings/Silo",
+			"FromFile": "assets/season/silo/{{TypeSiloOverlay}}_moreflowers_{{season}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleSilo |contains=none": "false",
+				"SiloSeasonOptions": "moreflowers",
+				"HasFile:assets/season/silo/{{TypeSiloOverlay}}_moreflowers_{{season}}.png": "true"
+			}
+       },
+       {
+			"LogName": "Silo Seasonal Foliage Overlay",
+			"Action": "EditImage",
+			"Target": "Buildings/Silo",
+			"FromFile": "assets/season/silo/{{TypeSiloOverlay}}_flowers_{{season}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleSilo |contains=none": "false",
+				"SiloSeasonOptions": "flowerpot",
+				"HasFile:assets/season/silo/{{TypeSiloOverlay}}_flowers_{{season}}.png": "true"
+			}
+       },
+	   
+	   
+	   //slimehutch
+	   {			
+			"LogName": "Slime Hutch",
+           "Action": "EditImage",
+           "Target": "Buildings/Slime Hutch",
+           "FromFile": "assets/slimehutch/{{StyleSlimeHutch}}.png",
+		   "When": {
+				"StyleSlimeHutch|contains=none": "false",
+		  }
+       },
+       {
+			"LogName": "Slime Hutch Seasonal Overlay",
+			"Action": "EditImage",
+			"Target": "Buildings/Slime Hutch",
+			"FromFile": "assets/season/slimehutch/{{TypeSlimeHutchOverlay}}{{SeasonalVariant}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleSlimeHutch|contains=none": "false",
+				"SlimeHutchSeasonOptions": "seasonal",
+				"HasFile:assets/season/slimehutch/{{TypeSlimeHutchOverlay}}{{SeasonalVariant}}.png": "true"
+			}
+       },
+       {
+			"LogName": "Slime Hutch Pot",
+			"Action": "EditImage",
+			"Target": "Buildings/Slime Hutch",
+			"FromFile": "assets/season/slimehutch/{{TypeSlimeHutchOverlay}}_pot.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleSlimeHutch|contains=none": "false",
+				"SlimeHutchSeasonOptions": "flowerpot",
+				"HasFile:assets/season/slimehutch/{{TypeSlimeHutchOverlay}}_pot.png": "true"
+			}
+       },
+       {
+			"LogName": "Slime Hutch Flower Pot",
+			"Action": "EditImage",
+			"Target": "Buildings/Slime Hutch",
+			"FromFile": "assets/season/slimehutch/{{TypeSlimeHutchOverlay}}_flowers_{{season}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleSlimeHutch|contains=none": "false",
+				"SlimeHutchSeasonOptions": "flowerpot",
+				"HasFile:assets/season/slimehutch/{{TypeSlimeHutchOverlay}}_flowers_{{season}}.png": "true"
+			}
+       },
+       {
+			"LogName": "Slime Hutch Seasonal Overlay",
+			"Action": "EditImage",
+			"Target": "Buildings/Slime Hutch",
+			"FromFile": "assets/season/slimehutch/{{TypeSlimeHutchOverlay}}_moreflowers_{{season}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleSlimeHutch|contains=none": "false",
+				"SlimeHutchSeasonOptions": "moreflowers",
+				"HasFile:assets/season/slimehutch/{{TypeSlimeHutchOverlay}}_moreflowers_{{season}}.png": "true"
+			}
+       },
+	   
+		//stable
+	   {
+			"LogName": "Stable",
+           "Action": "EditImage",
+           "Target": "Buildings/Stable",
+           "FromFile": "assets/stable/{{StyleStable}}.png",
+		   "When": {
+				"StyleStable |contains=none": "false",
+		  }
+       },
+       {
+			"LogName": "Stable Seasonal Overlay",
+			"Action": "EditImage",
+           "Target": "Buildings/Stable",
+			"FromFile": "assets/season/stable/{{TypeStableOverlay}}{{SeasonalVariant}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleStable |contains=none": "false",
+				"StableSeasonOptions": "seasonal",
+				"HasFile:assets/season/stable/{{TypeStableOverlay}}{{SeasonalVariant}}.png": "true"
+			}
+       },
+       {
+			"LogName": "Stable More Flowers Overlay",
+			"Action": "EditImage",
+           "Target": "Buildings/Stable",
+			"FromFile": "assets/season/stable/{{TypeStableOverlay}}_moreflowers_{{season}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleStable |contains=none": "false",
+				"StableSeasonOptions": "moreflowers",
+				"HasFile:assets/season/stable/{{TypeStableOverlay}}_moreflowers_{{season}}.png": "true"
+			}
+       },
+       {
+			"LogName": "Stable Flower Pot Overlay",
+			"Action": "EditImage",
+           "Target": "Buildings/Stable",
+			"FromFile": "assets/season/stable/{{TypeStableOverlay}}_pot.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleStable |contains=none": "false",
+				"StableSeasonOptions": "flowerpot",
+				"HasFile:assets/season/stable/{{TypeStableOverlay}}_pot.png": "true"
+			}
+       },
+       {
+			"LogName": "Stable Flower Pot Overlay",
+			"Action": "EditImage",
+           "Target": "Buildings/Stable",
+			"FromFile": "assets/season/stable/{{TypeStableOverlay}}_flowers_{{season}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleStable |contains=none": "false",
+				"StableSeasonOptions": "flowerpot",
+				"HasFile:assets/season/stable/{{TypeStableOverlay}}_flowers_{{season}}.png": "true"
+			}
+       },
+	   
+	   //Mask
+	   
+	   {
+			"LogName": "Stable Mask",
+           "Action": "EditImage",
+           "Target": "Buildings/Stable_PaintMask",
+           "FromFile": "assets/stable/mask/{{TypeStableMaskOverlay}}_mask.png",
+		   "When": {
+				"StyleStable |contains=none, darkbrown, gold, green, peach, purple, red, white": "false",
+				"HasFile:assets/stable/mask/{{TypeStableMaskOverlay}}_mask.png": "true"
+		  }
+       },
+       {
+			"LogName": "Stable Seasonal Overlay Mask",
+			"Action": "EditImage",
+           "Target": "Buildings/Stable_PaintMask",
+			"FromFile": "assets/season/stable/mask/{{TypeStableOverlay}}{{SeasonalVariant}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleStable |contains=none": "false",
+				"StableSeasonOptions": "seasonal",
+				"HasFile:assets/season/stable/{{TypeStableOverlay}}{{SeasonalVariant}}.png": "true"
+			}
+       },
+       {
+			"LogName": "Stable More Flowers Overlay Mask",
+			"Action": "EditImage",
+           "Target": "Buildings/Stable_PaintMask",
+			"FromFile": "assets/season/stable/mask/{{TypeStableOverlay}}_moreflowers_{{season}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleStable |contains=none": "false",
+				"StableSeasonOptions": "moreflowers",
+				"HasFile:assets/season/stable/{{TypeStableOverlay}}_moreflowers_{{season}}.png": "true"
+			}
+       },
+       {
+			"LogName": "Stable Flower Pot Overlay Mask",
+			"Action": "EditImage",
+           "Target": "Buildings/Stable_PaintMask",
+			"FromFile": "assets/season/stable/mask/{{TypeStableOverlay}}_pot.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleStable |contains=none": "false",
+				"StableSeasonOptions": "flowerpot",
+				"HasFile:assets/season/stable/{{TypeStableOverlay}}_pot.png": "true"
+			}
+       },
+       {
+			"LogName": "Stable Flower Pot Overlay Mask",
+			"Action": "EditImage",
+           "Target": "Buildings/Stable_PaintMask",
+			"FromFile": "assets/season/stable/mask/{{TypeStableOverlay}}_flowers_{{season}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleStable |contains=none": "false",
+				"StableSeasonOptions": "flowerpot",
+				"HasFile:assets/season/stable/{{TypeStableOverlay}}_flowers_{{season}}.png": "true"
+			}
+       },
+	   
+	   
+	   //well
+	   {
+           "Action": "EditImage",
+           "Target": "Buildings/Well",
+           "FromFile": "assets/well/{{StyleWell}}.png",
+		   "When": {
+				"StyleWell |contains=none": "false",
+		  }
+       },
+       {
+			"LogName": "Well Seasonal Overlay",
+			"Action": "EditImage",
+			"Target": "Buildings/Well",
+			"FromFile": "assets/season/well/{{TypeWellOverlay}}{{SeasonalVariant}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleWell |contains=none": "false",
+				"WellSeasonOptions": "seasonal",
+				"HasFile:assets/season/well/{{TypeWellOverlay}}{{SeasonalVariant}}.png": "true"
+			}
+       },
+       {
+			"LogName": "Well More Flowers Overlay",
+			"Action": "EditImage",
+			"Target": "Buildings/Well",
+			"FromFile": "assets/season/well/{{TypeWellOverlay}}_moreflowers_{{season}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleWell |contains=none": "false",
+				"WellSeasonOptions": "moreflowers",
+				"HasFile:assets/season/well/{{TypeWellOverlay}}_moreflowers_{{season}}.png": "true"
+			}
+       },
+       {
+			"LogName": "Well Flower Pot Overlay",
+			"Action": "EditImage",
+			"Target": "Buildings/Well",
+			"FromFile": "assets/season/well/{{TypeWellOverlay}}_flowers_{{season}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleWell |contains=none": "false",
+				"WellSeasonOptions": "flowerpot",
+				"HasFile:assets/season/well/{{TypeWellOverlay}}_flowers_{{season}}.png": "true"
+			}
+       },
+		//fence
+		
+		{
+			"LogName": "Fence 01",
+           "Action": "EditImage",
+           "Target": "LooseSprites/Fence1",
+           "FromFile": "assets/fence/{{StyleFenceWood}}.png",
+			"When": {
+				"StyleFenceWood |contains=none": "false",
+				"HasFile:assets/fence/{{StyleFenceWood}}.png": "true"
+			}
+		}, 
+		
+		{
+			"LogName": "Fence 01 Season",
+			"Action": "EditImage",
+           "Target": "LooseSprites/Fence1",
+           "FromFile": "assets/season/fence/{{TypeFenceWoodOverlay}}{{SeasonalVariant}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleFenceWood |contains=none": "false",
+				"FenceWoodSeasonOptions": "seasonal",
+				"HasFile:assets/season//fence/{{TypeFenceWoodOverlay}}{{SeasonalVariant}}.png": "true"
+			}
+		},
+	   
+		{
+			"LogName": "Fence 01 moreflowers",
+			"Action": "EditImage",
+           "Target": "LooseSprites/Fence1",
+           "FromFile": "assets/season/fence/{{TypeFenceWoodOverlay}}_moreflowers_{{season}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleFenceWood |contains=none": "false",
+				"FenceWoodSeasonOptions": "moreflowers",
+				"HasFile:assets/season/fence/{{TypeFenceWoodOverlay}}_moreflowers_{{season}}.png": "true"
+			}
+		},
+		{
+			"LogName": "Fence 02",
+           "Action": "EditImage",
+           "Target": "LooseSprites/Fence2",
+           "FromFile": "assets/fence/{{StyleFenceStone}}.png",
+			"When": {
+				"StyleFenceStone |contains=none": "false",
+				"HasFile:assets/fence/{{StyleFenceStone}}.png": "true"
+			}
+		}, 
+		
+		{
+			"LogName": "Fence 02 Season",
+			"Action": "EditImage",
+           "Target": "LooseSprites/Fence2",
+           "FromFile": "assets/season/fence/{{TypeFenceStoneOverlay}}{{SeasonalVariant}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleFenceStone |contains=none": "false",
+				"FenceStoneSeasonOptions": "seasonal",
+				"HasFile:assets/season/fence/{{TypeFenceStoneOverlay}}{{SeasonalVariant}}.png": "true"
+			}
+		},
+		
+		{
+			"LogName": "Fence 02 More Flowers",
+			"Action": "EditImage",
+           "Target": "LooseSprites/Fence2",
+           "FromFile": "assets/season/fence/{{TypeFenceStoneOverlay}}_moreflowers_{{season}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleFenceStone |contains=none": "false",
+				"FenceStoneSeasonOptions": "moreflowers",
+				"HasFile:assets/season/fence/{{TypeFenceStoneOverlay}}_moreflowers_{{season}}.png": "true"
+			}
+		},
+	   
+		{
+			"LogName": "Fence 03",
+           "Action": "EditImage",
+           "Target": "LooseSprites/Fence3",
+           "FromFile": "assets/fence/{{StyleFenceIron}}.png",
+			"When": {
+				"StyleFenceIron |contains=none": "false",
+				"HasFile:assets/fence/{{StyleFenceIron}}.png": "true"
+			}
+		}, 
+		
+		{
+			"LogName": "Fence 03 Season",
+			"Action": "EditImage",
+           "Target": "LooseSprites/Fence3",
+           "FromFile": "assets/season/fence/{{TypeFenceIronOverlay}}{{SeasonalVariant}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleFenceIron |contains=none": "false",
+				"FenceIronSeasonOptions": "seasonal",
+				"HasFile:assets/season/fence/{{TypeFenceIronOverlay}}{{SeasonalVariant}}.png": "true"
+			}
+		},
+		
+		{
+			"LogName": "Fence 03 More Flowers",
+			"Action": "EditImage",
+           "Target": "LooseSprites/Fence3",
+           "FromFile": "assets/season/fence/{{TypeFenceIronOverlay}}_moreflowers_{{season}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleFenceIron |contains=none": "false",
+				"FenceIronSeasonOptions": "moreflowers",
+				"HasFile:assets/season/fence/{{TypeFenceIronOverlay}}_moreflowers_{{season}}.png": "true"
+			}
+		},
+		
+		
+		
+		{
+           "Action": "EditImage",
+           "Target": "LooseSprites/Fence5",
+           "FromFile": "assets/fence/{{StyleFenceHardwood}}.png",
+			"When": {
+				"StyleFenceHardwood |contains=none": "false",
+				"HasFile:assets/fence/{{StyleFenceHardwood}}.png": "true"
+			}
+		}, 
+		
+		{
+			"LogName": "Fence 05 Season",
+			"Action": "EditImage",
+           "Target": "LooseSprites/Fence5",
+           "FromFile": "assets/season/fence/{{TypeFenceHardwoodOverlay}}{{SeasonalVariant}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleFenceHardwood |contains=none": "false",
+				"FenceHardwoodSeasonOptions": "seasonal",
+				"HasFile:assets/season/fence/{{TypeFenceHardwoodOverlay}}{{SeasonalVariant}}.png": "true"
+			}
+		},
+		
+		{
+			"LogName": "Fence 05 More Flowers",
+			"Action": "EditImage",
+           "Target": "LooseSprites/Fence5",
+           "FromFile": "assets/season/fence/{{TypeFenceHardwoodOverlay}}_moreflowers_{{season}}.png",
+			"PatchMode": "Overlay",
+			"When": {
+				"StyleFenceHardwood |contains=none": "false",
+				"FenceHardwoodSeasonOptions": "moreflowers",
+				"HasFile:assets/season/fence/{{TypeFenceHardwoodOverlay}}_moreflowers_{{season}}.png": "true"
+			}
+		},
+		
+		
+	]
+}

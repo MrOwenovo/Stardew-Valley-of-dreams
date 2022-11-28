@@ -1,0 +1,19 @@
+{
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "Changes": [
+        // Social bliss - https://www.nexusmods.com/stardewvalley/mods/11645
+        {
+            "LogName": "[Yagi] Bliss - Sprite Offsets",
+            "Action": "EditData",
+            "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+            "When": {
+                "HasMod: |contains=Xiaoxingruo.Socialbliss": true
+            },
+            "Entries": {
+                "Bliss": {
+                    "MarkerCropOffset": 8
+                },
+            }
+        },
+    ]
+}

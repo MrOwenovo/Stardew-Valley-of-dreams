@@ -1,0 +1,117 @@
+{
+    "Changes": [ //replace all "PlayerName":"Isla" with "HasSeenEvent":"57875001"
+        {
+            "LogName": "NPC Manifestation",
+            "Action": "EditData",
+            "Target": "Data/NPCDispositions",
+            "Entries": {
+                "VivienneLK": "adult/rude/outgoing/positive/female/not-datable/Eyvinder/Other//Jacob '{{i18n:Relationship.Vivienne.Jacob}}' Eloise '{{i18n:Relationship.Vivienne.Eloise}}'/Custom_ES_TNPCWaitingWarpRoom 2 8/{{i18n:Name.Vivienne}}"
+            },
+            "When": {
+                "PlayerName |contains=Isla": false
+            }
+        },
+        {
+            "LogName": "NPC Manifestation",
+            "Action": "EditData",
+            "Target": "Data/NPCDispositions",
+            "When": {
+                "PlayerName": "Isla"
+            },
+            "Entries": {
+                "VivienneLK": "adult/rude/outgoing/positive/female/not-datable/Eyvinder/Other//Jacob '{{i18n:Relationship.Vivienne.Jacob}}' Eloise '{{i18n:Relationship.Vivienne.Eloise}}'/Custom_ESVetHouse 17 7/{{i18n:Name.Vivienne}}"
+            }
+        },
+        {
+            "LogName": "antisocial flags",
+            "Action": "EditData",
+            "Target": "Data/AntiSocialNPCs",
+            "Entries": {
+                "VivienneLK": true
+            }
+        },
+        {
+            "LogName": "NPC Exclusion NPCs to avoid Perfection issues",
+            "Action": "EditData",
+            "Target": "Data/CustomNPCExclusions",
+            "Entries": {
+                "VivienneLK": "All"
+            }
+        },
+        //Loved item: ruby ring (but not at the front!)
+        /* {
+            "LogName": "NPC Gift Tastes",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "Entries": {
+                "VivienneLK": "{{i18n:gifts.VivienneLK.love}}/64 534/{{i18n:gifts.VivienneLK.like}}/102/{{i18n:gifts.VivienneLK.dislike}}//{{i18n:gifts.VivienneLK.hate}}/638/{{i18n:gifts.VivienneLK.neutral}}//"
+            }
+        },*/
+        //VivienneLK
+        {
+            "LogName": "VivienneLK Portraits",
+            "Action": "Load",
+            "Target": "Portraits/VivienneLK, Characters/VivienneLK",
+            "FromFile": "assets/{{Target}}/VivienneLK.png"
+        },
+        {
+            "LogName": "Dialogue",
+            "Action": "Load",
+            "Target": "Characters/Dialogue/VivienneLK",
+            "FromFile": "assets/{{Target}}/Dialogue.json"
+        },
+        {
+            "LogName": "Schedule",
+            "Action": "Load",
+            "Target": "Characters/schedules/VivienneLK",
+            "FromFile": "assets/{{Target}}/Schedule.json",
+            "When": {
+                "PlayerName": "Isla"
+            }
+        },
+        {
+            "LogName": "Festivals",
+            "Action": "Include",
+            "FromFile": "assets/Festivals/VivienneLK.json",
+            "When": {
+                "PlayerName": "Isla"
+            }
+        },
+        {
+            "LogName": "Animations",
+            "Action": "EditData",
+            "Target": "Data/animationDescriptions",
+            "Entries": {
+                "viviennelk_write": "16/19 19 19 19 19 18 18 17 17 18 18 17 17 18 18 19 19 19/16"
+            }
+        },
+        {
+            "LogName": "Subtly tweaks Clint's strings",
+            "Action": "EditData",
+            "Target": "Strings/StringsFromMaps",
+            "Entries": {
+                "Blacksmith.2": "{{i18n:strings.es.blacksmith}}",
+                "Blacksmith.3": "{{i18n:strings.es.blacksmith}}",
+            }
+        },
+        {
+            "LogName": "Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/VivienneLK",
+            "Entries": {
+                "rain": "610 Custom_ESVetHouse 14 7 0/0730 Custom_ESVetHouse 31 16 0/900 Custom_DND_DialaCafe 22 9 2 viviennelk_write/1600 Custom_ESVetHouse 14 7 0/2200 Custom_ESVetHouse 17 7 3" //For D&D Cafe
+            },
+            "When": {
+                "HasMod": "skellady.DNDCP"
+            }
+        },
+        {
+            "LogName": "Sends dog park mail",
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries": {
+                "57870018/e 57874015/e 57874014/x EloisePuppyInvite": "null"
+            }
+        }
+    ]
+}

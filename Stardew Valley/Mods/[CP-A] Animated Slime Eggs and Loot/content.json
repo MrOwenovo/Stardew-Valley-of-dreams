@@ -1,0 +1,470 @@
+{
+	"Format": "1.17",
+	
+			"ConfigSchema": 
+		{
+			"ArcticShard":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				},
+			"BlueSlimeEgg":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				}, 
+			"Ectoplasm":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				}, 
+			"GalaxySoul":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				},
+			"GoldenCoconut":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				},	
+			"GoldenEgg":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				},	
+			"GoldenPumpkin":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				}, 
+			"GreenSlimeEgg":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				}, 
+			"HealthHeart":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				}, 
+			"Pearl1":
+				{
+				"AllowValues": "true,false",
+				"Default": "false",
+				"AllowMultiple": "false"
+				},
+			"Pearl2":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				},
+			"PrismaticJelly":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				},
+			"PurpleSlimeEgg":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				}, 
+			"QiGem":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				}, 	
+			"RedSlimeEgg":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				}, 
+			"Slime1":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				}, 
+			"Slime2":
+				{
+				"AllowValues": "true,false",
+				"Default": "false",
+				"AllowMultiple": "false"
+				}, 
+			"SolarEssence":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				}, 
+			"TigerSlimeEgg":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				},
+			"TreasureChest1":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				}, 
+			"TreasureChest2":
+				{
+				"AllowValues": "true,false",
+				"Default": "false",
+				"AllowMultiple": "false"
+				}, 
+			"VoidEssence":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				},
+			"WrigglingWorm":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				}, 
+		},	
+	"Changes": [
+		{			
+			"LogName": "ArcticShard",
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "arctic_shard.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 64, "Y": 576, "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 20,
+			"AnimationFrameCount": 10,
+			"When":
+				{
+				"ArcticShard": "true"
+				},
+		},
+		{			
+			"LogName": "Blue Slime Egg",
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "blueslimeegg.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 80, "Y": 272, "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 20,
+			"AnimationFrameCount": 10,
+			"When":
+				{
+				"BlueSlimeEgg": "true"
+				},
+		},
+
+		{			
+			"LogName": "Ectoplasm",
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "ectoplasm.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 176, "Y": 576, "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 20,
+			"AnimationFrameCount": 4,
+			"When":
+				{
+				"Ectoplasm": "true"
+				},
+		},
+		{			
+			"LogName": "Galaxy Soul",
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "galaxy_soul.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 128, "Y": 592, "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 10,
+			"AnimationFrameCount": 24,
+			"When":
+				{
+				"GalaxySoul": "true"
+				},
+		},
+		{			
+			"LogName": "Golden Coconut",
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "golden_coconut.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 368, "Y": 512, "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 15,
+			"AnimationFrameCount": 12,
+			"When":
+				{
+				"GoldenCoconut": "true"
+				},
+		},
+		{			
+			"LogName": "Golden Egg",
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "golden_egg.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 256, "Y": 608, "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 20,
+			"AnimationFrameCount": 10,
+			"When":
+				{
+				"GoldenEgg": "true"
+				},
+		},
+		{			
+			"LogName": "Golden Pumpkin",
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "goldenpumpkin.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 208, "Y": 240, "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 5,
+			"AnimationFrameCount": 22,
+			"When":
+				{
+				"GoldenPumpkin": "true"
+				},
+		},
+		{			
+			"LogName": "Green Slime Egg",
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "greenslimeegg.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 128, "Y": 448, "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 20,
+			"AnimationFrameCount": 10,
+			"When":
+				{
+				"GreenSlimeEgg": "true"
+				},
+		},
+		{			
+			"LogName": "Health Heart",
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "health_heart.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 288, "Y": 608, "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 10,
+			"AnimationFrameCount": 8,
+			"When":
+				{
+				"HealthHeart": "true"
+				},
+		},
+		{
+			"LogName": "Pearl 1",
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "pearl.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 80, "Y": 528, "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 10,
+			"AnimationFrameCount": 14,
+			"When":
+				{
+				"Pearl1": "true"
+				},
+		},
+		{
+			"LogName": "Pearl 2",
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "pearl2.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 80, "Y": 528, "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 10,
+			"AnimationFrameCount": 14,
+			"When":
+				{
+				"Pearl2": "true"
+				},
+		},
+		{
+			"LogName": "Prismatic Jelly",
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "prismatic_jelly.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 192, "Y": 576, "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 10,
+			"AnimationFrameCount": 24,
+			"When":
+				{
+				"PrismaticJelly": "true"
+				},
+		},
+		{			
+			"LogName": "Purple Slime Egg",
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "purpleslimeegg.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 112, "Y": 288, "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 20,
+			"AnimationFrameCount": 10,
+			"When":
+				{
+				"PurpleSlimeEgg": "true"
+				},
+		},
+		{			
+			"LogName": "Qi Gem",
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "qi_gem.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 288, "Y": 560, "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 15,
+			"AnimationFrameCount": 12,
+			"When":
+				{
+				"QiGem": "true"
+				},
+		},
+		{
+			"LogName": "Red Slime Egg",
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "redslimeegg.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 80, "Y": 288, "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 20,
+			"AnimationFrameCount": 10,
+			"When":
+				{
+				"RedSlimeEgg": "true"
+				},
+		},
+		{
+			"LogName": "Slime1",
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "slime1.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 352, "Y": 496, "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 10,
+			"AnimationFrameCount": 17,
+			"When":
+				{
+				"Slime1": "true"
+				},
+		},
+		{			
+			"LogName": "Slime2",
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "slime2.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 352, "Y": 496, "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 10,
+			"AnimationFrameCount": 17,
+			"When":
+				{
+				"Slime2": "true"
+				},
+		},
+		{			
+			"LogName": "Solar Essence",
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "solaressence.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 0, "Y": 512, "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 6,
+			"AnimationFrameCount": 11,
+			"When":
+				{
+				"SolarEssence": "true"
+				},
+		},
+		{			
+			"LogName": "Tiger Slime Egg",
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "tiger_slime_egg.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 272, "Y": 560, "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 20,
+			"AnimationFrameCount": 10,
+			"When":
+				{
+				"TigerSlimeEgg": "true"
+				},
+		},
+		{
+			"LogName": "Treasure Chest1",
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "treasurechest1.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 352, "Y": 96, "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 6,
+			"AnimationFrameCount": 22,
+			"When":
+				{
+				"TreasureChest1": "true"
+				},
+		},
+		{			
+			"LogName": "Treasure Chest2",
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "treasurechest2.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 352, "Y": 96, "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 6,
+			"AnimationFrameCount": 20,
+			"When":
+				{
+				"TreasureChest2": "true"
+				},
+		},
+		{
+			"LogName": "Void Essence",
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "voidessence.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 16, "Y": 512, "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 12,
+			"AnimationFrameCount": 10,
+			"When":
+				{
+				"VoidEssence": "true"
+				},
+		},
+		{
+			"LogName": "Wriggling Worm",
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "wriggling_worm.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 80, "Y": 576, "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 12,
+			"AnimationFrameCount": 6,
+			"When":
+				{
+				"WrigglingWorm": "true"
+				},
+		}
+	]
+}

@@ -1,0 +1,224 @@
+{
+"Changes": [
+
+	//NPC Dispositions
+		{
+			"LogName": "NPC Dispositions",
+			"Action": "EditData",
+			"Target": "Data/NPCDispositions",
+			"Entries": {
+				"Gabriel": "adult/neutral/shy/negative/male/datable/null/Town/winter 22/Zinnia '妹妹' Marlon '舅舅'/Custom_GE_ZinniaRoom 16 6/加布里埃尔",
+				"Zinnia": "teen/polite/outgoing/positive/female/datable/null/Town/summer 7/Gabriel '哥哥' Marlon '舅舅'/Custom_GE_ZinniaRoom 7 6/希妮亚",
+			},
+			 "When": {
+				"HasSeenEvent: hostPlayer |contains=9280002": "true",
+				},
+		},
+
+	//LOAD EMPTY JSONS
+		  {
+			"LogName": "Load Empty Json Dialogues",
+   			"Action": "Load",
+   			"Target": "Characters/Dialogue/Zinnia, Characters/Dialogue/Gabriel, Characters/Dialogue/MarriageDialogueZinnia, Characters/Dialogue/MarriageDialogueGabriel, Characters/schedules/Gabriel, Strings/schedules/Gabriel, Characters/schedules/Zinnia, Strings/schedules/Zinnia",
+   			"FromFile": "data/empty.json"
+  		},
+
+	//SPOUSE ROOMS/PATIOS
+	
+    {
+        "Action": "EditData",
+        "Target": "Data/SpouseRooms",
+        "Entries": {
+            "Zinnia": "GESpouseRooms/0",
+	    "Gabriel": "GESpouseRooms/1",
+        }
+    },
+
+    //Register patios
+    {
+    	"Action": "EditData",
+    	"Target": "Data/SpousePatios",
+    	"Entries": {
+    		"Zinnia": "GESpousePatios/0/24 24 24/0 0",
+		"Gabriel": "GESpousePatios/1/23 23 23/-5 2",
+    	},
+    },
+
+//*** GABRIEL ****
+
+		{
+			"LogName": "Gabriel Reg Sprites",
+			"Action": "Load",
+			"Target": "Characters/Gabriel",
+			"FromFile": "assets/Characters/Gabriel.png",
+		},
+
+		{
+			"LogName": "Gabriel Beach Sprites",
+			"Action": "Load",
+			"Target": "Characters/Gabriel_Beach",
+			"FromFile": "assets/Characters/Gabriel_Beach.png",
+		},
+
+		{
+			"LogName": "Gabriel Reg Portraits",
+			"Action": "Load",
+			"Target": "Portraits/Gabriel",
+			"FromFile": "assets/Portraits/Gabriel.png",
+		},
+
+		{
+			"LogName": "Gabriel Beach Portraits",
+			"Action": "Load",
+			"Target": "Portraits/Gabriel_Beach",
+			"FromFile": "assets/Portraits/Gabriel_Beach.png",
+		},
+
+		{
+			"LogName": "Gabriel Dialogue",
+			"Action": "Include",
+			"FromFile": "data/NPCData/Gabriel/dialogue.json",
+		},
+
+		{
+            		"Action": "Include",
+			"FromFile": "data/NPCData/Gabriel/marriagedialogue.json",
+        	},
+
+		{
+            		"Action": "EditData",
+            		"Target": "Data/NPCGiftTastes",
+            		"Entries": {
+                		"Gabriel": "哇哦，这是我想的那个吗？真是太棒了，非常感谢！/834 253 395 905 565 243 244/噢，你要把这个送给我？谢谢！看起来很酷。/437 439 413 680 857 -15 156 879 -5 921 614 351 349 772 773/噢……嗯，那就谢谢你吧。大概。/091 -6 724 904/这是为了让我高兴而送的吗？真是个糟糕的礼物。/225 226 148 162/噢，谢谢，@。/-28 557 874 814/",
+            			},
+        	},
+
+       		{
+            		"Action": "EditData",
+            		"Target": "Data/EngagementDialogue",
+            		"Entries": {
+                		"Gabriel0": "我等不及要称呼你为我的伴侣了，@。$l",
+                		"Gabriel1": "搬来这里是我一生中做过最好的决定，因为我得以遇见了你。",
+            			},
+        	},
+
+		{
+            		"Action": "Include",
+            		"FromFile": "data/NPCData/Gabriel/schedule.json",
+        	},
+
+
+//**** ZINNIA *****
+
+		{
+			"LogName": "Zinnia Reg Sprites",
+			"Action": "Load",
+			"Target": "Characters/Zinnia",
+			"FromFile": "assets/Characters/Zinnia.png",
+		},
+
+		{
+			"LogName": "Zinnia Beach Sprites",
+			"Action": "Load",
+			"Target": "Characters/Zinnia_Beach",
+			"FromFile": "assets/Characters/Zinnia_Beach.png",
+		},
+
+		{
+			"LogName": "Zinnia Reg Portraits",
+			"Action": "Load",
+			"Target": "Portraits/Zinnia",
+			"FromFile": "assets/Portraits/Zinnia.png",
+		},
+
+		{
+			"LogName": "Zinnia Beach Portraits",
+			"Action": "Load",
+			"Target": "Portraits/Zinnia_Beach",
+			"FromFile": "assets/Portraits/Zinnia_Beach.png",
+		},
+
+		{
+			"LogName": "Zinnia Dialogue",
+			"Action": "Include",
+			"FromFile": "data/NPCData/Zinnia/dialogue.json",
+		},
+
+		{
+            		"Action": "Include",
+			"FromFile": "data/NPCData/Zinnia/marriagedialogue.json",
+        	},
+
+		{
+            		"Action": "EditData",
+            		"Target": "Data/NPCGiftTastes",
+            		"Entries": {
+                		"Zinnia": "给我的？哇哦，谢谢！我真的很喜欢！/614 421 221 233 564 268 540/噢，谢谢！它看起来很棒！/577 578 548 872/噢，嗯，谢谢……/80 330 852 346/呕！你干嘛给我这个啊？我很讨厌它！/446 148 225 226 162 286 287 288/这是给我的礼物？哇哦！真的很不错。/378 380 384 386 848 158/",
+            		},
+        	},
+
+        	{
+            		"Action": "EditData",
+            		"Target": "Data/EngagementDialogue",
+            		"Entries": {
+                		"Zinnia0": "我等不及要和你共度余生了，@。$l",
+                		"Zinnia1": "希望我们能永远在一起，@。我等不及要和你结婚了。$1",
+            			},
+        	},
+
+		{
+            		"Action": "Include",
+            		"FromFile": "data/NPCData/Zinnia/schedule.json",
+        	},
+
+//*** DANIEL (NON SOCIAL NPC AS OF 1.0.0) ****
+
+		{
+			"LogName": "Daniel Sprites",
+			"Action": "Load",
+			"Target": "Characters/Daniel",
+			"FromFile": "assets/Characters/Daniel.png",
+		},
+
+
+		{
+			"LogName": "Daniel Portraits",
+			"Action": "Load",
+			"Target": "Portraits/Daniel",
+			"FromFile": "assets/Portraits/Daniel.png",
+		},
+
+		{
+			"LogName": "Daniel Map Tiles",
+			"Action": "Load",
+			"Target": "Maps/Daniel",
+			"FromFile": "assets/Maps/Daniel.png",
+		},
+
+//*** DAISY (NON SOCIAL NPC) ****
+
+		{
+			"LogName": "Daisy Sprites",
+			"Action": "Load",
+			"Target": "Characters/Daisy",
+			"FromFile": "assets/Characters/Daisy.png",
+		},
+
+
+		{
+			"LogName": "Daisy Portraits",
+			"Action": "Load",
+			"Target": "Portraits/Daisy",
+			"FromFile": "assets/Portraits/Daisy.png",
+		},
+
+//ANIMATIONS
+
+		{
+            		"Action": "Load",
+            		"Action": "Include",
+			"FromFile": "data/animations.json",
+        	},
+
+],
+}

@@ -1,0 +1,35 @@
+{
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "Changes": [
+        // Custom npc John - https://www.nexusmods.com/stardewvalley/mods/4500
+        {
+            "LogName": "[Yagi] John - Sprite Offsets - Before Intro Event",
+            "Action": "EditData",
+            "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+            "When": {
+                "HasMod: |contains=Fellowclown.JohnNpc": true,
+                "HasSeenEvent |contains=9588563": false
+            },
+            "Entries": {
+                "John": {
+                    "Exclude": true
+                }
+            }
+        },
+        {
+            "LogName": "[Yagi] John - Sprite Offsets - After Intro Event",
+            "Action": "EditData",
+            "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+            "When": {
+                "HasMod: |contains=Fellowclown.JohnNpc": true,
+                "HasSeenEvent": "9588563"
+            },
+            "Entries": {
+                "John": {
+                    "MarkerCropOffset": -2
+                },
+            }
+        },
+        // John doesn't have a location yet, but will in future.
+    ]
+}

@@ -1,0 +1,73 @@
+{
+  "Changes": [
+	//Sprite
+	{
+	  "Action": "Load",
+	  "Target": "applesauce.outstorage/harvestboxplaced",
+	  "FromFile": "assets/harvestboxplaced.png"
+	},
+
+	//Data
+	{
+	  "Action": "EditData",
+	  "Target": "furyx639.ExpandedStorage/Storages",
+	  "Entries": {
+		"harvestboxplaced": {
+		            "DisplayName": "{{i18n: harvestboxplaced.name}}",
+          		    "Description": "{{i18n: harvestboxplaced.description}}",
+          		    "Image": "applesauce.outstorage/harvestboxplaced",
+                            "Frames": 1,
+         		    "PlayerColor": false,
+          		    "OpenSound": "axe",
+			//Betterchests stuff
+        		    "BetterChestsData": {
+          		    "CollectItems": "Enabled",
+           		    "CustomColorPicker": "Disabled",
+           		    "FilterItems": "Enabled",
+        		    "FilterItemsList": [
+          			    "category_vegetable",
+           			    "category_fruits",
+           			    "category_milk",
+           			    "category_egg",
+           			    "category_meat",
+           			    "item_duck_feather",
+           			    "item_wool",
+           			    "item_rabbits_foot"
+         			   ],
+         		   "OpenHeldChest": "Enabled",
+      		           "ResizeChest": "Enabled",
+			   "ResizeChestCapacity": 60
+			  			}
+			}
+		      }
+	            },
+				{
+      	"Action": "EditData",
+     	 "Target": "furyx639.ExpandedStorage/Buy",
+    	  "Entries": {
+     	     "lunchbox": {
+     	     "ShopID": "SeedShop",
+       	     "Price": 60000
+      	    }
+     	   }
+  	  },
+      {
+        "Action": "EditData",
+        "Target": "Data/CraftingRecipes",
+        "Entries": {
+          "harvestboxplaced": "268 25/Home/232/true/null/{{i18n: harvestboxplaced.name}}"
+        }
+      },
+    
+      {
+        "Action": "EditData",
+        "Target": "furyx639.ExpandedStorage/Unlock",
+        "Entries": {
+          "harvestboxplaced": "true"
+        },
+        "When": {
+          "query: {{SkillLevel:Farming}} >= 7": true
+           }
+          }
+ 	 ] 
+	}

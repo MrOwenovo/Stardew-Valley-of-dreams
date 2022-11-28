@@ -1,0 +1,61 @@
+{
+    "Changes": [
+      {
+        "Action": "EditData",
+        "Target": "Data/ObjectContextTags",
+        "TextOperations": [
+          // Adding roommate proposal code to golden pumpkin as placeholder
+          {
+            "Operation": "Append",
+            "Target": [
+              "Entries",
+              "Golden Pumpkin"
+            ],
+            "Value": "propose_roommate_lavril",
+            "Delimiter": ", ",
+            "When": {
+              "HasSeenEvent |contains=63078002": "true"
+            }
+          }
+        ]
+      },
+
+       {
+            "LogName": "Engagement Dialogue",
+            "Action": "EditData",
+            "Target": "Data/EngagementDialogue",
+        "Entries": {
+          "LavrilRoommate0": "我……我一直想要一个爸爸。$4^我……我一直想要一个妈妈。$4#$b#嗯……我，呃，我是说——！$13#$b#啊哈哈哈，接下来的几天我都得钻进地缝里了。真的好害羞。$17#$b#我想说的是……谢谢你，@。$19",
+          "LavrilRoommate1": "我们得在离开之前做一些家务，确保家里一切都好……$10#$b#我是说，在去我们真正的家之前。你明白吗？$12"
+        }
+        },
+
+        {
+            "Action": "EditData",
+            "Target": "Strings/StringsFromCSFiles",
+            "Entries": {
+                "Lavril_EngagedRoommate": "我……我一直想要一个爸爸。$4^我……我一直想要一个妈妈。$4#$b#嗯……我，呃，我是说——！$13#$b#啊哈哈哈，接下来的几天我都得钻进地缝里了。真的好害羞。$17#$b#我想说的是……谢谢你，@。$19"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Strings/Characters/Lavril",
+            "Entries": {
+                "MovieInvite_NoTheater": "嗯……不了，谢谢。我们只想整天都躺在床上。$u"
+            }
+        },
+        //Roommate Room
+        {
+            "Action": "EditData",
+            "Target": "Data/SpouseRooms",
+            "Entries": {
+                "Lavril": "Arknir27_Lavril_SpouseRoom/0"
+            }
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/Arknir27_Lavril_SpouseRoom",
+            "FromFile": "assets/Maps/LavrilAdoptedRoom.tmx"
+        }
+    ]
+}

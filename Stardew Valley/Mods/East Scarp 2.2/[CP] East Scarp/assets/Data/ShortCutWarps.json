@@ -1,0 +1,310 @@
+{
+    "changes": [
+        //Adds warps to ES TRapdoors
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_ESDeepDark",
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 47,
+                        "Y": 35
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "Warp 13 19 Custom_ESSmugglerDen"
+                    }
+                }
+            ]
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_ESSeaCave",
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 38,
+                        "Y": 9
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "Warp 38 20 Custom_ESSmugglerDen"
+                    }
+                }
+            ]
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_ESShack",
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 9,
+                        "Y": 9
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "Warp 42 20 Custom_ESSmugglerDen"
+                    }
+                }
+            ]
+        },
+        //Adds warp to the Farm Cave
+        //If you are using a modified farmcave, you will need to adjust the coordinates via the config.
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Farmcave",
+            "ToArea": {
+                "X": "{{farmcave_trapdoorx}}",
+                "Y": "{{farmcave_trapdoory}}",
+                "Width": 1,
+                "Height": 1
+            },
+            "FromFile": "assets/Patches/trapdoor.tmx",
+            "PatchMode": "Overlay",
+            "Update": "OnLocationChange"
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Farmcave",
+            "Update": "OnLocationChange",
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": "{{farmcave_trapdoorx}}",
+                        "Y": "{{farmcave_trapdoory}}",
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "Warp 10 5 Custom_ESSmugglerDen"
+                    }
+                }
+            ]
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_ESSmugglerDen",
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 10,
+                        "Y": 4
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "TouchAction": "Warp Farmcave {{farmcave_exitx}} {{farmcave_exity}}"
+                    }
+                }
+            ]
+        },
+        //Adds warp to the mines. Should you wish to move this warp for personal convenience, you may need to edit the below
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Mine",
+            "ToArea": {
+                "X": 25, //change to the new x co-ordinate of where you would like the trapdoor
+                "Y": 4, //change to the new y co-ordinate of where you would like the trapdoor
+                "Width": 1,
+                "Height": 1
+            },
+            "FromFile": "assets/Patches/trapdoor.tmx",
+            "PatchMode": "Overlay"
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Mine",
+            "Update": "OnLocationChange",
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 25, //change to the new x co-ordinate of where you would like the trapdoor
+                        "Y": 4 //change to the new y co-ordinate of where you would like the trapdoor
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "Warp 36 5 Custom_ESSmugglerDen"
+                    }
+                },
+            ]
+        },
+        /*{ You will also need to adjust where the map exits to below and remove the / * and * / surrounding this block of code
+            "Action": "EditMap",
+            "Target": "Maps/Custom_ESSmugglerDen",
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 10,
+                        "Y": 4
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "Warp (new X location of exit) (new y location of exit) Mine"
+                    }
+                }
+            ]
+        },*/
+        //This unblocks the blocked tunnels and enables the warps for linked mods
+        //Juliet and Jessie
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_ESSmugglerDen",
+            "ToArea": {
+                "X": 15,
+                "Y": 2,
+                "Width": 1,
+                "Height": 3
+            },
+            "FromFile": "assets/Patches/doorway.tmx",
+            "When": {
+                "HasMod": "LemurKat.JulietHouse.NPC"
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_ESSmugglerDen",
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 15,
+                        "Y": 4
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "TouchAction": "Warp Custom_LK_LodgingHouseBasement 2 9"
+                    }
+                }
+            ],
+            "When": {
+                "HasMod": "LemurKat.JulietHouse.NPC"
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_LK_LodgingHouseBasement",
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 2,
+                        "Y": 10
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "Warp 15 5 Custom_ESSmugglerDen"
+                    }
+                }
+            ],
+            "When": {
+                "HasMod": "LemurKat.JulietHouse.NPC"
+            }
+        },
+        //Fairy Pool (Tristan)
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_ESSmugglerDen",
+            "ToArea": {
+                "X": 2,
+                "Y": 8,
+                "Width": 1,
+                "Height": 3
+            },
+            "FromFile": "assets/Patches/doorway.tmx",
+            "When": {
+                "HasMod": "LemurKat.Tristan.CP"
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_ESSmugglerDen",
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 2,
+                        "Y": 10
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "TouchAction": "Warp Custom_LK_SecretCave 20 9"
+                    }
+                }
+            ],
+            "When": {
+                "HasMod": "LemurKat.Tristan.CP"
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_LK_SecretCave",
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 20,
+                        "Y": 8
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "Warp 2 11 Custom_ESSmugglerDen"
+                    }
+                }
+            ],
+            "When": {
+                "HasMod": "LemurKat.Tristan.CP"
+            }
+        },
+        //Meadow Farm Shed (Eyvinder)
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_ESSmugglerDen",
+            "ToArea": {
+                "X": 45,
+                "Y": 2,
+                "Width": 1,
+                "Height": 3
+            },
+            "FromFile": "assets/Patches/doorway.tmx",
+            "When": {
+                "HasMod": "Lemurkat.EastScarp.Eyvinder"
+                //HasSeenEvent":""
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_ESSmugglerDen",
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 45,
+                        "Y": 4
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "TouchAction": "Warp Custom_ESMeadowShed 2 5"
+                    }
+                }
+            ],
+            "When": {
+                "HasMod": "Lemurkat.EastScarp.Eyvinder"
+                //HasSeenEvent":""
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_ESMeadowShed",
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 2,
+                        "Y": 4
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "Warp 45 5 Custom_ESSmugglerDen",
+                    }
+                }
+            ],
+            "When": {
+                "HasMod": "Lemurkat.EastScarp.Eyvinder"
+                //HasSeenEvent":""
+            }
+        },
+    ]
+}

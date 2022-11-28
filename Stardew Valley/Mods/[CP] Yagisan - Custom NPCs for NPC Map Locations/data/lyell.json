@@ -1,0 +1,72 @@
+{
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "Changes": [
+        // Custom npc Lyell - https://www.nexusmods.com/stardewvalley/mods/4499
+        {
+            "LogName": "[Yagi] Lyell - Sprite Offsets",
+            "Action": "EditData",
+            "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+            "When": {
+                "HasMod: |contains=Fellowclown.Lyell": true
+            },
+            "Entries": {
+                "Lyell": {
+                    "MarkerCropOffset": -2
+                },
+            }
+        },
+        {
+            "LogName": "[Yagi] Lyell - Location Support 278,382",
+            "Action": "EditData",
+            "Target": "Mods/Bouhm.NPCMapLocations/Locations",
+            "When": {
+                "HasMod: |contains=Fellowclown.Lyell": true,
+                "FarmType:|contains=Beach": false
+            },
+            "Entries": {
+                "Custom_Fellowclown_Lyell_LyellsWoods": {
+                    "MapVectors": [
+                        {
+                            "MapX": 246,
+                            "MapY": 280,
+                            "TileX": 0,
+                            "TileY": 0
+                        },
+                        {
+                            "MapX": 287,
+                            "MapY": 366,
+                            "TileX": 39,
+                            "TileY": 37
+                        }
+                    ],
+                    "MapTooltip": {
+                        "X": 265,
+                        "Y": 356,
+                        "Width": 90,
+                        "Height": 60,
+                        "PrimaryText": "Private Property"
+                    }
+                },
+            }
+        },
+        {
+            "LogName": "[Yagi] Lyell - Location Support (Beach Farm)",
+            "Action": "EditData",
+            "Target": "Mods/Bouhm.NPCMapLocations/Locations",
+            "When": {
+                "HasMod: |contains=Fellowclown.Lyell": true,
+                "FarmType:|contains=Beach": true
+            },
+            "Entries": {
+                "Custom_Fellowclown_Lyell_LyellsWoods": {
+                    "MapVectors": [
+                        {
+                            "MapX": 278,
+                            "MapY": 382,
+                        }
+                    ],
+                },
+            }
+        },
+    ]
+}

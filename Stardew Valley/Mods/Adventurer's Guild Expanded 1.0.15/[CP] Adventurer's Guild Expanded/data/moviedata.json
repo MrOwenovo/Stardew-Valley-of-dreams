@@ -1,0 +1,673 @@
+{
+"Changes": [
+	
+//ConcessionTastes        
+
+	
+	//Available General Tags:  Sweet, Sour, Salty, Fatty, Joja, Healthy, Gourmet, Hot, Candy
+	{	
+	"Action": "EditData",
+	"Target": "Data/ConcessionTastes",
+	"Entries": {
+	
+		"Zinnia": {
+			"Name": "Zinnia",
+			"LovedTags": [ "Star Cookie", "Jasmine Tea" ],
+			"LikedTags": [ "Sweet", "Healthy" ],
+			"DislikedTags": [ "Joja", "Sour Slimes",]
+			},
+		"Gabriel": {
+			"Name": "Gabriel",
+			"LovedTags": [ "Rock Candy", "Popcorn" ],
+			"LikedTags": [ "Salty", "Healthy" ],
+			"DislikedTags": [ "Joja", "Candy", "Salted Peanuts"]
+			},
+		"Silly": {
+			"Name": "Silly",
+			"LovedTags": [ "Rock Candy", "Stardrop Sorbet" ],
+			"LikedTags": [ "Apple Slices"],
+			"DislikedTags": [ "Sweet", "Sour", "Salty", "Fatty", "Joja", "Healthy", "Gourmet", "Hot", "Candy"]
+			},
+		},
+	},
+//-----------------------
+//Movie Reactions        
+//-----------------------
+	
+    {
+      "Action": "EditData",
+      "Target": "Data/MoviesReactions",
+      "Entries": {
+	  
+	//*******ZINNIA**********
+        "Zinnia": {
+          "NPCName": "Zinnia",
+          "Reactions": [
+
+            //Brave Little Sapling (ANIMATED) (FAMILY) (COMEDY)
+            {
+              "Tag": "spring_movie_0",
+              "Response": "love",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "这部电影看起来很有意思！谢谢你带我来，@！我喜欢动漫电影！$h"
+                },
+                "DuringMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "这好可爱啊，@！$h"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "哎呀，真的好可爱！虽然我是个大人，但我也能欣赏这种可爱的电影啊！$h"
+                }
+              },
+              "ID": "reaction_0"
+            },
+
+	    //Journey of the Praire King (VIDEOGAME)
+            {
+              "Tag": "summer_movie_0",
+              "Response": "like",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "游戏改编的电影？听起来很有意思！我一直在试着打酒吧的那个游戏，但我不是很擅长。"
+                },
+                "DuringMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "哇哦！没想到会这么有意思！$h"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "这部电影很酷！也许我可以再试试酒吧的那个游戏……$h"
+                }
+              },
+              "ID": "reaction_1"
+            },
+
+	     //Mysterium (MINDMESS) (MYSTERY)
+            {
+              "Tag": "fall_movie_0",
+              "Response": "dislike",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "神秘事迹？不知道是关于什么的……$u"
+                },
+                "DuringMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "我-我不明白……$s"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "这部电影真奇怪……让我重新开始思考很多事情……$s#$b#但我觉得我哥哥会更喜欢这部电影……$s"
+                }
+              },
+              "ID": "reaction_2"
+            },
+
+	     //Miracle at Coldstar Ranch (WHOLESOME) (TEAR JERKER) (FAMILY)
+            {
+              "Tag": "winter_movie_0",
+              "Response": "like",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "我觉得这部电影一定很令人暖心！我等不及要看了！$h"
+                },
+                "DuringMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "这部电影真温暖啊！我也想和家人在一起了。"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "我真的很喜欢这部电影，@！谢谢你邀请我。它让我想起了和家人在一起度过的愉快时光。"
+                }
+              },
+              "ID": "reaction_3"
+            },
+
+	    //Natural Wonders: Exploring Our Vibrant World (TOUR) (EDUCATIONAL)
+            {
+              "Tag": "spring_movie_1",
+              "Response": "like",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "噢，这部电影看起来很有意思！我喜欢欣赏地球的自然之美！$h"
+                },
+                "DuringMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "哇哦！真有意思！"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "我喜欢这部电影，@！我一直很喜欢自然环境。"
+                }
+              },
+              "ID": "reaction_4"
+            },
+
+	    //Wumbus (SCI-FI) (COMEDY)
+            {
+              "Tag": "summer_movie_1",
+              "Response": "love",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "这部电影看起来好像很刺激！我已经等不及了！$h"
+                },
+                "DuringMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "哈哈，这部电影真有意思！$h"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "真的很有意思，@！我喜欢这部电影。#$b#你能给我从娃娃机里抓个东西作为纪念吗？"
+                }
+              },
+              "ID": "reaction_5"
+            },
+
+	    //Howls in the Rain (HORROR)
+            {
+              "Tag": "fall_movie_1",
+              "Response": "dislike",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "噢，恐怖片……$s#$b#我-我可能会有点一惊一乍的，@……$s"
+                },
+                "DuringMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "我不喜欢这个……我的心跳太快了！$s"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "这-这真是吓人啊……$s#$b#我-我今晚应该睡不着了……$s"
+                }
+              },
+              "ID": "reaction_6"
+            },
+
+	//Zuzu City Express (CLASSIC) (ROMANCE)
+            {
+              "Tag": "winter_movie_1",
+              "Response": "like",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "噢，经典爱情片！我一直很喜欢这种电影。#$b#爸爸告诉我，我妈妈也很喜欢这种电影！$h"
+                },
+                "DuringMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "真是太美了，@！"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "真是部好电影！我喜欢看富有魅力的老电影。谢谢你邀请我，@！$h"
+                }
+              },
+              "ID": "reaction_7"
+            }
+		
+          ]
+        },
+
+	//*******GABRIEL**********
+
+        "Gabriel": {
+          "NPCName": "Gabriel",
+          "Reactions": [
+
+            //Brave Little Sapling (ANIMATED) (FAMILY) (COMEDY)
+            {
+              "Tag": "spring_movie_0",
+              "Response": "dislike",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "噢，孩子们看的电影？希望不会太无聊……$s"
+                },
+                "DuringMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "Zzz……$7"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "*哈欠*这部电影，嗯，还不错。大概吧……$s#$b#我总忍不住想算一算，我到底在这上面浪费了多少时间……$s"
+                }
+              },
+              "ID": "reaction_0"
+            },
+
+	    //Journey of the Praire King (VIDEOGAME)
+            {
+              "Tag": "summer_movie_0",
+              "Response": "like",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "噢，这看起来很不错。我小时候经常玩这个游戏，在我开始研究之前。#$b#这会是一场有趣的记忆之旅！"
+                },
+                "DuringMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "噢，我记得游戏里的这个部分！"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "这部电影真酷！或许我该去酒吧再试试那个游戏……$h"
+                }
+              },
+              "ID": "reaction_1"
+            },
+
+	//Mysterium (MINDMESS) (MYSTERY)
+            {
+              "Tag": "fall_movie_0",
+              "Response": "love",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "这部电影看起来正符合我的口味！我已经等不及了！$h"
+                },
+                "DuringMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "哇哦，太有意思了！$h"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "谢谢你邀请我，@。我喜欢这种电影，它让我感觉自己是个执行任务的调查员，正在揭开世界的秘密！$h"
+                }
+              },
+              "ID": "reaction_2"
+            },
+
+	//Miracle at Coldstar Ranch (WHOLESOME) (TEAR JERKER) (FAMILY)
+            {
+              "Tag": "winter_movie_0",
+              "Response": "like",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "通常来说我不喜欢这种电影，但这一部让我想起了我的家人。#$b#你知道吗，家人对我来说非常重要。"
+                },
+                "DuringMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "真是温暖啊……#$b#我-我才没有哭，我发誓！$u"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "*吸鼻子*这部电影让我很想念妈妈。$s#$b#但我真的很喜欢，@。谢谢你邀请我。"
+                }
+              },
+              "ID": "reaction_3"
+            },
+
+	//Natural Wonders: Exploring Our Vibrant World (TOUR) (EDUCATIONAL)
+            {
+              "Tag": "spring_movie_1",
+              "Response": "love",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "教育片？真不错！虽然可能有点奇怪，但我很喜欢在电影中学习知识。"
+                },
+                "DuringMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "真有意思，@！我很喜欢！"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "哇哦，@！这部电影太棒了！谢谢你邀请我。#$b#我很喜欢学习关于周围世界的新知识。有太多的秘密等待被发现，你明白吗？"
+                }
+              },
+              "ID": "reaction_4"
+            },
+
+	//Wumbus (SCI-FI) (COMEDY)
+            {
+              "Tag": "summer_movie_1",
+              "Response": "like",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "这部电影看起来很有意思。不知道“温布斯”会是什么东西……"
+                },
+                "DuringMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "这部电影真有趣，哈哈！"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "这电影真酷，@！我看得很开心。#$b#嘿，下个秋季的万灵节，你也可以化装成温布斯的样子！$h"
+                }
+              },
+              "ID": "reaction_5"
+            },
+
+	//Howls in the Rain (HORROR)
+            {
+              "Tag": "fall_movie_1",
+              "Response": "like",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "这是恐怖电影？好吧！我的人生里已经经历过了那么多可怕的事情，看看这部电影还能不能吓到我！"
+                },
+                "DuringMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "哇哦！好酷！不知道他们是怎么拍摄的？"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "哈哈，真有意思！我一直很喜欢好看的恐怖片。你呢，@？"
+                }
+              },
+              "ID": "reaction_6"
+            },
+
+	//Zuzu City Express (CLASSIC) (ROMANCE)
+            {
+              "Tag": "winter_movie_1",
+              "Response": "dislike",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "噢，老电影吗？我不是很喜欢这种……但我也可以试试看。"
+                },
+                "DuringMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "*哈欠*等等，刚刚发生了什么来着？"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "这部电影还行吧。我想我只是不太喜欢老电影……我还是挺喜欢现代这种风格的，你明白吗？"
+                }
+              },
+              "ID": "reaction_7"
+            }
+
+          ]
+        },
+
+	//*******SILLY**********
+
+	"Silly": {
+          "NPCName": "Silly",
+          "Reactions": [
+
+            //Brave Little Sapling (ANIMATED) (FAMILY) (COMEDY)
+            {
+              "Tag": "spring_movie_0",
+              "Response": "love",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "笨笨好激动！笨笨喜欢和@一起玩！$h"
+                },
+                "DuringMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "笨笨喜欢！$h"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "笨笨喜欢电影！小树苗就像笨笨一样！笨笨谢谢@带笨笨来！$h"
+                }
+              },
+              "ID": "reaction_0"
+            },
+
+	    //Journey of the Praire King (VIDEOGAME)
+            {
+              "Tag": "summer_movie_0",
+              "Response": "like",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "笨笨好激动！笨笨喜欢和@一起玩！"
+                },
+                "DuringMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "笨笨喜欢！"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "笨笨喜欢雪！谢谢@带笨笨来！"
+                }
+              },
+              "ID": "reaction_1"
+            },
+
+	//Mysterium (MINDMESS) (MYSTERY)
+            {
+              "Tag": "fall_movie_0",
+              "Response": "like",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "笨笨好激动！笨笨喜欢和@一起玩！"
+                },
+                "DuringMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "笨笨喜欢！"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "笨笨喜欢电影！谢谢@带笨笨来！"
+                }
+              },
+              "ID": "reaction_2"
+            },
+
+	//Miracle at Coldstar Ranch (WHOLESOME) (TEAR JERKER) (FAMILY)
+            {
+              "Tag": "winter_movie_0",
+              "Response": "love",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "笨笨好激动！笨笨喜欢家庭电影！$h"
+                },
+                "DuringMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "笨笨好喜欢！@也是笨笨的家人！$h"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "笨笨谢谢@！笨笨喜欢电影！笨笨也喜欢笨笨的家人！$h"
+                }
+              },
+              "ID": "reaction_3"
+            },
+
+	//Natural Wonders: Exploring Our Vibrant World (TOUR) (EDUCATIONAL)
+            {
+              "Tag": "spring_movie_1",
+              "Response": "like",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "笨笨好激动！笨笨喜欢和@一起玩！"
+                },
+                "DuringMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "笨笨喜欢！"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "笨笨喜欢电影！谢谢@带笨笨来！"
+                }
+              },
+              "ID": "reaction_4"
+            },
+
+	//Wumbus (SCI-FI) (COMEDY)
+            {
+              "Tag": "summer_movie_1",
+              "Response": "like",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "温布斯真好笑！$h"
+                },
+                "DuringMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "笨笨在笑！电影真有趣！$h"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "笨笨喜欢电影！笨笨想要变成温布斯！@可以把笨笨涂成绿色吗？$h"
+                }
+              },
+              "ID": "reaction_5"
+            },
+
+	//Howls in the Rain (HORROR)
+            {
+              "Tag": "fall_movie_1",
+              "Response": "dislike",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "恐怖电影？笨笨害怕……$s"
+                },
+                "DuringMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "啊！笨笨哭了！$s"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "*抽泣*笨笨不喜欢……$s"
+                }
+              },
+              "ID": "reaction_6"
+            },
+
+	//Zuzu City Express (CLASSIC) (ROMANCE)
+            {
+              "Tag": "winter_movie_1",
+              "Response": "like",
+              "Whitelist": [],
+              "SpecialResponses": {
+                "BeforeMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "笨笨好激动！笨笨喜欢和@一起玩！"
+                },
+                "DuringMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "笨笨喜欢！"
+                },
+                "AfterMovie": {
+                  "ResponsePoint": null,
+                  "Script": "",
+                  "Text": "笨笨喜欢电影！谢谢@带笨笨来！"
+                }
+              },
+              "ID": "reaction_7"
+            }
+
+          ]
+        },
+
+	},
+
+  },
+	
+]
+}

@@ -1,0 +1,45 @@
+{
+        "Changes": [
+                {
+                        "LogName": "Josephine Schedule",
+                        "Action": "EditData",
+                        "Target": "Characters/schedules/JosephineK",
+                        "Entries": {
+                                "winter_1": "0 BusStop 12 15 0/610 BusStop 13 16 1/800 SeedShop 3 19 0/1040 Town 44 57 2/1120 Custom_EastScarpeInn 3 9 3/2100 Custom_EastScarpeInn 7 9 1",
+                                "winter_16": "0 Custom_EastScarpeInn 8 9/640 Custom_EastScarpeInn 42 19 1/900 Town 31 56 2/1400 SeedShop 3 19 0/1600 Beach 39 34 2/2100 Custom_EastScarpeInn 7 9 1",
+                                "Fri": "0 Custom_EastScarpeInn 8 9/640 Custom_EastScarpeInn 42 19 1/900 Town 31 56 2/1400 Town 29 26 3/1700 Custom_EastScarpeInn 3 9 3/2100 Custom_EastScarpeInn 7 9 1",
+                                "Sun": "0 Custom_EastScarpeInn 8 9/640 Custom_EastScarpeInn 42 19 1/1000 Custom_EastScarpe 46 69 2/1100 SeedShop 12 28 1/1400 ManorHouse 10 5 3/2000 ManorHouse 2 6 0/2100 Custom_EastScarpeInn 7 9 1",
+                                "spring": "0 Custom_EastScarpeInn 8 9/640 Custom_EastScarpeInn 42 19 1/1000 Custom_EastScarpe 46 69 2/1100 SeedShop 12 28 1/1400 SeedShop 5 19 0/1500 Custom_EastScarpeInn 3 9 3/2100 Custom_EastScarpeInn 7 9 1"
+                        },
+                        "When": {
+                                "HasSeenEvent": "57873000",
+                                "HasSeenEvent |contains=57873005": "false"
+                        }
+                },
+                {
+                        "LogName": "Josephine Schedule",
+                        "Action": "EditData",
+                        "Target": "Characters/schedules/JosephineK",
+                        "Entries": {
+                                "winter_1": "GOTO spring"
+                        },
+                        "When": {
+                                "HasSeenEvent": "57873000",
+                                "HasSeenEvent |contains=57873005": false,
+                                "Relationship:JosephineK": "Friendly"
+                        }
+                },
+                {
+                        "LogName": "Josephine Schedule",
+                        "Action": "EditData",
+                        "Target": "Characters/schedules/JosephineK",
+                        "Entries": {
+                                "spring": "0 Custom_ES_TNPCWaitingWarpRoom 7 5/1200 Custom_ES_TNPCWaitingWarpRoom 2 8/1800 Custom_ES_TNPCWaitingWarpRoom 7 5",
+                                "summer_6": "0 Custom_ES_VetAwayWarp 5 5 3/800 Custom_ESVetHouse 3 19 0/900 Town 85 93 2/1400 Town 79 87 2/1500 Saloon 5 5 1 josephinek_sit/1800 Custom_EastScarpe 33 35 3/2130 Custom_ES_VetAwayWarp 5 5 3"
+                        },
+                        "When": {
+                                "HasSeenEvent": "57873005"
+                        }
+                },
+        ]
+}

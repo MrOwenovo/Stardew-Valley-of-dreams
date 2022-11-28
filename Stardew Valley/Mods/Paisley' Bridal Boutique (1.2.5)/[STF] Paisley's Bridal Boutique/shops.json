@@ -1,0 +1,126 @@
+{
+    "Shops": [
+		{
+			"ShopName": "PaisleyShop",
+			"PortraitPath": "assets/Portrait.png",
+			"Quote": "欢迎来到佩斯利的服装精品店 <",
+
+
+			"MaxNumItemsSoldInStore": 250,
+				"ItemStocks": [
+				//Shirts and Pants
+				{
+					"ItemType": "Clothing",//Shirts Always Available
+					"StockPrice": 2500,
+					"ItemNames": ["English Wedding Corset", "White Corset with Silver Necklace", "White Corset with Gold Necklace"],
+					"Stock": 1,
+				},
+				{
+					"ItemType": "Clothing",//Pants Always Available
+					"StockPrice": 5000,
+					"ItemNames": ["White Peplum Dress", "White Tulle Dress", "Black Dress Pants"],
+					"Stock": 1,
+				},
+				{
+					"ItemType": "Clothing",//Shirts Spring
+					"StockPrice": 2500,
+					"ItemNames": ["Blue Celtic Corset", "Black Hungarian Corset", "Lucky Blue Tuxedo", "Lockhart Sash Corset", "Lockhart Sash Tuxedo", "Gold Tallit Tuxedo", "Blue Tallit Tuxedo", "Red Embroidered Tunic"],
+					"When": ["!z spring"],
+					"Stock": 1,
+				},
+				{
+					"ItemType": "Clothing",//Pants Spring
+					"StockPrice": 5000,
+					"ItemNames": ["Blue Celtic Dress", "Black Hungarian Wedding Dress", "Lucky Blue Tuxedo Pants", "Lockhart Sash Dress", "Lockhart Sash Pants", "Gold Tallit Pants", "Blue Tallit Pants", "Red Embroidered Pants", "Red Embroidered Dress"],
+					"When": ["!z spring"],
+					"Stock": 1,
+				},
+				{
+					"ItemType": "Clothing",//Shirts Summer
+					"StockPrice": 2500,
+					"ItemNames": ["Black Beaded Tunic", "Orange Beaded Tunic", "Polish Wedding Corset", "Polish Wedding Shirt", "Norwegian Wedding Blouse", "Norwegian Wedding Vest", "Blue Vietnamese Wedding Tunic", "Red Vietnamese Wedding Tunic"],
+					"When": ["!z summer"],
+					"Stock": 1,
+				},
+				{
+					"ItemType": "Clothing",//Pants Summer
+					"StockPrice": 5000,
+					"ItemNames": ["Black Tunic Skirt", "White Polish Dress", "Polish Wedding Pants", "Norwegian Wedding Dress", "Norwegain Black Pants", "Blue Vietnamese Wedding Pants", "Red Vietnamese Wedding Pants"],
+					"When": ["!z summer"],
+					"Stock": 1,
+				},
+								{
+					"ItemType": "Clothing",//Shirts Fall
+					"StockPrice": 2500,
+					"ItemNames": ["Black Lace Corset", "Georgian Wedding Corset", "Gothic Tuxedo", "Punjabi Wedding Tunic", "Red Lehenga Blouse", "Romanian Corset", "Gold Embroidered Tunic"],
+					"When": ["!z fall"],
+					"Stock": 1,
+				},
+				{
+					"ItemType": "Clothing",//Pants Fall
+					"StockPrice": 5000,
+					"ItemNames": ["Black Lace Dress", "Black Romanian Dress", "Georgian Wedding Dress", "Gold Embroidered Pants", "Red Lehenga Dress"],
+					"When": ["!z fall"],
+					"Stock": 1,
+				},
+				//Hats
+				{
+					"ItemType": "Hat", //Always Available
+					"StockPrice": 1000,
+					"ItemNames": ["Blue Kippah", "Gold Kippah", "Flower Crown", "Wedding Bow", "Wedding Hijab", "White Lace Veil", "Short Hair Sparkles", "Medium Hair Sparkles", "Long Hair Sparkles"],
+					"Stock": 1,
+				},
+				{
+					"ItemType": "Hat", //Always Available Expensive
+					"StockPrice": 5000,
+					"ItemNames": ["Gold Crown", "Gold Crown with Veil", "Hijab with Gold Crown", "Hijab with Silver Crown"],
+					"Stock": 1,
+				},
+								{
+					"ItemType": "Hat", //Always Available Extra Expensive
+					"StockPrice": 10000,
+					"ItemNames": ["Silver Crown", "Silver Crown with Veil"],
+					"Stock": 1,
+				},
+				{
+					"ItemType": "Hat", //Spring 
+					"StockPrice": 1000,
+					"ItemNames": ["Dandelion Crown", "Dandelion Crown with Ribbons", "Gold Circlet", "Silver Circlet", "Ukrainain Flower Crown", "Black Hungarian Crown", "Black Hungarian Crown with Veil"],
+					"When":["!z spring"],
+					"Stock": 1,
+				},
+				{
+					"ItemType": "Hat", //Spring Fancy
+					"StockPrice": 2500,
+					"ItemNames": ["Gold Flower Crown", "Silver Flower Crown", "Hair Lavender", "Hair Marigolds", "Hijab with Dandelion Crown", "Hijab with Flower Crown"],
+					"When":["!z spring"],
+					"Stock": 1,
+				},
+				{
+					"ItemType": "Hat", //Summer 
+					"StockPrice": 1000,
+					"ItemNames": ["Pink Shell Crown", "Pink Shell Crown with Veil", "Blue Shell Crown", "Blue Shell Crown with Veil", "Black Beaded Head Dress", "Black Beaded Headband", "Norwegian Crown", "Vietnamese Wedding Turban", "Vietnamese Wedding Crown"],
+					"When":["!z summer"],
+					"Stock": 1,
+				},
+				{
+					"ItemType": "Hat", //Summer Fancy
+					"StockPrice": 2500,
+					"ItemNames": ["Gold Shell Crown", "Gold Shell Crown with Veil", "Silver Shell Crown", "Silver Shell Crown with Veil"],
+					"When":["!z summer"],
+					"Stock": 1,
+				},
+								{
+					"ItemType": "Hat", //Fall
+					"StockPrice": 1000,
+					"ItemNames": ["Black Lace Veil", "Sihk Wedding Turban", "Wedding Bindi", "Wedding Bindi with Veil", "Georgian Wedding Crown", "Georgian Wedding Crown with Veil"],
+					"When":["!z fall"],
+					"Stock": 1,
+				}
+				],
+			"MaxNumItemsSoldInItemStock": 50,
+			"When": ["t 900 1800/z winter"],
+			"ClosedMessage": "本店营业时间是早上九点到下午六点！"
+		}
+	]
+}	

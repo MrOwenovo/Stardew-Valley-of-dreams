@@ -1,0 +1,530 @@
+{
+  "Changes": [
+    {
+      "LogName": "Load Rosa Dialogue File",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/Rosa, Characters/schedules/Rosa",
+      "FromFile": "assets/{{target}}/Rosa.json"
+    },
+    {
+      "LogName": "NPC Dispositions",
+      "Action": "EditData",
+      "Target": "Data/NPCDispositions",
+      "Entries": {
+        "Rosa": "adult/neutral/outgoing/positive/female/not-datable/Juliet/Town/fall 7/null/Custom_EastScarpeInn 63 8/{{i18n:Name.Rosa}}"
+      }
+    },
+    /* {
+      "Action": "EditMap",
+      "Target": "Maps/Custom_EastScarpeInn",
+      "MapProperties": {
+          "NPCWarp": "25 4 Custom_ES_InnRoomRosa 3 9"
+      }
+    },*/
+    /* {
+      "LogName": "NPC Manifestation - makes Rosa datable if you're playing a female char (she may ask you at 8-hearts if you are interested in women romantically and if no, remove - or add - a flag)",
+      "Action": "EditData",
+      "Target": "Data/NPCDispositions",
+      "Fields": {
+        "Rosa": {
+          "5": "datable"
+        }
+      },
+      "When": {
+        "PlayerGender": "female"
+      }
+    },*/
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "Entries": {
+        "Rosa": "{{i18n:gifts.rosa.love}}/540 233 400/{{i18n:gifts.rosa.like}}/-4 -5 -6 -7 -79 422 216 246 768/{{i18n:gifts.rosa.dislike}}/330/{{i18n:gifts.rosa.hate}}/2 769/{{i18n:gifts.rosa.neutral}}/-4/ "
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "When": {
+        "HasSeenEvent": "57874008"
+      },
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "Rosa",
+            1
+          ],
+          "Value": "534",
+          "Delimiter": " "
+        }
+      ]
+    },
+    {
+      "LogName": "Animations",
+      "Action": "EditData",
+      "Target": "Data/animationDescriptions",
+      "Entries": {
+        "rosa_read": "24/24 24 24 24 24 24 24 24 24 24 25 25 25 25 25 25 25 25 25 25 26 26 26 26 26 26 26 26/24"
+      }
+    },
+    {
+      "LogName": "Portraits",
+      "Action": "Load",
+      "Target": "Portraits/Rosa",
+      "FromFile": "assets/{{Target}}/Rosa.png"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/Festivals/Rosa.json"
+    },
+    {
+      "LogName": "Schedule Dialogue",
+      "Action": "Load",
+      "Target": "Strings/schedules/Rosa",
+      "FromFile": "assets/Characters/schedules/Rosa/ScheduleDialogueRosa.json"
+    },
+    {
+      "LogName": "Additional Rosa Dialogue",
+      "Action": "Include",
+      "FromFile": "assets/Characters/Dialogue/Rosa/RosaDialogue.json"
+    },
+    {
+      "LogName": "Loads Attic",
+      "Action": "Load",
+      "Target": "Maps/ESInnAttic",
+      "FromFile": "assets/Maps/Attic.tmx"
+    },
+    /*********
+  ** Sprites
+  *********/
+    {
+      "LogName": "Sprites",
+      "Action": "Load",
+      "Target": "Characters/Rosa",
+      "FromFile": "assets/{{Target}}/Rosa.png"
+    },
+    {
+      "LogName": "Sprites",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Rosa",
+      "Entries": {
+        "spring": "750 Custom_EastScarpeInn 43 10 0 square_5_1_0/0930 Custom_EastScarpe 21 100 2/1800 Custom_EastScarpe 17 121 2/2000 Custom_EastScarpeInn 45 10 0/2200 Custom_ES_InnRoomRosa 5 5 1",
+        "summer": "750 Custom_EastScarpeInn 43 10 0 square_5_1_0/0930 Custom_EastScarpe 21 100 2/1800 Custom_EastScarpe 17 121 2/2000 Custom_EastScarpeInn 45 10 0/2200 Custom_ES_InnRoomRosa 5 5 1",
+        "fall": "750 Custom_EastScarpeInn 43 10 0 square_5_1_0/0930 Custom_EastScarpe 21 100 2/1800 Custom_EastScarpe 17 121 2/2000 Custom_EastScarpeInn 45 10 0/2200 Custom_ES_InnRoomRosa 5 5 1",
+        "winter": "750 Custom_EastScarpeInn 43 10 0 square_5_1_0/0930 Custom_EastScarpe 21 100 2/1800 Custom_EastScarpe 17 121 2/2000 Custom_EastScarpeInn 45 10 0/2200 Custom_ES_InnRoomRosa 5 5 1",
+        "rain": "750 Custom_EastScarpeInn 43 10 0 square_5_1_0/0930 Custom_EastScarpeInn 33 28 0/1500 Custom_EastScarpeInn 29 13 3 square_1_2_1/1800 Custom_EastScarpe 17 121 2/2000 Custom_EastScarpeInn 45 10 0/2200 Custom_ES_InnRoomRosa 5 5 1",
+      },
+      "When": {
+        "HasMod": "ItsBenter.InnCompanions.CP"
+      },
+    },
+    {
+      "LogName": "Sprites",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Rosa",
+      "Entries": {
+        "Sat": "750 Custom_EastScarpeInn 43 10 0 square_5_1_0/0930 Custom_EastScarpe 21 100 2/1650 Saloon 36 20 1/2400 Custom_EastScarpeInn 66 8 1",
+      },
+      "When": {
+        "HasSeenEvent": "57874020"
+      }
+    },
+    {
+      "LogName": "Sprites",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Rosa",
+      "Entries": {
+        "Thu": "750 Custom_EastScarpeInn 43 10 0 square_5_1_0/930 JojaMart 21 15 3/1230 JojaMart 13 6 0/1310 JojaMart 13 6 0/1400 JojaMart 8 5 2/1430 JojaMart 7 24 3/1530 Custom_EastScarpeInn 43 10 0/2200 Custom_EastScarpeInn 66 8 1"
+      },
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+        "HasMod |contains=LemurKat.JulietHouse.NPC": true
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Custom_EastScarpeInn",
+      "Entries": {
+        "57874000": "jaunty/37 15/farmer 40 22 0 Rosa 44 10 0/skippable/addObject 43 19 234 1/addObject 41 8 245 1/addObject 42 8 246 1/move farmer 0 -4 1 true/move Rosa -4 0 2 true/emote Rosa 56/emote farmer 8/move farmer 2 0 1/move Rosa 0 5 2/doAction 40 16/playSound openBox/faceDirection farmer 3/move farmer -2 0 0 true/move Rosa 0 2 2 true/pause 1000/emote Rosa 16/jump Rosa 3/jump farmer 3/move farmer 1 0 3/playSound dwop/addObject 40 18 255 0/textAboveHead Rosa \"{{i18n:57874000.01}}\"/speak Rosa \"{{i18n:57874000.02}}\"/quickQuestion #{{i18n:57874000.03}}#{{i18n:57874000.04}}(break)speak Rosa \"{{i18n:57874000.05}}\"(break)speak Rosa \"{{i18n:57874000.06}}\"/speak Rosa \"{{i18n:57874000.07}}\"/emote farmer 36/speak Rosa \"{{i18n:57874000.08}}\"/playSound pickUpItem/removeSprite 40 18/move Rosa 0 1 1/speak Rosa \"{{i18n:57874000.09}}\"/faceDirection Rosa 3/pause 500/faceDirection Rosa 1/speak Rosa \"{{i18n:57874000.10}}\"/emote farmer 32/pause 500/speak Rosa \"{{i18n:57874000.11}}\"/emote farmer 56/pause 500/speak Rosa \"{{i18n:57874000.12}}\"/pause 500/emote farmer 40/pause 500/speak Rosa \"{{i18n:57874000.13}}\"/pause 500/move Rosa 0 -1 0/move farmer -1 0 0/move Rosa 0 -6 0 true/pause 1000/end",
+        "57874001/f Rosa 500/t 1600 2000": "jaunty/40 12/farmer 40 17 0 Rosa 45 10 0/skippable/pause 1000/move Rosa -2 0 0/playSound clank/doAction 40 16/move farmer 0 -7 1 true/shake Rosa 240/pause 500/emote Rosa 12/pause 1000/playSound clank/pause 1000/emote farmer 56/jump Rosa 2/faceDirection Rosa 3/pause 100/speak Rosa \"{{i18n:57874001.01}}\"/emote farmer 32/pause 1000/speak Rosa \"{{i18n:57874001.02}}\"/pause 500/emote Rosa 28/pause 1000/move Rosa 0 1 2/pause 500/move farmer 2 0 2/playSound slimedead/addObject 43 12 747 0/emote Rosa 20/move farmer 0 1 2/emote farmer 8/speak Rosa \"{{i18n:57874001.03}}\"/pause 1000/quickQuestion #{{i18n:57874001.04}}#{{i18n:57874001.05}}#{{i18n:57874001.06}}(break)textAboveHead Rosa \"{{i18n:57874001.07}}\"\\speak Rosa \"{{i18n:57874001.08}}\"(break)speak Rosa \"{{i18n:57874001.09}}\"(break)speak Rosa \"{{i18n:57874001.10}}\"/pause 1000/faceDirection Rosa 3/faceDirection farmer 1/pause 1000/speak Rosa \"{{i18n:57874001.11}}\"/faceDirection Rosa 0/pause 1000/emote farmer 8/faceDirection Rosa 3/speak Rosa \"{{i18n:57874001.12}}\"/pause 500/faceDirection Rosa 2/faceDirection farmer 2/pause 1000/speak Rosa \"{{i18n:57874001.13}}\"/pause 500/faceDirection farmer 1 true/faceDirection Rosa 3/emote farmer 56/speak Rosa \"{{i18n:57874001.14}}\"/faceDirection Rosa 2/faceDirection farmer 2/emote farmer 40/speak Rosa \"{{i18n:57874001.15}}\"/faceDirection farmer 1 true/faceDirection Rosa 3/speak Rosa \"{{i18n:57874001.16}}\"/emote farmer 32/pause 1000/end",
+        "57874003/f Rosa 1750/w rainy/t 1700 2000": "rain/-100 -100/Rosa 42 30 0 farmer -1000 -1000 0 Jacob -1000 -1000 0/addConversationTopic Rosa_StormDay 7/skippable/viewport 43 32 clamp true/pause 1000/playSound daggerswipe/pause 1000/warp farmer 44 36/pause 500/playSound daggerswipe/move farmer 0 -3 0 true/playSound woodyStep/pause 500/faceDirection Rosa 2/jump Rosa 2/emote Rosa 16/speak Rosa \"{{i18n:57874003.01}}\"/emote farmer 28/pause 1000/move Rosa 0 3 1/faceDirection farmer 3/pause 100/speak Rosa \"{{i18n:57874003.02}}\"/pause 500/emote farmer 8/pause 500/speak Rosa \"{{i18n:57874003.03}}\"/pause 1000/screenFlash .35/playSound thunder/pause 1000/playSound woodyStep/warp Jacob 44 36/jump Rosa 5/showFrame Rosa 19/pause 500/showFrame Rosa 0/faceDirection Rosa 2/faceDirection farmer 2/pause 1000/textAboveHead Rosa \"{{i18n:57874003.04}}\"/speak Jacob \"{{i18n:57874003.05}}\"/jump Rosa 3/emote Rosa 16/speak Rosa \"{{i18n:57874003.06}}\"/pause 1000/textAboveHead Jacob \"{{i18n:57874003.07}}\"/pause 1000/textAboveHead Rosa\"Won't be long!\"/pause 1000/move Rosa -2 0 0/advancedMove Rosa false 0 -10 1 1500 0 10 3 0/move Jacob 0 -2 0/move farmer 1 0 3/move Jacob 0 -1 1/pause 1000/speak Jacob \"{{i18n:57874003.08}}\"/emote Jacob 28/textAboveHead Rosa \"{{i18n:57874003.09}}\"/pause 1000/faceDirection Jacob 3/pause 500/emote Jacob 20/speak Jacob \"{{i18n:57874003.10}}\"/pause 1000/faceDirection Jacob 1/speak Jacob \"{{i18n:57874003.11}}\"/pause 1000/faceDirection Rosa 2/move Jacob 0 3 2/warp Jacob -100 -100/emote Rosa 32/faceDirection Rosa 1/speak Rosa \"{{i18n:57874003.12}}\"/emote farmer 32/pause 1000/end",
+        "57874004/f Rosa 1500/e 57874002/A CherryOrchard_Rosa/p Rosa": "jaunty/40 30/Rosa -1000 -1000 2 farmer -1000 -1000 0/addConversationTopic LilyAnneJournal_Rosa 7/skippable/warp farmer 44 36/move farmer 0 -3 0 true/pause 100/emote farmer 8/pause 2000/faceDirection farmer 1/pause 1000/move farmer -4 0 0/playSound stairsdown/emote farmer 56/move farmer 0 -5 0/viewport move 0 -2 2500 true/pause 2000/fade/viewport -100 -100/pause 2000/doAction 40 16/playSound doorCreak/pause 1000/warp Rosa 43 10 true/warp farmer 40 14 true/animate Rosa false true 240 16 16 16 17 18 16 16/viewport 39 12 clamp true/pause 1000/move farmer 0 -4 1 true/emote farmer 32/pause 1000/stopAnimation Rosa/faceDirection Rosa 3/textAboveHead Rosa \"{{i18n:57874004.01}}\"/pause 1000/emote farmer 8/speak Rosa \"{{i18n:57874004.02}}\"/pause 1000/jump Rosa 3/speak Rosa \"{{i18n:57874004.03}}\"/pause 1000/emote farmer 56/textAboveHead Rosa \"{{i18n:57874004.04}}\"/speak Rosa \"{{i18n:57874004.05}}\"/move farmer -1 0 0/move farmer 0 -2 0 true/move Rosa -2 0 3 true/pause 1000/viewport -1000 -1000/speak Rosa \"{{i18n:57874004.06}}\"/pause 500/playSound ow/pause 500/speak Rosa \"{{i18n:57874004.07}}\"/warp Rosa 9 9 true/warp farmer 6 6 true/changeToTemporaryMap ESInnAttic/viewport -1000 -1000/viewport 6 5/faceDirection farmer 3/move Rosa 0 -2 0/faceDirection farmer 1/pause 500/move Rosa -4 0 0/pause 1000/faceDirection Rosa 1/faceDirection farmer 2/textAboveHead Rosa \"{{i18n:57874004.08}}\"/pause 1000/speak Rosa \"{{i18n:57874004.09}}\"/emote farmer 60/speak Rosa \"{{i18n:57874004.10}}\"/emote farmer 56/pause 1000/speak Rosa \"{{i18n:57874004.11}}\"/pause 1000/move farmer 1 0 3/move farmer 2 0 0 true/move Rosa -2 0 3 true/pause 2500/playSound woodWhack/pause 500/speak Rosa \"{{i18n:57874004.12}}\"/faceDirection Rosa 1/pause 1000/playSound achievement/showFrame 57/addObject 9 4 102 1/message \"{{i18n:57874004.13}}\"/pause 1000/removeSprite 9 4/faceDirection farmer 2/addObject 9 7 102 1/playSound axe/speed Rosa 3/move Rosa 5 0 1/pause 2000/speak Rosa \"{{i18n:57874004.14}}\"/emote farmer 8/pause 1000/jump Rosa 3/speak Rosa \"{{i18n:57874004.15}}\"/playSound pickUpItem/removeSprite 9 7/move Rosa 1 0 0/faceDirection farmer 2/speak Rosa \"{{i18n:57874004.16}}\"/move Rosa 0 2 2/emote farmer 8/warp Rosa -100 -100/end",
+        "57874012/e 57874011/i 534": "jaunty/41 32/Rosa 41 30 0 farmer -100 -100 0/skippable/pause 1000/emote Rosa 56/pause 1000/playSound doorOpen/warp farmer 44 36/pause 500/faceDirection Rosa 2/textAboveHead Rosa \"{{i18n:57874012.01}} {{playerName}}\"/emote farmer 32/move farmer 0 -3 3/move farmer -2 0 0 true/move Rosa 0 2 2 true/pause 1000/emote farmer 40/pause 1000/emote Rosa 16/jump Rosa 3/pause 1000/speak Rosa \"{{i18n:57874012.02}}\"/emote farmer 32/pause 1000/textAboveHead Rosa \"{{i18n:57874012.03}}\"/speak Rosa \"{{i18n:57874012.04}}\"/pause 1000/emote farmer 40/pause 500/faceDirection farmer 3/playSound discoverMineral/addObject 41 33 534 0/pause 500/jump Rosa 5/pause 1000/speak Rosa \"{{i18n:57874012.05}}\"/stopMusic/question fork0 \"{{i18n:57874012.06}} {{playerName}}?#{{i18n:57874012.07}}#{{i18n:57874012.08}}#\"/fork Lily-Anne_Dead/pause 1000/emote Rosa 8/playMusic 50s/pause 1000/speak Rosa \"{{i18n:57874012.09}}\"/pause 1000/faceDirection farmer 0/emote farmer 40/pause 1000/speak Rosa \"{{i18n:57874012.10}}\"/animate Rosa false true 200 20 21/pause 2000/emote farmer 12/stopAnimation Rosa 0/pause 500/speak Rosa \"{{i18n:57874012.11}}\"/pause 500/emote Rosa 40/pause 1000/speak Rosa \"{{i18n:57874012.12}}\"/pause 1000/emote farmer 20/pause 1000/switchEvent 57874012_Finale",
+        "Lily-Anne_Dead": "pause 1000/emote Rosa 28/playMusic echos/faceDirection Rosa 0/speak Rosa \"{{i18n:57874012.Lily-Anne_Dead.01}}\"/pause 1000/faceDirection Rosa 2/emote farmer 60/pause 500/speak Rosa \"{{i18n:57874012.Lily-Anne_Dead.02}}\"/shake Rosa 300/pause 500/speak Rosa \"{{i18n:57874012.Lily-Anne_Dead.03}}\"/emote farmer 20/pause 1000/switchEvent 57874012_Finale",
+        "57874012_Finale": "pause 500/removeSprite 41 33/playSound pickUpItem/move Rosa 0 1 1/pause 500/speak Rosa \"{{i18n:57874012.57874012_Finale.01}}\"/faceDirection farmer 3/message \"{{i18n:57874012.57874012_Finale.02}}\"/pause 1000/faceDirection Rosa 0/move Rosa -1 0 0/move Rosa 0 -2 0 true/move farmer -2 0 0 true/emote Rosa 40/pause 1000/emote farmer 8/faceDirection Rosa 2/pause 1000/speak Rosa \"{{i18n:57874012.57874012_Finale.03}}\"/pause 500/jump farmer 5/pause 1000/emote Rosa 40/pause 1000/speak Rosa \"{{i18n:57874012.57874012_Finale.04}}\"/emote farmer 28/pause 1000/end",
+      }
+    },
+    {
+      "Action": "Load",
+      "Target": "Maps/Rosa_SunsetPicnic",
+      "FromFile": "assets/Maps/EastScarpe_Picnic_{{season}}.tmx",
+      "When": {
+        "Season": "fall, summer, spring"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Custom_EastScarpe",
+      "Entries": {
+        "57874002/f Rosa 750/d tue wed fri/t 1000 1600/w sunny": "{{season}}_day_ambient/38 67/farmer 38 69 1 Rosa 47 69 0 Eloise 49 64 2/addConversationTopic CherryOrchard_Rosa 7/skippable/showFrame Eloise 22/pause 500/move farmer 7 0 1 true/viewport move 2 0 3500 true/playSound crafting/pause 1200/playSound crafting/pause 1200/playSound crafting/pause 1200/faceDirection Rosa 3/speak Rosa \"{{i18n:57874002.01}}\"/pause 1000/faceDirection farmer 0/pause 1000/faceDirection farmer 1/emote farmer 8/pause 1000/speak Rosa \"{{i18n:57874002.02}}\"/playSound crow/jump Eloise 3/emote farmer 8 true/pause 1000/speak Rosa \"{{i18n:57874002.03}}\"/move Eloise 0 1 2/faceDirection Eloise 1 true/pause 1000/speak Rosa \"{{i18n:57874002.04}}\"/faceDirection Eloise 2 true/speak Rosa \"{{i18n:57874002.05}}\"/advancedMove Eloise false 4 0 0 -4 5 0 0 -2/pause 1000/speak Rosa \"{{i18n:57874002.06}}\"/pause 1000/speak Rosa \"{{i18n:57874002.07}}\"/emote farmer 32/pause 1000/speak Rosa \"{{i18n:57874002.08}}\"/pause 1000/faceDirection farmer 0 true/faceDirection Rosa 0 true/textAboveHead Rosa \"{{i18n:57874002.09}}\"/pause 1000/jump Rosa 3/textAboveHead Rosa \"{{i18n:57874002.10}}\"/pause 1000/playSound crickets/pause 1000/faceDirection Rosa 3 true/faceDirection farmer 1 true/speak Rosa \"{{i18n:57874002.11}}\"/pause 1000/textAboveHead Rosa \"{{i18n:57874002.12}}\"/pause 1000/fade/viewport -100 -100/warp farmer 74 49/warp Rosa 75 49/warp Eloise -1000 -1000/viewport 74 48 clamp true/pause 1000/speak Rosa \"{{i18n:57874002.13}}\"/speak Eloise \"{{i18n:57874002.14}}\"/jump Rosa 4/faceDirection Rosa 1/textAboveHead Rosa \"{{i18n:57874002.15}}\"/speed Rosa 5/move Rosa 4 0 1/warp Rosa -1000 -1000/speed farmer 5/move farmer 4 0 1/warp farmer -1000 -1000/fade/viewport -100 -100/changeLocation Custom_ESOrchard/viewport -100 -100/warp Eloise 4 18/faceDirection Eloise 1/viewport 8 18 clamp true/warp Rosa 0 17/pause 500/speed Rosa 5/move Rosa 3 0 2 true/textAboveHead Rosa \"{{i18n:57874002.16}}\"/pause 2000/warp farmer 0 18/faceDirection Eloise 3/move farmer 1 0 1/speak Rosa \"{{i18n:57874002.17}}\"/pause 100/faceDirection Eloise 1/pause 500/faceDirection Eloise 3/emote Eloise 28/pause 1000/speak Eloise \"{{i18n:57874002.18}}\"/textAboveHead Eloise \"{{i18n:57874002.19}}\"/pause 1000/speak Rosa \"{{i18n:57874002.20}}\"/pause 1000/speak Eloise \"{{i18n:57874002.21}}\"/pause 1000/emote Rosa 40/pause 1000/speak Rosa \"{{i18n:57874002.22}}\"/emote Eloise 28/pause 1000/speak Rosa \"{{i18n:57874002.23}}\"/textAboveHead Eloise \"{{i18n:57874002.24}}\"/pause 1000/advancedMove Eloise false -3 0/pause 1500/move farmer 0 -1 2/faceDirection Eloise 1/move Rosa 0 1 1/move Rosa 2 0 1/pause 1000/speak Rosa \"{{i18n:57874002.25}}\"/pause 1000/end",
+        "57874014/A LilyAnneDiscuss/e 57874013/t 1000 1400": "continue/45 68/Rosa -100 -100 2 farmer 35 68 1 LadySheba 45 66 2/skippable/showFrame LadySheba 18/move farmer 4 0 1/playSound doorOpen/warp Rosa 43 66/faceDirection Rosa 1/textAboveHead Rosa \"{{i18n:57874014.01}}\"/pause 500/faceDirection LadySheba 3/playSound cat/move Rosa 0 3 3 true/move farmer 3 0 1 true/move LadySheba -3 0 2 true/pause 1000/speak Rosa \"{{i18n:57874014.02}}\"/move farmer 0 1 1/pause 500/emote farmer 56/pause 1000/speak Rosa \"{{i18n:57874014.03}}\"/move Rosa 2 0 0/move LadySheba 0 1 2/pause 500/faceDirection farmer 0/showFrame LadySheba 18/pause 500/playSound openBox/pause 1000/jump Rosa 3/faceDirection Rosa 3/faceDirection farmer 1/emote Rosa 16/pause 1000/speak Rosa \"{{i18n:57874014.04}}\"/emote farmer 8/pause 1000/speak Rosa \"{{i18n:57874014.05}}\"/pause 500/emote farmer 56/pause 500/faceDirection Rosa 2/playSound new Recipe/showFrame Rosa 27/faceDirection farmer 0/animate LadySheba false false 120 21 22 23/pause 480/animate Cat false true 120 18/emote Rosa 40/pause 2000/jump Rosa 3/pause 2000/faceDirection Rosa 3/speak Rosa \"{{i18n:57874014.06}}\"/jump farmer 3/pause 500/speed farmer 5/move farmer 2 0 2/faceDirection Rosa 2/showFrame Rosa 27/textAboveHead Rosa \"{{i18n:57874014.07}}\"/pause 1000/message \"{{i18n:57874014.08}}\"/message \"{{i18n:57874014.09}}\"/pause 2000/faceDirection Rosa 3/faceDirection farmer 1/speak Rosa \"{{i18n:57874014.10}}\"/playSound cat/move LadySheba 2 0 2/playSound cat/pause 500/faceDirection Rosa 0 true/faceDirection farmer 0 true/showFrame LadySheba 18/playSound cat/pause 1000/faceDirection farmer 2/animate farmer false true 200 102 103/animate Rosa false true 200 20 21/pause 500/emote LadySheba 12/pause 1000/stopAnimation farmer 12/stopAnimation Rosa 0/speak Rosa \"{{i18n:57874014.11}}\"/pause 1000/faceDirection Rosa 3/faceDirection farmer 1/speak Rosa \"{{i18n:57874014.12}}\"/emote farmer 32/pause 1000/end",
+        // "57874006/e 57874004/f Rosa 2000/A LilyAnneJournal_Rosa/w sunny/t 800 1600":"{{season}}_day_ambient/"
+        "57874015/n Rosa_10HeartInvite/w sunny/z winter/t 1600 1800": "IslandMusic/-100 -100/{{57874015Actors}}/skippable/ChangeToTemporaryMap Rosa_SunsetPicnic/addCookingRecipe Rosa's Spanakopita/showFrame LadySheba 17/viewport 18 21/move farmer 0 7 1/faceDirection Aideen 3/textAboveHead Aideen \"{{i18n:57874015.01}} {{playerName}}\"/pause 500/speak Aideen \"{{i18n:57874015.02}}\"/emote farmer 60/pause 1000/move farmer 0 2 1/move farmer 4 0 2/faceDirection Aideen 0/faceDirection Eloise 0/faceDirection Jas 0/{{57874015.JulietGremlin.0}}/{{57874015.MrGinger.1}}/{{57874015.JulietGremlin.1}}/pause 1000/faceDirection farmer 1/emote farmer 56/stopAnimation Rosa/faceDirection Rosa 3/pause 1000/jump Rosa 3/move Rosa 0 1 3/speak Rosa \"{{i18n:57874015.07}}\"/move Rosa -3 0 3/faceDirection Jas 3/faceDirection Eloise 2/{{57874015.JulietGremlin.2}}/{{57874015.MrGinger.2}}/{{57874015.JulietGremlin.3}}/emote Rosa 32/pause 1000/faceDirection Rosa 3/speak Rosa \"{{i18n:57874015.12}}\"/pause 1000/move Rosa 4 0 0 true/move farmer 4 0 0 true/pause 3000/{{57874015.JulietGremlin.4}}/speak Rosa \"{{i18n:57874015.13}}\"/move farmer 0 -1 0/move Rosa 0 -1 0/pause 1000/faceDirection farmer 1/faceDirection Rosa 3/speak Rosa \"{{i18n:57874015.14}}\"/emote Rosa 28/quickQuestion #{{i18n:57874015.15}}#{{i18n:57874015.16}}#{{i18n:57874015.17}}(break)emote Rosa 20\\speak Rosa \"{{i18n:57874015.18}}\"(break)emote Rosa 40\\speak Rosa \"{{i18n:57874015.19}}\"(break)emote Rosa 12\\speak Rosa \"{{i18n:57874015.20}}\"/pause 500/emote farmer 8/pause 1000/speak Rosa \"{{i18n:57874015.21}}\"/pause 500/playSound newRecipe/pause 100/playSound reward/message \"{{i18n:57874015.22}}\"/pause 1000/faceDirection Rosa 2/faceDirection farmer 2/speak Rosa \"{{i18n:57874015.23}}\"/faceDirection Jas 0 true/faceDirection Eloise 0 true/{{57874015.JulietGremlin.5}}/faceDirection Jacob 1/jump Eloise 3/textAboveHead Eloise \"{{i18n:57874015.24}}\"/{{57874015.JulietGremlin.6}}/textAboveHead Aideen \"{{i18n:57874015.25}}\"/{{57874015.MrGinger.3}}/pause 2000/end"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Saloon",
+      "Entries": {
+        "57874007/f Rosa 1000/e 57874001/t 1200 1800": "Saloon1/11 18/Gus 11 18 2 Rosa 11 20 0 farmer -100 -100 0/skippable/pause 1000/speak Rosa \"{{i18n:57874007.01}}\"/pause 500/emote Gus 40/pause 1000/speak Rosa \"{{i18n:57874007.02}}\"/pause 500/speak Gus \"{{i18n:57874007.03}}\"/pause 500/emote Gus 40/pause 1000/speak Gus \"{{i18n:57874007.04}}\"/pause 500/emote Rosa 60/pause 1000/playSound doorOpen/warp farmer 14 23/textAboveHead Gus \"{{i18n:57874007.05}} {{playerName}}!\"/faceDirection Rosa 2/speak Gus \"{{i18n:57874007.06}}\"/emote farmer 8/pause 500/faceDirection Rosa 0/textAboveHead Rosa \"{{i18n:57874007.07}}\"/move farmer 0 -2 3/move farmer -2 0 0/move farmer 0 -1 0 true/speak Gus \"{{i18n:57874007.08}}\"/emote Rosa 56/pause 500/speak Gus \"{{i18n:57874007.09}}\"/faceDirection farmer 3/faceDirection Rosa 1/emote Rosa 16/jump Rosa 3/pause 1000/faceDirection Rosa 0/speak Rosa \"{{i18n:57874007.10}}\"/pause 1000/faceDirection Rosa 1/speak Rosa \"{{i18n:57874007.11}}\"/quickQuestion #{{i18n:57874007.12}}#{{i18n:57874007.13}}(break)pause 500\\faceDirection Rosa 0\\speak Rosa \"{{i18n:57874007.14}}\"(break)pause 500\\textAboveHead Rosa \"{{i18n:57874007.15}}\"\\pause 500\\speak Rosa \"{{i18n:57874007.16}}\"/faceDirection Rosa 0/faceDirection farmer 0/speak Rosa \"{{i18n:57874007.17}}\"/emote Gus 32/speak Gus \"{{i18n:57874007.18}}\"/pause 500/emote Rosa 20/speak Rosa \"{{i18n:57874007.19}}\"/faceDirection Rosa 1/faceDirection farmer 3/pause 1000/speak Rosa \"{{i18n:57874007.20}}\"/pause 400/emote farmer 56/pause 1000/end warpOut"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/ArchaeologyHouse",
+      "Entries": {
+        "57874008/e 57874004/f Rosa 2000/A LilyAnneJournal_Rosa/w sunny/t 1000 1600": "libraryTheme/-100 -100/{{57874008Actors}} Penny 18 9 2 Jas 19 10 3 Vincent 16 10 1 Eloise 18 12 0/addConversationTopic LilyAnneDiscuss 14/addConversationTopic GhostHuntTomorrow 0/skippable/showFrame Penny 18/showFrame Jas 22/showFrame Eloise 16/showFrame Vincent 24/viewport 3 12 clamp true/addObject 4 8 102 1/pause 1000/speak Gunther \"{{i18n:57874008.01}}\"/speak Rosa \"{{i18n:57874008.02}}\"/speak Gunther \"{{i18n:57874008.03}}\"/textAboveHead Rosa \"{{i18n:57874008.04}}\"/pause 500/speak Rosa \"{{i18n:57874008.05}}\"/playSound pickUpItem/removeSprite 4 8/pause 500/emote Gunther 32/pause 1000/faceDirection Rosa 2/pause 500/{{57874008.moveRosa}}/playSound doorOpen/warp farmer 3 14/showFrame Rosa 19/jump Rosa 5/emote Rosa 16/showFrame Rosa 0/speak Rosa \"{{i18n:57874008.06}}\"/emote farmer 60/speak Rosa \"{{i18n:57874008.07}}\"/emote farmer 12/speak Rosa \"{{i18n:57874008.08}}\"/emote Gunther 40/faceDirection Rosa 0/pause 1000/faceDirection Rosa 2/pause 500/speak Rosa \"{{i18n:57874008.09}}\"/emote farmer 56/faceDirection farmer 2/playSound doorOpen/warp farmer -1000 -1000/move Rosa 0 3 2/warp Rosa -100 -1000/fade/stopMusic/viewport -100 -100/changeLocation Town/viewport -100 -100/pause 1000/ignoreCollisions farmer/playMusic {{season}}_day_ambient/switchEvent ESOrchard_part2"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Town",
+      "Entries": {
+        "ESOrchard_part2": "pause 500/pause 500/warp farmer 100 91/viewport 100 94 clamp true/pause 1000/warp Rosa 101 90/pause 1000/move Rosa 0 4 0/move farmer 0 2 2/faceDirection Rosa 3/pause 500/speak Rosa \"{{i18n:ESOrchard_part2.01}}\"/move farmer -11 0 2 true/move Rosa -11 0 3 true/viewport move -3 0 3500 true/pause 500/speak Rosa \"{{i18n:ESOrchard_part2.02}}\"/pause 500/emote Rosa 40/pause 1000/speak Rosa \"{{i18n:ESOrchard_part2.03}}\"/pause 1000/speak Rosa \"{{i18n:ESOrchard_part2.04}}\"/pause 500/emote farmer 20/pause 1000/speak Rosa \"{{i18n:ESOrchard_part2.05}}\"/faceDirection Rosa 2/pause 1000/speak Rosa \"{{i18n:ESOrchard_part2.06}}\"/move farmer 0 1 1/faceDirection Rosa 3/quickQuestion #{{i18n:ESOrchard_part2.07}}#{{i18n:ESOrchard_part2.08}}(break)speak Rosa \"{{i18n:ESOrchard_part2.09}}\"(break)speak Rosa \"{{i18n:ESOrchard_part2.10}}\"/pause 1000/speak Rosa \"{{i18n:ESOrchard_part2.11}}\"/emote farmer 56/pause 1000/speak Rosa \"{{i18n:ESOrchard_part2.12}}\"/pause 500/speak Rosa \"{{i18n:ESOrchard_part2.13}}\"/emote farmer 32/pause 1000/end"
+      },
+      "When": {
+        "HasMod |contains=LemurKat.JulietHouse.NPC": false
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Town",
+      "Entries": {
+        //
+        "ESOrchard_part2": "pause 500/warp Juliet 83 99/warp farmer 100 91/viewport 100 92 clamp true/pause 1000/warp Rosa 101 90/pause 1000/move Rosa 0 4 0/move farmer 0 2 2/faceDirection Rosa 3/pause 500/speak Rosa \"{{i18n:57874008.juliet.ESOrchard_part2.01}}\"/move farmer -11 0 2 true/move Rosa -11 0 3 true/viewport move -2 0 2500 true/pause 500/speak Rosa \"{{i18n:57874008.juliet.ESOrchard_part2.02}}\"/pause 500/emote Rosa 40/pause 1000/speak Rosa \"{{i18n:57874008.juliet.ESOrchard_part2.03}}\"/pause 1000/move farmer -5 0 2 true/move Rosa -5 0 2 true/viewport move -2 0 2500 true/speak Rosa \"{{i18n:57874008.juliet.ESOrchard_part2.04}}\"/faceDirection Juliet 0/speak Juliet \"{{i18n:57874008.juliet.ESOrchard_part2.05}}\"/emote Rosa 60/pause 1000/move farmer 0 5 2 true/move Rosa 0 5 3 true/viewport move 0 2 2500 true/pause 1000/pause 1000/faceDirection Juliet 1/textAboveHead Juliet \"{{i18n:57874008.juliet.ESOrchard_part2.06}}\"/pause 2000/textAboveHead Rosa \"{{i18n:57874008.juliet.ESOrchard_part2.07}}\"/pause 2500/emote Juliet 60/speak Rosa \"{{i18n:57874008.juliet.ESOrchard_part2.08}}\"/speak Juliet \"{{i18n:57874008.juliet.ESOrchard_part2.09}}\"/emote farmer 32/speak Rosa \"{{i18n:57874008.juliet.ESOrchard_part2.10}}\"/fade/viewport -100 -100/addObject 84 99 102 1/pause 1000/viewport 84 99 clamp true/speak Rosa \"{{i18n:57874008.juliet.ESOrchard_part2.11}}\"/textAboveHead Juliet \"{{i18n:57874008.juliet.ESOrchard_part2.12}}\"/emote farmer 16/pause 1000/speak Juliet \"{{i18n:57874008.juliet.ESOrchard_part2.13}}\"/speak Rosa \"{{i18n:57874008.juliet.ESOrchard_part2.14}}\"/speak Juliet \"{{i18n:57874008.juliet.ESOrchard_part2.15}}\"/faceDirection Juliet 0/speak Juliet \"{{i18n:57874008.juliet.ESOrchard_part2.16}}\"/quickQuestion #{{i18n:57874008.juliet.ESOrchard_part2.17}}#{{i18n:57874008.juliet.ESOrchard_part2.18}}#{{i18n:57874008.juliet.ESOrchard_part2.19}}(break)speak Juliet \"{{i18n:57874008.juliet.ESOrchard_part2.20}}\"(break)speak Juliet \"{{i18n:57874008.juliet.ESOrchard_part2.21}}\"(break)speak Juliet \"{{i18n:57874008.juliet.ESOrchard_part2.22}}\"/pause 500/faceDirection Juliet 1/speak Juliet \"{{i18n:57874008.juliet.ESOrchard_part2.23}}\"/pause 500/speak Rosa \"{{i18n:57874008.juliet.ESOrchard_part2.24}}\"/speak Juliet \"{{i18n:57874008.juliet.ESOrchard_part2.25}}\"/pause 500/emote Juliet 40/pause 500/speak Juliet \"{{i18n:57874008.juliet.ESOrchard_part2.26}}\"/emote Rosa 12/pause 1000/speak Rosa \"{{i18n:57874008.juliet.ESOrchard_part2.27}}\"/faceDirection Juliet 0 true/faceDirection Rosa 0 true/quickQuestion #{{i18n:57874008.juliet.ESOrchard_part2.28}}#{{i18n:57874008.juliet.ESOrchard_part2.29}}(break)addMailReceived GhostHunt_Night\\speak Juliet \"{{i18n:57874008.juliet.ESOrchard_part2.30}}\"(break)addMailReceived GhostHunt_Day\\speak Juliet \"{{i18n:57874008.juliet.ESOrchard_part2.31}}\"/faceDirection Juliet 1/faceDirection Rosa 3/speak Juliet \"{{i18n:57874008.juliet.ESOrchard_part2.32}}\"/faceDirection Rosa 0/faceDirection Juliet 0/pause 500/emote farmer 60/pause 1000/end",
+      },
+      "When": {
+        "HasMod |contains=LemurKat.JulietHouse.NPC": true
+      }
+    },
+    {
+      "LogName": "Load Temp Map bookcase moved",
+      "Action": "Load",
+      "Target": "Maps/OrchardHouseBookcaseMoved",
+      "FromFile": "assets/Maps/OrchardHouse-bookcaseMoved_{{ruinsORrepair}}.tmx"
+    },
+    {
+      "LogName": "Load Temp Map Smuggler's Tunnel",
+      "Action": "Load",
+      "Target": "Maps/ESSmugglerTunnel",
+      "FromFile": "assets/Maps/ESSmugglersTunnel.tmx"
+    },
+    {
+      "LogName": "Load Temp Char",
+      "Action": "Load",
+      "Target": "Characters/JunimoGolden",
+      "FromFile": "assets/Characters/JunimoGolden.png"
+    },
+    {
+      "LogName": "Moves the bookcase in the map",
+      "Action": "EditMap",
+      "Target": "Maps/Custom_ESOrchardHouse",
+      "FromFile": "assets/Maps/OrchardHouse-BookcaseMoved_{{ruinsORrepair}}.tmx",
+      "Update": "OnLocationChange",
+      "FromArea": {
+        "X": 11,
+        "Y": 16,
+        "Width": 4,
+        "Height": 3
+      },
+      "ToArea": {
+        "X": 11,
+        "Y": 16,
+        "Width": 4,
+        "Height": 3
+      },
+      "When": {
+        "HasSeenEvent": "57874009"
+      }
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/Custom_ESOrchardHouse",
+      "Update": "OnLocationChange",
+      "FromFile": "assets/Maps/trapdoor_OrchardHouse.tmx",
+      "ToArea": {
+        "X": 11,
+        "Y": 18,
+        "Width": 1,
+        "Height": 1
+      },
+      "PatchMode": "Overlay",
+      "When": {
+        "HasSeenEvent": "57874010"
+      }
+    },
+    {
+      "LogName": "Both Juliet and Lavril in town",
+      "Action": "EditData",
+      "Target": "Data/Events/Custom_ESOrchard",
+      "Entries": {
+        "57874009/e 57874008/e 63070010/t 800 1700/A GhostHuntTomorrow": "{{season}}_day_ambient/32 16/farmer 26 16 1 Rosa 31 14 1 Juliet 32 14 3 Lavril -1000 -1000 2 Void -1000 -1000 1/skippable/move farmer 6 0 0/emote farmer 56/pause 500/faceDirection Rosa 2 true/faceDirection Juliet 2 true/addTemporaryActor GhostFlame1 16 32 -999 460 2 false/animate GhostFlame1 false true 100 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14/emote Rosa 32/pause 500/speak Juliet \"{{i18n:57874009.LavrilJuliet.01}}\"/emote farmer 40/pause 500/speak Juliet \"{{i18n:57874009.LavrilJuliet.02}}\"/faceDirection Juliet 3/faceDirection Rosa 1/speak Juliet \"{{i18n:57874009.LavrilJuliet.03}}\"/emote Rosa 32/pause 500/faceDirection Juliet 2/speak Juliet \"{{i18n:57874009.LavrilJuliet.04}}\"/emote farmer 56/move farmer 1 0 0/move farmer 0 -2 0/pause 500/showFrame farmer 15/pause 1000/playSound stoneStep/playSound stoneStep/pause 500/playSound stoneStep/playSound stoneStep/pause 500/showFrame farmer 12/pause 1000/speak Void \"{{i18n:57874009.LavrilJuliet.05}}\"/pause 500/emote farmer 40/quickQuestion #{{i18n:57874009.LavrilJuliet.06}}#{{i18n:57874009.LavrilJuliet.07}}#{{i18n:57874009.LavrilJuliet.08}}(break)speak Void \"{{i18n:57874009.LavrilJuliet.09}}\"(break)speak Void \"{{i18n:57874009.LavrilJuliet.10}}\"(break)speak Void \"{{i18n:57874009.LavrilJuliet.11}}\"\\pause 500\\textAboveHead Juliet \"{{i18n:57874009.LavrilJuliet.12}}\"/pause 1000/playSound doorOpen/warp farmer -1000 -1000/pause 1000/move Juliet 1 0 0/stopMusic/fade/viewport -100 -100/changeLocation Custom_ESOrchardHouse/viewport -100 -100/warp farmer 10 23 true/warp Juliet 8 22 true/warp Rosa -1000 -1000 true/warp Lavril 4 22 true/warp Void 6 22 true/playMusic communityCenter/animate Lavril false true 480 18 16 17 16/faceDirection Juliet 3/faceDirection farmer 2/viewport 8 21 clamp true/pause 1000/warp Rosa 9 25/move Rosa 0 -1 3/faceDirection farmer 3/pause 1000/speak Juliet \"{{i18n:57874009.LavrilJuliet.13}}\"/addObject 7 22 731 1/textAboveHead Juliet \"{{i18n:57874009.LavrilJuliet.14}}\"/stopAnimation Lavril 0/pause 1000/faceDirection Void 3/pause 500/faceDirection Lavril 1/speak Lavril \"{{i18n:57874009.LavrilJuliet.15}}\"/move Void 0 -1 2/move Void 1 0 2/move Lavril 2 0 1/pause 500/emote Lavril 20/pause 1000/speak Lavril \"{{i18n:57874009.LavrilJuliet.16}}\"/pause 1000/playSound pickUpItem/removeSprite 7 22/move Rosa -2 0 0/move Rosa 0 -1 0/pause 500/speak Rosa \"{{i18n:57874009.LavrilJuliet.17}}\"/pause 500/jump Lavril 5/pause 1000/textAboveHead Lavril \"{{i18n:57874009.LavrilJuliet.18}}\"/pause 1000/speak Juliet \"{{i18n:57874009.LavrilJuliet.19}}\"/pause 1000/speak Lavril \"{{i18n:57874009.LavrilJuliet.20}}\"/emote farmer 60/playSound fireball/warp GhostFlame1 6 20 true/pause 500/emote Juliet 16 true/emote Rosa 16 true/emote farmer 16 true/pause 500/faceDirection Void 3 true/positionOffset GhostFlame1 0 4/pause 5/positionOffset GhostFlame1 0 4/pause 5/positionOffset GhostFlame1 0 4/pause 5/positionOffset GhostFlame1 0 4/pause 5/positionOffset GhostFlame1 0 4/pause 5/positionOffset GhostFlame1 0 4/pause 5/positionOffset GhostFlame1 0 4/pause 5/positionOffset GhostFlame1 0 4/pause 5/positionOffset GhostFlame1 0 4/faceDirection Lavril 0 true/emote Void 8/textAboveHead Lavril \"{{i18n:57874009.LavrilJuliet.21}}\"/pause 2700/emote Lavril 56/pause 1000/playSound shadowDie/warp GhostFlame1 999 500/speak Lavril \"{{i18n:57874009.LavrilJuliet.22}}\"/faceDirection Void 2/faceDirection Lavril 1 true/pause 1000/speak Lavril \"{{i18n:57874009.LavrilJuliet.23}}\"/jump Rosa 5/pause 1000/speak Rosa \"{{i18n:57874009.LavrilJuliet.24}}\"/pause 1000/faceDirection Juliet 2/speak Juliet \"{{i18n:57874009.LavrilJuliet.25}}\"/pause 1000/faceDirection Juliet 3/pause 1000/speak Rosa \"{{i18n:57874009.LavrilJuliet.26}}\"/pause 1000/faceDirection Lavril 0/faceDirection Void 3/pause 1000/emote Lavril 40/pause 1000/emote Void 12/pause 1000/emote Lavril 56/pause 2000/faceDirection Void 2/faceDirection Lavril 1/pause 1000/speak Void \"{{i18n:57874009.LavrilJuliet.27}}\"/emote Lavril 32/move Void 0 1 3/move Juliet 0 -1 2/pause 1000/advancedMove Void false 2 0 0 3/advancedMove Lavril false 3 0 0 2/pause 3000/warp Void -1000 -1000/faceDirection Lavril 0/speak Lavril \"{{i18n:57874009.LavrilJuliet.28}}\"/move Rosa 0 -1 3/pause 1000/faceDirection Lavril 2/advancedMove Lavril false 0 1/warp Lavril -1000 -1000/pause 1000/move Juliet 3 0 2 true/move Rosa 3 0 2 true/pause 1000/faceDirection farmer 0/move Juliet 0 1 3/speak Rosa \"{{i18n:57874009.LavrilJuliet.29}}\"/move Rosa -1 0 3/playSound fireball/warp GhostFlame1 11 19 true/pause 500/faceDirection Juliet 0 true/faceDirection Rosa 0 true/faceDirection farmer 0 true/emote Juliet 16 true/emote Rosa 16 true/emote farmer 16 true/pause 500/positionOffset GhostFlame1 0 4/pause 5/textAboveHead Rosa \"{{i18n:57874009.LavrilJuliet.30}}\"/positionOffset GhostFlame1 0 4/pause 5/positionOffset GhostFlame1 0 4/pause 5/positionOffset GhostFlame1 0 4/pause 5/positionOffset GhostFlame1 0 4/pause 5/positionOffset GhostFlame1 0 4/pause 5/positionOffset GhostFlame1 0 4/pause 5/positionOffset GhostFlame1 0 4/pause 5/positionOffset GhostFlame1 0 4/textAboveHead Juliet \"{{i18n:57874009.LavrilJuliet.31}}\"/pause 2700/pause 1000/playSound shadowDie/warp GhostFlame1 999 500/speed Juliet 3/move Juliet 0 -3 0/pause 1000/speak Juliet \"{{i18n:57874009.LavrilJuliet.32}}\"/jump Rosa 5/jump farmer 5/speed Rosa 3/speed farmer 3/move farmer 0 -4 0 true/move Rosa 0 -4 1 true/pause 1000/fade/viewport -100 -100/playSound woodyStep/pause 5/playSound woodyStep/pause 5/speak Rosa \"{{i18n:57874009.LavrilJuliet.33}}\"/pause 1000/speak Juliet \"{{i18n:57874009.LavrilJuliet.34}}\"/playSound Ship/pause 1000/changeToTemporaryMap OrchardHouseBookcaseMoved/viewport 11 18 clamp true/pause 1000/textAboveHead Rosa \"{{i18n:57874009.LavrilJuliet.35}}\"/speak Juliet \"{{i18n:57874009.LavrilJuliet.36}}\"/move Juliet 0 1 0/move Juliet 1 0 0/move farmer 1 0 0/showFrame farmer 62/startJittering/emote farmer 28/pause 500/stopJittering/pause 1000/speak Rosa \"{{i18n:57874009.LavrilJuliet.37}}\"/showFrame farmer 12/emote farmer 40/pause 1000/speak Rosa \"{{i18n:57874009.LavrilJuliet.38}}\"/pause 1000/emote farmer 32/pause 2000/end",
+      },
+      "When": {
+        "HasMod |contains=LemurKat.JulietHouse.NPC": true,
+        "HasMod |contains=Arknir27.Lavril": true,
+        "HasFlag |contains=GhostHunt_Night": false
+      }
+    },
+    {
+      "LogName": "Both Juliet and Lavril in town",
+      "Action": "EditData",
+      "Target": "Data/Events/Custom_ESOrchard",
+      "Entries": {
+        "57874009/e 57874008/e 63070010/t 1800 2200/A GhostHuntTomorrow": "nightTime/32 16/farmer 26 16 1 Rosa 31 14 1 Juliet 32 14 3 Lavril -1000 -1000 2 Void -1000 -1000 1/skippable/addLantern 735 34 14 3/addLantern 735 10 24 3/move farmer 6 0 0/emote farmer 56/pause 500/faceDirection Rosa 2 true/faceDirection Juliet 2 true/addTemporaryActor GhostFlame1 16 32 -999 460 2 false/animate GhostFlame1 false true 100 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14/emote Rosa 32/pause 500/speak Juliet \"{{i18n:57874009.LavrilJuliet.01}}\"/emote farmer 40/pause 500/speak Juliet \"{{i18n:57874009.LavrilJuliet.02}}\"/faceDirection Juliet 3/faceDirection Rosa 1/speak Juliet \"{{i18n:57874009.LavrilJuliet.03}}\"/emote Rosa 32/pause 500/faceDirection Juliet 2/speak Juliet \"{{i18n:57874009.LavrilJuliet.04}}\"/emote farmer 56/move farmer 1 0 0/move farmer 0 -2 0/pause 500/showFrame farmer 15/pause 1000/playSound stoneStep/playSound stoneStep/pause 500/playSound stoneStep/playSound stoneStep/pause 500/showFrame farmer 12/pause 1000/speak Void \"{{i18n:57874009.LavrilJuliet.05}}\"/pause 500/emote farmer 40/quickQuestion #{{i18n:57874009.LavrilJuliet.06}}#{{i18n:57874009.LavrilJuliet.07}}#{{i18n:57874009.LavrilJuliet.08}}(break)speak Void \"{{i18n:57874009.LavrilJuliet.09}}\"(break)speak Void \"{{i18n:57874009.LavrilJuliet.10}}\"(break)speak Void \"{{i18n:57874009.LavrilJuliet.11}}\"\\pause 500\\textAboveHead Juliet \"{{i18n:57874009.LavrilJuliet.12}}\"/pause 1000/playSound doorOpen/warp farmer -1000 -1000/pause 1000/move Juliet 1 0 0/stopMusic/fade/viewport -100 -100/changeLocation Custom_ESOrchardHouse/viewport -100 -100/warp farmer 10 23 true/warp Juliet 8 22 true/warp Rosa -1000 -1000 true/warp Lavril 4 22 true/warp Void 6 22 true/playMusic communityCenter/animate Lavril false true 480 18 16 17 16/faceDirection Juliet 3/faceDirection farmer 2/viewport 8 21 clamp true/pause 1000/warp Rosa 9 25/move Rosa 0 -1 3/faceDirection farmer 3/pause 1000/speak Juliet \"{{i18n:57874009.LavrilJuliet.13}}\"/addObject 7 22 731 1/textAboveHead Juliet \"{{i18n:57874009.LavrilJuliet.14}}\"/stopAnimation Lavril 0/pause 1000/faceDirection Void 3/pause 500/faceDirection Lavril 1/speak Lavril \"{{i18n:57874009.LavrilJuliet.15}}\"/move Void 0 -1 2/move Void 1 0 2/move Lavril 2 0 1/pause 500/emote Lavril 20/pause 1000/speak Lavril \"{{i18n:57874009.LavrilJuliet.16}}\"/pause 1000/playSound pickUpItem/removeSprite 7 22/move Rosa -2 0 0/move Rosa 0 -1 0/pause 500/speak Rosa \"{{i18n:57874009.LavrilJuliet.17}}\"/pause 500/jump Lavril 5/pause 1000/textAboveHead Lavril \"{{i18n:57874009.LavrilJuliet.18}}\"/pause 1000/speak Juliet \"{{i18n:57874009.LavrilJuliet.19}}\"/pause 1000/speak Lavril \"{{i18n:57874009.LavrilJuliet.20}}\"/emote farmer 60/playSound fireball/warp GhostFlame1 6 20 true/pause 500/emote Juliet 16 true/emote Rosa 16 true/emote farmer 16 true/pause 500/faceDirection Void 3 true/positionOffset GhostFlame1 0 4/pause 5/positionOffset GhostFlame1 0 4/pause 5/positionOffset GhostFlame1 0 4/pause 5/positionOffset GhostFlame1 0 4/pause 5/positionOffset GhostFlame1 0 4/pause 5/positionOffset GhostFlame1 0 4/pause 5/positionOffset GhostFlame1 0 4/pause 5/positionOffset GhostFlame1 0 4/pause 5/positionOffset GhostFlame1 0 4/faceDirection Lavril 0 true/emote Void 8/textAboveHead Lavril \"{{i18n:57874009.LavrilJuliet.21}}\"/pause 2700/emote Lavril 56/pause 1000/playSound shadowDie/warp GhostFlame1 999 500/speak Lavril \"{{i18n:57874009.LavrilJuliet.22}}\"/faceDirection Void 2/faceDirection Lavril 1 true/pause 1000/speak Lavril \"{{i18n:57874009.LavrilJuliet.23}}\"/jump Rosa 5/pause 1000/speak Rosa \"{{i18n:57874009.LavrilJuliet.24}}\"/pause 1000/faceDirection Juliet 2/speak Juliet \"{{i18n:57874009.LavrilJuliet.25}}\"/pause 1000/faceDirection Juliet 3/pause 1000/speak Rosa \"{{i18n:57874009.LavrilJuliet.26}}\"/pause 1000/faceDirection Lavril 0/faceDirection Void 3/pause 1000/emote Lavril 40/pause 1000/emote Void 12/pause 1000/emote Lavril 56/pause 2000/faceDirection Void 2/faceDirection Lavril 1/pause 1000/speak Void \"{{i18n:57874009.LavrilJuliet.27}}\"/emote Lavril 32/move Void 0 1 3/move Juliet 0 -1 2/pause 1000/advancedMove Void false 2 0 0 3/advancedMove Lavril false 3 0 0 2/pause 3000/warp Void -1000 -1000/faceDirection Lavril 0/speak Lavril \"{{i18n:57874009.LavrilJuliet.28}}\"/move Rosa 0 -1 3/pause 1000/faceDirection Lavril 2/advancedMove Lavril false 0 1/warp Lavril -1000 -1000/pause 1000/move Juliet 3 0 2 true/move Rosa 3 0 2 true/pause 1000/faceDirection farmer 0/move Juliet 0 1 3/speak Rosa \"{{i18n:57874009.LavrilJuliet.29}}\"/move Rosa -1 0 3/playSound fireball/warp GhostFlame1 11 19 true/pause 500/faceDirection Juliet 0 true/faceDirection Rosa 0 true/faceDirection farmer 0 true/emote Juliet 16 true/emote Rosa 16 true/emote farmer 16 true/pause 500/positionOffset GhostFlame1 0 4/pause 5/textAboveHead Rosa \"{{i18n:57874009.LavrilJuliet.30}}\"/positionOffset GhostFlame1 0 4/pause 5/positionOffset GhostFlame1 0 4/pause 5/positionOffset GhostFlame1 0 4/pause 5/positionOffset GhostFlame1 0 4/pause 5/positionOffset GhostFlame1 0 4/pause 5/positionOffset GhostFlame1 0 4/pause 5/positionOffset GhostFlame1 0 4/pause 5/positionOffset GhostFlame1 0 4/textAboveHead Juliet \"{{i18n:57874009.LavrilJuliet.31}}\"/pause 2700/pause 1000/playSound shadowDie/warp GhostFlame1 999 500/speed Juliet 3/move Juliet 0 -3 0/pause 1000/speak Juliet \"{{i18n:57874009.LavrilJuliet.32}}\"/jump Rosa 5/jump farmer 5/speed Rosa 3/speed farmer 3/move farmer 0 -4 0 true/move Rosa 0 -4 1 true/pause 1000/fade/viewport -100 -100/playSound woodyStep/pause 5/playSound woodyStep/pause 5/speak Rosa \"{{i18n:57874009.LavrilJuliet.33}}\"/pause 1000/speak Juliet \"{{i18n:57874009.LavrilJuliet.34}}\"/playSound Ship/pause 1000/changeToTemporaryMap OrchardHouseBookcaseMoved/viewport 11 18 clamp true/pause 1000/textAboveHead Rosa \"{{i18n:57874009.LavrilJuliet.35}}\"/speak Juliet \"{{i18n:57874009.LavrilJuliet.36}}\"/move Juliet 0 1 0/move Juliet 1 0 0/move farmer 1 0 0/showFrame farmer 62/startJittering/emote farmer 28/pause 500/stopJittering/pause 1000/speak Rosa \"{{i18n:57874009.LavrilJuliet.37}}\"/showFrame farmer 12/emote farmer 40/pause 1000/speak Rosa \"{{i18n:57874009.LavrilJuliet.38}}\"/pause 1000/emote farmer 32/pause 2000/end",
+      },
+      "When": {
+        "HasMod |contains=LemurKat.JulietHouse.NPC": true,
+        "HasMod |contains=Arknir27.Lavril": true,
+        "HasFlag |contains=GhostHunt_Night": true
+      }
+    },
+    {
+      "LogName": "No Juliet, Lavril in town",
+      "Action": "EditData",
+      "Target": "Data/Events/Custom_ESOrchard",
+      "Entries": {
+        "57874009/e 57874008/t 1000 1600/e 63070010/A GhostHuntTomorrow": "{{season}}_day_ambient/32 16/farmer 26 16 1 Rosa 32 14 2 Lavril -1000 -1000 2 Void -1000 -1000 1/skippable/move farmer 6 0 0/emote farmer 56/pause 500/faceDirection Rosa 2 true/addTemporaryActor GhostFlame1 16 32 -999 460 2 false/animate GhostFlame1 false true 100 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14/emote Rosa 32/pause 500/speak Rosa \"{{i18n:57874009.Lavril.01}}\"/emote farmer 32/faceDirection Rosa 3/pause 500/faceDirection Rosa 2/pause 500/speak Rosa \"{{i18n:57874009.Lavril.02}}\"/emote farmer 8/pause 1000/speak Rosa \"{{i18n:57874009.Lavril.03}}\"/playSound slime/pause 1500/playSound slime/pause 1500/playSound slimedead/jump Rosa 3/pause 400/shake Rosa 350/pause 1000/speak Rosa \"{{i18n:57874009.Lavril.04}}\"/pause 500/emote farmer 56/move farmer 1 0 0/move farmer 0 -2 0/pause 500/showFrame farmer 15/pause 1000/playSound stoneStep/playSound stoneStep/pause 500/playSound stoneStep/playSound stoneStep/pause 500/showFrame farmer 12/pause 1000/speak Void \"{{i18n:57874009.Lavril.05}}\"/pause 500/emote farmer 40/quickQuestion #{{i18n:57874009.Lavril.06}}#{{i18n:57874009.Lavril.07}}#{{i18n:57874009.Lavril.08}}(break)speak Void \"{{i18n:57874009.Lavril.09}}\"(break)speak Void \"{{i18n:57874009.Lavril.10}}\"(break)speak Void \"{{i18n:57874009.Lavril.11}}\"\\pause 500\\textAboveHead Rosa \"{{i18n:57874009.Lavril.12}}\"/pause 1000/playSound doorOpen/warp farmer -1000 -1000/pause 1000/move Rosa 1 0 0/stopMusic/fade/viewport -100 -100/changeLocation Custom_ESOrchardHouse/viewport -100 -100/warp farmer 8 22 true/warp Rosa -1000 -1000 true/warp Lavril 4 22 true/warp Void 6 22 true/playMusic communityCenter/animate Lavril false true 480 18 16 17 16/faceDirection farmer 3 true/viewport 8 21 clamp true/pause 1000/warp Rosa 9 25/move Rosa 0 -1 3/pause 1000/speak Void \"{{i18n:57874009.Lavril.13}}\"/emote farmer 32/faceDirection farmer 2/emote Rosa 60/move Rosa -2 0 0/move Rosa 0 -1 0/faceDirection farmer 3/addObject 7 22 223 0/speak Rosa \"{{i18n:57874009.Lavril.14}}\"/stopAnimation Lavril 0/pause 1000/faceDirection Void 3/pause 500/faceDirection Lavril 1/speak Lavril \"{{i18n:57874009.Lavril.15}}\"/move Void 0 -1 2/move Void 1 0 2/move Lavril 2 0 1/pause 500/emote Lavril 20/pause 1000/speak Lavril \"{{i18n:57874009.Lavril.16}}\"/pause 1000/playSound pickUpItem/removeSprite 7 22/pause 500/speak Rosa \"{{i18n:57874009.Lavril.17}}\"/pause 500/jump Lavril 5/pause 1000/textAboveHead Lavril \"{{i18n:57874009.Lavril.18}}\"/pause 1000/speak Rosa \"{{i18n:57874009.Lavril.19}}\"/pause 1000/speak Lavril \"{{i18n:57874009.Lavril.20}}\"/emote farmer 60/playSound fireball/warp GhostFlame1 6 20 true/pause 500/emote Rosa 16 true/emote farmer 16 true/pause 500/faceDirection Void 3 true/positionOffset GhostFlame1 0 4/pause 5/positionOffset GhostFlame1 0 4/pause 5/positionOffset GhostFlame1 0 4/pause 5/positionOffset GhostFlame1 0 4/pause 5/positionOffset GhostFlame1 0 4/pause 5/positionOffset GhostFlame1 0 4/pause 5/positionOffset GhostFlame1 0 4/pause 5/positionOffset GhostFlame1 0 4/pause 5/positionOffset GhostFlame1 0 4/faceDirection Lavril 0 true/emote Void 8/textAboveHead Lavril \"{{i18n:57874009.Lavril.21}}\"/pause 2700/emote Lavril 56/pause 1000/playSound shadowDie/warp GhostFlame1 999 500/speak Lavril \"{{i18n:57874009.Lavril.22}}\"/faceDirection Void 2/faceDirection Lavril 1 true/pause 1000/speak Lavril \"{{i18n:57874009.Lavril.23}}\"/jump Rosa 5/pause 1000/speak Rosa \"{{i18n:57874009.Lavril.24}}\"/pause 1000/faceDirection farmer 2/pause 500/emote farmer 28/pause 1000/faceDirection farmer 3/pause 1000/speak Rosa \"{{i18n:57874009.Lavril.25}}\"/pause 1000/faceDirection Lavril 0/faceDirection Void 3/pause 1000/emote Lavril 40/pause 1000/emote Void 12/pause 1000/emote Lavril 56/pause 2000/faceDirection Void 2/faceDirection Lavril 1/pause 1000/speak Void \"{{i18n:57874009.Lavril.26}}\"/emote Lavril 32/move Void 0 1 3/move farmer 0 -1 2/pause 1000/advancedMove Void false 2 0 0 3/advancedMove Lavril false 3 0 0 2/faceDirection Rosa 1/pause 3000/warp Void -1000 -1000/faceDirection Lavril 0/speak Lavril \"{{i18n:57874009.Lavril.27}}\"/move Rosa 0 -1 1/textAboveHead Rosa \"{{i18n:57874009.Lavril.28}}\"/pause 1000/faceDirection Lavril 2/advancedMove Lavril false 0 1/warp Lavril -1000 -1000/pause 1000/move farmer 3 0 2 true/move Rosa 3 0 1 true/pause 1000/move farmer 0 1 3/speak Rosa \"{{i18n:57874009.Lavril.29}}\"/faceDirection Rosa 3/pause 500/playSound fireball/warp GhostFlame1 11 19 true/pause 500/faceDirection Rosa 0 true/faceDirection farmer 0 true/emote Rosa 16 true/emote farmer 16 true/pause 500/positionOffset GhostFlame1 0 4/pause 5/textAboveHead Rosa \"{{i18n:57874009.Lavril.30}}\"/positionOffset GhostFlame1 0 4/pause 5/positionOffset GhostFlame1 0 4/pause 5/positionOffset GhostFlame1 0 4/pause 5/positionOffset GhostFlame1 0 4/pause 5/positionOffset GhostFlame1 0 4/pause 5/positionOffset GhostFlame1 0 4/pause 5/positionOffset GhostFlame1 0 4/pause 5/positionOffset GhostFlame1 0 4/textAboveHead Rosa \"{{i18n:57874009.Lavril.31}}\"/pause 2700/pause 1000/playSound shadowDie/warp GhostFlame1 999 500/speed Rosa 3/move Rosa 0 -4 1/pause 1000/speak Rosa \"{{i18n:57874009.Lavril.32}}\"/jump farmer 5/speed farmer 3/move farmer 0 -3 0 true/pause 1000/fade/viewport -100 -100/playSound woodyStep/pause 5/playSound woodyStep/pause 5/speak Rosa \"{{i18n:57874009.Lavril.33}}\"/playSound Ship/pause 1000/changeToTemporaryMap OrchardHouseBookcaseMoved/viewport 11 18 clamp true/pause 1000/textAboveHead Rosa \"{{i18n:57874009.Lavril.34}}\"/speak Rosa \"{{i18n:57874009.Lavril.35}}\"/showFrame farmer 62/startJittering/emote farmer 28/pause 500/stopJittering/pause 1000/speak Rosa \"{{i18n:57874009.Lavril.36}}\"/showFrame farmer 12/emote farmer 40/pause 1000/speak Rosa \"{{i18n:57874009.Lavril.37}}\"/pause 1000/emote farmer 32/pause 2000/end"
+      },
+      "When": {
+        "HasMod |contains=LemurKat.JulietHouse.NPC": false,
+        "HasMod |contains=Arknir27.Lavril": true
+      }
+    },
+    {
+      "LogName": "Juliet exists, Lavril not in town",
+      "Action": "EditData",
+      "Target": "Data/Events/Custom_ESOrchard",
+      "Entries": {
+        "57874009/e 57874008/{{LavrilInstalled}}/A GhostHuntTomorrow/t 800 1700": "{{season}}_day_ambient/32 16/farmer 26 16 1 Rosa 31 14 1 Juliet 32 14 3/skippable/addTemporaryActor JunimoGolden 16 32 -200 -200 2 false/skippable/move farmer 6 0 0/animate JunimoGolden false true 200 16 17 18 19/emote farmer 56/pause 500/faceDirection Rosa 2 true/faceDirection Juliet 2 true/emote Rosa 32/pause 500/speak Juliet \"{{i18n:57874009.Juliet.01}}\"/textAboveHead Rosa \"{{i18n:57874009.Juliet.02}}\"/faceDirection Juliet 3/pause 1500/speak Juliet \"{{i18n:57874009.Juliet.03}}\"/faceDirection Juliet 2/speak Juliet \"{{i18n:57874009.Juliet.04}}\"/speak Rosa \"{{i18n:57874009.Juliet.05}}\"/emote farmer 56/move farmer 1 0 0/move farmer 0 -2 0/faceDirection Juliet 1/faceDirection Rosa 3/shake Rosa 240/pause 500/showFrame farmer 15/pause 1000/playSound stoneStep/playSound stoneStep/pause 500/playSound stoneStep/playSound stoneStep/pause 500/showFrame farmer 12/pause 1000/playSound crickets/pause 500/speak Juliet \"{{i18n:57874009.Juliet.06}}\"/faceDirection farmer 3/emote farmer 28/pause 1000/faceDirection farmer 0/playSound doorOpen/pause 500/warp farmer -1000 -1000/faceDirection Juliet 3/speak Juliet \"{{i18n:57874009.Juliet.07}}\"/emote Rosa 60/emote Juliet 32/pause 1000/move Juliet 1 0 0/move Rosa 1 0 1/warp Juliet -1000 -1000/stopMusic/fade/viewport -100 -100/changeLocation Custom_ESOrchardHouse/viewport -100 -100/warp farmer 10 23 true/warp Juliet 8 22 true/warp Rosa -1000 -1000 true/playMusic communityCenter/faceDirection Juliet 3 true/faceDirection farmer 1 true/faceDirection Rosa 0 true/viewport 8 21 clamp true/pause 1000/warp Rosa 9 25/pause 1000/shake Rosa 500/faceDirection Juliet 2/pause 500/emote Juliet 32/pause 500/emote Rosa 56/pause 1000/move Rosa 0 -3 1/pause 1000/move farmer 0 -1 1/faceDirection Juliet 1/pause 1000/move farmer 4 0 1/faceDirection Rosa 3/textAboveHead Juliet \"{{i18n:57874009.Juliet.08}}\"/animate Rosa false true 200 20 21/pause 1000/move farmer 0 -2 3/stopAnimation Rosa 12/textAboveHead Juliet \"{{i18n:57874009.Juliet.09}}\"/pause 1000/move Juliet -2 0 3/pause 1000/warp JunimoGolden 7 18/pause 500/playSound junimoMeep1/pause 500/emote Rosa 16/jump Rosa 3/pause 500/faceDirection Rosa 1/pause 100/faceDirection Rosa 2/pause 100/faceDirection Rosa 3/warp JunimoGolden -100 -100/faceDirection Rosa 0/pause 100/speak Rosa \"{{i18n:57874009.Juliet.10}}\"/pause 1000/faceDirection Juliet 1/pause 500/textAboveHead Juliet \"{{i18n:57874009.Juliet.11}}\"/move farmer -2 0 2/pause 500/move farmer 0 2 2/emote farmer 40/pause 500/warp JunimoGolden 10 16/pause 500/playSound junimoMeep1/jump farmer 5 true/jump Rosa 5 true/pause 1000/warp JunimoGolden -100 -100/faceDirection Rosa 0 true/faceDirection farmer 0 true/pause 1000/emote farmer 8/pause 1000/speak Juliet \"{{i18n:57874009.Juliet.12}}\"/pause 1000/faceDirection Rosa 3/faceDirection farmer 3/emote Rosa 8 true/move Rosa 1 0 1 true/move farmer -1 0 3 true/pause 1000/speak Rosa \"{{i18n:57874009.Juliet.13}}\"/emote farmer 56/pause 1000/move Juliet 2 0 1/speak Juliet \"{{i18n:57874009.Juliet.14}}\"/warp JunimoGolden 11 19/playSound junimoMeep1/jump JunimoGolden 1/faceDirection Rosa 0/faceDirection farmer 0/pause 500/faceDirection Juliet 0/emote Juliet 12/speak Juliet \"{{i18n:57874009.Juliet.15}}\"/jump JunimoGolden 1/playSound junimoMeep1/textAboveHead Rosa \"{{i18n:57874009.Juliet.16}}\"/speak Rosa \"{{i18n:57874009.Juliet.17}}\"/speak Juliet \"{{i18n:57874009.Juliet.18}}\"/jump JunimoGolden 2/playSound junimoMeep1/stopAnimation JunimoGolden/speak Rosa \"{{i18n:57874009.Juliet.19}}\"/move Rosa 0 -2 0 true/move Juliet 2 0 0 true/jump JunimoGolden 2/playSound junimoMeep1/shake JunimoGolden 300/pause 500/warp JunimoGolden -100 -100/textAboveHead Rosa \"{{i18n:57874009.Juliet.20}}\"/speak Rosa \"{{i18n:57874009.Juliet.21}}\"/pause 500/speed Rosa 5/move Rosa 0 -2 1/speak Rosa \"{{i18n:57874009.Juliet.22}}\"/jump Juliet 5/jump farmer 5/speed Juliet 3/speed farmer 3/move Juliet 0 -3 0 true/move farmer 0 -3 0 true/pause 1000/fade/viewport -1000 -1000/playSound woodyStep/pause 5/playSound woodyStep/pause 5/speak Rosa \"{{i18n:57874009.Juliet.23}}\"/pause 1000/speak Juliet \"{{i18n:57874009.Juliet.24}}\"/playSound Ship/pause 1000/changeToTemporaryMap OrchardHouseBookcaseMoved/viewport 11 18 clamp true/pause 1000/textAboveHead Rosa \"{{i18n:57874009.Juliet.25}}\"/speak Juliet \"{{i18n:57874009.Juliet.26}}\"/move Juliet 0 3 0/move Juliet 1 0 0/showFrame farmer 62/startJittering/emote farmer 28/pause 500/stopJittering/pause 1000/speak Rosa \"{{i18n:57874009.Juliet.27}}\"/showFrame farmer 12/emote farmer 40/pause 1000/speak Rosa \"{{i18n:57874009.Juliet.28}}\"/pause 1000/emote farmer 32/pause 2000/end",
+      },
+      "When": {
+        "HasMod |contains=LemurKat.JulietHouse.NPC": true,
+        "HasFlag |contains=GhostHunt_Night": false
+      }
+    },
+    {
+      "LogName": "Juliet exists, Lavril not in town",
+      "Action": "EditData",
+      "Target": "Data/Events/Custom_ESOrchard",
+      "Entries": {
+        "57874009/e 57874008/{{LavrilInstalled}}/A GhostHuntTomorrow/t 1800 2200/n GhostHunt_Night": "nightTime/32 16/farmer 26 16 1 Rosa 31 14 1 Juliet 32 14 3/skippable/addTemporaryActor JunimoGolden 16 32 -200 -200 2 false/skippable/addLantern 735 34 14 3/addLantern 735 10 24 3/move farmer 6 0 0/animate JunimoGolden false true 200 16 17 18 19/emote farmer 56/pause 500/faceDirection Rosa 2 true/faceDirection Juliet 2 true/emote Rosa 32/pause 500/speak Juliet \"{{i18n:57874009.Juliet.01}}\"/textAboveHead Rosa \"{{i18n:57874009.Juliet.02}}\"/faceDirection Juliet 3/pause 1500/speak Juliet \"{{i18n:57874009.Juliet.03}}\"/faceDirection Juliet 2/speak Juliet \"{{i18n:57874009.Juliet.04}}\"/speak Rosa \"{{i18n:57874009.Juliet.05}}\"/emote farmer 56/move farmer 1 0 0/move farmer 0 -2 0/faceDirection Juliet 1/faceDirection Rosa 3/shake Rosa 240/pause 500/showFrame farmer 15/pause 1000/playSound stoneStep/playSound stoneStep/pause 500/playSound stoneStep/playSound stoneStep/pause 500/showFrame farmer 12/pause 1000/playSound crickets/pause 500/speak Juliet \"{{i18n:57874009.Juliet.06}}\"/faceDirection farmer 3/emote farmer 28/pause 1000/faceDirection farmer 0/playSound doorOpen/pause 500/warp farmer -1000 -1000/faceDirection Juliet 3/speak Juliet \"{{i18n:57874009.Juliet.07}}\"/emote Rosa 60/emote Juliet 32/pause 1000/move Juliet 1 0 0/move Rosa 1 0 1/warp Juliet -1000 -1000/stopMusic/fade/viewport -100 -100/changeLocation Custom_ESOrchardHouse/viewport -100 -100/warp farmer 10 23 true/warp Juliet 8 22 true/warp Rosa -1000 -1000 true/playMusic communityCenter/faceDirection Juliet 3 true/faceDirection farmer 1 true/faceDirection Rosa 0 true/viewport 8 21 clamp true/pause 1000/warp Rosa 9 25/pause 1000/shake Rosa 500/faceDirection Juliet 2/pause 500/emote Juliet 32/pause 500/emote Rosa 56/pause 1000/move Rosa 0 -3 1/pause 1000/move farmer 0 -1 1/faceDirection Juliet 1/pause 1000/move farmer 4 0 1/faceDirection Rosa 3/textAboveHead Juliet \"{{i18n:57874009.Juliet.08}}\"/animate Rosa false true 200 20 21/pause 1000/move farmer 0 -2 3/stopAnimation Rosa 12/textAboveHead Juliet \"{{i18n:57874009.Juliet.09}}\"/pause 1000/move Juliet -2 0 3/pause 1000/warp JunimoGolden 7 18/pause 500/playSound junimoMeep1/pause 500/emote Rosa 16/jump Rosa 3/pause 500/faceDirection Rosa 1/pause 100/faceDirection Rosa 2/pause 100/faceDirection Rosa 3/warp JunimoGolden -100 -100/faceDirection Rosa 0/pause 100/speak Rosa \"{{i18n:57874009.Juliet.10}}\"/pause 1000/faceDirection Juliet 1/pause 500/textAboveHead Juliet \"{{i18n:57874009.Juliet.11}}\"/move farmer -2 0 2/pause 500/move farmer 0 2 2/emote farmer 40/pause 500/warp JunimoGolden 10 16/pause 500/playSound junimoMeep1/jump farmer 5 true/jump Rosa 5 true/pause 1000/warp JunimoGolden -100 -100/faceDirection Rosa 0 true/faceDirection farmer 0 true/pause 1000/emote farmer 8/pause 1000/speak Juliet \"{{i18n:57874009.Juliet.12}}\"/pause 1000/faceDirection Rosa 3/faceDirection farmer 3/emote Rosa 8 true/move Rosa 1 0 1 true/move farmer -1 0 3 true/pause 1000/speak Rosa \"{{i18n:57874009.Juliet.13}}\"/emote farmer 56/pause 1000/move Juliet 2 0 1/speak Juliet \"{{i18n:57874009.Juliet.14}}\"/warp JunimoGolden 11 19/playSound junimoMeep1/jump JunimoGolden 1/faceDirection Rosa 0/faceDirection farmer 0/pause 500/faceDirection Juliet 0/emote Juliet 12/speak Juliet \"{{i18n:57874009.Juliet.15}}\"/jump JunimoGolden 1/playSound junimoMeep1/textAboveHead Rosa \"{{i18n:57874009.Juliet.16}}\"/speak Rosa \"{{i18n:57874009.Juliet.17}}\"/speak Juliet \"{{i18n:57874009.Juliet.18}}\"/jump JunimoGolden 2/playSound junimoMeep1/stopAnimation JunimoGolden/speak Rosa \"{{i18n:57874009.Juliet.19}}\"/move Rosa 0 -2 0 true/move Juliet 2 0 0 true/jump JunimoGolden 2/playSound junimoMeep1/shake JunimoGolden 300/pause 500/warp JunimoGolden -100 -100/textAboveHead Rosa \"{{i18n:57874009.Juliet.20}}\"/speak Rosa \"{{i18n:57874009.Juliet.21}}\"/pause 500/speed Rosa 5/move Rosa 0 -2 1/speak Rosa \"{{i18n:57874009.Juliet.22}}\"/jump Juliet 5/jump farmer 5/speed Juliet 3/speed farmer 3/move Juliet 0 -3 0 true/move farmer 0 -3 0 true/pause 1000/fade/viewport -1000 -1000/playSound woodyStep/pause 5/playSound woodyStep/pause 5/speak Rosa \"{{i18n:57874009.Juliet.23}}\"/pause 1000/speak Juliet \"{{i18n:57874009.Juliet.24}}\"/playSound Ship/pause 1000/changeToTemporaryMap OrchardHouseBookcaseMoved/viewport 11 18 clamp true/pause 1000/textAboveHead Rosa \"{{i18n:57874009.Juliet.25}}\"/speak Juliet \"{{i18n:57874009.Juliet.26}}\"/move Juliet 0 3 0/move Juliet 1 0 0/showFrame farmer 62/startJittering/emote farmer 28/pause 500/stopJittering/pause 1000/speak Rosa \"{{i18n:57874009.Juliet.27}}\"/showFrame farmer 12/emote farmer 40/pause 1000/speak Rosa \"{{i18n:57874009.Juliet.28}}\"/pause 1000/emote farmer 32/pause 2000/end",
+      },
+      "When": {
+        "HasMod |contains=LemurKat.JulietHouse.NPC": true,
+        "HasFlag |contains=GhostHunt_Night": true
+      }
+    },
+    {
+      "LogName": "No Juliet, Lavril not in town",
+      "Action": "EditData",
+      "Target": "Data/Events/Custom_ESOrchard",
+      "Entries": {
+        "57874009/e 57874008/{{LavrilInstalled}}/A GhostHuntTomorrow/t 800 1700": "{{season}}_day_ambient/32 16/farmer 26 16 1 Rosa 32 14 1/skippable/addTemporaryActor JunimoGolden 16 32 -200 -200 2 false/skippable/move farmer 6 0 0/animate JunimoGolden false true 200 16 17 18 19/emote farmer 56/pause 500/faceDirection Rosa 2/emote Rosa 32/pause 500/speak Rosa \"{{i18n:57874009.01}}\"/emote farmer 32/faceDirection Rosa 3/pause 500/faceDirection Rosa 2/pause 500/pause 1000/speak Rosa \"{{i18n:57874009.02}}\"/playSound slime/pause 1500/playSound slime/pause 1500/playSound slimedead/jump Rosa 3/pause 400/shake Rosa 350/pause 1000/speak Rosa \"{{i18n:57874009.03}}\"/pause 500/emote farmer 56/move farmer 1 0 0/move farmer 0 -2 0/pause 500/showFrame farmer 15/pause 1000/playSound stoneStep/playSound stoneStep/pause 500/playSound stoneStep/playSound stoneStep/pause 500/showFrame farmer 12/pause 1000/playSound crickets/pause 500/speak Rosa \"{{i18n:57874009.04}}\"/faceDirection farmer 3/emote farmer 8/pause 1000/faceDirection Rosa 1/emote Rosa 60/speak Rosa \"{{i18n:57874009.05}}\"/pause 1000/faceDirection farmer 0/playSound doorOpen/pause 500/warp farmer -1000 -1000/move Rosa 1 0 0/warp Rosa -1000 -1000/stopMusic/fade/viewport -100 -100/changeLocation Custom_ESOrchardHouse/viewport -100 -100/warp farmer 9 22 true/warp Rosa -1000 -1000 true/playMusic communityCenter/faceDirection farmer 1 true/faceDirection Rosa 0 true/viewport 8 21 clamp true/pause 1000/warp Rosa 9 25/pause 1000/shake Rosa 500/pause 500/faceDirection farmer 2/emote farmer 32/pause 500/emote Rosa 56/pause 1000/move farmer 2 0 1/move Rosa 0 -3 1/pause 1000/pause 1000/move farmer 3 0 2/faceDirection Rosa 3/pause 1000/move farmer 0 -2 3/faceDirection Rosa 3/textAboveHead Rosa \"{{i18n:57874009.06}}\"/pause 1000/move Rosa -3 0 3/pause 1000/warp JunimoGolden 7 18/pause 500/playSound junimoMeep1/pause 500/emote Rosa 16/jump Rosa 3/pause 500/faceDirection Rosa 1/pause 100/faceDirection Rosa 2/pause 100/faceDirection Rosa 3/warp JunimoGolden -100 -100/faceDirection Rosa 0/pause 100/move Rosa 3 0 1/speak Rosa \"{{i18n:57874009.07}}\"/faceDirection farmer 3/emote farmer 8/pause 1000/move farmer -2 0 2/pause 500/move farmer 0 2 2/emote farmer 40/pause 500/warp JunimoGolden 10 16/pause 500/playSound junimoMeep1/jump farmer 5 true/jump Rosa 5 true/pause 1000/warp JunimoGolden -100 -100/faceDirection Rosa 0 true/faceDirection farmer 0 true/pause 1000/emote farmer 8/pause 1000/pause 1000/faceDirection Rosa 3/faceDirection farmer 3/emote Rosa 8 true/move Rosa 1 0 1 true/move farmer -1 0 3 true/pause 1000/speak Rosa \"{{i18n:57874009.08}}\"/emote farmer 56/pause 1000/warp JunimoGolden 11 19/playSound junimoMeep1/jump JunimoGolden 1/faceDirection Rosa 0/faceDirection farmer 0/pause 500/jump JunimoGolden 1/playSound junimoMeep1/textAboveHead Rosa \"{{i18n:57874009.09}}\"/speak Rosa \"{{i18n:57874009.10}}\"/jump JunimoGolden 2/playSound junimoMeep1/stopAnimation JunimoGolden/speak Rosa \"{{i18n:57874009.11}}\"/move Rosa 0 -2 0 true/jump JunimoGolden 2/playSound junimoMeep1/shake JunimoGolden 300/pause 500/warp JunimoGolden -100 -100/textAboveHead Rosa \"{{i18n:57874009.12}}\"/speak Rosa \"{{i18n:57874009.13}}\"/pause 500/speed Rosa 5/move Rosa 0 -2 1/speak Rosa \"{{i18n:57874009.14}}\"/jump farmer 5/speed farmer 3/move farmer 0 -3 0 true/pause 1000/fade/viewport -1000 -1000/playSound woodyStep/pause 5/playSound woodyStep/pause 5/speak Rosa \"{{i18n:57874009.15}}\"/pause 1000/speak Rosa \"{{i18n:57874009.16}}\"/playSound Ship/pause 1000/changeToTemporaryMap OrchardHouseBookcaseMoved/viewport 11 18 clamp true/pause 1000/textAboveHead Rosa \"{{i18n:57874009.17}}\"/speak Rosa \"{{i18n:57874009.18}}\"/showFrame farmer 62/startJittering/emote farmer 28/pause 500/stopJittering/pause 1000/speak Rosa \"{{i18n:57874009.19}}\"/showFrame farmer 12/emote farmer 40/pause 1000/speak Rosa \"{{i18n:57874009.20}}\"/pause 1000/emote farmer 32/pause 2000/end",
+      },
+      "When": {
+        "HasMod |contains=LemurKat.JulietHouse.NPC": false
+      }
+    },
+    {
+      "LogName": "Farmer enters smuggler den for the first time (silent event)",
+      "Action": "EditData",
+      "Target": "Data/Events/Custom_ESSmugglerDen",
+      "Entries": {
+        "57874011": "none/-100 -100/farmer -1000 -1000 0/pause 50/end",
+      }
+    },
+    {
+      "LogName": "Farmer returns with oil",
+      "Action": "EditData",
+      "Target": "Data/Events/Custom_ESOrchardHouse",
+      "Entries": {
+        "57874010/e 57874009/i 247": "communityCenter/11 19/farmer 9 25 0/skippable/move farmer 0 -5 0/pause 500/faceDirection farmer 3/pause 500/faceDirection farmer 2/pause 500/faceDirection farmer 1/move farmer 2 0 0/pause 1000/move farmer 0 -1 0/showFrame farmer 62/pause 500/playSound waterSlosh/pause 500/startJittering/emote farmer 28/pause 500/stopJittering/pause 1000/playSound doorCreak/pause 1000/startJittering/emote farmer 28/pause 500/stopJittering/pause 1000/playSound Ship/pause 2000/playSound slime/pause 1500/playSound slime/pause 1500/playSound slimedead/showFrame farmer 12/jump farmer 3/message \"{{i18n:57874010.01}}\"/pause 1000/end warpOut",
+        "57874013/e 57874012": "communityCenter/11 20/farmer 11 19 0 Rosa 10 18 1/pause 1000/speak Rosa \"{{i18n:57874013.01}}\"/pause 1000/emote farmer 56/pause 1000/speak Rosa \"{{i18n:57874013.02}}\"/emote farmer 60/playSound doorCreak/warp farmer -1000 -1000/faceDirection Rosa 1/pause 1000/emote Rosa 60/warp Rosa -1000 -1000/pause 1000/fade/stopMusic/viewport -100 -100/changeToTemporaryMap ESSmugglerTunnel/viewport -100 -100/warp Rosa 6 7 true/warp farmer 6 8 true/faceDirection Rosa 2/pause 100/viewport 6 9 clamp true/playMusic EarthMine/emote farmer 40/pause 1000/move Rosa 1 0 2/move farmer 0 1 0/textAboveHead Rosa \"{{i18n:57874013.03}}\"/speak Rosa \"{{i18n:57874013.04}}\"/pause 1000/speak Rosa \"{{i18n:57874013.05}}\"/speak Rosa \"{{i18n:57874013.06}}\"/emote farmer 56/move farmer 1 0 2/move farmer 0 3 0/pause 1000/emote farmer 8/move Rosa -1 0 2 true/faceDirection farmer 2/pause 500/faceDirection farmer 0/move Rosa 0 2 2/pause 2000/faceDirection farmer 2/fade/viewport -100 -100/changeLocation Custom_ESSmugglerDen/viewport -100 -100/warp farmer 29 8/warp Rosa 23 6/faceDirection farmer 0/viewport 27 7 clamp true/move Rosa 0 3 2 true/pause 1000/shake Rosa 400/pause 2000/faceDirection farmer 3/emote farmer 8/pause 1000/speak Rosa \"{{i18n:57874013.07}}\"/faceDirection Rosa 1/jump Rosa 5/speak Rosa \"{{i18n:57874013.08}}\"/speed Rosa 5/move Rosa 4 0 0/move Rosa 0 -1 0 true/pause 1000/speak Rosa \"{{i18n:57874013.09}}\"/quickQuestion #{{i18n:57874013.10}}#{{i18n:57874013.11}}#{{i18n:57874013.12}}(break)animate Rosa false true 200 20 21\\pause 2000\\stopAnimation Rosa 0\\speak Rosa \"{{i18n:57874013.13}}\"(break)speak Rosa \"{{i18n:57874013.14}}\"(break)speak Rosa \"{{i18n:57874013.15}}\"/pause 500/move farmer 0 1 1/move farmer 1 0 2/move Rosa 2 0 1/pause 1000/faceDirection farmer 3/speak Rosa \"{{i18n:57874013.16}}\"/jump farmer 3/pause 1000/speak Rosa \"{{i18n:57874013.17}}\"/pause 500/emote farmer 40/pause 1000/speak Rosa \"{{i18n:57874013.18}}\"/pause 1000/emote Rosa 28/pause 1000/speak Rosa \"{{i18n:57874013.19}}\"/emote farmer 8/speak Rosa \"{{i18n:57874013.20}}\"/pause 500/jump farmer 5/emote farmer 16/pause 1000/end",
+      }
+    },
+    {
+      "LogName": "Exploring the Den with Juliet and Rosa",
+      "Action": "EditData",
+      "Target": "Data/Events/Custom_ESOrchardHouse",
+      "Entries": {
+        "57874013/e 57874012": "communityCenter/11 20/farmer 11 19 0 Rosa 10 18 1 Juliet -1000 -1000 0/pause 1000/speak Rosa \"{{i18n:57874013.juliet.01}}\"/pause 1000/emote farmer 56/pause 1000/speak Rosa \"{{i18n:57874013.juliet.02}}\"/emote farmer 60/playSound doorCreak/pause 1000/playSound doorOpen/playSound Ship/warp Juliet 9 24/faceDirection Rosa 2 true/faceDirection farmer 2 true/emote farmer 16 true/emote Rosa 16 true/pause 100/textAboveHead Juliet \"{{i18n:57874013.juliet.03}}\"/speed Juliet 3/move Juliet 0 -5 1/faceDirection Rosa 2/faceDirection farmer 3/speak Rosa \"{{i18n:57874013.juliet.04}}\"/pause 1000/textAboveHead Juliet \"{{i18n:57874013.juliet.05}}\"/pause 1000/speak Juliet \"{{i18n:57874013.juliet.06}}\"/emote Rosa 28/faceDirection farmer 2/animate farmer false true 200 102 103/pause 1500/stopAnimation farmer 0/speak Juliet \"{{i18n:57874013.juliet.07}}\"/pause 2000/faceDirection farmer 3/emote Rosa 12/pause 1000/speak Juliet \"{{i18n:57874013.juliet.08}}\"/pause 1000/emote Rosa 32/pause 1000/faceDirection Rosa 1/textAboveHead Rosa \"{{i18n:57874013.juliet.09}}\"/pause 1000/faceDirection farmer 0/emote farmer 56/playSound doorCreak/warp farmer -1000 -1000/textAboveHead Juliet \"{{i18n:57874013.juliet.10}}\"/faceDirection Rosa 1/pause 1000/emote Rosa 60/warp Rosa -1000 -1000/move Juliet 2 0 0/pause 1000/fade/stopMusic/viewport -100 -100/changeToTemporaryMap ESSmugglerTunnel/viewport -100 -100/warp Juliet -999 -999 true/warp Rosa 6 7 true/warp farmer 6 8 true/faceDirection Rosa 2/pause 100/viewport 6 9 clamp true/playMusic EarthMine/emote farmer 40/pause 1000/move Rosa 1 0 2/move farmer 0 1 0/textAboveHead Rosa \"{{i18n:57874013.juliet.11}}\"/speak Rosa \"{{i18n:57874013.juliet.12}}\"/pause 1000/speak Rosa \"{{i18n:57874013.juliet.13}}\"/playSound stairsdown/jump Juliet 5/warp Juliet 6 5/faceDirection Rosa 0/emote farmer 16/move Juliet 0 2 2/speak Juliet \"{{i18n:57874013.juliet.14}}\"/move Juliet -1 0 3/faceDirection Rosa 3/speak Juliet \"{{i18n:57874013.juliet.15}}\"/emote Rosa 8/pause 1000/speak Juliet \"{{i18n:57874013.juliet.16}}\"/faceDirection Juliet 1/pause 500/speak Juliet \"{{i18n:57874013.juliet.17}}\"/pause 1000/speak Rosa \"{{i18n:57874013.juliet.18}}\"/emote farmer 56/move farmer 1 0 2/move farmer 0 3 0/pause 1000/emote farmer 8/jump Juliet 3/speak Juliet \"{{i18n:57874013.juliet.19}}\"/move Juliet 1 0 2/move Juliet 0 2 0/shake Rosa 250/textAboveHead Juliet \"{{i18n:57874013.juliet.20}}\"/jump Rosa 3/emote Rosa 60/pause 1000/move Rosa -1 0 2 true/move Juliet 1 0 3 true/faceDirection farmer 2/pause 500/faceDirection farmer 0/move Rosa 0 2 2/pause 2000/faceDirection farmer 2/fade/viewport -100 -100/changeLocation Custom_ESSmugglerDen/viewport -100 -100/warp farmer 29 8/warp Juliet 23 7/warp Rosa 23 6/faceDirection farmer 0/viewport 27 7 clamp true/move Juliet 0 3 0 true/move Rosa 0 3 2 true/emote Juliet 40/pause 1000/animate Rosa false true 200 20 21/pause 2000/faceDirection farmer 3/emote farmer 12/stopAnimation Rosa 0/pause 1000/speak Rosa \"{{i18n:57874013.juliet.21}}\"/faceDirection Rosa 1/jump Rosa 5/speak Rosa \"{{i18n:57874013.juliet.22}}\"/speed Rosa 5/move Rosa 4 0 0/move Juliet 0 -1 1 true/move Rosa 0 -1 0 true/faceDirection Juliet 3/pause 1000/faceDirection Juliet 2/pause 1000/faceDirection Juliet 1/pause 1000/speak Juliet \"{{i18n:57874013.juliet.23}}\"/move farmer 1 0 1/move Rosa 2 0 2/faceDirection farmer 3/move Juliet 3 0 1/speak Rosa \"{{i18n:57874013.juliet.24}}\"/move Juliet 2 0 1/pause 500/speak Juliet \"{{i18n:57874013.juliet.25}}\"/pause 500/move farmer 0 1 1/move farmer 1 0 2/speak Rosa \"{{i18n:57874013.juliet.26}}\"/jump Juliet 3/pause 1000/textAboveHead Juliet \"{{i18n:57874013.juliet.27}}\"/pause 1000/speak Juliet \"{{i18n:57874013.juliet.28}}\"/faceDirection farmer 3/emote farmer 40/pause 1000/speak Juliet \"{{i18n:57874013.juliet.29}}\"/pause 1000/emote Rosa 28/pause 1000/speak Rosa \"{{i18n:57874013.juliet.30}}\"/emote farmer 8/pause 1000/speak Rosa \"{{i18n:57874013.juliet.31}}\"/jump Juliet 3/speak Juliet \"{{i18n:57874013.juliet.32}}\"/pause 500/emote Rosa 60/pause 1000/faceDirection Rosa 2/textAboveHead Rosa \"{{i18n:57874013.juliet.33}}\"/pause 2000/end"
+      },
+      "When": {
+        "HasMod": "LemurKat.JulietHouse.NPC"
+      }
+    },
+    {
+      "LogName": "Remove Notes from Smuggler Tunnels",
+      "Action": "EditMap",
+      "Target": "Maps/Custom_ESSmugglerDen",
+      "Update": "OnLocationChange",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 27,
+            "Y": 7
+          },
+          "Layer": "Buildings",
+          "Remove": true
+        },
+        {
+          "Position": {
+            "X": 31,
+            "Y": 10
+          },
+          "Layer": "Buildings",
+          "Remove": true
+        },
+        {
+          "Position": {
+            "X": 34,
+            "Y": 7
+          },
+          "Layer": "Buildings",
+          "Remove": true
+        }
+      ],
+      "When": {
+        "HasSeenEvent": "57874013"
+      }
+    },
+    //With Juliet
+    {
+      "Action": "Include",
+      "FromFile": "assets/RivalHearts/JulietRosa.json",
+      "When": {
+        "HasMod": "LemurKat.JulietHouse.NPC",
+        "RivalHearts |contains=RosaJuliet": true
+      }
+    },
+    //Conversation Topics
+    {
+      "LogName": "Talk to Beatrice",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Rosa",
+      "Entries": {
+        "LilyAnneDiscuss": "{{i18n:LilyAnneDiscuss_Rosa}}"
+      }
+    },
+    {
+      "LogName": "Talk to George",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/George",
+      "Entries": {
+        "LilyAnneDiscuss": "{{i18n:LilyAnneDiscuss_George}}"
+      }
+    },
+    {
+      "LogName": "Talk to Evelyn",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Evelyn",
+      "Entries": {
+        "LilyAnneDiscuss": "{{i18n:LilyAnneDiscuss_Evelyn}}"
+      }
+    },
+    {
+      "LogName": "Talk to Eyvinder",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Eyvinder",
+      "When": {
+        "Hearts:Eyvinder": "{{range:2,5}}",
+        "HasMod": "Lemurkat.EastScarp.Eyvinder"
+      },
+      "Entries": {
+        "LilyAnneDiscuss": "{{i18n:LilyAnneDiscuss_Eyvinder1}}"
+      }
+    },
+    {
+      "LogName": "Talk to Eyvinder",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Eyvinder",
+      "When": {
+        "Hearts:Eyvinder": "{{range:6,14}}",
+        "HasMod": "Lemurkat.EastScarp.Eyvinder"
+      },
+      "Entries": {
+        "LilyAnneDiscuss": "{{i18n:LilyAnneDiscuss_Eyvinder2}}"
+      }
+    },
+    {
+      "LogName": "Talk to Jasper",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Jasper",
+      "Entries": {
+        "LilyAnneDiscuss": "{{i18n:LilyAnneDiscuss_Jasper}}"
+      }
+    },
+    {
+      "LogName": "Talk to Beatrice",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Beatrice",
+      "Entries": {
+        "LilyAnneDiscuss": "{{i18n:LilyAnneDiscuss_Beatrice}}"
+      }
+    },
+    {
+      "LogName": "Talk to Jacob",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Jacob",
+      "Entries": {
+        "LilyAnneDiscuss": "$1 Jacob_LilyAnneDiscuss#{{i18n:LilyAnneDiscuss_Jacob}}"
+      }
+    },
+    {
+      "LogName": "Rosa's Quest ItemDelivery",
+      "Action": "EditData",
+      "Target": "Data/Quests",
+      "Entries": {
+        //
+        "578741": "ItemDelivery/{{i18n:quest.578741.rosa.1}}/{{i18n:quest.578741.rosa.2}}/{{i18n:quest.578741.rosa.3}}/Rosa 250 3/-1/500/-1/true/{{i18n:quest.578741.rosa.4}}", //kale
+        "578742": "ItemDelivery/{{i18n:quest.578742.rosa.1}}/{{i18n:quest.578742.rosa.2}}/{{i18n:quest.578742.rosa.3}}/Rosa 300 3/-1/500/-1/true/{{i18n:quest.578742.rosa.4}}", //Amaranth
+        "578743": "ItemDelivery/{{i18n:quest.578743.rosa.1}}/{{i18n:quest.578743.rosa.2}}/{{i18n:quest.578743.rosa.3}}/Rosa 426/-1/500/-1/true/{{i18n:quest.578743.rosa.4}}", //goat cheese
+      }
+    },
+    {
+      "LogName": "Rosa's Quest ItemDelivery - Setting mail delivery",
+      "Action": "EditData",
+      "Target": "Data/Events/Farm",
+      "Entries": {
+        "57874090/e 57874007/z summer/z winter/z fall/x Rosa_Ingredients_Kale": "null",
+        "57874091/e 57874007/z summer/z winter/z spring/x Rosa_Ingredients_Amaranth": "null",
+        "57874092/e 57874007/z spring/z fall/x Rosa_Ingredients_GoatCheese": "null",
+        "57874093/f Rosa 2500/z winter/x Rosa_10HeartInvite": "null"
+      }
+    },
+    {
+      "LogName": "Rosa's Mail data",
+      "Action": "EditData",
+      "Target": "Data/Mail",
+      "Entries": {
+        "Rosa_Ingredients_Kale": "{{i18n:Mail.Rosa_Ingredients_Kale}}%item quest 578741 %%[#]{{i18n:Mail.Rosa_Ingredients_Kale_name}}",
+        "Rosa_Ingredients_Amaranth": "{{i18n:Mail.Rosa_Ingredients_Amaranth}}%item quest 578742 %%[#]{{i18n:Mail.Rosa_Ingredients_Amaranth_name}}",
+        "Rosa_Ingredients_GoatCheese": "{{i18n:Mail.Rosa_Ingredients_GoatCheese}}%item quest 578743 %%[#]{{i18n:Mail.Rosa_Ingredients_GoatCheese_name}}",
+        "RosaCooking": "{{i18n:Mail.Rosa_Recipe_Baklava}}%item cookingRecipe %%[#]{{i18n:Mail.Rosa_Recipe_Baklava_name}}",
+        "Rosa": "{{i18n:Mail.Rosa_gift}}%item object 651 1 731 1 223 1 234 1 222 1 %%[#]{{i18n:Mail.Rosa_gift_name}}"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/CookingRecipes",
+      "Entries": {
+        "Rosa's Baklava": "340 1 246 1 408 1/1 10/{{spacechase0.jsonAssets/ObjectId:Rosa's Baklava}} 3/f Rosa 7",
+      },
+      "When": {
+        "HasMod |contains=spacechase0.jsonAssets": true
+      }
+    }
+  ]
+}

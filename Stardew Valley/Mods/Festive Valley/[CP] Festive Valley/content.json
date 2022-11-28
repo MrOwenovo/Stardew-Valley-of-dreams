@@ -1,0 +1,364 @@
+{
+   "Format": "1.24.0",
+
+	"ConfigSchema": {
+		"Enable custom festive animals": {
+			"AllowValues": "true, false",
+			"Default": "true"
+		},
+		"Enable Egg Festival changes": {
+			"AllowValues": "true, false",
+			"Default": "true"
+		},
+		"Enable Flower Dance changes": {
+			"AllowValues": "true, false",
+			"Default": "true"
+		},
+		"Enable Luau changes": {
+			"AllowValues": "true, false",
+			"Default": "true"
+		},
+		"Enable Dance of the Moonlight Jellies changes": {
+			"AllowValues": "true, false",
+			"Default": "true"
+		},
+		"Enable Stardew Fair changes": {
+			"AllowValues": "true, false",
+			"Default": "true"
+		},
+		"Enable Spirit's Eve changes": {
+			"AllowValues": "true, false",
+			"Default": "true"
+		},
+		"Enable Festival of Ice changes": {
+			"AllowValues": "true, false",
+			"Default": "true"
+		},
+		"Enable Feast of the Winter Star changes": {
+			"AllowValues": "true, false",
+			"Default": "true"
+		},
+	},
+
+   "Changes": [
+
+	{
+		"Action": "Include",
+		"FromFile": "assets/AnimalMapPatch.json",
+		"When": {
+			"HasMod |contains=PeacefulEnd.CustomCompanions": true,
+		}
+	},
+
+	// EGG FESTIVAL
+	{		
+		"Action": "EditData",
+		"Target": "Data/ObjectInformation",
+		"Entries": {
+			"107": "Dinosaur Egg/350/-300/Arch/Dinosaur Egg/A giant dino egg... The entire shell is still intact and covered in colorful foil! How did that happen?/Mine .01 Mountain .008/Item 1 107",
+			"174": "Large Egg/95/15/Basic -5/Large Egg/It's an uncommonly large white egg covered in colorful foil! How did that happen?",
+			"176": "Egg/50/10/Basic -5/Egg/A regular white chicken egg covered in colorful foil? How did that happen?",
+			"180": "Egg/50/10/Basic -5/Egg/A regular brown chicken egg covered in colorful foil? How did that happen?",
+			"182": "Large Egg/95/15/Basic -5/Large Egg/It's an uncommonly large brown egg covered in colorful foil! How did that happen?",
+			"223": "Cookie/140/36/Cooking -7/Chocolate Bunny/Wrapped chocolate shaped into a bunny. Where did this come from?/food/0 0 0 0 0 0 0 0 0 0 0/0",
+			"289": "Ostrich Egg/600/15/Basic -5/Ostrich Egg/It may be the world's largest egg with colorful foil.",
+			"305": "Void Egg/65/15/Basic -5/Void Egg/An egg wrapped in a pink and yellow foil. It's warm to the touch.",
+			"442": "Duck Egg/95/15/Basic -5/Duck Egg/It's still warm and covered in colorful foil. How did that happen?",			
+		},
+		"When": {
+			"Enable Egg Festival changes": "true",
+			"Day": "12, 13, 14",
+			"Season": "Spring",
+		}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Maps/springobjects",
+		"FromFile": "assets/Spring_Changes/brownegg_egg festival.png",
+		"ToArea": { "X": 192, "Y": 112, "Width": 16, "Height": 16 },
+		"When": {
+			"Enable Egg Festival changes": "true",
+			"Day": "12, 13, 14",
+			"Season": "Spring",
+		}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Maps/springobjects",
+		"FromFile": "assets/Spring_Changes/largebrownegg_egg festival.png",
+		"ToArea": { "X": 224, "Y": 112, "Width": 16, "Height": 16 },
+		"When": {
+			"Enable Egg Festival changes": "true",
+			"Day": "12, 13, 14",
+			"Season": "Spring",
+		}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Maps/springobjects",
+		"FromFile": "assets/Spring_Changes/dinosauregg_egg festival.png",
+		"ToArea": { "X": 176, "Y": 64, "Width": 16, "Height": 16 },
+		"When": {
+			"Enable Egg Festival changes": "true",
+			"Day": "12, 13, 14",
+			"Season": "Spring",
+		}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Maps/springobjects",
+		"FromFile": "assets/Spring_Changes/duckegg_egg festival.png",
+		"ToArea": { "X": 160, "Y": 288, "Width": 16, "Height": 16 },
+		"When": {
+			"Enable Egg Festival changes": "true",
+			"Day": "12, 13, 14",
+			"Season": "Spring",
+		}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Maps/springobjects",
+		"FromFile": "assets/Spring_Changes/egg_egg festival.png",
+		"ToArea": { "X": 128, "Y": 112, "Width": 16, "Height": 16 },
+		"When": {
+			"Enable Egg Festival changes": "true",
+			"Day": "12, 13, 14",
+			"Season": "Spring",
+		}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Maps/springobjects",
+		"FromFile": "assets/Spring_Changes/largeegg_egg festival.png",
+		"ToArea": { "X": 96, "Y": 112, "Width": 16, "Height": 16 },
+		"When": {
+			"Enable Egg Festival changes": "true",
+			"Day": "12, 13, 14",
+			"Season": "Spring",
+		}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Maps/springobjects",
+		"FromFile": "assets/Spring_Changes/ostrichegg_egg festival.png",
+		"ToArea": { "X": 16, "Y": 192, "Width": 16, "Height": 16 },
+		"When": {
+			"Enable Egg Festival changes": "true",
+			"Day": "12, 13, 14",
+			"Season": "Spring",
+		}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Maps/springobjects",
+		"FromFile": "assets/Spring_Changes/voidegg_egg festival.png",
+		"ToArea": { "X": 272, "Y": 192, "Width": 16, "Height": 16 },
+		"When": {
+			"Enable Egg Festival changes": "true",
+			"Day": "12, 13, 14",
+			"Season": "Spring",
+		}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Maps/springobjects",
+		"FromFile": "assets/Spring_Changes/cookie_egg festival.png",
+		"ToArea": { "X": 112, "Y": 144, "Width": 16, "Height": 16 },
+		"When": {
+			"Enable Egg Festival changes": "true",
+			"Day": "12, 13, 14",
+			"Season": "Spring",
+		}
+	},
+	{
+		"Action": "Load",
+		"Target": "Characters/Monsters/Green Slime",
+		"FromFile": "assets/Spring_Changes/Green Slime_egg festival.png",
+		"When": {
+			"Enable Egg Festival changes": "true",
+			"Day": "12, 13, 14",
+			"Season": "Spring",
+		}
+	},
+		
+	// FLOWER DANCE
+	{
+		"Action": "EditImage",
+		"Target": "Characters/Monsters/Dust Spirit",
+		"FromFile": "assets/Spring_Changes/Dust Spirit_Flower Dance.png",
+		"Update": "OnLocationChange",
+		"When": {
+			"Enable Flower Dance changes": "true",
+			"Day": "24, 25",
+			"LocationName": "Backwoods, Farm, Forest, Mountain, Railroad, Woods",
+			"Season": "Spring",
+		}
+	},
+
+	// LUAU
+	{
+		"Action": "EditImage",
+		"Target": "Characters/Monsters/Bat",
+		"FromFile": "assets/Summer_Changes/bat_luau.png",
+		"Update": "OnLocationChange",
+		"When": {
+			"Enable Luau changes": "true",
+			"Day": "10, 11",
+			"LocationName": "Backwoods, BusStop, Farm, Forest, Mountain, Railroad, Town, Woods",
+			"Season": "Summer",
+		}
+	},
+
+	// SPIRIT'S EVE
+	{
+		"Action": "EditImage",
+		"Target": "Maps/springobjects",
+		"FromFile": "assets/Fall_Changes/cookies_spirit's eve.png",
+		"ToArea": { "X": 112, "Y": 144, "Width": 16, "Height": 16 },
+		"When": {
+			"Enable Spirit's Eve changes": "true",
+			"DayEvent": "spirit's eve",
+		}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Maps/springobjects",
+		"FromFile": "assets/Fall_Changes/cranberry candy_spirit's eve.png",
+		"ToArea": { "X": 192, "Y": 400, "Width": 16, "Height": 16 },
+		"When": {
+			"Enable Spirit's Eve changes": "true",
+			"DayEvent": "spirit's eve",
+		}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Maps/springobjects",
+		"FromFile": "assets/Fall_Changes/maple bar_spirit's eve.png",
+		"ToArea": { "X": 176, "Y": 480, "Width": 16, "Height": 16 },
+		"When": {
+			"Enable Spirit's Eve changes": "true",
+			"DayEvent": "spirit's eve",
+		}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Maps/springobjects",
+		"FromFile": "assets/Fall_Changes/miner's treat_spirits eve.png",
+		"ToArea": { "X": 48, "Y": 160, "Width": 16, "Height": 16 },
+		"When": {
+			"Enable Spirit's Eve changes": "true",
+			"DayEvent": "spirit's eve",
+		}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Maps/springobjects",
+		"FromFile": "assets/Fall_Changes/poppyseed muffin_spirit's eve.png",
+		"ToArea": { "X": 48, "Y": 432, "Width": 16, "Height": 16 },
+		"When": {
+			"Enable Spirit's Eve changes": "true",
+			"DayEvent": "spirit's eve",
+		}
+	},
+	{
+		"Action": "Load",
+		"Target": "Characters/Monsters/Green Slime",
+		"FromFile": "assets/Fall_Changes/Green Slime_spirit's eve.png",
+		"When": {
+			"Enable Spirit's Eve changes": "true",
+			"DayEvent": "spirit's eve",
+		}
+	},
+
+	// FESTIVAL OF ICE
+	{		
+		"Action": "EditImage",
+		"Target": "Characters/Monsters/Dust Spirit",
+		"FromFile": "assets/Winter_Changes/Dust Spirit_Festival of Ice.png",
+		"Update": "OnLocationChange",
+		"When": {
+			"Enable Festival of Ice changes": "true",
+			"Day": "8, 9, 10, 11, 12, 13, 14",
+			"LocationName": "Backwoods, Farm, Forest, Mountain, Railroad, Woods",
+			"Season": "Winter",
+		}
+	},
+	{		
+		"Action": "EditImage",
+		"Target": "Characters/Monsters/Green Slime",
+		"FromFile": "assets/Winter_Changes/Green Slime_festival of the ice.png",
+		"When": {
+			"Enable Festival of Ice changes": "true",
+			"Day": "8, 9, 10, 11, 12, 13, 14",
+			"Season": "Winter",
+		}
+	},
+		
+	// FEAST OF THE WINTER STAR
+	{		
+		"Action": "EditImage",
+		"Target": "Tilesheets/Craftables",
+		"FromFile": "assets/Winter_Changes/{{Random: gift_1, gift_2, gift_3, gift_4}}.png",
+		"ToArea": { "X": 112, "Y": 448, "Width": 16, "Height": 32},
+		"Update": "OnLocationChange",
+		"When": {
+			"Enable Feast of the Winter Star changes": "true",
+			"Day": "25",
+			"LocationName": "Farm",
+			"Season": "Winter",
+		}
+	},
+	{		
+		"Action": "EditImage",
+		"Target": "Tilesheets/Craftables",
+		"FromFile": "assets/Winter_Changes/{{Random: gift_1, gift_2, gift_3, gift_4}}.png",
+		"ToArea": { "X": 16, "Y": 480, "Width": 16, "Height": 32},
+		"Update": "OnLocationChange",
+		"When": {
+			"Enable Feast of the Winter Star changes": "true",
+			"Day": "25",
+			"LocationName": "Farm",
+			"Season": "Winter",
+		}
+	},
+	{		
+		"Action": "EditImage",
+		"Target": "Tilesheets/Craftables",
+		"FromFile": "assets/Winter_Changes/{{Random: gift_1, gift_2, gift_3, gift_4}}.png",
+		"ToArea": { "X": 48, "Y": 480, "Width": 16, "Height": 32},
+		"Update": "OnLocationChange",
+		"When": {
+			"Enable Feast of the Winter Star changes": "true",
+			"Day": "25",
+			"LocationName": "Farm",
+			"Season": "Winter",
+		}
+	},
+	{		
+		"Action": "EditImage",
+		"Target": "Tilesheets/Craftables",
+		"FromFile": "assets/Winter_Changes/{{Random: gift_1, gift_2, gift_3, gift_4}}.png",
+		"ToArea": { "X": 80, "Y": 480, "Width": 16, "Height": 32},
+		"Update": "OnLocationChange",
+		"When": {
+			"Enable Feast of the Winter Star changes": "true",
+			"Day": "25",
+			"LocationName": "Farm",
+			"Season": "Winter",
+		}
+	},
+	{		
+		"Action": "EditImage",
+		"Target": "Tilesheets/Craftables",
+		"FromFile": "assets/Winter_Changes/{{Random: gift_1, gift_2, gift_3, gift_4}}.png",
+		"ToArea": { "X": 112, "Y": 1024, "Width": 16, "Height": 32},
+		"Update": "OnLocationChange",
+		"When": {
+			"Enable Feast of the Winter Star changes": "true",
+			"Day": "25",
+			"LocationName": "Farm",
+			"Season": "Winter",
+		}
+	}
+	],
+}

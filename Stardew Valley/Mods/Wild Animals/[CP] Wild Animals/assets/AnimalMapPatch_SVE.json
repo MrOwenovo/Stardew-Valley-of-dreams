@@ -1,0 +1,409 @@
+{
+//	"Format": "1.23.0",
+
+	"Changes": [
+
+	{
+		"LogName": "Adds wild badgers in the west forest",
+		"Action": "EditMap",
+		"Target": "Maps/Custom_ForestWest",
+		"MapTiles": [
+            {
+               "Position": { "X": 41, "Y": 38 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 1, 2}} SmolHooman.WildAnimalsCC.Badger"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Badgers": "true",
+			"Weather": "Sun, Wind",		
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds wild bears in the west forest",
+		"Action": "EditMap",
+		"Target": "Maps/Custom_ForestWest",
+		"MapTiles": [
+            {
+               "Position": { "X": 101, "Y": 113 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2}} SmolHooman.WildAnimalsCC.Bear"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Bears": "true",
+			"Weather": "Sun, Wind",			
+			"Season": "Spring, Summer, Fall",
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds wild bobcats in the west forest",
+		"Action": "EditMap",
+		"Target": "Maps/Custom_ForestWest",
+		"MapTiles": [
+            {
+               "Position": { "X": 112, "Y": 34 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 1, 2}} SmolHooman.WildAnimalsCC.Bobcat"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Bobcats": "true",
+			"Weather": "Snow, Sun, Wind",
+			"Time": "{{Range: 1800, 2600}}",
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds wild chipmunks in the garden",
+		"Action": "EditMap",
+		"Target": "Maps/Custom_Garden",
+		"MapTiles": [
+            {
+               "Position": { "X": 15, "Y": 33 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 1, 2, 3}} SmolHooman.WildAnimalsCC.Chipmunk"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Chipmunks": "true",		
+			"Weather": "Sun, Wind",
+			"Season": "Spring, Summer, Fall",
+			"Time": "{{Range: 0600, 1800}}",
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds wild coyotes on the desert (SVE)",
+		"Action": "EditMap",
+		"Target": "Maps/Desert",
+		"MapTiles": [
+            {
+               "Position": { "X": 20, "Y": 62 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 1, 2, 3}} SmolHooman.WildAnimalsCC.Coyote"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Coyotes": "true",
+			"Time": "{{Range: 1800, 2600}}",
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds wild deers in the west forest (SVE)",
+		"Action": "EditMap",
+		"Target": "Maps/Custom_ForestWest",
+		"MapTiles": [
+            {
+               "Position": { "X": 56, "Y": 111 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2}} SmolHooman.WildAnimalsCC.Buck"
+               },
+            },
+            {
+               "Position": { "X": 41, "Y": 113 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 1, 2}} SmolHooman.WildAnimalsCC.Doe"
+               },
+            },
+            {
+               "Position": { "X": 45, "Y": 119 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 1, 2}} SmolHooman.WildAnimalsCC.Fawn"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Deers": "true",
+			"Weather": "Sun, Wind, Snow",
+			"Time": "{{Range: 0600, 1800}}",
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds wild fennec foxes on the desert (SVE)",
+		"Action": "EditMap",
+		"Target": "Maps/Desert",
+		"MapTiles": [
+            {
+               "Position": { "X": 21, "Y": 126 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 1, 2, 3}} SmolHooman.WildAnimalsCC.FennecFox"
+               },
+            },
+            {
+               "Position": { "X": 23, "Y": 131 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 2 SmolHooman.WildAnimalsCC.FennecFox"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Fennec Foxes": "true",
+			"Time": "{{Range: 1800, 2600}}",
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds wild frogs in the west forest",
+		"Action": "EditMap",
+		"Target": "Maps/Custom_ForestWest",
+		"MapTiles": [
+            {
+               "Position": { "X": 26, "Y": 128 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 1, 2, 3}} SmolHooman.WildAnimalsCC.{{Random: FrogBrown, FrogGreen, FrogYellow}}"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Frogs": "true",		
+			"Weather": "Rain, Storm",
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds wild horses in the west forest",
+		"Action": "EditMap",
+		"Target": "Maps/Custom_ForestWest",
+		"MapTiles": [
+            {
+               "Position": { "X": 42, "Y": 66 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 1, 2, 3}} SmolHooman.WildAnimalsCC.{{Random: Horse1, Horse2, Horse3, Horse4, Horse5}}"
+               },
+            },
+            {
+               "Position": { "X": 43, "Y": 66 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 1, 2}} SmolHooman.WildAnimalsCC.{{Random: Horse1, Horse2, Horse3, Horse4, Horse5}}"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Horses": "true",
+			"Weather": "Sun, Wind",
+			"Time": "{{Range: 0600, 1800}}",		
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds wild meerkats on the desert (SVE)",
+		"Action": "EditMap",
+		"Target": "Maps/Desert",
+		"MapTiles": [
+            {
+               "Position": { "X": 37, "Y": 71 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 3 SmolHooman.WildAnimalsCC.Meerkat"
+               },
+            },
+            {
+               "Position": { "X": 40, "Y": 74 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 1, 2}} SmolHooman.WildAnimalsCC.Meerkat"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Meerkats": "true",
+			"Time": "{{Range: 0600, 1800}}",
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds wild opossums in the west forest",
+		"Action": "EditMap",
+		"Target": "Maps/Custom_ForestWest",
+		"MapTiles": [
+            {
+               "Position": { "X": 98, "Y": 6 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 1, 2, 3}} SmolHooman.WildAnimalsCC.{{Random: Opossum, Opossum, Opossum+Joeys}}"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Opossums": "true",		
+			"Season": "Spring, Summer, Fall",
+			"Weather": "Sun, Wind",
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds wild platypuses in the west forest (SVE)",
+		"Action": "EditMap",
+		"Target": "Maps/Custom_ForestWest",
+		"MapTiles": [
+            {
+               "Position": { "X": 18, "Y": 127 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2}} SmolHooman.WildAnimalsCC.Platypus"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Platypuses": "true",
+			"Weather": "Rain, Wind",
+			"Season": "Spring, Summer, Fall",				
+			"Time": "{{Range: 0600, 1800}}",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Adds wild platypuses in the west forest's lake",
+		"Action": "EditMap",
+		"Target": "Maps/Custom_ForestWest",
+		"MapTiles": [
+            {
+               "Position": { "X": 9, "Y": 133 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2}} SmolHooman.WildAnimalsCC.PlatypusSwim"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Platypuses": "true",
+			"Weather": "Rain, Sun, Wind",
+			"Season": "Spring, Summer, Fall",					
+			"Time": "{{Range: 1800, 2600}}",
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds wild rabbits in the west forest",
+		"Action": "EditMap",
+		"Target": "Maps/Custom_ForestWest",
+		"MapTiles": [
+            {
+               "Position": { "X": 113, "Y": 34 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 1, 2, 3, 4, 5}} SmolHooman.WildAnimalsCC.{{Random: SnowshoeHare_{{season}}, RabbitBrown, RabbitGray, RabbitWhite}}"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Rabbits": "true",
+			"Weather": "Snow, Sun, Wind",
+			"Time": "{{Range: 0600, 1800}}",
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds wild skunks in the west forest",
+		"Action": "EditMap",
+		"Target": "Maps/Custom_ForestWest",
+		"MapTiles": [
+            {
+               "Position": { "X": 122, "Y": 84 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 1, 2}} SmolHooman.WildAnimalsCC.{{Random: SkunkStriped, SkunkStriped, SkunkHooded, SkunkHooded, SkunkBrown, SkunkAlbino}}"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Skunks": "true",		
+			"Weather": "Sun, Wind",
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds wild swans in the west forest's river",
+		"Action": "EditMap",
+		"Target": "Maps/Custom_ForestWest",
+		"MapTiles": [
+            {
+               "Position": { "X": 9, "Y": 133 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 2 SmolHooman.WildAnimalsCC.{{Random: SwanBlack, SwanWhite, SwanWhite}}"
+               },
+            },
+            {
+               "Position": { "X": 13, "Y": 133 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 3 SmolHooman.WildAnimalsCC.Cygnet"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Swans": "true",
+			"Weather": "Rain, Sun, Wind",
+			"Season": "Spring, Summer, Fall",
+			"Time": "{{Range: 0600, 1800}}",
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds wild wolves in the forest SVE",
+		"Action": "EditMap",
+		"Target": "Maps/Forest",
+		"MapTiles": [
+            {
+               "Position": { "X": 22, "Y": 49 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 1, 2}} SmolHooman.WildAnimalsCC.{{Random: WolfBlack, WolfBrown, WolfGray, WolfGray, WolfWhite}}"
+               },
+            },
+            {
+               "Position": { "X": 21, "Y": 49 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1}} SmolHooman.WildAnimalsCC.{{Random: WolfBlack, WolfBrown, WolfGray, WolfGray, WolfWhite}}"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Wolves": "true",
+			"Weather": "Snow, Sun, Wind",
+			"Time": "{{Range: 1800, 2600}}",
+			},
+		"Update": "OnLocationChange"
+	}
+	]
+}

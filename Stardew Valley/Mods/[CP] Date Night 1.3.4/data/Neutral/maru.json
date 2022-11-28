@@ -1,0 +1,66 @@
+{
+"Changes": [
+
+	// **** LUNAR ECLIPSE DATE ****
+
+{       //Load Telescope
+            "LogName": "Load Telescope",
+            "Action": "Load",
+            "Target": "Characters/TelescopeDN",
+             "FromFile": "assets/Characters/Telescope_DN.png",
+},
+
+{       //Load Lunar Eclipse Moon
+            "LogName": "Load Lunar Eclipse Moon",
+            "Action": "Load",
+            "Target": "Characters/MoonLunarEclipseDN",
+             "FromFile": "assets/Characters/MoonLunarEclipse_DN.png",
+},
+
+{       //Date Initiation
+            "LogName": "Date Initiation",
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries": {
+                 "1116027/f Maru {{MinFriendship}}/O Maru/t 500 2000": "continue/-10000 -1000/farmer -100 -100 2 Maru -100 -100 2/skippable/warp Maru -100 -100/warp farmer -100 -100/faceDirection Maru 2/viewport 64 15 clamp true/pause 2000/playSound doorClose/warp farmer 64 15/pause 500/move farmer 0 2 2/playSound doorClose/warp Maru 64 15/pause 300/faceDirection farmer 1 true/pause 100/faceDirection farmer 0/speak Maru \"亲爱的! 等一下!\"/pause 500/emote farmer 8/pause 500/speak Maru \"哦, 太好了, 差点你就走了!#$b#今天有非常特别的事情发生, 亲爱的。#$b#今晚天空中会出现美丽的月食, 每月只会发生一次。#$b#月亮变成红色, 闪耀的光辉会在我们安静的山谷中沐浴几分钟。#$b#我真的很想看, @, 想知道是否可以...#$b#...你想和我在一起看吗? 我们可以在边远森林里露营, 开一个私人的小观察区!\"/pause 1000/question fork0 \"和 {{SpouseDisplayName}} 约会吗?#好的#不\"/fork dateYes/playMusic none/pause 1000/emote Maru 28/speak Maru \"噢...$s#$b#又很忙吗?$s\"/pause 500/faceDirection Maru 3 true/pause 1000/emote Maru 40/pause 400/faceDirection Maru 2/pause 400/speak Maru \"没关系, 我们以后再做。你回去工作吧。#$b#我就一个人去看吧。$s\"/pause 800/faceDirection Maru 1 true/pause 100/faceDirection Maru 0/pause 400/playSound doorClose/warp Maru -100 -100/pause 2000/end dialogue Maru \"别担心, 我没有不高兴。#$b#我知道你很忙...当我嫁给你的时候, 我就知道我在做什么了。\"",
+
+		"dateYes": "pause 200/addMailReceived maruLunarDateAgree/emote Maru 20/pause 500/speak Maru \"棒! 这将是非常有趣的事...非常有趣的!$h#$b#晚上8点后在边远森林见我, 我去设立我们的小观察区。#$b#两位观星者, 看着深邃的宇宙。$l#$b#我已经迫不及待了!$h\"/pause 500/end dialogue Maru \"今晚将会如此美丽, @, 我等不及了。$l#$b#记住了，晚上8点以后到边远森林来, 我会把一切都准备好。$l\"",
+
+            },
+            "When": {
+                "Spouse": "Maru",
+		"Query: {{DateInterest}} <= {{DateAskPercentChance}}": true,
+		"Query: {{UniqueInterest}} <= {{UniqueDateChance}}": true,
+		"UniqueDateType": "maruLunar",
+            },
+         },
+
+{       //Maru Lunar Eclipse Date - Suggestive
+            "LogName": "Maru Lunar Date",
+            "Action": "EditData",
+            "Target": "Data/Events/Backwoods",
+            "Entries": {
+                "1116028/n maruLunarDateAgree/t 2000 2600": "spaceMusic/21 14/farmer 20 18 0 Maru 22 15 1/makeInvisible 16 9 15 15/addTemporaryActor TelescopeDN 16 32 20 14 2 false/addTemporaryActor CampfireDN 16 32 23 15 2 false/addTemporaryActor TentDN 49 80 22 12 2 false/skippable/friendship Maru {{FriendBonus}}/move farmer 0 -1 1/move farmer 1 0 0/faceDirection Maru 2/move farmer 0 -2 1/faceDirection Maru 3 true/speak Maru \"嗨, 亲爱的。$l#$b#很高兴你能来。$l\"/pause 300/emote farmer 32/speak Maru \"嗯...你对我们的小营地有什么看法呢?\"/pause 200/move Maru 0 -1 1/move farmer 1 0 1 true/move Maru 1 0 2 false/pause 100/shake Maru 250/addLantern 935 23 15 3/showFrame CampfireDN 1/playSound fireball/pause 800/question null \"#很不错啊玛鲁!#看起来很舒适!#我喜欢这个篝火!\"/pause 200/emote Maru 32/pause 200/speak Maru \"谢谢你, 亲爱的! 我试图让它尽可能的舒适和温暖。\"/pause 500/speak Maru \"哦! 还有一件事...\"/shake Maru 250/playSound pickUpItem/showFrame CampfireDN 2/emote farmer 16/pause 200/speak Maru \"我带来了一些鱼并在篝火上面烤, 这是真正的露营体验, @!\"/pause 200/emote farmer 32/pause 200/move Maru -1 0 2/faceDirection farmer 0/shake Maru 250/playSound pickUpItem/pause 200/speak Maru \"[198] 在这里, @。希望它的味道很好!\"/pause 200/move Maru 1 0 2/faceDirection farmer 1/pause 300/farmerEat 198/pause 1250/message \"好吃! 又香又脆, 没有缺点! 玛鲁烤得刚刚好!\"/pause 300/faceDirection farmer 1/pause 200/shake Maru 250/playSound eat/pause 200/shake Maru 250/playSound eat/pause 400/speak Maru \"嗯! 真的很棒!\"/pause 400/speak Maru \"我吃饱了, 哈哈。我可以一整天都吃这个。$h\"/pause 300/speak Maru \"再次感谢您的到来, @。$l#$b#日食随时会发生...\"/pause 600/playSound shadowpeep/glow 255 0 0 true/pause 100/emote Maru 16 true/emote farmer 16/pause 200/speak Maru \"就是这个! 它来了！快点, 亲爱的, 让我们看看！\"/pause 600/faceDirection farmer 0/move Maru -2 0 3/move farmer 0 -1 3/globalFade/viewport -1000 -1000/beginSimultaneousCommand/changeToTemporaryMap NightSceneMaruMap/viewport -1000 -1000/warp CampfireDN 1000 1000/removeObject 23 15/warp TelescopeDN 1000 1000/warp TentDN 1000 1000/addTemporaryActor MoonLunarEclipseDN 40 40 13 9 2 false/addLantern 935 14 9 3/warp Maru 14 29/faceDirection Maru 3/warp farmer 15 29/faceDirection farmer 3/endSimultaneousCommand/pause 400/fade/viewport 14 25/pause 300/speak Maru \"哇...太美了! 我真不敢相信我在见证这一切!$h\"/pause 300/faceDirection Maru 1/speak Maru \"这里, 亲爱的快来看!\"/pause 200/move Maru 0 1 0/move farmer -1 0 3/pause 300/viewport move 0 -2 7500/pause 500/speak Maru \"月食发生时, 我们的行星位于月亮和太阳之间。#$b#月亮沐浴在地球的阴影中, 月球接收到的唯一光线是我们日落的红色。\"/pause 500/speak Maru \"小时候, 我会经常盯着天空, 想知道星星和行星到底意味着什么。#$b#我们的存在真的有意义吗? 我想我们永远不会知道。\"/pause 1000/viewport move 0 2 7500/speak Maru \"我一直认为...$s#$b#嗯...$s#$b#我一直认为...$l#$b#...星星会引导我度过我的生活。\"/pause 300/faceDirection farmer 2/pause 200/speak Maru \"我第一次像这样看月食时, 我的父亲告诉了我一些...#$b#他告诉我说: “玛鲁, 研究银河系没有什么意义。我们在有生之年将永远无法探索它, 我们的孩子是如此, 他们以后的孩子也是如此。生活应在这里, 在这片土地上。” 当时一直不明白他为什么这么说, 我一直想探索那些未知的事物。#$b#现在, 我虽然对这说法还保持反对态度, 但奇怪的是...#$b#我也可以接受这个说法。\"/pause 300/speak Maru \"因为认识你后, @...$l#$b#我不想去别的地方!\"/pause 300/globalFade/viewport -1000 -1000/beginSimultaneousCommand/changeLocation Backwoods/makeInvisible 16 9 15 15/warp MoonLunarEclipseDN 1000 1000/removeObject 14 9/warp CampfireDN 23 15/addLantern 935 23 15 3/warp TelescopeDN 20 14/warp TentDN 22 12/warp Maru 21 14/warp farmer 22 14/faceDirection Maru 1/faceDirection farmer 3/endSimultaneousCommand/pause 400/fade/viewport 21 14/pause 1000/speak Maru \"如果仔细想想, 这颜色非常具有象征意义。#$b#红色可以代表愤怒、沮丧、消极...#$b#也可以代表爱、温暖和激情。\"/pause 500/speak Maru \"我很幸运有你在我的生活中, @... 我希望你也很高兴在你的生活中拥有我。\"/pause 200/emote farmer 20/pause 200/positionOffset farmer -5 10/pause 10/playSound pickUpItem/faceDirection farmer 1 true/showFrame farmer 101/animate Maru true true 500 28/pause 2500/stopAnimation Maru 4/positionOffset farmer 5 0/showFrame farmer 6/faceDirection farmer 3/pause 1000/playSound shadowpeep/stopGlowing/emote Maru 16/pause 200/faceDirection Maru 2/speak Maru \"看起来月食已经结束了, 亲爱的。月亮已经穿过了我们星球爱的阴影, 回到了正常的、灰色的自己。\"/pause 300/textAboveHead Maru \"*哈欠*\"/pause 500/faceDirection Maru 1/speak Maru \"我越来越累了, @。你说我们现在回到帐篷里去怎么样？\"/pause 300/move farmer 2 0 3 true/move Maru 2 0 1 false/pause 500/speak Maru \"嘿, @...$l#$b#我在帐篷里还为你准备了一个惊喜...$l\"/pause 200/emote farmer 16/faceDirection Maru 0/pause 100/warp Maru 1000 1000/move farmer -1 0 0/pause 500/warp farmer 1000 1000/pause 1000/shake TentDN 60000/globalFade/viewport -1000 -1000/changePortrait Maru Beach/pause 1000/speak Maru \"哈...真不错...$l#$b#我已经疲惫不堪了...我们现在睡觉吧, 亲爱的...$h\"/pause 500/message \"我与玛鲁度过了一个星光灿烂的夜晚并观看了日食。真是浪漫的一晚!\"/pause 1300/end newDay",
+
+            },
+            "When": {
+                "Spouse": "Maru",
+		"SuggestiveEndings": "true",
+            },
+         },
+
+{       //Maru Lunar Eclipse Date - Non Suggestive
+            "LogName": "Maru Lunar Date",
+            "Action": "EditData",
+            "Target": "Data/Events/Backwoods",
+            "Entries": {
+                "1116028/n maruLunarDateAgree/t 2000 2600": "spaceMusic/21 14/farmer 20 18 0 Maru 22 15 1/makeInvisible 16 9 15 15/addTemporaryActor TelescopeDN 16 32 20 14 2 false/addTemporaryActor CampfireDN 16 32 23 15 2 false/addTemporaryActor TentDN 49 80 22 12 2 false/skippable/friendship Maru {{FriendBonus}}/move farmer 0 -1 1/move farmer 1 0 0/faceDirection Maru 2/move farmer 0 -2 1/faceDirection Maru 3 true/speak Maru \"嗨, 亲爱的。$l#$b#很高兴你能来。$l\"/pause 300/emote farmer 32/speak Maru \"嗯...你对我们的小营地有什么看法呢?\"/pause 200/move Maru 0 -1 1/move farmer 1 0 1 true/move Maru 1 0 2 false/pause 100/shake Maru 250/addLantern 935 23 15 3/showFrame CampfireDN 1/playSound fireball/pause 800/question null \"#很不错啊玛鲁!#看起来很舒适!#我喜欢这个篝火!\"/pause 200/emote Maru 32/pause 200/speak Maru \"谢谢你, 亲爱的! 我试图让它尽可能的舒适和温暖。\"/pause 500/speak Maru \"哦! 还有一件事...\"/shake Maru 250/playSound pickUpItem/showFrame CampfireDN 2/emote farmer 16/pause 200/speak Maru \"我带来了一些鱼并在篝火上面烤, 这是真正的露营体验, @!\"/pause 200/emote farmer 32/pause 200/move Maru -1 0 2/faceDirection farmer 0/shake Maru 250/playSound pickUpItem/pause 200/speak Maru \"[198] 在这里, @。希望它的味道很好!\"/pause 200/move Maru 1 0 2/faceDirection farmer 1/pause 300/farmerEat 198/pause 1250/message \"好吃! 又香又脆, 没有缺点! 玛鲁烤得刚刚好!\"/pause 300/faceDirection farmer 1/pause 200/shake Maru 250/playSound eat/pause 200/shake Maru 250/playSound eat/pause 400/speak Maru \"嗯! 真的很棒!\"/pause 400/speak Maru \"我吃饱了, 哈哈。我可以一整天都吃这个。$h\"/pause 300/speak Maru \"再次感谢您的到来, @。$l#$b#日食随时会发生...\"/pause 600/playSound shadowpeep/glow 255 0 0 true/pause 100/emote Maru 16 true/emote farmer 16/pause 200/speak Maru \"就是这个! 它来了！快点, 亲爱的, 让我们看看！\"/pause 600/faceDirection farmer 0/move Maru -2 0 3/move farmer 0 -1 3/globalFade/viewport -1000 -1000/beginSimultaneousCommand/changeToTemporaryMap NightSceneMaruMap/viewport -1000 -1000/warp CampfireDN 1000 1000/removeObject 23 15/warp TelescopeDN 1000 1000/warp TentDN 1000 1000/addTemporaryActor MoonLunarEclipseDN 40 40 13 9 2 false/addLantern 935 14 9 3/warp Maru 14 29/faceDirection Maru 3/warp farmer 15 29/faceDirection farmer 3/endSimultaneousCommand/pause 400/fade/viewport 14 25/pause 300/speak Maru \"哇...太美了! 我真不敢相信我在见证这一切!$h\"/pause 300/faceDirection Maru 1/speak Maru \"这里, 亲爱的快来看!\"/pause 200/move Maru 0 1 0/move farmer -1 0 3/pause 300/viewport move 0 -2 7500/pause 500/speak Maru \"月食发生时, 我们的行星位于月亮和太阳之间。#$b#月亮沐浴在地球的阴影中, 月球接收到的唯一光线是我们日落的红色。\"/pause 500/speak Maru \"小时候, 我会经常盯着天空, 想知道星星和行星到底意味着什么。#$b#我们的存在真的有意义吗? 我想我们永远不会知道。\"/pause 1000/viewport move 0 2 7500/speak Maru \"我一直认为...$s#$b#嗯...$s#$b#我一直认为...$l#$b#...星星会引导我度过我的生活。\"/pause 300/faceDirection farmer 2/pause 200/speak Maru \"我第一次像这样看月食时, 我的父亲告诉了我一些...#$b#他告诉我说: “玛鲁, 研究银河系没有什么意义。我们在有生之年将永远无法探索它, 我们的孩子是如此, 他们以后的孩子也是如此。生活应在这里, 在这片土地上。” 当时一直不明白他为什么这么说, 我一直想探索那些未知的事物。#$b#现在, 我虽然对这说法还保持反对态度, 但奇怪的是...#$b#我也可以接受这个说法。\"/pause 300/speak Maru \"因为认识你后, @...$l#$b#我不想去别的地方!\"/pause 300/globalFade/viewport -1000 -1000/beginSimultaneousCommand/changeLocation Backwoods/makeInvisible 16 9 15 15/warp MoonLunarEclipseDN 1000 1000/removeObject 14 9/warp CampfireDN 23 15/addLantern 935 23 15 3/warp TelescopeDN 20 14/warp TentDN 22 12/warp Maru 21 14/warp farmer 22 14/faceDirection Maru 1/faceDirection farmer 3/endSimultaneousCommand/pause 400/fade/viewport 21 14/pause 1000/speak Maru \"如果仔细想想, 这颜色非常具有象征意义。#$b#红色可以代表愤怒、沮丧、消极...#$b#也可以代表爱、温暖和激情。\"/pause 500/speak Maru \"我很幸运有你在我的生活中, @... 我希望你也很高兴在你的生活中拥有我。\"/pause 200/emote farmer 20/pause 200/positionOffset farmer -5 10/pause 10/playSound pickUpItem/faceDirection farmer 1 true/showFrame farmer 101/animate Maru true true 500 28/pause 2500/stopAnimation Maru 4/positionOffset farmer 5 0/showFrame farmer 6/faceDirection farmer 3/pause 1000/playSound shadowpeep/stopGlowing/emote Maru 16/pause 200/faceDirection Maru 2/speak Maru \"看起来月食已经结束了, 亲爱的。月亮已经穿过了我们星球爱的阴影, 回到了正常的、灰色的自己。\"/pause 300/textAboveHead Maru \"*哈欠*\"/pause 500/faceDirection Maru 1/speak Maru \"我越来越累了, @。你说我们回到帐篷里去怎么样?\"/pause 300/move farmer 2 0 3 true/move Maru 2 0 1 false/pause 500/speak Maru \"嘿, @...$l#$b#我爱你。\"/pause 200/emote farmer 20/faceDirection Maru 0/pause 100/warp Maru 1000 1000/move farmer -1 0 0/pause 500/warp farmer 1000 1000/pause 1000/globalFade/viewport -1000 -1000/pause 500/message \"我与玛鲁度过了一个星光灿烂的夜晚并观看了日食。真是浪漫的一晚!\"/pause 1300/end newDay",
+
+            },
+            "When": {
+                "Spouse": "Maru",
+		"SuggestiveEndings": "false",
+            },
+         },
+],
+}

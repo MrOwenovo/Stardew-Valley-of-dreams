@@ -1,0 +1,49 @@
+{
+  "Changes": [
+	//Sprite
+	{
+	  "Action": "Load",
+	  "Target": "applesauce.outstorage/trashbag",
+	  "FromFile": "assets/trashbag.png"
+	},
+
+	//Data
+	{
+	  "Action": "EditData",
+	  "Target": "furyx639.ExpandedStorage/Storages",
+	  "Entries": {
+		"trashbag": {
+		            "DisplayName": "{{i18n: trashbag.name}}",
+          		    "Description": "{{i18n: trashbag.description}}",
+          		    "Image": "applesauce.outstorage/trashbag",
+         		    "PlayerColor": false,
+          		    "OpenSound": "trashcan",
+        		    "IsPlaceable": false,
+			//Betterchests stuff
+        		    "BetterChestsData": {
+          		    "CollectItems": "Enabled",
+           		    "CustomColorPicker": "Disabled",
+           		    "FilterItems": "Enabled",
+        		    "FilterItemsList": [
+          			    "category_junk",
+           			    "item_driftwood"
+         			   ],
+         		   "OpenHeldChest": "Enabled",
+      		           "ResizeChest": "Enabled",
+			   "ResizeChestCapacity": 24
+			  			}
+			}
+		      }
+	            },
+  	 {
+      	"Action": "EditData",
+     	 "Target": "furyx639.ExpandedStorage/Buy",
+    	  "Entries": {
+     	     "trashbag": {
+     	     "ShopID": "FishShop",
+       	     "Price": 5000
+      	    }
+     	   }
+  	  }
+ 	 ] 
+	}

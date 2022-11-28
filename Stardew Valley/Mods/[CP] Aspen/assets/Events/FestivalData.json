@@ -1,0 +1,494 @@
+{
+    "Changes": [
+        //Festival changes ------------------------------------------------------------------------------	
+		//Dialogue change for the egg festival (Aspen not doing egg hunt)
+        {
+            "LogName": "Egg Festival Dialogue",
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring13",
+            "Entries": {
+                "Aspen": "我不太喜欢吃鸡蛋，但莱纳斯建议吃魔鬼蛋，而且味道真的很好!$1#$b#祝你找蛋好运!$1"
+            },
+            "When": {
+                "AspenEggHunt": "false" 
+            }
+        },
+        
+        //Dialogue change for the egg festival (Aspen doing egg hunt)
+        {
+            "LogName": "Egg Festival Dialogue",
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring13",
+            "Entries": {
+                "Aspen": "我不太喜欢吃鸡蛋，但莱纳斯建议吃魔鬼蛋，而且味道真的很好!$1#$e#祝你找蛋好运!我也想参加。$1"
+            },
+            "When": {
+                "AspenEggHunt": "true"
+            }
+        },
+        
+        //Dialogue change for the egg festival (Aspen doing egg hunt & not year 1)
+        {
+            "LogName": "Egg Festival Dialogue (not year 1, friends)",
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring13",
+            "Entries": {
+                "Aspen": "我想知道是否有什么甜鸡蛋食谱用了蜂蜜……它要么非常难吃，要么非常美味!其实我一点头绪都没有。$0#$e#顺便说一句，我去年可能从阿比盖尔那里学到了一两件东西，所以这次祝你好运!$0"
+            },
+            "When": {
+                "AspenEggHunt": "true",
+                "Year |contains=1": "false"
+            }
+        },
+    
+        //Dialogue change for the egg festival (Aspen not doing egg hunt & dating, engaged or married & not year 1)
+        {
+            "LogName": "Egg Festival Dialogue (Not doing egg hunt, Dating, Engaged or Married)",
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring13",
+            "Entries": {
+                "Aspen": "希望你喜欢这个节日，亲爱的!也许我们可以给你拍张可爱的照片把你的头放在那个小替身里!$1#$e#我会在场边为你加油，祝你好运!$5"
+            },
+            "When": {
+                "AspenEggHunt": "false",
+                "Relationship:Aspen": "Dating, Engaged, Married",
+                "Year |contains=1": "false"
+            }
+        },
+        
+        //Dialogue change for the egg festival (Aspen doing egg hunt & dating, engaged or married & not year 1)
+        {
+            "LogName": "Egg Festival Dialogue (Doing egg hunt, Dating, Engaged or Married)",
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring13",
+            "Entries": {
+                "Aspen": "希望你喜欢这个节日，亲爱的!也许我们可以给你拍张可爱的照片把你的头放在那个小替身里!$1#$e#别以为我在找蛋的时候会放过你就因为我们在一起了!我还是会尽力的。$0#$b#我们都有一些练习，所以这次祝你好运!$9"
+            },
+            "When": {
+                "AspenEggHunt": "true",
+                "Relationship:Aspen": "Dating, Engaged, Married",
+                "Year |contains=1": "false"
+            }
+        },
+        
+        //Dialogue change for the egg festival (Aspen doing egg hunt & dating, engaged or married & not year 1)
+        {
+            "LogName": "Egg Festival Dialogue (Divorced)",
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring13",
+            "Entries": {
+                "Aspen": "Please leave me alone, @... 我想好好享受鸡蛋节。$2#$e#看到我不开心，你会感觉好点吗?$2#$b#求你了，让我去吧。$2"
+            },
+            "When": {
+                "Relationship:Aspen": "Divorced"
+            }
+        },
+        
+        //Dialogue change for the flower dance
+        {
+            "LogName": "Flower Dance Dialogue (Year 1)",
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring24",
+            "Entries": {
+                "Linus": "哦，你好。你和阿斯彭能跟我说话真好。#$b#春天快过去了……真可惜。",
+                "Aspen": "皮埃尔卖的所有应季植物和装饰品看起来都很不错，我不得不每种都买了一些!$1#$b#也许你可以买一些来装饰你的农场， @?$0"
+            },
+        },
+    
+        //Dialogue change for the flower dance (Not Year 1)
+        {
+            "LogName": "Flower Dance Dialogue (Year 2+)",
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring24",
+            "Entries": {
+                "Aspen": "我去年买的应季植物和装饰品仍然卖得很好!$1#$b#皮埃尔很好地把它们组合在一起。$0"
+            },
+            "When": {
+                "Year |contains=1": "false"
+            }
+        },
+        
+        //Dialogue change for the flower dance (dating, engaged or married)
+        {
+            "LogName": "Flower Dance Dialogue (Dating/engaged/married)",
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring24",
+            "Entries": {
+                "Aspen": "嘿,亲爱的!我为今天的舞蹈练习了很多…我不想在大家面前出丑。$8#$b#我敢肯定，如果你想的话，我们绝对比所有人都耀眼!$4"
+            },
+            "When": {
+                "Relationship:Aspen": "Dating, Engaged, Married"
+            }
+        },
+        
+        //Dialogue change for the flower dance (divorced)
+        {
+            "LogName": "Flower Dance Dialogue (Divorced)",
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring24",
+            "Entries": {
+                "Aspen": "...$2"
+            },
+            "When": {
+                "Relationship:Aspen": "Divorced"
+            }
+        },
+        
+        //Dialogue change for Luau (Year 1)
+        {
+            "LogName": "Luau Dialogue (Year 1)",
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer11",
+            "Entries": {
+                "Aspen": "美味的聚餐，清爽的潘趣酒，温暖的食物... 这正是我在那个紧张的春天之后所需要的!$1#$b#希望你带了些好东西来做汤， @!$0"
+            }
+        },
+        
+        //Dialogue change for Luau (Year 2+)
+        {
+            "LogName": "Luau Dialogue (Year 2+)",
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer11",
+            "Entries": {
+                "Aspen": "莱纳斯一直让我尝尝他做的菜，去年我没吃，希望是好吃的。$0#$b#说实话，它闻起来比玛尔尼搅拌的汤好闻多了!所以我相信它一定很好吃。$1"
+            },
+            "When": {
+                "Year |contains=1": "false"
+            }
+        },
+        
+        //Dialogue change for Luau (Year 2+, dating engaged or married)
+        {
+            "LogName": "Luau Dialogue (Year 2+ dating/engaged/married)",
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer11",
+            "Entries": {
+                "Aspen": "我不经常来海滩，所以夏威夷宴会对我来说很放松。$0#$b#也许有一天我们应该一起来这里!$1"
+            },
+            "When": {
+                "Year |contains=1": "false",
+                "Relationship:Aspen": "Dating, Engaged, Married"
+            }
+        },
+        
+        //Dialogue change for Luau (divorced)
+        {
+            "LogName": "Luau Dialogue Year 1 (Divorced)",
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer11",
+            "Entries": {
+                "Aspen": "你需要什么吗?$2"
+            },
+            "When": {
+                "Relationship:Aspen": "Divorced"
+            }
+        },	
+        
+        //Dialogue change for Moonlight Jellies (0-2 Hearts)
+        {
+            "LogName": "Moonlight Jellies Dialogue (0-2 Hearts)",
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer28",
+            "Entries": {
+                "Aspen": "全镇的人聚在一起庆祝这些节日真是太好了!$0"
+            },
+            "When": {
+                "Hearts:Aspen": "{{Range: 0, 2}}"
+            }
+        },
+        
+        //Dialogue change for Moonlight Jellies (3+ Hearts Year 1)
+        {
+            "LogName": "Moonlight Jellies Dialogue (3+ Hearts, year 1)",
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer28",
+            "Entries": {
+                "Aspen": "全镇的人聚在一起庆祝这些节日真是太好了!$0#$b#这是你在这里的第一年所以你可能还没见过这里有多漂亮。我很期待看到你的反应， @!$1"
+            },
+            "When": {
+                "Year": "1",
+                "Hearts:Aspen": "{{Range: 3, 14}}"
+            }
+        },
+        
+        //Dialogue change for Moonlight Jellies (3+ Hearts & not year 1)
+        {
+            "LogName": "Moonlight Jellies Dialogue (3+ Hearts, not year 1)",
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer28",
+            "Entries": {
+                "Aspen": "这是我最喜欢参加的节日之一。虽然很晚了，但看到这么多果冻让我头晕目眩!$1#$b不过莱纳斯一个人走了，我确实很难过。我通常在节日期间陪在他身边，这样他就不会觉得被冷落了..$2",
+            },
+            "When": {
+                "Year |contains=1": "false",
+                "Hearts:Aspen": "{{Range: 3, 14}}"
+            }
+        },
+        
+        //Dialogue change for Moonlight Jellies (Divorced)
+        {
+            "LogName": "Moonlight Jellies Dialogue (Divorced)",
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer28",
+            "Entries": {
+                "Aspen": "这曾经是我最喜欢的节日之一...$2",
+            },
+            "When": {
+                "Relationship:Aspen": "Divorced"
+            }
+        },
+        
+        //Dialogue change for Town Fair (Year 1)
+        {
+            "LogName": "Town Fair Dialogue Year 1",
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall16",
+            "Entries": {
+                "Aspen": "你一个人去看这个展览会相当无聊。不过，如果你有一个画眉山庄显示器可以放东西，那肯定很有趣。$0#$b#或者如果有人和你一起玩迷你游戏。也许明年我会向路易斯要个画眉山庄，你觉得怎么样 @?"
+            }
+        },
+        
+        //Dialogue change for Halloween (Year 1)
+        {
+            "LogName": "Halloween Dialogue Year 1",
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall27",
+            "Entries": {
+                "Aspen": "万圣节真是个有趣的节日!$1#$b#我在考虑下次买套cos服。我觉得盛装打扮一定很有趣!"
+            }
+        },
+    
+        //Dialogue change for Ice Festival (Year 1)
+        {
+            "LogName": "Ice Festival Dialogue Year 1",
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter8",
+            "Entries": {
+                "Aspen": "我之前和莱纳斯谈过，他给我讲了一个关于他如何学会建造冰屋的有趣故事!$1#$b#他的话很明显，所以我不知道他是不是认真的。$0#$e#你应该去跟他打个招呼，我想他会很感激的。#$b#他在巫师塔那边!$1"
+            }
+        },
+        
+        //Dialogue change for Christmas (Year 1)
+        {
+            "LogName": "Christmas Dialogue Year 1",
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter25",
+            "Entries": {
+                "Aspen": "节日快乐, @!$1#$b#我想知道你今天会收到谁的礼物!$1#$b#我想知道今天谁会给我送礼物...$8"
+            }
+        },
+
+        //Festival locations -----------------------------------------------------------------------------------
+        {   //Aspen egg festival data
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring13",
+            "TextOperations": [ //
+                {
+                    "Operation": "Append",
+                    "Target": ["Entries", "Set-Up_additionalCharacters"],
+                    "Value": "Aspen 30 56 left",
+                    "Delimiter": "/"
+                },
+            ],
+        },
+        
+        {   //Aspen egg festival data (participating)
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring13",
+            "TextOperations": [ //
+                {
+                    "Operation": "Append",
+                    "Target": ["Entries", "MainEvent_additionalCharacters"],
+                    "Value": "Aspen 31 69 up",
+                    "Delimiter": "/",
+                    "When": {
+                        "AspenEggHunt": "true" 
+                    }
+                },
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "mainEvent", 43],
+                    "Value": "advancedMove Aspen false 4 0 0 -1 2 0 0 -6 10 0 0 2 11 0 0 7 11 0 0 15 -4 0 0 2 -10 0 0 7 -8 0 0 -7",
+                    "Delimiter": "/",
+                    "When": {
+                        "AspenEggHunt": "true" 
+                    }
+                },
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "afterEggHunt", 7],
+                    "Value": "warp Aspen 31 69/faceDirection Aspen 0",
+                    "Delimiter": "/"
+                },
+            ],
+            "When": {
+                "AspenEggHunt": "true" 
+            }
+        },
+        
+        {   //Flower dance data
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring24",
+            "TextOperations": [
+                {    
+                "Operation": "Append",
+                "Target": ["Entries", "Set-Up_additionalCharacters"],
+                "Value": "Aspen 24 25 down",
+                "Delimiter": "/"
+            },
+            {  //During the dance
+                "Operation": "Append",
+                "Target": ["Entries", "MainEvent_additionalCharacters"],
+                "Value": "Aspen 19 30 up",
+                "Delimiter": "/"
+            },
+            ],
+            "When": {
+                "HasMod |contains=FuzzyMittens.Toshinori": "false"
+            }
+        },
+        
+        {   //Flower dance data
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring24",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": ["Entries", "Set-Up_additionalCharacters"],
+                    "Value": "Aspen 23 26 right",
+                    "Delimiter": "/"
+                },
+                {  //During the dance
+                    "Operation": "Append",
+                    "Target": ["Entries", "MainEvent_additionalCharacters"],
+                    "Value": "Aspen 19 30 up",
+                    "Delimiter": "/"
+                },
+            ],
+            "When": {
+                "HasMod |contains=FuzzyMittens.Toshinori": "true"
+            }
+        },
+        
+        {   //Luau data
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer11",
+            "TextOperations": [
+                {    
+                    "Operation": "Append",
+                    "Target": ["Entries", "Set-Up_additionalCharacters"],
+                    "Value": "Aspen 49 19 down",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": ["Entries", "MainEvent_additionalCharacters"],
+                    "Value": "Aspen 38 6 down",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": ["Fields", "set-up", 5],
+                    "Value": "animate Aspen false true 200 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 25 26 27 26 25",
+                    "Delimiter": "/"
+                },
+            ]
+        },
+        
+        {   //Jellies data
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer28",
+            "TextOperations": [
+                {    
+                    "Operation": "Append",
+                    "Target": ["Entries", "Set-Up_additionalCharacters"],
+                    "Value": "Aspen 25 36 down",
+                    "Delimiter": "/"
+                },
+            ]
+        },
+        
+        {   //Fair data
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall16",
+            "TextOperations": [
+                {    
+                    "Operation": "Append",
+                    "Target": ["Entries", "Set-Up_additionalCharacters"],
+                    "Value": "Aspen 43 77 down",
+                    "Delimiter": "/"
+                },
+                {    
+                    "Operation": "Append",
+                    "Target": ["Fields", "set-up", 5],
+                    "Value": "animate Aspen false true 200 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 29 30 31 30",
+                    "Delimiter": "/"
+                },
+            ]
+        },
+        
+        {   //Halloween data
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall27",
+            "TextOperations": [
+                {    
+                    "Operation": "Append",
+                    "Target": ["Entries", "Set-Up_additionalCharacters"],
+                    "Value": "Aspen 34 69 down",
+                    "Delimiter": "/"
+                },
+            ]
+        },
+        
+        {   //Ice festival
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter8",
+            "TextOperations": [
+                {    
+                    "Operation": "Append",
+                    "Target": ["Entries", "Set-Up_additionalCharacters"],
+                    "Value": "Aspen 60 44 down",
+                    "Delimiter": "/"
+                },
+                {    
+                    "Operation": "Append",
+                    "Target": ["Entries", "mainEvent_additionalCharacters"],
+                    "Value": "Aspen 69 27 down",
+                    "Delimiter": "/"
+                },
+            ]
+        },
+        
+        {   //Winter data no SVE
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter25",
+            "TextOperations": [
+                {    
+                    "Operation": "Append",
+                    "Target": ["Entries", "Set-Up_additionalCharacters"],
+                    "Value": "Aspen 22 63 right",
+                    "Delimiter": "/"
+                },
+            ],
+            "When": {
+                    "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false"
+            }
+        },
+        
+        {   //Winter data w/ SVE
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter25",
+            "TextOperations": [
+                {    
+                    "Operation": "Append",
+                    "Target": ["Entries", "Set-Up_additionalCharacters"],
+                    "Value": "Aspen 21 63 right",
+                    "Delimiter": "/"
+                },
+            ],
+            "When": {
+                    "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true"
+            }
+        },
+    ]
+}

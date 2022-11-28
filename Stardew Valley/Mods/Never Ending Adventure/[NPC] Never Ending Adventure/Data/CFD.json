@@ -1,0 +1,120 @@
+{
+    "Changes":
+[
+        //EDITS TO CSFILES.JSON
+        {
+            "LogName": "Mateo - Gender Neutral Marriage Fix",
+            "Action": "EditData",
+            "Target": "strings/StringsFromCSFiles",
+            "Entries": {
+
+                "Utility.cs.5371": "@, 马特奥... #$b# 作为鹈鹕镇的镇长，以及该地区的婚姻印章持有者，我现在宣布你们为犯罪同伙，哈哈!$h",
+                "Utility.cs.5373": "@, 马特奥... #$b# 作为鹈鹕镇的镇长，以及该地区的婚姻印章持有者，我现在宣布你们为犯罪同伙，哈哈!$h",
+                "Utility.cs.5375": "@, 马特奥... #$b# 作为鹈鹕镇的镇长，以及该地区的婚姻印章持有者，我现在宣布你们为犯罪同伙，哈哈!$h",
+                "Utility.cs.5377": "@, 马特奥... #$b# 作为鹈鹕镇的镇长，以及该地区的婚姻印章持有者，我现在宣布你们为犯罪同伙，哈哈!$h",
+                "Utility.cs.5367": "在每个人的生活中，总有一天我们会意外地遇到某个人。#$b#然而今天，我发现了两个人决定团结在一起，他们决定将他们未来的道路合二为一。$h#$b#这是我的荣幸，在{1}{0}的今天，见证@和马特奥在婚姻的纽带中结合。",
+                "Utility.cs.5369": "当@第一次到达鹈鹕镇时，没有人知道他是否会融入我们的社区...#$b#但从今天起，@将会和我们一样成为这个小镇的一部分！$h#$b#这是我的荣幸，在{1}{0}的今天，我将见证@和马特奥在婚姻的纽带中结合。",
+
+                "NPC.cs.4439": "我想知道这个新生儿会给事情带来多大的改变?$s",
+                "NPC.cs.4440": "{0}, 所有的准备工作都已经完成了。现在我们所能做的就是祈祷和等待。$l",
+                "NPC.cs.4441": "{0}, 你觉得我们准备得足够好了吗?我们的生活即将发生改变。 $18",
+                "NPC.cs.4442": "{0}, 我们马上就要有孩子了，是不是很了不起?$l0",
+                "NPC.cs.4443": "{0}, 我们的家庭越来越大了，你能相信吗?$l9",
+                "NPC.cs.4444": "{0}, 我从没想过我会为人父母……但我真的很兴奋。$6",
+                "NPC.cs.4445": "{0}, 你兴奋吗?我感到很兴奋。我紧张,我……我们准备好了吗? $10",
+                "NPC.cs.4447": "{0}, 我们的家庭有点奇怪，不是吗？孩子，宠物，一个空虚生物...",
+                "NPC.cs.4448": "{0}, 我们要当父母了…谁能想到呢?$l6",
+
+                "BirthMessage_Adoption": "晚上，一个新生儿加入了你的家庭。",
+                "BirthMessage_PlayerMother": "晚上，一个新生儿加入了你的家庭。",
+                "BirthMessage_SpouseMother": "晚上，一个新生儿加入了你的家庭。",
+                "BirthMessage_SpouseNaming_Male": "将以{0}为这个男孩命名",
+                "BirthMessage_SpouseNaming_Female": "将以{0} 为这个女孩命名",
+                "BabyNamingTitle_Male": "我们应该给他起个什么名字呢？",
+                "BabyNamingTitle_Female": "我们应该给她起个什么名字呢？",
+                "HaveBabyQuestion": "我们应该要个孩子吗，{0}?",
+                "HaveBabyQuestion_Adoption": "我们应该要个孩子吗， {0}?",
+                "HaveBabyAnswer_Yes": "是的",
+                "HaveBabyAnswer_No": "现在不行...",
+                "HavePlayerBabyQuestion": "你想和{0}生一个孩子吗？",
+                "HavePlayerBabyQuestion_Adoption": "你想和{0}生一个孩子吗？",
+
+                "SocialPage.cs.11635": "(单身)",
+                "SocialPage.cs.11636": "(配偶)",
+                "SocialPage.cs.11637": "(配偶)",
+                "SocialPage.cs.11639": "(搭档)",
+                "SocialPage.cs.11640": "(搭档)",
+                "SocialPage.cs.11642": "(前配偶)",
+                "SocialPage.cs.11643": "(前配偶)",
+
+            }, 
+            
+            "When":
+            {
+                "Relationship:Mateo": "Married",
+            }
+
+        },
+
+        //EDITS TO EVENTS.JSON
+        {
+            "LogName": "Mateo - Ambiguous Birth Fix",
+            "Action": "EditData",
+            "Target": "strings/Events",
+            "Entries": {
+
+                "BirthMessage_Adoption": "晚上，一个新生儿加入了你的家庭。",
+                "BirthMessage_PlayerMother": "晚上，一个新生儿加入了你的家庭。",
+                "BirthMessage_SpouseMother": "晚上，一个新生儿加入了你的家庭。",
+                "BirthMessage_SpouseNaming_Male": "将以{0}为这个男孩命名",
+                "BirthMessage_SpouseNaming_Female": "将以{0}为这个女孩命名",
+                "BabyNamingTitle_Male": "我们应该给他起个什么名字呢？",
+                "BabyNamingTitle_Female": "我们应该给她起个什么名字呢？",
+                "HaveBabyQuestion": "我们应该扩大我们的家庭吗，{0}?",
+                "HaveBabyQuestion_Adoption": "我们应该扩大我们的家庭吗，{0}?",
+                "HaveBabyAnswer_Yes": "是的",
+                "HaveBabyAnswer_No": "不是现在...",
+                "HavePlayerBabyQuestion": "你想和{0}生一个孩子吗?",
+                "HavePlayerBabyQuestion_Adoption": "你想和{0}生一个孩子吗?",
+            },
+            
+            "When":
+            {
+                "Relationship:Mateo": "Dating, Engaged, Married",
+            }
+
+        },
+
+          //EDITS TO EXTRADIALOGUE.JSON
+          {
+            "LogName": "Mateo - Custom Summit Dialogue",
+            "Action": "EditData",
+            "Target": "strings/ExtraDialogue",
+            "Entries": {
+
+                "ExtraDialogue_SummitEvent_Intro_Spouse": "嘿，我的太阳。$14",
+                "ExtraDialogue_SummitEvent_Intro2_Spouse": "你曾经见过这样的辉煌吗？$19",
+                "ExtraDialogue_SummitEvent_Dialogue1_Spouse": "我不禁回想起过去的%year年...$18\"/pause 1000/speak spouse \"我们在一起经历了很多事情，不是吗？我一点也不会收回，甚至连那些有压力的部分也不会收回的。$16",
+                "ExtraDialogue_SummitEvent_Dialogue2_Spouse": "...看看我们一起学习和完成的一切;我们已经从起点一起走了多远。$18",
+                "ExtraDialogue_SummitEvent_closingmessage": "对你和马特奥来说，这是一条漫长的路...",
+            },
+            
+            "When":
+            {
+                "Relationship:Mateo": "Married",
+            }
+
+            
+
+        },
+
+        { // EDITS TO CHARACTERS.JSON
+            "Action": "EditData",
+            "Target": "Strings/Characters",
+            "Entries": {
+                "MovieInvite_Spouse_Mateo": "和你一起看电影我总是会很高兴，我的太阳。$19"
+            }
+        },
+    ]
+}
+

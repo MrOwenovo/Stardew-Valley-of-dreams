@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.3.3" orientation="orthogonal" renderorder="right-down" width="6" height="9" tilewidth="16" tileheight="16" infinite="0" nextlayerid="13" nextobjectid="2">
+ <tileset firstgid="1" name="townInterior" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="townInterior.png" width="512" height="1088"/>
+ </tileset>
+ <tileset firstgid="2177" name="paths" tilewidth="16" tileheight="16" tilecount="32" columns="4">
+  <image source="paths.png" width="64" height="128"/>
+ </tileset>
+ <tileset firstgid="2209" name="furniture" tilewidth="16" tileheight="16" tilecount="2976" columns="32">
+  <image source="arknirfurniture.png" width="512" height="1488"/>
+ </tileset>
+ <layer id="1" name="Back" width="6" height="9">
+  <data encoding="csv">
+1639,1640,1641,1642,1642,1642,
+1671,1672,1673,1674,1674,1674,
+1703,1704,1705,1706,1706,1706,
+200,201,200,201,200,201,
+232,233,232,233,232,233,
+264,265,264,265,264,265,
+232,233,232,233,232,233,
+264,265,264,265,264,265,
+232,233,232,233,232,233
+</data>
+ </layer>
+ <objectgroup id="2" name="Back"/>
+ <layer id="9" name="Back2" width="6" height="9">
+  <data encoding="csv">
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,4187,4188,4189,
+0,3934,0,4219,4220,4221,
+0,4993,4994,4995,4996,432,
+0,5025,5026,5027,5028,0,
+0,5057,5058,5059,5060,0,
+0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="10" name="Back2"/>
+ <layer id="3" name="Buildings" width="6" height="9">
+  <data encoding="csv">
+0,0,0,0,0,0,
+1671,1672,1673,1674,81,81,
+1703,1704,1705,1706,113,113,
+3620,3902,3801,0,0,3929,
+3933,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,3371,3372,
+0,0,2537,2538,3403,3404
+</data>
+ </layer>
+ <objectgroup id="4" name="Buildings"/>
+ <layer id="11" name="Buildings2" width="6" height="9">
+  <data encoding="csv">
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+3585,3768,3769,0,3896,3897,
+0,3800,3801,0,3928,3972,
+3969,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="12" name="Buildings2"/>
+ <layer id="5" name="Front" width="6" height="9">
+  <data encoding="csv">
+0,0,0,4123,4124,4125,
+3971,0,3970,4155,4156,4157,
+3588,0,0,0,0,0,
+3901,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,3339,3340,
+0,0,2505,2506,368,0,
+0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="6" name="Front">
+  <object id="1" x="48" y="80" width="16" height="16">
+   <properties>
+    <property name="CustomCompanions" value="SPAWN 1 Arknir27.VoidCC.VoidSoul"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="7" name="Paths" width="6" height="9">
+  <data encoding="csv">
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,2184,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="8" name="Paths"/>
+</map>

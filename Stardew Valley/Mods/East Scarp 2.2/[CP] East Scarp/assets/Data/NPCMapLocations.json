@@ -1,0 +1,320 @@
+{
+	"Changes": [
+		// NPC Map Location Support Start
+		// NPC Map Location Support added by Yagisan. Based on Yagisan's - Custom NPCs for NPC Map Locations 1.1.9
+		// This code will automatically disable itself if Yagisan's - Custom NPCs for NPC Map Locations is installed.
+		// https://www.nexusmods.com/stardewvalley/mods/8174
+		{
+			"LogName": "ES NPC Sprite Offsets",
+			"Action": "EditData",
+			"Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+			"When": {
+				"HasMod: |contains=Yagisan.NPCMapLocationsForNPCs": false
+			},
+			"Entries": {
+				"Jacob": {
+					"MarkerCropOffset": -1
+				},
+				"Eloise": {
+					"MarkerCropOffset": 7
+				},
+				"Aideen": {
+					"MarkerCropOffset": 2
+				},
+				"Dao": {
+					"MarkerCropOffset": 1
+				},
+				"Rosa": {
+					"MarkerCropOffset": 2
+				},
+				"Leximonster": {
+					"Exclude": true
+				},
+				"DuckNPC": {
+					"Exclude": true
+				},
+				"Duck2NPC": {
+					"Exclude": true
+				},
+				"RichieTheMacaw": {
+					"Exclude": true
+				},
+				"LadySheba": {
+					"Exclude": true
+				}
+			}
+		},
+		/*{
+			"LogName": "ES NPC Sprite Offsets",
+			"Action": "EditData",
+			"Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+			"When": {
+				"HasMod: |contains=Yagisan.NPCMapLocationsForNPCs": false,
+				"HasSeenEvent |contains=57873000": false
+			},
+			"Entries": {
+				"OliverK": {
+					"Exclude": true
+				},
+				"JosephineK": {
+					"Exclude": true
+				}
+			}
+		},*/
+		{
+			"LogName": "East Scarp - Location Support",
+			"Action": "EditData",
+			"Target": "Mods/Bouhm.NPCMapLocations/Locations",
+			"When": {
+				"HasMod: |contains=LemurKat.EastScarpe.CP": true,
+				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+				"HasMod: |contains=Yagisan.NPCMapLocationsForNPCs": false
+			},
+			"Entries": {
+				"Custom_EastScarpe": {
+					"MapVectors": [
+						{
+							"TileX": 0,
+							"TileY": 0,
+							"MapX": 984,
+							"MapY": 215
+						},
+						{
+							"TileX": 79,
+							"TileY": 136,
+							"MapX": 1124,
+							"MapY": 540
+						}
+					],
+					"MapTooltip": {
+						"X": 984,
+						"Y": 235,
+						"Width": 140,
+						"Height": 325,
+						"PrimaryText": "{{i18n:LocationName.EastScarp}}"
+					}
+				},
+				"Custom_ESOrchard": {
+					"MapVectors": [
+						{
+							"TileX": 0,
+							"TileY": 0,
+							"MapX": 1124,
+							"MapY": 350
+						},
+						{
+							"TileX": 54,
+							"TileY": 79,
+							"MapX": 1200,
+							"MapY": 420
+						}
+					],
+					"MapTooltip": {
+						"X": 1124,
+						"Y": 310,
+						"Width": 76,
+						"Height": 70,
+						"PrimaryText": "{{i18n:LocationName.Orchard}}"
+					}
+				},
+				"Custom_ESMeadowFarm": {
+					"MapVectors": [
+						{
+							"TileX": 0,
+							"TileY": 0,
+							"MapX": 1124,
+							"MapY": 190
+						},
+						{
+							"TileX": 49,
+							"TileY": 40,
+							"MapX": 1200,
+							"MapY": 255
+						}
+					],
+					"MapTooltip": {
+						"X": 1124,
+						"Y": 190,
+						"Width": 76,
+						"Height": 65,
+						"PrimaryText": "{{i18n:LocationName.MeadowFarm}}"
+					}
+				},
+				"Custom_ESDeepMountains": {
+					"MapVectors": [
+						{
+							"TileX": 0,
+							"TileY": 0,
+							"MapX": 1068,
+							"MapY": 124
+						},
+						{
+							"TileX": 121,
+							"TileY": 61,
+							"MapX": 1130,
+							"MapY": 188
+						}
+					],
+					"MapTooltip": {
+						"X": 1068,
+						"Y": 124,
+						"Width": 62,
+						"Height": 64,
+						"PrimaryText": "{{i18n:LocationName.DeepMountains}}"
+					}
+				},
+				"Custom_ESClearingHouse": {
+					"MapVectors": [
+						{
+							"TileX": 0,
+							"TileY": 0,
+							"MapX": 935,
+							"MapY": 366
+						},
+						{
+							"TileX": 59,
+							"TileY": 39,
+							"MapX": 998,
+							"MapY": 433
+						}
+					]
+				}
+			}
+		},
+		{
+			"LogName": "East Scarp + SVE - Location Support",
+			"Action": "EditData",
+			"Target": "Mods/Bouhm.NPCMapLocations/Locations",
+			"When": {
+				"HasMod: |contains=LemurKat.EastScarpe.CP": true,
+				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+				"HasMod: |contains=Yagisan.NPCMapLocationsForNPCs": false
+			},
+			"Entries": {
+				"Custom_EastScarpe": {
+					"MapVectors": [
+						{
+							"TileX": 0,
+							"TileY": 0,
+							"MapX": 1105,
+							"MapY": 305
+						},
+						{
+							"TileX": 79,
+							"TileY": 136,
+							"MapX": 1200,
+							"MapY": 475
+						}
+					],
+					"MapTooltip": {
+						"X": 1105,
+						"Y": 305,
+						"Width": 95,
+						"Height": 170,
+						"PrimaryText": "{{i18n:LocationName.EastScarp}}"
+					}
+				},
+				"Custom_ESOrchard": {
+					"MapVectors": [
+						{
+							"TileX": 0,
+							"TileY": 0,
+							"MapX": 1190,
+							"MapY": 330
+						},
+						{
+							"TileX": 54,
+							"TileY": 79,
+							"MapX": 1200,
+							"MapY": 500
+						}
+					],
+					"MapTooltip": {
+						"X": 1190,
+						"Y": 330,
+						"Width": 25,
+						"Height": 170,
+						"PrimaryText": "{{i18n:LocationName.Orchard}}"
+					}
+				},
+				"Custom_ESMeadowFarm": {
+					"MapVectors": [
+						{
+							"TileX": 0,
+							"TileY": 0,
+							"MapX": 1165,
+							"MapY": 280
+						},
+						{
+							"TileX": 49,
+							"TileY": 40,
+							"MapX": 1200,
+							"MapY": 300
+						}
+					],
+					"MapTooltip": {
+						"X": 1165,
+						"Y": 280,
+						"Width": 35,
+						"Height": 20,
+						"PrimaryText": "{{i18n:LocationName.MeadowFarm}}"
+					}
+				},
+				"Custom_ESDeepMountains": {
+					"MapVectors": [
+						{
+							"TileX": 0,
+							"TileY": 0,
+							"MapX": 1080,
+							"MapY": 130
+						},
+						{
+							"TileX": 121,
+							"TileY": 61,
+							"MapX": 1200,
+							"MapY": 220
+						}
+					],
+					"MapTooltip": {
+						"X": 1080,
+						"Y": 130,
+						"Width": 120,
+						"Height": 90,
+						"PrimaryText": "{{i18n:LocationName.DeepMountains}}"
+					}
+				}
+			}
+		},
+		{
+			"LogName": "East Scarpe Vineyard + Juliet and Jessie + SVE - Location Support",
+			"Action": "EditData",
+			"Target": "Mods/Bouhm.NPCMapLocations/Locations",
+			"When": {
+				"HasMod: |contains=LemurKat.EastScarpe.CP": true,
+				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+				"HasMod: |contains=LemurKat.JulietHouse.NPC": true,
+				"HasMod: |contains=Yagisan.NPCMapLocationsForNPCs": false
+			},
+			"Entries": {
+				// If SVE is installed, this remains in Pelican Town.
+				"Custom_LK_ClearingHouse": {
+					"MapVectors": [
+						{
+							"TileX": 0,
+							"TileY": 0,
+							"MapX": 680,
+							"MapY": 172
+						},
+						{
+							"TileX": 59,
+							"TileY": 29,
+							"MapX": 703,
+							"MapY": 194
+						}
+					]
+				}
+			}
+		}
+		// NPC Map Location Support End
+	]
+}

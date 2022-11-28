@@ -1,0 +1,322 @@
+{
+    "Changes": [
+        //Adventure Summit > Deep Mountains
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_AdventurerSummit",
+            "FromFile": "assets/Patches/AdventurerSummit_DeepMountain.tmx",
+            "ToArea": {
+                "X": 63,
+                "Y": 5,
+                "Width": 2,
+                "Height": 10
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "Warp"
+                    ],
+                    "Value": "65 8 Custom_ESDeepMountains 7 61 65 9 Custom_ESDeepMountains 7 61",
+                    "Delimiter": " "
+                }
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+            }
+        },
+        // Deep Mountains > Adventure Summit
+        {
+            "LogName": "Adds the Warp from ES to AdventurerSummit",
+            "Action": "EditMap",
+            "Target": "Maps/Custom_ESDeepMountains",
+            "MapProperties": {
+                "Warp": "6 62 Custom_AdventurerSummit 64 8 8 62 Custom_AdventurerSummit 64 9 7 62 Custom_AdventurerSummit 64 9"
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_EastScarpe",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "Warp"
+                    ],
+                    "Value": "-1 70 Custom_ShearwaterBridge 59 19 -1 71 Custom_ShearwaterBridge 59 20 -1 72 Custom_ShearwaterBridge 59 21 -1 73 Custom_ShearwaterBridge 59 22 -1 74 Custom_ShearwaterBridge 59 23",
+                    "Delimiter": " "
+                }
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_ShearwaterBridge",
+            "FromFile": "assets/Patches/ES_ShearwaterBridgestrip.tmx",
+            "ToArea": {
+                "X": 59,
+                "Y": 14,
+                "Width": 1,
+                "Height": 12
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_EastScarpe",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "Warp"
+                    ],
+                    "Value": "-1 70 Custom_ShearwaterBridge 59 19 -1 71 Custom_ShearwaterBridge 59 20 -1 72 Custom_ShearwaterBridge 59 21 -1 73 Custom_ShearwaterBridge 59 22 -1 74 Custom_ShearwaterBridge 59 23",
+                    "Delimiter": " "
+                }
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+            }
+        },
+        { // Needs to overwrite so Grampleton isn't patched as well
+            "Action": "EditMap",
+            "Target": "Maps/Custom_ShearwaterBridge",
+            "MapProperties": {
+                "Warp": "-1 19 Town 118 72 -1 20 Town 118 72 -1 21 Town 118 72 -1 22 Town 118 72 -1 23 Town 118 72 60 19 Custom_EastScarpe 0 70 60 20 Custom_EastScarpe 0 71 60 21 Custom_EastScarpe 0 72 60 22 Custom_EastScarpe 0 73 60 23 Custom_EastScarpe 0 74"
+                // 60 24 Custom_EastScarpe 0 74 60 25 Custom_EastScarpe 0 74 60 26 Custom_EastScarpe 0 74"
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_EastScarpe",
+            "FromFile": "assets/Patches/GrampletonPatch.tmx",
+            "ToArea": {
+                "X": 77,
+                "Y": 32,
+                "Width": 8,
+                "Height": 4
+            },
+            "When": {
+                "HasMod |contains=flashshifter.GrampletonFields": true,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_GrampletonFields",
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 1,
+                        "Y": 110
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "TouchAction": "Warp Custom_EastScarpe 83 33"
+                    }
+                },
+                {
+                    "Position": {
+                        "X": 1,
+                        "Y": 111
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "TouchAction": "Warp Custom_EastScarpe 83 33"
+                    }
+                },
+                {
+                    "Position": {
+                        "X": 1,
+                        "Y": 112
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "TouchAction": "Warp Custom_EastScarpe 83 33"
+                    }
+                }
+            ],
+            "When": {
+                "HasMod |contains=flashshifter.GrampletonFields": true,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+            }
+        },
+        //Adds letter trigger to Aideen's 14 heart
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "ToArea": {
+                "X": "66",
+                "Y": "17",
+                "Width": 1,
+                "Height": 1
+            },
+            "FromFile": "assets/Patches/GardenScrap.tmx",
+            "PatchMode": "Overlay",
+            "When": {
+                "HasSeenEvent": "57871014",
+                "HasSeenEvent |contains=57871015": false,
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+            },
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 66,
+                        "Y": 17
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "MessageOnce 57871015 '{{i18n:aideen.scrappaper}}'"
+                    }
+                }
+            ]
+        },
+        //Fixes Charlie's schedule for Community Day
+        { //Charlie Community Day schedule
+            "Action": "EditData",
+            "Target": "characters/schedules/CharlieChicken",
+            "When": {
+                "HasSeenEvent |contains=191393": true,
+                "HasSeenEvent |contains=3900074": true,
+                "HasMod |contains=LemurKat.CommunityCenter.CP": false
+            },
+            "Entries": {
+                "22": "0 Custom_Charlie_WarpRoom 2 3 3/800 AnimalShop 23 15 1/1030 AnimalShop 16 14 2/1100 CommunityCenter 17 22 2 Charlie_Sleep/1800 CommunityCenter 9 26 3/1850 AnimalShop 26 6 2 Charlie_Sleep",
+            },
+        },
+        // H E R B E R T
+        /*{
+            //Adds patch for Town East so you can access Herbert if they are both loaded
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "FromFile": "assets/Patches/EastScarpeEntrance-SVE.tmx",
+            "ToArea": {
+                "X": 100,
+                "Y": 91,
+                "Width": 20,
+                "Height": 8
+            },
+            "When": {
+                "HasMod |contains=tiger.herbmapss": true
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 119,
+                        "Y": 93
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "TouchAction": "Warp Custom_Garden 2 20"
+                    }
+                },
+                {
+                    "Position": {
+                        "X": 119,
+                        "Y": 94
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "TouchAction": "Warp Custom_Garden 2 20"
+                    }
+                },
+                {
+                    "Position": {
+                        "X": 119,
+                        "Y": 95
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "TouchAction": "Warp Custom_Garden 2 20"
+                    }
+                }
+            ],
+            "When": {
+                "HasMod |contains=tiger.herbmapss": true
+            }
+        },*/
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "FromFile": "assets/Patches/Town_Herb_SVE.tmx",
+            "ToArea": {
+                "X": 112,
+                "Y": 91,
+                "Width": 8,
+                "Height": 14
+            },
+            "When": {
+                "HasMod |contains=tiger.herbmapss": true,
+                "HasSeenEvent |contains=5553210": false
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "FromFile": "assets/Patches/Town_Herbert_Joja.tmx",
+            "ToArea": {
+                "X": 112,
+                "Y": 91,
+                "Width": 16,
+                "Height": 14
+            },
+            "When": {
+                "HasMod |contains=tiger.herbmapss": true,
+                "HasSeenEvent": "5553210"
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "Warp"
+                    ],
+                    "Value": "120 100 Herbertsproperty 0 30 120 101 Herbertsproperty 0 30",
+                    "Delimiter": " "
+                }
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasMod |contains=tiger.herbmapss": true
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Herbertsproperty",
+            "MapProperties": {
+                "Warp": "-1 30 Town 119 100 -1 31 Town 119 101"
+            },
+            "When": {
+                "HasMod |contains=tiger.herbmapss": true,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+            }
+        }
+    ]
+}

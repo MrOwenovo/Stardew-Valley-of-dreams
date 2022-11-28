@@ -1,0 +1,198 @@
+{
+    "Changes": [
+    
+// FURNITURE ART
+		{
+			"LogName": "Furniture Edits - Festive Dining Table",
+            "Action": "EditImage",
+            "Target": "Tilesheets/Furniture",
+            "FromFile": "assets/Art/{{DesaturationConfig}}/{{TargetWithoutPath}}_Festive_Table.png",
+			"ToArea": { "X": 112, "Y": 404, "Width": 112, "Height": 156 },
+			"PatchMode": "Replace",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"FurnitureChanges": "true",
+			},
+		},
+		{
+			"LogName": "Furniture Edits - Tree of the Winter Star",
+            "Action": "EditImage",
+            "Target": "Tilesheets/Furniture",
+            "FromFile": "assets/Art/{{DesaturationConfig}}/{{TargetWithoutPath}}_Wishing_Tree.png",
+			"ToArea": { "X": 0, "Y": 720, "Width": 48, "Height": 80 },
+			"PatchMode": "Replace",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"FurnitureChanges": "true",
+			},
+		},
+		{
+			"LogName": "Furniture Edits - L. Light String",
+            "Action": "EditImage",
+            "Target": "Tilesheets/Furniture",
+            "FromFile": "assets/Art/{{DesaturationConfig}}/{{TargetWithoutPath}}_Winter_Star_Garland.png",
+			"ToArea": { "X": 272, "Y": 864, "Width": 32, "Height": 16 },
+			"PatchMode": "Replace",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"FurnitureChanges": "true",
+			},
+		},
+		{
+			"LogName": "Furniture Edits - Winter Tree Decal",
+            "Action": "EditImage",
+            "Target": "Tilesheets/Furniture",
+            "FromFile": "assets/Art/{{DesaturationConfig}}/{{TargetWithoutPath}}_Winter_Star_Decal.png",
+			"ToArea": { "X": 144, "Y": 976, "Width": 16, "Height": 30 },
+			"PatchMode": "Replace",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"FurnitureChanges": "true",
+			},
+		},
+		{
+			"LogName": "Furniture Edits - Winter Banner",
+            "Action": "EditImage",
+            "Target": "Tilesheets/Furniture",
+            "FromFile": "assets/Art/{{DesaturationConfig}}/{{TargetWithoutPath}}_Winter_Star_Banner.png",
+			"ToArea": { "X": 16, "Y": 1312, "Width": 16, "Height": 42 },
+			"PatchMode": "Replace",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"FurnitureChanges": "true",
+			},
+		},
+		{
+			"LogName": "Furniture Edits - Large Red Rug",
+            "Action": "EditImage",
+            "Target": "Tilesheets/Furniture",
+            "FromFile": "assets/Art/{{DesaturationConfig}}/{{TargetWithoutPath}}_Stardrop_Rug.png",
+			"ToArea": { "X": 224, "Y": 1392, "Width": 64, "Height": 48 },
+			"PatchMode": "Replace",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"FurnitureChanges": "true",
+			},
+		},
+		
+// FESTIVAL EDITS
+		{
+            "LogName": "Festivals Edits - Rug",
+            "Action": "EditImage",
+            "Target": "Maps/Festivals",
+            "FromFile": "assets/Art/{{DesaturationConfig}}/{{TargetWithoutPath}}_Winter_Star_Rug.png",
+			"ToArea": { "X": 1, "Y": 208, "Width": 62, "Height": 32 },
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+        },
+        {
+            "LogName": "Festivals Edits - Present Boxes & Candles",
+            "Action": "EditImage",
+            "Target": "Maps/Festivals",
+            "FromFile": "assets/Art/{{DesaturationConfig}}/{{TargetWithoutPath}}_Winter_Star_Candles.png",
+			"ToArea": { "X": 384, "Y": 352, "Width": 64, "Height": 16 },
+			"PatchMode": "Replace",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+        },
+        {
+            "LogName": "Festivals Edits - Garlands, Tables & Candy Canes",
+            "Action": "EditImage",
+            "Target": "Maps/Festivals",
+            "FromFile": "assets/Art/{{DesaturationConfig}}/{{TargetWithoutPath}}_Winter_Star_Table.png",
+			"ToArea": { "X": 288, "Y": 368, "Width": 160, "Height": 80 },
+			"PatchMode": "Replace",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+        },
+        {
+            "LogName": "Festivals Edits - Pierre's Stall",
+            "Action": "EditImage",
+            "Target": "Maps/Festivals",
+            "FromFile": "assets/Art/{{DesaturationConfig}}/{{TargetWithoutPath}}_Pierre_Stall.png",
+			"ToArea": { "X": 449, "Y": 439, "Width": 63, "Height": 28 },
+			"PatchMode": "Replace",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+        },
+        {
+            "LogName": "Festivals Edits - Tree Top",
+            "Action": "EditImage",
+            "Target": "Maps/Festivals",
+            "FromFile": "assets/Art/{{DesaturationConfig}}/{{TargetWithoutPath}}_Tree_Top.png",
+			"ToArea": { "X": 144, "Y": 288, "Width": 33, "Height": 32 },
+			"PatchMode": "Replace",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+        },
+        
+// CURSORS EDITS
+		{
+            "LogName": "Cursors Edits - Gift Box",
+            "Action": "EditImage",
+            "Target": "LooseSprites/Cursors",
+            "FromFile": "assets/Art/{{DesaturationConfig}}/{{TargetWithoutPath}}_Tupperware.png",
+			"ToArea": { "X": 288, "Y": 1231, "Width": 96, "Height": 16 },
+			"PatchMode": "Replace",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+        },
+        {
+            "LogName": "Cursors Edits - Santa",
+            "Action": "EditImage",
+            "Target": "LooseSprites/Cursors",
+            "FromFile": "assets/Art/{{TargetWithoutPath}}_WinterShootingStar.png",
+			"ToArea": { "X": 639, "Y": 803, "Width": 65, "Height": 10 },
+			"PatchMode": "Replace",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+        },
+        
+// MAP EDITS
+		{
+            "LogName": "Town Edits - Wreaths & Tinsel",
+            "Action": "EditImage",
+            "Target": "Maps/winter_town, Maps/winter_outdoorsTileSheet",
+            "FromFile": "assets/Art/{{DesaturationConfig}}/{{TargetWithoutPath}}_Overlay.png",
+			"PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"HasMod |contains= Gweniaczek.WayBackPT": false,
+			},
+        },
+		{
+            "LogName": "Town Edits - Christmas Tree",
+            "Action": "EditImage",
+            "Target": "Maps/winter_town",
+            "FromFile": "assets/Art/{{DesaturationConfig}}/{{TargetWithoutPath}}_Wishing_Tree.png",
+			"ToArea": { "X": 368, "Y": 432, "Width": 48, "Height": 80 },
+			"PatchMode": "Replace",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+        },
+	],
+}

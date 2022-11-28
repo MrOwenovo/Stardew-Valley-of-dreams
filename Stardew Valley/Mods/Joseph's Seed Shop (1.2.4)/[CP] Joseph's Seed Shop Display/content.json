@@ -1,0 +1,724 @@
+{
+    "Format": "1.19.0",
+    "DynamicTokens": [
+    {
+        "Name": "Seed Shop",
+        "Value": ""
+    },
+	],
+
+    "Changes": [
+	//Fall Seed Shop
+	{
+        "LogName": "Seed Shop- Fall - Closed Day - Week 1",
+        "Action": "Load",
+        "Target": "seedshop_Fall_Closed_Week1",
+        "FromFile": "assets/Maps/Fall_Closed.png",
+    },
+    {
+        "LogName": "Seed Shop Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/Maps/seedshop_Fall_Closed_Week1.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "6,7",
+                "Season": "fall",
+                "Time": "{{Range: 0600, 0850}}",
+				"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 33,
+            "Y": 60,
+            "Width": 5,
+            "Height": 5
+        },
+
+    },
+		{
+        "LogName": "Seed Shop- Fall - Closed Night - Week 1",
+        "Action": "Load",
+        "Target": "seedshop_Fall_Closed_Week1",
+        "FromFile": "assets/Maps/Fall_Closed.png",
+    },
+    {
+        "LogName": "Seed Shop Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/Maps/seedshop_Fall_Closed_Week1.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "6,7",
+                "Season": "fall",
+                "Time": "{{Range: 1810, 2600}}",
+            	"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 33,
+            "Y": 60,
+            "Width": 5,
+            "Height": 5
+        },
+
+    },
+		{
+        "LogName": "Seed Shop- Fall - Closed Day - Week 2",
+        "Action": "Load",
+        "Target": "seedshop_Fall_Closed_Week2",
+        "FromFile": "assets/Maps/Fall_Closed.png",
+    },
+    {
+        "LogName": "Seed Shop Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/Maps/seedshop_Fall_Closed_Week2.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "20, 21",
+                "Season": "fall",
+                "Time": "{{Range: 0600, 0850}}",
+            	"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 33,
+            "Y": 60,
+            "Width": 5,
+            "Height": 5
+        },
+
+    },
+		{
+        "LogName": "Seed Shop- Fall - Closed Night - Week 2",
+        "Action": "Load",
+        "Target": "seedshop_Fall_Closed_Week2",
+        "FromFile": "assets/Maps/Fall_Closed.png",
+    },
+    {
+        "LogName": "Seed Shop Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/Maps/seedshop_Fall_Closed_Week2.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "20, 21",
+                "Season": "fall",
+                "Time": "{{Range: 1810, 2600}}",
+            	"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 33,
+            "Y": 60,
+            "Width": 5,
+            "Height": 5
+        },
+
+    },
+		{
+        "LogName": "Seed Shop- Fall - Open - Week 1",
+        "Action": "Load",
+        "Target": "seedshop_Fall_Open_Week1",
+        "FromFile": "assets/Maps/Fall_Week1_Open.png",
+    },
+    {
+        "LogName": "Seed Shop Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/Maps/seedshop_Fall_Open_Week1.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "6,7",
+				"Weather": "Sun, Wind",
+                "Season": "fall",
+                "Time": "{{Range: 0900, 1800}}",
+            	"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 33,
+            "Y": 60,
+            "Width": 5,
+            "Height": 5
+        },
+
+    },
+			{
+        "LogName": "Seed Shop- Fall - Open Rain- Week 1",
+        "Action": "Load",
+        "Target": "seedshop_Fall_Open_Week1_Rain",
+        "FromFile": "assets/Maps/Fall_Week1_Rain_Open.png",
+    },
+    {
+        "LogName": "Seed Shop Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/Maps/seedshop_Fall_Open_Week1_Rain.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"FarmhouseUpgrade": "1",
+				"Day": "6,7",
+				"Weather": "Rain, Storm",
+                "Season": "fall",
+                "Time": "{{Range: 0900, 1800}}",
+            	"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 33,
+            "Y": 60,
+            "Width": 5,
+            "Height": 5
+        },
+
+    },
+			{
+        "LogName": "Seed Shop- Fall - Open - Week 2",
+        "Action": "Load",
+        "Target": "seedshop_Fall_Open_Week2",
+        "FromFile": "assets/Maps/Fall_Week2_Open.png",
+    },
+    {
+        "LogName": "Bridal Boutique Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/Maps/seedshop_Fall_Open_Week2.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "20, 21",
+				"Weather": "Sun, Wind",
+                "Season": "fall",
+                "Time": "{{Range: 0900, 1800}}",
+            	"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 33,
+            "Y": 60,
+            "Width": 5,
+            "Height": 5
+        },
+
+    },
+			{
+        "LogName": "Seed Shop- Fall - Open Rain- Week 2",
+        "Action": "Load",
+        "Target": "seedshop_Fall_Open_Week2_Rain",
+        "FromFile": "assets/Maps/Fall_Week2_Rain_Open.png",
+    },
+    {
+        "LogName": "Seed Shop Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/Maps/seedshop_Fall_Open_Week2_Rain.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "20, 21",
+				"Weather": "Rain, Storm",
+                "Season": "fall",
+                "Time": "{{Range: 0900, 1800}}",
+            	"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 33,
+            "Y": 60,
+            "Width": 5,
+            "Height": 5
+        },
+
+    },
+	//Spring Seed Shop
+		{
+        "LogName": "Seed Shop- Spring - Closed Day - Week 1",
+        "Action": "Load",
+        "Target": "seedshop_Spring_Closed_Week1",
+        "FromFile": "assets/Maps/Shop_Closed_Default.png",
+    },
+    {
+        "LogName": "Seed Shop Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/Maps/seedshop_Spring_Closed_Week1.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "6,7",
+                "Season": "spring",
+                "Time": "{{Range: 0600, 0850}}",
+            	"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 33,
+            "Y": 60,
+            "Width": 5,
+            "Height": 5
+        },
+
+    },
+		{
+        "LogName": "Seed Shop- Spring - Closed Night - Week 1",
+        "Action": "Load",
+        "Target": "seedshop_Spring_Closed_Week1",
+        "FromFile": "assets/Maps/Shop_Closed_Default.png",
+    },
+    {
+        "LogName": "Seed Shop Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/Maps/seedshop_Spring_Closed_Week1.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "6,7",
+                "Season": "spring",
+                "Time": "{{Range: 1810, 2600}}",
+            	"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 33,
+            "Y": 60,
+            "Width": 5,
+            "Height": 5
+        },
+
+    },
+		{
+        "LogName": "Seed Shop- Spring - Closed Day - Week 2",
+        "Action": "Load",
+        "Target": "seedshop_Spring_Closed_Week2",
+        "FromFile": "assets/Maps/Shop_Closed_Default.png",
+    },
+    {
+        "LogName": "Seed Shop Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/Maps/seedshop_Spring_Closed_Week2.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "20, 21",
+                "Season": "spring",
+                "Time": "{{Range: 0600, 0850}}",
+            	"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 33,
+            "Y": 60,
+            "Width": 5,
+            "Height": 5
+        },
+
+    },
+		{
+        "LogName": "Seed Shop- Spring - Closed Night - Week 2",
+        "Action": "Load",
+        "Target": "seedshop_Spring_Closed_Week2",
+        "FromFile": "assets/Maps/Shop_Closed_Default.png",
+    },
+    {
+        "LogName": "Seed Shop Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/Maps/seedshop_Spring_Closed_Week2.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "20, 21",
+                "Season": "spring",
+                "Time": "{{Range: 1810, 2600}}",
+            	"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 33,
+            "Y": 60,
+            "Width": 5,
+            "Height": 5
+        },
+
+    },
+		{
+        "LogName": "Seed Shop- Spring - Open - Week 1",
+        "Action": "Load",
+        "Target": "seedshop_Spring_Open_Week1",
+        "FromFile": "assets/Maps/Spring_Week1_Open.png",
+    },
+    {
+        "LogName": "Seed Shop Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/Maps/seedshop_Spring_Open_Week1.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "6,7",
+				"Weather": "Sun, Wind",
+                "Season": "spring",
+                "Time": "{{Range: 0900, 1800}}",
+            	"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 33,
+            "Y": 60,
+            "Width": 5,
+            "Height": 5
+        },
+
+    },
+			{
+        "LogName": "Seed Shop- Spring - Open Rain- Week 1",
+        "Action": "Load",
+        "Target": "seedshop_Spring_Open_Week1_Rain",
+        "FromFile": "assets/Maps/Spring_Week1_Rain_Open.png",
+    },
+    {
+        "LogName": "Seed Shop Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/Maps/seedshop_Spring_Open_Week1_Rain.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "6,7",
+				"Weather": "Rain, Storm",
+                "Season": "spring",
+                "Time": "{{Range: 0900, 1800}}",
+	            "HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 33,
+            "Y": 60,
+            "Width": 5,
+            "Height": 5
+        },
+
+    },
+			{
+        "LogName": "Seed Shop- Spring - Open - Week 2",
+        "Action": "Load",
+        "Target": "seedshop_Spring_Open_Week2",
+        "FromFile": "assets/Maps/Spring_Week2_Open.png",
+    },
+    {
+        "LogName": "Seed Shop Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/Maps/seedshop_Spring_Open_Week2.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "20, 21",
+				"Weather": "Sun, Wind",
+                "Season": "spring",
+                "Time": "{{Range: 0900, 1800}}",
+            	"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 33,
+            "Y": 60,
+            "Width": 5,
+            "Height": 5
+        },
+
+    },
+			{
+        "LogName": "Seed Shop- Spring - Open Rain- Week 2",
+        "Action": "Load",
+        "Target": "seedshop_Spring_Open_Week2_Rain",
+        "FromFile": "assets/Maps/Spring_Week2_Rain_Open.png",
+    },
+    {
+        "LogName": "Seed Shop Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/Maps/seedshop_Spring_Open_Week2_Rain.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "20, 21",
+				"Weather": "Rain, Storm",
+                "Season": "spring",
+                "Time": "{{Range: 0900, 1800}}",
+            	"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 33,
+            "Y": 60,
+            "Width": 5,
+            "Height": 5
+        },
+
+    },
+	//Summer Seed Shop
+			{
+        "LogName": "Seed Shop- Summer - Closed Day - Week 1",
+        "Action": "Load",
+        "Target": "seedshop_Summer_Closed_Week1",
+        "FromFile": "assets/Maps/Shop_Closed_Default.png",
+    },
+    {
+        "LogName": "Seed Shop Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/Maps/seedshop_Summer_Closed_Week1.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "6,7",
+                "Season": "summer",
+                "Time": "{{Range: 0600, 0850}}",
+            	"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 33,
+            "Y": 60,
+            "Width": 5,
+            "Height": 5
+        },
+
+    },
+		{
+        "LogName": "Seed Shop- Summer - Closed Night - Week 1",
+        "Action": "Load",
+        "Target": "seedshop_Summer_Closed_Week1",
+        "FromFile": "assets/Maps/Shop_Closed_Default.png",
+    },
+    {
+        "LogName": "Seed Shop Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/Maps/seedshop_Summer_Closed_Week1.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "6,7",
+                "Season": "summer",
+                "Time": "{{Range: 1810, 2600}}",
+            	"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 33,
+            "Y": 60,
+            "Width": 5,
+            "Height": 5
+        },
+
+    },
+		{
+        "LogName": "Seed Shop- Summer - Closed Day - Week 2",
+        "Action": "Load",
+        "Target": "seedshop_Summer_Closed_Week2",
+        "FromFile": "assets/Maps/Shop_Closed_Default.png",
+    },
+    {
+        "LogName": "Seed Shop Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/Maps/seedshop_Summer_Closed_Week2.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "20, 21",
+                "Season": "summer",
+                "Time": "{{Range: 0600, 0850}}",
+            	"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 33,
+            "Y": 60,
+            "Width": 5,
+            "Height": 5
+        },
+
+    },
+		{
+        "LogName": "Seed Shop- Summer - Closed Night - Week 2",
+        "Action": "Load",
+        "Target": "seedshop_Summer_Closed_Week2",
+        "FromFile": "assets/Maps/Shop_Closed_Default.png",
+    },
+    {
+        "LogName": "Seed Shop Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/Maps/seedshop_Summer_Closed_Week2.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "20, 21",
+                "Season": "summer",
+                "Time": "{{Range: 1810, 2600}}",
+            	"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 33,
+            "Y": 60,
+            "Width": 5,
+            "Height": 5
+        },
+
+    },
+		{
+        "LogName": "Seed Shop- Summer - Open - Week 1",
+        "Action": "Load",
+        "Target": "seedshop_Summer_Open_Week1",
+        "FromFile": "assets/Maps/Summer_Week1_Open.png",
+    },
+    {
+        "LogName": "Seed Shop Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/Maps/seedshop_Summer_Open_Week1.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "6,7",
+				"Weather": "Sun, Wind",
+                "Season": "summer",
+                "Time": "{{Range: 0900, 1800}}",
+            	"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 33,
+            "Y": 60,
+            "Width": 5,
+            "Height": 5
+        },
+
+    },
+			{
+        "LogName": "Seed Shop- Summer - Open Rain- Week 1",
+        "Action": "Load",
+        "Target": "seedshop_Summer_Open_Week1_Rain",
+        "FromFile": "assets/Maps/Summer_Week1_Rain_Open.png",
+    },
+    {
+        "LogName": "Seed Shop Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/Maps/seedshop_Summer_Open_Week1_Rain.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "6,7",
+				"Weather": "Rain, Storm",
+                "Season": "summer",
+                "Time": "{{Range: 0900, 1800}}",
+            	"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 33,
+            "Y": 60,
+            "Width": 5,
+            "Height": 5
+        },
+
+    },
+			{
+        "LogName": "Seed Shop- Summer - Open - Week 2",
+        "Action": "Load",
+        "Target": "seedshop_Summer_Open_Week2",
+        "FromFile": "assets/Maps/Summer_Week2_Open.png",
+    },
+    {
+        "LogName": "Seed Shop Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/Maps/seedshop_Summer_Open_Week2.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "20, 21",
+				"Weather": "Sun, Wind",
+                "Season": "summer",
+                "Time": "{{Range: 0900, 1800}}",
+            	"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 33,
+            "Y": 60,
+            "Width": 5,
+            "Height": 5
+        },
+
+    },
+			{
+        "LogName": "Seed Shop- Summer - Open Rain- Week 2",
+        "Action": "Load",
+        "Target": "seedshop_Summer_Open_Week2_Rain",
+        "FromFile": "assets/Maps/Summer_Week2_Rain_Open.png",
+    },
+    {
+        "LogName": "Seed Shop Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/Maps/seedshop_Summer_Open_Week2_Rain.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "20, 21",
+				"Weather": "Rain, Storm",
+                "Season": "summer",
+                "Time": "{{Range: 0900, 1800}}",
+            	"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 33,
+            "Y": 60,
+            "Width": 5,
+            "Height": 5
+        },
+
+    },
+  ]
+}

@@ -1,0 +1,250 @@
+[
+	// Spring
+	
+    {
+        "$ItemType": "Furniture",
+        "ID": "RabbitStandee",
+        "Type": "Decoration",
+        "Configurations": [
+            {
+                "Texture": "assets/spring.png:0",
+                "DisplaySize": {
+                    "X": 1,
+                    "Y": 3
+                },
+                "CollisionHeight": 1
+            }
+        ]
+    },
+    {
+        "$ItemType": "Furniture",
+        "ID": "Egg1",
+        "Type": "Decoration",
+        "Configurations": [
+            {
+                "Texture": "assets/spring.png:1",
+                "DisplaySize": {
+                    "X": 1,
+                    "Y": 1
+                },
+                "CollisionHeight": 1
+            }
+        ]
+    },
+    {
+        "$ItemType": "Furniture",
+        "ID": "Egg2",
+        "Type": "Decoration",
+        "Configurations": [
+            {
+                "Texture": "assets/spring.png:2",
+                "DisplaySize": {
+                    "X": 1,
+                    "Y": 1
+                },
+                "CollisionHeight": 1
+            }
+        ]
+    },
+    {
+        "$ItemType": "Furniture",
+        "ID": "Egg3",
+        "Type": "Decoration",
+        "Configurations": [
+            {
+                "Texture": "assets/spring.png:5",
+                "DisplaySize": {
+                    "X": 1,
+                    "Y": 1
+                },
+                "CollisionHeight": 1
+            }
+        ]
+    },
+    {
+        "$ItemType": "Furniture",
+        "ID": "Egg4",
+        "Type": "Decoration",
+        "Configurations": [
+            {
+                "Texture": "assets/spring.png:6",
+                "DisplaySize": {
+                    "X": 1,
+                    "Y": 1
+                },
+                "CollisionHeight": 1
+            }
+        ]
+    },
+    {
+        "$ItemType": "Furniture",
+        "ID": "FlowerBasket",
+        "Type": "Decoration",
+        "Configurations": [
+            {
+                "Texture": "assets/spring.png:9",
+                "DisplaySize": {
+                    "X": 1,
+                    "Y": 1
+                },
+                "CollisionHeight": 1
+            }
+        ]
+    },
+    {
+        "$ItemType": "Furniture",
+        "ID": "FlowerPot",
+        "Type": "Decoration",
+        "Configurations": [
+            {
+                "Texture": "assets/spring.png:10",
+                "DisplaySize": {
+                    "X": 1,
+                    "Y": 1
+                },
+                "CollisionHeight": 1
+            }
+        ]
+    },
+    {
+        "$ItemType": "Furniture",
+        "ID": "FlagRopeVertical",
+        "Type": "Decoration",
+        "Configurations": [
+            {
+                "Texture": "assets/spring.png:3",
+                "DisplaySize": {
+                    "X": 1,
+                    "Y": 5
+                },
+                "CollisionHeight": 4
+            }
+        ]
+    },
+    {
+        "$ItemType": "Furniture",
+        "ID": "FlagRopeHorizontal",
+        "Type": "Decoration",
+        "Configurations": [
+            {
+                "Texture": "assets/spring.png:2",
+                "DisplaySize": {
+                    "X": 3,
+                    "Y": 2
+                },
+                "CollisionHeight": 1
+            }
+        ]
+    },
+    {
+        "$ItemType": "Furniture",
+        "ID": "SpringTable1",
+        "Type": "Table",
+        "Configurations": [
+            {
+                "Texture": "assets/tables.png:3",
+                "DisplaySize": {
+                    "X": 2,
+                    "Y": 5
+                },
+                "CollisionHeight": 4
+            }
+        ]
+    },
+    {
+        "$ItemType": "Furniture",
+        "ID": "SpringTable2",
+        "Type": "Table",
+        "Configurations": [
+            {
+                "Texture": "assets/tables.png:4",
+                "DisplaySize": {
+                    "X": 2,
+                    "Y": 5
+                },
+                "CollisionHeight": 4
+            }
+        ]
+    },
+    {
+        "$ItemType": "Furniture",
+        "ID": "SpringTable3",
+        "Type": "Table",
+        "Configurations": [
+            {
+                "Texture": "assets/springtableanim.png:0..1@30",
+                "DisplaySize": {
+                    "X": 5,
+                    "Y": 4
+                },
+                "CollisionHeight": 3
+            }
+        ]
+    },
+    {
+        "$ItemType": "Furniture",
+        "ID": "SpringTable4",
+        "Type": "Table",
+        "Configurations": [
+            {
+                "Texture": "assets/tables.png:50",
+                "DisplaySize": {
+                    "X": 1,
+                    "Y": 1
+                },
+                "CollisionHeight": 1
+            }
+        ]
+    },
+    {
+        "$ItemType": "Furniture",
+        "ID": "SpringTable5",
+        "Type": "Table",
+        "Configurations": [
+            {
+                "Texture": "assets/tables.png:51",
+                "DisplaySize": {
+                    "X": 1,
+                    "Y": 1
+                },
+                "CollisionHeight": 1
+            }
+        ]
+    },
+	{
+        "$ItemType": "Fence",
+        "ID": "SpringFence",
+        "ObjectTexture": "assets/fences.png:0",
+        "PlacedTilesheet": "assets/fence_spring.png",
+        "MaxHealth": 200,
+        "RepairMaterial": {
+            "Type": "VanillaObject",
+            "Value": 428
+        },
+        "BreakTool": "Pickaxe",
+        "PlacementSound": "axchop",
+        "RepairSound": "sewing_loop"
+    },
+	{
+        "$ItemType": "CraftingRecipe",
+        "ID": "Flag Garland Fence",
+        "Result": {
+            "Value": "NotOnLand.DGA.HolidayFurniture/SpringFence",
+            "Quantity": 10
+        },
+        "Ingredients": [
+            {
+                "Type": "VanillaObject",
+				"NameOverride": "Cloth",
+                "Value": 428,
+				"Quantity": 1
+            },
+            {
+                "Type": "VanillaObject",
+				"NameOverride": "Wood",
+                "Value": 388,
+				"Quantity": 10
+            }
+        ]
+    },
+]

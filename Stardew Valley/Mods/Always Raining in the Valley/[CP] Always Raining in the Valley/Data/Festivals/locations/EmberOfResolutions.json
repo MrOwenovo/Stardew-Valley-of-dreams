@@ -1,0 +1,58 @@
+{
+    "Changes": [
+    
+        {
+       "Action": "EditData",
+       "Target": "Data/Festivals/winter28",
+       "When":
+                        { "HasMod":"Rafseazz.RSVCP",
+                          "HasSeenEvent |contains= 40180008": false,},
+       "TextOperations": [
+       
+       //SetUp
+            {
+             "Operation": "Append",
+             "Target": ["Entries", "Set-Up_additionalCharacters"],
+             "Value": "Sterling 30 28 down/Henry 27 29 right/Mia 36 28 down",
+             "Delimiter": "/"
+            },
+        
+       //MainEvent
+            {
+             "Operation": "Append",
+             "Target": ["Entries", "MainEvent_additionalCharacters"],
+             "Value": "Sterling 51 43 left/Henry 51 45 left/Mia 51 44 left ",
+             "Delimiter": "/"
+            },
+    
+        ]	
+        },
+
+        
+       {"Action": "EditData",
+       "Target": "Data/Festivals/winter28",
+       "When":
+                        { "HasMod":"Rafseazz.RSVCP",
+                          "HasSeenEvent |contains= 40180008": true,},
+       "TextOperations": [
+       
+       //SetUp
+            {
+             "Operation": "Append",
+             "Target": ["Entries", "Set-Up_additionalCharacters"],
+             "Value": "Sterling 28 28 down/Henry 27 29 right/Mia 36 28 down",
+             "Delimiter": "/"
+            },
+        
+       //MainEevent
+            {
+             "Operation": "Append",
+             "Target": ["Entries", "MainEvent_additionalCharacters"],
+             "Value": "Sterling 51 43 left/Henry 51 45 left/Mia 51 44 left",
+             "Delimiter": "/"
+            },
+    
+        ]	
+        },
+    ]
+    }

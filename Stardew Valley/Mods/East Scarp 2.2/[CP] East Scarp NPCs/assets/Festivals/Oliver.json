@@ -1,0 +1,198 @@
+{
+    "Changes": [
+        //When Stefan is added, he and Oliver can hang out together
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter8",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "OliverK 83 51 2",
+                    "Delimiter": "/"
+                }
+            ],
+        },
+        {
+            "LogName": "Ice Festival Dialogue",
+            "Action": "EditData",
+            "Target": "data/festivals/winter8",
+            "Entries": {
+                "OliverK": "{{i18n:festivals.oliver.winter8}}"
+            },
+            "When": {
+                "HasSeenEvent |contains=57873005": false
+            }
+        },
+        {
+            "LogName": "Ice Festival Dialogue",
+            "Action": "EditData",
+            "Target": "data/festivals/winter8",
+            "Entries": {
+                "OliverK": "{{i18n:festivals.oliver.winter8.3005}}",
+                "Eloise": "{{i18n:festivals.eloise.winter8.3005}}"
+            },
+            "When": {
+                "HasSeenEvent |contains=57873005": true
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter25",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "OliverK 36 72 0",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        {
+            "LogName": "Winter Star Dialogue",
+            "Action": "EditData",
+            "Target": "data/festivals/winter25",
+            "Entries": {
+                "OliverK": "{{i18n:festivals.oliver.winter25}}"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring13",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "OliverK 32 89 3",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        {
+            "LogName": "Egg Festival Dialogue",
+            "Action": "EditData",
+            "Target": "data/festivals/spring13",
+            "Entries": {
+                "OliverK": "{{i18n:festivals.oliver.spring13.{{LexiOllyFriend}}}}"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring24",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "OliverK 49 18 1",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        {
+            "LogName": "Ice Festival Dialogue",
+            "Action": "EditData",
+            "Target": "data/festivals/spring24",
+            "Entries": {
+                "OliverK": "{{i18n:festivals.oliver.spring24}}"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer28",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "OliverK 90 40 1",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        {
+            "LogName": "Jellies Dialogue",
+            "Action": "EditData",
+            "Target": "data/festivals/summer28",
+            "Entries": {
+                "OliverK": "{{i18n:festivals.oliver.summer28}}"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer28",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "Leximonster 102 40 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "set-up",
+                        8
+                    ],
+                    "Value": "swimming Leximonster",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasSeenEvent": "57872012"
+            }
+        },
+        {
+            "LogName": "Jellies Dialogue",
+            "Action": "EditData",
+            "Target": "data/festivals/summer28",
+            "When": {
+                "HasSeenEvent": "57872012"
+            },
+            "Entries": {
+                "OliverK": "{{i18n:festivals.oliver.summer28.2012}}",
+                "Leximonster": "{{i18n:festivals.lexi.summer28}}"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall16",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "OliverK 54 75 3",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        {
+            "LogName": "fair Dialogue",
+            "Action": "EditData",
+            "Target": "data/festivals/fall16",
+            "Entries": {
+                "OliverK": "{{i18n:festivals.oliver.fall16}}"
+            }
+        }
+    ]
+}

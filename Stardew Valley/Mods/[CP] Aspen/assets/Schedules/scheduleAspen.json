@@ -1,0 +1,30 @@
+//Schedule before the railroad is open
+//(0 = up, 1 = right, 2 = down, 3 = left)
+
+{
+    //Summer schedule (Year 1) --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    //Summer 3rd (when she moves)
+    "summer_3": "0 Custom_AspenHouse 19 5 2/610 Custom_AspenHouse 19 5 2/830 Custom_AspenHouse 32 14 0/930 Custom_AspenFarm 40 11 0/1100 Custom_AspenFarm 43 11 0/1130 Custom_AspenFarm 46 11 0/1200 Custom_AspenFarm 20 7 2 aspen_reading \"Strings\\schedules\\Aspen:Custom_AspenFarm.000\"/1530 Mountain 30 9 3/1900 Custom_AspenHouse 8 4 2 aspen_reading_couch",
+
+    //Aspen leaves house early at 830 to get to the aerobics session on time. Afterwards at 4 she to the saloon.
+    "Tue": "610 Custom_AspenHouse 19 5 2/800 Custom_AspenHouse 32 14 0 aspen_exercise/830 SeedShop 28 17 3 \"Strings\\schedules\\Aspen:seedshop.001\"/1300 SeedShop 23 19 2 aspen_exercise \"Strings\\schedules\\Aspen:seedshop.002\"/1600 Town 26 21 2 aspen_sitting_drinking \"Strings\\schedules\\Aspen:town.000\"/1800 Custom_AspenHouse 8 4 2 aspen_reading_couch",
+    //Leaves house early, checks on cows, hangs at saloon with gus
+    "Thur": "610 Custom_AspenHouse 19 5 2/830 Custom_AspenHouse 32 14 0/930 Forest 93 20 1 aspen_kicking \"Strings\\schedules\\Aspen:cows.001\"/1400 AnimalShop 12 16 0/1600 Saloon 11 20 0/2200 Custom_AspenHouse 8 4 2 aspen_reading_couch",
+    //Leaves house early, sits on fence to watch cows until 2, goes and talks to Marnie until 4, goes to the saloon to say hi to Gus until 8, goes home and reads book on couch
+    "Sat": "610 Custom_AspenHouse 19 5 2/830 Custom_AspenHouse 32 14 0/930 Forest 93 20 1 aspen_kicking \"Strings\\schedules\\Aspen:cows.001\"/1400 AnimalShop 12 16 0/1600 Saloon 11 20 0/2000 Custom_AspenHouse 8 4 2 aspen_reading_couch",
+    //Thinking she will do her morning routine, check on bees, reads book on picnic blanket, hang out with linus by tent, goes home at 7
+    "summer": "610 Custom_AspenHouse 19 5 2/830 Custom_AspenHouse 32 14 0/930 Custom_AspenFarm 40 11 0/1100 Custom_AspenFarm 43 11 0/1130 Custom_AspenFarm 46 11 0/1200 Custom_AspenFarm 20 7 2 aspen_reading \"Strings\\schedules\\Aspen:Custom_AspenFarm.000\"/1530 Mountain 30 9 3/1900 Custom_AspenHouse 8 4 2 aspen_reading_couch",
+    //Stays at home, reads book in her little library
+    "rain": "610 Custom_AspenHouse 19 5 2/900 Custom_AspenHouse 8 4 2 aspen_reading_couch",
+
+    //Fall schedule (Year 1) --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    "fall": "GOTO summer",
+    "fall_rain": "GOTO rain",
+
+    //Winter schedule (Year 1) --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    "winter": "GOTO summer",
+
+    //Spring schedule (After Year 1) --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    "spring": "GOTO summer",
+    "spring_rain": "GOTO rain",
+}

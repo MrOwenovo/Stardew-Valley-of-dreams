@@ -1,0 +1,208 @@
+{
+    "Changes": [
+        // E G G   F E S T I V A L
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring13",
+            "TextOperations": [
+                {   // SET-UP FOR INITIAL PHASE (WHEN FARMER IS INTERACTING)
+                    "Operation": "Append",
+                    "Target": [  "Entries", "Set-Up_additionalCharacters" ],
+                    "Value": "<CHAR> X Y FACING",
+                    "Delimiter": "/"
+                },
+                {   // MAINEVENT FOR SECOND PART (NOTE NAME MAY VARY BETWEEN MAPS)
+                    "Operation": "Append",
+                    "Target": [  "Entries",  "MainEvent_additionalCharacters"  ],
+                    "Value": "<CHAR> X Y FACING",
+                    "Delimiter": "/"
+                }
+            ],
+            //Remove these braces if you need to change your festival positions for SVE installed. You will need two entries: one true, one false!
+            /*"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+                OR
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+			}*/ 
+        },
+        {
+			"LogName": "EggFest Dialogue",
+			"Action": "EditData",
+			"Target": "data/festivals/spring13",
+			"Entries": {
+				"<CHAR>": "Char dialogue here"
+			}
+		},
+        // F L O W E R   D A N C E
+        {   
+            //IF you do not have a MainEvent position set, your char sprite will not appear in the Flower Dance, should you (or someone) dance with them.
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring24",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [ "Entries","Set-Up_additionalCharacters" ],
+                    "Value": "<CHAR> X Y FACING",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [ "Entries","MainEvent_additionalCharacters"  ],
+                    "Value": "<CHAR> X Y FACING",
+                    "Delimiter": "/"
+                }
+            ], 
+            /*"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+                OR
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+			}*/
+        },
+        {
+			"LogName": "Flower Dance Dialogue",
+			"Action": "EditData",
+			"Target": "data/festivals/spring24",
+			"Entries": {
+				"<CHAR>": "Char dialogue here"
+			}
+		},
+        // L U A
+        {
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer11",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": ["Entries","Set-Up_additionalCharacters"],
+					"Value": "<CHAR> X Y FACING",
+					"Delimiter": "/"
+				},
+				{
+					"Operation": "Append",
+					"Target": ["Entries","MainEvent_additionalCharacters"	],
+					"Value": "<CHAR> X Y FACING",
+					"Delimiter": "/"
+				}
+			]
+		},
+        {
+			"LogName": "Lua Dialogue",
+			"Action": "EditData",
+			"Target": "data/festivals/summer11",
+			"Entries": {
+				"<CHAR>": "Char dialogue here"
+			}
+		},
+        // M O O N L I G H T   J E L L I E S
+        {
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer28",
+			"TextOperations": [
+				{   // I have not added a MainEvent to this one, since the waterfront area is V crowded already and very little of the map is visible.
+					"Operation": "Append",
+					"Target": [ 	"Entries", "Set-Up_additionalCharacters" 	],
+					"Value": "<CHAR> X Y FACING",
+					"Delimiter": "/"
+				}
+			]
+		},    {
+			"LogName": "Jellies Dialogue",
+			"Action": "EditData",
+			"Target": "data/festivals/summer28",
+			"Entries": {
+				"<CHAR>": "Char dialogue here"
+			}
+		},
+        // S T A R D E W   F A I R
+        {
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall16",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [	"Entries","Set-Up_additionalCharacters"
+					],
+					"Value": "<CHAR> X Y FACING",
+					"Delimiter": "/"
+				}
+			]
+		},
+        {
+			"LogName": "Fair Dialogue",
+			"Action": "EditData",
+			"Target": "data/festivals/fall16",
+			"Entries": {
+				"<CHAR>": "Char dialogue here"
+			}
+		},
+        // S P I R I T ' S   E V E
+        {
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall27",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": ["Entries",	"Set-Up_additionalCharacters"],
+					"Value": "<CHAR> X Y FACING",
+					"Delimiter": "/"
+				}
+			]
+		},
+        {
+			"LogName": "Spirit's Eve Dialogue",
+			"Action": "EditData",
+			"Target": "data/festivals/fall27",
+			"Entries": {
+				"<CHAR>": "Char dialogue here"
+			}
+		},
+        // I C E   F E S T I V A L
+        {
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter8",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": ["Entries","Set-Up_additionalCharacters"],
+					"Value": "<CHAR> X Y FACING",
+					"Delimiter": "/"
+				},
+                {   // Note the spelling of "Main-Event" here differs from the others
+					"Operation": "Append",
+					"Target": [	"Entries","Main-Event_additionalCharacters"	],
+					"Value": "<CHAR> X Y FACING",
+					"Delimiter": "/"
+				}
+			]
+		},
+        {
+			"LogName": "IceFest Dialogue",
+			"Action": "EditData",
+			"Target": "data/festivals/winter8",
+			"Entries": {
+				"<CHAR>": "Char dialogue here"
+			}
+		},
+        // W I N T E R   S T A R
+        {
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter25",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [	"Entries","Set-Up_additionalCharacters"	],
+					"Value": "<CHAR> X Y FACING",
+					"Delimiter": "/"
+				}
+			]
+        },
+        {
+			"LogName": "Winterstar Dialogue",
+			"Action": "EditData",
+			"Target": "data/festivals/winter25",
+			"Entries": {
+				"<CHAR>": "Char dialogue here"
+			}
+		},
+    ]
+}

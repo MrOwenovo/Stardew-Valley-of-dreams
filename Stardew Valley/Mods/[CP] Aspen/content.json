@@ -1,0 +1,114 @@
+{
+	"Format": "1.25",
+    "DynamicTokens": [
+		//Used to change the ground color for her garden
+		{
+			"Name": "color",
+			"Value": "default"
+		},
+
+		{
+			"Name": "color",
+			"Value": "StarblueValley",
+			"When": {
+				"HasMod": "Lita.StarblueValley"
+			}
+		},
+
+		{
+			"Name": "outfit",
+			"Value": "spring",
+			"When": {
+				"AspenDefaultOutfit": "spring"
+			}
+		},
+
+		{
+			"Name": "outfit",
+			"Value": "summer",
+			"When": {
+				"AspenDefaultOutfit": "summer"
+			}
+		},
+	],
+
+	"ConfigSchema": {
+		//Configuration options ---------------------------------------
+		//Lets Aspen participate in the egg hunt
+		"AspenEggHunt": {
+			"AllowValues": "true, false",
+			"Default": "true"
+		},
+		
+		//Seasonal outfits
+		"AspenSeasonalOutfits": {
+			"AllowValues": "true, false",
+			"Default": "true"
+		},
+	
+		//Sets Aspen's default outfit
+		"AspenDefaultOutfit": {
+			"AllowValues": "spring, summer",
+			"Default": "summer"
+		},
+	},
+  
+   "CustomLocations": [
+	   //Adds Aspen's Farm ------------------------------------------
+		{
+		   "Name": "Custom_AspenFarm",
+		   "FromMapFile": "assets/Maps/AspenFarmRedux.tbin",
+		   "MigrateLegacyNames": ["AspenFarm"]
+		},
+
+		{
+			"Name": "Custom_AspenHouse",
+         	"FromMapFile": "assets/Maps/AspenHouse.tbin",
+		 	"MigrateLegacyNames": ["AspenHouse"]
+        }
+	],
+
+	"Changes": [
+		//Loads map changes
+		{
+			"LogName": "Aspen map's Changes",
+			"Action": "Include",
+			"FromFile": "assets/Maps/MapChanges.json"
+		},
+
+		//Loads her data
+		{
+			"LogName": "Aspen's data",
+			"Action": "Include",
+			"FromFile": "assets/Characters/AspenData.json"
+		},
+
+		//Loads her festival data
+		{
+			"LogName": "Aspen's festival data",
+			"Action": "Include",
+			"FromFile": "assets/Events/FestivalData.json"
+		},
+
+		//Loads her event data
+		{
+			"LogName": "Aspen's event data",
+			"Action": "Include",
+			"FromFile": "assets/Events/EventData.json"
+		},
+
+		//Loads villager changes
+		{
+			"LogName": "Villager changes",
+			"Action": "Include",
+			"FromFile": "assets/Characters/VillagerChanges.json"
+		},
+
+		//Loads custom mail
+		{
+			"LogName": "Aspen mail",
+			"Action": "Include",
+			"FromFile": "assets/Dialogue/CustomMail.json"
+		}
+   ]
+}

@@ -1,0 +1,208 @@
+{
+     "Changes": 
+    [
+
+//Max East Scarpe Summer
+
+    //Sleeping in Dog house
+    {
+        "LogName": "Max Sleeps in his DogHouse",
+        "Action": "EditMap",
+        "Target": "Maps/Custom_EastScarpe",
+        "MapTiles": [
+                    {
+            "Position": {
+                "X": "26",
+                "Y": "45"
+                },
+            "Layer": "Back",
+            "SetProperties": {
+            "CustomCompanions": "Spawn 1 Himetarts.ARVCC.SleepDogOutside"
+                       },
+                    },
+                 ],
+              "When": 
+                {"Weather":"Sun",
+                 "Season": "Summer",
+                 "DayOfWeek": "Monday, Wednesday, Friday"},
+            
+               "Update": "OnLocationChange"
+    },
+
+    //Running outside
+    {
+        "LogName": "Max Runs around",
+        "Action": "EditMap",
+        "Target": "Maps/Custom_EastScarpe",
+        "MapTiles": [
+                    {
+            "Position": {
+                "X": "26",
+                "Y": "47"
+                },
+            "Layer": "Back",
+            "SetProperties": {
+            "CustomCompanions": "Spawn 1 Himetarts.ARVCC.HenryDogOutside"
+                       },
+                    },
+                 ],
+              "When": 
+                {"Weather":"Sun",
+                 "Season": "Summer",
+                 "DayOfWeek": "Tuesday, Thursday, Saturday, Sunday"},
+            
+               "Update": "OnLocationChange"
+    },
+
+//Max Wander
+
+     //Tuesday
+      	{
+            "LogName": "Max's Spawn Tue",
+            "Action": "EditMap",
+            "Target": "Maps/Custom_ARVHouse",
+            "MapTiles": [
+                    {
+                       "Position": {
+                  "X": "13",
+                  "Y": "21"
+                    },
+                       "Layer": "Back",
+                       "SetProperties": {
+                          "CustomCompanions": "Spawn 1 Himetarts.ARVCC.HenryDogIdle"
+                       },
+                    },
+                 ],
+             "When": { "DayOfWeek": "Tuesday",
+            "Weather":"Sun, Wind, Snow" },
+            "Season": "Spring, Fall, Winter",
+             "Update": "OnLocationChange"
+        },
+     //Wednesday
+        {
+              "LogName": "Max's spawn Wed",
+              "Action": "EditMap",
+              "Target": "Maps/Custom_ARVHouse",
+              "MapTiles": [
+                      {
+                         "Position": {
+                    "X": "20",
+                    "Y": "23"
+                      },
+                         "Layer": "Back",
+                         "SetProperties": {
+                            "CustomCompanions": "Spawn 1 Himetarts.ARVCC.HenryDogIdle"
+                         },
+                      },
+                   ],
+               "When": { "DayOfWeek": "Wednesday", 
+               "Weather":"Sun, Wind, Snow" },
+               "Update": "OnLocationChange"
+        },
+     //Sunday
+        {
+            "LogName": "Max's spawn Sun",
+            "Action": "EditMap",
+            "Target": "Maps/Custom_ARVHouse",
+            "MapTiles": [
+                    {
+                       "Position": {
+                  "X": "18",
+                  "Y": "20"
+                    },
+                       "Layer": "Back",
+                       "SetProperties": {
+                          "CustomCompanions": "Spawn 1 Himetarts.ARVCC.HenryDogIdle"
+                       },
+                    },
+                 ],
+             "When": { "DayOfWeek": "Sunday",
+             "Weather":"Sun, Wind, Snow" },
+             "Season": "Spring, Fall, Winter",
+             "Update": "OnLocationChange"
+        },
+          
+//Max Set path
+
+     //Monday Friday
+        {
+         "LogName": "Max Path Henry's Room",
+        "Action": "EditMap",
+        "Target": "Maps/Custom_ARVHouse",
+            "MapTiles": [
+                    {
+                    "Position": {
+                  "X": "8",
+                  "Y": "7"
+                    },
+                "Layer": "Back",
+                "SetProperties": {
+                        "CustomCompanions": "Spawn 1 Himetarts.ARVCC.HenryDogPath"
+                       },
+                    },
+                 ],
+                 "When": { "DayOfWeek": "Monday, Friday", 
+                           "Weather": "Sun, Wind, Snow" },
+                           "Season": "Spring, Fall, Winter",
+                 "Update": "OnLocationChange" 
+             
+        }, 
+    //Thursday, Saturday
+        {
+            "LogName": "Max Path Sterling's Room",
+            "Action": "EditMap",
+            "Target": "Maps/Custom_ARVHouse",
+            "MapTiles": [
+                    {
+                       "Position": {
+                  "X": "20",
+                  "Y": "22"
+                    },
+                       "Layer": "Back",
+                       "SetProperties": {
+                          "CustomCompanions": "Spawn 1 Himetarts.ARVCC.HenryDogPath"
+                       },
+                    },
+                 ],
+                 "When": { "DayOfWeek": "Thursday, Saturday",
+                            "Weather":"Sun, Wind, Snow" },
+                            "Season": "Spring, Fall, Winter",
+                 "Update": "OnLocationChange" 
+                
+        }, 
+        {
+            "LogName": "Max goes to Sterling's room",
+            "Action": "EditData",
+            "Target": "{{PeacefulEnd.CustomCompanions/Companions:Himetarts.ARVCC.HenryDogPath}}",
+            "Entries": { 
+                "IdleArguments": [27, 5, 180000, 0],
+                    },
+            "When": { "DayOfWeek": "Thursday, Saturday",
+                        "Weather":"Sun, Wind, Snow", 
+                        "Season": "Spring, Fall, Winter"},
+             "Update": "OnLocationChange" 
+        },
+  
+     //Max Sleep Rainy
+        {
+        "LogName": "Makes Max sleep on rainy days",
+        "Action": "EditMap",
+        "Target": "Maps/Custom_ARVHouse",
+        "MapTiles": [
+                    {
+            "Position": {
+                "X": "1",
+                "Y": "7"
+                },
+            "Layer": "Back",
+            "SetProperties": {
+            "CustomCompanions": "Spawn 1 Himetarts.ARVCC.SleepHenryDog"
+                       },
+                    },
+                 ],
+              "When": 
+              {"Weather":"Rain, Storm"},
+             "Update": "OnLocationChange"
+          },
+    ]
+}

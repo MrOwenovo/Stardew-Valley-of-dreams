@@ -1,0 +1,893 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="29" height="22" tilewidth="16" tileheight="16" infinite="0" nextlayerid="21" nextobjectid="102">
+ <editorsettings>
+  <export target="JojaHQOffices.tmx" format="tmx"/>
+ </editorsettings>
+ <properties>
+  <property name="AmbientLight" value="75 75 75"/>
+  <property name="Music" value="jojaOfficeSoundscape"/>
+  <property name="Warp" value="13 20 Custom_DTZ_CrossNorth 69 25 14 20 Custom_DTZ_CrossNorth 69 25 15 20 Custom_DTZ_CrossNorth 69 25"/>
+ </properties>
+ <tileset firstgid="1" name="Paths" tilewidth="16" tileheight="16" tilecount="36" columns="4">
+  <image source="paths" width="64" height="144"/>
+ </tileset>
+ <tileset firstgid="37" name="DesertTiles" tilewidth="16" tileheight="16" tilecount="368" columns="16">
+  <image source="DesertTiles.png" width="256" height="368"/>
+ </tileset>
+ <tileset firstgid="405" name="MovieTheaterJoja_TileSheet" tilewidth="16" tileheight="16" tilecount="256" columns="16">
+  <image source="MovieTheaterJoja_TileSheet.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="661" name="DoorToRight.png" tilewidth="16" tileheight="16" tilecount="64" columns="8">
+  <image source="DoorToRight.png" width="128" height="128"/>
+ </tileset>
+ <tileset firstgid="725" name="Festivals" tilewidth="16" tileheight="16" tilecount="1024" columns="32">
+  <image source="Festivals.png" width="512" height="512"/>
+ </tileset>
+ <tileset firstgid="1749" name="spring_extra3" tilewidth="16" tileheight="16" tilecount="10000" columns="100">
+  <image source="spring_extra3.png" width="1600" height="1600"/>
+  <tile id="1434">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2100">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2101">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2102">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2103">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2104">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2105">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2106">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2107">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2200">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2201">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2202">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2203">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2204">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2205">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2206">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2207">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2300">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2301">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2302">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2303">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2304">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2305">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2306">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2307">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2400">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2401">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2402">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2403">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2404">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2405">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2406">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2407">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2439">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2440">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2441">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2442">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2443">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2444">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2445">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2539">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2540">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2541">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2542">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2543">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2544">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2545">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2639">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2640">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2641">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2642">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2643">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2644">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2645">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2739">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2740">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2741">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2742">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2743">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2744">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2745">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="3000">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="3001">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="3002">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="3003">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="3004">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="3005">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="3006">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="3007">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="11749" name="spring_town" tilewidth="16" tileheight="16" tilecount="2304" columns="32">
+  <image source="spring_town.png" width="512" height="1152"/>
+ </tileset>
+ <tileset firstgid="14053" name="CharwiesExtras" tilewidth="16" tileheight="16" tilecount="1152" columns="24">
+  <image source="CharwiesExtras.png" width="384" height="768"/>
+ </tileset>
+ <tileset firstgid="15205" name="Craftables" tilewidth="16" tileheight="16" tilecount="576" columns="8">
+  <image source="Craftables.png" width="128" height="1152"/>
+ </tileset>
+ <tileset firstgid="15781" name="furniture" tilewidth="16" tileheight="16" tilecount="2976" columns="32">
+  <image source="furniture.png" width="512" height="1488"/>
+ </tileset>
+ <tileset firstgid="18757" name="JojaEnergy" tilewidth="16" tileheight="16" tilecount="640" columns="32">
+  <image source="spring_JojaEnergy.png" width="512" height="320"/>
+ </tileset>
+ <tileset firstgid="19397" name="JojaEnergyInterior" tilewidth="16" tileheight="16" tilecount="345" columns="23">
+  <image source="JojaEnergyInterior.png" width="368" height="240"/>
+ </tileset>
+ <tileset firstgid="19742" name="JojaEnergyWashroom" tilewidth="16" tileheight="16" tilecount="63" columns="9">
+  <image source="JojaEnergyWashroom.png" width="144" height="112"/>
+ </tileset>
+ <tileset firstgid="19805" name="townInterior" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="townInterior.png" width="512" height="1088"/>
+ </tileset>
+ <tileset firstgid="21981" name="townInterior_2" tilewidth="16" tileheight="16" tilecount="128" columns="32">
+  <image source="townInterior_2.png" width="512" height="64"/>
+ </tileset>
+ <tileset firstgid="22109" name="walls_and_floors" tilewidth="16" tileheight="16" tilecount="560" columns="16">
+  <image source="walls_and_floors.png" width="256" height="560"/>
+ </tileset>
+ <tileset firstgid="22669" name="springobjects" tilewidth="16" tileheight="16" tilecount="936" columns="24">
+  <image source="springobjects.png" width="384" height="624"/>
+ </tileset>
+ <tileset firstgid="23605" name="furniturereverse" tilewidth="16" tileheight="16" tilecount="2976" columns="32">
+  <image source="furniturereverse.png" width="512" height="1488"/>
+ </tileset>
+ <tileset firstgid="26581" name="items" tilewidth="16" tileheight="16" tilecount="15625" columns="125">
+  <image source="items.png" width="2000" height="2000"/>
+  <tile id="500">
+   <animation>
+    <frame tileid="500" duration="400"/>
+    <frame tileid="501" duration="400"/>
+    <frame tileid="502" duration="400"/>
+    <frame tileid="503" duration="400"/>
+    <frame tileid="504" duration="400"/>
+    <frame tileid="505" duration="400"/>
+    <frame tileid="506" duration="400"/>
+    <frame tileid="507" duration="400"/>
+   </animation>
+  </tile>
+  <tile id="625">
+   <animation>
+    <frame tileid="625" duration="400"/>
+    <frame tileid="626" duration="400"/>
+    <frame tileid="627" duration="400"/>
+    <frame tileid="628" duration="400"/>
+   </animation>
+  </tile>
+ </tileset>
+ <tileset firstgid="42206" name="ZuzuPermitOffice" tilewidth="16" tileheight="16" tilecount="99" columns="9">
+  <image source="ZuzuPermitOffice.png" width="144" height="176"/>
+ </tileset>
+ <tileset firstgid="42305" name="People" tilewidth="16" tileheight="16" tilecount="88" columns="8">
+  <image source="Peopleextras.png" width="128" height="176"/>
+ </tileset>
+ <tileset firstgid="42393" name="Doorextras" tilewidth="16" tileheight="16" tilecount="88" columns="8">
+  <image source="Doorextras.png" width="128" height="176"/>
+ </tileset>
+ <tileset firstgid="42481" name="NewPerson3" tilewidth="16" tileheight="16" tilecount="80" columns="4">
+  <image source="NewPerson3.png" width="64" height="320"/>
+ </tileset>
+ <tileset firstgid="42561" name="Festivals" tilewidth="16" tileheight="16" tilecount="1024" columns="32">
+  <image source="Festivals.png" width="512" height="512"/>
+ </tileset>
+ <tileset firstgid="43585" name="NewPerson1" tilewidth="16" tileheight="16" tilecount="40" columns="4">
+  <image source="NewPerson1.png" width="64" height="160"/>
+ </tileset>
+ <tileset firstgid="43625" name="NewPerson2" tilewidth="16" tileheight="16" tilecount="104" columns="4">
+  <image source="NewPerson2.png" width="64" height="416"/>
+ </tileset>
+ <tileset firstgid="43729" name="TVextras" tilewidth="16" tileheight="16" tilecount="15625" columns="125">
+  <image source="TVextras.png" width="2000" height="2000"/>
+  <tile id="0">
+   <animation>
+    <frame tileid="0" duration="1000"/>
+    <frame tileid="3" duration="1000"/>
+    <frame tileid="6" duration="1000"/>
+    <frame tileid="9" duration="1000"/>
+    <frame tileid="12" duration="1000"/>
+    <frame tileid="15" duration="1000"/>
+    <frame tileid="18" duration="1000"/>
+    <frame tileid="21" duration="1000"/>
+    <frame tileid="24" duration="1000"/>
+    <frame tileid="27" duration="1000"/>
+    <frame tileid="30" duration="1000"/>
+    <frame tileid="33" duration="1000"/>
+   </animation>
+  </tile>
+  <tile id="1">
+   <animation>
+    <frame tileid="1" duration="1000"/>
+    <frame tileid="4" duration="1000"/>
+    <frame tileid="7" duration="1000"/>
+    <frame tileid="10" duration="1000"/>
+    <frame tileid="13" duration="1000"/>
+    <frame tileid="16" duration="1000"/>
+    <frame tileid="19" duration="1000"/>
+    <frame tileid="22" duration="1000"/>
+    <frame tileid="25" duration="1000"/>
+    <frame tileid="28" duration="1000"/>
+    <frame tileid="31" duration="1000"/>
+    <frame tileid="34" duration="1000"/>
+   </animation>
+  </tile>
+  <tile id="2">
+   <animation>
+    <frame tileid="2" duration="1000"/>
+    <frame tileid="5" duration="1000"/>
+    <frame tileid="8" duration="1000"/>
+    <frame tileid="11" duration="1000"/>
+    <frame tileid="14" duration="1000"/>
+    <frame tileid="17" duration="1000"/>
+    <frame tileid="20" duration="1000"/>
+    <frame tileid="23" duration="1000"/>
+    <frame tileid="26" duration="1000"/>
+    <frame tileid="29" duration="1000"/>
+    <frame tileid="32" duration="1000"/>
+    <frame tileid="35" duration="1000"/>
+   </animation>
+  </tile>
+  <tile id="125">
+   <animation>
+    <frame tileid="125" duration="1000"/>
+    <frame tileid="128" duration="1000"/>
+    <frame tileid="131" duration="1000"/>
+    <frame tileid="134" duration="1000"/>
+    <frame tileid="137" duration="1000"/>
+    <frame tileid="140" duration="1000"/>
+    <frame tileid="143" duration="1000"/>
+    <frame tileid="146" duration="1000"/>
+    <frame tileid="149" duration="1000"/>
+    <frame tileid="152" duration="1000"/>
+    <frame tileid="155" duration="1000"/>
+    <frame tileid="158" duration="1000"/>
+   </animation>
+  </tile>
+  <tile id="126">
+   <animation>
+    <frame tileid="126" duration="1000"/>
+    <frame tileid="129" duration="1000"/>
+    <frame tileid="132" duration="1000"/>
+    <frame tileid="135" duration="1000"/>
+    <frame tileid="138" duration="1000"/>
+    <frame tileid="141" duration="1000"/>
+    <frame tileid="144" duration="1000"/>
+    <frame tileid="147" duration="1000"/>
+    <frame tileid="150" duration="1000"/>
+    <frame tileid="153" duration="1000"/>
+    <frame tileid="156" duration="1000"/>
+    <frame tileid="159" duration="1000"/>
+   </animation>
+  </tile>
+  <tile id="127">
+   <animation>
+    <frame tileid="127" duration="1000"/>
+    <frame tileid="130" duration="1000"/>
+    <frame tileid="133" duration="1000"/>
+    <frame tileid="136" duration="1000"/>
+    <frame tileid="139" duration="1000"/>
+    <frame tileid="142" duration="1000"/>
+    <frame tileid="145" duration="1000"/>
+    <frame tileid="148" duration="1000"/>
+    <frame tileid="151" duration="1000"/>
+    <frame tileid="154" duration="1000"/>
+    <frame tileid="157" duration="1000"/>
+    <frame tileid="160" duration="1000"/>
+   </animation>
+  </tile>
+ </tileset>
+ <tileset firstgid="59354" name="wallandwindowsextras" tilewidth="16" tileheight="16" tilecount="1280" columns="40">
+  <image source="wallandwindowsextras.png" width="640" height="512"/>
+ </tileset>
+ <tileset firstgid="60634" name="roofextras" tilewidth="16" tileheight="16" tilecount="1280" columns="40">
+  <image source="roofextras.png" width="640" height="512"/>
+ </tileset>
+ <tileset firstgid="61914" name="furnitureextras" tilewidth="16" tileheight="16" tilecount="2976" columns="32">
+  <image source="furnitureextras.png" width="512" height="1488"/>
+ </tileset>
+ <layer id="1" name="Back" width="29" height="22">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+19805,19805,19805,19805,19805,19805,19805,19805,19805,19805,19805,19805,19805,19805,19805,19805,19805,19805,19805,19805,19805,19805,19805,19805,19805,19805,19805,19805,19805,
+19805,19805,42234,42239,42234,42239,42234,42239,42234,42239,42234,42239,42234,42239,42234,42239,42234,42239,42234,42239,42234,42239,42234,42239,42234,42239,42234,19805,19805,
+19805,19805,42234,42239,42234,42239,42234,42239,42234,42239,42234,42239,42234,42239,42234,42239,42234,42239,42234,42239,42234,42239,42234,42239,42234,42239,42234,19805,19805,
+19805,19805,42234,42239,42234,42239,42234,42239,42234,42239,42234,42239,42234,42239,42234,42239,42234,42239,42234,42239,42234,42239,42234,42239,42234,42239,42234,19805,19805,
+19805,19805,42234,42239,42234,42239,42234,42239,42234,42239,42234,42239,42234,42239,42234,42239,42234,42239,42234,42239,42234,42239,42234,42239,42234,42239,42234,19805,19805,
+19805,19805,4195,4196,4195,4196,4195,4196,4450,4451,4452,4453,4450,4451,4452,4453,4454,4455,4455,4455,4455,4196,4195,4196,4195,4196,4195,19805,19805,
+19805,19805,4295,4296,4295,4296,4295,4296,4450,4450,4451,4450,4450,4451,4452,4453,4454,4455,4555,4555,4555,4296,4295,4296,4295,4296,4295,19805,19805,
+19805,19805,4195,4196,4195,4196,4195,4196,4550,4450,4450,4550,4450,4450,4451,4452,4453,4454,4455,4554,4555,4196,4195,4196,4195,4196,4195,19805,19805,
+19805,19805,4295,4296,4295,4296,4295,4296,4550,4550,4550,4550,4550,4550,4551,4552,4553,4554,4555,4554,4555,4296,4295,4296,4295,4296,4295,19805,19805,
+19805,19805,4195,4196,4195,4196,4195,4196,4195,4196,4195,4196,4195,4196,4195,4196,4195,4196,4195,4196,4195,4196,4195,42234,42239,42234,4195,19805,19805,
+19805,19805,4295,4296,4295,4296,4295,4296,4295,4296,4295,4296,4295,4296,4295,4296,4295,4296,4295,4296,4295,4296,4295,42239,42239,42234,4295,19805,19805,
+19805,19805,4195,4196,4195,4196,4195,4196,4195,4196,4195,4196,4195,4196,4195,4196,4195,4196,4195,4196,4195,4196,4195,42239,42239,42234,4195,19805,19805,
+19805,19805,4295,4296,4295,4296,4295,4296,4295,4296,4295,4296,4295,4296,4295,4296,4295,4296,4295,4296,4295,4296,4295,4296,4295,4296,4295,19805,19805,
+19805,19805,4195,4196,4195,4196,4195,4196,4195,4196,4195,4196,4195,4196,4195,4196,4195,4196,4195,4196,4195,4196,4195,4196,4195,4196,4195,19805,19805,
+19805,19805,4295,4296,4295,4296,4295,4296,4295,4195,4196,4296,4295,4296,4295,4296,4295,4296,4295,4296,4295,4296,4295,4296,4295,4296,4295,19805,19805,
+19805,19805,4195,4196,4195,4196,4195,4196,4195,4295,4296,4196,4195,4196,4195,4196,4195,4196,4195,4196,4195,4196,4195,4196,4195,4196,4195,19805,19805,
+19805,19805,4295,4296,4295,4296,4295,4296,4295,4195,4196,4296,4295,4296,4295,4296,4295,4296,4295,4296,4295,4296,4295,4296,4295,4296,4295,19805,19805,
+19805,19805,4195,4196,4195,4196,4195,4196,4195,4295,4296,4196,4195,4196,4195,4196,4195,4196,4195,4196,4195,4196,4195,4196,4195,4196,4195,19805,19805,
+19805,19805,4295,4296,4295,4296,4295,4296,4295,4296,4295,4296,4295,4296,4295,4296,4295,4296,4295,4296,4295,4296,4295,4296,4295,4296,4295,19805,19805,
+19805,19805,19805,19805,19805,19805,19805,19805,19805,19805,19805,19805,19805,4196,4195,4196,19805,19805,19805,19805,19805,19805,19805,19805,19805,19805,19805,19805,19805,
+19805,19805,19805,19805,19805,19805,19805,19805,19805,19805,19805,19805,19805,19805,19805,19805,19805,19805,19805,19805,19805,19805,19805,19805,19805,19805,19805,19805,19805
+</data>
+ </layer>
+ <objectgroup id="2" name="Back"/>
+ <layer id="3" name="Back1" width="29" height="22">
+  <properties>
+   <property name="DrawAbove" value="Back"/>
+  </properties>
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,3183,3183,0,4449,3284,3083,3083,3083,3083,3083,3083,3083,3083,3083,3083,3083,3085,4556,0,3183,3183,3183,3284,0,0,
+0,0,4354,4355,4356,0,0,4449,3384,3083,3083,3083,3083,3083,3083,3083,3083,3083,3083,3083,3182,4556,0,0,0,0,3384,0,0,
+0,0,4454,4455,4456,0,0,4449,59376,0,0,0,0,0,0,0,0,0,0,0,59375,4556,0,0,0,0,3484,0,0,
+0,0,4554,4455,4456,0,0,4549,0,0,0,0,0,0,0,0,0,0,0,0,0,4556,0,0,0,0,0,0,0,
+0,0,4554,4455,4456,0,0,4649,4655,4655,4655,4655,4655,4655,4655,4655,4655,4655,4655,4655,4655,4656,0,0,0,0,0,0,0,
+0,0,4454,4455,4456,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,4554,4555,4556,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,4654,4655,4656,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3484,3183,3183,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18651,18652,18653,18655,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18683,18684,18685,18687,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18715,18716,18717,18719,0,0,0,
+0,0,4355,4355,4355,4355,4355,4355,4355,4356,0,0,0,17009,17010,17011,0,0,0,0,0,0,18747,18748,18749,18751,0,0,0,
+0,0,4455,4455,4455,4455,4455,4455,4455,4456,0,0,0,17041,17042,17043,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3485,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="4" name="Back1"/>
+ <layer id="5" name="Buildings" width="29" height="22">
+  <data encoding="csv">
+3272,3272,3272,3272,3272,3272,3272,3272,3272,3272,3272,3272,3272,3272,3272,3272,3272,3272,3272,3272,3272,3272,3272,3272,3272,3272,3272,3272,3272,
+3272,59363,59364,59364,59364,59364,59364,59364,59364,59364,59364,59364,59364,59364,59364,59364,59364,59364,59364,59364,59364,59364,59364,59364,59364,59364,59364,59365,3272,
+3272,59434,8269,0,8270,8269,0,8270,8269,0,0,0,0,0,0,0,0,0,0,0,8270,8269,0,8270,0,8269,8270,59438,3272,
+3272,59434,59358,0,59359,59358,0,59359,59358,0,0,0,0,0,0,0,0,0,0,0,59359,59358,0,59359,0,59358,59359,59438,3272,
+3272,59434,8369,7667,8370,8369,7667,8370,8369,7667,7667,7667,7667,7667,7667,7667,7667,7667,7667,7667,8370,8369,7667,8370,7667,8369,8370,59438,3272,
+3272,59434,8469,7767,8470,8469,7767,8470,8469,7767,7767,7767,7767,7767,7767,7767,7767,7767,7767,7767,8470,8469,7767,8470,7767,8469,8470,59438,3272,
+3272,59434,21505,21506,14955,0,3183,3183,3862,3863,3863,3859,3861,3863,3863,3859,3861,3863,3863,3859,3860,3183,3183,0,0,0,61953,59438,3272,
+3272,59434,0,0,0,0,0,0,16577,0,15965,20300,3962,0,15965,20300,3962,0,15965,20300,16673,0,0,0,0,0,21916,59438,3272,
+3272,59434,16232,16233,0,0,0,0,16641,16669,16669,16669,16669,16669,16669,16669,16669,16669,16669,16669,16737,0,0,0,0,0,0,59438,3272,
+3272,59434,16264,16265,0,0,0,0,4162,15839,0,15839,4162,15839,0,15839,4162,15839,0,15839,4160,0,0,59595,59364,59596,0,59438,3272,
+3272,59434,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8269,0,8270,0,59438,3272,
+3272,59434,16232,16233,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8369,7667,8370,0,59438,3272,
+3272,59434,16264,16265,0,42500,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8469,7767,8470,0,59438,3272,
+3272,59434,0,0,0,3657,0,3657,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2381,0,59438,3272,
+3272,59434,0,0,0,0,0,43602,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,59438,3272,
+3272,59434,61999,0,0,3657,0,3657,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,16101,16102,0,0,59438,3272,
+3272,59434,0,0,0,43642,0,7155,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,17005,17006,0,0,59438,3272,
+3272,59434,0,0,0,3657,0,3657,0,0,0,0,0,0,0,0,0,0,0,0,0,16103,16104,16977,16978,23953,23954,59438,3272,
+3272,59434,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,59438,3272,
+3272,59474,61958,20300,0,16234,16235,16236,0,0,2384,14884,60594,0,0,0,60594,61954,62003,0,0,0,2384,16105,16106,0,62001,59516,3272,
+3272,3272,3272,3272,3272,3272,3272,3272,3272,3272,3272,3272,59474,0,0,0,59516,3272,3272,3272,3272,3272,3272,3272,3272,3272,3272,3272,3272,
+3272,3272,3272,3272,3272,3272,3272,3272,3272,3272,3272,3272,3272,3272,3272,3272,3272,3272,3272,3272,3272,3272,3272,3272,3272,3272,3272,3272,3272
+</data>
+ </layer>
+ <objectgroup id="6" name="Buildings">
+  <object id="71" name="TileData" x="160" y="128" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.Permit.1&quot;"/>
+   </properties>
+  </object>
+  <object id="81" name="TileData" x="224" y="128" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.Permit.2&quot;"/>
+   </properties>
+  </object>
+  <object id="82" name="TileData" x="80" y="80" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.Permit.3&quot;"/>
+   </properties>
+  </object>
+  <object id="83" name="TileData" x="112" y="80" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.Permit.3&quot;"/>
+   </properties>
+  </object>
+  <object id="84" name="TileData" x="96" y="80" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.Permit.3&quot;"/>
+   </properties>
+  </object>
+  <object id="86" name="TileData" x="48" y="304" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.Permit.5&quot;"/>
+   </properties>
+  </object>
+  <object id="87" name="TileData" x="80" y="272" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.Permit.6&quot;"/>
+   </properties>
+  </object>
+  <object id="88" name="TileData" x="112" y="272" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.Permit.7&quot;"/>
+   </properties>
+  </object>
+  <object id="89" name="TileData" x="112" y="240" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.Permit.8&quot;"/>
+   </properties>
+  </object>
+  <object id="90" name="TileData" x="80" y="208" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.Permit.9&quot;"/>
+   </properties>
+  </object>
+  <object id="91" name="TileData" x="128" y="144" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.Permit.10&quot;"/>
+   </properties>
+  </object>
+  <object id="92" name="TileData" x="192" y="144" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.Permit.11&quot;"/>
+   </properties>
+  </object>
+  <object id="93" name="TileData" x="256" y="144" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.Permit.12&quot;"/>
+   </properties>
+  </object>
+  <object id="94" name="TileData" x="336" y="80" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.Permit.13&quot;"/>
+   </properties>
+  </object>
+  <object id="95" name="TileData" x="368" y="80" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.Permit.13&quot;"/>
+   </properties>
+  </object>
+  <object id="96" name="TileData" x="384" y="80" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.Permit.14&quot;"/>
+   </properties>
+  </object>
+  <object id="97" name="TileData" x="368" y="192" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.Permit.3&quot;"/>
+   </properties>
+  </object>
+  <object id="98" name="TileData" x="384" y="192" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.Permit.3&quot;"/>
+   </properties>
+  </object>
+  <object id="99" name="TileData" x="400" y="192" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.Permit.3&quot;"/>
+   </properties>
+  </object>
+  <object id="100" name="TileData" x="400" y="208" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.Permit.15&quot;"/>
+   </properties>
+  </object>
+  <object id="101" name="TileData" x="288" y="128" width="16" height="16">
+   <properties>
+    <property name="Action" value="PermitOffice"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="7" name="Buildings1" width="29" height="22">
+  <properties>
+   <property name="DrawAbove" value="Buildings"/>
+  </properties>
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,43729,43730,43731,0,0,0,0,0,0,0,0,0,0,0,59550,0,0,0,42393,42394,42395,0,0,0,
+0,0,0,0,0,43854,43855,43856,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,42401,42402,42403,0,0,0,
+0,0,0,0,0,43979,43980,43981,3762,3763,3759,3759,3761,3759,3763,3759,3761,3763,3759,3759,3760,0,0,42409,42410,42411,0,0,0,
+0,0,0,0,0,0,0,0,0,0,15933,0,0,0,15933,0,0,0,15933,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,42313,0,0,0,42314,0,0,0,42315,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,4062,0,0,8155,4062,8151,0,8152,4062,0,0,0,4062,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,43729,43730,43731,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,43854,43855,43856,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,43979,43980,43981,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="8" name="Buildings1"/>
+ <layer id="9" name="Paths" width="29" height="22" visible="0">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,9,0,0,0,0,9,0,0,0,0,9,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,9,0,0,0,0,9,0,0,0,0,9,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,9,0,9,0,0,9,0,9,0,0,9,0,9,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,9,0,9,0,0,9,0,9,0,0,9,0,9,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9,9,9,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,9,0,9,0,0,0,9,9,9,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,9,0,9,0,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,9,0,9,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,9,0,9,0,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,9,0,9,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,9,0,9,0,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,9,9,9,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,9,9,9,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="10" name="Paths" visible="0"/>
+ <layer id="11" name="Front" width="29" height="22">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,59631,0,59822,59823,59824,0,59627,59628,59629,17386,59627,59628,59629,0,59627,59628,59629,0,0,0,59627,59628,59629,0,0,0,
+0,0,59667,59668,59669,0,0,0,0,59548,59549,59550,17418,59548,59549,59550,0,59548,59549,20113,20084,0,20178,0,0,0,21011,0,0,
+0,0,59707,59708,59709,0,0,0,20020,59588,59589,59590,0,59588,59589,59590,0,59588,59589,59590,0,21192,0,20114,20606,20019,0,0,0,
+0,0,21473,21474,14931,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,61921,0,0,
+0,0,0,0,0,0,0,0,0,0,42305,20268,0,0,42306,20268,0,0,42307,20268,0,0,0,0,0,0,0,0,0,
+0,0,16200,16201,0,0,0,0,0,16605,16605,16605,16605,16605,16605,16605,16605,16605,16605,16605,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,4249,15807,0,15807,4250,15807,0,15807,4251,15807,0,15807,0,0,0,59557,59559,59556,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,16200,16201,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,3557,0,3557,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2281,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,61967,0,0,3557,0,3557,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,16069,16070,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,3557,0,3557,0,0,0,0,0,0,0,0,0,0,0,0,0,16071,16072,17144,20639,23921,23922,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,61926,20268,0,16202,16203,16204,0,0,0,14860,60554,0,0,0,60554,61922,0,0,0,0,0,16073,16074,0,61969,0,0,
+0,0,59559,59559,59559,59559,59559,59559,59559,59559,59559,59559,59556,0,0,0,59557,59559,59559,59559,59559,59559,59559,59559,59559,59559,59559,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,59559,59559,59559,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="12" name="Front"/>
+ <layer id="19" name="UnderAlwaysFront" width="29" height="22">
+  <properties>
+   <property name="DrawAbove" value="Front"/>
+  </properties>
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,20548,20456,20479,0,20548,20455,20479,0,20548,0,20479,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="20" name="UnderAlwaysFront"/>
+ <layer id="13" name="AlwaysFront" width="29" height="22">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,20114,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,21441,21442,14907,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,20934,20935,0,0,0,20606,0,0,0,17183,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,1073763016,0,0,0,20084,0,17215,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,3962,0,0,0,3962,0,0,0,3962,0,0,0,3962,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,61935,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,14836,60514,0,0,0,60514,0,0,0,0,0,0,0,0,0,61937,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="14" name="AlwaysFront"/>
+</map>

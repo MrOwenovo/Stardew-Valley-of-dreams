@@ -1,0 +1,404 @@
+{
+"AnimalShops":[
+	{
+	"ShopName":"BuffaloRanch",
+	"When": ["NPCAt Sheila 3 14"],
+	"AnimalStock":["Buffalo", "Dairy Cow", "Bull"],
+	"ExcludeFromMarnies": ["Buffalo"],
+	},
+],
+  "Shops": [
+    {
+      "ShopName": "AnimalMachines",
+	  "PortraitPath": "assets/SheilaShopIcon.png",
+	  "When": ["NPCAt Sheila 3 14"],
+	  "Quote": "We have the best machines for your farm!",
+	  "CategoriesToSellHere": [-6, -18],
+      "ItemStocks": [
+        {
+          "ItemType": "Object",
+		  "StockPrice": 50,
+          "ItemIDs": [
+            178
+          ],
+        },
+		 {
+          "ItemType": "BigCraftable",
+		  "StockPrice": 40000,
+          "ItemIDs": [
+            158
+          ],
+		  "When": ["d Mon Tue Wed Thu"],
+        },
+		{
+          "ItemType": "BigCraftable",
+		  "StockPrice": 40000,
+          "ItemIDs": [
+            156
+          ],
+		  "When": ["d Mon Tue Wed Thu"],
+        },
+		{
+          "ItemType": "BigCraftable",
+		  "StockPrice": 10000,
+          "ItemIDs": [
+            10
+          ],
+		  "When": ["d Wed Thu Fri Sat Sun"],
+        },
+		{
+          "ItemType": "BigCraftable",
+		  "StockPrice": 25000,
+          "ItemIDs": [
+            16
+          ],
+		  "When": ["d Wed Thu Fri Sat Sun"],
+        },
+		{
+          "ItemType": "BigCraftable",
+		  "StockPrice": 25000,
+          "ItemNames": [
+            "Bug Trap"
+          ],
+		  "When": ["d Wed Thu Fri Sat Sun"],
+        },
+		{
+          "ItemType": "BigCraftable",
+		  "StockPrice": 15000,
+          "ItemIDs": [
+            24
+          ],
+		  "When": ["d Mon Tue Fri Sat Sun"],
+        },
+		{
+          "ItemType": "BigCraftable",
+		  "StockPrice": 40000,
+          "ItemIDs": [
+            17
+          ],
+		  "When": ["d Mon Tue Fri Sat Sun"],
+        },
+		{
+          "ItemType": "BigCraftable",
+		  "StockPrice": 2000,
+          "ItemIDs": [
+            104
+          ],
+        },
+		{
+          "ItemType": "BigCraftable",
+		  "StockPrice": 25000,
+          "ItemIDs": [
+            165
+          ],
+		  "When": ["SkillLevel farming 10"],
+        },
+		{
+          "ItemType": "BigCraftable",
+		  "StockPrice": 25000,
+          "ItemNames": [
+            "Manure Grinder",
+			"Fertilizer Mixer",
+          ],
+		  "When": ["HasMod BFAVBulls"],
+        },
+		{
+          "ItemType": "BigCraftable",
+		  "StockPrice": 20000,
+          "ItemNames": [
+            "Butter Churn",
+			"Yogurt Jar",
+          ],
+		  "When": ["HasMod ppja.artisanvalleymachinegoods"],
+        },
+		{
+          "ItemType": "Object",
+          "ItemNames": [
+            "Pet's Treat",
+			"Chicken's Treat",
+			"Cow's Treat",
+			"Duck's Treat",
+			"Goat's Treat",
+			"Rabbit's Treat",
+			"Swine's Treat",
+          ],
+		  "When": ["HasMod DIGUS.ANIMALHUSBANDRYMOD"],
+        },
+		{
+          "ItemType": "Object",
+          "ItemNames": [
+            "Buffalo's Treat",
+			"Ground's Treat",
+			"Wild Berries Treat",
+			"Mulberry Leaves",
+          ],
+		  "When": ["HasMod DIGUS.ANIMALHUSBANDRYMOD TrentNewAnimalHusbandry"],
+        },
+      ],
+      "ClosedMessage": "Come back later."
+    },
+	{
+      "ShopName": "GregShop",
+	  "PortraitPath": "assets/GregShop.png",
+	  "When": ["NPCAt Gregory 2 3 3 3 3 4 3 5 3 6 2 5 2 4 2 2 4 5 4 6 1 6"],
+	  "Quote": "I found some really interesting stuff down here.",
+      "ItemStocks": [
+        {
+          "ItemType": "Object",
+		  "StockItemCurrency": "Coffee",
+		  "StockPrice": 0,
+		  "StockCurrencyStack": 1,
+          "ItemIDs": [
+            688
+          ],
+        },
+		{
+          "ItemType": "Object",
+		  "StockPrice": 0,
+		  "StockItemCurrency": "Goat Cheese",
+		  "StockCurrencyStack": 15,
+          "ItemIDs": [
+            114
+          ],
+        },
+		{
+          "ItemType": "Object",
+		  "StockPrice": 0,
+		  "StockItemCurrency": "Cheese",
+		  "StockCurrencyStack": 15,
+          "ItemIDs": [
+            107
+          ],
+        },
+		{
+          "ItemType": "Object",
+		  "StockPrice": 0,
+		  "StockItemCurrency": "Roots Platter",
+		  "StockCurrencyStack": 2,
+          "ItemNames": [
+            "Dinosaur's Treat"
+          ],
+        },
+      ],
+      "ClosedMessage": "Maybe I should try that when Gregory is here."
+    },
+	{
+      "ShopName": "GregShopAfterMarriage",
+      "ItemStocks": [
+        {
+          "ItemType": "Object",
+		  "StockItemCurrency": "Coffee",
+		  "StockPrice": 0,
+		  "StockCurrencyStack": 1,
+          "ItemIDs": [
+            688
+          ],
+        },
+		{
+          "ItemType": "Object",
+		  "StockPrice": 0,
+		  "StockItemCurrency": "Goat Cheese",
+		  "StockCurrencyStack": 15,
+          "ItemIDs": [
+            114
+          ],
+        },
+		{
+          "ItemType": "Object",
+		  "StockPrice": 0,
+		  "StockItemCurrency": "Cheese",
+		  "StockCurrencyStack": 15,
+          "ItemIDs": [
+            107
+          ],
+        },
+		{
+          "ItemType": "Object",
+		  "StockPrice": 0,
+		  "StockItemCurrency": "Pale Ale",
+		  "StockCurrencyStack": 5,
+          "ItemIDs": [
+            454
+          ],
+        },
+		{
+          "ItemType": "Object",
+		  "StockPrice": 0,
+		  "StockItemCurrency": "Roots Platter",
+		  "StockCurrencyStack": 2,
+          "ItemNames": [
+            "Dinosaur's Treat"
+          ],
+        },
+      ],
+    },
+	{
+      "ShopName": "CoffeeMachine",
+	  "When": ["t 600 1000"],
+      "ItemStocks": [
+        {
+          "ItemType": "Object",
+		  "StockPrice": 0,
+		  "Stock": 1,
+          "ItemIDs": [
+            395
+          ],
+        },
+      ],
+	  "ClosedMessage": "It's empty, maybe there will be more tomorrow."
+    },
+    {
+      "ShopName": "AGShop",
+	  "PortraitPath": "assets/AGShop.png",
+	  "When": ["e 17170010/f Gregory 2000"],
+	  "Quote": "The best adventure equipment, straight from Castle Village!",
+	  "CategoriesToSellHere": [-96, -98],
+      "ItemStocks": [
+        {
+          "ItemType": "Weapon",
+		  "StockPrice": 1500,
+          "ItemIDs": [6],
+		  },
+		  {
+		 "ItemType": "Weapon",
+		 "StockPrice": 2000,
+          "ItemIDs": [3],
+		  },
+		  {
+		  "ItemType": "Weapon",
+		  "StockPrice": 3000,
+          "ItemIDs": [2],
+		  },
+		  {
+		   "ItemType": "Weapon",
+		   "StockPrice": 1800,
+          "ItemIDs": [15],
+		  },
+		  { "ItemType": "Weapon",
+		  "StockPrice": 3500,
+          "ItemIDs": [14],
+		  },
+		  { "ItemType": "Weapon",
+		  "StockPrice": 4000,
+          "ItemIDs": [52],
+		  },
+		  { 
+		  "ItemType": "Weapon",
+		  "StockPrice": 500,
+          "ItemIDs": [22],
+		  },
+		  { 
+		  "ItemType": "Weapon",
+		  "StockPrice": 2000,
+          "ItemIDs": [18],
+		  },
+		  {
+		   "ItemType": "Weapon",
+		   "StockPrice": 2500,
+          "ItemIDs": [21],
+		  },
+		  {
+		  "ItemType": "Weapon",
+		  "StockPrice": 5000,
+          "ItemIDs": [51],
+		  },
+		  { 
+		  "ItemType": "Weapon",
+		  "StockPrice": 10000,
+          "ItemIDs": [45],
+		  },
+		  { 
+		  "ItemType": "Weapon",
+		  "StockPrice": 5000,
+          "ItemIDs": [28],
+		  },
+		  {
+		  "ItemType": "Weapon",
+		  "StockPrice": 4000,
+          "ItemIDs": [46],
+		  },
+		  {
+		  "ItemType": "Weapon",
+		  "StockPrice": 3000,
+          "ItemIDs": [20],
+		  },
+		  { 
+		  "ItemType": "Weapon",
+		  "StockPrice": 4000,
+          "ItemIDs": [49],
+		  },
+		  {
+		  "ItemType": "Weapon",
+		  "StockPrice": 2500,
+          "ItemIDs": [19],
+		  },
+		  {
+		  "ItemType": "Weapon",
+		  "StockPrice": 8000,
+          "ItemIDs": [48],
+		  },
+		  {
+		  "ItemType": "Weapon",
+		  "StockPrice": 15000,
+          "ItemIDs": [34],		  
+          },
+		  {
+          "ItemType": "Weapon",
+		  "StockPrice": 50000,
+          "ItemNames": ["Infinity Blade"],
+          },
+		  {              
+              "ItemType":"Ring",
+              "StockPrice":7500,
+			  "ItemIDs":[521],
+          },
+		  {
+              "ItemType":"Ring",
+              "StockPrice":10000,
+			  "ItemIDs":[524],
+          },
+		  {
+              "ItemType":"Ring",
+              "StockPrice":5000,
+			  "ItemIDs":[525],
+          },
+		  {
+              "ItemType":"Ring",
+              "StockPrice":15000,
+			  "ItemIDs":[527],
+          },
+		   {
+          "ItemType": "Boot",
+		  "StockPrice": 5000,
+          "ItemNames": ["Sacred Boots"],
+          },
+		  {
+          "ItemType": "Boot",
+		  "StockPrice": 1000,
+          "ItemIDs": [507],
+          },
+		   {
+          "ItemType": "Boot",
+		  "StockPrice": 1250,
+          "ItemIDs": [510],
+          },
+		  {
+          "ItemType": "Boot",
+		  "StockPrice": 2500,
+          "ItemIDs": [513],
+          },
+		  {
+          "ItemType": "Boot",
+		  "StockPrice": 1500,
+          "ItemIDs": [515],
+          },
+		  {
+          "ItemType": "Boot",
+		  "StockPrice": 500,
+          "ItemIDs": [806],
+          },
+		  
+          ],
+        },
+  ]
+}

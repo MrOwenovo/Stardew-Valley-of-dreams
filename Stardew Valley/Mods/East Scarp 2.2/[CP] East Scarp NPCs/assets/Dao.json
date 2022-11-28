@@ -1,0 +1,61 @@
+{
+  "Changes": [
+    {
+      "LogName": "Load Dao Dialogue File",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/Dao, Characters/Schedules/Dao",
+      "FromFile": "assets/{{target}}/Dao.json"
+    },
+
+    {
+      "LogName": "NPC Dispositions",
+      "Action": "EditData",
+      "Target": "Data/NPCDispositions",
+      "Entries": {
+        "Dao": "adult/neutral/neutral/neutral/female/not-datable/null/Town/null//Custom_ES_DaoHouse 20 14/Dao"
+      }
+    },
+    {
+      "LogName": "Gift tastes",
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "Entries": {
+        "Dao": "This is a pretty fantastic little dealy. Thanks!/218 88 232 606 610 732 205/Hey, that's pretty nice! Thanks!/404 281 257 717 720 716 207 198 278 208/Not really my taste, actually./206 224 197 201 210 220 221 60 64 66 68 72 74/This... is not particularly appreciated./215 260 16 226 184 186 436 438 424 426 233 231/Oh, that's for me? Thanks.//",
+      }
+    },
+    {
+      "LogName": "Engagement Dialogue",
+      "Action": "EditData",
+      "Target": "Data/EngagementDialogue",
+      "Entries": {
+        "Dao0": "Heh, who'd have thought I'd be giving this another try?",
+        "Dao1": "Not too long before we'll be married, @."
+      }
+    },
+    {
+      "LogName": "Portraits",
+      "Action": "Load",
+      "Target": "Portraits/Dao",
+      "FromFile": "assets/{{Target}}/Dao.png"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/Festivals/Dao.json"
+    },
+    {
+      "LogName": "Schedule Dialogue",
+      "Action": "Load",
+      "Target": "Strings/schedules/Dao",
+      "FromFile": "assets/Characters/schedules/Dao/ScheduleDialogueDao.json"
+    },
+    /*********
+  ** Sprites
+  *********/
+    {
+      "LogName": "Sprites",
+      "Action": "Load",
+      "Target": "Characters/Dao",
+      "FromFile": "assets/{{Target}}/Dao.png"
+    }
+  ]
+}

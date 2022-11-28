@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.4" orientation="orthogonal" renderorder="right-down" width="9" height="10" tilewidth="16" tileheight="16" infinite="0" nextlayerid="13" nextobjectid="74">
+ <editorsettings>
+  <export format="tmx"/>
+ </editorsettings>
+ <properties>
+  <property name="AmbientLight" value="95 95 95"/>
+  <property name="DayTiles" value="Back 15 29 31 Back 15 30 63 Front 15 25 256 Front 15 26 288 Back 3 8 507 Back 3 9 539 Front 3 5 256 Front 3 6 288 Back 4 8 507 Back 4 9 539 Front 4 5 256 Front 4 6 288 Back 10 8 507 Back 10 9 539 Front 10 5 256 Front 10 6 288 Back 17 8 507 Back 17 9 539 Front 17 5 256 Front 17 6 288 Back 18 8 507 Back 18 9 539 Front 18 5 256 Front 18 6 288 Back 29 11 671 Back 29 12 703 Front 29 8 256 Front 29 9 288 Back 30 11 671 Back 30 12 703 Front 30 8 256 Front 30 9 288 Back 33 11 671 Back 33 12 703 Front 33 8 256 Front 33 9 288 Back 46 9 94 Back 46 10 126 Front 46 6 256 Front 46 7 288"/>
+  <property name="Doors" value="8 16 1 120 15 16 1 120 39 16 1 824 40 16 1 825"/>
+  <property name="NightTiles" value="Back 15 29 60 Back 15 30 60 Front 15 25 1253 Front 15 26 1285 Back 3 8 604 Back 3 9 603 Front 3 5 1253 Front 3 6 1285 Back 4 8 604 Back 4 9 603 Front 4 5 1253 Front 4 6 1285 Back 10 8 604 Back 10 9 635 Front 10 5 1253 Front 10 6 1285 Back 17 8 604 Back 17 9 603 Front 17 5 1253 Front 17 6 1285 Back 18 8 604 Back 18 9 635 Front 18 5 1253 Front 18 6 1285 Back 29 11 574 Back 29 12 606 Front 29 8 1253 Front 29 9 1285 Back 30 11 574 Back 30 12 606 Front 30 8 1253 Front 30 9 1285 Back 33 11 574 Back 33 12 638 Front 33 8 1253 Front 33 9 1285 Back 46 9 92 Back 46 10 124 Front 46 6 1253 Front 46 7 1285"/>
+  <property name="Warp" value="3 10 Custom_EastScarpeInn 25 5"/>
+ </properties>
+ <tileset firstgid="1" name="1" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="townInterior.png" width="512" height="1088"/>
+  <tile id="546">
+   <animation>
+    <frame tileid="546" duration="250"/>
+    <frame tileid="547" duration="250"/>
+    <frame tileid="548" duration="250"/>
+   </animation>
+  </tile>
+ </tileset>
+ <tileset firstgid="2177" name="p" tilewidth="16" tileheight="16" tilecount="36" columns="4">
+  <image source="paths.png" width="64" height="144"/>
+ </tileset>
+ <tileset firstgid="2213" name="z_lemurfurniture" tilewidth="16" tileheight="16" tilecount="2624" columns="32">
+  <image source="lemurfurniture.png" width="512" height="1312"/>
+ </tileset>
+ <tileset firstgid="4837" name="lumi_towninterior" tilewidth="16" tileheight="16" tilecount="3050" columns="25">
+  <image source="lumi_towninterior.png" width="400" height="1952"/>
+ </tileset>
+ <layer id="1" name="Back" width="9" height="10">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,
+0,6297,6297,6297,6297,6297,6297,6298,0,
+0,6322,6322,6322,6322,6322,6322,6323,0,
+0,107,107,107,107,107,107,6348,0,
+0,200,201,200,201,200,201,231,0,
+0,232,233,232,233,232,233,232,233,
+0,232,232,233,232,233,232,233,265,
+0,264,264,265,264,265,264,265,0,
+0,232,233,232,233,232,233,232,233,
+0,264,265,264,265,264,265,264,265
+</data>
+ </layer>
+ <objectgroup id="2" name="Back"/>
+ <layer id="11" name="Back2" width="9" height="10">
+  <properties>
+   <property name="Draw" value="Back"/>
+  </properties>
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,146,0,
+0,0,0,5281,5282,5283,0,0,0,
+0,0,0,5306,5307,5308,0,0,0,
+0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="12" name="Back2"/>
+ <layer id="3" name="Buildings" width="9" height="10">
+  <data encoding="csv">
+1,1,1,1,1,1,1,1,1,
+1,1427,1427,1427,1427,1427,1427,1429,1,
+1,75,75,75,75,75,75,76,1,
+1,0,107,107,5231,5232,107,108,1,
+1,7222,7223,5471,5256,5257,5296,140,1,
+1,0,0,0,0,0,0,5851,1,
+1,7297,7298,0,0,0,0,5356,1,
+1,2868,0,0,0,0,0,5381,1,
+1,0,0,0,0,0,5301,834,1,
+1,1,65,0,69,1,1,1,1
+</data>
+ </layer>
+ <objectgroup id="4" name="Buildings"/>
+ <layer id="5" name="Front" width="9" height="10">
+  <data encoding="csv">
+10,11,3,3,3,3,3,4,0,
+65,7317,5248,257,257,567,568,44,37,
+65,0,5273,289,289,0,0,0,69,
+65,7197,7198,5446,675,5860,5271,0,69,
+65,7247,7248,0,0,0,0,5826,69,
+65,7272,7273,0,0,0,0,5331,69,
+65,2836,0,0,0,0,0,0,69,
+65,0,0,0,0,0,5276,0,69,
+161,162,163,0,164,166,166,167,168,
+0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="6" name="Front"/>
+ <layer id="7" name="Paths" width="9" height="10">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,
+0,0,0,2185,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="8" name="Paths"/>
+ <layer id="9" name="AlwaysFront" width="9" height="10">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,1429,0,
+0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,7743,0,0,
+0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="10" name="AlwaysFront"/>
+</map>

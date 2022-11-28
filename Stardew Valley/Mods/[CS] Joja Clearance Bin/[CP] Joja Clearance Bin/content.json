@@ -1,0 +1,73 @@
+{
+"Format": "1.22.0",
+    
+   "Changes": [
+    
+	{
+         "Action": "EditMap",
+         "Target": "Maps/JojaMart",
+         
+		 "FromFile": "assets/Clearance.tmx",
+            "FromArea": {
+                "X": 15,
+                "Y": 19,
+                "Width": 2,
+                "Height": 3,
+            },
+            "ToArea": {
+                "X": 15,
+                "Y": 19,
+                "Width": 2,
+                "Height": 3,
+            },
+			
+			"When": { "IsCommunityCenterComplete": "False", },
+	},
+	
+	{
+         "Action": "EditMap",
+         "Target": "Maps/AnimalShop",
+         
+		 "FromFile": "assets/ShanesMerch.tmx",
+            "FromArea": {
+                "X": 17,
+                "Y": 13,
+                "Width": 1,
+                "Height": 2,
+            },
+            "ToArea": {
+                "X": 17,
+                "Y": 13,
+                "Width": 1,
+                "Height": 2,
+            },
+			
+			"When": { "IsCommunityCenterComplete": "True", },
+	},
+	
+	{ 
+	
+	"Action": "EditData",
+	"Target": "Data/Events/Farm",
+
+	"Entries": {
+		
+		"26431001/e 191393/A cc_Complete/x Shane_Clearance_Note": "null",
+
+			},	
+	},
+	
+	
+	{
+        "Action": "EditData",
+        "Target": "data/mail",
+		
+        "Entries": {
+		
+			"Shane_Clearance_Note": "Hey @,^^Turns out when Morris left town he forgot to collect our keys. I've, er, 'acquired' a few things and have them for sale at the ranch. Use the notebook to place an order if I'm not there.^There was a list of suppliers on the desk, too. Who knows, maybe I can make a real shop out of this. Want to buy some eggs?^^-Shane%item conversationTopic Shane_Starts_Selling 28 %%[#]Shane's New Business",
+				
+			}
+	},
+		
+ ]
+}

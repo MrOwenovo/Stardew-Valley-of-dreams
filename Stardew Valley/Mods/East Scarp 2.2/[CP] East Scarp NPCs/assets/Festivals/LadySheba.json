@@ -1,0 +1,97 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall27, Data/Festivals/winter25, Data/Festivals/spring13",
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "LadySheba 57 53 2",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall16",
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "LadySheba 30 37 2",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall16, Data/Festivals/winter25, Data/Festivals/spring13",
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "LadySheba 51 49 2",
+                    "Delimiter": "/"
+                }
+            ]
+        },  {
+            "LogName": "eggfest Dialogue",
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring13",
+            "Entries": {
+                "LadySheba": "{{i18n:festivals.ladysheba.spring13.{{cattalk}}}}"
+            }
+        },
+        {
+            "LogName": "fair Dialogue",
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall16",
+            "Entries": {
+                "LadySheba": "{{i18n:festivals.ladysheba.fall16.{{cattalk}}}}"
+            }
+        },
+        /*{
+            
+                "Action": "EditData",
+                "Target": "Data/Festivals/winter25",
+                "TextOperations": [
+                    {
+                        "Operation": "Append",
+                        "Target": [
+                            "Entries",
+                            "Set-Up_additionalCharacters"
+                        ],
+                        "Value": "LadySheba 56 52 2",
+                        "Delimiter": "/"
+                    }
+                ]
+            },*/
+        {
+            "LogName": "fair Dialogue",
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter25",
+            "Entries": {
+                "LadySheba": "{{i18n:festivals.ladysheba.winter25.{{cattalk}}}}"
+            }
+        }
+    ]
+}

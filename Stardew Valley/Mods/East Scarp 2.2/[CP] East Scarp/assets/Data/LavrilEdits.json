@@ -1,0 +1,150 @@
+{
+    "Changes": [
+        //Repairing the House
+        //"63079050" - Event ID for Reducing Crab population with Matteo and Lavril
+        // "63078001" - Fixing the bedroom
+        //"63078002" - Fixing the top right room
+        //"63078003" - Fixing the living room main area 
+        //"63078004" - code for friendly slimes w/ Lavril
+        { //Turns the orchard slimes into kitty slimes
+            "Action": "EditImage",
+            "PatchMode": "Replace",
+            "Update": "OnLocationChange",
+            "Target": "Characters/Monsters/Green Slime",
+            "When": {
+                "LocationName": "Custom_ESOrchard",
+                "HasSeenEvent": "63078004"
+            },
+            "FromFile": "assets/kittyslime.png"
+        },
+        //"63078001" - Fixing the bedroom | living room and room on top right still damaged
+        {
+            "LogName": "Bedroom repair",
+            "Action": "EditMap",
+            "Target": "Maps/Custom_ESOrchardHouse",
+            "FromFile": "assets/Locations/Interiors/OrchardHouse-repaired.tmx",
+            "When": {
+               "HasSeenEvent": "63078001",
+                "HasSeenEvent |contains=63078002": false
+            },
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 10,
+                "Height": 10
+            },
+            "ToArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 10,
+                "Height": 10
+            },
+        },
+        //Windows:
+        {
+            "LogName": "Adds the windows",
+            "Action": "EditMap",
+            "Target": "Maps/Custom_ESOrchardHouse",
+            "MapProperties": {
+                "DayTiles": "Front 3 1 256 Front 3 2 288 Front 6 1 256 Front 6 2 288",
+                "NightTiles": "Front 3 1 1253 Front 3 2 1285 Front 6 1 1253 Front 6 2 1285",
+            },
+            "When": {
+                "HasSeenEvent": "63078001",
+                "HasSeenEvent |contains=63078002": false
+            }
+        },
+        { //Fixing room on top right | Living Room still damaged
+            "LogName": "Hallway Repair",
+            "Action": "EditMap",
+            "Target": "Maps/Custom_ESOrchardHouse",
+            "FromFile": "assets/Locations/Interiors/OrchardHouse-repaired.tmx",
+            "When": {
+                "HasSeenEvent": "63078002",
+                "HasSeenEvent |contains=63078003": false
+            },
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 20,
+                "Height": 14
+            },
+            "ToArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 20,
+                "Height": 14
+            },
+        },
+        {
+            "LogName": "Adds the windows",
+            "Action": "EditMap",
+            "Target": "Maps/Custom_ESOrchardHouse",
+            "MapProperties": {
+                "DayTiles": "Front 3 1 256 Front 3 2 288 Front 6 1 256 Front 6 2 288 Front 13 1 256 Front 13 2 288 Front 16 1 256 Front 16 2 288",
+                "NightTiles": "Front 3 1 1253 Front 3 2 1285 Front 6 1 1253 Front 6 2 1285 Front 13 1 1253 Front 13 2 1285 Front 16 1 1253 Front 16 2 1285",
+            },
+            "When": {
+                "HasSeenEvent": "63078002",
+                "HasSeenEvent |contains=63078003": false
+            }
+        },
+        //"63078002" - Fixing the living room 
+        /* {
+            "LogName": "1Living Room Repair",
+            "Action": "EditMap",
+            "Target": "Maps/Custom_ESOrchardHouse",
+            "FromFile": "assets/Locations/Interiors/OrchardHouse-repaired.tmx",
+            "When": {
+                "HasSeenEvent": "63078002",
+                "HasSeenEvent |contains=63078003": false
+            },
+            "FromArea": {
+                "X": 0,
+                "Y": 14,
+                "Width": 19,
+                "Height": 11
+            },
+            "ToArea": {
+                "X": 0,
+                "Y": 14,
+                "Width": 19,
+                "Height": 11
+            },
+        },*/
+        //"63078003" - Fixing the living room and basement| OrchardHouse fully repaired!
+        {
+            "LogName": "Entire Map Repair",
+            "Action": "EditMap",
+            "Target": "Maps/Custom_ESOrchardHouse",
+            "FromFile": "assets/Locations/Interiors/OrchardHouse-repaired.tmx",
+            "When": {
+                "HasSeenEvent": "63078003"
+            },
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 26,
+                "Height": 42
+            },
+            "ToArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 26,
+                "Height": 42
+            }
+        },
+        {
+            "LogName": "Adds the windows",
+            "Action": "EditMap",
+            "Target": "Maps/Custom_ESOrchardHouse",
+            "MapProperties": {
+                "DayTiles": "Front 3 1 256 Front 3 2 288 Front 6 1 256 Front 6 2 288 Front 13 1 256 Front 13 2 288 Front 16 1 256 Front 16 2 288 Front 3 15 256 Front 3 16 288 Front 7 15 256 Front 7 16 288",
+                "NightTiles": "Front 3 1 1253 Front 3 2 1285 Front 6 1 1253 Front 6 2 1285 Front 13 1 1253 Front 13 2 1285 Front 16 1 1253 Front 16 2 1285 Front 3 15 1253 Front 3 16 1285 Front 7 15 1253 Front 7 16 1286",
+            },
+            "When": {
+                "HasSeenEvent": "63078003"
+            },
+        }
+    ]
+}

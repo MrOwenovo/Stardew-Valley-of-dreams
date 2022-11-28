@@ -1,0 +1,122 @@
+{
+  "Name": "Horse1",
+  "Type": "Walking",
+  "EnableCharacterCollision": true,
+  "EnableFarmerCollision": true,
+  "EnableShadow": false,
+  "Shadow": {
+    "OffsetX": 0,
+    "OffsetY": 0,
+    "Scale": 1,
+    "Alpha": 255
+  },
+  "TravelSpeed": 4,
+  "SpawnOffsetX": 0,
+  "SpawnOffsetY": 0,
+  "MaxIdleDistance": -1,
+  "MaxDistanceBeforeTeleport": -1,
+  "IdleBehavior": "Wander",
+  "IsPrismatic": false,
+  "AppearUnderwater": false,
+  "FrameSizeWidth": 32,
+  "FrameSizeHeight": 32,
+
+  // This plays when the companion travels upwards
+  "UpAnimation": {
+    "StartingFrame": 15,
+    "NumberOfFrames": 6,
+    "Duration": 100,
+
+    "IdleAnimation": {
+      "StartingFrame": 14,
+      "NumberOfFrames": 1,
+      "Duration": 500
+    }
+  },
+
+  // This plays when the companion travels downwards
+  "DownAnimation": {
+    "StartingFrame": 1,
+    "NumberOfFrames": 6,
+    "Duration": 100,
+
+    "IdleAnimation": {
+      "StartingFrame": 0,
+      "NumberOfFrames": 1,
+      "Duration": 500
+    }
+  },
+
+  // This plays when the companion travels left
+	"LeftAnimation": {
+		"ManualFrames": [
+      {
+        "Frame": 8,
+        "Duration": 100,
+        "Flip": true
+      },
+      {
+        "Frame": 9,
+        "Duration": 100,
+        "Flip": true
+      },
+      {
+        "Frame": 10,
+        "Duration": 100,
+        "Flip": true
+      },
+      {
+        "Frame": 11,
+        "Duration": 100,
+        "Flip": true
+      },
+      {
+        "Frame": 12,
+        "Duration": 100,
+        "Flip": true
+      },
+      {
+        "Frame": 13,
+        "Duration": 100,
+        "Flip": true
+      }
+    ],
+
+    "IdleAnimation": {
+		"ManualFrames": [
+      {
+        "Frame": 23,
+        "Duration": 350,
+        "Flip": true
+      },
+      {
+        "Frame": 24,
+        "Duration": 350,
+        "Flip": true
+        }
+      ]
+    }
+  },
+
+  // This plays when the companion travels right
+  "RightAnimation": {
+    "StartingFrame": 8,
+    "NumberOfFrames": 6,
+    "Duration": 100,
+
+    "IdleAnimation": {
+      "StartingFrame": 23,
+      "NumberOfFrames": 2,
+      "Duration": 350
+    }
+  },
+
+"Sounds": [
+  {
+    "SoundName": "camel",
+    "WhenToPlay": "Idle",
+    "TimeBetweenSound": 5000,
+    "ChanceOfPlaying": 0.3
+  }
+]  
+}

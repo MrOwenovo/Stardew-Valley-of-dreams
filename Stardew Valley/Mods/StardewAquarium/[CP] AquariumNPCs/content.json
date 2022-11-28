@@ -1,0 +1,115 @@
+{
+    "Format": "1.20",
+    "Changes": [
+        {
+            "LogName": "NPC Manifestation",
+            "Action": "EditData",
+            "Target": "Data/NPCDispositions",
+            "Entries": {
+                "Curator": "adult/polite/outgoing/positive/male/not-datable/null/Town/null/Goldie/Custom_CuratorBedroom 6 7/Curator",
+                "Goldie": "adult/polite/outgoing/positive/female/not-datable/null/Town/null/Curator/Custom_FishMuseum 15 45/Goldie"
+            }
+        },
+        {
+            "LogName": "NPC Curator",
+            "Action": "Load",
+            "Target": "Portraits/Curator, Characters/Curator",
+            "FromFile": "assets/{{target}}.png"
+        },
+        {
+            "LogName": "NPC Goldie",
+            "Action": "Load",
+            "Target": "Portraits/Goldie, Characters/Goldie",
+            "FromFile": "assets/{{target}}.png"
+        },
+        {
+            "LogName": "NPCs AntiSocial Flag Curator & Goldie",
+            "Action": "EditData",
+            "Target": "Data/AntiSocialNPCs",
+            "Entries": {
+                "Curator": "true",
+                "Goldie": "true"
+            }
+        },
+        {
+            "LogName": "NPC Exclusion Curator & Goldie",
+            "Action": "EditData",
+            "Target": "Data/CustomNPCExclusions",
+            "Entries": {
+               "Curator": "All",
+               "Goldie": "All"
+            }
+        },
+        {
+            "LogName": "Load NPC Dialogue and Schedules",
+            "Action": "Load",
+            "Target": "Characters/Dialogue/Curator, Characters/schedules/Curator, Characters/Dialogue/Goldie",
+            "FromFile": "assets/{{Target}}.json"
+        },/*
+        {   //Schedules and dialogue for Aquarium School trip
+            "Action": "Include",
+            "FromFile": "assets/Characters/schedules/test.json, assets/Characters/schedules/Eloise.json, assets/Characters/schedules/Penny.json, assets/Characters/schedules/Jas.json, assets/Characters/schedules/Vincent.json, assets/Characters/schedules/Leo.json",
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+                    },
+            "Update": "OnLocationChange"
+        },*/
+        {
+            "Action": "Include",
+            "FromFile": "GenderNeutralContent.json",
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "HasMod": "Hana.GenderNeutralityMod"
+                }
+        },
+        {
+            "Action": "Include",
+            "FromFile": "assets/Characters/Dialogue/Willy.json, assets/Characters/Dialogue/Sebastian.json, assets/Characters/Dialogue/Abigail.json, assets/Characters/Dialogue/Penny.json, assets/Characters/Dialogue/Wizard.json",
+            "When": {
+                "HasFile:{{FromFile}}": true
+            }
+        },
+        {
+            "Action": "Include",
+            "FromFile": "Translations/{{Language}}.json",
+            "When": {
+                "HasFile:{{FromFile}}": true
+            }
+        },
+        {
+            "Action": "Include",
+            "FromFile": "Translations/GenderNeutral.{{Language}}.json",
+            "When": {
+                "HasFile:{{FromFile}}": true,
+                "HasMod": "Hana.GenderNeutralityMod"
+            }
+        },
+        {
+            "LogName": "Animations",
+            "Action": "EditData",
+            "Target": "Data/animationDescriptions",
+            "Entries": {
+                "Curator_work": "24/25 25 25 26 26 26 27 27 27 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24/24",
+                "Curator_Sleep": "32/32/32"
+            }
+        },
+        {
+            "LogName": "Load Events",
+            "Action": "Load",
+            "Target": "Data/Events/Custom_FishMuseum, Data/Events/Custom_BigRoom, Data/Events/Custom_MNFIslandRoom, Data/Events/Custom_CuratorBedroom, Data/Events/Custom_MNFKoiRoom, Data/Events/Custom_MNFKoiRoom, Data/Events/Custom_MNFRoom, Data/Events/Custom_SpiritOasis, Data/Events/Custom_ExteriorMuseum, Data/Events/Custom_AquariumBasement, Data/Events/Custom_KayaRoom, Data/Events/Custom_NotYouAgainRoom, Data/Events/Custom_RSVRoom, Data/Events/Custom_AquariumESRoom",
+            "FromFile": "assets/{{Target}}.json",
+            "When": {
+                "HasFile:{{FromFile}}": true
+            }
+        },
+        {
+            "LogName": "Include Special Events",
+            "Action": "Include",
+            "FromFile": "assets/Data/Events/SpecialEvents.json",
+            "When": {
+                "HasFile:{{FromFile}}": true,
+            }
+        }
+    ]
+}

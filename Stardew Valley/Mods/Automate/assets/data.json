@@ -1,0 +1,114 @@
+﻿{
+    /**
+     * The floor IDs and names that can be used in the ConnectorNames field in config.json.
+     */
+    "FloorNames": {
+        "0": {
+            "Name": "Wood Floor",
+            "ItemId": 328
+        },
+        "1": {
+            "Name": "Stone Floor",
+            "ItemId": 329
+        },
+        "2": {
+            "Name": "Weathered Floor",
+            "ItemId": 331
+        },
+        "3": {
+            "Name": "Crystal Floor",
+            "ItemId": 333
+        },
+        "4": {
+            "Name": "Straw Floor",
+            "ItemId": 401
+        },
+        "5": {
+            "Name": "Gravel Path",
+            "ItemId": 407
+        },
+        "6": {
+            "Name": "Wood Path",
+            "ItemId": 405
+        },
+        "7": {
+            "Name": "Crystal Path",
+            "ItemId": 409
+        },
+        "8": {
+            "Name": "Cobblestone Path",
+            "ItemId": 411
+        },
+        "9": {
+            "Name": "Stepping Stone Path",
+            "ItemId": 415
+        },
+        "10": {
+            "Name": "Brick Floor",
+            "ItemId": 293
+        },
+        "11": {
+            "Name": "Rustic Plank Floor",
+            "ItemId": 840
+        },
+        "12": {
+            "Name": "Stone Walkway Floor",
+            "ItemId": 841
+        }
+    },
+
+    /**
+     * The default machine-specific overrides.
+     *
+     * Don't edit this section directly! Instead copy an entry into your config.json to replace it.
+     */
+    "DefaultMachineOverrides": {
+        "ShippingBin": {
+            "Priority": -1
+        },
+        "MiniShippingBin": {
+            "Priority": -2
+        }
+    },
+
+    /**
+     * Mods which add custom machine recipes and require a separate automation component.
+     */
+    "SuggestedIntegrations": [
+        {
+            "Name": "Custom Farming Redux",
+            "Id": "Platonymous.CustomFarming",
+            "SuggestedName": "CFAutomate",
+            "SuggestedId": "Platonymous.CFAutomate",
+            "SuggestedUrl": "https://www.nexusmods.com/stardewvalley/mods/991?tab=files"
+        },
+        {
+            "Name": "Industrial Furnace",
+            "Id": "Traktori.IndustrialFurnace",
+            "SuggestedName": "Industrial Furnace for Automate",
+            "SuggestedId": "Traktori.AM.IndustrialFurnace",
+            "SuggestedUrl": "https://www.nexusmods.com/stardewvalley/mods/5568?tab=files"
+        },
+        {
+            "Name": "Producer Framework Mod",
+            "Id": "Digus.ProducerFrameworkMod",
+            "SuggestedName": "PFMAutomate",
+            "SuggestedId": "Digus.PFMAutomate",
+            "SuggestedUrl": "https://www.nexusmods.com/stardewvalley/mods/5038"
+        },
+        {
+            "Name": "Puffer Eggs to Mayonnaise (part of Pufferfish Chickens)",
+            "Id": "GZhynko.PufferEggsToMayonnaise",
+            "SuggestedName": "PEMAutomate",
+            "SuggestedId": "GZhynko.PufferEggsToMayonnaise.Automate",
+            "SuggestedUrl": "https://www.nexusmods.com/stardewvalley/mods/6162?tab=files"
+        },
+        {
+            "Name": "Quality Scrubber",
+            "Id": "Traktori.QualityScrubber",
+            "SuggestedName": "Quality Scrubber for Automate",
+            "SuggestedId": "Traktori.AM.QualityScrubber",
+            "SuggestedUrl": "https://www.nexusmods.com/stardewvalley/mods/5663?tab=files"
+        }
+    ]
+}

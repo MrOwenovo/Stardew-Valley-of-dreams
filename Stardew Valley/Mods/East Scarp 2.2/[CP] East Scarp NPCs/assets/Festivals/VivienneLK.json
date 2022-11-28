@@ -1,0 +1,120 @@
+{
+	"Changes": [
+		//Egg Festival
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring13",
+			"Entries": {
+				"VivienneLK": "{{i18n:festivals.vivienne.spring13}}"
+			},
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters"
+					],
+					"Value": "VivienneLK 9 63 2",
+					"Delimiter": "/"
+				},
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"MainEvent_additionalCharacters"
+					],
+					"Value": "VivienneLK 35 60 2",
+					"Delimiter": "/"
+				}
+			],
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring24",
+			"Entries": {
+				"VivienneLK": "{{i18n:festivals.vivienne.spring24}}"
+			},
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters"
+					],
+					"Value": "VivienneLK 4 25 2",
+					"Delimiter": "/"
+				},
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"MainEvent_additionalCharacters"
+					],
+					"Value": "VivienneLK 4 25 1",
+					"Delimiter": "/"
+				}
+			],
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer11",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters"
+					],
+					"Value": "VivienneLK 14 14 3",
+					"Delimiter": "/"
+				},
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"MainEvent_additionalCharacters"
+					],
+					"Value": "VivienneLK 24 23 0",
+					"Delimiter": "/"
+				}
+			]
+		},
+		{
+			"LogName": "Luau Dialogue",
+			"Action": "EditData",
+			"Target": "data/festivals/summer11",
+			"Entries": {
+				"VivienneLK": "{{i18n:festivals.vivienne.summer11}}"
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall16",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"Entries",
+						"Set-Up_additionalCharacters"
+					],
+					"Value": "VivienneLK 31 58 1",
+					"Delimiter": "/"
+				}
+			]
+		},
+		{
+			"LogName": "Fair",
+			"Action": "EditData",
+			"Target": "data/festivals/fall16",
+			"Entries": {
+				"VivienneLK": "{{i18n:festivals.vivienne.fall16}}"
+			}
+		},
+	]
+}

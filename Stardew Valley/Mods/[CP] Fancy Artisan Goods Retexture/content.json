@@ -1,0 +1,784 @@
+{
+	"Format": "1.11.0",
+	"ConfigSchema": {
+	
+		
+		
+		"Baking Flour": {
+			"AllowValues": "true, false",
+			"Default": "true",
+		},
+		
+		"Beer": {
+			"AllowValues": "true, false",
+			"Default": "true",
+		},
+		"Egg": {
+			"AllowValues": "true, false",
+			"Default": "true",
+		},
+		"BrownEgg": {
+			"AllowValues": "true, false",
+			"Default": "true",
+		},
+		"DuckEgg": {
+			"AllowValues": "true, false",
+			"Default": "true",
+		},
+		"VoidEgg": {
+			"AllowValues": "true, false",
+			"Default": "true",
+		},
+		"VoidEggColor": {
+			"AllowValues": "Black, Purple",
+			"Default": "Black",
+		},
+		"OstrichEgg": {
+			"AllowValues": "true, false",
+			"Default": "true",
+		},
+		"GoldenEgg": {
+			"AllowValues": "true, false",
+			"Default": "true",
+		},
+		"Caviar": {
+			"AllowValues": "true, false",
+			"Default": "true",
+		},
+		"Cheese": {
+			"AllowValues": "true, false",
+			"Default": "true",
+		},
+		
+		"Cloth": {
+			"AllowValues": "true, false",
+			"Default": "true",
+		},
+		
+		
+		"DinosaurMayonnaise": {
+			"AllowValues": "true, false",
+			"Default": "true",
+		},
+		
+		"DuckFeather": {
+			"AllowValues": "true, false",
+			"Default": "true",
+		},
+		"DuckFeatherColor": {
+			"AllowValues": "green, white, black",
+			"Default": "green",
+		},
+		
+		"DuckMayonnaise": {
+			"AllowValues": "true, false",
+			"Default": "true",
+		},
+		
+		"GoatCheese": {
+			"AllowValues": "true, false",
+			"Default": "true",
+		},
+		"GoatMilk": {
+			"AllowValues": "true, false",
+			"Default": "true",
+		},
+		
+		"Honey": {
+			"AllowValues": "true, false",
+			"Default": "true",
+		},
+		"Jelly": {
+			"AllowValues": "true, false",
+			"Default": "true",
+		},
+		"Juice": {
+			"AllowValues": "true, false",
+			"Default": "true",
+		},
+		
+		
+		"MapleSyrup": {
+			"AllowValues": "true, false",
+			"Default": "true",
+		},
+		"Mayonnaise": {
+			"AllowValues": "true, false",
+			"Default": "true",
+		},
+		"Mead": {
+			"AllowValues": "true, false",
+			"Default": "true",
+		},
+		
+		"Milk": {
+			"AllowValues": "true, false",
+			"Default": "true",
+		},
+		
+		"Oil": {
+			"AllowValues": "true, false",
+			"Default": "true",
+		},
+		
+		
+		"PaleAle": {
+			"AllowValues": "true, false",
+			"Default": "true",
+		},
+		"PaleAleType": {
+			"AllowValues": "old, new",
+			"Default": "new",
+		},
+		
+		"Pickles": {
+			"AllowValues": "true, false",
+			"Default": "true",
+		},
+		"PineTar": {
+			"AllowValues": "true, false",
+			"Default": "true",
+		},
+		
+		"PurpleMilk": {
+			"AllowValues": "true, false",
+			"Default": "true",
+		},
+		"Rice": {
+			"AllowValues": "true, false",
+			"Default": "true",
+		},
+		"Rabbit's Foot": {
+			"AllowValues": "true, false",
+			"Default": "true",
+		},
+		"Rabbit's Foot Type": {
+			"AllowValues": "paw, carrot, goldencarrot",
+			"Default": "paw",
+		},
+		"Roe": {
+			"AllowValues": "true, false",
+			"Default": "true",
+		},
+		
+		
+		"AgedRoe": {
+			"AllowValues": "true, false",
+			"Default": "true",
+		},
+		"Sugar": {
+			"AllowValues": "true, false",
+			"Default": "true",
+		},
+		"Squid Ink": {
+			"AllowValues": "true, false",
+			"Default": "true",
+		},
+		"Truffle": {
+			"AllowValues": "true, false",
+			"Default": "true",
+		},
+		"TruffleOil": {
+			"AllowValues": "true, false",
+			"Default": "true",
+		},
+		"TruffleOilType": {
+			"AllowValues": "old, new",
+			"Default": "new",
+		},
+		
+		"Vinegar": {
+			"AllowValues": "true, false",
+			"Default": "true",
+		},
+		
+		"VoidMayonnaise": {
+			"AllowValues": "true, false",
+			"Default": "true",
+		},
+		"Wine": {
+			"AllowValues": "true, false",
+			"Default": "true",
+		},
+		"Wool": {
+			"AllowValues": "true, false",
+			"Default": "true",
+		},
+		
+		
+	},
+	"Changes": [
+	
+	//rabbit foot
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/rabbitsfoot.png",
+			"ToArea": { "X": 224, "Y": 288, "Width": 16, "Height": 16 },
+			"When": {
+				"Rabbit's Foot": "True",
+				"Rabbit's Foot Type": "paw",
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/rabbitsfootalt.png",
+			"ToArea": { "X": 224, "Y": 288, "Width": 16, "Height": 16 },
+			"When": {
+				"Rabbit's Foot": "True",
+				"Rabbit's Foot Type": "carrot",
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/rabbitsfootalt1.png",
+			"ToArea": { "X": 224, "Y": 288, "Width": 16, "Height": 16 },
+			"When": {
+				"Rabbit's Foot": "True",
+				"Rabbit's Foot Type": "goldencarrot",
+			}
+		},
+	
+	//Wine
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/wine.png",
+			"ToArea": { "X": 192, "Y": 224, "Width": 16, "Height": 16 },
+			"When": {
+				"Wine": "True",
+			}
+		},
+		
+	//Juice
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/juice.png",
+			"ToArea": { "X": 224, "Y": 224, "Width": 16, "Height": 16 },
+			"When": {
+				"Juice": "True",
+			}
+		},
+	
+	//Truffle
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/truffle.png",
+			"ToArea": { "X": 352, "Y": 272, "Width": 16, "Height": 16 },
+			"When": {
+				"Truffle": "True",
+			}
+		},
+		
+	//Vinegar
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/vinegar.png",
+			"ToArea": { "X": 176, "Y": 272, "Width": 16, "Height": 16 },
+			"When": {
+				"Vinegar": "True",
+			}
+		},
+	//Flour
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/flour.png",
+			"ToArea": { "X": 96, "Y": 160, "Width": 16, "Height": 16 },
+			"When": {
+				"Baking Flour": "True",
+			}
+		},
+		//Rice
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/rice.png",
+			"ToArea": { "X": 240, "Y": 272, "Width": 16, "Height": 16 },
+			"When": {
+				"Rice": "True",
+			}
+		},
+		//Sugar
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/sugar.png",
+			"ToArea": { "X": 80, "Y": 160, "Width": 16, "Height": 16 },
+			"When": {
+				"Sugar": "True",
+			}
+		},
+		//Squid Ink
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/ink.png",
+			"ToArea": { "X": 352, "Y": 528, "Width": 16, "Height": 16 },
+			"When": {
+				"Squid Ink": "True",
+			}
+		},
+	
+	
+	
+	
+	
+	
+	
+	//Beer
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/beer.png",
+			"ToArea": { "X": 160, "Y": 224, "Width": 16, "Height": 16 },
+			"When": {
+				"Beer": "True",
+			}
+		},
+	//BrownEgg
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/brownegg.png",
+			"ToArea": { "X": 192, "Y": 112, "Width": 16, "Height": 16 },
+			"When": {
+				"BrownEgg": "True",
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/largebrownegg.png",
+			"ToArea": { "X": 224, "Y": 112, "Width": 16, "Height": 16 },
+			"When": {
+				"BrownEgg": "True",
+			}
+		},
+	//Caviar
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/caviar.png",
+			"ToArea": { "X": 208, "Y": 288, "Width": 16, "Height": 16 },
+			"When": {
+				"Caviar": "True",
+			}
+		},
+	//Cheese
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/cheese.png",
+			"ToArea": { "X": 256, "Y": 272, "Width": 16, "Height": 16 },
+			"When": {
+				"Cheese": "True",
+			}
+		},
+
+	
+	//Cloth
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/cloth.png",
+			"ToArea": { "X": 320, "Y": 272, "Width": 16, "Height": 16 },
+			"When": {
+				"Cloth": "True",
+			}
+		},
+	
+	
+	//DinosaurMayonnaise
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/dinosaurmayonnaise.png",
+			"ToArea": { "X": 240, "Y": 528, "Width": 16, "Height": 16 },
+			"When": {
+				"DinosaurMayonnaise": "True",
+			}
+		},
+	//DuckEgg
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/duckegg.png",
+			"ToArea": { "X": 160, "Y": 288, "Width": 16, "Height": 16 },
+			"When": {
+				"DuckEgg": "True",
+			}
+		},
+	//DuckFeather
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/duckfeather.png",
+			"ToArea": { "X": 192, "Y": 288, "Width": 16, "Height": 16 },
+			"When": {
+				"DuckFeather": "True",
+				"DuckFeatherColor": "green",
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/duckfeatherwhite.png",
+			"ToArea": { "X": 192, "Y": 288, "Width": 16, "Height": 16 },
+			"When": {
+				"DuckFeather": "True",
+				"DuckFeatherColor": "white",
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/duckfeatherblack.png",
+			"ToArea": { "X": 192, "Y": 288, "Width": 16, "Height": 16 },
+			"When": {
+				"DuckFeather": "True",
+				"DuckFeatherColor": "black",
+			}
+		},
+	//DuckMayonnaise
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/duckmayonnaise.png",
+			"ToArea": { "X": 304, "Y": 192, "Width": 16, "Height": 16 },
+			"When": {
+				"DuckMayonnaise": "True",
+			}
+		},
+	//Egg
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/egg.png",
+			"ToArea": { "X": 128, "Y": 112, "Width": 16, "Height": 16 },
+			"When": {
+				"Egg": "True",
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/largeegg.png",
+			"ToArea": { "X": 96, "Y": 112, "Width": 16, "Height": 16 },
+			"When": {
+				"Egg": "True",
+			}
+		},
+	//GoatCheese
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/goatcheese.png",
+			"ToArea": { "X": 288, "Y": 272, "Width": 16, "Height": 16 },
+			"When": {
+				"GoatCheese": "True",
+			}
+		},
+	//Goatmilk
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/goatmilk.png",
+			"ToArea": { "X": 64, "Y": 288, "Width": 16, "Height": 16 },
+			"When": {
+				"GoatMilk": "True",
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/largegoatmilk.png",
+			"ToArea": { "X": 96, "Y": 288, "Width": 16, "Height": 16 },
+			"When": {
+				"GoatMilk": "True",
+			}
+		},
+		
+		//GoldenEgg
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/goldenegg.png",
+			"ToArea": { "X": 256, "Y": 608, "Width": 16, "Height": 16 },
+			"When": {
+				"GoldenEgg": "True",
+			}
+		},
+		
+	//Honey
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/honey.png",
+			"ToArea": { "X": 64, "Y": 224, "Width": 16, "Height": 16 },
+			"When": {
+				"Honey": "True",
+			}
+		},
+	//Jelly
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/jelly.png",
+			"ToArea": { "X": 128, "Y": 224, "Width": 16, "Height": 16 },
+			"When": {
+				"Jelly": "True",
+			}
+		},
+	
+	
+		
+	//MapleSyrup
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/maplesyrup.png",
+			"ToArea": { "X": 64, "Y": 480, "Width": 16, "Height": 16 },
+			"When": {
+				"MapleSyrup": "True",
+			}
+		},
+	//Mayonnaise
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/mayonnaise.png",
+			"ToArea": { "X": 288, "Y": 192, "Width": 16, "Height": 16 },
+			"When": {
+				"Mayonnaise": "True",
+			}
+		},
+	//Mead
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/mead.png",
+			"ToArea": { "X": 48, "Y": 304, "Width": 16, "Height": 16 },
+			"When": {
+				"Mead": "True",
+			}
+		},
+	//Milk
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/milk.png",
+			"ToArea": { "X": 256, "Y": 112, "Width": 16, "Height": 16 },
+			"When": {
+				"Milk": "True",
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/largemilk.png",
+			"ToArea": { "X": 288, "Y": 112, "Width": 16, "Height": 16 },
+			"When": {
+				"Milk": "True",
+			}
+		},
+	
+	//Oil
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/oil.png",
+			"ToArea": { "X": 112, "Y": 160, "Width": 16, "Height": 16 },
+			"When": {
+				"Oil": "True",
+			}
+		},
+	
+		
+	//OstrichEgg
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/ostrichegg.png",
+			"ToArea": { "X": 16, "Y": 192, "Width": 16, "Height": 16 },
+			"When": {
+				"OstrichEgg": "True",
+			}
+		},
+	//PaleAle
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/paleale.png",
+			"ToArea": { "X": 240, "Y": 192, "Width": 16, "Height": 16 },
+			"When": {
+				"PaleAle": "True",
+				"PaleAleType": "old",
+			}
+		},
+		//PaleAle1
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/palealealt.png",
+			"ToArea": { "X": 240, "Y": 192, "Width": 16, "Height": 16 },
+			"When": {
+				"PaleAle": "True",
+				"PaleAleType": "new",
+			}
+		},
+	
+		
+	//Pickles
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/pickles.png",
+			"ToArea": { "X": 96, "Y": 224, "Width": 16, "Height": 16 },
+			"When": {
+				"Pickles": "True",
+			}
+		},
+	//PineTar
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/pinetar.png",
+			"ToArea": { "X": 96, "Y": 480, "Width": 16, "Height": 16 },
+			"When": {
+				"PineTar": "True",
+			}
+		},
+	
+		
+	//PurpleMilk
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/purplemilk.png",
+			"ToArea": { "X": 176, "Y": 528, "Width": 16, "Height": 16 },
+			"When": {
+				"PurpleMilk": "True",
+			}
+		},
+	
+		
+		
+	//Roe
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/roe.png",
+			"ToArea": { "X": 320, "Y": 528, "Width": 16, "Height": 16 },
+			"When": {
+				"Roe": "True",
+			}
+		},
+		
+		
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/roebase.png",
+			"ToArea": { "X": 336, "Y": 528, "Width": 16, "Height": 16 },
+			"When": {
+				"Roe": "True",
+			}
+		},
+		
+		//AgedRoe
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/agedroe.png",
+			"ToArea": { "X": 240, "Y": 288, "Width": 16, "Height": 16 },
+			"When": {
+				"AgedRoe": "True",
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/agedroebottom.png",
+			"ToArea": { "X": 256, "Y": 288, "Width": 16, "Height": 16 },
+			"When": {
+				"AgedRoe": "True",
+			}
+		},
+		
+	//TruffleOil
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/truffleoil.png",
+			"ToArea": { "X": 0, "Y": 288, "Width": 16, "Height": 16 },
+			"When": {
+				"TruffleOil": "True",
+				"TruffleOilType": "old",
+			}
+		},
+		//TruffleOil
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/truffleoilalt.png",
+			"ToArea": { "X": 0, "Y": 288, "Width": 16, "Height": 16 },
+			"When": {
+				"TruffleOil": "True",
+				"TruffleOilType": "new",
+			}
+		},
+		
+		
+		
+	//VoidEgg
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/voidegg.png",
+			"ToArea": { "X": 272, "Y": 192, "Width": 16, "Height": 16 },
+			"When": {
+				"VoidEgg": "True",
+				"VoidEggColor": "black",
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/voideggpurple.png",
+			"ToArea": { "X": 272, "Y": 192, "Width": 16, "Height": 16 },
+			"When": {
+				"VoidEgg": "True",
+				"VoidEggColor": "purple",
+			}
+		},
+	//VoidMayonnaise
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/voidmayonnaise.png",
+			"ToArea": { "X": 320, "Y": 192, "Width": 16, "Height": 16 },
+			"When": {
+				"VoidMayonnaise": "True",
+			}
+		},
+	
+		
+		//Wool
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/wool.png",
+			"ToArea": { "X": 128, "Y": 288, "Width": 16, "Height": 16 },
+			"When": {
+				"Wool": "True",
+			}
+		}
+
+	]
+}

@@ -1,0 +1,37 @@
+{
+    "Format": "1.23.0",
+    "ConfigSchema": {
+        "Smaller Eyes": {
+            "AllowValues": "true, false",
+            "AllowBlank": false,
+            "Default": false,
+            "Description": "Lowers the height of the eyes on the emote for a calmer look."
+        }
+    },
+    "Changes": [
+        {
+            "Action": "EditImage",
+            "Target": "TileSheets/emotes",
+            "FromFile": "assets/owo-bubble-{{Smaller Eyes}}.png",
+            "ToArea": {
+                "X": 0,
+                "Y": 128,
+                "Width": 64,
+                "Height": 16
+            },
+            "LogName": "OwO Emote Bubble Patch"
+        },
+        {
+            "Action": "EditImage",
+            "Target": "LooseSprites/EmoteMenu",
+            "FromFile": "assets/owo-emote-picker-{{Smaller Eyes}}.png",
+            "ToArea": {
+                "X": 3,
+                "Y": 4,
+                "Width": 10,
+                "Height": 7
+            },
+            "LogName": "OwO Emote Picker Patch"
+        }
+    ]
+}

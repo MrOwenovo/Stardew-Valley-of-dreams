@@ -1,0 +1,68 @@
+{
+  "Name": "Fairy_Penguin",
+  "Type": "Walking",
+  "TravelSpeed": 2,
+  "FrameSizeWidth": 16,
+  "FrameSizeHeight": 16,
+  "TileSheetPath": "Animals\\FairyPenguin", // Optional parameter, but needed if creating a companion with an existing in-game sprite (e.g. Animals\\Rabbit)
+  "IdleBehavior": "Wander",
+  "MaxIdleDistance": "128",
+  "MaxDistanceBeforeTeleport": "-1",
+  "EnableFarmerCollision": true,
+  "EnableShadow": true,
+  "EnableBreathing": false,
+  "InspectionDialogue": "FairyPenguin.Inspection.1",
+
+  // This plays when the companion travels upwards
+  "UpAnimation": {
+    "StartingFrame": 8,
+    "NumberOfFrames": 4,
+    "Duration": 100,
+
+    "IdleAnimation": {
+      "StartingFrame": 8,
+      "NumberOfFrames": 1,
+      "Duration": 500
+    }
+  },
+
+  // This plays when the companion travels downwards
+  "DownAnimation": {
+    "StartingFrame": 0,
+    "NumberOfFrames": 4,
+    "Duration": 100,
+
+    "IdleAnimation": {
+      "StartingFrame": 0,
+      "NumberOfFrames": 1,
+      "Duration": 500
+    }
+  },
+
+  // This plays when the companion travels left
+  "LeftAnimation": {
+    "StartingFrame": 12,
+    "NumberOfFrames": 4,
+    "Duration": 100,
+
+    "IdleAnimation": {
+      "StartingFrame": 12,
+      "NumberOfFrames": 1,
+      "Duration": 500
+    }
+  },
+
+  // This plays when the companion travels right
+  "RightAnimation": {
+    "StartingFrame": 4,
+    "NumberOfFrames": 4,
+    "Duration": 100,
+
+    "IdleAnimation": {
+      "StartingFrame": 4,
+      "NumberOfFrames": 1,
+      "Duration": 500
+    }
+  }
+  
+}

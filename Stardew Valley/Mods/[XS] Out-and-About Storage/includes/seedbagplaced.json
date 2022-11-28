@@ -1,0 +1,68 @@
+{
+  "Changes": [
+	//Sprite
+	{
+	  "Action": "Load",
+	  "Target": "applesauce.outstorage/seedbagplaced",
+	  "FromFile": "assets/seedbagplaced.png"
+	},
+
+	//Data
+	{
+	  "Action": "EditData",
+	  "Target": "furyx639.ExpandedStorage/Storages",
+	  "Entries": {
+		"seedbagplaced": {
+		            "DisplayName": "{{i18n: seedbagplaced.name}}",
+          		    "Description": "{{i18n: seedbagplaced.description}}",
+          		    "Image": "applesauce.outstorage/seedbagplaced",
+                            "Frames": 1,
+         		    "PlayerColor": false,
+          		    "OpenSound": "rabbit",
+			//Betterchests stuff
+        		    "BetterChestsData": {
+          		    "CollectItems": "Enabled",
+           		    "CustomColorPicker": "Disabled",
+           		    "FilterItems": "Enabled",
+        		    "FilterItemsList": [
+          			    "category_seeds",
+           			    "category_fertilizer"
+         			   ],
+         		   "OpenHeldChest": "Enabled",
+      		           "ResizeChest": "Enabled",
+			   "ResizeChestCapacity": 24
+			  			}
+			}
+		      }
+	            },
+  	 {
+      	"Action": "EditData",
+     	 "Target": "furyx639.ExpandedStorage/Buy",
+    	  "Entries": {
+     	     "seedbagplaced": {
+     	     "ShopID": "SeedShop",
+       	     "Price": 30000
+      	    }
+     	   }
+  	  },
+
+       {
+        "Action": "EditData",
+        "Target": "Data/CraftingRecipes",
+        "Entries": {
+          "seedbagplaced": "499 10/Home/232/true/null/{{i18n: seedbagplaced.name}}"
+        }
+      },
+    
+      {
+        "Action": "EditData",
+        "Target": "furyx639.ExpandedStorage/Unlock",
+        "Entries": {
+          "seedbagplaced": "true"
+        },
+        "When": {
+          "query: {{SkillLevel:Farming}} >= 5": true
+           }
+          }
+ 	 ] 
+	}

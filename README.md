@@ -1,20 +1,23 @@
+[toc]
 # Stardew-Valley-of-dreams
 ## 梦中的星露谷 整合包(汉化)
 
 #### 介绍:
-- 大型星露谷整合包，可以基于原存档加入，320模组左右，已汉化
+- 大型星露谷整合包，可以基于原存档加入，368模组，已汉化
 - 不会损坏存档，没有加改变布局的模组如爷爷的农场，以防破坏存档，有需求请自己加
-- 我非常注重游戏的平衡性，以防止游戏失去乐趣，删除了所有imBalance的元素，并调整了相关参数，保证了游戏的平衡性
+- 我非常注重游戏的平衡性，以防止游戏失去乐趣，删除了所有imBalance的元素，并调整了相关参数，保证了游戏的平衡性,其他的正在测试，如果有修改需求请联系我
 - 正在开发成就和任务系统，以指引玩家游玩
 - 删除 跳过钓鱼动画/显示梯子位置/沙漠电梯/拖拉机
 
 <br>
 
-@[toc]
+#### 运行提醒:
+- stardewModingAPI 如果运行时卡住，可以按几次空格，按完继续等待
+- 加载时间5min左右，加载存档会卡2min,进入存档会卡10min左右/创建存档会时间更长
 
 <br>
 
-#### 快捷键：
+#### 快捷键(可在设置/选项/最下方的模组设置/左上角键盘位置修改)：
 - K: 随时保存
 - U: 显示栅栏耐久
 - D4: 打开梳妆台
@@ -31,6 +34,7 @@
 - F10: 拍照
 - L: 待办事项
 - F2: 购买季节性干草堆
+- Left Shift: 抱起宠物
 
 <br>
 
@@ -53,6 +57,9 @@
   - Gashapon Machines: 扭蛋机 √
   - Upgraded Seed Makers: 升级的种子制造商  √
   - PFM-JA Upgraded Seed Makers: PFM-JA升级种子机  Æ
+  - Boarding House Nut Butters: 寄宿公寓坚果黄油 Æ
+  - Fruit Tree Honey: 果树蜂蜜 ×
+  - Hugs and kisses：拥抱和亲吻 ×
 
 - 扩展:
   - Adventurer's Guild Expanded 1.0.15: 冒险家协会扩展 √
@@ -90,6 +97,7 @@
   - 660315的月娜误入歧途肖像模组 ×
   - Aspen High Res Anime Portrait: 阿斯彭高分辨率动漫肖像 ×
   - HD Portraits: 高清人像(前置) ×
+  - Seasonal Cute Characters: 季节性服装 - SVE的美感略微可爱 ×
 
 - 角色：
   - Ridgeside Village - NPC Adventures Addon: 里奇赛德村NPC历险记 √
@@ -107,6 +115,8 @@
   - [NPC] Lavril: 东坡崖新npc √
   - Always Raining in the Valley: 山谷里总是下雨 √
   - Never Ending Adventure:  永无止境的冒险 √
+  - Shay - New NPC: 谢伊 - 新NPC  √
+  - College Boy Mike - Custom NPC: 大学男孩迈克 - 自定义NPC √
 
 
 - 地点：
@@ -119,6 +129,7 @@
   - EvenMoreDeepWoods: 更多深林  ×
   - Town School Chinese: 镇校中文  √
   - Lumisteria Magic Field: 卢米斯特里亚魔法场 
+  - Boarding House and Bus Stop Extension: 寄宿公寓和巴士站扩建 √
 
 - 模组工具(前置):  ×
   - [CP] DaisyNiko's Tilesheets: 黛西尼科的瓦片 ×
@@ -171,7 +182,12 @@
   - Mana Bar: 法力条 Æ
   - CustomFurniture: 定制家具 ×
   - BetterFarmAnimalVariety: 良种养殖场动物品种 √
-  - CFAutomate: 机器与自动化调配 ×
+  - Flower Meads: 花草地  ×
+  - Quality Artisan Products:优质工匠产品  ×
+  - Custom Winter Star Gifts: 定制冬季星星礼物 ×
+  - NPC Map Locations: NPC地图位置 ×
+  - HD Portraits: 高清肖像 ×
+  - Shop Tile Framework: 购买磁贴框架 ×
 
 - 事件:
   - 约会之夜: Date night √
@@ -186,6 +202,7 @@
   - (DGA) Holiday Event Furniture: 节日活动家具  Æ
   - Gervig91's Furniture: 格维格91的家具 Æ
   - [CF] Lumisteria Flower And Plant Set: Lumisteria花草套装 Æ
+  - Bed Tweaks: 床调整 ×
 
 - 项目：
   - Joja可乐补货: [CP] Joja Cola Restock  ×
@@ -213,6 +230,8 @@
   - Stardrop Brewing Co: 星落酿造公司 - 啤酒和蜂蜜酒  Æ
   - Golden Coconut Tree: 金色椰子树  Æ
   - Dairy and Egg Product Overhaul: 乳制品和蛋制品大修 Æ
+  - Makers of Stardew Vineyard packs of artisanal soda: 星露葡萄园包手工苏打水制造商 Æ
+  - Trinkets To Treasures - Artifacts: 宝藏的小饰品 - 文物 Æ
 
 
 - 视觉效果和图形:
@@ -236,6 +255,16 @@
   - Elle's New Horses: 艾丽的新马 ×
   - Grass Replacement: 草更换 ×
   - House and Building customization-content Patch: 房屋和建筑定制 - 内容修补程序 × (可去)
+  - Better Artisan Good Icons for SVE: 更好的工匠好图标为SVE提供 ×
+  - BAGI - Better Artisan Good Icons for Champagne Wishes： BAGI - 更好的工匠好图标的香槟愿望 ×
+  - BAGI-Lucky Clover: BAGI - 幸运三叶草 ×
+  - Honey and Mead Pack: （巴吉）PPJA更多树木的蜂蜜和蜂蜜酒图标 ×
+  - Better Mead Icons - BAGI Addon: 更好的蜂蜜酒图标 - 巴吉插件  ×
+  - [BAGI] Vanilla Tree Honeys: （巴吉）香草果树蜂蜜和蜂蜜酒 ×
+  - Fancy Artisan Goods Retexture: 花式工匠商品纹理 ×
+  - BAGI and Mead Pack for MF and AC: BAGI 和米德包 ×(可去)
+  - Seasonal Special Order Board Retexture: 季节性特别订单板纹理 ×
+  - Better Artisan Good Icons for The Love of Cooking: 更好的工匠好图标的烹饪之爱 ×
 
 - 游戏机制:
   - npc普遍喜欢钻石: UniversallyLovedDiamonds Æ
@@ -282,6 +311,13 @@
   - Horse Flute Anywhere: 马笛随时可见 √
   - Smart Building: 智能建筑 √
   - NPC Vending Machines: NPC自动售货机  
+  - Restauranteer: 餐厅 Æ
+  - SlingshotRebalance: 弹弓再平衡 ?
+  - SocializingSkill: 社交技巧 √
+  - Better Beehouses: 更好的蜂舍 ×
+  - Gift Rejection: 拒收礼品 ×
+  - Solstice Winter Star: 冬至冬星扩充 √
+  - The Love of Cooking: 对烹饪的热爱
 
 
 
@@ -306,6 +342,9 @@
   - 奇幻的作物: JA - Fantasy Crops  √
   - Bonster's Fruit & Veggies / Bonster's Trees: 帮斯特的庄稼/帮斯特的树 √
   - Bonster's Recipes: 帮斯特的食谱 √
+  - Lucky Clover-JA- 幸运三叶草  Æ
+  - Stardew Vineyard: 星露葡萄园 √
+  - (JA) Cocoa Plant and Chocolate Cooking: 可可植物和巧克力烹饪（JA）√
 
 
 - 杂项:
@@ -330,6 +369,8 @@
   - Don't Stop Me Now: 在挥舞武器/工具和瞄准弹弓的同时移动 ×
   - ConvenientInventory: 方便的库存(合并箱子中重复物品)  Æ
   - WarpnetDeepwoods: 深木曲速网络集成 Æ
+  - Stronger saplings: 更坚固的树苗 ×
+  - Cold Pets: 宠物怕冷 ×
 
 
 - 建筑物:
@@ -345,29 +386,32 @@
 
 - 用户界面：
   - Better Artisan Good Icons: 更好的工匠图标 
-  -  ×Catalogue Filter: 目录过滤器  Æ
-  -  Gift Taste Helper: 显示NPC喜爱的食物  √
-  -  Better Artisan Good Icons for Joja Seeds: 更好的工匠好图标为乔加种子  √
-  -  DynamicReflections: 动态反射 ×
-  -  Almanac: 年鉴  √
-  -  [CP] Overgrown Flowery Interface v.1.4: 杂草丛生的花朵界面 √
-  -  Lambeeron's Oversized Sleeves: 兰贝隆的超大袖子 ×
-  -  Rural Outfitters: 农村户外用品商 ×
-  -  Lux's Food Mod: 力士的食品模组 ×
-  -  ToDew: 游戏内待办事项列表。 √
-  -  Warp Totems to Magic Book Tomes: 从扭曲图腾到魔法书大部 ×
-  -  Fancy Rings and Shoes Retexture: 花式戒指和鞋子重新纹理  ×
-  -  Fancy Fish and Tackles Retexture: 花式鱼和钓具纹理重塑  ×
-  -  Sanrio Plushies: 三丽鸥毛绒玩具  ×
-  -  ShoppingCart: 购物车   Æ
-  -  Seasonal Haystacks with Tools: 带工具的季节性干草堆 ×
-  -  PlatinumCat's Kawaii Truffle Foxes: PC的卡哇伊松露狐狸(代替猪)  ×
-  -  CP Custom Menu Background: CP 自定义菜单背景 ×
-  -  Seasonal Display Background: 季节性显示背景  ×
-  -  Animated Seasonal Display Background: 动画季节性显示背景 ×
-  -  Custom Picture Frames: 自定义相框  ×
-  -  Mini Bars: 怪物血条 ×
-  -  Farmer Helper: 农民助手 Æ
+  - ×Catalogue Filter: 目录过滤器  Æ
+  - Gift Taste Helper: 显示NPC喜爱的食物  √
+  - Better Artisan Good Icons for Joja Seeds: 更好的工匠好图标为乔加种子  √
+  - DynamicReflections: 动态反射 ×
+  - Almanac: 年鉴  √
+  - [CP] Overgrown Flowery Interface v.1.4: 杂草丛生的花朵界面 √
+  - Lambeeron's Oversized Sleeves: 兰贝隆的超大袖子 ×
+  - Rural Outfitters: 农村户外用品商 ×
+  - Lux's Food Mod: 力士的食品模组 ×
+  - ToDew: 游戏内待办事项列表。 √
+  - Warp Totems to Magic Book Tomes: 从扭曲图腾到魔法书大部 ×
+  - Fancy Rings and Shoes Retexture: 花式戒指和鞋子重新纹理  ×
+  - Fancy Fish and Tackles Retexture: 花式鱼和钓具纹理重塑  ×
+  - Sanrio Plushies: 三丽鸥毛绒玩具  ×
+  - ShoppingCart: 购物车   Æ
+  - Seasonal Haystacks with Tools: 带工具的季节性干草堆 ×
+  - PlatinumCat's Kawaii Truffle Foxes: PC的卡哇伊松露狐狸(代替猪)  ×
+  - CP Custom Menu Background: CP 自定义菜单背景 ×
+  - Seasonal Display Background: 季节性显示背景  ×
+  - Animated Seasonal Display Background: 动画季节性显示背景 ×
+  - Custom Picture Frames: 自定义相框  ×
+  - Mini Bars: 怪物血条 ×
+  - Farmer Helper: 农民助手 Æ
+  - Seasonal Save Slots: 季节性存档插槽 ×
+  - Yagisan - Custom NPCs for NPC Map Locations: 八木山 - NPC 地图位置的自定义 NPC
+  - Better Mead Icons - BAGI Addon: 更好的蜂蜜酒图标 - 巴吉插件 ×
 
 
 - 动画： ×

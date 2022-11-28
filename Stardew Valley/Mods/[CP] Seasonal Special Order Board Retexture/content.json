@@ -1,0 +1,1040 @@
+{
+	"Format": "1.19.0",
+	"ConfigSchema": {
+	
+		"Mod Enabled": {
+			"AllowValues": "true, false",
+			"Default": "true"
+		},
+	
+		"Recolor": {
+			"AllowValues": "Vanilla, Dark, Dark1, White",
+			"Default": "Vanilla"
+		},
+		
+	},
+	
+		 
+	"Changes": [
+	
+	
+	//vanilla
+	
+	
+	
+		// SPRING
+		{
+			"LogName": "Board",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_town",
+			"FromFile": "assets/Vanilla/{{season}}_board_blank.png",
+			"ToArea": { "X": 416, "Y": 992, "Width": 96, "Height": 32 },
+			"PatchMode": "Replace",
+			"When": {
+					"Mod Enabled": "true",
+					"Recolor": "Vanilla",
+					"Season": "Spring",
+					"Weather |contains=Rain, Storm, Snow, Sun": true,
+					},	
+		},
+		{
+			"LogName": "Board",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_town",
+			"FromFile": "assets/Vanilla/{{season}}_board_petals.png",
+			"ToArea": { "X": 416, "Y": 992, "Width": 96, "Height": 32 },
+			"PatchMode": "Replace",
+			"When": {
+					"Mod Enabled": "true",
+					"Recolor": "Vanilla",
+					"Season": "Spring",
+					"Weather": "Wind", 
+					},
+			
+		},
+		{
+			"LogName": "Board",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_town",
+			"FromFile": "assets/Vanilla/{{season}}_board_egghunt.png",
+			"ToArea": { "X": 416, "Y": 992, "Width": 96, "Height": 32 },
+			"PatchMode": "Replace",
+			"When": {
+					"Mod Enabled": "true",
+					"Recolor": "Vanilla",
+					"Season": "Spring",
+					"Day |contains=12, 13": true,
+					},
+			
+		},
+		{
+			"LogName": "Board",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_town",
+			"FromFile": "assets/Vanilla/{{season}}_board_flowerdance.png",
+			"ToArea": { "X": 416, "Y": 992, "Width": 96, "Height": 32 },
+			"PatchMode": "Replace",
+			"When": {
+					"Mod Enabled": "true",
+					"Recolor": "Vanilla",
+					"Season": "Spring",
+					"Day |contains=23, 24": true, 
+					},
+			
+		},
+		
+		// SUMMER
+		{
+			"LogName": "Board",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_town",
+			"FromFile": "assets/Vanilla/{{season}}_board_{{Random:blank, petals}}.png",
+			"ToArea": { "X": 416, "Y": 992, "Width": 96, "Height": 32 },
+			"PatchMode": "Replace",
+			"When": {
+					"Mod Enabled": "true",
+					"Recolor": "Vanilla",
+					"Season": "Summer",
+					"Weather |contains=Rain, Storm, Snow": false,
+					},	
+		},
+		{
+			"LogName": "Board",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_town",
+			"FromFile": "assets/Vanilla/{{season}}_board_blank.png",
+			"ToArea": { "X": 416, "Y": 992, "Width": 96, "Height": 32 },
+			"PatchMode": "Replace",
+			"When": {
+					"Mod Enabled": "true",
+					"Recolor": "Vanilla",
+					"Season": "Summer",
+					"Weather |contains=Rain, Storm, Snow": true,
+					},	
+		},
+	
+		{
+			"LogName": "Board",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_town",
+			"FromFile": "assets/Vanilla/{{season}}_board_jellies.png",
+			"ToArea": { "X": 416, "Y": 992, "Width": 96, "Height": 32 },
+			"PatchMode": "Replace",
+			"When": {
+					"Mod Enabled": "true",
+					"Recolor": "Vanilla",
+					"Season": "Summer",
+					"Day |contains=27, 28" : true,
+					},	
+		},
+		{
+			"LogName": "Board",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_town",
+			"FromFile": "assets/Vanilla/{{season}}_board_luau.png",
+			"ToArea": { "X": 416, "Y": 992, "Width": 96, "Height": 32 },
+			"PatchMode": "Replace",
+			"When": {
+					"Mod Enabled": "true",
+					"Recolor": "Vanilla",
+					"Season": "Summer",
+					"Day |contains=10, 11" : true,
+					},
+		},
+					// FALL
+		{
+			"LogName": "Board",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_town",
+			"FromFile": "assets/Vanilla/{{season}}_board_blank_{{Random:bird, nobird}}.png",
+			"ToArea": { "X": 416, "Y": 992, "Width": 96, "Height": 32 },
+			"PatchMode": "Replace",
+			"When": {
+					"Mod Enabled": "true",
+					"Recolor": "Vanilla",
+					"Season": "Fall",
+					},	
+		},
+		{
+			"LogName": "Board",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_town",
+			"FromFile": "assets/Vanilla/{{season}}_board_blank_nobird.png",
+			"ToArea": { "X": 416, "Y": 992, "Width": 96, "Height": 32 },
+			"PatchMode": "Replace",
+			"When": {
+					"Mod Enabled": "true",
+					"Recolor": "Vanilla",
+					"Season": "Fall",
+					"Weather": "Rain, Storm", 
+					},	
+		},
+		{
+			"LogName": "Board",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_town",
+			"FromFile": "assets/Vanilla/{{season}}_board_petals_{{Random:bird, nobird}}.png",
+			"ToArea": { "X": 416, "Y": 992, "Width": 96, "Height": 32 },
+			"PatchMode": "Replace",
+			"When": {
+					"Mod Enabled": "true",
+					"Recolor": "Vanilla",
+					"Season": "Fall",
+					"Weather": "Wind", 
+					},
+			
+		},
+		{
+			"LogName": "Board",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_town",
+			"FromFile": "assets/Vanilla/{{season}}_board_stardewfair.png",
+			"ToArea": { "X": 416, "Y": 992, "Width": 96, "Height": 32 },
+			"PatchMode": "Replace",
+			"When": {
+					"Mod Enabled": "true",
+					"Recolor": "Vanilla",
+					"Season": "Fall",
+					"Day |contains=15, 16" : true,
+					},	
+		},
+		{
+			"LogName": "Board",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_town",
+			"FromFile": "assets/Vanilla/{{season}}_board_spiritseve.png",
+			"ToArea": { "X": 416, "Y": 992, "Width": 96, "Height": 32 },
+			"PatchMode": "Replace",
+			"When": {
+					"Mod Enabled": "true",
+					"Recolor": "Vanilla",
+					"Season": "Fall",
+					"Day |contains=26, 27" : true,
+					},
+			
+		},
+				// winter
+		{
+			"LogName": "Board",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_town",
+			"FromFile": "assets/Vanilla/{{season}}_board_blank.png",
+			"ToArea": { "X": 416, "Y": 992, "Width": 96, "Height": 32 },
+			"PatchMode": "Replace",
+			"When": {
+					"Mod Enabled": "true",
+					"Recolor": "Vanilla",
+					"Season": "Winter",
+					},	
+		},
+	
+
+		{
+			"LogName": "Board",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_town",
+			"FromFile": "assets/Vanilla/{{season}}_board_icefestival.png",
+			"ToArea": { "X": 416, "Y": 992, "Width": 96, "Height": 32 },
+			"PatchMode": "Replace",
+			"When": {
+					"Mod Enabled": "true",
+					"Recolor": "Vanilla",
+					"Season": "Winter",
+					"Day |contains=7, 8" : true,
+					},	
+		},
+		{
+			"LogName": "Board",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_town",
+			"FromFile": "assets/Vanilla/{{season}}_board_winterstar.png",
+			"ToArea": { "X": 416, "Y": 992, "Width": 96, "Height": 32 },
+			"PatchMode": "Replace",
+			"When": {
+					"Mod Enabled": "true",
+					"Recolor": "Vanilla",
+					"Season": "Winter",
+					"Day |contains=24, 25" : true,
+					},
+			
+		},
+		{
+			"LogName": "Board",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_town",
+			"FromFile": "assets/Vanilla/{{season}}_board_nightmarket.png",
+			"ToArea": { "X": 416, "Y": 992, "Width": 96, "Height": 32 },
+			"PatchMode": "Replace",
+			"When": {
+					"Mod Enabled": "true",
+					"Recolor": "Vanilla",
+					"Season": "Winter",
+					"Day |contains=15, 16, 17": true,
+					},
+			
+		},
+			
+			
+			
+			//dark
+		// SPRING
+		// SPRING
+		{
+			"LogName": "Board",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_town",
+			"FromFile": "assets/Dark/{{season}}_board_blank.png",
+			"ToArea": { "X": 416, "Y": 992, "Width": 96, "Height": 32 },
+			"PatchMode": "Replace",
+			"When": {
+					"Mod Enabled": "true",
+					"Recolor": "Dark",
+					"Season": "Spring",
+					"Weather |contains=Rain, Storm, Snow, Sun": true,
+					},	
+		},
+		{
+			"LogName": "Board",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_town",
+			"FromFile": "assets/Dark/{{season}}_board_petals.png",
+			"ToArea": { "X": 416, "Y": 992, "Width": 96, "Height": 32 },
+			"PatchMode": "Replace",
+			"When": {
+					"Mod Enabled": "true",
+					"Recolor": "Dark",
+					"Season": "Spring",
+					"Weather": "Wind", 
+					},
+			
+		},
+		{
+			"LogName": "Board",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_town",
+			"FromFile": "assets/Dark/{{season}}_board_egghunt.png",
+			"ToArea": { "X": 416, "Y": 992, "Width": 96, "Height": 32 },
+			"PatchMode": "Replace",
+			"When": {
+					"Mod Enabled": "true",
+					"Recolor": "Dark",
+					"Season": "Spring",
+					"Day |contains=12, 13": true,
+					},
+			
+		},
+		{
+			"LogName": "Board",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_town",
+			"FromFile": "assets/Dark/{{season}}_board_flowerdance.png",
+			"ToArea": { "X": 416, "Y": 992, "Width": 96, "Height": 32 },
+			"PatchMode": "Replace",
+			"When": {
+					"Mod Enabled": "true",
+					"Recolor": "Dark",
+					"Season": "Spring",
+					"Day |contains=23, 24": true,
+					},
+			
+		},
+		
+		// SUMMER
+		{
+			"LogName": "Board",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_town",
+			"FromFile": "assets/Dark/{{season}}_board_{{Random:blank, petals}}.png",
+			"ToArea": { "X": 416, "Y": 992, "Width": 96, "Height": 32 },
+			"PatchMode": "Replace",
+			"When": {
+					"Mod Enabled": "true",
+					"Recolor": "Dark",
+					"Season": "Summer",
+					"Weather |contains=Rain, Storm, Snow": false,
+					},	
+		},
+		{
+			"LogName": "Board",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_town",
+			"FromFile": "assets/Dark/{{season}}_board_blank.png",
+			"ToArea": { "X": 416, "Y": 992, "Width": 96, "Height": 32 },
+			"PatchMode": "Replace",
+			"When": {
+					"Mod Enabled": "true",
+					"Recolor": "Dark",
+					"Season": "Summer",
+					"Weather |contains=Rain, Storm, Snow": true,
+					},	
+		},
+	
+		{
+			"LogName": "Board",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_town",
+			"FromFile": "assets/Dark/{{season}}_board_jellies.png",
+			"ToArea": { "X": 416, "Y": 992, "Width": 96, "Height": 32 },
+			"PatchMode": "Replace",
+			"When": {
+					"Mod Enabled": "true",
+					"Recolor": "Dark",
+					"Season": "Summer",
+					"Day |contains=27, 28" : true,
+					},	
+		},
+		{
+			"LogName": "Board",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_town",
+			"FromFile": "assets/Dark/{{season}}_board_luau.png",
+			"ToArea": { "X": 416, "Y": 992, "Width": 96, "Height": 32 },
+			"PatchMode": "Replace",
+			"When": {
+					"Mod Enabled": "true",
+					"Recolor": "Dark",
+					"Season": "Summer",
+					"Day |contains=10, 11" : true,
+					},
+		},
+					// FALL
+		{
+			"LogName": "Board",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_town",
+			"FromFile": "assets/Dark/{{season}}_board_blank_{{Random:bird, nobird}}.png",
+			"ToArea": { "X": 416, "Y": 992, "Width": 96, "Height": 32 },
+			"PatchMode": "Replace",
+			"When": {
+					"Mod Enabled": "true",
+					"Recolor": "Dark",
+					"Season": "Fall",
+					},	
+		},
+		{
+			"LogName": "Board",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_town",
+			"FromFile": "assets/Dark/{{season}}_board_blank_nobird.png",
+			"ToArea": { "X": 416, "Y": 992, "Width": 96, "Height": 32 },
+			"PatchMode": "Replace",
+			"When": {
+					"Mod Enabled": "true",
+					"Recolor": "Dark",
+					"Season": "Fall",
+					"Weather": "Rain, Storm", 
+					},	
+		},
+		{
+			"LogName": "Board",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_town",
+			"FromFile": "assets/Dark/{{season}}_board_petals_{{Random:bird, nobird}}.png",
+			"ToArea": { "X": 416, "Y": 992, "Width": 96, "Height": 32 },
+			"PatchMode": "Replace",
+			"When": {
+					"Mod Enabled": "true",
+					"Recolor": "Dark",
+					"Season": "Fall",
+					"Weather": "Wind", 
+					},
+			
+		},
+		{
+			"LogName": "Board",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_town",
+			"FromFile": "assets/Dark/{{season}}_board_stardewfair.png",
+			"ToArea": { "X": 416, "Y": 992, "Width": 96, "Height": 32 },
+			"PatchMode": "Replace",
+			"When": {
+					"Mod Enabled": "true",
+					"Recolor": "Dark",
+					"Season": "Fall",
+					"Day |contains=15, 16" : true,
+					},	
+		},
+		{
+			"LogName": "Board",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_town",
+			"FromFile": "assets/Dark/{{season}}_board_spiritseve.png",
+			"ToArea": { "X": 416, "Y": 992, "Width": 96, "Height": 32 },
+			"PatchMode": "Replace",
+			"When": {
+					"Mod Enabled": "true",
+					"Recolor": "Dark",
+					"Season": "Fall",
+					"Day |contains=26, 27" : true,
+					},
+			
+		},
+				// winter
+		{
+			"LogName": "Board",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_town",
+			"FromFile": "assets/Dark/{{season}}_board_blank.png",
+			"ToArea": { "X": 416, "Y": 992, "Width": 96, "Height": 32 },
+			"PatchMode": "Replace",
+			"When": {
+					"Mod Enabled": "true",
+					"Recolor": "Dark",
+					"Season": "Winter",
+					},	
+		},
+	
+
+		{
+			"LogName": "Board",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_town",
+			"FromFile": "assets/Dark/{{season}}_board_icefestival.png",
+			"ToArea": { "X": 416, "Y": 992, "Width": 96, "Height": 32 },
+			"PatchMode": "Replace",
+			"When": {
+					"Mod Enabled": "true",
+					"Recolor": "Dark",
+					"Season": "Winter",
+					"Day |contains=7, 8" : true,
+					},	
+		},
+		{
+			"LogName": "Board",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_town",
+			"FromFile": "assets/Dark/{{season}}_board_winterstar.png",
+			"ToArea": { "X": 416, "Y": 992, "Width": 96, "Height": 32 },
+			"PatchMode": "Replace",
+			"When": {
+					"Mod Enabled": "true",
+					"Recolor": "Dark",
+					"Season": "Winter",
+					"Day |contains=24, 25" : true,
+					},
+			
+		},
+		{
+			"LogName": "Board",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_town",
+			"FromFile": "assets/Dark/{{season}}_board_nightmarket.png",
+			"ToArea": { "X": 416, "Y": 992, "Width": 96, "Height": 32 },
+			"PatchMode": "Replace",
+			"When": {
+					"Mod Enabled": "true",
+					"Recolor": "Dark",
+					"Season": "Winter",
+					"Day |contains=15, 16, 17": true,
+					},
+			
+		},
+		
+		// SPRING dark1
+		// SPRING
+		{
+			"LogName": "Board",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_town",
+			"FromFile": "assets/Dark1/{{season}}_board_blank.png",
+			"ToArea": { "X": 416, "Y": 992, "Width": 96, "Height": 32 },
+			"PatchMode": "Replace",
+			"When": {
+					"Mod Enabled": "true",
+					"Recolor": "Dark1",
+					"Season": "Spring",
+					"Weather |contains=Rain, Storm, Snow, Sun": true,
+					},	
+		},
+		{
+			"LogName": "Board",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_town",
+			"FromFile": "assets/Dark1/{{season}}_board_petals.png",
+			"ToArea": { "X": 416, "Y": 992, "Width": 96, "Height": 32 },
+			"PatchMode": "Replace",
+			"When": {
+					"Mod Enabled": "true",
+					"Recolor": "Dark1",
+					"Season": "Spring",
+					"Weather": "Wind", 
+					},
+			
+		},
+		{
+			"LogName": "Board",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_town",
+			"FromFile": "assets/Dark1/{{season}}_board_egghunt.png",
+			"ToArea": { "X": 416, "Y": 992, "Width": 96, "Height": 32 },
+			"PatchMode": "Replace",
+			"When": {
+					"Mod Enabled": "true",
+					"Recolor": "Dark1",
+					"Season": "Spring",
+					"Day |contains=12, 13": true,
+					},
+			
+		},
+		{
+			"LogName": "Board",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_town",
+			"FromFile": "assets/Dark1/{{season}}_board_flowerdance.png",
+			"ToArea": { "X": 416, "Y": 992, "Width": 96, "Height": 32 },
+			"PatchMode": "Replace",
+			"When": {
+					"Mod Enabled": "true",
+					"Recolor": "Dark1",
+					"Season": "Spring",
+					"Day |contains=23, 24": true,
+					},
+			
+		},
+		
+		// SUMMER
+		{
+			"LogName": "Board",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_town",
+			"FromFile": "assets/Dark1/{{season}}_board_{{Random:blank, petals}}.png",
+			"ToArea": { "X": 416, "Y": 992, "Width": 96, "Height": 32 },
+			"PatchMode": "Replace",
+			"When": {
+					"Mod Enabled": "true",
+					"Recolor": "Dark1",
+					"Season": "Summer",
+					"Weather |contains=Rain, Storm, Snow": false,
+					},	
+		},
+		{
+			"LogName": "Board",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_town",
+			"FromFile": "assets/Dark1/{{season}}_board_blank.png",
+			"ToArea": { "X": 416, "Y": 992, "Width": 96, "Height": 32 },
+			"PatchMode": "Replace",
+			"When": {
+					"Mod Enabled": "true",
+					"Recolor": "Dark1",
+					"Season": "Summer",
+					"Weather |contains=Rain, Storm, Snow": true,
+					},	
+		},
+	
+		{
+			"LogName": "Board",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_town",
+			"FromFile": "assets/Dark1/{{season}}_board_jellies.png",
+			"ToArea": { "X": 416, "Y": 992, "Width": 96, "Height": 32 },
+			"PatchMode": "Replace",
+			"When": {
+					"Mod Enabled": "true",
+					"Recolor": "Dark1",
+					"Season": "Summer",
+					"Day |contains=27, 28" : true,
+					},	
+		},
+		{
+			"LogName": "Board",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_town",
+			"FromFile": "assets/Dark1/{{season}}_board_luau.png",
+			"ToArea": { "X": 416, "Y": 992, "Width": 96, "Height": 32 },
+			"PatchMode": "Replace",
+			"When": {
+					"Mod Enabled": "true",
+					"Recolor": "Dark1",
+					"Season": "Summer",
+					"Day |contains=10, 11" : true,
+					},
+		},
+					// FALL
+		{
+			"LogName": "Board",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_town",
+			"FromFile": "assets/Dark1/{{season}}_board_blank_{{Random:bird, nobird}}.png",
+			"ToArea": { "X": 416, "Y": 992, "Width": 96, "Height": 32 },
+			"PatchMode": "Replace",
+			"When": {
+					"Mod Enabled": "true",
+					"Recolor": "Dark1",
+					"Season": "Fall",
+					},	
+		},
+		{
+			"LogName": "Board",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_town",
+			"FromFile": "assets/Dark1/{{season}}_board_blank_nobird.png",
+			"ToArea": { "X": 416, "Y": 992, "Width": 96, "Height": 32 },
+			"PatchMode": "Replace",
+			"When": {
+					"Mod Enabled": "true",
+					"Recolor": "Dark1",
+					"Season": "Fall",
+					"Weather": "Rain, Storm", 
+					},	
+		},
+		{
+			"LogName": "Board",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_town",
+			"FromFile": "assets/Dark1/{{season}}_board_petals_{{Random:bird, nobird}}.png",
+			"ToArea": { "X": 416, "Y": 992, "Width": 96, "Height": 32 },
+			"PatchMode": "Replace",
+			"When": {
+					"Mod Enabled": "true",
+					"Recolor": "Dark1",
+					"Season": "Fall",
+					"Weather": "Wind", 
+					},
+			
+		},
+		{
+			"LogName": "Board",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_town",
+			"FromFile": "assets/Dark1/{{season}}_board_stardewfair.png",
+			"ToArea": { "X": 416, "Y": 992, "Width": 96, "Height": 32 },
+			"PatchMode": "Replace",
+			"When": {
+					"Mod Enabled": "true",
+					"Recolor": "Dark1",
+					"Season": "Fall",
+					"Day |contains=15, 16" : true,
+					},	
+		},
+		{
+			"LogName": "Board",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_town",
+			"FromFile": "assets/Dark1/{{season}}_board_spiritseve.png",
+			"ToArea": { "X": 416, "Y": 992, "Width": 96, "Height": 32 },
+			"PatchMode": "Replace",
+			"When": {
+					"Mod Enabled": "true",
+					"Recolor": "Dark1",
+					"Season": "Fall",
+					"Day |contains=26, 27" : true,
+					},
+			
+		},
+				// winter
+		{
+			"LogName": "Board",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_town",
+			"FromFile": "assets/Dark1/{{season}}_board_blank.png",
+			"ToArea": { "X": 416, "Y": 992, "Width": 96, "Height": 32 },
+			"PatchMode": "Replace",
+			"When": {
+					"Mod Enabled": "true",
+					"Recolor": "Dark1",
+					"Season": "Winter",
+					},	
+		},
+	
+
+		{
+			"LogName": "Board",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_town",
+			"FromFile": "assets/Dark1/{{season}}_board_icefestival.png",
+			"ToArea": { "X": 416, "Y": 992, "Width": 96, "Height": 32 },
+			"PatchMode": "Replace",
+			"When": {
+					"Mod Enabled": "true",
+					"Recolor": "Dark1",
+					"Season": "Winter",
+					"Day |contains=7, 8" : true,
+					},	
+		},
+		{
+			"LogName": "Board",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_town",
+			"FromFile": "assets/Dark1/{{season}}_board_winterstar.png",
+			"ToArea": { "X": 416, "Y": 992, "Width": 96, "Height": 32 },
+			"PatchMode": "Replace",
+			"When": {
+					"Mod Enabled": "true",
+					"Recolor": "Dark1",
+					"Season": "Winter",
+					"Day |contains=24, 25" : true,
+					},
+			
+		},
+		{
+			"LogName": "Board",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_town",
+			"FromFile": "assets/Dark1/{{season}}_board_nightmarket.png",
+			"ToArea": { "X": 416, "Y": 992, "Width": 96, "Height": 32 },
+			"PatchMode": "Replace",
+			"When": {
+					"Mod Enabled": "true",
+					"Recolor": "Dark1",
+					"Season": "Winter",
+					"Day |contains=15, 16, 17": true,
+					},
+			
+		},
+		
+		//white
+		
+		// SPRING
+		{
+			"LogName": "Board",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_town",
+			"FromFile": "assets/White/{{season}}_board_blank.png",
+			"ToArea": { "X": 416, "Y": 992, "Width": 96, "Height": 32 },
+			"PatchMode": "Replace",
+			"When": {
+					"Mod Enabled": "true",
+					"Recolor": "White",
+					"Season": "Spring",
+					"Weather |contains=Rain, Storm, Snow, Sun": true,
+					},	
+		},
+		{
+			"LogName": "Board",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_town",
+			"FromFile": "assets/White/{{season}}_board_petals.png",
+			"ToArea": { "X": 416, "Y": 992, "Width": 96, "Height": 32 },
+			"PatchMode": "Replace",
+			"When": {
+					"Mod Enabled": "true",
+					"Recolor": "White",
+					"Season": "Spring",
+					"Weather": "Wind", 
+					},
+			
+		},
+		{
+			"LogName": "Board",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_town",
+			"FromFile": "assets/White/{{season}}_board_egghunt.png",
+			"ToArea": { "X": 416, "Y": 992, "Width": 96, "Height": 32 },
+			"PatchMode": "Replace",
+			"When": {
+					"Mod Enabled": "true",
+					"Recolor": "White",
+					"Season": "Spring",
+					"Day |contains=12, 13": true,
+					},
+			
+		},
+		{
+			"LogName": "Board",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_town",
+			"FromFile": "assets/White/{{season}}_board_flowerdance.png",
+			"ToArea": { "X": 416, "Y": 992, "Width": 96, "Height": 32 },
+			"PatchMode": "Replace",
+			"When": {
+					"Mod Enabled": "true",
+					"Recolor": "White",
+					"Season": "Spring",
+					"Day |contains=23, 24": true,
+					},
+			
+		},
+		
+		// SUMMER
+		{
+			"LogName": "Board",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_town",
+			"FromFile": "assets/White/{{season}}_board_{{Random:blank, petals}}.png",
+			"ToArea": { "X": 416, "Y": 992, "Width": 96, "Height": 32 },
+			"PatchMode": "Replace",
+			"When": {
+					"Mod Enabled": "true",
+					"Recolor": "White",
+					"Season": "Summer",
+					"Weather |contains=Rain, Storm, Snow": false,
+					},	
+		},
+		{
+			"LogName": "Board",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_town",
+			"FromFile": "assets/White/{{season}}_board_blank.png",
+			"ToArea": { "X": 416, "Y": 992, "Width": 96, "Height": 32 },
+			"PatchMode": "Replace",
+			"When": {
+					"Mod Enabled": "true",
+					"Recolor": "White",
+					"Season": "Summer",
+					"Weather |contains=Rain, Storm, Snow": true,
+					},	
+		},
+	
+		{
+			"LogName": "Board",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_town",
+			"FromFile": "assets/White/{{season}}_board_jellies.png",
+			"ToArea": { "X": 416, "Y": 992, "Width": 96, "Height": 32 },
+			"PatchMode": "Replace",
+			"When": {
+					"Mod Enabled": "true",
+					"Recolor": "White",
+					"Season": "Summer",
+					"Day |contains=27, 28" : true,
+					},	
+		},
+		{
+			"LogName": "Board",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_town",
+			"FromFile": "assets/White/{{season}}_board_luau.png",
+			"ToArea": { "X": 416, "Y": 992, "Width": 96, "Height": 32 },
+			"PatchMode": "Replace",
+			"When": {
+					"Mod Enabled": "true",
+					"Recolor": "White",
+					"Season": "Summer",
+					"Day |contains=10, 11" : true,
+					},
+		},
+					// FALL
+		{
+			"LogName": "Board",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_town",
+			"FromFile": "assets/White/{{season}}_board_blank_{{Random:bird, nobird}}.png",
+			"ToArea": { "X": 416, "Y": 992, "Width": 96, "Height": 32 },
+			"PatchMode": "Replace",
+			"When": {
+					"Mod Enabled": "true",
+					"Recolor": "White",
+					"Season": "Fall",
+					},	
+		},
+		{
+			"LogName": "Board",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_town",
+			"FromFile": "assets/White/{{season}}_board_blank_nobird.png",
+			"ToArea": { "X": 416, "Y": 992, "Width": 96, "Height": 32 },
+			"PatchMode": "Replace",
+			"When": {
+					"Mod Enabled": "true",
+					"Recolor": "White",
+					"Season": "Fall",
+					"Weather": "Rain, Storm", 
+					},	
+		},
+		{
+			"LogName": "Board",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_town",
+			"FromFile": "assets/White/{{season}}_board_petals_{{Random:bird, nobird}}.png",
+			"ToArea": { "X": 416, "Y": 992, "Width": 96, "Height": 32 },
+			"PatchMode": "Replace",
+			"When": {
+					"Mod Enabled": "true",
+					"Recolor": "White",
+					"Season": "Fall",
+					"Weather": "Wind", 
+					},
+			
+		},
+		{
+			"LogName": "Board",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_town",
+			"FromFile": "assets/White/{{season}}_board_stardewfair.png",
+			"ToArea": { "X": 416, "Y": 992, "Width": 96, "Height": 32 },
+			"PatchMode": "Replace",
+			"When": {
+					"Mod Enabled": "true",
+					"Recolor": "White",
+					"Season": "Fall",
+					"Day |contains=15, 16" : true,
+					},	
+		},
+		{
+			"LogName": "Board",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_town",
+			"FromFile": "assets/White/{{season}}_board_spiritseve.png",
+			"ToArea": { "X": 416, "Y": 992, "Width": 96, "Height": 32 },
+			"PatchMode": "Replace",
+			"When": {
+					"Mod Enabled": "true",
+					"Recolor": "White",
+					"Season": "Fall",
+					"Day |contains=26, 27" : true,
+					},
+			
+		},
+				// winter
+		{
+			"LogName": "Board",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_town",
+			"FromFile": "assets/White/{{season}}_board_blank.png",
+			"ToArea": { "X": 416, "Y": 992, "Width": 96, "Height": 32 },
+			"PatchMode": "Replace",
+			"When": {
+					"Mod Enabled": "true",
+					"Recolor": "White",
+					"Season": "Winter",
+					},	
+		},
+	
+
+		{
+			"LogName": "Board",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_town",
+			"FromFile": "assets/White/{{season}}_board_icefestival.png",
+			"ToArea": { "X": 416, "Y": 992, "Width": 96, "Height": 32 },
+			"PatchMode": "Replace",
+			"When": {
+					"Mod Enabled": "true",
+					"Recolor": "White",
+					"Season": "Winter",
+					"Day |contains=7, 8" : true,
+					},	
+		},
+		{
+			"LogName": "Board",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_town",
+			"FromFile": "assets/White/{{season}}_board_winterstar.png",
+			"ToArea": { "X": 416, "Y": 992, "Width": 96, "Height": 32 },
+			"PatchMode": "Replace",
+			"When": {
+					"Mod Enabled": "true",
+					"Recolor": "White",
+					"Season": "Winter",
+					"Day |contains=24, 25" : true,
+					},
+			
+		},
+		{
+			"LogName": "Board",
+			"Action": "EditImage",
+			"Target": "Maps/{{season}}_town",
+			"FromFile": "assets/White/{{season}}_board_nightmarket.png",
+			"ToArea": { "X": 416, "Y": 992, "Width": 96, "Height": 32 },
+			"PatchMode": "Replace",
+			"When": {
+					"Mod Enabled": "true",
+					"Recolor": "White",
+					"Season": "Winter",
+					"Day |contains=15, 16, 17": true,
+					},
+			
+		}
+	]
+}

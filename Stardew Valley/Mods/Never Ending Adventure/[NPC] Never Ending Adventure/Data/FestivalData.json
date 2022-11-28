@@ -1,0 +1,641 @@
+{
+    "Changes": [
+        // EGG FESTIVAL
+
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring13",
+            "TextOperations": [
+                {   // LOCATION: SET UP (VANILLA)
+                    "Operation": "Append",
+                    "Target": [  "Entries", "Set-Up_additionalCharacters" ],
+                    "Value": "Mateo 43 72 2",
+                    "Delimiter": "/"
+                },
+                {   // LOCATION: MAIN EVENT (VANILLA)
+                    "Operation": "Append",
+                    "Target": [  "Entries",  "MainEvent_additionalCharacters"  ],
+                    "Value": "Mateo 36 64 3",
+                    "Delimiter": "/"
+                },
+			],
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+				"HasSeenEvent |contains=12360004": "true",
+				"HasConversationTopic |contains=MateoPain": false,
+			  },	  
+        },
+				
+		{
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring13",
+            "TextOperations": [
+                {   // LOCATION: SET UP (SVE)
+                	"Operation": "Append",
+                    "Target": [  "Entries", "Set-Up_additionalCharacters" ],
+                    "Value": "Mateo 42 57 2",
+                    "Delimiter": "/"
+                },
+                {  // LOCATION: MAIN EVENT (SVE)
+                    "Operation": "Append",
+                    "Target": [  "Entries",  "MainEvent_additionalCharacters"  ],
+                    "Value": "Mateo 35 63 2",
+                    "Delimiter": "/"
+                },
+		],
+		"When": {
+			"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+			"HasSeenEvent |contains=12360004": "true",
+			"HasConversationTopic |contains=MateoPain": false,
+		  }	  
+	},
+
+	{
+		"LogName": "EggFestival",
+		"Action": "EditData",
+		"Target": "Data/Festivals/spring13",
+		"Entries": { //EGG FESTIVAL DIALOGUE: GENERIC
+		
+			"Mateo": "我喜欢找彩蛋。$14#$b#我以前在校园里藏鸡蛋，但它们藏得太好了，人们好几天都找不到。$8#$b#直到它们开始发臭。$7",
+			"Mateo_2": "为你加油， @.$0#$b#我小时候刘易斯还让我玩的时候我很擅长这个。$11#$b#现在不是这样了。$10",
+			
+		}
+	},
+			
+				{
+					"LogName": "EggFestival",
+					"Action": "EditData",
+					"Target": "Data/Festivals/spring13",
+					"Entries": { //EGG FESTIVAL DIALOGUE: MARRIED
+					
+						"Mateo": "好的,所以。那棵树后面就有一个。另一个就在灌木丛下看不见的地方。$11#$b#该死，刘易斯在看这里。$9#$b#祝你好运，我的太阳。$19",
+				
+					},
+					"When":
+						{ "Relationship:Mateo": "Married"}
+		
+				},
+	
+
+        // FLOWER DANCE
+
+        {   
+    
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring24",
+            "TextOperations": [
+                {	// LOCATION: SET UP (VANILLA)
+                    "Operation": "Append",
+                    "Target": [ "Entries","Set-Up_additionalCharacters" ],
+                    "Value": "Mateo 21 21 2",
+                    "Delimiter": "/"
+                },
+                {	// LOCATION: MAIN EVENT (VANILLA)
+                    "Operation": "Append",
+                    "Target": [ "Entries","MainEvent_additionalCharacters"  ],
+                    "Value": "Mateo 23 24 3",
+                    "Delimiter": "/"
+                },
+            ],
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+				"HasSeenEvent |contains=12360004": true,
+				"HasConversationTopic |contains=MateoPain": false,
+			  },  
+        },
+
+		{   
+    
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring24",
+            "TextOperations": [
+                {	// LOCATION: SET UP (SVE)
+                    "Operation": "Append",
+                    "Target": [ "Entries","Set-Up_additionalCharacters" ],
+                    "Value": "Mateo 21 21 2",
+                    "Delimiter": "/"
+                },
+                {	// LOCATION: MAIN EVENT (SVE)
+                    "Operation": "Append",
+                    "Target": [ "Entries","MainEvent_additionalCharacters"  ],
+                    "Value": "Mateo 23 20 2",
+                    "Delimiter": "/"
+                },
+            ],
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+				"HasSeenEvent |contains=12360004": true,
+				"HasConversationTopic |contains=MateoPain": false,
+			  },	 
+        },
+
+		{
+			"LogName": "FlowerDance",
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring24",
+			"Entries": { // FLOWER DANCE DIALOGUE: GENERIC 
+			
+				"Mateo": "说实话，我更喜欢去夜店。但这儿真的很可爱。$11",
+				"Mateo_2":"我喜欢这样的大型派对。他们是如此亲密。在规模较小的聚会中，没有隐私可言。$19",
+			  
+			},
+		},
+				
+				{ // FLOWER DANCE DIALOGUE: MARRIED
+					"LogName": "FlowerDance",
+					"Action": "EditData",
+					"Target": "Data/Festivals/spring24",
+					"Entries": {
+					
+						"Mateo":"当我看到你盛装打扮的时候，一切都慢下来了，其他人都不重要了。$18#$b#这让我想起了我们的婚礼。我爱你, @.$16",                        
+					
+					},
+					
+					"When":
+							{ "Relationship:Mateo": "Married"}
+					
+				},
+
+				{
+					"LogName": "Marriage Flower Dance Accept",
+					"Action": "EditData",
+					"Target": "Strings/Events",
+					"Entries": {
+						"SpouseFlowerDanceAccept_Mateo": "听着，我保证。我竖着跳和横着跳一样好。$11#$b#让我示范给你看，我的太阳。$19",
+					}
+				},
+
+        // LUAU
+
+        {
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer11",
+			"TextOperations": [
+				{	// LOCATION: SET UP (VANILLA)
+					"Operation": "Append",
+					"Target": ["Entries","Set-Up_additionalCharacters"],
+					"Value": "Mateo 27 23 1",
+					"Delimiter": "/"
+				},
+				{	// LOCATION: SET UP (VANILLA)
+					"Operation": "Append",
+					"Target": ["Entries","MainEvent_additionalCharacters"],
+					"Value": "Mateo 27 23 1",
+					"Delimiter": "/"
+				},
+			],
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+				"HasSeenEvent |contains=12360004": true,
+				"HasConversationTopic |contains=MateoPain": false,
+			  },
+		},
+
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer11",
+			"TextOperations": [
+				{	// LOCATION: SET UP (SVE)
+					"Operation": "Append",
+					"Target": ["Entries","Set-Up_additionalCharacters"],
+					"Value": "Mateo 53 7 2",
+					"Delimiter": "/"
+				},
+				{	// LOCATION: SET UP (SVE)
+					"Operation": "Append",
+					"Target": ["Entries","MainEvent_additionalCharacters"],
+					"Value": "Mateo 53 7 2",
+					"Delimiter": "/"
+				},
+			],
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+				"HasSeenEvent |contains=12360004": true,
+				"HasConversationTopic |contains=MateoPain": false,
+			  },
+		},
+
+		{
+			"LogName": "Luau",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer11",
+			"Entries": { // LUAU DIALOGUE: GENERIC 
+			
+				"Mateo": "我喜欢看大家聚在一起。老实说，这很有益健康。让这里感觉像是一个真正紧密相连的社区。$10#$b#真的，这是食物、饮料和舞蹈的魔力。$1",
+			
+			},
+		},
+				{ // 
+				"LogName": "Luau",
+					"Action": "EditData",
+					"Target": "Data/Festivals/summer11",
+					"Entries": {
+						
+							"Mateo": "老实说，在每年的汤里生存下来——尤其是这么多人往汤里扔东西——似乎是个挑战。$1#$b#如果我们生病了，你也会和我一起。$11",                   
+					 },
+					"When":
+					{ "Relationship:Mateo": "Married"}
+
+			},
+
+		
+
+        // DANCE OF THE MOONLIGHT JELLIES
+
+        {
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer28",
+			"TextOperations": [
+				{   // LOCATION: SET UP & MAIN EVENT (VANILLA)
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters"],
+					"Value": "Mateo 13 27 1",
+					"Delimiter": "/"
+				},
+			],
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+				"HasSeenEvent |contains=12360004": true,
+				"HasConversationTopic |contains=MateoPain": false,
+			  },
+		},
+
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer28",
+			"TextOperations": [
+				{   // LOCATION: SET UP & MAIN EVENT (SVE)
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters"],
+					"Value": "Mateo 13 27 1",
+					"Delimiter": "/"
+				},
+			],
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+				"HasSeenEvent |contains=12360004": true,
+				"HasConversationTopic |contains=MateoPain": false,
+			  },
+		},
+
+		{
+			"LogName": "Jellies",
+			"Action": "EditData",
+			"Target": "Data/Festivals/summer28",
+			"Entries": { // DANCE OF THE MOONLIGHT JELLIES: GENERIC
+
+				"Mateo": "我喜欢水母。不过，在弗恩群岛有一种刺虫，会刺到令人讨厌的东西。$10#$b#所以，当它们在你身边的时候，你不会想去游泳。$1",
+				
+
+			}
+		},
+				{
+					"LogName": "Jellies",
+					"Action": "EditData",
+					"Target": "Data/Festivals/summer28",
+					"Entries": { // DANCE OF THE MOONLIGHT JELLIES: MARRIED
+
+						"Mateo": "我从没想过我能有机会站在这里看着这一切发生。$18#$b#光在你身上反射的样子是我见过的最美的东西之一。$16#$b#谢谢你成为我的朋友，我的太阳。$18",
+						
+				},
+					"When":
+					{ "Relationship:Mateo": "Married"}
+				},
+
+        // STARDEW VALLEY FAIR
+
+        {
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall16",
+			"TextOperations": [
+				{	// LOCATION: SET UP & MAIN EVENT (VANILLA)
+					"Operation": "Append",
+					"Target": ["Entries","Set-Up_additionalCharacters"],
+					"Value": "Mateo 37 81 0",
+					"Delimiter": "/"
+				},
+			],
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+				"HasSeenEvent |contains=12360004": true,
+				"HasConversationTopic |contains=MateoPain": false,
+			  },
+		},
+
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall16",
+			"TextOperations": [
+				{	// LOCATION: SET UP & MAIN EVENT (SVE)
+					"Operation": "Append",
+					"Target": [	"Entries","Set-Up_additionalCharacters"],
+					"Value": "Mateo 33 81 0",
+					"Delimiter": "/"
+				},
+			],
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+				"HasSeenEvent |contains=12360004": true,
+				"HasConversationTopic |contains=MateoPain": false,
+			  },
+		},
+
+		{
+			"LogName": "SVFair",
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall16",
+			"Entries": { // STARDEW VALLEY FAIR DIALOGUE: GENERIC
+			
+				  "Mateo": "那根本没机会...$0#$b#抱歉，枪声太大，我听不清。$11#$b#%马特奥弯下腰。",
+				  "Mateo_2": "我可是多年的敲钟冠军，@.$11#$b#一直挥舞着剑对身体大有好处。$19",
+
+			}
+		},
+				{
+					"LogName": "SVFair",
+					"Action": "EditData",
+					"Target": "Data/Festivals/fall16",
+					"Entries": { // STARDEW VALLEY FAIR DIALOGUE: MARRIED
+					
+						"Mateo":"你赢定了，我的太阳。$18#$b#我将赢得力量比赛，你将赢得展示比赛，然后我们都可以回家庆祝。听起来不是不错吗?$16",
+						
+					},
+					"When":
+					{ "Relationship:Mateo": "Married"}
+				},
+
+        // SPIRIT'S EVE
+
+       {
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall27",
+			"TextOperations": [
+				{	// LOCATION: SET UP & MAIN EVENT (VANILLA)
+					"Operation": "Append",
+					"Target": ["Entries",	"Set-Up_additionalCharacters"],
+					"Value": "Mateo 14 17 2",
+					"Delimiter": "/"
+				},
+				],
+				"When": {
+					"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+					"HasConversationTopic |contains=MateoPain": false,
+				  },
+		},
+
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall27",
+			"TextOperations": [
+				{	// LOCATION: SET UP & MAIN EVENT (SVE)
+					"Operation": "Append",
+					"Target": ["Entries",	"Set-Up_additionalCharacters"],
+					"Value": "Mateo 25 57 1",
+					"Delimiter": "/"
+				},
+				],
+				"When": {
+					"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+					"HasConversationTopic |contains=MateoPain": false,
+				  },
+		},
+
+		{
+			"LogName": "SpiritsEve",
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall27",
+			"Entries": {
+			
+				  "Mateo": "今晚是一年中唯一一个没有安全感的夜晚。#$b#你应该有点害怕才对。#$b#即使只有一晚。#$b#如果你在年轻的时候都无法忍受恐惧，那么当你长大了，你又该如何应对呢?#$b#在以后的生活中有更多的事情值得害怕。", 
+				  "Mateo_2": "永远不要打碎南瓜灯或偷孩子们的糖果。#$b#今晚是尊重死者的日子，因为今晚是他们...#$b#...还有各种各样的东西在自由游荡，来拜访这个世界。#$b#所有这些传统?南瓜灯、服装、分发糖果……他们一开始都是为了保护你。", 
+
+			}
+		},
+				{
+					"LogName": "SpiritsEve",
+					"Action": "EditData",
+					"Target": "Data/Festivals/fall27",
+					"Entries": {
+					
+						"Mateo":"你吻我的方式有一种刺痛，我的太阳。#$b#我喜欢它。#$b#我爱你。#$b#...我想在月光下迷惑你...",
+						
+					},
+					"When":
+					{ "Relationship:Mateo": "Married"}
+				},
+
+        // ICE FESTIVAL 
+
+        {
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter8",
+			"TextOperations": [
+				{	// LOCATION: SET UP (VANILLA)
+					"Operation": "Append",
+					"Target": ["Entries","Set-Up_additionalCharacters"],
+					"Value": "Mateo 48 29 3",
+					"Delimiter": "/"
+				},
+                {   // LOCATION: MAIN EVENT (VANILLA)
+					"Operation": "Append",
+					"Target": ["Entries","Main-Event_additionalCharacters"],
+					"Value": "Mateo 71 42 0",
+					"Delimiter": "/"
+				},
+			],
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+				"HasSeenEvent |contains=12360004": true,
+				"HasConversationTopic |contains=MateoPain": false,
+			  },
+		},
+
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter8",
+			"TextOperations": [
+				{	// LOCATION: SET UP (SVE)
+					"Operation": "Append",
+					"Target": ["Entries","Set-Up_additionalCharacters"],
+					"Value": "Mateo 99 40 2",
+					"Delimiter": "/"
+				},
+                {   // LOCATION: MAIN EVENT (SVE)
+					"Operation": "Append",
+					"Target": [	"Entries","Main-Event_additionalCharacters"	],
+					"Value": "Mateo 80 36 3",
+					"Delimiter": "/"
+				},
+			],
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+				"HasSeenEvent |contains=12360004": true,
+				"HasConversationTopic |contains=MateoPain": false,
+			  },
+		},
+
+		{
+			"LogName": "IceFest",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter8",
+			"Entries": { // ICE FESTIVAL DIALOGUE: GENERIC
+			
+				  "Mateo": "%马特奥正在把雪球拍打得完美无缺。$19#$b#好了，马龙……如果你能躲避一个怪物的攻击，你就能躲避一个雪球。$19",
+				  "Mateo_2": "有部老电影我很喜欢，讲的是雪是如何形成的。$11#$b#一个手拿大剪刀的人雕刻冰雕，而我们的风暴就是由这些小雨形成的。$10#$b#这个节日让我想起了这些事。$1",
+
+			}
+		},
+				{
+					"LogName": "IceFest",
+					"Action": "EditData",
+					"Target": "Data/Festivals/winter8",
+					"Entries": { // ICE FESTIVAL DIALOGUE: MARRIED 
+					
+						"Mateo": "我爱你到足以让你知道你不会因为我们结婚而免于被雪球击中的危险。$18#$b#条件是“直到死亡把我们分开”，而不是“直到我亲爱的伙伴把雪扔给我”。$16#$b#小心。$18",
+					
+
+					},
+						"When":
+						{ "Relationship:Mateo": "Married"}
+				},
+
+        // WINTER STAR
+
+        {
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter25",
+			"TextOperations": [
+				{	// LOCATION: SET UP (VANILLA)
+					"Operation": "Append",
+					"Target": [	"Entries","Set-Up_additionalCharacters"	],
+					"Value": "Mateo 22 58 1",
+					"Delimiter": "/"
+				},
+			],
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+				"HasSeenEvent |contains=12360004": true,
+				"HasConversationTopic |contains=MateoPain": false,
+			  },
+        },
+
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter25",
+			"TextOperations": [
+				{	// LOCATION: SET UP (SVE)
+					"Operation": "Append",
+					"Target": [	"Entries","Set-Up_additionalCharacters"	],
+					"Value": "Mateo 22 58 1",
+					"Delimiter": "/"
+				},
+			],
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+				"HasSeenEvent |contains=12360004": true,
+				"HasConversationTopic |contains=MateoPain": false,
+			  },
+        },
+
+		{
+			"LogName": "WinterStar",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter25",
+			"Entries": { // WINTER STAR DIALOGUE: GENERIC 
+			
+				  "Mateo": "当我还是个孩子的时候，马龙给了我一把剑作为礼物。刘易斯很生气。$19",
+				  "Mateo_2": "食物，礼物，陪伴——没有什么比这更好的了，真的。$10#$b#尤其是当冬天是如此糟糕的时候。$1#$b#马龙和冈瑟在我小的时候给我买了冒险装备，现在我送了他们一些漂亮的礼物。",
+				
+			},
+		},
+				{
+					"LogName": "WinterStar",
+					"Action": "EditData",
+					"Target": "Data/Festivals/winter25",
+					"Entries": { // WINTER STAR DIALOGUE: MARRIED 
+					
+						"Mateo":"能成为其中的一部分真是太棒了。这是一个社区的一部分，一个公会，一个家庭的一部分。这整个节日真的让这一切都感觉很真实。$16#$b#%马特奥吻了吻你的鼻尖。$18#$b#这一切都要感谢你，我的太阳。",
+					},
+						"When":
+							{ "Relationship:Mateo": "Married"}
+				},
+
+		// RSV GATHERING FESTIVAL 
+
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall20",
+			"TextOperations": [
+					{ // LOCATION: SET UP
+					  "Operation": "Append",
+					  "Target": ["Entries", "Set-Up_additionalCharacters"],
+					  "Value": "Mateo 100 49 2",
+					  "Delimiter": "/"
+					 },
+					 { // LOCATION: MAIN EVENT
+					  "Operation": "Append",
+					  "Target": ["Entries", "MainEvent_additionalCharacters"],
+					  "Value": "Mateo 77 50 0",
+					  "Delimiter": "/"
+					 },
+				],
+				"When": {
+					"HasMod |contains=Rafseazz.RSVCP": true,
+					"HasSeenEvent |contains=12360004": true,
+					"HasConversationTopic |contains=MateoPain": false,
+				  },
+		},
+
+		{
+			"LogName": "RSV Gathering Festival Dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/fall20",
+			"Entries": { // RSV GATHERING FESTIVAL DIALOGUE: GENERIC 
+			
+				"Mateo": "看大家比赛真的很酷，但我不确定该选哪一队。$10#$b#相反，我只是想和男的待在一起。",
+			},
+			"When":
+			{ "HasMod":"Rafseazz.RSVCP"}
+
+		},
+
+		// RSV EMBER OF RESOLUTIONS 		
+
+		{
+
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter28",
+			"TextOperations": [
+				 { // LOCATION: SET UP 
+				  "Operation": "Append",
+				  "Target": ["Entries", "Set-Up_additionalCharacters"],
+				  "Value": "Mateo 53 43 3",
+				  "Delimiter": "/"
+				 },
+				 { // LOCATION: MAIN EVENT
+				  "Operation": "Append",
+				  "Target": ["Entries", "MainEvent_additionalCharacters"],
+				  "Value": "Mateo 49 42 3",
+				  "Delimiter": "/"
+				 },
+		 	],
+				"When": {
+					"HasMod |contains=Rafseazz.RSVCP": true,
+					"HasSeenEvent |contains=12360004": true,
+					"HasConversationTopic |contains=MateoPain": false,
+				  },
+		},
+
+		{
+			"LogName": "RSV Ember of Resolutions Dialogue",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter28",
+			"Entries": { // RSV EMBER OF RESOLUTIONS DIALOGUE: GENERIC 
+			
+				"Mateo": "改变是一系列的选择，都是随着时间的推移而做出的。如果你不想，你不必成为昨天的人。$17",
+			},
+			"When":
+			{ "HasMod":"Rafseazz.RSVCP"}
+		},
+    ],
+}

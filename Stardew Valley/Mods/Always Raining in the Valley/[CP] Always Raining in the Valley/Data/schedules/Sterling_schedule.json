@@ -1,0 +1,158 @@
+{
+  "Changes": 
+    [
+    //MAIN SCHEDULE
+      {
+      "LogName": "Sterling Schedule Vanilla",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Sterling",
+      "Entries": 
+            {
+              "rain": "GOTO spring",
+              "spring": "610 SeedShop 5 22 3 SterlingStocking/1710 Saloon 22 18 3 SterlingDrinking/2200 Custom_ARVHouse 21 20 1/2310 Custom_ARVHouse 29 8 3 SterlingSleep",
+              "Fri":    "610 SeedShop 5 22 3 SterlingStocking/1710 Saloon 26 21 3 SterlingDrinking/2300 Custom_ARVHouse 21 20 1/110 Custom_ARVHouse 29 8 3 SterlingSleep",
+              "fall_27": "610 Custom_EastScarpe 42 66 2 \"Strings\\schedules\\Sterling:halloween.000\"/1240 Custom_EastScarpeInn 42 27 3 \"Strings\\schedules\\Sterling:halloween.001\"/1500 Custom_EastScarpeInn 42 27 3 SterlingDrinking\"Strings\\schedules\\Sterling:halloween.001\"/2350 Custom_ARVHouse 29 8 3 SterlingSleep",
+              "winter_15":"610 Custom_ARVHouse 25 5 0/830 Custom_ARVHouse 25 20 1/900 Custom_ARVHouse 22 20 1/1030 Custom_EastScarpe 36 50 1/1310 Custom_EastScarpe 20 65 1/1400 Beach 32 15 3/2200 Custom_ARVHouse 21 20 1/2320 Custom_ARVHouse 26 8 3/2350 Custom_ARVHouse 29 8 3 SterlingSleep",
+              "winter_16": "GOTO winter_15",
+              "winter_17": "GOTO winter_15",
+              "summer_15":"610 SeedShop 5 22 3 SterlingStocking/1710 Custom_ARVHouse 25 25 0",
+              "Wed": "610 Custom_ARVHouse 25 5 0/830 Custom_ARVHouse 25 20 1/900 Custom_ARVHouse 22 20 1/1030 Custom_EastScarpe 36 50 1/1310 Custom_EastScarpe 20 65 1/1500 Custom_EastScarpe 23 102 0/1710 Saloon 22 18 3 SterlingDrinking/2230 Custom_ARVHouse 29 8 3 SterlingSleep",
+              "Sun": "610 Custom_ARVHouse 25 5 0/830 Custom_ARVHouse 25 20 1/900 Custom_ARVHouse 22 20 1/1000 Custom_EastScarpe 36 50 1/1200 AnimalShop 29 15 3/1910 Saloon 39 22 0/2330 Custom_ARVHouse 29 8 3 SterlingSleep",
+              "marriage_fall_27": "610 Custom_EastScarpe 42 66 2 \"Strings\\schedules\\Sterling:halloween.002\"/1240 Custom_EastScarpeInn 42 27 3\"Strings\\schedules\\Sterling:halloween.003\"/1500 Custom_EastScarpeInn 42 27 3 SterlingDrinking\"Strings\\schedules\\Sterling:halloween.003\"/2350 Custom_ARVHouse 29 8 3 SterlingSleep",
+              "marriage_Sun":"1130 SeedShop 6 19 0 \"Strings\\schedules\\Sterling:married.001\"/1910 Saloon 39 22 0\"Strings\\schedules\\Sterling:married.003\"/1700 BusStop -1 23 3"
+            },
+        "When": 
+          { "HasConversationTopic |contains=SterlingRelapse": "false",
+            }    
+      },
+
+
+  //RELAPSE SCHEDULE
+
+  {
+    "LogName": "Sterling Schedule Relapse",
+    "Action": "EditData",
+    "Target": "Characters/schedules/Sterling",
+    "Entries": 
+          {
+            "rain": "GOTO spring",
+            "spring": "610 Custom_ARVHouse 29 8 3 SterlingSleep/930 Custom_ARVHouse 25 25 0/1025 Custom_ARVHouse 24 20 1/1120 Custom_ARVHouse 6 20 2/1240 Custom_EastScarpe 36 48 3/1300 Custom_EastScarpe 36 50 3/1330 Custom_EastScarpe 25 51 1/1500 Custom_EastScarpe 26 61 0/1600 Custom_EastScarpe 23 102 0/1630 Custom_EastScarpe 23 104 3/1730 Custom_EastScarpe 23 102 0/1900 Custom_ARVHouse 21 21 1/2000 Custom_ARVHouse 24 20 2/2100 Custom_ARVHouse 21 30 0/2130 Custom_ARVHouse 20 20 1/2200 Custom_ARVHouse 24 71 1/2320 Custom_ARVHouse 26 8 3/2350 Custom_ARVHouse 29 8 3 SterlingSleep",
+            "Fri":    "610 Custom_ARVHouse 29 8 3 SterlingSleep/930 Custom_ARVHouse 25 25 0/1025 Custom_ARVHouse 24 20 1/1120 Custom_ARVHouse 6 20 2/1240 Custom_EastScarpe 36 48 3/1300 Custom_EastScarpe 36 50 3/1330 Saloon 26 21 3 SterlingDrinking/2300 Custom_ARVHouse 21 20 1/110 Custom_ARVHouse 29 8 3 SterlingSleep",
+            "fall_27": "610 Custom_EastScarpe 42 66 2 \"Strings\\schedules\\Sterling:halloween.000\"/1240 Custom_EastScarpeInn 42 27 3 \"Strings\\schedules\\Sterling:halloween.001\"/1500 Custom_EastScarpeInn 42 27 3 SterlingDrinking\"Strings\\schedules\\Sterling:halloween.001\"/2400 Custom_ARVHouse 29 8 3 SterlingSleep",
+            "winter_15":"610 Custom_ARVHouse 25 5 0/830 Custom_ARVHouse 25 20 1/900 Custom_ARVHouse 22 20 1/1030 Custom_EastScarpe 36 50 1/1310 Custom_EastScarpe 20 65 1/1400 Beach 32 15 3/2200 Custom_ARVHouse 21 20 1/2320 Custom_ARVHouse 26 8 3/2350 Custom_ARVHouse 29 8 3 SterlingSleep",
+            "winter_16": "GOTO winter_15",
+            "winter_17": "GOTO winter_15",
+            "summer_15":"610 Custom_ARVHouse 29 8 3 SterlingSleep/930 Custom_ARVHouse 25 25 0/1025 Custom_ARVHouse 24 20 1/1120 Custom_ARVHouse 6 20 2/1240 Custom_EastScarpe 36 48 3/1300 Custom_EastScarpe 36 50 3/1330 Custom_EastScarpe 25 51 1/1500 Custom_EastScarpe 26 61 0/1600 Custom_EastScarpe 23 102 0/1630 Custom_EastScarpe 23 104 3/1730 Custom_EastScarpe 23 102 0/1900 Custom_ARVHouse 21 21 1/2000 Custom_ARVHouse 24 20 2/2100 Custom_ARVHouse 21 30 0/2130 Custom_ARVHouse 20 20 1/2200 Custom_ARVHouse 24 71 1/2320 Custom_ARVHouse 26 8 3/2350 Custom_ARVHouse 29 8 3 SterlingSleep",
+            "Wed": "610 Custom_ARVHouse 25 5 0/830 Custom_ARVHouse 25 20 1/900 Custom_ARVHouse 22 20 1/1030 Custom_EastScarpe 36 50 1/1310 Custom_EastScarpe 20 65 1/1500 Custom_EastScarpe 23 102 0/1710 Saloon 22 18 3 SterlingDrinking/2230 Custom_ARVHouse 29 8 3 SterlingSleep",
+            "Sun": "610 Custom_ARVHouse 25 5 0/830 Custom_ARVHouse 25 20 1/900 Custom_ARVHouse 22 20 1/1000 Custom_EastScarpe 36 50 1/1200 AnimalShop 29 15 3/1910 Saloon 39 22 0/2330 Custom_ARVHouse 29 8 3 SterlingSleep",
+            },
+            
+      "When": 
+        { "HasConversationTopic |contains=SterlingRelapse": "true"}    
+    },
+      //BYE SHANE
+    {
+      "LogName": "Sterling Schedule No Shane",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Sterling",
+      "Entries": 
+            {
+              "spring": "610 SeedShop 5 22 3 SterlingStocking/1710 Saloon 38 18 3 SterlingDrinking/2200 Custom_ARVHouse 21 20 1/2310 Custom_ARVHouse 29 8 3 SterlingSleep",
+              "Fri": "610 SeedShop 5 22 3 SterlingStocking/1710 Saloon 26 21 2 SterlingDrinking/2300 Custom_ARVHouse 21 20 1/110 Custom_ARVHouse 29 8 3 SterlingSleep",
+              "Wed": "610 Custom_ARVHouse 25 5 0/830 Custom_ARVHouse 25 20 1/900 Custom_ARVHouse 22 20 1/1030 Custom_EastScarpe 36 50 1/1310 Custom_EastScarpe 20 65 1/1500 Custom_EastScarpe 23 102 0/1710 Saloon 38 18 3 SterlingDrinking/2230 Custom_ARVHouse 29 8 3 SterlingSleep",
+              "Sun": "610 Custom_ARVHouse 25 5 0/830 Custom_ARVHouse 25 20 1/900 Custom_ARVHouse 22 20 1/1000 Custom_EastScarpe 36 50 1/1400 Custom_EastScarpe 24 62 0/1710 Saloon 39 22 0/2330 Custom_ARVHouse 29 8 3 SterlingSleep",
+            },
+        "When": 
+          { "HasConversationTopic |contains=SterlingRelapse": "false",
+            "HasSeenEvent |contains= 40180010": true,}    
+      },
+      {
+        "LogName": "Sterling Schedule sOBER",
+        "Action": "EditData",
+        "Target": "Characters/schedules/Sterling",
+        "Entries": 
+              {
+                "spring": "610 SeedShop 5 22 3 SterlingStocking/1710 Town 74 92 1/1900 Custom_ARVHouse 21 20 1/2310 Custom_ARVHouse 29 8 3 SterlingSleep",
+                "Fri": "610 SeedShop 5 22 3 SterlingStocking/1710 Saloon 26 21 2 SterlingDrinking/2300 Custom_ARVHouse 21 20 1/110 Custom_ARVHouse 29 8 3 SterlingSleep",
+                "Wed": "610 Custom_ARVHouse 25 5 0/830 Custom_ARVHouse 25 20 1/900 Custom_ARVHouse 22 20 1/1030 Custom_EastScarpe 36 50 1/1310 Custom_EastScarpe 20 65 1/1500 Custom_EastScarpe 23 102 0/1710 Saloon 38 18 3 SterlingDrinking/2230 Custom_ARVHouse 29 8 3 SterlingSleep",
+                "Sun": "610 Custom_ARVHouse 25 5 0/830 Custom_ARVHouse 25 20 1/900 Custom_ARVHouse 22 20 1/1000 Custom_EastScarpe 36 50 1/1400 Custom_EastScarpe 24 62 0/1710 Saloon 39 22 0/2330 Custom_ARVHouse 29 8 3 SterlingSleep",
+                "fall_27": "610 Custom_EastScarpe 42 66 2 \"Strings\\schedules\\Sterling:halloween.000\"/1240 Custom_EastScarpeInn 42 27 3 \"Strings\\schedules\\Sterling:halloween.001\"/1500 Custom_EastScarpeInn 42 27 3 SterlingDrinking\"Strings\\schedules\\Sterling:halloween.001\"/2400 Custom_ARVHouse 29 8 3 SterlingSleep",
+                "winter_15":"610 Custom_ARVHouse 25 5 0/830 Custom_ARVHouse 25 20 1/900 Custom_ARVHouse 22 20 1/1030 Custom_EastScarpe 36 50 1/1310 Custom_EastScarpe 20 65 1/1400 Beach 32 15 3/2200 Custom_ARVHouse 21 20 1/2320 Custom_ARVHouse 26 8 3/2350 Custom_ARVHouse 29 8 3 SterlingSleep",
+                "winter_16": "GOTO winter_15",
+                "winter_17": "GOTO winter_15",
+                "summer_15":"610 Custom_ARVHouse 29 8 3 SterlingSleep/930 Custom_ARVHouse 25 25 0/1025 Custom_ARVHouse 24 20 1/1120 Custom_ARVHouse 6 20 2/1240 Custom_EastScarpe 36 48 3/1300 Custom_EastScarpe 36 50 3/1330 Custom_EastScarpe 25 51 1/1500 Custom_EastScarpe 26 61 0/1600 Custom_EastScarpe 23 102 0/1630 Custom_EastScarpe 23 104 3/1730 Custom_EastScarpe 23 102 0/1900 Custom_ARVHouse 21 21 1/2000 Custom_ARVHouse 24 20 2/2100 Custom_ARVHouse 21 30 0/2130 Custom_ARVHouse 20 20 1/2200 Custom_ARVHouse 24 71 1/2320 Custom_ARVHouse 26 8 3/2350 Custom_ARVHouse 29 8 3 SterlingSleep",
+
+              },
+          "When": 
+            { "HasConversationTopic |contains=SterlingRelapse": "false",
+              "HasSeenEvent |contains= 40180011": true,}    
+        },
+
+    //MARRIAGE SCHEDULE
+
+      {
+        "LogName": "Sterling Married Schedule Spring ",
+        "Action": "EditData",
+        "Target": "Characters/schedules/Sterling",
+        "Entries": 
+              {
+              "marriage_Mon":"1000 SeedShop 5 22 3\"Strings\\schedules\\Sterling:married.000\"/1130 SeedShop 6 19 0\"Strings\\schedules\\Sterling:married.001\"/1500 Town 25 23 2\"Strings\\schedules\\Sterling:married.002\"/1700 BusStop -1 23 3",
+              "marriage_Thu":"1100 SeedShop 5 22 3\"Strings\\schedules\\Sterling:married.000\"/1200 SeedShop 13 28 1\"Strings\\schedules\\Sterling:married.004\"/1230 SeedShop 13 25 1\"Strings\\schedules\\Sterling:married.004\"/1300 SeedShop 13 28 1\"Strings\\schedules\\Sterling:married.004\"/1430 SeedShop 6 19 0\"Strings\\schedules\\Sterling:married.001\"/1700 BusStop -1 23 3"
+              },
+          "When": {"Season":"Spring"}
+        },
+        {
+          "LogName": "Sterling Married Schedule Summer",
+          "Action": "EditData",
+          "Target": "Characters/schedules/Sterling",
+          "Entries": 
+                {
+                "marriage_Tue":"1100 SeedShop 5 22 3\"Strings\\schedules\\Sterling:married.004\"/1200 SeedShop 13 28 1\"Strings\\schedules\\Sterling:married.004\"/1230 SeedShop 13 25 1\"Strings\\schedules\\Sterling:married.004\"/1300 SeedShop 13 28 1\"Strings\\schedules\\Sterling:married.004\"/1400 SeedShop 6 19 0\"Strings\\schedules\\Sterling:married.001\"/1440 Beach 33 19 2\"Strings\\schedules\\Sterling:married.005\"/1930 BusStop -1 23 3",
+                "marriage_Sat": "920 Beach 21 20 2\"Strings\\schedules\\Sterling:married.005\"/1300 Custom_EastScarpe 36 52 3\"Strings\\schedules\\Sterling:married.002\"/1500 Custom_ARVHose 21 20 1\"Strings\\schedules\\Sterling:married.006\"/1900 BusStop -1 23 3" 
+                },
+            "When": {"Season":"Summer"}
+          },
+          {
+            "LogName": "Sterling Married Schedule Fall",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Sterling",
+            "Entries": 
+                  {
+                  "marriage_Wed":"1030 Custom_HenryWarp 6 7 3\"Strings\\schedules\\Sterling:married.007\"/1800 BusStop -1 23 3\"Strings\\schedules\\Sterling:married.008\"",
+                  },
+              "When": {"Season":"Fall"}
+            },
+
+      //COMPAT PATCHES
+      {
+        "LogName": "Sterling Schedule Denver",
+        "Action": "EditData",
+        "Target": "Characters/schedules/Sterling",
+        "Entries": 
+              {
+                "Mon":"610 SeedShop 5 22 3 SterlingStocking/1230 SeedShop 5 21 3 SterlingStocking/1710 Saloon 22 18 3 SterlingDrinking/2200 Custom_ARVHouse 21 20 1/2310 Custom_ARVHouse 29 8 3 SterlingSleep",
+                "Fri":"610 SeedShop 5 22 3 SterlingStocking/1330 SeedShop 5 21 3 SterlingStocking/1710 Saloon 26 21 3 SterlingDrinking/2300 Custom_ARVHouse 21 20 1/110 Custom_ARVHouse 29 8 3 SterlingSleep",
+                "Sat":"610 SeedShop 5 21 3 SterlingStocking/1430 SeedShop 5 22 3 SterlingStocking/1710 Saloon 22 18 3 SterlingDrinking/2200 Custom_ARVHouse 21 20 1/2310 Custom_ARVHouse 29 8 3 SterlingSleep"
+              },
+              "When": {
+                "HasMod": "balverines.Denver",
+                "HasConversationTopic |contains=SterlingRelapse": false
+              }
+        },
+        {
+          "LogName": "Sterling Schedule Denver",
+          "Action": "EditData",
+          "Target": "Characters/schedules/Sterling",
+          "Entries": 
+                {
+                 "Tue":"610 SeedShop 5 21 3 SterlingStocking/1230 SeedShop 5 22 3 SterlingStocking/1710 Saloon 22 18 3 SterlingDrinking/2200 Custom_ARVHouse 21 20 1/2310 Custom_ARVHouse 29 8 3 SterlingSleep",
+                },
+                "When": {
+                  "HasMod": "Fernandtea.NewNPCWilford",
+                  "HasConversationTopic |contains=SterlingRelapse": false
+                }
+          }
+
+
+    ]
+}

@@ -1,0 +1,1267 @@
+{
+    "Format": "1.19.0",
+    "ConfigSchema":{
+        "Title Card Options": {
+            "AllowValues": "plain, floral, morefloral",
+            "Default": "floral",
+            "Description": "Variant options for the logo on the menu." 
+          },
+        "DigSpot Toggle": {
+            "AllowValues": "enabled, disabled",
+            "Default": "enabled",
+            "Description": "Changes the digspot into a flower." 
+          },
+          "DigSpot Color": {
+            "AllowValues": "red, pink, lilac, violet, white, black, orange, yellow, blue",
+            "Default": "violet",
+            "Description": "Changes the color of the digspot flower if enabled."
+          },
+          "Kitty Channels": {
+            "AllowValues": "true, false",
+            "Default": "true",
+            "Description": "Changes the TV channels."
+          },
+          "Farmer Portrait": {
+            "AllowValues": "pixel, realistic, disabled",
+            "Default": "pixel",
+            "Description": "Changes the background of the farmer portrait found in the menu."
+          },
+          "Cursor Toggle": {
+            "AllowValues": "enabled, disabled",
+            "Default": "enabled",
+            "Description": "Changes the cursors or pointers."
+          },
+          "Hit Box Toggle":{
+            "AllowValues": "enabled, disabled",
+            "Default": "enabled",
+            "Description": "Changes the tool hit box."
+          },
+          "Gender Icons":{
+            "AllowValues": "enabled, disabled",
+            "Default": "enabled",
+            "Description": "Recolors the gender icons to be blue and pink."
+          },
+          "Heart Icons":{
+            "AllowValues": "enabled, disabled",
+            "Default": "enabled",
+            "Description": "Changes the relationship indicators on the NPC portrait."
+          },
+          "Billboard Toggle":{
+            "AllowValues": "enabled, disabled",
+            "Default": "enabled",
+            "Description": "Overhauls the billboard and calendar."
+          },
+          "Letter Toggle":{
+            "AllowValues": "enabled, disabled",
+            "Default": "enabled",
+            "Description": "Changes the paper for letters in the mail."
+          },
+          "Latin Dialogue Font Change": {
+              "AllowValues": "enabled, disabled",
+              "Default": "enabled",
+              "Description": "Changes the Latin dialogue font (font_bold)."
+          },
+          "Dialogue Font Shadows":{
+              "AllowValues": "enabled, disabled",
+              "Default": "enabled",
+              "Description": "Enabled gives the Latin dialogue font a light shadow. Disabled removes the shadow."
+          },
+          "Small Font Toggle":{
+            "AllowValues": "enabled, disabled",
+            "Default": "disabled",
+            "Description": "Applies changes to the smaller sprite font the game uses. This can cause errors in the text displayed. Use only if you want the old effect."
+        },
+
+    },
+    "DynamicTokens":[
+          {
+            "Name": "DigSpot",
+            "Value": "{{Digspot Color}}",
+          }
+    ],
+    "Changes": [
+     
+
+   // Font Bold Edits
+
+   {
+      "Action": "EditImage",
+      "LogName": "Font Bold with shadows",
+      "Target": "LooseSprites/font_bold, LooseSprites/font_colored",
+      "FromFile": "assets/{{Target}}.png",
+      "When":{ "Latin Dialogue Font Change": "enabled",  "Dialogue Font Shadows": "enabled"},
+   },
+   {
+    "Action": "EditImage",
+    "LogName": "Font Bold without shadows",
+    "Target": "LooseSprites/font_bold, LooseSprites/font_colored",
+    "FromFile": "assets/{{Target}}_shadowless.png",
+    "When":{ "Latin Dialogue Font Change": "enabled",  "Dialogue Font Shadows": "disabled"},
+   },
+
+   // Small Font Changes
+ 
+   {
+      "Action": "Load",
+      "LogName": "Font Bold without shadows",
+      "Target": "Fonts/SmallFont, Fonts/SpriteFont1, Fonts/tinyFont, Fonts/tinyFontBorder",
+      "FromFile": "assets/{{Target}}.xnb",
+      "When":{ "Small Font Toggle": "enabled"},
+     },
+
+   // Farmer Portrait Edits
+
+   {
+    "Action": "EditImage",
+    "LogName": "Farmer Portrait Frame",
+    "Target": "LooseSprites/daybg, LooseSprites/nightbg",
+    "FromFile": "assets/{{Target}}.png",
+    "When": { "Farmer Portrait": "pixel"}
+    },
+
+   {
+    "Action": "EditImage",
+    "LogName": "Farmer Portrait Frame",
+    "Target": "LooseSprites/daybg",
+    "FromFile": "assets/LooseSprites/daybg_dark.png",
+    "When": { "Farmer Portrait": "realistic"}
+    },
+
+   {
+    "Action": "EditImage",
+    "LogName": "Farmer Portrait Frame",
+    "Target": "LooseSprites/nightbg",
+    "FromFile": "assets/LooseSprites/nightbg_dark.png",
+    "When": { "Farmer Portrait": "realistic"}
+    },
+
+// Kitty  Channels
+		{
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/LooseSprites/weatherfortune.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 413, "Y": 305, "Width": 253, "Height": 28 },
+			"ToArea": { "X": 413, "Y": 305, "Width": 253, "Height": 28 },
+    "When": { "Kitty Channels": "true"}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/LooseSprites/tenki.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 413, "Y": 333, "Width": 104, "Height": 52 },
+			"ToArea": { "X": 413, "Y": 333, "Width": 104, "Height": 52 },
+    "When": { "Kitty Channels": "true"}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/LooseSprites/landsauce.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 517, "Y": 361, "Width": 169, "Height": 28 },
+			"ToArea": { "X": 517, "Y": 361, "Width": 169, "Height": 28 },
+    "When": { "Kitty Channels": "true"}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors2",
+			"FromFile": "assets/LooseSprites/islandweather.png",
+			"PatchMode": "Replace",
+			"FromArea": { "X": 148, "Y": 62, "Width": 42, "Height": 28 },
+			"ToArea": { "X": 148, "Y": 62, "Width": 42, "Height": 28 },
+    "When": { "Kitty Channels": "true"}
+		},
+		{
+      		"Action": "EditImage",
+     			"Target": "LooseSprites/Cursors2",
+      		"FromFile": "assets/LooseSprites/islandweather.png",
+      		"FromArea": { "X": 172, "Y": 33, "Width": 84, "Height": 28 },
+      		"ToArea": { "X": 172, "Y": 33, "Width": 84, "Height": 28 },
+    "When": { "Kitty Channels": "true"}
+    		},
+
+
+    // LooseSprites/Cursors Edits
+
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - Pointers or Cursors",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 0, "Y": 0, "Width": 126, "Height": 27 },
+      "ToArea": { "X": 0, "Y": 0, "Width": 126, "Height": 27 },
+      "When": {"Cursor Toggle": "enabled"}
+   },
+
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - up and down arrows",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 12, "Y": 72, "Width": 104, "Height": 48 },
+      "ToArea": { "X": 12, "Y": 72, "Width": 104, "Height": 48 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - control guide",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 275, "Y": 0, "Width": 84, "Height": 109 },
+      "ToArea": { "X": 275, "Y": 0, "Width": 84, "Height": 109 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - digspot",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/digspots/{{DigSpot}}.png",
+      "ToArea":{ "X": 368, "Y": 32, "Width": 64, "Height": 16 },
+      "When": { "DigSpot Toggle": "enabled" }
+    },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - level up text",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 359, "Y": 76, "Width": 72, "Height": 47 },
+      "ToArea": { "X": 359, "Y": 76, "Width": 72, "Height": 47 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - house, corn, selection l/r arrows, and translation menu border",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 448, "Y": 36, "Width": 60, "Height": 92 },
+      "ToArea": { "X": 448, "Y": 36, "Width": 60, "Height": 92 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - achievement menu side buttons",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 640, "Y": 64, "Width": 64, "Height": 32 },
+      "ToArea": { "X": 640, "Y": 64, "Width": 64, "Height": 32 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - achievement star",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 192, "Y": 128, "Width": 64, "Height": 64 },
+      "ToArea": { "X": 192, "Y": 128, "Width": 64, "Height": 64 }
+   },
+   {
+    "Action": "EditImage",
+    "LogName": "Cursors - achievement star faces",
+    "Target": "LooseSprites/Cursors",
+    "FromFile": "assets/{{Target}}.png",
+    "FromArea": { "X": 256, "Y": 128, "Width": 192, "Height": 64 },
+    "ToArea": { "X": 256, "Y": 128, "Width": 192, "Height": 64 }
+ },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - tool hit box",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 448, "Y": 128, "Width": 64, "Height": 64 },
+      "ToArea": { "X": 448, "Y": 128, "Width": 64, "Height": 64 },
+      "When": { "Hit Box Toggle": "enabled"}
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - l/r arrows, slider knob, and selection box",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 0, "Y": 192, "Width": 128, "Height": 116 },
+      "ToArea": { "X": 0, "Y": 192, "Width": 128, "Height": 116 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - gender icons",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 128, "Y": 192, "Width": 32, "Height": 16 },
+      "ToArea": { "X": 128, "Y": 192, "Width": 32, "Height": 16 },
+      "When": { "Gender Icons": "enabled"}
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - look here arrow bubbles",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 128, "Y": 208, "Width": 31, "Height": 16 },
+      "ToArea": { "X": 128, "Y": 208, "Width": 31, "Height": 16 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - coop house options and question mark bubble",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 210, "Y": 192, "Width": 46, "Height": 16 },
+      "ToArea": { "X": 210, "Y": 192, "Width": 46, "Height": 16 }
+   },
+   {
+    "Action": "EditImage",
+    "LogName": "Cursors - target circle",
+    "Target": "LooseSprites/Cursors",
+    "FromFile": "assets/{{Target}}.png",
+    "FromArea": { "X": 652, "Y": 204, "Width": 44, "Height": 44 },
+    "ToArea": { "X": 652, "Y": 204, "Width": 44, "Height": 44 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - ok and cancel buttons",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 128, "Y": 256, "Width": 128, "Height": 64 },
+      "ToArea": { "X": 128, "Y": 256, "Width": 128, "Height": 64 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - building buttons, wallet outline, and a couple of other random things next to the okay and cancel buttons",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 256, "Y": 256, "Width": 34, "Height": 44 },
+      "ToArea": { "X": 256, "Y": 256, "Width": 34, "Height": 44 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - box with transparent center near scroll",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 301, "Y": 288, "Width": 15, "Height": 15 },
+      "ToArea": { "X": 301, "Y": 288, "Width": 15, "Height": 15 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - little box and mail notification outline",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 324, "Y": 281, "Width": 23, "Height": 35 },
+      "ToArea": { "X": 324, "Y": 281, "Width": 23, "Height": 35 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - farm type buttons",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 0, "Y": 324, "Width": 108, "Height": 41 },
+      "ToArea": { "X": 0, "Y": 324, "Width": 108, "Height": 41 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - wallet icons top row",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 128, "Y": 320, "Width": 126, "Height": 16 },
+      "ToArea": { "X": 128, "Y": 320, "Width": 126, "Height": 16 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - skill bars",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 129, "Y": 338, "Width": 43, "Height": 9 },
+      "ToArea": { "X": 129, "Y": 338, "Width": 43, "Height": 9 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - zoom in/out and other wallet icons",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 177, "Y": 336, "Width": 47, "Height": 17 },
+      "ToArea": { "X": 177, "Y": 336, "Width": 47, "Height": 17 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - dialogue box border",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 261, "Y": 310, "Width": 43, "Height": 28 },
+      "ToArea": { "X": 261, "Y": 310, "Width": 43, "Height": 28 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - gradient and scroll",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 306, "Y": 318, "Width": 44, "Height": 18 },
+      "ToArea": { "X": 306, "Y": 318, "Width": 44, "Height": 18 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - spinning arrow",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 232, "Y": 346, "Width": 53, "Height": 9 },
+      "ToArea": { "X": 232, "Y": 346, "Width": 53, "Height": 9 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - spinning x",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 290, "Y": 342, "Width": 119, "Height": 12 },
+      "ToArea": { "X": 290, "Y": 342, "Width": 119, "Height": 12 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - house icon above spinning x",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 402, "Y": 328, "Width": 9, "Height": 13 },
+      "ToArea": { "X": 402, "Y": 328, "Width": 9, "Height": 13 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - menu icons top",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 0, "Y": 368, "Width": 128, "Height": 32 },
+      "ToArea": { "X": 0, "Y": 368, "Width": 128, "Height": 32 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - green bar under menu buttons",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 0, "Y": 400, "Width": 32, "Height": 10 },
+      "ToArea": { "X": 0, "Y": 400, "Width": 32, "Height": 10 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - health and stamina icons above skill icons",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 0, "Y": 410, "Width": 31, "Height": 17 },
+      "ToArea": { "X": 0, "Y": 410, "Width": 31, "Height": 17 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - music mute and pregnancy toggle",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 128, "Y": 384, "Width": 18, "Height": 18 },
+      "ToArea": { "X": 128, "Y": 384, "Width": 18, "Height": 18 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - minimize and maximize window buttons",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 146, "Y": 384, "Width": 18, "Height": 9 },
+      "ToArea": { "X": 146, "Y": 384, "Width": 18, "Height": 9 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors -- chest and present icon",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 127, "Y": 412, "Width": 30, "Height": 11 },
+      "ToArea": { "X": 127, "Y": 412, "Width": 30, "Height": 11 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - play button",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 175, "Y": 379, "Width": 16, "Height": 15 },
+      "ToArea": { "X": 175, "Y": 379, "Width": 16, "Height": 15 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - item notification for iridium",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 163, "Y": 399, "Width": 26, "Height": 24 },
+      "ToArea": { "X": 163, "Y": 399, "Width": 26, "Height": 24 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - item notification, menu bar, coin, silver star, and purple swirl",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 193, "Y": 360, "Width": 136, "Height": 24 },
+      "ToArea": { "X": 193, "Y": 360, "Width": 136, "Height": 24 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - building overlay for selecting area",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 194, "Y": 388, "Width": 96, "Height": 16 },
+      "ToArea": { "X": 194, "Y": 388, "Width": 96, "Height": 16 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - sad face and skip button",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 191, "Y": 406, "Width": 36, "Height": 15 },
+      "ToArea": { "X": 191, "Y": 406, "Width": 36, "Height": 15 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - gift box",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 229, "Y": 410, "Width": 14, "Height": 14 },
+      "ToArea": { "X": 229, "Y": 410, "Width": 14, "Height": 14 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - question marks, dice, increase, cc icon, building icons, etc.",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 330, "Y": 357, "Width": 82, "Height": 34 },
+      "ToArea": { "X": 330, "Y": 357, "Width": 82, "Height": 34 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - stars, quality stars, and arrows",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 294, "Y": 392, "Width": 85, "Height": 16 },
+      "ToArea": { "X": 294, "Y": 392, "Width": 85, "Height": 16 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - smaller health and stamina icons",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 0, "Y": 428, "Width": 10, "Height": 20 },
+      "ToArea": { "X": 0, "Y": 428, "Width": 10, "Height": 20 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - effect icons on food and such",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 11, "Y": 428, "Width": 157, "Height": 10 },
+      "ToArea": { "X": 11, "Y": 428, "Width": 157, "Height": 10 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - lock, cornucopia, new book, and organize button",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 106, "Y": 440, "Width": 72, "Height": 24 },
+      "ToArea": { "X": 106, "Y": 440, "Width": 72, "Height": 24 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - spoon/fork, smiley, and heart icons",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 140, "Y": 512, "Width": 44, "Height": 20 },
+      "ToArea": { "X": 140, "Y": 512, "Width": 44, "Height": 20 }
+   },
+   {
+    "Action": "EditImage",
+    "LogName": "Cursors - relationship indicator grid",
+    "Target": "LooseSprites/Cursors",
+    "FromFile": "assets/{{Target}}.png",
+    "FromArea": { "X": 140, "Y": 532, "Width": 44, "Height": 55 },
+    "ToArea": { "X": 140, "Y": 532, "Width": 44, "Height": 55 },
+    "When":{ "Heart Icons": "enabled"}
+    },
+    {
+      "Action": "EditImage",
+      "LogName": "Cursors - relationship max icon",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 269, "Y": 495, "Width": 11, "Height": 11 },
+      "ToArea": { "X": 269, "Y": 495, "Width": 11, "Height": 11 },
+      "When":{ "Heart Icons": "enabled"}
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - question mark and mail icon",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 176, "Y": 423, "Width": 28, "Height": 14 },
+      "ToArea": { "X": 176, "Y": 423, "Width": 28, "Height": 14 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - relationship hearts",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 211, "Y": 425, "Width": 15, "Height": 9 },
+      "ToArea": { "X": 211, "Y": 425, "Width": 15, "Height": 9 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - season names",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 179, "Y": 437, "Width": 77, "Height": 23 },
+      "ToArea": { "X": 179, "Y": 437, "Width": 77, "Height": 23 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - gifts given",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 227, "Y": 425, "Width": 18, "Height": 9 },
+      "ToArea": { "X": 227, "Y": 425, "Width": 18, "Height": 9 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - health and stamina bars",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 256, "Y": 408, "Width": 24, "Height": 56 },
+      "ToArea": { "X": 256, "Y": 408, "Width": 24, "Height": 56 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - clock face",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 228, "Y": 465, "Width": 37, "Height": 37 },
+      "ToArea": { "X": 228, "Y": 465, "Width": 37, "Height": 37 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - red x beside clock face",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 269, "Y": 471, "Width": 14, "Height": 15 },
+      "ToArea": { "X": 269, "Y": 471, "Width": 14, "Height": 15 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - coin pile",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 280, "Y": 412, "Width": 15, "Height": 14 },
+      "ToArea": { "X": 280, "Y": 412, "Width": 15, "Height": 14 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - little bar above set button",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 297, "Y": 420, "Width": 14, "Height": 5 },
+      "ToArea": { "X": 297, "Y": 420, "Width": 14, "Height": 5 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - set button",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 294, "Y": 428, "Width": 21, "Height": 11 },
+      "ToArea": { "X": 294, "Y": 428, "Width": 21, "Height": 11 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - season displays near info panel",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 293, "Y": 441, "Width": 28, "Height": 58 },
+      "ToArea": { "X": 293, "Y": 441, "Width": 28, "Height": 58 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - new and done buttons",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 317, "Y": 410, "Width": 47, "Height": 9 },
+      "ToArea": { "X": 317, "Y": 410, "Width": 47, "Height": 9 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - weather pictures for info panel",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 317, "Y": 421, "Width": 96, "Height": 8 },
+      "ToArea": { "X": 317, "Y": 421, "Width": 96, "Height": 8 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - trash icon and clock hands",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 323, "Y": 433, "Width": 9, "Height": 63 },
+      "ToArea": { "X": 323, "Y": 433, "Width": 9, "Height": 63 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - cancel button",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 322, "Y": 498, "Width": 12, "Height": 12 },
+      "ToArea": { "X": 322, "Y": 498, "Width": 12, "Height": 12 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - info panel",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 333, "Y": 432, "Width": 72, "Height": 57 },
+      "ToArea": { "X": 333, "Y": 432, "Width": 72, "Height": 57 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - x button, arrows, quest indicators, and clock",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 337, "Y": 493, "Width": 82, "Height": 17 },
+      "ToArea": { "X": 337, "Y": 493, "Width": 82, "Height": 17 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - info panel icons (right)",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 406, "Y": 441, "Width": 12, "Height": 32 },
+      "ToArea": { "X": 406, "Y": 441, "Width": 12, "Height": 32 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - various menu elements to the right of info panel",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 420, "Y": 439, "Width": 27, "Height": 45 },
+      "ToArea": { "X": 420, "Y": 439, "Width": 27, "Height": 45 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - G button",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 408, "Y": 476, "Width": 9, "Height": 11 },
+      "ToArea": { "X": 408, "Y": 476, "Width": 9, "Height": 11 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - blueprint",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 420, "Y": 489, "Width": 25, "Height": 18 },
+      "ToArea": { "X": 420, "Y": 489, "Width": 25, "Height": 18 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - portrait background",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 583, "Y": 411, "Width": 115, "Height": 97 },
+      "ToArea": { "X": 583, "Y": 411, "Width": 115, "Height": 97 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - save select and casino texture",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 384, "Y": 396, "Width": 30, "Height": 15 },
+      "ToArea": { "X": 384, "Y": 396, "Width": 30, "Height": 15 }
+  },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - festival wheel and sky with border",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 128, "Y": 1184, "Width": 160, "Height": 183 },
+      "ToArea": { "X": 128, "Y": 1184, "Width": 160, "Height": 183 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - festival wheel hand",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 120, "Y": 1234, "Width": 8, "Height": 16 },
+      "ToArea": { "X": 120, "Y": 1234, "Width": 8, "Height": 16 }
+    },
+    {
+      "Action": "EditImage",
+      "LogName": "Cursors - fishing guide",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 644, "Y": 1330, "Width": 48, "Height": 69 },
+      "ToArea": { "X": 644, "Y": 1330, "Width": 48, "Height": 69 }
+    },
+    {
+      "Action": "EditImage",
+      "LogName": "Cursors - big dialogue box",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 652, "Y": 1685, "Width": 52, "Height": 157 },
+      "ToArea": { "X": 652, "Y": 1685, "Width": 52, "Height": 157 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - dialogue box with frame",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 31, "Y": 1870, "Width": 134, "Height": 49 },
+      "ToArea": { "X": 31, "Y": 1870, "Width": 134, "Height": 49 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - small ticker",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 193, "Y": 1868, "Width": 47, "Height": 12 },
+      "ToArea": { "X": 193, "Y": 1868, "Width": 47, "Height": 12 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - treasure chest and barrel animation",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 71, "Y": 1926, "Width": 116, "Height": 58 },
+      "ToArea": { "X": 71, "Y": 1926, "Width": 116, "Height": 58 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - fishing rod with no minigame",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 262, "Y": 1824, "Width": 11, "Height": 176 },
+      "ToArea": { "X": 262, "Y": 1824, "Width": 11, "Height": 176 }
+ },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - open-ended frame and meter thing",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "PatchMode": "Overlay",
+      "FromArea": { "X": 273, "Y": 1824, "Width": 259, "Height": 175 },
+      "ToArea": { "X": 273, "Y": 1824, "Width": 259, "Height": 175 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - fish icons for minigame",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 615, "Y": 1840, "Width": 39, "Height": 20 },
+      "ToArea": { "X": 615, "Y": 1840, "Width": 39, "Height": 20 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - bobber and chest icons for minigame",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 615, "Y": 1863, "Width": 44, "Height": 26 },
+      "ToArea": { "X": 615, "Y": 1863, "Width": 44, "Height": 26 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - red circle and rainbow colors near fishing minigame",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 574, "Y": 1888, "Width": 39, "Height": 16 },
+      "ToArea": { "X": 574, "Y": 1888, "Width": 39, "Height": 16 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - misc icons near fishing minigame",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 615, "Y": 1890, "Width": 62 , "Height": 12 },
+      "ToArea": { "X": 615, "Y": 1890, "Width": 62, "Height": 12 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - max and hit text",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 540, "Y": 1905, "Width": 150, "Height": 40 },
+      "ToArea": { "X": 540, "Y": 1905, "Width": 150, "Height": 40 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - scuffed box",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 670, "Y": 1958, "Width": 14, "Height": 14 },
+      "ToArea": { "X": 670, "Y": 1958, "Width": 14, "Height": 14 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - fishing minigame",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 644, "Y": 1999, "Width": 47, "Height": 150 },
+      "ToArea": { "X": 644, "Y": 1999, "Width": 47, "Height": 150 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - clock",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 595, "Y": 1748, "Width": 9, "Height": 11 },
+      "ToArea": { "X": 595, "Y": 1748, "Width": 9, "Height": 11 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - chest color, sort, and junimo buttons and bubble",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 103, "Y": 464, "Width": 58, "Height": 43 },
+      "ToArea": { "X": 103, "Y": 464, "Width": 58, "Height": 43 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors - bundle complete text",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 128, "Y": 1367, "Width": 160, "Height": 15 },
+      "ToArea": { "X": 128, "Y": 1367, "Width": 160, "Height": 15 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors Translations",
+      "Target": "LooseSprites/Cursors",
+      "FromFile": "assets/{{Target}}_{{language}}.png",
+      "PatchMode": "Overlay"
+   },
+
+   // Cursors-Two Edits
+
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors2 - scroll, box, and camera",
+      "Target": "LooseSprites/Cursors2",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 40, "Y": 31, "Width": 50, "Height": 16 },
+      "ToArea": { "X": 40, "Y": 31, "Width": 50, "Height": 16 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors2 - side menu buttons",
+      "Target": "LooseSprites/Cursors2",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 0, "Y": 48, "Width": 112, "Height": 32 },
+      "ToArea": { "X": 0, "Y": 48, "Width": 112, "Height": 32 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors2 - question mark",
+      "Target": "LooseSprites/Cursors2",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 114, "Y": 53, "Width": 6, "Height": 10 },
+      "ToArea": { "X": 114, "Y": 53, "Width": 6, "Height": 10 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors2 - keyboard keys and boxes",
+      "Target": "LooseSprites/Cursors2",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 0, "Y": 144, "Width": 111, "Height": 32 },
+      "ToArea": { "X": 0, "Y": 144, "Width": 111, "Height": 32 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors2 - red keys and box",
+      "Target": "LooseSprites/Cursors2",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 0, "Y": 176, "Width": 47, "Height": 16 },
+      "ToArea": { "X": 0, "Y": 176, "Width": 47, "Height": 16 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors2 - hanging panel",
+      "Target": "LooseSprites/Cursors2",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 48, "Y": 176, "Width": 52, "Height": 26 },
+      "ToArea": { "X": 48, "Y": 176, "Width": 52, "Height": 26 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors2 - new buttons",
+      "Target": "LooseSprites/Cursors2",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 48, "Y": 208, "Width": 48, "Height": 16 },
+      "ToArea": { "X": 48, "Y": 208, "Width": 48, "Height": 16 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors2 - horizontal box",
+      "Target": "LooseSprites/Cursors2",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 0, "Y": 224, "Width": 48, "Height": 12 },
+      "ToArea": { "X": 0, "Y": 224, "Width": 48, "Height": 12 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors2 - undo icon",
+      "Target": "LooseSprites/Cursors2",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 67, "Y": 243, "Width": 9, "Height": 10 },
+      "ToArea": { "X": 67, "Y": 243, "Width": 9, "Height": 10 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors2 - qi's menu",
+      "Target": "LooseSprites/Cursors2",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 0, "Y": 256, "Width": 51, "Height": 18 },
+      "ToArea": { "X": 0, "Y": 256, "Width": 51, "Height": 18 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors2 - gift boxes",
+      "Target": "LooseSprites/Cursors2",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 103, "Y": 241, "Width": 25, "Height": 15 },
+      "ToArea": { "X": 103, "Y": 241, "Width": 25, "Height": 15 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors2 - settings button",
+      "Target": "LooseSprites/Cursors2",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 154, "Y": 154, "Width": 20, "Height": 20 },
+      "ToArea": { "X": 154, "Y": 154, "Width": 20, "Height": 20 }
+   },
+   {
+      "Action": "EditImage",
+      "LogName": "Cursors2 - gifting and chat icons",
+      "Target": "LooseSprites/Cursors2",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 167, "Y": 175, "Width": 26, "Height": 11 },
+      "ToArea": { "X": 167, "Y": 175, "Width": 26, "Height": 11 }
+   },
+
+   // TitleButtons Edits and Translation
+
+    {
+      "Action": "EditImage",
+      "LogName": "TitleButtons - logo ",
+      "Target": "Minigames/TitleButtons",
+      "FromFile": "assets/Minigames/logo_plain.png",
+      "ToArea": { "X": 0, "Y": 0, "Width": 400, "Height": 187 },
+      "When": { "Language |contains=zh": false, "Title Card Options": "plain" }
+    },
+    {
+      "Action": "EditImage",
+      "LogName": "TitleButtons - logo ",
+      "Target": "Minigames/TitleButtons",
+      "FromFile": "assets/Minigames/logo_floral.png",
+      "ToArea": { "X": 0, "Y": 0, "Width": 400, "Height": 187 },
+      "When": { "Language |contains=zh": false, "Title Card Options": "floral" }
+    },
+    {
+      "Action": "EditImage",
+      "LogName": "TitleButtons - logo ",
+      "Target": "Minigames/TitleButtons",
+      "FromFile": "assets/Minigames/logo_morefloral.png",
+      "ToArea": { "X": 0, "Y": 0, "Width": 400, "Height": 187 },
+      "When": { "Language |contains=zh": false, "Title Card Options": "morefloral" }
+    },
+    {
+      "Action": "EditImage",
+     "LogName": "TitleButtons - logo Chinese ",
+      "Target": "Minigames/TitleButtons",
+      "FromFile": "assets/Minigames/logo_zh.png",
+      "ToArea": { "X": 0, "Y": 0, "Width": 400, "Height": 187 },
+      "When": { "Language |contains=zh": true }
+    },
+    {
+      "Action": "EditImage",
+      "LogName": "TitleButtons - button backgrounds",
+      "Target": "Minigames/TitleButtons",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 0, "Y": 0, "Width": 296, "Height": 116 },
+      "ToArea": { "X": 0, "Y": 187, "Width": 296, "Height": 116 }
+    },
+    {
+      "Action": "EditImage",
+      "LogName": "TitleButtons - leaf animation",
+      "Target": "Minigames/TitleButtons",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 296, "Y": 0, "Width": 81, "Height": 39 },
+      "ToArea": { "X": 296, "Y": 187, "Width": 81, "Height": 39 }
+    },
+    {
+      "Action": "EditImage",
+      "LogName": "TitleButtons - back button backgrounds",
+      "Target": "Minigames/TitleButtons",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 296, "Y": 65, "Width": 66, "Height": 54 },
+      "ToArea": { "X": 296, "Y": 252, "Width": 66, "Height": 54 }
+    },
+    {
+      "Action": "EditImage",
+      "LogName": "TitleButtons - language and info buttons",
+      "Target": "Minigames/TitleButtons",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 8, "Y": 271, "Width": 98, "Height": 25 },
+      "ToArea": { "X": 8, "Y": 458, "Width": 98, "Height": 25 }
+    },
+    {
+      "Action": "EditImage",
+      "LogName": "TitleButtons - alien animation",
+      "Target": "Minigames/TitleButtons",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 0, "Y": 304, "Width": 400, "Height": 68 },
+      "ToArea": { "X": 0, "Y": 491, "Width": 400, "Height": 68 }
+    },
+    {
+      "Action": "EditImage",
+      "LogName": "TitleButtons - gem bird animation",
+      "Target": "Minigames/TitleButtons",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 296, "Y": 39, "Width": 104, "Height": 26 },
+      "ToArea": { "X": 296, "Y": 226, "Width": 104, "Height": 26 }
+    },
+    {
+      "Action": "EditImage",
+      "LogName": "TitleButtons - CA animations",
+      "Target": "Minigames/TitleButtons",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 0, "Y": 119, "Width": 400, "Height": 138 },
+      "ToArea": { "X": 0, "Y": 306, "Width": 400, "Height": 138 }
+    },
+    {
+      "Action": "EditImage",
+      "LogName": "TitleButtons - Junimo animations",
+      "Target": "Minigames/TitleButtons",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 129, "Y": 257, "Width": 271, "Height": 47 },
+      "ToArea": { "X": 129, "Y": 444, "Width": 271, "Height": 47 }
+    },
+    {
+      "Action": "EditImage",
+      "LogName": "TitleButtons - Chucklefish logo",
+      "Target": "Minigames/TitleButtons",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 0, "Y": 372, "Width": 400, "Height": 96 },
+      "ToArea": { "X": 0, "Y": 559, "Width": 400, "Height": 96 }
+    },
+    {
+      "Action": "EditImage",
+      "LogName": "TitleButtons - Translations",
+      "Target": "Minigames/TitleButtons",
+      "FromFile": "assets/{{Target}}_{{language}}.png",
+      "ToArea": { "X": 0, "Y": 187, "Width": 400, "Height": 468 },
+      "PatchMode": "Overlay"
+    },
+
+    // Billboard Edit
+    {
+      "Action": "EditImage",
+      "LogName": "Billboard base",
+      "Target": "LooseSprites/Billboard",
+      "FromFile": "assets/{{Target}}.png",
+      "When": {"Billboard Toggle": "enabled"}
+    },
+    {
+      "Action": "EditImage",
+      "LogName": "Billboard translations",
+      "Target": "LooseSprites/Billboard",
+      "FromFile": "assets/{{Target}}_{{language}}.png",
+      "PatchMode": "Overlay",
+      "When": {"Billboard Toggle": "enabled"}
+    },
+
+    // Controller Maps
+    {
+      "Action": "EditImage",
+      "LogName": "ControllerMaps base",
+      "Target": "LooseSprites/ControllerMaps",
+      "FromFile": "assets/{{Target}}.png"
+    },
+    {
+      "Action": "EditImage",
+      "LogName": "ControllerMaps translations",
+      "Target": "LooseSprites/ControllerMaps",
+      "FromFile": "assets/{{Target}}_{{language}}.png",
+      "PatchMode": "Overlay"
+    }, 
+
+    // Junimo Note
+    {
+      "Action": "EditImage",
+      "LogName": "JunimoNote base",
+      "Target": "LooseSprites/JunimoNote",
+      "FromFile": "assets/{{Target}}.png"
+    },
+    {
+      "Action": "EditImage",
+      "LogName": "JunimoNote translations",
+      "Target": "LooseSprites/JunimoNote",
+      "FromFile": "assets/{{Target}}_{{language}}.png",
+      "PatchMode": "Overlay",
+      "ToArea": { "X": 517, "Y": 286, "Width": 65, "Height": 18 }
+    }, 
+
+    // Letter Edits
+    {
+      "Action": "EditImage",
+      "LogName": "Letter - old paper",
+      "Target": "LooseSprites/letterBG",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 0, "Y": 0, "Width": 320, "Height": 180 },
+      "ToArea": { "X": 0, "Y": 0, "Width": 320, "Height": 180 },
+      "When": {"Letter Toggle": "enabled"}
+    }, 
+    {
+      "Action": "EditImage",
+      "LogName": "Letter - lined paper",
+      "Target": "LooseSprites/letterBG",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 320, "Y": 0, "Width": 320, "Height": 180 },
+      "ToArea": { "X": 320, "Y": 0, "Width": 320, "Height": 180 },
+      "When": {"Letter Toggle": "enabled"}
+    }, 
+    {
+      "Action": "EditImage",
+      "LogName": "Letter - magic paper",
+      "Target": "LooseSprites/letterBG",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 640, "Y": 0, "Width": 320, "Height": 180 },
+      "ToArea": { "X": 640, "Y": 0, "Width": 320, "Height": 180 },
+      "When": {"Letter Toggle": "enabled"}
+    }, 
+    {
+      "Action": "EditImage",
+      "LogName": "Letter - dark paper",
+      "Target": "LooseSprites/letterBG",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 960, "Y": 0, "Width": 320, "Height": 180 },
+      "ToArea": { "X": 960, "Y": 0, "Width": 320, "Height": 180 },
+      "When": {"Letter Toggle": "enabled"}
+    }, 
+    {
+      "Action": "EditImage",
+      "LogName": "Letter - first box",
+      "Target": "LooseSprites/letterBG",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 0, "Y": 180, "Width": 24, "Height": 24 },
+      "ToArea": { "X": 0, "Y": 180, "Width": 24, "Height": 24 },
+      "When": {"Letter Toggle": "enabled"}
+    },
+    {
+      "Action": "EditImage",
+      "LogName": "Letter - second box",
+      "Target": "LooseSprites/letterBG",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 24, "Y": 180, "Width": 24, "Height": 24 },
+      "ToArea": { "X": 24, "Y": 180, "Width": 24, "Height": 24 },
+      "When": {"Letter Toggle": "enabled"}
+    },  
+    {
+      "Action": "EditImage",
+      "LogName": "Letter - third box",
+      "Target": "LooseSprites/letterBG",
+      "FromFile": "assets/{{Target}}.png",
+      "FromArea": { "X": 48, "Y": 180, "Width": 24, "Height": 24 },
+      "ToArea": { "X": 48, "Y": 180, "Width": 24, "Height": 24 },
+      "When": {"Letter Toggle": "enabled"}
+    }, 
+
+
+    // Whole File Edits
+
+   {
+      "Action": "EditImage",
+      "LogName": "Whole File Edits",
+      "Target": "LooseSprites/buildingPlacementTiles, LooseSprites/BundleSprites, LooseSprites/chatBox, LooseSprites/DialogBoxGreen, LooseSprites/dye_bench, LooseSprites/emojis, LooseSprites/EmoteMenu, LooseSprites/FieldOfficeDonationMenu, LooseSprites/ForgeMenu, LooseSprites/hoverBox, LooseSprites/junimo_background_blank, LooseSprites/junimonotemobile, LooseSprites/LanguageButtons, LooseSprites/mobileatlas_manually_made, LooseSprites/mute_voice_icon, LooseSprites/PlayerStatusList, LooseSprites/skillTitles, LooseSprites/SpecialOrdersBoard, LooseSprites/tailoring, LooseSprites/textBox, TerrainFeatures/BuffsIcons, TileSheets/BuffsIcons, TileSheets/emotes, TileSheets/SecretNotesImages, Maps/MenuTiles, Maps/MenuTilesUncolored",
+      "FromFile": "assets/{{Target}}.png"
+   }
+  ]
+ }

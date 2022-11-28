@@ -1,0 +1,66 @@
+{
+  "Changes": [
+
+    {
+      "LogName": "NPC Sprite",
+      "Action": "Load",
+      "Target": "Characters/Void",
+      "FromFile": "assets/img/VoidSprites.png"
+    },
+    {
+      "LogName": "NPC Portrait",
+      "Action": "Load",
+      "Target": "Portraits/Void",
+      "FromFile": "assets/img/VoidPortrait.png",
+      "When": {
+        "AlternatePortraits": "false"
+      }
+    },
+
+    {
+      "LogName": "NPC Portrait",
+      "Action": "Load",
+      "Target": "Portraits/Void",
+      "FromFile": "assets/img2/VoidPortrait.png",
+      "When": {
+        "AlternatePortraits": "true"
+      }
+    },
+
+    {
+      "LogName": "Animation Descriptions",
+      "Action": "EditData",
+      "Target": "Data/animationDescriptions",
+      "entries": {
+        "void_read": "21/21 21 21/21"
+      }
+    },
+    // Married code reads the same for Roommate. Lavril is roommate, not married (but coding logic says otherwise ;c )
+    {
+      "LogName": "Schedule",
+      "Action": "Load",
+      "Target": "Characters/schedules/Void",
+      "FromFile": "assets/schedules/VoidSchedule.json",
+      "When": {
+        "Relationship:Lavril |contains=Married": false
+      }
+    },
+
+    {
+      "LogName": "Schedule",
+      "Action": "Load",
+      "Target": "Characters/schedules/Void",
+      "FromFile": "assets/schedules/VoidRoomieSchedule.json",
+      "When": {
+        "Relationship:Lavril |contains=Married": true
+      }
+    },
+
+    {
+      "LogName": "Dialogue",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/Void",
+      "FromFile": "assets/dialogue/VoidDialogue.json"
+    }
+  ]
+}

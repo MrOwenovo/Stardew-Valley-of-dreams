@@ -1,0 +1,32 @@
+{
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "Changes": [
+        {
+            "LogName": "[Yagi] Garden Village Shops - Location Support",
+            "Action": "EditData",
+            "Target": "Mods/Bouhm.NPCMapLocations/Locations",
+            "When": {
+                "HasMod: |contains=Tarniyar.CP.GardenVillage": true
+            },
+            "Entries": {
+                // Garden Village Shops - Expansion Mod - https://www.nexusmods.com/stardewvalley/mods/6113
+                "MainShops": {
+                    "MapVectors": [
+                        {
+                            "TileX": 0,
+                            "TileY": 29,
+                            "MapX": 250,
+                            "MapY": 228
+                        },
+                        {
+                            "TileX": 54,
+                            "TileY": 21,
+                            "MapX": 338,
+                            "MapY": 222
+                        }
+                    ]
+                }
+            }
+        },
+    ]
+}

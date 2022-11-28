@@ -1,0 +1,205 @@
+{
+  "Changes": [
+    {
+      //Spawn Void and Lavril into the void
+      "LogName": "NPC Manifestation",
+      "Action": "Include",
+      "FromFile": "assets/disposition/LavrilDisposition1.json",
+      "When": {
+        "HasSeenEvent |contains=630710010": "true",
+        "HasSeenEvent |contains=63070012": "false"
+      }
+    },
+
+    {
+      //Normal Lavril and Void Spawn
+      "LogName": "NPC Manifestation",
+      "Action": "Include",
+      "FromFile": "assets/disposition/LavrilDisposition2.json",
+      "When": {
+        "HasSeenEvent |contains=63070012": "true"
+      }
+    },
+
+    {
+      "LogName": "Animation Descriptions",
+      "Action": "EditData",
+      "Target": "Data/animationDescriptions",
+      "entries": {
+        "lavril_meditation": "18/18 18 18 18 16 16 16 16 17 17 17 17 16 16 16 16/18",
+        "lavril_sit": "31/31 31 31 31/31",
+        "lavril_read": "35/35 35 35/35",
+        "lavril_rest": "24/24 24 24/24",
+        "lavril_sleep": "24/24 24 24/24"
+      }
+    },
+
+    {
+      "LogName": "NPC Gift Tastes",
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "Entries": {
+        "Lavril": "嘻嘻！我好开心！$h/417 64 308 795 268/啊……嗯……谢谢你了，嘿嘿。/233 220 221 305 769 612 608 222 223 234/噢……嗯……我真的不太喜欢这个。/768/把它拿开……！/168 171 116/……$11//"
+      }
+    },
+    {
+      "LogName": "NPC Sprite",
+      "Action": "Load",
+      "Target": "Characters/Lavril",
+      "FromFile": "assets/img/LavrilSprites.png",
+      "When": {
+        "WinterOutfit": "false"
+      }
+    },
+
+    {
+      "LogName": "Winter Seasonal Outfits",
+      "Action": "Load",
+      "Target": "Characters/Lavril",
+      "FromFile": "assets/img/LavrilWinterSprites.png",
+      "When": {
+        "WinterOutfit": "true"
+      }
+    },
+
+    { //Default Portraits by Arknir27
+      "LogName": "NPC Portrait",
+      "Action": "Load",
+      "Target": "Portraits/Lavril",
+      "FromFile": "assets/img/LavrilPortrait.png",
+      "When": {
+        "AlternatePortraits": "false",
+        "WinterOutfit": "false"
+
+      }
+    },
+
+    { //Noxide77 Portraits
+      "LogName": "NPC Portrait",
+      "Action": "Load",
+      "Target": "Portraits/Lavril",
+      "FromFile": "assets/img2/LavrilPortrait.png",
+      "When": {
+        "AlternatePortraits": "true",
+        "WinterOutfit": "false"
+      }
+    },
+
+
+    {
+      "LogName": "NPC Portrait",
+      "Action": "Load",
+      "Target": "Portraits/Lavril",
+      "FromFile": "assets/img/LavrilWinterPortrait.png",
+      "When": {
+        "AlternatePortraits": "true",
+        "WinterOutfit": "true"
+      }
+    },
+
+    {
+      "LogName": "NPC Portrait",
+      "Action": "Load",
+      "Target": "Portraits/Lavril",
+      "FromFile": "assets/img/LavrilWinterPortrait.png",
+      "When": {
+        "AlternatePortraits": "false",
+        "WinterOutfit": "true"
+      }
+    },
+
+
+    //adds Lavril's default portrait
+    {
+      "LogName": "Lavril default",
+      "Action": "Load",
+      "Target": "Portraits/Lavril_default",
+      "FromFile": "assets/img/LavrilPortrait.png",
+      "When": {
+        "AlternatePortraits": "false"
+      }
+    },
+
+    {
+      "LogName": "Lavril default",
+      "Action": "Load",
+      "Target": "Portraits/Lavril_default",
+      "FromFile": "assets/img2/LavrilPortrait.png",
+      "When": {
+        "AlternatePortraits": "true"
+      }
+    },
+
+    //adds Lavril's default sprites
+
+    {
+      "LogName": "NPC Sprite",
+      "Action": "Load",
+      "Target": "Characters/Lavril_default",
+      "FromFile": "assets/img/LavrilSprites.png"
+    },
+
+
+    {
+      "LogName": "Schedule",
+      "Action": "Load",
+      "Target": "Characters/schedules/Lavril",
+      "FromFile": "assets/schedules/LavrilSchedule.json"
+    },
+
+    {
+      "LogName": "Movie Invite Strings",
+      "Action": "EditData",
+      "Target": "strings/Characters",
+      "Entries": {
+        "MovieInvite_Invited_Lavril": "你想和我一起看电影？嗯……我很乐意！$16"
+      }
+
+    },
+
+    {
+      "LogName": "Dialogue",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/Lavril",
+      "FromFile": "assets/dialogue/LavrilDialogue.json"
+    },
+
+    {
+      "LogName": "Marriage Dialogue",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/MarriageDialogueLavril, Characters/Dialogue/MarriageDialogueLavrilRoommate",
+      "FromFile": "assets/dialogue/AdoptedDialogue.json"
+    },
+
+    {
+      "LogName": "Lavril Event Costumes",
+      "Action": "Load",
+      "Target": "Characters/Lavril_Winter",
+      "FromFile": "assets/img/LavrilWinterSprites.png"
+    },
+
+    {
+      "LogName": "Lavril Event Costumes",
+      "Action": "Load",
+      "Target": "Characters/Lavril_SpiritsEve",
+      "FromFile": "assets/img/LavrilFallSprites.png"
+    },
+
+    {
+      "LogName": "Lavril Event Costumes",
+      "Action": "Load",
+      "Target": "Characters/Lavril_PJ",
+      "FromFile": "assets/img/LavrilPJ.png"
+    },
+
+    {
+      "LogName": "Lavril Event Costumes",
+      "Action": "Load",
+      "Target": "Portraits/Lavril_PJ",
+      "FromFile": "assets/img/LavrilPJPortrait.png"
+    }
+
+
+
+  ]
+}

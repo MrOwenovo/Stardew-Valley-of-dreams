@@ -1,0 +1,736 @@
+{
+    "Format": "1.19.0",
+    "DynamicTokens": [
+    {
+        "Name": "BridalBoutique",
+        "Value": ""
+    },
+	],
+
+    "Changes": [
+	//Fall Boutique
+	{
+        "LogName": "Bridal Boutique- Fall - Closed Day - Week 1",
+        "Action": "Load",
+        "Target": "bridalboutique_Fall_Closed_Week1",
+        "FromFile": "assets/Maps/Paisley_Shop_Closed_Default.png",
+    },
+    {
+        "LogName": "Bridal Boutique Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/Maps/bridalboutique_Fall_Closed_Week1.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "6,7",
+                "Season": "fall",
+                "Time": "{{Range: 0600, 0850}}",
+				"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 21,
+            "Y": 60,
+            "Width": 4,
+            "Height": 5
+        },
+
+    },
+		{
+        "LogName": "Bridal Boutique- Fall - Closed Night - Week 1",
+        "Action": "Load",
+        "Target": "bridalboutique_Fall_Closed_Week1",
+        "FromFile": "assets/Maps/Paisley_Shop_Closed_Default.png",
+    },
+    {
+        "LogName": "Bridal Boutique Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/Maps/bridalboutique_Fall_Closed_Week1.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "6,7",
+                "Season": "fall",
+                "Time": "{{Range: 1810, 2600}}",
+            	"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 21,
+            "Y": 60,
+            "Width": 4,
+            "Height": 5
+        },
+
+    },
+		{
+        "LogName": "Bridal Boutique- Fall - Closed Day - Week 2",
+        "Action": "Load",
+        "Target": "bridalboutique_Fall_Closed_Week2",
+        "FromFile": "assets/Maps/Paisley_Shop_Closed_Default.png",
+    },
+    {
+        "LogName": "Bridal Boutique Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/Maps/bridalboutique_Fall_Closed_Week2.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "20, 21",
+                "Season": "fall",
+                "Time": "{{Range: 0600, 0850}}",
+            	"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 21,
+            "Y": 60,
+            "Width": 4,
+            "Height": 5
+        },
+
+    },
+		{
+        "LogName": "Bridal Boutique- Fall - Closed Night - Week 2",
+        "Action": "Load",
+        "Target": "bridalboutique_Fall_Closed_Week2",
+        "FromFile": "assets/Maps/Paisley_Shop_Closed_Default.png",
+    },
+    {
+        "LogName": "Bridal Boutique Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/Maps/bridalboutique_Fall_Closed_Week2.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "20, 21",
+                "Season": "fall",
+                "Time": "{{Range: 1810, 2600}}",
+            	"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 21,
+            "Y": 60,
+            "Width": 4,
+            "Height": 5
+        },
+
+    },
+		{
+        "LogName": "Bridal Boutique- Fall - Open - Week 1",
+        "Action": "Load",
+        "Target": "bridalboutique_Fall_Open_Week1",
+        "FromFile": "assets/Maps/Fall_Week1_Open.png",
+    },
+    {
+        "LogName": "Bridal Boutique Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/Maps/bridalboutique_Fall_Open_Week1.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "6,7",
+				"Weather": "Sun, Wind",
+                "Season": "fall",
+                "Time": "{{Range: 0900, 1800}}",
+            	"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 21,
+            "Y": 60,
+            "Width": 4,
+            "Height": 5
+        },
+
+    },
+			{
+        "LogName": "Bridal Boutique- Fall - Open Rain- Week 1",
+        "Action": "Load",
+        "Target": "bridalboutique_Fall_Open_Week1_Rain",
+        "FromFile": "assets/Maps/Fall_Week1_Rain_Open.png",
+    },
+    {
+        "LogName": "Bridal Boutique Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/Maps/bridalboutique_Fall_Open_Week1_Rain.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "6,7",
+				"Weather": "Rain, Storm",
+                "Season": "fall",
+                "Time": "{{Range: 0900, 1800}}",
+            	"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 21,
+            "Y": 60,
+            "Width": 4,
+            "Height": 5
+        },
+
+    },
+			{
+        "LogName": "Bridal Boutique- Fall - Open - Week 2",
+        "Action": "Load",
+        "Target": "bridalboutique_Fall_Open_Week2",
+        "FromFile": "assets/Maps/Fall_Week2_Open.png",
+    },
+    {
+        "LogName": "Bridal Boutique Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/Maps/bridalboutique_Fall_Open_Week2.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "20, 21",
+				"Weather": "Sun, Wind",
+                "Season": "fall",
+                "Time": "{{Range: 0900, 1800}}",
+            	"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 21,
+            "Y": 60,
+            "Width": 4,
+            "Height": 5
+        },
+
+    },
+			{
+        "LogName": "Bridal Boutique- Fall - Open Rain- Week 2",
+        "Action": "Load",
+        "Target": "bridalboutique_Fall_Open_Week2_Rain",
+        "FromFile": "assets/Maps/Fall_Week2_Rain_Open.png",
+    },
+    {
+        "LogName": "Bridal Boutique Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/Maps/bridalboutique_Fall_Open_Week2_Rain.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "20, 21",
+				"Weather": "Rain, Storm",
+                "Season": "fall",
+                "Time": "{{Range: 0900, 1800}}",
+            	"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 21,
+            "Y": 60,
+            "Width": 4,
+            "Height": 5
+        },
+
+    },
+	//Spring Boutique
+		{
+        "LogName": "Bridal Boutique- Spring - Closed Day - Week 1",
+        "Action": "Load",
+        "Target": "bridalboutique_Spring_Closed_Week1",
+        "FromFile": "assets/Maps/Paisley_Shop_Closed_Default.png",
+    },
+    {
+        "LogName": "Bridal Boutique Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/Maps/bridalboutique_Spring_Closed_Week1.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "6,7",
+                "Season": "spring",
+                "Time": "{{Range: 0600, 0850}}",
+            	"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 21,
+            "Y": 60,
+            "Width": 4,
+            "Height": 5
+        },
+
+    },
+		{
+        "LogName": "Bridal Boutique- Spring - Closed Night - Week 1",
+        "Action": "Load",
+        "Target": "bridalboutique_Spring_Closed_Week1",
+        "FromFile": "assets/Maps/Paisley_Shop_Closed_Default.png",
+    },
+    {
+        "LogName": "Bridal Boutique Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/Maps/bridalboutique_Spring_Closed_Week1.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "6,7",
+                "Season": "spring",
+                "Time": "{{Range: 1810, 2600}}",
+            	"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 21,
+            "Y": 60,
+            "Width": 4,
+            "Height": 5
+        },
+
+    },
+		{
+        "LogName": "Bridal Boutique- Spring - Closed Day - Week 2",
+        "Action": "Load",
+        "Target": "bridalboutique_Spring_Closed_Week2",
+        "FromFile": "assets/Maps/Paisley_Shop_Closed_Default.png",
+    },
+    {
+        "LogName": "Bridal Boutique Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/Maps/bridalboutique_Spring_Closed_Week2.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "20, 21",
+                "Season": "spring",
+                "Time": "{{Range: 0600, 0850}}",
+            	"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 21,
+            "Y": 60,
+            "Width": 4,
+            "Height": 5
+        },
+
+    },
+		{
+        "LogName": "Bridal Boutique- Spring - Closed Night - Week 2",
+        "Action": "Load",
+        "Target": "bridalboutique_Spring_Closed_Week2",
+        "FromFile": "assets/Maps/Paisley_Shop_Closed_Default.png",
+    },
+    {
+        "LogName": "Bridal Boutique Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/Maps/bridalboutique_Spring_Closed_Week2.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "20, 21",
+                "Season": "spring",
+                "Time": "{{Range: 1810, 2600}}",
+            	"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 21,
+            "Y": 60,
+            "Width": 4,
+            "Height": 5
+        },
+
+    },
+		{
+        "LogName": "Bridal Boutique- Spring - Open - Week 1",
+        "Action": "Load",
+        "Target": "bridalboutique_Spring_Open_Week1",
+        "FromFile": "assets/Maps/Spring_Week1_Open.png",
+    },
+    {
+        "LogName": "Bridal Boutique Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/Maps/bridalboutique_Spring_Open_Week1.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "6,7",
+				"Weather": "Sun, Wind",
+                "Season": "spring",
+                "Time": "{{Range: 0900, 1800}}",
+            	"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 21,
+            "Y": 60,
+            "Width": 4,
+            "Height": 5
+        },
+
+    },
+			{
+        "LogName": "Bridal Boutique- Spring - Open Rain- Week 1",
+        "Action": "Load",
+        "Target": "bridalboutique_Spring_Open_Week1_Rain",
+        "FromFile": "assets/Maps/Spring_Week1_Rain_Open.png",
+    },
+    {
+        "LogName": "Bridal Boutique Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/Maps/bridalboutique_Spring_Open_Week1_Rain.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "6,7",
+				"Weather": "Rain, Storm",
+                "Season": "spring",
+                "Time": "{{Range: 0900, 1800}}",
+	            "HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 21,
+            "Y": 60,
+            "Width": 4,
+            "Height": 5
+        },
+
+    },
+			{
+        "LogName": "Bridal Boutique- Spring - Open - Week 2",
+        "Action": "Load",
+        "Target": "bridalboutique_Spring_Open_Week2",
+        "FromFile": "assets/Maps/Spring_Week2_Open.png",
+    },
+    {
+        "LogName": "Bridal Boutique Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/Maps/bridalboutique_Spring_Open_Week2.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "20, 21",
+				"Weather": "Sun, Wind",
+                "Season": "spring",
+                "Time": "{{Range: 0900, 1800}}",
+            	"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 21,
+            "Y": 60,
+            "Width": 4,
+            "Height": 5
+        },
+
+    },
+			{
+        "LogName": "Bridal Boutique- Spring - Open Rain- Week 2",
+        "Action": "Load",
+        "Target": "bridalboutique_Spring_Open_Week2_Rain",
+        "FromFile": "assets/Maps/Spring_Week2_Rain_Open.png",
+    },
+    {
+        "LogName": "Bridal Boutique Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/Maps/bridalboutique_Spring_Open_Week2_Rain.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "20, 21",
+				"Weather": "Rain, Storm",
+                "Season": "spring",
+                "Time": "{{Range: 0900, 1800}}",
+            	"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 21,
+            "Y": 60,
+            "Width": 4,
+            "Height": 5
+        },
+
+    },
+	//Summer Boutique
+			{
+        "LogName": "Bridal Boutique- Summer - Closed Day - Week 1",
+        "Action": "Load",
+        "Target": "bridalboutique_Summer_Closed_Week1",
+        "FromFile": "assets/Maps/Paisley_Shop_Closed_Default.png",
+    },
+    {
+        "LogName": "Bridal Boutique Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/Maps/bridalboutique_Summer_Closed_Week1.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "6,7",
+                "Season": "summer",
+                "Time": "{{Range: 0600, 0850}}",
+            	"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 21,
+            "Y": 60,
+            "Width": 4,
+            "Height": 5
+        },
+
+    },
+		{
+        "LogName": "Bridal Boutique- Summer - Closed Night - Week 1",
+        "Action": "Load",
+        "Target": "bridalboutique_Summer_Closed_Week1",
+        "FromFile": "assets/Maps/Paisley_Shop_Closed_Default.png",
+    },
+    {
+        "LogName": "Bridal Boutique Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/Maps/bridalboutique_Summer_Closed_Week1.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "6,7",
+                "Season": "summer",
+                "Time": "{{Range: 1810, 2600}}",
+            	"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 21,
+            "Y": 60,
+            "Width": 4,
+            "Height": 5
+        },
+
+    },
+		{
+        "LogName": "Bridal Boutique- Summer - Closed Day - Week 2",
+        "Action": "Load",
+        "Target": "bridalboutique_Summer_Closed_Week2",
+        "FromFile": "assets/Maps/Paisley_Shop_Closed_Default.png",
+    },
+    {
+        "LogName": "Bridal Boutique Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/Maps/bridalboutique_Summer_Closed_Week2.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "20, 21",
+                "Season": "summer",
+                "Time": "{{Range: 0600, 0850}}",
+            	"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 21,
+            "Y": 60,
+            "Width": 4,
+            "Height": 5
+        },
+
+    },
+		{
+        "LogName": "Bridal Boutique- Summer - Closed Night - Week 2",
+        "Action": "Load",
+        "Target": "bridalboutique_Summer_Closed_Week2",
+        "FromFile": "assets/Maps/Paisley_Shop_Closed_Default.png",
+    },
+    {
+        "LogName": "Bridal Boutique Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/Maps/bridalboutique_Summer_Closed_Week2.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "20, 21",
+                "Season": "summer",
+                "Time": "{{Range: 1810, 2600}}",
+            	"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 21,
+            "Y": 60,
+            "Width": 4,
+            "Height": 5
+        },
+
+    },
+		{
+        "LogName": "Bridal Boutique- Summer - Open - Week 1",
+        "Action": "Load",
+        "Target": "bridalboutique_Summer_Open_Week1",
+        "FromFile": "assets/Maps/Summer_Week1_Open.png",
+    },
+    {
+        "LogName": "Bridal Boutique Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/Maps/bridalboutique_Summer_Open_Week1.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "6,7",
+				"Weather": "Sun, Wind",
+                "Season": "summer",
+                "Time": "{{Range: 0900, 1800}}",
+            	"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 21,
+            "Y": 60,
+            "Width": 4,
+            "Height": 5
+        },
+
+    },
+			{
+        "LogName": "Bridal Boutique- Summer - Open Rain- Week 1",
+        "Action": "Load",
+        "Target": "bridalboutique_Summer_Open_Week1_Rain",
+        "FromFile": "assets/Maps/Summer_Week1_Rain_Open.png",
+    },
+    {
+        "LogName": "Bridal Boutique Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/Maps/bridalboutique_Summer_Open_Week1_Rain.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "6,7",
+				"Weather": "Rain, Storm",
+                "Season": "summer",
+                "Time": "{{Range: 0900, 1800}}",
+            	"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 21,
+            "Y": 60,
+            "Width": 4,
+            "Height": 5
+        },
+
+    },
+			{
+        "LogName": "Bridal Boutique- Summer - Open - Week 2",
+        "Action": "Load",
+        "Target": "bridalboutique_Summer_Open_Week2",
+        "FromFile": "assets/Maps/Summer_Week2_Open.png",
+    },
+    {
+        "LogName": "Bridal Boutique Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/Maps/bridalboutique_Summer_Open_Week2.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "20, 21",
+				"Weather": "Sun, Wind",
+                "Season": "summer",
+                "Time": "{{Range: 0900, 1800}}",
+            	"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 21,
+            "Y": 60,
+            "Width": 4,
+            "Height": 5
+        },
+
+    },
+			{
+        "LogName": "Bridal Boutique- Summer - Open Rain- Week 2",
+        "Action": "Load",
+        "Target": "bridalboutique_Summer_Open_Week2_Rain",
+        "FromFile": "assets/Maps/Summer_Week2_Rain_Open.png",
+    },
+    {
+        "LogName": "Bridal Boutique Patch",
+        "Action": "EditMap",
+        "Target": "Maps/Town",
+        "FromFile": "assets/Maps/bridalboutique_Summer_Open_Week2_Rain.tbin",
+        "Update": "OnTimeChange", 
+		"When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"Day": "20, 21",
+				"Weather": "Rain, Storm",
+                "Season": "summer",
+                "Time": "{{Range: 0900, 1800}}",
+            	"HasReadLetter": "makersmarketletter",
+            },
+        "ToArea":
+        {
+            "X": 21,
+            "Y": 60,
+            "Width": 4,
+            "Height": 5
+        },
+
+    },/*
+    {
+        "LogName": "English Mail",
+        "Action": "EditData",
+        "Target": "Data/Mail",
+        "Entries":
+        {
+            "makersmarketletter": "亲爱的 @，^^谢谢你一直坚持帮扶本地的生意，镇里的人都在夸奖你呢！^^为了促进合作，加深友谊，我和隔壁格兰普顿的镇长决定在鹈鹕镇广场修一个临时的工艺品小摊。^^每月的6号和7号两天，格兰普顿的艺术家们会来广场卖他们独一无二的作品，时间是上午9点到下午6点。^如果受欢迎的话，我们会考虑增加更多的工艺品供大家挑选。^^到时候见啦！^- 镇长刘易斯",
+        },
+        "When":
+        {		
+			"FarmhouseUpgrade": "1"
+        },
+    },*/
+    ]
+}

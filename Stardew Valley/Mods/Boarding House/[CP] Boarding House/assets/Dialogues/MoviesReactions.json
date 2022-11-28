@@ -1,0 +1,302 @@
+{
+		"Changes": [
+		
+{
+	"Action": "EditData",
+	"Target": "Data/MoviesReactions",
+	"Entries": {
+    "Gregory": {
+    "NPCName": "Gregory",
+    "Reactions": [
+      {
+        "Tag": "summer_movie_0",
+        "Response": "love",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{i18n:MovieReactions.Gregory.Before.summer_movie_0}}"
+          },
+          "DuringMovie": {
+            "ResponsePoint": null,
+            "Script": "/shake Gregory 3000/pause 500/message \"{{i18n:MovieReactions.Gregory.Script.summer_movie_0}}\"",
+            "Text": "{{i18n:MovieReactions.Gregory.During.summer_movie_0}}"
+          },
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{i18n:MovieReactions.Gregory.After.summer_movie_0}}"
+          }
+        },
+        "ID": "reaction_0"
+      },
+      {
+        "Tag": "summer_movie_1",
+        "Response": "love",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{i18n:MovieReactions.Gregory.Before.summer_movie_1}}"
+          },
+          "DuringMovie": {
+            "ResponsePoint": "null",
+            "Script": "pause 500/message \"{{i18n:MovieReactions.Gregory.Script.summer_movie_1}}\"",
+            "Text": ""
+          },
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{i18n:MovieReactions.Gregory.After.summer_movie_1}}"
+          }
+        },
+        "ID": "reaction_1"
+      },
+      {
+        "Tag": "comedy",
+        "Response": "love",
+        "Whitelist": [],
+		"SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{i18n:MovieReactions.Gregory.Before.comedy}}"
+          },
+          "DuringMovie": {
+            "ResponsePoint": "null",
+            "Script": "pause 500/message \"{{i18n:MovieReactions.Gregory.Script.comedy}}\"",
+            "Text": ""
+          },
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{i18n:MovieReactions.Gregory.After.comedy}}"
+          }
+        },
+        "ID": "reaction_2"
+      },
+	  {
+        "Tag": "fall_movie_0",
+        "Response": "dislike",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{i18n:MovieReactions.Gregory.Before.fall_movie_0}}"
+          },
+          "DuringMovie": {
+            "ResponsePoint": null,
+            "Script": "/message \"{{i18n:MovieReactions.Gregory.Script.fall_movie_0}}\"",
+            "Text": ""
+          },
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{i18n:MovieReactions.Gregory.After.fall_movie_0}}"
+          }
+        },
+        "ID": "reaction_3"
+      },
+	  {
+        "Tag": "horror",
+        "Response": "love",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{i18n:MovieReactions.Gregory.Before.horror}}"
+          },
+          "DuringMovie": {
+            "ResponsePoint": null,
+            "Script": "/jump Jas/pause 400",
+            "Text": "{{i18n:MovieReactions.Gregory.During.horror}}"
+          },
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{i18n:MovieReactions.Gregory.After.horror}}"
+          }
+        },
+        "ID": "reaction_4"
+      },
+      {
+        "Tag": "*",
+        "Response": "dislike",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{i18n:MovieReactions.Gregory.Before.GMovie6}}"
+          },
+          "DuringMovie": {
+            "ResponsePoint": null,
+            "Script": "/message \"{{i18n:MovieReactions.Gregory.Script.GMovie6}}\"",
+            "Text": ""
+          },
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{i18n:MovieReactions.Gregory.After.GMovie6}}"
+          }
+        },
+        "ID": "reaction_5"
+      },  
+    ]
+  },
+  "Sheila": {
+    "NPCName": "Sheila",
+    "Reactions": [
+      {
+        "Tag": "*",
+        "Response": "love",
+        "Whitelist": [ "Joel"],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{i18n:MovieReactions.Sheila.Before.SMovie1}}"
+          },
+          "DuringMovie": {
+            "ResponsePoint": null,
+            "Script": "/message \"{{i18n:MovieReactions.Sheila.Script.SMovie1}}\"",
+            "Text": "{{i18n:MovieReactions.Sheila.During.SMovie1}}"
+          },
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{i18n:MovieReactions.Sheila.After.SMovie1}}"
+          }
+        },
+        "ID": "reaction_0"
+      },
+      {
+        "Tag": "classic",
+        "Response": "love",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{i18n:MovieReactions.Sheila.Before.classic}}"
+          },
+          "DuringMovie": {
+            "ResponsePoint": null,
+            "Script": "/message \"{{i18n:MovieReactions.Sheila.Script.classic}}\"",
+            "Text": ""
+          },
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{i18n:MovieReactions.Sheila.After.classic}}"
+          }
+        },
+        "ID": "reaction_1"
+      },
+      {
+        "Tag": "art",
+        "Response": "dislike",
+        "Whitelist": [],
+		"SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{i18n:MovieReactions.Sheila.Before.art}}"
+          },
+          "DuringMovie": {
+            "ResponsePoint": "null",
+            "Script": "pause 500/message \"{{i18n:MovieReactions.Sheila.Script.art}}\"",
+            "Text": ""
+          },
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{i18n:MovieReactions.Sheila.After.art}}"
+          }
+        },
+        "ID": "reaction_2"
+      },
+	  {
+        "Tag": "*",
+        "Response": "like",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{i18n:MovieReactions.Sheila.Before.SMovie4}}"
+          },
+          "DuringMovie": {
+            "ResponsePoint": null,
+            "Script": "/message \"{{i18n:MovieReactions.Sheila.Script.SMovie4}}\"",
+            "Text": ""
+          },
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{i18n:MovieReactions.Sheila.After.SMovie4}}"
+          }
+        },
+        "ID": "reaction_3"
+      },  
+    ]
+  },
+  "Joel": {
+    "NPCName": "Joel",
+    "Reactions": [
+      {
+        "Tag": "*",
+        "Response": "love",
+        "Whitelist": [ "Sheila"],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{i18n:MovieReactions.Joel.Before.JMovie1}}"
+          },
+          "DuringMovie": {
+            "ResponsePoint": null,
+            "Script": "emote Joel 24/message \"{{i18n:MovieReactions.Joel.Script.JMovie1}}\"",
+            "Text": ""
+          },
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{i18n:MovieReactions.Joel.After.JMovie1}}"
+          }
+        },
+        "ID": "reaction_0"
+      },
+      {
+        "Tag": "*",
+        "Response": "love",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{i18n:MovieReactions.Joel.Before.JMovie2}}"
+          },
+           "DuringMovie": {
+            "ResponsePoint": null,
+            "Script": "emote Joel 24/message \"{{i18n:MovieReactions.Joel.Script.JMovie2}}\"",
+            "Text": ""
+          },
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{i18n:MovieReactions.Joel.After.JMovie2}}"
+          }
+        },
+        "ID": "reaction_1"
+      },
+    ]
+  },
+ },
+ },
+ ],
+}

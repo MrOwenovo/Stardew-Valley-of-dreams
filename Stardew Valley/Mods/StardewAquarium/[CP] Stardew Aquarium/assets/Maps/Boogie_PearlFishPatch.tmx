@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="1" height="2" tilewidth="16" tileheight="16" infinite="0" nextlayerid="17" nextobjectid="159">
+ <properties>
+  <property name="DayTiles" value="Front 2 4 256 Front 2 5 288 Front 14 1 256 Front 14 2 288 Front 22 1 256 Front 22 2 288 Front 28 1 256 Front 28 2 288 Front 30 1 256 Front 30 2 288 Front 32 1 256 Front 32 2 288 Front 34 1 256 Front 34 2 288 Front 36 1 256 Front 36 2 288"/>
+  <property name="Music" value="submarine_song"/>
+  <property name="NightTiles" value="Front 2 4 1253 Front 2 5 1285 Front 14 1 1253 Front 14 2 1285 Front 22 1 1253 Front 22 2 1285 Front 28 1 1253 Front 28 2 1285 Front 30 1 1253 Front 30 2 1285 Front 32 1 1253 Front 32 2 1285 Front 34 1 1253 Front 34 2 1285 Front 36 1 1253 Front 36 2 1285"/>
+  <property name="Warp" value="16 53 Custom_ExteriorMuseum 26 10 17 53 Custom_ExteriorMuseum 26 10 9 45 Custom_Slimejack 21 18"/>
+ </properties>
+ <tileset firstgid="1" name="Paths" tilewidth="16" tileheight="16" tilecount="36" columns="4">
+  <image source="paths.png" width="64" height="144"/>
+ </tileset>
+ <tileset firstgid="37" name="custom" tilewidth="16" tileheight="16" tilecount="208" columns="26">
+  <image source="CustomTS/custom.png" width="416" height="128"/>
+  <tile id="1">
+   <animation>
+    <frame tileid="1" duration="500"/>
+    <frame tileid="2" duration="100"/>
+    <frame tileid="3" duration="100"/>
+    <frame tileid="2" duration="100"/>
+    <frame tileid="1" duration="500"/>
+    <frame tileid="1" duration="500"/>
+    <frame tileid="1" duration="500"/>
+    <frame tileid="1" duration="500"/>
+   </animation>
+  </tile>
+  <tile id="61">
+   <animation>
+    <frame tileid="61" duration="200"/>
+    <frame tileid="62" duration="200"/>
+    <frame tileid="63" duration="600"/>
+    <frame tileid="63" duration="600"/>
+    <frame tileid="63" duration="600"/>
+    <frame tileid="63" duration="600"/>
+    <frame tileid="62" duration="200"/>
+    <frame tileid="61" duration="200"/>
+    <frame tileid="61" duration="600"/>
+    <frame tileid="61" duration="600"/>
+    <frame tileid="61" duration="600"/>
+    <frame tileid="61" duration="600"/>
+    <frame tileid="61" duration="600"/>
+   </animation>
+  </tile>
+ </tileset>
+ <tileset firstgid="245" name="Museumbeach" tilewidth="16" tileheight="16" tilecount="1600" columns="40">
+  <image source="CustomTS/Museumbeach.png" width="640" height="640"/>
+ </tileset>
+ <layer id="1" name="Back" width="1" height="2">
+  <data>
+   <tile gid="122"/>
+   <tile gid="120"/>
+  </data>
+ </layer>
+ <objectgroup id="2" name="Back"/>
+ <layer id="13" name="Back2" width="1" height="2">
+  <properties>
+   <property name="Draw" value="Buildings"/>
+  </properties>
+  <data>
+   <tile/>
+   <tile/>
+  </data>
+ </layer>
+ <objectgroup id="16" name="Back2"/>
+ <layer id="3" name="Buildings" width="1" height="2">
+  <data>
+   <tile gid="121"/>
+   <tile gid="529"/>
+  </data>
+ </layer>
+ <objectgroup id="4" name="Buildings">
+  <object id="158" name="TileData" x="0" y="16" width="16" height="16">
+   <properties>
+    <property name="Action" value="AquariumString PearlFish"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="12" name="Buildings2" width="1" height="2">
+  <properties>
+   <property name="Draw" value="Buildings"/>
+  </properties>
+  <data>
+   <tile/>
+   <tile/>
+  </data>
+ </layer>
+ <objectgroup id="15" name="Buildings2"/>
+ <layer id="5" name="Front" width="1" height="2">
+  <data>
+   <tile gid="490"/>
+   <tile/>
+  </data>
+ </layer>
+ <objectgroup id="6" name="Front"/>
+ <layer id="11" name="Front2" width="1" height="2">
+  <properties>
+   <property name="Draw" value="AlwaysFront"/>
+  </properties>
+  <data>
+   <tile gid="62"/>
+   <tile/>
+  </data>
+ </layer>
+ <objectgroup id="14" name="Front2"/>
+ <layer id="7" name="Paths" width="1" height="2">
+  <data>
+   <tile gid="9"/>
+   <tile/>
+  </data>
+ </layer>
+ <objectgroup id="8" name="Paths"/>
+ <layer id="9" name="AlwaysFront" width="1" height="2">
+  <data>
+   <tile/>
+   <tile/>
+  </data>
+ </layer>
+ <objectgroup id="10" name="AlwaysFront"/>
+</map>

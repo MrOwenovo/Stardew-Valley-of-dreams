@@ -1,0 +1,57 @@
+{
+    "Format": "1.28.0",
+	"ConfigSchema": {
+		"Carved in Seasons": {
+			"AllowValues": "'Spring', 'Summer', 'Fall', 'Winter'",
+			"AllowMultiple": true,
+			"Default": "'Fall'",
+			"Description": "When to replace giant pumpkins with carved pumpkins"
+		},
+		"Light Eyes": {
+			"AllowValues": "Always, Night, Never",
+			"Default": "Night",
+			"Description": "When to make the pumpkin's eyes glow"
+		},
+	},
+	"DynamicTokens": [
+      {
+         "Name": "Style",
+         "Value": "carved"
+      },
+      {
+         "Name": "Style",
+         "Value": "light",
+		"When": { 
+			"Light Eyes": "Always"
+         }
+      },
+      {
+         "Name": "Style",
+         "Value": "light",
+		"When": { 
+			"Light Eyes": "Night",
+			"Time": "{{Range: 2000, 2600}}"
+         }
+      },
+   ],
+    "Changes": [
+
+        {
+            "LogName": "Pumpkin",
+            "Action": "EditImage",
+            "Target": "TileSheets/Crops",
+            "FromFile": "assets/pumpkin_{{style}}.png",
+            "ToArea":
+            {
+                "X": 208,
+                "Y": 512,
+                "Width": 48,
+                "Height": 64
+            },
+			"Update": "OnTimeChange",
+			"When": { 
+				"Query: '{{Season}}' IN ({{Carved in Seasons}})": true
+				}
+        }
+    ]
+}

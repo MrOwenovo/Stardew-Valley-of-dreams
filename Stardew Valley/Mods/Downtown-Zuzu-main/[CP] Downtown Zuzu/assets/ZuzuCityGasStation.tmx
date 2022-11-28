@@ -1,0 +1,1649 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="61" height="43" tilewidth="16" tileheight="16" infinite="0" nextlayerid="13" nextobjectid="209">
+ <properties>
+  <property name="Light" value="26 22 4 29 22 4 26 24 4 29 24 4 30 21 4 33 21 4 28 16 4 29 16 4 26 14 4 31 14 4 32 15 4 60 26 4 60 36 4 60 31 4 35 13 1 34 13 1 34 14 1 35 14 1 3 22 4 9 22 4 15 22 4 21 22 4 39 22 4 45 22 4 51 22 4 57 22 4 57 34 4 51 34 4 45 34 4 39 34 4 33 34 4 27 34 4 21 34 4 15 34 4 9 34 4 3 34 4 26 12 4 27 13 4 28 12 4 29 13 4 30 12 4 31 13 4"/>
+  <property name="NPCWarp" value="28 17 Custom_DTZ_GasInt 11 17"/>
+  <property name="Outdoors" value="T"/>
+  <property name="Warp" value="60 25 Custom_DTZ_ZuzuCity1 2 42 60 26 Custom_DTZ_ZuzuCity1 2 42 60 27 Custom_DTZ_ZuzuCity1 2 42 60 28 Custom_DTZ_ZuzuCity1 2 42 60 29 Custom_DTZ_ZuzuCity1 2 42 60 30 Custom_DTZ_ZuzuCity1 2 42 60 31 Custom_DTZ_ZuzuCity1 2 42 60 32 Custom_DTZ_ZuzuCity1 2 42 60 33 Custom_DTZ_ZuzuCity1 2 42 60 34 Custom_DTZ_ZuzuCity1 2 42 60 35 Custom_DTZ_ZuzuCity1 2 42 60 36 Custom_DTZ_ZuzuCity1 2 42 60 37 Custom_DTZ_ZuzuCity1 2 42 0 25 Custom_DTZ_ZuzuCityFreeway1 37 36 0 26 Custom_DTZ_ZuzuCityFreeway1 37 36 0 27 Custom_DTZ_ZuzuCityFreeway1 37 36 0 28 Custom_DTZ_ZuzuCityFreeway1 37 36 0 29 Custom_DTZ_ZuzuCityFreeway1 37 36 0 30 Custom_DTZ_ZuzuCityFreeway1 37 36 0 31 Custom_DTZ_ZuzuCityFreeway1 37 36 0 32 Custom_DTZ_ZuzuCityFreeway1 37 36 0 33 Custom_DTZ_ZuzuCityFreeway1 37 36 0 34 Custom_DTZ_ZuzuCityFreeway1 37 36 0 35 Custom_DTZ_ZuzuCityFreeway1 37 36 0 36 Custom_DTZ_ZuzuCityFreeway1 37 36 0 37 Custom_DTZ_ZuzuCityFreeway1 37 36"/>
+ </properties>
+ <tileset firstgid="1" name="untitled tile sheet" tilewidth="16" tileheight="16" tilecount="140" columns="10">
+  <image source="samshowtiles" width="160" height="224"/>
+ </tileset>
+ <tileset firstgid="141" name="townInterior" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="townInterior.png" width="512" height="1088"/>
+ </tileset>
+ <tileset firstgid="2317" name="spring_town" tilewidth="16" tileheight="16" tilecount="2304" columns="32">
+  <image source="spring_town.png" width="512" height="1152"/>
+  <tile id="45">
+   <animation>
+    <frame tileid="45" duration="1000"/>
+    <frame tileid="12" duration="1000"/>
+    <frame tileid="45" duration="1000"/>
+    <frame tileid="45" duration="1000"/>
+    <frame tileid="12" duration="1000"/>
+    <frame tileid="45" duration="1000"/>
+    <frame tileid="45" duration="1000"/>
+    <frame tileid="45" duration="1000"/>
+   </animation>
+  </tile>
+ </tileset>
+ <tileset firstgid="4621" name="spring_outdoorsTileSheet" tilewidth="16" tileheight="16" tilecount="1975" columns="25">
+  <image source="spring_outdoorsTileSheet.png" width="400" height="1264"/>
+  <tile id="150">
+   <animation>
+    <frame tileid="150" duration="200"/>
+    <frame tileid="420" duration="200"/>
+    <frame tileid="421" duration="200"/>
+    <frame tileid="422" duration="200"/>
+    <frame tileid="423" duration="200"/>
+   </animation>
+  </tile>
+  <tile id="151">
+   <animation>
+    <frame tileid="151" duration="1000"/>
+    <frame tileid="152" duration="1000"/>
+   </animation>
+  </tile>
+  <tile id="1030">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="1054">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="1056">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="1082">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="6596" name="DesertTiles" tilewidth="16" tileheight="16" tilecount="368" columns="16">
+  <image source="DesertTiles.png" width="256" height="368"/>
+ </tileset>
+ <tileset firstgid="6964" name="Festivals" tilewidth="16" tileheight="16" tilecount="1024" columns="32">
+  <image source="Festivals.png" width="512" height="512"/>
+ </tileset>
+ <tileset firstgid="7988" name="extra1" tilewidth="16" tileheight="16" tilecount="32" columns="4">
+  <image source="extra1.png" width="64" height="128"/>
+ </tileset>
+ <tileset firstgid="8020" name="extra2" tilewidth="16" tileheight="16" tilecount="30" columns="10">
+  <image source="extra2.png" width="160" height="48"/>
+ </tileset>
+ <tileset firstgid="8050" name="samshowEDITED" tilewidth="16" tileheight="16" tilecount="140" columns="10">
+  <image source="samshowEDITED.png" width="160" height="224"/>
+  <tile id="47">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="48">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="57">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="58">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="8190" name="spring_extra3" tilewidth="16" tileheight="16" tilecount="10000" columns="100">
+  <image source="spring_extra3.png" width="1600" height="1600"/>
+  <tile id="0">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="3">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="4">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="100">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="200">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="201">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="305">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="306">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="307">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="407">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="700">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="701">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="702">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="18190" name="paths" tilewidth="16" tileheight="16" tilecount="36" columns="4">
+  <image source="paths.png" width="64" height="144"/>
+ </tileset>
+ <tileset firstgid="18226" name="spring_JojaEnergy" tilewidth="16" tileheight="16" tilecount="640" columns="32">
+  <image source="spring_JojaEnergy.png" width="512" height="320"/>
+ </tileset>
+ <tileset firstgid="18866" name="roofextras" tilewidth="16" tileheight="16" tilecount="1280" columns="40">
+  <image source="roofextras.png" width="640" height="512"/>
+ </tileset>
+ <tileset firstgid="20146" name="JojaMini-ZuzuApartments" tilewidth="16" tileheight="16" tilecount="1008" columns="42">
+  <image source="JojaMini-ZuzuApartments.png" width="672" height="384"/>
+ </tileset>
+ <tileset firstgid="21154" name="NightClubZuzu" tilewidth="16" tileheight="16" tilecount="272" columns="17">
+  <image source="NightClubZuzu.png" width="272" height="256"/>
+ </tileset>
+ <tileset firstgid="21426" name="crops" tilewidth="16" tileheight="16" tilecount="768" columns="16">
+  <image source="crops.png" width="256" height="768"/>
+ </tileset>
+ <layer id="1" name="Back" width="61" height="43">
+  <data encoding="csv">
+6661,6661,6661,6613,6614,6661,6661,18105,4971,5025,5028,5717,5715,5715,5715,5715,5715,5715,5715,5715,5715,5715,5715,5715,5715,5715,5715,5715,5715,5715,5715,5715,5715,5715,5715,5715,5715,5715,5715,5715,5715,5715,5715,5715,5715,5715,5715,5715,5715,5715,5715,5715,5715,5715,5715,5715,5715,5715,5715,5715,5715,
+6613,6613,6613,6613,6614,6663,6661,18105,4996,5024,5000,5716,5740,5740,5740,5740,5714,5715,5715,5715,5715,5715,5715,5715,5715,5715,5715,5715,5715,5715,5715,5715,5715,5715,5715,5715,5715,5715,5715,5715,5715,5715,5715,5715,5715,5715,5715,5715,5715,5715,5715,5715,5715,5715,5715,5715,5715,5715,5715,5715,5713,
+6613,6613,6613,6613,6614,6661,6661,18105,4896,4971,5025,5026,5026,5026,5026,5028,5716,5740,5740,5740,5740,5740,5740,5740,5740,5740,5740,5740,5740,5740,5740,5740,5740,5740,5740,5740,5740,5740,5740,5740,5740,5740,5740,5740,5740,5740,5740,5740,5740,5740,5740,5740,5740,5740,5740,5740,5740,5740,5740,5740,5741,
+6613,6613,6613,6613,6614,6661,6661,18108,18101,4996,4997,5024,4972,4926,4925,5025,5026,5026,5026,5026,5026,5026,5026,5026,5026,5026,5026,5026,5026,5026,5026,5026,5026,5026,5026,5026,5026,5026,5026,5026,5026,5026,5026,5026,5026,5026,5026,5026,5026,5026,5026,5026,5026,5026,5026,5026,5026,5026,5026,5026,5026,
+6613,6613,6613,6631,6630,6661,6664,18109,17899,4896,4896,4996,4997,4997,4997,5024,4921,4974,4997,4997,4997,5024,4972,4974,4997,5024,4972,4972,4974,4997,4997,4997,4997,5024,4972,4974,4997,4997,5024,4972,4972,4950,4974,4997,5024,4972,4974,4997,4997,4997,5024,4972,4972,4974,4997,4997,5024,4972,4974,4997,4997,
+6613,6613,6631,6630,6661,6632,6661,18105,4896,4896,4896,4896,4896,4896,4896,4996,4997,4998,4896,4896,4896,4996,4997,4998,4896,4996,5024,4972,4973,4896,4896,4896,4896,4996,4997,4998,4875,4896,4971,4925,4972,4974,4998,4896,4996,4997,4998,4896,4896,4896,4971,4926,4974,4998,4896,4896,4996,4997,4998,4896,4896,
+6613,6631,6630,6661,6661,6661,6661,18105,4896,4896,4896,4896,4946,4947,4948,4896,4896,4896,4771,4896,4896,4896,5022,4896,4896,4896,4996,4997,4998,4896,4896,5022,4896,4896,4896,4896,4896,4896,4996,4997,4997,4998,4896,4896,4896,5022,4896,4896,4896,4896,4996,4997,4998,4896,4896,4896,4896,4896,4896,4896,4896,
+6613,6614,6661,6661,6661,6693,18109,17899,4896,4896,4896,4896,4971,4925,4973,4896,4875,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4875,4896,4896,4771,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,
+6613,6614,6661,6648,6661,6661,18105,4896,4896,4896,4896,4896,4996,4997,4998,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,
+6613,6614,6661,6661,6661,18109,17899,4896,4896,4896,4896,4896,4896,4896,4896,4771,4896,4896,4896,4896,4896,4771,4946,4947,4947,4948,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4946,4947,4947,4948,4896,4896,4896,4896,4946,4947,4947,4948,4896,4896,4896,4896,4821,4822,4822,4824,4875,4971,4972,4973,4896,
+6613,6614,6664,6661,18109,17899,4896,4896,4896,4896,4875,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4946,4949,4972,4972,4999,4947,4947,4947,4947,4947,4947,4947,4947,4947,4947,4949,4972,4972,4999,4947,4947,4947,4947,4949,4926,4950,4999,4948,4896,4896,4896,4846,4847,4848,4798,4824,4996,4997,4998,4896,
+6613,6614,6648,6661,18105,4896,4896,4896,4896,4771,4896,4896,4896,4772,4896,4946,4947,4948,4896,4896,4896,4971,16608,16609,16606,16607,16606,16607,16606,16607,16606,16607,16606,16607,16606,16607,16606,16607,16606,16607,16606,16607,16606,16607,16606,16607,16608,16609,4973,4896,4896,4896,4871,4873,4847,4852,4849,5022,4896,4896,4896,
+6613,6614,6661,6661,18105,4896,4896,4771,4896,4896,4896,4896,4896,4896,4896,4971,4926,4973,4896,4896,4896,4971,16708,16709,16706,16707,16706,16707,16706,16707,16706,16707,16706,16707,16706,16707,16706,16707,16706,16707,16706,16707,16706,16707,16706,16707,16708,16709,4973,4896,4896,4896,4896,4871,4872,4872,4874,4771,4896,4896,4896,
+6631,6630,6694,18109,17899,4896,4896,4896,4896,4946,4947,4948,4896,4771,4896,4996,4997,4998,4896,4896,4771,4971,16608,16609,16608,16609,16608,16609,16608,16609,16608,16609,16608,16609,5675,5675,5675,8192,8194,8194,8193,5675,8192,8194,8194,8193,16608,16609,4973,4896,4896,4896,4896,5022,4896,4896,4896,4896,4896,4896,4896,
+6630,6661,18109,17899,4896,4896,4772,4896,4896,4971,4926,4973,4896,4896,4896,4896,4896,4896,4896,4896,4946,4949,16708,16709,16708,16709,16708,16709,16708,16709,16708,16709,16708,16709,5675,5675,5675,8191,5675,5675,8190,5675,8191,6250,5675,8190,16708,16709,4973,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,
+6661,18109,17899,4896,4896,4896,4896,4896,4896,4996,4997,4998,4896,4946,4947,4948,4896,4896,4896,4896,4971,4950,16608,16609,16608,16609,16608,16609,16608,16609,16608,16609,16608,16609,5675,5675,5675,8191,5675,5675,8190,5675,8191,5675,5675,8190,16608,16609,4999,4947,4948,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,
+18096,17899,4896,4896,4896,4772,4896,4896,4896,4946,4947,4947,4947,4949,4972,4999,4947,4947,4948,4771,4971,4926,16708,16709,15905,15907,15905,15907,15905,15907,15905,15907,15905,15907,5675,5675,5675,8191,6250,5675,8190,5675,8191,5675,5675,8190,16708,16709,4926,4972,4999,4948,4896,4896,4896,4896,4896,5022,4896,4896,4896,
+4771,4896,4946,4947,4948,4896,4896,4771,4946,4949,4972,4972,4925,4972,4926,4972,4921,4972,4973,4896,4996,5024,16608,16609,16706,16707,16706,16707,16710,16711,16706,16707,16706,16707,5675,5675,5675,8191,5675,6250,8190,5675,8191,5675,6250,8190,16608,16609,4950,4972,4926,4999,4948,4896,4896,4896,4896,4896,4896,4896,4896,
+4896,4896,4971,4950,4973,4896,4896,4946,4949,4926,4972,4926,4974,4997,4997,4997,4997,4997,4998,4896,4896,4971,16708,16709,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,6249,5675,5675,5675,5675,5675,5675,5675,5675,6250,5675,16708,16709,4925,4925,4950,4896,4973,4896,4896,4896,4896,4896,4896,4896,4896,
+4896,4896,4996,4997,4998,4896,4896,4971,4972,4972,4925,4974,4998,4896,4896,4896,4896,4896,4896,4896,4896,4971,16608,16609,5675,5675,5675,6250,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,6250,5675,5675,5675,5675,5675,5675,16608,16609,4974,4997,4997,4997,4998,4896,4896,4896,4896,4896,4896,4896,4896,
+4896,4896,4896,4896,4896,4896,4896,4996,4997,4997,4997,4998,4946,4947,4948,4896,4772,4896,4896,5022,4896,4971,16708,16709,5675,6249,5675,5675,5675,5675,5675,5675,5675,5675,5675,6250,5675,5675,5675,5675,5675,5675,5675,5675,6250,5675,16708,16709,4973,4896,4896,4896,4896,4896,4896,5022,4896,4896,4896,4896,4896,
+4896,4896,4771,4896,4896,4896,4896,4896,4896,4896,4896,4896,4971,4950,4973,4896,4896,4896,4896,4896,4896,4971,16608,16609,5675,5675,5675,5675,5675,6249,6249,6249,6249,6249,6249,5675,5675,5675,5675,6250,5675,5675,5675,8892,8892,8892,16608,16609,4973,4896,4896,5022,4896,4896,4896,4896,4896,4896,4896,4771,4896,
+2927,4896,4896,4896,4771,4896,4896,4772,4896,4896,4896,4896,4971,4972,4973,4896,4896,4896,4896,4896,4771,4971,16708,16709,5675,5675,5675,5675,5675,5675,5675,6249,5675,5675,5675,5675,5675,5675,5675,5675,5675,6249,5675,8892,8892,8892,16708,16709,4973,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,
+2959,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4946,4949,4972,4973,4896,4896,4896,4896,4946,4947,4949,16608,16609,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,6250,8892,8892,8892,16608,16609,4973,4896,4896,4896,4946,4947,4947,4948,4896,4896,4896,4896,4896,
+2991,4946,4947,4947,4947,4947,4947,4947,4947,4947,4947,4949,4950,4925,4999,4947,4947,4947,4947,4949,4972,4972,16708,16709,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,6250,5675,5675,6249,5675,5675,5675,5675,5675,8892,8892,8892,16708,16709,4999,4947,4947,4947,4949,4950,4926,4999,4947,4947,4947,4947,4947,
+15809,15810,16406,16407,16408,15808,15809,15810,16406,16407,16408,15808,15809,15810,16406,16407,16408,15808,15809,15810,16612,16613,16610,16611,16606,16607,16406,16407,16408,15808,15809,15810,5675,5675,5675,5675,5675,5675,16406,16407,16408,15808,15809,15810,16612,16613,16610,16611,16606,16607,16406,16407,16408,15808,15809,15810,16406,16407,16408,16406,16407,
+12722,16508,16809,16810,16811,16506,16507,16508,16809,16810,16811,16506,16507,16508,16809,16810,16811,16506,16507,16508,16712,16713,16710,16711,16706,16707,16809,16810,16811,16506,16507,16508,5675,5675,5675,5675,5675,5675,16809,16810,16811,16506,16507,16508,16712,16713,16710,16711,16706,16707,16809,16810,16811,16506,16507,16508,16809,16810,16811,16506,16507,
+6301,6301,6301,6301,6301,6301,6301,6301,6301,6301,6301,6301,6301,6301,6301,6301,6301,6301,6301,6301,6301,6301,8191,8190,6301,6301,6301,6301,6301,6301,6301,6301,6299,6300,5675,5675,5675,5675,6301,6301,6301,6301,6301,6301,6301,6301,8191,8190,6301,6301,6301,6301,6301,6301,6301,6301,6301,6301,6301,6301,6301,
+5675,5675,5675,5675,6250,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,8191,8190,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,6299,6300,5675,5675,5675,6250,5675,5675,5675,5675,5675,8191,8190,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,
+5675,5675,5675,5675,5675,5675,5675,5675,6249,5675,5675,6250,5675,5675,5675,6249,5675,5675,5675,5675,5675,5675,8191,8190,5675,6250,5675,5675,5675,5675,5675,5675,6249,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,6249,5675,8191,8190,5675,5675,6249,6249,6249,5675,5675,5675,6250,5675,5675,5675,5675,
+5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,6249,5675,8191,8190,5675,5675,5675,5675,5675,6250,5675,5675,5675,5675,5675,5675,5675,5675,6250,5675,5675,5675,5675,5675,5675,5675,8191,8190,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,
+5677,5677,5677,5677,5677,5677,5677,5677,5677,5677,5677,5677,5677,5677,5677,5677,5677,5677,5677,5677,5677,5677,8191,8190,5677,5677,5677,5677,5677,5677,5677,5677,5677,5677,5677,5677,5677,5677,5677,5677,5677,5677,5677,5677,5677,5677,8191,8190,5677,5677,5677,5677,5677,5677,5677,5677,5677,5677,5677,5677,5677,
+5675,5675,6249,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,6299,6300,5675,5675,5675,5675,5675,5675,8191,8190,5675,5675,5675,5675,5675,6249,5675,6299,6300,5675,5675,5675,5675,5675,6249,5675,5675,5675,5675,5675,5675,5675,8191,8190,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,
+5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,6250,5675,5675,5675,5675,5675,5675,5675,5675,5675,6249,8191,8190,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,6299,6300,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,8191,8190,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,
+5675,5675,5675,5675,5675,6250,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,6299,6300,5675,5675,5675,5675,8191,8190,6250,5675,5675,5675,5675,5675,5675,5675,5675,6250,5675,5675,5675,6249,5675,5675,5675,6250,5675,5675,5675,6249,8191,8190,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,6250,
+5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,8191,8190,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,5675,8191,8190,5675,5675,5675,5675,6250,5675,5675,5675,5675,5675,5675,5675,5675,
+16407,16408,15808,15809,15810,15808,15809,15810,15808,15809,15810,15808,15809,15810,15808,15809,15810,15808,15809,15810,16606,16607,16606,16607,16606,16607,15808,15809,15810,15808,15809,15810,15808,15809,15810,15808,15809,15810,15808,15809,15810,15808,15809,15810,16606,16607,16606,16607,16606,16607,15808,15809,15810,15808,15809,15810,15808,15809,15810,16406,16407,
+16507,16508,16506,16507,16508,16506,16507,16508,16506,16507,16508,16506,16507,16508,16506,16507,16508,16506,16507,16508,16706,16707,16706,16707,16706,16707,16506,16507,16508,16506,16507,16508,16506,16507,16508,16506,16507,16508,16506,16507,16508,16506,16507,16508,16706,16707,16706,16707,16706,16707,16506,16507,16508,16506,16507,16508,16506,16507,16508,16506,16507,
+4997,4997,4997,4997,4997,4997,4997,4997,4997,4997,4997,4997,4997,4997,4997,4997,4997,4997,4997,4997,4997,4997,4997,4997,4997,4997,4997,4997,4997,4997,4997,4997,4997,4997,4997,4997,4997,4997,4997,4997,4997,4997,4997,4997,4997,4997,4997,4997,4997,4997,4997,4997,4997,4997,4997,4997,4997,4997,4997,5024,4972,
+4896,4896,4771,4896,4896,4896,4896,4896,4896,4896,4771,4896,4896,4896,4896,4896,4896,4896,4771,4896,4896,4896,4896,4896,4896,4896,4771,4896,4896,4896,4896,4896,4896,4896,4771,4896,4896,4896,4896,4896,4896,4896,4771,4896,4896,4896,4896,4896,4896,4896,4771,4896,4896,4896,4896,4896,4896,4896,4771,4971,4972,
+4896,4896,4896,4896,4771,4896,4896,4772,4896,4896,4896,4896,4771,4896,4896,4772,4896,4896,4896,4896,4771,4896,4896,4772,4896,4896,4896,4896,4771,4896,4896,4772,4896,4896,4896,4896,4771,4896,4896,4772,4896,4896,4896,4896,4771,4896,4896,4772,4896,4896,4896,4896,4771,4896,4896,4772,4896,4896,4896,4996,4997,
+4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,4896,
+4896,4896,4771,4896,4896,4896,4896,4896,4896,4896,4771,4896,4896,4896,4896,4896,4896,4896,4771,4896,4896,4896,4896,4896,4896,4896,4771,4896,4896,4896,4896,4896,4896,4896,4771,4896,4896,4896,4896,4896,4896,4896,4771,4896,4896,4896,4896,4896,4896,4896,4771,4896,4896,4896,4896,4896,4896,4896,4771,4896,4896
+</data>
+ </layer>
+ <objectgroup id="2" name="Back">
+  <object id="47" name="TileData" x="864" y="400" width="16" height="16">
+   <properties>
+    <property name="CustomCompanions" value="SPAWN 1 DTZ.DowntownZuzuCC.Child1"/>
+   </properties>
+  </object>
+  <object id="48" name="TileData" x="880" y="400" width="16" height="16">
+   <properties>
+    <property name="CustomCompanions" value="SPAWN 1 DTZ.DowntownZuzuCC.Woman3"/>
+   </properties>
+  </object>
+  <object id="49" name="TileData" x="112" y="400" width="16" height="16">
+   <properties>
+    <property name="CustomCompanions" value="SPAWN 1 DTZ.DowntownZuzuCC.Man2"/>
+   </properties>
+  </object>
+  <object id="50" name="TileData" x="192" y="400" width="16" height="16">
+   <properties>
+    <property name="CustomCompanions" value="SPAWN 1 DTZ.DowntownZuzuCC.Woman4"/>
+   </properties>
+  </object>
+  <object id="51" name="TileData" x="528" y="272" width="16" height="16">
+   <properties>
+    <property name="CustomCompanions" value="SPAWN 1 DTZ.DowntownZuzuCC.Woman2"/>
+   </properties>
+  </object>
+  <object id="52" name="TileData" x="944" y="400" width="16" height="16">
+   <properties>
+    <property name="CustomCompanions" value="SPAWN 1 DTZ.DowntownZuzuCC.Pigeon"/>
+   </properties>
+  </object>
+  <object id="53" name="TileData" x="704" y="176" width="16" height="16">
+   <properties>
+    <property name="CustomCompanions" value="SPAWN 1 DTZ.DowntownZuzuCC.Pigeon"/>
+   </properties>
+  </object>
+  <object id="54" name="TileData" x="752" y="224" width="16" height="16">
+   <properties>
+    <property name="CustomCompanions" value="SPAWN 1 DTZ.DowntownZuzuCC.Pigeon"/>
+   </properties>
+  </object>
+  <object id="55" name="TileData" x="736" y="256" width="16" height="16">
+   <properties>
+    <property name="CustomCompanions" value="SPAWN 1 DTZ.DowntownZuzuCC.Pigeon"/>
+   </properties>
+  </object>
+  <object id="56" name="TileData" x="944" y="432" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="57" name="TileData" x="944" y="448" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="58" name="TileData" x="944" y="464" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="59" name="TileData" x="944" y="480" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="60" name="TileData" x="944" y="496" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="61" name="TileData" x="944" y="512" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="62" name="TileData" x="944" y="528" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="63" name="TileData" x="944" y="544" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="64" name="TileData" x="944" y="560" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="65" name="TileData" x="928" y="560" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="66" name="TileData" x="912" y="560" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="67" name="TileData" x="896" y="560" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="68" name="TileData" x="880" y="560" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="69" name="TileData" x="864" y="560" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="70" name="TileData" x="848" y="560" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="71" name="TileData" x="832" y="560" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="72" name="TileData" x="816" y="560" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="73" name="TileData" x="800" y="560" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="74" name="TileData" x="784" y="560" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="75" name="TileData" x="768" y="560" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="76" name="TileData" x="768" y="544" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="77" name="TileData" x="768" y="528" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="78" name="TileData" x="768" y="512" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="79" name="TileData" x="768" y="496" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="80" name="TileData" x="768" y="480" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="81" name="TileData" x="768" y="464" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="82" name="TileData" x="768" y="448" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="83" name="TileData" x="768" y="432" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="84" name="TileData" x="720" y="560" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="85" name="TileData" x="720" y="544" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="86" name="TileData" x="720" y="528" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="87" name="TileData" x="720" y="512" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="88" name="TileData" x="720" y="496" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="89" name="TileData" x="720" y="480" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="90" name="TileData" x="720" y="464" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="91" name="TileData" x="720" y="448" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="92" name="TileData" x="720" y="432" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="93" name="TileData" x="384" y="560" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="94" name="TileData" x="384" y="544" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="95" name="TileData" x="384" y="528" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="96" name="TileData" x="384" y="512" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="97" name="TileData" x="384" y="496" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="98" name="TileData" x="384" y="480" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="99" name="TileData" x="384" y="464" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="100" name="TileData" x="384" y="448" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="101" name="TileData" x="384" y="432" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="102" name="TileData" x="336" y="560" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="103" name="TileData" x="336" y="544" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="104" name="TileData" x="336" y="528" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="105" name="TileData" x="336" y="512" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="106" name="TileData" x="336" y="496" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="107" name="TileData" x="336" y="480" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="108" name="TileData" x="336" y="464" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="109" name="TileData" x="336" y="448" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="110" name="TileData" x="336" y="432" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="111" name="TileData" x="16" y="560" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="112" name="TileData" x="16" y="544" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="113" name="TileData" x="16" y="528" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="114" name="TileData" x="16" y="512" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="115" name="TileData" x="16" y="496" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="116" name="TileData" x="16" y="480" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="117" name="TileData" x="16" y="464" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="118" name="TileData" x="16" y="448" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="119" name="TileData" x="16" y="432" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="120" name="TileData" x="928" y="432" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="121" name="TileData" x="912" y="432" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="122" name="TileData" x="896" y="432" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="123" name="TileData" x="880" y="432" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="124" name="TileData" x="864" y="432" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="125" name="TileData" x="848" y="432" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="126" name="TileData" x="832" y="432" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="127" name="TileData" x="816" y="432" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="128" name="TileData" x="800" y="432" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="129" name="TileData" x="784" y="432" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="130" name="TileData" x="704" y="432" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="131" name="TileData" x="688" y="432" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="132" name="TileData" x="672" y="432" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="133" name="TileData" x="656" y="432" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="134" name="TileData" x="640" y="432" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="135" name="TileData" x="624" y="432" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="136" name="TileData" x="608" y="432" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="137" name="TileData" x="592" y="432" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="138" name="TileData" x="576" y="432" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="139" name="TileData" x="560" y="432" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="140" name="TileData" x="544" y="432" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="141" name="TileData" x="528" y="432" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="142" name="TileData" x="512" y="432" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="143" name="TileData" x="496" y="432" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="144" name="TileData" x="480" y="432" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="145" name="TileData" x="464" y="432" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="146" name="TileData" x="448" y="432" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="147" name="TileData" x="432" y="432" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="148" name="TileData" x="416" y="432" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="149" name="TileData" x="400" y="432" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="150" name="TileData" x="704" y="560" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="151" name="TileData" x="688" y="560" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="152" name="TileData" x="672" y="560" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="153" name="TileData" x="656" y="560" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="154" name="TileData" x="640" y="560" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="155" name="TileData" x="624" y="560" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="156" name="TileData" x="608" y="560" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="157" name="TileData" x="592" y="560" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="158" name="TileData" x="576" y="560" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="159" name="TileData" x="560" y="560" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="160" name="TileData" x="544" y="560" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="161" name="TileData" x="528" y="560" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="162" name="TileData" x="512" y="560" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="163" name="TileData" x="496" y="560" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="164" name="TileData" x="480" y="560" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="165" name="TileData" x="464" y="560" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="166" name="TileData" x="448" y="560" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="167" name="TileData" x="432" y="560" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="168" name="TileData" x="416" y="560" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="169" name="TileData" x="400" y="560" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="170" name="TileData" x="320" y="432" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="171" name="TileData" x="304" y="432" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="172" name="TileData" x="288" y="432" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="173" name="TileData" x="272" y="432" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="174" name="TileData" x="256" y="432" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="175" name="TileData" x="240" y="432" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="176" name="TileData" x="224" y="432" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="177" name="TileData" x="208" y="432" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="178" name="TileData" x="192" y="432" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="179" name="TileData" x="176" y="432" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="180" name="TileData" x="160" y="432" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="181" name="TileData" x="144" y="432" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="182" name="TileData" x="128" y="432" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="183" name="TileData" x="112" y="432" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="184" name="TileData" x="96" y="432" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="185" name="TileData" x="80" y="432" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="186" name="TileData" x="64" y="432" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="187" name="TileData" x="48" y="432" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="188" name="TileData" x="32" y="432" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="190" name="TileData" x="320" y="560" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="191" name="TileData" x="304" y="560" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="192" name="TileData" x="288" y="560" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="193" name="TileData" x="272" y="560" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="194" name="TileData" x="256" y="560" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="195" name="TileData" x="240" y="560" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="196" name="TileData" x="224" y="560" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="197" name="TileData" x="208" y="560" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="198" name="TileData" x="192" y="560" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="199" name="TileData" x="176" y="560" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="200" name="TileData" x="160" y="560" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="201" name="TileData" x="144" y="560" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="202" name="TileData" x="128" y="560" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="203" name="TileData" x="112" y="560" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="204" name="TileData" x="96" y="560" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="205" name="TileData" x="80" y="560" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="206" name="TileData" x="64" y="560" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="207" name="TileData" x="48" y="560" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+  <object id="208" name="TileData" x="32" y="560" width="16" height="16">
+   <properties>
+    <property name="NPCBarrier" value="T"/>
+    <property name="NoPath" value="T"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="11" name="Back1" width="61" height="43">
+  <properties>
+   <property name="DrawAbove" value="Back"/>
+  </properties>
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3427,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6117,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6141,6142,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18414,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18645,18646,18646,18646,18646,18647,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,21409,21410,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="12" name="Back1"/>
+ <layer id="3" name="Buildings" width="61" height="43">
+  <data encoding="csv">
+6743,0,6711,6702,5004,5005,5055,5006,12820,12821,12820,12821,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+6606,6607,6717,6718,2362,0,6744,0,0,0,12820,12821,12820,12821,12820,12821,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+6622,6623,6733,6734,0,0,4903,0,3202,0,0,0,0,0,0,4928,12820,12821,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+6638,6639,6749,6750,0,0,0,0,0,2701,0,0,0,0,0,0,12820,12821,12820,12821,12820,12821,12820,12821,12820,12821,12820,12821,12820,12821,12820,12821,12820,12821,12820,12821,12820,12821,12820,12821,12820,12821,12820,12821,12820,12821,12820,12821,12820,12821,12820,12821,12820,12821,12820,12821,12820,12821,5692,5693,5694,
+6654,6655,6765,6766,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3203,0,12820,12821,0,12820,12821,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4997,0,4997,4997,4997,
+6670,6633,0,0,4903,6647,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4878,0,0,0,0,0,0,0,0,0,0,0,0,4853,0,0,0,0,0,0,0,0,0,0,3204,0,0,0,0,0,0,4853,9907,9908,9909,9910,9911,
+6686,0,0,0,0,0,0,6647,0,4853,0,0,0,0,3203,0,0,0,0,0,4853,0,0,0,0,0,0,4878,0,0,0,0,0,0,0,0,0,0,0,4878,0,3203,0,4903,0,0,0,0,0,0,0,0,0,0,0,4878,10007,10008,10009,10010,10011,
+6670,0,0,6815,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4928,0,0,0,0,0,0,0,0,0,0,3204,0,5056,10107,10108,10109,10110,10111,
+6686,0,4903,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4878,0,0,0,0,0,4878,0,0,0,21862,10207,10208,10209,10210,10211,
+6702,2357,0,0,6743,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18291,18292,18293,18294,18295,18296,18297,18298,18299,18300,18301,18302,18303,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4928,0,4889,0,0,4928,0,4853,19989,
+6718,2389,0,0,0,0,0,0,0,0,0,0,0,0,4853,0,0,0,0,0,0,0,0,0,18323,18324,18325,18326,18327,18328,18329,18330,18331,18332,18333,18334,18335,0,0,0,0,0,0,0,0,4778,4779,0,0,0,0,0,0,4903,0,0,0,0,0,0,20029,
+6734,0,0,0,3202,4853,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6141,18355,18356,18357,18358,18359,18360,18361,18362,18363,18364,18365,18366,18367,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4863,0,4889,0,0,0,20069,
+6750,0,0,6647,0,0,0,0,0,4878,0,0,0,0,0,0,0,0,0,0,0,0,18406,6143,18387,18388,18389,18390,18391,18392,18393,18394,18395,18396,18397,18398,18399,18273,18274,18275,18276,18469,18470,18471,18416,18417,0,0,0,0,0,0,0,0,4878,0,4853,0,0,0,4896,
+6766,0,0,0,0,0,0,4928,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18406,18419,18420,18421,18422,18423,18424,18425,18426,18427,18428,18429,18430,18431,18305,18306,18307,18308,18382,8306,8307,8308,8309,18415,0,0,0,0,0,0,0,0,0,0,0,4878,21205,21206,
+6630,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4928,0,0,0,0,0,9694,9695,18451,18452,18453,18454,18455,18456,18457,18458,18459,18460,18461,18462,18463,18337,18338,18339,18340,0,8406,8407,8408,8409,0,0,0,0,0,0,3202,0,0,0,0,0,0,21222,21223,
+4903,0,0,0,0,0,0,0,0,0,0,0,4878,0,0,0,0,0,0,0,0,0,0,0,18483,18484,18485,18486,18487,18488,18489,18490,18491,18492,0,0,18495,18369,18370,18371,18372,0,8506,8507,8508,8509,0,0,0,0,0,0,0,0,0,0,0,4928,0,21239,21240,
+18096,0,0,4878,0,0,0,0,4878,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18515,18516,18517,18518,18519,18520,18521,18522,18523,18524,0,0,18448,18401,18402,18403,18404,0,8606,8607,8608,8609,0,0,0,0,0,0,4853,0,0,0,0,0,0,21256,21257,
+4771,0,0,0,0,0,0,0,0,0,0,0,0,3202,0,0,0,0,0,0,3202,0,0,0,18407,18407,18407,18407,0,0,18553,18554,0,0,0,0,0,18433,18434,18435,18436,0,8706,8707,8708,8709,0,0,0,0,0,0,0,0,0,0,0,0,4853,21273,21274,
+21862,0,0,0,0,0,4928,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18465,18466,18467,18468,0,8806,8807,8808,8809,0,0,0,0,0,0,0,0,0,0,0,0,0,21290,21291,
+4896,0,0,0,3203,0,0,0,0,0,0,0,0,0,4928,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6145,0,0,0,0,0,0,4928,2638,0,0,0,0,21307,21308,
+4896,0,0,0,0,4878,4853,0,0,0,0,0,0,0,0,4853,0,0,0,0,0,0,0,0,0,0,18642,18643,18644,18642,18643,18644,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4878,0,0,0,0,4878,0,0,0,0,21324,21325,
+4896,0,0,0,3202,0,0,0,0,0,0,0,0,0,0,0,4928,0,0,0,0,0,0,0,0,16118,16119,16120,16121,16122,16123,16124,16125,0,0,0,0,0,0,0,0,0,0,8392,8393,8394,0,0,0,0,0,0,0,0,0,0,0,0,3203,21341,21342,
+4853,0,0,0,0,0,0,0,0,4878,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,16218,16219,16220,16221,16222,16223,16224,16225,0,0,0,0,0,0,0,0,0,0,8395,8396,8397,0,0,5007,0,0,0,4878,0,0,0,0,0,0,21358,21359,
+0,4784,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3203,0,0,0,0,0,16318,16319,16320,16321,16322,16323,16324,16325,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5032,0,0,0,0,0,0,0,0,0,0,21375,21376,
+4808,4809,3203,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2395,0,16418,16419,16420,16421,16422,16423,16424,16425,0,0,0,0,0,0,0,0,0,0,8592,8593,8594,0,0,5057,3203,0,0,0,0,0,0,0,0,21862,21392,21393,
+16407,0,0,3320,0,0,0,0,0,3320,2639,2640,0,0,0,3320,0,0,0,0,0,3320,0,0,0,0,0,3320,0,0,0,0,0,0,0,0,0,0,0,3320,0,0,0,0,0,3320,6170,0,0,0,0,3320,2639,2640,0,0,0,3320,0,0,16407,
+12722,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18405,0,0,18405,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,16507,
+6301,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6301,
+5675,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5675,
+5675,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5675,
+5675,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5675,
+5677,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5677,
+5675,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5675,
+5675,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5675,
+5675,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6250,
+5675,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5675,
+16407,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,16407,
+16507,0,0,3320,0,0,0,0,0,3320,0,0,0,0,0,3320,0,0,0,0,0,3320,0,0,0,0,0,3320,0,0,0,0,0,3320,0,0,0,0,0,3320,0,0,0,0,0,3320,0,0,0,0,0,3320,0,0,0,0,0,3320,0,0,16507,
+4997,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4764,4765,0,0,0,0,0,0,0,0,0,0,0,0,0,0,21862,0,0,0,0,0,0,4972,
+21862,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4789,4790,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4972,
+4782,5690,5691,5567,5567,5567,5567,5567,5567,5567,5617,5567,5567,5567,5567,5567,5567,5567,5567,5567,5592,5567,5567,5567,5617,5567,5567,5567,5567,5567,5567,5567,5567,5567,5567,5567,5592,5567,5567,5567,5567,5567,5567,5567,5567,5567,5567,5567,5567,5567,5567,5567,5592,5567,5567,5567,5567,5567,5636,0,4997,
+4896,5666,5567,5617,5567,5567,5592,5567,5567,5567,5567,5592,5567,5567,5617,5567,5567,5567,5567,5567,5617,5567,5567,5567,5567,5567,5567,5567,5617,5567,5567,5567,5567,5567,5567,5567,5567,5567,5592,5567,5567,5617,5567,5567,5567,5567,5567,5617,5567,5567,5567,5567,5567,5567,5567,5567,5567,5567,5661,0,4896,
+4896,5691,5567,5567,5567,5567,5567,5567,5617,5567,5567,5567,5567,5592,5567,5567,5567,5567,5567,5567,5567,5567,5567,5567,5592,5567,5567,5617,5567,5567,5592,5567,5567,5567,5617,5567,5567,5567,5567,5567,5567,5567,5567,5567,5567,5567,5592,5567,5567,5567,5567,5617,5567,5567,5567,5567,5592,5567,5686,4896,4896
+</data>
+ </layer>
+ <objectgroup id="4" name="Buildings">
+  <object id="3" name="TileData" x="352" y="224" width="16" height="16">
+   <properties>
+    <property name="Action" value="ColaMachine"/>
+   </properties>
+  </object>
+  <object id="4" name="TileData" x="368" y="224" width="16" height="16">
+   <properties>
+    <property name="Action" value="ColaMachine"/>
+   </properties>
+  </object>
+  <object id="5" name="TileData" x="464" y="416" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.GasStation.1&quot;"/>
+   </properties>
+  </object>
+  <object id="6" name="TileData" x="416" y="416" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.GasStation.1&quot;"/>
+   </properties>
+  </object>
+  <object id="7" name="TileData" x="592" y="288" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.GasStation.2&quot;"/>
+   </properties>
+  </object>
+  <object id="8" name="TileData" x="592" y="272" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.GasStation.2&quot;"/>
+   </properties>
+  </object>
+  <object id="9" name="TileData" x="608" y="288" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.GasStation.2&quot;"/>
+   </properties>
+  </object>
+  <object id="10" name="TileData" x="624" y="288" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.GasStation.2&quot;"/>
+   </properties>
+  </object>
+  <object id="11" name="TileData" x="640" y="288" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.GasStation.2&quot;"/>
+   </properties>
+  </object>
+  <object id="12" name="TileData" x="640" y="272" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.GasStation.2&quot;"/>
+   </properties>
+  </object>
+  <object id="13" name="TileData" x="640" y="256" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.GasStation.2&quot;"/>
+   </properties>
+  </object>
+  <object id="14" name="TileData" x="640" y="240" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.GasStation.2&quot;"/>
+   </properties>
+  </object>
+  <object id="15" name="TileData" x="640" y="224" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.GasStation.2&quot;"/>
+   </properties>
+  </object>
+  <object id="16" name="TileData" x="640" y="208" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.GasStation.2&quot;"/>
+   </properties>
+  </object>
+  <object id="17" name="TileData" x="640" y="192" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.GasStation.2&quot;"/>
+   </properties>
+  </object>
+  <object id="18" name="TileData" x="624" y="192" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.GasStation.2&quot;"/>
+   </properties>
+  </object>
+  <object id="19" name="TileData" x="608" y="192" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.GasStation.2&quot;"/>
+   </properties>
+  </object>
+  <object id="20" name="TileData" x="592" y="192" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.GasStation.2&quot;"/>
+   </properties>
+  </object>
+  <object id="21" name="TileData" x="592" y="208" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.GasStation.2&quot;"/>
+   </properties>
+  </object>
+  <object id="22" name="TileData" x="592" y="224" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.GasStation.2&quot;"/>
+   </properties>
+  </object>
+  <object id="23" name="TileData" x="592" y="240" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.GasStation.2&quot;"/>
+   </properties>
+  </object>
+  <object id="24" name="TileData" x="592" y="256" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.GasStation.2&quot;"/>
+   </properties>
+  </object>
+  <object id="25" name="TileData" x="896" y="128" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.GasStation.3&quot;"/>
+   </properties>
+  </object>
+  <object id="26" name="TileData" x="912" y="128" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.GasStation.3&quot;"/>
+   </properties>
+  </object>
+  <object id="27" name="TileData" x="928" y="128" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.GasStation.3&quot;"/>
+   </properties>
+  </object>
+  <object id="41" name="TileData" x="928" y="144" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.GasStation.3&quot;"/>
+   </properties>
+  </object>
+  <object id="28" name="TileData" x="944" y="128" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.GasStation.3&quot;"/>
+   </properties>
+  </object>
+  <object id="29" name="TileData" x="960" y="128" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.GasStation.3&quot;"/>
+   </properties>
+  </object>
+  <object id="30" name="TileData" x="896" y="112" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.GasStation.3&quot;"/>
+   </properties>
+  </object>
+  <object id="31" name="TileData" x="896" y="96" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.GasStation.3&quot;"/>
+   </properties>
+  </object>
+  <object id="32" name="TileData" x="896" y="80" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.GasStation.3&quot;"/>
+   </properties>
+  </object>
+  <object id="33" name="TileData" x="448" y="256" width="16" height="16">
+   <properties>
+    <property name="Action" value="Warp 11 17 Custom_DTZ_GasInt"/>
+   </properties>
+  </object>
+  <object id="37" name="TileData" x="144" y="48" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.GasStation.4&quot;"/>
+   </properties>
+  </object>
+  <object id="38" name="TileData" x="464" y="256" width="16" height="16">
+   <properties>
+    <property name="Action" value="Warp 11 17 Custom_DTZ_GasInt"/>
+   </properties>
+  </object>
+  <object id="39" name="TileData" x="544" y="224" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.GasStation.8&quot;"/>
+   </properties>
+  </object>
+  <object id="40" name="TileData" x="560" y="224" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.GasStation.8&quot;"/>
+   </properties>
+  </object>
+  <object id="42" name="TileData" x="464" y="400" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.GasStation.1&quot;"/>
+   </properties>
+  </object>
+  <object id="43" name="TileData" x="416" y="400" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.GasStation.1&quot;"/>
+   </properties>
+  </object>
+  <object id="44" name="TileData" x="864" y="304" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.GasStation.9&quot;"/>
+   </properties>
+  </object>
+  <object id="46" name="TileData" x="64" y="16" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.GasStation.10&quot;"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="5" name="Paths" width="61" height="43">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,18216,18208,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,18216,18204,18208,18203,18208,18205,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,18202,0,0,0,0,18212,18212,18208,18203,18208,18208,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,18212,18212,18212,18212,0,0,18204,0,18204,0,18208,0,18204,18208,0,18204,0,18205,0,18205,18208,18208,18204,18208,0,18205,0,18204,0,0,18204,0,0,18205,18208,0,18204,0,18204,0,18208,0,0,18204,18208,18205,18208,18204,18204,18204,18208,18204,
+0,0,0,0,0,0,0,0,0,0,18212,18212,18212,0,0,0,18215,0,0,0,0,0,0,0,0,0,18214,0,0,0,0,0,0,0,0,0,18203,0,0,0,0,18216,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,18202,0,0,0,0,0,0,0,0,18212,0,0,0,0,0,0,0,0,0,0,18200,0,0,18203,0,0,0,0,18203,18200,0,0,0,0,0,0,0,0,0,0,0,0,0,18200,0,0,18203,0,18204,0,18205,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,18213,0,18204,0,18199,0,0,18216,0,18215,0,0,18203,0,0,0,0,0,0,18215,0,0,0,0,18214,0,18203,0,0,0,18214,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18215,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18203,0,18214,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18214,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,18216,0,0,18204,0,0,0,18213,0,0,0,18215,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18216,0,0,18214,0,18203,0,0,0,0,18204,18203,0,0,0,0,0,18205,18216,0,18216,0,0,
+0,0,0,0,0,0,0,18214,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18204,0,0,0,0,0,0,0,0,0,18216,0,
+0,0,18202,0,0,0,0,0,0,0,0,18213,0,0,0,0,0,0,0,0,0,18204,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18203,18204,0,0,0,0,18200,0,18205,0,
+0,0,0,0,0,18216,0,0,0,0,0,0,18216,0,18204,0,18199,18203,0,18203,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18203,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18205,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18215,0,0,18200,0,0,0,0,0,0,0,
+0,18202,0,0,18204,0,0,0,18205,0,18199,0,0,0,0,0,0,0,0,0,0,18203,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18215,18212,0,18205,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18203,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18203,18204,0,18212,18212,18212,18212,0,0,0,0,
+0,0,0,0,0,0,18213,0,0,0,0,0,0,0,18199,0,0,0,0,18204,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18204,18212,0,0,18203,18212,18212,18212,18200,0,0,0,
+0,18204,0,0,18212,18212,18212,0,0,18204,0,18199,0,0,0,0,0,18199,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18212,18212,18212,18215,0,18212,18212,0,0,0,0,0,
+0,0,0,18199,0,18212,0,0,0,0,0,0,0,0,0,0,0,18203,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18205,0,0,18212,0,0,18203,0,18203,0,18205,0,0,
+0,0,18204,0,0,0,0,0,0,18199,0,0,0,18204,0,0,0,0,18212,18212,0,18204,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18203,0,18205,0,0,0,18212,0,0,0,0,
+0,18216,0,0,0,0,0,0,18203,0,0,0,0,0,0,0,0,18212,18212,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18200,18212,18212,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,18213,0,18199,0,0,0,18212,18212,0,18203,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18200,0,18203,0,18205,18212,18215,0,0,0,
+0,0,0,18216,0,0,18204,0,0,0,0,0,18215,0,18203,0,0,18212,18204,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18203,0,0,0,0,0,18212,18212,0,0,0,0,
+0,18203,0,0,0,0,0,0,0,18216,0,0,0,0,0,0,0,0,0,0,0,18204,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18203,0,0,18205,0,0,0,18205,0,0,
+0,0,0,0,18203,0,18216,0,0,0,0,0,0,0,0,18216,0,18203,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18203,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,18216,0,18199,0,0,0,0,0,0,0,0,0,0,0,0,0,18199,0,0,0,0,0,0,18200,0,0,0,18199,0,0,0,0,18200,0,0,0,0,0,0,0,0,18199,0,0,0,0,0,0,0,0,0,0,18199,0,0,18216,0,0,
+0,18199,0,0,0,0,0,18215,0,18199,0,0,0,0,18200,0,18215,0,0,0,0,0,0,18199,0,0,0,0,18216,0,0,0,0,18199,0,0,0,0,0,0,0,18200,0,0,0,0,18215,0,18199,0,0,18200,0,0,0,0,0,18199,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="6" name="Paths"/>
+ <layer id="7" name="Front" width="61" height="43">
+  <data encoding="csv">
+0,0,0,0,2330,0,6728,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9507,9508,9509,9510,9511,
+0,0,0,0,0,0,0,0,0,2669,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9607,9608,9609,9610,9611,
+0,6601,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9707,9708,9709,9710,9711,
+0,6617,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9807,9808,9809,9810,9811,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,6799,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5031,0,0,0,0,0,
+6711,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3363,
+0,2325,0,0,6727,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4864,0,0,0,0,0,3395,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4753,4754,0,0,0,0,0,0,0,0,0,0,0,0,3426,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6116,0,0,0,8631,8632,0,0,0,8826,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4864,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18374,6118,0,0,0,8731,8732,0,0,0,0,0,0,0,0,18241,18242,18243,18244,18437,18438,18439,18384,18385,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18374,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8206,8207,8208,8209,0,0,0,0,0,0,0,0,0,0,0,0,0,21188,21189,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9594,9595,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18383,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18375,18375,18375,18375,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18610,18611,18612,18610,18611,18612,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,16020,16021,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8292,8293,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8295,8296,0,0,0,4982,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+4783,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2363,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,8492,8493,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,3288,0,0,0,0,0,3288,2607,2608,0,0,0,3288,0,0,0,0,0,3288,0,0,0,0,0,3288,0,18341,0,0,0,0,0,0,0,0,0,3288,0,0,0,0,0,3288,0,0,0,0,0,3288,2607,2608,0,0,0,3288,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18373,0,0,18373,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,3225,0,0,0,0,0,3225,0,0,0,0,0,3225,0,0,0,0,0,3225,0,0,0,0,0,3225,0,0,0,0,0,3225,0,0,0,0,0,3225,0,0,0,0,0,3225,0,0,0,0,0,3225,0,0,0,
+0,0,0,0,0,0,0,0,0,3256,0,0,0,0,0,3256,0,0,0,0,0,3256,0,0,0,0,0,3256,0,0,0,0,0,3256,0,0,0,0,0,3256,0,0,0,0,0,3256,0,0,0,0,0,3256,0,0,0,0,0,3256,0,20272,0,
+0,0,0,3288,0,0,0,0,0,3288,0,0,0,0,0,3288,0,0,0,0,0,3288,0,0,0,0,0,3288,0,0,0,0,0,3288,0,0,0,0,0,3288,0,0,0,0,0,3288,0,0,0,0,0,3288,0,0,0,0,0,3288,0,20314,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,20356,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,20398,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,20440,20441,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,20482,20483,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,20524,20525,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,20566,20567
+</data>
+ </layer>
+ <objectgroup id="8" name="Front"/>
+ <layer id="9" name="AlwaysFront" width="61" height="43">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,5614,5590,5591,5564,5563,5564,5565,5566,5567,5617,5567,5592,5567,5567,5567,5567,5567,5617,5567,5567,5567,5567,5567,5567,5567,5567,5567,5617,5567,5567,5592,5567,5567,5567,5567,5567,5567,5567,5567,5567,5567,5567,5567,5592,5567,5567,5567,5567,5567,5592,5567,5617,
+0,0,0,0,0,0,0,0,0,0,5614,5588,5589,5588,5589,5590,5591,5566,5567,5567,5617,5567,5567,5567,5567,5592,5567,5617,5567,5567,5567,5567,5567,5567,5567,5567,5567,5567,5567,5567,5567,5617,5567,5567,5567,5567,5567,5567,5567,5592,5567,5567,5617,5592,5567,5567,5567,5567,5567,5617,5567,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5614,5590,5591,5564,5562,5566,5567,5567,5567,5561,5565,5563,5564,5563,5564,5563,5563,5564,5562,5565,5563,5563,5563,5564,5563,5563,5564,5563,5564,5563,5564,5563,5564,5563,5562,5566,5567,5567,5561,5563,5564,5563,5566,5567,5561,5564,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5614,5588,5589,5590,5591,5563,5564,5563,5562,5587,5588,5589,5588,5589,5588,5588,5589,5590,5587,5588,5588,5588,5589,5588,5588,5589,5588,5589,5588,5589,5588,5589,5588,5590,5591,5563,5564,5562,5587,5589,5590,5563,5564,5562,5587,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5614,5614,5588,5588,5589,5588,5588,5613,0,0,0,0,0,0,0,5614,5613,0,0,0,0,0,0,0,0,0,4627,4628,4629,4630,0,5614,5588,5588,5589,5588,5613,0,5614,5588,5589,5588,5613,
+0,0,0,6783,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4652,4653,4654,4655,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4677,4678,4679,4680,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4702,4703,4704,4705,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18259,18260,18261,18262,18263,18264,18265,18266,18267,18268,18269,18270,18271,0,0,0,0,0,0,0,0,4728,4729,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,21154,21155,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,21171,21172,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9494,9495,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18546,18547,18548,18546,18547,18548,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18578,18579,18580,18578,18579,18580,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18245,18246,18247,18248,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,3225,0,0,0,0,0,3225,0,0,0,0,0,3225,0,0,0,0,0,3225,0,0,0,0,18277,18278,18279,18280,0,0,0,0,0,0,0,0,0,3225,0,0,0,0,0,3225,0,0,0,0,0,3225,0,0,0,0,0,3225,0,0,0,
+0,0,0,3256,0,0,0,0,0,3256,0,0,0,0,0,3256,0,0,0,0,0,3256,0,0,0,0,18309,18310,18311,18312,0,0,0,0,0,0,0,0,0,3256,0,0,0,0,0,3256,0,0,0,0,0,3256,0,0,0,0,0,3256,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,18341,18342,18343,18344,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4637,4638,4639,4640,4641,4642,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,3225,0,0,0,0,0,0,0,0,0,0,0,3225,0,0,0,0,0,3225,0,0,0,0,0,0,0,0,0,0,0,0,0,4662,4663,4664,4665,4666,4667,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,3256,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3256,0,0,0,0,0,0,0,0,0,0,0,0,0,4687,4688,4689,4690,4691,4692,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,20273,
+0,0,0,0,0,5639,5663,5638,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4712,4713,4714,4715,4716,4717,5639,5663,5638,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,20315,
+0,0,0,0,5639,5665,5563,5662,5638,0,0,0,0,0,0,5639,5663,5638,0,0,0,0,0,0,0,0,0,0,0,5639,5663,5638,0,0,0,0,0,4739,4740,0,5639,5665,5563,5662,5638,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,20357,
+0,5639,5663,5664,5665,5690,5686,5687,5662,5664,5663,5663,5663,5664,5663,5665,5563,5662,5663,5664,5663,5664,5663,5664,5663,5663,5663,5663,5664,5665,5563,5662,5663,5664,5663,5664,5663,5664,5663,5664,5665,5690,5686,5687,5662,5664,5663,5664,5663,5664,5663,5664,5663,5664,5663,5663,5663,5664,5663,5638,20399,
+5639,5665,5690,5689,5688,5567,5567,5567,5688,5689,5688,5688,5688,5689,5688,5690,5686,5687,5688,5689,5688,5689,5688,5689,5688,5688,5688,5688,5689,5690,5686,5687,5688,5689,5688,5689,5688,5689,5688,5689,5688,5567,5567,5567,5688,5689,5688,5689,5688,5689,5688,5689,5688,5689,5688,5688,5688,5689,5689,5612,0,
+5640,5690,5691,5567,5567,5567,5567,5567,5567,5567,5617,5567,5567,5567,5567,5567,5567,5567,5567,5567,5592,5567,5567,5567,5617,5567,5567,5567,5567,5567,5567,5567,5567,5567,5567,5567,5592,5567,5567,5567,5567,5567,5567,5567,5567,5567,5567,5567,5567,5567,5567,5567,5592,5567,5567,5567,5567,5567,5636,5637,0,
+5665,5666,5567,5617,5567,5567,5592,5567,5567,5567,5567,5592,5567,5567,5617,5567,5567,5567,5567,5567,5617,5567,5567,5567,5567,5567,5567,5567,5617,5567,5567,5567,5567,5567,5567,5567,5567,5567,5592,5567,5567,5617,5567,5567,5567,5567,5567,5617,5567,5567,5567,5567,5567,5567,5567,5567,5567,5567,5661,5662,5638,
+5690,5691,5567,5567,5567,5567,5567,5567,5617,5567,5567,5567,5567,5592,5567,5567,5567,5567,5567,5567,5567,5567,5567,5567,5592,5567,5567,5617,5567,5567,5592,5567,5567,5567,5617,5567,5567,5567,5567,5567,5567,5567,5567,5567,5567,5567,5592,5567,5567,5567,5567,5617,5567,5567,5567,5567,5592,5567,5686,5611,5612
+</data>
+ </layer>
+ <objectgroup id="10" name="AlwaysFront"/>
+</map>

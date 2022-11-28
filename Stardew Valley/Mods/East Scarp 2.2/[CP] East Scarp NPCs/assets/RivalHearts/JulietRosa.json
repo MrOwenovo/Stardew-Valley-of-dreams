@@ -1,0 +1,64 @@
+{
+    "Changes": [
+        {
+            "LogName": "Juliet and Rosa JojaMart Event",
+            "Action": "EditData",
+            "Target": "Data/Events/JojaMart",
+            "Entries": {
+                "57874005/k 191393/f Rosa 500/f Juliet 500/d Mon Tue Wed Fri Sat Sun": "Hospital_Ambient/-100 -100/Juliet 9 25 1 Rosa 11 20 0 Pam 9 21 3 {{JojaMartActors}}/skippable/changePortrait Juliet Joja/changeSprite Juliet Joja/animate Juliet false true 120 16 16 16 17 17 18 18 19 19 18 18 18 19 19 19 18 18 18 19 19 19 17 17 20 20 20 20 20 20 21 21 21 20 20 20 22 22 20 20 22 22 20 20 21 21 21 21/skippable/viewport 11 24/move Rosa 0 5 3/pause 1000/stopAnimation Juliet/jump Juliet 3/textAboveHead Juliet \"{{i18n:57874005.01}}\"/pause 2500/textAboveHead Rosa \"{{i18n:57874005.02}}\"/addObject 10 25 436 1/pause 2000/playSound newArtifact/removeSprite 10 25/pause 1000/addObject 10 25 246 1/pause 2000/playSound newArtifact/removeSprite 10 25/pause 1000/advancedMove Pam false 2 0 0 2/speak Juliet \"{{i18n:57874005.03}}\"/addObject 10 25 245 1/pause 2000/playSound newArtifact/removeSprite 10 25/pause 1000/emote Rosa 60/pause 1000/speak Rosa \"{{i18n:57874005.04}}\"/pause 1500/animate Pam false false 240 28 29 28 29 28 29 28 29 28 29 28 29/textAboveHead Pam \"{{i18n:57874005.05}}\"/speak Pam \"{{i18n:57874005.06}}\"/pause 1000/jump Juliet 3/faceDirection Juliet 0/speak Juliet \"{{i18n:57874005.07}}\"/shake Pam 500/emote Pam 12/speak Pam \"{{i18n:57874005.08}}\"/pause 1000/faceDirection Juliet 1/pause 500/textAboveHead Juliet \"{{i18n:57874005.09}}\"/pause 1000/move farmer 0 6 3/faceDirection Pam 1/textAboveHead Pam \"{{i18n:57874005.10}}\"/pause 2500/emote farmer 40/faceDirection Juliet 1/pause 1000/speak Juliet \"{{i18n:57874005.11}}\"/playSound purchase/pause 1000/playSound newRecipe/textAboveHead Rosa \"{{i18n:57874005.12}}\"/pause 1000/move Rosa 0 2 1 true/move Pam 0 2 3 true/move farmer -2 0 3 true/pause 1000/textAboveHead Juliet \"{{i18n:57874005.13}}\"/pause 500/jump Rosa 3/faceDirection Rosa 0/speak Juliet \"{{i18n:57874005.14}}\"/pause 1000/faceDirection Rosa 2/textAboveHead Rosa \"{{i18n:57874005.15}}\"/pause 1000/end"
+            }
+        },
+        {
+            "LogName": "Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Rosa",
+            "Entries": {
+                "cc_Complete": "I saw the JojaMart is all boarded up. What happened?#$b#I hope that doesn't mean Juliet's going to leave.$2",
+                "summer_Fri2": "$d joja#Hey, you know Juliet? The cute clerk at the JojaMart? She's such a hoot.#$b#You won't believe what she said to me yesterday! Yep, something about melons.$1#$b#I bought two. Shes' err... very persuasive.$4|Have you seen you Juliet around? Now, there's a woman who knows her own mind!$1",
+            }
+        },
+        {
+            "LogName": "Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Rosa",
+            "When": {
+                "HasSeenEvent": "57874005"
+            },
+            "Entries": {
+                "fall_Fri6": "Jules and I have been talking about a seance. Spooky time of year and all that.#$b#Do you want in on it?",
+                "Sun6": "Hah, you should come join us sometime on Saturday night. Jules and me have been shooting pool down at the Stardrop.#$b#She's not quite the poolshark she thinks she is!$1#$e#But she does this cute little dance when she wins... so sometimes I miss on purpose.#$e#That's our little secret, 'k?$4"
+            }
+        },
+        {
+            "LogName": "Juliet and Rosa movie date CC > theater",
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "When": {
+                "HasSeenEvent": "502261"
+            },
+            "Entries": {
+                "57874006/z winter/n ccMovieTheater/z spring/z summer/t 2000 2400/w sunny": "nightTime/52 23/farmer 47 26 0 Rosa -100 -100 2 Juliet -100 -100 2 Abigail -100 -100 2/skippable/playSound doorOpen/pause 1000/warp Rosa 53 20/warp Juliet 52 20/pause 1000/move Rosa 0 2 3 true/move Juliet 0 2 1 true/textAboveHead Juliet \"{{i18n:57874006.01}}\"/pause 1500/textAboveHead Juliet \"{{i18n:57874006.02}}\"/pause 1000/playSound doorOpen/warp Abigail 52 20/move Abigail 0 1 3/move Abigail -4 0 2 true/move farmer 0 -4 1 true/shake Rosa 500/textAboveHead Rosa \"{{i18n:57874006.03}}\"/speak Juliet \"{{i18n:57874006.04}}\"/pause 500/emote Abigail 32/shake Rosa 500/move Abigail 0 1 3/move Rosa 0 1 2/textAboveHead Rosa \"{{i18n:57874006.05}}\"/emote farmer 40/pause 500/speak Rosa \"{{i18n:57874006.06}}\"/pause 1000/move Juliet 0 1 1/textAboveHead Juliet \"{{i18n:57874006.07}}\"/pause 1000/speak Juliet \"{{i18n:57874006.08}}\"/pause 100/emote Rosa 40/pause 2000/speak Rosa \"{{i18n:57874006.09}}\"/pause 500/jump Juliet 3/emote Juliet 16/faceDirection Abigail 1 true/emote Abigail 8/speak Juliet \"{{i18n:57874006.10}}\"/speak Rosa \"{{i18n:57874006.11}}\"/pause 500/faceDirection Abigail 3/emote Rosa 40/speak Rosa \"{{i18n:57874006.12}}\"/emote Abigail 40/textAboveHead Juliet \"{{i18n:57874006.13}}\"/speak Rosa \"{{i18n:57874006.14}}\"/faceDirection Rosa 1/emote Juliet 28/pause 500/move Rosa 3 0 2/textAboveHead Juliet \"{{i18n:57874006.15}}\"/pause 100/jump Rosa 3/pause 100/faceDirection Rosa 3/speak Juliet \"{{i18n:57874006.16}}\"/move Rosa -3 0 3/speak Rosa \"{{i18n:57874006.17}}\"/faceDirection Rosa 2/pause 500/emote Rosa 28/pause 1000/speak Rosa \"{{i18n:57874006.18}}\"/emote Juliet 60/pause 500/speak Juliet \"{{i18n:57874006.19}}\"/pause 500/faceDirection Rosa 3/pause 500/speak Juliet \"{{i18n:57874006.20}}\"/emote Rosa 32/pause 500/speak Rosa \"{{i18n:57874006.21}}\"/pause 1000/end",
+            }
+        },
+       {
+            "LogName": "Juliet and Rosa movie date - Joja > theater",
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "When": {
+                "HasSeenEvent": "191393"
+            },
+            "Entries": {
+                "57874006/z winter/n ccMovieTheater/z spring/z summer/t 2000 2400/w sunny": "nightTime/96 53/farmer 89 58 0 Rosa -100 -100 2 Juliet -100 -100 2 Abigail -100 -100 2/skippable/playSound doorOpen/pause 1000/warp Rosa 96 51/warp Juliet 95 51/pause 1000/move Rosa 0 2 3 true/move Juliet 0 2 1 true/textAboveHead Juliet \"{{i18n:57874006.01}}\"/pause 1500/textAboveHead Juliet \"{{i18n:57874006.02}}\"/pause 1000/playSound doorOpen/warp Abigail 95 51/move Abigail 0 1 3/move Abigail -5 0 3 true/move farmer 0 -5 1 true/shake Rosa 500/textAboveHead Rosa \"{{i18n:57874006.03}}\"/speak Juliet \"{{i18n:57874006.04}}\"/pause 500/emote Abigail 32/shake Rosa 500/move Abigail 0 1 3/move Rosa 0 1 2/textAboveHead Rosa \"{{i18n:57874006.05}}\"/emote farmer 40/pause 500/speak Rosa \"{{i18n:57874006.06}}\"/pause 1000/move Juliet 0 1 1/textAboveHead Juliet \"{{i18n:57874006.07}}\"/pause 1000/speak Juliet \"{{i18n:57874006.08}}\"/pause 100/emote Rosa 40/pause 2000/speak Rosa \"{{i18n:57874006.09}}\"/pause 500/jump Juliet 3/emote Juliet 16/faceDirection Abigail 1 true/emote Abigail 8/speak Juliet \"{{i18n:57874006.10}}\"/speak Rosa \"{{i18n:57874006.11}}\"/pause 500/faceDirection Abigail 3/emote Rosa 40/speak Rosa \"{{i18n:57874006.12}}\"/emote Abigail 40/textAboveHead Juliet \"{{i18n:57874006.13}}\"/speak Rosa \"{{i18n:57874006.14}}\"/faceDirection Rosa 1/emote Juliet 28/pause 500/move Rosa 3 0 2/textAboveHead Juliet \"{{i18n:57874006.15}}\"/pause 100/jump Rosa 3/pause 100/faceDirection Rosa 3/speak Juliet \"{{i18n:57874006.16}}\"/move Rosa -3 0 3/speak Rosa \"{{i18n:57874006.17}}\"/faceDirection Rosa 2/pause 500/emote Rosa 28/pause 1000/speak Rosa \"{{i18n:57874006.18}}\"/emote Juliet 60/pause 500/speak Juliet \"{{i18n:57874006.19}}\"/pause 500/faceDirection Rosa 3/pause 500/speak Juliet \"{{i18n:57874006.20}}\"/emote Rosa 32/pause 500/speak Rosa \"{{i18n:57874006.21}}\"/pause 1000/end"
+            }
+        },
+        {
+            "LogName": "Rosa defends Juliet against gossip",
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "Entries": {  
+            
+            "57874020/e 86571110/f Rosa 750/t 1000 1600": "{{season}}_day_ambient/43 59/Jodi 43 61 1 Caroline 44 61 3 farmer -100 -100 2 Juliet 39 59 1 Rosa 42 57 0/skippable/move Juliet 3 0 0/emote Jodi 40/textAboveHead Juliet \"{{i18n:57874020.01}}\"/faceDirection Rosa 2/pause 1500/textAboveHead Rosa \"{{i18n:57874020.02}}\"/faceDirection Jodi 0 true/faceDirection Caroline 0 true/pause 1500/advancedMove Juliet false 6 0 0 -5 2 0 2 5000/faceDirection Rosa 1/pause 1000/faceDirection Rosa 0/faceDirection Jodi 1 true/faceDirection Caroline 3 true/speak Caroline \"{{i18n:57874020.03}}\"/faceDirection Rosa 2/pause 500/emote Rosa 12/animate Rosa false true 240 22 23/pause 1000/playSound doorOpen/warp farmer 43 57/stopAnimation Rosa/faceDirection Rosa 1/faceDirection farmer 3/speak Jodi \"{{i18n:57874020.04.{{jojaORcc}}}}\"/faceDirection Rosa 2 true/faceDirection farmer 2 true/speak Caroline \"{{i18n:57874020.05}}\"/faceDirection Rosa 1/faceDirection farmer 3/emote Rosa 40/quickQuestion #{{i18n:57874020.06}}#{{i18n:57874020.07}}(break)emote Rosa 12\\pause 1000\\faceDirection Rosa 2\\textAboveHead Rosa \"{{i18n:57874020.08}}\"\\move Rosa 0 2 2\\faceDirection farmer 2(break)emote Rosa 32\\pause 1000\\faceDirection Rosa 2 true\\faceDirection farmer 2 true\\pause 1000\\move Rosa 0 2 2 true\\move farmer 0 2 2 true/stopMusic/playMusic musicboxsong/pause 1000/speak Rosa \"{{i18n:57874020.09}}\"/jump Jodi 3 true/jump Caroline 3 true/stopAdvancedMoves/faceDirection Jodi 0 true/faceDirection Caroline 0 true/emote Caroline 12/emote Jodi 60/advancedMove Juliet false -2 0 2 5000/speak Jodi \"{{i18n:57874020.10}}\"/speak Caroline \"{{i18n:57874020.11}}\"/textAboveHead Rosa \"{{i18n:57874020.12}}\"/speak Rosa \"{{i18n:57874020.13}}\"/emote Jodi 60/faceDirection Caroline 3/faceDirection Jodi 1/emote Caroline 40/pause 2000/faceDirection Caroline 0/faceDirection Jodi 0/Speak Rosa \"{{i18n:57874020.14}}\"/emote farmer 32/pause 1000/speak Jodi \"{{i18n:57874020.15}}\"/emote Rosa 60/emote Juliet 20/pause 1000/end"
+            }
+        }
+            ]
+        }

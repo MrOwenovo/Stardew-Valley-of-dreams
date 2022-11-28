@@ -1,0 +1,72 @@
+{
+  "Changes": [
+	//Sprite
+	{
+	  "Action": "Load",
+	  "Target": "applesauce.outstorage/lunchboxplaced",
+	  "FromFile": "assets/lunchboxplaced.png"
+	},
+
+	//Data
+	{
+	  "Action": "EditData",
+	  "Target": "furyx639.ExpandedStorage/Storages",
+	  "Entries": {
+		"lunchboxplaced": {
+		            "DisplayName": "{{i18n: lunchboxplaced.name}}",
+          		    "Description": "{{i18n: lunchboxplaced.description}}",
+          		    "Image": "applesauce.outstorage/lunchboxplaced",
+                            "Frames": 1,
+         		    "PlayerColor": false,
+          		    "OpenSound": "openBox",
+			//Betterchests stuff
+        		    "BetterChestsData": {
+          		    "CollectItems": "Enabled",
+           		    "CustomColorPicker": "Disabled",
+           		    "FilterItems": "Enabled",
+        		    "FilterItemsList": [
+          			    "category_cooking",
+          			    "category_milk",
+          			    "category_artisan_goods",
+          			    "item_energy_tonic",
+          			    "item_muscle_remedy",
+          			    "item_coffee"
+         			   ],
+         		   "OpenHeldChest": "Enabled",
+      		           "ResizeChest": "Enabled",
+			   "ResizeChestCapacity": 24
+			  			}
+			}
+		      }
+	            },
+  	 {
+      	"Action": "EditData",
+     	 "Target": "furyx639.ExpandedStorage/Buy",
+    	  "Entries": {
+     	     "lunchboxplaced": {
+     	     "ShopID": "SeedShop",
+       	     "Price": 40000
+      	    }
+     	   }
+  	  },
+
+       {
+        "Action": "EditData",
+        "Target": "Data/CraftingRecipes",
+        "Entries": {
+          "lunchboxplaced": "221 20 253 20/Home/232/true/null/{{i18n: lunchboxplaced.name}}"
+        }
+      },
+    
+      {
+        "Action": "EditData",
+        "Target": "furyx639.ExpandedStorage/Unlock",
+        "Entries": {
+          "lunchboxplaced": "true"
+        },
+        "When": {
+          "query: {{SkillLevel:Farming}} >= 5": true
+           }
+          }
+ 	 ] 
+	}

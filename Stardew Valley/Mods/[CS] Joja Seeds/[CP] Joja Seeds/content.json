@@ -1,0 +1,262 @@
+{
+
+"Format": "1.19.0",
+
+"Changes": [
+
+	   {
+          "Action": "EditImage",
+          "Target": "Maps/spring_town",
+          "FromFile": "assets/growthemyourlove.png",
+		  "FromArea": { "X": 0, "Y": 0, "Width": 64, "Height": 48 },
+		  "ToArea": { "X": 256, "Y": 912, "Width": 64, "Height": 48 },
+		  "PatchMode": "Overlay",
+		  "When": { "IsCommunityCenterComplete": "False", },
+       },
+	   
+	   {
+          "Action": "EditImage",
+          "Target": "Maps/summer_town",
+          "FromFile": "assets/fuelyourlife.png",
+		  "FromArea": { "X": 0, "Y": 0, "Width": 64, "Height": 48 },
+		  "ToArea": { "X": 256, "Y": 912, "Width": 64, "Height": 48 },
+		  "PatchMode": "Overlay",
+		  "When": { "IsCommunityCenterComplete": "False", },
+       },
+	   
+	   {
+          "Action": "EditImage",
+          "Target": "Maps/fall_town",
+          "FromFile": "assets/fuelyourlife.png",
+		  "FromArea": { "X": 0, "Y": 0, "Width": 64, "Height": 48 },
+		  "ToArea": { "X": 256, "Y": 912, "Width": 64, "Height": 48 },
+		  "PatchMode": "Overlay",
+		  "When": { "IsCommunityCenterComplete": "False", },
+       },
+	   
+	   {
+          "Action": "EditImage",
+          "Target": "Maps/winter_town",
+          "FromFile": "assets/growthemyourlove.png",
+		  "FromArea": { "X": 0, "Y": 0, "Width": 64, "Height": 48 },
+		  "ToArea": { "X": 256, "Y": 912, "Width": 64, "Height": 48 },
+		  "PatchMode": "Overlay",
+		  "When": { "IsCommunityCenterComplete": "False", },
+       },
+	   
+	   
+	   {
+	
+		"Action": "EditData",
+		"Target": "Data/Events/Farm",
+
+		"Entries": {
+			
+			"26435551/k 191393/u 5/z summer/z fall/z winter/x j_Seeds_Spring": "null",
+			"26435552/k 191393/u 27/z summer/z fall/z winter/x j_Seeds_Summer": "null",
+			"26435553/k 191393/u 27/z spring/z fall/z winter/x j_Seeds_Fall": "null",
+			"26435554/k 191393/u 27/z summer/z spring/z winter/x j_Seeds_Winter": "null",
+			"26435556/e 191393/A cc_Complete/x p_Seeds_LetterB": "null",
+			
+		},
+				
+	},
+	
+	{
+	
+		"Action": "EditData",
+		"Target": "Data/Events/Farm",
+
+		"Entries": {
+			
+			"26435555/A j_spring_seedsCT/x p_Seeds_LetterA": "null",
+		},
+		
+		"When": { "HasFlag |contains=j_Seeds_Spring, j_Seeds_Summer, j_Seeds_Fall": true, },
+				
+	},
+	  
+	   
+	{
+		"Action": "EditData",
+		"Target": "data/mail",
+		
+		"Entries": {
+		
+			"j_Seeds_Spring": "To our valued JojaMart customer:^^JojaMart is proud to announce our new line of bio-engineered seeds, perfect for both new farmers just starting out and experienced farmers aiming to maximize their profits.^^This season's featured crop: Broccoflower! The vegetable even the pickiest of eaters will enjoy. Pair with cheese for a dish kids can't resist!^^-Morris,^Joja Customer Satisfaction Representative%item conversationTopic j_spring_seedsCT 5 %%[#]Spring Joja Seeds",
+			
+			"j_Seeds_Summer": "To our valued JojaMart customer:^^Summer is just around the corner! Don't forget to visit JojaMart for a refreshed selection of bio-engineered seeds.^^This season's featured crop: Sweet Joja Berries! Kids love 'em plain, and they'll give anyone a little energy boost that'll make them feel 12 again. ^^-Morris,^Joja Customer Satisfaction Representative[#]Summer Joja Seeds",
+			
+			"j_Seeds_Fall": "To our valued JojaMart customer:^^As the seasons turn to fall, remember to add a visit to JojaMart to your To-Dew list!^^This season's featured crop: Remembrance Poppies! Show veterans and their families you care with a homegrown red poppy.^^-Morris,^Joja Customer Satisfaction Representative[#]Fall Joja Seeds",
+			
+			"j_Seeds_Winter": "To our valued JojaMart customer:^^Winter is the season we shower the people we love with gifts, and JojaMart is here to help! Grow some love for everyone on your 'nice' list with JojaCo Seeds!^^This season's featured crop: Winterstar Fruit! That's right, the beloved Winterstar is now available in luscious fruit form and only a scrooge wouldn't love to receive one under the tree.^^-Morris,^Joja Customer Satisfaction Representative[#]Winter Joja Seeds",
+			
+			"p_Seeds_LetterA": "Dear @,^^I've got a new line of seeds in stock especially for you! They're heirloom varieties, so they grow in multiple colors. And yes, of course they're worth more. Just make sure you sell your vegetables at Pierre's!^^   Pierre[#]Heirloom Seeds",
+			
+			"p_Seeds_LetterB": "Dear @,^^Now that Joja's out of town, I've been able to source a new line of seeds especially for you! They're heirloom varieties, so they grow in multiple colors. And yes, of course they're worth more. Just make sure you sell all your vegetables at Pierre's!^^   Pierre[#]Heirloom Seeds",
+		},
+	},
+	
+	{ 
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Pierre",
+
+		"Entries": {
+		
+				"j_spring_seedsCT": "Did you see this flyer, @? Disgraceful!$3#$b#'Bio-engineered seeds'! Why not just plant uranium while you're at it!$3#$b#I hope you know Pierre's is committed to only selling the best, healthiest seeds for your farm.$1",
+				
+				"summer_Tue": "How are the heirloom crops growing for you, @?#$b#Mayor Lewis was in here just yesterday marveling at the idea of a purple potato.$1",
+				
+				"fall_Wed": "Morris was in here telling people only Joja pumpkins are good for eating.$3#$b#Who wants to eat a pumpkin?!$3#$b#My seeds grow perfect jack o'lanterns and that's always been enough.",
+				
+				"winter_Mon": "You can't grow crops during winter so I can't sell you seeds. This is really going to cut into m- our profits.$2#$e#What did Joja even do to make a potato grow this time of year?$4",
+				
+				"winter_Tue": "First the poppies, now a Winterstar fruit?$3#$b#Joja will do ANYTHING to play on people's emotions.$3",
+		},
+		
+		"When": { "IsCommunityCenterComplete": "False", },
+	},
+	
+	{ 
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Pierre",
+
+		"Entries": {
+				
+				"summer_Tue": "How are the heirloom crops growing for you, @?#$b#Mayor Lewis was in here just yesterday marveling at the idea of a purple potato.$1",
+				
+				"fall_Wed": "Don't forget to stock up on heirloom corn and carrot seeds!$1#$b#True, they cost more, but I'm also willing to pay more for the vegetables! It's a good deal.$1",
+				
+				"winter_Mon": "You know, with JojaMart closed I guess I never will find out how they made potatoes grow in the winter...$2#$b#Well, I may not have seeds to sell you but there's still plenty of inventory on the shelves. Stock up!$1",
+		},
+		
+		"When": { "IsCommunityCenterComplete": "True", },
+	},
+	
+	{ 
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Vincent",
+
+		"Entries": {
+		
+				"Tue2": "Mom's cooking broccoflower tonight!$1#$b#It's greeeeen and Miss Penny said the color is 'unnatural.'#$b#I like it with cheese.$1",
+		},
+		
+		"When": { "IsCommunityCenterComplete": "False", },
+	},
+	
+	{ 
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Clint",
+
+		"Entries": {
+		
+				"fall_Sat": "How are your coal supplies, @?#$b#I've been thinking of trying Joja corn in a kiln. The flyer says the coal is just as good.#$b#Of course, I'll need to inspect it first.",
+		},
+		
+		"When": { "IsCommunityCenterComplete": "False", },
+	},
+	
+	{ 
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Demetrius",
+
+		"Entries": {
+		
+				"summer_Wed": "Have you been growing any of Joja's new crops, @?#$b#I'm curious how they managed to extend the growth seasons. Perhaps they manipulated the ribosomes...#$b#I'll be happy to take a look at any samples you bring me.$1",
+		},
+		
+		"When": { "IsCommunityCenterComplete": "False", },
+	},
+	
+	{ 
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Jodi",
+
+		"Entries": {
+		
+				"fall_Tue": "$d kent# I bought a whole bouquet of red poppies at JojaMart this year. It's actually more for Kent than it is for me.|I bought a red poppy at JojaMart.$2#$b#It's good to remember our veterans, but I'd rather have my husband home.$2",
+		},
+		
+		"When": { "IsCommunityCenterComplete": "False", },
+	},
+	
+	{ 
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Kent",
+
+		"Entries": {
+		
+				"fall_Fri": "I remember when I laughed at the poppies. Said they didn't mean anything.#$b#Now they remind me of the friends I lost. It's a bittersweet feeling.",
+		},
+		
+		"When": { "IsCommunityCenterComplete": "False", },
+	},
+	
+	{ 
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/George",
+
+		"Entries": {
+		
+				"spring_Tue": "Hmpf. Doctor says I need to eat healthy, but he hasn't had Evelyn's smothered garlic potatoes.#$b#No, I don't care what the ingredients are.",
+		},
+	},
+	
+	{ 
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Jas",
+
+		"Entries": {
+		
+				"spring_Tue": "Shane gave me a sweet Joja berry!$1#$b#It was soooo sweet!$1#$b#He said it would make me extra lucky, but all it did was turn my tongue blue.$3",
+		},
+		
+		"When": { "IsCommunityCenterComplete": "False", },
+	},
+	
+	{ 
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Robin",
+
+		"Entries": {
+		
+				"summer_Thu5": "$d Joja#@, quick, take this! It's a JojaMart flyer advertising tomato FRUITS. I can't let Demetrius see it...$6|I talked to Pierre and now when Demetrius does the grocery shopping he double-checks the list for fruits and vegetables.$1",
+				
+				"fall_Sat2": "Ugh, I can't stand carrots. Why did Pierre have to start selling seeds for them?$6#$b#Oh, no, it's not the taste!$4#$b#Some kids used to call me 'Carrottop' when I was little and the adults wouldn't make them stop. Funny how a vegetable reminds us of things.$5",
+		},
+	},
+	
+	{ 
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Evelyn",
+
+		"Entries": {
+		
+				"winter_Thu": "$d Joja#Oh my, have you seen the Winterstar fruits at JojaMart? George may say 'bah humbug' to the whole season, but I think they're lovely.$1|It's so good to have the community center restored, but I admit I miss seeing the JojaMart decked out with Winterstars this time of year.",
+		},
+	},
+	
+	{ 
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Lewis",
+
+		"Entries": {
+		
+				"summer_Tue": "Even Joja hasn't figured out how to 'bio-engineer' a tasty blueberry!$1",
+		},
+	},
+	
+	{ 
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Leah",
+
+		"Entries": {
+		
+				"summer_Thu": "I'm so happy Pierre is stocking heirloom seeds now.$1#$b#Maybe if you sell enough, he'll get more varieties in.",
+		},
+	},
+	
+	
+]
+}

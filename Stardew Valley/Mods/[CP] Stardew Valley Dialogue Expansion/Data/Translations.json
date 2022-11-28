@@ -1,0 +1,51 @@
+{
+    "Changes": [
+    {
+        "LogName": "All-in-One",
+        "Action": "Include",
+        "FromFile": "Data/{{language}}/NPCs/Abigail.json, Data/{{language}}/NPCs/Alex.json, Data/{{language}}/NPCs/Caroline.json, Data/{{language}}/NPCs/Clint.json, Data/{{language}}/NPCs/Demetrius.json, Data/{{language}}/NPCs/Dwarf.json, Data/{{language}}/NPCs/Elliott.json, Data/{{language}}/NPCs/Emily.json, Data/{{language}}/NPCs/Evelyn.json, Data/{{language}}/NPCs/George.json, Data/{{language}}/NPCs/Gus.json, Data/{{language}}/NPCs/Haley.json, Data/{{language}}/NPCs/Harvey.json, Data/{{language}}/NPCs/Jas.json, Data/{{language}}/NPCs/Jodi.json, Data/{{language}}/NPCs/Kent.json, Data/{{language}}/NPCs/Krobus.json, Data/{{language}}/NPCs/Leah.json, Data/{{language}}/NPCs/Lewis.json, Data/{{language}}/NPCs/Linus.json, Data/{{language}}/NPCs/Marnie.json, Data/{{language}}/NPCs/Maru.json, Data/{{language}}/NPCs/Leo.json, Data/{{language}}/NPCs/LeoMainland.json,Data/{{language}}/NPCs/Pam.json, Data/{{language}}/NPCs/Penny.json, Data/{{language}}/NPCs/Pierre.json, Data/{{language}}/NPCs/Robin.json, Data/{{language}}/NPCs/Sam.json, Data/{{language}}/NPCs/Sandy.json, Data/{{language}}/NPCs/Sebastian.json, Data/{{language}}/NPCs/Shane.json, Data/{{language}}/NPCs/Vincent.json, Data/{{language}}/NPCs/Willy.json, Data/{{language}}/NPCs/Wizard.json",
+        "When":
+        {
+            "HasFile:{{FromFile}}": true,
+        }
+    },
+    {
+        "LogName": "Festival Y2",
+        "Action": "Include",
+        "FromFile": "Data/{{language}}/Festivals/Y2.json",
+        "When":
+        {
+            "Year": "2",
+            "HasFile:{{FromFile}}": true,
+        }
+    },
+    {
+        "LogName": "Festival Y3",
+        "Action": "Include",
+        "FromFile": "Data/{{language}}/Festivals/Y3.json",
+        "When":
+        {
+            "Year": "3",
+            "HasFile:{{FromFile}}": true,
+        }
+    },
+    {
+        "LogName": "Festival Randomized (After Y3)",
+        "Action": "Include",
+        "FromFile": "Data/{{language}}/Festivals/Y{{Random:null, 2, 3}}.json",
+        "When":
+        {
+            "HasFile:{{FromFile}}": true,
+            "Year |contains= 1, 2, 3": false
+        }
+    },
+    {
+        "LogName": "Misc Dialogue",
+        "Action": "Include",
+        "FromFile": "Data/{{language}}/Misc/MiscDialogue.json",
+        "When":
+        {
+            "HasFile:{{FromFile}}": true,
+        }
+    }, ]
+}

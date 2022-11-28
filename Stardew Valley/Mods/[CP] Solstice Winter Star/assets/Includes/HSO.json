@@ -1,0 +1,298 @@
+{
+    "Changes": [
+    
+// VANILLA SPECIAL ORDER EDITS
+
+		{
+			"LogName": "HSO Vanilla SO Strings Edit",
+			"Action": "EditData",
+            "Target": "Strings/SpecialOrderStrings",
+			"Entries": 
+			{
+				"Holiday_Pinecones1_Title": "{{i18n:SWS.Compat.HSO.Strings.Pinecones.Title}}",
+				"Holiday_Pinecones1_Body": "{{i18n:SWS.Compat.HSO.Strings.Pinecones.Body}}",
+				"Holiday_Pinecones1_Objective1": "{{i18n:SWS.Compat.HSO.Strings.Pinecones.Objective1}}",
+				"Holiday_Pinecones1_Objective2": "{{i18n:SWS.Compat.HSO.Strings.Pinecones.Objective2}}",
+				"Holiday_Eggnog2_Title": "{{i18n:SWS.Compat.HSO.Strings.Eggnog.Title}}",
+				"Holiday_Eggnog2_Body": "{{i18n:SWS.Compat.HSO.Strings.Eggnog.Body}}",
+			},
+		},		
+		{
+			"LogName": "HSO Vanilla SO Mail Edit",
+			"Action": "EditData",
+            "Target": "Data/Mail",
+			"Entries": 
+			{
+				"Holiday_Pinecones1_Letter": "{{i18n:SWS.Compat.HSO.Mail.Pinecones.Body}}%item furniture 1440 1 %%[#]{{i18n:SWS.Compat.HSO.Mail.Pinecones.Title}}",
+				"Holiday_Eggnog2_Letter": "{{i18n:SWS.Compat.HSO.Mail.Eggnog.Body}}%item object 733 12 %%[#]{{i18n:SWS.Compat.HSO.Mail.Eggnog.Title}}",
+			},
+		},			
+		{ 
+			"LogName": "HSO Vanilla SO Edit",
+            "Action": "EditData",
+            "Target": "Data/SpecialOrders",
+            "Entries": {
+                "Holiday.Pinecones1": { 
+                    "Name": "[Holiday_Pinecones1_Title]",
+                    "Requester": "Robin", 
+                    "Duration": "Week", 
+                    "Repeatable": "False", 
+					"RequiredTags": "season_fall", 
+                    "OrderType": "", 
+                    "SpecialRule": "", 
+                    "Text": "[Holiday_Pinecones1_Body]",
+                    "ItemToRemoveOnEnd": null,
+                    "MailToRemoveOnEnd": null,  
+                    
+                    "Objectives": [
+						  {
+							"Type": "Collect",
+							"Text": "[Holiday_Pinecones1_Objective1]",
+							"RequiredCount": "20",
+							"Data": {
+							  "AcceptedContextTags": "item_acorn",
+							},
+						  }, 
+						{
+							"Type": "Donate",
+							"Text": "[Holiday_Pinecones1_Objective2]",
+							"RequiredCount": "20",
+							"Data": {
+								"DropBox": "RobinWood",
+								"DropBoxGameLocation": "ScienceHouse",
+								"DropBoxIndicatorLocation": "10.5 18",
+								"AcceptedContextTags": "item_acorn",
+							},
+						  }, 						  
+                    ],
+                    "Rewards": [
+                        {
+                            "Type": "Money",
+                            "Data": {
+                                "Amount": "2000",
+                            }
+                        },
+                        {
+                            "Type": "Mail",
+                            "Data": {
+                                "MailReceived": "Holiday_Pinecones1_Letter",
+								"NoLetter": "false",
+                            }
+                        },
+						{
+							"Type": "Friendship",
+							"Data": { "Amount": "100", }
+						},
+                    ]
+                }
+            },
+		},
+    
+// HOST TREES SPECIAL ORDER EDITS
+
+		{
+			"LogName": "HSO Host Trees SO Strings Edit",
+			"Action": "EditData",
+            "Target": "Strings/SpecialOrderStrings",
+			"Entries": 
+			{
+				"Holiday_Eggnog1_Title": "{{i18n:SWS.Compat.HSO.Strings.Eggnog.Title}}",
+				"Holiday_Eggnog1_Body": "{{i18n:SWS.Compat.HSO.Strings.Eggnog.Body}}",
+				"Holiday_Lichen1_Body": "{{i18n:SWS.Compat.HSO.Strings.Lichen.Body}}",
+				"Holiday_Mistletoe1_Title": "{{i18n:SWS.Compat.HSO.Strings.Mistletoe.Title}}",
+				
+			},
+		},		
+		{
+			"LogName": "HSO Host Trees SO Mail Edit",
+			"Action": "EditData",
+            "Target": "Data/Mail",
+			"Entries": 
+			{
+				"Holiday_Eggnog1_Letter": "{{i18n:SWS.Compat.HSO.Mail.Eggnog.Body}}%item object 733 12 %%[#]{{i18n:SWS.Compat.HSO.Mail.Eggnog.Title}}",
+				"Holiday_Lichen1_Letter": "{{i18n:SWS.Compat.HSO.Mail.Lichen.Body}}%item conversationTopic holiday_reindeerlichen 7 %%[#]{{i18n:SWS.Compat.HSO.Mail.Lichen.Title}}",
+			},
+		},		
+        
+// WINTERSTAR FRUIT EDITS
+
+		{
+			"LogName": "HSO Mail Edit Winterstar Fruit Blackmarket",
+			"Action": "EditData",
+            "Target": "Data/Mail",
+			"Entries": 
+			{
+				"Holiday_WinterstarFruitBlackmarket1_Letter": "{{i18n:SWS.Compat.HSO.Mail.WinterstarFruitBlackmarket.Body}}[#]{{i18n:SWS.Compat.HSO.Mail.WinterstarFruitBlackmarket.Title}}",
+			},
+			"When": 
+			{ 
+				"HasMod |contains= CopperSun.JojaSeedsJA": true,
+			},
+		},
+		{
+			"LogName": "HSO Mail Edit Winterstar Fruit JojaMart",
+			"Action": "EditData",
+            "Target": "Data/Mail",
+			"Entries": 
+			{
+				"Holiday_WinterstarFruitMart1_Letter": "{{i18n:SWS.Compat.HSO.Mail.WinterstarFruitMart.Body}}[#]{{i18n:SWS.Compat.HSO.Mail.WinterstarFruitMart.Title}}",
+			},
+			"When": 
+			{ 
+				"HasMod |contains= CopperSun.JojaSeedsJA": true,
+				"HasMod |contains= CopperSun.JojaBlackmarketCP": true,
+			},
+		},
+    
+// HOST TREES CONVERSATION TOPIC EDITS
+
+		{
+			"LogName": "HSO CT Abigail Edit",
+			"Action": "EditData",
+            "Target": "Characters/Dialogue/Abigail",
+			"Entries": 
+			{
+				"holiday_reindeerlichen": "{{i18n:SWS.Compat.HSO.CT.Abigail}}",
+			},
+		},
+		{
+			"LogName": "HSO CT Alex Edit",
+			"Action": "EditData",
+            "Target": "Characters/Dialogue/Alex",
+			"Entries": 
+			{
+				"holiday_reindeerlichen": "{{i18n:SWS.Compat.HSO.CT.Alex}}",
+			},
+		},
+		{
+			"LogName": "HSO CT Clint Edit",
+			"Action": "EditData",
+            "Target": "Characters/Dialogue/Clint",
+			"Entries": 
+			{
+				"holiday_reindeerlichen": "{{i18n:SWS.Compat.HSO.CT.Clint}}",
+			},
+		},
+		{
+			"LogName": "HSO CT Demetrius Edit",
+			"Action": "EditData",
+            "Target": "Characters/Dialogue/Demetrius",
+			"Entries": 
+			{
+				"holiday_reindeerlichen": "{{i18n:SWS.Compat.HSO.CT.Demetrius}}",
+			},
+		},
+		{
+			"LogName": "HSO CT Emily Edit",
+			"Action": "EditData",
+            "Target": "Characters/Dialogue/Emily",
+			"Entries": 
+			{
+				"holiday_reindeerlichen": "{{i18n:SWS.Compat.HSO.CT.Emily}}",
+			},
+			"When": 
+			{ 
+				"HasMod |contains= spacechase0.JsonAssets": "true",
+			},
+		},
+		{
+			"LogName": "HSO CT Evelyn Edit",
+			"Action": "EditData",
+            "Target": "Characters/Dialogue/Evelyn",
+			"Entries": 
+			{
+				"holiday_reindeerlichen": "{{i18n:SWS.Compat.HSO.CT.Evelyn}}",
+			},
+		},
+		{
+			"LogName": "HSO CT George Edit",
+			"Action": "EditData",
+            "Target": "Characters/Dialogue/George",
+			"Entries": 
+			{
+				"holiday_reindeerlichen": "{{i18n:SWS.Compat.HSO.CT.George}}",
+			},
+		},
+		{
+			"LogName": "HSO CT Haley Edit",
+			"Action": "EditData",
+            "Target": "Characters/Dialogue/Haley",
+			"Entries": 
+			{
+				"holiday_reindeerlichen": "{{i18n:SWS.Compat.HSO.CT.Haley}}",
+			},
+		},
+		{
+			"LogName": "HSO CT Jodi Edit",
+			"Action": "EditData",
+            "Target": "Characters/Dialogue/Jodi",
+			"Entries": 
+			{
+				"holiday_reindeerlichen": "{{i18n:SWS.Compat.HSO.CT.Jodi}}",
+			},
+		},
+		{
+			"LogName": "HSO CT Marnie Edit",
+			"Action": "EditData",
+            "Target": "Characters/Dialogue/Marnie",
+			"Entries": 
+			{
+				"holiday_reindeerlichen": "{{i18n:SWS.Compat.HSO.CT.Marnie}}",
+			},
+		},
+		{
+			"LogName": "HSO CT Mister Qi Edit",
+			"Action": "EditData",
+            "Target": "Characters/Dialogue/Mister Qi",
+			"Entries": 
+			{
+				"holiday_reindeerlichen": "{{i18n:SWS.Compat.HSO.CT.MisterQi}}",
+			},
+		},
+		{
+			"LogName": "HSO CT Pam Edit",
+			"Action": "EditData",
+            "Target": "Characters/Dialogue/Pam",
+			"Entries": 
+			{
+				"holiday_reindeerlichen": "{{i18n:SWS.Compat.HSO.CT.Pam}}",
+			},
+		},
+		{
+			"LogName": "HSO CT Penny Edit",
+			"Action": "EditData",
+            "Target": "Characters/Dialogue/Penny",
+			"Entries": 
+			{
+				"holiday_reindeerlichen": "{{i18n:SWS.Compat.HSO.CT.Penny}}",
+			},
+		},
+		{
+			"LogName": "HSO CT Sam Edit",
+			"Action": "EditData",
+            "Target": "Characters/Dialogue/Sam",
+			"Entries": 
+			{
+				"holiday_reindeerlichen": "{{i18n:SWS.Compat.HSO.CT.Sam}}",
+			},
+		},
+		{
+			"LogName": "HSO CT Shane Edit",
+			"Action": "EditData",
+            "Target": "Characters/Dialogue/Shane",
+			"Entries": 
+			{
+				"holiday_reindeerlichen": "{{i18n:SWS.Compat.HSO.CT.Shane}}",
+			},
+		},
+		{
+			"LogName": "HSO CT Vincent Edit",
+			"Action": "EditData",
+            "Target": "Characters/Dialogue/Vincent",
+			"Entries": 
+			{
+				"holiday_reindeerlichen": "{{i18n:SWS.Compat.HSO.CT.Vincent}}",
+			},
+		},
+	],
+}

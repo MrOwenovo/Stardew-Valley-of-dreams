@@ -1,0 +1,188 @@
+{
+  "Format": "1.18.0",
+  "ConfigSchema": {
+    "AllSkippable": {
+      "AllowValues": "true, false",
+      "Default": "false"
+    },
+    "RewardMoney": {
+      "AllowValues": "none, small, normal, large",
+      "Default": "normal"
+    },
+    "RewardFriendship": {
+      "AllowValues": "none, small, normal, large",
+      "Default": "normal"
+    }
+  },
+  "DynamicTokens": [
+    //Skippable Toggle
+    {
+      "Name": "SC",
+      "Value": "/skippable",
+      "When": {
+        "AllSkippable": "true"
+      }
+    },
+    {
+      "Name": "SC",
+      "Value": "",
+      "When": {
+        "AllSkippable": "false"
+      }
+    },
+    //Reward Money for non-Legend fish
+    {
+      "Name": "RMN",
+      "Value": "1000",
+      "When": {
+        "RewardMoney": "small"
+      }
+    },
+    {
+      "Name": "RMN",
+      "Value": "2000",
+      "When": {
+        "RewardMoney": "normal"
+      }
+    },
+    {
+      "Name": "RMN",
+      "Value": "4000",
+      "When": {
+        "RewardMoney": "large"
+      }
+    },
+    {
+      "Name": "RMN",
+      "Value": "0",
+      "When": {
+        "RewardMoney": "none"
+      }
+    },
+    //Reward Money for Legend
+    {
+      "Name": "RML",
+      "Value": "1500",
+      "When": {
+        "RewardMoney": "small"
+      }
+    },
+    {
+      "Name": "RML",
+      "Value": "3000",
+      "When": {
+        "RewardMoney": "normal"
+      }
+    },
+    {
+      "Name": "RML",
+      "Value": "6000",
+      "When": {
+        "RewardMoney": "large"
+      }
+    },
+    {
+      "Name": "RML",
+      "Value": "0",
+      "When": {
+        "RewardMoney": "none"
+      }
+    },
+    //Reward Friendship with Willy for non-Legend fish
+    {
+      "Name": "RFN",
+      "Value": "50",
+      "When": {
+        "RewardFriendship": "small"
+      }
+    },
+    {
+      "Name": "RFN",
+      "Value": "125",
+      "When": {
+        "RewardFriendship": "normal"
+      }
+    },
+    {
+      "Name": "RFN",
+      "Value": "250",
+      "When": {
+        "RewardFriendship": "large"
+      }
+    },
+    {
+      "Name": "RFN",
+      "Value": "0",
+      "When": {
+        "RewardFriendship": "none"
+      }
+    },
+    //Reward Friendship with Willy for Legend
+    {
+      "Name": "RFL",
+      "Value": "100",
+      "When": {
+        "RewardFriendship": "small"
+      }
+    },
+    {
+      "Name": "RFL",
+      "Value": "250",
+      "When": {
+        "RewardFriendship": "normal"
+      }
+    },
+    {
+      "Name": "RFL",
+      "Value": "500",
+      "When": {
+        "RewardFriendship": "large"
+      }
+    },
+    {
+      "Name": "RFL",
+      "Value": "0",
+      "When": {
+        "RewardFriendship": "none"
+      }
+    }
+  ],
+    "Changes": [
+      {
+        "LogName": "TFoLIntro",
+        "Action": "EditData",
+        "Target": "Data/Events/FishShop",
+        "When": {
+          "SkillLevel:Fishing": "3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20"
+        },
+        "Entries": {
+          //Intro
+          "1397200": "libraryTheme/5 6/farmer -250 -250 0 Willy 5 4 2/skippable/pause 500/playSound doorClose/warp farmer 5 9/pause 250/speak Willy \"{{i18n:TFoL.Intro1}}\"/pause 150/move farmer 0 -3 0/pause 100/speak Willy \"{{i18n:TFoL.Intro2}}\"/emote farmer 56/pause 250/speak Willy \"{{i18n:TFoL.Intro3}}#$b#{{i18n:TFoL.Intro4}}#$b#{{i18n:TFoL.Intro5}}\"/emote farmer 8/pause 150/speak Willy \"{{i18n:TFoL.Intro6}}#$b#{{i18n:TFoL.Intro7}}#$b#{{i18n:TFoL.Intro8}}\"/pause 100/jump farmer 8/speed farmer 4/move farmer 0 3 2/pause 50/playSound doorClose/speed farmer 3/warp farmer -250 -250/pause 500/globalFade/viewport -1000 -1000/end"
+        }
+      },
+      {
+        "LogName": "TFoLFish",
+        "Action": "EditData",
+        "Target": "Data/Events/FishShop",
+        "Entries": {
+          //Legend
+          "1397201/e 1397200/i 163": "libraryTheme/5 6/farmer -100 -100 0 Willy 5 4 2{{SC}}/pause 500/friendship Willy {{RFL}}/playSound doorClose/warp farmer 5 9/pause 250/speak Willy \"{{i18n:TFoL.Intro1}}#$b#{{i18n:TFoL.Legend1}}\"/move farmer 0 -3 0/pause 100/faceDirection farmer 3/playSound fishSlap/addobject 4 6 163/pause 100/faceDirection farmer 0/pause 50/emote Willy 16/speak Willy \"{{i18n:TFoL.Legend2}}#$b#{{i18n:TFoL.Legend3}}\"/emote farmer 56/pause 150/question fork0 \"{{i18n:TFoL.Legend4}}#{{i18n:TFoL.LegendQ1}}#{{i18n:TFoL.LegendQ2}}\"/fork TFoLLegendStory/speak Willy \"{{i18n:TFoL.LegendB1}}#$b#{{i18n:TFoL.LegendB2}}\"/money {{RML}}/pause 500/globalFade/viewport -1000 -1000/end",
+          "TFoLLegendStory": "playMusic caldera/speak Willy \"{{i18n:TFoL.LegendA1}}#$b#{{i18n:TFoL.LegendA2}}#$b#{{i18n:TFoL.LegendA3}}#$b#{{i18n:TFoL.LegendA4}}#$b#{{i18n:TFoL.LegendA5}}#$b#{{i18n:TFoL.LegendA6}}#$b#{{i18n:TFoL.LegendA7}}\"/pause 200/speak Willy \"{{i18n:TFoL.LegendA8}}#$b#{{i18n:TFoL.LegendA9}}\"/money {{RML}}/pause 500/globalFade/viewport -1000 -1000/end",
+          //Crimsonfish
+          "1397202/e 1397200/i 159": "libraryTheme/5 6/farmer -250 -250 0 Willy 5 4 2{{SC}}/pause 500/friendship Willy {{RFN}}/playSound doorClose/warp farmer 5 9/pause 250/speak Willy \"{{i18n:TFoL.Intro1}}#$b#{{i18n:TFoL.Legend1}}\"/move farmer 0 -3 0/pause 100/faceDirection farmer 3/playSound fishSlap/addobject 4 6 159/pause 100/faceDirection farmer 0/pause 50/emote Willy 16/speak Willy \"{{i18n:TFoL.Crimson1}}#$b#{{i18n:TFoL.Mutant2}}\"/emote farmer 56/pause 150/question fork0 \"{{i18n:TFoL.Crimson2}}#{{i18n:TFoL.LegendQ1}}#{{i18n:TFoL.LegendQ2}}\"/fork TFoLCrimsonStory/speak Willy \"{{i18n:TFoL.LegendB1}}#$b#{{i18n:TFoL.MutantB1}}\"/money {{RMN}}/pause 500/globalFade/viewport -1000 -1000/end",
+          "TFoLCrimsonStory": "playMusic tribal/speak Willy \"{{i18n:TFoL.CrimsonA1}}#$b#{{i18n:TFoL.CrimsonA2}}\"/pause 200/speak Willy \"{{i18n:TFoL.CrimsonA3}}#$b#{{i18n:TFoL.MutantA9}}\"/money {{RMN}}/pause 500/globalFade/viewport -1000 -1000/end",
+          //Angler
+          "1397203/e 1397200/i 160": "libraryTheme/5 6/farmer -250 -250 0 Willy 5 4 2{{SC}}/pause 500/friendship Willy {{RFN}}/playSound doorClose/warp farmer 5 9/pause 250/speak Willy \"{{i18n:TFoL.Intro1}}#$b#{{i18n:TFoL.Legend1}}\"/move farmer 0 -3 0/pause 100/faceDirection farmer 3/playSound fishSlap/addobject 4 6 160/pause 100/faceDirection farmer 0/pause 50/emote Willy 16/speak Willy \"{{i18n:TFoL.Angler1}}#$b#{{i18n:TFoL.Mutant2}}\"/emote farmer 56/pause 150/question fork0 \"{{i18n:TFoL.Angler2}}#{{i18n:TFoL.LegendQ1}}#{{i18n:TFoL.LegendQ2}}\"/fork TFoLAnglerStory/speak Willy \"{{i18n:TFoL.LegendB1}}#$b#{{i18n:TFoL.MutantB1}}\"/money {{RMN}}/pause 500/globalFade/viewport -1000 -1000/end",
+          "TFoLAnglerStory": "playMusic mermaidSong/speak Willy \"{{i18n:TFoL.AnglerA1}}#$b#{{i18n:TFoL.AnglerA2}}#$b#{{i18n:TFoL.AnglerA3}}#$b#{{i18n:TFoL.AnglerA4}}\"/pause 200/speak Willy \"{{i18n:TFoL.AnglerA5}}#$b#{{i18n:TFoL.MutantA9}}\"/money {{RMN}}/pause 500/globalFade/viewport -1000 -1000/end",
+          //Glacierfish
+          "1397204/e 1397200/i 775": "libraryTheme/5 6/farmer -250 -250 0 Willy 5 4 2{{SC}}/pause 500/friendship Willy {{RFN}}/playSound doorClose/warp farmer 5 9/pause 250/speak Willy \"{{i18n:TFoL.Intro1}}#$b#{{i18n:TFoL.Legend1}}\"/move farmer 0 -3 0/pause 100/faceDirection farmer 3/playSound fishSlap/addobject 4 6 775/pause 100/faceDirection farmer 0/pause 50/emote Willy 16/speak Willy \"{{i18n:TFoL.Glacier1}}#$b#{{i18n:TFoL.Mutant2}}\"/emote farmer 56/pause 150/question fork0 \"{{i18n:TFoL.Glacier2}}#{{i18n:TFoL.LegendQ1}}#{{i18n:TFoL.LegendQ2}}\"/fork TFoLGlacierStory/speak Willy \"{{i18n:TFoL.LegendB1}}#$b#{{i18n:TFoL.MutantB1}}\"/money {{RMN}}/pause 500/globalFade/viewport -1000 -1000/end",
+          "TFoLGlacierStory": "playMusic Cyclops/speak Willy \"{{i18n:TFoL.GlacierA1}}#$b#{{i18n:TFoL.GlacierA2}}#$b#{{i18n:TFoL.GlacierA3}}\"/pause 200/speak Willy \"{{i18n:TFoL.GlacierA4}}#$b#{{i18n:TFoL.MutantA9}}\"/money {{RMN}}/pause 500/globalFade/viewport -1000 -1000/end",
+          //Mutant Carp
+          "1397205/e 1397200/i 682": "libraryTheme/5 6/farmer -250 -250 0 Willy 5 4 2{{SC}}/pause 500/friendship Willy {{RFN}}/playSound doorClose/warp farmer 5 9/pause 250/speak Willy \"{{i18n:TFoL.Intro1}}#$b#{{i18n:TFoL.Legend1}}\"/move farmer 0 -3 0/pause 100/faceDirection farmer 3/playSound fishSlap/addobject 4 6 682/pause 100/faceDirection farmer 0/pause 50/emote Willy 16/speak Willy \"{{i18n:TFoL.Mutant1}}#$b#{{i18n:TFoL.Mutant2}}\"/emote farmer 56/pause 150/question fork0 \"{{i18n:TFoL.Mutant3}}#{{i18n:TFoL.LegendQ1}}#{{i18n:TFoL.LegendQ2}}\"/fork TFoLMutantStory/speak Willy \"{{i18n:TFoL.LegendB1}}#$b#{{i18n:TFoL.MutantB1}}\"/money {{RMN}}/pause 500/globalFade/viewport -1000 -1000/end",
+          "TFoLMutantStory": "playMusic spirits_eve/speak Willy \"{{i18n:TFoL.MutantA1}}#$b#{{i18n:TFoL.MutantA2}}#$b#{{i18n:TFoL.MutantA3}}#$b#{{i18n:TFoL.MutantA4}}#$b#{{i18n:TFoL.MutantA5}}#$b#{{i18n:TFoL.MutantA6}}\"/pause 200/speak Willy \"{{i18n:TFoL.MutantA7}}#$b#{{i18n:TFoL.MutantA8}}#$b#{{i18n:TFoL.MutantA9}}\"/money {{RMN}}/pause 500/globalFade/viewport -1000 -1000/end",
+          //Finale
+          "1397206/e 1397201/e 1397202/e 1397203/e 1397204/e 1397205": "junimoStarSong/5 6/farmer 5 6 0 Willy 5 4 2{{SC}}/pause 500/friendship Willy {{RFN}}/speak Willy \"{{i18n:TFoL.Finale1}}#$b#{{i18n:TFoL.Finale2}}#$b#{{i18n:TFoL.Finale3}}\"/pause 100/emote Willy 40/pause 100/emote Willy 16/pause 100/speak Willy \"{{i18n:TFoL.Finale4}}#$b#{{i18n:TFoL.Finale5}}#$b#{{i18n:TFoL.Finale6}}#$b#{{i18n:TFoL.Finale7}}\"/pause 100/emote farmer 56/pause 500/globalFade/viewport -1000 -1000/end"
+        }
+      }
+    ]
+}

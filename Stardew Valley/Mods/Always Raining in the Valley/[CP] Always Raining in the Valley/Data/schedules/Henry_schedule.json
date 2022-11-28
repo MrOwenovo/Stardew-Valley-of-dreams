@@ -1,0 +1,35 @@
+ 
+ {
+    "Changes": 
+      [
+      //MAIN SCHEDULE
+        {
+        "LogName": "Henry Schedule Vanilla",
+        "Action": "EditData",
+        "Target": "Characters/schedules/Henry",
+        "Entries": 
+            {
+                "rain": "610 Custom_ARVHouse 6 20 0/630 Custom_ARVHouse 5 4 3 HenrySleep/820 Custom_ARVHouse 25 20 0/830 Custom_ARVHouse 25 21 1/840 Custom_ARVHouse 21 25 0/900 Custom_ARVHouse 11 24 2/910 Custom_HenryWarp 6 6 3/1830 Custom_ARVHouse 25 20 1/2000 Custom_ArvHouse 25 20 2/2200 Custom_ARVHouse 25 21 2/2240 Custom_ARVHouse 24 20 0/2330 Custom_ARVHouse 5 4 3 HenrySleep",
+                "spring": "610 Custom_ARVHouse 6 20 0/640 Custom_ARVHouse 21 20 0/710 Custom_ARVHouse 24 20 0/720 Custom_ARVHouse 11 25 2/730 Custom_HenryWarp 6 6 3/1830 Custom_ARVHouse 25 20 1/2200 Custom_ArvHouse 25 20 2/2240 Custom_ARVHouse 24 20 0/2330 Custom_ARVHouse 5 4 3 HenrySleep",
+                "Fri": "610 Custom_ARVHouse 6 20 0/640 Custom_ARVHouse 21 20 0/710 Custom_ARVHouse 24 20 0/720 Custom_ARVHouse 11 25 2/730 Custom_HenryWarp 6 6 3/1630 Saloon 26 22 0/2250 Custom_ARVHouse 5 4 3 HenrySleep",   
+                "Sun": "610 Custom_ARVHouse 6 20 0/640 Custom_ARVHouse 21 20 0/710 Custom_ARVHouse 24 20 0/720 Custom_ARVHouse 11 25 2/730 Custom_HenryWarp 6 6 3/1630 Saloon 38 22 0/2250 Custom_ARVHouse 5 4 3 HenrySleep",
+                "winter_15": "610 Custom_ARVHouse 6 20 0/640 Custom_ARVHouse 21 20 0/710 Custom_ARVHouse 24 20 0/720 Custom_ARVHouse 11 25 2/730 Custom_HenryWarp 6 6 3/1400 Beach 30 15 1/2230 Custom_ARVHouse 22 20 3/2330 Custom_ARVHouse 5 4 3 HenrySleep",
+                "winter_16": "GOTO winter_15",
+                "winter_17": "GOTO winter_15"
+            }
+        },
+        //Sterling married
+        {
+            "LogName": "Henry Schedule Vanilla",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Henry",
+            "Entries": 
+                {
+                  
+                    "Fri": "GOTO spring"
+ 
+                },
+            "When": {"Relationship:Sterling": "Married"}
+            }
+    ]
+ }

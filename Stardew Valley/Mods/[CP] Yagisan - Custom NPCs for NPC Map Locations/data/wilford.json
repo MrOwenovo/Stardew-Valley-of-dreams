@@ -1,0 +1,38 @@
+{
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "Changes": [
+        // Wilford - New Custom NPC - https://www.nexusmods.com/stardewvalley/mods/7313
+        {
+            "LogName": "[Yagi] Wilford - Sprite Offsets",
+            "Action": "EditData",
+            "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+            "When": {
+                "HasMod: |contains=Fernandtea.NewNPCWilford": true
+            },
+            "Entries": {
+                "Wilford": {
+                    "MarkerCropOffset": -2
+                },
+            }
+        },
+        {
+            "LogName": "[Yagi] Wilford - Location Support",
+            "Action": "EditData",
+            "Target": "Mods/Bouhm.NPCMapLocations/Locations",
+            "When": {
+                "HasMod: |contains=Fernandtea.NewNPCWilford": true
+            },
+            "Entries": {
+                // Wilford - New Custom NPC - https://www.nexusmods.com/stardewvalley/mods/7313
+                "EastWoods": {
+                    "MapVectors": [
+                        {
+                            "MapX": 960,
+                            "MapY": 250
+                        }
+                    ]
+                }
+            }
+        },
+    ]
+}

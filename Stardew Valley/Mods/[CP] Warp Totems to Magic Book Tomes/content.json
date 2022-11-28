@@ -1,0 +1,423 @@
+{
+	"Format": "1.25.0",
+	"ConfigSchema": {
+	
+		
+		"Rain Totem": {
+			"AllowValues": "vanilla, 1, 2",
+			"Default": "2",
+		},
+		
+		
+		"Warp Totem - Farm": {
+			"AllowValues": "vanilla, 1, 2",
+			"Default": "2",
+		},
+		"Warp Totem - Mountains": {
+			"AllowValues": "vanilla, 1, 2",
+			"Default": "2",
+		},
+		"Warp Totem - Beach": {
+			"AllowValues": "vanilla, 1, 2",
+			"Default": "2",
+		},
+		"Warp Totem - Desert": {
+			"AllowValues": "vanilla, 1purple, 2purple, 1yellow, 2yellow",
+			"Default": "2purple",
+		},
+		"Warp Totem - Ginger Island": {
+			"AllowValues": "vanilla, 1, 2",
+			"Default": "2",
+		},
+		
+		
+		"Warp Totem - Ridgeside Village": {
+			"AllowValues": "vanilla, 1, 2",
+			"Default": "2",
+		},
+		"Warp Totem - East Scarp": {
+			"AllowValues": "vanilla, 1, 2",
+			"Default": "2",
+		},
+		
+		"Warp Totem - Aurora Vineyard": {
+			"AllowValues": "vanilla, 1, 2",
+			"Default": "2",
+		},
+		"Warp Totem - Mineral Town": {
+			"AllowValues": "vanilla, 1, 2",
+			"Default": "2",
+		},
+		"Warp Totem - Durin's Rest": {
+			"AllowValues": "vanilla, 1, 2",
+			"Default": "2",
+		},
+		
+		
+		
+	},
+	
+	
+	"Changes": [
+		
+		
+		//Durin's rest
+		
+		
+		
+		{
+    "Action": "EditImage",
+    "Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet: Warp Totem: Durin's Rest}}",
+    "FromFile": "assets/tomes1.png",
+	
+	"FromArea": { "X": 80, "Y": 0, "Width": 16, "Height": 16 },
+	"When": {
+				"HasMod |contains=NoFogBob.DurinsRestJsonAssets": "true",
+				"HasMod |contains=spacechase0.JsonAssets": "true",
+				"Warp Totem - Mineral Town": "2",
+				},
+			},
+			
+		{
+			"Action": "EditImage",
+    "Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet: Warp Totem: Durin's Rest}}",
+    "FromFile": "assets/tomes1.png",
+	
+	"FromArea": { "X": 80, "Y": 16, "Width": 16, "Height": 16 },
+	"When": {
+				"HasMod |contains=NoFogBob.DurinsRestJsonAssets": "true",
+				"HasMod |contains=spacechase0.JsonAssets": "true",
+				"Warp Totem - Mineral Town": "1",
+				},
+			},
+		
+		//Mineral Town
+		
+		{
+    "Action": "EditImage",
+    "Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet: Warp Totem: Mineral Town}}",
+    "FromFile": "assets/tomes1.png",
+	
+	"FromArea": { "X": 64, "Y": 0, "Width": 16, "Height": 16 },
+	"When": {
+				"HasMod |contains=MineralTownArchitects.MTJA": "true",
+				"HasMod |contains=spacechase0.JsonAssets": "true",
+				"Warp Totem - Mineral Town": "1",
+				},
+			},
+				{
+    "Action": "EditImage",
+    "Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet: Warp Totem: Mineral Town}}",
+    "FromFile": "assets/tomes1.png",
+	
+	"FromArea": { "X": 64, "Y": 16, "Width": 16, "Height": 16 },
+	"When": {
+				"HasMod |contains=MineralTownArchitects.MTJA": "true",
+				"HasMod |contains=spacechase0.JsonAssets": "true",
+				
+				"Warp Totem - Mineral Town": "2",
+				
+				},
+			},
+		//Ridgeside
+		
+		{
+    "Action": "EditImage",
+    "Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet: Warp Totem: Ridgeside}}",
+    "FromFile": "assets/tomes1.png",
+	
+	"FromArea": { "X": 16, "Y": 16, "Width": 16, "Height": 16 },
+	"When": {
+				"HasMod |contains=Rafseazz.RSVJA": "true",
+				"HasMod |contains=spacechase0.JsonAssets": "true",
+				
+				"Warp Totem - Ridgeside Village": "1",
+				
+				},
+			
+    "ToArea": {
+        "X": "{{spacechase0.JsonAssets/ObjectSpriteX: Warp Totem: Ridgeside}}",
+        "Y": "{{spacechase0.JsonAssets/ObjectSpriteY: Warp Totem: Ridgeside}}",
+        "Width": "16",
+        "Height": "16",
+		}
+		},
+		
+		
+		{
+    "Action": "EditImage",
+    "Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet: Warp Totem: Ridgeside}}",
+    "FromFile": "assets/tomes1.png",
+	"FromArea": { "X": 16, "Y": 0, "Width": 16, "Height": 16 },
+	"When": {
+				"HasMod |contains=Rafseazz.RSVJA": "true",
+				"HasMod |contains=spacechase0.JsonAssets": "true",
+				
+				"Warp Totem - Ridgeside Village": "2",
+				
+				},
+			
+    "ToArea": {
+        "X": "{{spacechase0.JsonAssets/ObjectSpriteX: Warp Totem: Ridgeside}}",
+        "Y": "{{spacechase0.JsonAssets/ObjectSpriteY: Warp Totem: Ridgeside}}",
+        "Width": "16",
+        "Height": "16",
+		}
+		},
+
+
+
+		
+		//East Scarp
+		{
+    "Action": "EditImage",
+    "Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet: Scarp Warp Totem}}",
+    "FromFile": "assets/tomes1.png",
+	"FromArea": { "X": 32, "Y": 16, "Width": 16, "Height": 16 },
+	"When": {
+				
+				"HasMod |contains=LemurKat.EastScarpe.JA": "true",
+				"HasMod |contains=spacechase0.JsonAssets": "true",
+				"Warp Totem - East Scarp": "1",
+				
+				},
+			
+    "ToArea": {
+        "X": "{{spacechase0.JsonAssets/ObjectSpriteX: Scarp Warp Totem}}",
+        "Y": "{{spacechase0.JsonAssets/ObjectSpriteY: Scarp Warp Totem}}",
+        "Width": "16",
+        "Height": "16",
+		}
+		},
+		
+		{
+    "Action": "EditImage",
+    "Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet: Scarp Warp Totem}}",
+    "FromFile": "assets/tomes1.png",
+	"FromArea": { "X": 32, "Y": 0, "Width": 16, "Height": 16 },
+	"When": {
+				
+				"HasMod |contains=LemurKat.EastScarpe.JA": "true",
+				"HasMod |contains=spacechase0.JsonAssets": "true",
+				"Warp Totem - East Scarp": "2",
+				},
+			
+    "ToArea": {
+        "X": "{{spacechase0.JsonAssets/ObjectSpriteX: Scarp Warp Totem}}",
+        "Y": "{{spacechase0.JsonAssets/ObjectSpriteY: Scarp Warp Totem}}",
+        "Width": "16",
+        "Height": "16",
+		}
+		},
+		
+		//aurora vineyard
+			{
+    "Action": "EditImage",
+    "Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet: Aurora Vineyard Totem}}",
+    "FromFile": "assets/tomes1.png",
+	"FromArea": { "X": 48, "Y": 16, "Width": 16, "Height": 16 },
+	"When": {
+			
+				"HasMod |contains=red.vineyardwarpJA": "true",
+				"HasMod |contains=spacechase0.JsonAssets": "true",
+				"Warp Totem - Aurora Vineyard": "1",
+				},
+			
+    "ToArea": {
+        "X": "{{spacechase0.JsonAssets/ObjectSpriteX: Aurora Vineyard Totem}}",
+        "Y": "{{spacechase0.JsonAssets/ObjectSpriteY: Aurora Vineyard Totem}}",
+        "Width": "16",
+        "Height": "16",
+		}
+		},
+		
+		{
+    "Action": "EditImage",
+    "Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet: Aurora Vineyard Totem}}",
+    "FromFile": "assets/tomes1.png",
+	"FromArea": { "X": 48, "Y": 0, "Width": 16, "Height": 16 },
+	"When": {
+				
+				
+				"HasMod |contains=red.vineyardwarpJA": "true",
+				"HasMod |contains=spacechase0.JsonAssets": "true",
+				"Warp Totem - Aurora Vineyard": "2",
+				},
+			
+    "ToArea": {
+        "X": "{{spacechase0.JsonAssets/ObjectSpriteX: Aurora Vineyard Totem}}",
+        "Y": "{{spacechase0.JsonAssets/ObjectSpriteY: Aurora Vineyard Totem}}",
+        "Width": "16",
+        "Height": "16",
+		}
+		},
+	
+		
+		
+		
+		
+		
+		//Rain Totem
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/tomes1.png",
+			"FromArea": { "X": 0, "Y": 16, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 144, "Y": 448, "Width": 16, "Height": 16 },
+			"When": {
+				"Rain Totem": "1",
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/tomes1.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 144, "Y": 448, "Width": 16, "Height": 16 },
+			"When": {
+				"Rain Totem": "2",
+			}
+		},
+		
+		
+		//Warp Totem - Farm 1
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/tomes.png",
+			"FromArea": { "X": 64, "Y": 16, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 256, "Y": 448, "Width": 16, "Height": 16 },
+			"When": {
+				"Warp Totem - Farm": "1",
+			}
+		},
+		//Warp Totem - Farm 2
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/tomes.png",
+			"FromArea": { "X": 64, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 256, "Y": 448, "Width": 16, "Height": 16 },
+			"When": {
+				"Warp Totem - Farm": "2",
+			}
+		},
+		
+		//Warp Totem - Mountains 1
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/tomes.png",
+			"FromArea": { "X": 80, "Y": 16, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 272, "Y": 448, "Width": 16, "Height": 16 },
+			"When": {
+				"Warp Totem - Mountains": "1",
+			}
+		},
+		//Warp Totem -  Mountains 2
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/tomes.png",
+			"FromArea": { "X": 80, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 272, "Y": 448, "Width": 16, "Height": 16 },
+			"When": {
+				"Warp Totem - Mountains": "2",
+			}
+		},
+		
+		//Warp Totem - Beach 1 
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/tomes.png",
+			"FromArea": { "X": 32, "Y": 16, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 288, "Y": 448, "Width": 16, "Height": 16 },
+			"When": {
+				"Warp Totem - Beach": "1",
+			}
+		},
+		//Warp Totem - Beach 2 
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/tomes.png",
+			"FromArea": { "X": 32, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 288, "Y": 448, "Width": 16, "Height": 16 },
+			"When": {
+				"Warp Totem - Beach": "2",
+			}
+		},
+		
+		//Warp Totem - Desert 1
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/tomes.png",
+			"FromArea": { "X": 0, "Y": 16, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 336, "Y": 160, "Width": 16, "Height": 16 },
+			"When": {
+				"Warp Totem - Desert": "1purple",
+			}
+		},
+		//Warp Totem - Desert 2
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/tomes.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 336, "Y": 160, "Width": 16, "Height": 16 },
+			"When": {
+				"Warp Totem - Desert": "2purple",
+			}
+		},
+		//Warp Totem - Desert 1alt
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/tomes.png",
+			"FromArea": { "X": 16, "Y": 16, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 336, "Y": 160, "Width": 16, "Height": 16 },
+			"When": {
+				"Warp Totem - Desert": "1yellow",
+			}
+		},
+		//Warp Totem - Desert 2alt
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/tomes.png",
+			"FromArea": { "X": 16, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 336, "Y": 160, "Width": 16, "Height": 16 },
+			"When": {
+				"Warp Totem - Desert": "2yellow",
+			}
+		},
+		
+		
+		//Warp Totem - Ginger Island 1
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/tomes.png",
+			"FromArea": { "X": 48, "Y": 16, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 352, "Y": 576, "Width": 16, "Height": 16 },
+			"When": {
+				"Warp Totem - Ginger Island": "1",
+			}
+		},
+		//Warp Totem - Ginger Island 2
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/tomes.png",
+			"FromArea": { "X": 48, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 352, "Y": 576, "Width": 16, "Height": 16 },
+			"When": {
+				"Warp Totem - Ginger Island": "2",
+			}
+		}
+
+	]
+}
+	

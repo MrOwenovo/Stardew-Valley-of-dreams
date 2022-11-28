@@ -1,0 +1,102 @@
+{
+  "Format": "1.21.0",
+  "Changes": [
+
+    {
+      "LogName": "NPC Manifestation",
+      "Action": "EditData",
+      "Target": "Data/NPCDispositions",
+      "Entries": {
+        "Damires": "adult/neutral/neutral/positive/female/non-datable/null/Other/fall 28/Marnie/Custom_DamiresHouse 6 5 3/Damires"
+		}
+    },
+    {
+      "LogName": "NPC Gift Tastes",
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "Entries": {
+        "Damires": "给我的？这非常特别！/417 1091 1259/你的善良感动了我。/-79 -80 -26 -7 -6 -5 614 446 444 433 279 253 114 113 111 106 104/一个很有趣的礼物，不是吗/-12 -2 1094 797 787 774 769 768 767 766 684 589 588 587 586 585 579 338 337 336 335 334 121 120 119 101 92/我宁愿避免评论。/-20 -4 1082 1090 1097 1098 1099 1100 1101 1102 814 812 733 732 730 729 728 727 685 578 457 456 447 445 394 393 392 372 265 242 227 226 225 228 219 218 213 212 214 209 204 203 202 198 153 152 118 117 116 1262 1263 1264 1265/谢谢你的友好/-81 -75 -27 815 807 773 772 432 430 349 308 305 247 206 107 100"
+		}
+    },
+    {
+      "LogName": "Animations",
+      "Action": "EditData",
+      "Target": "Data/animationdescriptions",
+      "Entries": {
+        "DamiresPhone": "16/16 16 16 16 16 16 16 16 16 16 16/16",
+        "Damires_Read": "17 17 17 17 17 17 17/18 18 18 18 18 18 18 18 18 18 18 18 18 18 17 17 17 17 17 17 17 19 19 19 19 19 19 19 19 19 19 19 19 19 19 17 17 17 17 17 17 17/17 17 17 17 0 0 0"
+		}
+    },
+    {
+      "LogName": "Damires Portraits",
+      "Action": "Load",
+      "Target": "Portraits/Damires",
+      "FromFile": "assets/Image/Damires.png"
+    },
+    {
+      "LogName": "Damires Sprites",
+      "Action": "Load",
+      "Target": "Characters/Damires",
+      "FromFile": "assets/Image/Sprite.png"
+    },
+    {
+      "LogName": "Dialogue",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/Damires",
+      "FromFile": "assets/Dialogue/Dialogue.json"
+    },
+    {
+      "LogName": "Schedule",
+      "Action": "Load",
+      "Target": "Characters/schedules/Damires",
+      "FromFile": "assets/Schedule/Schedule.json"
+    },
+    {
+      "LogName": "Festivals",
+      "Action": "Include",
+      "FromFile": "assets/Festivals/fall27.json, assets/Festivals/spring13.json, assets/Festivals/spring24.json, assets/Festivals/winter25.json"
+    },
+    {
+      "LogName": "Festival Dialogue",
+      "Action": "Include",
+      "FromFile": "assets/Festivals/Dialogue/fall27.json, assets/Festivals/Dialogue/spring13.json, assets/Festivals/Dialogue/spring24.json, assets/Festivals/Dialogue/winter25.json"
+    },
+
+    //Cane's Resource for a list of Music IDs: https://docs.google.com/spreadsheets/d/1CpDrw23peQiq-C7F2FjYOMePaYe0Rc9BwQsj3h6sjyo/edit#gid=239695361
+    //(0 = up, 1 = right, 2 = down, 3 = left)
+
+    { //4 heart event, 9:00 am - 4:00 pm, animal shop must be sunny
+
+      "LogName": "DamiresEvent",
+      "Action": "EditData",
+      "Target": "Data/Events/AnimalShop",
+      "Entries": {
+        "7176000/d Mon Tue Thu Fri/w sunny/f Damires 1000/t 900 1600/p Damires": "marnieShop/13 14/farmer -30 30 0 Lewis -29 30 0 Marnie 12 14 2 Damires 14 16 0/skippable/pause 1000/speak Damires \"玛妮，你今天看起来很沮丧，我的朋友，发生了什么事$2\"/pause 400/speak Marnie \"啊……（叹息）……我最近感到有点孤独。$s#$b#谢恩一直在努力工作，贾思也一直在努力学习，我不是在抱怨他们，但有时当你不在这里时，我就独自一人在这个牧场上。$s\"/pause 1000/speak Damires \"哎。。。我明白。。。$2\"/pause 3000/playSound doorClose/warp Lewis 13 18/pause 1000/emote Marnie 32/pause 300/faceDirection Damires 2/pause 300/speak Lewis \"刘易斯，早上好！$h\"/pause 500/move Lewis -2 0 0 true/move Lewis 0 -2 0/faceDirection Damires 3/speak Damires \"早上好，先生~$0\"/speak Marnie \"早上好，刘易斯，我能帮你什么？$0\"/pause 500/speak Lewis \"我来这里只是为了确保玛尼的所有业务需求都得到满足。$0\"/pause 1000/speak Damires \"嗯…嗯，我希望我回家后，你能真正照顾玛妮的需要。$5\"/pause 1000/emote Marnie 60/faceDirection Lewis 1/emote Lewis 12/pause 300/speak Lewis \"达米尔斯夫人是什么意思？$4\"/pause 500/speak Marnie \"达米尔斯?$4\"/pause 500/speak Damires \"为什么这么紧张？$1#$b#多年来，我一直在处理监管问题、检查和签名，为什么你对我的演讲态度如此反常？$1\"/pause 500/emote Lewis 60/emote Marnie 60/pause 300/speak Lewis \"哦，达米尔斯夫人，多注意你的话。$5\"/pause 500/speak Marnie \"...$2\"/pause 500/warp farmer 13 18/playSound doorClose/pause 500/faceDirection Damires 2/faceDirection Lewis 2/pause 500/emote farmer 8/pause 300/speak Damires \"早上好@，你是不是也来帮玛妮解决业务需求的？$5\"/pause 500/emote Lewis 60/emote Marnie 60/pause 300/emote farmer 8/globalFade/viewport -1000 -1000/end"
+		}
+    },
+
+	{ //7 heart event, 7:00 am - 7:30 am
+
+      "LogName": "DamiresEvent",
+      "Action": "EditData",
+      "Target": "Data/Events/BusStop",
+      "Entries": {
+        "7176001/f Damires 1750/t 700 730/e 7176000/w rainy/p Damires": "winter2/8 13/Damires 9 11 3 farmer 12 24 0/skippable/showFrame Damires 16/speak Damires \"…是的，先生。埃弗拉尔多，我知道文件延迟了，但我无能为力。$4#$b#尽管我从上个星期开始就一直在索要文件，但政府工作人员仍然没有给我，我对此无能为力。$4\"/pause 300/speak Damires \"我明白，好吧，我不保证任何事情，正如我所说，他们的沮丧是管理层的错，他们不是我的下属，所以我可以强迫他们做一些事情。$4#$b#我会尽量在第二天上班时拿到文件。再见，祝你今天愉快。$4\"/emote Damires 12/showFrame Damires 6/pause 500/move farmer 0 -13 3/pause 1000/speak Damires \"哦@... 你好吗?$2\"/emote Damires 60/pause 300/question fork1 \"#发生了什么事？你想聊聊吗？#嗯…老实说，我最近表现不太好。\"/fork DamiresSevenResponse/pause 1000/speak Damires \"在董事会工作不是一项容易的任务，在行政事务上对你的要求很高。$2#$b#我真的很努力得到这个职位…有时我怀疑它是否真的值得。。。$2#$b#工作本身并不让人筋疲力尽，但人们……我喜欢去农场，做检查，看到田里的动物快乐地生活。#$b#当我来到一个社区，人们欢迎我，不是因为我的权威，而是因为他们知道我的工作很重要。。。$2\"/emote Damires 12/pause 300/speak Damires \"然而，当我到达议会总部时，我必须处理其他人的混乱和混乱。。。$2#$b#有时他们会责怪我，即使事情不取决于我。$2#$b#当事情发生的时候，这让我压力很大，有时我想把所有的东西都扔到上级的脸上，并说我不需要它。。。$3#$b#好吧，毕竟，我总是去RH发泄，但今天它和你在一起。。。#$b#非常感谢你听我讲话，有一个好朋友能让我敞开心扉，这让我感到很安慰。$1\"/pause 500/emote farmer 32/emote Damires 32/friendship Damires 150/globalFade/viewport -1000 -1000/end",
+        "DamiresSevenResponse": "pause 500/speak Damires \"生活中的问题总是复杂的，但我们最终不得不处理。。。$2#$b#你知道，我们有一种焦虑的习惯，对短期内不会发生的事情产生期望，而不受我们的控制会让我们非常沮丧。。。$2#$b#好吧，一位老朋友的建议是：如果你需要哭，在你需要的时候哭，在哪里哭！#$b#我们被教导，哭泣是软弱的表现，但那只是说话让公牛睡着，悲伤是一种与快乐一样必要的情绪。#$b#我们忽略了这一点，因为他们就是这样教我们的，但当你明白哭泣是减轻你负重的一种方式，它也是一种错误的警告。。。$2#$b#好吧，你更了解生活……好吧……我希望这位几乎是女士的女士给了你一些好建议……谢谢你的倾听。$1\"/pause 500/emote farmer 32/emote Damires 32/friendship Damires 50/globalFade/viewport -1000 -1000/end"
+		}
+    },
+
+    { //10 heart event, enter town 8:00 pm - 12:00 am in 2 year
+
+      "LogName": "DamiresEvent",
+      "Action": "EditData",
+      "Target": "Data/Events/Town",
+      "Entries": {
+        "7176002/F/d Mon Tue Thu Fri/w sunny/y 2/z winter/f Damires 2500/e 7176001/p Damires": "moonlightJellies/54 100/Damires 54 100 2 farmer 54 90 2/skippable/speak Damires \"……啊……为什么事情必须这样？$2\"/pause 500/move farmer 0 8 2/pause 500/jump Damires/emote Damires 16/faceDirection Damires 0/speak Damires \"....你吓了我一跳 @...$2\"/emote farmer 8/pause 500/faceDirection Damires 2/emote Damires 60/pause 1000/move farmer 1 0 2 true/move farmer 0 2 2/pause 1000/speak Damires \"我想知道我是否不能放下愤怒和恐惧，采取行动。。。$2\"/emote farmer 8/pause 300/question fork1 \"#你愿意和我说说吗？#我不知道你在说什么，但我想你会找到答案的。\"/fork DamiresTenResponse/pause 1000/speak Damires \"啊……（叹息）……我是一个梦想成为海盗的渔民和梦想过上更好生活的农民的女儿。。。$2#$b#我父亲总是告诉我我喜欢大海，然而，我总是在尝试时溺水而死，即使有他的帮助。。。$2\"/pause 300/emote Damires 40/pause 300/speak Damires \"尽管如此，我还是一直热爱大海并钦佩它，尤其是看到美丽的鱼在茫茫大海中游泳。。。#$b#然而，由于不同的梦想，我的父亲和母亲总是有一些分歧。。。$2#$b#我父亲喜欢在海里航行，有时他会带我去，然而，有一天我去码头等他回来。。。$2\"/pause 1000/emote Damires 60/pause 300/speak Damires \"那天，大海波涛汹涌，风很大，我应母亲的要求出去了，母亲对他出海感到愤怒，让她独自照顾农场。。。$2#$b#嗯…你能想象一个孩子在海滩上看到他亲爱的父亲的小船残骸是什么感觉吗。。。$2\"/pause 1000/emote Damires 60/emote farmer 60/pause 300/stopMusic/speak Damires \"(叹气)$2\"/pause 1000/speak Damires \"从那以后，我开始对来自海洋的东西感到愤怒，不是因为水中的所有生物都很糟糕，而是因为它们会让人回想起糟糕的回忆。。。$2\"/pause 500/playMusic desolate/speak Damires \"老实说，我怀念凉水抚摸我双脚的感觉，怀念柔和的微风，怀念迷人的深蓝色，怀念它所提供的茂盛的动植物。\"/pause 500/speak Damires \"啊啊……（叹息）……我多么喜欢呆在我父亲的船上，他一边谈论大海的美丽，一边钓鱼，一边教我。。。$1#$b#我记得有一天，我爸爸钓到一条白色条纹的橙色鱼，他给我看，我很喜欢它，它很小，但很可爱。\"/pause 500/speak Damires \"事发后，我母亲禁止我去海边，因为她担心我会和他分手。$2#$b#我并不真的喜欢牧场生活，然而，我的母亲教会了我，让我像喜欢大海一样喜欢它。$2#$b#我最终享受了女牛仔的生活，即使在经济困难的情况下，我母亲还是设法让我读完了农业大学。#$b#她希望我不要像她一样结束，并要求我努力工作，我努力工作到了顶峰，得到了现在的职位。\"/pause 300/speak Damires \"我喜欢我的生活，我喜欢我所做的，但在内心深处，我仍然想在大海中。。。#$b#好了，很抱歉，我必须打扰你或者用我的折磨哄你入睡，谢谢你的倾听……你不知道这对我有多重要。$1\"/pause 500/emote farmer 32/emote Damires 32/globalFade/viewport -1000 -1000/end",
+		"DamiresTenResponse": "pause 500/speak Damires \"嗯…你知道，我知道我不太擅长表达自己，但谢谢你信任我来解决我的痛苦。。。$2\"/pause 500/speak Damires \"好吧…我会考虑的…回头见。\"/pause 500/move Damires 0 -8 0/globalFade/viewport -1000 -1000/end"
+		}
+    },
+  ]
+}
+		
+		

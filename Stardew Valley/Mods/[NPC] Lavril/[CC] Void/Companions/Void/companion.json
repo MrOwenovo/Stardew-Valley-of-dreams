@@ -1,0 +1,80 @@
+{
+  "Name": "VoidSoul",
+  "Type": "Walking",
+  "EnableFarmerCollision": true, // Optional parameter, determines if the companion will collide with the farmer | NOTE: Only usable with map-based spawns, does nothing for follower-based spawns (e.g. with rings)
+  "SpawnDirection": 2,
+
+
+  "TravelSpeed": 1, // Speed at which the companion follows the player
+  "MaxHaltTime": 0,
+  "IdleBehavior": "Wander",
+
+  "SpawnOffsetX": 0,
+  "SpawnOffsetY": 0,
+  "FrameSizeWidth": 16,
+  "FrameSizeHeight": 32,
+
+  "InspectionDialogue": "我正在巡逻。你有得到进来的许可吗？要是没有的话，我就要没收你所有的小饼干！", // Optional parameter, determines what dialogue appears when interacting with the companion | NOTE: Only applicable for map-based spawns
+  "Portrait": {
+    "PortraitDisplayName": "虚空",
+    "FrameSizeWidth": 64,
+    "FrameSizeHeight": 64,
+    "FrameIndex": 0
+  },
+
+  "RightAnimation": {
+    "StartingFrame": 4,
+    "NumberOfFrames": 4,
+    "Duration": 180,
+
+    "IdleAnimation": {
+      "ManualFrames": [
+        {
+          "Frame": 4
+        }
+      ]
+    }
+  },
+  "DownAnimation": {
+    "StartingFrame": 0,
+    "NumberOfFrames": 4,
+    "Duration": 200,
+
+    "IdleAnimation": {
+      "ManualFrames": [
+        {
+          "Frame": 0
+        }
+      ]
+    }
+  },
+  "LeftAnimation": {
+    "StartingFrame": 12,
+    "NumberOfFrames": 4,
+    "Duration": 180,
+
+    "IdleAnimation": {
+      "ManualFrames": [
+        {
+          "Frame": 12
+        }
+      ]
+    }
+  },
+  "UpAnimation": {
+    "StartingFrame": 8,
+    "NumberOfFrames": 4,
+    "Duration": 200,
+
+    "IdleAnimation": {
+      "ManualFrames": [
+        {
+          "Frame": 8
+        }
+      ]
+    }
+  },
+  "MaxDistanceBeforeTeleport": -1
+
+
+}

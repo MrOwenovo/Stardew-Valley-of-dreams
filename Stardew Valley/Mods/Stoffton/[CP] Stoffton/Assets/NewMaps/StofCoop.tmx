@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="16" height="10" tilewidth="16" tileheight="16" infinite="0" nextlayerid="7" nextobjectid="2">
+ <properties>
+  <property name="AmbientLight" value="110 110 110"/>
+  <property name="Light_asdf" value="6 2 6 10 2 6 14 2 6 2 9 6 7 6 4 13 6 4"/>
+  <property name="Warp" value="2 10 Custom_Stof_NewPasture 31 13"/>
+ </properties>
+ <tileset firstgid="1" name="Coop" tilewidth="16" tileheight="16" tilecount="84" columns="4">
+  <image source="coopTiles" width="64" height="336"/>
+  <tile id="12">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+  <tile id="33">
+   <properties>
+    <property name="Passable" type="int" value="0"/>
+    <property name="Trough" value="T"/>
+   </properties>
+  </tile>
+  <tile id="53">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+  <tile id="56">
+   <properties>
+    <property name="Type" value="Wood"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="85" name="z_objects" tilewidth="16" tileheight="16" tilecount="936" columns="24">
+  <image source="z_objects.png" width="384" height="624"/>
+ </tileset>
+ <tileset firstgid="1021" name="z_Craftables" tilewidth="16" tileheight="16" tilecount="576" columns="8">
+  <image source="z_Craftables.png" width="128" height="1152"/>
+ </tileset>
+ <layer id="1" name="Back" width="16" height="10">
+  <data encoding="csv">
+17,13,13,13,13,13,13,13,13,13,13,13,0,0,0,17,
+17,13,13,13,13,13,13,13,13,13,13,13,13,13,13,17,
+21,13,13,13,13,13,13,13,13,13,13,13,13,13,13,21,
+54,66,54,54,54,54,34,34,34,34,34,34,34,34,54,54,
+13,13,55,14,16,57,47,54,54,54,47,54,54,54,47,55,
+13,55,13,22,24,13,13,55,13,13,37,13,55,13,13,55,
+13,55,37,55,13,56,13,13,13,55,13,13,13,56,13,55,
+13,55,13,13,13,55,14,16,55,14,15,16,55,14,15,55,
+13,55,13,55,13,13,22,24,56,18,19,24,13,22,19,55,
+13,13,54,13,13,13,13,13,13,22,13,13,13,13,13,0
+</data>
+ </layer>
+ <layer id="2" name="Buildings" width="16" height="10">
+  <data encoding="csv">
+1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,3,
+5,62,17,17,17,17,25,61,62,17,25,17,17,62,25,7,
+5,21,48,21,21,29,30,30,30,30,30,30,30,30,31,7,
+5,73,1114,1227,1225,33,263,263,263,263,263,263,263,263,35,7,
+5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,
+5,0,0,0,0,0,0,0,0,0,0,0,0,0,58,7,
+5,63,0,0,0,0,0,0,0,0,0,0,0,0,63,7,
+5,60,0,0,0,0,0,0,0,0,0,0,0,0,0,7,
+5,64,0,0,0,0,0,0,0,0,0,0,0,0,0,7,
+49,5,0,7,49,49,49,49,49,49,49,49,49,49,49,49
+</data>
+ </layer>
+ <layer id="3" name="Front" width="16" height="10">
+  <data encoding="csv">
+1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,3,
+5,65,0,0,0,0,0,0,0,0,0,0,0,0,0,7,
+5,69,1106,1219,1217,0,0,0,0,0,0,0,0,0,0,7,
+5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,
+5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,
+5,59,0,0,0,0,0,0,0,0,0,0,0,0,59,7,
+5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,
+5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7,
+9,4,0,8,10,10,10,10,10,10,10,10,10,10,10,11,
+49,9,10,11,49,49,49,49,49,49,49,49,49,49,49,49
+</data>
+ </layer>
+ <objectgroup id="4" name="Back"/>
+ <objectgroup id="5" name="Buildings"/>
+ <objectgroup id="6" name="Front"/>
+</map>

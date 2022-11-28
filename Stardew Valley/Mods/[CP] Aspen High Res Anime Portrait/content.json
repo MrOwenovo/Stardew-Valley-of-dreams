@@ -1,0 +1,84 @@
+{
+	"Format": "1.26.0",
+	
+	"DynamicTokens": [
+	  
+	  {
+		"Name": "outfit",
+		"Value": "spring",
+		"When": {
+			"AspenDefaultOutfit": "spring"
+		}
+	  },
+	  {
+		"Name": "outfit",
+		"Value": "summer",
+		"When": {
+			"AspenDefaultOutfit": "summer"
+		}
+	  }
+	],
+	
+	"ConfigSchema": {
+	  
+		//Seasonal outfits
+		"AspenSeasonalOutfits": {
+		"AllowValues": "true, false",
+			"Default": "true"
+		},
+		
+		//Sets Aspen's default outfit
+		"AspenDefaultOutfit": {
+		"AllowValues": "spring, summer",
+			"Default": "summer"
+		}
+	  },
+		
+	"Changes": [
+		{
+			"Action": "Load",
+			"Target": "Mods/AspenAnime/Aspen_spring, Mods/AspenAnime/Aspen_summer",
+			"FromFile": "assets/Portraits/{{TargetWithoutPath}}.png"
+        },
+		
+		
+		{
+			"Action": "Load",
+			"Target": "Mods/HDPortraits/Aspen",
+			"FromFile": "assets/Portraits/size.json"
+	    },
+		
+		
+		{
+			"Action": "EditData",
+			"Target": "Mods/HDPortraits/Aspen",
+			"Entries": {
+				"Portrait": "Mods/AspenAnime/Aspen_{{outfit}}"
+			},
+			"When": {
+				"AspenSeasonalOutfits": "false"
+			 }
+		},	
+		{
+			"Action": "EditData",
+			"Target": "Mods/HDPortraits/Aspen",
+			"Entries": {
+				"Portrait": "Mods/AspenAnime/Aspen_{{outfit}}"
+			},
+			"When": {
+				"AspenSeasonalOutfits": "true", "Season": "fall, winter"
+			 }
+		},	
+		{
+			"Action": "EditData",
+			"Target": "Mods/HDPortraits/Aspen",
+			"Entries": {
+				"Portrait": "Mods/AspenAnime/Aspen_{{season}}"
+			},
+			"When": {
+				"AspenSeasonalOutfits": "true", "Season": "spring, summer"
+			 }
+		}
+		
+	]
+}

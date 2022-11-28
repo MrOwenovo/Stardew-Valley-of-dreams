@@ -1,0 +1,675 @@
+{
+    "Changes": [
+
+      //Sterling
+      {
+        "LogName": "Sprites & Portraits Uniform",
+        "Action": "EditImage",
+        "Target": "Characters/Sterling, Portraits/Sterling",
+        "FromFile": "assets/{{Target}}/sterling_uniform.png",
+        "When": {"LocationName": "SeedShop"},
+        "Update": "OnLocationChange"
+      },
+
+          //Beach Changes
+          {
+            "LogName": "Sprites Beach at the Beach",
+            "Action": "EditImage",
+            "Target": "Characters/Sterling",
+            "FromFile": "assets/Characters/Sterling/Sterling_beach.png",
+            "When": {"LocationName": "Beach"},
+            "Update": "OnLocationChange"
+          },
+          {
+            "LogName": "Portrait Beach at the Beach",
+            "Action": "EditImage",
+            "Target": "Portraits/Sterling",
+            "FromFile": "assets/Portraits/Sterling/Sterling_beach.png",
+            "When": {"LocationName": "Beach"},
+            "Update": "OnLocationChange"
+          },
+          {
+            "LogName": "Portrait Beach",
+            "Action": "Load",
+            "Target": "Portraits/Sterling_Beach",
+            "FromFile": "assets/Portraits/Sterling/Sterling_beach.png"
+          },
+          {
+            "LogName": "Sprites Beach",
+            "Action": "Load",
+            "Target": "Characters/Sterling_Beach",
+            "FromFile": "assets/Characters/Sterling/Sterling_beach.png"
+          },
+
+      //Mia
+      {
+          "LogName": "Sprites Workout",
+          "Action": "EditImage",
+          "Target": "Characters/Mia",
+          "FromFile": "assets/Characters/Mia/mia_sports.png",
+          "When": {"LocationName": "SeedShop",
+                   "DayOfWeek": "Tuesday"},
+          "Update": "OnLocationChange"
+        },
+        {
+          "LogName": "Portrait Workout",
+          "Action": "EditImage",
+          "Target": "Portraits/Mia",
+          "FromFile": "assets/Portraits/Mia/mia_sports.png",
+          "When": {"LocationName": "SeedShop",
+                   "DayOfWeek": "Tuesday"},
+          "Update": "OnLocationChange"
+        },
+          {
+            "LogName": "Portrait Mia Beach",
+            "Action": "Load",
+            "Target": "Portraits/Mia_Beach",
+            "FromFile": "assets/Portraits/Mia/mia_beach.png"
+          },
+          {
+            "LogName": "Sprites Mia Beach",
+            "Action": "Load",
+            "Target": "Characters/Mia_Beach",
+            "FromFile": "assets/Characters/Mia/mia_beach.png"
+          },
+
+      // Henry 
+           {
+            "LogName": "Portrait Henry Beach",
+            "Action": "Load",
+            "Target": "Portraits/henry_beach",
+            "FromFile": "assets/Portraits/Henry/henry_beach.png"
+          },
+          {
+            "LogName": "Sprites Henry Beach",
+            "Action": "Load",
+            "Target": "Characters/henry_beach",
+            "FromFile": "assets/Characters/Henry/henry_beach.png"
+          },
+
+     //FESTIVAL PORTRAIT CHANGES
+     //Spirit's eve   
+     {
+      "LogName": "Portrait Mia Eve",
+      "Action": "EditImage",
+      "Target": "Portraits/Mia, Characters/Mia",
+      "FromFile": "assets/{{Target}}/mia_{{Random:royal, super|key=dressup}}.png",
+      "When":{"Day":"27",
+              "Season":"Fall"}
+    },
+  
+    {
+      "LogName": "Portrait Sterling Eve",
+      "Action": "EditImage",
+      "Target": "Portraits/Sterling, Characters/Sterling",
+      "FromFile": "assets/{{Target}}/sterling_{{Random:royal, super|key=dressup}}.png",
+      "When":{"Day":"27",
+              "Season":"Fall"}
+    },
+  
+
+     //Egg Festival
+
+            //Sterling
+        {
+            "LogName": "Sterling Portrait EggFestival",
+            "Action": "EditImage",
+            "Target": "Portraits/Sterling",
+            "FromFile": "assets/Portraits/Sterling/sterling_sdvfair.png",
+            "Update": "OnLocationChange",
+            "When": {
+            "DayEvent": "egg festival",
+            "LocationName": "Temp"
+            }
+        },
+        {
+            "LogName": "Sterling Sprites EggFestival",
+            "Action": "EditImage",
+            "Target": "Characters/Sterling",
+            "FromFile": "assets/Characters/Sterling/sterling_sdvfair.png",
+            "Update": "OnLocationChange",
+            "When": {
+            "DayEvent": "egg festival",
+            "LocationName": "Temp"
+            }
+        },
+          //Mia
+        {
+          "LogName": "Mia Portrait EggFestival",
+          "Action": "EditImage",
+          "Target": "Portraits/Mia",
+          "FromFile": "assets/Portraits/Mia/mia_eggfestival.png",
+          "Update": "OnLocationChange",
+          "When": {
+          "DayEvent": "egg festival",
+          "LocationName": "Temp"
+          }
+      },
+      {
+          "LogName": "Mia Sprites EggFestival",
+          "Action": "EditImage",
+          "Target": "Characters/Mia",
+          "FromFile": "assets/Characters/Mia/mia_eggfestival.png",
+          "Update": "OnLocationChange",
+          "When": {
+          "DayEvent": "egg festival",
+          "LocationName": "Temp"
+          }
+      },
+       //Henry
+       {
+        "LogName": "Henry Portrait EggFestival",
+        "Action": "EditImage",
+        "Target": "Portraits/Henry",
+        "FromFile": "assets/Portraits/Henry/henry_eggfestival.png",
+        "Update": "OnLocationChange",
+        "When": {
+        "DayEvent": "egg festival",
+        "LocationName": "Temp"
+        }
+    },
+    {
+        "LogName": "Henry Sprites EggFestival",
+        "Action": "EditImage",
+        "Target": "Characters/Henry",
+        "FromFile": "assets/Characters/Henry/henry_eggfestival.png",
+        "Update": "OnLocationChange",
+        "When": {
+        "DayEvent": "egg festival",
+        "LocationName": "Temp"
+        }
+    },
+
+        // Flower dance
+
+            //Sterling
+          {
+            "LogName": "Sterling Portrait Flower Dance",
+            "Action": "EditImage",
+            "Target": "Portraits/Sterling",
+            "FromFile": "assets/Portraits/Sterling/sterling_flowerdance.png",
+            "Update": "OnLocationChange",
+            "When": {
+              "DayEvent": "flower dance",
+              "LocationName": "Temp"
+            }
+          },
+          {
+            "LogName": "Sterling Sprites Flower Dance",
+            "Action": "EditImage",
+            "Target": "Characters/Sterling",
+            "FromFile": "assets/Characters/Sterling/sterling_flowerdance.png",
+            "Update": "OnLocationChange",
+            "When": {
+              "DayEvent": "flower dance",
+              "LocationName": "Temp"
+            }
+          },
+              //Mia
+          {
+            "LogName": "Mia Portrait Flower Dance",
+            "Action": "EditImage",
+            "Target": "Portraits/Mia",
+            "FromFile": "assets/Portraits/Mia/mia_flowerdance.png",
+            "Update": "OnLocationChange",
+            "When": {
+              "DayEvent": "flower dance",
+              "LocationName": "Temp"
+            }
+          },
+          {
+            "LogName": "Mia Sprites Flower Dance",
+            "Action": "EditImage",
+            "Target": "Characters/Mia",
+            "FromFile": "assets/Characters/Mia/mia_flowerdance.png",
+            "Update": "OnLocationChange",
+            "When": {
+              "DayEvent": "flower dance",
+              "LocationName": "Temp"
+            }
+          },
+                //Henry
+          {
+            "LogName": "Henry Portrait Flower Dance",
+            "Action": "EditImage",
+            "Target": "Portraits/Henry",
+            "FromFile": "assets/Portraits/Henry/henry_flowerdance.png",
+            "Update": "OnLocationChange",
+            "When": {
+              "DayEvent": "flower dance",
+              "LocationName": "Temp"
+            }
+          },
+          {
+            "LogName": "Henry Sprites Flower Dance",
+            "Action": "EditImage",
+            "Target": "Characters/Henry",
+            "FromFile": "assets/Characters/Henry/henry_flowerdance.png",
+            "Update": "OnLocationChange",
+            "When": {
+              "DayEvent": "flower dance",
+              "LocationName": "Temp"
+            }
+          },
+
+        //Luau
+
+            //Sterling
+          {
+            "LogName": "Sterling Portrait Luau",
+            "Action": "EditImage",
+            "Target": "Portraits/Sterling",
+            "FromFile": "assets/Portraits/Sterling/sterling_luau.png",
+            "Update": "OnLocationChange",
+            "When": {
+              "DayEvent": "luau",
+              "LocationName": "Temp"
+            }
+          },
+          {
+            "LogName": "Sterling Sprite Luau",
+            "Action": "EditImage",
+            "Target": "Characters/Sterling",
+            "FromFile": "assets/Characters/Sterling/sterling_luau.png",
+            "Update": "OnLocationChange",
+            "When": {
+              "DayEvent": "luau",
+              "LocationName": "Temp"
+            }
+          },
+            //Mia
+           {
+            "LogName": "Mia Portrait Luau",
+            "Action": "EditImage",
+            "Target": "Portraits/Mia",
+            "FromFile": "assets/Portraits/Mia/mia_beach.png",
+            "Update": "OnLocationChange",
+            "When": {
+              "DayEvent": "luau",
+              "LocationName": "Temp"
+            }
+          },
+          {
+            "LogName": "Mia Sprite Luau",
+            "Action": "EditImage",
+            "Target": "Characters/Mia",
+            "FromFile": "assets/Characters/Mia/mia_beach.png",
+            "Update": "OnLocationChange",
+            "When": {
+              "DayEvent": "luau",
+              "LocationName": "Temp"
+            }
+          },
+             //Henry
+             {
+              "LogName": "Henry Luau",
+              "Action": "EditImage",
+              "Target": "Portraits/Henry, Characters/Henry",
+              "FromFile": "assets/{{Target}}/henry_{{Random:luau01,luau02 |key=henry-luauoutfits}}.png",
+              "Update": "OnLocationChange",
+              "When": {
+                "DayEvent": "luau",
+                "LocationName": "Temp"
+           }
+        },  
+        
+          //Moonlight Jellies
+
+            //Sterling
+          {
+            "LogName": "Sterling Portrait Jellies",
+            "Action": "EditImage",
+            "Target": "Portraits/Sterling",
+            "FromFile": "assets/Portraits/Sterling/sterling_moonlight.png",
+            "Update": "OnLocationChange",
+            "When": {
+              "DayEvent": "dance of the moonlight jellies",
+              "LocationName": "Temp"
+            }
+          },
+          {
+            "LogName": "Sterling Sprites Jellies",
+            "Action": "EditImage",
+            "Target": "Characters/Sterling",
+            "FromFile": "assets/Characters/Sterling/sterling_moonlight.png",
+            "Update": "OnLocationChange",
+            "When": {
+              "DayEvent": "dance of the moonlight jellies",
+              "LocationName": "Temp"
+            }
+          },
+             //Mia
+           {
+            "LogName": "Mia Portrait Jellies",
+            "Action": "EditImage",
+            "Target": "Portraits/Mia",
+            "FromFile": "assets/Portraits/Mia/mia_moonlightjellies.png",
+            "Update": "OnLocationChange",
+            "When": {
+              "DayEvent": "dance of the moonlight jellies",
+              "LocationName": "Temp"
+            }
+          },
+          {
+            "LogName": "Mia Sprites Jellies",
+            "Action": "EditImage",
+            "Target": "Characters/Mia",
+            "FromFile": "assets/Characters/Mia/mia_moonlightjellies.png",
+            "Update": "OnLocationChange",
+            "When": {
+              "DayEvent": "dance of the moonlight jellies",
+              "LocationName": "Temp"
+            }
+          },  
+             //Henry
+             {
+              "LogName": "Henry Jellies",
+              "Action": "EditImage",
+              "Target": "Portraits/Henry, Characters/Henry",
+              "FromFile": "assets/{{Target}}/henry_{{Random:moonlightjellies01,moonlightjellies02 |key=henry-jellies}}.png",
+              "Update": "OnLocationChange",
+              "When": {
+                "DayEvent": "dance of the moonlight jellies",
+                "LocationName": "Temp"
+           }
+        },  
+        //Stardew Valley Fair
+
+            //Sterling
+          {
+            "LogName": "Sterling Portrait SDV Fair",
+            "Action": "EditImage",
+            "Target": "Portraits/Sterling",
+            "FromFile": "assets/Portraits/Sterling/sterling_sdvfair.png",
+            "Update": "OnLocationChange",
+            "When": {
+              "DayEvent": "stardew valley fair",
+              "LocationName": "Temp"
+            }
+          },
+          {
+            "LogName": "Sterling Sprites SDV Fair",
+            "Action": "EditImage",
+            "Target": "Characters/Sterling",
+            "FromFile": "assets/Characters/Sterling/sterling_sdvfair.png",
+            "Update": "OnLocationChange",
+            "When": {
+              "DayEvent": "stardew valley fair",
+              "LocationName": "Temp"
+            }
+          },
+            //Mia
+           {
+            "LogName": "Mia Portrait SDV Fair",
+            "Action": "EditImage",
+            "Target": "Portraits/Mia",
+            "FromFile": "assets/Portraits/Mia/mia_svfair.png",
+            "Update": "OnLocationChange",
+            "When": {
+              "DayEvent": "stardew valley fair",
+              "LocationName": "Temp"
+            }
+          },
+          {
+            "LogName": "Mia Sprites SDV Fair",
+            "Action": "EditImage",
+            "Target": "Characters/Mia",
+            "FromFile": "assets/Characters/Mia/mia_svfair.png",
+            "Update": "OnLocationChange",
+            "When": {
+              "DayEvent": "stardew valley fair",
+              "LocationName": "Temp"
+            }
+          },
+            //Henry
+          {
+           "LogName": "Henry SDV Fair",
+           "Action": "EditImage",
+           "Target": "Portraits/Henry, Characters/Henry",
+           "FromFile": "assets/{{Target}}/henry_{{Random:svfair01,svfair02 |key=henry-fair}}.png",
+           "Update": "OnLocationChange",
+           "When": {
+             "DayEvent": "stardew valley fair",
+             "LocationName": "Temp"
+        }
+     },  
+  
+
+        //Ice Festival
+
+            //Sterling
+          {
+            "LogName": "Sterling Portrait Ice Festival",
+            "Action": "EditImage",
+            "Target": "Portraits/Sterling",
+            "FromFile": "assets/Portraits/Sterling/sterling_icefestival.png",
+            "Update": "OnLocationChange",
+            "When": {
+              "DayEvent": "festival of ice",
+              "LocationName": "Temp"
+            }
+          },
+          {
+            "LogName": "Sterling Sprites Ice Festival",
+            "Action": "EditImage",
+            "Target": "Characters/Sterling",
+            "FromFile": "assets/Characters/Sterling/sterling_icefestival.png",
+            "Update": "OnLocationChange",
+            "When": {
+              "DayEvent": "festival of ice",
+              "LocationName": "Temp"
+            }
+          },
+            //Mia
+          {
+            "LogName": "Mia Portrait Ice Festival",
+            "Action": "EditImage",
+            "Target": "Portraits/Mia",
+            "FromFile": "assets/Portraits/Mia/mia_icefestival.png",
+            "Update": "OnLocationChange",
+            "When": {
+              "DayEvent": "festival of ice",
+              "LocationName": "Temp"
+            }
+          },
+          {
+            "LogName": "Mia Sprites Ice Festival",
+            "Action": "EditImage",
+            "Target": "Characters/Mia",
+            "FromFile": "assets/Characters/Mia/mia_icefestival.png",
+            "Update": "OnLocationChange",
+            "When": {
+              "DayEvent": "festival of ice",
+              "LocationName": "Temp"
+            }
+          },
+            //Henry
+            {
+              "LogName": "Henry Portrait Ice Festival",
+              "Action": "EditImage",
+              "Target": "Portraits/Henry",
+              "FromFile": "assets/Portraits/Henry/henry_icefestival.png",
+              "Update": "OnLocationChange",
+              "When": {
+                "DayEvent": "festival of ice",
+                "LocationName": "Temp"
+              }
+            },
+            {
+              "LogName": "Henry Sprites Ice Festival",
+              "Action": "EditImage",
+              "Target": "Characters/Henry",
+              "FromFile": "assets/Characters/Henry/henry_icefestival.png",
+              "Update": "OnLocationChange",
+              "When": {
+                "DayEvent": "festival of ice",
+                "LocationName": "Temp"
+              }
+            },
+
+          
+
+        //Feast of the Winter Star
+
+              //Sterling
+            {
+                "LogName": "Sterling Winter Star",
+                "Action": "EditImage",
+                "Target": "Portraits/Sterling, Characters/Sterling",
+                "FromFile": "assets/{{Target}}/sterling_{{Random:winterstar01,winterstar02 |key=sterling-winterstar}}.png",
+                "Update": "OnLocationChange",
+                "When": {
+                  "DayEvent": "feast of the winter star",
+                  "LocationName": "Temp"
+             }
+          },      
+            //Mia 
+            {
+              "LogName": "Mia Winter Star",
+              "Action": "EditImage",
+              "Target": "Portraits/Mia, Characters/Mia",
+              "FromFile": "assets/{{Target}}/mia_{{Random:winterstar01,winterstar02 |key=mia-winterstar}}.png",
+              "Update": "OnLocationChange",
+              "When": {
+                "DayEvent": "feast of the winter star",
+                "LocationName": "Temp"
+           }
+        },   
+              //Henry
+             {
+              "LogName": "Henry Winter Star",
+              "Action": "EditImage",
+              "Target": "Portraits/Henry, Characters/Henry",
+              "FromFile": "assets/{{Target}}/henry_{{Random:feast01,feast02 |key=henry-winterstar}}.png",
+              "Update": "OnLocationChange",
+              "When": {
+                "DayEvent": "feast of the winter star",
+                "LocationName": "Temp"
+           }
+        },
+//----------------------------------------
+
+      //RSV Ember of Resolutions
+
+            /*Sterling
+          {
+            "LogName": "Sterling Portrait SDV Fair",
+            "Action": "EditImage",
+            "Target": "Portraits/Sterling",
+            "FromFile": "assets/Portraits/Sterling/sterling_sdvfair.png",
+            "Update": "OnLocationChange",
+            "When": {
+              "DayEvent": "Ember of Resolutions",
+              "LocationName": "Temp"
+         }
+          },
+          {
+            "LogName": "Sterling Sprites SDV Fair",
+            "Action": "EditImage",
+            "Target": "Characters/Sterling",
+            "FromFile": "assets/Characters/Sterling/sterling_sdvfair.png",
+            "Update": "OnLocationChange",
+            "When": {
+              "DayEvent": "Ember of Resolutions",
+              "LocationName": "Temp"
+         }
+          },
+            //Mia
+           {
+            "LogName": "Mia Portrait SDV Fair",
+            "Action": "EditImage",
+            "Target": "Portraits/Mia",
+            "FromFile": "assets/Portraits/Mia/mia_svfair.png",
+            "Update": "OnLocationChange",
+            "When": {
+              "DayEvent": "Ember of Resolutions",
+              "LocationName": "Temp"
+         }
+          },
+          {
+            "LogName": "Mia Sprites SDV Fair",
+            "Action": "EditImage",
+            "Target": "Characters/Mia",
+            "FromFile": "assets/Characters/Mia/mia_svfair.png",
+            "Update": "OnLocationChange",
+            "When": {
+              "DayEvent": "Ember of Resolutions",
+              "LocationName": "Temp"
+         }
+          },
+            //Henry
+          {
+           "LogName": "Henry SDV Fair",
+           "Action": "EditImage",
+           "Target": "Portraits/Henry, Characters/Henry",
+           "FromFile": "assets/{{Target}}/henry_{{Random:svfair01,svfair02 |key=henry-fair}}.png",
+           "Update": "OnLocationChange",
+           "When": {
+            "DayEvent": "Ember of Resolutions",
+            "LocationName": "Temp"
+       }
+     },
+     */
+
+    //RSV Gathering Festival
+
+        //Sterling
+      {
+        "LogName": "Sterling Portrait RSV Gathering",
+        "Action": "EditImage",
+        "Target": "Portraits/Sterling",
+        "FromFile": "assets/Portraits/Sterling/sterling_sdvfair.png",
+        "Update": "OnLocationChange",
+        "When": {
+          "DayEvent": "Ridgeside Gathering",
+          "LocationName": "Temp"
+     }
+      },
+      {
+        "LogName": "Sterling Sprites RSV Gathering",
+        "Action": "EditImage",
+        "Target": "Characters/Sterling",
+        "FromFile": "assets/Characters/Sterling/sterling_sdvfair.png",
+        "Update": "OnLocationChange",
+        "When": {
+          "DayEvent": "Ridgeside Gathering",
+          "LocationName": "Temp"
+     }
+      },
+        //Mia
+       {
+        "LogName": "Mia Portrait RSV Gathering",
+        "Action": "EditImage",
+        "Target": "Portraits/Mia",
+        "FromFile": "assets/Portraits/Mia/mia_svfair.png",
+        "Update": "OnLocationChange",
+        "When": {
+          "DayEvent": "Ridgeside Gathering",
+          "LocationName": "Temp"
+        }
+      },
+      {
+        "LogName": "Mia Sprites RSV Gathering",
+        "Action": "EditImage",
+        "Target": "Characters/Mia",
+        "FromFile": "assets/Characters/Mia/mia_svfair.png",
+        "Update": "OnLocationChange",
+        "When": {
+          "DayEvent": "Ridgeside Gathering",
+          "LocationName": "Temp"
+     }
+      },
+        //Henry
+      {
+       "LogName": "Henry RSV Gathering",
+       "Action": "EditImage",
+       "Target": "Portraits/Henry, Characters/Henry",
+       "FromFile": "assets/{{Target}}/henry_{{Random:svfair01,svfair02 |key=henry-fair}}.png",
+       "Update": "OnLocationChange",
+       "When": {
+        "DayEvent": "Ridgeside Gathering",
+        "LocationName": "Temp"
+   }
+ },    
+    ]
+}

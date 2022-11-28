@@ -1,0 +1,49 @@
+{
+  "Changes": [
+	//Sprite
+	{
+	  "Action": "Load",
+	  "Target": "applesauce.outstorage/movingboxplaced",
+	  "FromFile": "assets/movingboxplaced.png"
+	},
+
+	//Data
+	{
+	  "Action": "EditData",
+	  "Target": "furyx639.ExpandedStorage/Storages",
+	  "Entries": {
+		"movingboxplaced": {
+		            "DisplayName": "{{i18n: movingboxplaced.name}}",
+          		    "Description": "{{i18n: movingboxplaced.description}}",
+          		    "Image": "applesauce.outstorage/movingboxplaced",
+                            "Frames": 1,
+         		    "PlayerColor": false,
+          		    "OpenSound": "axe",
+			//Betterchests stuff
+        		    "BetterChestsData": {
+          		    "CollectItems": "Enabled",
+           		    "CustomColorPicker": "Disabled",
+           		    "FilterItems": "Enabled",
+        		    "FilterItemsList": [
+          			    "category_big_craftable",
+           			    "category_furniture"
+         			   ],
+         		   "OpenHeldChest": "Enabled",
+      		           "ResizeChest": "Enabled",
+			   "ResizeChestCapacity": 48
+			  			}
+			}
+		      }
+	            },
+  	 {
+      	"Action": "EditData",
+     	 "Target": "furyx639.ExpandedStorage/Buy",
+    	  "Entries": {
+     	     "movingboxplaced": {
+     	     "ShopID": "Carpenter",
+       	     "Price": 50000
+      	    }
+     	   }
+  	  }
+ 	 ] 
+	}

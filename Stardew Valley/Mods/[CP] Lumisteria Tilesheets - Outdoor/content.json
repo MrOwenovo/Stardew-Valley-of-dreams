@@ -1,0 +1,24 @@
+{
+  "Format": "1.24.0",
+  "Changes": [
+    {
+      "LogName": "Lumisteria Tilesheet",
+      "Action": "Load",
+      "Target": "maps/spring_mod_lumisteria_tilesheetsoutdoor_buildings, maps/summer_mod_lumisteria_tilesheetsoutdoor_buildings, maps/fall_mod_lumisteria_tilesheetsoutdoor_buildings, maps/winter_mod_lumisteria_tilesheetsoutdoor_buildings",
+      "FromFile": "assets/{{TargetWithoutPath}}.png"
+    },
+    {
+      "LogName": "Lumisteria Tilesheet",
+      "Action": "Load",
+      "Target": "maps/spring_mod_lumisteria_tilesheetsoutdoor_decorations, maps/summer_mod_lumisteria_tilesheetsoutdoor_decorations, maps/fall_mod_lumisteria_tilesheetsoutdoor_decorations, maps/winter_mod_lumisteria_tilesheetsoutdoor_decorations",
+      "FromFile": "assets/{{TargetWithoutPath}}.png"
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/ChairTiles",
+      "Entries": {
+        "spring_mod_lumisteria_tilesheetsoutdoor_decorations/21/8": "1/1/opposite/stool/-1/-1/false"
+      }
+    }
+  ]
+}

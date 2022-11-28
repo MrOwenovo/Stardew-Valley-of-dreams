@@ -1,0 +1,500 @@
+{
+	"Format": "1.19.0",
+	
+	"ConfigSchema": {
+
+
+		"Tackles and Baits": {
+			"AllowValues": "Bait, Magic Bait, Wild Bait, Magnet, Barbed Hook, Cork Bobber, Curiosity Lure, Dressed Spinner, Lead Bobber, Quality Bobbler, Spinner, Trap Bobber, Treasure Bobber",
+		"AllowMultiple": true, 
+			"AllowBlank": true,
+			"Default": "Bait, Magic Bait, Wild Bait, Magnet, Barbed Hook, Cork Bobber, Curiosity Lure, Dressed Spinner, Lead Bobber, Quality Bobbler, Spinner, Trap Bobber, Treasure Bobber",
+		},
+		
+		"-----------": {
+		
+			"AllowValues": "spacer",
+			"Default": "spacer,"
+		},
+
+
+		"Vanilla Fish": {
+			"AllowValues": "Catfish, Sandfish, Scorpion Carp, Sea Cucumber, Stingray, Super Cucumber",
+		"AllowMultiple": true, 
+			"AllowBlank": true,
+			"Default": "Catfish, Sandfish, Scorpion Carp, Sea Cucumber, Stingray, Super Cucumber",
+		},
+		
+		"------------": {
+		
+			"AllowValues": "spacer",
+			"Default": "spacer,"
+		},
+
+		
+		"SVE Fish": {
+			"AllowValues": "Bonefish, Daggerfish, Frog, King Salmon, Minnow, Void Eel",
+		"AllowMultiple": true, 
+			"AllowBlank": true,
+			"Default": "Bonefish, Daggerfish, Frog, King Salmon, Minnow, Void Eel",
+		},
+		
+		"Bonefish color": {
+			"AllowValues": "Red, White",
+			"Default": "Red",
+		},
+		
+	
+		
+		"-------------": {
+		
+			"AllowValues": "spacer",
+			"Default": "spacer,"
+		},
+
+		"CrabPot and SeaForage": {
+			"AllowValues": "Clam, Cockle, Mussel, Periwinkle, Shrimp, Coral, Nautilus",
+		"AllowMultiple": true, 
+			"AllowBlank": true,
+			"Default": "Clam, Cockle, Mussel, Periwinkle, Shrimp, Coral, Nautilus",
+		},
+		
+
+
+	},
+		
+	
+	
+	"Changes": [
+	
+	//sve fish
+	
+			{
+			"Action": "EditImage",
+			"Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet: Bonefish}}",
+			"FromFile": "Assets/fish/sve/Bonefish.png",
+			"ToArea":  {
+				"X": "{{spacechase0.JsonAssets/ObjectSpriteX:Bonefish}}",
+				"Y": "{{spacechase0.JsonAssets/ObjectSpritey:Bonefish}}",
+				 
+				"Width": 16,
+				"Height": 16,
+					},
+				
+					"When": {
+					"HasMod |contains=FlashShifter.JA.SVE": true,
+					"HasMod |contains=spacechase0.JsonAssets": true,
+					"SVE Fish |contains=Bonefish": true,
+					"Bonefish color": "Red",
+					},
+			},
+			{
+			"Action": "EditImage",
+			"Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet: Bonefish}}",
+			"FromFile": "Assets/fish/sve/Bonefish1.png",
+			"ToArea":  {
+				"X": "{{spacechase0.JsonAssets/ObjectSpriteX:Bonefish}}",
+				"Y": "{{spacechase0.JsonAssets/ObjectSpritey:Bonefish}}",
+				 
+				"Width": 16,
+				"Height": 16,
+					},
+				
+					"When": {
+					"HasMod |contains=FlashShifter.JA.SVE": true,
+					"HasMod |contains=spacechase0.JsonAssets": true,
+					"SVE Fish |contains=Bonefish": true,
+					"Bonefish color": "White",
+					},
+			},
+			
+		
+			
+			{
+			"Action": "EditImage",
+			"Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet: Daggerfish}}",
+			"FromFile": "assets/fish/sve/Daggerfish.png",
+			"ToArea":  {
+				"X": "{{spacechase0.JsonAssets/ObjectSpriteX:Daggerfish}}",
+				"Y": "{{spacechase0.JsonAssets/ObjectSpritey:Daggerfish}}",
+				 
+				"Width": 16,
+				"Height": 16,
+					},
+			"When": {
+				"HasMod |contains= FlashShifter.JA.SVE": true,
+				"HasMod |contains= spacechase0.JsonAssets": true,
+				"SVE Fish |contains= Daggerfish": true,
+				},
+			},
+			{
+			"Action": "EditImage",
+			"Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet: Frog}}",
+			"FromFile": "assets/fish/sve/Frog.png",
+			"ToArea":  {
+				"X": "{{spacechase0.JsonAssets/ObjectSpriteX:Frog}}",
+				"Y": "{{spacechase0.JsonAssets/ObjectSpritey:Frog}}",
+				 
+				"Width": 16,
+				"Height": 16,
+					},
+			"When": {
+				"HasMod |contains= FlashShifter.JA.SVE": true,
+				"HasMod |contains= spacechase0.JsonAssets": true,
+				"SVE Fish |contains= Frog": true,
+				},
+			},
+			
+			{
+			"Action": "EditImage",
+			"Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet: King Salmon}}",
+			"FromFile": "assets/fish/sve/King Salmon.png",
+			"ToArea":  {
+				"X": "{{spacechase0.JsonAssets/ObjectSpriteX:King Salmon}}",
+				"Y": "{{spacechase0.JsonAssets/ObjectSpritey:King Salmon}}",
+				 
+				"Width": 16,
+				"Height": 16,
+					},
+			"When": {
+				"HasMod |contains= FlashShifter.JA.SVE": true,
+				"HasMod |contains= spacechase0.JsonAssets": true,
+				"SVE Fish |contains= King Salmon": true,
+				},
+			},
+			
+			{
+			"Action": "EditImage",
+			"Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet: Minnow}}",
+			"FromFile": "assets/fish/sve/Minnow.png",
+			"ToArea":  {
+				"X": "{{spacechase0.JsonAssets/ObjectSpriteX:Minnow}}",
+				"Y": "{{spacechase0.JsonAssets/ObjectSpritey:Minnow}}",
+				 
+				"Width": 16,
+				"Height": 16,
+					},
+			"When": {
+				"HasMod |contains= FlashShifter.JA.SVE": true,
+				"HasMod |contains= spacechase0.JsonAssets": true,
+				"SVE Fish |contains= Minnow": true,
+				},
+			},
+			
+
+			{
+			"Action": "EditImage",
+			"Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet: Void Eel}}",
+			"FromFile": "assets/fish/sve/Void Eel.png",
+			"ToArea":  {
+				"X": "{{spacechase0.JsonAssets/ObjectSpriteX:Void Eel}}",
+				"Y": "{{spacechase0.JsonAssets/ObjectSpritey:Void Eel}}",
+				 
+				"Width": 16,
+				"Height": 16,
+					},
+			"When": {
+				"HasMod |contains= FlashShifter.JA.SVE": true,
+				"HasMod |contains= spacechase0.JsonAssets": true,
+				"SVE Fish |contains=  Void Eel": true,
+				},
+			},
+			
+		
+	
+	//vanilla fish
+	
+		{
+			"LogName": "Catfish",
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/fish/Catfish.png",
+			"ToArea": { "X": 368, "Y": 80, "Width": 16, "Height": 16 },
+			"When": 
+			{
+				"Vanilla Fish |contains= Catfish": true
+			},
+		},	
+	
+		
+		{
+			"LogName": "Sandfish",
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/fish/Sandfish.png",
+			"ToArea": { "X": 320, "Y": 96, "Width": 16, "Height": 16 },
+			"When": 
+			{
+				"Vanilla Fish |contains= Sandfish": true
+			},
+		},	
+		{
+			"LogName": "Scorpion Carp",
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/fish/Scorpion Carp.png",
+			"ToArea": { "X": 336, "Y": 96, "Width": 16, "Height": 16 },
+			"When": 
+			{
+				"Vanilla Fish |contains= Scorpion Carp": true
+			},
+		},	
+		{
+			"LogName": "Sea Cucumber",
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/fish/Sea Cucumber.png",
+			"ToArea": { "X": 160, "Y": 96, "Width": 16, "Height": 16 },
+			"When": 
+			{
+				"Vanilla Fish |contains= Sea Cucumber": true
+			},
+		},	
+		{	
+			"LogName": "Stingray",
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/fish/Stingray.png",
+			"ToArea": { "X": 320, "Y": 544, "Width": 16, "Height": 16 },
+			"When": 
+			{
+				"Vanilla Fish |contains= Stingray": true
+			},
+		},	
+		{
+			"LogName": "Super Cucumber",
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/fish/Super Cucumber.png",
+			"ToArea": { "X": 176, "Y": 96, "Width": 16, "Height": 16 },
+			"When": 
+			{
+				"Vanilla Fish |contains= Super Cucumber": true
+			},
+		},	
+	
+	//tacklesbaits
+	
+			{
+			"LogName": "Bait",
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/tackle/Bait.png",
+			"ToArea": { "X": 208, "Y": 448, "Width": 16, "Height": 16 },
+			"When": 
+			{
+				"Tackles and Baits |contains= Bait": true
+			},
+		},	
+			{
+			"LogName": "Wild Bait",
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/tackle/Wild Bait.png",
+			"ToArea": { "X": 96, "Y": 512, "Width": 16, "Height": 16 },
+			"When": 
+			{
+				"Tackles and Baits |contains= Wild Bait": true
+			},
+		},	
+			{
+			"LogName": "Magic Bait",
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/tackle/Magic Bait.png",
+			"ToArea": { "X": 320, "Y": 592, "Width": 16, "Height": 16 },
+			"When": 
+			{
+				"Tackles and Baits |contains= Magic Bait": true
+			},
+		},	
+			{
+			"LogName": "Magnet",
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/tackle/Magnet.png",
+			"ToArea": { "X": 112, "Y": 464, "Width": 16, "Height": 16 },
+			"When": 
+			{
+				"Tackles and Baits |contains= Magnet": true
+			},
+		},	
+			{
+			"LogName": "Barbed Hook",
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/tackle/Barbed Hook.png",
+			"ToArea": { "X": 304, "Y": 448, "Width": 16, "Height": 16 },
+			"When": 
+			{
+				"Tackles and Baits |contains= Barbed Hook": true
+			},
+		},	
+			{
+			"LogName": "Cork Bobber",
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/tackle/Cork Bobber.png",
+			"ToArea": { "X": 368, "Y": 448, "Width": 16, "Height": 16 },
+			"When": 
+			{
+				"Tackles and Baits |contains= Cork Bobber": true
+			},
+		},	
+			{
+			"LogName": "Dressed Spinner",
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/tackle/Dressed Spinner.png",
+			"ToArea": { "X": 240, "Y": 448, "Width": 16, "Height": 16 },
+			"When": 
+			{
+				"Tackles and Baits |contains= Dressed Spinner": true
+			},
+		},	
+			{
+			"LogName": "Spinner",
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/tackle/Spinner.png",
+			"ToArea": { "X": 224, "Y": 448, "Width": 16, "Height": 16 },
+			"When": 
+			{
+				"Tackles and Baits |contains= Spinner": true
+			},
+		},	
+			{
+			"LogName": "Lead Bobber",
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/tackle/Lead Bobber.png",
+			"ToArea": { "X": 320, "Y": 448, "Width": 16, "Height": 16 },
+			"When": 
+			{
+				"Tackles and Baits |contains= Lead Bobber": true
+			},
+		},	
+			{
+			"LogName": "Trap Bobber",
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/tackle/Trap Bobber.png",
+			"ToArea": { "X": 352, "Y": 448, "Width": 16, "Height": 16 },
+			"When": 
+			{
+				"Tackles and Baits |contains= Trap Bobber": true
+			},
+		},	
+			{
+			"LogName": "Treasure Bobber",
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/tackle/Treasure Bobber.png",
+			"ToArea": { "X": 336, "Y": 448, "Width": 16, "Height": 16 },
+			"When": 
+			{
+				"Tackles and Baits |contains= Treasure Bobber": true
+			},
+		},	
+			{
+			"LogName": "Curiosity Lure",
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/tackle/Curiosity Lure.png",
+			"ToArea": { "X": 256, "Y": 560, "Width": 16, "Height": 16 },
+			"When": 
+			{
+				"Tackles and Baits |contains= Curiosity Lure": true
+			},
+		},	
+			{
+			"LogName": "Quality Bobbler",
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/tackle/Quality Bobbler.png",
+			"ToArea": { "X": 208, "Y": 576, "Width": 16, "Height": 16 },
+			"When": 
+			{
+				"Tackles and Baits |contains= Quality Bobbler": true
+			},
+		},
+			
+		//crabpot
+		
+		{
+			"LogName": "Clam",
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/Fish/Crabpot/Clam.png",
+			"ToArea": { "X": 192, "Y": 240, "Width": 16, "Height": 16 },
+			"When": 
+			{
+				"CrabPot and SeaForage |contains= Clam": true
+			}
+		},
+		{
+			"LogName": "Cockle",
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/Fish/Crabpot/Cockle.png",
+			"ToArea": { "X": 352, "Y": 464, "Width": 16, "Height": 16 },
+			"When": 
+			{
+				"CrabPot and SeaForage |contains= Cockle": true
+			}
+		},
+		
+		
+		{
+			"LogName": "Mussel",
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/Fish/Crabpot/Mussel.png",
+			"ToArea": { "X": 368, "Y": 464, "Width": 16, "Height": 16 },
+			"When": 
+			{
+				"CrabPot and SeaForage |contains= Mussel": true
+			}
+		},
+		
+		{
+			"LogName": "Shrimp",
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/Fish/Crabpot/Shrimp.png",
+			"ToArea": { "X": 0, "Y": 480, "Width": 16, "Height": 16 },
+			"When": 
+			{
+				"CrabPot and SeaForage |contains= Shrimp": true
+			}
+		},
+		{
+			"LogName": "Periwinkle",
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/Fish/Crabpot/Periwinkle.png",
+			"ToArea": { "X": 32, "Y": 480, "Width": 16, "Height": 16 },
+			"When": 
+			{
+				"CrabPot and SeaForage |contains= Periwinkle": true
+			},
+			
+		},	
+		
+			
+		{
+			"LogName": "Nautilus",
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/Fish/Crabpot/Nautilus.png",
+			"ToArea": { "X": 128, "Y": 256, "Width": 16, "Height": 16 },
+			"When": 
+			{
+				"CrabPot and SeaForage |contains= Nautilus": true
+			},
+		},	
+			
+				
+
+	]
+}

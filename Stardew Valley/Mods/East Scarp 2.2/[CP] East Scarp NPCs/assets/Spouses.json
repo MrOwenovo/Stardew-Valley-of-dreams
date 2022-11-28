@@ -1,0 +1,33 @@
+            {
+                "Changes": [ //Spouse Room
+                    {
+                        "Action": "EditData",
+                        "Target": "Data/SpouseRooms",
+                        "Entries": {
+                            "Aideen": "Lemurkat_EastScarp_SpouseRoom/0",
+                            "KatarynaLK":"Lemurkat_EastScarp_SpouseRoom/1"
+                        }
+                    },
+                    {
+                        "Action": "Load",
+                        "Target": "Maps/Lemurkat_EastScarp_SpouseRoom",
+                        "FromFile": "assets/Maps/SpouseRoomsEastScarp.tmx"
+                    },
+                    //Spouse Patio
+                    // register outside area
+                    {
+                        "Action": "EditData",
+                        "Target": "Data/SpousePatios",
+                        "Entries": {
+                            "Aideen": "Lemurkat_EastScarp_OutsideArea/0/32 32 32 32 32 33 33 33 33 33 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0",
+                            "KatarynaLK":"Lemurkat_EastScarp_OutsideArea/1"
+                        }
+                    },
+                    // load spouse map
+                    {
+                        "Action": "Load",
+                        "Target": "Maps/Lemurkat_EastScarp_OutsideArea",
+                        "FromFile": "assets/Maps/spousePatiosEastScarp.tmx"
+                    }
+                ]
+            }

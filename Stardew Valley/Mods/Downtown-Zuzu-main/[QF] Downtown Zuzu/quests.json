@@ -1,0 +1,85 @@
+{
+	"Format": "1.0", // this is required
+	"Quests": [
+		{
+			"Name": "DTZGoSeeBuilder", // No id needed, will be automatically generated
+			"Type": "Location", // Vanilla quest type
+			"Title": "拜访比尔",
+			"Description": "你已经买下了锯木厂，现在你得去和比尔和他的建筑工人们谈谈修复的事情。",
+			"Objective": "前往比尔在祖祖城里的建筑公司。",
+			"Reward": 0,
+			"RewardType": "Money",
+			"Cancelable": false,
+			"Trigger": "Custom_DTZ_Builders",
+			"AddMailOnComplete": "DTZ.SpokeToBuilderInitial noletter",
+			"NextQuests": [ "DTZGetSawmillPermit" ]
+		},
+		{
+			"Name": "DTZGetSawmillPermit", // No id needed, will be automatically generated
+			"Type": "Location", // Vanilla quest type
+			"Title": "锯木厂许可证",
+			"Description": "比尔提出要帮你修好锯木厂，但首先你需要一份许可证。",
+			"Objective": "前往祖祖城许可证办公室，获得一份施工许可证。",
+			"Reward": 0,
+			"RewardType": "Money",
+			"Cancelable": false,
+			"Trigger": "Custom_DTZ_ZuzuPermits",
+			"NextQuests": [ "DTZFixUpSawmill" ]
+		},
+		{
+			"Name": "DTZFixUpSawmill", // No id needed, will be automatically generated
+			"Type": "Location", // Vanilla quest type
+			"Title": "修复锯木厂",
+			"Description": "现在你已经有了许可证，去和比尔谈谈修复锯木厂的事吧。",
+			"Objective": "前往比尔在祖祖城里的建筑公司。",
+			"Reward": 0,
+			"RewardType": "Money",
+			"Cancelable": false,
+			"Trigger": "Custom_DTZ_Builders"
+		},
+    {
+      "Name": "DTZUpgradeApartment", // No id needed, will be automatically generated
+      "Type": "Location", // Vanilla quest type
+      "Title": "公寓装修",
+      "Description": "比尔提出可以为你重新装修公寓！",
+      "Objective": "前往比尔在祖祖城里的建筑公司。",
+      "Reward": 0,
+      "RewardType": "Money",
+      "Cancelable": false,
+      "Trigger": "Custom_DTZ_Builders"
+    }
+
+	],
+	"Offers": [
+		{
+			"QuestName": "DTZGoSeeBuilder",
+			"OfferedBy": "Mail",
+			"OfferDetails": {
+				"Topic": "关于锯木厂...",
+				"Text": "你好，@！^我听说你买下了祖祖森林的那家老锯木厂。来我在城里的店一趟吧，我能帮你修好那里。^      - 比尔"
+			},
+			"When": {
+				"MailReceived": "DTZ.BoughtMill",
+				"QuestNeverAccepted": "Yes"
+			}
+		},
+    {
+      "QuestName": "DTZUpgradeApartment",
+      "OfferedBy": "Mail",
+      "OfferDetails": {
+        "Topic": "关于公寓...",
+        "Text": "你好，@！^我最近想了很多...最后发现我可以帮忙重新装修你的公寓！哪天有空就来见我吧。^      - 比尔"
+      },
+      "When": {
+        "MailReceived": "DTZ.CanUpgradeApartment",
+        "QuestNeverAccepted": "Yes"
+      }
+    }
+	],
+	"CustomBoards": [
+		// (optional) define your custom quest or special order boards here
+	],
+	"CustomDropBoxes": [
+		// (optional) define your custom drop boxes for your special orders here
+	]
+}

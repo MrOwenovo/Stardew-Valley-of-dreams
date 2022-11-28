@@ -1,0 +1,62 @@
+{
+"Changes": [
+
+        { 
+            "LogName":"Sterling Fair",
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall16",
+            "TextOperations": [
+              {
+                "Operation": "Append",
+                "Target": [ "Entries", "Set-Up_additionalCharacters" ],
+                "Value": "Sterling 52 73 2",
+                "Delimiter": "/"
+              }
+            ]
+          },
+          { 
+            "LogName":"Henry Fair",
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall16",
+            "TextOperations": [
+              {
+                "Operation": "Append",
+                "Target": [ "Entries", "Set-Up_additionalCharacters" ],
+                "Value": "Henry 51 73 2",
+                "Delimiter": "/"
+              }
+            ]
+          },
+          { 
+            "LogName":"Mia Fair",
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall16",
+            "When": {"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false },
+            "TextOperations": [
+              {
+                "Operation": "Append",
+                "Target": [ "Entries", "Set-Up_additionalCharacters" ],
+                "Value": "Mia 30 80 2",
+                "Delimiter": "/"
+
+              }
+            ]
+          },
+          { 
+            "LogName":"Mia SVE Fair",
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall16",
+            "When": {"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true },
+            "TextOperations": [
+              {
+                "Operation": "Append",
+                "Target": [ "Entries", "Set-Up_additionalCharacters" ],
+                "Value": "Mia 19 50 2",
+                "Delimiter": "/"
+
+              }
+            ]
+          }
+   
+]
+}

@@ -1,0 +1,98 @@
+{
+		"Changes": [
+	
+		 {
+ 	 "LogName": "Engagement Dialogue",
+      "Action": "EditData",
+      "Target": "Data/EngagementDialogue",
+      "Entries": {
+        "Gregory0": "{{i18n:Engagements.Gregory.Gregory0}}",
+        "Gregory1": "{{i18n:Engagements.Gregory.Gregory1}}",
+		"Sheila0": "{{i18n:Engagements.Sheila.Sheila0}}",
+        "Sheila1": "{{i18n:Engagements.Sheila.Sheila1}}",
+      }
+    },
+
+		{
+			"LogName": "Dating",
+			"Target": "Characters/Dialogue/Gregory",
+			"Action": "EditData",
+			"When": {
+				"Relationship:Gregory": "Dating",						
+				},
+			"Entries": {
+				"give_flowersA": "{{i18n:Engagements.Date.Gregory.give_flowersA}}",
+				"give_flowersB": "{{i18n:Engagements.Date.Gregory.give_flowersB}}",
+			},
+		},
+		{
+			"LogName": "Dating",
+			"Target": "Characters/Dialogue/Sheila",
+			"Action": "EditData",
+			"When": {
+				"Relationship:Sheila": "Dating",						
+				},
+			"Entries": {
+				"give_flowersA": "{{i18n:Engagements.Date.Sheila.give_flowersA}}",
+				"give_flowersB": "{{i18n:Engagements.Date.Sheila.give_flowersB}}",
+			},
+		},
+		{
+			"LogName": "Engaged",
+			"Target": "Characters/Dialogue/Gregory",
+			"Action": "EditData",
+			"When": {
+				"Relationship:Gregory": "Engaged",
+				},
+			"Entries": {
+				"give_flowersA": "{{i18n:Engagements.Engaged.Gregory.give_flowersA}}",
+				"give_flowersB": "{{i18n:Engagements.Engaged.Gregory.give_flowersB}}",
+				"engageA": "{{i18n:Engagements.Engaged.Gregory.engageA}}",
+				"engageB": "{{i18n:Engagements.Engaged.Gregory.engageB}}",
+				
+			},
+		},
+		{
+			"LogName": "Engaged",
+			"Target": "Characters/Dialogue/Sheila",
+			"Action": "EditData",
+			"When": {
+				"Relationship:Sheila": "Engaged",
+				},
+			"Entries": {
+				"give_flowersA": "{{i18n:Engagements.Engaged.Sheila.give_flowersA}}",
+				"give_flowersB": "{{i18n:Engagements.Engaged.Sheila.give_flowersB}}",
+				"engageA": "{{i18n:Engagements.Engaged.Sheila.engageA}}",
+				"engageB": "{{i18n:Engagements.Engaged.Sheila.engageB}}",
+			},
+		},
+		{
+			"LogName": "Married",
+			"Target": "Characters/Dialogue/Gregory",
+			"Action": "EditData",
+			"When": {
+				"Relationship:Gregory": "Married",
+				},
+			"Entries": {
+				"give_flowersA": "{{i18n:Engagements.Married.Gregory.give_flowersA}}",
+				"give_flowersB": "{{i18n:Engagements.Married.Gregory.give_flowersB}}",
+				"marriedA": "{{i18n:Engagements.Married.Gregory.marriedA}}",
+				"marriedB": "{{i18n:Engagements.Married.Gregory.marriedB}}",
+			},
+		},
+		{
+			"LogName": "Married",
+			"Target": "Characters/Dialogue/Sheila",
+			"Action": "EditData",
+			"When": {
+				"Relationship:Sheila": "Married",
+				},
+			"Entries": {
+				"give_flowersA": "{{i18n:Engagements.Married.Sheila.give_flowersA}}",
+				"give_flowersB": "{{i18n:Engagements.Married.Sheila.give_flowersB}}",
+				"marriedA": "{{i18n:Engagements.Married.Sheila.marriedA}}",
+				"marriedB": "{{i18n:Engagements.Married.Sheila.marriedB}}",
+			},
+		},
+		],
+}

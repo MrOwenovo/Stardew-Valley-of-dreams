@@ -1,0 +1,229 @@
+{
+	"Format": "1.24.0",
+
+	"ConfigSchema": {
+        "Allow Wild Armadillos": {
+            "AllowValues": "true, false",
+            "Default": "true"
+		},
+        "Allow Wild Badgers": {
+            "AllowValues": "true, false",
+            "Default": "true"
+		},
+        "Allow Wild Bears": {
+            "AllowValues": "true, false",
+            "Default": "true"
+		},
+        "Allow Wild Beavers": {
+            "AllowValues": "true, false",
+            "Default": "true"
+		},
+        "Allow Wild Boars": {
+            "AllowValues": "true, false",
+            "Default": "true"
+		},
+        "Allow Wild Bobcats": {
+            "AllowValues": "true, false",
+            "Default": "true"
+		},
+        "Allow Wild Chinchilla": {
+            "AllowValues": "true, false",
+            "Default": "true"
+		},
+        "Allow Wild Chipmunks": {
+            "AllowValues": "true, false",
+            "Default": "true"
+		},
+        "Allow Wild Coyotes": {
+            "AllowValues": "true, false",
+            "Default": "true"
+		},
+        "Allow Wild Crabs": {
+            "AllowValues": "true, false",
+            "Default": "true"
+		},
+        "Allow Wild Crows": {
+            "AllowValues": "true, false",
+            "Default": "true"
+		},
+        "Allow Wild Deers": {
+            "AllowValues": "true, false",
+            "Default": "true"
+		},
+        "Allow Wild Ducks": {
+            "AllowValues": "true, false",
+            "Default": "true"
+		},
+        "Allow Wild Fennec Foxes": {
+            "AllowValues": "true, false",
+            "Default": "true"
+		},
+        "Allow Wild Foxes": {
+            "AllowValues": "true, false",
+            "Default": "true"
+		},
+        "Allow Wild Frogs": {
+            "AllowValues": "true, false",
+            "Default": "true"
+		},
+        "Allow Wild Geese": {
+            "AllowValues": "true, false",
+            "Default": "true"
+		},
+        "Allow Wild Gembirds": {
+            "AllowValues": "true, false",
+            "Default": "true"
+		},
+         "Allow Wild Hedgehogs": {
+            "AllowValues": "true, false",
+            "Default": "true"
+		},
+         "Allow Wild Horses": {
+            "AllowValues": "true, false",
+            "Default": "true"
+		},
+        "Allow Wild Lemurs": {
+            "AllowValues": "true, false",
+            "Default": "true"
+		},
+        "Allow Wild Meerkats": {
+            "AllowValues": "true, false",
+            "Default": "true"
+		},
+        "Allow Wild Mice": {
+            "AllowValues": "true, false",
+            "Default": "true"
+		},
+        "Allow Wild Monkeys": {
+            "AllowValues": "true, false",
+            "Default": "true"
+		},
+        "Allow Wild MoonlightJellies": {
+            "AllowValues": "true, false",
+            "Default": "true"
+		},
+        "Allow Wild Opossums": {
+            "AllowValues": "true, false",
+            "Default": "true"
+		},
+        "Allow Wild Ostriches": {
+            "AllowValues": "true, false",
+            "Default": "true"
+		},
+        "Allow Wild Owls": {
+            "AllowValues": "true, false",
+            "Default": "true"
+		},
+        "Allow Wild Peafowls": {
+            "AllowValues": "true, false",
+            "Default": "true"
+		},
+        "Allow Wild Pelicans + Seagulls": {
+            "AllowValues": "true, false",
+            "Default": "true"
+		},
+        "Allow Wild Pine Martens": {
+            "AllowValues": "true, false",
+            "Default": "true"
+		},
+        "Allow Wild Platypuses": {
+            "AllowValues": "true, false",
+            "Default": "true"
+		},
+        "Allow Wild Quails": {
+            "AllowValues": "true, false",
+            "Default": "true"
+		},
+        "Allow Wild Rabbits": {
+            "AllowValues": "true, false",
+            "Default": "true"
+		},
+        "Allow Wild Raccoons": {
+            "AllowValues": "true, false",
+            "Default": "true"
+		},
+        "Allow Wild River Otters": {
+            "AllowValues": "true, false",
+            "Default": "true"
+		},
+        "Allow Wild Sea Otters": {
+            "AllowValues": "true, false",
+            "Default": "true"
+		},
+        "Allow Wild Skunks": {
+            "AllowValues": "true, false",
+            "Default": "true"
+		},
+        "Allow Wild Squirrels": {
+            "AllowValues": "true, false",
+            "Default": "true"
+		},
+        "Allow Wild Swans": {
+            "AllowValues": "true, false",
+            "Default": "true"
+		},
+        "Allow Wild Tortoises": {
+            "AllowValues": "true, false",
+            "Default": "true"
+		},
+        "Allow Wild Turtles": {
+            "AllowValues": "true, false",
+            "Default": "true"
+		},
+        "Allow Wild Weasels": {
+            "AllowValues": "true, false",
+            "Default": "true"
+		},
+        "Allow Wild Wolves": {
+            "AllowValues": "true, false",
+            "Default": "true"
+		},
+        "Allow Wild Wolverines": {
+            "AllowValues": "true, false",
+            "Default": "true"
+		},
+        "Allow Wild Wombats": {
+            "AllowValues": "true, false",
+            "Default": "true"
+		},
+        "Allow Bonus Animals": {
+            "AllowValues": "true, false",
+            "Default": "true",
+			"Description": "A collection of random creatures that are added in just for fun (also used to be a separate mod called Wild Creatures). Most (if not all) have a smaller chance of spawning in the random, somewhat hidden places chosen for them."
+		},
+	},
+
+	"Changes": [
+
+	{
+		"Action": "Include",
+		"FromFile": "assets/AnimalMapPatch_Vanilla.json"
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/AnimalMapPatch_RSV.json",
+		"When": {
+			"HasMod |contains=Rafseazz.RidgesideVillage": true,
+		}
+	},
+	{
+		"Action": "Include",
+		"FromFile": "assets/AnimalMapPatch_SVE.json",
+		"When": {
+			"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+		}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Characters/Junimo",
+		"FromFile": "assets/Leaf_Umbrella_{{season}}.png",
+		"PatchMode": "Overlay",
+		"Update": "OnLocationChange",
+			"When": {
+			"Allow Bonus Animals": "true",
+			"LocationName": "Forest, Woods",
+			"Weather": "Rain",
+			}
+	}
+	]
+}

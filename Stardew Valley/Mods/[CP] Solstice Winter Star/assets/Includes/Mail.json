@@ -1,0 +1,51 @@
+{
+    "Changes": [
+    
+// VANILLA MAIL EDITS
+		
+		{
+			"LogName": "Secret Gift Letter Edits",
+			"Action": "EditData",
+			"Target": "Data/mail",
+            "Entries":
+            {
+				"winter_18": "{{i18n:SWS.Mail.Winter18.Body}}[#]{{i18n:SWS.Mail.Winter18.Title}}",
+				"winter_24": "{{i18n:SWS.Mail.Winter24.Body}}[#]{{i18n:SWS.Mail.Winter24.Title}}",
+			},
+		},
+		
+// NEW SPICEBERRY LETTERS
+
+		{
+			"LogName": "New Spice Berry Letters",
+			"Action": "EditData",
+            "Target": "Data/Mail",
+			"Entries": 
+			{
+				"SWS_SpiceberryLetter_1": "{{i18n:SWS.Mail.SpiceberryLetter.1.Body}} %item object 396 2 %%[#]{{i18n:SWS.Mail.SpiceberryLetter.1.Title}}",
+				
+				"SWS_SpiceberryLetter_2": "{{i18n:SWS.Mail.SpiceberryLetter.2.Body}} %item object 396 3 %%[#]{{i18n:SWS.Mail.SpiceberryLetter.2.Title}}",
+				
+				"SWS_SpiceberryLetter_3": "{{i18n:SWS.Mail.SpiceberryLetter.3.Body}} %item object 396 4 %%[#]{{i18n:SWS.Mail.SpiceberryLetter.3.Title}}",
+				
+				"SWS_SpiceberryLetter_4": "{{i18n:SWS.Mail.SpiceberryLetter.4.Body}} %item object 396 3 %%[#]{{i18n:SWS.Mail.SpiceberryLetter.4.Title}}",
+				
+				"SWS_SpiceberryLetter_5": "{{i18n:SWS.Mail.SpiceberryLetter.5.Body}} %item object 396 4 %%[#]{{i18n:SWS.Mail.SpiceberryLetter.5.Title}}",
+			},
+		},
+		
+// SPICEBERRY LETTER SEND EVENT
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/Farm",
+			"Entries":
+			{
+				"1115687001/{{LetterYearToken1}}z spring/z summer/z fall/u 19/x SWS_SpiceberryLetter_1": "null",
+				"1115687002/{{LetterYearToken2}}z spring/z summer/z fall/u 22/x SWS_SpiceberryLetter_4": "null",
+				"1115687003/{{LetterYearToken3}}z spring/z summer/z fall/u 20/x SWS_SpiceberryLetter_5": "null",
+				"1115687004/{{LetterYearToken4}}z spring/z summer/z fall/u 21/x SWS_SpiceberryLetter_2": "null",
+				"1115687005/{{LetterYearToken5}}z spring/z summer/z fall/u 18/x SWS_SpiceberryLetter_3": "null",
+			},
+		}
+	],
+}

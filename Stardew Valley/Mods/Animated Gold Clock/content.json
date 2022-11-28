@@ -1,0 +1,32 @@
+{
+	"Format": "1.19.0",
+	"Changes":[
+	   	{
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/GoldClockhands.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 363, "Y": 395, "Width": 16, "Height": 16 },
+		},
+	   	{
+			"LogName": "Gold Clock Animation",
+			"Action": "EditImage",
+			"Target": "Buildings/Gold Clock",
+			"FromFile": "assets/Goldclockanimation.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 48, "Height": 80 },
+			"AnimationFrameTime": 5,
+			"AnimationFrameCount": 40,
+			"When": {
+			        "Weather": "Sun, Wind",
+					"Time": "{{Range: 0600, 1900}}",
+					},
+			"Update": "OnTimeChange",
+		},
+	   	{
+			"Action": "EditImage",
+			"Target": "Buildings/Gold Clock",
+			"FromFile": "assets/Goldclocknoshimmer.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 48, "Height": 80 },
+		}
+		  ]
+}

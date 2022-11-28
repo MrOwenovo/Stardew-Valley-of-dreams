@@ -1,0 +1,96 @@
+{
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "Changes": [
+        // NPC Juna - https://www.nexusmods.com/stardewvalley/mods/8606
+        // Juna should not be visible before her into event 86060001 and the flag PlayerChoseParents has not been set
+        {
+            "LogName": "[Yagi] Juna - Sprite Offsets - Before event 86060001",
+            "Action": "EditData",
+            "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+            "When": {
+                "HasMod: |contains=elhrvy.NPCJuna": true,
+                "HasFlag |contains=PlayerChoseParents": false,
+                "HasSeenEvent |contains=86060001": false,
+                "HasSeenEvent |contains=86060043": false
+            },
+            "Entries": {
+                "Juna": {
+                    "Exclude": true
+                },
+            }
+        },
+        // Juna should be visible after her into event 86060001 and the flag PlayerChoseParents has not been set
+        {
+            "LogName": "[Yagi] Juna - Sprite Offsets - After event 86060001",
+            "Action": "EditData",
+            "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+            "When": {
+                "HasMod: |contains=elhrvy.NPCJuna": true,
+                "HasFlag |contains=PlayerChoseParents": false,
+                "HasSeenEvent": "86060001",
+                "HasSeenEvent |contains=86060043": false
+            },
+            "Entries": {
+                "Juna": {
+                    "MarkerCropOffset": 1
+                },
+            }
+        },
+        // Juna should not be visible after the flag PlayerChoseParents has been set, and before event 86060043
+        {
+            "LogName": "[Yagi] Juna - Sprite Offsets - Before event 86060043",
+            "Action": "EditData",
+            "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+            "When": {
+                "HasMod: |contains=elhrvy.NPCJuna": true,
+                "HasFlag |contains=PlayerChoseParents": true,
+                "HasSeenEvent": "86060001",
+                "HasSeenEvent |contains=86060043": false
+            },
+            "Entries": {
+                "Juna": {
+                    "Exclude": true
+                },
+            }
+        },
+        // Juna should now be visible after the flag PlayerChoseParents has been set, and after event 86060043
+        {
+            "LogName": "[Yagi] Juna - Sprite Offsets - After event 86060043",
+            "Action": "EditData",
+            "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+            "When": {
+                "HasMod: |contains=elhrvy.NPCJuna": true,
+                "HasFlag |contains=PlayerChoseParents": true,
+                "HasSeenEvent": "86060001",
+                "HasSeenEvent": "86060043"
+            },
+            "Entries": {
+                "Juna": {
+                    "MarkerCropOffset": 1
+                },
+            }
+        },
+        {
+            "LogName": "[Yagi] Juna - Location Support",
+            "Action": "EditData",
+            "Target": "Mods/Bouhm.NPCMapLocations/Locations",
+            "When": {
+                "HasMod: |contains=elhrvy.NPCJuna": true
+            },
+            "Entries": {
+                // NPC Juna - https://www.nexusmods.com/stardewvalley/mods/8606
+                "Custom_JunaNPC_JunaCave": {
+                    "MapVectors": [
+                        {
+                            "MapX": 275,
+                            "MapY": 475
+                        }
+                    ]
+                },
+                "Custom_JunaNPC_BigFootPotion": {
+                    "Exclude": true
+                }
+            }
+        },
+    ]
+}

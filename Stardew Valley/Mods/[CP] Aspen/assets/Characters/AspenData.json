@@ -1,0 +1,217 @@
+{
+    "Changes": [
+        //AspenSeasonalOutfits
+        //Loads Aspen's OW Sprite 
+        {
+            "LogName": "Aspen's Sprite (Seasonal outfits off)",
+            "Action": "Load",
+            "Target": "Characters/Aspen",
+            "FromFile": "assets/Characters/AspenOW_{{outfit}}.png",
+            "When": { "AspenSeasonalOutfits": "false"},
+        },
+        
+        {
+            "LogName": "Aspen's Sprite (Seasonal, after summer)",
+            "Action": "Load",
+            "Target": "Characters/Aspen",
+            "FromFile": "assets/Characters/AspenOW_{{outfit}}.png",
+            "When": { "AspenSeasonalOutfits": "true", "Season": "fall, winter"},
+        },
+        
+        {
+            "LogName": "Aspen's Sprite (Seasonal)",
+            "Action": "Load",
+            "Target": "Characters/Aspen",
+            "FromFile": "assets/Characters/AspenOW_{{season}}.png",
+            "When": { "AspenSeasonalOutfits": "true", "Season": "spring, summer"},
+        },
+        
+        //Load's Aspen's Portrait 
+        {
+            "LogName": "Aspen's Portrait (Seasonal outfit off)",
+            "Action": "Load",
+            "Target": "Portraits/Aspen",
+            "FromFile": "assets/Portraits/Aspen_{{outfit}}.png",
+            "When": { "AspenSeasonalOutfits": "false"},
+        },
+        
+        {
+            "LogName": "Aspen's Portrait (Seasonal, after summer)",
+            "Action": "Load",
+            "Target": "Portraits/Aspen",
+            "FromFile": "assets/Portraits/Aspen_{{outfit}}.png",
+            "When": { "AspenSeasonalOutfits": "true", "Season": "fall, winter"},
+        },
+        
+        {
+            "LogName": "Aspen's Portrait (Seasonal)",
+            "Action": "Load",
+            "Target": "Portraits/Aspen",
+            "FromFile": "assets/Portraits/Aspen_{{season}}.png",
+            "When": { "AspenSeasonalOutfits": "true", "Season": "spring, summer"},
+        },
+        
+        //Load Aspen's Dialogue (at saloon)
+        {
+            "LogName": "Aspen's Dialogue",
+            "Action": "Load",
+            "Target": "Characters/Dialogue/Aspen",
+            "FromFile": "assets/Dialogue/dialogueAspen.json",
+            "When": {
+            "DaysPlayed |contains={{Range:0, 30}}": "true" // railroad blocked
+            }
+        },
+        
+        //Load Aspen's Dialogue (back home)
+        {
+            "LogName": "Aspen's Dialogue",
+            "Action": "Load",
+            "Target": "Characters/Dialogue/Aspen",
+            "FromFile": "assets/Dialogue/dialogueAspenHome.json",
+            "When": {
+            "DaysPlayed |contains={{Range:0, 30}}": "false" // railroad unblocked
+            }
+        },
+        
+        //Load Aspen's Marriage Dialogue (not done)
+        {
+            "LogName": "Aspen's Marriage Dialogue",
+            "Action": "Load",
+            "Target": "Characters/Dialogue/MarriageDialogueAspen",
+            "FromFile": "assets/Dialogue/marriageDialogueAspen.json",
+        },
+        
+        //Aspen's Schedule (Spring Y1)
+        {
+            "LogName": "Aspen's Schedule",
+            "Action": "Load",
+            "Target": "Characters/schedules/Aspen",
+            "FromFile": "assets/Schedules/scheduleAspen_Saloon.json",
+            "When": {
+            "DaysPlayed |contains={{Range:0, 30}}": "true" // railroad blocked
+            }
+        },
+        
+        //Aspen's Schedule (Post-Spring Y1)
+        {
+            "LogName": "Aspen's Schedule",
+            "Action": "Load",
+            "Target": "Characters/schedules/Aspen",
+            "FromFile": "assets/Schedules/scheduleAspen.json",
+            "When": {
+                "DaysPlayed |contains={{Range:0, 30}}": "false" // railroad blocked
+            }
+        },
+        
+        //Aspen's NPC disposition (Staying with Gus, before the railroad opens)
+        {
+            "LogName": "Aspen's NPC Disposition - Saloon",
+            "Action": "EditData",
+            "Target": "Data/NPCDispositions",
+            "Entries": {
+            "Aspen": "adult/polite/outgoing/positive/female/datable/null/Town/winter 24//Saloon 35 8/阿斯彭"
+            },
+            "When": {
+                "DaysPlayed |contains={{Range:0, 30}}": "true"
+            }
+        },
+        
+        //Aspen's NPC disposition (Moved back home)
+        {
+            "LogName": "Aspen's NPC Disposition - Home",
+            "Action": "EditData",
+            "Target": "Data/NPCDispositions",
+            "Entries": {
+            "Aspen": "adult/polite/outgoing/positive/female/datable/null/Town/winter 24//Custom_AspenHouse 19 5/阿斯彭"
+            },
+            "When": {
+                "DaysPlayed |contains={{Range:0, 30}}": "false"
+            }
+        },
+        
+        //Aspen's Gift Taste (not done)
+        {
+            "LogName": "Aspen's Gift tastes",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "Entries": {
+                "Aspen": "啊，你要把这个给我？我喜欢它！谢谢, @!$h/572 595 731 253 72/你怎么知道我喜欢这个？！谢谢, @!/228 610 614 18 430 -79 -80 184 186 395 64 577 578 22 283 90/呃，我很感激你的手势，但我不太喜欢这些...$s/-15 -16 -19 -28 -74/我并不是真的讨厌任何东西，但你只是在给我你的垃圾， @... 我想我会为你把它扔了。$s/-20 -21 -22/哦，给我的?谢谢, @./-2 -5 -75/ ",
+            },
+        },
+        
+        //Aspen's Engagement Dialogue (not done)
+        {
+            "LogName": "Aspen's Engagement Dialogue",
+            "Action": "EditData",
+            "Target": "Data/EngagementDialogue",
+            "Entries": {
+                "Aspen0": "真不敢相信我就要结婚了!$h",
+                "Aspen1": "我希望我不会临阵退缩",
+            },
+        },
+        
+        //Aspen's Schedule Dialogue (not done)
+        {
+            "LogName": "Aspen's Schedule Dialogue",
+            "Action": "Load",
+            "Target": "Strings/schedules/Aspen",
+            "FromFile": "assets/Schedules/scheduleDialogueAspen.json",
+            "When": {
+                "HasMod |contains=Papaya.ShikoTakahashi": "false"
+            }
+        },
+        
+        //Aspen's Schedule Dialogue (not done) SHIKO SUPPORT
+        {
+            "LogName": "Aspen's Schedule Dialogue (Shiko support)",
+            "Action": "Load",
+            "Target": "Strings/schedules/Aspen",
+            "FromFile": "assets/Schedules/scheduleDialogueAspen_Shiko.json",
+            "When": {
+                "HasMod |contains=Papaya.ShikoTakahashi": "true"
+            }
+        },
+        
+        //Aspen animations
+        {
+            "LogName": "Aspen's Animations",
+            "Action": "EditData",
+            "Target": "Data/animationDescriptions",
+            "Entries": {
+                "aspen_sitting": "16/16/16",
+                "aspen_kicking": "20/20 20 20 21 21 21 21 22 22 22 22 21 21 21/21",
+                "aspen_sitting_drinking": "23/23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 23 29 30 31 30/29",
+                "aspen_exercise": "32/32 33 34 35/32",
+                "aspen_reading": "48 49 50/51/50 49 48",
+                "aspen_couch_reading": "39/39/39",
+                "bee_flying": "0/0 1 2 3/0",
+            },
+        },
+        
+        //Aspen's rainy dialogue (railroad blocked)
+        {
+            "LogName": "Aspen's rainy dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/rainy",
+            "Entries": {
+                "Aspen": "说实话，我真的很喜欢雨。我知道有些人讨厌它，但我觉得它很放松。$0#$e#我很感激格斯让我和他住在一起，但我等不及要回我在山上的家了。#$b#像今天这样的日子在那里是完美的!$1",
+            },
+            "When": {
+                "DaysPlayed |contains={{Range:0, 30}}": "true" // railroad blocked
+            }
+        },
+        
+        //Aspen's rainy dialogue (railroad unblocked)
+        {
+            "LogName": "Aspen's rainy dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/rainy",
+            "Entries": {
+                "Aspen": "因为我住得离大家都很远，所以我就用像今天这样的雨天作为偷懒和整天读书的借口。我真的很喜欢。$9#$b#谢谢你来看我 @!$1",
+            },
+            "When": {
+                "DaysPlayed |contains={{Range:0, 30}}": "false" // railroad unblocked
+            }
+        },        
+    ]
+}

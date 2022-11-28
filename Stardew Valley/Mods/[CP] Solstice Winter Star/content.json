@@ -1,0 +1,279 @@
+{
+"Format": "1.24.0",
+	"DynamicTokens": [
+	
+// MAIL YEAR TOKEN 1
+		{
+			"Name": "LetterYearToken1",
+			"Value": "",
+			"When":
+			{
+				"NewLettersFast": "OneYear",
+			}
+		},
+		{
+			"Name": "LetterYearToken1",
+			"Value": "y 1/",
+			"When":
+			{
+				"NewLettersFast": "TwoYears",
+			}
+		},
+		{
+			"Name": "LetterYearToken1",
+			"Value": "y 1/",
+			"When":
+			{
+				"NewLettersFast": "FiveYears",
+			}
+		},
+	
+// MAIL YEAR TOKEN 2
+		{
+			"Name": "LetterYearToken2",
+			"Value": "",
+			"When":
+			{
+				"NewLettersFast": "OneYear",
+			}
+		},
+		{
+			"Name": "LetterYearToken2",
+			"Value": "y 2/",
+			"When":
+			{
+				"NewLettersFast": "TwoYears",
+			}
+		},
+		{
+			"Name": "LetterYearToken2",
+			"Value": "y 2/",
+			"When":
+			{
+				"NewLettersFast": "FiveYears",
+			}
+		},
+	
+// MAIL YEAR TOKEN 3
+		{
+			"Name": "LetterYearToken3",
+			"Value": "",
+			"When":
+			{
+				"NewLettersFast": "OneYear",
+			}
+		},
+		{
+			"Name": "LetterYearToken3",
+			"Value": "y 2/",
+			"When":
+			{
+				"NewLettersFast": "TwoYears",
+			}
+		},
+		{
+			"Name": "LetterYearToken3",
+			"Value": "y 3/",
+			"When":
+			{
+				"NewLettersFast": "FiveYears",
+			}
+		},
+	
+// MAIL YEAR TOKEN 4
+		{
+			"Name": "LetterYearToken4",
+			"Value": "",
+			"When":
+			{
+				"NewLettersFast": "OneYear",
+			}
+		},
+		{
+			"Name": "LetterYearToken4",
+			"Value": "y 1/",
+			"When":
+			{
+				"NewLettersFast": "TwoYears",
+			}
+		},
+		{
+			"Name": "LetterYearToken4",
+			"Value": "y 4/",
+			"When":
+			{
+				"NewLettersFast": "FiveYears",
+			}
+		},
+	
+// MAIL YEAR TOKEN 5
+		{
+			"Name": "LetterYearToken5",
+			"Value": "",
+			"When":
+			{
+				"NewLettersFast": "OneYear",
+			}
+		},
+		{
+			"Name": "LetterYearToken5",
+			"Value": "y 1/",
+			"When":
+			{
+				"NewLettersFast": "TwoYears",
+			}
+		},
+		{
+			"Name": "LetterYearToken5",
+			"Value": "y 5/",
+			"When":
+			{
+				"NewLettersFast": "FiveYears",
+			}
+		},
+	],
+	
+	"ConfigSchema": 
+	{
+		"FurnitureChanges": 
+		{
+		"AllowValues": "true, false",
+		"Default": "true",
+		"Description": "Select 'true' if you would like to change furniture items related to the Feast of the Winter Star so that they match the new theme and colour scheme.",
+		},
+		"RidgesideVegetarian": 
+		{
+		"AllowValues": "true, false",
+		"Default": "true",
+		"Description": "Select 'false' if you would like to enable the possibility that Ridgeside villagers will gift non-vegetarian food.",
+		},
+		"NewLettersFast": 
+		{
+		"AllowValues": "OneYear, TwoYears, FiveYears",
+		"Default": "FiveYears",
+		"Description": "Select 'OneYear' if you would like all of the new letters to arrive in the same year, 'TwoYears' if you would like them to arrive in Years 1 and 2, or 'FiveYears' if you would like one letter each year. 'FiveYears' is the default.",
+		},
+		"DesaturationConfig": 
+		{
+		"AllowValues": "Saturated, Desaturated",
+		"Default": "Saturated",
+		"Description": "Select 'Desaturated' to use a darker, more desaturated colour palette designed to work alongside Way Back Pelican Town and various darker or desaturated recolours.",
+		},
+	},
+	"Changes": [
+	
+// MAIL
+        {
+			"Action": "Include",
+			"FromFile": "assets/Includes/Mail.json",
+		},
+		
+// GIFT TASTES
+		{
+			"LogName": "Spice Berry Universal Love",
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"TextOperations": 
+			[
+				{
+					"Operation": "Append",
+					"Target": ["Entries", "Universal_Love"],
+					"Value": "396",
+					"Delimiter": " "
+				},
+			],
+			"When": 
+			{
+				"Season": "Winter",
+			},
+		},
+		{
+			"LogName": "Winter Star Universal Loves & Dislikes",
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"Entries": 
+			{
+				"Universal_Love": "-7 -25 -75 -79",
+				"Universal_Dislike": "-2 -4 -5 -6 -9 -12 -14 -15 -16 -18 -19 -20 -21 -22 -24 -28 -74 -80",
+			},
+			"When": 
+			{
+				"Season": "Winter",
+				"Day": "25",
+			},
+		},
+	
+// TEA SET AT SHOP
+		{
+			"LogName": "Tea Set at Pierre's Stall",
+			"Action": "EditData",
+			"Target": "Data/Festivals/winter25",
+            "Entries":
+            {
+				"shop": "F 2625 1000 -1 F 1745 800 -1 F 1747 500 -1 F 1678 1000 -1 F 1390 700 -1 F 807 3000 -1 F 2798 1000 -1 F 2634 1000 -1 F 2633 500 -1 F 2635 500 -1 F 2636 700 -1 F 1440 5000 -1 F 1296 800 -1 O 341 1500 1",
+			},
+		},
+		
+// WINTER STAR TREE MAP PATCH
+
+		{
+			"LogName": "Winter Star Tree Map Patch",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Christmas",
+            "FromFile": "assets/Map/Town-SWS-WinterStar.tbin",
+            "FromArea": {
+                "X": 28,
+                "Y": 61,
+                "Width": 4,
+                "Height": 7
+            },
+            "ToArea": {
+                "X": 28,
+                "Y": 61,
+                "Width": 4,
+                "Height": 7
+            },
+        },
+		
+// FURNITURE NAMES
+		{
+			"LogName": "Winter Star Furniture Name Edits",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+			"Entries": 
+			{
+				"1440": "{{i18n:SWS.Furniture.1440.Tree}}/decor/3 5/3 2/1/5000",
+				"1745": "{{i18n:SWS.Furniture.1745.Garland}}/painting/2 1/2 1/1/400",
+				"1961": "{{i18n:SWS.Furniture.1961.Decal}}/painting/1 2/1 2/1/400",
+				"2625": "{{i18n:SWS.Furniture.2625.Banner}}/painting/1 3/1 3/1/500",
+				"2798": "{{i18n:SWS.Furniture.2798.Rug}}/rug/4 3/4 3/1/10000",
+			},
+			"When":
+			{
+				"FurnitureChanges": "true",
+			},
+		},
+		
+// DIALOGUE
+        {
+			"Action": "Include",
+			"FromFile": "assets/Includes/Dialogue.json",
+		},
+		
+// ART
+        {
+			"Action": "Include",
+			"FromFile": "assets/Includes/Art.json",
+		},
+
+// HSO EDITS
+		{
+			"Action": "Include",
+			"FromFile": "assets/Includes/HSO.json",
+			"When":
+			{
+				"HasMod |contains= CopperSun.HolidaySpecialOrders": true,
+			},
+		},
+	]
+}

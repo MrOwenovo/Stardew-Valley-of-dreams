@@ -1,0 +1,180 @@
+//shops.json for CopperSun's Joja Seeds mod
+
+{
+	"VanillaShops": 
+	[ 
+	
+	{
+		"ShopName": "PierreShop",
+	
+		"ItemStocks": [
+			
+			{
+			  "StockPrice": 70,
+			  "ItemType": "Object",
+			  "ItemNames": [ "Heirloom Corn Seeds" ],
+			  "When": ["!z summer/e 26435555", "!z fall/e 26435555", "!z summer/e 26435556", "!z fall/e 26435556",]
+			},
+			
+			{
+			  "StockPrice": 80,
+			  "ItemType": "Object",
+			  "ItemNames": [ "Heirloom Potato Seeds" ],
+			  "When": ["!z spring/e 26435555", "!z spring/e 26435556", ]
+			},
+			
+			{
+			  "StockPrice": 95,
+			  "ItemType": "Object",
+			  "ItemNames": [ "Heirloom Carrot Seeds" ],
+			  "When": ["!z spring/e 26435555", "!z spring/e 26435556", "!z fall/e 26435555", "!z fall/e 26435556",]
+			},
+			
+		],
+	
+	},
+	
+	
+	{ 
+	 
+		"ShopName": "JojaShop",
+		
+		"PriceMultiplierWhen": { "0.75": [ "JojaMember" ], },
+		
+		"ItemStocks": [
+			{
+			  "StockPrice": 90,
+			  "ItemType": "Object",
+			  "ItemNames": [ "Broccoflower (Joja) Seeds" ],
+			  "When": ["!z spring"]
+			},
+			
+			{
+			  "StockPrice": 80,
+			  "ItemType": "Object",
+			  "ItemNames": [ "Cauliflower (Joja) Seeds" ],
+			  "When": ["!z spring"]
+			},
+			
+			{
+			  "StockPrice": 75,
+			  "ItemType": "Object",
+			  "ItemNames": [ "Corn (Joja) Seeds" ],
+			  "When": ["!z summer", "!z fall",]
+			},
+			
+			{
+			  "StockPrice": 300,
+			  "ItemType": "Object",
+			  "ItemNames": [ "Cranberry (Joja) Seeds" ],
+			  "When": [ "!z fall",]
+			},
+			
+			{
+			  "StockPrice": 80,
+			  "ItemType": "Object",
+			  "ItemNames": [ "Melon (Joja) Seeds" ],
+			  "When": [ "!z summer",]
+			},
+			
+			{
+			  "StockPrice": 20,
+			  "ItemType": "Object",
+			  "ItemNames": [ "Parsnip (Joja) Seeds" ],
+			  "When": ["!z spring", "!z fall",]
+			},
+			
+			{
+			  "StockPrice": 120,
+			  "ItemType": "Object",
+			  "ItemNames": [ "Poppy (Joja) Seeds" ],
+			  "When": [ "!z fall",]
+			},
+			
+			{
+			  "StockPrice": 50,
+			  "ItemType": "Object",
+			  "ItemNames": [ "Potato (Joja) Seeds" ],
+			  "When": ["!z spring", "!z winter",]
+			},
+			
+			{
+			  "StockPrice": 120,
+			  "ItemType": "Object",
+			  "ItemNames": [ "Pumpkin (Joja) Seeds" ],
+			  "When": [ "!z fall", ]
+			},
+			
+			{
+			  "StockPrice": 40,
+			  "ItemType": "Object",
+			  "ItemNames": [ "Radish (Joja) Seeds" ],
+			  "When": [ "!z spring", "!z summer", ]
+			},
+			
+			{
+			  "StockPrice": 250,
+			  "ItemType": "Object",
+			  "ItemNames": [ "Sweet Joja Berry Seeds" ],
+			  "When": [ "!z summer", ]
+			},
+			
+			{
+			  "StockPrice": 50,
+			  "ItemType": "Object",
+			  "ItemNames": [ "Tomato (Joja) Seeds" ],
+			  "When": [ "!z summer", ]
+			},
+			
+			{
+			  "StockPrice": 25,
+			  "ItemType": "Object",
+			  "ItemNames": [ "Tulip (Joja) Bulbs" ],
+			  "When": ["!z spring"]
+			},
+			
+			{
+			  "StockPrice": 15,
+			  "ItemType": "Object",
+			  "ItemNames": [ "Wheat (Joja) Seeds" ],
+			  "When": [ "!z spring", "!z summer", "!z fall", ]
+			},
+			
+			{
+			  "StockPrice": 500,
+			  "ItemType": "Object",
+			  "ItemNames": [ "Winterstar Fruit (Joja) Seeds" ],
+			  "When": [ "!z winter", ]
+			},
+			
+			{
+			  "StockPrice": 1000,
+			  "ItemType": "Object",
+			  "IsRecipe": true,
+			  "ItemNames": [ "Cheese Broccoflower" ],
+			},
+			
+			{
+			  "StockPrice": 1000,
+			  "ItemType": "Object",
+			  "IsRecipe": true,
+			  "ItemNames": [ "Smothered Garlic Potatoes" ],
+			},
+			
+			{
+			  "StockPrice": 1500,
+			  "ItemType": "Object",
+			  "IsRecipe": true,
+			  "ItemNames": [ "Void Garlic Potatoes" ],
+			  "When": [ "f Krobus 1", ]
+			},
+
+		],
+	 
+		},	
+
+
+		
+	],
+
+}

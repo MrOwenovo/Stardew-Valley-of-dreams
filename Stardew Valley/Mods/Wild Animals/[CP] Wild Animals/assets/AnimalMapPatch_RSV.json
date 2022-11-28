@@ -1,0 +1,316 @@
+{
+//	"Format": "1.23.0",
+
+	"Changes": [
+
+	{
+		"LogName": "Adds wild beavers in the Ridge's lake",
+		"Action": "EditMap",
+		"Target": "Maps/Custom_Ridgeside_Ridge",
+		"MapTiles": [
+            {
+               "Position": { "X": 8, "Y": 35 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2}} SmolHooman.WildAnimalsCC.BeaverSwim"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Beavers": "true",
+			"Weather": "Rain, Sun, Wind",
+			"Season": "Spring, Summer, Fall",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Adds wild beavers in the Ridge's falls",
+		"Action": "EditMap",
+		"Target": "Maps/Custom_Ridgeside_RidgeFalls",
+		"MapTiles": [
+            {
+               "Position": { "X": 63, "Y": 51 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 1, 2, 3, 4, 5}} SmolHooman.WildAnimalsCC.BeaverSwim"
+               },
+            },
+            {
+               "Position": { "X": 68, "Y": 35 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1}} SmolHooman.WildAnimalsCC.Beaver"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Beavers": "true",
+			"Weather": "Rain, Sun, Wind",
+			"Season": "Spring, Summer, Fall",
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds wild frogs in the ridge",
+		"Action": "EditMap",
+		"Target": "Maps/Custom_Ridgeside_Ridge",
+		"MapTiles": [
+            {
+               "Position": { "X": 26, "Y": 39 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 1, 2, 3}} SmolHooman.WildAnimalsCC.{{Random: FrogBrown, FrogGreen, FrogYellow}}"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Frogs": "true",		
+			"Weather": "Rain, Storm",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Adds wild frogs in the ridge's falls",
+		"Action": "EditMap",
+		"Target": "Maps/Custom_Ridgeside_RidgeFalls",
+		"MapTiles": [
+            {
+               "Position": { "X": 72, "Y": 30 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 1, 2, 3}} SmolHooman.WildAnimalsCC.{{Random: FrogBrown, FrogGreen, FrogYellow}}"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Frogs": "true",		
+			"Weather": "Rain, Storm",
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds wild geese in the Ridgeside Village's waters",
+		"Action": "EditMap",
+		"Target": "Maps/Custom_Ridgeside_RidgesideVillage",
+		"MapTiles": [
+            {
+               "Position": { "X": 139, "Y": 123 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.{{Random: GooseCanadian, GooseWhite}}"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Geese": "true",
+			"Weather": "Sun, Wind",
+			"Season": "Spring, Summer, Fall",
+			"Time": "{{Range: 0600, 1800}}",
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds wild mice in Ridgeside village",
+		"Action": "EditMap",
+		"Target": "Maps/Custom_Ridgeside_RidgesideVillage",
+		"MapTiles": [
+            {
+               "Position": { "X": 54, "Y": 27 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 1, 2}} SmolHooman.WildAnimalsCC.{{Random: MouseBlack, MouseBrown, MouseGray}}"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Mice": "true",
+			"Weather": "Sun, Wind",
+			"Time": "{{Range: 1800, 2600}}",
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds wild opossums in the hike",
+		"Action": "EditMap",
+		"Target": "Maps/Custom_Ridgeside_RSVTheHike",
+		"MapTiles": [
+            {
+               "Position": { "X": 53, "Y": 51 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 1, 2, 3}} SmolHooman.WildAnimalsCC.{{Random: Opossum, Opossum, Opossum+Joeys}}"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Opossums": "true",		
+			"Season": "Spring, Summer, Fall",
+			"Weather": "Sun, Wind",
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds a wild pine marten in the Ridge",
+		"Action": "EditMap",
+		"Target": "Maps/Custom_Ridgeside_Ridge",
+		"MapTiles": [
+            {
+               "Position": { "X": 69, "Y": 42 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 1, 2}} SmolHooman.WildAnimalsCC.PineMarten"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Pine Martens": "true",
+			"Weather": "Snow, Sun, Wind",
+			"Time": "{{Range: 1800, 2600}}",
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds wild quails in the Ridge",
+		"Action": "EditMap",
+		"Target": "Maps/Custom_Ridgeside_Ridge",
+		"MapTiles": [
+            {
+               "Position": { "X": 52, "Y": 30 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 1, 2, 3, 4, 5}} SmolHooman.WildAnimalsCC.QuailFemale"
+               },
+            },
+            {
+               "Position": { "X": 49, "Y": 35 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.QuailMale"
+               },
+            },
+            {
+               "Position": { "X": 47, "Y": 30 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 1, 2, 3}} SmolHooman.WildAnimalsCC.BrownChick"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Quails": "true",
+			"Weather": "Sun, Wind",
+			"Time": "{{Range: 0600, 1800}}",
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds wild raccoons in Rideside village",
+		"Action": "EditMap",
+		"Target": "Maps/Custom_Ridgeside_RidgesideVillage",
+		"MapTiles": [
+            {
+               "Position": { "X": 122, "Y": 99 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2}} SmolHooman.WildAnimalsCC.{{Random: RaccoonGray, RaccoonGray, RaccoonBrown, RaccoonGrayBrown}}"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Raccoons": "true",		
+			"Weather": "Sun, Wind, Rain",
+			"Time": "{{Range: 1800, 2600}}",		
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds wild red squirrels in the hike",
+		"Action": "EditMap",
+		"Target": "Maps/Custom_Ridgeside_RSVTheHike",
+		"MapTiles": [
+            {
+               "Position": { "X": 62, "Y": 22 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 1, 2, 3, 4, 5}} SmolHooman.WildAnimalsCC.RedSquirrel_{{season}}"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Squirrels": "true",
+			"Weather": "Snow, Sun, Wind",
+			"Time": "{{Range: 0600, 1800}}",
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds wild squirrels in the Ridgeside Village",
+		"Action": "EditMap",
+		"Target": "Maps/Custom_Ridgeside_RidgesideVillage",
+		"MapTiles": [
+            {
+               "Position": { "X": 53, "Y": 119 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 1, 2, 3}} SmolHooman.WildAnimalsCC.{{Random: SquirrelBrown, SquirrelBrown, SquirrelBlack, SquirrelGray, SquirrelGray, SquirrelWhite}}"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Squirrels": "true",
+			"Weather": "Sun, Wind",
+			"Time": "{{Range: 0600, 1800}}",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Adds wild squirrels in the cliff",
+		"Action": "EditMap",
+		"Target": "Maps/Custom_Ridgeside_RSVCliff",
+		"MapTiles": [
+            {
+               "Position": { "X": 24, "Y": 34 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 1, 2, 3}} SmolHooman.WildAnimalsCC.{{Random: SquirrelBrown, SquirrelBrown, SquirrelBlack, SquirrelGray, SquirrelGray, SquirrelWhite}}"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Squirrels": "true",
+			"Weather": "Sun, Wind",
+			"Time": "{{Range: 0600, 1800}}",
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds wild wolverines in the hike",
+		"Action": "EditMap",
+		"Target": "Maps/Custom_Ridgeside_RSVTheHike",
+		"MapTiles": [
+            {
+               "Position": { "X": 29, "Y": 70 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2}} SmolHooman.WildAnimalsCC.Wolverine"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Wolverines": "true",
+			"Weather": "Snow, Sun, Wind",
+			},
+		"Update": "OnLocationChange"
+	}
+	]
+}

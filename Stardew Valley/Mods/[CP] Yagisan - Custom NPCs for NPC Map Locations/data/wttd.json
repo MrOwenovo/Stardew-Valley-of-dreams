@@ -1,0 +1,80 @@
+{
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "Changes": [
+        {
+            "LogName": "[Yagi] Walk to the Desert - Location Support",
+            "Action": "EditData",
+            "Target": "Mods/Bouhm.NPCMapLocations/Locations",
+            "When": {
+                "HasMod: |contains=Tarniyar.CP.WalkToDesert": true
+            },
+            "Entries": {
+                // Walk to the Desert - Expansion Mod - https://www.nexusmods.com/stardewvalley/mods/6234
+                "GhostTown": {
+                    "MapVectors": [
+                        {
+                            "TileX": 0,
+                            "TileY": 0,
+                            "MapX": 200,
+                            "MapY": 50
+                        },
+                        {
+                            "TileX": 69,
+                            "TileY": 47,
+                            "MapX": 290,
+                            "MapY": 95
+                        }
+                    ]
+                },
+                "Interchange": {
+                    "MapVectors": [
+                        {
+                            "TileX": 0,
+                            "TileY": 37,
+                            "MapX": 298,
+                            "MapY": 82
+                        },
+                        {
+                            "TileX": 25,
+                            "TileY": 59,
+                            "MapX": 353,
+                            "MapY": 115
+                        }
+                    ]
+                },
+                "WindingRoad": {
+                    "MapVectors": [
+                        {
+                            "TileX": 25,
+                            "TileY": 0,
+                            "MapX": 353,
+                            "MapY": 115
+                        },
+                        {
+                            "TileX": 0,
+                            "TileY": 83,
+                            "MapX": 338,
+                            "MapY": 222
+                        }
+                    ]
+                },
+                "ForestRoad": {
+                    "MapVectors": [
+                        {
+                            "TileX": 0,
+                            "TileY": 16,
+                            "MapX": 362,
+                            "MapY": 222
+                        },
+                        {
+                            "TileX": 59,
+                            "TileY": 29,
+                            "MapX": 385,
+                            "MapY": 228
+                        }
+                    ]
+                }
+            }
+        },
+    ]
+}

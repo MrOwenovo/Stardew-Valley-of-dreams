@@ -1,0 +1,70 @@
+{
+"Changes": [
+	
+//------------------------------------- D A T A B L E S -------------------------------------
+
+//------------------------
+// E N G A G E M E N T    
+//------------------------
+
+	{
+			
+		"LogName": "Engagement Dialogue",
+		"Action": "EditData",
+		"Target": "Data/EngagementDialogue",
+		"Entries": {
+		
+		        "Sterling0": "这是我一生中最激动的时刻。$1#$b#我已经等不及了。$9",
+        		"Sterling1": "明天...你，和我。我永远不会放开你，@。$4",
+				
+		}
+	},
+//------------------------
+//Children
+//------------------------
+	
+	//Cookie
+	
+	
+		{
+		"Action": "EditImage",
+		"Target": "Characters/Toddler",
+		"FromFile": "assets/Characters/Sterling/Kids/{{season}}_cookie.png",
+		
+		"When": {
+			"Relationship:Sterling": "Married",
+			"CustomToddlers": "true"
+				}
+		},
+	{
+		"Action": "EditImage",
+		"Target": "Characters/Toddler_dark",
+		"FromFile": "assets/Characters/Sterling/Kids/{{season}}_cookie.png",
+		"When": {
+		"Relationship:Sterling": "Married",
+		"CustomToddlers": "true"
+		}
+	},
+
+	//Muffin
+	{
+		"Action": "EditImage",
+		"Target": "Characters/Toddler_girl",
+		"FromFile": "assets/Characters/Sterling/Kids/{{season}}_muffin.png",
+		"When": {
+		"Relationship:Sterling": "Married",
+		"CustomToddlers": "true"
+	}
+	},
+	{
+		"Action": "EditImage",
+		"Target": "Characters/Toddler_girl_dark",
+		"FromFile": "assets/Characters/Sterling/Kids/{{season}}_muffin.png",
+		"When": {
+		"Relationship:Sterling": "Married",
+		"CustomToddlers": "true"
+	}
+  }
+]
+
+}

@@ -1,0 +1,353 @@
+{
+//	"Format": "1.23.0",
+
+   "Changes": [
+	
+	{
+		"LogName": "Adds an easter bunny in the forest",
+		"Action": "EditMap",
+		"Target": "Maps/Forest",
+		"MapTiles": [
+		{
+			"Position": { "X": 14, "Y": 19 },
+			"Layer": "Back",
+			"SetProperties": {
+				"CustomCompanions": "Spawn {{Random: 0, 1}} SmolHooman.FestiveValleyCC.EasterBunny"
+			},
+		},
+		],
+		"When": {
+			"Enable custom festive animals": "true",
+			"Enable Egg Festival changes": "true",
+			"Day": "12, 13, 14",
+			"Season": "Spring",
+			"Weather": "Sun, Wind",
+		},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds the harvest fairy in the farm",
+		"Action": "EditMap",
+		"Target": "Maps/Farm",
+		"MapTiles": [
+		{
+			"Position": { "X": 75, "Y": 17 },
+			"Layer": "Back",
+			"SetProperties": {
+				"CustomCompanions": "Spawn {{Random: 0, 1}} SmolHooman.FestiveValleyCC.HarvestFairy"
+			},
+		},
+		],
+		"When": {
+			"Enable custom festive animals": "true",
+			"Enable Flower Dance changes": "true",
+			"Day": "24, 25",
+			"Season": "Spring",
+			"Weather": "Sun, Wind",
+		},
+		"Update": "OnLocationChange"
+	},
+	{
+		"Action": "EditMap",
+		"Target": "Maps/Backwoods",
+		"MapTiles": [
+		{
+			"Position": { "X": 42, "Y": 15 },
+			"Layer": "Back",
+			"SetProperties": {
+				"CustomCompanions": "Spawn {{Random: 0, 0, 1}} SmolHooman.FestiveValleyCC.Junimo"
+			},
+		},
+		],
+		"When": {	
+			"Enable custom festive animals": "true",
+			"Enable Luau changes": "true",
+			"Day": "10, 11",
+			"Season": "Summer",
+		},
+		"Update": "OnLocationChange"
+	},
+	{
+		"Action": "EditMap",
+		"Target": "Maps/Beach",
+		"MapTiles": [
+		{
+			"Position": { "X": 90, "Y": 5 },
+			"Layer": "Back",
+			"SetProperties": {
+				"CustomCompanions": "Spawn {{Random: 0, 0, 1}} SmolHooman.FestiveValleyCC.Junimo"
+			},
+		},
+		],
+		"When": {	
+			"Enable custom festive animals": "true",
+			"Enable Luau changes": "true",
+			"Day": "10, 11",
+			"Season": "Summer",			
+		},
+		"Update": "OnLocationChange"
+	},
+	{
+		"Action": "EditMap",
+		"Target": "Maps/Forest",
+		"MapTiles": [
+		{
+			"Position": { "X": 34, "Y": 97 },
+			"Layer": "Back",
+			"SetProperties": {
+				"CustomCompanions": "Spawn {{Random: 0, 0, 1}} SmolHooman.FestiveValleyCC.Junimo"
+			},
+		},
+		],
+		"When": {	
+			"Enable custom festive animals": "true",
+			"Enable Luau changes": "true",
+			"Day": "10, 11",
+			"Season": "Summer",			
+		},
+		"Update": "OnLocationChange"
+	},
+	{
+		"Action": "EditMap",
+		"Target": "Maps/Mountain",
+		"MapTiles": [
+		{
+			"Position": { "X": 89, "Y": 33 },
+			"Layer": "Back",
+			"SetProperties": {
+				"CustomCompanions": "Spawn {{Random: 0, 0, 1}} SmolHooman.FestiveValleyCC.Junimo"
+			},
+		},
+		],
+		"When": {	
+			"Enable custom festive animals": "true",
+			"Enable Luau changes": "true",
+			"Day": "10, 11",
+			"Season": "Summer",
+		},
+		"Update": "OnLocationChange"
+	},
+	{
+		"Action": "EditMap",
+		"Target": "Maps/Town",
+		"MapTiles": [
+		{
+			"Position": { "X": 53, "Y": 10 },
+			"Layer": "Back",
+			"SetProperties": {
+				"CustomCompanions": "Spawn {{Random: 0, 0, 1}} SmolHooman.FestiveValleyCC.Junimo"
+			},
+		},
+		],
+		"When": {	
+			"Enable custom festive animals": "true",
+			"Enable Luau changes": "true",
+			"Day": "10, 11",
+			"Season": "Summer",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"Action": "EditMap",
+		"Target": "Maps/Woods",
+		"MapTiles": [
+		{
+			"Position": { "X": 10, "Y": 10 },
+			"Layer": "Back",
+			"SetProperties": {
+				"CustomCompanions": "Spawn {{Random: 0, 1}} SmolHooman.FestiveValleyCC.Junimo"
+			},
+		},
+		],
+		"When": {	
+			"Enable custom festive animals": "true",
+			"Enable Luau changes": "true",
+			"Day": "10, 11",
+			"Season": "Summer",
+		},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"Action": "EditMap",
+		"Target": "Maps/Beach",
+		"MapTiles": [
+		{
+			"Position": { "X": 42, "Y": 39 },
+			"Layer": "Back",
+			"SetProperties": {
+				"CustomCompanions": "Spawn {{Random: 2, 3, 4, 5}} SmolHooman.FestiveValleyCC.MoonlightJelly"
+			},
+		},
+		{
+			"Position": { "X": 33, "Y": 43 },
+			"Layer": "Back",
+			"SetProperties": {
+				"CustomCompanions": "Spawn {{Random: 3, 4, 5}} SmolHooman.FestiveValleyCC.MoonlightJellySmall"
+			},
+		},
+		{
+			"Position": { "X": 94, "Y": 39 },
+			"Layer": "Back",
+			"SetProperties": {
+			"CustomCompanions": "Spawn {{Random: 0, 1}} SmolHooman.FestiveValleyCC.MoonlightJellyGreen"
+			},
+		},
+		],
+		"When": {	
+			"Enable custom festive animals": "true",
+			"Enable Dance of the Moonlight Jellies changes": "true",
+			"Day": "24, 25, 26, 27",
+			"Season": "Summer",
+		},
+		"Update": "OnLocationChange"
+	},
+	{
+		"Action": "EditMap",
+		"Target": "Maps/Backwoods",
+		"MapTiles": [
+		{
+			"Position": { "X": 42, "Y": 15 },
+			"Layer": "Back",
+			"SetProperties": {
+				"CustomCompanions": "Spawn {{Random: 0, 0, 1}} SmolHooman.FestiveValleyCC.Junimo"
+			},
+		},
+		],
+		"When": {	
+			"Enable custom festive animals": "true",
+			"Enable Stardew Fair changes": "true",
+			"Day": "13, 14, 15, 16",
+			"Season": "Fall",
+			"Weather": "Sun, Wind",
+		},
+		"Update": "OnLocationChange"
+	},
+	{
+		"Action": "EditMap",
+		"Target": "Maps/Beach",
+		"MapTiles": [
+		{
+			"Position": { "X": 90, "Y": 5 },
+			"Layer": "Back",
+			"SetProperties": {
+				"CustomCompanions": "Spawn {{Random: 0, 0, 1}} SmolHooman.FestiveValleyCC.Junimo"
+			},
+		},
+		],
+		"When": {	
+			"Enable custom festive animals": "true",
+			"Enable Stardew Fair changes": "true",
+			"Day": "13, 14, 15, 16",
+			"Season": "Fall",
+			"Weather": "Sun, Wind",
+		},
+		"Update": "OnLocationChange"
+	},
+	{
+		"Action": "EditMap",
+		"Target": "Maps/Forest",
+		"MapTiles": [
+		{
+			"Position": { "X": 34, "Y": 97 },
+			"Layer": "Back",
+			"SetProperties": {
+				"CustomCompanions": "Spawn {{Random: 0, 0, 1}} SmolHooman.FestiveValleyCC.Junimo"
+			},
+		},
+		],
+		"When": {	
+			"Enable custom festive animals": "true",
+			"Enable Stardew Fair changes": "true",
+			"Day": "13, 14, 15, 16",
+			"Season": "Fall",
+			"Weather": "Sun, Wind",
+		},
+		"Update": "OnLocationChange"
+	},
+	{
+		"Action": "EditMap",
+		"Target": "Maps/Mountain",
+		"MapTiles": [
+		{
+			"Position": { "X": 89, "Y": 33 },
+			"Layer": "Back",
+			"SetProperties": {
+				"CustomCompanions": "Spawn {{Random: 0, 0, 1}} SmolHooman.FestiveValleyCC.Junimo"
+			},
+		},
+		],
+		"When": {	
+			"Enable custom festive animals": "true",
+			"Enable Stardew Fair changes": "true",
+			"Day": "13, 14, 15, 16",
+			"Season": "Fall",
+			"Weather": "Sun, Wind",
+		},
+		"Update": "OnLocationChange"
+	},
+	{
+		"Action": "EditMap",
+		"Target": "Maps/Town",
+		"MapTiles": [
+		{
+			"Position": { "X": 53, "Y": 10 },
+			"Layer": "Back",
+			"SetProperties": {
+				"CustomCompanions": "Spawn {{Random: 0, 0, 1}} SmolHooman.FestiveValleyCC.Junimo"
+			},
+		},
+		],
+		"When": {	
+			"Enable custom festive animals": "true",
+			"Enable Stardew Fair changes": "true",
+			"Day": "13, 14, 15, 16",
+			"Season": "Fall",
+			"Weather": "Sun, Wind",
+		},
+		"Update": "OnLocationChange"
+	},
+	{
+		"Action": "EditMap",
+		"Target": "Maps/Woods",
+		"MapTiles": [
+		{
+			"Position": { "X": 10, "Y": 10 },
+			"Layer": "Back",
+			"SetProperties": {
+				"CustomCompanions": "Spawn {{Random: 0, 1}} SmolHooman.FestiveValleyCC.Junimo"
+			},
+		},
+		],
+		"When": {	
+			"Enable custom festive animals": "true",
+			"Enable Stardew Fair changes": "true",
+			"Day": "13, 14, 15, 16",
+			"Season": "Fall",
+			"Weather": "Sun, Wind",
+		},
+		"Update": "OnLocationChange"
+	},
+	{
+		"Action": "EditMap",
+		"Target": "Maps/Backwoods",
+		"MapTiles": [
+		{
+			"Position": { "X": 32, "Y": 12 },
+			"Layer": "Back",
+			"SetProperties": {
+				"CustomCompanions": "Spawn {{Random: 0, 1}} SmolHooman.FestiveValleyCC.{{Random: Reindeer, Reindeer, ReindeerRedNose}}"
+			},
+		},
+		],
+		"When": {	
+			"Enable custom festive animals": "true",
+			"Enable Feast of the Winter Star changes": "true",
+			"Day": "25",
+			"Season": "Winter",
+		},
+		"Update": "OnLocationChange"
+	}
+	]
+}

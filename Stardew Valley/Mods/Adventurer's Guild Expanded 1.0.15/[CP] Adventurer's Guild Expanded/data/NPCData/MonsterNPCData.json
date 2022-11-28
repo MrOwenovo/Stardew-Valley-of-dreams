@@ -1,0 +1,111 @@
+{
+"Changes": [
+
+//*** SILLY THE SLIME ****
+
+		//NPC Dispositions
+		{
+			"LogName": "NPC Dispositions",
+			"Action": "EditData",
+			"Target": "Data/NPCDispositions",
+			"Entries": {
+				"Silly": "child/polite/shy/positive/undefined/not-datable/null/Town/null//Custom_GE_MonsterResearchWing 17 5/笨笨",
+
+			},
+			"When": {
+				"HasFlag: hostPlayer |contains=choseZinnia, finishedGabriel": "true",
+			},
+		},
+
+
+		//LOAD EMPTY JSONS
+		  {
+			"LogName": "Load Empty Json Dialogues",
+   			"Action": "Load",
+   			"Target": "Characters/Dialogue/Silly, Characters/schedules/Silly, Strings/schedules/Silly",
+   			"FromFile": "data/empty.json"
+  		},
+
+		{
+			"LogName": "Silly Sprites",
+			"Action": "Load",
+			"Target": "Characters/Silly",
+			"FromFile": "assets/Characters/Silly.png",
+		},
+
+		{
+			"LogName": "Silly Portraits",
+			"Action": "Load",
+			"Target": "Portraits/Silly",
+			"FromFile": "assets/Portraits/Silly.png",
+		},
+
+		{
+			"LogName": "Silly Beach Sprites",
+			"Action": "Load",
+			"Target": "Characters/Silly_Beach",
+			"FromFile": "assets/Characters/Silly_Beach.png",
+		},
+
+		{
+			"LogName": "Silly Beach Portraits",
+			"Action": "Load",
+			"Target": "Portraits/Silly_Beach",
+			"FromFile": "assets/Portraits/Silly_Beach.png",
+		},
+
+		{
+			"LogName": "Silly Dialogue",
+			"Action": "Include",
+			"FromFile": "data/NPCData/Silly/dialogue.json",
+		},
+
+		{
+            		"Action": "Include",
+            		"FromFile": "data/NPCData/Silly/schedule.json",
+        	},
+
+		{
+            	"Action": "EditData",
+            	"Target": "Data/NPCGiftTastes",
+	    	"Update": "OnTimeChange, OnLocationChange",
+            	"Entries": {
+				//LOVE-IDS-LIKE-IDS-DISLIKE-IDS-HATE-IDS-NEUTRAL-IDS
+                	"Silly": "*噗哧！**噗哧！*/400 613 394 268 340 344 158 796/*噗哧！*/437 439 413 680 857 -15 834 -2 414 -81/*噗哧？*/-4/*噗哧……*/557 -5 -6 -26/*噗哧*/-28 428/",
+            		},
+       		},
+
+		 {
+            	"Action": "EditData",
+            	"Target": "Data/NPCGiftTastes",
+	    	"Update": "OnTimeChange, OnLocationChange",
+            	"Fields": {
+                	"Silly": {
+				0: "哇哦！这个好有意思！谢谢你！笨笨喜欢！",
+				2: "谢谢你！笨笨真的很喜欢！",
+				4: "这是什么？笨笨不喜欢。",
+				6: "*抽泣*笨笨讨厌！走开！",
+				8: "给笨笨的礼物？谢谢你！",
+			},
+            	},
+	    	"When": {
+			"HasSeenEvent: hostPlayer |contains=9280011, 9280012": "true",
+		},
+        	},
+	
+	//Exclusions For Silly
+		{
+			"Action": "EditData",
+			"Target": "Data/CustomNPCExclusions",
+			"Update": "OnTimeChange, OnLocationChange",
+			"Entries":
+			{
+				"Silly": "All",
+			},
+			"When": {
+				"HasSeenEvent: hostPlayer |contains=9280017": "false",
+			},
+		},
+
+],
+}

@@ -1,0 +1,981 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.5" tiledversion="1.6.0" orientation="orthogonal" renderorder="right-down" width="27" height="27" tilewidth="16" tileheight="16" infinite="0" nextlayerid="19" nextobjectid="55">
+ <editorsettings>
+  <export target="JojaHQOffices.tmx" format="tmx"/>
+ </editorsettings>
+ <properties>
+  <property name="AmbientLight" value="10 10 10"/>
+  <property name="NPCWarp" value="2 4 Custom_DTZ_JojaElevHall 3 4 4 4 Custom_DTZ_JojaOffices 3 4"/>
+ </properties>
+ <tileset firstgid="1" name="Paths" tilewidth="16" tileheight="16" tilecount="36" columns="4">
+  <image source="paths" width="64" height="144"/>
+ </tileset>
+ <tileset firstgid="37" name="untitled tile sheet" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="townInterior" width="512" height="1088"/>
+ </tileset>
+ <tileset firstgid="2213" name="DesertTiles" tilewidth="16" tileheight="16" tilecount="368" columns="16">
+  <image source="DesertTiles.png" width="256" height="368"/>
+ </tileset>
+ <tileset firstgid="2581" name="MovieTheaterJoja_TileSheet" tilewidth="16" tileheight="16" tilecount="256" columns="16">
+  <image source="MovieTheaterJoja_TileSheet.png" width="256" height="256"/>
+ </tileset>
+ <tileset firstgid="2837" name="DoorToRight.png" tilewidth="16" tileheight="16" tilecount="64" columns="8">
+  <image source="DoorToRight.png" width="128" height="128"/>
+ </tileset>
+ <tileset firstgid="2901" name="Festivals" tilewidth="16" tileheight="16" tilecount="1024" columns="32">
+  <image source="Festivals.png" width="512" height="512"/>
+ </tileset>
+ <tileset firstgid="3925" name="spring_extra3" tilewidth="16" tileheight="16" tilecount="10000" columns="100">
+  <image source="spring_extra3.png" width="1600" height="1600"/>
+  <tile id="2100">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2101">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2102">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2103">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2104">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2105">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2106">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2107">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2200">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2201">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2202">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2203">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2204">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2205">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2206">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2207">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2300">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2301">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2302">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2303">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2304">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2305">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2306">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2307">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2400">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2401">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2402">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2403">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2404">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2405">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2406">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2407">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2439">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2440">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2441">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2442">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2443">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2444">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2445">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2539">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2540">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2541">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2542">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2543">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2544">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2545">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2600">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2601">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2602">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2603">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2604">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2605">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2606">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2607">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2639">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2640">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2641">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2642">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2643">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2644">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2645">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2700">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2701">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2702">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2703">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2704">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2705">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2706">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2707">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2739">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2740">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2741">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2742">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2743">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2744">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2745">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2800">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2801">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2802">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2803">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2804">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2805">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2806">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2807">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2900">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2901">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2902">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2903">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2904">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2905">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2906">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="2907">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="3000">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="3001">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="3002">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="3003">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="3004">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="3005">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="3006">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="3007">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="13925" name="spring_town" tilewidth="16" tileheight="16" tilecount="2304" columns="32">
+  <image source="spring_town.png" width="512" height="1152"/>
+ </tileset>
+ <tileset firstgid="16229" name="CharwiesExtras" tilewidth="16" tileheight="16" tilecount="1152" columns="24">
+  <image source="CharwiesExtras.png" width="384" height="768"/>
+ </tileset>
+ <tileset firstgid="17381" name="Craftables" tilewidth="16" tileheight="16" tilecount="576" columns="8">
+  <image source="Craftables.png" width="128" height="1152"/>
+ </tileset>
+ <tileset firstgid="17957" name="furniture" tilewidth="16" tileheight="16" tilecount="2976" columns="32">
+  <image source="furniture.png" width="512" height="1488"/>
+ </tileset>
+ <tileset firstgid="20933" name="JojaEnergy" tilewidth="16" tileheight="16" tilecount="640" columns="32">
+  <image source="spring_JojaEnergy.png" width="512" height="320"/>
+ </tileset>
+ <tileset firstgid="21573" name="JojaEnergyInterior" tilewidth="16" tileheight="16" tilecount="345" columns="23">
+  <image source="JojaEnergyInterior.png" width="368" height="240"/>
+ </tileset>
+ <tileset firstgid="21918" name="JojaEnergyWashroom" tilewidth="16" tileheight="16" tilecount="63" columns="9">
+  <image source="JojaEnergyWashroom.png" width="144" height="112"/>
+ </tileset>
+ <tileset firstgid="21981" name="townInterior" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="townInterior.png" width="512" height="1088"/>
+ </tileset>
+ <tileset firstgid="24157" name="townInterior_2" tilewidth="16" tileheight="16" tilecount="128" columns="32">
+  <image source="townInterior_2.png" width="512" height="64"/>
+ </tileset>
+ <tileset firstgid="24285" name="walls_and_floors" tilewidth="16" tileheight="16" tilecount="560" columns="16">
+  <image source="walls_and_floors.png" width="256" height="560"/>
+ </tileset>
+ <tileset firstgid="24845" name="springobjects" tilewidth="16" tileheight="16" tilecount="936" columns="24">
+  <image source="springobjects.png" width="384" height="624"/>
+ </tileset>
+ <tileset firstgid="25781" name="furniturereverse" tilewidth="16" tileheight="16" tilecount="2976" columns="32">
+  <image source="furniturereverse.png" width="512" height="1488"/>
+ </tileset>
+ <tileset firstgid="28757" name="items" tilewidth="16" tileheight="16" tilecount="15625" columns="125">
+  <image source="items.png" width="2000" height="2000"/>
+  <tile id="500">
+   <animation>
+    <frame tileid="500" duration="400"/>
+    <frame tileid="501" duration="400"/>
+    <frame tileid="502" duration="400"/>
+    <frame tileid="503" duration="400"/>
+    <frame tileid="504" duration="400"/>
+    <frame tileid="505" duration="400"/>
+    <frame tileid="506" duration="400"/>
+    <frame tileid="507" duration="400"/>
+   </animation>
+  </tile>
+  <tile id="625">
+   <animation>
+    <frame tileid="625" duration="400"/>
+    <frame tileid="626" duration="400"/>
+    <frame tileid="627" duration="400"/>
+    <frame tileid="628" duration="400"/>
+   </animation>
+  </tile>
+ </tileset>
+ <tileset firstgid="44382" name="furnitureextras" tilewidth="16" tileheight="16" tilecount="2976" columns="32">
+  <image source="furnitureextras.png" width="512" height="1488"/>
+ </tileset>
+ <layer id="1" name="Back" width="27" height="27">
+  <data encoding="csv">
+37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,
+37,2837,2837,2837,2837,2837,2837,2837,2837,2837,2837,2837,2837,2837,2837,2837,2837,2837,2837,2837,2837,2837,2837,2837,2837,2837,37,
+37,2845,2845,2845,2845,2845,2845,2845,2845,2845,2845,2845,2845,2845,2845,2845,2845,2845,2845,2845,2845,2845,2845,2845,2845,2845,37,
+37,2853,2853,2853,2853,2853,2853,2853,2853,2853,2853,2853,2853,2853,2853,2853,2853,2853,2853,2853,2853,2853,2853,2853,2853,2853,37,
+37,2765,6862,6372,6761,2765,2655,6671,2655,6671,2655,6671,2655,6671,2655,6671,2655,6671,2655,6671,2655,6671,2655,6671,2655,6671,37,
+37,2655,6762,6561,6861,2655,6671,2655,6671,2655,6671,2655,6671,2655,6671,2655,6671,2655,6671,2655,6671,2655,6671,2655,6671,2655,37,
+37,6671,2749,6661,6961,6671,2655,6671,2655,6671,2655,6671,2655,6671,2655,6671,2655,6671,2655,6671,2655,6671,2655,6671,2655,6671,37,
+37,2655,6671,2655,6671,2655,6671,2655,6671,2655,6671,2655,6671,2655,6671,2655,6671,2655,6671,2655,6671,2655,6671,2655,6671,2655,37,
+37,6671,2655,6671,2655,6671,2655,6671,2655,6671,2655,6671,2655,6671,2655,6671,2655,6671,2655,6671,2655,6671,2655,6671,2655,6671,37,
+37,2655,6671,2655,6671,2655,6671,2655,6671,2655,6671,2655,6671,2655,6671,2655,6671,2655,6671,2655,6671,2655,6671,2655,6671,2655,37,
+37,6671,2655,6671,2655,6671,37,37,37,6671,2655,6671,2655,6671,2655,6671,2655,6671,37,37,37,37,37,37,37,37,37,
+37,37,37,37,37,37,37,37,37,2655,6671,2655,6671,2655,6671,2655,6671,2655,37,37,37,37,37,37,37,37,37,
+37,2837,2837,2837,2837,2837,2837,2837,2837,6671,2655,6671,2655,6671,2655,6671,2655,6671,2837,2837,2837,2837,2837,2837,2837,2837,37,
+37,2845,2845,2845,2845,2845,2845,2845,2845,2655,6671,2655,6671,2655,6671,2655,6671,2655,2845,2845,2845,2845,2845,2845,2845,2845,37,
+37,2853,2853,2853,2853,2853,2853,2853,2853,6671,2655,6671,2655,6671,2655,6671,2655,6671,2853,2853,2853,2853,2853,2853,2853,2853,37,
+37,2655,6671,2655,6671,2655,6671,2655,6671,2655,6671,2655,6671,2655,6671,2655,6671,2655,6671,2655,6671,2655,6671,2655,6671,2655,37,
+37,6671,2655,6671,2655,6671,2655,6671,2655,6671,2655,6671,2655,6671,2655,6671,2655,6671,2655,6671,2655,6671,2655,6671,2655,6671,37,
+37,2655,6671,2655,6671,2655,6671,2655,6671,2655,6671,2655,6671,2655,6671,2655,6671,2655,6671,2655,6671,2655,6671,2655,6671,2655,37,
+37,6671,2655,6671,2655,6671,2655,6671,2655,37,37,37,37,37,37,37,37,37,2655,6671,2655,6671,2655,6671,2655,6671,37,
+37,2655,6671,2655,6671,2655,6671,2655,6671,37,37,37,37,37,37,37,37,37,6671,2655,6671,2655,6671,2655,6671,2655,37,
+37,6671,2655,6671,2655,6671,2655,6671,2655,37,37,37,37,37,37,37,37,37,2655,6671,2655,6671,2655,6671,2655,6671,37,
+37,2655,6671,2655,6671,2655,6671,2655,6671,37,37,37,37,37,37,37,37,37,6671,2655,6671,2655,6671,2655,6671,2655,37,
+37,6671,2655,6671,2655,6671,2655,6671,2655,37,37,37,37,37,37,37,37,37,2655,6671,2655,6671,2655,6671,2655,6671,37,
+37,2655,6671,2655,6671,2655,6671,2655,6671,37,37,37,37,37,37,37,37,37,6671,2655,6671,2655,6671,2655,6671,2655,37,
+37,6671,2655,6671,2655,6671,2655,6671,2655,37,37,37,37,37,37,37,37,37,2655,6671,2655,6671,2655,6671,2655,6671,37,
+37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,
+37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37
+</data>
+ </layer>
+ <objectgroup id="2" name="Back">
+  <object id="51" name="TileData" x="352" y="144" width="16" height="16">
+   <properties>
+    <property name="CustomCompanions" value="SPAWN 1 DTZ.DowntownZuzuCC.Joja1"/>
+   </properties>
+  </object>
+  <object id="52" name="TileData" x="176" y="80" width="16" height="16">
+   <properties>
+    <property name="CustomCompanions" value="SPAWN 1 DTZ.DowntownZuzuCC.Joja2"/>
+   </properties>
+  </object>
+  <object id="53" name="TileData" x="208" y="256" width="16" height="16">
+   <properties>
+    <property name="CustomCompanions" value="SPAWN 1 DTZ.DowntownZuzuCC.Joja4"/>
+   </properties>
+  </object>
+  <object id="54" name="TileData" x="64" y="256" width="16" height="16">
+   <properties>
+    <property name="CustomCompanions" value="SPAWN 1 DTZ.DowntownZuzuCC.Joja3"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="3" name="Back1" width="27" height="27">
+  <properties>
+   <property name="DrawAbove" value="Back"/>
+  </properties>
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4879,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,6025,6027,6028,6029,6032,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,6225,6127,6128,6129,6132,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,6225,6227,6228,6229,6232,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,6364,6365,6366,6367,6368,6369,6370,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,6464,6465,6466,6467,6468,6469,6470,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,6564,6565,6566,6567,6568,6569,6570,0,0,4774,4775,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,6664,6665,6666,6667,6668,6669,6670,0,0,4874,4875,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5461,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="4" name="Back1"/>
+ <layer id="5" name="Buildings" width="27" height="27">
+  <data encoding="csv">
+1893,1894,1894,1894,1894,1894,1894,1894,1894,1894,1894,1894,1894,1894,1894,1894,1894,1894,1894,1894,1894,1894,1894,1894,1894,1894,1895,
+1925,5575,0,0,0,6767,5575,0,0,0,6767,5575,0,0,0,0,0,0,6767,5575,0,0,0,0,0,5570,1927,
+1925,5675,0,0,0,6867,5675,0,0,0,6867,5675,0,0,0,0,0,0,6867,5675,0,0,5976,5977,0,5670,1927,
+1925,5775,5143,5144,5145,6967,5775,5776,5776,5776,6967,5775,5776,5776,5776,5776,5776,5776,6967,5775,5765,5766,6076,6077,5769,5770,1927,
+1925,7070,0,0,0,0,0,6347,19390,45926,0,13149,13150,12042,12043,5729,5730,21760,21761,5862,5865,5866,5868,17875,4658,5870,1927,
+1925,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5962,5963,5968,5965,5966,5547,5964,5964,5970,1927,
+1925,0,0,0,0,0,0,45928,19390,6547,0,0,0,0,0,0,0,6062,6063,6068,6065,6066,6067,6064,6064,6070,1927,
+1925,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6350,0,6349,0,18084,0,6348,0,18084,1927,
+1925,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1927,
+1925,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5471,5472,1959,
+1957,6263,6264,6264,6265,6266,1959,37,1925,21683,0,0,0,0,0,0,0,21682,1927,37,37,37,37,37,37,37,37,
+1893,1894,1894,1894,1894,1894,1894,1894,1928,21706,0,0,0,0,0,0,0,21705,1929,1894,1894,1894,1894,1894,1894,1894,1895,
+1925,5575,0,6767,5575,6767,5575,0,6767,21729,0,0,0,0,0,0,0,21728,5575,19359,5274,5275,5276,0,0,6767,1927,
+1925,5675,0,6867,5675,6867,5675,0,6867,21752,0,0,0,0,0,0,0,21751,5675,19391,5374,5375,5376,5976,5977,6867,1927,
+1925,5775,5776,6967,5775,6967,5775,5776,6967,21775,0,0,0,0,0,0,0,21774,5775,5776,5474,5475,5476,6076,6077,6967,1927,
+1925,22476,6576,0,5471,5472,21741,21742,21740,0,0,0,0,0,0,0,0,21694,21113,21114,0,0,21741,21742,6576,21694,1927,
+1925,0,0,0,0,21740,21694,21694,21694,0,0,0,0,0,0,0,0,0,0,0,0,0,0,21740,21694,21694,1927,
+1925,0,0,0,0,0,0,0,0,0,0,45571,45572,45572,45572,45573,0,0,0,0,0,0,0,0,0,0,1927,
+1925,5747,0,0,0,0,0,0,18084,1927,37,37,37,37,37,37,37,1925,18084,0,0,0,0,0,0,18084,1927,
+1925,19133,19134,0,0,0,0,19133,19134,1927,37,37,37,37,37,37,37,1925,19133,19134,0,0,0,0,19133,19134,1927,
+1925,19165,19166,6549,0,0,18084,19165,19166,1927,37,37,37,37,37,37,37,1925,19165,19166,6550,0,0,18084,19165,19166,1927,
+1925,0,0,0,0,0,0,6351,0,1927,37,37,37,37,37,37,37,1925,0,0,0,0,0,0,0,0,1927,
+1925,18084,0,0,0,0,0,0,5947,1927,37,37,37,37,37,37,37,1925,18084,0,0,0,0,0,0,6147,1927,
+1925,19133,19134,0,0,0,0,19133,19134,1927,37,37,37,37,37,37,37,1925,19133,19134,0,0,0,0,19133,19134,1927,
+1957,19165,19166,6548,0,0,18084,19165,19166,1959,37,37,37,37,37,37,37,1957,19165,19166,18084,0,0,18084,19165,19166,1959,
+37,37,37,1957,5471,5472,1959,37,37,37,37,37,37,37,37,37,37,37,37,37,1957,5471,5472,1959,37,37,37,
+37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37,37
+</data>
+ </layer>
+ <objectgroup id="6" name="Buildings" visible="0">
+  <object id="1" name="TileData" x="16" y="64" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.JojaHQCafe.1&quot;"/>
+   </properties>
+  </object>
+  <object id="2" name="TileData" x="32" y="48" width="16" height="16">
+   <properties>
+    <property name="Action" value="JojaElevator"/>
+   </properties>
+  </object>
+  <object id="3" name="TileData" x="48" y="48" width="16" height="16">
+   <properties>
+    <property name="Action" value="JojaElevator"/>
+   </properties>
+  </object>
+  <object id="4" name="TileData" x="64" y="48" width="16" height="16">
+   <properties>
+    <property name="Action" value="JojaElevator"/>
+   </properties>
+  </object>
+  <object id="5" name="TileData" x="80" y="48" width="16" height="16">
+   <properties>
+    <property name="Action" value="JojaElevator"/>
+   </properties>
+  </object>
+  <object id="27" name="TileData" x="352" y="96" width="16" height="16">
+   <properties>
+    <property name="Action" value="dummy"/>
+    <property name="Shop" value="JojaCafe"/>
+   </properties>
+  </object>
+  <object id="28" name="TileData" x="16" y="288" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.JojaHQCafe.7&quot;"/>
+   </properties>
+  </object>
+  <object id="29" name="TileData" x="48" y="320" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.JojaHQCafe.8&quot;"/>
+   </properties>
+  </object>
+  <object id="30" name="TileData" x="48" y="384" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.JojaHQCafe.9&quot;"/>
+   </properties>
+  </object>
+  <object id="31" name="TileData" x="112" y="336" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.JojaHQCafe.4&quot;"/>
+   </properties>
+  </object>
+  <object id="32" name="TileData" x="128" y="352" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.JojaHQCafe.3&quot;"/>
+   </properties>
+  </object>
+  <object id="34" name="TileData" x="320" y="320" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.JojaHQCafe.4&quot;"/>
+   </properties>
+  </object>
+  <object id="35" name="TileData" x="400" y="352" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.JojaHQCafe.10&quot;"/>
+   </properties>
+  </object>
+  <object id="37" name="TileData" x="272" y="112" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.JojaHQCafe.4&quot;"/>
+   </properties>
+  </object>
+  <object id="38" name="TileData" x="304" y="112" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.JojaHQCafe.3&quot;"/>
+   </properties>
+  </object>
+  <object id="39" name="TileData" x="368" y="112" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.JojaHQCafe.5&quot;"/>
+   </properties>
+  </object>
+  <object id="40" name="TileData" x="144" y="96" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.JojaHQCafe.3&quot;"/>
+   </properties>
+  </object>
+  <object id="41" name="TileData" x="112" y="64" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.JojaHQCafe.2&quot;"/>
+   </properties>
+  </object>
+  <object id="42" name="TileData" x="176" y="64" width="16" height="16">
+   <properties>
+    <property name="Action" value="ColaMachine"/>
+   </properties>
+  </object>
+  <object id="43" name="TileData" x="192" y="64" width="16" height="16">
+   <properties>
+    <property name="Action" value="ColaMachine"/>
+   </properties>
+  </object>
+  <object id="44" name="TileData" x="208" y="64" width="16" height="16">
+   <properties>
+    <property name="Action" value="ColaMachine"/>
+   </properties>
+  </object>
+  <object id="45" name="TileData" x="224" y="64" width="16" height="16">
+   <properties>
+    <property name="Action" value="ColaMachine"/>
+   </properties>
+  </object>
+  <object id="46" name="TileData" x="288" y="64" width="16" height="16">
+   <properties>
+    <property name="Action" value="ColaMachine"/>
+   </properties>
+  </object>
+  <object id="47" name="TileData" x="272" y="64" width="16" height="16">
+   <properties>
+    <property name="Action" value="ColaMachine"/>
+   </properties>
+  </object>
+  <object id="48" name="TileData" x="240" y="64" width="16" height="16">
+   <properties>
+    <property name="Action" value="Dialogue 这台可乐机坏了。"/>
+   </properties>
+  </object>
+  <object id="49" name="TileData" x="256" y="64" width="16" height="16">
+   <properties>
+    <property name="Action" value="Dialogue 这台可乐机坏了。"/>
+   </properties>
+  </object>
+  <object id="50" name="TileData" x="336" y="224" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DTZ.JojaHQCafe.6&quot;"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="7" name="Buildings1" width="27" height="27">
+  <properties>
+   <property name="DrawAbove" value="Buildings"/>
+  </properties>
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,4858,4859,0,0,5277,5278,5279,5280,0,0,0,0,0,0,0,0,0,0,
+0,838,0,0,0,0,0,0,0,4958,4959,0,0,0,0,0,0,0,0,0,0,0,0,4774,4775,0,0,
+0,0,0,0,0,0,0,0,0,0,4879,0,0,0,0,0,0,0,0,5762,0,0,0,4874,4875,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,23057,23058,0,5533,5534,5535,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,22289,0,22260,23110,23111,5633,5634,5635,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="8" name="Buildings1"/>
+ <layer id="9" name="Paths" width="27" height="27">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="10" name="Paths"/>
+ <layer id="11" name="Front" width="27" height="27">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,12747,12748,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,4943,4944,4945,0,5533,5534,5535,0,0,0,0,0,0,0,0,0,0,0,0,13045,13046,0,0,0,0,
+0,0,5043,5044,5045,5046,5633,5634,5635,0,0,12949,12950,11842,11843,5529,5530,21714,21715,10241,10242,13145,13146,0,0,0,0,
+0,6970,0,0,0,0,0,6247,19358,45894,0,13049,13050,11942,11943,5629,5630,21737,21738,10341,10342,13245,13246,17867,4558,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5447,0,0,0,0,
+0,0,0,0,0,0,0,45896,19358,6447,0,0,0,0,0,0,0,29257,0,29382,13332,0,5967,0,0,13141,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,6250,0,6249,0,18052,0,6248,0,18052,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5371,5372,0,
+0,6163,10448,6164,6165,6166,1897,1958,1896,21660,0,0,0,0,0,0,0,21659,1897,1958,1958,1958,1958,1958,1958,1958,0,
+0,1958,1958,1958,1958,1958,0,0,0,23878,0,0,0,0,0,0,0,23879,0,0,0,0,0,0,0,0,0,
+0,6175,6959,6177,0,0,0,0,0,23910,0,0,0,0,0,0,0,23911,0,0,5174,5175,5176,6175,6176,6177,0,
+0,7058,7059,7060,0,0,0,0,0,23942,0,0,0,0,0,0,0,23943,0,0,0,0,0,6275,6276,6277,0,
+0,7158,7159,7160,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,22782,0,6375,6376,6377,0,
+0,22444,7259,0,5371,5372,21718,21719,21717,0,0,0,0,0,0,0,0,21671,21081,21082,0,0,21718,21719,6476,21671,0,
+0,0,0,0,0,21717,21671,21671,21671,0,0,0,0,0,0,0,0,0,0,0,0,0,0,21717,21671,21671,0,
+0,0,0,0,0,0,0,0,0,0,0,45539,45540,45540,45540,45541,0,0,0,0,0,0,0,0,0,0,0,
+0,5647,0,0,0,0,0,0,18052,1897,1958,1958,1958,1958,1958,1958,1958,1896,18052,0,0,0,0,0,0,18052,0,
+0,19101,19102,0,0,0,0,19101,19102,0,0,0,0,0,0,0,0,0,19101,19102,0,0,0,0,19101,19102,0,
+0,0,25051,6449,0,0,18052,29257,0,0,0,0,0,0,0,0,0,0,0,29257,6450,0,0,18052,0,0,0,
+0,0,0,0,0,0,0,6251,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,18052,0,0,0,0,0,0,5847,0,0,0,0,0,0,0,0,0,18052,0,0,0,0,0,0,6047,0,
+0,19101,19102,0,0,0,0,19101,19102,0,0,0,0,0,0,0,0,0,19101,19102,0,0,0,0,19101,19102,0,
+0,0,25496,6448,0,0,18052,29382,0,0,0,0,0,0,0,0,0,0,0,0,18052,0,0,18052,0,25086,0,
+0,1958,1958,1896,5371,5372,1897,1958,1958,0,0,0,0,0,0,0,0,0,1958,1958,1896,5371,5372,1897,1958,1958,0,
+0,0,0,0,1958,1958,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1958,1958,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="12" name="Front"/>
+ <layer id="13" name="AlwaysFront" width="27" height="27">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,25240,0,0,0,0,0,0,0,0,0,0,0,0,13332,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,29382,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="14" name="AlwaysFront"/>
+</map>

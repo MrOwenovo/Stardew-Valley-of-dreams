@@ -1,0 +1,88 @@
+{
+	"Changes":[
+		{
+			"Action":"EditData",
+			"Target":"Data/ConcessionTastes",
+			"Entries":{
+				"Madam":{
+					"NPCName":"Madam",
+					"Reactions":[
+						{
+							"Tag":"*",
+							"Response":"love",
+							"Whitelist":[
+								"Willy"
+							],
+							"SpecialResponses":{
+								"BeforeMovie":{
+									"ResponsePoint":null,
+									"Script":"",
+									"Text":"I don't think I ever watched a movie with Willy!$h"
+								},
+								"DuringMovie":{
+									"ResponsePoint":null,
+									"Script":"",
+									"Text":"This is so exciting!$1"
+								},
+								"AfterMovie":{
+									"ResponsePoint":null,
+									"Script":"",
+									"Text":"Thank you for that, I really appreciate!$1"
+								}
+							},
+							"ID":"reaction_0"
+						},
+						{
+							"Tag":"*",
+							"Response":"love",
+							"Whitelist":[
+								"Linus"
+							],
+							"SpecialResponses":{
+								"BeforeMovie":{
+									"ResponsePoint":null,
+									"Script":"",
+									"Text":"I would've never imagined that I'd be watching a movie with my old friend!$h"
+								},
+								"DuringMovie":{
+									"ResponsePoint":null,
+									"Script":"",
+									"Text":"This is so exciting!$1"
+								},
+								"AfterMovie":{
+									"ResponsePoint":null,
+									"Script":"",
+									"Text":"Thank you for that, I really appreciate!$1"
+								}
+							},
+							"ID":"reaction_0"
+						},
+						{
+							"Tag":"*",
+							"Response":"love",
+							"Whitelist":[],
+							"SpecialResponses":{
+								"BeforeMovie":{
+									"ResponsePoint":null,
+									"Script":"",
+									"Text":"I'm very happy to see different lifestyles!$h"
+								},
+								"DuringMovie":{
+									"ResponsePoint":null,
+									"Script":"",
+									"Text":"This is so exciting!$1"
+								},
+								"AfterMovie":{
+									"ResponsePoint":null,
+									"Script":"",
+									"Text":"I really love to watch more of the world outside the island!$1"
+								}
+							},
+							"ID":"reaction_0"
+						}
+					]
+				}
+			}
+		}
+	]
+}

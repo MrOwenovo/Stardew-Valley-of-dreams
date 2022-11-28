@@ -1,0 +1,530 @@
+{
+  "Format": "1.26",
+
+// LOADS ACCIDENT DYNAMIC TOKEN 
+
+  "DynamicTokens": [
+   
+    {
+      "Name": "Accident",
+      "Value": "NoScars",
+      "When": {
+        "HasSeenEvent |contains=12360008": false,
+      }
+    },
+    {
+      "Name": "Accident",
+      "Value": "Scars",
+      "When": {
+        "HasSeenEvent |contains=12360008": true,
+      }
+    }
+],
+
+// LOADS MATEO'S TENT/GUILD IN EAST SCARP
+
+"CustomLocations": [
+  {
+      "Name": "Custom_ESMateoHome",
+      "FromMapFile": "assets/Maps/MateoHome.tmx",
+  },
+
+  {
+    "Name": "Custom_ESCoastalGuild",
+    "FromMapFile": "assets/Maps/CoastalGuild.tmx",
+  }
+],
+
+  "Changes": [
+
+// ADDS MATEO'S BUILDINGS  
+
+    {
+      "LogName": "Beach Tent Warp",
+      "Action": "EditMap",
+      "Target": "Maps/Custom_EastScarpe",
+      "FromFile": "assets/Maps/EastScarp_MateoTent.tmx",
+      "ToArea": 
+      {
+          "X": 0,
+          "Y": 102,
+          "Width": 17,
+          "Height": 16
+      },
+      "TextOperations": 
+      [
+          {
+              "Operation": "Append",
+              "Target": 
+              [
+                  "MapProperties",
+                  "Warp"
+              ],
+              "Value": "5 109 Custom_ESMateoHome 4 9",
+              "Delimiter": " "
+          }
+      ],
+      "When": 
+      {
+        "HasFlag |contains=Mateo_SpecialOrders_BuildGuildMail": false
+      }   
+    },
+
+    {
+      "LogName": "Coastal Guild Warp",
+      "Action": "EditMap",
+      "Target": "Maps/Custom_EastScarpe",
+      "FromFile": "assets/Maps/EastScarp_CoastalGuild.tmx",
+      "ToArea": 
+      {
+          "X": 0,
+          "Y": 102,
+          "Width": 17,
+          "Height": 16
+      },
+      
+      "When": 
+      {
+          "HasFlag |contains=Mateo_SpecialOrders_BuildGuildMail": true
+      }   
+    },
+
+// ADDS TEMP MAPS
+
+    {
+      "Action": "Load",
+      "Target": "Maps/DateMine",
+      "FromFile": "assets/Maps/DateMine.tmx"
+    },
+
+  // SPAWNS MATEO
+
+    { 
+      "LogName": "Mateo's NPCD",
+      "Action": "editData",
+      "Target": "Data/NPCDispositions",
+      "Entries": {
+        "Mateo": "adult/neutral/neutral/positive/female/not-datable/null/Town/fall 25/null/Custom_ESMateoHome 5 6/马特奥"
+      },
+      "When": 
+      {
+        "HasFlag |contains=Mateo_SpecialOrders_BuildGuildMail": false,
+        "HasFlag |contains=RivalHearts_AideenMateo": false
+      }  
+    },
+
+    { 
+      "LogName": "Mateo's Redeemed NPCD",
+      "Action": "editData",
+      "Target": "Data/NPCDispositions",
+      "Entries": {
+        "Mateo": "adult/polite/outgoing/positive/female/datable/null/Town/fall 25/null/Custom_ESCoastalGuild 8 5/马特奥"
+      },
+      "When": 
+      {
+        "HasFlag |contains=Mateo_SpecialOrders_BuildGuildMail": true,
+        "HasFlag |contains=RivalHearts_AideenMateo": false
+        
+      }  
+    },
+
+    { 
+      "LogName": "Mateo's Redeemed NPCD (Rival Hearts)",
+      "Action": "editData",
+      "Target": "Data/NPCDispositions",
+      "Entries": {
+        "Mateo": "adult/polite/outgoing/positive/female/not-datable/null/Town/fall 25/null/Custom_ESCoastalGuild 8 5/马特奥"
+      },
+      "When": 
+      {
+        "HasFlag |contains=RivalHearts_AideenMateo": true 
+      }  
+    },
+
+  // TEMPORARY ACTOR LOAD
+
+    {
+      "Action": "Load",
+      "Target": "Characters/MateoMarlon",
+      "FromFile": "assets/TemporaryActors/Characters/MateoMarlon.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Portraits/MateoMarlon",
+      "FromFile": "assets/TemporaryActors/Portraits/MateoMarlon.png"
+    },
+
+    {
+      "Action": "Load",
+      "Target": "Characters/MateoGunther",
+      "FromFile": "assets/TemporaryActors/Characters/MateoGunther.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Portraits/MateoGunther",
+      "FromFile": "assets/TemporaryActors/Portraits/MateoGunther.png"
+
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/MateoEmeritus",
+      "FromFile": "assets/TemporaryActors/Characters/MateoEmeritus.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Portraits/MateoEmeritus",
+      "FromFile": "assets/TemporaryActors/Portraits/MateoEmeritus.png"
+
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/MateoFinale",
+      "FromFile": "assets/TemporaryActors/Characters/MateoFinale.png"
+    },
+    
+  // SCHEDULE ANIMATIONS 
+
+    {
+      "LogName": "Animation Descriptions",
+      "Action": "EditData",
+      "Target": "Data/animationDescriptions",
+      "entries": {
+        "Mateo_sit_stare": "22/22 22 22 21 21 21 22 22 22 23 23 23 22 22 22/22",
+        "Mateo_sit_bench": "24/24 24/24",
+        "Mateo_drink": "29/29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 29 30 31 32 33 33 33 33 33 33 33 32 31 30/29",
+        "Mateo_sword": "40/40 40/40",
+        "Mateo_book":"25 25 25/26 26 26 26/25 25 25",
+      }
+    },
+
+  // MATEO'S PORTRAITS & SPRITES 
+
+    {
+      "LogName": "Mateo Portrait Load",
+      "Action": "Load",
+      "Target": "Portraits/Mateo",
+      "FromFile": "assets/{{Target}}/{{Accident}}/{{season}}/{{Random:01, 02, 03|key=mateo-outfit}}.png", 
+      "When": 
+      {
+        "HasFlag |contains=Mateo_SpecialOrders_BuildGuildMail": false,    
+      }  
+    },
+    {
+      "LogName": "Mateo Portrait Load (Guildmaster)",
+      "Action": "Load",
+      "Target": "Portraits/Mateo",
+      "FromFile": "assets/{{Target}}/{{Accident}}/{{season}}/{{Random:01, 02, 03, 04|key=mateo-outfit}}.png", 
+      "When": 
+      {
+        "HasFlag |contains=Mateo_SpecialOrders_BuildGuildMail": true,    
+      }  
+    },
+
+    {
+      "LogName": "Mateo Characters Load",
+      "Action": "Load",
+      "Target": "Characters/Mateo",
+      "FromFile": "assets/{{target}}/{{season}}/{{Random:01, 02, 03|key=mateo-outfit}}.png",
+      "When":
+      {
+        "HasFlag |contains=Mateo_SpecialOrders_BuildGuildMail": false,    
+      }  
+    },
+    {
+      "LogName": "Mateo Characters Load",
+      "Action": "Load",
+      "Target": "Characters/Mateo",
+      "FromFile": "assets/{{target}}/{{season}}/{{Random:01, 02, 03, 04|key=mateo-outfit}}.png",
+      "When":
+      {
+        "HasFlag |contains=Mateo_SpecialOrders_BuildGuildMail": true,    
+      }  
+    },
+
+    {
+      "LogName": "Mateo Beach Portrait Load",
+      "Action": "Load",
+      "Target": "Portraits/Mateo_beach",
+      "FromFile": "assets/Portraits/Mateo/{{Accident}}/mateo_beach.png", 
+    },
+
+    {
+      "LogName": "Mateo Beach Sprite Load",
+      "Action": "Load",
+      "Target": "Characters/Mateo_beach",
+      "FromFile": "assets/Characters/Mateo/mateo_beach.png"
+    },
+
+    {
+      "LogName": "Mateo Grimy Portrait Load",
+      "Action": "Load",
+      "Target": "Portraits/Mateo_grime",
+      "FromFile": "assets/Portraits/Mateo/Grime/{{season}}_mateo.png"
+    },
+
+    {
+      "LogName": "Mateo Wet Portrait Load",
+      "Action": "Load",
+      "Target": "Portraits/Mateo_wet",
+      "FromFile": "assets/Portraits/Mateo/Wet/{{season}}_mateo.png"
+    },
+
+    {
+      "LogName": "Mateo Pained Portrait Load",
+      "Action": "Load",
+      "Target": "Portraits/Mateo_pained",
+      "FromFile": "assets/Portraits/Mateo/Pained/{{season}}_mateo.png"
+    },
+
+    {
+      "LogName": "Mateo Pained Sprite Load",
+      "Action": "Load",
+      "Target": "Characters/Mateo_pained",
+      "FromFile": "assets/Characters/Mateo/Pained/{{season}}_mateo.png"
+    },
+    
+    {
+      "LogName": "Mateo Sword Sprite Load",
+      "Action": "Load",
+      "Target": "Characters/Mateo_sword",
+      "FromFile": "assets/Characters/Mateo/Sword/{{season}}_mateo.png"
+    },
+
+    {
+      "LogName": "Mateo Underground Portrait Load",
+      "Action": "Load",
+      "Target": "Portraits/Mateo_underground",
+      "FromFile": "assets/Portraits/Mateo/Underground/{{season}}_mateo.png"
+    },
+
+    {
+      "LogName": "Mateo Underground Sprite Load",
+      "Action": "Load",
+      "Target": "Characters/Mateo_underground",
+      "FromFile": "assets/Characters/Mateo/Underground/{{season}}_mateo.png"
+    },
+    {
+      "LogName": "Mateo Underground (Wet) Portrait Load",
+      "Action": "Load",
+      "Target": "Portraits/Mateo_scarwet",
+      "FromFile": "assets/Portraits/Mateo/ScarWet/{{season}}_mateo.png"
+    },
+    {
+      "LogName": "Mateo Finale Load",
+      "Action": "Load",
+      "Target": "Portraits/Mateo_finale",
+      "FromFile": "assets/Portraits/Mateo/Finale/{{season}}_mateo.png"
+    },
+    {
+      "LogName": "Mateo Date Portrait Load",
+      "Action": "Load",
+      "Target": "Portraits/Mateo_date",
+      "FromFile": "assets/Portraits/Mateo/{{Accident}}/Date/{{season}}_mateo.png",
+    },
+    {
+      "LogName": "Mateo Date Sprite Load",
+      "Action": "Load",
+      "Target": "Characters/Mateo_date",
+      "FromFile": "assets/Characters/Mateo/Date/{{season}}_mateo.png"
+    },
+    {
+      "LogName": "Mateo Classic Portrait Lock",
+      "Action": "Load",
+      "Target": "Portraits/Mateo_seasonal",
+      "FromFile": "assets/Portraits/Mateo/Seasonal/{{season}}_mateo.png"
+    },
+    {
+      "LogName": "Mateo Classic Portrait Lock (Scars)",
+      "Action": "Load",
+      "Target": "Portraits/Mateo_seasonalscars",
+      "FromFile": "assets/Portraits/Mateo/SeasonalScars/{{season}}_mateo.png"
+    },
+    {
+      "LogName": "Mateo Classic Sprite Lock",
+      "Action": "Load",
+      "Target": "Characters/Mateo_classic",
+      "FromFile": "assets/Characters/Mateo/Classic/{{season}}_mateo.png"
+    },
+
+
+  // VARIOUS INCLUDES 
+
+    {
+      "LogName": "Mateo Loads from Blanks",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/Mateo, Characters/Dialogue/MarriageDialogueMateo, Characters/Schedules/Mateo",
+      "FromFile": "Data/blank.json"
+    },
+
+    {
+      "LogName": "Tent Events Blank",
+      "Action": "Load",
+      "Target": "data/events/Custom_ESMateoHome",
+      "FromFile": "assets/blank.json",
+    },
+    
+    {
+      "LogName": "Guild Events Blank",
+      "Action": "Load",
+      "Target": "data/events/Custom_ESCoastalGuild",
+      "FromFile": "assets/blank.json",
+    },
+
+    {
+      "LogName": "Vanilla Guild Events Blank",
+      "Action": "Load",
+      "Target": "data/events/AdventureGuild",
+      "FromFile": "assets/blank.json",
+      "When": {
+        "HasMod: |contains=FlashShifter.StardewValleyExpandedCP, Wolf.Marlon, supert.adventureguildexpanded, Rafseazz.RSVCP, BlatantDecoy.BugmeatRecipes-CP": false,
+      }
+    },
+
+    {
+      "Action": "Include",
+      "FromFile": "Data/MarriageDialogueMateo.json, Data/CustomGiftDialogue.json, Data/EventsData.json, Data/DynamicChanges.json, Data/Strings.json, Data/Schedule.json, Data/Dialogue.json, Data/FestivalData.json, Data/ConversationTopics.json, Data/BuildQuest.json, Data/CGSpecialOrders.json, Data/DinoPathing.json, Data/ConcessionTastes.json, Data/CFD.json"
+    },
+
+    {
+      "LogName": "Loads Order Board Emoji",
+      "Action": "Load",
+      "Target": "LooseSprites/CAGemojis",
+      "FromFile": "assets/CAGemojis.png"
+    },
+
+  // SPOUSE ROOM
+
+    {
+      "Action": "Load",
+      "Target": "Maps/MateoSpouseRoom",
+      "FromFile": "Assets/Maps/{{TargetWithoutPath}}.tmx"
+    },   
+
+   {
+    "Action": "EditData",
+    "Target": "Data/SpouseRooms",
+    "Entries":
+    {
+        "Mateo": "MateoSpouseRoom/0",
+    }
+   },
+
+  // CHILDREN
+	
+    // SOREN
+		{
+      "Action": "EditImage",
+      "Target": "Characters/Toddler",
+      "FromFile": "assets/Characters/Mateo/Kids/{{season}}_soren.png",
+      
+      "When": {
+        "Relationship:Mateo": "Married",
+          }
+      },
+    {
+      "Action": "EditImage",
+      "Target": "Characters/Toddler_dark",
+      "FromFile": "assets/Characters/Mateo/Kids/{{season}}_soren.png",
+      "When": {
+      "Relationship:Mateo": "Married",
+    }
+    },
+  
+    // DINAH
+    {
+      "Action": "EditImage",
+      "Target": "Characters/Toddler_girl",
+      "FromFile": "assets/Characters/Mateo/Kids/{{season}}_dinah.png",
+      "When": {
+      "Relationship:Mateo": "Married",
+    }
+    },
+
+    {
+      "Action": "EditImage",
+      "Target": "Characters/Toddler_girl_dark",
+      "FromFile": "assets/Characters/Mateo/Kids/{{season}}_dinah.png",
+      "When": {
+      "Relationship:Mateo": "Married",
+    
+    }
+    },
+
+  // SPOUSE PATIO 
+  
+  {
+    "Action": "EditData",
+    "Target": "Data/SpousePatios",
+    "Entries": {
+        "Mateo": "Mateo_OutsideArea/0/40/0 0"
+    },
+    "When": {
+        "season": "winter, fall"
+    }
+},
+{
+    "Action": "EditData",
+    "Target": "Data/SpousePatios",
+    "Entries": {
+        "Mateo": "Mateo_OutsideArea/0/26/0 0"
+    },
+    "When": {
+        "season": "summer, spring"
+    }
+},
+
+  // LOAD PATIO MAP 
+{
+    "Action": "Load",
+    "Target": "Maps/Mateo_OutsideArea",
+    "FromFile": "assets/Maps/spousePatiosMateo.tmx"
+},
+
+  // FLOWER DANCE DISPOSITION CHANGE 
+
+  {
+    "LogName": "Gender Is A Construct",
+    "Action": "EditData",
+    "Target": "Data/NPCDispositions",
+    "Fields": {
+      "Mateo": {
+        "4": "male",
+        "5": "datable"
+      }
+    },
+    "When": {
+      "DayEvent": "flower dance"
+    }
+  },
+
+  {
+    "LogName": "Gender Is A Construct",
+    "Action": "EditData",
+    "Target": "Data/NPCDispositions",
+    "Fields": {
+      "Mateo": {
+        "4": "male"
+      }
+    },
+    "When": {
+      "HasDialogueAnswer": "639899",
+      "DayEvent": "flower dance"
+    }
+  },
+
+  // GIFT TASTE DATA
+
+    {
+      "LogName": "Gift tastes",
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "Entries": {
+
+        "Mateo": "我觉得你真的想到我了。谢谢你！/394 373 276 340 595 746 731 732/这是给我的吗?太谢谢你了，你真好。/224 372 446 797 421 578 236 608/...不同的人有不同的风格，是吧?/-2 -4/这是太随意了。我不知道你为什么要给我。/96 97 98 99 100 101 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 717/谢谢你，你真是太好了。/591 593 597 402 376 418/"
+
+      }
+    }
+  ]
+}
+
+// CREDITS: Mateo's Portraits: HimeTarts, Mateo's Sprites: Arknir27, Theme Music: Cutts Kevorkian, Gunther & Marlon's Sprites/Portraits: WerewolfMaster, Emeritus' Portrait: TheLoreKeeper, Emeritus' Sprites & Books Tilesheet: TheFrenchDodo, Tent and Coastal Adventurer Guild Exterior: Medisun, Guild Crest: Airyn, NPC Adventures Compatibility: Agent Lyoko, with additional assets by Rinny and Tiara, particularly rigorous playtesting by Kelsey, & lots of coding help and hand-holding from everyone in the East Scarp server - but especially my ModdyGodMother, LemurKat. Thank you all for being such excellent friends. I love you! - Desty

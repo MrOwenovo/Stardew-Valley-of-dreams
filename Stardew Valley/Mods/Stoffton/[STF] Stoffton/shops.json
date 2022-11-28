@@ -1,0 +1,310 @@
+{
+  "Shops": [
+//StofDwarf shop
+//Mixed Seeds [770] - up to 15
+//Rice Shoot [273] - up to 20
+//Mushroom Tree Seeds [891] - up to 3
+//Ancient Seeds [499] - only one
+{
+    "ShopName": "StofDwarf",
+    "PortraitPath": "assets/DwarfB.png",
+    "Quote": "我们一直都有油!",
+    "MaxNumItemsSoldInStore": "4",
+    "DefaultSellPriceMultiplier": "1",
+	"ItemStocks": [
+        {
+          "ItemType": "Object",
+          "ItemIDs": [247, 766, 93],
+        },
+        {
+          "ItemType": "Object",
+          "ItemIDs": [770, 273, 891, 499],
+          "Stock": "5",
+          "MaxNumItemsSoldInItemStock": "1"
+        },     
+	],
+	"When": ["NPCAt DwarfBFS 2 18",],
+    "ClosedMessage": "下午6点以后再来。", 
+    },
+
+    {
+    "ShopName": "StofClothesShop",
+    "PortraitPath": "assets/Clothes.png",
+    "Quote": "你在找新衣服吗?",
+    "MaxNumItemsSoldInStore": "10",
+    "DefaultSellPriceMultiplier": "3",
+	"ItemStocks": [
+        {
+          "ItemType": "Clothing",
+          "ItemIDs": [1136, 1227, 1009, 1215, 1196, 10, 1293, 1176, 1221, 1134, 1138, 1172, 1278, 1161, 1242, 1245, 1155, 1265, 1018, 1266, 1237, 1247, 1140, 1274, 1231, 1239, 1218, 1250, 1156, 1213, 1234, 1000, 1201, 1248, 1149, 1131, 1276, 1132, 1141, 1262, 1263, 1211, 1003, 1194, 1289, 1163, 5, 1275, 1229, 2, 1127, 1208, 1279, 1153, 1035, 1158, 1157, 1226, 1154, 1235, 1246, 1283, 1170, 8, 1292, 1284, 1150, 1222, 1238, 1008, 1188, 6, 1160, 1183, 1167, 1281, 1255, 1270, 1007, 1205, 1034, 1020, 1190, 1225, 1186, 1295, 1151, 1179, 1297, 1192, 1230, 1168, 1187, 1137, 1005, 1026, 1012, 1042, 7, 1291, 1997, 1017, 1285, 1290, 1002, 1257, 1185, 1220, 1016, 1171, 1193, 1240, 1256, 1264, 1267, 1166, 1015, 1224, 1027, 1216, 1038, 4, 1272, 14, 1269, 999, 998, 1223, 1998, 1999, 1197, 1260, 1241, 1280, 1251, 1162, 1013, 1184, 1243, 12, 13, 1244, 1039, 1233, 1236, 1159, 1123, 1214, 1191, 1271, 1, 1286, 1277, 11, 1014, 3, 1004, 1217, 1207, 1228, 1209, 1258, 1200, 1148, 1030, 1139, 1128, 1169, 1254, 1010, 1212, 1006, 1129, 1287, 9, 1249, 1199, 1282, 1252, 1164, 1232, 15, 1288, 1296, 1142, 1180, 1178, 1143, 1204, 1198, 1253, 1273, 1165, 1268, 1071, 1029, 1135, 1021, 1294, 1219],
+        },    
+	],
+	"When": ["t 800 1300",],
+    "ClosedMessage": "在上午8点到下午1点之间来。", 
+    },
+    
+    {
+    "ShopName": "StofCafe",
+    "PortraitPath": "assets/Cafe.png",
+    "Quote": "你在找吃的吗?",
+    "DefaultSellPriceMultiplier": "3",
+	"ItemStocks": [
+        {
+          "ItemType": "Object",
+          "ItemIDs": [198, 207, 197, 201, 214, 240, 649, 205, 610, 196],
+          "When": ["!z spring"]
+        }, 
+        {
+          "ItemType": "Object",
+          "ItemIDs": [198, 618, 214, 231, 649, 610, 215, 230, 224, 907],
+          "When": ["!z summer"]
+        }, 
+        {
+          "ItemType": "Object",
+          "ItemIDs": [235, 207, 214, 231, 240, 208, 236, 239, 237, 241],
+          "When": ["!z fall"]
+        }, 
+        {
+          "ItemType": "Object",
+          "ItemIDs": [235, 197, 214, 208, 236, 244, 224, 239, 237, 241],
+          "When": ["!z winter"]
+        },     
+	],
+	"When": ["t 1200 2200",],
+    "ClosedMessage": "营业时间为中午至晚上10点。", 
+    },
+    
+    {
+    "ShopName": "StofBakery",
+    "PortraitPath": "assets/Bakery.png",
+    "Quote": "想要一些甜的东西吗?",
+    "MaxNumItemsSoldInStore": "3",
+    "DefaultSellPriceMultiplier": "3",
+	"ItemStocks": [
+        {
+          "ItemType": "Object",
+          "ItemIDs": [904, 220, 194, 905, 731, 211, 221, 604, 608, 232, 607, 265, 203],
+        }, 
+        {
+        	"ItemType": "Object",
+          	"ItemIDs": [204],
+          	"When": ["f LexiFS 2000"],
+        },  
+	],
+	"When": ["t 610 1300",],
+    "ClosedMessage": "营业至下午1点。", 
+    },
+    
+    {
+    "ShopName": "StofFlowerShop",
+    "PortraitPath": "assets/Felix.png",
+    "Quote": "要用花来点亮你的一天吗?还是为了某个特别的人而来?",
+    "MaxNumItemsSoldInStore": "3",
+    "DefaultSellPriceMultiplier": "3",
+	"ItemStocks": [
+        {
+          "ItemType": "Object",
+          "ItemIDs": [597, 418, 18, 22, 595, 376, 593, 421, 402, 591],
+        },   
+	],
+	"When": ["t 800 1600",],
+    "ClosedMessage": "在上午8点到下午4点之间来。", 
+    },
+    
+    {
+    "ShopName": "StofGemShop",
+    "PortraitPath": "assets/Gem.png",
+    "Quote": "你在找一些宝石吗?",
+    "MaxNumItemsSoldInStore": "10",
+    "DefaultSellPriceMultiplier": "5",
+	"ItemStocks": [
+        {
+          "ItemType": "Object",
+          "ItemIDs": [541, 538, 66, 62, 540, 570, 539, 542, 566, 72, 543, 86, 60, 544, 565, 82, 545, 84, 546, 569, 547, 573, 70, 549, 548, 563, 550, 554, 571, 551, 552, 567, 574, 555, 553, 575, 560, 564, 556, 74, 559, 80, 64, 568, 576, 572, 562, 68],
+        },   
+	],
+	"When": ["t 800 1600",],
+    "ClosedMessage": "在上午8点到下午4点之间来。", 
+    },
+    
+    {
+    "ShopName": "StofDrinkShop",
+    "PortraitPath": "assets/Drink.png",
+    "Quote": "路上喝一杯?",
+    "MaxNumItemsSoldInStore": "10",
+    "DefaultSellPriceMultiplier": "5",
+	"ItemStocks": [
+        {
+          "ItemType": "Object",
+          "ItemIDs": [350, 346, 903, 459, 303, 348],
+        },
+        {
+          "ItemType": "BigCraftable",
+          "ItemIDs": [12, 163],
+          "StockPrice": "5000",
+        },     
+	],
+	"When": ["t 800 1600",],
+    "ClosedMessage": "市政规定不允许下午4点以后出售这些饮料。", 
+    },
+    
+    {
+    "ShopName": "StofGrocery",
+    "PortraitPath": "assets/Greta.png",
+    "Quote": "要来做些有趣的事吗？",
+    "MaxNumItemsSoldInStore": "10",
+    "DefaultSellPriceMultiplier": "5",
+	"ItemStocks": [
+        {
+          "ItemType": "Object",
+          "ItemIDs": [613, 634, 91, 258, 90, 638, 88, 282, 398, 834, 254, 199, 832, 268, 400, 256, 274, 190, 270, 272, 248, 304, 250, 247, 24, 192, 276, 264, 266, 252, 830, 419, 262],
+        },   
+	],
+	"When": ["NPCAt GretaFS 25 26",],
+    "ClosedMessage": "请在有人为您服务时再来。", 
+    },
+    
+    {
+    "ShopName": "StofGrocery1",
+    "PortraitPath": "assets/Grocery.png",
+    "Quote": "需要什么东西吗?",
+    "MaxNumItemsSoldInStore": "10",
+    "DefaultSellPriceMultiplier": "5",
+	"ItemStocks": [
+        {
+          "ItemType": "Object",
+          "ItemIDs": [613, 634, 91, 258, 90, 638, 88, 282, 398, 834, 254, 199, 832, 268, 400, 256, 274, 190, 270, 272, 248, 304, 250, 247, 24, 192, 276, 264, 266, 252, 830, 419, 262],
+        },   
+	],
+	"When": ["NPCAt ErikFS 20 26",],
+    "ClosedMessage": "请过一会儿再来。", 
+    },
+    
+    {
+    "ShopName": "StofFarmBoys",
+    "PortraitPath": "assets/Otto.png",
+    "Quote": "我们的库存每天都在变化!",
+    "MaxNumItemsSoldInStore": "10",
+    "DefaultSellPriceMultiplier": "5",
+	"ItemStocks": [
+        {
+          "ItemType": "Object",
+          "ItemIDs": [444, 724, 725, 726, 430, 440, 915],
+        }, 
+        {
+          "ItemType": "BigCraftable",
+          "ItemIDs": [10],
+          "StockPrice": "12800",
+        },
+        {
+          "ItemType": "BigCraftable",
+          "ItemIDs": [16],
+          "StockPrice": "10500",
+        }, 
+        {
+          "ItemType": "BigCraftable",
+          "ItemIDs": [167],
+          "StockPrice": "5220",
+        }, 
+        {
+          "ItemType": "BigCraftable",
+          "ItemIDs": [264],
+          "StockPrice": "63000",
+        }, 
+        {
+          "ItemType": "BigCraftable",
+          "ItemIDs": [12],
+          "StockPrice": "9600",
+        }, 
+        {
+          "ItemType": "BigCraftable",
+          "ItemIDs": [9],
+          "StockPrice": "4900",
+        }, 
+        {
+          "ItemType": "BigCraftable",
+          "ItemIDs": [17],
+          "StockPrice": "8600",
+        },
+        {
+          "ItemType": "BigCraftable",
+          "ItemIDs": [24],
+          "StockPrice": "4300",
+        }, 
+        {
+          "ItemType": "BigCraftable",
+          "ItemIDs": [19],
+          "StockPrice": "16000",
+        }, 
+        {
+          "ItemType": "BigCraftable",
+          "ItemIDs": [254],
+          "StockPrice": "47000",
+        }, 
+        {
+          "ItemType": "BigCraftable",
+          "ItemIDs": [15],
+          "StockPrice": "9000",
+        }, 
+        {
+          "ItemType": "BigCraftable",
+          "ItemIDs": [25],
+          "StockPrice": "10500",
+        }, 
+        {
+          "ItemType": "BigCraftable",
+          "ItemIDs": [105],
+          "StockPrice": "6400",
+        },  
+        {
+          "ItemType": "BigCraftable",
+          "ItemIDs": [165, 272, 101],
+          "StockPrice": "30000",
+        },
+        {
+          "ItemType": "BigCraftable",
+          "ItemIDs": [99, 104],
+          "StockPrice": "3000",
+        },   
+	],
+	"When": ["NPCAt OttoFS 3 23",],
+    "ClosedMessage": "我在外面照看我们的动物。请稍后再来!", 
+    },
+    
+     {
+    "ShopName": "StofBlacksmith",
+    "PortraitPath": "assets/Ignas.png",
+    "Quote": "今天我能帮您什么忙吗?",
+    "MaxNumItemsSoldInStore": "10",
+    "DefaultSellPriceMultiplier": "5",
+	"ItemStocks": [
+        {
+          "ItemType": "Object",
+          "ItemIDs": [334, 335, 336, 337, 338],
+        },   
+	],
+	"When": ["NPCAt IgnasFS 22 24",],
+    "ClosedMessage": "请等铁匠来了再来。", 
+    },
+    
+    {
+    "ShopName": "StofPickles",
+    "PortraitPath": "assets/Pickles.png",
+    "Quote": "我们带了所有的腌菜!",
+    "DefaultSellPriceMultiplier": "5",
+	"ItemStocks": [
+        {
+          "ItemType": "Object",
+          "ItemIDs": [342],
+        },
+        {
+          "ItemType": "BigCraftable",
+          "ItemIDs": [15],
+          "StockPrice": "5000",
+        },    
+	],
+	"When": ["NPCAt HelmutFS 12 37",],
+    "ClosedMessage": "请在有人来帮助你时回来。", 
+    },
+  ],
+}

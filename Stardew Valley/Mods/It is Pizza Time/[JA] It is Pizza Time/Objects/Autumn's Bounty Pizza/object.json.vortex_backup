@@ -1,0 +1,58 @@
+{
+	"Name": "Autumn's Bounty Pizza", //The name of our recipe and what it produces
+	"Description": "The taste of autumn in pizza form.", //A description which will appear when you click on the item
+	"Category": "Cooking", //This goes in the cooking menu, not the crafting menu
+  
+	"Edibility": 60, //This will set how much health your recipe will give when consumed. The exact math is a little arcane, and also affects the energy gained.
+	"EdibleIsDrink": false, //This is food, so it's not a drink. Drinks and food can both give buffs at the same time.
+  
+	"EdibleBuffs": {
+					"Farming": 0,
+					"Fishing": 0,
+					"Mining": 0,
+					"Luck": 0,
+					"Duration": 0, 
+  },
+  
+	"Price": 300, //Selling Autumn's Bounty Pizza will give 300g
+  
+	"IsColored": false, //there aren't different colored versions of our dish
+  
+	"Recipe": {
+			  "ResultCount": 1, //Making this recipe will give you ONE dish of Autumn's Bounty Pizza
+			  
+			  "Ingredients": [
+								{
+								   "Object": 246, //This recipe requires wheat flour
+								   "Count": 1, //specifically, it requires 1 of them
+								},
+								{
+								   "Object": 424, //It also requires one cheese
+								   "Count": 1,
+								},
+								{
+								   "Object": 235, //And one autumn's bounty
+								   "Count": 1,
+								}
+			      ],
+			   
+			   "IsDefault": "False", //The player does not know this recipe by default at the start of the game
+			   
+			   "CanPurchase": "True", //this recipe can be purchased
+			   "PurchaseFrom": "Gus", //This recipe can be bought from Gus			   
+			   "PurchasePrice": 150, //Gus will charge a mere 150g for this recipe
+			   
+			   "PurchaseRequirements": ["f Demetrius 2000"], //The player must have 8 hearts (2000 friend points) with Demetrius before the recipe will be available.
+			},
+			
+	
+    
+  
+	"GiftTastes": { //Anyone we do not set will default to how they feel about cooking in general. As cooking is a 'universal like,' most NPCs gifted our pizza will like it.
+					"Love": [ "Lewis" ], //Lewis will love our recipe
+					"Like": [ "null", ], //
+"Neutral": [ "null", ], //
+					"Dislike": [ "null", ], //
+					"Hate": [  "null", ],	//
+	},
+}

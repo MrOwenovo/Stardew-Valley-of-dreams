@@ -1,0 +1,392 @@
+{
+    "Changes": [
+        // *** D U C K S **************************
+        { //Drake
+            "LogName": "Mandarin Duck",
+            "Action": "Load",
+            "Target": "Characters/DuckNPC",
+            "FromFile": "assets/Images/Duck-Mandarin-land.png"
+        },
+        {
+            "LogName": "Mandarin Duck",
+            "Action": "Load",
+            "Target": "Characters/schedules/DuckNPC",
+            "FromFile": "assets/Characters/schedules/Duck.json"
+        },
+        {
+            "LogName": "Mandarin Duck",
+            "Action": "Load",
+            "Target": "Characters/Dialogue/DuckNPC",
+            "FromFile": "assets/Characters/Dialogue/Duck.json"
+        },
+        {
+            "LogName": "Mandarin Duck",
+            "Action": "Load",
+            "Target": "Portraits/DuckNPC",
+            "FromFile": "assets/Images/DuckPortrait.png"
+        },
+        { //Hen
+            "LogName": "Mandarin Duck",
+            "Action": "Load",
+            "Target": "Characters/Duck2NPC",
+            "FromFile": "assets/Images/Duck-Mandarin-female.png"
+        },
+        {
+            "LogName": "Mandarin Duck",
+            "Action": "Load",
+            "Target": "Characters/Duck2NPC_swimming",
+            "FromFile": "assets/Images/Duck-Mandarin-female_water.png"
+        },
+        {
+            "LogName": "Mandarin Duck",
+            "Action": "Load",
+            "Target": "Characters/schedules/Duck2NPC",
+            "FromFile": "assets/Characters/schedules/Duck2.json"
+        },
+        {
+            "LogName": "Mandarin Duck",
+            "Action": "Load",
+            "Target": "Characters/Dialogue/Duck2NPC",
+            "FromFile": "assets/Characters/Dialogue/Duck2.json"
+        },
+        {
+            "LogName": "Mandarin Duck",
+            "Action": "Load",
+            "Target": "Portraits/Duck2NPC",
+            "FromFile": "assets/Images/DuckPortrait2.png"
+        },
+        {
+            "LogName": "NPC Manifestation",
+            "Action": "EditData",
+            "Target": "Data/NPCDispositions",
+            "Entries": {
+                "DuckNPC": "adult/rude/outgoing/positive/male/not-datable/null/Town/null//Custom_EastScarpe 21 62/{{i18n:Name.duck1}}"
+            },
+            "When": {
+                "HasSeenEvent": "57870002"
+            }
+        },
+        {
+            "LogName": "NPC Manifestation",
+            "Action": "EditData",
+            "Target": "Data/NPCDispositions",
+            "Entries": {
+                "Duck2NPC": "adult/rude/shy/positive/female/not-datable/null/Town/null//Custom_EastScarpe 22 61/{{i18n:Name.duck2}}"
+            },
+            "When": {
+                "HasSeenEvent": "57870011"
+            }
+        },
+        {
+            "LogName": "NPC Gift Tastes",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "Entries": {
+                "DuckNPC": "{{i18n:gifts.duck.love}}/398 216/{{i18n:gifts.duck.like}}//{{i18n:gifts.duck.dislike}}/74 2 293/{{i18n:gifts.duck.hate}}//{{i18n:gifts.duck.neutral}}/-4 -81 -2 -75 -79 -7 -26 446/",
+            },
+            "When": {
+                "FriendableAnimals |contains=EmperorDuck": true
+            }
+        },
+        {
+            "LogName": "NPC Gift Tastes",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "Entries": {
+                "Duck2NPC": "{{i18n:gifts.duck2.love}}/398 216/{{i18n:gifts.duck2.like}}//{{i18n:gifts.duck2.dislike}}/74 2 293/{{i18n:gifts.duck2.hate}}//{{i18n:gifts.duck2.neutral}}/-4 -81 -2 -75 -79 -7 -26 446/",
+            },
+            "When": {
+                "HasSeenEvent": "57870011",
+                "FriendableAnimals |contains=EmpressDuck": true
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_EastScarpe",
+            "Update": "OnTimeChange",
+            "When": {
+                "HasMod": "PeacefulEnd.CustomCompanions",
+                "HasSeenEvent": "57870011",
+                "Hearts:Duck2NPC": "10",
+                "Season": "spring",
+                "Time": "{{Range: 800, 1700}}",
+                "FriendableAnimals |contains=EmpressDuck, EmperorDuck": false
+            },
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 26,
+                        "Y": 66
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "CustomCompanions": "Spawn 3 LemurKat.EastScarpeCompanions.Emperor_Duckling_Swim"
+                    }
+                }
+            ]
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_EastScarpe",
+            "Update": "OnTimeChange",
+            "When": {
+                "HasMod": "PeacefulEnd.CustomCompanions",
+                "HasSeenEvent": "57870011",
+                "Season": "spring",
+                "Time": "{{Range: 1700, 2100}}",
+                "FriendableAnimals |contains=EmpressDuck, EmperorDuck": false
+            },
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 21,
+                        "Y": 63
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "CustomCompanions": "Spawn 3 LemurKat.EastScarpeCompanions.Emperor_Duckling"
+                    }
+                }
+            ]
+        },
+        {
+            "LogName": "Mandarin Duck",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/DuckNPC",
+            "Entries": {
+                "Mon": "{{i18n:duck.mon}}",
+                "Tue": "{{i18n:duck.tue}}",
+                "Wed": "{{i18n:duck.wed}}",
+                "Thu": "{{i18n:duck.thu}}",
+                "Fri": "{{i18n:duck.fri}}",
+                "Sat": "{{i18n:duck.sat}}",
+                "Sun": "{{i18n:duck.sun}}"
+            }
+        },
+        {
+            "LogName": "Mandarin Duck",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Duck2NPC",
+            "Entries": {
+                "Mon": "{{i18n:duck2.mon}}",
+                "Tue": "{{i18n:duck2.tue}}",
+                "Wed": "{{i18n:duck2.wed}}",
+                "Thu": "{{i18n:duck2.thu}}",
+                "Fri": "{{i18n:duck2.fru}}",
+                "Sat": "{{i18n:duck2.sat}}",
+                "Sun": "{{i18n:duck2.sun}}"
+            }
+        },
+        { //Richie Macaw --------------------------------------------------
+            "LogName": "Richie the Macaw",
+            "Action": "Load",
+            "Target": "Characters/RichieTheMacaw",
+            "FromFile": "assets/Images/Macaw.png"
+        },
+        {
+            "LogName": "Richie the Macaw",
+            "Action": "Load",
+            "Target": "Portraits/RichieTheMacaw",
+            "FromFile": "assets/Images/RichieTheMacaw.png"
+        },
+        {
+            "LogName": "Richie the Macaw",
+            "Action": "Load",
+            "Target": "Characters/Dialogue/RichieTheMacaw",
+            "FromFile": "assets/Characters/Dialogue/RichieTheMacaw.json"
+        },
+        { // swearing parrot, feel free to embellish his dialogue if you wish
+            "LogName": "Richie the Macaw",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/RichieTheMacaw",
+            "Entries": {
+                "Mon": "{{i18n:macaw.mon}}",
+                "Tue": "{{i18n:macaw.tue}}",
+                "Wed": "{{i18n:macaw.wed}}",
+                "Thu": "{{i18n:macaw.thu}}",
+                "Fri": "{{i18n:macaw.fri}}",
+                "Sat": "{{i18n:macaw.sat}}",
+                "Sun": "{{i18n:macaw.sun}}"
+            }
+        },
+        // Lady Sheba ------------------------------------------------------
+        {
+            "LogName": "NPC Gift Tastes",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "Entries": {
+                "LadySheba": "{{i18n:gifts.sheba.love.{{cattalk}}}}/130 139 148 198 227 267 424 426 715 874/{{i18n:gifts.sheba.like.{{cattalk}}}}/-4 168 176 442 195 209 228 305 444 446 684 685 732/{{i18n:gifts.sheba.dislike.{{cattalk}}}}/-81 -2 -75 -79 -7/{{i18n:gifts.sheba.hate.{{cattalk}}}}/2 220 221 222 223 -26 395/{{i18n:gifts.sheba.neutral.{{cattalk}}}}//"
+            },
+            "When": {
+                "Query: {{FriendableAnimals |contains=LadyShebaCat}} OR {{HasMod |contains=LemurKat.Mr.Ginger.NPC}} OR {{HasMod |contains=Lemurkat.Tristan.CP}}": true
+            }
+        },
+        {
+            "LogName": "Stray Cat",
+            "Action": "Load",
+            "Target": "Portraits/LadySheba",
+            "FromFile": "assets/Images/LadySheba_Portrait.png"
+        },
+        {
+            "LogName": "Stray Cat sprites",
+            "Action": "Load",
+            "Target": "Characters/LadySheba",
+            "FromFile": "assets/Images/LadySheba.png"
+        },
+        {
+            "LogName": "Stray Cat Dialogue and Schedule",
+            "Action": "Load",
+            "Target": "Characters/Dialogue/LadySheba, Characters/schedules/LadySheba",
+            "FromFile": "assets/{{Target}}.json"
+        },
+        {
+            "LogName": "Stray Cat Dialogue and Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/LadySheba",
+            "Entries": {
+                "spring": "900 {{sheba.groom}}/1100 {{sheba.wander}}/1300 {{sheba.nap}}/1500 {{sheba.sit}}/1800 {{sheba.wander}}/2200 Custom_ES_CatWarpRoom 2 4 sheba_nap",
+                "rain": "610 Custom_ES_CatWarpRoom 2 4 sheba_nap/900 Custom_ESHouse4 9 14 sheba_nap/1400 Custom_EastScarpe 11 62 2 sheba_grooming/1800 Custom_EastScarpe 45 66 0 square 5_0/2100 Custom_ES_CatWarpRoom 2 4 sheba_nap",
+                "Sat": "900 {{sheba.groom}}/1200 Custom_EastScarpe 56 85 sheba_sit/1700 {{sheba.wander}}/2200 Custom_ES_CatWarpRoom 2 4 sheba_nap",
+                "winter": "GOTO rain"
+            },
+            "When": {
+                "HasSeenEvent": "57879903"
+            },
+        },
+        {
+            "LogName": "Stray Cat Dialogue and Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/LadySheba",
+            "When": {
+                "HasMod": "skellady.dialacafe.CP"
+            },
+            "Entries": {
+                "rain": "610 Custom_ES_CatWarpRoom 2 4 sheba_nap/900 Custom_EastScarpe 58 84 sheba_nap/1400 Custom_EastScarpe 11 62 2 sheba_grooming/1800 Custom_EastScarpe 45 66 0 square 5_0/2100 Custom_ES_CatWarpRoom 2 4 sheba_nap"
+            }
+        },
+        {
+            "LogName": "Stray Cat Dialogue and Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/LadySheba",
+            "When": {
+                "HasSeenEvent": "57879001",
+                "HasMod": "Lemurkat.Tristan.CP"
+            },
+            "Entries": {
+                "rain": "610 Custom_ES_CatWarpRoom 2 4 sheba_nap/900 Custom_ES_Playhouse 5 5 sheba_nap/1400 Custom_EastScarpe 11 62 2 sheba_grooming/1800 Custom_EastScarpe 45 66 0 square 5_0/2100 Custom_ES_CatWarpRoom 2 4 sheba_nap"
+            }
+        },
+        /* {
+            "Action": "Include",
+            "FromFile": "assets/Characters/Dialogue/LadySheba2.json",
+            "When": {
+                "HasSeenEvent": "50706121"
+            }
+        },*/
+        {
+            "Action": "Include",
+            "FromFile": "assets/Festivals/LadySheba.json",
+            "When": {
+                "HasSeenEvent": "57879903"
+            }
+        },
+        {
+            "LogName": "Animations",
+            "Action": "EditData",
+            "Target": "Data/animationDescriptions",
+            "Entries": {
+                "sheba_grooming": "16 17 18 19/20 20 20 20 20 21 21 21 21 22 22 22 22 23 23 23 23 21 21 21 21 21 21 22 22 22 22 23 23 23 23 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18/19 18 17 16",
+                "sheba_nap": "28/28 28 28 28 28 28 28 28 29 29 29 29 29 29 29 29/28",
+                "sheba_sit": "16 17 18/19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18/18 17 16"
+            }
+        },
+        {
+            "LogName": "Stray Cat Dialogue and Schedule",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/LadySheba",
+            "Entries": {
+                "Mon": "{{i18n:ladysheba.mon}}",
+                "Tue": "{{i18n:ladysheba.tue}}",
+                "Wed": "{{i18n:ladysheba.wed}}",
+                "Thu": "{{i18n:ladysheba.thu}}",
+                "Fri": "{{i18n:ladysheba.fri}}",
+                "Sat": "{{i18n:ladysheba.sat}}",
+                "Sun": "{{i18n:ladysheba.sun}}"
+            }
+        },
+        { // Lady Sheba talks if you have seen Mr. Ginger's 6 heart event
+            "LogName": "Stray Cat Dialogue and Schedule",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/LadySheba",
+            "When": {
+                "HasSeenEvent": "50706121"
+            },
+            "Entries": {
+                "Mon": "{{i18n:ladysheba.mon.50706121}}",
+                "Tue": "{{i18n:ladysheba.tue.50706121}}",
+                "Wed": "{{i18n:ladysheba.wed.50706121}}",
+                "Thu": "{{i18n:ladysheba.thu.50706121}}",
+                "Fri": "{{i18n:ladysheba.fri.50706121}}",
+                "Sat": "{{i18n:ladysheba.sat.50706121}}",
+                "Sun": "{{i18n:ladysheba.sun.50706121}}",
+                "Mon4": "{{i18n:ladysheba.mon4.50706121}}",
+                "Tue4": "{{i18n:ladysheba.tue4.50706121}}",
+                "Wed4": "{{i18n:ladysheba.wed4.50706121}}",
+                "Thu4": "{{i18n:ladysheba.thu4.50706121}}",
+                "Fri4": "{{i18n:ladysheba.fri4.50706121}}",
+                "Sat4": "{{i18n:ladysheba.sat4.50706121}}!",
+                "Sun4": "{{i18n:ladysheba.sun4.50706121}}",
+                "{{Season}}_22_2": "{{i18n:ladysheba.22.50706121}}",
+                "Mon10": "{{i18n:ladysheba.mon10.50706121}}",
+                "Tue8": "{{i18n:ladysheba.tue8.50706121}}",
+                "Wed10": "{{i18n:ladysheba.wed10.50706121}}",
+                "Thu8": "{{i18n:ladysheba.thu8.50706121}}",
+                "Fri10": "{{i18n:ladysheba.fri10.50706121}}",
+                "Sat8": "{{i18n:ladysheba.sat8.50706121}}",
+                "Sun10": "{{i18n:ladysheba.sun10.50706121}}",
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Custom_EastScarpe",
+            "Entries": {
+                "57879001/d Mon Tue Wed Thu Fri/e 5295000/z spring/z summer/w sunny/f LadySheba 250/o Shane/o MisterGinger/t 900 1700": "jaunty/20 48/MisterGinger 21 43 0 Jas 20 44 1 farmer 16 54 0 LadySheba 21 52 0/skippable/move farmer 0 -5 0/pause 1000/playSound hammer/pause 500/playSound hammer/speak Jas \"{{i18n:57879001.01}}\"/speak MisterGinger \"{{i18n:57879001.02}}\"/emote farmer 8/move farmer 0 1 3/move farmer 5 0 0/shake MisterGinger 40/playSound trashcanlid/move farmer 0 -4 0 true/pause 1000/textAboveHead Jas \"{{i18n:57879001.03}}\"/pause 1500/move MisterGinger 0 1 2/speak MisterGinger \"{{i18n:57879001.04}}\"/move MisterGinger 1 0 2/speak Jas \"{{i18n:57879001.05}}\"/speak MisterGinger \"{{i18n:57879001.06}}\"/speak Jas \"{{i18n:57879001.07}}\"/speak MisterGinger \"{{i18n:57879001.08}}\"/textAboveHead Jas \"{{i18n:57879001.09}}\"/speak Jas \"{{i18n:57879001.10}}\"/move LadySheba 0 -2 0/move MisterGinger 1 0 2 true/move farmer 1 0 2 true/pause 1000/playSound cat/pause 500/playSound cat/move LadySheba 0 -4 1/faceDirection farmer 3/emote farmer 56/pause 1000/playSound cat/faceDirection LadySheba 0/pause 1000/move LadySheba 0 -2 1/faceDirection MisterGinger 3/faceDirection farmer 3/pause 1000/faceDirection farmer 0/emote LadySheba 8/emote MisterGinger 30/pause 1000/faceDirection LadySheba 3/pause 1000/emote Jas 20/move LadySheba 0 -1 0/pause 1000/playSound doorCreak/pause 1000/faceDirection LadySheba 1/speak Jas \"{{i18n:57879001.11}}\"/pause 1000/faceDirection LadySheba 0/warp LadySheba -100 -100/playSound doorCreakReverse/faceDirection MisterGinger 2/pause 1000/speak Jas \"{{i18n:57879001.12}}\"/emote MisterGinger 20/pause 1000/end"
+            },
+            "When": {
+                "HasMod": "Lemurkat.Tristan.CP"
+            }
+        }, //Pepper
+        {
+            "LogName": "Pepper Pup Portraits",
+            "Action": "Load",
+            "Target": "Portraits/PepperPup",
+            "FromFile": "assets/Images/Pepper_portrait.png"
+        },
+        {
+            "LogName": "Pepper Pup sprites",
+            "Action": "Load",
+            "Target": "Characters/PepperPup",
+            "FromFile": "assets/Images/Pepper_sprite.png"
+        },
+        {
+            "LogName": "Pepper Pup Dialogue and Schedule",
+            "Action": "Load",
+            "Target": "Characters/Dialogue/PepperPup, Characters/schedules/PepperPup",
+            "FromFile": "assets/{{Target}}.json"
+        },
+        {
+            "LogName": "Pepper Dialogue and Schedule",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/PepperPup",
+            "Entries": {
+                "Mon": "{{i18n:pepperpup.mon}}",
+                "Tue": "{{i18n:pepperpup.tue}}",
+                "Wed": "{{i18n:pepperpup.wed}}",
+                "Thu": "{{i18n:pepperpup.thu}}",
+                "Fri": "{{i18n:pepperpup.fri}}",
+                "Sat": "{{i18n:pepperpup.sat}}",
+                "Sun": "{{i18n:pepperpup.sun}}",
+            }
+        }
+    ]
+}

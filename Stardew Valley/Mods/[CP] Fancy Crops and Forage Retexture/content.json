@@ -1,0 +1,2165 @@
+{
+	"Format": "1.28.0",
+	"ConfigSchema": {
+	
+	
+	
+		"Enable Veggies": {
+			"AllowValues": "true, false", 
+			"Default": "true"
+		},
+		"Enable Growing Crops": {
+			"AllowValues": "true, false", 
+			"Default": "true"
+		},
+		"Enable Fruits": {
+			"AllowValues": "true, false", 
+			"Default": "true"
+		},
+		"Enable Forage": {
+			"AllowValues": "true, false", 
+			"Default": "true"
+		},
+		"Enable Misc and Special": {
+			"AllowValues": "true, false", 
+			"Default": "true"
+		},
+		"Enable Seedpackets": {
+			"AllowValues": "true, false", 
+			"Default": "true"
+		},
+		"Seedpacket style": {
+			"AllowValues": "colored, one tone", 
+			"Default": "colored"
+		},
+		"Enable SVE Crops and Forage": {
+			"AllowValues": "true, false", 
+			"Default": "true"
+		},
+		
+		
+		
+		 
+	"Veggies": 
+		{
+			"AllowValues": "Amaranth, Artichoke, Beet, Blueberry, Bok Choy, Cauliflower, Corn, Cranberry, Eggplant, Garlic, GreenBean, Hops, Hot Pepper, Kale, Melon, Parsnip, Pineapple, Potato, Pumpkin, Radish, Red Cabbage, Rhubarb, Starfruit, Strawberry, Taro, Tomato, Unmilled Rice, Wheat, Yam",
+			"AllowMultiple": true, 
+			"AllowBlank": true,
+			"Default": "Amaranth, Artichoke, Beet, Blueberry, Bok Choy, Cauliflower, Corn, Cranberry, Eggplant, Garlic, GreenBean, Hops, Hot Pepper, Kale, Melon, Parsnip, Pineapple, Potato, Pumpkin, Radish, Red Cabbage, Rhubarb, Starfruit, Strawberry, Taro, Tomato, Unmilled Rice, Wheat, Yam",
+			"Section": "Veggies",
+		},
+		"Parsnip Color": 
+		{
+			"AllowValues": "Parsnip, Turnip", 
+			"Default": "Turnip",
+			"Section": "Veggies",
+		},
+		"MelonColor": {
+			"AllowValues": "yellow, green",
+			"Default": "yellow",
+			"Section": "Veggies",
+		},
+
+	"Fruits": 
+		{
+			"AllowValues": "Apple, Apricot, Banana, Cherry, Mango, Orange, Peach, Pomegranate",
+			"AllowMultiple": true, 
+			"AllowBlank": true,
+			"Default": "Apple, Apricot, Banana, Cherry, Mango, Orange, Peach, Pomegranate",
+			"Section": "Fruits",
+		},
+	"Forage": 
+		{
+			"AllowValues": "Blackberry, CactusFruit, CaveCarrot, Chanterelle, Coconut, CommonMushroom, Ginger, Green Algae, FiddleheadFern, Grape, Holly, Hazelnut, Leek, MagmaCap, PurpleMushroom, RedMushroom, SalmonBerry, Seaweed, SnowYam, SpiceBerry, SpringOnion, WildHorseradish, WildPlum, WinterRoot, White Algae",
+			"AllowMultiple": true, 
+			"AllowBlank": true,
+			"Default": "Blackberry, CactusFruit, CaveCarrot, Chanterelle, Coconut, CommonMushroom, Ginger, Green Algae, FiddleheadFern, Grape, Holly, Hazelnut, Leek, MagmaCap, PurpleMushroom, RedMushroom, SalmonBerry, Seaweed, SnowYam, SpiceBerry, SpringOnion, WildHorseradish, WildPlum, WinterRoot, White Algae",
+			"Section": "Forage",
+		},
+	"Misc and Special": 
+		{
+			"AllowValues": "Ancient Fruit, Coffee Bean, GoldenCoconut, GoldenWalnut, GoldPumpkin, QiBean, QiFruit, SweetGemBerry, Tea sapling",
+			"AllowMultiple": true, 
+			"AllowBlank": true,
+			"Default": "Ancient Fruit, Coffee Bean, GoldenCoconut, GoldenWalnut, GoldPumpkin, QiBean, QiFruit, SweetGemBerry, Tea sapling",
+			"Section": "Misc and Special",
+		},
+		"AncientFruit Style": {
+			"AllowValues": "default, golden",
+			"Default": "default",
+			"Section": "Misc and Special",
+		},
+		"CoffeeBean Style": {
+			"AllowValues": "big, small",
+			"Default": "big",
+			"Section": "Misc and Special",
+		},
+		"Seedpackets": 
+		{
+			"AllowValues": "Amaranth, Artichoke, Beet, Blueberry, Bok Choy, Cauliflower, Corn, Cranberry, Eggplant, Garlic, Grape, GreenBean, Hops, Hot Pepper, Kale, Melon, Parsnip, Pineapple, Potato, Pumpkin, Radish, Red Cabbage, Rhubarb, Starfruit, Strawberry, Taro, Tomato, Unmilled Rice, Wheat, Yam, BlueJazz, FairyRose, Poppy, SummerSpangle, Sunflower, Tulip, SpringSeeds, SummerSeeds, FallSeeds, WinterSeeds, AncientFruit Seed, SweetGemBerry Seed, CactusFruit, Fiber Seeds, MixedSeeds, Mushroom Tree Seed",
+			"AllowMultiple": true, 
+			"AllowBlank": true,
+			"Default": "Amaranth, Artichoke, Beet, Blueberry, Bok Choy, Cauliflower, Corn, Cranberry, Eggplant, Garlic, Grape, GreenBean, Hops, Hot Pepper, Kale, Melon, Parsnip, Pineapple, Potato, Pumpkin, Radish, Red Cabbage, Rhubarb, Starfruit, Strawberry, Taro, Tomato, Unmilled Rice, Wheat, Yam, BlueJazz, FairyRose, Poppy, SummerSpangle, Sunflower, Tulip, SpringSeeds, SummerSeeds, FallSeeds, WinterSeeds, AncientFruit Seed, SweetGemBerry Seed, CactusFruit, Fiber Seeds, MixedSeeds, Mushroom Tree Seed",
+			"Section": "Seedpackets",
+		},
+		"AncientFruitSeed Style": {
+			"AllowValues": "sprout, packet",
+			"Default": "sprout",
+			"Section": "Seedpackets",
+		},
+		
+		"SVE Crops": 
+		{
+			"AllowValues": "Ancient Fern, Dewdrop Berry, Giant Mushroom, Green Mushroom, Monster Fruit, Salal Berry, Slime Berry, Super Star Fruit, Void Root",
+			"AllowMultiple": true, 
+			"AllowBlank": true,
+			"Default": "Ancient Fern, Dewdrop Berry, Giant Mushroom, Green Mushroom, Monster Fruit, Salal Berry, Slime Berry, Super Star Fruit, Void Root",
+			"Section": "SVE Crops",
+		},
+		"SVE Seeds": 
+		{
+			"AllowValues": "Ancient Fern, Dewdrop Berry, Giant Mushroom, Monster Fruit, Salal Berry, Slime Berry, Void Root, Joja Berry, Joja Veggie",
+			"AllowMultiple": true, 
+			"AllowBlank": true,
+			"Default": "Ancient Fern, Dewdrop Berry, Giant Mushroom, Monster Fruit, Salal Berry, Slime Berry, Void Root, Joja Berry, Joja Veggie",
+			"Section": "SVE Seeds",
+		},
+	
+	
+	
+	
+
+
+
+//CHANGES
+		
+	},
+	"Changes": [
+	
+		//VEGGIES 
+	
+	
+	{
+			"LogName": "SVE",
+			"Action": "Include",
+			"FromFile": "assets/sve/sve.json",
+			"When": 
+			{
+				"HasMod |contains=FlashShifter.JA.SVE": "true",
+				"HasMod |contains=spacechase0.JsonAssets": "true",
+			}
+		},
+	
+	{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/springseeds.png",
+			"ToArea": { "X": 240, "Y": 320, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "true",
+				"Seedpacket style": "colored",
+				"Seedpackets |contains= SpringSeeds": true
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/summerseeds.png",
+			"ToArea": { "X": 256, "Y": 320, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "true",
+				"Seedpacket style": "colored",
+				"Seedpackets |contains= SummerSeeds": true
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/fallseeds.png",
+			"ToArea": { "X": 272, "Y": 320, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "true",
+				"Seedpacket style": "colored",
+				"Seedpackets |contains= FallSeeds": true
+			}
+		},
+		
+	{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/winterseeds.png",
+			"ToArea": { "X": 288, "Y": 320, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "true",
+				"Seedpacket style": "colored",
+				"Seedpackets |contains= WinterSeeds": true
+			}
+		},
+	
+	//qi
+	{	
+			
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/QiBean.png",
+			"ToArea": { "X": 32, "Y": 592, "Width": 16, "Height": 16 },
+			"When": {
+			"Enable Misc and Special": "true",
+			"Misc and Special |contains= QiBean": true
+			}
+		},		
+		{	
+			
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/objects/QiFruit.png",
+			"ToArea": { "X": 16, "Y": 592, "Width": 16, "Height": 16 },
+			"When": {
+			"Enable Misc and Special": "true",
+			"Misc and Special |contains= QiFruit": true
+			}
+		},
+		
+		//Mushroom Tree Seed
+		{	
+			
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/mushroomtree.png",
+			"ToArea": { "X": 48, "Y": 592, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpackets |contains= Mushroom Tree Seed": true	
+			}
+		},	
+		
+		//teasapling
+		{	
+			
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/teasapling.png",
+			"ToArea": { "X": 176, "Y": 160, "Width": 16, "Height": 16 },
+			"When": {
+			"Enable Misc and Special": "True",
+			"Misc and Special |contains= Tea sapling": true
+			}
+		},	
+		
+		
+	//algae
+	{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/objects/whitealgae.png",
+			"ToArea": { "X": 208, "Y": 96, "Width": 16, "Height": 16 },
+			"When": {
+				"Forage |contains= White Algae": true,
+				"Enable Forage": "True",
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/objects/greenalgae.png",
+			"ToArea": { "X": 144, "Y": 96, "Width": 16, "Height": 16 },
+			"When": {
+			"Forage |contains= Green Algae": true,
+				"Enable Forage": "True",
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/objects/seaalgae.png",
+			"ToArea": { "X": 128, "Y": 96, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Forage": "True",
+				"Forage |contains= Seaweed": true,
+			}
+		},
+	
+			//treefruits
+	
+	
+	//Apple
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/objects/apple.png",
+			"ToArea": { "X": 208, "Y": 400, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Fruits": "True",
+				"Fruits |contains= Apple": true,
+			}
+		},
+	//Apricot
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/objects/apricot.png",
+			"ToArea": { "X": 160, "Y": 416, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Fruits": "True",
+				"Fruits |contains= Apricot": true,
+			}
+		},
+	//Banana
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/objects/banana.png",
+			"ToArea": { "X": 304, "Y": 48, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Fruits": "True",
+				"Fruits |contains= Banana": true,
+			}
+		},
+	
+	//Cherry
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/objects/cherry.png",
+			"ToArea": { "X": 224, "Y": 416, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Fruits": "True",
+				"Fruits |contains= Cherry": true,
+			}
+		},
+	
+	//Mango
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/objects/mango.png",
+			"ToArea": { "X": 288, "Y": 544, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Fruits": "True",
+				"Fruits |contains= Mango": true,
+			}
+		},
+	
+	//Orange
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/objects/orange.png",
+			"ToArea": { "X": 176, "Y": 416, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Fruits": "True",
+				"Fruits |contains= Orange": true,
+			}
+		},
+	
+	//Peach
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/objects/peach.png",
+			"ToArea": { "X": 192, "Y": 416, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Fruits": "True",
+				"Fruits |contains= Peach": true,
+			}
+		},
+	
+	//Pomegranate
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/objects/pomegranate.png",
+			"ToArea": { "X": 208, "Y": 416, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Fruits": "True",
+				"Fruits |contains= Pomegranate": true,
+			}
+		},
+			
+			
+			
+			
+			
+	//Amaranth
+		
+		{//item
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/objects/amaranth.png",
+			"ToArea": { "X": 192, "Y": 192, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Veggies": "True",
+				"Veggies |contains= Amaranth": true,
+		
+			}
+		},
+		{//packet
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/amaranthseeds.png",
+			"ToArea": { "X": 176, "Y": 192, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpacket style": "colored",
+				"Seedpackets |contains= Amaranth": true,
+				
+			}
+		},
+		
+//fiberseeds
+		
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/fiber.png",
+			"ToArea": { "X": 336, "Y": 576, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpackets |contains= Fiber Seeds": true,
+			}
+		},
+		
+		
+	//AncientFruit
+		
+		{//item
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/objects/ancientfruit.png",
+			"ToArea": { "X": 352, "Y": 288, "Width": 16, "Height": 16 },
+			"When": {
+				"Misc and Special |contains= Ancient Fruit": true,
+				"AncientFruit Style": "default",
+			}
+		},
+		
+		//AncientFruitgold
+		
+		{//item
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/objects/ancientfruitalt.png",
+			"ToArea": { "X": 352, "Y": 288, "Width": 16, "Height": 16 },
+			"When": {
+				"Misc and Special |contains= Ancient Fruit": true,
+				"AncientFruit Style": "golden",
+			}
+		},
+		{//crop
+			"Action": "EditImage",
+			"Target": "Tilesheets/crops",
+			"FromFile": "assets/crops/crops.png",
+			"FromArea": { "X": 32, "Y": 384, "Width": 96, "Height": 32 },
+			"ToArea": { "X": 32, "Y": 384, "Width": 96, "Height": 32 },
+			"When": {
+				"Enable Growing Crops": "True",
+				"AncientFruit Style": "golden",
+			}
+		},
+		
+		{//packet
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/ancientfruitseedsalt.png",
+			"ToArea": { "X": 304, "Y": 320, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpackets |contains= AncientFruit Seed": true,
+				"AncientFruitSeed Style": "packet",
+			}
+		},
+		{//packet
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/ancientfruitseeds.png",
+			"ToArea": { "X": 304, "Y": 320, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpackets |contains= AncientFruit Seed": true,
+				"AncientFruitSeed Style": "sprout",
+			}
+		},
+
+		
+	//Artichoke
+		
+		{//item
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/objects/artichoke.png",
+			"ToArea": { "X": 160, "Y": 176, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Veggies": "True",
+				"Veggies |contains= Artichoke": true,
+			}
+		},
+		{//packet
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/artichokeseeds.png",
+			"ToArea": { "X": 144, "Y": 320, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpacket style": "colored",
+				"Seedpackets |contains= Artichoke": true,
+			}
+		},
+		
+		
+	//Beet
+		
+		
+		{//item
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/objects/beet.png",
+			"ToArea": { "X": 320, "Y": 176, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Veggies": "True",
+				"Veggies |contains= Beet": true,
+			}
+		},
+		{//packet
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/beetseeds.png",
+			"ToArea": { "X": 224, "Y": 320, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpacket style": "colored",
+				"Seedpackets |contains= Beet": true,
+				
+			}
+		},
+		
+		
+	//Blackberry
+		{//item
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/objects/blackberry.png",
+			"ToArea": { "X": 32, "Y": 272, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Forage": "True",
+				"Forage |contains= Blackberry": true,
+			}
+		},		
+
+	//Blueberry
+		
+		{//item
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/objects/blueberry.png",
+			"ToArea": { "X": 288, "Y": 160, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Veggies": "True",
+				"Veggies |contains= Blueberry": true,
+			}
+		},
+		{//packet
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/blueberryseeds.png",
+			"ToArea": { "X": 16, "Y": 320, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpacket style": "colored",
+				"Seedpackets |contains= Blueberry": true,
+			}
+		},
+
+	//BlueJazz
+	
+		{//packet
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/bluejazzseeds.png",
+			"ToArea": { "X": 336, "Y": 272, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpacket style": "colored",
+				"Seedpackets |contains= BlueJazz": true,
+			}
+		},
+
+	//BokChoy
+		
+		{//item
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/objects/bokchoy.png",
+			"ToArea": { "X": 224, "Y": 176, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Veggies": "True",
+				"Veggies |contains= Bok Choy": true,
+			}
+		},
+		{//packet
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/bokchoyseeds.png",
+			"ToArea": { "X": 176, "Y": 320, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpacket style": "colored",
+				"Seedpackets |contains= Bok Choy": true,
+			}
+		},
+
+	//CactusFruit
+		
+		{//item
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/objects/cactusfruit.png",
+			"ToArea": { "X": 288, "Y": 48, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Forage": "True",
+				"Forage |contains= CactusFruit": true,
+			}
+		},
+		{//packet
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/cactusfruitseeds.png",
+			"ToArea": { "X": 160, "Y": 528, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpacket style": "colored",
+				"Seedpackets |contains= CactusFruit": true,
+			}
+		},
+	
+	//CaveCarrot
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/objects/cavecarrot.png",
+			"ToArea": { "X": 96, "Y": 48, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Forage": "True",
+				"Forage |contains= CaveCarrot": true,
+			}
+		},
+		
+	//Cauliflower
+		
+		
+		{//item
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/objects/cauliflower.png",
+			"ToArea": { "X": 352, "Y": 112, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Veggies": "True",
+				"Veggies |contains= Cauliflower": true,
+			}
+		},
+		{//packet
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/cauliflowerseeds.png",
+			"ToArea": { "X": 288, "Y": 304, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpacket style": "colored",
+				"Seedpackets |contains= Cauliflower": true,
+			}
+		},
+
+
+	//Chanterelle
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/objects/chanterelle.png",
+			"ToArea": { "X": 272, "Y": 176, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Forage": "True",
+				"Forage |contains= Chanterelle": true,
+			}
+		},
+
+	//Coconut
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/objects/coconut.png",
+			"ToArea": { "X": 256, "Y": 48, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Forage": "True",
+				"Forage |contains= Coconut": true,
+			}
+		},
+
+	//CoffeeBean
+		
+		{//item
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/objects/coffeebean.png",
+			"ToArea": { "X": 16, "Y": 288, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Misc and Special |contains= Coffee Bean": true,
+				"CoffeeBean Style": "big",
+			}
+		},
+		{//item
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/objects/coffeebeanalt.png",
+			"ToArea": { "X": 16, "Y": 288, "Width": 16, "Height": 16 },
+			"When": {
+				"Misc and Special |contains= Coffee Bean": true,
+				"CoffeeBean Style": "small",
+			}
+		},
+
+	//CommonMushroom
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/objects/CommonMushroom.png",
+			"ToArea": { "X": 320, "Y": 256, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Forage": "True",
+				"Forage |contains= CommonMushroom": true,
+			}
+		},
+
+	//Corn
+		
+		{//item
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/objects/corn.png",
+			"ToArea": { "X": 96, "Y": 176, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Veggies": "True",
+				"Veggies |contains= Corn": true,
+			}
+		},
+		{//packet
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/cornseeds.png",
+			"ToArea": { "X": 112, "Y": 320, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpacket style": "colored",
+				"Seedpackets |contains= Corn": true,
+			}
+		},
+
+	//Cranberries
+		
+		{//item
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/objects/cranberries.png",
+			"ToArea": { "X": 288, "Y": 176, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Veggies": "True",
+				"Veggies |contains= Cranberry": true,
+			}
+		},
+		
+	{//packet
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/cranberriesseeds.png",
+			"ToArea": { "X": 208, "Y": 320, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpacket style": "colored",
+				"Seedpackets |contains= Cranberry": true,
+			}
+		},
+	
+		
+	
+	
+
+	
+
+	//Eggplant
+		
+		{//item
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/objects/eggplant.png",
+			"ToArea": { "X": 128, "Y": 176, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Veggies": "True",
+				"Veggies |contains= Eggplant": true,
+			}
+		},
+		{//packet
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/eggplantseeds.png",
+			"ToArea": { "X": 128, "Y": 320, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpacket style": "colored",
+				"Seedpackets |contains= Eggplant": true,
+			}
+		},
+		
+		
+		//FairyRose
+			{//packet
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/fairyroseseeds.png",
+			"ToArea": { "X": 272, "Y": 272, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpacket style": "colored",
+				"Seedpackets |contains= FairyRose": true,
+			}
+		},
+			
+	
+	
+	
+		
+	//FiddleheadFern
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/objects/fiddleheadfern.png",
+			"ToArea": { "X": 304, "Y": 160, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Forage": "True",
+				"Forage |contains= FiddleheadFern": true,
+			}
+		},
+
+	//Garlic
+	
+		{//item
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/objects/garlic.png",
+			"ToArea": { "X": 128, "Y": 160, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Veggies": "True",
+				"Veggies |contains= Garlic": true,
+			}
+		},
+		{//packet
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/garlicseeds.png",
+			"ToArea": { "X": 320, "Y": 304, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpacket style": "colored",
+				"Seedpackets |contains= Garlic": true,
+			}
+		},
+
+	//Ginger
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/objects/ginger.png",
+			"ToArea": { "X": 208, "Y": 544, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Forage": "True",
+				"Forage |contains= Ginger": true,
+			}
+		},
+	//GoldenCoconut
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/objects/goldencoconut.png",
+			"ToArea": { "X": 368, "Y": 512, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Misc and Special": "true",
+				"Misc and Special |contains= GoldenCoconut": true,
+			}
+		},
+	//GoldenWalnut
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/objects/goldenwalnut.png",
+			"ToArea": { "X": 16, "Y": 48, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Misc and Special": "true",
+				"Misc and Special |contains= GoldenWalnut": true,
+			}
+		},
+	//GoldPumpkin
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/objects/goldpumpkin.png",
+			"ToArea": { "X": 208, "Y": 240, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Misc and Special": "true",
+				"Misc and Special |contains= GoldPumpkin": true,
+			}
+		},
+
+	//Grape
+	
+		{//item
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/objects/grape.png",
+			"ToArea": { "X": 224, "Y": 256, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Forage": "True",
+				"Forage |contains= Grape": true,
+			}
+		},
+		{//packet
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/grapeseeds.png",
+			"ToArea": { "X": 208, "Y": 192, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpacket style": "colored",
+				"Seedpackets |contains= Grape": true,
+			}
+		},
+
+	//GreenBean
+		
+		{//item
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/objects/greenbean.png",
+			"ToArea": { "X": 320, "Y": 112, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Veggies": "True",
+				"Veggies |contains= GreenBean": true,
+			}
+		},
+		{//packet
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/greenbeanseeds.png",
+			"ToArea": { "X": 272, "Y": 304, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpacket style": "colored",
+				"Seedpackets |contains= GreenBean": true,
+			}
+		},
+		
+	//Hazelnut
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/objects/hazelnut.png",
+			"ToArea": { "X": 0, "Y": 272, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Forage": "True",
+				"Forage |contains= Hazelnut": true,
+			}
+		},
+		
+	//Holly
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/objects/holly.png",
+			"ToArea": { "X": 304, "Y": 176, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Forage": "True",
+				"Forage |contains= Holly": true,
+			}
+		},
+
+	//Hops
+		
+		{//item
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/objects/hops.png",
+			"ToArea": { "X": 256, "Y": 192, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Veggies": "True",
+				"Veggies |contains= Hops": true,
+			}
+		},
+	{//packet
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/hopsseeds.png",
+			"ToArea": { "X": 224, "Y": 192, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpacket style": "colored",
+				"Seedpackets |contains= Hops": true,
+			}
+		},
+
+	//HotPepper
+		
+		{//item
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/objects/hotpepper.png",
+			"ToArea": { "X": 320, "Y": 160, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Veggies": "True",
+				"Veggies |contains= Hot Pepper": true,
+			}
+		},
+		{//packet
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/hotpepperseeds.png",
+			"ToArea": { "X": 32, "Y": 320, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpacket style": "colored",
+				"Seedpackets |contains= Hot Pepper": true,
+			}
+		},
+
+	//Kale
+		//item
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/objects/kale.png",
+			"ToArea": { "X": 160, "Y": 160, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Veggies": "True",
+				"Veggies |contains= Kale": true,
+			}
+		},
+		
+		//packet
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/kaleseeds.png",
+			"ToArea": { "X": 336, "Y": 304, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpacket style": "colored",
+				"Seedpackets |contains= Kale": true,
+				}
+		},
+
+		
+	//Leek
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/objects/leek.png",
+			"ToArea": { "X": 320, "Y": 0, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Forage": "True",
+				"Forage |contains= Leek": true,
+			}
+		},
+	//MagmaCap
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/objects/magmacap.png",
+			"ToArea": { "X": 176, "Y": 560, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Forage": "True",
+				"Forage |contains= MagmaCap": true,
+			}
+		},
+		
+		
+//MELONS
+	//  yellow
+		{//crop
+			"Action": "EditImage",
+			"Target": "Tilesheets/crops",
+			"FromFile": "assets/crops/crops.png",
+			"FromArea": { "X": 160, "Y": 96, "Width": 80, "Height": 32 },
+			"ToArea": { "X": 160, "Y": 96, "Width": 80, "Height": 32 },
+			"When": {
+				"Enable Growing Crops": "True",
+				"MelonColor": "yellow",
+			}
+		},		
+		{//item
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/objects/melon.png",
+			"ToArea": { "X": 224, "Y": 160, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Veggies": "True",
+				"Veggies |contains= Melon": true,
+				"MelonColor": "yellow",
+			}
+		},
+		{//packet
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/melonseeds.png",
+			"ToArea": { "X": 368, "Y": 304, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpacket style": "colored",
+				"Seedpackets |contains= Melon": true,
+				"MelonColor": "yellow",
+			}
+		},
+		
+	//Melon - green
+		{//crop
+			"Action": "EditImage",
+			"Target": "Tilesheets/crops",
+			"FromFile": "assets/crops/crops.png",
+			"FromArea": { "X": 160, "Y": 128, "Width": 80, "Height": 32 },
+			"ToArea": { "X": 160, "Y": 96, "Width": 80, "Height": 32 },
+			"When": {
+				"Enable Growing Crops": "True",
+				"MelonColor": "green",
+			}
+		},
+		
+		{//item
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/objects/melon_green.png",
+			"ToArea": { "X": 224, "Y": 160, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Veggies": "True",
+				"Veggies |contains= Melon": true,
+				"MelonColor": "green",
+			}
+		},
+		
+		{//packet
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/melonseeds_green.png",
+			"ToArea": { "X": 368, "Y": 304, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpacket style": "colored",
+				"Seedpackets |contains= Melon": true,
+				"MelonColor": "green",
+			}
+		},
+	
+	//MixedSeeds
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/mixedseeds.png",
+			"ToArea": { "X": 32, "Y": 512, "Width": 16, "Height": 16 },
+			"When": {
+					"Enable Seedpackets": "True",
+					"Seedpackets |contains= MixedSeeds": true,
+			}
+		},
+
+	//ParsnipTurnip
+		{//crop
+			"Action": "EditImage",
+			"Target": "Tilesheets/crops",
+			"FromFile": "assets/crops/crops.png",
+			"FromArea": { "X": 80, "Y": 0, "Width": 16, "Height": 32 },
+			"ToArea": { "X": 80, "Y": 0, "Width": 16, "Height": 32 },
+			"When": {
+				"Enable Growing Crops": "True",
+				"Parsnip Color": "turnip",
+			}
+		},
+		{//item
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/objects/parsnipalt.png",
+			"ToArea": { "X": 0, "Y": 16, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Veggies": "True",
+				"Veggies |contains= Parsnip": true,
+				"Parsnip Color": "turnip",
+			}
+		},
+		{//packet
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/parsnipseeds.png",
+			"ToArea": { "X": 256, "Y": 304, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpacket style": "colored",
+				"Seedpackets |contains= Parsnip": true,
+				"Parsnip Color": "turnip",
+			}
+		},
+			
+			//parsnipyellow
+			
+			
+			{//item
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/objects/parsnip.png",
+			"ToArea": { "X": 0, "Y": 16, "Width": 16, "Height": 16 },
+			"When": {
+
+				"Enable Veggies": "True",
+				"Veggies |contains= Parsnip": true,
+				"Parsnip Color": "parsnip",
+			}
+		},
+		
+		{//packet
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/parsnipseedsalt.png",
+			"ToArea": { "X": 256, "Y": 304, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpacket style": "colored",
+				"Seedpackets |contains= Parsnip": true,
+				"Parsnip Color": "parsnip",
+			}
+		},
+		
+	//Pineapple
+		
+		{//item
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/objects/pineapple.png",
+			"ToArea": { "X": 256, "Y": 544, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Veggies": "True",
+				"Veggies |contains= Pineapple": true,
+			}
+		},
+		{//packet
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/pineappleseeds.png",
+			"ToArea": { "X": 272, "Y": 544, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpacket style": "colored",
+				"Seedpackets |contains= Pineapple": true,
+			}
+		},
+//Poppy
+{//packet
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/poppyseeds.png",
+			"ToArea": { "X": 336, "Y": 288, "Width": 16, "Height": 16 },
+			"When": {
+
+				"Enable Seedpackets": "True",
+				"Seedpacket style": "colored",
+				"Seedpackets |contains= Poppy": true,
+			}
+		},
+
+	
+
+	//Potato
+		
+		{//item
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/objects/potato.png",
+			"ToArea": { "X": 0, "Y": 128, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Veggies": "True",
+				"Veggies |contains= Potato": true,
+			}
+		},
+		{//packet
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/potatoseeds.png",
+			"ToArea": { "X": 304, "Y": 304, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpacket style": "colored",
+				"Seedpackets |contains= Potato": true,
+			}
+		},
+
+	//Pumpkin
+		
+		
+		{//item
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/objects/pumpkin.png",
+			"ToArea": { "X": 192, "Y": 176, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Veggies": "True",
+				"Veggies |contains= Pumpkin": true,
+			}
+		},
+		{//packet
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/pumpkinseeds.png",
+			"ToArea": { "X": 160, "Y": 320, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpacket style": "colored",
+				"Seedpackets |contains= Pumpkin": true,
+			}
+		},
+
+	//PurpleMushroom
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/objects/purplemushroom.png",
+			"ToArea": { "X": 224, "Y": 272, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Forage": "True",
+				"Forage |contains= PurpleMushroom": true,
+			}
+		},
+	
+	
+
+	//Radish
+	
+		{//item
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/objects/radish.png",
+			"ToArea": { "X": 0, "Y": 176, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Veggies": "True",
+				"Veggies |contains= Radish": true,
+			}
+		},
+	{//packet
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/radishseeds.png",
+			"ToArea": { "X": 64, "Y": 320, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpacket style": "colored",
+				"Seedpackets |contains= Radish": true,
+			}
+		},
+//RedCabbage
+{//item
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/objects/redcabbage.png",
+			"ToArea": { "X": 32, "Y": 176, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Veggies": "True",
+				"Veggies |contains= Red Cabbage": true,
+			}
+		},
+		{//packet
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/redcabbageseeds.png",
+			"ToArea": { "X": 80, "Y": 320, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpacket style": "colored",
+				"Seedpackets |contains= Red Cabbage": true,
+			}
+		},
+	
+
+	//RedMushroom
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/objects/redmushroom.png",
+			"ToArea": { "X": 192, "Y": 272, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Forage": "True",
+				"Forage |contains= RedMushroom": true,
+			}
+		},
+	
+	//Rhubarb
+	{//item
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/objects/rhubarb.png",
+			"ToArea": { "X": 192, "Y": 160, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Veggies": "True",
+				"Veggies |contains= Rhubarb": true,
+			}
+		},
+		{//packet
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/rhubarbseeds.png",
+			"ToArea": { "X": 352, "Y": 304, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpacket style": "colored",
+				"Seedpackets |contains= Rhubarb": true,
+			}
+		},
+
+	//Salmonberry
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/objects/salmonberry.png",
+			"ToArea": { "X": 128, "Y": 192, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Forage": "True",
+				"Forage |contains= Salmonberry": true,
+			}
+		},	
+	
+	//SnowYam
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/objects/snowyam.png",
+			"ToArea": { "X": 128, "Y": 272, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Forage": "True",
+				"Forage |contains= SnowYam": true,
+			}
+		},	
+
+	//SpiceBerry
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/objects/spiceberry.png",
+			"ToArea": { "X": 192, "Y": 256, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Forage": "True",
+				"Forage |contains= SpiceBerry": true,
+			}
+		},
+
+	//SpringOnion
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/objects/springonion.png",
+			"ToArea": { "X": 240, "Y": 256, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Forage": "True",
+				"Forage |contains= SpringOnion": true,
+			}
+		},
+
+	//Starfruit
+	{//item
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/objects/starfruit.png",
+			"ToArea": { "X": 64, "Y": 176, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Veggies": "True",
+				"Veggies |contains= Starfruit": true,
+			}
+		},
+		{//packet
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/starfruitseeds.png",
+			"ToArea": { "X": 96, "Y": 320, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpacket style": "colored",
+				"Seedpackets |contains= Starfruit": true,
+			}
+		},
+
+	//Strawberry
+		
+		{//item
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/objects/strawberry.png",
+			"ToArea": { "X": 256, "Y": 256, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Veggies": "True",
+				"Veggies |contains= Strawberry": true,
+			}
+		},
+		{//packet
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/strawberryseeds.png",
+			"ToArea": { "X": 16, "Y": 496, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpacket style": "colored",
+				"Seedpackets |contains= Strawberry": true,
+			}
+		},
+
+	
+
+	//sweetgemberry
+	
+		{//item
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/objects/sweetgemberry.png",
+			"ToArea": { "X": 144, "Y": 272, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Misc and Special": "True",
+				"Misc and Special |contains= SweetGemBerry": true,
+			}
+		},
+		
+	
+		{//seed
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/sweetgemberry.png",
+			"ToArea": { "X": 176, "Y": 224, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpackets |contains= SweetGemBerry Seed": true,
+			}
+		},
+		//SummerSpangle
+		{//packet
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/summerspangleseeds.png",
+			"ToArea": { "X": 368, "Y": 288, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpacket style": "colored",
+				"Seedpackets |contains= SummerSpangle": true,
+			}
+		},
+		
+
+//Sunflower
+{//packet
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/sunflowerseeds.png",
+			"ToArea": { "X": 368, "Y": 272, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpackets |contains= Sunflower": true,
+			}
+		},
+	
+	//Taro
+		
+		{//item
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/objects/taro.png",
+			"ToArea": { "X": 224, "Y": 544, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Forage": "True",
+				"Forage |contains= Taro": true,
+			}
+		},
+		
+
+	
+
+
+	//Tomato
+		
+		{//item
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/objects/tomato.png",
+			"ToArea": { "X": 256, "Y": 160, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Veggies": "True",
+				"Veggies |contains= Tomato": true,
+			}
+		},
+		{//packet
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/tomatoseeds.png",
+			"ToArea": { "X": 0, "Y": 320, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpacket style": "colored",
+				"Seedpackets |contains= Tomato": true,
+			}
+		},
+	
+//Tulip
+{//packet
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/tulipseeds.png",
+			"ToArea": { "X": 304, "Y": 272, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpacket style": "colored",
+				"Seedpackets |contains= Tulip": true,
+			}
+		},
+			
+		
+	//Wheat
+		
+		{//item
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/objects/wheat.png",
+			"ToArea": { "X": 352, "Y": 160, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Veggies": "True",
+				"Veggies |contains= Wheat": true,
+			}
+		},
+	{//packet
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/wheatseeds.png",
+			"ToArea": { "X": 48, "Y": 320, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpacket style": "colored",
+				"Seedpackets |contains= Wheat": true,
+			}
+		},
+
+	//WildHorseradish
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/objects/wildhorseradish.png",
+			"ToArea": { "X": 256, "Y": 0, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Forage": "True",
+				"Forage |contains= WildHorseradish": true,
+			}
+		},
+		
+	
+	//WildPlum
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/objects/wildplum.png",
+			"ToArea": { "X": 352, "Y": 256, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Forage": "True",
+				"Forage |contains= WildPlum": true,
+			}
+		},
+		
+	//WinterRoot
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/objects/winterroot.png",
+			"ToArea": { "X": 64, "Y": 272, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Forage": "True",
+				"Forage |contains= WinterRoot": true,
+			}
+		},
+
+	//Yam
+		
+		
+		{//item
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/objects/yam.png",
+			"ToArea": { "X": 256, "Y": 176, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Veggies": "True",
+				"Veggies |contains= Yam": true,
+			}
+		},
+		
+		
+		{//packet
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/yamseeds.png",
+			"ToArea": { "X": 192, "Y": 320, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpacket style": "colored",
+				"Seedpackets |contains= Yam": true,
+			}
+		},
+		
+		
+//SEEDPACKETS BLANK
+
+
+{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/blank/springseeds.png",
+			"ToArea": { "X": 240, "Y": 320, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "true",
+				"Seedpacket style": "one tone",
+				"Seedpackets |contains= SpringSeeds": true
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/blank/summerseeds.png",
+			"ToArea": { "X": 256, "Y": 320, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "true",
+				"Seedpacket style": "one tone",
+				"Seedpackets |contains= SummerSeeds": true
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/blank/fallseeds.png",
+			"ToArea": { "X": 272, "Y": 320, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "true",
+				"Seedpacket style": "one tone",
+				"Seedpackets |contains= FallSeeds": true
+			}
+		},
+		{//packet
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/blank/amaranthseeds.png",
+			"ToArea": { "X": 176, "Y": 192, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpacket style": "one tone",
+				"Seedpackets |contains= Amaranth": true,
+				
+			}
+		},
+		{//packet
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/blank/artichokeseeds.png",
+			"ToArea": { "X": 144, "Y": 320, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpacket style": "one tone",
+				"Seedpackets |contains= Artichoke": true,
+			}
+		},
+		{//packet
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/blank/beetseeds.png",
+			"ToArea": { "X": 224, "Y": 320, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpacket style": "one tone",
+				"Seedpackets |contains= Beet": true,
+				
+			}
+		},
+		{//packet
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/blank/blueberryseeds.png",
+			"ToArea": { "X": 16, "Y": 320, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpacket style": "one tone",
+				"Seedpackets |contains= Blueberry": true,
+			}
+		},
+		{//packet
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/blank/bluejazzseeds.png",
+			"ToArea": { "X": 336, "Y": 272, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpacket style": "one tone",
+				"Seedpackets |contains= BlueJazz": true,
+			}
+		},
+		{//packet
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/blank/bokchoyseeds.png",
+			"ToArea": { "X": 176, "Y": 320, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpacket style": "one tone",
+				"Seedpackets |contains= Bok Choy": true,
+			}
+		},
+		{//packet
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/blank/cactusfruitseeds.png",
+			"ToArea": { "X": 160, "Y": 528, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpacket style": "one tone",
+				"Seedpackets |contains= CactusFruit": true,
+			}
+		},
+		{//packet
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/blank/cauliflowerseeds.png",
+			"ToArea": { "X": 288, "Y": 304, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpacket style": "one tone",
+				"Seedpackets |contains= Cauliflower": true,
+			}
+		},
+		{//packet
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/blank/cornseeds.png",
+			"ToArea": { "X": 112, "Y": 320, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpacket style": "one tone",
+				"Seedpackets |contains= Corn": true,
+			}
+		},
+		{//packet
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/blank/cranberriesseeds.png",
+			"ToArea": { "X": 208, "Y": 320, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpacket style": "one tone",
+				"Seedpackets |contains= Cranberry": true,
+			}
+		},
+		{//packet
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/blank/eggplantseeds.png",
+			"ToArea": { "X": 128, "Y": 320, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpacket style": "one tone",
+				"Seedpackets |contains= Eggplant": true,
+			}
+		},
+		//FairyRose
+			{//packet
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/blank/fairyroseseeds.png",
+			"ToArea": { "X": 272, "Y": 272, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpacket style": "one tone",
+				"Seedpackets |contains= FairyRose": true,
+			}
+		},
+		{//packet
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/blank/garlicseeds.png",
+			"ToArea": { "X": 320, "Y": 304, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpacket style": "one tone",
+				"Seedpackets |contains= Garlic": true,
+			}
+		},
+		{//packet
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/blank/grapeseeds.png",
+			"ToArea": { "X": 208, "Y": 192, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpacket style": "one tone",
+				"Seedpackets |contains= Grape": true,
+			}
+		},
+		{//packet
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/blank/greenbeanseeds.png",
+			"ToArea": { "X": 272, "Y": 304, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpacket style": "one tone",
+				"Seedpackets |contains= GreenBean": true,
+			}
+		},
+		{//packet
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/blank/hopsseeds.png",
+			"ToArea": { "X": 224, "Y": 192, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpacket style": "one tone",
+				"Seedpackets |contains= Hops": true,
+			}
+		},
+		{//packet
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/blank/hotpepperseeds.png",
+			"ToArea": { "X": 32, "Y": 320, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpacket style": "one tone",
+				"Seedpackets |contains= Hot Pepper": true,
+			}
+		},
+		//packet
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/blank/kaleseeds.png",
+			"ToArea": { "X": 336, "Y": 304, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpacket style": "one tone",
+				"Seedpackets |contains= Kale": true,
+				}
+		},
+		{//packet
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/blank/melonseeds.png",
+			"ToArea": { "X": 368, "Y": 304, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpacket style": "one tone",
+				"Seedpackets |contains= Melon": true,
+				"MelonColor": "yellow",
+			}
+		},
+		{//packet
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/blank/melonseeds_green.png",
+			"ToArea": { "X": 368, "Y": 304, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpacket style": "one tone",
+				"Seedpackets |contains= Melon": true,
+				"MelonColor": "green",
+			}
+		},
+		{//packet
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/blank/parsnipseeds.png",
+			"ToArea": { "X": 256, "Y": 304, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpacket style": "one tone",
+				"Seedpackets |contains= Parsnip": true,
+				"Parsnip Color": "turnip",
+			}
+		},
+		{//packet
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/blank/parsnipseedsalt.png",
+			"ToArea": { "X": 256, "Y": 304, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpacket style": "one tone",
+				"Seedpackets |contains= Parsnip": true,
+				"Parsnip Color": "parsnip",
+			}
+		},
+		{//packet
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/blank/pineappleseeds.png",
+			"ToArea": { "X": 272, "Y": 544, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpacket style": "one tone",
+				"Seedpackets |contains= Pineapple": true,
+			}
+		},
+		{//packet
+		"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/blank/poppyseeds.png",
+			"ToArea": { "X": 336, "Y": 288, "Width": 16, "Height": 16 },
+			"When": {
+
+				"Enable Seedpackets": "True",
+				"Seedpacket style": " one tone",
+				"Seedpackets |contains= Poppy": true,
+			}
+		},
+		{//packet
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/blank/potatoseeds.png",
+			"ToArea": { "X": 304, "Y": 304, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpacket style": "one tone",
+				"Seedpackets |contains= Potato": true,
+			}
+		},
+		{//packet
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/blank/pumpkinseeds.png",
+			"ToArea": { "X": 160, "Y": 320, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpacket style": "one tone",
+				"Seedpackets |contains= Pumpkin": true,
+			}
+		},
+		{//packet
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/blank/radishseeds.png",
+			"ToArea": { "X": 64, "Y": 320, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpacket style": "one tone",
+				"Seedpackets |contains= Radish": true,
+			}
+		},
+		{//packet
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/blank/redcabbageseeds.png",
+			"ToArea": { "X": 80, "Y": 320, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpacket style": "one tone",
+				"Seedpackets |contains= Red Cabbage": true,
+			}
+		},
+		{//packet
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/blank/rhubarbseeds.png",
+			"ToArea": { "X": 352, "Y": 304, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpacket style": "one tone",
+				"Seedpackets |contains= Rhubarb": true,
+			}
+		},
+		{//packet
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/blank/starfruitseeds.png",
+			"ToArea": { "X": 96, "Y": 320, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpacket style": "one tone",
+				"Seedpackets |contains= Starfruit": true,
+			}
+		},
+		{//packet
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/blank/strawberryseeds.png",
+			"ToArea": { "X": 16, "Y": 496, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpacket style": "one tone",
+				"Seedpackets |contains= Strawberry": true,
+			}
+		},
+		//SummerSpangle
+		{//packet
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/blank/summerspangleseeds.png",
+			"ToArea": { "X": 368, "Y": 288, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpacket style": "one tone",
+				"Seedpackets |contains= SummerSpangle": true,
+			}
+		},
+		
+		{//packet
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/blank/tomatoseeds.png",
+			"ToArea": { "X": 0, "Y": 320, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpacket style": "one tone",
+				"Seedpackets |contains= Tomato": true,
+			}
+		},
+		{//packet
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/blank/tulipseeds.png",
+			"ToArea": { "X": 304, "Y": 272, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpacket style": "one tone",
+				"Seedpackets |contains= Tulip": true,
+			}
+		},
+		{//packet
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/blank/wheatseeds.png",
+			"ToArea": { "X": 48, "Y": 320, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpacket style": "one tone",
+				"Seedpackets |contains= Wheat": true,
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/blank/winterseeds.png",
+			"ToArea": { "X": 288, "Y": 320, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "true",
+				"Seedpacket style": "one tone",
+				"Seedpackets |contains= WinterSeeds": true
+			}
+		},
+		{//packet
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/seeds/blank/yamseeds.png",
+			"ToArea": { "X": 192, "Y": 320, "Width": 16, "Height": 16 },
+			"When": {
+				"Enable Seedpackets": "True",
+				"Seedpacket style": "one tone",
+				"Seedpackets |contains= Yam": true,
+			}
+		}
+		
+		
+	]
+}

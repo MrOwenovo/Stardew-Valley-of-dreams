@@ -1,0 +1,88 @@
+{
+"Changes": [
+    { 
+        "LogName":"Sterling Egg Festival",
+        "Action": "EditData",
+        "Target": "Data/Festivals/spring13",
+        "When": {"HasSeenEvent |contains= 40180008": false,},
+        "TextOperations": [
+          {
+            "Operation": "Append",
+            "Target": [ "Entries", "Set-Up_additionalCharacters" ],
+            "Value": "Sterling 24 56 3",
+            "Delimiter": "/"
+          },
+          {
+            "Operation": "Append",
+            "Target": [ "Entries", "MainEvent_additionalCharacters" ],
+            "Value": "Sterling 23 72 2",
+            "Delimiter": "/"
+          }
+        ]
+      },
+
+                { 
+                  "LogName":"Sterling Egg Festival",
+                  "Action": "EditData",
+                  "Target": "Data/Festivals/spring13",
+                  "When": {"HasSeenEvent |contains= 40180008": true,},
+                  
+                  "TextOperations": [
+                    {
+                      "Operation": "Append",
+                      "Target": [ "Entries", "Set-Up_additionalCharacters" ],
+                      "Value": "Sterling 24 56 3",
+                      "Delimiter": "/"
+                    },
+                    {
+                      "Operation": "Append",
+                      "Target": [ "Entries", "MainEvent_additionalCharacters" ],
+                      "Value": "Sterling 24 56 3",
+                      "Delimiter": "/"
+                    }
+                  ] 
+                },
+
+      { 
+        "LogName":"Henry Egg Festival",
+        "Action": "EditData",
+        "Target": "Data/Festivals/spring13",
+        "TextOperations": [
+          {
+            "Operation": "Append",
+            "Target": [ "Entries", "Set-Up_additionalCharacters" ],
+            "Value": "Henry 22 71 2",
+            "Delimiter": "/"
+          },
+          {
+            "Operation": "Append",
+            "Target": [ "Entries", "MainEvent_additionalCharacters" ],
+            "Value": "Henry 22 71 2",
+            "Delimiter": "/"
+          }
+        ]
+      },
+
+      { 
+        "LogName":"Mia Egg Festival",
+        "Action": "EditData",
+        "Target": "Data/Festivals/spring13",
+        "TextOperations": [
+          {
+            "Operation": "Append",
+            "Target": [ "Entries", "Set-Up_additionalCharacters" ],
+            "Value": "Mia 22 72 0",
+            "Delimiter": "/"
+          },
+          {
+            "Operation": "Append",
+            "Target": [ "Entries", "MainEvent_additionalCharacters" ],
+            "Value": "Mia 22 72 0",
+            "Delimiter": "/"
+          }
+        ]
+      }
+
+	
+]
+}

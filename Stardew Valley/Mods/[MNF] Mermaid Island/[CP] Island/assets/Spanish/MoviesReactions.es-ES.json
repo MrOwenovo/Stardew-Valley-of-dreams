@@ -1,0 +1,84 @@
+{
+   "Changes": [
+    {
+        "Action": "EditData",
+		"Target": "Data/ConcessionTastes",
+			"Entries": {
+				"Madam": {
+					"NPCName": "Madam",
+					"Reactions": [
+					{
+					"Tag": "*",
+					"Response": "love",
+					"Whitelist": [ "Willy"],
+						"SpecialResponses": {
+							"BeforeMovie": {
+							"ResponsePoint": null,
+							"Script": "",
+							"Text": "Creo que nunca he visto a una pelicula con Willy!$h"
+          },
+          "DuringMovie": {
+            "ResponsePoint": null,
+            "Script": "¡Esto es muy emocionante!$1",
+            "Text": ""
+          },
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "¡Gracias por eso, realmente lo aprecio.!$1"
+          }
+        },
+        "ID": "reaction_0"
+      },
+      {
+        "Tag": "*",
+        "Response": "love",
+        "Whitelist": [ "Linus"],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "¡Nunca hubiera imaginado que estaría viendo una película con mi viejo amigo!$h"
+          },
+          "DuringMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "¡Esto es muy emocionante!$1"
+          },
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "Gracias por eso, realmente lo aprecio.!$1"
+          }
+        },
+        "ID": "reaction_0"
+      },
+	   {
+        "Tag": "*",
+        "Response": "love",
+        "Whitelist": [ ],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "¡Estoy muy contenta de ver diferentes estilos de vida!$h"
+          },
+          "DuringMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "¡Esto es muy emocionante!$1"
+          },
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "¡Realmente me encanta ver más del mundo fuera de la isla.!$1"
+          }
+        },
+        "ID": "reaction_0"
+      },
+    ]
+  },
+ },
+},
+],
+}

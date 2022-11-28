@@ -1,0 +1,21 @@
+[
+    {
+        "Id": "Jibb.BlueMoonCask.Recipe1",
+        "Title": "蓝月亮桶",
+        "GroupId": "Jibb.BlueMoonCask",
+        "Text": "嘿 又是我!!^^我在翻我父母的东西时发现了一些旧的蓝图。^我父母发明了他们自己的木桶方法来陈酿我们最好的葡萄酒，但我实在搞不懂这是怎么回事^^我让你看看，把木桶的木材浸泡在蓝月亮酒里然后再把它们放在一起。^^我很乐意卖给你更多的酒，这样你就可以自己酿酒了!^^你甚至可以把酒陈年，如果你把它们放进你的货运箱里，我就把它们买回来!^^再见! <^^-索菲娅",
+        "Recipe": "Blue Moon Cask",
+        "FriendshipConditions": [{ "NpcName": "Sophia", "FriendshipLevel": 8 }],
+        "RecipeKnown": [ "Cask" ],
+		"CollectionConditions": // Each collection condition of the list must have a value equal or higher than the defined amount.
+		[
+			{ 
+				"Collection": "Crafting", //[Shipped|Fish|Artifacts|Minerals|Cooking|Crafting] Required.
+				"Name":  "Cask", //The name of the object or recipe for 'Crafting' collection. For object, if a name is given, it will look for that name instead of using the index. If the name is not found, the letter is ignored. Default is null.
+			}
+		],
+		"EventsSeen": [8185298], // Require one of the events to have been seen by the player.	
+		"MailReceived": ["SophiaThankYouLetter"], // Require one of the mails to have been received. The game list also contain others thing that are not mail, like community center flags.
+
+    }
+]

@@ -1,0 +1,71 @@
+{
+  "Changes": [
+	//Sprite
+	{
+	  "Action": "Load",
+	  "Target": "applesauce.outstorage/fishbucketplaced",
+	  "FromFile": "assets/fishbucketplaced.png"
+	},
+
+	//Data
+	{
+	  "Action": "EditData",
+	  "Target": "furyx639.ExpandedStorage/Storages",
+	  "Entries": {
+		"fishbucketplaced": {
+		            "DisplayName": "{{i18n: fishbucketplaced.name}}",
+          		    "Description": "{{i18n: fishbucketplaced.description}}",
+          		    "Image": "applesauce.outstorage/fishbucketplaced",
+                            "Frames": 1,
+         		    "PlayerColor": false,
+          		    "OpenSound": "waterSlosh",
+			//Betterchests stuff
+        		    "BetterChestsData": {
+          		    "CollectItems": "Enabled",
+           		    "CustomColorPicker": "Disabled",
+           		    "FilterItems": "Enabled",
+        		    "FilterItemsList": [
+          			    "category_fish",
+           			    "category_bait",
+				    "category_tackle"
+         			   ],
+         		   "OpenHeldChest": "Enabled",
+      		           "ResizeChest": "Enabled",
+			   "ResizeChestCapacity": 48
+			  			}
+			}
+		      }
+	            },
+  	 {
+      	"Action": "EditData",
+     	 "Target": "furyx639.ExpandedStorage/Buy",
+    	  "Entries": {
+     	     "fishbucketplaced": {
+     	     "ShopID": "FishShop",
+       	     "Price": 50000
+      	    }
+     	   }
+  	  },
+
+        {
+        "Action": "EditData",
+        "Target": "Data/CraftingRecipes",
+        "Entries": {
+          "fishbucketplaced": "163 4 388 20/Home/232/true/null/{{i18n: fishbucketplaced.name}}"
+        }
+      },
+    
+      {
+        "Action": "EditData",
+        "Target": "furyx639.ExpandedStorage/Unlock",
+        "Entries": {
+          "fishbucketplaced": "true"
+        },
+        "When": {
+          "query: {{SkillLevel:Fishing}} >= 7": true
+           }
+
+          }
+
+ 	 ] 
+	}

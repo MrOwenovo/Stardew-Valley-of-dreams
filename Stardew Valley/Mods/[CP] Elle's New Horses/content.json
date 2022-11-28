@@ -1,0 +1,51 @@
+{
+  "Format": "1.7",
+  
+  "ConfigSchema": {
+    "Horse": {"AllowValues": "SolidBlack, SolidGrey, SolidWhite, SolidBlonde, SolidBrown, AppaloosaBlack, AppaloosaGrey, AppaloosaBlonde, AppaloosaBrown, PintoBlack, PintoGrey, PintoBlonde, PintoBrown, RoanBlue, RoanStrawberry, RoanBay, PrismaticBlack, PrismaticWhite, SilverRocky, Andalusian, Buckskin, ClevelandBay, BlackShire, SilverBay, Fjord, Clydesdale, BlackForest, Marwari, Palomino, Chestnut, Vanilla, False",
+	"Default": "PrismaticWhite"},
+
+	"HasSaddle": {"AllowValues": "True, False",
+	"Default": "False"},
+	
+	"SaddleColor": {"AllowValues": "Vanilla, Brown, Black, Grey, White, Winter, LightPurple, Purple, LightPink, Pink, Red, Orange, Yellow, Lime, Sage, Green, Teal, Turquoise, Blue, LightBlue",
+	"Default": "Blue"},
+	
+	"MenuIcon": {"AllowValues": "True, False",
+	"Default": "True"},
+	},
+	
+  "Changes": [
+       // Horse
+       {
+          "Action": "Load",
+          "Target": "Animals/Horse",
+          "FromFile": "assets/{{Horse}}.png",
+		  "Horse": "SolidBlack, SolidGrey, SolidWhite, SolidBlonde, SolidBrown, AppaloosaBlack, AppaloosaGrey, AppaloosaBlonde, AppaloosaBrown, PintoBlack, PintoGrey, PintoBlonde, PintoBrown, RoanBlue, RoanStrawberry, RoanBay, PrismaticBlack, PrismaticWhite, SilverRocky, Andalusian, Buckskin, ClevelandBay, BlackShire, SilverBay, Fjord, Clydesdale, BlackForest, Marwari, Palomino, Chestnut",
+       },
+	   
+	   // Saddle
+       {
+          "Action": "EditImage",
+          "Target": "Animals/Horse",
+          "FromFile": "assets/Saddles/{{SaddleColor}}.png",
+		  "Patchmode": "Overlay",
+		  "When": {
+		  "HasSaddle": "True",
+		  }
+       },
+	   
+	   // Horse Head
+       {
+          "Action": "EditImage",
+          "Target": "LooseSprites/Cursors",
+          "FromFile": "assets/{{Horse}}.png",
+          "FromArea": { "X": 156, "Y": 95, "Width": 16, "Height": 16 }, 
+          "ToArea": { "X": 192, "Y": 192, "Width": 16, "Height": 16 },
+          "Patchmode": "Replace",
+		  "When": {
+		  "MenuIcon": "True",
+		  }
+       },
+    ]
+}

@@ -1,0 +1,319 @@
+{
+	"Format": "1.23.0",
+	
+			"ConfigSchema": 
+		{
+			"Big Burger":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				}, 
+			"Bubblegum Ice Cream":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				}, 
+			"Chocolate Ice Cream":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				}, 
+			"Downtown Dog":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				}, 
+			"Ice Delight":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				}, 
+			"Joja Soda":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				}, 
+			"Joja Cocktail":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				}, 
+			"Joja Fries":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				}, 
+			"Popcorn":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				}, 
+			"Qi Crystal":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				}, 
+			"Qi Blade":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				}, 
+			"Serpent's Smallsword":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				}, 
+			"Serpent Fragment":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				}, 
+			"Strawberry Daiquiri":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				}, 
+			"Zuzu Signature Cocktail":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				}, 
+			"Zuzu Ice Cream":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				}, 
+			"Zuzu Milkshake":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				}, 
+		},
+
+	
+	
+	"Changes": [
+		{
+			"LogName": "Qi Crystal",
+			"Action": "EditImage",
+			"Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Qi Crystal}}",
+			"FromFile": "qicrystal.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Qi Crystal}}", "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Qi Crystal}}", "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 10,
+			"AnimationFrameCount": 12,
+			"When":
+				{"Qi Crystal": "true"},
+		},
+		{
+			"LogName": "Serpent's Smallsword",
+			"Action": "EditImage",
+			"Target": "{{spacechase0.JsonAssets/WeaponSpriteTilesheet:Serpent's Smallsword}}",
+			"FromFile": "Serpentsmallsword.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": "{{spacechase0.JsonAssets/WeaponSpriteX:Serpent's Smallsword}}", "Y": "{{spacechase0.JsonAssets/WeaponSpriteY:Serpent's Smallsword}}", "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 40,
+			"AnimationFrameCount": 4,
+			"When":
+				{"Serpent's Smallsword": "true"},
+		},
+		{
+			"LogName": "Qi Blade",
+			"Action": "EditImage",
+			"Target": "{{spacechase0.JsonAssets/WeaponSpriteTilesheet:Qi Blade}}",
+			"FromFile": "qiblade.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": "{{spacechase0.JsonAssets/WeaponSpriteX:Qi Blade}}", "Y": "{{spacechase0.JsonAssets/WeaponSpriteY:Qi Blade}}", "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 10,
+			"AnimationFrameCount": 8,
+			"When":
+				{"Qi Blade": "true"},
+		},
+		{
+			"LogName": "Joja Soda",
+			"Action": "EditImage",
+			"Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Joja Soda}}",
+			"FromFile": "jojasoda.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Joja Soda}}", "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Joja Soda}}", "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 20,
+			"AnimationFrameCount": 8,
+			"When":
+				{"Joja Soda": "true"},
+		},
+		{
+			"LogName": "Serpent Fragment",
+			"Action": "EditImage",
+			"Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Serpent Fragment}}",
+			"FromFile": "serpentfragment.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Serpent Fragment}}", "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Serpent Fragment}}", "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 20,
+			"AnimationFrameCount": 4,
+			"When":
+				{"Serpent Fragment": "true"},
+		},
+		{
+			"LogName": "Joja Cocktail",
+			"Action": "EditImage",
+			"Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Joja Cocktail}}",
+			"FromFile": "jojacocktail.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Joja Cocktail}}", "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Joja Cocktail}}", "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 20,
+			"AnimationFrameCount": 8,
+			"When":
+				{"Joja Cocktail": "true"},
+		},
+		{
+			"LogName": "Joja Fries",
+			"Action": "EditImage",
+			"Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Joja Fries}}",
+			"FromFile": "jojafries.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Joja Fries}}", "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Joja Fries}}", "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 20,
+			"AnimationFrameCount": 4,
+			"When":
+				{"Joja Fries": "true"},
+		},
+		{
+			"LogName": "Popcorn",
+			"Action": "EditImage",
+			"Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Popcorn}}",
+			"FromFile": "popcorn.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Popcorn}}", "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Popcorn}}", "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 20,
+			"AnimationFrameCount": 4,
+			"When":
+				{"Popcorn": "true"},
+		},
+		{
+			"LogName": "Strawberry Daiquiri",
+			"Action": "EditImage",
+			"Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Strawberry Daiquiri}}",
+			"FromFile": "strawberrydaiquiri.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Strawberry Daiquiri}}", "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Strawberry Daiquiri}}", "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 20,
+			"AnimationFrameCount": 8,
+			"When":
+				{"Strawberry Daiquiri": "true"},
+		},
+		{
+			"LogName": "Zuzu Signature Cocktail",
+			"Action": "EditImage",
+			"Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Zuzu Signature Cocktail}}",
+			"FromFile": "zuzusignaturecocktail.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Zuzu Signature Cocktail}}", "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Zuzu Signature Cocktail}}", "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 20,
+			"AnimationFrameCount": 8,
+			"When":
+				{"Zuzu Signature Cocktail": "true"},
+		},
+		{
+			"LogName": "Big Burger",
+			"Action": "EditImage",
+			"Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Big Burger}}",
+			"FromFile": "bigburger.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Big Burger}}", "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Big Burger}}", "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 20,
+			"AnimationFrameCount": 7,
+			"When":
+				{"Big Burger": "true"},
+		},
+		{
+			"LogName": "Downtown Dog",
+			"Action": "EditImage",
+			"Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Downtown Dog}}",
+			"FromFile": "downtowndog.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Downtown Dog}}", "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Downtown Dog}}", "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 20,
+			"AnimationFrameCount": 4,
+			"When":
+				{"Downtown Dog": "true"},
+		},
+		{
+			"LogName": "Ice Delight",
+			"Action": "EditImage",
+			"Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Ice Delight}}",
+			"FromFile": "icedelight.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Ice Delight}}", "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Ice Delight}}", "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 20,
+			"AnimationFrameCount": 6,
+			"When":
+				{"Ice Delight": "true"},
+		},
+		{
+			"LogName": "Bubblegum Ice Cream",
+			"Action": "EditImage",
+			"Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Bubblegum Ice Cream}}",
+			"FromFile": "bubblegumicecream.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Bubblegum Ice Cream}}", "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Bubblegum Ice Cream}}", "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 20,
+			"AnimationFrameCount": 9,
+			"When":
+				{"Bubblegum Ice Cream": "true"},
+		},
+		{
+			"LogName": "Chocolate Ice Cream",
+			"Action": "EditImage",
+			"Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Chocolate Ice Cream}}",
+			"FromFile": "chocolateicecream.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Chocolate Ice Cream}}", "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Chocolate Ice Cream}}", "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 20,
+			"AnimationFrameCount": 9,
+			"When":
+				{"Chocolate Ice Cream": "true"},
+		},
+		{
+			"LogName": "Zuzu Ice Cream",
+			"Action": "EditImage",
+			"Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Zuzu Ice Cream}}",
+			"FromFile": "zuzuicecream.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Zuzu Ice Cream}}", "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Zuzu Ice Cream}}", "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 20,
+			"AnimationFrameCount": 9,
+			"When":
+				{"Zuzu Ice Cream": "true"},
+		},
+		{
+			"LogName": "Zuzu Milkshake",
+			"Action": "EditImage",
+			"Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Zuzu Milkshake}}",
+			"FromFile": "zuzumilkshake.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Zuzu Milkshake}}", "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Zuzu Milkshake}}", "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 20,
+			"AnimationFrameCount": 24,
+			"DisableWithMod": "ppja.artisanvalleymachinegoods",
+			"When":
+				{"Zuzu Milkshake": "true"},
+		}
+	]
+}

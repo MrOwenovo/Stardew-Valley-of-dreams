@@ -1,0 +1,995 @@
+{
+  "Shops": [
+    {
+      "ShopName": "SancStall",
+      "CategoriesToSellHere": [ //player can sell Forage and Vegetables to this store
+        -81,
+        -75,
+        -12,
+        -15,
+        -2
+      ],
+      "Quote": "...我保证这不是诈骗。",
+      "LocalizatedQuote": {
+        //Hey there dear translator(s)! Just write your translation between empty double quotes ("Like this!") 
+        //in your language's field and get rid of the //s in start of your language's field, then you're fine!
+
+        // "es" : "", //Spanish
+        //	"de" : "", //German
+        //	"ko" : "", //Korean
+        //	"fr" : "", //French
+        //	"hu" : "", //Hungarian
+        //	"it" : "",  //Italian
+        //	"ja" : "",  //Japanese
+        //	"pt" : "", //Portuguese
+        //	"ru" : "", //Russian
+        //	"tr" : "", //Turkish
+        //	"zh" : "" //Simplified Chinese
+      },
+      "MaxNumItemsSoldInStore": 3, //if all items total over 3, a random 3 will be picked each day
+      "ItemStocks": [
+        {
+          "ItemType": "Weapon",
+          "ItemNames": [
+            "Kudgel",
+            "Wicked Kris"
+          ],
+          "StockPrice": 1000,
+          "Stock": 1
+        },
+        {
+          "ItemType": "Object",
+          "ItemNames": [
+            "Treasure Chest",
+            "Triple Shot Espresso",
+            "Ice Cream"
+          ],
+          "StockPrice": 4000,
+          "Stock": 1
+        }
+      ],
+      "When": [ //only open the store from 8AM to 6PM
+        "t 800 1800"
+      ],
+      "ClosedMessage": "仅在每日早上八点到下午六点营业。", //the message displayed if the store is closed
+      "LocalizatedClosedMessage": {
+        //Hey there dear translator(s)! Just write your translation between empty double quotes ("Like this!") 
+        //in your language's field and get rid of the //s in start of your language's field, then you're fine!
+
+        // "es" : "", //Spanish
+        //	"de" : "", //German
+        //	"ko" : "", //Korean
+        //	"fr" : "", //French
+        //	"hu" : "", //Hungarian
+        //	"it" : "",  //Italian
+        //	"ja" : "",  //Japanese
+        //	"pt" : "", //Portuguese
+        //	"ru" : "", //Russian
+        //	"tr" : "", //Turkish
+        //	"zh" : "" //Simplified Chinese
+      }
+    },
+    {
+      "ShopName": "SecretQi",
+      "PortraitPath": "qi.png",
+      "CategoriesToSellHere": [
+        -12,
+        -15,
+        -2
+      ],
+      "Quote": "嘿呀，孩子，我这里有些疯狂的东西。",
+      "LocalizatedQuote": {
+        //Hey there dear translator(s)! Just write your translation between empty double quotes ("Like this!") 
+        //in your language's field and get rid of the //s in start of your language's field, then you're fine!
+
+        // "es" : "", //Spanish
+        //	"de" : "", //German
+        //	"ko" : "", //Korean
+        //	"fr" : "", //French
+        //	"hu" : "", //Hungarian
+        //	"it" : "",  //Italian
+        //	"ja" : "",  //Japanese
+        //	"pt" : "", //Portuguese
+        //	"ru" : "", //Russian
+        //	"tr" : "", //Turkish
+        //	"zh" : "" //Simplified Chinese
+      },
+      "MaxNumItemsSoldInStore": 3, //if all items total over 3, a random 3 will be picked each day
+      "ItemStocks": [
+        {
+          "ItemType": "Object",
+          "ItemNames": [ "Qi Crystal" ],
+          "StockPrice": 50000,
+          "Stock": 1
+        },
+        {
+          "ItemType": "Weapon",
+          "ItemNames": [ "Qi Blade" ],
+          "StockItemCurrency": "Qi Crystal",
+          "StockCurrencyStack": 10,
+          "StockPrice": 0,
+          "Stock": 1
+        },
+        {
+          "ItemType": "Weapon",
+          "ItemNames": [ "Serpent's Smallsword" ],
+          "StockItemCurrency": "Serpent Fragment",
+          "StockCurrencyStack": 30,
+          "StockPrice": 0,
+          "Stock": 1
+        }
+      ],
+      "When": [ //only open the store from 8AM to 6PM
+        "t 610 2400"
+      ],
+      "ClosedMessage": "太晚了，孩子。明天再来吧。", //the message displayed if the store is closed
+      "LocalizatedClosedMessage": {
+        //Hey there dear translator(s)! Just write your translation between empty double quotes ("Like this!") 
+        //in your language's field and get rid of the //s in start of your language's field, then you're fine!
+
+        // "es" : "", //Spanish
+        //	"de" : "", //German
+        //	"ko" : "", //Korean
+        //	"fr" : "", //French
+        //	"hu" : "", //Hungarian
+        //	"it" : "",  //Italian
+        //	"ja" : "",  //Japanese
+        //	"pt" : "", //Portuguese
+        //	"ru" : "", //Russian
+        //	"tr" : "", //Turkish
+        //	"zh" : "" //Simplified Chinese
+      }
+    },
+    {
+      "ShopName": "SancInt",
+      "Quote": "嘿，来点什么？",
+      "LocalizatedQuote": {
+        //Hey there dear translator(s)! Just write your translation into empty double quotes ("") 
+        //in your language's field and get rid of the //s in start of your language's field, then you're fine!
+
+        // "es" : "", //Spanish
+        //	"de" : "", //German
+        //	"ko" : "", //Korean
+        //	"fr" : "", //French
+        //	"hu" : "", //Hungarian
+        //	"it" : "",  //Italian
+        //	"ja" : "",  //Japanese
+        //	"pt" : "", //Portuguese
+        //	"ru" : "", //Russian
+        //	"tr" : "", //Turkish
+        //	"zh" : "" //Simplified Chinese
+      },
+      "MaxNumItemsSoldInStore": 6, //if all items total over 6, a random 3 will be picked each day
+      "ItemStocks": [
+        {
+          "ItemType": "Object",
+          "ItemNames": [ "Popcorn" ],
+          "StockPrice": 200
+        },
+        {
+          "ItemType": "Object",
+          "ItemNames": [ "Joja Soda" ],
+          "StockPrice": 100
+        },
+        {
+          "ItemType": "Object",
+          "ItemNames": [ "Joja Fries" ],
+          "StockPrice": 200
+        },
+        {
+          "ItemType": "Object",
+          "ItemNames": [ "Green Tea" ],
+          "StockPrice": 150
+        },
+        {
+          "ItemType": "Object",
+          "ItemNames": [ "Coffee" ],
+          "StockPrice": 300
+        },
+        {
+          "ItemType": "Object",
+          "ItemNames": [ "Beer", "Pale Ale", "Wine" ],
+          "StockPrice": 750
+        },
+        {
+          "ItemType": "Object",
+          "ItemNames": [ "Ice Cream" ],
+          "StockPrice": 300
+        }
+      ],
+      "When": [ //only open the store from 8AM to 6PM
+        "t 610 2300"
+      ],
+      "ClosedMessage": "噢，不好意思。我们刚刚关门了。", //the message displayed if the store is closed
+      "LocalizatedClosedMessage": {
+        //Hey there dear translator(s)! Just write your translation into empty double quotes ("") 
+        //in your language's field and get rid of the //s in start of your language's field, then you're fine!
+
+        // "es" : "", //Spanish
+        //	"de" : "", //German
+        //	"ko" : "", //Korean
+        //	"fr" : "", //French
+        //	"hu" : "", //Hungarian
+        //	"it" : "",  //Italian
+        //	"ja" : "",  //Japanese
+        //	"pt" : "", //Portuguese
+        //	"ru" : "", //Russian
+        //	"tr" : "", //Turkish
+        //	"zh" : "" //Simplified Chinese
+      }
+    },
+    {
+      "ShopName": "ZuzuUnder",
+      "Quote": "欢迎来到祖祖地下，充满欢乐时光的乐土！你想要什么？",
+      "LocalizatedQuote": {
+        //Hey there dear translator(s)! Just write your translation into empty double quotes ("") 
+        //in your language's field and get rid of the //s in start of your language's field, then you're fine!
+
+        // "es" : "", //Spanish
+        //	"de" : "", //German
+        //	"ko" : "", //Korean
+        //	"fr" : "", //French
+        //	"hu" : "", //Hungarian
+        //	"it" : "",  //Italian
+        //	"ja" : "",  //Japanese
+        //	"pt" : "", //Portuguese
+        //	"ru" : "", //Russian
+        //	"tr" : "", //Turkish
+        //	"zh" : "" //Simplified Chinese
+      },
+      "MaxNumItemsSoldInStore": 6, //if all items total over 6, a random 3 will be picked each day
+      "ItemStocks": [
+        {
+          "ItemType": "Object",
+          "ItemNames": [ "Beer", "Pale Ale", "Wine" ],
+          "StockPrice": 750
+        },
+        {
+          "ItemType": "Object",
+          "ItemNames": [ "Zuzu Signature Cocktail" ],
+          "StockPrice": 800
+        },
+        {
+          "ItemType": "Object",
+          "ItemNames": [ "Joja Cocktail" ],
+          "StockPrice": 300
+        },
+        {
+          "ItemType": "Object",
+          "ItemNames": [ "Cider" ],
+          "StockPrice": 600
+        },
+        {
+          "ItemType": "Object",
+          "ItemNames": [ "Zuzu Champagne" ],
+          "StockPrice": 1000
+        },
+        {
+          "ItemType": "Object",
+          "ItemNames": [ "Strawberry Daiquiri" ],
+          "StockPrice": 800
+        }
+      ],
+      "When": [ //only open the store from 8AM to 6PM
+        "t 610 2500"
+      ],
+      "ClosedMessage": "噢，对不起，已经晚了。不如现在先回家吧？", //the message displayed if the store is closed
+      "LocalizatedClosedMessage": {
+        //Hey there dear translator(s)! Just write your translation into empty double quotes ("") 
+        //in your language's field and get rid of the //s in start of your language's field, then you're fine!
+
+        // "es" : "", //Spanish
+        //	"de" : "", //German
+        //	"ko" : "", //Korean
+        //	"fr" : "", //French
+        //	"hu" : "", //Hungarian
+        //	"it" : "",  //Italian
+        //	"ja" : "",  //Japanese
+        //	"pt" : "", //Portuguese
+        //	"ru" : "", //Russian
+        //	"tr" : "", //Turkish
+        //	"zh" : "" //Simplified Chinese
+      }
+    },
+    {
+      "ShopName": "JojaCafe",
+      "Quote": "欢迎来到Joja总部咖啡厅。你需要什么？",
+      "LocalizatedQuote": {
+        //Hey there dear translator(s)! Just write your translation into empty double quotes ("") 
+        //in your language's field and get rid of the //s in start of your language's field, then you're fine!
+
+        // "es" : "", //Spanish
+        //	"de" : "", //German
+        //	"ko" : "", //Korean
+        //	"fr" : "", //French
+        //	"hu" : "", //Hungarian
+        //	"it" : "",  //Italian
+        //	"ja" : "",  //Japanese
+        //	"pt" : "", //Portuguese
+        //	"ru" : "", //Russian
+        //	"tr" : "", //Turkish
+        //	"zh" : "" //Simplified Chinese
+      },
+      "MaxNumItemsSoldInStore": 4, //if all items total over 4, a random 4 will be picked each day
+      "ItemStocks": [
+        {
+          "ItemType": "Object",
+          "ItemNames": [ "Joja Cola" ],
+          "StockPrice": 50
+        },
+        {
+          "ItemType": "Object",
+          "ItemNames": [ "Chocolate Ice Cream" ],
+          "StockPrice": 800
+        },
+        {
+          "ItemType": "Object",
+          "ItemNames": [ "Joja Cocktail" ],
+          "StockPrice": 300
+        },
+        {
+          "ItemType": "Object",
+          "ItemNames": [ "Ice Delight" ],
+          "StockPrice": 1000
+        },
+        {
+          "ItemType": "Object",
+          "ItemNames": [ "Joja Soda" ],
+          "StockPrice": 1000
+        },
+        {
+          "ItemType": "Object",
+          "ItemNames": [ "Joja Fries", "Popcorn" ],
+          "StockPrice": 800
+        }
+      ],
+      "When": [ //only open the store from 8AM to 6PM
+        "t 610 2300"
+      ],
+      "ClosedMessage": "Joja总部咖啡厅晚上十一点关门。明天再来吧。", //the message displayed if the store is closed
+      "LocalizatedClosedMessage": {
+        //Hey there dear translator(s)! Just write your translation into empty double quotes ("") 
+        //in your language's field and get rid of the //s in start of your language's field, then you're fine!
+
+        // "es" : "", //Spanish
+        //	"de" : "", //German
+        //	"ko" : "", //Korean
+        //	"fr" : "", //French
+        //	"hu" : "", //Hungarian
+        //	"it" : "",  //Italian
+        //	"ja" : "",  //Japanese
+        //	"pt" : "", //Portuguese
+        //	"ru" : "", //Russian
+        //	"tr" : "", //Turkish
+        //	"zh" : "" //Simplified Chinese
+      }
+    },
+    {
+      "ShopName": "JojaEnergy",
+      "Quote": "欢迎来到Joja能量补给站！你需要什么？",
+      "LocalizatedQuote": {
+        //Hey there dear translator(s)! Just write your translation into empty double quotes ("") 
+        //in your language's field and get rid of the //s in start of your language's field, then you're fine!
+
+        // "es" : "", //Spanish
+        //	"de" : "", //German
+        //	"ko" : "", //Korean
+        //	"fr" : "", //French
+        //	"hu" : "", //Hungarian
+        //	"it" : "",  //Italian
+        //	"ja" : "",  //Japanese
+        //	"pt" : "", //Portuguese
+        //	"ru" : "", //Russian
+        //	"tr" : "", //Turkish
+        //	"zh" : "" //Simplified Chinese
+      },
+      "MaxNumItemsSoldInStore": 3, //if all items total over 4, a random 4 will be picked each day
+      "ItemStocks": [
+        {
+          "ItemType": "Object",
+          "ItemNames": [ "Joja Cola" ],
+          "StockPrice": 50
+        },
+        {
+          "ItemType": "Object",
+          "ItemNames": [ "Joja Soda" ],
+          "StockPrice": 900
+        },
+        {
+          "ItemType": "Object",
+          "ItemNames": [ "Joja Fries" ],
+          "StockPrice": 800
+        },
+        {
+          "ItemType": "Object",
+          "ItemNames": [ "Auto-Petter" ],
+          "StockPrice": 62500
+        },
+        {
+          "ItemType": "Object",
+          "ItemNames": [ "Trucker Hat", "Logo Cap" ],
+          "StockPrice": 2500
+        },
+        {
+          "ItemType": "Object",
+          "ItemNames": [ "Sunglasses", "Blue Cowboy Hat" ],
+          "StockPrice": 5000
+        }
+      ],
+      "When": [ //only open the store from 8AM to 6PM
+        "t 600 2600"
+      ],
+      "ClosedMessage": "我们关门了。", //the message displayed if the store is closed
+      "LocalizatedClosedMessage": {
+        //Hey there dear translator(s)! Just write your translation into empty double quotes ("") 
+        //in your language's field and get rid of the //s in start of your language's field, then you're fine!
+
+        // "es" : "", //Spanish
+        //	"de" : "", //German
+        //	"ko" : "", //Korean
+        //	"fr" : "", //French
+        //	"hu" : "", //Hungarian
+        //	"it" : "",  //Italian
+        //	"ja" : "",  //Japanese
+        //	"pt" : "", //Portuguese
+        //	"ru" : "", //Russian
+        //	"tr" : "", //Turkish
+        //	"zh" : "" //Simplified Chinese
+      }
+    },
+    {
+      "ShopName": "BlockPartyFood",
+      "Quote": "这里有美味的烧烤食物。你想来点什么？",
+      "LocalizatedQuote": {
+        //Hey there dear translator(s)! Just write your translation into empty double quotes ("") 
+        //in your language's field and get rid of the //s in start of your language's field, then you're fine!
+
+        // "es" : "", //Spanish
+        //	"de" : "", //German
+        //	"ko" : "", //Korean
+        //	"fr" : "", //French
+        //	"hu" : "", //Hungarian
+        //	"it" : "",  //Italian
+        //	"ja" : "",  //Japanese
+        //	"pt" : "", //Portuguese
+        //	"ru" : "", //Russian
+        //	"tr" : "", //Turkish
+        //	"zh" : "" //Simplified Chinese
+      },
+      "MaxNumItemsSoldInStore": 3, //if all items total over 4, a random 4 will be picked each day
+      "ItemStocks": [
+        {
+          "ItemType": "Object",
+          "ItemNames": [ "Big Burger" ],
+          "StockPrice": 300
+        },
+        {
+          "ItemType": "Object",
+          "ItemNames": [ "Cider" ],
+          "StockPrice": 250
+        },
+        {
+          "ItemType": "Object",
+          "ItemNames": [ "Downtown Dog" ],
+          "StockPrice": 300
+        }
+      ],
+      "When": [ //only open the store from 8AM to 6PM
+        "t 600 2600"
+      ],
+      "ClosedMessage": "如果你不是在调试Bug，当你看到这句话时，请向作者报告这个Bug。", //the message displayed if the store is closed
+      "LocalizatedClosedMessage": {
+        //Hey there dear translator(s)! Just write your translation into empty double quotes ("") 
+        //in your language's field and get rid of the //s in start of your language's field, then you're fine!
+
+        // "es" : "", //Spanish
+        //	"de" : "", //German
+        //	"ko" : "", //Korean
+        //	"fr" : "", //French
+        //	"hu" : "", //Hungarian
+        //	"it" : "",  //Italian
+        //	"ja" : "",  //Japanese
+        //	"pt" : "", //Portuguese
+        //	"ru" : "", //Russian
+        //	"tr" : "", //Turkish
+        //	"zh" : "" //Simplified Chinese
+      }
+    },
+    {
+      "ShopName": "BlockParty",
+      "Quote": "嘿！你想在我这里买点什么？",
+      "LocalizatedQuote": {
+        //Hey there dear translator(s)! Just write your translation into empty double quotes ("") 
+        //in your language's field and get rid of the //s in start of your language's field, then you're fine!
+
+        // "es" : "", //Spanish
+        //	"de" : "", //German
+        //	"ko" : "", //Korean
+        //	"fr" : "", //French
+        //	"hu" : "", //Hungarian
+        //	"it" : "",  //Italian
+        //	"ja" : "",  //Japanese
+        //	"pt" : "", //Portuguese
+        //	"ru" : "", //Russian
+        //	"tr" : "", //Turkish
+        //	"zh" : "" //Simplified Chinese
+      },
+      "MaxNumItemsSoldInStore": 3, //if all items total over 4, a random 4 will be picked each day
+      "ItemStocks": [
+        {
+          "ItemType": "Clothing",
+          "ItemNames": [ "Zuzu University Jersey" ],
+          "StockPrice": 200
+        },
+        {
+          "ItemType": "Object",
+          "ItemNames": [ "Zuzu Signature Cocktail" ],
+          "StockPrice": 350
+        },
+        {
+          "ItemType": "Hat",
+          "ItemNames": [ "Fedora" ],
+          "StockPrice": 2500
+        }
+      ],
+      "When": [ //only open the store from 8AM to 6PM
+        "t 600 2600"
+      ],
+      "ClosedMessage": "如果你不是在调试Bug，当你看到这句话时，请向作者报告这个Bug。", //the message displayed if the store is closed
+      "LocalizatedClosedMessage": {
+        //Hey there dear translator(s)! Just write your translation into empty double quotes ("") 
+        //in your language's field and get rid of the //s in start of your language's field, then you're fine!
+
+        // "es" : "", //Spanish
+        //	"de" : "", //German
+        //	"ko" : "", //Korean
+        //	"fr" : "", //French
+        //	"hu" : "", //Hungarian
+        //	"it" : "",  //Italian
+        //	"ja" : "",  //Japanese
+        //	"pt" : "", //Portuguese
+        //	"ru" : "", //Russian
+        //	"tr" : "", //Turkish
+        //	"zh" : "" //Simplified Chinese
+      }
+    },
+    {
+      "ShopName": "PinkBakery",
+      "PortraitPath": "pcb.png",
+      "Quote": "你好呀，朋友！欢迎来到粉红蛋糕烘焙店！你要来点什么？",
+      "LocalizatedQuote": {
+        //Hey there dear translator(s)! Just write your translation into empty double quotes ("") 
+        //in your language's field and get rid of the //s in start of your language's field, then you're fine!
+
+        // "es" : "", //Spanish
+        //	"de" : "", //German
+        //	"ko" : "", //Korean
+        //	"fr" : "", //French
+        //	"hu" : "", //Hungarian
+        //	"it" : "",  //Italian
+        //	"ja" : "",  //Japanese
+        //	"pt" : "", //Portuguese
+        //	"ru" : "", //Russian
+        //	"tr" : "", //Turkish
+        //	"zh" : "" //Simplified Chinese
+      },
+      "MaxNumItemsSoldInStore": 7, //if all items total over 4, a random 4 will be picked each day
+      "ItemStocks": [
+        {
+          "ItemType": "Object",
+          "ItemNames": [ "Bubblegum Ice Cream", "Chocolate Ice Cream" ],
+          "StockPrice": 400
+        },
+        {
+          "ItemType": "Object",
+          "ItemNames": [ "Pink Cake" ],
+          "StockPrice": 950
+        },
+        {
+          "ItemType": "Object",
+          "ItemNames": [ "Lemon Drizzle Cheesecake" ],
+          "StockPrice": 800
+        },
+        {
+          "ItemType": "Object",
+          "ItemNames": [ "Strawberry Popsicle" ],
+          "StockPrice": 100
+        },
+        {
+          "ItemType": "Object",
+          "ItemNames": [ "Zuzu Milkshake" ],
+          "StockPrice": 750
+        },
+        {
+          "ItemType": "Object",
+          "ItemNames": [ "Zuzu Ice Cream" ],
+          "StockPrice": 750
+        },
+        {
+          "ItemType": "Object",
+          "ItemNames": [ "Ice Delight" ],
+          "StockPrice": 600
+        },
+        {
+          "ItemType": "Object",
+          "ItemNames": [ "Chocolate Slice" ],
+          "StockPrice": 700
+        },
+        {
+          "ItemType": "Object",
+          "ItemNames": [ "Cookie" ],
+          "StockPrice": 500
+        },
+        {
+          "ItemType": "Object",
+          "ItemNames": [ "Rhubarb Pie" ],
+          "StockPrice": 800
+        },
+        {
+          "ItemType": "Object",
+          "ItemNames": [ "Chocolate Cake" ],
+          "StockPrice": 900
+        },
+        {
+          "ItemType": "Object",
+          "ItemNames": [ "Miner's Treat" ],
+          "StockPrice": 900,
+          "Stock": 2
+        }
+
+      ],
+      "When": [ //only open the store from 8AM to 6PM
+        "t 600 1900"
+      ],
+      "ClosedMessage": "不好意思，我们晚上7点关门。", //the message displayed if the store is closed
+      "LocalizatedClosedMessage": {
+        //Hey there dear translator(s)! Just write your translation into empty double quotes ("") 
+        //in your language's field and get rid of the //s in start of your language's field, then you're fine!
+
+        // "es" : "", //Spanish
+        //	"de" : "", //German
+        //	"ko" : "", //Korean
+        //	"fr" : "", //French
+        //	"hu" : "", //Hungarian
+        //	"it" : "",  //Italian
+        //	"ja" : "",  //Japanese
+        //	"pt" : "", //Portuguese
+        //	"ru" : "", //Russian
+        //	"tr" : "", //Turkish
+        //	"zh" : "" //Simplified Chinese
+      }
+    },
+    {
+      "ShopName": "PharmacyZuzu",
+      "Quote": "有什么需要吗？",
+      "LocalizatedQuote": {
+        //Hey there dear translator(s)! Just write your translation into empty double quotes ("") 
+        //in your language's field and get rid of the //s in start of your language's field, then you're fine!
+
+        // "es" : "", //Spanish
+        //	"de" : "", //German
+        //	"ko" : "", //Korean
+        //	"fr" : "", //French
+        //	"hu" : "", //Hungarian
+        //	"it" : "",  //Italian
+        //	"ja" : "",  //Japanese
+        //	"pt" : "", //Portuguese
+        //	"ru" : "", //Russian
+        //	"tr" : "", //Turkish
+        //	"zh" : "" //Simplified Chinese
+      },
+      "MaxNumItemsSoldInStore": 4, //if all items total over 4, a random 4 will be picked each day
+      "ItemStocks": [
+        {
+          "ItemType": "Object",
+          "ItemNames": [ "Energy Tonic" ],
+          "StockPrice": 1500
+        },
+        {
+          "ItemType": "Object",
+          "ItemNames": [ "Muscle Remedy" ],
+          "StockPrice": 1500
+        },
+        {
+          "ItemType": "Object",
+          "ItemNames": [ "Life Elixir" ],
+          "StockPrice": 1750
+        },
+        {
+          "ItemType": "Object",
+          "ItemNames": [ "Oil of Garlic" ],
+          "StockPrice": 2000
+        },
+        {
+          "ItemType": "Object",
+          "ItemNames": [ "Hero Elixir" ],
+          "StockPrice": 2000
+        },
+        {
+          "ItemType": "Object",
+          "ItemNames": [ "Haste Elixir" ],
+          "StockPrice": 2000
+        }
+
+      ],
+      "When": [ //only open the store from 8AM to 6PM
+        "t 1000 1700/d Mon Tue Sat Sun"
+      ],
+      "ClosedMessage": "药房现在不开门，仅在周三、周四和周五早上十点到晚上五点开门。^如遇紧急情况，请前往祖祖街区医院。", //the message displayed if the store is closed
+      "LocalizatedClosedMessage": {
+        //Hey there dear translator(s)! Just write your translation into empty double quotes ("") 
+        //in your language's field and get rid of the //s in start of your language's field, then you're fine!
+
+        // "es" : "", //Spanish
+        //	"de" : "", //German
+        //	"ko" : "", //Korean
+        //	"fr" : "", //French
+        //	"hu" : "", //Hungarian
+        //	"it" : "",  //Italian
+        //	"ja" : "",  //Japanese
+        //	"pt" : "", //Portuguese
+        //	"ru" : "", //Russian
+        //	"tr" : "", //Turkish
+        //	"zh" : "" //Simplified Chinese
+      }
+    },
+    {
+      "ShopName": "StardropCafe",
+      "Quote": "欢迎来到星之果实咖啡店，我能为你做点什么？",
+      "LocalizatedQuote": {
+        //Hey there dear translator(s)! Just write your translation into empty double quotes ("") 
+        //in your language's field and get rid of the //s in start of your language's field, then you're fine!
+
+        // "es" : "", //Spanish
+        //	"de" : "", //German
+        //	"ko" : "", //Korean
+        //	"fr" : "", //French
+        //	"hu" : "", //Hungarian
+        //	"it" : "",  //Italian
+        //	"ja" : "",  //Japanese
+        //	"pt" : "", //Portuguese
+        //	"ru" : "", //Russian
+        //	"tr" : "", //Turkish
+        //	"zh" : "" //Simplified Chinese
+      },
+      "MaxNumItemsSoldInStore": 7, //if all items total over 4, a random 4 will be picked each day
+      "ItemStocks": [
+        {
+          "ItemType": "Object",
+          "ItemNames": [ "Coffee" ],
+          "StockPrice": 500
+        },
+        {
+          "ItemType": "Object",
+          "ItemNames": [ "Cookie" ],
+          "StockPrice": 450
+        },
+        {
+          "ItemType": "Object",
+          "ItemNames": [ "Lemon Drizzle Cheesecake" ],
+          "StockPrice": 795
+        },
+        {
+          "ItemType": "Object",
+          "ItemNames": [ "Green Tea" ],
+          "StockPrice": 750
+        },
+        {
+          "ItemType": "Object",
+          "ItemNames": [ "Zuzu Milkshake" ],
+          "StockPrice": 750
+        },
+        {
+          "ItemType": "Object",
+          "ItemNames": [ "Chocolate Slice" ],
+          "StockPrice": 750
+        },
+        {
+          "ItemType": "Object",
+          "ItemNames": [ "Rhubarb Pie" ],
+          "StockPrice": 750
+        },
+        {
+          "ItemType": "Object",
+          "ItemNames": [ "Chocolate Cake" ],
+          "StockPrice": 1000
+        },
+        {
+          "ItemType": "Object",
+          "ItemNames": [ "Miner's Treat" ],
+          "StockPrice": 850,
+          "Stock": 1
+        }
+
+      ],
+      "When": [ //always open
+        "t 600 2600"
+      ],
+      "ClosedMessage": "...真是可喜可贺，你发现了mod的Bug。这家店应该一直开着才对。", //the message displayed if the store is closed
+      "LocalizatedClosedMessage": {
+        //Hey there dear translator(s)! Just write your translation into empty double quotes ("") 
+        //in your language's field and get rid of the //s in start of your language's field, then you're fine!
+
+        // "es" : "", //Spanish
+        //	"de" : "", //German
+        //	"ko" : "", //Korean
+        //	"fr" : "", //French
+        //	"hu" : "", //Hungarian
+        //	"it" : "",  //Italian
+        //	"ja" : "",  //Japanese
+        //	"pt" : "", //Portuguese
+        //	"ru" : "", //Russian
+        //	"tr" : "", //Turkish
+        //	"zh" : "" //Simplified Chinese
+      }
+    },
+    {
+      "ShopName": "MollyFlowers",
+      "Quote": "嗨！是来买花的吗？",
+      "LocalizatedQuote": {
+        //Hey there dear translator(s)! Just write your translation into empty double quotes ("") 
+        //in your language's field and get rid of the //s in start of your language's field, then you're fine!
+
+        // "es" : "", //Spanish
+        //	"de" : "", //German
+        //	"ko" : "", //Korean
+        //	"fr" : "", //French
+        //	"hu" : "", //Hungarian
+        //	"it" : "",  //Italian
+        //	"ja" : "",  //Japanese
+        //	"pt" : "", //Portuguese
+        //	"ru" : "", //Russian
+        //	"tr" : "", //Turkish
+        //	"zh" : "" //Simplified Chinese
+      },
+      "MaxNumItemsSoldInStore": 6, //if all items total over 4, a random 4 will be picked each day
+      "ItemStocks": [
+        {
+          "ItemType": "Object",
+          "ItemNames": [ "Sweet Pea" ],
+          "StockPrice": 200
+        },
+        {
+          "ItemType": "Object",
+          "ItemNames": [ "Crocus" ],
+          "StockPrice": 200
+        },
+        {
+          "ItemType": "Object",
+          "ItemNames": [ "Daffodil" ],
+          "StockPrice": 200
+        },
+        {
+          "ItemType": "Object",
+          "ItemNames": [ "Sunflower", "Tulip" ],
+          "StockPrice": 250
+        },
+        {
+          "ItemType": "Object",
+          "ItemNames": [ "Summer Spangle", "Blue Jazz" ],
+          "StockPrice": 500
+        },
+        {
+          "ItemType": "Object",
+          "ItemNames": [ "Fairy Rose" ],
+          "StockPrice": 600
+        },
+        {
+          "ItemType": "Object",
+          "ItemNames": [ "Poppy" ],
+          "StockPrice": 300
+        },
+        {
+          "ItemType": "Object",
+          "ItemNames": [ "Dandelion" ],
+          "StockPrice": 50
+        }
+
+      ],
+      "When": [ //always open
+        "t 1000 2230"
+      ],
+      "ClosedMessage": "不好意思，我已经打烊了。", //the message displayed if the store is closed
+      "LocalizatedClosedMessage": {
+        //Hey there dear translator(s)! Just write your translation into empty double quotes ("") 
+        //in your language's field and get rid of the //s in start of your language's field, then you're fine!
+
+        // "es" : "", //Spanish
+        //	"de" : "", //German
+        //	"ko" : "", //Korean
+        //	"fr" : "", //French
+        //	"hu" : "", //Hungarian
+        //	"it" : "",  //Italian
+        //	"ja" : "",  //Japanese
+        //	"pt" : "", //Portuguese
+        //	"ru" : "", //Russian
+        //	"tr" : "", //Turkish
+        //	"zh" : "" //Simplified Chinese
+      }
+    },
+    {
+      "ShopName": "Furnisure",
+      "Quote": "嘿，你好，欢迎来到安心家居，你唯一的家居之选！",
+      "LocalizatedQuote": {
+        //Hey there dear translator(s)! Just write your translation into empty double quotes ("") 
+        //in your language's field and get rid of the //s in start of your language's field, then you're fine!
+
+        // "es" : "", //Spanish
+        //	"de" : "", //German
+        //	"ko" : "", //Korean
+        //	"fr" : "", //French
+        //	"hu" : "", //Hungarian
+        //	"it" : "",  //Italian
+        //	"ja" : "",  //Japanese
+        //	"pt" : "", //Portuguese
+        //	"ru" : "", //Russian
+        //	"tr" : "", //Turkish
+        //	"zh" : "" //Simplified Chinese
+      },
+      "MaxNumItemsSoldInStore": 14, //if all items total over 14, a random 14 will be picked each day
+      "ItemStocks": [
+        {
+          "ItemType": "Furniture",
+          "ItemNames": [ "Oak Chair", "Walnut Chair", "Birch Chair", "Mahogany Chair", "Red Diner Chair", "Blue Diner Chair", "Country Chair", "Breakfast Chair", "Pink Office Chair", "Purple Office Chair", "Green Office Stool", "Orange Office Stool", "Dark Throne", "Dining Chair" ],
+          "MaxNumItemsSoldInItemStock": 3,
+          "StockPrice": 350
+        },
+        {
+          "ItemType": "Furniture",
+          "ItemNames": [ "Blue Armchair", "Red Armchair", "Yellow Armchair", "Green Armchair", "Brown Armchair" ],
+          "MaxNumItemsSoldInItemStock": 2,
+          "StockPrice": 400
+        },
+        {
+          "ItemType": "Furniture",
+          "ItemNames": [ "Blue Couch", "Red Couch", "Brown Couch", "Dark Couch" ],
+          "MaxNumItemsSoldInItemStock": 2,
+          "StockPrice": 450
+        },
+        {
+          "ItemType": "Furniture",
+          "ItemNames": [ "Oak Dresser", "Walnut Dresser", "Birch Dresser", "Mahogany Dresser" ],
+          "MaxNumItemsSoldInItemStock": 2,
+          "StockPrice": 350
+        },
+        {
+          "ItemType": "Furniture",
+          "ItemNames": [ "Oak Dresser", "Walnut Dresser", "Birch Dresser", "Mahogany Dresser" ],
+          "MaxNumItemsSoldInItemStock": 2,
+          "StockPrice": 350
+        },
+        {
+          "ItemType": "Furniture",
+          "ItemNames": [ "Oak Table", "Walnut Table", "Birch Table", "Mahogany Table" ],
+          "MaxNumItemsSoldInItemStock": 2,
+          "StockPrice": 400
+        },
+        {
+          "ItemType": "Furniture",
+          "ItemNames": [ "Luxury Table" ],
+          "StockPrice": 650
+        }
+      ],
+      "When": [ //always open
+        "t 600 2600"
+      ],
+      "ClosedMessage": "可喜可贺，你的mod崩溃了 :)", //the message displayed if the store is closed
+      "LocalizatedClosedMessage": {
+        //Hey there dear translator(s)! Just write your translation into empty double quotes ("") 
+        //in your language's field and get rid of the //s in start of your language's field, then you're fine!
+
+        // "es" : "", //Spanish
+        //	"de" : "", //German
+        //	"ko" : "", //Korean
+        //	"fr" : "", //French
+        //	"hu" : "", //Hungarian
+        //	"it" : "",  //Italian
+        //	"ja" : "",  //Japanese
+        //	"pt" : "", //Portuguese
+        //	"ru" : "", //Russian
+        //	"tr" : "", //Turkish
+        //	"zh" : "" //Simplified Chinese
+      }
+    }
+  ]
+}

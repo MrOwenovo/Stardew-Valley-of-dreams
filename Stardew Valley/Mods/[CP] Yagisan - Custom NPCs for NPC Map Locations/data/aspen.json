@@ -1,0 +1,53 @@
+{
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "Changes": [
+        // Aspen - New Custom Dateable NPC - https://www.nexusmods.com/stardewvalley/mods/6754
+        {
+            "LogName": "[Yagi] Aspen - Sprite Offsets",
+            "Action": "EditData",
+            "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+            "When": {
+                "HasMod: |contains=invatorzen.AspenCP": true
+            },
+            "Entries": {
+                "Aspen": {
+                    "MarkerCropOffset": 3
+                }
+            }
+        },
+        {
+            "LogName": "[Yagi] Aspen - Location Support",
+            "Action": "EditData",
+            "Target": "Mods/Bouhm.NPCMapLocations/Locations",
+            "When": {
+                "HasMod: |contains=invatorzen.AspenCP": true
+            },
+            "Entries": {
+                //	Aspen - New Custom Dateable NPC - https://www.nexusmods.com/stardewvalley/mods/6754
+                "Custom_AspenFarm": {
+                    "MapVectors": [
+                        {
+                            "MapX": 470,
+                            "MapY": 1,
+                            "TileX": 0,
+                            "TileY": 0
+                        },
+                        {
+                            "MapX": 560,
+                            "MapY": 64,
+                            "TileX": 60,
+                            "TileY": 43
+                        }
+                    ],
+                    "MapTooltip": {
+                        "X": 470,
+                        "Y": 1,
+                        "Width": 90,
+                        "Height": 59,
+                        "PrimaryText": "Aspen's Farm"
+                    }
+                },
+            }
+        },
+    ]
+}

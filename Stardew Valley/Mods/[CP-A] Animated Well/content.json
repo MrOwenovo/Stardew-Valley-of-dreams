@@ -1,0 +1,65 @@
+{
+	"Format": "1.6",
+    
+  "ConfigSchema":{
+		"Type": {
+			"AllowValues": "Jumino, Squid, false",
+			"Default": "Jumino"
+			},
+		"Animation": {
+			"AllowValues": "true, false",
+			"Default": "true"
+			},			
+		},
+		
+	"Changes": [
+		 // Normal
+		{
+			"Action": "EditImage",
+       		"Target": "Buildings/Well",
+       		"FromFile": "assets/Normal/Jumino.png",
+			"When": {
+				"Type": "Jumino",
+				"Animation": "false"
+				}
+		},
+		{
+			"Action": "EditImage",
+       		"Target": "Buildings/Well",
+       		"FromFile": "assets/Normal/Squid.png",
+			"When": {
+				"Type": "Squid",
+				"Animation": "false"
+				}
+		},
+
+		// Animations
+
+	   	{
+			"LogName": "Well_A",
+			"Action": "EditImage",
+			"Target": "Buildings/Well",
+			"FromFile": "assets/Animation/Jumino.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 48, "Height": 80 },
+			"AnimationFrameTime": 9,
+			"AnimationFrameCount": 3,
+			"When": {
+					"Type": "Jumino",
+					"Animation": "true"
+				}
+		},
+		{
+			"LogName": "Well_B",
+			"Action": "EditImage",
+			"Target": "Buildings/Well",
+			"FromFile": "assets/Animation/Squid.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 48, "Height": 80 },
+			"AnimationFrameTime": 9,
+			"AnimationFrameCount": 3,
+			"When": {
+					"Type": "Squid",
+					"Animation": "true"
+				}
+		}
+	]
+}

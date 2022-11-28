@@ -1,0 +1,167 @@
+{
+	"Changes": [
+		//World Map Changes-----------------
+		//Maps and code by D1scoball (excluding vanilla maps which are mine)
+		//Vanilla ONLY
+		/*{
+	   "LogName": "Map Replace Vanilla",
+  	   "Action": "EditImage",
+       "Target": "LooseSprites/map",
+       "FromFile": "assets/maps/{{season}}_map.png",
+       "FromArea": { "X": 226, "Y": 44, "Width": 74, "Height": 77 },
+       "ToArea": { "X": 226, "Y": 44, "Width": 74, "Height": 77 },
+       "PatchMode": "Overlay",
+		"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false, "HasMod: |contains=Bouhm.NPCMapLocations": false },
+	},*/
+		{
+			"LogName": "Map Replace Vanilla",
+			"Action": "EditImage",
+			"Target": "LooseSprites/map",
+			"FromFile": "assets/maps/Vanilla/spring_ES1.png",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 73,
+				"Height": 102
+			},
+			"ToArea": {
+				"X": 227,
+				"Y": 47,
+				"Width": 73,
+				"Height": 102
+			},
+			"When": {
+				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+				"HasMod: |contains=Bouhm.NPCMapLocations": false
+			}
+		},
+		//Vanilla w/ NPCMapLocations
+		/*{
+	   "LogName": "Map Replace Vanilla",
+  	   "Action": "EditImage",
+       "Target": "LooseSprites/map",
+       "FromFile": "assets/maps/NPCMapCompat/{{season}}_map.png",
+       "FromArea": { "X": 226, "Y": 38, "Width": 74, "Height": 83 },
+       "ToArea": { "X": 226, "Y": 38, "Width": 74, "Height": 83 },
+       "PatchMode": "Overlay",
+		"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false, "HasMod: |contains=Bouhm.NPCMapLocations": true },
+	},*/
+		{
+			"LogName": "Map Replace Vanilla",
+			"Action": "EditImage",
+			"Target": "LooseSprites/map",
+			"FromFile": "assets/maps/Vanilla/{{season}}_ES1.png",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 73,
+				"Height": 102
+			},
+			"ToArea": {
+				"X": 227,
+				"Y": 47,
+				"Width": 73,
+				"Height": 102
+			},
+			"When": {
+				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+				"HasMod: |contains=Bouhm.NPCMapLocations": true,
+				"HasMod: |contains=DaisyNiko.EarthyRecolour": false
+			}
+		},
+		//SVE Compat
+		{
+			"LogName": "Map Replace SVE",
+			"Action": "EditImage",
+			"Target": "LooseSprites/map",
+			"FromFile": "assets/maps/SVECompat/{{season}}_map_sve.png",
+			"FromArea": {
+				"X": 236,
+				"Y": 39,
+				"Width": 64,
+				"Height": 82
+			},
+			"ToArea": {
+				"X": 236,
+				"Y": 39,
+				"Width": 64,
+				"Height": 82
+			},
+			"PatchMode": "Overlay",
+			"When": {
+				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true
+			}
+		},
+		//VIBRANT pastoral
+		{
+			"LogName": "Map Replace Vibrant Pastoral",
+			"Action": "EditImage",
+			"Target": "LooseSprites/map",
+			"FromFile": "assets/maps/Vanilla_VPR/{{season}}_ES2.png",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 73,
+				"Height": 102
+			},
+			"ToArea": {
+				"X": 227,
+				"Y": 47,
+				"Width": 73,
+				"Height": 102
+			},
+			"When": {
+				"HasMod: |contains=grapeponta.VibrantPastoralRecolor": true,
+				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+				"HasMod: |contains=Bouhm.NPCMapLocations": false
+			}
+		},
+		//Earthly Recolour Compat
+		{
+			"LogName": "Map Replace EarthlyRecolour",
+			"Action": "EditImage",
+			"Target": "LooseSprites/map",
+			"FromFile": "assets/maps/DNRCompat/{{season}}_ES2.png",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 73,
+				"Height": 102
+			},
+			"ToArea": {
+				"X": 227,
+				"Y": 47,
+				"Width": 73,
+				"Height": 102
+			},
+			
+			"When": {
+				"HasMod: |contains=DaisyNiko.EarthyRecolour": true,
+				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false
+			}
+		},
+		{
+			"LogName": "Map Replace EarthlyRecolourSVE",
+			"Action": "EditImage",
+			"Target": "LooseSprites/map",
+			"FromFile": "assets/maps/DNRCompat/{{season}}_map_sve.png",
+			"FromArea": {
+				"X": 236,
+				"Y": 39,
+				"Width": 64,
+				"Height": 82
+			},
+			"ToArea": {
+				"X": 236,
+				"Y": 39,
+				"Width": 64,
+				"Height": 82
+			},
+			"PatchMode": "Overlay",
+			"When": {
+				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+				"HasMod: |contains=DaisyNiko.EarthyRecolour": true
+			}
+		}
+	]
+}

@@ -1,0 +1,288 @@
+{
+    "Shops": [
+		{
+			"ShopName": "PatriceShop",
+			"PortraitPath": "assets/Portrait.png",
+			"Quote": "Hello! Welcome to Louvier Fromagerie.",
+
+
+			"MaxNumItemsSoldInStore": 350,
+				"ItemStocks": [
+		//ALWAYS AVAILABLE PRODUCTS	
+				{
+					"ItemType": "Object",//Year Round
+					"StockPrice": 450,
+					"ItemNames": ["Butter LF"],
+					"When": [
+						"z winter",
+						],
+					"Stock": 1,
+				},
+				{
+					"ItemType": "Object",//Year Round
+					"StockPrice": 450,
+					"ItemNames": ["Goat Butter LF"],
+					"When": [
+						"z winter",
+						],
+					"Stock": 1,
+				},
+		//SPRING CHEESE
+				{
+					"ItemType": "Object",//Spring
+					"StockPrice": 2500,
+					"Quality": 4,
+					"ItemNames": ["Goat Feta LF"],
+					"When": [
+						"!z spring/SkillLevel farming 6",
+						],
+					"Stock": 1,
+				},
+				{
+					"ItemType": "Object",//Spring
+					"StockPrice": 2500,
+					"Quality": 4,
+					"ItemNames": ["Gouda LF"],
+					"When": [
+						"!z spring/SkillLevel farming 3",
+						],
+					"Stock": 1,
+				},
+				{
+					"ItemType": "Object",//Spring
+					"StockPrice": 3000,
+					"Quality": 4,
+					"ItemNames": ["Cathare LF"],
+					"When": [
+						"!z spring/SkillLevel farming 8",
+						],
+					"Stock": 1,
+				},
+				{
+					"ItemType": "Object",//Spring
+					"StockPrice": 2500,
+					"Quality": 4,
+					"ItemNames": ["Cheddar LF"],
+					"When": [
+						"!z spring/SkillLevel farming 4",
+						],
+					"Stock": 1,
+				},
+		//SUMMER CHEESE
+				{
+					"ItemType": "Object",//Summer
+					"StockPrice": 2500,
+					"Quality": 4,
+					"ItemNames": ["Goat Brie LF"],
+					"When": [
+						"!z summer/SkillLevel farming 6",
+						],
+					"Stock": 1,
+				},
+				{
+					"ItemType": "Object",//Summer
+					"StockPrice": 2500,
+					"Quality": 4,
+					"ItemNames": ["Gorgonzola LF"],
+					"When": [
+						"!z summer/SkillLevel farming 7",
+						],
+					"Stock": 1,
+				},
+				{
+					"ItemType": "Object",//Summer
+					"StockPrice": 2500,
+					"Quality": 4,
+					"ItemNames": ["Chabichou LF"],
+					"When": [
+						"!z summer/SkillLevel farming 9",
+						],
+					"Stock": 1,
+				},
+				{
+					"ItemType": "Object",//Summer
+					"StockPrice": 2500,
+					"Quality": 4,
+					"ItemNames": ["Florette LF"],
+					"When": [
+						"!z summer/SkillLevel farming 3",
+						],
+					"Stock": 1,
+				},
+		//FALL CHEESE
+				{
+					"ItemType": "Object",//Fall
+					"StockPrice": 2500,
+					"Quality": 4,
+					"ItemNames": ["Parmesan LF"],
+					"When": [
+						"!z fall/SkillLevel farming 4",
+						],
+					"Stock": 1,
+				},
+				{
+					"ItemType": "Object",//Spring
+					"StockPrice": 2500,
+					"Quality": 4,
+					"ItemNames": ["Valencay LF"],
+					"When": [
+						"!z fall/SkillLevel farming 8",
+						],
+					"Stock": 1,
+				},
+				{
+					"ItemType": "Object",//Spring
+					"StockPrice": 1500,
+					"Quality": 4,
+					"ItemNames": ["Mozzarella LF"],
+					"When": [
+						"!z fall/SkillLevel farming 2",
+						],
+					"Stock": 1,
+				},
+				{
+					"ItemType": "Object",//Spring
+					"StockPrice": 2500,
+					"ItemNames": ["Emmental LF"],
+					"Quality": 4,
+					"When": [
+						"!z fall/SkillLevel farming 5",
+						],
+					"Stock": 1,
+				},
+
+		// SPRING RECIPES
+				{
+					"ItemType": "Object",//Year Round
+					"IsRecipe": true,
+					"StockPrice": 2500,
+					"ItemNames": ["Garlic Butter LF"],
+				},
+				{
+					"ItemType": "Object",//Spring Recipe
+					"IsRecipe": true,
+					"StockPrice": 3500,
+					"ItemNames": ["Beet Feta Salad LF"],
+					"When": ["!z spring/SkillLevel farming 3 fishing 3"],
+				},
+				{
+					"ItemType": "Object",//Spring Recipe
+					"IsRecipe": true,
+					"StockPrice": 3500,
+					"ItemNames": ["Apple Jack Pie LF"],
+					"When": ["!z spring/SkillLevel combat 3"],
+				},
+				{
+					"ItemType": "Object",//Spring Recipe
+					"IsRecipe": true,
+					"StockPrice": 3500,
+					"ItemNames": ["Baked Mac & Cheese LF"],
+					"When": ["!z spring/SkillLevel mining 3"],
+				},
+				{
+					"ItemType": "Object",//Spring Recipe
+					"IsRecipe": true,
+					"StockPrice": 3500,
+					"ItemNames": ["Yam Fritters LF"],
+					"When": ["!z spring/SkillLevel mining 5"],
+				},
+		// SUMMER RECIPES
+				{
+					"ItemType": "Object",//Summer Recipe
+					"IsRecipe": true,
+					"StockPrice": 3500,
+					"ItemNames": ["Honey Brulee Brie LF"],
+					"When": ["!z summer/SkillLevel farming 4"],
+				},
+				{
+					"ItemType": "Object",//Summer Recipe
+					"IsRecipe": true,
+					"StockPrice": 3500,
+					"ItemNames": ["Hazelnut Brie Crepe LF"],
+					"When": ["!z summer/SkillLevel farming 7"],
+				},
+				{
+					"ItemType": "Object",//Summer Recipe
+					"IsRecipe": true,
+					"StockPrice": 3500,
+					"ItemNames": ["Blackberry Brie Scone LF"],
+					"When": ["!z summer/SkillLevel mining 6"],
+				},
+				{
+					"ItemType": "Object",//Summer Recipe
+					"IsRecipe": true,
+					"StockPrice": 3500,
+					"ItemNames": ["Apple Crostata LF"],
+					"When": ["!z summer/SkillLevel farming 3"],
+				},
+				{
+					"ItemType": "Object",//Summer Recipe
+					"IsRecipe": true,
+					"StockPrice": 3500,
+					"ItemNames": ["Peach Apricot Salad LF"],
+					"When": ["!z summer/SkillLevel combat 5"],
+				},
+				{
+					"ItemType": "Object",//Summer Recipe
+					"IsRecipe": true,
+					"StockPrice": 3500,
+					"ItemNames": ["Gorgonzola Risotto LF"],
+					"When": ["!z summer/SkillLevel farming 2"],
+				},
+				{
+					"ItemType": "Object",//Summer Recipe
+					"IsRecipe": true,
+					"StockPrice": 3500,
+					"ItemNames": ["Roasted Pumpkin LF"],
+					"When": ["!z summer/SkillLevel foraging 5"],
+				},
+		//FALL RECIPES
+				{
+					"ItemType": "Object",//Fall Recipe
+					"IsRecipe": true,
+					"StockPrice": 3500,
+					"ItemNames": ["Parmesan Crusted Tilapia LF"],
+					"When": ["!z fall/SkillLevel fishing 5"],
+				},
+				{
+					"ItemType": "Object",//Fall Recipe
+					"IsRecipe": true,
+					"StockPrice": 3500,
+					"ItemNames": ["French Onion Soup LF"],
+					"When": ["!z fall/SkillLevel fishing 7"],
+				},
+				{
+					"ItemType": "Object",//Fall Recipe
+					"IsRecipe": true,
+					"StockPrice": 3500,
+					"ItemNames": ["Cheese Fondue LF"],
+					"When": ["!z fall/SkillLevel foraging 9 farming 9"],
+				},
+				{
+					"ItemType": "Object",//Fall Recipe
+					"IsRecipe": true,
+					"StockPrice": 3500,
+					"ItemNames": ["Scalloped Potatoes LF"],
+					"When": ["!z fall/SkillLevel foraging 8 farming 8"],
+				},
+				{
+					"ItemType": "Object",//Fall Recipe
+					"IsRecipe": true,
+					"StockPrice": 3500,
+					"ItemNames": ["Emmental Gougeres LF"],
+					"When": ["!z fall/SkillLevel foraging 7 farming 7"],
+				},
+				{
+					"ItemType": "Object",//Fall Recipe
+					"IsRecipe": true,
+					"StockPrice": 3500,
+					"ItemNames": ["Sweet Valencay Babka LF"],
+					"When": ["!z fall/SkillLevel mining 8"],
+				},
+				],
+			"MaxNumItemsSoldInItemStock": 100,
+			"When": ["t 1130 1450/z winter"],
+			"ClosedMessage": "Louvier Fromagerie is open on Saturday from 9AM to 6PM and Sunday from 9AM to 11AM, 12PM to 3PM, and 4PM to 6PM."
+		},
+	],
+}

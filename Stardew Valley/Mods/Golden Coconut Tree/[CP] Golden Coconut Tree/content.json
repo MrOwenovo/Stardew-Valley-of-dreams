@@ -1,0 +1,21 @@
+{
+"Format": "1.20.0",
+	"ConfigSchema": {
+			"Difficulty":
+				{
+				"AllowValues": "easy,medium,hard,hell",
+				"Default": "medium",
+				"AllowMultiple": "false"
+				},
+			},
+	"Changes": [
+	// SpecialOrder  include ====================================================
+	{
+		"Action": "Include",
+		"FromFile": "assets/Mail.json, assets/Strings.json, assets/SpecialOrder/GoldenCoconut.json",
+		"When": {
+			"HasFlag: currentPlayer, hostPlayer |contains=Visited_Island": true ,
+		},
+	},
+   ]
+}

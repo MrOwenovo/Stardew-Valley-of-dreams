@@ -1,0 +1,835 @@
+{
+	"Changes":[
+		{
+			"LogName":"NPC Dispositions",
+			"Action":"EditData",
+			"Target":"Data/NPCDispositions",
+			"Entries":{
+				"Lunna":"adult/polite/outgoing/positive/female/datable/null/Town/spring 3/Wizard 'dad' Dianna 'sister'/Custom_LASV_LunnaHouse 4 5/{{i18n:Name.Lunna}}",
+				"Dianna":"child/polite/shy/positive/female/not-datable/null/Other/winter 2/Lunna 'sister'/Custom_LASV_DiannaHouse 9 9/{{i18n:Name.Dianna}}",
+				"Bianka":"teen/polite/outgoing/positive/female/datable/null/Other/summer 9/Esmeralda 'mom' Salvador 'dad' Raphael 'brother'/Custom_LASV_BiankaHouse 8 4/{{i18n:Name.Bianka}}",
+				"Raphael":"teen/polite/outgoing/positive/male/datable/null/Other/winter 18/Esmeralda 'mom' Salvador 'dad' Bianka 'sister'/Custom_LASV_BiankaHouse 4 5/{{i18n:Name.Raphael}}",
+				"Antiunn":"child/neutral/shy/positive/male/not-datable/null/Other/null//Custom_LASV_LaarniHouse 6 8/{{i18n:Name.Antiunn}}",
+				"Bellia":"adult/polite/neutral/positive/female/not-datable/null/Other/null//Custom_LASV_OddiHouse 18 5/{{i18n:Name.Bellia}}",
+				"Gabbi":"teen/polite/outgoing/positive/male/not-datable/null/Other/null//Custom_LASV_GabbiHouse 7 5/{{i18n:Name.Gabbi}}",
+				"Gellos":"child/polite/outgoing/positive/male/not-datable/null/Other/null//Custom_LASV_GabbiHouse 2 5/{{i18n:Name.Gellos}}",
+				"Laarni":"adult/polite/neutral/positive/female/not-datable/null/Other/null//Custom_LASV_LaarniHouse 15 6/{{i18n:Name.Laarni}}",
+				"Micco":"teen/rude/shy/positive/male/not-datable/null/Other/null//Custom_LASV_ReenusHouse 1 8/{{i18n:Name.Micco}}",
+				"Oddi":"teen/polite/outgoing/positive/female/not-datable/null/Other/null//Custom_LASV_OddiHouse 12 5/{{i18n:Name.Oddi}}",
+				"Reenus":"adult/neutral/neutral/positive/male/not-datable/null/Other/null//Custom_LASV_ReenusHouse 10 4/{{i18n:Name.Reenus}}",
+				"Yvenn":"child/polite/polite/positive/female/not-datable/null/Other/null//Custom_LASV_LaarniHouse 1 7/{{i18n:Name.Yvenn}}",
+				"Esmeralda":"adult/polite/polite/positive/female/not-datable/null/Other/Salvador 'husband' Bianka 'daughter' Raphael 'son'//Custom_LASV_Umuwi 0 59/{{i18n:Name.Esmeralda}}",
+				"Salvador":"adult/polite/polite/positive/male/not-datable/null/Other/Esmeralda 'wife' Bianka 'daughter' Raphael 'son'//Custom_LASV_Umuwi 0 58/{{i18n:Name.Salvador}}"
+			}
+		},
+		{
+			"Action":"EditData",
+			"Target":"Data/CustomNPCExclusions",
+			"Entries":{
+				"Bianka":"Socialize",
+				"Raphael":"Socialize",
+				"Dianna":"Socialize, IslandVisit",
+				"Antiunn":"ALL",
+				"Bellia":"ALL",
+				"Gabbi":"ALL",
+				"Gellos":"ALL",
+				"Laarni":"ALL",
+				"Micco":"ALL",
+				"Oddi":"ALL",
+				"Reenus":"ALL",
+				"Yvenn":"ALL",
+				"Esmeralda":"ALL",
+				"Salvador":"ALL"
+			}
+		},
+		{
+			"LogName":"Antisocial NPCs",
+			"Action":"EditData",
+			"Target":"Data/AntiSocialNPCs",
+			"Entries":{
+				"Dianna":true,
+				"Antiunn":true,
+				"Bellia":true,
+				"Gabbi":true,
+				"Gellos":true,
+				"Laarni":true,
+				"Micco":true,
+				"Oddi":true,
+				"Reenus":true,
+				"Yvenn":true,
+				"Esmeralda":true,
+				"Salvador":true
+			}
+		},
+		{
+			"LogName":"Antisocial NPCs",
+			"Action":"EditData",
+			"Target":"Data/AntiSocialNPCs",
+			"Entries":{
+				"Bianka":true,
+				"Raphael":true
+			},
+			"When":{
+				"hasSeenEvent |contains=75160015":false
+			}
+		},
+		{
+			"LogName":"Lunna Portraits",
+			"Action":"Load",
+			"Target":"Portraits/Lunna",
+			"FromFile":"assets/CharacterFiles/Lunna/Lunna.png"
+		},
+		{
+			"LogName":"Lunna Sprites",
+			"Action":"Load",
+			"Target":"Characters/Lunna",
+			"FromFile":"assets/CharacterFiles/Lunna/Lunna_sprite.png"
+		},
+		{
+			"LogName":"Lunna Schedule",
+			"Action":"Load",
+			"Target":"Characters/schedules/Lunna",
+			"FromFile":"assets/CharacterFiles/Lunna/schedule.json"
+		},
+		{
+			"LogName":"Lunna Schedule After new portal is open",
+			"Action":"EditData",
+			"Target":"Characters/schedules/Lunna",
+			"When":{
+				"HasSeenEvent: hostPlayer":75160021
+			},
+			"Entries":{
+				"spring_Thu":"800 Custom_LASV_Umuwi 69 34 3/1200 Custom_LASV_Umuwi 36 42 2/1600 Custom_LASV_DiannaHouse 6 8 2/2000 Custom_LASV_LunnaHouse 12 8 3 lunna_sleep",
+				"summer_Fri":"800 Custom_LASV_Umuwi 69 34 3/1200 Custom_LASV_Umuwi 36 42 2/1600 Custom_LASV_DiannaHouse 6 8 2/2000 Custom_LASV_LunnaHouse 12 8 3 lunna_sleep",
+				"fall_Fri":"800 Custom_LASV_Umuwi 69 34 3/1200 Custom_LASV_Umuwi 36 42 2/1600 Custom_LASV_DiannaHouse 6 8 2/2000 Custom_LASV_LunnaHouse 12 8 3 lunna_sleep",
+				"winter_Fri":"800 Custom_LASV_Umuwi 69 34 3/1200 Custom_LASV_Umuwi 36 42 2/1600 Custom_LASV_DiannaHouse 6 8 2/2000 Custom_LASV_LunnaHouse 12 8 3 lunna_sleep"
+			}
+		},
+		{
+			"LogName":"ScheduleDialogue Strings",
+			"Action":"Load",
+			"Target":"Strings/schedules/Lunna",
+			"FromFile":"assets/CharacterFiles/Lunna/Strings.json"
+		},
+		{
+			"LogName":"Dialogue",
+			"Action":"Load",
+			"Target":"Characters/Dialogue/Lunna",
+			"FromFile":"assets/CharacterFiles/Lunna/dialogue.json"
+		},
+		{
+			"LogName":"Marriage Dialogue",
+			"Action":"Load",
+			"Target":"Characters/Dialogue/MarriageDialogueLunna",
+			"FromFile":"assets/CharacterFiles/Lunna/marriageLunna.json"
+		},
+		{
+			"LogName":"Dianna Sprites",
+			"Action":"Load",
+			"Target":"Characters/Dianna",
+			"FromFile":"assets/CharacterFiles/Dianna/Dianna_sprite.png"
+		},
+		{
+			"LogName":"Dianna Portraits",
+			"Action":"Load",
+			"Target":"Portraits/Dianna",
+			"FromFile":"assets/CharacterFiles/Dianna/Dianna.png"
+		},
+		{
+			"LogName":"Dianna changes when in FallsCave - Character",
+			"Action":"EditImage",
+			"Target":"Characters/Dianna",
+			"FromFile":"assets/CharacterFiles/Dianna/Human_Dianna_sprite.png",
+			"When":{
+				"LocationName":"Custom_LASV_FallsCave",
+				"HasSeenEvent":"75160033"
+			},
+			"Update":"OnLocationChange"
+		},
+		{
+			"LogName":"Dianna changes when in FallsCave - Portrait",
+			"Action":"EditImage",
+			"Target":"Portraits/Dianna",
+			"FromFile":"assets/CharacterFiles/Dianna/Human_Dianna.png",
+			"When":{
+				"LocationName":"Custom_LASV_FallsCave",
+				"HasSeenEvent":"75160033"
+			},
+			"Update":"OnLocationChange"
+		},
+		{
+			"LogName":"Dianna Schedule",
+			"Action":"Load",
+			"Target":"Characters/schedules/Dianna",
+			"FromFile":"assets/CharacterFiles/Dianna/schedule.json"
+		},
+		{
+			"LogName":"Dianna's Schedule after seeing human form",
+			"Action":"EditData",
+			"Target":"Characters/schedules/Dianna",
+			"Entries":{
+				"spring_Mon":"700 Custom_LASV_DiannaHouse 9 9 2 dianna_dance/800 Custom_LASV_FallsCave 12 15 3 square_1_3_3/1600 Custom_LASV_Umuwi 55 30 2 dianna_eat/2000 DiannaHouse 8 5 3 dianna_sleep",
+				"spring_Wed":"700 Custom_LASV_DiannaHouse 9 9 2 dianna_dance/800 Custom_LASV_FallsCave 12 15 3 square_1_3_3/1600 Custom_LASV_Umuwi 55 30 2 dianna_eat/2000 Custom_LASV_DiannaHouse 8 5 3 dianna_sleep",
+				"spring_Fri":"700 Custom_LASV_DiannaHouse 9 9 2 dianna_dance/800 Custom_LASV_FallsCave 12 15 3 square_1_3_3/1600 Custom_LASV_Umuwi 55 30 2 dianna_eat/2000 Custom_LASV_DiannaHouse 8 5 3 dianna_sleep"
+			},
+			"When":{
+				"HasSeenEvent: hostPlayer":75160033
+			}
+		},
+		{
+			"LogName":"Dianna Antisocial flag",
+			"Action":"EditData",
+			"Target":"Data/AntiSocialNPCs",
+			"When":{
+				"HasSeenEvent: hostPlayer":75160009
+			},
+			"Entries":{
+				"Dianna":false
+			}
+		},
+		{
+			"LogName":"Dianna Antisocial flag",
+			"Action":"EditData",
+			"Target":"Data/AntiSocialNPCs",
+			"When":{
+				"HasSeenEvent: hostPlayer":75160013
+			},
+			"Entries":{
+				"Dianna":false
+			}
+		},
+		{
+			"LogName":"Dialogue",
+			"Action":"Load",
+			"Target":"Characters/Dialogue/Dianna",
+			"FromFile":"assets/CharacterFiles/Dianna/dialogue.json"
+		},
+		{
+			"LogName":"Bianka Sprites",
+			"Action":"Load",
+			"Target":"Characters/Bianka",
+			"FromFile":"assets/CharacterFiles/Bianka/Bianka_sprite.png"
+		},
+		{
+			"LogName":"Bianka Portraits",
+			"Action":"Load",
+			"Target":"Portraits/Bianka",
+			"FromFile":"assets/CharacterFiles/Bianka/Bianka.png"
+		},
+		{
+			"LogName":"Bianka Schedule",
+			"Action":"Load",
+			"Target":"Characters/schedules/Bianka",
+			"FromFile":"assets/CharacterFiles/Bianka/schedule.json"
+		},
+		{
+			"LogName":"Bianka's Schedule After new portal is open",
+			"Action":"EditData",
+			"Target":"Characters/schedules/Bianka",
+			"When":{
+				"HasSeenEvent: hostPlayer":75160021
+			},
+			"Entries":{
+				"Mon":"900 Town 45 78 2/1200 Town 71 9 2/1600 Saloon 17 20 0/2200 Custom_LASV_BiankaHouse 9 7 3 bianka_sleep",
+				"Fri":"700 Town 45 78 2/1300 Town 22 23 1/1630 HaleyHouse 12 17 1/2200 Custom_LASV_BiankaHouse 9 7 3 bianka_sleep",
+				"marriage_Mon":"900 Town 45 78 2/1200 Town 71 9 2/1600 Saloon 17 20 0/1800 BusStop -1 23 3",
+				"marriage_Wed":"700 Custom_LASV_Umuwi 22 23 2/1000 Custom_LASV_Umuwi 39 8 3/1300 Custom_LASV_Umuwi 61 18 2/1500 Custom_LASV_ReenusHouse 14 7 0/1800 BusStop -1 23 3",
+				"marriage_Fri":"800 Town 45 78 2/1200 Town 22 23 1/1400 HaleyHouse 12 17 1/1800 BusStop -1 23 3",
+				"marriage_Tue":"700 Custom_LASV_RaphaelShop 16 10 2/1100 Custom_LASV_ReenusHouse 14 7 0/1300 Custom_LASV_Umuwi 95 37 1 bianka_dance/1800 BusStop -1 23 3"
+			}
+		},
+		{
+			"LogName":"Dialogue",
+			"Action":"Load",
+			"Target":"Characters/Dialogue/Bianka",
+			"FromFile":"assets/CharacterFiles/Bianka/dialogue.json"
+		},
+		{
+			"LogName":"Marriage Dialogue",
+			"Action":"Load",
+			"Target":"Characters/Dialogue/MarriageDialogueBianka",
+			"FromFile":"assets/CharacterFiles/Bianka/marriageBianka.json"
+		},
+		{
+			"LogName":"Raphael Sprites",
+			"Action":"Load",
+			"Target":"Characters/Raphael",
+			"FromFile":"assets/CharacterFiles/Raphael/Raphael_sprite.png"
+		},
+		{
+			"LogName":"Raphael Portraits",
+			"Action":"Load",
+			"Target":"Portraits/Raphael",
+			"FromFile":"assets/CharacterFiles/Raphael/Raphael.png"
+		},
+		{
+			"LogName":"Raphael Schedule",
+			"Action":"Load",
+			"Target":"Characters/schedules/Raphael",
+			"FromFile":"assets/CharacterFiles/Raphael/schedule.json"
+		},
+		{
+			"LogName":"Raphael's Schedule After new portal is open",
+			"Action":"EditData",
+			"Target":"Characters/schedules/Raphael",
+			"When":{
+				"HasSeenEvent: hostPlayer":75160027
+			},
+			"Entries":{
+				"marriage_Mon":"700 Custom_LASV_Umuwi 39 8 3/1200 Custom_LASV_Umuwi 23 24 0/1400 Custom_LASV_Umuwi 41 45 3/1800 BusStop -1 23 3",
+				"marriage_Wed":"700 Custom_LASV_RaphaelShop 4 9 1/1200 Custom_LASV_RaphaelShop 3 12 2 raphael_lumber/1300 Custom_LASV_RaphaelShop 1 6 2 raphael_forge/1500 Custom_LASV_RaphaelShop 14 13 1/1800 BusStop -1 23 3"
+			}
+		},
+		{
+			"LogName":"Dialogue",
+			"Action":"Load",
+			"Target":"Characters/Dialogue/Raphael",
+			"FromFile":"assets/CharacterFiles/Raphael/dialogue.json"
+		},
+		{
+			"LogName":"Marriage Dialogue",
+			"Action":"Load",
+			"Target":"Characters/Dialogue/MarriageDialogueRaphael",
+			"FromFile":"assets/CharacterFiles/Raphael/marriageRaphael.json"
+		},
+		{
+			"LogName":"Sprites",
+			"Action":"Load",
+			"Target":"Characters/Antiunn",
+			"FromFile":"assets/CharacterFiles/Antisocial/Antiunn/Antiunn_sprite.png"
+		},
+		{
+			"LogName":"Portraits",
+			"Action":"Load",
+			"Target":"Portraits/Antiunn",
+			"FromFile":"assets/CharacterFiles/Antisocial/Antiunn/Antiunn.png"
+		},
+		{
+			"LogName":"Schedule",
+			"Action":"Load",
+			"Target":"Characters/schedules/Antiunn",
+			"FromFile":"assets/CharacterFiles/Antisocial/Antiunn/schedule.json"
+		},
+		{
+			"LogName":"Dialogue",
+			"Action":"Load",
+			"Target":"Characters/Dialogue/Antiunn",
+			"FromFile":"assets/CharacterFiles/Antisocial/Antiunn/dialogue.json"
+		},
+		{
+			"LogName":"Sprites",
+			"Action":"Load",
+			"Target":"Characters/Bellia",
+			"FromFile":"assets/CharacterFiles/Antisocial/Bellia/Bellia_sprite.png"
+		},
+		{
+			"LogName":"Portraits",
+			"Action":"Load",
+			"Target":"Portraits/Bellia",
+			"FromFile":"assets/CharacterFiles/Antisocial/Bellia/Bellia.png"
+		},
+		{
+			"LogName":"Schedule",
+			"Action":"Load",
+			"Target":"Characters/schedules/Bellia",
+			"FromFile":"assets/CharacterFiles/Antisocial/Bellia/schedule.json"
+		},
+		{
+			"LogName":"Dialogue",
+			"Action":"Load",
+			"Target":"Characters/Dialogue/Bellia",
+			"FromFile":"assets/CharacterFiles/Antisocial/Bellia/dialogue.json"
+		},
+		{
+			"LogName":"Sprites",
+			"Action":"Load",
+			"Target":"Characters/Gabbi",
+			"FromFile":"assets/CharacterFiles/Antisocial/Gabbi/Gabbi_sprite.png"
+		},
+		{
+			"LogName":"Portraits",
+			"Action":"Load",
+			"Target":"Portraits/Gabbi",
+			"FromFile":"assets/CharacterFiles/Antisocial/Gabbi/Gabbi.png"
+		},
+		{
+			"LogName":"Schedule",
+			"Action":"Load",
+			"Target":"Characters/schedules/Gabbi",
+			"FromFile":"assets/CharacterFiles/Antisocial/Gabbi/schedule.json"
+		},
+		{
+			"LogName":"Dialogue",
+			"Action":"Load",
+			"Target":"Characters/Dialogue/Gabbi",
+			"FromFile":"assets/CharacterFiles/Antisocial/Gabbi/dialogue.json"
+		},
+		{
+			"LogName":"Sprites",
+			"Action":"Load",
+			"Target":"Characters/Gellos",
+			"FromFile":"assets/CharacterFiles/Antisocial/Gellos/Gellos_sprite.png"
+		},
+		{
+			"LogName":"Portraits",
+			"Action":"Load",
+			"Target":"Portraits/Gellos",
+			"FromFile":"assets/CharacterFiles/Antisocial/Gellos/Gellos.png"
+		},
+		{
+			"LogName":"Schedule",
+			"Action":"Load",
+			"Target":"Characters/schedules/Gellos",
+			"FromFile":"assets/CharacterFiles/Antisocial/Gellos/schedule.json"
+		},
+		{
+			"LogName":"Dialogue",
+			"Action":"Load",
+			"Target":"Characters/Dialogue/Gellos",
+			"FromFile":"assets/CharacterFiles/Antisocial/Gellos/dialogue.json"
+		},
+		{
+			"LogName":"Sprites",
+			"Action":"Load",
+			"Target":"Characters/Laarni",
+			"FromFile":"assets/CharacterFiles/Antisocial/Laarni/Laarni_sprite.png"
+		},
+		{
+			"LogName":"Portraits",
+			"Action":"Load",
+			"Target":"Portraits/Laarni",
+			"FromFile":"assets/CharacterFiles/Antisocial/Laarni/Laarni.png"
+		},
+		{
+			"LogName":"Schedule",
+			"Action":"Load",
+			"Target":"Characters/schedules/Laarni",
+			"FromFile":"assets/CharacterFiles/Antisocial/Laarni/schedule.json"
+		},
+		{
+			"LogName":"Dialogue",
+			"Action":"Load",
+			"Target":"Characters/Dialogue/Laarni",
+			"FromFile":"assets/CharacterFiles/Antisocial/Laarni/dialogue.json"
+		},
+		{
+			"LogName":"Sprites",
+			"Action":"Load",
+			"Target":"Characters/Micco",
+			"FromFile":"assets/CharacterFiles/Antisocial/Micco/Micco_sprite.png"
+		},
+		{
+			"LogName":"Portraits",
+			"Action":"Load",
+			"Target":"Portraits/Micco",
+			"FromFile":"assets/CharacterFiles/Antisocial/Micco/Micco.png"
+		},
+		{
+			"LogName":"Schedule",
+			"Action":"Load",
+			"Target":"Characters/schedules/Micco",
+			"FromFile":"assets/CharacterFiles/Antisocial/Micco/schedule.json"
+		},
+		{
+			"LogName":"Dialogue",
+			"Action":"Load",
+			"Target":"Characters/Dialogue/Micco",
+			"FromFile":"assets/CharacterFiles/Antisocial/Micco/dialogue.json"
+		},
+		{
+			"LogName":"Sprites",
+			"Action":"Load",
+			"Target":"Characters/Oddi",
+			"FromFile":"assets/CharacterFiles/Antisocial/Oddi/Oddi_sprite.png"
+		},
+		{
+			"LogName":"Portraits",
+			"Action":"Load",
+			"Target":"Portraits/Oddi",
+			"FromFile":"assets/CharacterFiles/Antisocial/Oddi/Oddi.png"
+		},
+		{
+			"LogName":"Schedule",
+			"Action":"Load",
+			"Target":"Characters/schedules/Oddi",
+			"FromFile":"assets/CharacterFiles/Antisocial/Oddi/schedule.json"
+		},
+		{
+			"LogName":"Dialogue",
+			"Action":"Load",
+			"Target":"Characters/Dialogue/Oddi",
+			"FromFile":"assets/CharacterFiles/Antisocial/Oddi/dialogue.json"
+		},
+		{
+			"LogName":"Sprites",
+			"Action":"Load",
+			"Target":"Characters/Reenus",
+			"FromFile":"assets/CharacterFiles/Antisocial/Reenus/Reenus_sprite.png"
+		},
+		{
+			"LogName":"Portraits",
+			"Action":"Load",
+			"Target":"Portraits/Reenus",
+			"FromFile":"assets/CharacterFiles/Antisocial/Reenus/Reenus.png"
+		},
+		{
+			"LogName":"Schedule",
+			"Action":"Load",
+			"Target":"Characters/schedules/Reenus",
+			"FromFile":"assets/CharacterFiles/Antisocial/Reenus/schedule.json"
+		},
+		{
+			"LogName":"Dialogue",
+			"Action":"Load",
+			"Target":"Characters/Dialogue/Reenus",
+			"FromFile":"assets/CharacterFiles/Antisocial/Reenus/dialogue.json"
+		},
+		{
+			"LogName":"Sprites",
+			"Action":"Load",
+			"Target":"Characters/Yvenn",
+			"FromFile":"assets/CharacterFiles/Antisocial/Yvenn/Yvenn_sprite.png"
+		},
+		{
+			"LogName":"Portraits",
+			"Action":"Load",
+			"Target":"Portraits/Yvenn",
+			"FromFile":"assets/CharacterFiles/Antisocial/Yvenn/Yvenn.png"
+		},
+		{
+			"LogName":"Schedule",
+			"Action":"Load",
+			"Target":"Characters/schedules/Yvenn",
+			"FromFile":"assets/CharacterFiles/Antisocial/Yvenn/schedule.json"
+		},
+		{
+			"LogName":"Dialogue",
+			"Action":"Load",
+			"Target":"Characters/Dialogue/Yvenn",
+			"FromFile":"assets/CharacterFiles/Antisocial/Yvenn/dialogue.json"
+		},
+		{
+			"LogName":"Sprites",
+			"Action":"Load",
+			"Target":"Characters/Esmeralda",
+			"FromFile":"assets/CharacterFiles/Esmeralda/Esmeralda_sprite.png"
+		},
+		{
+			"LogName":"Portraits",
+			"Action":"Load",
+			"Target":"Portraits/Esmeralda",
+			"FromFile":"assets/CharacterFiles/Esmeralda/Esmeralda.png"
+		},
+		{
+			"LogName":"Schedule",
+			"Action":"Load",
+			"Target":"Characters/schedules/Esmeralda",
+			"FromFile":"assets/CharacterFiles/Esmeralda/schedule.json"
+		},
+		{
+			"LogName":"Dialogue",
+			"Action":"Load",
+			"Target":"Characters/Dialogue/Esmeralda",
+			"FromFile":"assets/CharacterFiles/Esmeralda/dialogue.json"
+		},
+		{
+			"LogName":"Sprites",
+			"Action":"Load",
+			"Target":"Characters/Salvador",
+			"FromFile":"assets/CharacterFiles/Salvador/Salvador_sprite.png"
+		},
+		{
+			"LogName":"Portraits",
+			"Action":"Load",
+			"Target":"Portraits/Salvador",
+			"FromFile":"assets/CharacterFiles/Salvador/Salvador.png"
+		},
+		{
+			"LogName":"Schedule",
+			"Action":"Load",
+			"Target":"Characters/schedules/Salvador",
+			"FromFile":"assets/CharacterFiles/Salvador/schedule.json"
+		},
+		{
+			"LogName":"Dialogue",
+			"Action":"Load",
+			"Target":"Characters/Dialogue/Salvador",
+			"FromFile":"assets/CharacterFiles/Salvador/dialogue.json"
+		},
+		{
+			"LogName":"Animations",
+			"Action":"EditData",
+			"Target":"Data/animationDescriptions",
+			"Entries":{
+				"lunna_sleep":"48/48/48",
+				"lunna_eat":"0/16 16 16 16 16 16 16 16 16 16 16 16 17 18 19 19 19/0/Strings\\animationDescriptions:lunna.eat.00",
+				"lunna_sit":"0/51/0",
+				"lunna_sitrain":"0/51/0/Strings\\animationDescriptions:lunna.sitrain.00",
+				"lunna_lie":"0/49/0/Strings\\animationDescriptions:lunna.liedown.00",
+				"dianna_sleep":"23/23/23",
+				"dianna_eat":"0/16 16 16 16 16 16 16 16 16 17 18 19 19 19 19 19 19 19 19/0/Strings\\animationDescriptions:dianna.eat.00",
+				"dianna_dance":"0/20 20 20 21 21 21 22 22 22/0/Strings\\animationDescriptions:dianna.dance.00",
+				"bianka_dance":"0/16 16 16 16 17 17 17 17 18 18 18 18 19 19 19 19/0",
+				"bianka_sleep":"48/48/48",
+				"bianka_meditate":"24/24/24/Strings\\animationDescriptions:bianka.meditate.00",
+				"raphael_meditate":"0/16 16 16 17 17 17 18 18 18 19 19 19 18 18 18 17 17 17/0",
+				"raphael_sleep":"51/51/51",
+				"raphael_forge":"0/29 29 29 29 29 29 29 29 30 30 30 30 30 30 30 30 30 30 31 31 31 31 31 31 31 31 31 31 31 31 31 31 30 30 30 30 29 29/0",
+				"raphael_train":"0/23 23 23 23 23 23 24 24 24 25 25 25 25 26 26 26 25 25 25 23 23 23 26 26 26 26 26 26 25 25 25 25 24 24 24 24 23 23 23/0",
+				"raphael_lumber":"0/43/0",
+				"antiunn_animation":"0/16 16 17 17 18 18 19 19 19 19 19 19 19/0",
+				"bellia_animation":"0/16 16 16 17 17 17 18 18 18 18 18 18 18 18 19 19/0",
+				"gabbi_animation":"0/16 16 17 17 18 18 19 19 19 19 19 19 19 19 19 19 19/0",
+				"gellos_animation":"0/16 16 16 16 17 17 17 17 18 18 18 18 19 19 19 19/0",
+				"laarni_animation":"0/16 16 17 17 18 18 19 19 19 19 19 19 19/0",
+				"micco_animation":"0/16 16 16 16 16 16 16 17 18 19 19 19 19/0",
+				"oddi_animation":"0/16 16 16 17 17 17 18 18 18 19 19 19/0",
+				"reenus_animation":"0/16 16 16 16 16 16 16 17 18 19 19 19 19/0",
+				"yvenn_animation":"0/16 16 17 17 18 18 19 19 19 19 19 19 19/0"
+			}
+		},
+		{
+			"Action":"EditImage",
+			"Target":"Characters/Toddler",
+			"FromFile":"assets/CharacterFiles/Lunna/BabyBoy.png",
+			"When":{
+				"Relationship:Lunna":"Married"
+			}
+		},
+		{
+			"Action":"EditImage",
+			"Target":"Characters/Toddler_dark",
+			"FromFile":"assets/CharacterFiles/Lunna/BabyBoy.png",
+			"When":{
+				"Relationship:Lunna":"Married"
+			}
+		},
+		{
+			"Action":"EditImage",
+			"Target":"Characters/Toddler_girl",
+			"FromFile":"assets/CharacterFiles/Lunna/BabyGirl.png",
+			"When":{
+				"Relationship:Lunna":"Married"
+			}
+		},
+		{
+			"Action":"EditImage",
+			"Target":"Characters/Toddler_girl_dark",
+			"FromFile":"assets/CharacterFiles/Lunna/BabyGirl.png",
+			"When":{
+				"Relationship:Lunna":"Married"
+			}
+		},
+		{
+			"Action":"EditImage",
+			"Target":"Characters/Toddler",
+			"FromFile":"assets/CharacterFiles/Bianka/BabyBoy.png",
+			"When":{
+				"Relationship:Bianka":"Married"
+			}
+		},
+		{
+			"Action":"EditImage",
+			"Target":"Characters/Toddler_dark",
+			"FromFile":"assets/CharacterFiles/Bianka/BabyBoy.png",
+			"When":{
+				"Relationship:Bianka":"Married"
+			}
+		},
+		{
+			"Action":"EditImage",
+			"Target":"Characters/Toddler_girl",
+			"FromFile":"assets/CharacterFiles/Bianka/BabyGirl.png",
+			"When":{
+				"Relationship:Bianka":"Married"
+			}
+		},
+		{
+			"Action":"EditImage",
+			"Target":"Characters/Toddler_girl_dark",
+			"FromFile":"assets/CharacterFiles/Bianka/BabyGirl.png",
+			"When":{
+				"Relationship:Bianka":"Married"
+			}
+		},
+		{
+			"Action":"EditImage",
+			"Target":"Characters/Toddler",
+			"FromFile":"assets/CharacterFiles/Raphael/BabyBoy.png",
+			"When":{
+				"Relationship:Raphael":"Married"
+			}
+		},
+		{
+			"Action":"EditImage",
+			"Target":"Characters/Toddler_dark",
+			"FromFile":"assets/CharacterFiles/Raphael/BabyBoy.png",
+			"When":{
+				"Relationship:Raphael":"Married"
+			}
+		},
+		{
+			"Action":"EditImage",
+			"Target":"Characters/Toddler_girl",
+			"FromFile":"assets/CharacterFiles/Raphael/BabyGirl.png",
+			"When":{
+				"Relationship:Raphael":"Married"
+			}
+		},
+		{
+			"Action":"EditImage",
+			"Target":"Characters/Toddler_girl_dark",
+			"FromFile":"assets/CharacterFiles/Raphael/BabyGirl.png",
+			"When":{
+				"Relationship:Raphael":"Married"
+			}
+		},
+		{
+			"LogName":"Beast1",
+			"Action":"Load",
+			"Target":"Characters/UmuwiBeast1",
+			"FromFile":"assets/CharacterFiles/Beast1.png"
+		},
+		{
+			"LogName":"Beast2",
+			"Action":"Load",
+			"Target":"Characters/UmuwiBeast2",
+			"FromFile":"assets/CharacterFiles/Beast2.png"
+		},
+		{
+			"LogName":"Beast3",
+			"Action":"Load",
+			"Target":"Characters/UmuwiBeast3",
+			"FromFile":"assets/CharacterFiles/Beast3.png"
+		},
+		{
+			"LogName":"Shadowfolk Lunna sprite",
+			"Action":"Load",
+			"Target":"Characters/Lunna_Shadowfolk",
+			"FromFile":"assets/Events/Sprites/Lunna_Shadowfolk.xnb"
+		},
+		{
+			"LogName":"Shadowfolk Lunna portrait",
+			"Action":"Load",
+			"Target":"Portraits/Lunna_Shadowfolk",
+			"FromFile":"assets/Events/Portraits/Lunna_Shadowfolk.xnb"
+		},
+		{
+			"LogName":"Human Dianna sprite",
+			"Action":"Load",
+			"Target":"Characters/Dianna_FallsCave",
+			"FromFile":"assets/Events/Sprites/Dianna_FallsCave.xnb"
+		},
+		{
+			"LogName":"Human Dianna portrait",
+			"Action":"Load",
+			"Target":"Portraits/Dianna_FallsCave",
+			"FromFile":"assets/Events/Portraits/Dianna_FallsCave.xnb"
+		},
+		{
+			"LogName":"Human Dianna sprite",
+			"Action":"EditImage",
+			"Target":"Characters/Dianna",
+			"FromFile":"assets/CharacterFiles/Dianna/Clothes_Human_Dianna.png",
+			"When":{
+				"HasSeenEvent: hostPlayer":75160033,
+				"DayOfWeek":"Friday"
+			}
+		},
+		{
+			"LogName":"Human Dianna portrait",
+			"Action":"EditImage",
+			"Target":"Portraits/Dianna",
+			"FromFile":"assets/CharacterFiles/Dianna/Clothes_Human_Dianna_Portrait.png",
+			"When":{
+				"HasSeenEvent: hostPlayer":75160033,
+				"DayOfWeek":"Friday"
+			}
+		},
+		{
+			"LogName":"Dianna's Schedule after seeing human form",
+			"Action":"EditData",
+			"Target":"Characters/schedules/Dianna",
+			"Entries":{
+				"Fri":"0 Forest 4 5 2/620 Forest 33 25 2/800 ArchaeologyHouse 18 12 0/1620 Forest 26 37 3/2200 Custom_LASV_LunnaHouse 2 5 0"
+			},
+			"When":{
+				"HasSeenEvent: hostPlayer":75160033
+			}
+		},
+		{
+			"LogName":"Remove antisociality - Esmeralda",
+			"Action":"EditData",
+			"Target":"Data/AntiSocialNPCs",
+			"Entries":{
+				"Esmeralda":false
+			},
+			"When":{
+				"HasSeenEvent":"75160019"
+			}
+		},
+		{
+			"LogName":"Remove antisociality - Salvador",
+			"Action":"EditData",
+			"Target":"Data/AntiSocialNPCs",
+			"Entries":{
+				"Salvador":false
+			},
+			"When":{
+				"HasSeenEvent":"75160027"
+			}
+		},
+		{
+			"Action":"EditData",
+			"Target":"Characters/schedules/Esmeralda",
+			"Entries":{
+				"spring":"{{EsmeraldaRandomSchedule}}"
+			},
+			"When":{
+				"HasSeenEvent: hostPlayer":75160019
+			}
+		},
+		{
+			"Action":"EditData",
+			"Target":"Characters/schedules/Salvador",
+			"Entries":{
+				"spring":"{{SalvadorRandomSchedule}}"
+			},
+			"When":{
+				"HasSeenEvent: hostPlayer":75160027
+			}
+		},
+		{
+			"Action":"Load",
+			"Target":"Portraits/Bianka_Beach, Portraits/Lunna_Beach, Portraits/Raphael_Beach",
+			"FromFile":"assets/Seasonal/BeachPortraits/{{TargetWithoutPath}}.png",
+			"When":{
+				"Seasonal_Outfits":"true"
+			}
+		},
+		{
+			"Action":"Load",
+			"Target":"Characters/Bianka_Beach, Characters/Lunna_Beach, Characters/Raphael_Beach",
+			"FromFile":"assets/Seasonal/BeachCharacters/{{TargetWithoutPath}}.png",
+			"When":{
+				"Seasonal_Outfits":"true"
+			}
+		},
+		{
+			"Action":"Load",
+			"Target":"Portraits/Bianka_Beach, Portraits/Lunna_Beach, Portraits/Raphael_Beach",
+			"FromFile":"assets/CharacterFiles/BeachPortraits/{{TargetWithoutPath}}.png",
+			"When":{
+				"Seasonal_Outfits":"false"
+			}
+		},
+		{
+			"Action":"Load",
+			"Target":"Characters/Bianka_Beach, Characters/Lunna_Beach, Characters/Raphael_Beach",
+			"FromFile":"assets/CharacterFiles/BeachCharacters/{{TargetWithoutPath}}.png",
+			"When":{
+				"Seasonal_Outfits":"false"
+			}
+		}
+	]
+}

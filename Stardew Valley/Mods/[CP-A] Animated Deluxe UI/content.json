@@ -1,0 +1,1354 @@
+{
+	"Format": "1.22",
+	"ConfigSchema": {
+		"WalletItemsAnimated": {"AllowValues": "true, false", "Default": "true"},
+		"WalletItems":{"AllowValues": "true, false", "Default": "true"},
+		"MakeWalletItemInfoVerbose": {"AllowValues": "true, false", "Default": "true"},
+		"TurnOffWalletItemDescriptions": {"AllowValues": "true, false", "Default": "false"},
+		"AnimateInventoryTabs":{"AllowValues": "true, false", "Default": "true"},
+		"DeluxeCollectionTabsTooltips":{"AllowValues": "true, false", "Default": "true"},
+		"AnimatePetIcons":{"AllowValues": "true, false", "Default": "true"},
+		"ShopStatusUI":{"AllowValues": "true, false", "Default": "true"},
+	},
+	"Changes": [
+	
+//BUFFS///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	   	{
+			"LogName": "UI Energy",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/Energy.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 0, "Y": 410, "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 10,
+			"AnimationFrameCount": 20,
+		},
+	   	{
+			"LogName": "UI Energy Boon",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/Energy_Boon.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 10, "Height": 10 },
+			"ToArea": { "X": 0, "Y": 428, "Width": 10, "Height": 10 },
+			"AnimationFrameTime": 10,
+			"AnimationFrameCount": 31,
+		},
+	   	{
+			"LogName": "UI Health",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/Health.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 16, "Y": 410, "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 10,
+			"AnimationFrameCount": 25,
+		},
+	   	{
+			"LogName": "UI Health Boon",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/Health_Boon.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 10, "Height": 10 },
+			"ToArea": { "X": 0, "Y": 438, "Width": 10, "Height": 10 },
+			"AnimationFrameTime": 10,
+			"AnimationFrameCount": 20,
+		},
+	   	{
+			"LogName": "UI Luck",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/Luck.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 10, "Height": 10 },
+			"ToArea": { "X": 50, "Y": 428, "Width": 10, "Height": 10 },
+			"AnimationFrameTime": 6,
+			"AnimationFrameCount": 42,
+		},
+	   	{
+			"LogName": "UI Defense",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/Defense.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 10, "Height": 10 },
+			"ToArea": { "X": 110, "Y": 428, "Width": 10, "Height": 10 },
+			"AnimationFrameTime": 5,
+			"AnimationFrameCount": 55,
+		},		
+	   	{
+			"LogName": "UI Speed",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/Speed.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 10, "Height": 10 },
+			"ToArea": { "X": 100, "Y": 428, "Width": 10, "Height": 10 },
+			"AnimationFrameTime": 2,
+			"AnimationFrameCount": 122,
+		},			
+	   	{
+			"LogName": "UI Magnet",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/Magnet.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 10, "Height": 10 },
+			"ToArea": { "X": 90, "Y": 428, "Width": 10, "Height": 10 },
+			"AnimationFrameTime": 8,
+			"AnimationFrameCount": 39,
+		},			
+	   	{
+			"LogName": "UI EnergyUp",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/EnergyUp.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 10, "Height": 10 },
+			"ToArea": { "X": 80, "Y": 428, "Width": 10, "Height": 10 },
+			"AnimationFrameTime": 8,
+			"AnimationFrameCount": 13,
+		},
+	   	{
+			"LogName": "UI Crit Chance",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/CritChance.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 10, "Height": 10 },
+			"ToArea": { "X": 40, "Y": 428, "Width": 10, "Height": 10 },
+			"AnimationFrameTime": 4,
+			"AnimationFrameCount": 100,
+		},
+	   	{
+			"LogName": "UI Weight",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/Weight.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 10, "Height": 10 },
+			"ToArea": { "X": 70, "Y": 428, "Width": 10, "Height": 10 },
+			"AnimationFrameTime": 8,
+			"AnimationFrameCount": 33,
+		},
+	   	{
+			"LogName": "UI Crit Power",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/CritPower.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 10, "Height": 10 },
+			"ToArea": { "X": 160, "Y": 428, "Width": 10, "Height": 10 },
+			"AnimationFrameTime": 6,
+			"AnimationFrameCount": 34,
+		},
+	   	{
+			"LogName": "UI Poison",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/Poison.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 10, "Height": 10 },
+			"ToArea": { "X": 140, "Y": 428, "Width": 10, "Height": 10 },
+			"AnimationFrameTime": 6,
+			"AnimationFrameCount": 85,
+		},
+	   	{
+			"LogName": "UI Immunity",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/Immunity.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 10, "Height": 10 },
+			"ToArea": { "X": 150, "Y": 428, "Width": 10, "Height": 10 },
+			"AnimationFrameTime": 10,
+			"AnimationFrameCount": 25,
+		},
+	   	{
+			"LogName": "UI WeaponSpeed",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/WeaponSpeed.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 10, "Height": 10 },
+			"ToArea": { "X": 130, "Y": 428, "Width": 10, "Height": 10 },
+			"AnimationFrameTime": 4,
+			"AnimationFrameCount": 90,
+		},
+	   	{
+			"LogName": "UI Gift",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors2",
+			"FromFile": "assets/Gift.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 14, "Height": 12 },
+			"ToArea": { "X": 166, "Y": 174, "Width": 14, "Height": 12 },
+			"AnimationFrameTime": 10,
+			"AnimationFrameCount": 24,
+		},
+	   	{
+			"LogName": "UI Spoke",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors2",
+			"FromFile": "assets/Spoke.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 13, "Height": 11 },
+			"ToArea": { "X": 180, "Y": 175, "Width": 13, "Height": 11 },
+			"AnimationFrameTime": 10,
+			"AnimationFrameCount": 51,
+		},
+		
+//ANIMATED INVENTORY TABS/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	//Load Game Animations
+	   	{
+			"LogName": "UI Money",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/UI_Load_Money.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 9, "Height": 9 },
+			"ToArea": { "X": 193, "Y": 373, "Width": 9, "Height": 9 },
+			"AnimationFrameTime": 10,
+			"AnimationFrameCount": 5,
+			"When": {
+				"AnimateInventoryTabs": true,
+				"HasMod: |contains=NoFogBob.AnimatedInventoryTabs": false,
+			}
+		},
+	   	{
+			"LogName": "UI Clock",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/UI_Load_Time.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 9, "Height": 11 },
+			"ToArea": { "X": 595, "Y": 1748, "Width": 9, "Height": 11 },
+			"AnimationFrameTime": 60,
+			"AnimationFrameCount": 20,
+			"When": {
+				"AnimateInventoryTabs": true,
+				"HasMod: |contains=NoFogBob.AnimatedInventoryTabs": false,
+			}
+		},
+
+	//Menu Tab Animations
+		{
+			"LogName": "UI Inventory",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/UI_Inventory.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 0, "Y": 368, "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 10,
+			"AnimationFrameCount": 38,
+			"When": {
+				"AnimateInventoryTabs": true,
+				"HasMod: |contains=NoFogBob.AnimatedInventoryTabs": false,
+			}
+		},
+		{
+			"LogName": "UI Social",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/UI_Social.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 32, "Y": 368, "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 6,
+			"AnimationFrameCount": 46,
+			"When": {
+				"AnimateInventoryTabs": true,
+				"HasMod: |contains=NoFogBob.AnimatedInventoryTabs": false,
+			}
+		},
+		{
+			"LogName": "UI Map",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/UI_Map.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 48, "Y": 368, "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 6,
+			"AnimationFrameCount": 83,
+			"When": {
+				"AnimateInventoryTabs": true,
+				"HasMod: |contains=NoFogBob.AnimatedInventoryTabs": false,
+			}
+		},
+		{
+			"LogName": "UI Crafting",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/UI_Crafting.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 64, "Y": 368, "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 4,
+			"AnimationFrameCount": 94,
+			"When": {
+				"AnimateInventoryTabs": true,
+				"HasMod: |contains=NoFogBob.AnimatedInventoryTabs": false,
+			}
+		},
+		{
+			"LogName": "UI Collections",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/UI_Collection.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 80, "Y": 368, "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 7,
+			"AnimationFrameCount": 94,
+			"When": {
+				"AnimateInventoryTabs": true,
+				"HasMod: |contains=NoFogBob.AnimatedInventoryTabs": false,
+			}
+		},
+		{
+			"LogName": "UI Options",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/UI_Options.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 96, "Y": 368, "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 5,
+			"AnimationFrameCount": 70,
+			"When": {
+				"AnimateInventoryTabs": true,
+				"HasMod: |contains=NoFogBob.AnimatedInventoryTabs": false,
+			}
+		},
+		{
+			"LogName": "UI Exit Game",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/UI_Exit.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 112, "Y": 368, "Width": 16, "Height": 16 },
+			"When": {
+				"AnimateInventoryTabs": true,
+				"HasMod: |contains=NoFogBob.AnimatedInventoryTabs": false,
+			}
+		},
+
+	//Skills Tab - Animations of the skills
+		{
+			"LogName": "UI Farming Skill",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/UI_Skill_Farming.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 10, "Height": 10 },
+			"ToArea": { "X": 10, "Y": 428, "Width": 10, "Height": 10 },
+			"AnimationFrameTime": 8,
+			"AnimationFrameCount": 93,
+			"When": {
+				"AnimateInventoryTabs": true,
+				"HasMod: |contains=NoFogBob.AnimatedInventoryTabs": false,
+			}
+		},
+		{
+			"LogName": "UI Mining Skill",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/UI_Skill_Mining.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 10, "Height": 10 },
+			"ToArea": { "X": 30, "Y": 428, "Width": 10, "Height": 10 },
+			"AnimationFrameTime": 7,
+			"AnimationFrameCount": 67,
+			"When": {
+				"AnimateInventoryTabs": true,
+				"HasMod: |contains=NoFogBob.AnimatedInventoryTabs": false,
+			}
+		},
+		{
+			"LogName": "UI Foraging Skill",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/UI_Skill_Foraging.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 10, "Height": 10 },
+			"ToArea": { "X": 60, "Y": 428, "Width": 10, "Height": 10 },
+			"AnimationFrameTime": 10,
+			"AnimationFrameCount": 78,
+			"When": {
+				"AnimateInventoryTabs": true,
+				"HasMod: |contains=NoFogBob.AnimatedInventoryTabs": false,
+			}
+		},
+		{
+			"LogName": "UI Fishing Skill",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/UI_Skill_Fishing.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 10, "Height": 10 },
+			"ToArea": { "X": 20, "Y": 428, "Width": 10, "Height": 10 },
+			"AnimationFrameTime": 5,
+			"AnimationFrameCount": 111,
+			"When": {
+				"AnimateInventoryTabs": true,
+				"HasMod: |contains=NoFogBob.AnimatedInventoryTabs": false,
+			}
+		},
+		{
+			"LogName": "UI Combat Skill",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/UI_Skill_Combat.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 10, "Height": 10 },
+			"ToArea": { "X": 120, "Y": 428, "Width": 10, "Height": 10 },
+			"AnimationFrameTime": 7,
+			"AnimationFrameCount": 30,
+			"When": {
+				"AnimateInventoryTabs": true,
+				"HasMod: |contains=NoFogBob.AnimatedInventoryTabs": false,
+			}
+		},
+
+	//Collections Tab - Animations of the collections
+		{
+			"LogName": "UI Achievements Collection ",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/UI_Collection_Achievements.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 656, "Y": 80, "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 7,
+			"AnimationFrameCount": 50,
+			"When": {
+				"AnimateInventoryTabs": true,
+				"HasMod: |contains=NoFogBob.AnimatedInventoryTabs": false,
+			}
+		},
+		{
+			"LogName": "UI Artifacts Collection ",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/UI_Collection_Artifacts.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 656, "Y": 64, "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 11,
+			"AnimationFrameCount": 30,
+			"When": {
+				"AnimateInventoryTabs": true,
+				"HasMod: |contains=NoFogBob.AnimatedInventoryTabs": false,
+			}
+		},
+		{
+			"LogName": "UI Cooking Collection ",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/UI_Collection_Cooking.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 688, "Y": 64, "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 8,
+			"AnimationFrameCount": 60,
+			"When": {
+				"AnimateInventoryTabs": true,
+				"HasMod: |contains=NoFogBob.AnimatedInventoryTabs": false,
+			}
+		},
+		{
+			"LogName": "UI Fish Collection ",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/UI_Collection_Fish.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 640, "Y": 64, "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 9,
+			"AnimationFrameCount": 36,
+			"When": {
+				"AnimateInventoryTabs": true,
+				"HasMod: |contains=NoFogBob.AnimatedInventoryTabs": false,
+			}
+		},
+		{
+			"LogName": "UI Items Shipped Collection ",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/UI_Collection_Items_Shipped.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 640, "Y": 80, "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 6,
+			"AnimationFrameCount": 64,
+			"When": {
+				"AnimateInventoryTabs": true,
+				"HasMod: |contains=NoFogBob.AnimatedInventoryTabs": false,
+			}
+		},
+		{
+			"LogName": "UI Letters Collection ",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/UI_Collection_Letters.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 688, "Y": 80, "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 8,
+			"AnimationFrameCount": 50,
+			"When": {
+				"AnimateInventoryTabs": true,
+				"HasMod: |contains=NoFogBob.AnimatedInventoryTabs": false,
+			}
+		},
+		{
+			"LogName": "UI Minerals Collection ",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/UI_Collection_Minerals.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 672, "Y": 64, "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 10,
+			"AnimationFrameCount": 30,
+			"When": {
+				"AnimateInventoryTabs": true,
+				"HasMod: |contains=NoFogBob.AnimatedInventoryTabs": false,
+			}
+		},
+		{
+			"LogName": "UI Secret Notes Collection ",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/UI_Collection_Secret_Notes.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 672, "Y": 80, "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 5,
+			"AnimationFrameCount": 80,
+			"When": {
+				"AnimateInventoryTabs": true,
+				"HasMod: |contains=NoFogBob.AnimatedInventoryTabs": false,
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Strings/UI",
+			"Entries": {
+				"Character_foraging": "Foraging",
+				"Character_fishing": "Fishing",
+				"Character_mining": "Mining",
+				"Character_combat": "Combat",		
+				"Collections_Fish": "Fish Caught",
+				"Collections_Artifacts": "Artifacts Found",
+				"Collections_Minerals": "Minerals Found",
+				"Collections_Cooking": "Recipes Learned \nRecipes Cooked",
+				"Collections_Achievements": "Achievements Earned",
+				"Collections_SecretNotes": "Secret Notes Discovered",
+			},
+			"When": {
+				"DeluxeCollectionTabsTooltips": true,
+				"AnimateInventoryTabs": true,
+				"HasMod: |contains=NoFogBob.AnimatedInventoryTabs": false,
+			}
+		},
+
+//ANIMATED PET ICONS/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	   	{
+			"LogName": "Dog1 Icon Animation",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/Dog1iconanimate.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 207, "Y": 208, "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 10,
+			"AnimationFrameCount": 20,
+			"When": {
+				"AnimatePetIcons": true,
+				"HasMod: |contains=NoFogBob.AnimatedPetIcons": false,
+			}
+		},
+	   	{
+			"LogName": "Dog2 Icon Animation",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/Dog2iconanimate.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 223, "Y": 208, "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 10,
+			"AnimationFrameCount": 20,
+			"When": {
+				"AnimatePetIcons": true,
+				"HasMod: |contains=NoFogBob.AnimatedPetIcons": false,
+			}
+		},
+	   	{
+			"LogName": "Dog3 Icon Animation",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/Dog3iconanimate.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 239, "Y": 208, "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 10,
+			"AnimationFrameCount": 20,
+			"When": {
+				"AnimatePetIcons": true,
+				"HasMod: |contains=NoFogBob.AnimatedPetIcons": false,
+			}
+		},
+	   	{
+			"LogName": "Cat1 Icon Animation",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/Cat1iconanimate.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 15, "Height": 15 },
+			"ToArea": { "X": 160, "Y": 210, "Width": 15, "Height": 15 },
+			"AnimationFrameTime": 10,
+			"AnimationFrameCount": 20,
+			"When": {
+				"AnimatePetIcons": true,
+				"HasMod: |contains=NoFogBob.AnimatedPetIcons": false,
+			}
+		},
+	   	{
+			"LogName": "Cat2 Icon Animation",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/Cat2iconanimate.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 15, "Height": 15 },
+			"ToArea": { "X": 176, "Y": 210, "Width": 15, "Height": 15 },
+			"AnimationFrameTime": 10,
+			"AnimationFrameCount": 20,
+			"When": {
+				"AnimatePetIcons": true,
+				"HasMod: |contains=NoFogBob.AnimatedPetIcons": false,
+			}
+		},
+	   	{
+			"LogName": "Cat3 Icon Animation",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/Cat3iconanimate.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 15, "Height": 15 },
+			"ToArea": { "X": 192, "Y": 210, "Width": 15, "Height": 15 },
+			"AnimationFrameTime": 10,
+			"AnimationFrameCount": 20,
+			"When": {
+				"AnimatePetIcons": true,
+				"HasMod: |contains=NoFogBob.AnimatedPetIcons": false,
+			}
+		},
+	   	{
+			"LogName": "Horse Icon Animation",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/Horseiconanimate.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 192, "Y": 192, "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 10,
+			"AnimationFrameCount": 20,
+			"When": {
+				"AnimatePetIcons": true,
+				"HasMod: |contains=NoFogBob.AnimatedPetIcons": false,
+			}
+		},
+
+
+
+
+//ANIMATED WALLET ITEMS///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		{
+		"Action": "EditData",
+		"Target": "Strings/StringsFromCSFiles",
+		"Entries": {
+			"SkillsPage.cs.11587":
+"Dwarvish Translation Guide
+
+Allows you to speak and understand the Dwarven 
+language.",
+
+			"SkillsPage.cs.11588": 
+"Rusty Key
+
+A big old rusty key that might be able to open
+a creepy sewer door...",
+
+			"SkillsPage.cs.11589": 
+"Club Card
+
+Gives you to access the Casino in the Oasis.",
+
+			"SkillsPage.cs.11590": 
+"Special Charm
+
+A magical trinket that permanently increases your
+daily luck by a noticable amount.",
+
+			"SkillsPage.cs.11591": 
+"Skull Key
+
+Unlocks the door to the Skull Cavern Mines in the
+Calico Desert.",
+
+			"SkillsPage.cs.magnifyingglass": 
+"Magnifying Glass
+
+Gives you the ability to find 'Secret Notes'!",
+
+			"KeyToTheTown":
+"Key To The Town
+
+Allows you to access all buildings in town 
+at any time of the day.",
+				},
+		"When": {
+			"MakeWalletItemInfoVerbose": "false",
+			"TurnOffWalletItemDescriptions": "false",
+			"WalletItems": true,
+			"HasMod: |contains=NoFogBob.WalletItemsAnimatedAndDescribed": false,
+				}
+		},
+		{
+		"Action": "EditData",
+		"Target": "Strings/Objects",
+		"Entries": {
+			"DarkTalisman":
+"Dark Talisman
+
+Used to open the passage at the northeast end 
+of the Railroad.",
+
+			"MagicInk":
+"Magic Ink
+
+An arcane item that allows you to purchase new farm 
+buildings from a book on a stand in the Wizard's Tower.",
+
+			"BearPaw":
+"Bear's Knowledge
+
+Increases the sell price of Blackberries and 
+Salmonberries.",
+
+			"SpringOnionBugs":
+"Spring Onion Mastery
+
+Increases the sell price of Spring Onions.",
+				},
+		"When": {
+			"MakeWalletItemInfoVerbose": "false",
+			"TurnOffWalletItemDescriptions": "false",
+			"WalletItems": true,
+			"HasMod: |contains=NoFogBob.WalletItemsAnimatedAndDescribed": false,
+				}
+		},
+		{
+		"Action": "EditData",
+		"Target": "Strings/StringsFromCSFiles",
+		"Entries": {
+			"SkillsPage.cs.11587":
+"Dwarvish Translation Guide
+
+Unlocks the ability to speak to the Dwarf in The
+Mines and the Dwarf in the Volcano Dungeon allowing
+you to access their shops.",
+
+			"SkillsPage.cs.11588": 
+"Rusty Key
+
+Unlocks the gate at the southern edge of 
+Cindersap Forest allowing you to access 
+The Sewers.",
+
+			"SkillsPage.cs.11589": 
+"Club Card
+
+Give to the bouncer to allow you to access the
+Casino in the back of the Oasis in the Calico Desert.",
+
+			"SkillsPage.cs.11590": 
+"Special Charm
+
+A magical trinket that permanently increases 
+your daily luck. Daily luck ranges from -0.07 
+to 0.07. This trinket adds 0.025 to whatever 
+your luck is that day.",
+
+			"SkillsPage.cs.11591": 
+"Skull Key
+
+Unlocks the door to the Skull Cavern Mines in the
+Calico Desert and also unlocks the Junimo Kart 
+game machine in The Stardrop Saloon.",
+
+			"SkillsPage.cs.magnifyingglass": 
+"Magnifying Glass
+
+Gives you the ability to find 'Secret Notes'! These 
+can be found by tilling soil, chopping trees, mining,
+fishing, or even killing monsters. These notes reveal
+rare and useful information, and can be reviewed in
+your collections tab.",
+
+			"KeyToTheTown":
+"Key To The Town
+
+Allows you to access all buildings in town at any time 
+of the day. The key does not function at homes outside 
+of Pelican Town (eg. Leah's Cottage, Elliott's Cabin, 
+the Movie Theater, and the Oasis in Calico Desert).",
+				},
+		"When": {
+			"MakeWalletItemInfoVerbose": "true",
+			"TurnOffWalletItemDescriptions": "false",
+			"WalletItems": true,
+			"HasMod: |contains=NoFogBob.WalletItemsAnimatedAndDescribed": false,
+				}
+		},
+		{
+		"Action": "EditData",
+		"Target": "Strings/Objects",
+		"Entries": {
+			"DarkTalisman":
+"Dark Talisman
+
+Used to open the passage at the northeast end 
+of the Railroad allowing you to access the 
+Witch's Swamp, and the Witch's Hut beyond.",
+
+			"MagicInk":
+"Magic Ink
+
+An arcane item that allows you to purchase 
+new farm buildings from a book on a stand in 
+the Wizard's Tower. 
+
+The new farm buildings include: the obelisks, 
+the Junimo Hut, and the Gold Clock.",
+
+			"BearPaw":
+"Bear's Knowledge
+
+Blackberries and Salmonberries sold by you
+are worth three times as much. Artisan Goods made
+from those berries DO NOT increase in sale price.",
+
+			"SpringOnionBugs":
+"Spring Onion Mastery
+
+Spring Onions sold by you are worth five times as 
+much. Artisan Goods made from Spring Onions DO NOT 
+increase in sale price.",
+				},
+		"When": {
+			"MakeWalletItemInfoVerbose": "true",
+			"TurnOffWalletItemDescriptions": "false",
+			"WalletItems": true,
+			"HasMod: |contains=NoFogBob.WalletItemsAnimatedAndDescribed": false,
+				}
+		},
+		{
+		"Action": "EditData",
+		"Target": "Strings/StringsFromCSFiles",
+		"Entries": {	
+			"SkillsPage.cs.11591": 
+"Skull Key
+
+A key with a skull on the top, is there somewhere
+you've seen a door with a skull?",
+					},
+		"When": {
+			"HasActiveQuest": "19",
+			"TurnOffWalletItemDescriptions": "false",
+			"WalletItems": true,
+			"HasMod: |contains=NoFogBob.WalletItemsAnimatedAndDescribed": false,
+				},
+		"Update":"OnTimeChange"
+		},
+		{
+		"Action": "EditData",
+		"Target": "Strings/Objects",
+		"Entries": {	
+			"DarkTalismanDescription": "You've found the Dark Talisman! It's covered in bug slime...",
+			"MagicInkDescription": "You've found the Wizard's lost Magic Ink! Better return it to him.",
+			"MagnifyingGlassDescription": "You received the Magnifying Glass! You now have the ability to find 'Secret Notes'. These notes reveal rare and useful information, and can be reviewed in your collections tab.",
+			"SpecialCharmDescription": "You received the Special Charm! You feel an aura of good fortune surrounding you (luck is permanently increased)!",
+					},
+		"When": {
+			"TurnOffWalletItemDescriptions": "false",
+			"WalletItems": true,
+			"HasMod: |contains=NoFogBob.WalletItemsAnimatedAndDescribed": false,
+		},
+		},		
+		{
+		"Action": "EditData",
+		"Target": "Strings/StringsFromCSFiles",
+		"Entries": {	
+			"SpecialItem.cs.13092": "You've found the Skull Key! You're not sure what it's for, but it seems important. It's been added to your wallet.",
+			"SpecialItem.cs.13090": "Under a piece of wood, you found a Club Card! You're not sure what it's for, but it seems important. It's been added to your wallet.",
+					},
+		"When": {
+			"TurnOffWalletItemDescriptions": "false",
+			"WalletItems": true,
+			"HasMod: |contains=NoFogBob.WalletItemsAnimatedAndDescribed": false,
+		},
+		},		
+	   	{
+			"LogName": "UI Dwarvish Translation Guide",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/Dwarvish Translation Guide.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 128, "Y": 320, "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 9,
+			"AnimationFrameCount": 72,
+			"When": {
+				"WalletItemsAnimated": "true",
+				"WalletItems": true,
+				"HasMod: |contains=NoFogBob.WalletItemsAnimatedAndDescribed": false,
+			},
+		},
+	   	{
+			"LogName": "UI Rusty Key",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/Rusty Key.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 144, "Y": 320, "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 9,
+			"AnimationFrameCount": 45,
+			"When": {
+				"WalletItemsAnimated": "true",
+			"WalletItems": true,
+			"HasMod: |contains=NoFogBob.WalletItemsAnimatedAndDescribed": false,
+			},
+		},
+	   	{
+			"LogName": "UI Club Card",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/Club Card.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 160, "Y": 320, "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 7,
+			"AnimationFrameCount": 60,
+			"When": {
+				"WalletItemsAnimated": "true",
+				"WalletItems": true,
+				"HasMod: |contains=NoFogBob.WalletItemsAnimatedAndDescribed": false,
+			},
+		},
+	   	{
+			"LogName": "UI Special Charm",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/Special Charm.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 176, "Y": 320, "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 6,
+			"AnimationFrameCount": 60,
+			"When": {
+				"WalletItemsAnimated": "true",
+				"WalletItems": true,
+				"HasMod: |contains=NoFogBob.WalletItemsAnimatedAndDescribed": false,
+			},
+		},
+	   	{
+			"LogName": "UI Skull Key",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/Skull Key.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 192, "Y": 320, "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 10,
+			"AnimationFrameCount": 20,
+			"When": {
+				"WalletItemsAnimated": "true",
+				"WalletItems": true,
+				"HasMod: |contains=NoFogBob.WalletItemsAnimatedAndDescribed": false,
+			},
+		},
+	   	{
+			"LogName": "UI Magnifying Glass",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/Magnifying Glass.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 208, "Y": 320, "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 8,
+			"AnimationFrameCount": 50,
+			"When": {
+				"WalletItemsAnimated": "true",
+				"WalletItems": true,
+				"HasMod: |contains=NoFogBob.WalletItemsAnimatedAndDescribed": false,
+			},
+		},
+	   	{
+			"LogName": "UI Dark Talisman",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/Dark Talisman.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 224, "Y": 320, "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 7,
+			"AnimationFrameCount": 75,
+			"When": {
+				"WalletItemsAnimated": "true",
+				"WalletItems": true,
+				"HasMod: |contains=NoFogBob.WalletItemsAnimatedAndDescribed": false,
+			},
+		},
+	   	{
+			"LogName": "UI Magic Ink",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/Magic Ink.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 240, "Y": 320, "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 7,
+			"AnimationFrameCount": 40,
+			"When": {
+				"WalletItemsAnimated": "true",
+				"WalletItems": true,
+				"HasMod: |contains=NoFogBob.WalletItemsAnimatedAndDescribed": false,
+			},
+		},
+	   	{
+			"LogName": "UI Bear's Knowledge",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/Bear's Knowledge.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 192, "Y": 336, "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 4,
+			"AnimationFrameCount": 90,
+			"When": {
+				"WalletItemsAnimated": "true",
+				"WalletItems": true,
+				"HasMod: |contains=NoFogBob.WalletItemsAnimatedAndDescribed": false,
+			},
+		},
+	   	{
+			"LogName": "UI Spring Onion Mastery",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/Spring Onion Mastery.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 208, "Y": 336, "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 7,
+			"AnimationFrameCount": 102,
+			"When": {
+				"WalletItemsAnimated": "true",
+				"WalletItems": true,
+				"HasMod: |contains=NoFogBob.WalletItemsAnimatedAndDescribed": false,
+			},
+		},
+	   	{
+			"LogName": "UI Key To The Town",
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/Key To The Town.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 0, "Y": 608, "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 6,
+			"AnimationFrameCount": 40,
+			"When": {
+				"WalletItemsAnimated": "true",
+				"WalletItems": true,
+				"HasMod: |contains=NoFogBob.WalletItemsAnimatedAndDescribed": false,
+			},
+		},
+
+//SHOP STATUS UI//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		{
+			"Action": "EditData",
+			"Target": "Strings/Characters",
+			"Entries": {
+				"Phone_Robin_Workout": "Hey, it's Robin. I'm out of the house all day today for my weekly aerobics club... Sorry! *beep*",
+				"Phone_Robin_Open": "Hello? Hey! Yes, I'm currently open for business... please swing by before 5PM, Wednesday through Monday, if you need anything! *click* $h",
+				"Phone_Robin_Open_Rare": "Hello? Oh, hi @! *BANG*... Um, one sec... (Muffled Voice: Honey, could you close the door? I'm trying to run a business here.)... Sorry! Yes, I'm open until 5pm, Wednesday through Monday. See you later! *click* ",
+				"Phone_Robin_Closed": "Hey, it's Robin. My business hours are from 9AM to 5PM, Wednesday through Monday. Please come by then if you need anything! *beep*",
+				"Phone_Clint_Open": "Hello? Oh, hey, @. Yup, I'm open for business until 4PM, every day. Er... Okay. Goodbye. *click*",
+				"Phone_Clint_Open_Rare": "Hello? Yes, yes, I'm open until 4pm, every day. Gotta go. *click*^Hello? Oh... @... Your voice sounds really nice over the phone... Uh... Okay. Understood. I'm open until 4pm. *slam*$4",
+				"Phone_Clint_Closed": "You've reached Clint's answering machine. I'm not available right now... My business hours are from 9AM to 4PM, every day. *beep*",
+				"Phone_Pierre_Open": "Pierre's General Store! Oh, hello, @! Yes, I'm open until 5pm, Thursday through Tuesday. Please come by for great deals on seeds and produce! Goodbye. *click*",
+				"Phone_Pierre_Open_Rare": "Abigail! Your guinea pig is loose again! Come here *right now* and take care of this! $3#$b#Oh! Uh... Hello? Thank you for calling. Y... Yes, we're open until 5PM, Thursday through Tuesday. Goodbye. *click*$4",
+				"Phone_Pierre_Closed": "Thank you for calling Pierre's General Store. We're closed at the moment, but our hours are 9AM to 5PM, Thursday through Tuesday. See you then! *beep*",
+				"Phone_Marnie_Open": "Hello? Oh, hi @! Yes, my shop is open until 4:00 PM today, 9AM to 4PM Wednesday through Sunday. Hope to see you soon! *click*",
+				"Phone_Marnie_Open_Rare": "Lew...? Hah... Heyyy! Yup, I'm open until 4:00 PM today, every Wednesday through Sunday! *bahhh*. That sound? Oh, it's one of my goats. Please come by if you need anything! *click* $4",
+				"Phone_Marnie_Closed": "Hello, you've reached Marnie's Ranch. My business hours are from 9AM to 4PM Wednesday through Sunday. Please come visit me then. *beep*",
+				"Phone_Marnie_ClosedDay": "Hello, you've reached Marnie's Ranch. My shop is closed all day today. I'm not open Monday and Tuesday.",
+				"Phone_Ring_HatMouse": "You hear a squeaky voice on the other end: # Heyo poke! Me sell gud hats. Please come, n' bring coines, poke. Me like coines. Me always open for coins. *click*",
+						},
+			"When": { 
+				"IsCommunityCenterComplete": false,
+				"ShopStatusUI": true,
+				"HasMod: |contains=NoFogBob.DynamicShopStatus": false,
+			},
+		},
+		{
+			"Action": "EditData",
+			"Target": "Strings/Characters",
+			"Entries": {
+				"Phone_Robin_Workout": "Hey, it's Robin. I'm out of the house all day today for my weekly aerobics club... Sorry! *beep*",
+				"Phone_Robin_Open": "Hello? Hey! Yes, I'm currently open for business... please swing by before 5PM, Wednesday through Monday, if you need anything! *click* $h",
+				"Phone_Robin_Open_Rare": "Hello? Oh, hi @! *BANG*... Um, one sec... (Muffled Voice: Honey, could you close the door? I'm trying to run a business here.)... Sorry! Yes, I'm open until 5pm, Wednesday through Monday. See you later! *click* ",
+				"Phone_Robin_Closed": "Hey, it's Robin. My business hours are from 9AM to 5PM, Wednesday through Monday. Please come by then if you need anything! *beep*",
+				"Phone_Clint_Open": "Hello? Oh, hey, @. Yup, I'm open for business until 4PM, Saturday through Thursday. Er... Okay. Goodbye. *click*",
+				"Phone_Clint_Open_Rare": "Hello? Yes, yes, I'm open until 4pm, Saturday through Thursday. Gotta go. *click*^Hello? Oh... @... Your voice sounds really nice over the phone... Uh... Okay. Understood. I'm open until 4pm. *slam*$4",
+				"Phone_Clint_Closed": "You've reached Clint's answering machine. I'm not available right now... My business hours are from 9AM to 4PM, Saturday through Thursday. *beep*",
+				"Phone_Pierre_Open": "Pierre's General Store! Oh, hello, @! Yes, I'm open until 5pm every day. Please come by for great deals on seeds and produce! Goodbye. *click*",
+				"Phone_Pierre_Open_Rare": "Abigail! Your guinea pig is loose again! Come here *right now* and take care of this! $3#$b#Oh! Uh... Hello? Thank you for calling. Y... Yes, we're open until 5PM every day. Goodbye. *click*$4",
+				"Phone_Pierre_Closed": "Thank you for calling Pierre's General Store. We're closed at the moment, but our hours are 9AM to 5PM every day of the week. See you then! *beep*",
+				"Phone_Marnie_Open": "Hello? Oh, hi @! Yes, my shop is open until 4:00 PM today, 9AM to 4PM Wednesday through Sunday. Hope to see you soon! *click*",
+				"Phone_Marnie_Open_Rare": "Lew...? Hah... Heyyy! Yup, I'm open until 4:00 PM today, every Wednesday through Sunday! *bahhh*. That sound? Oh, it's one of my goats. Please come by if you need anything! *click* $4",
+				"Phone_Marnie_Closed": "Hello, you've reached Marnie's Ranch. My business hours are from 9AM to 4PM Wednesday through Sunday. Please come visit me then. *beep*",
+				"Phone_Marnie_ClosedDay": "Hello, you've reached Marnie's Ranch. My shop is closed all day today. I'm not open Monday and Tuesday.",
+				"Phone_Ring_HatMouse": "You hear a squeaky voice on the other end: # Heyo poke! Me sell gud hats. Please come, n' bring coines, poke. Me like coines. Me always open for coins. *click*",
+			},
+			"When": { 
+				"IsCommunityCenterComplete": true,
+				"ShopStatusUI": true,
+				"HasMod: |contains=NoFogBob.DynamicShopStatus": false,
+			},
+		},		
+		{
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/Weather_Blank.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 96, "Height": 8 },
+			"ToArea": { "X": 317, "Y": 421, "Width": 96, "Height": 8 },
+			"When": {
+				"ShopStatusUI": true,
+				"HasMod: |contains=NoFogBob.DynamicShopStatus": false,
+			},
+		},
+	   	{
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/Season_Blank.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 12, "Height": 32 },
+			"ToArea": { "X": 406, "Y": 441, "Width": 12, "Height": 32 },
+			"When": {
+				"ShopStatusUI": true,
+				"HasMod: |contains=NoFogBob.DynamicShopStatus": false,
+			},
+		},
+	   	{
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/UI_Blank.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 43, "Height": 13 },
+			"ToArea": { "X": 359, "Y": 446, "Width": 43, "Height": 13 },
+			"When": {
+				"ShopStatusUI": true,
+				"HasMod: |contains=NoFogBob.DynamicShopStatus": false,
+			},
+		},
+	   	{
+			"LogName": "Shop Status Un-Completed Community Center",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/UI_Text_{{DayofWeek}}.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 40, "Height": 11 },
+			"ToArea": { "X": 360, "Y": 447, "Width": 40, "Height": 11 },
+			"AnimationFrameTime": 100,
+			"AnimationFrameCount": 5,
+			"When": {"IsCommunityCenterComplete": false,
+				"ShopStatusUI": true,
+				"HasMod: |contains=NoFogBob.DynamicShopStatus": false,
+			}
+		},
+	   	{
+			"LogName": "Shop Status Completed Community Center",			
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/UI_Text_{{DayofWeek}}_CCComplete.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 40, "Height": 11 },
+			"ToArea": { "X": 360, "Y": 447, "Width": 40, "Height": 11 },
+			"AnimationFrameTime": 100,
+			"AnimationFrameCount": 5,
+			"When": {
+				"IsCommunityCenterComplete": true,
+				"ShopStatusUI": true,
+				"HasMod: |contains=NoFogBob.DynamicShopStatus": false,
+			},
+		},
+	   	{
+			"LogName": "Shop Status All closed based on time",			
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/UI_Text_All_Closed.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 40, "Height": 11 },
+			"ToArea": { "X": 360, "Y": 447, "Width": 40, "Height": 11 },
+			"AnimationFrameTime": 100,
+			"AnimationFrameCount": 5,
+			"When": {
+				"Time": "{{Range: 0600, 0859}}, {{Range: 1701, 2600}}",
+				"ShopStatusUI": true,
+				"HasMod: |contains=NoFogBob.DynamicShopStatus": false,
+			},
+			"Update": "OnTimeChange"
+		},
+	   	{
+			"LogName": "Shop Status All closed based on events",			
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/UI_Text_All_Closed.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 40, "Height": 11 },
+			"ToArea": { "X": 360, "Y": 447, "Width": 40, "Height": 11 },
+			"AnimationFrameTime": 100,
+			"AnimationFrameCount": 5,
+			"When": {
+				"DayEvent": "wedding, egg festival, feast of the winter star, festival of ice, flower dance, luau, stardew valley fair",
+				"ShopStatusUI": true,
+				"HasMod: |contains=NoFogBob.DynamicShopStatus": false,
+			},
+		},
+	   	{
+			"LogName": "Shop Status Un-Completed Community Center Marnie closed from 4-5",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/UI_Text_{{DayofWeek}}_Marnie45.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 40, "Height": 11 },
+			"ToArea": { "X": 360, "Y": 447, "Width": 40, "Height": 11 },
+			"AnimationFrameTime": 100,
+			"AnimationFrameCount": 5,
+			"When": {
+				"IsCommunityCenterComplete": false,
+				"Time": "{{Range: 1601, 1701}}",
+				"ShopStatusUI": true,
+				"HasMod: |contains=NoFogBob.DynamicShopStatus": false,
+			},
+			"Update": "OnTimeChange"
+		},
+	   	{
+			"LogName": "Shop Status Completed Community Center Marnie closed from 4-5",			
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/UI_Text_{{DayofWeek}}_CCComplete_Marnie45.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 40, "Height": 11 },
+			"ToArea": { "X": 360, "Y": 447, "Width": 40, "Height": 11 },
+			"AnimationFrameTime": 100,
+			"AnimationFrameCount": 5,
+			"When": {
+				"IsCommunityCenterComplete": true,
+				"Time": "{{Range: 1601, 1701}}",
+				"ShopStatusUI": true,
+				"HasMod: |contains=NoFogBob.DynamicShopStatus": false,
+			},
+			"Update": "OnTimeChange"
+		},
+	   	{
+			"LogName": "Shop Status Un-Completed or Completed Community Center Marnie Clinic Fall 18",			
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/UI_Text_MarnieClinic.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 40, "Height": 11 },
+			"ToArea": { "X": 360, "Y": 447, "Width": 40, "Height": 11 },
+			"AnimationFrameTime": 100,
+			"AnimationFrameCount": 5,
+			"When": {
+				"Time": "{{Range: 0900, 1600}}",
+				"Day": "18",
+				"Season": "fall",
+				"ShopStatusUI": true,
+				"HasMod: |contains=NoFogBob.DynamicShopStatus": false,
+			},
+			"Update": "OnTimeChange"
+		},
+	   	{
+			"LogName": "Shop Status Un-Completed or Completed Community Center Marnie Clinic Winter 18",			
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/UI_Text_MarnieClinic.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 40, "Height": 11 },
+			"ToArea": { "X": 360, "Y": 447, "Width": 40, "Height": 11 },
+			"AnimationFrameTime": 100,
+			"AnimationFrameCount": 5,
+			"When": {
+				"Time": "{{Range: 0900, 1600}}",
+				"Day": "18",
+				"Season": "winter",
+				"ShopStatusUI": true,
+				"HasMod: |contains=NoFogBob.DynamicShopStatus": false,
+			},
+			"Update": "OnTimeChange"
+		},
+	   	{
+			"LogName": "Shop Status Un-Completed or Completed Community Center Willy Clinic Spring 9",			
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/UI_Text_WillyClinic.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 40, "Height": 11 },
+			"ToArea": { "X": 360, "Y": 447, "Width": 40, "Height": 11 },
+			"AnimationFrameTime": 100,
+			"AnimationFrameCount": 5,
+			"When": {
+				"Time": "{{Range: 1010, 1700}}",
+				"Day": "9",
+				"Season": "spring",
+				"ShopStatusUI": true,
+				"HasMod: |contains=NoFogBob.DynamicShopStatus": false,
+			},
+			"Update": "OnTimeChange"
+		},
+	   	{
+			"LogName": "Shop Status Un-Completed or Completed Community Center Robin Clinic Summer 18",			
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/UI_Text_RobinClinic.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 40, "Height": 11 },
+			"ToArea": { "X": 360, "Y": 447, "Width": 40, "Height": 11 },
+			"AnimationFrameTime": 100,
+			"AnimationFrameCount": 5,
+			"When": {
+				"Time": "{{Range: 0900, 1700}}",
+				"Day": "18",
+				"Season": "summer",
+				"ShopStatusUI": true,
+				"HasMod: |contains=NoFogBob.DynamicShopStatus": false,
+			},
+			"Update": "OnTimeChange"
+		},
+	   	{
+			"LogName": "Shop Status Un-Completed Community Center Friday 4-5PM",			
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/UI_Text_Friday_RobinMarnie45.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 40, "Height": 11 },
+			"ToArea": { "X": 360, "Y": 447, "Width": 40, "Height": 11 },
+			"AnimationFrameTime": 100,
+			"AnimationFrameCount": 5,
+			"When": {
+				"IsCommunityCenterComplete": false,
+				"Time": "{{Range: 1601, 1701}}",
+				"DayofWeek": "friday",
+				"ShopStatusUI": true,
+				"HasMod: |contains=NoFogBob.DynamicShopStatus": false,
+			},
+			"Update": "OnTimeChange"
+		},
+	   	{
+			"LogName": "Shop Status Completed Community Center Friday 4-5PM",			
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/UI_Text_Friday_RobinMarnie45.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 40, "Height": 11 },
+			"ToArea": { "X": 360, "Y": 447, "Width": 40, "Height": 11 },
+			"AnimationFrameTime": 100,
+			"AnimationFrameCount": 5,
+			"When": {
+				"IsCommunityCenterComplete": true,
+				"Time": "{{Range: 1601, 1701}}",
+				"DayofWeek": "friday",
+				"ShopStatusUI": true,
+				"HasMod: |contains=NoFogBob.DynamicShopStatus": false,
+			},
+			"Update": "OnTimeChange"
+		},
+	   	{
+			"LogName": "Shop Status Saturday Rain",			
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/UI_Text_SaturdayRain.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 40, "Height": 11 },
+			"ToArea": { "X": 360, "Y": 447, "Width": 40, "Height": 11 },
+			"AnimationFrameTime": 100,
+			"AnimationFrameCount": 5,
+			"When": {
+				"Time": "{{Range: 0900, 1600}}",
+				"DayofWeek": "saturday",
+				"Weather": "Rain, Storm",
+				"ShopStatusUI": true,
+				"HasMod: |contains=NoFogBob.DynamicShopStatus": false,
+			},
+			"Update": "OnTimeChange"
+		},
+	   	{
+			"LogName": "Shop Status Saturday 4-5PM Rain",			
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/UI_Text_SaturdayRain45.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 40, "Height": 11 },
+			"ToArea": { "X": 360, "Y": 447, "Width": 40, "Height": 11 },
+			"AnimationFrameTime": 100,
+			"AnimationFrameCount": 5,
+			"When": {
+				"Time": "{{Range: 1601, 1701}}",
+				"DayofWeek": "saturday",
+				"Weather": "Rain, Storm",
+				"ShopStatusUI": true,
+				"HasMod: |contains=NoFogBob.DynamicShopStatus": false,
+			},
+			"Update": "OnTimeChange"
+		},
+	]
+}

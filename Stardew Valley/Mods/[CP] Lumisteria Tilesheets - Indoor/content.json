@@ -1,0 +1,213 @@
+{
+	"Format": "1.24.0",
+	
+    "DynamicTokens": [
+        {
+            "Name": "interiorrecolor",
+            "Value": "vanilla",
+        },
+        {
+            "Name": "interiorrecolor",
+            "Value": "starblue",
+            "When":
+            {
+				"InteriorOption" : "starblue",
+                "HasMod": "Lita.StarblueValley"
+            },
+        },
+        {
+            "Name": "interiorrecolor",
+            "Value": "grapeponta",
+            "When":
+            {
+				"InteriorOption" : "grapeponta",
+                "HasMod |contains= grapeponta.VanillaInteriors, grapeponta.VibrantPastoralRecolor": "true"
+            },
+        },
+        {
+            "Name": "interiorrecolor",
+            "Value": "ATDSV",
+            "When":
+            {
+				"InteriorOption" : "ATDSV",
+                "HasMod": "minervamaga.CP.ATDSV"
+            },
+        },
+        {
+            "Name": "interiorrecolor",
+            "Value": "starblue",
+            "When":
+            {
+				"InteriorOption" : "Auto",
+                "HasMod": "Lita.StarblueValley"
+            },
+        },
+        {
+            "Name": "interiorrecolor",
+            "Value": "grapeponta",
+            "When":
+            {
+				"InteriorOption" : "Auto",
+                "HasMod |contains= grapeponta.VanillaInteriors, grapeponta.VibrantPastoralRecolor": "true"
+            },
+        },
+        {
+            "Name": "interiorrecolor",
+            "Value": "ATDSV",
+            "When":
+            {
+				"InteriorOption" : "Auto",
+                "HasMod": "minervamaga.CP.ATDSV"
+            },
+        },
+	
+	],
+	
+	
+	"ConfigSchema": {
+	
+		"InteriorOption": {
+			"AllowValues": "auto, vanilla, ATDSV, grapeponta, starblue",
+			"Default": "auto"
+			},
+	},
+
+	"Changes": [
+			//Map tilesheet
+	
+	
+		{
+			"LogName": "Lumisteria Tilesheet",
+			"Action": "Load",
+			"Target": "maps/lumi_towninterior",
+			"FromFile": "assets/tilesheets/indoor/vanilla/lumi_towninterior.png",
+		},
+	
+		{
+			"LogName": "Lumisteria Tilesheet",
+			"Action": "EditImage",
+			"Target": "maps/lumi_towninterior",
+			"FromFile": "assets/tilesheets/indoor/{{interiorrecolor}}/lumi_towninterior.png",
+            "When":
+            {
+				"interiorrecolor |contains=Vanilla": "false" ,
+            },
+			
+		},
+		
+		
+		{
+			"LogName": "Lumisteria Tilesheet FrontTile",
+			"Action": "Load",
+			"Target": "Mods/Lumisteria.LumiTilesheetsIndoor/lumi_towninterior_fronttiles",
+			"FromFile": "assets/tilesheets/indoor/vanilla/lumi_towninterior_fronttiles.png",
+		},
+		
+		
+		{
+			"LogName": "Lumisteria Tilesheet FrontTile",
+			"Action": "EditImage",
+			"Target": "Mods/Lumisteria.LumiTilesheetsIndoor/lumi_towninterior_fronttiles",
+			"FromFile": "assets/tilesheets/indoor/{{interiorrecolor}}/lumi_towninterior_fronttiles.png",
+            "When":
+            {
+				"interiorrecolor |contains=Vanilla": "false" ,
+            },
+		},
+		
+		
+		
+		//Sitting stuff
+		
+		
+		      {
+         "Action": "EditData",
+         "Target": "Data/ChairTiles",
+         "Entries": {
+			 
+			 //chairs
+            "lumi_towninterior/6/1": "1/1/down/chair/-1/-1/false",
+            "lumi_towninterior/7/1": "1/1/right/chair/-1/-1/false",
+            "lumi_towninterior/8/1": "1/1/up/highback_chair/8/1/false/Mods\\Lumisteria.LumiTilesheetsIndoor\\lumi_towninterior_fronttiles",
+            "lumi_towninterior/9/1": "1/1/left/chair/-1/-1/false",
+			
+			 //chairs
+            "lumi_towninterior/10/1": "1/1/down/chair/-1/-1/false",
+            "lumi_towninterior/11/1": "1/1/right/chair/-1/-1/false",
+            "lumi_towninterior/12/1": "1/1/up/highback_chair/12/1/false/Mods\\Lumisteria.LumiTilesheetsIndoor\\lumi_towninterior_fronttiles",
+            "lumi_towninterior/13/1": "1/1/left/chair/-1/-1/false",
+			
+			 //armchairs
+            "lumi_towninterior/6/3": "1/1/down/custom 0.5 0 0/-1/-1/false",
+            "lumi_towninterior/7/3": "1/1/down/custom -0.5 0 0/-1/-1/false",
+            "lumi_towninterior/9/3": "1/1/right/armchair/9/3/false/Mods\\Lumisteria.LumiTilesheetsIndoor\\lumi_towninterior_fronttiles",
+            "lumi_towninterior/10/3": "1/1/up/highback_chair/10/3/false/Mods\\Lumisteria.LumiTilesheetsIndoor\\lumi_towninterior_fronttiles",
+            "lumi_towninterior/11/3": "1/1/up/highback_chair/11/3/false/Mods\\Lumisteria.LumiTilesheetsIndoor\\lumi_towninterior_fronttiles",
+            "lumi_towninterior/12/3": "1/1/left/armchair/12/3/false/Mods\\Lumisteria.LumiTilesheetsIndoor\\lumi_towninterior_fronttiles",
+			
+			//stool
+            "lumi_towninterior/5/4": "1/1/opposite/stool/-1/-1/false",
+			
+			//bench
+            "lumi_towninterior/2/6": "2/1/down/bench/-1/-1/false",
+            "lumi_towninterior/4/6": "1/2/right/bench/-1/-1/false",
+            "lumi_towninterior/5/6": "2/1/up/highback_chair/5/6/false/Mods\\Lumisteria.LumiTilesheetsIndoor\\lumi_towninterior_fronttiles",
+			
+			//stool
+            "lumi_towninterior/7/6": "1/1/opposite/stool/-1/-1/false",
+			
+			
+			
+			//Couch
+            "lumi_towninterior/2/9": "1/1/down/custom 0.2 0 0/-1/-1/false",
+            "lumi_towninterior/3/9": "1/1/down/couch/-1/-1/false",
+            "lumi_towninterior/4/9": "1/1/down/custom -0.2 0 0/-1/-1/false",
+            "lumi_towninterior/6/9": "1/2/right/couch/6/9/false/Mods\\Lumisteria.LumiTilesheetsIndoor\\lumi_towninterior_fronttiles",
+            "lumi_towninterior/7/9": "3/1/up/highback_chair/7/9/false/Mods\\Lumisteria.LumiTilesheetsIndoor\\lumi_towninterior_fronttiles",
+            "lumi_towninterior/10/9": "1/2/left/couch/10/9/false/Mods\\Lumisteria.LumiTilesheetsIndoor\\lumi_towninterior_fronttiles",
+			
+			
+			
+			
+			
+			//bench
+            "lumi_towninterior/22/16": "2/1/opposite/chair/-1/-1/false",
+			
+			//couch
+            "lumi_towninterior/12/23": "3/1/down/couch/-1/-1/false",
+            "lumi_towninterior/16/23": "1/1/right/couch/-1/-1/false",
+            "lumi_towninterior/13/25": "1/1/left/couch/-1/-1/false",
+			
+			//stool
+            "lumi_towninterior/9/18": "1/1/opposite/chair/-1/-1/false",
+			
+			//couch
+            "lumi_towninterior/12/30": "3/1/down/chair/-1/-1/false",
+            "lumi_towninterior/16/30": "1/1/right/chair/-1/-1/false",
+			
+			 //chairs
+            "lumi_towninterior/20/33": "1/1/down/chair/-1/-1/false",
+            "lumi_towninterior/21/33": "1/1/right/chair/-1/-1/false",
+            "lumi_towninterior/22/33": "1/1/up/highback_chair/22/33/false/Mods\\Lumisteria.LumiTilesheetsIndoor\\lumi_towninterior_fronttiles",
+            "lumi_towninterior/23/33": "1/1/left/chair/-1/-1/false",
+			
+			//stool
+            "lumi_towninterior/11/34": "1/1/opposite/chair/-1/-1/false",
+			
+			
+			//bench (custom color)
+            "lumi_towninterior/0/72": "2/1/down/bench/-1/-1/false",
+            "lumi_towninterior/2/72": "1/2/right/bench/-1/-1/false",
+            "lumi_towninterior/3/72": "2/1/up/highback_chair/3/72/false/Mods\\Lumisteria.LumiTilesheetsIndoor\\lumi_towninterior_fronttiles",
+            "lumi_towninterior/5/72": "1/2/left/bench/-1/-1/false",
+			
+			
+			},
+			
+		},
+	]
+}
+
+
+
+

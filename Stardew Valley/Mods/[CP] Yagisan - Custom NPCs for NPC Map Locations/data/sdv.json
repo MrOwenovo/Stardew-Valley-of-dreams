@@ -1,0 +1,52 @@
+{
+	"$schema": "https://smapi.io/schemas/content-patcher.json",
+	"Changes": [
+		{
+			"LogName": "[Yagi] Stardew Valley - Vanilla Location Support",
+			"Action": "EditData",
+			"Target": "Mods/Bouhm.NPCMapLocations/Locations",
+			"Entries": {
+				// Vanilla locations. These get changed unconditionally. FIXME assuming we can override hardcoded values.
+				"Woods": {
+					"MapVectors": [
+						{
+							"TileX": 0,
+							"TileY": 0,
+							"MapX": 210,
+							"MapY": 400
+						},
+						{
+							"TileX": 59,
+							"TileY": 31,
+							"MapX": 240,
+							"MapY": 450
+						}
+					],
+					"MapTooltip": {
+						"X": 210,
+						"Y": 400,
+						"Width": 30,
+						"Height": 50,
+						"PrimaryText": "Secret Woods"
+					}
+				},
+				"DeepWoods": {
+					"MapVectors": [
+						{
+							"TileX": 0,
+							"TileY": 0,
+							"MapX": 210,
+							"MapY": 400
+						},
+						{
+							"TileX": 59,
+							"TileY": 31,
+							"MapX": 240,
+							"MapY": 450
+						}
+					]
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,91 @@
+{
+"Changes": [	
+
+	{
+            "Action": "EditData",
+            "Target": "Characters/schedules/Zinnia",
+	    "Entries": {
+
+	//specific dates
+	"winter_15": "700 Custom_GE_ZinniaRoom 9 8 1/800 Custom_GE_ZinniaRoom 3 6 0/900 Mountain 81 23 3/1200 Town 54 71 0 \"Strings\\schedules\\Zinnia:dusty\"/1630 Beach 11 29 3/2130 Custom_GE_ZinniaRoom 8 6 2 zinnia_sleep",
+
+	//Rain
+	"rain": "900 AdventureGuild 7 12 2/1030 Mountain 14 7 2 \"Strings\\schedules\\Zinnia:rain1\"/1400 Saloon 32 17 1 \"Strings\\schedules\\Zinnia:game\"/1800 Saloon 20 18 2 zinnia_sit \"Strings\\schedules\\Zinnia:emily\"/2100 Custom_GE_ZinniaRoom 8 6 2 zinnia_sleep",
+
+	//Weekly
+	"Wed": "700 Custom_GE_ZinniaRoom 2 8 3/800 Custom_GE_MonsterResearchWing 2 12 2 zinnia_sit/930 Mountain 59 10 3/1200 Mountain 29 10 0/1500 Mountain 32 20 2/1730 AdventureGuild 7 12 2/2000 Mountain 72 14 2/2200 Custom_GE_ZinniaRoom 8 6 2 zinnia_sleep",
+	"Fri": "700 Custom_GE_ZinniaRoom 2 8 3/800 Custom_GE_MonsterResearchWing 2 12 2 zinnia_sit/900 Mountain 53 8 2/1200 SeedShop 3 19 0 \"Strings\\schedules\\Zinnia:pierre\"/1500 Town 42 79 1/1800 Saloon 7 19 2 zinnia_sit \"Strings\\schedules\\Zinnia:emily\"/2100 Custom_GE_ZinniaRoom 8 6 2 zinnia_sleep",
+
+
+	//Season Base Schedules
+	"spring": "630 Custom_GE_ZinniaRoom 9 8 1/720 Custom_GE_ZinniaRoom 3 6 0/800 Mountain 72 14 2/930 Mountain 59 10 3/1100 Town 45 79 3/1500 Beach 27 10 2/1700 Town 82 90 3/2000 Custom_GE_ZinniaRoom 8 6 2 zinnia_sleep",
+	"summer": "700 Custom_GE_ZinniaRoom 9 8 1/800 Custom_GE_ZinniaRoom 3 6 0/900 Beach 18 12 2 \"Strings\\schedules\\Zinnia:beach\"/1400 Beach 42 34 2 zinnia_sit \"Strings\\schedules\\Zinnia:ocean\"/2000 Custom_GE_ZinniaRoom 8 6 2 zinnia_sleep",
+	"fall": "700 Custom_GE_ZinniaRoom 9 8 1/800 Custom_GE_ZinniaRoom 3 6 0/900 Town 54 71 0 \"Strings\\schedules\\Zinnia:dusty\"/1400 Forest 100 23 0/1700 Town 82 90 3/2000 Custom_GE_ZinniaRoom 8 6 2 zinnia_sleep",
+	"winter": "700 Custom_GE_ZinniaRoom 9 8 1/800 Custom_GE_ZinniaRoom 3 6 0/900 Mountain 81 23 3/1200 Mountain 29 10 0 \"Strings\\schedules\\Zinnia:linus_winter\"/1500 AdventureGuild 7 12 2/1900 Custom_GE_MonsterResearchWing 2 12 2 zinnia_sit/2200 Custom_GE_ZinniaRoom 8 6 2 zinnia_sleep",
+
+	//marriage
+	"marriage_Wed": "730 AdventureGuild 7 12 2 \"Strings\\schedules\\Zinnia:marriage_Marlon\"/1530 Custom_GE_MonsterResearchWing 2 12 2 zinnia_sit \"Strings\\schedules\\Zinnia:marriage_Gabriel\"/1700 Town 54 71 0 \"Strings\\schedules\\Zinnia:dusty\"/2000 BusStop -1 23 3",
+	"marriage_Thu": "800 Mountain 19 36 2/1400 Town 54 71 0 \"Strings\\schedules\\Zinnia:dusty\"/1600 Town 45 79 3/1800 Town 17 64 2/2000 BusStop -1 23 3",
+	"marriage_Fri": "900 Town 17 64 2/1200 SeedShop 3 19 0 \"Strings\\schedules\\Zinnia:pierre\"/1500 Town 42 79 1/1800 Saloon 7 19 2 zinnia_sit \"Strings\\schedules\\Zinnia:emily\"/2100 Custom_GE_ZinniaRoom 8 6 2 zinnia_sleep",
+	"marriage_winter_15": "1000 Town 17 64 2/1200 Town 54 71 0 \"Strings\\schedules\\Zinnia:dusty\"/1400 Town 42 79 1/1630 Beach 11 29 3 \"Strings\\schedules\\Zinnia:marriage_nightmarket\"/2200 BusStop -1 23 3",
+
+		},
+	},
+
+	//Visits Library After 6 Heart Event
+	{
+            "Action": "EditData",
+            "Target": "Characters/schedules/Zinnia",
+	    "Entries": {
+
+	    	"Mon": "700 Custom_GE_ZinniaRoom 9 8 1/800 Custom_GE_ZinniaRoom 3 6 0/900 ArchaeologyHouse 19 15 3 zinnia_read \"Strings\\schedules\\Zinnia:reading\"/1500 Town 54 71 0 \"Strings\\schedules\\Zinnia:dusty\"/1800 Mountain 53 8 2/2100 Custom_GE_ZinniaRoom 8 6 2 zinnia_sleep",
+		"Thu": "GOTO Mon",
+
+		"marriage_Thu": "800 ArchaeologyHouse 19 15 3 zinnia_read \"Strings\\schedules\\Zinnia:marriage_reading\"/1400 Town 54 71 0 \"Strings\\schedules\\Zinnia:dusty\"/1600 Town 45 79 3/1800 Town 17 64 2/2000 BusStop -1 23 3",
+
+		},
+	     "When": {
+			"HasSeenEvent: anyPlayer |contains=8280005": "true",
+		},
+	},
+
+	//Visits Silly
+	{
+            "Action": "EditData",
+            "Target": "Characters/schedules/Zinnia",
+	    "Entries": {
+
+		"Wed": "700 Custom_GE_ZinniaRoom 2 8 3/800 Custom_GE_MonsterResearchWing 2 12 2 zinnia_sit/930 Mountain 59 10 3/1200 Mountain 29 10 0/1500 Custom_GE_MonsterResearchWing 18 5 3 \"Strings\\schedules\\Zinnia:silly\"/1800 AdventureGuild 7 12 2/2000 Mountain 72 14 2/2200 Custom_GE_ZinniaRoom 8 6 2 zinnia_sleep",	    
+
+		"marriage_Wed": "730 AdventureGuild 7 12 2 \"Strings\\schedules\\Zinnia:marriage_Marlon\"/1530 Custom_GE_MonsterResearchWing 2 12 2 zinnia_sit \"Strings\\schedules\\Zinnia:marriage_Gabriel\"/1630 Custom_GE_MonsterResearchWing 18 5 3 \"Strings\\schedules\\Zinnia:silly\"/1730 BusStop -1 23 3",
+	
+		},
+	    "When": {
+		"HasFlag: hostPlayer |contains=choseZinnia, finishedGabriel": "true",
+		},
+	},
+
+	//STRINGS
+	{
+		"Action": "EditData",
+		"Target": "Strings/schedules/Zinnia",
+		"Entries": {
+			"reading": "噢，你好，@！我正在调查资料，阅读妈妈的日记呢。也许我很快也能去冒险了！",
+			"dusty": "嗨，小灰！你可真是个好小伙啊，对吧？$h#$b#要是亚历克斯同意的话，我想每天都给你带玩具！$h",
+			"beach": "我喜欢夏天的沙滩！温暖的阳光，脚趾间的沙子……#$b#还有什么更有乐趣？$h",
+			"ocean": "大海真美啊……",
+			"linus_winter": "天冷的时候，莱纳斯同意我在篝火边和他聊天。#$b#他真是个好人！$h",
+			"pierre": "嗨，皮埃尔！你今天有什么水果卖？我想做新鲜的水果沙拉！$h",
+			"emily": "艾米丽的工作看起来好难！我只是来这儿陪她的，今晚生意太好了。",
+			"silly": "嗨，笨笨！你想一起玩吗？$h",
+			"rain1": "我只是在树下躲雨。周围的一切都看起来好忧郁……$s",
+			"game": "噢，你好，@。你知道这个怎么玩吗？#$b#我不擅长玩游戏，但是下雨的时候没什么事情好做……$s",
+			"marriage_Marlon": "嗨，亲爱的！我今天来看望马龙和加布，希望他们一切都好！",
+			"marriage_Gabriel": "希望加布不要工作得太辛苦。我搬出去以后，没法像以前那样总盯着他了……$s",
+			"marriage_reading": "嗨，亲爱的！我正在调查更多关于妈妈的日记的内容。#$b#如果你愿意的话，你也可以留下来帮忙……$l",
+			"marriage_nightMarket": "嗨，亲爱的！那个货摊上有不少可爱的雕像。放在农场上一定很好看！$h",
+		},
+	},
+
+	]	
+}

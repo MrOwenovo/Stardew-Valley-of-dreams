@@ -1,0 +1,23 @@
+[
+	{
+		//kristoff 6 heart event
+		"Id": "DTZ.JojaAppreciationDayMail", // Letter id. It's important to be an unique string to avoid conflicts. Also it shouldn't have space characters.
+		"GroupId": "DTZ.KristoffJoja", // Letter group id. Letters with the same group id are never delivered in the same day. Letters registered first have priority, unless the group id ends with ".Random", in that case, a random letter will be chosen. Default is null.
+		"Title": "Joja员工感谢日", // Letter title. Will be shown in the collections menu. Set it null or remove the line if you don't want the letter to appear in the collection. If an translation file is provide, you should put a translation key here, but you can still leave if null for no Title.
+		"Text": "亲爱的@，^今天是第一届Joja员工感谢日！^我想要邀请你作为我们的特邀来宾。如果你有空的话，请务必光临！^- 克里斯托夫^又及：随信附上前往祖祖城的500g车费。注意安全。%item money 500 %%[textcolor black]", // Text of the letter. You can use @ to put the players name and ^ for line breaks. You can also use the base game commands to add money, items and stuff. If an translation file is provide, you should put a translation key here.
+		"LetterBG": "assets/jojaLetterBG.png",
+		"Repeatable": false, // If true the mod won't check it the letter Id has already been delivered. Default is false.
+		"AutoOpen": false, // If true the mod will open the letter at the begin of the day after the conditions are met. The letter id will be marked as read and if there is a recipe set, it will be learned. Since the letter will never show, visual properties like title, text, background... will never be used, as well as the attachments.
+		// CONDITIONS FOR DELIVERY
+		//Below are conditions for the delivery. Remove any of the lines if you don't want to check that condition.
+		"Date": "10 spring Y1", // Must be that date or after it. The format is "[1-28] [spring|summer|fall|winter] Y[1-999]".
+		"Weather": "sunny", // Must me that game weather. The format is "[sunny|rainy]".
+		"FriendshipConditions": // Each NPC of the list must check all conditions. 
+		[
+			{
+				"NpcName": "Kristoff", //Name of the NPC. Can use custom NPCs.
+				"FriendshipLevel": 6 // NPC must have a friendship heart level equal or higher what is defined. Default is 0.
+			}
+		]
+	}
+]

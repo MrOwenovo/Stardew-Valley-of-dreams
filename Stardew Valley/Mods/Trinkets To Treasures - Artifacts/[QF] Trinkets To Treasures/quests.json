@@ -1,0 +1,68 @@
+{
+  "Format": "1.24.0",
+  "Quests": [
+
+//WOOD CRAFTING STATION
+	
+	{
+	"Name": "RobinNeedsSomeIron",
+	"Type": "ItemDelivery",
+	"Title": "罗宾的新设计",
+	"Description": "罗宾需要一些铁棒来完成她的新发明。",
+	"Objective": "送10根铁棒给罗宾",
+	"Trigger": "Robin 335 10", 
+	"ReactionText": "谢谢你, @!#$b#我马上就开始做。",
+	"AddMailOnComplete": "RobinsAppreciation tomorrow"
+	},
+
+//GOLD CRAFTING STATION
+
+	{
+	"Name": "RobinNeedsSomeGold",
+	"Type": "ItemDelivery",
+	"Title": "罗宾的终极设计",
+	"Description": "罗宾需要一大堆金条才能完成她的新发明。",
+	"Objective": "给罗宾送40根金条",
+	"Trigger": "Robin 336 40", 
+	"ReactionText": "谢谢你, @!#$b#梅鲁和我都非常感谢！",
+	"AddMailOnComplete": "RobinsAppreciation2 noletter"
+	},
+	],
+
+  "Offers": [
+
+//WOOD CRAFTING STATION
+	
+	{
+	"QuestName": "RobinNeedsSomeIron",
+	"OfferedBy": "Mail",
+	"OfferDetails": 
+		{
+		"Topic": "罗宾的新设计",
+		"Text": "@,^^ 我提出了一个关于机器的新想法，我相信你会很感兴趣。然而，我没有开始生产所需的所有材料。我知道要问很多问题，但你能给我10根铁棒吗？^我很乐意给你一台机器作为回报。我甚至会让你买一份蓝图！^我还没准备好说它会做什么，但如果我的设计成功了，我向你保证这是值得的。^^谢谢,^ 罗宾"
+		},
+	"When": {
+		"FriendshipLevel": "Robin 2",
+		"DaysPlayed": "100",
+		"Weather": "sunny",
+		}
+	},
+
+//GOLD CRAFTING STATION
+
+	{
+	"QuestName": "RobinNeedsSomeGold",
+	"OfferedBy": "Mail",
+	"OfferDetails": 
+		{
+		"Topic": "罗宾的终极设计",
+		"Text": "嗨 @!^^ 我一直在与我的女儿Maru密切合作，打造终极工艺站！凭借我们的综合技能，我认为我们可以制造出一种能够制作黄金展示盒的设备！不过，我需要你的帮助，因为我没有完成项目所需的所有材料。^我知道这是一个很大的问题，但你能给我40根金条吗？如果你愿意，我会免费给你一个设备。我甚至会给你食谱！我认为这对一台独一无二的机器来说是一笔不错的交易。^^祝你好运，^ 罗宾"
+		},
+	"When": {
+		"FriendshipLevel": "Robin 10",
+		"DaysPlayed": "280",
+		"Weather": "sunny",
+		}
+	}
+    ]
+}

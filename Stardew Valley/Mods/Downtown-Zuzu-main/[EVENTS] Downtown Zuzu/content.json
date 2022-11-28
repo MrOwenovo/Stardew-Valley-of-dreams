@@ -1,0 +1,113 @@
+{
+   "Format": "1.23.0",
+  "Changes": [
+    // plane events start here
+    {
+      "Action": "Load",
+      "Target": "Characters/zuzuPlane",
+      "FromFile": "assets/Plane.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Data/Events/Custom_DTZ_PlaneSky",
+      "FromFile": "assets/PlaneSkyEvent.json"
+
+    },
+    /* festival files */
+
+    // zuzu block party
+    {
+      "LogName": "Loading Zuzu Block Party data...",
+      "Action": "Load",
+      "Target": "Data/Festivals/spring9",
+      "FromFile": "assets/Festivals/ZuzuBlockParty.json"
+    },
+    {
+      "LogName": "Adding Zuzu Block Party date...",
+      "Action": "EditData",
+      "Target": "Data/Festivals/FestivalDates",
+      "Entries": {
+        "spring9": "Zuzu Block Party"
+      }
+    },
+    {
+      "LogName": "Adding Token Dialogue",
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring9",
+      "Entries": {
+        "Callum": "嘿，@。我只是在帮大卫一起做吃的！$h#$b#这儿，你也尝尝！[ {{spacechase0.JsonAssets/ObjectId:Downtown Dog}} ]$h",
+        "Callum_spouse": "嘿，@！你怎么样？$h#$b#希望你有享受节日！$l#$b#噢，我只是在帮大卫一起做汉堡。你也尝一个试试！[ {{spacechase0.JsonAssets/ObjectId:Big Burger}} ]$h",
+        "David_spouse": "嘿，亲爱的。你怎么样？希望你有享受节日。$h#$b#这些汉堡闻起来不是很香吗？来，尝一个吧！ [ {{spacechase0.JsonAssets/ObjectId:Big Burger}} ]$l"
+      }
+    },
+    //Custom_DTZ_JojaMini events start here
+    {
+      "Action": "Load",
+      "Target": "Data/Events/Custom_DTZ_JojaMini",
+      "FromFile": "assets/Custom_DTZ_JojaMini.json"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/calBoss",
+      "FromFile": "assets/calBoss.png"
+    },
+    //Custom_DTZ_ZuzuCityOasis1 events start here
+    {
+      "Action": "Load",
+      "Target": "Data/Events/Custom_DTZ_ZuzuCityOasis1",
+      "FromFile": "assets/Custom_DTZ_ZuzuCityOasis1.json"
+    },
+    //Custom_DTZ_Apartment1a events start here
+    {
+      "Action": "Load",
+      "Target": "Data/Events/Custom_DTZ_Apartment1a",
+      "FromFile": "assets/Custom_DTZ_Apartment1a.json"
+    },
+    //Custom_DTZ_JojaHQ events start here
+    {
+      "Action": "Load",
+      "Target": "Data/Events/Custom_DTZ_JojaHQ",
+      "FromFile": "assets/Custom_DTZ_JojaHQ.json"
+    },
+    //Custom_DTZ_Forest2 events start here
+    {
+      "Action": "Load",
+      "Target": "Data/Events/Custom_DTZ_Forest2",
+      "FromFile": "assets/Custom_DTZ_Forest2.json"
+    },
+    //Custom_DTZ_SancInt events start here
+    {
+      "Action": "Load",
+      "Target": "Data/Events/Custom_DTZ_SancInt",
+      "FromFile": "assets/Custom_DTZ_SancInt.json"
+    },
+    //Custom_DTZ_SancInt events start here
+    {
+      "Action": "Load",
+      "Target": "Data/Events/Custom_DTZ_ZuzuCity1",
+      "FromFile": "assets/Custom_DTZ_ZuzuCity1.json"
+    },
+    //Custom_DTZ_JojaCEO events start here
+    {
+      "Action": "Load",
+      "Target": "Data/Events/Custom_DTZ_JojaCEO",
+      "FromFile": "assets/Custom_DTZ_JojaCEO.json"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/JojaSecurity1",
+      "FromFile": "assets/JojaSecurity1.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/JojaSecurity2",
+      "FromFile": "assets/JojaSecurity2.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Data/Events/Custom_DTZ_JojaCEOScattered",
+      "FromFile": "assets/Custom_DTZ_JojaCEOScattered.json"
+    }
+
+  ]
+}

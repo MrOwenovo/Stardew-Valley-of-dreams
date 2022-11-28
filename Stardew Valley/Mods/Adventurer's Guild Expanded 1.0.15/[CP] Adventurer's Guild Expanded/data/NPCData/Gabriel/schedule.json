@@ -1,0 +1,67 @@
+{
+"Changes": [	
+
+	{
+            "Action": "EditData",
+            "Target": "Characters/schedules/Gabriel",
+	    "Entries": {
+	
+	//specific days
+	"winter_15": "630 Custom_GE_ZinniaRoom 20 7 0/800 Custom_GE_MonsterResearchWing 4 11 0/1000 Custom_GE_MonsterResearchWing 10 10 0/1200 Custom_GE_MonsterResearchWing 8 12 1 gabriel_read_right \"Strings\\schedules\\Gabriel:reading\"/1400 Beach 11 30 3/2130 Custom_GE_ZinniaRoom 16 6 3 gabriel_sleep",
+
+	//rain
+	"rain": "GOTO spring",
+
+	//days of the week
+	"Mon": "630 Custom_GE_ZinniaRoom 14 7 0/730 Custom_GE_MonsterResearchWing 4 11 0/900 SeedShop 12 27 3 \"Strings\\schedules\\Gabriel:grocery\"/1300 Custom_GE_ZinniaRoom 21 23 0/1730 Custom_GE_MonsterResearchWing 10 10 0/1830 Custom_GE_MonsterResearchWing 8 12 1 gabriel_read_right \"Strings\\schedules\\Gabriel:reading\"/1930 Custom_GE_MonsterResearchWing 4 11 0/2030 Custom_GE_ZinniaRoom 20 7 0/2100 Custom_GE_ZinniaRoom 18 6 0/2200 Custom_GE_ZinniaRoom 15 8 2/2300 Custom_GE_ZinniaRoom 18 6 0/2400 Custom_GE_ZinniaRoom 16 6 3 gabriel_sleep",
+	"Sat": "630 Custom_GE_ZinniaRoom 20 7 0/730 Custom_GE_MonsterResearchWing 4 11 0/900 ArchaeologyHouse 15 5 0 \"Strings\\schedules\\Gabriel:library\"/1400 ArchaeologyHouse 23 17 3 gabriel_read_left \"Strings\\schedules\\Gabriel:reading\"/1800 Custom_GE_MonsterResearchWing 8 12 1 gabriel_read_right \"Strings\\schedules\\Gabriel:reading\"/2300 Custom_GE_ZinniaRoom 20 7 0/2400 Custom_GE_ZinniaRoom 16 6 3 gabriel_sleep",
+	
+	//base schedules
+	"spring": "630 Custom_GE_ZinniaRoom 20 7 0/900 Custom_GE_MonsterResearchWing 4 11 0/1100 Custom_GE_MonsterResearchWing 10 10 0/1230 Custom_GE_MonsterResearchWing 8 12 1 gabriel_read_right \"Strings\\schedules\\Gabriel:reading\"/1400 Custom_GE_MonsterResearchWing 5 11 3 gabriel_sit_left_doze \"Strings\\schedules\\Gabriel:asleep\"/1600 Custom_GE_MonsterResearchWing 11 13 3 gabriel_read_left \"Strings\\schedules\\Gabriel:reading\"/1800 AdventureGuild 2 14 2 \"Strings\\schedules\\Gabriel:rest\"/2000 Custom_GE_MonsterResearchWing 4 11 0/2100 Custom_GE_MonsterResearchWing 8 12 1 gabriel_read_right \"Strings\\schedules\\Gabriel:reading\"/2400 Custom_GE_ZinniaRoom 16 6 3 gabriel_sleep",
+
+	//marriage
+	"marriage_Mon": "830 SeedShop 12 27 3 \"Strings\\schedules\\Gabriel:marriage_grocery\"/1130 Custom_GE_MonsterResearchWing 10 10 0/1600 Custom_GE_MonsterResearchWing 8 12 1 gabriel_read_right \"Strings\\schedules\\Gabriel:marriage_reading2\"/1800 BusStop -1 23 3",
+	"marriage_Sat": "800 ArchaeologyHouse 15 5 0 \"Strings\\schedules\\Gabriel:marriage_reading3\"/1100 ArchaeologyHouse 23 17 3 gabriel_read_left \"Strings\\schedules\\Gabriel:marriage_reading3\"/1400 AdventureGuild 10 12 1 \"Strings\\schedules\\Gabriel:marriage_Gil\"/2000 BusStop -1 23 3",
+	"marriage_winter_15": "830 AdventureGuild 2 14 2 \"Strings\\schedules\\Gabriel:marriage_Marlon\"/1300 AdventureGuild 10 12 1 \"Strings\\schedules\\Gabriel:marriage_Gil\"/1430 Beach 11 30 3 \"Strings\\schedules\\Gabriel:marriage_nightmarket\"/2200 BusStop -1 23 3",
+		},
+	},
+
+	//Goes To Therapy After 6 Heart Event
+	{
+            "Action": "EditData",
+            "Target": "Characters/schedules/Gabriel",
+	    "Entries": {
+	
+		"Sun": "630 Custom_GE_ZinniaRoom 20 7 0/700 BusStop 12 9 gabriel_invisible \"Strings\\schedules\\Gabriel:bus\"/1600 Custom_GE_MonsterResearchWing 4 11 0/2000 Custom_GE_MonsterResearchWing 10 10 0/2100 Custom_GE_MonsterResearchWing 8 12 1 gabriel_read_right \"Strings\\schedules\\Gabriel:reading\"/2300 Custom_GE_ZinniaRoom 20 7 0/2400 Custom_GE_ZinniaRoom 16 6 3 gabriel_sleep",
+
+		"marriage_Sun": "900 BusStop 12 9 gabriel_invisible \"Strings\\schedules\\Gabriel:bus\"/1500 Town 17 57 1 gabriel_read_right \"Strings\\schedules\\Gabriel:marriage_reading\"/1730 BusStop -1 23 3",
+
+		},
+	    "When": {
+		"HasSeenEvent: anyPlayer |contains=8280012": "true",
+		},
+	},
+
+	//STRINGS
+	{
+		"Action": "EditData",
+		"Target": "Strings/schedules/Gabriel",
+		"Entries": {
+			"reading": "噢，抱歉，我现在没法聊天……#$b#我的重要研究正进行到一半。",
+			"asleep": "Zzz……$7#$b#%加布里埃尔入睡的速度很快……",
+			"rest": "我只是在稍微休息一会儿，很快就回去工作。",
+			"grocery": "噢，你好。我在进行每周的货物采购。",
+			"library": "我每周都会来一次图书馆，寻找用于调查研究的书籍。#$b#虽然这里的图书馆没有祖祖城的大，但也足够了。",
+			"bus": "%这是一辆巴士。",
+			"marriage_reading": "噢，你好，亲爱的！我正在小镇里读书。#$b#自从和你结婚以后，我比以前更喜欢户外活动了！$h",
+			"marriage_reading2": "嗨，亲爱的。我正在公会进行研究。别担心，我很快就回家！",
+			"marriage_reading3": "嗨，@！我正在寻找这周用于研究的书籍。要是你有空的话，来跟我一起读书吧！#$b#我很乐意跟你多呆一会儿……$l",
+			"marriage_grocery": "噢，亲爱的！我在进行每周的货物采购。#$b#我已经想好了一道美味的菜，可以做给你吃。$l",
+			"marriage_Gil": "嗨，吉尔！最近如何？#$b#真希望我能在这里多待一阵，但我很喜欢结婚后的生活！",
+			"marriage_Marlon": "嘿，亲爱的。我今天打算陪一会儿舅舅。#$b#我想要和家人保持亲密，你明白的吧？",
+			"marriage_nightmarket": "嗨，亲爱的！你打算先从哪里看起？#$b#也许我会买下那幅画，装饰在房子里……我们有完美的地方可以摆放它！$h",
+		},
+	},
+
+	]	
+}

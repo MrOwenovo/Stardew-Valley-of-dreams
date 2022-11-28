@@ -1,0 +1,535 @@
+{
+	"Format": "1.21.0",
+
+
+
+	
+	
+	"ConfigSchema": {
+		
+		
+		"Rings": {
+			"AllowValues": "amethyst, aquamarine, burglar, crabshell,  emerald, glow, glowstone, hotjava, immunityband, iridiumband, jade, jukebox, lucky, magnet, napalm, phoenix, protection, ruby, savage, slimecharmer, smallglow, smallmagnet, soulsapper, sturdy, thorns, topaz, vampire, warrior, wedding, yoba",
+			"AllowMultiple": true, 
+			"AllowBlank": true,
+			"Default": "amethyst, aquamarine, burglar, crabshell, emerald, glow, glowstone, hotjava, immunityband, iridiumband, jade, jukebox, lucky, magnet, napalm, phoenix, protection, ruby, savage, slimecharmer, smallglow, smallmagnet, soulsapper, sturdy, thorns, topaz, vampire, warrior, wedding, yoba"
+		},
+		
+		"Boots": {
+			"AllowValues": "cinderclown, combat, cowboy, crystal, dark, dragonscale, emilysmagic, firewalker, genie, leather, leprechaun, mermaid, rubber, sneakers, space, thermal, tundra, work",
+			"AllowMultiple": true, 
+			"AllowBlank": true,
+			"Default": "cinderclown, combat, cowboy, crystal, dark, dragonscale, emilysmagic, firewalker, genie, leather, leprechaun, mermaid, rubber, sneakers, space, thermal, tundra, work"
+		},
+		
+		
+		
+	},
+		
+	
+			
+			
+			
+			
+		
+		
+	"Changes": [
+	
+		{	
+			"LogName": "Eggplant",
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/boots/cinderclown.png",
+			"ToArea": { "X": 208, "Y": 560, "Width": 16, "Height": 16 },
+			"When": {
+				"Boots |contains=cinderclown": true }
+		},
+	
+	//boots
+	
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/boots/combat.png",
+			"When": { 
+				"Boots |contains=combat": true },
+			"ToArea":
+			{	"X": 64, "Y": 336, "Width": 16, "Height": 16}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/boots/cowboy.png",
+			"When": { 
+			"Boots |contains=cowboy": true },
+			"ToArea":
+			{	"X": 176, "Y": 336, "Width": 16, "Height": 16}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/boots/crystal.png",
+			"When": { 
+			"Boots |contains=crystal": true },
+			"ToArea":
+			{	"X": 224, "Y": 576, "Width": 16, "Height": 16}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/boots/dark.png",
+			"When": { 
+			"Boots |contains=dark": true },
+			"ToArea":
+			{	"X": 112, "Y": 336, "Width": 16, "Height": 16}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/boots/dragonscale.png",
+			"When": { 
+			"Boots |contains=dragonscale": true },
+			"ToArea":
+			{	"X": 240, "Y": 560, "Width": 16, "Height": 16}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/boots/emilysmagic.png",
+			"When": { 
+			"Boots |contains=emilysmagic": true },
+			"ToArea":
+			{	"X": 192, "Y": 528, "Width": 16, "Height": 16}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/boots/firewalker.png",
+			"When": { 
+			"Boots |contains=firewalker": true },
+			"ToArea":
+			{	"X": 128, "Y": 336, "Width": 16, "Height": 16}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/boots/genie.png",
+			"When": { 
+			"Boots |contains=genie": true },
+			"ToArea":
+			{	"X": 144, "Y": 336, "Width": 16, "Height": 16}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/boots/leather.png",
+			"When": { 
+			"Boots |contains=leather": true },
+			"ToArea":
+			{	"X": 32, "Y": 336, "Width": 16, "Height": 16}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/boots/leprechaun.png",
+			"When": { 
+			"Boots |contains=leprechaun": true },
+			"ToArea":
+			{	"X": 224, "Y": 528, "Width": 16, "Height": 16}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/boots/mermaid.png",
+			"When": { 
+			"Boots |contains=mermaid": true },
+			"ToArea":
+			{	"X": 224, "Y": 560, "Width": 16, "Height": 16}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/boots/rubber.png",
+			"When": { 
+			"Boots |contains=rubber": true },
+			"ToArea":
+			{	"X": 16, "Y": 336, "Width": 16, "Height": 16}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/boots/sneakers.png",
+			"When": { 
+			"Boots |contains=sneakers": true },
+			"ToArea":
+			{	"X": 0, "Y": 336, "Width": 16, "Height": 16}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/boots/space.png",
+			"When": { 
+			"Boots |contains=space": true },
+			"ToArea":
+			{	"X": 160, "Y": 336, "Width": 16, "Height": 16}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/boots/thermal.png",
+			"When": { 
+			"Boots |contains=thermal": true },
+			"ToArea":
+			{	"X": 96, "Y": 336, "Width": 16, "Height": 16}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/boots/tundra.png",
+			"When": { 
+			"Boots |contains=tundra": true },
+			"ToArea":
+			{	"X": 80, "Y": 336, "Width": 16, "Height": 16}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/boots/work.png",
+			"When": { 
+			"Boots |contains=work": true },
+			"ToArea":
+			{	"X": 48, "Y": 336, "Width": 16, "Height": 16},
+			
+			
+		},
+	
+	
+	//rings
+	
+	//{
+			//"Action": "EditImage",
+			//"Target": "Maps/springobjects",
+			//"FromFile": "assets/rings/amethyst.png",
+			//"ToArea":
+			//{		"X": 256, "Y": 576, "Width": 16, "Height": 16},
+			//"When": {
+			//	"Rings |contains=combined": true
+			//}
+	//	},
+		
+		
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/rings/amethyst.png",
+			"ToArea":
+			{	"X": 16, "Y": 352, "Width": 16, "Height": 16},
+			"When": {
+				"Rings |contains=amethyst": true
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/rings/aquamarine.png",
+			"ToArea":
+			{	"X": 48, "Y": 352, "Width": 16, "Height": 16},
+			"When": {
+				"Rings |contains=aquamarine": true
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/rings/burglar.png",
+			"ToArea":
+			{	"X": 352, "Y": 336, "Width": 16, "Height": 16},
+			"When": {
+				"Rings |contains=burglar": true
+			}
+		},
+		//{
+		//	"Action": "EditImage",
+			//"Target": "Maps/springobjects",
+			//"FromFile": "assets/rings/combined.png",
+			//"ToArea":
+			//{	"X": 256, "Y": 576, "Width": 16, "Height": 16},
+			//"When": {
+			//	"Combined Ring": "a"
+			//}
+			
+		//},
+		
+		
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/rings/crabshell.png",
+			"ToArea":
+			{	"X": 288, "Y": 528, "Width": 16, "Height": 16},
+			"When": {
+				"Rings |contains=crabshell": true
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/rings/emerald.png",
+			"ToArea":
+			{	"X": 80, "Y": 352, "Width": 16, "Height": 16},
+			"When": {
+				"Rings |contains=emerald": true
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/rings/glow.png",
+			"ToArea":
+			{	"X": 208, "Y": 336, "Width": 16, "Height": 16},
+			"When": {
+				"Rings |contains=glow": true
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/rings/glowstone.png",
+			"ToArea":
+			{	"X": 0, "Y": 592, "Width": 16, "Height": 16},
+			"When": {
+				"Rings |contains=glowstone": true
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/rings/hotjava.png",
+			"ToArea":
+			{	"X": 320, "Y": 560, "Width": 16, "Height": 16},
+			"When": {
+				"Rings |contains=hotjava": true
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/rings/immunityband.png",
+			"ToArea":
+			{	"X": 368, "Y": 576, "Width": 16, "Height": 16},
+			"When": {
+				"Rings |contains=immunityband": true
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/rings/iridiumband.png",
+			"ToArea":
+			{	"X": 368, "Y": 336, "Width": 16, "Height": 16},
+			"When": {
+				"Rings |contains=iridiumband": true
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/rings/jade.png",
+			"ToArea":
+			{	"X": 64, "Y": 352, "Width": 16, "Height": 16},
+			"When": {
+				"Rings |contains=jade": true
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/rings/jukebox.png",
+			"ToArea":
+			{	"X": 0, "Y": 352, "Width": 16, "Height": 16},
+			"When": {
+				"Rings |contains=jukebox": true
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/rings/lucky.png",
+			"ToArea":
+			{	"X": 304, "Y": 560, "Width": 16, "Height": 16},
+			"When": {
+				"Rings |contains=lucky": true
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/rings/magnet.png",
+			"ToArea":
+			{	"X": 240, "Y": 336, "Width": 16, "Height": 16},
+			"When": {
+				"Rings |contains=magnet": true
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/rings/napalm.png",
+			"ToArea":
+			{	"X": 304, "Y": 528, "Width": 16, "Height": 16},
+			"When": {
+				"Rings |contains=napalm": true
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/rings/phoenix.png",
+			"ToArea":
+			{	"X": 368, "Y": 560, "Width": 16, "Height": 16},
+			"When": {
+				"Rings |contains=phoenix": true
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/rings/protection.png",
+			"ToArea":
+			{	"X": 336, "Y": 560, "Width": 16, "Height": 16},
+			"When": {
+				"Rings |contains=protection": true
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/rings/ruby.png",
+			"ToArea":
+			{	"X": 96, "Y": 352, "Width": 16, "Height": 16},
+			"When": {
+				"Rings |contains=ruby": true
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/rings/savage.png",
+			"ToArea":
+			{	"X": 304, "Y": 336, "Width": 16, "Height": 16},
+			"When": {
+				"Rings |contains=savage": true
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/rings/slimecharmer.png",
+			"ToArea":
+			{	"X": 256, "Y": 336, "Width": 16, "Height": 16},
+			"When": {
+				"Rings |contains=slimecharmer": true
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/rings/smallglow.png",
+			"ToArea":
+			{	"X": 192, "Y": 336, "Width": 16, "Height": 16},
+			"When": {
+				"Rings |contains=smallglow": true
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/rings/smallmagnet.png",
+			"ToArea":
+			{	"X": 224, "Y": 336, "Width": 16, "Height": 16},
+			"When": {
+				"Rings |contains=smallmagnet": true
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/rings/soulsapper.png",
+			"ToArea":
+			{	"X": 352, "Y": 560, "Width": 16, "Height": 16},
+			"When": {
+				"Rings |contains=soulsapper": true
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/rings/sturdy.png",
+			"ToArea":
+			{	"X": 336, "Y": 336, "Width": 16, "Height": 16},
+			"When": {
+				"Rings |contains=sturdy": true
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/rings/thorns.png",
+			"ToArea":
+			{	"X": 368, "Y": 544, "Width": 16, "Height": 16},
+			"When": {
+				"Rings |contains=thorns": true
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/rings/topaz.png",
+			"ToArea":
+			{	"X": 32, "Y": 352, "Width": 16, "Height": 16},
+			"When": {
+				"Rings |contains=topaz": true
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/rings/vampire.png",
+			"ToArea":
+			{	"X": 288, "Y": 336, "Width": 16, "Height": 16},
+			"When": {
+				"Rings |contains=vampire": true
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/rings/warrior.png",
+			"ToArea":
+			{	"X": 272, "Y": 336, "Width": 16, "Height": 16},
+			"When": {
+				"Rings |contains=warrior": true
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/rings/wedding.png",
+			"ToArea":
+			{	"X": 144, "Y": 528, "Width": 16, "Height": 16},
+			"When": {
+				"Rings |contains=wedding": true
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/rings/yoba.png",
+			"ToArea":
+			{	"X": 320, "Y": 336, "Width": 16, "Height": 16},
+			"When": {
+				"Rings |contains=yoba": true
+			}
+		}
+	]
+}

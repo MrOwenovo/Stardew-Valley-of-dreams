@@ -1,0 +1,154 @@
+{
+	"$schema": "https://smapi.io/schemas/content-patcher.json",
+	"Changes": [
+		// Boarding House and Bus Stop Extension - https://www.nexusmods.com/stardewvalley/mods/4120
+		{
+			"LogName": "[Yagi] Boarding House and Bus Stop Extension - Sprite Offsets",
+			"Action": "EditData",
+			"Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+			"When": {
+				"HasMod: |contains=FTMBdHouse": true
+			},
+			"Entries": {
+				"Gregory": {
+					"MarkerCropOffset": -1
+				},
+				"Joel": {
+					"MarkerCropOffset": 0
+				},
+				"Sheila": {
+					"MarkerCropOffset": -1
+				},
+			}
+		},
+		{
+			"LogName": "[Yagi] Boarding House and Bus Stop Extension - Location Support",
+			"Action": "EditData",
+			"Target": "Mods/Bouhm.NPCMapLocations/Locations",
+			"When": {
+				"HasMod: |contains=FTMBdHouse": true
+			},
+			"Entries": {
+				// Boarding House and Bus Stop Extension - https://www.nexusmods.com/stardewvalley/mods/4120
+				// NPC Map Locations complains if any maps don't have a location.  Put a fake entry in to hide these for now.
+				"Custom_BoardingHouse_Ruins": {
+					"MapVectors": [
+						{
+							"TileX": 0,
+							"TileY": 0,
+							"MapX": 0,
+							"MapY": 0
+						},
+						{
+							"TileX": 0,
+							"TileY": 0,
+							"MapX": 0,
+							"MapY": 0
+						}
+					]
+				},
+				"Custom_BoardingHouse_Ruins_House1": {
+					"MapVectors": [
+						{
+							"TileX": 0,
+							"TileY": 0,
+							"MapX": 0,
+							"MapY": 0
+						},
+						{
+							"TileX": 0,
+							"TileY": 0,
+							"MapX": 0,
+							"MapY": 0
+						}
+					]
+				},
+				"Custom_BoardingHouse_Ruins_House2": {
+					"MapVectors": [
+						{
+							"TileX": 0,
+							"TileY": 0,
+							"MapX": 0,
+							"MapY": 0
+						},
+						{
+							"TileX": 0,
+							"TileY": 0,
+							"MapX": 0,
+							"MapY": 0
+						}
+					]
+				},
+				"Custom_BoardingHouse_BackwoodsPlateau": {
+					"MapVectors": [
+						{
+							"TileX": 0,
+							"TileY": 0,
+							"MapX": 419,
+							"MapY": 82
+						},
+						{
+							"TileX": 59,
+							"TileY": 26,
+							"MapX": 581,
+							"MapY": 144
+						}
+					]
+				},
+				"Custom_BoardingHouse_TheLostValley": {
+					"MapVectors": [
+						{
+							"MapX": 506,
+							"MapY": 90
+						}
+					],
+					"MapTooltip": {
+						"X": 506,
+						"Y": 90,
+						"Width": 18,
+						"Height": 13,
+						"PrimaryText": "Lost Valley"
+					}
+				},
+				"Custom_BoardingHouse_GregoryTent": {
+					"MapVectors": [
+						{
+							"MapX": 506,
+							"MapY": 90
+						}
+					]
+				},
+				"Custom_BoardingHouse_BuffalosRanch": {
+					"MapVectors": [
+						{
+							"MapX": 438,
+							"MapY": 93
+						}
+					],
+					"MapTooltip": {
+						"X": 438,
+						"Y": 93,
+						"Width": 38,
+						"Height": 22,
+						"PrimaryText": "Buffalo Ranch"
+					}
+				},
+				"Custom_BoardingHouse_BoardingHouse": {
+					"MapVectors": [
+						{
+							"MapX": 525,
+							"MapY": 93
+						}
+					],
+					"MapTooltip": {
+						"X": 525,
+						"Y": 93,
+						"Width": 18,
+						"Height": 13,
+						"PrimaryText": "Boarding House"
+					}
+				}
+			}
+		},
+	]
+}

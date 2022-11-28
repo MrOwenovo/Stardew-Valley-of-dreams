@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.5" orientation="orthogonal" renderorder="right-down" width="6" height="9" tilewidth="16" tileheight="16" infinite="0" nextlayerid="18" nextobjectid="28">
+ <tileset firstgid="1" name="lemurfurniture" tilewidth="16" tileheight="16" tilecount="2624" columns="32">
+  <image source="lemurfurniture.png" width="512" height="1312"/>
+ </tileset>
+ <tileset firstgid="2625" name="townInterior" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="townInterior.png" width="512" height="1088"/>
+ </tileset>
+ <tileset firstgid="4801" name="z_MateoCustom" tilewidth="16" tileheight="16" tilecount="36" columns="6">
+  <image source="MateoCustom.png" width="105" height="105"/>
+ </tileset>
+ <tileset firstgid="4837" name="z_himefurniture" tilewidth="16" tileheight="16" tilecount="592" columns="16">
+  <image source="z_himefurniture.png" width="256" height="592"/>
+ </tileset>
+ <tileset firstgid="5429" name="paths" tilewidth="16" tileheight="16" tilecount="36" columns="4">
+  <image source="paths.png" width="64" height="144"/>
+ </tileset>
+ <tileset firstgid="5465" name="z_MateoSpouse" tilewidth="16" tileheight="16" tilecount="36" columns="6">
+  <image source="MateoSpouse.png" width="105" height="105"/>
+ </tileset>
+ <tileset firstgid="5501" name="CAGCustom" tilewidth="16" tileheight="16" tilecount="36" columns="6">
+  <image source="CAGCustom.png" width="105" height="105"/>
+ </tileset>
+ <tileset firstgid="5537" name="thefrenchdodo-tilesheet-books" tilewidth="16" tileheight="16" tilecount="50" columns="10">
+  <image source="thefrenchdodo-tilesheet-books.png" width="160" height="80"/>
+ </tileset>
+ <tileset firstgid="5587" source="MateoCustom.tsx"/>
+ <layer id="1" name="Back" width="6" height="9">
+  <data encoding="csv">
+2659,2659,2659,2659,2659,2659,
+2691,2691,2691,2691,2691,2691,
+2723,2723,2723,2723,2723,2723,
+3199,3200,3199,3200,3199,3200,
+3231,3232,3231,3232,3231,3232,
+3263,3264,3263,3264,3263,3264,
+3231,3232,3231,3232,3231,3232,
+3263,3264,3264,3264,3263,3264,
+3231,3232,3231,3232,3231,3232
+</data>
+ </layer>
+ <layer id="14" name="Back 2" width="6" height="9">
+  <data encoding="csv">
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,5047,5048,0,0,0,
+2489,2490,2491,0,0,0,
+2521,2522,2523,0,0,0,
+0,0,0,0,0,0,
+4829,0,0,0,0,0,
+0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="2" name="Buildings" width="6" height="9">
+  <data encoding="csv">
+0,0,0,0,0,3381,
+0,3204,3205,0,0,0,
+0,3236,3237,3283,3284,3285,
+5471,3268,3269,3315,3316,3317,
+0,5472,5473,3347,3348,3349,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,3361,
+5621,5622,3204,3265,3265,3205
+</data>
+ </layer>
+ <layer id="17" name="Buildings2" width="6" height="9">
+  <data encoding="csv">
+0,0,0,0,0,0,
+0,5577,5497,0,0,0,
+0,0,0,0,0,0,
+0,5466,5467,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,5618,
+5488,0,5495,5505,5506,5567
+</data>
+ </layer>
+ <layer id="12" name="Paths" width="6" height="9">
+  <data encoding="csv">
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,5436,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="3" name="Front" width="6" height="9">
+  <data encoding="csv">
+2881,3345,3346,3219,3220,0,
+2913,0,0,3251,3252,5494,
+4801,0,0,5474,5475,5476,
+0,0,0,5480,5481,5483,
+0,0,0,0,0,0,
+0,0,5478,0,0,0,
+0,0,0,0,0,5612,
+5482,5616,5489,3114,0,0,
+0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="4" name="AlwaysFront" width="6" height="9">
+  <data encoding="csv">
+0,0,5491,0,0,0,
+0,0,0,5469,5470,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="6" name="Back"/>
+ <objectgroup id="7" name="Buildings">
+  <object id="21" name="TileData" x="64" y="64" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message AcademicSpace"/>
+   </properties>
+  </object>
+  <object id="22" name="TileData" x="0" y="48" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message NotPapyrus "/>
+   </properties>
+  </object>
+  <object id="23" name="TileData" x="64" y="128" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message VoidCreatures"/>
+   </properties>
+  </object>
+  <object id="24" name="TileData" x="32" y="128" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message GhostRadio "/>
+   </properties>
+  </object>
+  <object id="25" name="TileData" x="0" y="128" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message NotFlowey"/>
+   </properties>
+  </object>
+  <object id="26" name="TileData" x="80" y="112" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message FairyRoses"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="13" name="Paths"/>
+ <objectgroup id="8" name="Front"/>
+ <objectgroup id="9" name="AlwaysFront"/>
+</map>

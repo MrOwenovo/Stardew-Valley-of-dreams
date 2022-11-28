@@ -1,0 +1,2036 @@
+{
+//	"Format": "1.23.0",
+
+	"Changes": [
+
+	{
+		"LogName": "Adds wild armadillos in the desert",
+		"Action": "EditMap",
+		"Target": "Maps/Desert",
+		"MapTiles": [
+            {
+               "Position": { "X": 8, "Y": 27 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 1, 2}} SmolHooman.WildAnimalsCC.Armadillo"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Armadillos": "true",
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds wild badgers in the forest",
+		"Action": "EditMap",
+		"Target": "Maps/Forest",
+		"MapTiles": [
+            {
+               "Position": { "X": 10, "Y": 12 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2}} SmolHooman.WildAnimalsCC.Badger"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Badgers": "true",
+			"Weather": "Sun, Wind",
+			"Time": "{{Range: 1800, 2600}}",
+			"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds a wild bear in the woods",
+		"Action": "EditMap",
+		"Target": "Maps/Woods",
+		"MapTiles": [
+            {
+               "Position": { "X": 35, "Y": 15 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1}} SmolHooman.WildAnimalsCC.Bear"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Bears": "true",
+			"Weather": "Sun, Wind",			
+			"Season": "Spring, Summer, Fall",
+			"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds wild beavers in the Woods",
+		"Action": "EditMap",
+		"Target": "Maps/Woods",
+		"MapTiles": [
+            {
+               "Position": { "X": 6, "Y": 17 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.Beaver"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Beavers": "true",
+			"HasMod |contains=Rafseazz.RidgesideVillage": false,
+			"Weather": "Rain, Sun, Wind",
+			"Season": "Spring, Summer, Fall",
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds wild boars in the east of the island",
+		"Action": "EditMap",
+		"Target": "Maps/Island_E",
+		"MapTiles": [
+            {
+               "Position": { "X": 22, "Y": 37 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 1, 2}} SmolHooman.WildAnimalsCC.Boar"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Boars": "true",	
+			"Weather": "Sun, Wind, Rain",	
+			"Time": "{{Range: 0600, 1800}}",
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds wild bobcats in the forest",
+		"Action": "EditMap",
+		"Target": "Maps/Forest",
+		"MapTiles": [
+            {
+               "Position": { "X": 18, "Y": 82 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 1, 2}} SmolHooman.WildAnimalsCC.Bobcat"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Bobcats": "true",
+			"Weather": "Snow, Sun, Wind",
+			"Time": "{{Range: 1800, 2600}}",
+			"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+			},
+		"Update": "OnLocationChange"
+	},	
+
+	{
+		"LogName": "Adds a wild chinchilla in the mountains",
+		"Action": "EditMap",
+		"Target": "Maps/Mountain",
+		"MapTiles": [
+            {
+               "Position": { "X": 25, "Y": 8 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 1 SmolHooman.WildAnimalsCC.Chinchilla"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Chinchilla": "true",		
+			"Weather": "Sun, Wind",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Adds a wild chinchilla in Linus' tent",
+		"Action": "EditMap",
+		"Target": "Maps/Tent",
+		"MapTiles": [
+            {
+               "Position": { "X": 3, "Y": 3 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 1 SmolHooman.WildAnimalsCC.Chinchilla"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Chinchilla": "true",		
+			"Weather": "Rain, Storm, Snow",
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds wild chipmunks in the town",
+		"Action": "EditMap",
+		"Target": "Maps/Town",
+		"MapTiles": [
+            {
+               "Position": { "X": 92, "Y": 94 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.Chipmunk"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Chipmunks": "true",		
+			"Weather": "Sun, Wind",
+			"Season": "Spring, Summer, Fall",
+			"Time": "{{Range: 0600, 1800}}",
+			"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Adds a wild chipmunk in the Vincent's room",
+		"Action": "EditMap",
+		"Target": "Maps/SamHouse",
+		"MapTiles": [
+            {
+               "Position": { "X": 11, "Y": 22 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 0, 1}} SmolHooman.WildAnimalsCC.Chipmunk"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Chipmunks": "true",		
+			"Weather": "Storm",
+			"Season": "Spring, Summer, Fall",
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds wild coyotes on the desert",
+		"Action": "EditMap",
+		"Target": "Maps/Desert",
+		"MapTiles": [
+            {
+               "Position": { "X": 15, "Y": 43 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 1, 2, 3}} SmolHooman.WildAnimalsCC.Coyote"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Coyotes": "true",
+			"Time": "{{Range: 1800, 2600}}",
+			"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds wild crabs in beach",
+		"Action": "EditMap",
+		"Target": "Maps/Beach",
+		"MapTiles": [
+            {
+               "Position": { "X": 53, "Y": 16 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.Crab"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Crabs": "true",
+			"Season": "Spring, Summer, Fall",
+			"Weather": "Sun, Wind, Rain",
+			"HasMod |contains=SmolHooman.BeachCrabsAndSnailsSpawns": false,
+			"HasMod |contains=SmolHooman.BeachCrabsSpawns": false,
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Add a crab in Elliot's house",
+		"Action": "EditMap",
+		"Target": "Maps/ElliottHouse",
+		"MapTiles": [
+            {
+               "Position": { "X": 5, "Y": 5 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 0, 1}} SmolHooman.WildAnimalsCC.Crab"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Crabs": "true",
+			"Season": "Spring, Summer, Fall",
+			"HasMod |contains=SmolHooman.BeachCrabsAndSnailsSpawns": false,
+			"HasMod |contains=SmolHooman.BeachCrabsSpawns": false,
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Adds wild crabs in south of the island",
+		"Action": "EditMap",
+		"Target": "Maps/Island_S",
+		"MapTiles": [
+            {
+               "Position": { "X": 36, "Y": 30 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.Crab"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Crabs": "true",
+			"Weather": "Sun, Wind, Rain",
+			"HasMod |contains=SmolHooman.BeachCrabsAndSnailsSpawns": false,
+			"HasMod |contains=SmolHooman.BeachCrabsSpawns": false,
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Adds wild crabs in southeast of the island",
+		"Action": "EditMap",
+		"Target": "Maps/Island_SE",
+		"MapTiles": [
+            {
+               "Position": { "X": 22, "Y": 27 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 1, 2, 3}} SmolHooman.WildAnimalsCC.Crab"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Crabs": "true",
+			"Weather": "Sun, Wind, Rain",
+			"HasMod |contains=SmolHooman.BeachCrabsAndSnailsSpawns": false,
+			"HasMod |contains=SmolHooman.BeachCrabsSpawns": false,
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Adds wild crabs in west of the island",
+		"Action": "EditMap",
+		"Target": "Maps/Island_W",
+		"MapTiles": [
+            {
+               "Position": { "X": 32, "Y": 85 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.Crab"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Crabs": "true",
+			"Weather": "Sun, Wind, Rain",
+			"HasMod |contains=SmolHooman.BeachCrabsAndSnailsSpawns": false,
+			"HasMod |contains=SmolHooman.BeachCrabsSpawns": false,
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds wild crows in town",
+		"Action": "EditMap",
+		"Target": "Maps/Town",
+		"MapTiles": [
+            {
+               "Position": { "X": 43, "Y": 87 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.Crow"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Crows": "true",
+			"Time": "{{Range: 1800, 2600}}",
+			"Weather": "Sun, Wind",
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds wild deers in the forest",
+		"Action": "EditMap",
+		"Target": "Maps/Forest",
+		"MapTiles": [
+            {
+               "Position": { "X": 14, "Y": 82 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1}} SmolHooman.WildAnimalsCC.Buck"
+               },
+            },
+            {
+               "Position": { "X": 13, "Y": 84 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 1 SmolHooman.WildAnimalsCC.Doe"
+               },
+            },
+            {
+               "Position": { "X": 15, "Y": 81 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 1 SmolHooman.WildAnimalsCC.Fawn"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Deers": "true",
+			"Weather": "Snow, Sun, Wind",
+			"Time": "{{Range: 0600, 1800}}",
+			"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds wild ducks in the forest's lake",
+		"Action": "EditMap",
+		"Target": "Maps/Forest",
+		"MapTiles": [
+            {
+               "Position": { "X": 35, "Y": 33 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 1, 2, 3}} SmolHooman.WildAnimalsCC.DuckMale"
+               },
+            },
+            {
+               "Position": { "X": 32, "Y": 30 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 1, 2, 3}} SmolHooman.WildAnimalsCC.DuckFemale"
+               },
+            },
+            {
+               "Position": { "X": 37, "Y": 33 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 3}} SmolHooman.WildAnimalsCC.Duckling"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Ducks": "true",
+			"Weather": "Rain, Sun, Wind",
+			"Season": "Spring, Summer, Fall",
+			"Time": "{{Range: 0600, 1800}}",
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds wild fennec foxes on the desert",
+		"Action": "EditMap",
+		"Target": "Maps/Desert",
+		"MapTiles": [
+            {
+               "Position": { "X": 23, "Y": 21 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.FennecFox"
+               },
+            },
+            {
+               "Position": { "X": 26, "Y": 9 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 2 SmolHooman.WildAnimalsCC.FennecFox"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Fennec Foxes": "true",
+			"Time": "{{Range: 1800, 2600}}",
+			"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds wild foxes in the forest",
+		"Action": "EditMap",
+		"Target": "Maps/Forest",
+		"MapTiles": [
+            {
+               "Position": { "X": 45, "Y": 49 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2}} SmolHooman.WildAnimalsCC.{{Random: FoxRed, FoxRed, FoxPlatinum, ArcticFox_{{season}}}}"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Foxes": "true",
+			"Weather": "Snow, Sun, Wind",
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds frogs in Sebastian's room",
+		"Action": "EditMap",
+		"Target": "Maps/SebastianRoom",
+		"MapTiles": [
+            {		
+               "Position": { "X": 5, "Y": 6 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 0, 0, 1, 2}} SmolHooman.WildAnimalsCC.{{Random: FrogBrown, FrogGreen, FrogYellow}}"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Frogs": "true",		
+			"Weather": "Rain, Storm",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Adds wild frogs in the forest",
+		"Action": "EditMap",
+		"Target": "Maps/Forest",
+		"MapTiles": [
+            {		
+               "Position": { "X": 32, "Y": 61 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 1, 2, 3}} SmolHooman.WildAnimalsCC.{{Random: FrogBrown, FrogGreen, FrogYellow}}"
+               },
+            },
+            {
+               "Position": { "X": 96, "Y": 54 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 1, 2}} SmolHooman.WildAnimalsCC.{{Random: FrogBrown, FrogGreen, FrogYellow}}"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Frogs": "true",		
+			"Weather": "Rain, Storm",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Adds wild frogs in the mountain",
+		"Action": "EditMap",
+		"Target": "Maps/Mountain",
+		"MapTiles": [
+            {
+               "Position": { "X": 48, "Y": 32 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 1, 2, 3}} SmolHooman.WildAnimalsCC.{{Random: FrogBrown, FrogGreen, FrogYellow}}"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Frogs": "true",		
+			"Weather": "Rain, Storm",
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds wild geese in the town's river",
+		"Action": "EditMap",
+		"Target": "Maps/Town",
+		"MapTiles": [
+            {
+               "Position": { "X": 81, "Y": 63 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.{{Random: GooseCanadian, GooseWhite}}"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Geese": "true",
+			"Weather": "Rain, Sun, Wind",
+			"Season": "Spring, Summer, Fall",
+			"Time": "{{Range: 0600, 1800}}",
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds wild gembirds on the beach",
+		"Action": "EditMap",
+		"Target": "Maps/Beach",
+		"MapTiles": [
+            {
+               "Position": { "X": 11, "Y": 19 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 0, 1, 2}} SmolHooman.WildAnimalsCC.GemBird"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Gembirds": "true",
+			"Time": "{{Range: 0600, 1800}}",
+			"Weather": "Rain, Wind",
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds wild hedgehogs in the forest",
+		"Action": "EditMap",
+		"Target": "Maps/Forest",
+		"MapTiles": [
+            {
+               "Position": { "X": 74, "Y": 41 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2}} SmolHooman.WildAnimalsCC.Hedgehog"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Hedgehogs": "true",
+			"Weather": "Sun, Wind",
+			"Time": "{{Range: 1800, 2600}}",			
+			"Season": "Spring, Summer, Fall",			
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds wild horses in the forest",
+		"Action": "EditMap",
+		"Target": "Maps/Forest",
+		"MapTiles": [
+            {
+               "Position": { "X": 69, "Y": 24 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1}} SmolHooman.WildAnimalsCC.{{Random: Horse1, Horse2, Horse3, Horse4, Horse5}}"
+               },
+            },
+            {
+               "Position": { "X": 73, "Y": 21 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1}} SmolHooman.WildAnimalsCC.{{Random: Horse1, Horse2, Horse3, Horse4, Horse5}}"
+               },
+            },
+            {
+               "Position": { "X": 71, "Y": 22 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1}} SmolHooman.WildAnimalsCC.{{Random: Horse1, Horse2, Horse3, Horse4, Horse5}}"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Horses": "true",
+			"Weather": "Sun, Wind",
+			"Time": "{{Range: 0600, 1800}}",	
+			"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,			
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds wild lemurs in the west of the island",
+		"Action": "EditMap",
+		"Target": "Maps/Island_W",
+		"MapTiles": [
+            {
+               "Position": { "X": 37, "Y": 28 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 2, 3}} SmolHooman.WildAnimalsCC.Lemur"
+               },
+            },
+            {
+               "Position": { "X": 37, "Y": 30 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2}} SmolHooman.WildAnimalsCC.Lemur"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Lemurs": "true",
+			"Time": "{{Range: 0600, 1800}}",
+			"Weather": "Sun, Wind",
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds wild meerkats on the desert",
+		"Action": "EditMap",
+		"Target": "Maps/Desert",
+		"MapTiles": [
+            {
+               "Position": { "X": 33, "Y": 45 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 2 SmolHooman.WildAnimalsCC.Meerkat"
+               },
+            },
+            {
+               "Position": { "X": 42, "Y": 45 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 1, 2, 3}} SmolHooman.WildAnimalsCC.Meerkat"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Meerkats": "true",
+			"Time": "{{Range: 0600, 1800}}",
+			"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds wild mice in the town",
+		"Action": "EditMap",
+		"Target": "Maps/Town",
+		"MapTiles": [
+            {
+               "Position": { "X": 48, "Y": 22 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2}} SmolHooman.WildAnimalsCC.{{Random: MouseBlack, MouseBrown, MouseGray}}"
+               },
+            },
+            {
+               "Position": { "X": 106, "Y": 53 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2}} SmolHooman.WildAnimalsCC.{{Random: MouseBlack, MouseBrown, MouseGray}}"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Mice": "true",
+			"Time": "{{Range: 1800, 2600}}",	
+			"Weather": "Sun, Wind, Rain, Snow",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Adds wild mice in the empty community center",
+		"Action": "EditMap",
+		"Target": "Maps/CommunityCenter_Ruins",
+		"MapTiles": [
+            {
+               "Position": { "X": 26, "Y": 18 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.{{Random: MouseBlack, MouseBrown, MouseGray}}"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Mice": "true",
+			"IsCommunityCenterComplete": "false",
+			"IsJojaMartComplete": "false",
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds wild monkeys on the north of the island",
+		"Action": "EditMap",
+		"Target": "Maps/Island_N",
+		"MapTiles": [
+            {
+               "Position": { "X": 27, "Y": 76 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.Monkey"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Monkeys": "true",
+			"Weather": "Sun, Wind",
+			"Time": "{{Range: 0600, 1800}}",
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds moonlight jellies in the west of the island's waters",
+		"Action": "EditMap",
+		"Target": "Maps/Island_W",
+		"MapTiles": [
+            {
+               "Position": { "X": 82, "Y": 98 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 5 SmolHooman.WildAnimalsCC.MoonlightJelly"
+               },
+            },
+            {
+               "Position": { "X": 12, "Y": 86 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 5 SmolHooman.WildAnimalsCC.MoonlightJelly"
+               },
+            },
+            {
+               "Position": { "X": 62, "Y": 101 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 3 SmolHooman.WildAnimalsCC.MoonlightJellySmall"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild MoonlightJellies": "true",	
+			"Season": "Spring",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Adds moonlight jellies in the south of the island's waters",
+		"Action": "EditMap",
+		"Target": "Maps/Island_S",
+		"MapTiles": [
+            {
+               "Position": { "X": 8, "Y": 51 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 5 SmolHooman.WildAnimalsCC.MoonlightJelly"
+               },
+            },
+            {
+               "Position": { "X": 36, "Y": 54 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 3 SmolHooman.WildAnimalsCC.MoonlightJellySmall"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild MoonlightJellies": "true",	
+			"Season": "Spring",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Adds moonlight jellies in the southeast of the island's waters",
+		"Action": "EditMap",
+		"Target": "Maps/Island_SE",
+		"MapTiles": [
+            {
+               "Position": { "X": 38, "Y": 34 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 5 SmolHooman.WildAnimalsCC.MoonlightJelly"
+               },
+            },
+            {
+               "Position": { "X": 25, "Y": 36 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 3 SmolHooman.WildAnimalsCC.MoonlightJellySmall"
+               },
+            },
+            {
+               "Position": { "X": 26, "Y": 54 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1}} SmolHooman.WildAnimalsCC.MoonlightJellyGreen"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild MoonlightJellies": "true",	
+			"Season": "Spring",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Adds moonlight jellies in the west of the island's waters",
+		"Action": "EditMap",
+		"Target": "Maps/Island_W",
+		"MapTiles": [
+            {
+               "Position": { "X": 82, "Y": 98 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 5 SmolHooman.WildAnimalsCC.MoonlightJelly"
+               },
+            },
+            {
+               "Position": { "X": 12, "Y": 86 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 5 SmolHooman.WildAnimalsCC.MoonlightJelly"
+               },
+            },
+            {
+               "Position": { "X": 13, "Y": 52 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 5 SmolHooman.WildAnimalsCC.MoonlightJelly"
+               },
+            },
+            {
+               "Position": { "X": 49, "Y": 100 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 5 SmolHooman.WildAnimalsCC.MoonlightJelly"
+               },
+            },
+            {
+               "Position": { "X": 9, "Y": 20 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 5 SmolHooman.WildAnimalsCC.MoonlightJelly"
+               },
+            },
+            {
+               "Position": { "X": 62, "Y": 101 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 5 SmolHooman.WildAnimalsCC.MoonlightJellySmall"
+               },
+            },
+            {
+               "Position": { "X": 58, "Y": 104 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 5 SmolHooman.WildAnimalsCC.MoonlightJellySmall"
+               },
+            },
+            {
+               "Position": { "X": 9, "Y": 41 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 3 SmolHooman.WildAnimalsCC.MoonlightJellySmall"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild MoonlightJellies": "true",	
+			"Season": "Summer",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Adds moonlight jellies in the south of the island's waters",
+		"Action": "EditMap",
+		"Target": "Maps/Island_S",
+		"MapTiles": [
+            {
+               "Position": { "X": 8, "Y": 51 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 5 SmolHooman.WildAnimalsCC.MoonlightJelly"
+               },
+            },
+            {
+               "Position": { "X": 9, "Y": 43 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 5 SmolHooman.WildAnimalsCC.MoonlightJelly"
+               },
+            },
+            {
+               "Position": { "X": 36, "Y": 54 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 5 SmolHooman.WildAnimalsCC.MoonlightJellySmall"
+               },
+            },
+            {
+               "Position": { "X": 12, "Y": 54 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 3 SmolHooman.WildAnimalsCC.MoonlightJellySmall"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild MoonlightJellies": "true",	
+			"Season": "Summer",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Adds moonlight jellies in the southeast of the island's waters",
+		"Action": "EditMap",
+		"Target": "Maps/Island_SE",
+		"MapTiles": [
+            {
+               "Position": { "X": 38, "Y": 34 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 5 SmolHooman.WildAnimalsCC.MoonlightJelly"
+               },
+            },
+            {
+               "Position": { "X": 25, "Y": 38 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 5 SmolHooman.WildAnimalsCC.MoonlightJelly"
+               },
+            },
+            {
+               "Position": { "X": 25, "Y": 36 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 5 SmolHooman.WildAnimalsCC.MoonlightJellySmall"
+               },
+            },
+            {
+               "Position": { "X": 28, "Y": 52 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 3 SmolHooman.WildAnimalsCC.MoonlightJellySmall"
+               },
+            },
+            {
+               "Position": { "X": 26, "Y": 54 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1}} SmolHooman.WildAnimalsCC.MoonlightJellyGreen"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild MoonlightJellies": "true",	
+			"Season": "Summer",
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds wild opossums in the backwoods",
+		"Action": "EditMap",
+		"Target": "Maps/Backwoods",
+		"MapTiles": [
+            {
+               "Position": { "X": 23, "Y": 14 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.{{Random: Opossum, Opossum, Opossum+Joeys}}"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Opossums": "true",		
+			"Season": "Spring, Summer, Fall",
+			"Weather": "Sun, Wind",
+			"Time": "{{Range: 1800, 2600}}",
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds wild ostriches in the north of the island",
+		"Action": "EditMap",
+		"Target": "Maps/Island_N",
+		"MapTiles": [
+            {
+               "Position": { "X": 30, "Y": 25 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 2 SmolHooman.WildAnimalsCC.Ostrich"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Ostriches": "true",		
+			"Weather": "Sun, Wind",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Adds a wild baby ostrich in the north of the island",
+		"Action": "EditMap",
+		"Target": "Maps/Island_N",
+		"MapTiles": [
+            {
+               "Position": { "X": 28, "Y": 23 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 1 SmolHooman.WildAnimalsCC.BabyOstrich"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Ostriches": "true",		
+			"Weather": "Sun, Wind",
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds wild owls on the mountain (no Snowy owls)",
+		"Action": "EditMap",
+		"Target": "Maps/Mountain",
+		"MapTiles": [
+            {
+               "Position": { "X": 8, "Y": 34 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2}} SmolHooman.WildAnimalsCC.{{Random: OwlHorned, OwlBarn}}"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Owls": "true",
+			"Season": "Spring, Summer, Fall",
+			"Time": "{{Range: 1800, 2600}}",
+			"Weather": "Sun, Wind",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Adds wild owls on the mountain",
+		"Action": "EditMap",
+		"Target": "Maps/Mountain",
+		"MapTiles": [
+            {
+               "Position": { "X": 8, "Y": 34 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2}} SmolHooman.WildAnimalsCC.{{Random: OwlHorned, OwlBarn, OwlSnowy}}"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Owls": "true",
+			"Season": "Winter",
+			"Time": "{{Range: 1800, 2600}}",
+			"Weather": "Sun",
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds wild peacocks in the north of the island",
+		"Action": "EditMap",
+		"Target": "Maps/Island_N",
+		"MapTiles": [
+            {
+               "Position": { "X": 60, "Y": 60 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 1 SmolHooman.WildAnimalsCC.Peacock"
+               },
+            },
+            {
+               "Position": { "X": 62, "Y": 61 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 1, 2}} SmolHooman.WildAnimalsCC.Peahen"
+               },
+            },
+            {
+               "Position": { "X": 59, "Y": 59 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 3}} SmolHooman.WildAnimalsCC.BrownChick"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Peafowls": "true",		
+			"Weather": "Sun, Wind",
+			"Time": "{{Range: 0600, 1800}}",
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds wild pelicans and seagulls on the beach",
+		"Action": "EditMap",
+		"Target": "Maps/Beach",
+		"MapTiles": [
+            {
+               "Position": { "X": 38, "Y": 10 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 0, 1, 2}} SmolHooman.WildAnimalsCC.{{Random: Seagull, Pelican, PelicanPouch}}"
+               },
+            },
+            {
+               "Position": { "X": 88, "Y": 21 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.{{Random: Seagull, Pelican, PelicanPouch}}"
+               },
+            },
+            {
+               "Position": { "X": 60, "Y": 30 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2, 3, 4, 5}} SmolHooman.WildAnimalsCC.{{Random: SeagullSwim, PelicanSwim, PelicanPouchSwim}}"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Pelicans + Seagulls": "true",
+			"Weather": "Rain, Sun, Wind",
+			"Time": "{{Range: 0600, 1800}}",
+			"Season": "Spring, Summer, Fall",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Adds wild pelicans and seagulls in the town's river",
+		"Action": "EditMap",
+		"Target": "Maps/Town",
+		"MapTiles": [
+            {
+               "Position": { "X": 43, "Y": 106 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.{{Random: SeagullSwim, PelicanSwim, PelicanPouchSwim}}"
+               },
+            },
+            {
+               "Position": { "X": 66, "Y": 104 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.{{Random: SeagullSwim, PelicanSwim, PelicanPouchSwim}}"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Pelicans + Seagulls": "true",
+			"Weather": "Rain, Sun, Wind",
+			"Time": "{{Range: 0600, 1800}}",
+			"Season": "Spring, Summer, Fall",
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds a wild pine marten in the forest",
+		"Action": "EditMap",
+		"Target": "Maps/Forest",
+		"MapTiles": [
+            {
+               "Position": { "X": 99, "Y": 91 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 1, 2}} SmolHooman.WildAnimalsCC.PineMarten"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Pine Martens": "true",
+			"Weather": "Snow, Sun, Wind",
+			"Time": "{{Range: 1800, 2600}}",
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds wild platypuses in the forest",
+		"Action": "EditMap",
+		"Target": "Maps/Forest",
+		"MapTiles": [
+            {
+               "Position": { "X": 47, "Y": 78 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2}} SmolHooman.WildAnimalsCC.Platypus"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Platypuses": "true",
+			"Weather": "Rain, Wind",
+			"Season": "Spring, Summer, Fall",				
+			"Time": "{{Range: 0600, 1800}}",
+			"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Adds wild platypuses in the forest's lake",
+		"Action": "EditMap",
+		"Target": "Maps/Forest",
+		"MapTiles": [
+            {
+               "Position": { "X": 30, "Y": 75 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2}} SmolHooman.WildAnimalsCC.PlatypusSwim"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Platypuses": "true",
+			"Weather": "Rain, Sun, Wind",
+			"Season": "Spring, Summer, Fall",					
+			"Time": "{{Range: 1800, 2600}}",
+			"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds wild quails in the backwoods",
+		"Action": "EditMap",
+		"Target": "Maps/Backwoods",
+		"MapTiles": [
+            {
+               "Position": { "X": 22, "Y": 14 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 1 SmolHooman.WildAnimalsCC.QuailFemale"
+               },
+            },
+            {
+               "Position": { "X": 24, "Y": 14 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1}} SmolHooman.WildAnimalsCC.QuailMale"
+               },
+            },
+            {
+               "Position": { "X": 25, "Y": 14 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 3 SmolHooman.WildAnimalsCC.BrownChick"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Quails": "true",
+			"HasMod |contains=Rafseazz.RidgesideVillage": false,
+			"Weather": "Sun, Wind",
+			"Time": "{{Range: 0600, 1800}}",
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds wild rabbits in the forest",
+		"Action": "EditMap",
+		"Target": "Maps/Forest",
+		"MapTiles": [
+            {
+               "Position": { "X": 13, "Y": 18 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.{{Random: SnowshoeHare_{{season}}, RabbitBrown, RabbitGray, RabbitWhite}}"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Rabbits": "true",
+			"Weather": "Snow, Sun, Wind",
+			"Time": "{{Range: 0600, 1800}}",
+			"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds wild raccoons in the forest",
+		"Action": "EditMap",
+		"Target": "Maps/Forest",
+		"MapTiles": [
+            {
+               "Position": { "X": 97, "Y": 84 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 1, 2}} SmolHooman.WildAnimalsCC.{{Random: RaccoonGray, RaccoonGray, RaccoonBrown, RaccoonGrayBrown}}"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Raccoons": "true",
+			"Weather": "Sun, Wind",
+			"Time": "{{Range: 0600, 1800}}",		
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Adds wild raccoons in the town",
+		"Action": "EditMap",
+		"Target": "Maps/Town",
+		"MapTiles": [
+            {
+               "Position": { "X": 59, "Y": 66 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2}} SmolHooman.WildAnimalsCC.{{Random: RaccoonGray, RaccoonGray, RaccoonBrown, RaccoonGrayBrown}}"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Raccoons": "true",		
+			"Weather": "Sun, Wind, Rain",
+			"Time": "{{Range: 1800, 2600}}",		
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds wild red squirrels in the mountains",
+		"Action": "EditMap",
+		"Target": "Maps/Mountain",
+		"MapTiles": [
+            {
+               "Position": { "X": 40, "Y": 30 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.RedSquirrel_{{season}}"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Squirrels": "true",
+			"Weather": "Snow, Sun, Wind",
+			"Time": "{{Range: 0600, 1800}}",
+			"HasMod |contains=Rafseazz.RidgesideVillage": false,
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds wild river otters in the forest's river",
+		"Action": "EditMap",
+		"Target": "Maps/Forest",
+		"MapTiles": [
+            {
+               "Position": { "X": 58, "Y": 61 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 0, 1, 2}} SmolHooman.WildAnimalsCC.RiverOtter"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild River Otters": "true",
+			"Season": "Spring, Summer, Fall",
+			"Weather": "Sun, Wind, Rain",	
+			"Time": "{{Range: 1800, 2600}}",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Adds wild river otters in the forest's river during winter",
+		"Action": "EditMap",
+		"Target": "Maps/Forest",
+		"MapTiles": [
+            {
+               "Position": { "X": 58, "Y": 61 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 0, 1, 2}} SmolHooman.WildAnimalsCC.RiverOtter"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild River Otters": "true",
+			"Season": "Winter",
+			"Weather": "Sun",	
+			"Time": "{{Range: 0600, 1800}}",
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds wild sea otters in the beach's waters",
+		"Action": "EditMap",
+		"Target": "Maps/Beach",
+		"MapTiles": [
+            {
+               "Position": { "X": 5, "Y": 30 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.SeaOtter"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Sea Otters": "true",
+			"Weather": "Snow, Sun, Wind, Rain",	
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Adds wild sea otters in the west of the island waters",
+		"Action": "EditMap",
+		"Target": "Maps/Island_W",
+		"MapTiles": [
+            {
+               "Position": { "X": 9, "Y": 24 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 1, 2}} SmolHooman.WildAnimalsCC.SeaOtter"
+               },
+            },
+            {
+               "Position": { "X": 9, "Y": 26 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.SeaOtter"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Sea Otters": "true",
+			"Weather": "Sun, Wind, Rain",	
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds wild skunks in the forest",
+		"Action": "EditMap",
+		"Target": "Maps/Forest",
+		"MapTiles": [
+            {
+               "Position": { "X": 103, "Y": 88 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 1, 2}} SmolHooman.WildAnimalsCC.{{Random: SkunkStriped, SkunkStriped, SkunkHooded, SkunkHooded, SkunkBrown, SkunkAlbino}}"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Skunks": "true",		
+			"Weather": "Sun, Wind",
+			"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds wild squirrels in the town",
+		"Action": "EditMap",
+		"Target": "Maps/Town",
+		"MapTiles": [
+            {
+               "Position": { "X": 12, "Y": 17 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 1, 2, 3}} SmolHooman.WildAnimalsCC.{{Random: SquirrelBrown, SquirrelBrown, SquirrelBlack, SquirrelGray, SquirrelGray, SquirrelWhite}}"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Squirrels": "true",
+			"Weather": "Sun, Wind",
+			"Time": "{{Range: 0600, 1800}}",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Adds a wild squirrel in Jas' room",
+		"Action": "EditMap",
+		"Target": "Maps/AnimalShop",
+		"MapTiles": [
+            {
+               "Position": { "X": 4, "Y": 6 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 0, 1}} SmolHooman.WildAnimalsCC.{{Random: SquirrelBrown, SquirrelBrown, SquirrelBlack, SquirrelGray, SquirrelGray, SquirrelWhite}}"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Squirrels": "true",
+			"Weather": "Storm",
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds wild swans in the forest's river",
+		"Action": "EditMap",
+		"Target": "Maps/Forest",
+		"MapTiles": [
+            {
+               "Position": { "X": 93, "Y": 46 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn 2 SmolHooman.WildAnimalsCC.{{Random: SwanBlack, SwanWhite, SwanWhite}}"
+               },
+            },
+            {
+               "Position": { "X": 94, "Y": 48 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.{{Random: SwanBlack, SwanWhite, SwanWhite}}"
+               },
+            },
+            {
+               "Position": { "X": 92, "Y": 44 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 3}} SmolHooman.WildAnimalsCC.Cygnet"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Swans": "true",
+			"Weather": "Rain, Sun, Wind",
+			"Season": "Spring, Summer, Fall",
+			"Time": "{{Range: 0600, 1800}}",
+			"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds wild tortoises in the forest",
+		"Action": "EditMap",
+		"Target": "Maps/Forest",
+		"MapTiles": [
+            {
+               "Position": { "X": 83, "Y": 75 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 1, 2}} SmolHooman.WildAnimalsCC.Tortoise"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Tortoises": "true",
+			"Weather": "Sun, Wind, Rain",			
+			"Season": "Spring, Summer, Fall",
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds wild turtles on the beach",
+		"Action": "EditMap",
+		"Target": "Maps/Beach",
+		"MapTiles": [
+            {
+               "Position": { "X": 68, "Y": 7 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2}} SmolHooman.WildAnimalsCC.Turtle"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Turtles": "true",
+			"Weather": "Sun, Wind",			
+			"Season": "Spring, Summer, Fall",
+			"Time": "{{Range: 0600, 1200}}",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Adds wild turtles on the beach waters (1)",
+		"Action": "EditMap",
+		"Target": "Maps/Beach",
+		"MapTiles": [
+            {
+               "Position": { "X": 76, "Y": 29 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2}} SmolHooman.WildAnimalsCC.TurtleSwim"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Turtles": "true",
+			"Weather": "Sun, Wind",			
+			"Season": "Spring, Summer, Fall",
+			"Time": "{{Range: 1200, 2600}}",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Adds wild turtles on the beach waters (2)",
+		"Action": "EditMap",
+		"Target": "Maps/Beach",
+		"MapTiles": [
+            {
+               "Position": { "X": 76, "Y": 29 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2}} SmolHooman.WildAnimalsCC.TurtleSwim"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Turtles": "true",
+			"Weather": "Rain",			
+			"Season": "Spring, Summer, Fall",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Adds wild turtles on the south of the island",
+		"Action": "EditMap",
+		"Target": "Maps/Island_S",
+		"MapTiles": [
+            {
+               "Position": { "X": 25, "Y": 26 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2}} SmolHooman.WildAnimalsCC.TurtleIsland"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Turtles": "true",
+			"Weather": "Sun, Wind",			
+			"Time": "{{Range: 0600, 1200}}",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Adds wild turtles on the south of the island waters (1)",
+		"Action": "EditMap",
+		"Target": "Maps/Island_S",
+		"MapTiles": [
+            {
+               "Position": { "X": 30, "Y": 43 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 1, 2}} SmolHooman.WildAnimalsCC.TurtleIslandSwim"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Turtles": "true",
+			"Weather": "Sun, Wind",			
+			"Time": "{{Range: 1200, 2600}}",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Adds wild turtles on the south of the island waters (2)",
+		"Action": "EditMap",
+		"Target": "Maps/Island_S",
+		"MapTiles": [
+            {
+               "Position": { "X": 30, "Y": 43 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 1, 2}} SmolHooman.WildAnimalsCC.TurtleIslandSwim"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Turtles": "true",
+			"Weather": "Rain",			
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds wild weasels in the mountain",
+		"Action": "EditMap",
+		"Target": "Maps/Mountain",
+		"MapTiles": [
+            {
+               "Position": { "X": 84, "Y": 27 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 1, 2}} SmolHooman.WildAnimalsCC.Weasel_{{season}}"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Weasels": "true",
+			"Weather": "Snow, Sun, Wind",			
+			"Time": "{{Range: 1800, 2600}}",
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds wild wolves in the forest",
+		"Action": "EditMap",
+		"Target": "Maps/Forest",
+		"MapTiles": [
+            {
+               "Position": { "X": 21, "Y": 49 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 1, 2}} SmolHooman.WildAnimalsCC.{{Random: WolfBlack, WolfBrown, WolfGray, WolfGray, WolfWhite}}"
+               },
+            },
+            {
+               "Position": { "X": 20, "Y": 48 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1}} SmolHooman.WildAnimalsCC.{{Random: WolfBlack, WolfBrown, WolfGray, WolfGray, WolfWhite}}"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Wolves": "true",
+			"Weather": "Snow, Sun, Wind",
+			"Time": "{{Range: 1800, 2600}}",
+			"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds wild wolverines in the forest",
+		"Action": "EditMap",
+		"Target": "Maps/Forest",
+		"MapTiles": [
+            {
+               "Position": { "X": 104, "Y": 25 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1, 2}} SmolHooman.WildAnimalsCC.Wolverine"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Wolverines": "true",
+			"Weather": "Snow, Sun, Wind",
+			"Time": "{{Range: 1800, 2600}}",
+			"HasMod |contains=Rafseazz.RidgesideVillage": false,
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds wild wombats in the east of the island",
+		"Action": "EditMap",
+		"Target": "Maps/Island_E",
+		"MapTiles": [
+            {
+               "Position": { "X": 13, "Y": 45 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 1, 2, 3}} SmolHooman.WildAnimalsCC.{{Random: WombatBrown, WombatBrown, WombatGray}}"
+               },
+            },
+         ],
+		"When": {
+			"Allow Wild Wombats": "true",
+			"Weather": "Sun, Wind",
+			"Time": "{{Range: 1800, 2600}}",
+			},
+		"Update": "OnLocationChange"
+	},
+
+	{
+		"LogName": "Adds dodos on the west of the island",
+		"Action": "EditMap",
+		"Target": "Maps/Island_W",
+		"MapTiles": [
+            {
+               "Position": { "X": 44, "Y": 22 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 0, 0, 1, 2}} SmolHooman.WildAnimalsCC.Dodo"
+               },
+            },
+         ],
+		"When": {
+			"Allow Bonus Animals": "true",
+			"Season": "Summer",
+			"Weather": "Sun, Wind",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Adds a griffin on the mountain",
+		"Action": "EditMap",
+		"Target": "Maps/Mountain",
+		"MapTiles": [
+            {
+               "Position": { "X": 103, "Y": 26 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 0, 0, 1}} SmolHooman.WildAnimalsCC.Griffin"
+               },
+            },
+         ],
+		"When": {
+			"Allow Bonus Animals": "true",
+			"Season": "Summer",
+			"Weather": "Sun, Wind",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Adds junimos in the forest",
+		"Action": "EditMap",
+		"Target": "Maps/Forest",
+		"MapTiles": [
+            {
+               "Position": { "X": 33, "Y": 97 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 0, 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.{{Random: Junimo, Junimo, JunimoMushroom, JuniMallow}}"
+               },
+            },
+            {
+               "Position": { "X": 6, "Y": 9 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 0, 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.{{Random: Junimo, Junimo, JunimoMushroom, JuniMallow}}"
+               },
+            },
+         ],
+		"When": {
+			"Allow Bonus Animals": "true",
+			"Weather": "Wind, Rain",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Adds junimos in the wizard's tower",
+		"Action": "EditMap",
+		"Target": "Maps/WizardHouse",
+		"MapTiles": [
+            {
+               "Position": { "X": 5, "Y": 18 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 0, 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.{{Random: Junimo, Junimo, JunimoMushroom, JuniMallow}}"
+               },
+            },
+         ],
+		"When": {
+			"Allow Bonus Animals": "true",
+			"Weather": "Wind, Rain",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Adds junimos in the woods",
+		"Action": "EditMap",
+		"Target": "Maps/Woods",
+		"MapTiles": [
+            {
+               "Position": { "X": 9, "Y": 9 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 0, 0, 1, 2, 3}} SmolHooman.WildAnimalsCC.{{Random: Junimo, Junimo, JunimoMushroom, JuniMallow}}"
+               },
+            },
+         ],
+		"When": {
+			"Allow Bonus Animals": "true",
+			"Weather": "Sun, Wind, Rain",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Adds Kee-Doo the Furby in the tunnel",
+		"Action": "EditMap",
+		"Target": "Maps/Tunnel",
+		"MapTiles": [
+            {
+               "Position": { "X": 10, "Y": 8 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 1}} SmolHooman.WildAnimalsCC.KeeDoo"
+               },
+            },
+         ],
+		"When": {
+			"Allow Bonus Animals": "true",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Adds Lala on the beach",
+		"Action": "EditMap",
+		"Target": "Maps/Beach",
+		"MapTiles": [
+            {
+               "Position": { "X": 25, "Y": 34 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 0, 1}} SmolHooman.WildAnimalsCC.{{Random: Lala_NoBackpack, Lala_Backpack}}"
+               },
+            },
+         ],
+		"When": {
+			"Allow Bonus Animals": "true",
+			"Season": "Winter",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Adds a pegasus in the forest",
+		"Action": "EditMap",
+		"Target": "Maps/Forest",
+		"MapTiles": [
+            {
+               "Position": { "X": 40, "Y": 6 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 0, 1}} SmolHooman.WildAnimalsCC.Pegasus"
+               },
+            },
+         ],
+		"When": {
+			"Allow Bonus Animals": "true",
+			"Season": "Spring",
+			"Weather": "Wind",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Adds a sea creature in the beach's waters",
+		"Action": "EditMap",
+		"Target": "Maps/Beach",
+		"MapTiles": [
+            {
+               "Position": { "X": 73, "Y": 43 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 0, 1}} SmolHooman.WildAnimalsCC.SeaCreature"
+               },
+            },
+         ],
+		"When": {
+			"Allow Bonus Animals": "true",
+			"Weather": "Rain, Storm",
+			},
+		"Update": "OnLocationChange"
+	},
+	{
+		"LogName": "Adds a slime in the woods",
+		"Action": "EditMap",
+		"Target": "Maps/Woods",
+		"MapTiles": [
+            {
+               "Position": { "X": 11, "Y": 11 },
+               "Layer": "Back",
+               "SetProperties": {
+                  "CustomCompanions": "Spawn {{Random: 0, 0, 1}} SmolHooman.WildAnimalsCC.Slime"
+               },
+            },
+         ],
+		"When": {
+			"Allow Bonus Animals": "true",
+			},
+		"Update": "OnLocationChange"
+	}
+	]
+}

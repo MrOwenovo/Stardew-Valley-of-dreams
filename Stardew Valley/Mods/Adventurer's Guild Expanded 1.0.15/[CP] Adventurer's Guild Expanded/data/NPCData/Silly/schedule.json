@@ -1,0 +1,96 @@
+{
+"Changes": [	
+
+	{
+            "Action": "EditData",
+            "Target": "Characters/schedules/Silly",
+	    "Entries": {
+
+	"spring": "700 Custom_GE_MonsterResearchWing 18 5 1/800 Custom_GE_MonsterResearchWing 17 5 2/900 Custom_GE_MonsterResearchWing 9 10 2 silly_jump/1100 Custom_GE_MonsterResearchWing 2 10 0/1200 Custom_GE_MonsterResearchWing 3 10 0/1300 Custom_GE_MonsterResearchWing 4 13 2 silly_jump/1500 Custom_GE_MonsterResearchWing 18 6 1/1600 Custom_GE_MonsterResearchWing 17 5 2/1800 Custom_GE_MonsterResearchWing 9 10 2 silly_jump/2000 Custom_GE_MonsterResearchWing 18 5 1/2100 Custom_GE_MonsterResearchWing 16 5 2 silly_sleep",
+	
+		},
+	      "When": {
+				"HasSeenEvent: hostPlayer |contains=9280017": "false",
+			},
+	},
+
+	{
+            "Action": "EditData",
+            "Target": "Characters/schedules/Silly",
+	    "Entries": {
+
+	//Specific Days	
+	"winter_15": "700 Custom_GE_MonsterResearchWing 18 5 1/800 Custom_GE_MonsterResearchWing 17 5 2/900 Custom_GE_MonsterResearchWing 9 10 2 silly_jump/1000 Mountain 71 14 2 silly_jump/1200 Town 49 32 2 silly_jump \"Strings\\schedules\\Silly:wintertown1\"/1630 Beach 11 31 3/2130 Custom_GE_MonsterResearchWing 16 5 2 silly_sleep",
+
+	//rain
+	"rain": "700 Custom_GE_MonsterResearchWing 18 5 1/800 Custom_GE_MonsterResearchWing 17 5 2/900 Custom_GE_MonsterResearchWing 9 10 2 silly_jump/1100 Custom_GE_MonsterResearchWing 2 10 0/1200 Custom_GE_MonsterResearchWing 3 10 0/1300 Custom_GE_MonsterResearchWing 4 13 2 silly_jump/1500 Custom_GE_MonsterResearchWing 18 6 1/1600 Mine 21 9 1 \"Strings\\schedules\\Silly:mine1\"/2000 Mountain 71 14 2 silly_jump/2230 Custom_GE_MonsterResearchWing 16 5 2 silly_sleep",
+
+	//Days of Week
+	"Tue": "630 Custom_GE_MonsterResearchWing 18 5 1/730 SeedShop 22 14 2 silly_jump \"Strings\\schedules\\Silly:aerobics\"/1600 Mine 21 9 1 \"Strings\\schedules\\Silly:mine1\"/2000 Mountain 71 14 2 silly_jump/2230 Custom_GE_MonsterResearchWing 16 5 2 silly_sleep",
+	"Wed": "700 Custom_GE_MonsterResearchWing 18 5 1/800 Custom_GE_MonsterResearchWing 17 5 2/900 Custom_GE_MonsterResearchWing 9 10 2 silly_jump/1100 Custom_GE_MonsterResearchWing 2 10 0/1200 Custom_GE_MonsterResearchWing 3 10 0/1300 Custom_GE_MonsterResearchWing 4 13 2 silly_jump/1500 Custom_GE_MonsterResearchWing 18 6 1/1600 Custom_GE_MonsterResearchWing 17 5 2/1800 Custom_GE_MonsterResearchWing 9 10 2 silly_jump/2000 Custom_GE_MonsterResearchWing 18 5 1/2100 Custom_GE_MonsterResearchWing 16 5 2 silly_sleep",
+	"Fri": "700 Custom_GE_MonsterResearchWing 18 5 1/800 Custom_GE_MonsterResearchWing 17 5 2/900 Custom_GE_MonsterResearchWing 9 10 2 silly_jump/1000 Mountain 71 14 2 silly_jump/1200 Mine 21 9 1 \"Strings\\schedules\\Silly:mine1\"/1500 Town 19 14 2 silly_jump \"Strings\\schedules\\Silly:town4\"/1800 Saloon 25 18 2 silly_jump \"Strings\\schedules\\Silly:saloon\"/2100 Custom_GE_MonsterResearchWing 16 5 2 silly_sleep",
+
+
+	//Seasons
+	"spring": "700 Custom_GE_MonsterResearchWing 18 5 1/800 Custom_GE_MonsterResearchWing 17 5 2/900 Custom_GE_MonsterResearchWing 9 10 2 silly_jump/1000 Mountain 71 14 2 silly_jump/1200 Town 24 66 2 silly_jump \"Strings\\schedules\\Silly:town1\"/1630 Town 32 78 1 \"Strings\\schedules\\Silly:town2\"/1800 Town 39 57 2 silly_jump \"Strings\\schedules\\Silly:town3\"/2000 Custom_GE_MonsterResearchWing 16 5 2 silly_sleep",
+	"summer": "700 Custom_GE_MonsterResearchWing 18 5 1/800 Custom_GE_MonsterResearchWing 17 5 2/900 Custom_GE_MonsterResearchWing 9 10 2 silly_jump/1000 Town 19 14 2 silly_jump \"Strings\\schedules\\Silly:town4\"/1500 Beach 31 13 2 silly_jump \"Strings\\schedules\\Silly:beach1\"/1900 Custom_GE_MonsterResearchWing 16 5 2 silly_sleep",
+	"fall": "700 Custom_GE_MonsterResearchWing 18 5 1/800 Custom_GE_MonsterResearchWing 17 5 2/900 Custom_GE_MonsterResearchWing 9 10 2 silly_jump/1000 Forest 85 24 2 silly_jump \"Strings\\schedules\\Silly:fallforest1\"/1700 Town 24 66 2 silly_jump \"Strings\\schedules\\Silly:town1\"/1900 Custom_GE_MonsterResearchWing 16 5 2 silly_sleep",
+	"winter": "700 Custom_GE_MonsterResearchWing 18 5 1/800 Custom_GE_MonsterResearchWing 17 5 2/900 Custom_GE_MonsterResearchWing 9 10 2 silly_jump/1000 Mountain 71 14 2 silly_jump/1200 Town 49 32 2 silly_jump \"Strings\\schedules\\Silly:wintertown1\"/1700 Mountain 50 9 2/2000 Custom_GE_MonsterResearchWing 4 13 2 silly_jump/2200 Custom_GE_MonsterResearchWing 16 5 2 silly_sleep",
+	
+		},
+	      "When": {
+				"HasSeenEvent: hostPlayer |contains=9280017": "true",
+				"sillyMovedIn": "false",
+			},
+	},
+
+	//silly moved in
+	{
+            "Action": "EditData",
+            "Target": "Characters/schedules/Silly",
+	    "Entries": {
+
+	//Specific Days	
+	"winter_15": "0 Custom_GE_MonsterHouse 9 15 1/1200 Town 49 32 2 silly_jump \"Strings\\schedules\\Silly:wintertown1\"/1630 Beach 11 31 3/2130 Custom_GE_MonsterHouse 7 14 2 silly_sleep",
+
+	//rain
+	"rain": "0 Custom_GE_MonsterHouse 9 15 1/800 Custom_GE_MonsterHouse 12 16 1/1000 Custom_GE_MonsterHouse 12 13 0/1100 Mine 21 9 1 \"Strings\\schedules\\Silly:mine1\"/1700 Mountain 71 14 2 silly_jump/1900 Custom_GE_MonsterHouse 7 14 2 silly_sleep",
+
+	//specific days
+	"Tue": "0 Custom_GE_MonsterHouse 9 15 1/800 Custom_GE_MonsterHouse 12 16 1/900 SeedShop 22 14 2 silly_jump \"Strings\\schedules\\Silly:aerobics\"/1600 Mine 21 9 1 \"Strings\\schedules\\Silly:mine1\"/2000 Mountain 71 14 2 silly_jump/2200 Custom_GE_MonsterHouse 7 14 2 silly_sleep",
+	"Wed": "0 Custom_GE_MonsterHouse 9 15 1/800 Custom_GE_MonsterHouse 12 16 1/900 Custom_GE_MonsterResearchWing 18 5 1/1430 Custom_GE_MonsterResearchWing 17 5 2/1930 Custom_GE_MonsterResearchWing 9 10 2 silly_jump/2000 Custom_GE_MonsterHouse 7 14 2 silly_sleep",
+	"Fri": "0 Custom_GE_MonsterHouse 9 15 1/800 Mountain 71 14 2 silly_jump/1400 Mine 21 9 1 \"Strings\\schedules\\Silly:mine1\"/1700 Town 19 14 2 silly_jump \"Strings\\schedules\\Silly:town4\"/1900 Saloon 25 18 2 silly_jump \"Strings\\schedules\\Silly:saloon\"/2200 Custom_GE_MonsterHouse 7 14 2 silly_sleep",
+
+	//seasons
+	"spring": "0 Custom_GE_MonsterHouse 9 15 1/800 Custom_GE_MonsterHouse 12 16 1/1000 Custom_GE_MonsterHouse 12 13 0/1200 Town 24 66 2 silly_jump \"Strings\\schedules\\Silly:town1\"/1400 Town 16 96 2/1600 Town 32 78 1 \"Strings\\schedules\\Silly:town2\"/1800 Town 39 57 2 silly_jump \"Strings\\schedules\\Silly:town3\"/2000 Custom_GE_MonsterHouse 7 14 2 silly_sleep",
+	"summer": "0 Custom_GE_MonsterHouse 9 15 1/800 Custom_GE_MonsterHouse 12 16 1/1000 Town 19 14 2 silly_jump \"Strings\\schedules\\Silly:town4\"/1400 Beach 31 13 2 silly_jump \"Strings\\schedules\\Silly:beach1\"/1800 Town 39 57 2 silly_jump \"Strings\\schedules\\Silly:town3\"/2100 Custom_GE_MonsterHouse 7 14 2 silly_sleep",
+	"fall": "0 Custom_GE_MonsterHouse 9 15 1/800 Custom_GE_MonsterHouse 12 16 1/1000 Forest 85 24 2 silly_jump \"Strings\\schedules\\Silly:fallforest1\"/1500 Town 24 66 2 silly_jump \"Strings\\schedules\\Silly:town1\"/1700 Town 16 96 2/1900 Custom_GE_MonsterHouse 12 16 1/2100 Custom_GE_MonsterHouse 7 14 2 silly_sleep",
+	"winter": "0 Custom_GE_MonsterHouse 9 15 1/800 Custom_GE_MonsterHouse 12 16 1/1000 Custom_GE_MonsterHouse 12 13 0/1100 Mountain 71 14 2 silly_jump/1600 Town 49 32 2 silly_jump \"Strings\\schedules\\Silly:wintertown1\"/2000 Custom_GE_MonsterHouse 12 16 1/2230 Custom_GE_MonsterHouse 7 14 2 silly_sleep",
+	
+		},
+	      "When": {
+				"sillyMovedIn": "true",
+			},
+	},
+
+	//STRINGS
+	{
+		"Action": "EditData",
+		"Target": "Strings/schedules/Silly",
+		"Entries": {
+			"town1": "笨笨跟小镇问好！#$b#最好的小镇！$h",
+			"town2": "展示很漂亮！#$b#你好，展示！$h",
+			"town3": "笨笨很高兴能到室外！",
+			"town4": "游乐场地真有趣！#$b#@喜欢坐滑滑梯吗？",
+			"beach1": "夏天的沙滩真有意思！有人想和笨笨一起建沙堡吗？",
+			"fallforest1": "森林橙色的样子真好看！",
+			"wintertown1": "小镇好像披着柔软的毛毯，真好看……",
+			"aerobics": "笨笨和朋友一起跳来跳去！耶！$h",
+			"mine1": "笨笨的朋友在下面……$s#$b#有时候笨笨很想它们……$s",
+			"saloon": "好多朋友！好有意思啊！$h",
+		},
+	},
+
+
+	]	
+}

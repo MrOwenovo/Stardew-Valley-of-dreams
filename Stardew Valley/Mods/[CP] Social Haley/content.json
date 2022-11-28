@@ -1,0 +1,61 @@
+{
+    "Format": "1.13.0",
+    "Changes": [
+        {
+            "Action": "EditImage",
+            "Target": "Characters/Haley",
+            "FromFile": "assets/HaleySwim_Pink.png",
+            "When":
+            {
+                "LocationName": "BathHouse_Pool"
+            }
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Portraits/Haley",
+            "FromFile": "assets/HaleySwim_Portrait.png",
+            "When":
+            {
+                "LocationName": "BathHouse_Pool"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Strings/schedules/Haley",
+            "Entries": {
+                "spring_Wed_6.000": "奶奶 伊芙琳正在教我关于植物的知识。",
+                "summer_Wed_6.000": "关于园艺，有很多东西要学。#$b#也许有一天我也将成为农民！$h",
+                "winter_Thu.000": "太冷了，无法下床。",
+                "marriage_Mon.001": "嗨亲爱的我只是和其他妻子一起赶上镇上的所有新闻。#$b#我今晚会在家里吃晚饭。"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/schedules/Haley",
+            "Entries": {
+                "Fri": "900 HaleyHouse 6 5 0/950 HaleyHouse 8 7 1/1100 Town 23 22 2/1600 HaleyHouse 8 7 1/1810 Saloon 20 19 3/2230 HaleyHouse 1 5 3 haley_sleep",
+                "marriage_Mon": "930 HaleyHouse 4 15 2 \"Strings\\schedules\\Haley:marriage_Mon.000\"/1330 Town 24 72 3 \"Strings\\schedules\\Haley:marriage_Mon.001\"/1540 BusStop -1 23 3",
+                "marriage_Fri": "1730 Saloon 20 19 3/2110 BusStop -1 23 3",
+                "spring_Wed_6": "900 HaleyHouse 6 5 0/950 HaleyHouse 8 7 1/1300 Town 35 79 0 \"Strings\\schedules\\Haley:spring_Wed_6.000\"/1630 HaleyHouse 19 16 0 square_5_1_0/2000 HaleyHouse 5 7 0 square_5_5/2230 HaleyHouse 1 5 3 haley_sleep",
+                "summer_Wed_6": "840 HaleyHouse 6 5 0/930 HaleyHouse 6 5 0 HaleyHouse 8 7 1/1030 Beach 19 7 2/1330 Town 19 63 0 \"Strings\\schedules\\Haley:summer_Wed_6.000\"/1700 HaleyHouse 19 16 0 square_5_1/2000 HaleyHouse 5 7 2 square_5_5/2300 HaleyHouse 1 5 3 haley_sleep",
+                "winter_Wed": "840 HaleyHouse 6 5 0/900 BathHouse_WomensLocker 10 23 0/1200 BathHouse_Pool 14 9 2/1500 BathHouse_WomensLocker 10 23 0/1550 HaleyHouse 6 5 0/2230 HaleyHouse 1 5 3 haley_sleep",  
+                "spring_Thu": "900 HaleyHouse 6 5 0/950 HaleyHouse 8 7 1/1100 Town 23 22 2/1230 CommunityCenter 14 21 2 haley_photo/1630 HaleyHouse 19 16 0 square_5_1_0/2000 HaleyHouse 5 7 0 square_5_5/2230 HaleyHouse 1 5 3 haley_sleep",
+                "summer_Thu": "GOTO spring_Thu",
+                "fall_Thu" : "GOTO spring_Thu",
+                "winter_Thu" : "830 HaleyHouse 2 5 2 \"Strings\\schedules\\Haley:winter_Thu.000\"/1030 HaleyHouse 6 5 0/1130 HaleyHouse 8 7 1/1200 CommunityCenter 14 21 2 haley_photo/1700 HaleyHouse 5 7 2 square_5_5/1900 HaleyHouse 7 16 0/2200 HaleyHouse 1 5 3 haley_sleep"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Haley",
+            "Entries": {
+                "Saloon": "我星期五来这里，因为这可能是这个镇上最令人兴奋的事情。$s",
+                "Saloon2": "Zuzu 城市曾经有几十个这样的地方。$u",
+                "Saloon4": "想在这里见到你，农夫男孩。^想在这里见到你，农夫姑娘。$n",
+                "Saloon6": "我爱星期五几乎每个镇上的人都在这里。其乐无穷！$h",
+                "Saloon8": "我开始认为您可能在星期五来这里想见某人...$l",
+                "Saloon10": "我认为我们今晚应该跳舞。$h#$b#@, 你能跟我跳舞吗？$l"
+            }
+        }
+    ]
+ }

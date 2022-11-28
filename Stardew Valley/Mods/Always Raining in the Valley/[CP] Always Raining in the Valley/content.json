@@ -1,0 +1,317 @@
+{
+    "Format": "1.23.0",
+
+    /*********
+    ** Custom Locations
+    *********/    
+    "CustomLocations":
+    [
+        /*********
+        ** Adds ARV House
+        *********/ 
+        { 
+            "Name": "Custom_ARVHouse",
+            "FromMapFile": "assets/Maps/ARVHouse.tmx"
+        },
+    ],
+
+    /*********
+    ** ARV Config 
+    *********/ 
+    "ConfigSchema":
+    {
+        "SpicyDialogue":
+        {
+            "AllowValues": "true, false",
+            "Default": "false",
+            "AllowBlank": false,
+            "Description": "Possible nsfw dirty talk when flirting."
+        },
+
+        "CustomToddlers":
+        {
+            "AllowValues": "true, false",
+            "Default": "true",
+            "AllowBlank": false,
+            "Description": "Turns on custom toddler sprites that look like Sterling. Change to false for vanilla toddler sprites."
+        },
+        
+        "SeasonalsLite":
+        {
+            "AllowValues": "true, false",
+            "Default": "false",
+            "AllowBlank": false,
+            "Description": "Loads only 1 seasonal outfit per season as opposed to 4. For people using or who want to make ARV ALT portraits."
+        }
+    },
+
+    /*********
+    ** ARV Patches 
+    *********/ 
+    "Changes":
+    [
+        /*********
+        ** Sets up House 2's door warp - Outside
+        *********/
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_EastScarpe",
+            "MapTiles":
+            [
+                {
+                    "Position":
+                    {
+                        "X":31 ,
+                        "Y":50
+                    },
+
+                    "Layer": "Buildings",
+                    "SetProperties":
+                    {
+                        "Action": "Warp 13 25 Custom_ARVHouse"
+                    }
+                }
+            ],
+                "When": { "HasMod: |contains=LemurKat.EastScarpe.CP": true },
+        },
+
+        /*********
+        ** Sets up House 2's door warp - Inside
+        *********/
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_ARVHouse",
+            "AddWarps":
+            [
+                "13 27 Custom_EastScarpe 31 51"
+            ]
+        },
+
+        /*********
+        ** Temp Maps
+        *********/
+            /*********
+            ** Adds SterlingSunset Map
+            *********/
+        {
+            "Action": "Load",
+            "Target": "Maps/SterlingSunset",
+            "FromFile": "assets/Maps/SunsetBikeRide.tmx"
+        },
+
+            /*********
+            ** Adds BikeBeach Map
+            *********/
+        {
+            "Action": "Load",
+            "Target": "Maps/BikeBeach",
+            "FromFile": "assets/Maps/BikeBeach.tmx"
+        },
+
+            /*********
+            ** Adds TitleARVHouse Map
+            *********/
+        {
+            "Action": "Load",
+            "Target": "Maps/TitleARVHouse",
+            "FromFile": "assets/Maps/TitleARVHouse.tmx"
+        },
+    
+        /*********
+        ** Temp Actors
+        *********/
+            /*********
+             Sterling Bike
+            *********/
+        {
+            "Action": "Load",
+            "Target": "Characters/SterlingBikeA",
+            "FromFile": "assets/Maps/tempActors/SterlingBikeA.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/SterlingBikeB",
+            "FromFile": "assets/Maps/tempActors/SterlingBikeB.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/SterlingBikeC",
+            "FromFile": "assets/Maps/tempActors/SterlingBikeC.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/SterlingBikeD",
+            "FromFile": "assets/Maps/tempActors/SterlingBikeD.png"
+        },
+
+        /*********
+        ** NPC Data
+        *********/    
+            /*********
+            ** Adds Sterling's Seasonal Outfits
+            *********/           
+        {
+            "Action": "Load",
+            "Target": "Characters/Sterling, Portraits/Sterling",
+            "FromFile": "assets/{{Target}}/{{season}}/{{Random:01, 02, 03, 04 |key=sterling-outfit}}.png",
+                "When": { "SeasonalsLite": "false" } 
+        }, 
+
+            /*********
+            ** Adds Mia & Henry's Seasonal Outfits
+            *********/    
+        {
+            "LogName": "Mia & Henry Sprites & Portraits",
+            "Action": "Load",
+            "Target": "Characters/Mia, Portraits/Mia, Characters/Henry, Portraits/Henry",
+            "FromFile": "assets/{{Target}}/{{season}}_{{TargetWithoutPath}}.png",
+                "When": { "SeasonalsLite": "false"  } 
+        },
+
+            /*********
+            ** Adds Sterling, Mia & Henry's Seasonal Outfits - Lite Version
+            *********/    
+        {
+            "LogName": "Seasonals LITE",
+            "Action": "Load",
+            "Target": "Characters/Mia, Portraits/Mia, Characters/Sterling, Portraits/Sterling, Characters/Henry, Portraits/Henry",
+            "FromFile": "assets/{{Target}}/{{season}}_{{TargetWithoutPath}}.png", 
+                "When": { "SeasonalsLite": "true" }
+        },
+
+            /*********
+            ** Adds Sterling's Uniform Portrait
+            *********/          
+        {
+            "LogName": "Sterling Uniform",
+            "Action": "Load",
+            "Target": "Portraits/Sterling_uniform",
+            "FromFile": "assets/Portraits/Sterling/sterling_uniform.png"
+        },
+        
+        {
+      "LogName": "Sterling Bike Sprite",
+      "Action": "Load",
+      "Target": "Characters/Sterling_motorbike",
+      "FromFile": "assets/Characters/Sterling/sterling_motorbike.png"
+    },
+    {
+      "LogName": "Sterling Bike Portrait",
+      "Action": "Load",
+      "Target": "Portraits/Sterling_motorbike",
+      "FromFile": "assets/Portraits/Sterling/sterling_motorbike.png"
+    },
+    {
+      "LogName": "Sterling Uniform Sprite",
+      "Action": "Load",
+      "Target": "Characters/Sterling_uniform",
+      "FromFile": "assets/Characters/Sterling/sterling_uniform.png"
+    },
+    {
+      "LogName": "Sterling Plaid",
+      "Action": "Load",
+      "Target": "Characters/Sterling_plaid",
+      "FromFile": "assets/Characters/Sterling/Fall/03.png"
+    },
+    {
+      "LogName": "Sterling Plaid",
+      "Action": "Load",
+      "Target": "Portraits/Sterling_plaid",
+      "FromFile": "assets/Portraits/Sterling/Fall/03.png"
+    },
+    {
+      "LogName": "Shane Drunk",
+      "Action": "Load",
+      "Target": "Portraits/Shane_HappyDrunk",
+      "FromFile": "assets/Portraits/Shane_HappyDrunk.png"
+    },
+   {
+    "LogName": "NPC Dialogue blanks",
+    "Action": "Load",
+    "Target": "Characters/Dialogue/Sterling, Characters/Dialogue/Mia, Characters/Dialogue/Henry, Characters/Dialogue/MarriageDialogueSterling",
+    "FromFile": "Data/Dialogue/blank.json",
+ 
+   },
+   {
+    "LogName": "NPC Schedule blanks",
+    "Action": "Load",
+    "Target": "Characters/schedules/Sterling, Characters/schedules/Mia, Characters/schedules/Henry",
+    "FromFile": "Data/Dialogue/blank.json",
+ 
+   },
+   {
+    "LogName": "NPC Schedule Strings blanks",
+    "Action": "Load",
+    "Target": "Strings/schedules/Sterling, Strings/schedules/Mia, Strings/schedules/Henry",
+    "FromFile": "Data/Dialogue/blank.json",
+ 
+   },
+    {
+      "LogName": "Mia's AntiSocial Flag",
+      "Action": "EditData",
+      "Target": "Data/AntiSocialNPCs",
+      "Entries": {
+         "Mia": true
+      }
+   },
+  {
+    "LogName": "Henry's AntiSocial Flag",
+      "Action": "EditData",
+      "Target": "Data/AntiSocialNPCs",
+      "Entries": {
+         "Henry": true
+      }
+  },
+
+
+//ARV Files
+  //ARV Includes
+    {
+      "Action": "Include",
+      "FromFile": "Data/Animations.json, Data/DynamicChanges.json, Data/EventData.json, Data/FestivalDialogue.json, Data/Mail.json, Data/NPCData.json, Data/Romance.json, Data/DogPathing.json,  Data/Dialogue/Mia_Dialogue.json, Data/Dialogue/Henry_Dialogue.json, Data/Dialogue/Sterling_Dialogue.json, Data/MarriageDialogue/MarriageDialogueSterling.json, Data/schedules/Sterling_schedule.json, Data/schedules/Mia_schedule.json, Data/schedules/Henry_schedule.json, Data/Strings.json, Data/ConversationTopics.json"
+    },
+
+    //Compatiblity Includes
+    {
+    "Action": "Include",
+    "FromFile": "Data/Compatibility/RSV.json, Data/Compatibility/SVE.json, Data/Compatibility/CGD.json"
+    },
+
+    //Event Includes
+    {
+      "Action": "Load",
+      "Target": "Data/Events/Custom_ARVHouse",
+      "FromFile": "Data/Dialogue/blank.json",
+    },
+
+  //Festival Locations
+   {
+    "Action": "Include",
+    "FromFile": "Data/Festivals/locations/EggFestival.json, Data/Festivals/locations/FlowerDance.json, Data/Festivals/locations/Luau.json, Data/Festivals/locations/MoonlightJellies.json, Data/Festivals/locations/SVFair.json, Data/Festivals/locations/IceFestival.json, Data/Festivals/locations/WinterStar.json, Data/Festivals/locations/EmberOfResolutions.json, Data/Festivals/locations/GatheringFestival.json"
+   },  
+ 
+//MOD COMPATIBILITY
+
+   //Custom Fixed Dialogue
+   
+		{
+			"LogName": "Custom Fixed Dialogue",
+			"Action": "Include",
+			"FromFile": "Data/Compatibility/CFD.json",
+			"When": {
+				"HasMod": "aedenthorn.CustomFixedDialogue"
+			}
+		},
+
+    //Custom Fixed Dialogue
+   
+		{
+			"LogName": "Mobile Phone Compat",
+			"Action": "Include",
+			"FromFile": "Data/Compatibility/MobilePhone.json",
+			"When": {
+				"HasMod": "aedenthorn.MobilePhone"
+			}
+		},
+  ]
+}

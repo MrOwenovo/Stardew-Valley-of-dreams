@@ -1,0 +1,94 @@
+{
+  "Changes": [
+    {
+      "LogName": "Special Order: Data",
+      "Action": "EditData",
+      "Target": "Data/SpecialOrders",
+      "Entries": {
+        "ShellCollection.Coral": { //Name of Special Order in code (Vanilla relates to NPCs, mine will probably be EastScarpe.Aideen.Flowers etc)
+          "Name": "[ShellCollection.CoralOrder_Name]",
+          "Requester": "Demetrius", //This decides what emoji to use
+          "Duration": "ThreeWeeks", //How long it runs for
+          "Repeatable": "False", //Will this appear on the board again once completed? 
+          "RequiredTags": "", //Anything you need to trigger it? If you are using another order's order box, use the tag from that order so you cannot end up with both running simultaneously   
+          //examples: season_winter, !dropbox_RobinWood, mail_DemetriusReward
+          "OrderType": "", //"" or "QI"
+          "SpecialRule": "", //seems to be related to Qi quests that change something fundamentally in the world for their duration ie: that make the legendary fish spawn
+          "Text": "[ShellCollection.CoralOrder.1st_Text]", //These are defined in Special Order Strings. ie: "Target": "Strings/SpecialOrderStrings",
+          "ItemToRemoveOnEnd": null, //These appear linked to things that exist because the quest is active: ie: the ectoplasm or Prismatic slime
+          "MailToRemoveOnEnd": null, //  ie: "ItemToRemoveOnEnd": "875", "MailToRemoveOnEnd": "ectoplasmDrop",
+          "RandomizedElements": null, // is what is requested different due to season, something else, or chance?
+          "Objectives": [
+            {
+              "Type": "Collect", //Fish, collect, slay...
+              "Text": "[ShellCollection.CoralOrder_Objective_0_Text]", //more strings
+              "RequiredCount": "15", // how many you need to collect
+              "Data": {
+                "AcceptedContextTags": "item_coral" //tag of what to collect
+              }
+            },
+            {
+              "Type": "Donate", //Donate, Ship, Deliver
+              "Text": "[ShellCollection.CoralOrder_Objective_1_Text]",
+              "RequiredCount": "15",
+              "Data": {
+                "DropBox": "RobinWood", //Which DropBox to use (can you add custom ones? See SVE)
+                "DropBoxGameLocation": "ScienceHouse",
+                "DropBoxIndicatorLocation": "10.5 18",
+                "AcceptedContextTags": "item_coral" //item_<name> or various other tags. commas = must have al the tags, / = one of the tags.
+              }
+            },
+            {
+              "Type": "Deliver",
+              "Text": "[Jasper_Objective_0_Text]",
+              "RequiredCount": "1",
+              "Data": {
+                "AcceptedContextTags": "item_ruby", //item_Dwarf_Scroll_I, item_Dwarf_Scroll_II, item_Dwarf_Scroll_III, item_Dwarf_Scroll_IV
+                "TargetName": "Jasper" //person to give the item to
+              }
+            },
+            {
+              "Type": "Fish",
+              "Text": "[Demetrius_Objective_0_Text]",
+              "RequiredCount": "10",
+              "Data": {
+                "AcceptedContextTags": "{FishType:Tags}" //This means it will relate to whatever was defined by the Randomized elements above. If not randomized, can just use the item tag. 
+              }
+            },
+            {
+              "Type": "Slay",
+              "Text": "[Jacob_Objective_0_Text]",
+              "RequiredCount": "50",
+              "Data": {
+                "TargetName": "Rock Crab" //is there a way to make it work for slaying other crabs too?
+              }
+            },
+            {
+              "Type": "Ship",
+              "Text": "[Caroline_Objective_0_Text]",
+              "RequiredCount": "100",
+              "Data": {
+                "AcceptedContextTags": "{Crop:Tags}"
+              }
+            }
+          ],
+          "Rewards": [ //What you get in return for your efforts.
+            {
+              "Type": "Money",
+              "Data": {
+                "Amount": "3000",
+              }
+            },
+            {
+              "Type": "Mail",
+              "Data": {
+                "MailReceived": "ShellCollection.CoralOrder.1st", //Mail flag to set
+                "NoLetter": "false" //the mail that will be delivered upon completing this special order.
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

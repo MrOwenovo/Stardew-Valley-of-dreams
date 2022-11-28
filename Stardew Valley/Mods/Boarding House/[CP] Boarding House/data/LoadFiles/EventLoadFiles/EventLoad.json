@@ -1,0 +1,18 @@
+{
+"Changes": [
+
+//Load Blank .json Files for Events
+	{
+		"LogName": "Load Blank Jsons for Events",
+		"Action": "Load",
+		"Target": "Data/Events/Custom_BoardingHouse_BackwoodsPlateau, Data/Events/Custom_BoardingHouse_BoardingHouse, Data/Events/Custom_BoardingHouse_BuffalosRanch, Data/Events/Custom_BoardingHouse_TheLostValley",
+		"FromFile": "data/BlankFiles/EventBlankFiles/{{TargetWithoutPath}}.json",
+	},
+
+	{
+		"LogName": "Include Event Files",
+		"Action": "Include",
+		"FromFile": "assets/Events/Events.json", 
+	}, 
+]
+}

@@ -1,0 +1,51 @@
+{
+"Changes": [
+
+// **** GRIDBALL DATE ****
+	
+{       //Date Initiation
+            "LogName": "Date Initiation",
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries": {
+                 "1116029/f Alex {{MinFriendship}}/O Alex/t 500 1500": "continue/-10000 -1000/farmer -100 -100 2 Alex -100 -100 2/skippable/warp Alex -100 -100/warp farmer -100 -100/faceDirection Alex 2/viewport 64 15 clamp true/pause 2000/playSound doorClose/warp farmer 64 15/pause 500/move farmer 0 2 2/playSound doorClose/warp Alex 64 15/pause 300/faceDirection farmer 1 true/pause 100/faceDirection farmer 0/speak Alex \"@, 等一下!\"/pause 500/emote farmer 8/pause 500/speak Alex \"猜猜我刚刚得到了什么?\"/pause 300/emote farmer 40/pause 200/speak Alex \"不不不...#$b#这是...#$b#两张隧道队今晚比赛的门票！$h\"/pause 200/emote farmer 16/pause 200/speak Alex \"那么，亲爱的？你想和我一起去看吗? 这将会很有趣!$h\"/pause 1000/question fork0 \"与 {{SpouseDisplayName}} 约会吗?#好的#不\"/fork dateYes/playMusic none/pause 1000/emote Alex 28/speak Alex \"噢...$s#$b#又很忙吗?$s\"/pause 500/faceDirection Alex 3 true/pause 1000/emote Alex 40/pause 400/faceDirection Alex 2/pause 400/speak Alex \"没关系, 我们改天再做。你回去工作吧。#$b#我想我可以请别人去...$s\"/pause 800/faceDirection Alex 1 true/pause 100/faceDirection Alex 0/pause 400/playSound doorClose/warp Alex -100 -100/pause 2000/end dialogue Alex \"别担心, 我没有生气。#$b#我知道你很忙...当我嫁给你的时候, 我就知道我在做什么了。#$b#只是如果能和我的配偶一起去的话就好了。\"",
+
+		"dateYes": "pause 200/addMailReceived alexGridballDateAgree/emote Alex 20/pause 500/speak Alex \"太棒了! 这将会非常有趣!$h#$b#中午过后在晚上7点之前来巴士站, @。我想早点来!$h#$b#我会收拾好东西然后在外面等你。#$b#我已经迫不及待了!$h\"/pause 500/end dialogue Alex \"记住了, @! 在中午之后晚上7点之前来公交车站!#$b#我们在一起会有很多乐趣, 亲爱的!$h\"",
+
+            },
+            "When": {
+                "Spouse": "Alex",
+		"Query: {{DateInterest}} <= {{DateAskPercentChance}}": true,
+		"Query: {{UniqueInterest}} <= {{UniqueDateChance}}": true,
+		"UniqueDateType": "alexGridball",
+            },
+         },
+
+{       //Alex Gridball Date - Suggestive
+            "LogName": "Alex Gridball Date",
+            "Action": "EditData",
+            "Target": "Data/Events/BusStop",
+            "Entries": {
+                "1116030/n alexGridballDateAgree/t 1200 1900": "playful/14 11/farmer 14 22 0 Alex 14 13 2 Pam -1000 -1000 2 Shane -1000 -1000 2 Jas -1000 -1000 2 Gus -1000 -1000 2/makeInvisible 7 11 12 12/ignoreCollisions farmer/friendship Alex {{FriendBonus}}/skippable/pause 1500/emote Alex 40/warp Pam 12 10/playSound doorClose/pause 600/emote Pam 12/speak Pam \"嘿, 孩子! 能不能快点上车?!  如果我们要及时赶到, 我现在就得发车!\"/faceDirection Alex 0/emote Alex 16/speak Alex \"等会, 潘姆! 我现在在等人...\"/faceDirection Alex 2/textAboveHead Pam \"哼。\"/pause 600/faceDirection Pam 0/warp Pam -1000 -1000/playSound doorClose/move farmer 0 -8 0 true/pause 1000/jump Alex/pause 600/speak Alex \"@! 你来了!#$b#快来, 我们得走了! 我们不想迟到!\"/emote farmer 60/move Alex -2 0 3 true/move farmer -2 0 3 false/move Alex 0 -3 2 true/move farmer 0 -3 0 false/speak Alex \"亲爱的, 我已经迫不及待了! 今天的比赛一定很精彩!$h\"/emote farmer 32/faceDirection Alex 0/warp Alex -1000 -1000/playSound doorClose/pause 300/move farmer 0 -1 0/pause 300/warp farmer -1000 -1000/playSound doorClose/fade/stopMusic/viewport 1000 1000/pause 500/playSound busDoorOpen/beginSimultaneousCommand/changeToTemporaryMap Stadium false/faceDirection farmer 2 true/warp farmer 22 15/warp Alex 22 19/faceDirection Pam 2 true/warp Pam 19 14/warp Shane 27 16/warp Jas 26 16/warp Gus 18 14/endSimultaneousCommand/pause 2000/fade/playMusic Stadium_ambient/viewport 23 15/pause 1000/jump Alex/move farmer 0 3 2/speak Alex \"我们来的正是时候! 快来, @!$h\"/speed Alex 5/move Alex -2 0 1 true/move farmer 0 1 3 false/move farmer -1 0 3/speak Alex \"让我看看...\"/faceDirection Alex 2/faceDirection farmer 2/pause 500/jump Alex/speak Alex \"看上去隧道队处于领先, @!$h\"/emote farmer 32/pause 500/playSound Stadium_cheer/textAboveHead Alex \"芜湖!\"/jump Alex/playSound Stadium_cheer/speak Alex \"哇哦! 隧道队刚刚进球了！$h#$b#我们的优势变得更大了!$h\"/emote farmer 32/pause 1000/playSound whistle/emote Alex 8/speak Alex \"噢, 看起来他们在叫暂停。\"/pause 500/playMusic crane_game_fast/message \"播音员: 是时候进行新一轮的“吻戏”了!\"/pause 500/message \"播音员: 让我来看看...\"/pause 500/playSound whistle/pause 50/playSound whistle/jump Alex/jump farmer/emote Alex 16 true/emote farmer 16/message \"播音员: 靠近底部的这对可爱的夫妇!\"/speak Alex \"那是我们, @!\"/faceDirection Alex 1 true/faceDirection farmer 3/playMusic musicboxsong/speak Alex \"怎么说, 亲爱的?\"/emote farmer 20/showFrame farmer 101/playSound dwop/animate Alex false true 500 42/positionOffset farmer -10 0/specificTemporarySprite heart 21 18/pause 2500/stopAnimation Alex 4/positionOffset farmer 10 0/showFrame farmer 6/faceDirection farmer 3/pause 1000/message \"播音员: 可爱!\"/emote Alex 20/speak Alex \"哈, 这感觉真棒。$l\"/emote farmer 20/playSound whistle/emote Alex 16/faceDirection Alex 2/jump Alex/pause 400/speak Alex \"看起来游戏又开始了, @!$h\"/faceDirection farmer 2/pause 1400/playSound Stadium_cheer/jump Alex/textAboveHead Alex \"芜!\"/pause 500/speak Alex \"又得一分, @!$h#$b#这是隧道队整个赛季打得最好的一场比赛了!$h\"/emote farmer 32/pause 1000/playSound Stadium_cheer/jump Alex/textAboveHead Alex \"冲啊!\"/fade/viewport -1000 -1000/pause 1600/message \"亚历克斯和我在隧道队的比赛中度过了一段美好的时光, 隧道队以压倒性优势获胜!\"/playSound busDoorOpen/beginSimultaneousCommand/changeLocation BusStop/makeInvisible 7 11 12 12/warp Jas 1000 1200/warp Alex 1000 1200/warp farmer 1000 1200/warp Shane 1000 1200/warp Gus 1000 1200/warp Pam 1000 1200/endSimultaneousCommand/pause 2600/fade/viewport 14 11/pause 1000/warp farmer 12 10/playSound doorClose/pause 400/move farmer 0 2 0/pause 250/warp Alex 12 10/playSound doorClose/pause 250/move Alex 0 1 2/speak Alex \"这真是太赞了, @!#$b#隧道队看起来比以往任何时候都要厉害!$h\"/emote farmer 32/speak Alex \"谢谢你和我一起去看比赛, 宝贝。#$b#有你在身边总是更美好。$l\"/pause 700/faceDirection Alex 0/pause 600/faceDirection Alex 2/emote farmer 8/speak Alex \"嘿, 亲爱的...$l#$b#你说我们让这个聚会在家里继续进行下去怎么样?$l\"/emote farmer 16/speed farmer 7/move farmer 0 10 2/move Alex 0 10 2 true/fade/viewport -1000 -1000/pause 2000/changePortrait Alex Beach/speak Alex \"嘿, 这真有趣...$l#$b#我们应该, 呃, 找个时间再试一次...$l\"/pause 1500/end",
+		},
+		"When": {
+                	"Spouse": "Alex",
+			"SuggestiveEndings": "true",
+            	},
+},
+
+{       //Alex Gridball Date - Non Suggestive
+            "LogName": "Alex Gridball Date",
+            "Action": "EditData",
+            "Target": "Data/Events/BusStop",
+            "Entries": {
+                "1116030/n alexGridballDateAgree/t 1200 1900": "playful/14 11/farmer 14 22 0 Alex 14 13 2 Pam -1000 -1000 2 Shane -1000 -1000 2 Jas -1000 -1000 2 Gus -1000 -1000 2/makeInvisible 7 11 12 12/ignoreCollisions farmer/friendship Alex {{FriendBonus}}/skippable/pause 1500/emote Alex 40/warp Pam 12 10/playSound doorClose/pause 600/emote Pam 12/speak Pam \"嘿, 孩子! 能不能快点上车?!  如果我们想及时赶到, 我们现在就得离开!\"/faceDirection Alex 0/emote Alex 16/speak Alex \"等会, 潘姆! 我现在在等人...\"/faceDirection Alex 2/textAboveHead Pam \"哼。\"/pause 600/faceDirection Pam 0/warp Pam -1000 -1000/playSound doorClose/move farmer 0 -8 0 true/pause 1000/jump Alex/pause 600/speak Alex \"@! 你来了!#$b#快来, 我们得走了! 我们不想迟到!\"/emote farmer 60/move Alex -2 0 3 true/move farmer -2 0 3 false/move Alex 0 -3 2 true/move farmer 0 -3 0 false/speak Alex \"It's gonna be awesome, dear. I can't wait!$h\"/emote farmer 32/faceDirection Alex 0/warp Alex -1000 -1000/playSound doorClose/pause 300/move farmer 0 -1 0/pause 300/warp farmer -1000 -1000/playSound doorClose/fade/stopMusic/viewport 1000 1000/pause 500/playSound busDoorOpen/beginSimultaneousCommand/changeToTemporaryMap Stadium false/faceDirection farmer 2 true/warp farmer 22 15/warp Alex 22 19/faceDirection Pam 2 true/warp Pam 19 14/warp Shane 27 16/warp Jas 26 16/warp Gus 18 14/endSimultaneousCommand/pause 2000/fade/playMusic Stadium_ambient/viewport 23 15/pause 1000/jump Alex/move farmer 0 3 2/speak Alex \"我们来的正是时候! 快来, @!$h\"/speed Alex 5/move Alex -2 0 1 true/move farmer 0 1 3 false/move farmer -1 0 3/speak Alex \"让我看看...\"/faceDirection Alex 2/faceDirection farmer 2/pause 500/jump Alex/speak Alex \"看上去隧道队处于领先, @!$h\"/emote farmer 32/pause 500/playSound Stadium_cheer/textAboveHead Alex \"芜湖!\"/jump Alex/playSound Stadium_cheer/speak Alex \"哇哦! 隧道队刚刚进球了！$h#$b#正在使我们的优势变得更大!$h\"/emote farmer 32/pause 1000/playSound whistle/emote Alex 8/speak Alex \"噢, 看起来他们在叫暂停。\"/pause 500/playMusic crane_game_fast/message \"播音员: 是时候进行新一轮的  “吻戏”了!\"/pause 500/message \"播音员: 让我们来看看...\"/pause 500/playSound whistle/pause 50/playSound whistle/jump Alex/jump farmer/emote Alex 16 true/emote farmer 16/message \"播音员: 靠近底部的这对可爱的夫妇!\"/speak Alex \"那是我们, @!\"/faceDirection Alex 1 true/faceDirection farmer 3/playMusic musicboxsong/speak Alex \"怎么说, 亲爱的?\"/emote farmer 20/showFrame farmer 101/playSound dwop/animate Alex false true 500 42/positionOffset farmer -10 0/specificTemporarySprite heart 21 18/pause 2500/stopAnimation Alex 4/positionOffset farmer 10 0/showFrame farmer 6/faceDirection farmer 3/pause 1000/message \"播音员: 可爱!\"/emote Alex 20/speak Alex \"哈, 这感觉真棒。$l\"/emote farmer 20/playSound whistle/emote Alex 16/faceDirection Alex 2/jump Alex/pause 400/speak Alex \"看起来游戏又开始了, @!$h\"/faceDirection farmer 2/pause 1400/playSound Stadium_cheer/jump Alex/textAboveHead Alex \"芜!\"/pause 500/speak Alex \"又得一分, @!$h#$b#这是隧道队整个赛季打得最好的一场比赛了!$h\"/emote farmer 32/pause 1000/playSound Stadium_cheer/jump Alex/textAboveHead Alex \"冲啊!\"/fade/viewport -1000 -1000/pause 1600/message \"亚历克斯和我在隧道队的比赛中度过了一段美好的时光, 隧道队以压倒性优势获胜!\"/playSound busDoorOpen/beginSimultaneousCommand/changeLocation BusStop/makeInvisible 7 11 12 12/warp Jas 1000 1200/warp Alex 1000 1200/warp farmer 1000 1200/warp Shane 1000 1200/warp Gus 1000 1200/warp Pam 1000 1200/endSimultaneousCommand/pause 2600/fade/viewport 14 11/pause 1000/warp farmer 12 10/playSound doorClose/pause 400/move farmer 0 2 0/pause 250/warp Alex 12 10/playSound doorClose/pause 250/move Alex 0 1 2/speak Alex \"这真是太赞了, @!#$b#隧道队看起来比以往任何时候都要厉害!$h\"/emote farmer 32/speak Alex \"谢谢你和我一起去看比赛, 宝贝。#$b#有你在身边总是更美好。$l\"/pause 700/speak Alex \"来吧, 我们回家。#$b#看一下我们拍的那些照片, 哈哈!$h\"/emote farmer 32/move farmer 0 10 2 true/move Alex 0 10 2 false/fade/viewport -1000 -1000/pause 2000/message \"亚历克斯和我今天的约会是最棒的, 我很幸运能嫁给他!\"/pause 1500/end",
+		},
+		"When": {
+                	"Spouse": "Alex",
+			"SuggestiveEndings": "false",
+            	},
+},
+	
+],
+}

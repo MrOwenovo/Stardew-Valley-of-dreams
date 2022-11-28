@@ -1,0 +1,471 @@
+{
+	"Format": "1.19.0",
+	
+			"ConfigSchema": 
+		{
+			"BladetailSturgeon":
+				{
+				"AllowValues": "new,old,disabled",
+				"Default": "new",
+				"AllowMultiple": "false"
+				}, 
+			"CapedTreeFrog":
+				{
+				"AllowValues": "new,old,disabled",
+				"Default": "new",
+				"AllowMultiple": "false"
+				}, 
+			"CardiaSeptalJellyfish":
+				{
+				"AllowValues": "new,old,disabled",
+				"Default": "new",
+				"AllowMultiple": "false"
+				}, 
+			"CrimsonSpikedClam":
+				{
+				"AllowValues": "new,old,disabled",
+				"Default": "new",
+				"AllowMultiple": "false"
+				}, 
+			"CutthroatTrout":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				},
+			"DeepRidgeAngler":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				},
+			"FairytaleLionfish":
+				{
+				"AllowValues": "new,old,disabled",
+				"Default": "new",
+				"AllowMultiple": "false"
+				}, 
+			"FixerEel":
+				{
+				"AllowValues": "new,old,disabled",
+				"Default": "new",
+				"AllowMultiple": "false"
+				}, 
+			"GoldenRoseFin":
+				{
+				"AllowValues": "new,old,disabled",
+				"Default": "new",
+				"AllowMultiple": "false"
+				}, 
+			"HarvesterTrout":
+				{
+				"AllowValues": "new,old,disabled",
+				"Default": "new",
+				"AllowMultiple": "false"
+				}, 
+			"LullabyCarp":
+				{
+				"AllowValues": "new,old,disabled",
+				"Default": "new",
+				"AllowMultiple": "false"
+				}, 
+			"MountainRedbellyDace":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				},
+			"MountainWhitefish":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				},
+			"PebbleBackCrab":
+				{
+				"AllowValues": "new,old,disabled",
+				"Default": "new",
+				"AllowMultiple": "false"
+				}, 
+			"RidgeBluegill":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				},
+			"RidgesideBass":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				},
+			"SkulpinFish":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				},
+			"SockeyeSalmon":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				},
+			"WaterfallSnakehead":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				"AllowMultiple": "false"
+				},
+		},
+	"Changes": [
+		{
+			"LogName": "Bladetail Sturgeon Old",
+			"Action": "EditImage",
+			"Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Bladetail Sturgeon}}",
+			"FromFile": "bladetail_sturgeon.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Bladetail Sturgeon}}", "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Bladetail Sturgeon}}", "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 20,
+			"AnimationFrameCount": 4,
+			"When":
+				{"BladetailSturgeon": "old"},
+		},
+		{
+			"LogName": "Bladetail Sturgeon New",
+			"Action": "EditImage",
+			"Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Bladetail Sturgeon}}",
+			"FromFile": "bladetail_sturgeon_new.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Bladetail Sturgeon}}", "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Bladetail Sturgeon}}", "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 20,
+			"AnimationFrameCount": 4,
+			"When":
+				{"BladetailSturgeon": "new"},
+		},
+		{
+			"LogName": "Caped Tree Frog Old",
+			"Action": "EditImage",
+			"Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Caped Tree Frog}}",
+			"FromFile": "caped_tree_frog.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Caped Tree Frog}}", "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Caped Tree Frog}}", "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 20,
+			"AnimationFrameCount": 10,
+			"When":
+				{"CapedTreeFrog": "old"},
+		},
+		{
+			"LogName": "Caped Tree Frog New",
+			"Action": "EditImage",
+			"Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Caped Tree Frog}}",
+			"FromFile": "caped_tree_frog_new.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Caped Tree Frog}}", "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Caped Tree Frog}}", "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 20,
+			"AnimationFrameCount": 10,
+			"When":
+				{"CapedTreeFrog": "new"},
+		},
+		{
+			"LogName": "Cardia Septal Jellyfish Old",
+			"Action": "EditImage",
+			"Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Cardia Septal Jellyfish}}",
+			"FromFile": "cardia_septal_jellyfish.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Cardia Septal Jellyfish}}", "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Cardia Septal Jellyfish}}", "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 20,
+			"AnimationFrameCount": 4,
+			"When":
+				{"CardiaSeptalJellyfish": "old"},
+		},
+		{
+			"LogName": "Cardia Septal Jellyfish New",
+			"Action": "EditImage",
+			"Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Cardia Septal Jellyfish}}",
+			"FromFile": "cardia_septal_jellyfish_new.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Cardia Septal Jellyfish}}", "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Cardia Septal Jellyfish}}", "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 20,
+			"AnimationFrameCount": 4,
+			"When":
+				{"CardiaSeptalJellyfish": "new"},
+		},
+		{
+			"LogName": "Crimson Spiked Clam Old",
+			"Action": "EditImage",
+			"Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Crimson Spiked Clam}}",
+			"FromFile": "crimson_spiked_clam.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Crimson Spiked Clam}}", "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Crimson Spiked Clam}}", "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 15,
+			"AnimationFrameCount": 14,
+			"When":
+				{"CrimsonSpikedClam": "old"},
+		},
+		{
+			"LogName": "Crimson Spiked Clam New",
+			"Action": "EditImage",
+			"Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Crimson Spiked Clam}}",
+			"FromFile": "crimson_spiked_clam_new.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Crimson Spiked Clam}}", "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Crimson Spiked Clam}}", "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 15,
+			"AnimationFrameCount": 14,
+			"When":
+				{"CrimsonSpikedClam": "new"},
+		},
+		{
+			"LogName": "Cutthroat Trout",
+			"Action": "EditImage",
+			"Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Cutthroat Trout}}",
+			"FromFile": "cutthroat_trout.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Cutthroat Trout}}", "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Cutthroat Trout}}", "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 20,
+			"AnimationFrameCount": 4,
+			"When":
+				{"CutthroatTrout": "true"},
+		},
+		{
+			"LogName": "Deep Ridge Angler",
+			"Action": "EditImage",
+			"Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Deep Ridge Angler}}",
+			"FromFile": "deep_ridge_angler.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Deep Ridge Angler}}", "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Deep Ridge Angler}}", "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 20,
+			"AnimationFrameCount": 6,
+			"When":
+				{"DeepRidgeAngler": "true"},
+		},
+		{
+			"LogName": "Fairytale Lionfish Old",
+			"Action": "EditImage",
+			"Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Fairytale Lionfish}}",
+			"FromFile": "fairytale_lionfish.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Fairytale Lionfish}}", "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Fairytale Lionfish}}", "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 20,
+			"AnimationFrameCount": 4,
+			"When":
+				{"FairytaleLionfish": "old"},
+		},
+		{
+			"LogName": "Fairytale Lionfish New",
+			"Action": "EditImage",
+			"Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Fairytale Lionfish}}",
+			"FromFile": "fairytale_lionfish_new.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Fairytale Lionfish}}", "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Fairytale Lionfish}}", "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 20,
+			"AnimationFrameCount": 4,
+			"When":
+				{"FairytaleLionfish": "new"},
+		},
+		{
+			"LogName": "Fixer Eel Old",
+			"Action": "EditImage",
+			"Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Fixer Eel}}",
+			"FromFile": "fixer_eel.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Fixer Eel}}", "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Fixer Eel}}", "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 20,
+			"AnimationFrameCount": 4,
+			"When":
+				{"FixerEel": "old"},
+		},
+		{
+			"LogName": "Fixer Eel New",
+			"Action": "EditImage",
+			"Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Fixer Eel}}",
+			"FromFile": "fixer_eel_new.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Fixer Eel}}", "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Fixer Eel}}", "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 20,
+			"AnimationFrameCount": 6,
+			"When":
+				{"FixerEel": "new"},
+		},
+		{
+			"LogName": "Golden Rose Fin Old",
+			"Action": "EditImage",
+			"Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Golden Rose Fin}}",
+			"FromFile": "golden_rose_fin.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Golden Rose Fin}}", "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Golden Rose Fin}}", "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 20,
+			"AnimationFrameCount": 4,
+			"When":
+				{"GoldenRoseFin": "old"},
+		},
+		{
+			"LogName": "Golden Rose Fin New",
+			"Action": "EditImage",
+			"Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Golden Rose Fin}}",
+			"FromFile": "golden_rose_fin_new.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Golden Rose Fin}}", "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Golden Rose Fin}}", "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 20,
+			"AnimationFrameCount": 4,
+			"When":
+				{"GoldenRoseFin": "new"},
+		},
+		{
+			"LogName": "Harvester Trout Old",
+			"Action": "EditImage",
+			"Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Harvester Trout}}",
+			"FromFile": "harvester_trout.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Harvester Trout}}", "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Harvester Trout}}", "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 20,
+			"AnimationFrameCount": 4,
+			"When":
+				{"HarvesterTrout": "old"},
+		},
+		{
+			"LogName": "Harvester Trout New",
+			"Action": "EditImage",
+			"Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Harvester Trout}}",
+			"FromFile": "harvester_trout_new.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Harvester Trout}}", "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Harvester Trout}}", "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 20,
+			"AnimationFrameCount": 4,
+			"When":
+				{"HarvesterTrout": "new"},
+		},
+		{
+			"LogName": "Lullaby Carp Old",
+			"Action": "EditImage",
+			"Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Lullaby Carp}}",
+			"FromFile": "lullaby_carp.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Lullaby Carp}}", "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Lullaby Carp}}", "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 20,
+			"AnimationFrameCount": 4,
+			"When":
+				{"LullabyCarp": "old"},
+		},
+		{
+			"LogName": "Lullaby Carp New",
+			"Action": "EditImage",
+			"Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Lullaby Carp}}",
+			"FromFile": "lullaby_carp_new.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Lullaby Carp}}", "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Lullaby Carp}}", "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 20,
+			"AnimationFrameCount": 4,
+			"When":
+				{"LullabyCarp": "new"},
+		},
+		{
+			"LogName": "Mountain Redbelly Dace",
+			"Action": "EditImage",
+			"Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Mountain Redbelly Dace}}",
+			"FromFile": "mountain_redbelly_dace.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Mountain Redbelly Dace}}", "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Mountain Redbelly Dace}}", "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 20,
+			"AnimationFrameCount": 4,
+			"When":
+				{"MountainRedbellyDace": "true"},
+		},
+		{
+			"LogName": "Mountain Whitefish",
+			"Action": "EditImage",
+			"Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Mountain Whitefish}}",
+			"FromFile": "mountain_whitefish.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Mountain Whitefish}}", "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Mountain Whitefish}}", "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 20,
+			"AnimationFrameCount": 4,
+			"When":
+				{"MountainWhitefish": "true"},
+		},
+		{
+			"LogName": "Pebble Back Crab Old",
+			"Action": "EditImage",
+			"Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Pebble Back Crab}}",
+			"FromFile": "pebble_back_crab.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Pebble Back Crab}}", "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Pebble Back Crab}}", "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 20,
+			"AnimationFrameCount": 4,
+			"When":
+				{"PebbleBackCrab": "old"},
+		},
+		{
+			"LogName": "Pebble Back Crab New",
+			"Action": "EditImage",
+			"Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Pebble Back Crab}}",
+			"FromFile": "pebble_back_crab_new.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Pebble Back Crab}}", "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Pebble Back Crab}}", "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 20,
+			"AnimationFrameCount": 10,
+			"When":
+				{"PebbleBackCrab": "new"},
+		},
+		{
+			"LogName": "Ridge Bluegill",
+			"Action": "EditImage",
+			"Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Ridge Bluegill}}",
+			"FromFile": "ridge_bluegill.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Ridge Bluegill}}", "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Ridge Bluegill}}", "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 20,
+			"AnimationFrameCount": 4,
+			"When":
+				{"RidgeBluegill": "true"},
+		},
+		{
+			"LogName": "Ridgeside Bass",
+			"Action": "EditImage",
+			"Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Ridgeside Bass}}",
+			"FromFile": "ridgeside_bass.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Ridgeside Bass}}", "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Ridgeside Bass}}", "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 20,
+			"AnimationFrameCount": 4,
+			"When":
+				{"RidgesideBass": "true"},
+		},
+		{
+			"LogName": "Skulpin Fish",
+			"Action": "EditImage",
+			"Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Skulpin Fish}}",
+			"FromFile": "skulpin_fish.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Skulpin Fish}}", "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Skulpin Fish}}", "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 20,
+			"AnimationFrameCount": 4,
+			"When":
+				{"SkulpinFish": "true"},
+		},
+		{
+			"LogName": "Sockeye Salmon",
+			"Action": "EditImage",
+			"Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Sockeye Salmon}}",
+			"FromFile": "sockeye_salmon.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Sockeye Salmon}}", "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Sockeye Salmon}}", "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 20,
+			"AnimationFrameCount": 4,
+			"When":
+				{"SockeyeSalmon": "true"},
+		},
+		{
+			"LogName": "Waterfall Snakehead",
+			"Action": "EditImage",
+			"Target": "{{spacechase0.JsonAssets/ObjectSpriteTilesheet:Waterfall Snakehead}}",
+			"FromFile": "waterfall_snakehead.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": "{{spacechase0.JsonAssets/ObjectSpriteX:Waterfall Snakehead}}", "Y": "{{spacechase0.JsonAssets/ObjectSpriteY:Waterfall Snakehead}}", "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 30,
+			"AnimationFrameCount": 12,
+			"When":
+				{"WaterfallSnakehead": "true"},
+		}
+	]
+}

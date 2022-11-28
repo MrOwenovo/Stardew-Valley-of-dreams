@@ -1,0 +1,785 @@
+{
+    "Changes": [
+        {
+            "LogName": "NPC Manifestation",
+            "Action": "EditData",
+            "Target": "Data/NPCDispositions",
+            "Entries": {
+                "Jacob": "adult/polite/shy/positive/male/not-datable/null/Town/summer 27/Eloise '{{i18n:Relationship.Jacob.Eloise}}'/Custom_ESVetHouse 22 5/{{i18n:Name.Jacob}}",
+                "Eloise": "child/polite/outgoing/positive/female/not-datable/null/Town/spring 22/Jacob '{{i18n:Relationship.Eloise.Jacob}}'/Custom_ESVetHouse 33 23/{{i18n:Name.Eloise}}"
+            }
+        },
+        {
+            "LogName": "NPC Gift Tastes",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "Entries": {
+                "Jacob": "{{i18n:gifts.jacob.love}}/205 210 241 282/{{i18n:gifts.jacob.like}}/344 342 350 395/{{i18n:gifts.jacob.dislike}}/16 800/{{i18n:gifts.jacob.hate}}/232 250/{{i18n:gifts.jacob.neutral}}//",
+                "Eloise": "{{i18n:gifts.eloise.love}}/18 221 444 394 107/{{i18n:gifts.eloise.like}}/-2 -5 113 174 176 180 223 442 233/{{i18n:gifts.eloise.dislike}}/-4/{{i18n:gifts.eloise.hate}}/88 190 236 346 395 800/{{i18n:gifts.eloise.neutral}}//"
+            }
+        },
+        //Jacob loves survival burger, hashbrowns, fried mushroom, cranberries. Likes jelly, pickles, juice, coffee. Dislikes horse radish, blobfish. Hates rice pudding, kale.
+        //Eloise loves: daffodil, rainbow shell, duck feathers, pink cake, dinosaur egg
+        //likes chicken statue, cookies, eggs, ice cream, gemstones
+        //Dislikes fish, hates blobfish, cauliflower, coconut, coffee, beer
+        {
+            "LogName": "Animations",
+            "Action": "EditData",
+            "Target": "Data/animationDescriptions",
+            "Entries": {
+                "Eloise_kneel": "8/16/8",
+                "Eloise_read": "8 17/18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 19 19 19 19 19 19/8",
+                "Eloise_write": "27/27 27 27 27 27 27 27 27 27 27 24 24 24 24 24 24 25 25 26 26 24 25 26 25 24 24 24 24 24 25 25 25 24 25 26 26 26 26 25 24 24 27 27 27 27 27 27 27 24 24 25 25 26 26 25 25 24 24/27",
+                "Eloise_sit": "20/20/20",
+                "Eloise_read_high": "22/22 22 22 22 22 22 22 22 23 23 23 23 23 23 23 23 23/22",
+                "eloise_beach_umbrella": "8 17/18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 19 19 19 19 19 19/8",
+                "eloise_beach_towel": "27/27 27 27 27 27 27 27 27 27 27 24 24 24 24 24 24 25 25 26 26 24 25 26 25 24 24 24 24 24 25 25 25 24 25 26 26 26 26 25 24 24 27 27 27 27 27 27 27 24 24 25 25 26 26 25 25 24 24/27",
+                "ducknpc_sleep": "16/17/16",
+                "ducknpc_eat": "20/22 22 22 22 22 23 23 23 23 23 23 21 21 21 21 21/20",
+                "duckfnpc_sleep": "16/17/16",
+                "duckfnpc_eat": "20/22 22 22 22 22 23 23 23 23 23 23 21 21 21 21 21/20",
+                "pepperpup_nap": "16/16/16",
+                "pepperpup_sleep": "16/16/16"
+            }
+        },
+        //Jacob
+        {
+            "LogName": "Jacob Portraits",
+            "Action": "Load",
+            "Target": "Portraits/Jacob, Characters/Jacob",
+            "FromFile": "assets/{{Target}}/Jacob.png"
+        },
+        {
+            "LogName": "Jacob Portraits",
+            "Action": "Load",
+            "Target": "Portraits/Jacob_beach",
+            "FromFile": "assets/Portraits/Jacob/Jacob_summer.png"
+        },
+        {
+            "LogName": "Jacob Portraits",
+            "Action": "Load",
+            "Target": "Characters/Jacob_beach",
+            "FromFile": "assets/Characters/Jacob/Jacob_summer.png"
+        },
+        {
+            "LogName": "Jacob Portraits",
+            "Action": "EditImage",
+            "Target": "Portraits/Jacob, Characters/Jacob",
+            "FromFile": "assets/{{Target}}/Jacob_{{season}}.png",
+            "When": {
+                "season": "summer, fall, winter"
+            }
+        },
+        //Eloise			
+        {
+            "LogName": "Eloise Everyday Wear",
+            "Action": "Load",
+            "Target": "Portraits/Eloise, Characters/Eloise",
+            "FromFile": "assets/{{Target}}/Eloise_spring_2.png"
+        },
+        {
+            "LogName": "Eloise Beach Wear",
+            "Action": "Load",
+            "Target": "Portraits/Eloise_beach",
+            "FromFile": "assets/Portraits/Eloise/Eloise_summer_2.png"
+        },
+        {
+            "LogName": "Eloise Beach Wear",
+            "Action": "Load",
+            "Target": "Portraits/Eloise_beach",
+            "FromFile": "assets/Characters/Eloise/Eloise_summer_2.png"
+        },
+        {
+            "LogName": "Eloise Dress",
+            "Action": "EditImage",
+            "Target": "Portraits/Eloise, Characters/Eloise",
+            "FromFile": "assets/{{Target}}/Eloise_{{season}}_1.png",
+            "When": {
+                "DayofWeek": "Tuesday, Wednesday, Friday"
+            }
+        },
+        {
+            "LogName": "Eloise Sprites",
+            "Action": "EditImage",
+            "Target": "Characters/Eloise, Portraits/Eloise",
+            "FromFile": "assets/{{Target}}/Eloise_{{season}}_2.png",
+            "When": {
+                "DayofWeek": "Monday, Thursday, Saturday, Sunday"
+            }
+        },
+        {
+            "LogName": "Eloise Sprites",
+            "Action": "EditImage",
+            "Target": "Characters/Eloise, Portraits/Eloise",
+            "FromFile": "assets/{{Target}}/Eloise_rain.png",
+            "Update": "OnLocationChange",
+            "When": {
+                "IsOutdoors": true,
+                "Weather": "rain, storm"
+            }
+        },
+        // Dialogue
+        {
+            "LogName": "Dialogue",
+            "Action": "Load",
+            "Target": "Characters/Dialogue/Eloise, Characters/Dialogue/Jacob",
+            "FromFile": "assets/{{Target}}/Dialogue.json"
+        },
+        {
+            "LogName": "Schedule",
+            "Action": "Load",
+            "Target": "Characters/schedules/Eloise,Characters/schedules/Jacob",
+            "FromFile": "assets/{{Target}}/Schedule.json"
+        },
+        {
+            "LogName": "Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Eloise",
+            "Entries": {
+                "spring": "610 Custom_ESVetHouse 30 14 1/730 Town 100 95 1 \"Strings\\schedules\\Eloise:tuesday.004\"/930 Forest 37 10 1 \"Strings\\schedules\\Eloise:tuesday.000\"/1500 AnimalShop 16 14 2/1900 AnimalShop 6 5 0"
+            },
+            "When": {
+                "DayOfWeek": "Tuesday",
+                "Weather": "sun, wind"
+            }
+        },
+        {
+            "LogName": "Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Eloise",
+            "Entries": {
+                "spring": "610 Custom_ESVetHouse 30 14 1/730 Town 100 95 1 \"Strings\\schedules\\Eloise:tuesday.005\"/930 SamHouse 3 13 2 Eloise_read \"Strings\\schedules\\Eloise:tuesday.001\"/1400 Town 15 72 0 \"Strings\\schedules\\Eloise:tuesday.002\"/1700 SamHouse 4 8 0 \"Strings\\schedules\\Eloise:tuesday.003\"/1900 SamHouse 3 13 2 Eloise_read"
+            },
+            "When": {
+                "Day": "23",
+                "Weather": "sun, wind"
+            }
+        },
+        {
+            "LogName": "Rainy Day Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/rainy",
+            "Entries": {
+                "Eloise": "{{i18n:rain.eloise}}",
+                "Jacob": "{{i18n:rain.jacob}}"
+            }
+        },
+        //Jas Schedule
+        {
+            "Action": "EditData",
+            "Target": "Characters/schedules/Jas",
+            "Entries": {
+                "9": "NOT friendship Sam 6 Penny 6/900 AnimalShop 7 5 0/1100 Forest 38 10 3 \"Strings\\schedules\\Jas:ellie.000\"/1500 AnimalShop 17 15 3 jas_read/1900 AnimalShop 4 7 2/2100 AnimalShop 1 7 3 jas_sleep",
+                "Tue": "900 ArchaeologyHouse 19 10 3 jas_read/1400 Town 85 103 2/1620 Town 16 91 0/1750 AnimalShop 4 7 2/2100 AnimalShop 1 7 3 jas_sleep"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Strings/schedules/Jas",
+            "Entries": {
+                "ellie.000": "{{i18n:strings.jas.ellise.000}}"
+            }
+        },
+        {
+            "Action": "Load",
+            "Target": "Strings/schedules/Eloise",
+            "FromFile": "assets/Characters/Dialogue/EloiseStrings.json"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Strings/schedules/Eloise",
+            "Entries": {
+                "tuesday.000": "{{i18n:strings.eloise.tue000}}",
+                "tuesday.001": "{{i18n:strings.eloise.tue001}}",
+                "tuesday.002": "{{i18n:strings.eloise.tue002}}",
+                "tuesday.003": "{{i18n:strings.eloise.tue003}}",
+                "tuesday.004": "{{i18n:strings.eloise.tue004}}",
+                "tuesday.005": "{{i18n:strings.eloise.tue005}}",
+                "vethouse.000": "{{i18n:strings.eloise.vethouse000}}",
+                "vethouse.001": "{{i18n:strings.eloise.vethouse001}}",
+                "schoolday.000": "{{i18n:strings.eloise.schoolday000}}",
+                "schoolday.001": "{{i18n:strings.eloise.schoolday001}}",
+                "winter_17.000": "{{i18n:strings.eloise/winter17000}}",
+                "winter_17.100": "{{i18n:strings.eloise/winter17100}}"
+            }
+        },
+        {
+            "Action": "Load",
+            "Target": "Strings/schedules/Jacob",
+            "FromFile": "assets/Characters/Dialogue/JacobStrings.json"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Strings/schedules/Jacob",
+            "Entries": {
+                "tuesday.000": "{{i18n:strings.jacob.tue000}}",
+                "tuesday.001": "{{i18n:strings.jacob.tue001}}",
+                "friday.001": "{{i18n:strings.jacob.fri001}}",
+                "friday.002": "{{i18n:strings.jacob.fri002}}",
+                "saturday.001": "{{i18n:strings.jacob.sat001}}",
+                "winter_17.000": "{{i18n:strings.jacob.winter17}}"
+            }
+        },
+        {
+            "LogName": "Adds LockedDoorWarp on Vet's Office",
+            "Action": "EditMap",
+            "Target": "Maps/Custom_ESVetHouse",
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 5,
+                        "Y": 9
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "LockedDoorWarp 5 6 Custom_ESJacobOffice 2000 2600"
+                    }
+                }
+            ],
+            "When": {
+                "DayofWeek": "Tuesday"
+            }
+        },
+        {
+            "LogName": "Adds LockedDoorWarp on Vet's Office",
+            "Action": "EditMap",
+            "Target": "Maps/Custom_ESVetHouse",
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 5,
+                        "Y": 9
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "LockedDoorWarp 5 6 Custom_ESJacobOffice 800 1800"
+                    }
+                }
+            ],
+            "When": {
+                "DayofWeek": "Monday, Wednesday, Thursday, Friday, Saturday, Sunday"
+            }
+        },
+        {
+            "LogName": "Adds LockedDoorWarp on Vet's Barn",
+            "Action": "EditMap",
+            "Target": "Maps/Custom_EastScarpe",
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 14,
+                        "Y": 11
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "LockedDoorWarp 11 13 Custom_ESJacobBarn 800 1600"
+                    }
+                }
+            ],
+            "When": {
+                "HasSeenEvent": "57870004"
+            }
+        },
+        {
+            "LogName": "Load Chicken Tilesheet",
+            "Action": "Load",
+            "Target": "Maps/chicken_animations",
+            "FromFile": "assets/Images/chicken_animations.png"
+        },
+        {
+            "LogName": "Chicken Animation Overlay Patch",
+            "Action": "EditImage",
+            "Target": "Maps/chicken_animations",
+            "FromFile": "assets/Images/chicken_animations.png",
+            "FromArea": {
+                "X": 0,
+                "Y": 576,
+                "Width": 640,
+                "Height": 576
+            },
+            "ToArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 640,
+                "Height": 576
+            },
+            "PatchMode": "Overlay",
+            "When": {
+                "HasSeenEvent": "57870003"
+            }
+        },
+        //Festivals
+        {
+            "Action": "Include",
+            "FromFile": "assets/Festivals/JacobEloise.json"
+        },
+        //Events
+        //Temporary Actors and Locations
+        {
+            "LogName": "Mandarin Duck",
+            "Action": "Load",
+            "Target": "Characters/MandarinDuck",
+            "FromFile": "assets/Images/Mandarin_Duck_water.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/ESJacobBarn",
+            "FromFile": "assets/Maps/JacobBarnTemp.tmx"
+        },
+        {
+            "LogName": "DeepMountains",
+            "Action": "Load",
+            "Target": "Maps/DeepMountainsVan",
+            "FromFile": "assets/Maps/{{season}}_DeepMountains_Van.tmx"
+        },
+        /***********
+		E V E N T S
+		***********/
+        { //	Aquarium Event: after donating Blobfish
+            "Action": "EditData",
+            "Target": "Data/Events/Custom_FishMuseum",
+            "Entries": {
+                "57870001/f Jacob 500/Hn AquariumDonated:Blobfish": "submarine_song/29 33/Eloise 26 34 3 Jacob 25 34 1 farmer 20 36 0/skippable/pause 500/speak Eloise \"{{i18n:57870001.01}}\"/pause 500/speak Jacob \"{{i18n:57870001.02}}\"/pause 500/emote Eloise 12/move farmer 5 0 0/speak Jacob \"{{i18n:57870001.03}}\"/faceDirection Jacob 2 true/faceDirection Eloise 2 true/speak Jacob \"{{i18n:57870001.04}}\"/pause 500/emote farmer 32/pause 500/speak Jacob \"{{i18n:57870001.05}}\"/pause 500/emote Jacob 28/speak Jacob \"{{i18n:57870001.06}}\"/pause 500/speak Eloise \"{{i18n:57870001.07}}\"/emote Jacob 40/pause 500/speak Jacob \"{{i18n:57870001.08}}\"/pause 500/textAboveHead Eloise \"{{i18n:57870001.081}}\"/pause 500/move Jacob 0 -2 1/move Jacob 10 0 0 true/pause 500/speak Eloise \"{{i18n:57870001.09}}\"/pause 500/emote farmer 60/pause 500/speak Eloise \"{{i18n:57870001.10}}\"/faceDirection Eloise 0/pause 500/move Eloise 0 -2 1/move Eloise 8 0 0/move Jacob 0 -2 0/jump Eloise 5/emote Eloise 16/move Eloise 0 -2 0/move farmer 0 -4 1/move farmer 7 0 1/faceDirection farmer 0/speak Eloise \"{{i18n:57870001.11}}\"/faceDirection Jacob 3 true/faceDirection Eloise 1 true/speak Jacob \"{{i18n:57870001.12}}\"/pause 500/faceDirection Eloise 0/textAboveHead Eloise \"{{i18n:57870001.121}}\"/pause 2000/move farmer 3 0 0/emote Jacob 32/pause 500/faceDirection Jacob 2/speak Jacob \"{{i18n:57870001.13}}\"/pause 500/emote farmer 32/pause 500/speak Eloise \"{{i18n:57870001.14}}\"/pause 1000/end"
+            }
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/CVParkDog",
+            "FromFile": "assets/Maps/Park.tmx"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Custom_EastScarpe",
+            "Entries": {
+                //Eloise 2-heart event
+                "57870002/f Eloise 500/z winter/t 1000 1600/w sunny/d Tue Wed Fri": "{{season}}_day_ambient/23 67/Eloise 20 67 1 farmer 16 69 1/addTemporaryActor MandarinDuck 16 32 28 64 3 false/addMailReceived Ellie_Mandarin/skippable/swimming MandarinDuck/pause 500/speed MandarinDuck 2/advancedMove MandarinDuck false -5 0 0 3 -1 0/move farmer 4 0 0/pause 500/faceDirection Eloise 2/speak Eloise \"{{i18n:57870002.01}}\"/pause 500/faceDirection Eloise 1/playSound Duck/pause 500/emote Eloise 32/pause 500/faceDirection Eloise 2/speak Eloise \"{{i18n:57870002.02}}\"/pause 500/quickQuestion #{{i18n:57870002.q1}}#{{i18n:57870002.q2}}#{{i18n:57870002.q3}}#{{i18n:57870002.q4}}(break)speak Eloise \"{{i18n:57870002.r1}}\"(break)friendship Eloise 50\\emote Eloise 20\\speak Eloise \"{{i18n:57870002.r2}}\"(break)speak Eloise \"{{i18n:57870002.r3}}\"(break)friendship Eloise -50\\emote Eloise 12\\speak Eloise \"{{i18n:57870002.r4}}\"/pause 500/faceDirection Eloise 1/speak Eloise \"{{i18n:57870002.03}}\"/emote farmer 16/jump farmer 3/showFrame 9/addObject 20 67 216 1/pause 500/playSound Duck/pause 100/playSound Duck/faceDirection Eloise 2/emote Eloise 16/textAboveHead Eloise \"{{i18n:57870002.031}}\"/removeSprite 20 67/speak Eloise \"{{i18n:57870002.04}}\"/emote farmer 40/emote MandarinDuck 12/faceDirection farmer 1/faceDirection MandarinDuck 1/move MandarinDuck 3 0 3/animate MandarinDuck false true 350 20 21 22 23 22 23/emote farmer 8/faceDirection farmer 0/speak Eloise \"$q 5787001 null \"#{{i18n:57870002.05}}#$r 5787002 50 Eloise_Duck_Y#{{i18n:57870002.06}}#$r 5787002 0 Eloise_Duck_W#{{i18n:57870002.07}}#$r 5787003 25 Eloise_Duck_G#{{i18n:57870002.08}}#$r 5787004 -100 Eloise_Duck_N#{{i18n:57870002.09}}\"/fork 5787004 Eloise_Bossy_Child/pause 500/stopAnimation MandarinDuck/pause 500/playSound Duck/faceDirection Eloise 1/faceDirection farmer 1/pause 500/move MandarinDuck -2 0 3/animate MandarinDuck false true 350 20 21 22 23 22 23/speak Eloise \"{{i18n:57870002.10}}\"/pause 500/faceDirection Eloise 2/speak Eloise \"{{i18n:57870002.11}}\"/faceDirection Eloise 1/textAboveHead Eloise \"{{i18n:57870002.111}}\"/pause 1500/move Eloise 0 -4 0 true/pause 500/end",
+                "Eloise_Bossy_Child": "pause 500/faceDirection Eloise 1/speak Eloise \"{{i18n:Eloise_Bossy_Child.01}}\"/pause 500/faceDirection Eloise 2/emote Eloise 40/pause 1500/faceDirection Eloise 0/move Eloise 0 -4 0 true/pause 500/end",
+                //Jacob and Eloise 2-heart event
+                "57870004/f Jacob 500/f Eloise 500/t 1000 1600/d Tue Wed Fri": "{{season}}_day_ambient/19 15/Eloise -100 -100 2 Jacob -100 -100 0 farmer 24 11 2/skippable/move farmer 0 3 3/move farmer -3 0 0/pause 1000/playSound doorOpen/warp Eloise 14 12/move Eloise 0 1 1 true/move farmer 0 -1 3 true/pause 1000/jump Eloise 4/textAboveHead Eloise \"{{i18n:57870004.01}}\"/speed Eloise 4/move Eloise 3 0 1/move farmer -3 0 3/speak Eloise \"{{i18n:57870004.02}}\"/emote farmer 32/speak Eloise \"{{i18n:57870004.03}}\"/emote farmer 56/pause 1000/textAboveHead Eloise \"{{i18n:57870004.04}}\"/speak Eloise \"{{i18n:57870004.05}}\"/speed Eloise 5/move Eloise -3 0 1/speak Eloise \"{{i18n:57870004.06}}\"/emote farmer 60/move farmer -3 0 3/move Eloise 0 -1 0/warp Eloise -100 -100/move farmer -1 0 0/move farmer 0 -1 0/pause 500/warp farmer -100 -100/fade/playSound doorClose/viewport -1000 -1000/changetoTemporaryMap ESJacobBarn/warp Jacob 12 7/warp Eloise 11 13/viewport 13 8/speed Eloise 5/move Eloise 0 -6 1/faceDirection Jacob 3/speak Jacob \"{{i18n:57870004.07}}\"/jump Eloise 2/speak Eloise \"{{i18n:57870004.08}}\"/pause 500/emote Jacob 28/textAboveHead Jacob \"{{i18n:57870004.09}}\"/playSound thudStep/warp farmer 11 13/faceDirection Jacob 2 true/faceDirection Eloise 2 true/emote Jacob 60/move Jacob 0 3 3 true/move farmer 0 -3 1 true/emote Eloise 32/pause 1000/speak Jacob \"{{i18n:57870004.10}}\"/quickQuestion #{{i18n:57870004.11}}#{{i18n:57870004.12}}#{{i18n:57870004.13}}#{{i18n:57870004.14}}(break)speak Jacob \"{{i18n:57870004.15}}\"(break)speak Jacob \"{{i18n:57870004.16}}\"(break)speak Jacob \"{{i18n:57870004.17}}\"(break)speak Eloise \"{{i18n:57870004.18}}\"/emote Jacob 32/pause 500/speak Jacob \"{{i18n:57870004.19}}\"/pause 500/jump Eloise 4/speak Eloise \"{{i18n:57870004.20}}\"/speak Jacob \"{{i18n:57870004.21}}\"/pause 500/faceDirection Jacob 0/faceDirection farmer 0/speak Jacob \"{{i18n:57870004.22}}\"/jump Eloise 3/textAboveHead Eloise \"{{i18n:57870004.23}}\"/move Eloise -3 0 0 true/move farmer 0 -3 3 true/pause 1000/move farmer -2 0 0/speak Eloise \"{{i18n:57870004.24}}\"/pause 500/move Eloise -4 0 0 true/move farmer -4 0 0 true/pause 1000/speak Eloise \"{{i18n:57870004.25}}\"/move Jacob 0 -3 3/emote Jacob 20/pause 1000/end dialogue Jacob \"{{i18n:57870004.26}}\"",
+                //Jacob 4-heart event
+                "57870003/d tue sat sun/f Jacob 1000/t 1100 1600/w sunny": "{{season}}_day_ambient/32 35/Jacob 28 35 1 farmer 39 36 3/skippable/pause 1000/move Jacob 5 0 2 true/move farmer -5 0 0 true/pause 2000/speak Jacob \"{{i18n:57870003.01}}\"/question fork0 \"{{i18n:57870003.02}}#{{i18n:57870003.03}}#{{i18n:57870003.04}}\"/fork NoHelpJacob/pause 500/jump Jacob 3/speak Jacob \"{{i18n:57870003.05}}\"/emote farmer 16/speak Jacob \"{{i18n:57870003.06}}\"/pause 500/question fork0 \"{{i18n:57870003.07}}#{{i18n:57870003.08}}#{{i18n:57870003.09}}#\"/fork NoHelpJacob/pause 500/emote Jacob 20/speak Jacob \"{{i18n:57870003.10}}\"/pause 500/textAboveHead Jacob \"{{i18n:57870003.11}}\"/speed Jacob 4/move Jacob 0 -2 0 true/speed farmer 4/move farmer -2 0 3 true/fade/viewport -100 -100/playSound doorClose/pause 500/playSound doorClose/pause 1500/playSound busDriveOff/pause 2000/changeToTemporaryMap DeepMountainsVan/warp farmer -100 -100/warp Jacob 69 58/addTemporaryActor Brown_Chicken 16 16 47 43 1 false Animal chicken1/addTemporaryActor Brown_Chicken 16 16 51 44 1 false Animal chicken2/addTemporaryActor Brown_Chicken 16 16 56 42 1 false Animal chicken3/addTemporaryActor Brown_Chicken 16 16 78 46 2 false Animal chicken4/addTemporaryActor Brown_Chicken 16 16 57 58 0 false Animal chicken5/addTemporaryActor Brown_Chicken 16 16 67 44 3 false Animal chicken6/addTemporaryActor Brown_Chicken 16 16 55 53 1 false Animal chicken7/addTemporaryActor White_Chicken 16 16 51 57 2 false Animal chicken8/addTemporaryActor White_Chicken 16 16 48 51 2 false Animal chicken9/addTemporaryActor White_Chicken 16 16 62 45 0 false Animal chicken10/addTemporaryActor White_Chicken 16 16 55 46 3 false Animal chicken11/addTemporaryActor White_Chicken 16 16 67 60 0 false Animal chicken12/addTemporaryActor White_Chicken 16 16 53 49 1 false Animal chicken13/addTemporaryActor BabyWhite_Chicken 16 16 47 44 1 false Animal chicken14/addTemporaryActor BabyBrown_Chicken 16 16 63 51 2 false Animal chicken15/addTemporaryActor BabyWhite_Chicken 16 16 68 59 1 false Animal chicken16/viewport 63 50/pause 1000/playSound cluck/pause 500/playSound cluck/advancedMove chicken11 true 0 4 4 0 0 -4 -4 0/animate chicken13 false true 240 24 25 26 27/animate chicken10 false true 240 24 25 26 27/playSound cluck/animate chicken8 true true 500 16 17/move Jacob 0 -2 1/playSound doorOpen/warp farmer 69 55/faceDirection farmer 3 true/faceDirection Jacob 3 true/jump farmer 5/emote farmer 16/pause 1000/stopAnimation chicken13/playSound cluck/Message \"{{i18n:57870003.111}}\"/move Jacob -1 0 3/move chicken15 0 2 1 true/move chicken5 0 -2 1 true/playSound cluck/emote Jacob 40/pause 1000/faceDirection Jacob 0/speak Jacob \"{{i18n:57870003.12}}\"/pause 500/emote farmer 28/stopAnimation chicken10/pause 1000/quickQuestion #{{i18n:57870003.13}}#{{i18n:57870003.14}}#{{i18n:57870003.15}}(break)speak Jacob \"{{i18n:57870003.16}}\"(break)speak Jacob \"{{i18n:57870003.17}}\"(break)speak Jacob \"{{i18n:57870003.18}}\"/pause 1000/speak Jacob \"{{i18n:57870003.19}}\"/emote farmer 56/pause 500/speak Jacob \"{{i18n:57870003.20}}\"/move Jacob 0 -2 3/playSound cluck/pause 500/move chicken7 4 0 1 true/move chicken6 0 4 2 true/move chicken16 0 -4 0 true/playSound cluck/playSound cluck/pause 2000/speak Jacob \"{{i18n:57870003.21}}\"/fade/viewport -100 -100/speak Jacob \"{{i18n:57870003.22}}\"/playSound busDriveOff/changeLocation Custom_EastScarpe/warp Jacob 31 35/warp farmer 30 35/faceDirection farmer 1/viewport 32 35/pause 500/speak Jacob \"{{i18n:57870003.23}}\"/playSound purchase/money 500/speak Jacob \"{{i18n:57870003.24}}\"/emote Jacob 60/pause 500/speak Jacob \"{{i18n:57870003.25}}\"/emote farmer 32/pause 1000/end",
+                "NoHelpJacob": "pause 500/speak Jacob \"{{i18n:57870003.NoHelpJacob.01}}\"/pause 500/faceDirection Jacob 0/move Jacob 0 -3 3/pause 1000/end",
+                "57870017/e 57870016/A Is_Sora_Dead/t 1000 1300/d Tue Wed Fri/w sunny": "playful/20 30/farmer 21 33 3 Eloise -100 -100 2/skippable/move farmer -7 0 0/playSound doorOpen/warp Eloise 14 25/jump Eloise 5/emote Eloise 16/speed Eloise 5/move Eloise 0 6 2/emote farmer 56/message \"{{i18n:57870017.01}}\"/jump Eloise 5/pause 500/speak Eloise \"{{i18n:57870017.02}}\"/emote farmer 8/speak Eloise \"{{i18n:57870017.03}}\"/emote farmer 32/pause 500/speak Eloise \"{{i18n:57870017.04}}\"/speed Eloise 5/move Eloise 0 -6 0/warp Eloise -100 -100/playSound doorClose/emote farmer 8/pause 1000/end",
+               "57870020/n EloisePuppyInvite/d Mon Tue Wed Thu Fri/t 800 1100/w sunny": "{{season}}_day_ambient/14 31/farmer 7 34 1 Eloise -100 -100 2 Jacob -100 -100 2 PepperPup -100 -100 2 VivienneLK -100 -100 3/skippable/addConversationTopic PepperPupHome 1/move farmer 7 0 0/emote farmer 8/faceDirection farmer 3/pause 500/faceDirection farmer 1/pause 500/faceDirection farmer 0/move farmer 0 -3 0/playSound doorOpen/warp Eloise 14 25/pause 50/jump Eloise 5/textAboveHead Eloise \"{{i18n:57870020.01}}\"/speed Eloise 5/move Eloise 0 5 2/speak Eloise \"{{i18n:57870020.02}}\"/warp Jacob 14 25/move Jacob 0 4 3/textAboveHead Jacob \"{{i18n:57870020.03}}\"/move Jacob -1 0 2/move Jacob 0 1 2/speak Jacob \"{{i18n:57870020.04}}\"/speak Eloise \"{{i18n:57870020.05}}\"/pause 500/speak Jacob \"{{i18n:57870020.06}}\"/jump Eloise 4/textAboveHead Eloise \"{{i18n:57870020.07}}\"/pause 500/speed Eloise 5/move Eloise 5 0 3/faceDirection farmer 1/pause 500/speak Eloise \"{{i18n:57870020.08}}\"/pause 500/speak Jacob \"{{i18n:57870020.09}}\"/move Jacob 1 0 2/faceDirection farmer 0/emote Jacob 32/faceDirection Jacob 1/faceDirection farmer 1/fade/viewport -1000 -1000/changeToTemporaryMap CVParkDog/viewport -1000 -1000/playSound busDriveOff/pause 1000/speak Eloise \"{{i18n:57870020.10}}\"/pause 1000/warp PepperPup 10 19/addTemporaryActor Dog1 32 32 18 27 1 false animal SDVDoggo/playSound busDoorOpen/pause 1000/advancedMove SDVDoggo true 4 0 1 10000 -4 0 2 10000/playMusic fallFest/warp VivienneLK 23 35 true/warp Jacob 27 54 true/warp farmer 28 54 true/warp Eloise 26 54 true/faceDirection farmer 3/faceDirection Jacob 1/viewport 26 53 clamp true/pause 500/playSound dog_bark/speed Eloise 5/move Eloise 0 -6 2/pause 500/playSound dog_bark/emote Eloise 12/move Jacob 0 -6 0 true/move farmer 0 -6 0 true/pause 1500/faceDirection Eloise 0/pause 2000/advancedMove Jacob false 0 -14 3 1000/playSound dog_bark/advancedMove Eloise false 0 -13 3 1000/advancedMove farmer false 0 -13 3 1000/viewport move 0 -2 7500/playSound dog_bark/pause 2500/playSound dog_bark/pause 2500/playSound dog_bark/pause 2500/textAboveHead Eloise \"{{i18n:57870020.11}}\"/faceDirection VivienneLK 1/emote VivienneLK 20/speak VivienneLK \"{{i18n:57870020.12}}\"/move VivienneLK 2 0 1/pause 500/playSound dog_bark/speak Eloise \"{{i18n:57870020.13}}\"/pause 500/advancedMove farmer false -1 0 3 3000/advancedMove Eloise false 0 -1 2 2000/faceDirection Jacob 2/emote VivienneLK 32/move VivienneLK 1 0 1/speak VivienneLK \"{{i18n:57870020.14}}\"/textAboveHead Eloise \"{{i18n:57870020.15}}\"/pause 500/faceDirection VivienneLK 0/speak VivienneLK \"{{i18n:57870020.16}}\"/pause 500/textAboveHead Jacob \"{{i18n:57870020.17}}\"/playSound dog_bark/pause 500/speak VivienneLK \"{{i18n:57870020.18}}\"/pause 500/advancedMove Eloise false 0 -9 3 1000/advancedMove Jacob false 0 -9 3 1000/advancedMove VivienneLK false 0 -9 1 1000/advancedMove farmer false 0 -9 3 1000/viewport move 0 -2 4500 true/playSound dog_bark/pause 4500/playSound dog_bark/speak VivienneLK \"{{i18n:57870020.19}}\"/jump Eloise 5/emote Eloise 16/faceDirection VivienneLK 3/pause 1500/faceDirection Eloise 1/pause 500/textAboveHead Jacob \"{{i18n:57870020.20}}\"/speak Jacob \"{{i18n:57870020.21}}\"/pause 500/speak VivienneLK \"{{i18n:57870020.22}}\"/pause 1500/textAboveHead Eloise \"{{i18n:57870020.23}}\"/pause 500/speed Eloise 3/advancedMove Eloise false 0 -7 2 1000 -3 0 2 1000/pause 50/advancedMove Jacob false 0 -7 3 1000 -3 0 2 1000/advancedMove VivienneLK false 0 -7 3 1000/advancedMove farmer false 0 -7 3 1000/viewport move 0 -2 3500 true/pause 1000/speak Eloise \"{{i18n:57870020.24}}\"/pause 500/speak VivienneLK \"{{i18n:57870020.25}}\"/textAboveHead Eloise \"{{i18n:57870020.26}}\"/advancedMove Eloise false -8 0 0 1 3 1000/advancedMove Jacob false -9 0 3 1000/advancedMove VivienneLK false 0 -1 -10 0 0 1 3 1000/advancedMove farmer false -7 0 2 1000 0 3 2 2000 -4 0 0 -2 3 1000/viewport move -2 0 4500 true/pause 2000/playSound dog_bark/pause 2500/emote VivienneLK 56/playSound dog_bark/move PepperPup 4 0 1/playSound dogWhining/speak VivienneLK \"{{i18n:57870020.27}}\"/pause 100/jump PepperPup 3/emote Eloise 20/pause 1000/faceDirection Eloise 1/pause 500/speak Eloise \"{{i18n:57870020.28}}\"/faceDirection Jacob 2/pause 1500/emote Jacob 32/pause 1000/speak VivienneLK \"{{i18n:57870020.29}}\"/faceDirection Eloise 3/jump PepperPup 3/showFrame PepperPup 17/playSound dog_bark/pause 500/playSound dog_pant/speak Eloise \"{{i18n:57870020.30}}\"/faceDirection Eloise 0/faceDirection Jacob 2/speak Eloise \"{{i18n:57870020.31}}\"/speak Jacob \"{{i18n:57870020.32}}\"/textAboveHead Eloise \"{{i18n:57870020.33}}\"/pause 500/faceDirection Eloise 1/speak Eloise \"{{i18n:57870020.34}}\"/faceDirection Eloise 3/speak Eloise \"{{i18n:57870020.35}}\"/pause 500/faceDirection Jacob 1/pause 500/textAboveHead Jacob \"{{i18n:57870020.36}}\"/pause 1500/textAboveHead VivienneLK \"{{i18n:57870020.37}}\"/pause 2000/end"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Custom_EastScarpe",
+            "Entries": {
+                "57870011/f DuckNPC 1250/e 57870002/z winter/d Tue Wed Fri/t 900 1600": "continue/26 65/farmer 16 61 1 Eloise 24 61 2/addTemporaryActor MandarinDuck 16 32 25 65 3 false/addTemporaryActor Duck2NPC 16 32 24 65 1 false/skippable/changeSprite Duck2NPC swimming/swimming MandarinDuck/swimming Duck2NPC/animate Duck2NPC false true 350 20 21 22 23 22 23 0 0 0 0 0 0 0 0 0 0 0 0 0/pause 500/advancedMove MandarinDuck false 0 3 3 0 0 -3 -3 0/move farmer 7 0 1/playSound Duck/faceDirection Eloise 3/speak Eloise \"{{i18n:57870011.01}}\"/playSound Duck/playSound Duck/faceDirection farmer 2/stopAnimation Duck2NPC/faceDirection Eloise 2/pause 500/advancedMove MandarinDuck false 0 3 3 0 0 -3 -3 0/playSound Duck/playSound Duck/pause 2000/speak Eloise \"{{i18n:57870011.02}}\"/pause 500/faceDirection Eloise 3/speak Eloise \"{{i18n:57870011.03}}\"/animate Duck2NPC false true 350 20 21 22 23 22 23/faceDirection farmer 1/quickQuestion #{{i18n:57870011.04}}#{{i18n:57870011.05}}#{{i18n:57870011.06}}#{{i18n:57870011.07}}(break)speak Eloise \"{{i18n:57870011.08}}\"(break)speak Eloise \"{{i18n:57870011.09}}\"(break)speak Eloise \"{{i18n:57870011.10}}\"(break)speak Eloise \"{{i18n:57870011.11}}\"/pause 500/faceDirection Eloise 2/faceDirection farmer 2/stopAnimation Duck2NPC/faceDirection Duck2NPC 1/faceDirection MandarinDuck 3/positionOffset Duck2NPC 8 0/positionOffset MandarinDuck -8 0 0/playSound Duck/playSound Duck/emote Duck2NPC 20/jump Eloise 4/faceDirection Eloise 3/faceDirection farmer 1/speak Eloise \"{{i18n:57870011.12}}\"/pause 1000/end"
+            },
+            "When": {
+                "FriendableAnimals |contains=EmperorDuck": true
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Custom_EastScarpe",
+            "Entries": {
+                "57870011/f Eloise 2000/e 57870002/z winter/z spring/d Tue Wed Fri/t 900 1600": "continue/26 65/farmer 16 61 1 Eloise 24 61 2/addTemporaryActor MandarinDuck 16 32 25 65 3 false/addTemporaryActor Duck2NPC 16 32 24 65 1 false/skippable/changeSprite Duck2NPC swimming/swimming MandarinDuck/swimming Duck2NPC/animate Duck2NPC false true 350 20 21 22 23 22 23 0 0 0 0 0 0 0 0 0 0 0 0 0/pause 500/advancedMove MandarinDuck false 0 3 3 0 0 -3 -3 0/move farmer 7 0 1/playSound Duck/faceDirection Eloise 3/speak Eloise \"{{i18n:57870011.01}}\"/playSound Duck/playSound Duck/faceDirection farmer 2/stopAnimation Duck2NPC/faceDirection Eloise 2/pause 500/advancedMove MandarinDuck false 0 3 3 0 0 -3 -3 0/playSound Duck/playSound Duck/pause 2000/speak Eloise \"{{i18n:57870011.02}}\"/pause 500/faceDirection Eloise 3/speak Eloise \"{{i18n:57870011.03}}\"/animate Duck2NPC false true 350 20 21 22 23 22 23/faceDirection farmer 1/quickQuestion #{{i18n:57870011.04}}#{{i18n:57870011.05}}#{{i18n:57870011.06}}#{{i18n:57870011.07}}(break)speak Eloise \"{{i18n:57870011.08}}\"(break)speak Eloise \"{{i18n:57870011.09}}\"(break)speak Eloise \"{{i18n:57870011.10}}\"(break)speak Eloise \"{{i18n:57870011.11}}\"/pause 500/faceDirection Eloise 2/faceDirection farmer 2/stopAnimation Duck2NPC/faceDirection Duck2NPC 1/faceDirection MandarinDuck 3/positionOffset Duck2NPC 8 0/positionOffset MandarinDuck -8 0 0/playSound Duck/playSound Duck/emote Duck2NPC 20/jump Eloise 4/faceDirection Eloise 3/faceDirection farmer 1/speak Eloise \"{{i18n:57870011.12}}\"/pause 1000/end"
+            },
+            "When": {
+                "FriendableAnimals |contains=EmperorDuck": false
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries": {
+                "57870012/f Jacob 2500/f Eloise 2500/x JacobDinnerDate": "null",
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/mail",
+            "Entries": {
+                "JacobDinnerDate": "{{i18n:JacobDinnerDate}} %item conversationTopic Jacob_DinnerDate 0%% [#]{{i18n:JacobDinnerDate.Title}}",
+                "EloisePuppyInvite": "{{i18n:EloisePuppyInvite}}[letterbg Mods/LemurKat.EastScarpe.CP/LetterBackgrounds 0][textcolor black] %item conversationTopic EloisePuppyTalk 5%% [#]{{i18n:EloisePuppyInvite.Title}}"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Custom_ESVetHouse",
+            "Entries": {
+                //Eloise's 4 heart event
+                "57870005/f Eloise 1000/p Eloise": "breezy/26 20/Eloise 30 24 2 farmer 27 18 2/skippable/animate Eloise false true 240 27 27 27 24 25 26 24 25 26 27/pause 1000/move farmer 0 1 2/pause 500/doAction 27 20/playSound doorOpen/stopAnimation Eloise 0/move farmer 0 3 1/faceDirection Eloise 0/speak Eloise \"{{i18n:57870005.01}}\"/move farmer 2 0 2/move farmer 0 1 2/faceDirection Eloise 3/emote farmer 8/pause 1000/speak Eloise \"{{i18n:57870005.02}}\"/pause 500/emote farmer 16/speak Eloise \"{{i18n:57870005.03}}\"/faceDirection Eloise 0/speak Eloise \"{{i18n:57870005.04}}\"/pause 500/faceDirection Eloise 3/textAboveHead Eloise \"{{i18n:57870005.05}}\"/emote farmer 28/pause 500/speak Eloise \"{{i18n:57870005.06}}\"/emote farmer 40/question fork0 \"{{i18n:57870005.07}}#{{i18n:57870005.08}}#{{i18n:57870005.09}}#\"/fork SoraEnemy/pause 500/emote Eloise 40/speak Eloise \"{{i18n:57870005.10}}\"/faceDirection Eloise 1/emote Eloise 40/pause 500/faceDirection Eloise 3/speak Eloise \"{{i18n:57870005.11}}\"/pause 500/speak Eloise \"{{i18n:57870005.12}}\"/pause 500/emote farmer 56/pause 1000/speak Eloise \"{{i18n:57870005.13}}\"/emote farmer 40/pause 1000/end",
+                "SoraEnemy": "pause 500/emote Eloise 12/speak Eloise \"{{i18n:57870005.SoraEnemy.01}}\"/pause 500/faceDirection Eloise 1/speak Eloise \"{{i18n:57870005.SoraEnemy.02}}\"/emote farmer 28/pause 500/move farmer 0 -2 3/end",
+                "57870010/f Eloise 500/f Jacob 1500/t 1800 2100": "breezy/25 22/Eloise 33 23 3 Jacob 32 23 1 farmer 21 14 1/skippable/pause 500/move farmer 6 0 2 true/speak Jacob \"{{i18n:57870010.01}}\"/speak Eloise \"{{i18n:57870010.02}}\"/speak Jacob \"{{i18n:57870010.03}}\"/pause 500/emote Eloise 20/speak Jacob \"{{i18n:57870010.04}}\"/pause 500/speak Eloise \"{{i18n:57870010.05}}\"/speak Jacob \"{{i18n:57870010.06}}\"/pause 500/faceDirection Eloise 3/pause 500/emote Jacob 20/pause 1000/stopMusic/move Jacob -3 0 0/move Jacob 0 -2 3/move Jacob -2 0 0/viewport move 0 -3 3000/doAction 27 20/playSound doorOpen/move Jacob 0 -4 0/speak Jacob \"{{i18n:57870010.07}}\"/move Jacob 0 -2 0/move farmer 1 0 3/move Jacob 0 -1 1/emote farmer 32/speak Jacob \"{{i18n:57870010.08}}\"/question fork0 \"{{i18n:57870010.09}}#{{i18n:57870010.10}}#{{i18n:57870010.11}}#\"/fork JacobWife/pause 500/speak Jacob \"{{i18n:57870010.12}}\"/move Jacob 0 1 0/move farmer -5 0 3/pause 500/end",
+                "JacobWife": "pause 500/speak Jacob \"{{i18n:57870010.JacobWife.01}}\"/pause 500/emote Jacob 40/faceDirection Jacob 2/pause 500/faceDirection Jacob 1/speak Jacob \"{{i18n:57870010.JacobWife.02}}\"/pause 500/playMusic musicboxsong/speak Jacob \"{{i18n:57870010.JacobWife.03}}\"/pause 500/faceDirection Jacob 2/pause 1000/faceDirection Jacob 1/emote Jacob 40/pause 2000/speak Jacob \"{{i18n:57870010.JacobWife.04}}\"/pause 500/quickQuestion #{{i18n:57870010.JacobWife.05}}#{{i18n:57870010.JacobWife.06}}#{{i18n:57870010.JacobWife.07}}#{{i18n:57870010.JacobWife.08}}(break)speak Jacob \"{{i18n:57870010.JacobWife.09}}\"(break)speak Jacob \"{{i18n:57870010.JacobWife.10}}\"(break)speak Jacob \"{{i18n:57870010.JacobWife.11}}\"(break)speak Jacob \"{{i18n:57870010.JacobWife.12}}\"/pause 500/speak Jacob \"{{i18n:57870010.JacobWife.13}}\"/pause 500/faceDirection Jacob 2/emote Jacob 20/pause 1000/faceDirection Jacob 1/speak Jacob \"{{i18n:57870010.JacobWife.14}}\"/pause 500/emote farmer 32/move Jacob 0 -1 1/faceDirection farmer 0/move Jacob 3 0 1/faceDirection farmer 1/pause 500/end",
+                "57870013/e 57870012/f Jacob 2500/f Eloise 2500/A Jacob_DinnerDate/t 1800 2100": "playful/21 12/Jacob 32 13 0 Eloise 27 19 0 farmer 10 18 0/skippable/emote Jacob 56/speed Eloise 4/move Eloise 0 -6 1/pause 500/emote Eloise 12/pause 500/speak Eloise \"{{i18n:57870013.01}}\"/faceDirection Jacob 3/pause 500/emote Jacob 8/pause 500/speak Jacob \"{{i18n:57870013.02}}\"/pause 500/emote Eloise 40/speed Eloise 3/move Eloise 3 0 1/speak Eloise \"{{i18n:57870013.03}}\"/pause 500/textAboveHead Jacob \"{{i18n:57870013.04}}\"/pause 500/jump Eloise 4/emote farmer 40/speak Eloise \"{{i18n:57870013.05}}\"/showFrame 15/playSound stairsdown/showFrame 12/faceDirection Eloise 3/textAboveHead Eloise \"{{i18n:57870013.06}}\"/speak Jacob \"{{i18n:57870013.07}}\"/textAboveHead Eloise \"{{i18n:57870013.08}}\"/speed Eloise 5/move Eloise -5 0 2/pause 700/fade/viewport -1000 -1000/pause 1000/warp farmer 10 18 true/warp Eloise 10 15 true/pause 500/viewport 13 17/pause 500/doAction 10 17/playSound doorOpen/speak Eloise \"{{i18n:57870013.09}}\"/pause 500/quickQuestion #{{i18n:57870013.10}}#{{i18n:57870013.11}}#{{i18n:57870013.12}}#{{i18n:57870013.13}}(break)speak Eloise \"{{i18n:57870013.14}}\"(break)jump Eloise 4\\speak Eloise \"{{i18n:57870013.15}}\"(break)textAboveHead Eloise \"{{i18n:57870013.16}}\"\\speak Eloise \"{{i18n:57870013.17}}\"(break)speak Eloise \"{{i18n:57870013.18}}\"/pause 500/speak Jacob \"{{i18n:57870013.19}}\"/faceDirection Eloise 1/speak Eloise \"{{i18n:57870013.20}}\"/faceDirection Eloise 2/pause 500/move Eloise 3 0 3 true/move farmer 0 -3 1 true/textAboveHead Eloise \"{{i18n:57870013.21}}\"/pause 1000/move Eloise 3 0 1 true/move farmer 3 0 1 true/fade/viewport -100 -100/speak Eloise \"{{i18n:57870013.22}}\"/pause 1000/warp Jacob 34 14/warp farmer 30 14/warp Eloise 31 16/faceDirection Eloise 0/message \"{{i18n:57870013.23}}\"/stopMusic/viewport 29 17/playMusic jaunty/pause 500/speak Jacob \"{{i18n:57870013.24}}\"/pause 500/speak Eloise \"{{i18n:57870013.25}}\"/emote Jacob 8/pause 500/speak Jacob \"{{i18n:57870013.26}}\"/speak Eloise \"{{i18n:57870013.27}}\"/faceDirection farmer 2/emote Eloise 32/pause 500/speak Eloise \"{{i18n:57870013.28}}\"/faceDirection farmer 1/textAboveHead Eloise \"{{i18n:57870013.29}}\"/speak Jacob \"{{i18n:57870013.30}}\"/emote Jacob 20/pause 1000/move Eloise -4 0 2/move Eloise 0 4 2/doAction 27 20/playSound doorOpen/advancedMove Eloise false 0 1 2 0 0 2/speak Jacob \"{{i18n:57870013.31}}\"/question fork0 \"{{i18n:57870013.32}}#{{i18n:57870013.33}}#{{i18n:57870013.34}}#\"/fork Eloise_MatchMaker/pause 500/jump Jacob 3/speak Jacob \"{{i18n:57870013.35}}\"/faceDirection Jacob 0/fade/viewport -100 -100/message \"{{i18n:57870013.36}}\"/pause 1000/end warpOut",
+                "Eloise_MatchMaker": "pause 500/emote Jacob 28/pause 1000/speak Jacob \"{{i18n:57870013.Eloise_MatchMaker.01}}\"/pause 1000/faceDirection Jacob 0/move Jacob 0 -1 3/move Jacob -2 0 3/speak Jacob \"{{i18n:57870013.Eloise_MatchMaker.02}}\"/speak Jacob \"$q 5787014 null \"#{{i18n:57870013.Eloise_MatchMaker.03}}#$r 5787015 100 Jacob_Date#{{i18n:57870013.Eloise_MatchMaker.04}}#$r 5787016 50 Jacob_Friendzone#{{i18n:57870013.Eloise_MatchMaker.05}}#$r 5787016 -100 Jacob_Ditched#{{i18n:57870013.Eloise_MatchMaker.06}}#$r 5787016 25 Jacob_KidsRight#{{i18n:57870013.Eloise_MatchMaker.09}}\"/fork 5787015 Jacob_PseudoDate/pause 500/emote Jacob 60/speak Jacob \"{{i18n:57870013.Eloise_MatchMaker.07}}\"/pause 500/emote farmer 32/faceDirection Jacob 0/fade/viewport -100 -100/message \"{{i18n:57870013.Eloise_MatchMaker.08}}\"/pause 1000/end warpOut",
+                "Jacob_PseudoDate": "pause 500/jump Jacob 3/emote Jacob 28/pause 1000/emote farmer 8/pause 1000/speak Jacob \"{{i18n:57870013.Jacob_PseudoDate.01}}\"/pause 1500/quickQuestion #{{i18n:57870013.Jacob_PseudoDate.02}}#{{i18n:57870013.Jacob_PseudoDate.03}}#{{i18n:57870013.Jacob_PseudoDate.04}}#{{i18n:57870013.Jacob_PseudoDate.05}}(break)speak Jacob \"{{i18n:57870013.Jacob_PseudoDate.06}}\"(break)speak Jacob \"{{i18n:57870013.Jacob_PseudoDate.07}}\"(break)speak Jacob \"{{i18n:57870013.Jacob_PseudoDate.08}}\"(break)speak Jacob \"{{i18n:57870013.Jacob_PseudoDate.09}}\"/pause 500/emote Jacob 32/emote farmer 60/pause 1000/speak Jacob \"{{i18n:57870013.Jacob_PseudoDate.10}}\"/pause 500/emote farmer 32/pause 1000/fade/viewport -100 -100/message \"{{i18n:57870013.Jacob_PseudoDate.11}}\"/pause 1000/end warpOut",
+                //"Jacob_PseudoDate": "pause 500/jump Jacob 3/speak Jacob \"I mean, yes. Yes. I'd be delighted to go out with you.\"/pause 500/emote Jacob 28/pause 1000/emote farmer 8/pause 1000/speak Jacob \"I'm not ready for a longterm commitment, and you do understand I can't leave the farm though, don't you? Or Ellie?\"/question fork0 \"...#I'm fine with that. As long as I can come visit you!#You mean we can't marry? Oh, maybe I should reconsider.\"/fork Jacob_PsuedoDateYes/pause 500/speak Jacob \"I understand. I'm a little disappointed, yes. But I understand.#$b#Now, did you want to try the dessert.$1\"/pause 500/emote farmer 32/faceDirection Jacob 0/fade/viewport -100 -100/message \"The melon cake is pretty good too, and the evening is most enjoyable.\"/pause 1000/end warpOut",
+                //"Jacob_PseudoDateYes": "pause 500/speak Jacob \"You most certainly may.$4\"/addMailReceived Jacob_Dating/addConversationTopic Jacob_Dating 5/move Jacob 0 -1 3/move Jacob -4 0 2/faceDirection farmer 2/speak Jacob \"So... dessert?$4\"/pause 1000/fade/end warpOut"\
+                "57870016/f Eloise 2000/t 1000 1300/d Tue Wed Fri": "none/15 19/Jacob 8 23 0 farmer -100 -100 0 Eloise -100 -100 0/skippable/addConversationTopic Is_Sora_Dead 14/pause 400/warp farmer 12 27/move farmer 0 -4 3 true/faceDirection Jacob 1/emote Jacob 32/speak Jacob \"{{i18n:57870016.01}}\"/emote farmer 36/pause 500/move Jacob 2 0 1/speak Jacob \"{{i18n:57870016.02}}\"/emote farmer 8/speak Jacob \"{{i18n:57870016.03}}\"/faceDirection Jacob 2/pause 500/faceDirection Jacob 1/speak Jacob \"{{i18n:57870016.04}}\"/emote farmer 32/pause 500/textAboveHead Jacob \"{{i18n:57870016.05}}\"/speak Jacob \"{{i18n:57870016.06}}\"/emote Jacob 20/pause 1000/move farmer 0 4 2/fade/viewport -1000 -1000/changeLocation Custom_EastScarpe/viewport -1000 -1000/warp farmer 7 8/faceDirection farmer 0/warp Jacob -100 -100/viewport 16 11/pause 1000/showFrame 15/playSound stairsdown/showFrame 12/speak Eloise \"{{i18n:57870016.07}}\"/pause 500/emote farmer 56/pause 500/speak Eloise \"{{i18n:57870016.08}}\"/pause 1000/fade/viewport -1000 -1000/playSound doorOpen/changeLocation Custom_ESBirdHide/viewport -1000 -1000/warp Eloise 5 4/showFrame Eloise 16/viewport 3 4/pause 500/warp farmer 3 7/move farmer 0 -2 1/emote farmer 8/pause 500/playMusic desolate/speak Eloise \"{{i18n:57870016.09}}\"/move farmer 1 0 0/showFrame Eloise 8/pause 500/faceDirection Eloise 2/speak Eloise \"{{i18n:57870016.10}}\"/pause 500/move Eloise 0 1 3/faceDirection farmer 1/pause 500/textAboveHead Eloise \"{{i18n:57870016.11}}\"/pause 1000/question fork0 \"{{i18n:57870016.12}}#{{i18n:57870016.13}}#{{i18n:57870016.14}}#\"/fork ComfortEloise/pause 500/jump Eloise 5/emote Eloise 12/pause 1000/speak Eloise \"{{i18n:57870016.15}}\"/faceDirection Eloise 0/speak Eloise \"{{i18n:57870016.16}}\"/pause 500/emote farmer 8/pause 1000/faceDirection farmer 2/fade/end warpOut"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Custom_ESBirdHide",
+            "Entries": {
+                "ComfortEloise": "pause 500/speak Eloise \"{{i18n:57870016.ComfortEloise.01}}\"/pause 500/faceDirection Eloise 0/faceDirection farmer 0/stopMusic/pause 1000/faceDirection Eloise 3/faceDirection farmer 1/speak Eloise \"{{i18n:57870016.ComfortEloise.02}}\"/emote farmer 32/pause 1000/end"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/ArchaeologyHouse",
+            "Entries": {
+                "57870008/d Mon Thu Sat Sun/k 69660010/p Eloise/p Leo": "libraryTheme/-100 -100/Leo 18 12 0 Eloise 9 14 1 Penny 17 9 2 Jas 19 10 3 Vincent 16 10 1 farmer 3 10 0 Gunther 3 8 2/skippable/showFrame Jas 22/showFrame Vincent 24/showFrame Penny 18/showFrame Leo 24/viewport 17 12/move Eloise 3 0 0/move Eloise 0 -2 1/move Eloise 1 0 1/pause 500/emote Eloise 16/jump Eloise 5/speed Eloise 5/move Eloise 3 0 1/textAboveHead Eloise \"{{i18n:57870008.01}}\"/pause 500/showFrame Leo 8/faceDirection Leo 3/pause 500/speak Eloise \"{{i18n:57870008.02}}\"/pause 500/speak Leo \"{{i18n:57870008.03}}\"/emote Eloise 40/pause 2000/speak Eloise \"{{i18n:57870008.04}}\"/faceDirection Vincent 2/faceDirection Eloise 0/emote Eloise 32/pause 500/move Eloise 1 0 1/speak Eloise \"{{i18n:57870008.05}}\"/pause 500/speak Leo \"{{i18n:57870008.06}}\"/jump Eloise 3/speak Eloise \"{{i18n:57870008.07}}\"/emote Leo 60/pause 1000/speak Leo \"{{i18n:57870008.08}}\"/pause 500/faceDirection Leo 0/emote Leo 40/pause 1000/showFrame Penny 0/speak Penny \"{{i18n:57870008.09}}\"/speak Jas \"{{i18n:57870008.10}}\"/textAboveHead Eloise \"{{i18n:57870008.11}}\"/pause 500/speak Eloise \"{{i18n:57870008.12}}\"/faceDirection Leo 3/emote Leo 32/speak Leo \"{{i18n:57870008.13}}\"/speak Eloise \"{{i18n:57870008.14}}\"/faceDirection Eloise 0/pause 1000/speak Eloise \"{{i18n:57870008.15}}\"/pause 500/speak Leo \"{{i18n:57870008.16}}\"/faceDirection Eloise 1 true/faceDirection Leo 3 true/emote Eloise 32 true/emote Leo 32 true/pause 1000/speak Penny \"{{i18n:57870008.17}}\"/faceDirection Eloise 0 true/faceDirection Leo 0 true/faceDirection Vincent 3 true/pause 1000/showFrame Leo 24/showFrame Eloise 16/showFrame Vincent 24/pause 1000/speak Penny \"{{i18n:57870008.18}}\"/viewport move -2 0 1000 true/pause 2000/end",
+                "57870015/e 57870014/A EloiseQuiet/p Eloise/p Leo/d Mon Thu Sat Sun": "libraryTheme/9 12/Penny 12 12 3 Eloise 11 12 1 farmer -100 -100 0 Leo 7 12 3 Gunther 3 8 2/skippable/playSound doorOpen/warp farmer 3 14/move farmer 0 -2 1 true/move Leo -2 0 3 true/pause 500/speak Leo \"{{i18n:57870015.01}}\"/emote farmer 32/move Leo -1 0 3/pause 1000/speak Leo \"{{i18n:57870015.02}}\"/quickQuestion #{{i18n:57870015.03}}#{{i18n:57870015.04}}#{{i18n:57870015.05}}#{{i18n:57870015.06}}(break)emote Leo 8\\speak Leo \"{{i18n:57870015.07}}\"(break)emote Leo 16\\speak Leo \"{{i18n:57870015.08}}\"(break)speak Leo \"{{i18n:57870015.09}}\"(break)emote Leo 12\\speak Leo \"{{i18n:57870015.10}}\"/pause 500/emote Leo 40/pause 1000/speak Leo \"{{i18n:57870015.11}}\"/pause 500/move Leo 2 0 2/move Leo 0 2 1 true/move Eloise 0 2 3 true/faceDirection Penny 2/pause 1000/move Penny -2 0 3 true/move farmer 0 -2 0 true/emote Leo 32/textAboveHead Leo \"{{i18n:57870015.12}}\"/pause 500/jump Eloise 5/pause 1000/emote Eloise 60/pause 500/move Leo 1 0 1 true/move Eloise -1 0 3 true/speak Leo \"{{i18n:57870015.13}}\"/emote Eloise 28/pause 1000/end"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/ArchaeologyHouse",
+            "Entries": {
+                "57870009/d Mon Thu Sat Sun/k 57870008/p Eloise/p Cecily": "libraryTheme/-100 -100/Cecily 18 12 0 Eloise 9 14 1 Penny 17 9 2 Jas 19 10 3 Vincent 16 10 1 farmer 3 10 0 Gunther 3 8 2/skippable/showFrame Jas 22/showFrame Vincent 24/showFrame Penny 18/showFrame Cecily 17/viewport 17 12/move Eloise 3 0 0/move Eloise 0 -2 1/move Eloise 1 0 1/pause 500/emote Eloise 16/jump Eloise 5/speed Eloise 5/move Eloise 3 0 1/textAboveHead Eloise \"{{i18n:57870009.01}}\"/pause 500/showFrame Cecily 8/faceDirection Cecily 3/pause 500/speak Eloise \"{{i18n:57870009.02}}\"/pause 500/speak Cecily \"{{i18n:57870009.03}}\"/emote Eloise 40/pause 2000/speak Eloise \"{{i18n:57870009.04}}\"/faceDirection Vincent 2/faceDirection Eloise 0/emote Eloise 32/pause 500/move Eloise 1 0 1/speak Eloise \"{{i18n:57870009.05}}\"/pause 500/emote Cecily 12/pause 500/speak Penny \"{{i18n:57870009.06}}\"/faceDirection Eloise 0 true/faceDirection Cecily 0 true/faceDirection Vincent 3 true/pause 1000/showFrame Cecily 17/showFrame Eloise 16/showFrame Vincent 24/pause 1000/speak Penny \"{{i18n:57870009.07}}\"/viewport move -2 0 1000 true/pause 2000/end"
+            },
+            "When": {
+                "HasMod": "Wolf.Gun"
+            }
+        },
+        {
+            "LogName": "Places cushion for Eloise",
+            "Action": "EditMap",
+            "Target": "Maps/ArchaeologyHouse",
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 17,
+                        "Y": 12
+                    },
+                    "Layer": "Back",
+                    "SetTileSheet": "untitled tile sheet",
+                    "SetIndex": "508"
+                }
+            ],
+            "When": {
+                "HasSeenEvent: hostPlayer": "6497428, 57870009, 75160033 "
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/schedules/Eloise",
+            "Entries": {
+                "Tue": "630 Custom_ESVetHouse 30 14 1/730 Town 100 95 1 \"Strings\\schedules\\Eloise:schoolday.000\"/1000 ArchaeologyHouse 17 12 0 Eloise_kneel/1400 Town 88 103 2/1620 Town 17 91 0/1750 AnimalShop 6 5 0 Eloise_read",
+                "Wed": "630 Custom_ESVetHouse 30 14 1/730 Town 100 95 1 \"Strings\\schedules\\Eloise:schoolday.001\"/1000 ArchaeologyHouse 17 12 0 Eloise_kneel/1400 Town 88 103 2/1640 Custom_EastScarpe 19 68 1/1800 Custom_ESVetHouse 24 15 0/2100 Custom_ESVetHouse 33 23 2"
+            },
+            "When": {
+                "HasSeenEvent: hostPlayer": "6497428, 57870009, 75160033"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "Entries": {
+                //Jacob 4-heart event with Clint
+                "57870006/f Jacob 1000/f Clint 1000/t 1800 2200/w sunny": "nightTime/91 83/Jacob 93 82 1 Clint 94 82 3 farmer 85 89 1/skippable/pause 500/speak Clint \"{{i18n:57870006.01}}\"/faceDirection Clint 0/emote Clint 12/pause 500/warp Clint -1000 -1000/playSound doorClose/emote Jacob 60/pause 1000/pause 1000/move Jacob 1 0 0/emote Jacob 40/pause 2000/textAboveHead Jacob \"{{i18n:57870006.02}}\"/pause 1000/faceDirection Jacob 2/move Jacob -1 0 2/move Jacob 0 7 2 true/viewport move 0 2 1000 true/move farmer 7 0 1 true/pause 4000/faceDirection Jacob 3/jump Jacob 5/speak Jacob \"{{i18n:57870006.03}}\"/quickQuestion #{{i18n:57870006.04}}#{{i18n:57870006.05}}#{{i18n:57870006.06}}(break)speak Jacob \"{{i18n:57870006.07}}\"(break)speak Jacob \"{{i18n:57870006.08}}\"(break)speak Jacob \"{{i18n:57870006.09}}\"/pause 500/emote Jacob 40/emote farmer 8/pause 1000/speak Jacob \"{{i18n:57870006.10}}\"/speed Jacob 2/move Jacob 0 5 1 true/faceDirection farmer 2/emote farmer 8/pause 1000/end"
+            },
+            "When": {
+                "HasMod |contains=aeki.ByeByeClintHelloClarice": false
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "Entries": {
+                //Eloise gets upset about Leo
+                "57870014/f Eloise 2000/f Leo 2500/t 1000 1600/d Mon Thu Fri Sat Sun/w sunny": "continue/98 92/Eloise 98 89 2 farmer 94 94 1/skippable/addConversationTopic EloiseQuiet 7/move farmer 3 0 1/pause 500/faceDirection farmer 0/emote farmer 8/pause 1500/emote farmer 56/move Eloise -1 0 2/pause 500/shake Eloise 200/move farmer 0 -1 0/question null \"{{i18n:57870014.01}}#{{i18n:57870014.02}}#{{i18n:57870014.03}}#\"/pause 500/move Eloise 0 2 2/playMusic desolate/pause 500/emote Eloise 28/speak Eloise \"{{i18n:57870014.04}}\"/pause 500/shake Eloise 500/quickQuestion #{{i18n:57870014.05}}#{{i18n:57870014.06}}#{{i18n:57870014.07}}#{{i18n:57870014.08}}(break)speak Eloise \"{{i18n:57870014.09}}\"(break)speak Eloise \"{{i18n:57870014.10}}\"(break)emote Eloise 12\\speak Eloise \"{{i18n:57870014.11}}\"(break)emote Eloise 12\\friendship Eloise -50\\speak Eloise \"{{i18n:57870014.12}}\"/pause 500/faceDirection Eloise 1/pause 500/faceDirection Eloise 2/speak Eloise \"{{i18n:57870014.13}}\"/emote farmer 40/pause 1500/jump Eloise 5/speak Eloise \"{{i18n:57870014.14}}\"/pause 500/speed Eloise 5/move Eloise 4 0 0/faceDirection farmer 1/move Eloise 0 -1 0/warp Eloise -100 -100/emote farmer 8/pause 1000/end"
+            }
+        },
+        //Compatibility Patches
+        {
+            "LogName": "Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Jacob",
+            "Entries": {
+                "22": "610 Custom_ESVetHouse 34 14 3/650 Custom_ESVetHouse 31 14 2/830 CommunityCenter 38 10 0/1300 CommunityCenter 32 14 3/1700 CommunityCenter 35 17 3/1750 Custom_ESVetHouse 31 5 0/2200 Custom_ESVetHouse 22 5"
+            },
+            "When": {
+                "HasSeenEvent": "191393",
+                "HasMod": "FlashShifter.StardewValleyExpandedALL"
+            }
+        },
+        {
+            "LogName": "Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Eloise",
+            "Entries": {
+                "22": "630 Custom_ESVetHouse 30 14 1/830 CommunityCenter 16 22 0 Eloise_kneel/1700 CommunityCenter 34 17 1/1750 Custom_ESVetHouse 31 5 0/2200 Custom_ESVetHouse 33 23"
+            },
+            "When": {
+                "HasSeenEvent": "191393",
+                "HasMod": "FlashShifter.StardewValleyExpandedALL"
+            }
+        },
+        {
+            "LogName": "Randy Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Eloise",
+            "Entries": {
+                "Town_88_103": "Hello farmer @! I'm helping Randy with his reading.#$b#(whispers) But I'm not sure he really understands how books work.$1"
+            },
+            "When": {
+                "HasSeenEvent": "47360003",
+                "DayofWeek": "Tuesday"
+            }
+        },
+        {
+            "LogName": "Randy Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Randy",
+            "Entries": {
+                "Town_87_103": "Hi! Ellie is new friend! She very smart!#$b#But sometimes treat Randy like me stupid.$s#$b#And that make Randy sad. Cos Randy not stupid, no?$2"
+            },
+            "When": {
+                "DayofWeek": "Tuesday"
+            }
+        },
+        {
+            "LogName": "Eloise reacts",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Eloise",
+            "Entries": {
+                "Custom_EastScarpe_55_89": "Did you know that {{random: if a starfish loses its arm it grows back?, some starfish can release venom so you've got to be careful not to touch them!, starfish eat by pushing their stomach out their mouth and over the prey!, starfish aren't fish at all so the name's silly!, starfish have no brain or blood?, starfish can live for 35 years!}}",
+                "summer_28_2": "Are you going to come and see the jellies tonight, @?#$b#Did you know that {{random: jellyfish don't have any brains but can smell and detect light, jellyfish don't poop - they throop!, some jellyfish have nasty stings and can kill you, jellyfish are eaten by lots of sea creatures, some jellyfish live forever by going back to being babies again!}}"
+            }
+        },
+        {
+            "LogName": "Leo-related Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Eloise",
+            "Entries": {
+                "summer_Mon8": "I found a really pretty feather for Leo today... I'm going to give it to him in class tomorrow. I really hope he likes it!$1",
+                "Sat10": "Do you think Leo likes me?$3#$b#Sometimes I think he likes Jas better...$2",
+                "fall_Tue10": "Isn't Leo cool? He can talk to birds! He's amazing.$1",
+                "fall_26": "I hope Leo likes my costume for Spirit's Eve tomorrow.$3#$b#You'll be there too, right? Dad always looks forward to seeing you.$1",
+                "summer_12": "Leo says the crested flamingos are a bit like the gembirds on his island.#$b#They sound really magical, I wish I could see them.$3"
+            },
+            "When": {
+                "HasSeenEvent |contains=6497428": true
+            }
+        },
+        {
+            "LogName": "Penny Notices",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Penny",
+            "Entries": {
+                "EloiseQuiet": "Eloise usually has all the answers... but she's been very quiet recently. I hope nothing's wrong at home.$2"
+            },
+            "When": {
+                "DayOfWeek": "Thursday, Friday, Saturday, Sunday"
+            }
+        },
+        {
+            "LogName": "Jas Notices",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Jas",
+            "Entries": {
+                "EloiseQuiet": "Do you think Ellie's mad at me, @?"
+            },
+            "When": {
+                "DayOfWeek": "Thursday, Friday, Saturday, Sunday"
+            }
+        },
+        {
+            "LogName": "Vincent Notices",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Vincent",
+            "Entries": {
+                "EloiseQuiet": "The girls don't want to play with me anymore.$2#$b#And something's made Eloise sad. I told jokes to cheer her up, but it didn't work.$2"
+            },
+            "When": {
+                "DayOfWeek": "Thursday, Friday, Saturday, Sunday"
+            }
+        },
+        {
+            "LogName": "Vincent responds",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Vincent",
+            "Entries": {
+                "EloisePuppyTalk": "Eloise asked if I wanted to go see some dogs with her. Mom said 'No' though.$2#$b#I think she was scared I'd bring one home.$1"
+            },
+        },
+        {
+            "LogName": "Jas responds",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Jas",
+            "Entries": {
+                "EloisePuppyTalk": "Eloise invited me to adopt a dog in Chesterville. I wanted to go... but the roads really windy, it makes me sick.$2#$b#So I said 'no'. I hope she's not mad at me.$3"
+            },
+        },
+        {
+            "LogName": "Marnie Notices",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Marnie",
+            "Entries": {
+                "EloiseQuiet": "Jas and Ellie were best friends... but now Ellie's barely talking.#$b#Do you know what's wrong, @? Did they have some sort of fight?$2"
+            },
+            "When": {
+                "DayOfWeek": "Thursday, Friday, Saturday, Sunday"
+            }
+        },
+        {
+            "LogName": "Eloise plays mute",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Eloise",
+            "Entries": {
+                "Mon8": "... I'm quiet as a mouse, farmer @.",
+                "Tue8": "... Vincent keeps telling me jokes. I think he's trying to cheer me up.#$b#It's really hard not to laugh.",
+                "Wed8": "... I've started writing down stuff instead of saying it out loud.#$b#And now I need a new notebook!$1",
+                "Thu8": "... it's really, really hard not to talk all the time.$3",
+                "Fri8": "... I don't think it's working... Leo doesn't seem to want to talk to me anymore.$2",
+                "Sat8": "... I knew the right answer in class yesterday, but I didn't say anything.#$b#Miss Penny looked all frowny.$2",
+                "Sun8": "..."
+            },
+            "When": {
+                "HasSeenEvent |contains=57870014": true,
+                "HasSeenEvent |contains=57870015, 69660015": false
+            }
+        },
+        {
+            "LogName": "Jacob Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Jacob",
+            "Entries": {
+                "summer_6": "610 Custom_ESVetHouse 34 14 3/800 Custom_ES_VetAwayWarp 4 5 1/930 Custom_ESVetHouse 8 23 2/1100 Custom_EastScarpe 33 97 2 \"Strings\\schedules\\Jacob:saturday.001\"/1350 Town 55 72 0/1740 Custom_EastScarpe 40 40 2/1950 Custom_ESVetHouse 23 15 0/2100 Custom_EastScarpe 33 32 2/2130 Custom_ES_VetAwayWarp 4 5 1/2230 Custom_ESVetHouse 22 5 2"
+            },
+            "When": {
+                "HasSeenEvent": "57873005"
+            }
+        },
+        {
+            "LogName": "Eloise Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Eloise",
+            "Entries": {
+                "summer_6": "610 Custom_ESVetHouse 30 14 1/700 Custom_ESVetHouse 20 21 3/730 Custom_ESVetHouse 30 14 1/a1200 Town 16 13 Eloise_write/1620 Town 54 72 0/1740 Custom_ESVetHouse 24 15 0/2100 Custom_ESVetHouse 33 23 2"
+            },
+            "When": {
+                "HasSeenEvent": "57873005"
+            }
+        },
+        //schoolhouse schedule
+        {
+            "Action": "EditData",
+            "Target": "Characters/schedules/Eloise",
+            "When": {
+                "HasSeenEvent": "9695001",
+                "HasMod": "Xiddav.LittleRedSchoolHouse"
+            },
+            "Entries": {
+                "winter_17": "610 Custom_ESVetHouse 27 14 1/630 Town 84 51 1 \"Strings\\schedules\\Eloise:schoolday.000\"/900 Custom_SchoolHouse 20 11/1030 Custom_SchoolHouse 19 11 0 Eloise_sit/1400 Town 16 13 Eloise_write/1620 Beach 44 23 2 \"Strings\\schedules\\Eloise:winter_17.000\"/1830 Beach 42 36 1 \"Strings\\schedules\\Eloise:winter_17.100\"/2030 Custom_ESVetHouse 33 23 2",
+                "Tue": "0 Town 119 71/610 Town 84 51 1 \"Strings\\schedules\\Eloise:schoolday.000\"/a920 Custom_SchoolHouse 20 11/930 Custom_SchoolHouse 19 11 0 Eloise_sit/1130 Town 16 13 Eloise_write/1300 Custom_SchoolHouse 20 11/1330 Custom_SchoolHouse 19 11 0 Eloise_sit/1550 Town 15 91 1/1750 AnimalShop 6 5 0 Eloise_read",
+                "Wed": "0 Town 119 71/610 Town 84 51 1 \"Strings\\schedules\\Eloise:schoolday.000\"/a920 Custom_SchoolHouse 20 11/930 Custom_SchoolHouse 19 11 0 Eloise_sit/1130 Town 16 13 Eloise_write/1300 Custom_SchoolHouse 20 11/1330 Custom_SchoolHouse 19 11 0 Eloise_sit/1520 Custom_ESVetHouse 24 15 0/2100 Custom_ESVetHouse 33 23 2",
+                "Fri": "0 Town 119 71/610 Town 84 51 1 \"Strings\\schedules\\Eloise:schoolday.000\"/a920 Custom_SchoolHouse 20 11/930 Custom_SchoolHouse 19 11 0 Eloise_sit/1130 Town 16 13 Eloise_write/1300 Custom_SchoolHouse 20 11/1330 Custom_SchoolHouse 19 11 0 Eloise_sit/1520 Custom_ESVetHouse 24 15 0/2100 Custom_ESVetHouse 33 23 2"
+            }
+        },
+        //Jacob schedules
+        {
+            "Action": "EditData",
+            "Target": "Characters/schedules/Jacob",
+            "When": {
+                "HasMod": "Xiddav.LittleRedSchoolHouse",
+                "HasSeenEvent": "9695001"
+            },
+            "Entries": {
+                "Tue": "0 Town 119 70/610 Town 85 51 3 \"Strings\\schedules\\Jacob:tuesday.000\"/740 Custom_EastScarpe 33 32 2/1140 Custom_ES_VetAwayWarp 5 5 0/1820 Custom_ESVetHouse 31 5 0/2200 Custom_ESVetHouse 22 5",
+                "Wed": "0 Town 119 70/610 Town 85 51 3 \"Strings\\schedules\\Jacob:tuesday.001\"/740 Custom_EastScarpe 19 15 0/1200 Custom_ESVetHouse 3 23 2/1520 Custom_EastScarpe 19 67 1/1620 Custom_ESVetHouse 23 15 0/2000 Custom_ESVetHouse 31 5 0/2200 Custom_ESVetHouse 22 5",
+                "Fri": "GOTO Wed"
+            }
+        },
+        //Jas Sleepovers on Saturdays
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_ESVetHouse",
+            "ToArea": {
+                "X": "20",
+                "Y": "24",
+                "Width": 3,
+                "Height": 3
+            },
+            "FromFile": "assets/Maps/Sleepover.tmx",
+            "PatchMode": "Overlay",
+            "When": {
+                "Day": "13,17",
+                // "HasMod |contains=Lemurkat.Tristan.CP": false,
+                "HasSeenEvent": "5295000"
+            }
+        },
+        {
+            "LogName": "Edits Jas schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Jas",
+            "Entries": {
+                "13": "1000 Forest 91 22 1/1030 Town 31 89 1/1200 Town 24 12 2 jas_jumprope/1600 Town 17 14 2/1620 Town 53 72 0/1740 Custom_ESVetHouse 29 23 2/2100 Custom_ESVetHouse 31 25 3 jas_sleep",
+                "27": "1000 Forest 91 22 1/1030 Town 31 89 1/1200 Town 24 12 2 jas_jumprope/1600 Town 17 14 2/1620 Town 53 72 0/1740 Custom_ESVetHouse 29 23 2/2100 Custom_ESVetHouse 31 25 3 jas_sleep",
+            }
+        },
+        //Dialogue Changes
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Penny",
+            "When": {
+                "HasMod": "Lemurkat.JacobEloise.CP"
+            },
+            "Entries": {
+                "Tue": "I'm tutoring the kids today... They're a handful, but it's nice to make a difference in someone's life.",
+                "Wed": "We don't have a school but I'm doing my best to give the children here a proper education.#$e#Every child deserves a chance to be successful.#$e#Jas is very good at math and reading and sometimes I can't keep up with Eloise. Vincent is good at... well, he has an active imagination!"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Penny",
+            "When": {
+                "HasMod": "Lemurkat.JacobEloise.CP, gizzymo.canonfriendlyexpansion"
+            },
+            "Entries": {
+                "summer_Wed": "We don't do a full summer vacation, because we have to make up for our short school weeks during the regular year.#$e#Jodi, Marnie and Jacob requested we do it that way, instead of doing things the way a normal school would.",
+                "Thu2": "It's nice just having so few students. We get a little more flexibility with when we meet for class.",
+                "Wed6": "Ms. Eleanor was my teacher when I was growing up. A lot of the things I teach the children, I learned from her.#$e#I've also learned a lot just from the books in the library.",
+                "Wed8": "It's tough trying to fill the shoes of the woman who had my job before me, but having only a handful students makes it a bit easier.#$e#Ms. Eleanor had nine of us one year. There were just more kids in town when I was growing up.",
+                "fall_Mon6": "Maybe I could find a job as a full classroom teacher someday. But I don't know that it would be better for me.#$e#I just can't imagine having the same connections with twenty or thirty students like I have with the children here."
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/GuntherSilvian",
+            "When": {
+                "HasMod": "Lemurkat.JacobEloise.CP, FlashShifter.StardewValleyExpandedCP"
+            },
+            "Entries": {
+                "Sat": "Penny tutors the children in the library several days a week.$5"
+            }
+        },
+        //schedule for Pepper once she's been adopted
+        {
+            "Action": "EditData",
+            "Target": "Characters/schedules/PepperPup",
+            "When": {
+                "HasSeenEvent": "57870020",
+                "HasConversationTopic":"PepperPupHome"
+            },
+            "Entries": {
+                "{{season}}_{{day}}":"0 Custom_ESVetHouse 31 22/700 Custom_ESVetHouse 23 14 square 5_2/800 Custom_EastScarpe 20 31 square_5_5/1200 Custom_EastScarpe 20 31 pepper_nap/1300 Custom_EastScarpe 20 31 square_5_5/1700 Custom_ESVetHouse 23 14 square 5_2/1900 Custom_ESVetHouse 31 24 pepper_sleep"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/schedules/PepperPup",
+            "When": {
+                "HasSeenEvent": "57870020"
+            },
+            "Entries": {
+                "rain": "700 Custom_ESVetHouse 23 14 square 5_2/1100 Custom_ESVetHouse 21 13 3/1300 Custom_ESBirdHide 5 4 pepper_nap/1800 Custom_ESVetHouse 23 14 square 5_2/2100 Custom_ESVetHouse 31 24 pepper_sleep",
+                "Sat": "700 Custom_ESVetHouse 23 14 square 5_2/800 Custom_EastScarpe 20 31 square_5_5/1100 Custom_EastScarpe 34 98 2/1350 Town 54 73 3/1740 Custom_ESVetHouse 23 14 square 5_2/2100 Custom_ESVetHouse 31 24 pepper_sleep",
+                "Sun": "700 Custom_ESVetHouse 23 14 square 5_2/1030 Custom_ESBirdHide 5 4 pepper_nap/1200 Custom_EastScarpe 25 36 1/1300 Custom_EastScarpe 54 87 square_7_1/1800 Custom_ESVetHouse 31 24 pepper_sleep",
+                "Tue": "650 Custom_ESVetHouse 29 14 1/700 Town 99 95 1/930 Custom_EastScarpe 34 32 3/1140 Custom_ES_VetAwayWarpRoom 5 7 0/1810 Custom_ESVetHouse 23 14 square 5_2/2200 Custom_ESVetHouse 24 6 pepper_sleep",
+                "Wed": "650 Custom_ESVetHouse 29 14 1/700 Town 99 95 1/1000 Custom_EastScarpe 20 31 square_5_5/1800 Custom_ESVetHouse 23 14 square 5_2/2100 Custom_ESVetHouse 31 24 pepper_sleep",
+                "Fri": "650 Custom_ESVetHouse 29 14 1/700 Town 99 95 1/1000 Forest 27 13 3/1300 Forest 88 17 2 pepperpup_nap/1500 Town 101 97/1620 Custom_EastScarpe 20 31 square_5_5/2100 Custom_ESVetHouse 31 24 pepper_sleep",
+                "spring": "700 Custom_ESVetHouse 23 14 square 5_2/1100 Custom_ESBirdHide 5 4 pepper_nap/1400 Custom_EastScarpe 20 31 square_5_5/1700 Custom_ESVetHouse 23 14 square 5_2/1900 Custom_ESVetHouse 31 24 pepper_sleep",
+            }
+        }
+    ]
+}

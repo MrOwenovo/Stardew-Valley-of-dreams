@@ -1,0 +1,91 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter8",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "Rosa 33 25 2",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        {
+            "LogName": "Ice Festival Dialogue",
+            "Action": "EditData",
+            "Target": "data/festivals/winter8",
+            "Entries": {
+                "Rosa": "{{i18n:festivals.rosa.winter8}}"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter25",
+            "When":{"HasMod |contains=FlashShifter.StardewValleyExpandedCP":false},
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "Rosa 22 63 1",
+                    "Delimiter": "/"
+                }
+            ]
+        }, /*
+{
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter25",
+	    "When":{"HasMod |contains=Rafseazz.RSVCP":true},
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "Rosa 22 63 1",
+                    "Delimiter": "/"
+                }
+            ]
+        },*/
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring24",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "Rosa 30 41 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "Rosa 23 32 3",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        {
+            "LogName": "Flower Festival Dialogue",
+            "Action": "EditData",
+            "Target": "data/festivals/spring24",
+            "Entries": {
+                "Rosa": "{{i18n:festivals.rosa.spring24}}"
+            }
+        }
+    ]
+}

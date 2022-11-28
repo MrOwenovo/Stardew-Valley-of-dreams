@@ -1,0 +1,646 @@
+{
+  "Format": "1.13.0",
+  "Changes": [
+    {
+      "LogName": "Sprites", 
+      "Action": "Load",
+      "Target": "Characters/Mike",
+      "FromFile": "assets/Image/Sprite.png"
+    },
+    {
+      "LogName": "Beach Sprites", 
+      "Action": "Load",
+      "Target": "Characters/Mike_Beach",
+      "FromFile": "assets/Image/Sprite_Beach.png"
+    },
+    {
+      "LogName": "Portraits",
+      "Action": "Load",
+      "Target": "Portraits/Mike",
+      "FromFile": "assets/Image/Mike.png"
+    },
+    {
+      "LogName": "Beach Portraits",
+      "Action": "Load",
+      "Target": "Portraits/Mike_Beach",
+      "FromFile": "assets/Image/Mike_Beach.png"
+    },
+    {
+      "LogName": "Dialogue Jasper",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/Mike",
+      "FromFile": "assets/Dialogue/JasperDialogue.json",
+      "When": {"HasMod:Lemurkat.NPCJasper": true}
+    },
+    {
+      "LogName": "Dialogue",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/Mike",
+      "FromFile": "assets/Dialogue/Dialogue.json",
+      "When": {"HasMod:Lemurkat.NPCJasper": false}
+    },
+    {
+      "LogName": "Marriage Dialogue",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/MarriageDialogueMike",
+      "FromFile": "assets/Dialogue/MarriageDialogue.json",
+      "When": 
+        {"Relationship:Mike": "Married"}
+    },
+    {
+      "LogName": "Schedule",
+      "Action": "Load",
+      "Target": "Characters/schedules/Mike",
+      "FromFile": "assets/Schedule/Schedule.json",
+      "When": {
+        "HasMod:BusStopExpansion":false,
+        "HasMod:SYS.Rooms.Mike": false,
+        "HasMod:FlashShifter.SVECode": false
+      }
+    },
+    {
+			"LogName": "Boarding Schedule",
+			"Action": "Load",
+			"Target": "Characters/schedules/Mike",
+			"FromFile": "assets/Schedule/Schedule_Boarding.json",
+			"When": {
+        "HasMod:BusStopExpansion": true,
+        "HasMod:SYS.Rooms.Mike": false,
+        "HasMod:FlashShifter.SVECode": false
+      }
+    },
+    {
+      "LogName": "Room Schedule",
+			"Action": "Load",
+			"Target": "Characters/schedules/Mike",
+			"FromFile": "assets/Schedule/Schedule_Room.json",
+			"When": {
+        "HasMod:BusStopExpansion": false,
+        "HasMod:SYS.Rooms.Mike": true,
+        "HasMod:FlashShifter.SVECode": false
+      }
+    },
+    {
+      "LogName": "SVE Schedule",
+			"Action": "Load",
+			"Target": "Characters/schedules/Mike",
+			"FromFile": "assets/Schedule/Schedule_SVE.json",
+			"When": {
+        "HasMod:FlashShifter.SVECode": true
+      }
+    },
+    {
+      "LogName": "NPC Dispositions",
+      "Action": "EditData",
+      "Target": "Data/NPCDispositions",
+      "Entries": {
+        "Mike": "adult/rude/neutral/neutral/male/datable/null/Town/summer 26/Gus 'uncle' Leah ''/BusStop 9 11/迈克"
+      },
+	  "Fields": {
+            "Gus": {
+               9: "Mike 'nephew' Emily '' Pam ''"
+            },
+			"Leah": {
+               9: "Mike ''"
+            }
+         }
+    },
+    {
+      "LogName": "Gift tastes",
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "Entries": {
+        "Mike": "哇! 谢谢! 你真是太好了。不过，你怎么知道我喜欢这个? /192 210 213 342 636/谢谢, 我很喜欢./233 194/我收下了...?/728/这是什么? 它看起来好恶心./219/哦, 谢谢你.//"
+      }
+    }, 
+    {
+      "LogName": "Engagement Dialogue",
+      "Action": "EditData",
+      "Target": "Data/EngagementDialogue",
+      "Entries": {
+        "Mike0": "我……这是我没想到的。谢谢你愿意选择我!$l",
+        "Mike1": "@, 你无法想象我有多高兴。遇到你是我此生最大的荣幸."
+      }
+     },
+     {
+       "LogName": "Movie Invitation Spouse",
+       "Action": "EditData",
+       "Target": "Strings/Characters",
+      "Entries": {
+       "MovieInvite_Spouse_Mike": "你想和我一起去看电影? 我很想去!$h#$e#我只是有点惊讶! 今晚我们会玩得很开心的。我会在剧院门口等你的.$h"
+      }
+     },
+     {
+       "LogName": "Schedule Dialogue",
+       "Action": "Load",
+       "Target": "Strings/schedules/Mike",
+       "FromFile": "assets/Schedule/ScheduleDialogue.json"
+      },
+     {
+       "LogName": "Animation Description Strings",
+       "Action": "EditData",
+       "Target": "Strings/animationDescriptions",
+       "Entries": {
+        "mike_read": "%迈克太专注于他的研究课题, 没有注意到你.",
+        "mike_school": "%迈克去学校了。有些食品包装袋掉在地上了.",
+        "mike_guitar": "嗨, @, 我正在学弹吉他。给我点时间, 我会专门为你弹首歌!$h"
+      }
+     },
+     {
+       "LogName": "Animation Description Data",
+       "Action": "EditData",
+       "Target": "Data/animationDescriptions",
+      "Entries": {
+        "mike_read": "16/16 16 16 17 17 17 18 18 18 17 17 17 18 18 18 17 17 17 16 16 16/16/Strings\\animationDescriptions:mike_read",
+        "mike_school": "19/19/19/Strings\\animationDescriptions:mike_school",
+        "mike_guitar": "24/24 24 24 25 25 25 24 24 24 25 25 25 24 24 24 25 25 25 24 24 24 25 25 25 24 24 24/24/Strings\\animationDescriptions:mike_guitar",
+        "mike_sleep": "51/51/51"
+      }
+    },
+    { 
+      "LogName": "Marriage",
+      "Action": "EditData",
+      "Target": "strings/StringsFromCSFiles",
+      "Entries": {
+        "Utility.cs.5371": "@..。迈克..。#$b# 作为鹈鹕镇的镇长, 和本区婚姻负责人, 我现在宣布你们结为夫妻!$h",
+        "Utility.cs.5369": "当@初到鹈鹕镇时, 没人知道@是否能融入我们的社区...#$b#但是从今天开始, @会和我们一样成为这个镇子的一部分!$h#$b#今天是我莫大的荣幸, 在{0}的{1}这一天, 能以婚姻为纽带见证@和迈克的结合."
+      },
+      "When": {
+        "Relationship:Mike": "Engaged, Married"
+      }
+    },
+     {  //Dialogues about Mike//
+       "LogName": "Gus",
+       "Action": "EditData",
+       "Target": "Characters/Dialogue/Gus",
+       "Entries": {
+         "Mon": "迈克是我的侄子。他上的是我曾就读的大学。我为他感到骄傲。如果你问我的话, 我认为他很聪明.$h"
+       },
+      "When": {
+      "Relationship:Mike": "Unmet, Friendly, Dating"
+      }
+    },
+    {
+      "LogName": "Gus",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Gus",
+      "Entries": {
+        "Wed2": "迈克喜欢薯饼。他把我们昨天吃的都吃光了。但桌上摆了道鳟鱼汤, 他立马不吃了."
+      }
+    },
+    {
+    "LogName": "Haley",
+    "Action": "EditData",
+    "Target": "Characters/Dialogue/Haley",
+    "Entries": {
+      "Mon2": "迈克是个天才。前几天他帮我修好了相机。我很高兴他能帮助我。$h"
+    },
+    "When": {
+      "Relationship:Mike": "Unmet, Friendly, Dating"
+      }
+    },
+    {
+    "LogName": "Leah",
+    "Action": "EditData",
+    "Target": "Characters/Dialogue/Leah",
+    "Entries": {
+      "Tue2": "迈克真的是个可人。他偶尔会从市里给我弄些我需要的材料。$h",
+      "Tue6": "迈克是我为数不多的好朋友之一。#$b#但我很少见到他。他大部分时间都忙于学业。$s",
+      "Sun2": "迈克那天从城里拿了把刻刀。它很好用。$h",
+      "Sun4": "我总是忘记给迈克写信表示感谢。他帮了我很多忙。$h" 
+    },
+    "When": {
+      "Relationship:Mike": "Unmet, Friendly, Dating"
+      }
+    },
+    { //Dialogue for Rainy Days//
+      "Logname": "Rainy",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/rainy",
+      "Entries": {
+        "Mike": "我不太喜欢被淋湿的感觉,但雨会让人保持思考 .#$b#哇哦, 天气变冷了。也许我得麻烦格斯叔叔给我来杯热咖啡."
+      }
+    },
+    { //Events//
+    "LogName": "Event Birthday",
+    "Action": "EditData",
+    "Target": "Data/Events/Town",
+    "FromFile": "assets/Events/2.json",
+    "When": {
+      "HasMod:FlashShifter.StardewValleyExpandedALL": false
+      }
+    },
+    {
+    "LogName": "Event Birthday SVE",
+    "Action": "EditData",
+    "Target": "Data/Events/Town",
+    "FromFile": "assets/Events/2SVE.json",
+    "When": {
+      "HasMod:FlashShifter.StardewValleyExpandedALL": true
+      }
+    },
+    {
+      "LogName": "Event Beach",
+      "Action": "EditData",
+      "Target": "Data/Events/Beach",
+      "FromFile": "assets/Events/4.json"
+    },
+    {
+      "LogName": "Event Saloon",
+      "Action": "EditData",
+      "Target": "Data/Events/Saloon",
+      "FromFile": "assets/Events/6.json"
+    },
+    {
+      "LogName": "Event Town",
+      "Action": "EditData",
+      "Target": "Data/Events/Town",
+      "FromFile": "assets/Events/8.json"
+    },
+    {
+      "LogName": "Event Bike",
+      "Action": "EditData",
+      "Target": "Data/Events/Saloon",
+      "FromFile": "assets/Events/10.json"
+    },
+    {
+      "LogName": "Event Marriage",
+      "Action": "EditData",
+      "Target": "Data/Events/Farm",
+      "FromFile": "assets/Events/10m.json"
+    },
+    {
+      "LogName": "Event Marriage",
+      "Action": "EditData",
+      "Target": "Data/Events/BusStop",
+      "FromFile": "assets/Events/12m.json"
+    },
+    {
+      "LogName": "Event Marriage",
+      "Action": "EditData",
+      "Target": "Data/Events/Woods",
+      "FromFile": "assets/Events/14m.json"
+    },
+    { //Dialogue for Festivals//
+    "Action": "EditData",
+      "Target": "Data/Festivals/spring13",
+      "Entries": {
+        "Mike": "真是太棒了! 哇, 我想知道他们在里面放了什么?#$e#嘿, 你也应该拿一些!$h"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring13",
+      "Entries": {
+        "Mike": "宝贝, 潘趣酒很甜。它的味道和你一样甘甜!$h"
+      },
+      "When": {
+        "Relationship:Mike": "Married"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring24",
+      "Entries": {
+        "Mike": "我可不擅长跳舞, 但是这确实很浪漫."
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/spring24",
+      "Entries": {
+        "Mike": "@, 你看起来很棒!$h#$b#...一如既往地$l"
+      },
+      "When": {
+        "Relationship:Mike": "Married"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer11",
+      "Entries": {
+        "Mike": "这汤闻起来真香! 希望你不要做出不恰当的选择.$u",
+        "Mike_spouse": "汤! 我们要放点什么吗?#$e#嗯, 这听起来令人兴奋.$h"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer28",
+      "Entries": {
+        "Mike": "我已经准备好了。它会看起来很棒的!$h",
+        "Mike_spouse": "宝贝, 别睡着了。你将会错过这个盛大的场面!$s"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/summer28",
+      "Entries": {
+        "Mike": "月光水母和你一样美丽.$l"
+      },
+      "When": {
+        "Relationship:Mike": "Married"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall16",
+      "Entries": {
+        "Mike": "嗨, 真令人激动! 我应该先做什么?$h",
+        "Mike_spouse": "甜心! 你想怎么做?$h"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall16",
+      "Entries": {
+        "Mike": "今天又是美好的一天。很有趣, 不是吗?"
+      },
+      "When": {
+        "Relationship:Mike": "Married"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/fall27",
+      "Entries": {
+        "Mike": "嗯, 我不太喜欢这些东西.$a",
+        "Mike_spouse": "哇啊! 亲爱, 你吓到我了!$5"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter8",
+      "Entries": {
+        "Mike": "你准备钓几条鱼?"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter8",
+      "Entries": {
+        "Mike": "你拿到了! 我一直都相信你!$h"
+      },
+      "When": {
+        "Relationship:Mike": "Married"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter25",
+      "Entries": {
+        "Mike": "这是我最喜欢的节日! 一切都很完美, 不是吗?$h"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Festivals/winter25",
+      "Entries": {
+        "Mike": "你知道的,今天是我最喜欢的节日, 而你使它更加完美。谢谢你.$l"
+      },
+      "When": {
+        "Relationship:Mike": "Married"
+      }
+    },
+    { //Mails//
+      "LogName": "Birthday",
+      "Action": "EditData",
+      "Target": "Data/mail",
+      "Entries": {
+        "mikebirthday": "你好, @.^^我打算开一个生日派对, 我想邀请你.^^如果你愿意, 请在本月26日下午来格斯叔叔这儿参加派对。希望能在那里见到你!^^来自, 迈克[#]Mike's Birthday" 
+      }
+    },
+    {
+      "LogName": "Birthday",
+      "Action": "EditData",
+      "Target": "Data/Events/Farm",
+      "Entries": {
+        "68261001/f Mike 500/z spring/z fall/z winter/u 25/x mikebirthday": "null"
+      }
+    },
+    { //Movies//
+      "Action": "EditData",
+      "Target": "Data/ConcessionTastes",
+      "Entries": {
+      "Mike": {"Name": "Mike",
+        "LovedTags": [
+        "Apple Slices", "Fries", "Joja Cola", "Nachos", "Personal Pizza", "Stardrop Sorbet"
+        ],
+        "LikedTags": [
+        "Cappuccino Mousse Cake", "Chocolate Popcorn", "Cotton Candy", "Hummus Snack Pack", "Ice Cream Sandwich", "JojaCorn", "Salmon Burger", "Star Cookie"
+        ],
+        "DislikedTags": [
+        "Black Licorice", "Jasmine Tea", "Jawbreaker", "Kale Smoothie", "Panzanella Salad", "Popcorn", "Rock Candy", "Salted Peanuts", "Sour Slimes", "Truffle Popcorn"
+        ]
+      }
+      }
+    },
+    {"Action": "EditData",
+      "Target": "Data/MoviesReactions",
+      "Entries": {
+      "Mike": {
+      "NPCName": "Mike",
+      "Reactions": [
+        {
+          "Tag": "family",
+          "Response": "love",
+          "Whitelist": [],
+          "SpecialResponses": null,
+          "ID": "reaction_0"
+        },
+        {
+          "Tag": "horror",
+          "Response": "dislike",
+          "Whitelist": [],
+          "SpecialResponses": null,
+          "ID": "reaction_1"
+        },
+        {
+          "Tag": "spring_movie_0",
+          "Response": "like",
+          "Whitelist": [],
+          "SpecialResponses": {
+            "BeforeMovie": {
+              "ResponsePoint": null,
+              "Script": "",
+              "Text": "有趣。这不是给孩子们看的吗?"
+            },
+            "DuringMovie": {
+              "ResponsePoint": null,
+              "Script": "",
+              "Text": "哈哈, 真好笑.$h#$b#这很可爱.$h"
+            },
+            "AfterMovie": {
+              "ResponsePoint": null,
+              "Script": "",
+              "Text": "好吧, 还不像我想的那么糟.$h"
+            }
+          },
+          "ID": "reaction_2"
+        },
+        {
+          "Tag": "summer_movie_0",
+          "Response": "love",
+          "Whitelist": [],
+          "SpecialResponses": {
+            "BeforeMovie": {
+              "ResponsePoint": null,
+              "Script": "",
+              "Text": "我小时候玩过这个电子游戏。我当然赢了!$h#$b#不过我想知道他们是怎么把它拍成电影的."
+            },
+            "DuringMovie": {
+              "ResponsePoint": null,
+              "Script": "",
+              "Text": "哈哈, 真好。这让我想再玩一次那个游戏.$h"
+            },
+            "AfterMovie": {
+              "ResponsePoint": null,
+              "Script": "",
+              "Text": "我喜欢这部电影! 是不是很有趣的?$h"
+            }
+          },
+          "ID": "reaction_3"
+        },
+        {
+          "Tag": "fall_movie_0",
+          "Response": "dislike",
+          "Whitelist": [],
+          "SpecialResponses": {
+            "BeforeMovie": {
+              "ResponsePoint": null,
+              "Script": "",
+              "Text": "不是我喜欢的类型, 不过电影质量还行。为什么不看呢."
+            },
+            "DuringMovie": {
+              "ResponsePoint": null,
+              "Script": "",
+              "Text": "我觉得..。不算太糟."
+            },
+            "AfterMovie": {
+              "ResponsePoint": null,
+              "Script": "",
+              "Text": "我真的不知道恐怖类电影有什么好看的。好吧, 但我并不讨厌它."
+            }
+          },
+          "ID": "reaction_4"
+        },
+        {
+          "Tag": "winter_movie_0",
+          "Response": "love",
+          "Whitelist": [],
+          "SpecialResponses": {
+            "BeforeMovie": {
+              "ResponsePoint": null,
+              "Script": "",
+              "Text": "哦, 看起来会很暖心.$h"
+            },
+            "DuringMovie": {
+              "ResponsePoint": null,
+              "Script": "",
+              "Text": "...有家人在身边总是好的..."
+            },
+            "AfterMovie": {
+              "ResponsePoint": null,
+              "Script": "",
+              "Text": "那是一部好电影...$h#$b#我有点想念我的家人."
+            }
+          },
+          "ID": "reaction_5"
+        },
+        {
+          "Tag": "spring_movie_1",
+          "Response": "hate",
+          "Whitelist": [],
+          "SpecialResponses": {
+            "BeforeMovie": {
+              "ResponsePoint": null,
+              "Script": "",
+              "Text": "这不是像一部纪录片吗?"
+            },
+            "DuringMovie": {
+              "ResponsePoint": null,
+              "Script": "",
+              "Text": ""
+            },
+            "AfterMovie": {
+              "ResponsePoint": null,
+              "Script": "",
+              "Text": "抱歉, 这部电影是不错。但对我来说有点无聊."
+            }
+          },
+          "ID": "reaction_6"
+        },
+        {
+          "Tag": "summer_movie_1",
+          "Response": "love",
+          "Whitelist": [],
+          "SpecialResponses": {
+            "BeforeMovie": {
+              "ResponsePoint": null,
+              "Script": "",
+              "Text": "没错, 我已经为这部电影做好了准备!$h"
+            },
+            "DuringMovie": {
+              "ResponsePoint": null,
+              "Script": "",
+              "Text": "有点奇怪...#$b#但足够有趣!$h"
+            },
+            "AfterMovie": {
+              "ResponsePoint": null,
+              "Script": "",
+              "Text": "让我们再看一遍吧!$h"
+            }
+          },
+          "ID": "reaction_7"
+        },
+        {
+          "Tag": "fall_movie_1",
+          "Response": "love",
+          "Whitelist": [],
+          "SpecialResponses": {
+            "BeforeMovie": {
+              "ResponsePoint": null,
+              "Script": "",
+              "Text": "这看起来像是一部好电影.$h"
+            },
+            "DuringMovie": {
+              "ResponsePoint": null,
+              "Script": "",
+              "Text": "多么美好的情节..。我喜欢.$h"
+            },
+            "AfterMovie": {
+              "ResponsePoint": null,
+              "Script": "",
+              "Text": "是的。我不得不说, 这是迄今为止我看过的最好的电影.$h"
+            }
+          },
+          "ID": "reaction_8"
+        },
+        {
+          "Tag": "winter_movie_1",
+          "Response": "like",
+          "Whitelist": [],
+          "SpecialResponses": {
+            "BeforeMovie": {
+              "ResponsePoint": null,
+              "Script": "",
+              "Text": "看起来很好。我妈妈很喜欢这部电影.$h"
+            },
+            "DuringMovie": {
+              "ResponsePoint": null,
+              "Script": "",
+              "Text": "很暖心."
+            },
+            "AfterMovie": {
+              "ResponsePoint": null,
+              "Script": "",
+              "Text": "谢谢你邀请我。这很有趣.$h"
+            }
+          },
+          "ID": "reaction_9"
+        }
+      ]
+   }
+   }
+}
+  ]
+}
