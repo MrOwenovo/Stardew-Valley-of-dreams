@@ -12,6 +12,7 @@
 <br>
 
 #### 运行提醒:
+- 找到星露谷游戏根目录:steam\steamapps\common\Stardew Valley     直接下载文件解压到其中覆盖所有内容
 - stardewModingAPI 如果运行时卡住，可以按几次空格，按完继续等待
 - 加载时间5min左右，加载存档会卡2min,进入存档会卡10min左右/创建存档会时间更长
 
