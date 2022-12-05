@@ -1,4 +1,3 @@
-[toc]
 # Stardew-Valley-of-dreams
 ## 梦中的星露谷 整合包(汉化)
 
@@ -8,13 +7,34 @@
 - 我非常注重游戏的平衡性，以防止游戏失去乐趣，删除了所有imBalance的元素，并调整了相关参数，保证了游戏的平衡性,其他的正在测试，如果有修改需求请联系我
 - 正在开发成就和任务系统，以指引玩家游玩
 - 删除 跳过钓鱼动画/显示梯子位置/沙漠电梯/拖拉机
+- 不定期更新整合包
+
+<br>
+
+#### 更新:
+- 加入新mod: 
+- 删除mod: 
+  - Challenging PPJA SVE Bundles: 具有挑战性的社区中心捆绑包  ×
+  - Horse Flute Anywhere: 马笛随时可见 √
+  - NPC Vending Machines: NPC自动售货机 ×
+  - TehPers FestiveSlimes&core: 节日史莱姆  ×
+  - Pierre Sells Horse Flute: 皮埃尔卖马笛 Æ
+  
 
 <br>
 
 #### 运行提醒:
-- stardewModingAPI 如果运行时卡住，可以按几次空格，按完继续等待
-- 加载时间5min左右，加载存档会卡2min,进入存档会卡10min左右/创建存档会时间更长
+- 找到星露谷游戏根目录:steam\steamapps\common\Stardew Valley 直接下载文件解压到其中覆盖所有内容
 
+- 请使用stardewModingAPI加载模组:
+
+  - stardewModingAPI下载地址：https://www.nexusmods.com/stardewvalley/mods/2400
+
+  -  stardewModingAPI安装教程 :https://www.xiaohongshu.com/discovery/item/617156360000000001026aa9
+
+- stardewModingAPI 如果运行时卡住，可以按几次空格，按完继续等待
+
+- 加载时间5min左右，加载存档会卡2min,进入存档会卡10min左右/创建存档会时间更长 
 <br>
 
 #### 快捷键(可在设置/选项/最下方的模组设置/左上角键盘位置修改)：
@@ -40,7 +60,7 @@
 
 #### 模组内容:√:已汉化 ×:无需汉化 Æ:个人汉化 ?待解决
 - 特色:
-  - Duck Crab Pot: 蟹鸭锅(螃蟹笼替代为鸭子) ×  
+  - Duck Crab Pot: 蟹鸭锅 ×  
   - Artisanal Soda Makers: 手工汽水制造商 √  
   - Shaved Ice and Frozen Treats: 刨冰和冷冻零食 √
   - Hisame's New Craftables: 日三的新工艺品 √
@@ -294,7 +314,6 @@
   - Stay Up Late: 熬夜(过2点后改为扣体力) ×
   - [STF] Balanced Valley: 平衡谷(平衡游戏难度)  ×
   - Aquarism: 水族 - 沉浸式鱼塘
-  - Challenging PPJA SVE Bundles: 具有挑战性的社区中心捆绑包  ×
   - Quality Of Life - Immersive Tweaks: 生活质量 - 沉浸式调整 ×
   - Walk Of Life - Immersive Professions: 生活大道 - 沉浸式职业 ×
   - Stardew Valley Balance Overhaul: 星露谷平衡大修 ×
@@ -308,9 +327,7 @@
   - Farmhouse Visits: 农舍参观 √
   - Fish Ponds Rebalanced: 鱼塘再平衡 ×
   - Carry Your Pet: 偷狗 ×
-  - Horse Flute Anywhere: 马笛随时可见 √
   - Smart Building: 智能建筑 √
-  - NPC Vending Machines: NPC自动售货机  
   - Restauranteer: 餐厅 Æ
   - SlingshotRebalance: 弹弓再平衡 ?
   - SocializingSkill: 社交技巧 √
@@ -358,11 +375,9 @@
   - Lucky Reclamation Trash Can: 垃圾桶加入幸运度  ×
   - Pet Water Bowl: 宠物水碗(下雨和喷头能给宠物碗浇水)  ×
   - Pony Weight Loss Program: 小马减肥  ×
-  - TehPers FestiveSlimes&core: 节日史莱姆  ×
   - Zoom Level Keybind: 无限放大缩小  √
   - MonthlyMail: 每月邮件  ?
   - Less loud Weeds cutting sound: 化镰刀声音 ×
-  - Pierre Sells Horse Flute: 皮埃尔卖马笛 Æ
   - Input tool: 输入工具(手柄控制时强制鼠标消失)  ×
   - Pierre Sells Horse Flute: 皮埃尔卖马笛  Æ
   - Stop sounds when in backgroun: 背景时停止声音 ?

@@ -1,0 +1,395 @@
+#### 模组内容:√:已汉化 ×:无需汉化 Æ:个人汉化 ?待解决
+- 特色:
+    - Duck Crab Pot: 蟹鸭锅 ×  <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/6346/6346-1593005379-1628418277.png) <br> *螃蟹笼替代为鸭子*
+    - Artisanal Soda Makers: 手工汽水制造商 √  <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/5173/5173-1612486289-698579637.png) <br> *添加了一棵新的果树和六台机器，两百多台由水果制成的手工苏打水！*
+    - Shaved Ice and Frozen Treats: 刨冰和冷冻零食 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/5388/5388-1581543525-1957015352.png) <br> *26 种新食谱和一个刨冰机*
+    - Hisame's New Craftables: 日三的新工艺品 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/4837/4837-1611937180-1802433503.jpeg) <br> *添加了动物雕像和花盆，可以在夏季市场（美人鱼岛扩展区）购买，鱼食可以在金鱼缸和锦鲤缸上使用。还添加了两个新的制作配方*
+    - [PFM] Jewelcraft: PFM珠宝工艺 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/1861/1861-1518342638-1486477204.png) <br> *添加 3 个处理珠宝的新制作站,总共增加 10 件珠宝。5 正常，5 附魔。 新增大约 50+ 法贝热蛋，可以用任何矿物质制作和附魔。*
+    - Bars To Ores: 金条到矿石 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/4554/4554-1570678152-1085508811.png) <br> *允许将金属锭重新制作成矿石*
+    - Blast Furnace: 高炉 Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/13324/13324-1660027513-2018476067.jpeg) <br> *增加了一个比普通炉快两倍的高炉*
+    - BlueMoonCasks: 蓝月亮酒桶(整合sve) Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/11882/11882-1651642255-1170120081.jpeg) <br> *为星露谷扩展角色索菲亚添加了额外的内容。它允许建造特殊的木桶，将蓝月亮酒陈酿成陈年蓝月亮酒，并允许陈年蓝月亮酒在普通酒桶中陈酿到铱质量。*
+    - Cheese tea: 芝士茶 Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/6467/6467-1594805300-1903368940.png) <br> *允许您通过将奶酪放入小桶中来制作“奶酪茶”*
+    - Custom Farming Redux: 定制农业(自定义机器-前置) × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/991/991-1544373061-49453577.png) <br> *含更多机器，删除了不平衡的部分*
+    - Fizzy Drinks: 碳酸饮料 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/5342/5342-1599975930-1397899761.png) <br> *手工苏打水制造商的分支，专注于特色流行饮料。引入了四种新的觅食物品、两棵新树、五种新作物和 60 多种新产品*
+    - Longer Fence Life: 更长的栅栏寿命 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/10498/10498-1641419351-1061826962.jpeg) <br> *增加围栏的生命/健康，使其使用寿命更长。*
+    - Lookup Anything: F1查找信息 √ <br> *按F1显示鼠标处物品详细信息*
+    - Lemonade Stand Machine: 柠檬水站机 Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/4128/4128-1580776616-593046837.png) <br> *可制作的柠檬水机，用于将果树作物加工成调味柠檬水，价值增加 1.5 倍*
+    - Gashapon Machines: 扭蛋机 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/5728/5728-1586057687-1230818368.jpeg) <br> *可以从中得到宝石，古老的物品。甚至一些珍贵的种子。甚至可能得到一些有趣的物品。游戏币可以通过在回收机中回收垃圾来获得。*
+    - Upgraded Seed Makers: 升级的种子制造商  √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/2650/2650-1534009270-1990275590.jpeg) <br> *升级的种子制造商提供更多种子。*
+    - PFM-JA Upgraded Seed Makers: PFM-JA升级种子机  Æ <br> *上面的PFM版本，3种新型种子制造商，每种作物提供一定数量的种子。*
+    - Boarding House Nut Butters: 寄宿公寓坚果黄油 Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/6342/6342-1592958630-1202041373.png) <br> *增加了在工匠谷的黄油搅拌器中使用寄宿公寓可觅食物的坚果的兼容性*
+    - Fruit Tree Honey: 果树蜂蜜 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/13780/13780-1663134718-576125596.png) <br> *可以用果树和花朵制作蜂蜜*
+    - Hugs and kisses：拥抱和亲吻 × <br> *为星露谷的接吻功能提供了一定的灵活性*
+---
+- 扩展:
+    - Adventurer's Guild Expanded 1.0.15: 冒险家协会扩展 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/12102/12102-1653086591-22091967.png) <br> *冒险家公会的扩展包，包括新任务、30+ 故事事件、新的浪漫 NPC，以及与友好的怪物交朋友并招募到您的农场生活的能力*
+    - Downtown Zuzu: 祖祖市中心 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/8587/8587-1619353650-1203004739.png) <br> *祖祖市是一个完全可探索的区域*
+    - East Scarp: 东斯卡普 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/5787/5787-1635481474-2010529767.png) <br> *欢迎来到东斯卡普！添加新NPC的扩展;新地点;新鱼;商店;特殊事件和秘密。位于风景如画的海边。*
+    - Grampleton Fields: sve格兰普尔顿菲尔德 × <br> *地图右上角的一片平原区域，可以提供耕地*
+    - Lunna Astray: 伦娜 - 星露谷的误入歧途 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/6626/6626-1650350746-1314796341.png) <br> *Lunna，一个有着秘密过去的女孩，声称最初不是来自我们的土地，而是来自一个叫Umuwi的地方。她也受到巫师拉斯莫迪乌斯先生的照顾和监督！通过浪漫活动了解她的秘密，所有这些都是为了传达一个可以沉浸其中的故事！随着故事的到来，你还可以见到比安卡和拉斐尔！与Lunna相同的内容.*
+    - Stardew Valley Expanded: SVE星露谷扩展 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/3753/3753-1669414251-1468128667.png) <br> *星露谷扩展是关注猿的星露谷的同人资料片。这个模组增加了 27 个新的 NPC、50 个地点、260 个角色事件、27 条鱼、重新构想的香草区、两张农场地图、反映所有变化的重新设计的世界地图、新音乐、任务线、物品、庄稼、节日和许多杂项添加！*
+    - Stoffton: 斯托夫顿 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/11666/11666-1662648044-1096227066.jpeg) <br> *斯托夫顿是一个繁荣的磨坊小镇，位于鹈鹕镇以北。如果您安装了Fostoria，您可以步行访问Stoffton。否则，您可以乘坐巴士前往斯托夫顿。斯托夫顿包括两张大地图，总共39个新地点（包括11家商店），48个新NPC（包括14个求婚者），新的心脏事件等等。*
+---
+- 建筑:
+    - Mini Obelisk: 迷你方尖碑 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/12571/12571-1655647372-951735169.jpeg) <br> *方尖碑将被小型化以提高能见度。地板也可以详细改变。还有季节的外观。*
+---
+- 畜牧业和动物:
+    - [BFAV] Beach Animals - English & [JA] Flamingo Priducts: 海滩动物，及火烈鸟 Æ <br> ![image](https://d2ufj6gm1gtdrc.cloudfront.net/2021/08/22/22/00/d8dd64ee1831249d3abf88cf94d8fbfd.png?w=1200&q=90) <br> *鸡舍新动物*
+    - [BFAV] Birds & [BFAV] Turkeys: 艾米的动物 Æ
+    - [BFAV] Crows (bfav unofficial update): 鸡舍乌鸦 Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/3737/3737-1553986964-2051487499.png) <br> *
+    - Phoenixes: 小凤凰 Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/4846/4846-1575938647-1538996258.png) <br> *动物添加各种小凤凰*
+    - [BFAV] Toffee's Parrots: 太妃鹦鹉 Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/13259/13259-1659669307-1540270954.jpeg) <br> *添加鹦鹉作为农场动物选项。*
+    - Adopt Skin: 动物随机皮肤 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/4011/4011-1563127261-1322871941.png) <br> *收养新宠物，寻找野马，并为每个人随机分配和选择自定义皮肤！*
+    - Better Ranching: 动物气泡 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/859-0-1505780873.png) <br> *防止挤奶/剪羊毛尝试失败，并添加可以抚摸、挤奶或剪羊毛宠物和动物的指示器。*
+    - Kitty Cats: 峡谷出现猫 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/7998/7998-1620836566-1409944545.png) <br> *为星露谷添加一堆可爱的小猫猫！*
+    - Pigeons: 鸽子和鸽子 BFAV  Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/8540/8540-1618738610-1491949023.png) <br> *添加鸽子和鸽子作为农场动物。*
+    - (CC) SH's Wild Animals: 上海野生动物   × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/9063/9063-1638969848-1016153741.jpeg) <br> *在游戏中添加一些野生动物。*
+    - Farm Animal Facelift: 农场动物整容  × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/9057/9057-1630161629-699089166.png) <br> *每个谷仓+鸡舍动物的精灵更光滑！添加多个品种/颜色选项。现在有替代纹理和移动版本！*
+    - The Cowboy Life Expanded 1.4.5-Alpha: 牛仔生活扩展 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/7176/7176-1656887811-1642309399.png) ![image](https://staticdelivery.nexusmods.com/mods/1303/images/7176/7176-1656773236-1285575281.png) ![image](https://staticdelivery.nexusmods.com/mods/1303/images/7176/7176-1656464678-192044496.png) <br> *通过新型牛、服装、武器和食物中的独特物品，以及游戏中的新对话和牲畜平衡，扩展了牛仔体验。*
+---
+- 地图:
+    - Desert: 步行到沙漠 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/8630/8630-1620657498-122598044.png) <br> *将鹈鹕镇与印花布沙漠连接起来,还增加了一个新商店，一个隐藏的NPC*
+    - Ridgeside Village: 里奇赛德村  √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/7286/7286-1660896468-977490496.png) <br> *Ridgeside Village 添加了 50 多个新 NPC、新地点、新物品、新商店、新节日、自定义音乐、自定义任务等等！*
+    - Stardew Aquarium: 星露水族馆 Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/6372/6372-1593465988-1304194066.png) ![image](https://staticdelivery.nexusmods.com/mods/1303/images/6372/6372-1597201193-581178840.gif) *星露水族馆为星露谷增加了一个水族馆。在这里，您可以将您的鱼捐赠给动画水箱以获得奖励。包括一个大型的新海滩位置和新的定制商店。可从当地火车站前往水族馆！*
+---
+- 肖像:
+    - BBBoong's Ridgeside Village mod All NPC portraits 2.2ver: 里奇赛德村肖像 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/9203/9203-1661198361-1179818276.png) <br> *《脊边村》中所有角色的肖像修改。*
+    - 660315's Lunna Astray portraits mod: 660315的月娜误入歧途肖像模组 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/11506/11506-1648819665-1973021626.png) <br> *月娜误入歧途肖像*
+    - Aspen High Res Anime Portrait: 阿斯彭高分辨率动漫肖像 × <br> ![image](https://https:https://staticdelivery.nexusmods.com/mods/1303/images/13409/13409-1660870292-1706249399.png) <br> *自定义NPC的肖像模组 - 阿斯彭*
+    - HD Portraits: 高清人像(前置) ×
+    - Seasonal Cute Characters: 季节性服装 - SVE的美感略微可爱 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/5969/5969-1605594193-1600692641.png) <br> *为 SVE 添加季节性服装，使角色稍微可爱一些。*
+---
+- 角色：
+    - Ridgeside Village - NPC Adventures Addon: 里奇赛德村NPC历险记 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/10968/10968-1644251546-1693751188.png) <br> *山脊村与NPC冒险的整合！*
+    - Social Haley: 社交海莉 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/5919/5919-1588015468-1087055395.jpeg) <br> *让我们海莉出去看看星露谷。随着海莉与农民关系的发展，在新的地方拜访她，进行新的对话。*
+    - [TMX] Shiko Spouse Room: Shiko配偶房 ×
+    - Custom Spouse Patio Redux: 自定义配偶露台 × <br> *前置*
+    - Emily Dialogue Expansion: 艾米莉扩展对话 √ <br> *增加150多行对话扩展艾米丽的对话，包括雨天和节日对话（以及为节日的配偶对话）包括夜市*
+    - Multiple Spouses: 多配偶 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/6227/6227-1591269888-193615043.png) <br> *允许您拥有多个配偶、亲吻、怀孕、配偶房间等。*
+    - SVE NPC Adventures: （SVE）星露谷扩展同伴 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/12477/12477-1655813358-1198594231.png) <br> *将 SVE NPC 添加到 NPC 冒险中，使他们成为可招募的同伴*
+    - Toddlers Makeover: 幼儿改头换面 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/12257/12257-1654055693-1884325990.png) <br> *更换幼儿的形状，共四套*
+    - CP Caroline's character redrew.hztired: CP卡罗琳的角色 redrew.hztired × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/6542/6542-1595871697-1338876108.png) <br> *更换卡罗琳移动像素图*
+---
+- 新角色:
+    - NPC: Aspen - New Custom Dateable NPC: Aspen - 新的自定义可约会 Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/6754/6754-1622257959-546544364.png) <br> *这个模组增加了一个名为“Aspen”的全新可约会 NPC，具有新的位置、许多心脏事件、不断变化的对话等等！*
+    - [NPC] Lavril: 东坡崖新npc √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/10016/10016-1635729436-2142370591.gif) <br> *将拉薇儿添加到东斯卡普。一个神秘的年轻女孩和她闹鬼的玩具兔子在完全黑暗中醒来，过去的邪恶怪物和幽灵困扰着活人的领域......文森特也碰巧误入。一款可爱的独立恐怖角色扮演游戏。*
+    - Always Raining in the Valley: 山谷里总是下雨 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/9999/9999-1636335286-953032134.png) <br> *一个温暖的自定义NPC迷你扩展，增加了斯特林，米娅和亨利，13个新食谱，事件和超过1000+对话。不会给山谷增加更多的雨水。为了东陡峭！*
+    - Never Ending Adventure:  永无止境的冒险 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/12369/12369-1667438280-1066337585.png) <br> *将“剑与巫术”的“剑”一半介绍给东斯卡普！与我们的常驻流氓马特奥成为朋友，因为他们踏上了他们惊心动魄的探险之旅，进入了一个全新的冒险时代*
+    - Shay - New NPC: 谢伊 - 新NPC  √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14260/14260-1667527526-861792492.png) <br> *谢恩的姐姐有点担心他，所以她会来镇上！*
+    - College Boy Mike - Custom NPC: 大学男孩迈克 - 自定义NPC √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/6288/6288-1593679472-1768900009.png) <br> *一个名叫迈克的可结婚的自定义NPC。迈克是祖祖大学的一名大学生，他经常想知道自己的未来会怎样。他需要一个好朋友，一个他可以真正敞开心扉的人。他主修工程学，是格斯的侄子。包括144条线路，8个活动，节日和配偶房间！*
+
+---
+- 地点：
+    - Bathhouse Hot Spring - Content Patcher: 澡堂温泉 - 内容补丁(温泉替换澡堂) × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/3110/3110-1543398329-1881737517.png) <br> *用室内温泉取代澡堂 - 现在用于内容修补程序*
+    - Bats And Shrooms: 蝙蝠和蘑菇(山洞同时拥有两种选择) × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/13922/13922-1664110959-329205868.png) <br> *让您同时选择蝙蝠和蘑菇作为农场洞穴。*
+    - Mermaid Island: 美人鱼岛 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/4216/4216-1563480767-1860833965.png) <br> *添加一个新地点美人鱼岛，有一个新的NPC，新的鱼要捕获，新的可预见物品，5个新事件。可通过威利的船到达 - 与姜岛相同*
+    - [TMX] Shiko Festival Locations: 四光节地点 ×
+    - BathHouseRoom: 澡堂二楼 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/3713/3713-1553445462-1464900861.png) <br> *在浴室上方添加了一个新的公寓 - 非常适合新的 NPC 或只是看看！*
+    - Deep Woods: 深林 Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/2571/2571-1532709549-897414590.png) <br> *DeepWoods 是星露谷的模组，它增加了一个程序生成的无限森林，有秘密等你发现，有困难的挑战等着你克服，还有大量的关卡等着你去探索。*
+    - EvenMoreDeepWoods: 更多深林  × <br> *为森林增加了季节性的可觅食物，并为空地增加了季节性的额外内容*
+    - Town School : 镇校  √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/6317/6317-1592678573-1975803436.jpeg) <br> *现在我们有一所佩妮、文森特和贾斯的学校！一个新的NPC也将来到鹈鹕镇！*
+    - Lumisteria Magic Field: 卢米斯特里亚魔法场 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/6700/6700-1598178871-1611729183.png) <br> *在新地点与一波又一波的怪物战斗。这个模组增加了一个新地点，魔术场。每天晚上，古老的魔法都会吸引一波又一波的怪物供您战斗。通往该位置的通道隐藏在矿井门口。*
+    - Boarding House and Bus Stop Extension: 寄宿公寓和巴士站扩建 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/4120/4120-1602979417-737002373.png) <br> *在巴士站后面添加一个区域，里面有一个寄宿公寓、一个购买定制机器的商店、一个新的矿场和三个新的NPC。*
+---
+- 模组工具(前置):  ×
+    - [CP] DaisyNiko's Tilesheets: 黛西尼科的瓦片 ×
+    - FashionSense: 时尚感(服装超出限制框架+动画) √
+    - Anti Social NPCs: 无法成为好友的npc ×
+    - Alternative Textures: 建筑物纹理变化框架 √
+    - Content Patcher: 内容修补程序(修改地图等数据) ×
+    - Content Patcher Animations: 内容修补动画 ×
+    - Custom Companions: 自定义npc实体
+    - Custom NPC Exclusions: 自定义排除NPC(防止鹈鹕镇外的自定义NPC发布送货任务)
+    - Custom NPC Fixes: 自定义NPC修复(修复了自定义位置的 NPC 生成、自定义位置的路径以及新 NPC 的时间表)Dynamic Game Assets: 动态游戏资产(允许内容包向游戏添加自定义内容)Custom
+    - Music: 自定义音乐
+    - Response Core: MissCoriel独特的求爱反应CORE(让所有 NPC 能够使用自定义 CP 模组响应某些动作)
+    - Custom Gift Dialogue: 自定义礼物对话
+    - Entoarox Utilities: 翻版smapi
+    - Event Repeater: 事件中继器 - 内容补丁程序修改的有用工具
+    - Expanded Preconditions Utility: 扩展的前提条件实用程序
+    - Extended Minecart: 自定义新的矿车目的地
+    - Extra Map Layers: 额外的地图图层
+    - Farm Cave Framework: 自定义农场洞穴
+    - Farm Type Manager: 服务器场类型管理器 （FTM）(自定义牧草石头等资源)
+    - Generic Mod Config Menu: 通用模组配置菜单
+    - Json Assets: 杰森资产
+    - Mail Framework Mod: 邮件框架模组
+    - Miller Time: 米勒时间
+    - NPC Clothing: 允许给NPC穿衣服
+    - Paritee's Better Farm Animal Variety: 自定义您可以饲养的农场动物的类型和种类，而无需替换默认的农场动物类型
+    - PFM Automate: 这个模组将生产者框架模组与自动化模组集成在一起。
+    - Producer Framework Mod: 生产者框架模组
+    - PyTK:  PyTK - 柏拉图同名工具包
+    - Quest Framework: 任务框架
+    - SAAT: SAAT - 音频 API 和工具包
+    - Shop Tile Framework: 允许模组制作者向游戏添加自定义商店，以及编辑原版商店
+    - Solid Foundations: 星露谷的定制建筑框架。
+    - Space Core: 太空核心
+    - Stardew Hack: 星露哈克
+    - Stardust Core: 星尘核心
+    - TMX Loader: TMX加载器
+    - Train Station: 使火车站正常使用
+    - Warp Network: 翘曲网络(快速旅行模组)
+    - Entoarox Framework: Entoarox 框架
+    - Advanced Location Loader: 高级位置加载程序
+    - ExpandedStorage: 扩展存储
+    - AtraCore: 阿特拉核心
+    - Esca's Modding Plugins (EMP): 埃斯卡的模组插件
+    - SpecialOrdersExtended: 特殊订单标签扩展
+    - GMCMOptions: GMCM选项
+    - Custom Ore Nodes: 自定义矿石节点
+    - Custom Resource Clumps: 自定义资源集合
+    - Mana Bar: 法力条 Æ
+    - CustomFurniture: 定制家具 ×
+    - BetterFarmAnimalVariety: 良种养殖场动物品种 √
+    - Flower Meads: 花草地  ×
+    - Quality Artisan Products:优质工匠产品  ×
+    - Custom Winter Star Gifts: 定制冬季星星礼物 ×
+    - NPC Map Locations: NPC地图位置 ×
+    - HD Portraits: 高清肖像 ×
+    - Shop Tile Framework: 购买磁贴框架 ×
+---
+- 事件:
+    - 约会之夜: Date night √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/11459/11459-1653439608-1171746423.png) <br> *https://staticdelivery.nexusmods.com/mods/1303/images/11459/11459-1653439608-1171746423.png*
+    - 配偶面对你死亡的反应: SpousesReactToDeath √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/7493/7493-1609725536-657128401.png) <br> *容包，在矿井、骷髅洞或火山中“死亡”后添加过场动画，以增加您和您的配偶之间的戏剧性*
+---
+- 家具:
+    - 桌子设置(家具展示框架): Table Settings × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/10884/10884-1643582771-1495419212.png) <br> *使用家具显示框架，您可以将物品放置在单个桌子上的多个位置*
+    - 市民海报: Townsfolk posters √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/13909/13909-1664029928-419824417.png) <br> *添加 50 张新海报来装饰你的农场！*
+    - 面包店展示: Bakery-Displays-main × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14229/14229-1666580036-594339033.png) <br> *添加了 90 个新家具项目，用于使用 DGA 和家具显示框架显示烘焙食品或其他对象。*
+    - [DGA] Always Raining in the Valley Posters: 山谷里总是下雨的角色海报 Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/13962/13962-1664398061-1176184621.jpeg) <br> *添加了 11 张海报，描绘了 HimeTartsmod：山谷中总是下雨的角色。*
+    - Furniture Display Framework: 家具展示框架 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/10855/10855-1643471734-406551187.png) <br> *允许您将家具指定为具有可见的储物槽。*
+    - (DGA) Holiday Event Furniture: 节日活动家具  Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/13990/13990-1664685349-1904464691.png) <br> *添加来自季节性节日的50多种各种装饰品作为您家的家具*
+    - Gervig91's Furniture: 格维格91的家具 Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/5791/5791-1586785695-1108459199.gif) <br> *在家具目录中添加了许多定制家具。包括很多动物！*
+    - [CF] Lumisteria Flower And Plant Set: Lumisteria花草套装 Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/6077/6077-1589573317-1508147266.png) <br> *这个模组增加了50+家具。其中一些会随着季节而变化！*
+    - Bed Tweaks: 床调整 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/10023/10023-1635664305-1129169255.png) <br> *允许您调整双人床的大小并更改床毯的透明度。*
+---
+- 项目：
+    - Joja可乐补货: [CP] Joja Cola Restock  × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/7731/7731-1611063735-1026533765.png) <br> *为游戏添加各种joja苏打水，其中大部分可以从沙龙的自动售货机访问。*
+    - 希萨姆的新食谱: [JA] Hisame New Recipes √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/4836/4836-1575844013-1584244312.png) <br> *添加了 20 种新食谱，可从夏季市场的玛丽那里获得*
+    - 莱奥莫纳克斯的月亮灯: Moon Lamps  Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/11159/11159-1646082697-1508734479.png) <br> *用这些月亮灯装饰你的农场！新增 4 盏灯具。*
+    - PPJA - 工匠谷: [PPJA] Artisan Valley √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/1926/1926-1577158903-441592645.png) <br> *我卖手工艺品。好吗，戳？带上硬币。20 台新机器和 150+ 件新物品！*
+    - PPJA - 圣诞糖果: Christmas Sweets √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/4950/4950-1577133724-1811418929.png) <br> *圣诞风格的美味糖果集合！*
+    - [PPJA] Even More Recipes: 更多食物 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/1742/1742-1574727025-209574401.png) <br> *更多的食物！大量新食谱的协作（和主枢纽）。*
+    - [PPJA] Farmer to Florist: PPJA - 从农民到花店 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/2075/2075-1574729516-161341615.png) <br> *前置*
+    - [PPJA] Fresh Meat: PPJA - 另类屠夫 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/1721/1721-1574740788-247435353.png) <br> *在游戏中添加 20 种新的肉类作物和树木以及新食谱！*
+    - [PPJA] Fruits and Veggies: PPJA - 水果和蔬菜 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/1598/1598-1574718799-851759086.png) <br> *模组中包括作物和蔬菜*
+    - [PPJA] Mizus Flowers: PPJA - 水的花 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/2028/2028-1574727890-1037469973.png) <br> *为游戏添加新花朵！*
+    - [PPJA] More Recipes: 更多食物 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/1670/1670-1574722477-2026317225.png) <br> *曾经想在你的游戏中获得更多食谱吗？*
+    - Cakes and Creams: 蛋糕和奶油 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/12244/12244-1653988626-476619776.png) <br> *添加了29 个美味的蛋糕，可以使用你的厨房制作。*
+    - Champagne Wishes: 香槟祝福 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/5721/5721-1585944940-2068484735.png) <br> *增加了香槟葡萄（3年级+春季格子作物）和制作香槟和香槟醋的能力。还包括一系列食谱和鸡尾酒，以利用所有这些起泡的东西*
+    - It is Pizza Time: 现在是披萨时间 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/9292/9292-1629293100-979760509.jpeg) <br> *这个模组在游戏中添加了 51 种披萨，使用香草成分，所有这些都为香草角色提供了礼物口味。每个村民至少有一个他们喜欢的披萨。它还添加了“披萨底”*
+    - Golden Mayo & Ostrich Mayo: 鸵鸟蛋黄酱和金色蛋黄酱 Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/7660/7660-1610755192-1374976248.png) <br> *金蛋现在将产生金色蛋黄酱，鸵鸟蛋将制作鸵鸟蛋黄酱。*
+    - Item Recovery: 购买死亡后物品 Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/9354/9354-1629600621-1677239831.png) <br> *昏倒后，您可以访问冒险家公会以找回所有丢失的物品。请记住，它只显示最近的死亡，所以如果你在找回你的物品之前再次死亡，它们就会丢失,物品的价格是其销售价格的一半*
+    - Market Day: 市场日 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/11778/11778-1651440802-1716368406.png) <br> *展示和销售农场中最好的农产品，工艺品和手工艺品。每周六，Stardew Valley都会在城镇广场举办农贸市场。你会和一群随机的村民一起，他们都在出售他们制造或种植的东西。*
+    - [XS] Out-and-About Storage: 外出存储 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14403/14403-1667968807-1907907329.png) <br> *添加了几个（不可放置的）箱子，用于在山谷中移动。*
+    - Lumisteria Clumps and Nodes: 卢米斯特菌团块和节点 <br> *前置*
+    - Fruit Tree Puddings: 果树布丁  Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/13986/13986-1664628311-1213572469.png) <br> *用果树做布丁*
+    - (JA) 8bit's Bakery: 更多面包  √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14009/14009-1664784863-30441109.png) <br> *添加一些面包食谱*
+    - Peachery Kitchen JA: 桃子厨房  √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/13960/13960-1664381542-1828205228.png) <br> *添加了9个以桃子为食材的食谱*
+    - Stardrop Brewing Co: 星落酿造公司 - 啤酒和蜂蜜酒  Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/13981/13981-1664582644-675575627.png) <br> *模组以精酿啤酒和蜂蜜酒的形式添加了50 多种新的工匠商品。与某些NPC成为朋友后，您将收到新的制作配方，以酿造自己的水果味啤酒和蜂蜜酒！*
+    - Golden Coconut Tree: 金色椰子树  Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/8280/8280-1615815931-435090867.jpeg) <br> *为游戏添加一棵独特的金色椰子树。*
+    - Dairy and Egg Product Overhaul: 乳制品和蛋制品大修 Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/5870/5870-1587554087-838078986.png) <br> *添加由各自的原始动物产品生产的较大版本的奶酪和蛋黄酱。还根据鸡蛋质量添加不同品质的蛋黄酱。*
+    - Makers of Stardew Vineyard packs of artisanal soda: 星露葡萄园包手工苏打水制造商 Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14436/14436-1668184265-772868931.png) <br> *将Stardew Vineyard葡萄酒味苏打水添加到手工苏打水制造商中 - 将葡萄酒鉴赏家的贪婪带入非酒精饮料市场，一次一杯苏打水。*
+    - Trinkets To Treasures - Artifacts: 宝藏的小饰品 - 文物 Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14424/14424-1668070986-265459616.jpeg) <br> *允许你在为博物馆收集完所有文物后，对文物做更多的事情。有三台新机器，可以将游戏中的任何神器变成展示品，然后您可以将其放置在农舍中或出售，以获得比基础物品本身获得的更好的利润。*
+
+---
+- 视觉效果和图形:
+    - UI Info Suite2: 显示UI √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/1023-3-1490033883.jpg) <br> *改进并添加了大量的视觉反馈，非常适合第一次玩！*
+    - Visible Fish: 显示可钓的鱼 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/8897/8897-1623348043-1700818736.png) <br> *这个模组显示了目前可以在水中捕获的鱼。适用于修改后的位置+鱼*
+    - 卢米斯特里亚瓷砖板 - 室内&室外(室内室外新瓦片): [CP] Lumisteria  Tilesheets - Indoor& Outdoor × *前置*
+    - owo表情: OwOEmote × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/9848/9848-1633743829-655248203.png) <br> *3 表情替换为 OwO 表情~*
+    - Npc Adventure: NPC历险记 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/4582/4582-1571776046-241199285.png) <br> *是时候冒险了！与鹈鹕镇的村民一起冒险！*
+    - Show Birthdays: 允许一次显示同一天的多个人生日 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/7495/7495-1609730125-1910018338.jpeg) <br> *允许日历一次显示多个生日。悬停文本列出了NPC*
+    - Wall Planter:墙壁花盆 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/11339/11339-1647573453-305774403.png) <br> *允许您将花园花盆放置在可装饰位置的墙壁上，将它们转换为可调节高度的墙壁花盆。*
+    - What Are You Missing: 你错过了什么 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/4430/4430-1569693810-203230520.png) <br> *模组告诉你缺少哪些特定于一天/季节的物品（如果是鱼，如何获得它！），以及你在社区中心缺少什么（分为 2 个选项卡 - 特定于当前季节的物品，在所有季节中都很常见）。还会告诉您缺少的食谱，它们的成分和统计数据/增益！,快捷键F2*
+    - Slightly Recolored Tools: 稍微重新着色的工具 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/8736/8736-1621026012-2040930635.png) <br> *对工具进行轻微的重新着色，使它们看起来更柔和！*
+    - Slightly Recolored Weapons: 略微重新着色的武器 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/8246/8246-1622862467-854377703.png) <br> *武器略微重新着色，看起来更柔和！*
+    - Better Artisan Good Icons For RSV: 更好的工匠好图标的RSV图标  × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/13811/13811-1663376666-1694300011.png) <br> *添加了对 RSV(山脊村) 的支持，以更好地制作好图标*
+    - BAGI - Better Artisan Good Icons For SVE: BAGI - 更好的工匠好图标为SVE提供  × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/13835/13835-1663536205-839342468.png) <br> *添加了对SVE(星露谷扩展)的支持，以更好地工匠好图标.*
+    - Atlas Antique Plasma TV: 古董等离子电视  × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14074/14074-1665338012-1562152013.png) <br> *将等离子电视的外观更改为古董外观*
+    - Giant Jack-O-Lantern: 巨型杰克灯笼  × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14095/14095-1665631364-750670245.jpeg) <br> *动态将巨型南瓜更改为巨型杰克灯笼*
+    - Lively Frog Sanctuary: 活泼青蛙保护区  × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/7837/7837-1611769828-7817321.jpeg) <br> *重新设计塞巴斯蒂安的青蛙动物园看起来更有活力。*
+    - Fancy Crops and Forage Retexture: 花式作物和饲料重新纹理  × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14070/14070-1665488527-1800567611.png) <br> *重新纹理的作物、草料和种子图标，带来更奇特、更清新的游戏外观*
+    - Simple Foliage: 简单的树叶 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/8164/8164-1644916010-733844100.png) <br> *用更风格化的版本替换星露谷中的大多数树木。*
+    - Elle's New Horses: 艾丽的新马 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/3169/3169-1582818462-441178417.gif) <br> *31 个新的和改进的马匹替代品。还包括 Adoption 'n Skin 的皮肤*
+    - Grass Replacement: 草更换 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/1967/1967-1548709591-1159034312.png) <br> *为每个季节更换草，草更短，更丰富多彩 - 包括冬天*
+    - House and Building customization-content Patch: 房屋和建筑定制 - 内容修补程序 × (可去) <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/196/196-1590875149-1670784356.png) <br> *改变了房子和一些农场建筑的外观,提供季节性选择，花盆等。*
+    - Better Artisan Good Icons for SVE: 更好的工匠好图标为SVE提供 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/9372/9372-1665432035-1338518775.png) <br> *为SVE添加的工匠商品添加独特的图标*
+    - BAGI - Better Artisan Good Icons for Champagne Wishes： BAGI - 更好的工匠好图标的香槟愿望 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14578/14578-1669365126-572984603.png) <br> *将 BAGI 兼容性添加到香槟愿望中，以彗星的更好工匠商品的风格*
+    - BAGI-Lucky Clover: BAGI - 幸运三叶草 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14591/14591-1669375727-1354736183.png) <br> *为幸运三叶草添加了更好的工匠好图标支持。蜂蜜和蜂蜜现在将匹配彗星的更好的工匠商品模组*
+    - Honey and Mead Pack: （巴吉）PPJA更多树木的蜂蜜和蜂蜜酒图标 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14388/14388-1667854857-1638158824.jpeg) <br> *用果树制作的蜂蜜，和蜂蜜酒看起来独一无二*
+    - Better Mead Icons - BAGI Addon: 更好的蜂蜜酒图标 - 巴吉插件  × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14290/14290-1667432136-2067115654.jpeg) <br> *模组完全包含香草果树的蜂蜜和蜂蜜酒*
+    - [BAGI] Vanilla Tree Honeys: （巴吉）香草果树蜂蜜和蜂蜜酒 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14290/14290-1667432105-1397486624.jpeg) <br> *重新着色了Teyla 制作的蜂蜜酒瓶以及蜂蜜等，以适应它们各自的果树*
+    - Fancy Artisan Goods Retexture: 花式工匠商品纹理 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/12766/12766-1665496039-1761695536.png) <br> *重新纹理的工匠商品图标，带来更时尚、更清新的游戏外观。*
+    - BAGI and Mead Pack for MF and AC: BAGI 和米德包 ×(可去) <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14275/14275-1666994882-1480216874.jpeg) <br> *将水花和古作物中的花蜜制成的蜂蜜酒改造成各自的蜂蜜。还包括一个用于古代作物的“传统”风格的 BAGI 包，以及由 AC 的古代花卉制成的可选利口酒。*
+    - Seasonal Special Order Board Retexture: 季节性特别订单板纹理 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14220/14220-1666540629-807900054.png) <br> *根据季节或事件更改特殊订单板的外观*
+    - Better Artisan Good Icons for The Love of Cooking: 更好的工匠好图标的烹饪之爱 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/10174/10174-1637587648-1520949797.png) <br> *为《烹饪之恋》mod中的新作物中的工匠物品添加新图标*
+---
+- 游戏机制:
+    - npc普遍喜欢钻石: UniversallyLovedDiamonds Æ <br> *所有npc都喜欢钻石*
+    - 冲浪节: SurfingFestival √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/6688/6688-1598056003-320028807.png) <br> *增加了一个新的夏季节日，您可以在镇上与一些朋友比赛！*
+    - 可回收文物: [PFM] Recyclable Artifacts × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/13331/13331-1660108552-1290431861.png) <br> *可以通过回收机回收几乎所有的文物*
+    - Animal Husbandry Mod: 畜牧模组 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/1538/1538-1518889633-1643838111.png) <br> *通过在游戏中添加新工具来改善畜牧业。添加一种为您的动物提供零食的方式。添加一种使动物怀孕的方法。添加一种从他们那里获取肉的方法。添加使用肉类的新食谱。添加新的电视频道以提供有关动物的提示。新增动物大赛活动。*
+    - Another Hunger Mod: 另一个饥饿模组 Æ <br> ![image](https://images.nexusmods.com/mod-headers/1303/3379.jpg) <br> *为游戏添加饥饿系统。*
+    - Automate: 自动化 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/1063-1-1491361758.png) <br> *将箱子放在机器旁边（如熔炉或水晶馆），机器会自动从箱子中取出原始物品并将加工后的物品推入其中。用箱子连接多台机器以连接它们。*
+    - Automatic Gates: 自动打开门 × <br> *自动打开关闭门*
+    - Better Chests: 更好的箱子 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/9791/9791-1643946384-1007826600.png) <br> *为游戏添加增强的箱子功能。*
+    - Better Work benches: 更好的工作台  × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/4830/4830-1575794481-1170740198.png) <br> *工作台现在可以从所有连接的箱子中访问物品 - 而不仅仅是相邻的箱子。*
+    - Bigger Backpack: 更大的背包 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/1845/1845-1517873232-1890107006.png) <br> *在皮埃尔购买一个更大的背包，只需50，000克！这款背包有 48 个插槽。*
+    - Bug Net: 虫网 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/5099/5099-1578098174-1112590881.gif) <br> *用网捕捉小动物。*
+    - Bus Locations: 允许作者增加巴士目的地 √ <br> *前置*
+    - Cat Gifts: 小猫每天带来礼物 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/2132/2132-1525789342-984856771.jpeg.) <br> *你的猫会随机地把礼物留在你家门口——狗会在你农场的某个地方挖出礼物。*
+    - Cooking Skill: 烹饪技巧 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/522-0-1471819582.png) <br> *为游戏添加新的烹饪技能。*
+    - Custom Cask Mod: 定制木桶(用于自定义木桶内容-前置) Æ <br> *前置*
+    - Customize Anywhere: 镜子定制 Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/4734/4734-1576866849-189904591.png) <br> *允许您随时随地自定义您的农民。包括可选的定制镜子和完整的服装目录项目<br> 默认情况下，按LeftShift+1打开自定义菜单
+      <br> 默认情况下，按LeftShift+2在看到解锁事件后打开“染料”菜单
+      <br> 默认情况下，按LeftShift+3在看到解锁事件后打开“定制”菜单
+      <br> 默认情况下，按LeftShift+4以显示服装目录*
+    - Destroyable Bushes: 可摧毁的灌木丛 × <br> *可以摧毁灌木丛，默认3天重新长出*
+    - Food On The Table: 将食物放到桌子上 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/10886/10886-1643585987-2046515691.png) <br> *让NPC吃你为他们准备的食物。*
+    - Happy Birthday: 生日快乐 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/520-2-1471545568.png) <br> *一个将玩家生日添加到星露谷物语的模组。*
+    - Harvest With Scythe: 镰刀收割 × <br> *能用镰刀收割作物等*
+    - Multi Yield Crops: 作物允许生成多种结果 × <br> *前置*
+    - Playground Mod: 游乐场模组 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14125/14125-1665845066-1505528126.png) <br> *让你在秋千上荡秋千，滑下滑梯，在鹈鹕镇操场的摇摆鸭子上摇摆。*
+    - Sit For Stamina Mod: 坐下缓慢恢复体力 × <br> *坐在凳子上后会缓慢恢复体力*
+    - Social Page Order Menu: NPC好感界面可选排列方式 Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/13698/13698-1662594511-1084163471.png) <br> *允许您使用下拉菜单按字母顺序或心形、升序或降序对关系进行排序。*
+    - Stay Up Late: 熬夜(过2点后改为扣体力) × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/12578/12578-1655670391-541086107.png) <br> *熬夜！这个模组会让你在晚上熬夜更长时间，以换取耐力。如果你的耐力耗尽了，那么你就会昏倒。*
+    - [STF] Balanced Valley: 平衡谷(平衡游戏难度)  × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/13970/13970-1664477165-609495306.jpeg) <br> *这个模组旨在通过添加更多的游戏风格和挑战以及同时平衡游戏方面，让星露谷再次感到新鲜和有趣！*
+    - Aquarism: 水族 - 沉浸式鱼塘 <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/11288/11288-1647196025-1054134087.png) <br> *通过保持鱼类质量、随人口扩大鱼卵生产规模以及在空置时自发生长藻类，使鱼塘有用且身临其境。*
+    - Quality Of Life - Immersive Tweaks: 生活质量 - 沉浸式调整 × <br> *对几个原版不一致和平衡问题进行了调整和修复*
+    - Walk Of Life - Immersive Professions: 生活大道 - 沉浸式职业 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/8111/8111-1633919376-978588274.png) <br> *这个模组彻底改变了游戏的职业，使其更加平衡和独特。以前次优的选择现在是有竞争力的赚钱选择，被忽视的机制现在是引人入胜的终局目标*
+    - Stardew Valley Balance Overhaul: 星露谷平衡大修 × <br> *再平衡出售价格、制作食谱、社区中心捆绑包、建筑价格和怪物。*
+    - Balloon Ride: 乘坐热气球 Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/6633/6633-1597308991-777011925.png) <br> *允许您通过手机呼叫他们来邀请您正在约会的任何村民乘坐热气球。*
+    - MobilePhone: 移动电话 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/6523/6523-1596702058-1534607505.png) <br> *为您提供可定制的手机，让您拨打和接听朋友的电话以聊天或重播旧事件！它还运行其他模组提供的移动应用程序。*
+    - TreeTransplant: 移植树  √ <br> *可以找罗宾移植树木*
+    - ExpandedFridge: 迷你冰箱 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/1191/1191-1595974892-1644085161.png) <br> *客人可以使用农舍或小屋内的所有迷你冰箱。默认选项还会在游戏过程中将所有迷你冰箱移出地图范围（需要睡一觉后），以避免弄乱房屋(可禁用)*
+    - Binning Skill: 垃圾桶技巧  √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14073/14073-1665780198-1301009184.png) <br> *增加了搜索人们垃圾的技能和职业。*
+    - Better Friendship: 更好的友谊 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/10287/10287-1639376641-712824772.png) <br> *在村民身上添加思想气泡，以指示他们最喜欢的物品栏中的礼物以及他们想说话的时间。*
+    - Magic: 魔法  √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/2007/2007-1638032716-151505883.png) <br> *为游戏添加完整的法术系统。*
+    - Turn to your enemies: 转向你的敌人 × <br> *当你使用武器时，你会转向任何你点击的地方，而不是在脸前摆动而不旋转*
+    - Farmhouse Visits: 农舍参观 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/12457/12457-1655096960-1314944583.png) <br> *允许NPC访问您的农舍，完全可配置。*
+    - Fish Ponds Rebalanced: 鱼塘再平衡 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/9068/9068-1625460760-1542748626.png) <br> *放置在池塘中的鱼繁殖速度更快，鱼卵生产量随着每个池塘中的鱼数量而增长，并且重新调整了种群门任务并变得更加有趣。*
+    - Carry Your Pet: 偷狗 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/13009/13009-1658412624-1106091623.png) <br> *允许您捡起您的宠物，并将它们移动到农场的其他地方。,快捷键:LeftShift*
+    - Smart Building: 智能建筑 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/11158/11158-1646084542-1563807555.gif) <br> *这个模组将使放置栅栏、地板、熔炉等体验更加简化。*
+    - Restauranteer: 餐厅 Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14519/14519-1668793406-601737454.png) <br> *让你在星落沙龙兼职做短点厨师，完成顾客的食物订单，以获得金币、友谊点数和烹饪熟练度。您也可以在任何游戏地点开设自己的餐厅。*
+    - SlingshotRebalance: 弹弓再平衡 ? <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14391/14391-1667874769-1517320348.png) <br> *增强一些弹药伤害（主要是石头），收紧伤害公式，减少充电时间，并使银河弹弓可以在冒险家公会获得。*
+    - SocializingSkill: 社交技巧 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14142/14142-1666134606-1978914471.png) <br> *添加与与城镇居民交谈和帮助城镇居民相关的技能和职业。*
+    - Better Beehouses: 更好的蜂舍 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/10996/10996-1644557498-2057342481.png) <br> *到处都是蜂舍的改进！在室内、冬季、盆栽花卉等情况下使用它们！*
+    - Gift Rejection: 拒收礼品 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14273/14273-1666965877-170490193.png) <br> *导致NPC扔出他们讨厌和/或不喜欢的礼物。不喜欢和讨厌的礼物之间的投掷距离不同。*
+    - Solstice Winter Star: 冬至冬星扩充 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14272/14272-1666961360-580846225.png) <br> *让冬星盛宴成为一个更独特的节日，有新的艺术，新的对话，甚至新的礼物！*
+    - The Love of Cooking: 对烹饪的热爱 <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/6830/6830-1609555627-1242322381.png) <br> *关于烹饪的一系列变化！从新的烹饪菜单、重新平衡的食谱、工具进度和新技能中进行选择！*
+
+---
+
+- 服装:
+    - 季节性帽子: [JA] Seasonal Hats   Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/13682/13682-1662519731-485759108.jpeg) <br> *添加季节性帽子（由豆子和梅亚）到时尚感。 包括所有原装帽子，并添加彩色和棱柱形版本。*
+    - 季节性帽子与时尚感(整合时尚感): [FS] Seasonal Hats × <br> *同上*
+    - 给npc送帽子: NCF Hats  × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/13941/13941-1664285464-1451384463.png) <br> *使用NPC服装框架，让你将帽子（和面具）赠送给NPC，他们会戴上。*
+    - 光环: Halo  Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/5516/5516-1583261482-579931780.png) <br> *添加光环作为帽子，可从帽子鼠标购买。*
+    - Crop Hat: 作物帽(将作物戴在头上)  × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/11787/11787-1650773199-183089267.png) <br> *在帽子槽中装备种子会把种子变成一顶庄稼帽子。*
+    - Customize Wedding Attire: 定制婚纱(添加婚礼上穿什么)  Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/10761/10761-1642830096-44959692.png) <br> *模组允许你选择你穿什么参加婚礼，无论是燕尾服、婚纱、普通衣服，还是游戏默认的。*
+---
+- 对话:
+    - CANON对话扩展: Stardew Valley Dialogue Expansion  √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/2544/2544-1532238548-2030469797.png) <br> *在所有 34 个具有心脏水平的角色中添加了大约 2600 条新对话。*
+    - Immersive Festival Dialogue: 沉浸节日对话  Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/2612/2612-1533367644-47998898.png) <br> *在节日活动中根据您的关系状态为角色添加对话！年复一年地参加音乐节，听到同样的老话从每个人的嘴里说出来，不管你们一起经历了什么，都会变得无聊！这个模组旨在解决这个问题 - 并使节日值得再次参加。*
+    - Immersive Saloon: 沉浸式沙龙  √  <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14120/14120-1665961962-1163684634.png) <br> *为沙龙常客添加额外的对话，这样他们就不会每次都说同样的话。威利分享渔民和酒的联系！帕姆揭示了与佩妮的曲折过去！山姆和塞巴斯蒂安可能正在用游泳池调情！克林特实际上变得有趣了*
+
+---
+
+- 庄稼:
+    - Joja发明的可种植果树: Asters Trees as Joja Crops  Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/8770/8770-1624391649-189313776.png) <br> *这棵果树树苗就像农作物一样，这要归功于JojaCo生物工程！24天成熟。*
+    - Joja种子: Joja Seeds  Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/8746/8746-1621153403-1571324806.png) <br> *多亏了JojaCo，您现在可以在种子上花费更少，赚取更多利润！我们革命性的新种子经过生物工程改造，可最终提高客户满意度，包括增加种植季节、提高产量、缩短生长时间等等！*
+    - 奇幻的作物: JA - Fantasy Crops  √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/1610/1610-1574739930-2105398970.png) <br> *为您的农场提供一些幻想风格的作物。*
+    - Bonster's Fruit & Veggies / Bonster's Trees: 帮斯特的庄稼/帮斯特的树 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/3438/3438-1549602186-1963201737.png) <br> *模组为游戏添加了新的田间作物和树木作物，包括几个第 2 年的品种（季节/首次可用）*
+    - Bonster's Recipes: 帮斯特的食谱 √ <br> ![image](https://images.nexusmods.com/mod-headers/1303/3468.jpg) <br> *使用基本成分和邦斯特庄稼中的庄稼为游戏添加新配方。*
+    - Lucky Clover-JA- 幸运三叶草  Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/3568/3568-1551633025-1281680321.png) <br> *可以在春季种植幸运三叶草！它们需要 4 天才能生长，吃掉时运气很大。*
+    - Stardew Vineyard: 星露葡萄园 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/5912/5912-1587848232-1002462095.png) <br> *几种酿酒葡萄品种可添加到您的农场中，以获得更强大的葡萄园！*
+    - (JA) Cocoa Plant and Chocolate Cooking: 可可植物和巧克力烹饪（JA）√ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/8354/8354-1616832707-682629685.png) <br> *添加了生产可可豆的新作物，以及 9 种新的巧克力烹饪食谱！*
+
+---
+- 杂项:
+    - Joja黑市(在社区中心修复后): Joja Blackmarket × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/8804/8804-1622003098-252873875.png) <br> *社区中心已经恢复，但Joja货物仍然从可疑来源流入城镇*
+    - Joja清仓: Joja Clearance Bin  × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/9601/9601-1631267653-1410729101.png) <br> *Joja现在有一个神秘的垃圾箱，里面有随机的反季节种子和待售农产品。如果社区中心完工，Shane 将接管股票。*
+    - 工匠谷磨坊商品(整合工匠谷): [MT] Artisan Valley Mill Goods  × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/10597/10597-1641764430-1162391782.png) <br> *将工匠谷的研磨机中的一些食谱添加到香草磨坊建筑中。您现在可以将甘蔗和甜菜磨成糖，玉米磨成玉米粉，荞麦磨成荞麦粉。*
+    - Better Festival Notifications: 更好的节日通知  Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14170/14170-1666217423-473490452.png) <br> *在节日开始时发出声音通知，并在您将要错过音乐节或音乐节结束时发出警告通知。*
+    - Dynamic Night Time: 动态夜间  × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/2072/2072-1524440937-751747441.png) <br> *提供了一个更加动态的日光周期，在天黑时改变并在一天开始时增加黎明期。它还增加了一个完整的光照周期，增加了日出和日落效果。这些时间将根据一年中的时间而有所不同。可以配置为匹配您的纬度。不会更改开始时间。*
+    - Junk Mail: 垃圾邮件  ? <br> *随机收到垃圾邮件*
+    - Low Health Warning: 低血量警告 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/8326/8326-1616432701-213847950.png) <br> *当您的健康状况低下时，通过消息、声音和闪烁的屏幕引起您的注意。*
+    - Lucky Reclamation Trash Can: 垃圾桶加入幸运度  × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/8971/8971-1624225758-996361659.jpeg) <br> *删除物品时，其货币价值现在取决于您的运气（包括每日运气）和垃圾桶升级*
+    - Pet Water Bowl: 宠物水碗(下雨和喷头能给宠物碗浇水)  × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/2009/2009-1522185072-206911152.png) <br> *在雨天、闪电天和下雪天给你的宠物水碗浇水。*
+    - Pony Weight Loss Program: 小马减肥  × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/1232-0-1497416262.gif) <br> *允许马匹垂直通过单个瓷砖开口。*
+    - Zoom Level Keybind: 无限放大缩小  √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/1621-0-1510330644.png) <br> *添加键绑定以调整缩放级别，并允许您放大/缩小超过游戏限制。','缩小,'。'放大*
+    - MonthlyMail: 每月邮件  ? <br> *每月发汇总邮件*
+    - Less loud Weeds cutting sound: 化镰刀声音 × <br> *优化镰刀声音*
+    - Input tool: 输入工具(手柄控制时强制鼠标消失)  × <br> *优化手柄操作，不会有一直出现的鼠标指针*
+    - Stop sounds when in backgroun: 背景时停止声音 ? <br> *优化游戏背景音乐，在游戏失去焦点后停止音乐播放*
+    - Don't Stop Me Now: 在挥舞武器/工具和瞄准弹弓的同时移动 × <br> *优化蓄力使用，在蓄力的过程中可以转向*
+    - ConvenientInventory: 方便的库存(合并箱子中重复物品)  Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/10384/10384-1640036713-75233347.png) <br> *为玩家的物品栏添加便利功能，例如快速堆叠到附近的宝箱和收藏的物品。*
+    - WarpnetDeepwoods: 深木曲速网络集成 Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/10240/10240-1638393605-1900204461.png) <br> *允许您通过曲速网络翘曲到深林，就像您拥有树林方尖碑一样。*
+    - Stronger saplings: 更坚固的树苗 × <br> *防止你用镰刀/近战武器意外杀死树苗。*
+    - Cold Pets: 宠物怕冷 × <br> *宠物会在冬天在屋子里取暖*
+
+---
+- 建筑物:
+    - 佩斯利新娘精品店: Paisley's Bridal Boutique (GMM) √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/11446/11446-1648378235-1656601487.png) <br> *为玩家提供一个临时精品店，用于购买在婚礼和/或花舞会上穿的正式帽子、衬衫和裤子。*
+    - 约瑟夫的种子店 （GMM）: Joseph's Seed Shop (GMM) √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/11676/11676-1649937006-1587359014.png) <br> *增加了一个临时种子商店，供玩家购买各种传统和现代美洲原住民种子、农作物和食谱。格兰普尔顿制造商市场模组的一部分。*
+    - 卢浮宫 （GMM）:  Louvier Fromagerie (GMM) √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/13422/13422-1660813485-99559586.png) <br> *增加了一个临时奶酪店，供玩家购买各种传统的法国/西欧奶酪、生产商和食谱。格兰普尔顿制造商市场模组的一部分。*
+    - 格兰普尔顿制造商的市场信函 （GMM）: The Grampleton Maker's Market Letter (GMM)  Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/13421/13421-1661325274-1188880842.png) <br> *格兰普尔顿制造商市场到达鹈鹕镇所需的信件。*
+    - Wear More Rings: 允许携带更多戒指  × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/3214/3214-1574958986-1349579255.png) <br> *提高戒指上限到8个*
+---
+- 钓鱼:
+    - 更多新鱼: More New Fish  √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/3578/3578-1562441995-2075573888.jpeg) <br> *模组为游戏添加了 140 条新鱼*
+    - The Fish of Legend: 传说鱼的传说  Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/13972/13972-1664938126-620394217.png) <br> *当你把一条传说中的鱼带到威利的商店时，他会告诉你一个关于它们的故事，并给你奖励。*
+---
+- 用户界面：
+    - Better Artisan Good Icons: 更好的工匠图标 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/2080/2080-1526255820-667585641.png) <br> *这个模组制作果冻、泡菜、葡萄酒、果汁和蜂蜜图标是基于用于制作它们的水果、蔬菜或花卉。一目了然地分辨出您的库存中有哪些类型的葡萄酒、果冻等！（如果你想太:)，你可以隐藏小图标）*
+    - Catalogue Filter: 目录过滤器  Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/13137/13137-1658947552-1300912821.png) <br> *为商店菜单和目录添加筛选器字段，允许您根据文本输入筛选显示的项目。*
+    - Gift Taste Helper: 显示NPC喜爱的食物  √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/229-0-1459400245.png) <br> *显示有用的工具提示，当将鼠标悬停在日历或社交页面上的生日上时，显示 NPC 最喜欢的礼物*
+    - Better Artisan Good Icons for Joja Seeds: 更好的工匠好图标为乔加种子  √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/12279/12279-1654130863-923344424.png) <br> *将 BAGI 图标添加到 CopperSun 的 Joja 种子中！*
+    - DynamicReflections: 动态反射 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/12831/12831-1657314173-1975875689.gif) <br> *在星露谷内实现镜子和水反射的框架。*
+    - Almanac: 年鉴  √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/11022/11022-1646204514-1545443966.png) <br> *Almanac提供了一本游戏内书籍，其中包含有关不同主题的有用信息，包括长期天气预报和何时种植庄稼。*
+    - [CP] Overgrown Flowery Interface v.1.4: 杂草丛生的花朵界面 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/6166/6166-1646578793-214446202.png) <br> *界面模组与新鲜的藤蔓，梦幻般的花瓣和花卉浪漫。*
+    - Lambeeron's Oversized Sleeves: 兰贝隆的超大袖子 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/9923/9923-1634774058-1595089731.png) <br> *为您的农民添加超大袖子，实现您的大毛衣幻想。*
+    - Rural Outfitters: 农村户外用品商 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/10295/10295-1638936468-1353714476.png) <br> *为国家带来潮流！通过时尚感添加帽子、衬衫、裙子、配饰和化妆品！所有项目都是完全可定制的。*
+    - Lux's Food Mod: 力士的食品模组 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/10035/10035-1636158612-837452268.png) <br> *星露谷的精灵模组，用于改善所有 80 个煮熟的菜肴精灵的外观。*
+    - ToDew: 游戏内待办事项列表。 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/7409/7409-1609272743-1331915001.png) <br> *游戏内待办事项列表。L键打开代办单*
+    - Warp Totems to Magic Book Tomes: 从扭曲图腾到魔法书大部 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14094/14094-1665674801-1661969712.png) <br> *使扭曲图腾看起来像花哨的魔法书*
+    - Fancy Rings and Shoes Retexture: 花式戒指和鞋子重新纹理  × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14122/14122-1665835058-1406359643.png) <br> *赋予香草戒指和鞋子清新花哨的外观*
+    - Fancy Fish and Tackles Retexture: 花式鱼和钓具纹理重塑  × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14168/14168-1666193035-873510478.png) <br> *更花哨的纹理，用于诱饵，钓具和一些鱼。*
+    - Sanrio Plushies: 三丽鸥毛绒玩具  × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/13622/13622-1662127651-268729256.png) <br> *将小巧的毛绒绒和装饰灯笼变成可爱的小三丽鸥毛绒玩具!!!*
+    - ShoppingCart: 购物车   Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/13701/13701-1662616014-1240801892.png) <br> *为商店添加结账系统*
+    - Seasonal Haystacks with Tools: 带工具的季节性干草堆 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/8716/8716-1620936862-945818673.png) <br> *添加 2 个版本的可拼搭干草堆，以及随季节变化的工具。快捷键F2*
+    - PlatinumCat's Kawaii Truffle Foxes: PC的卡哇伊松露狐狸(代替猪)  × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/12735/12735-1656744772-910419920.png) <br> *用可爱的狐狸代替猪。*
+    - CP Custom Menu Background: CP 自定义菜单背景 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/7416/7416-1609352330-1276816166.png) <br> *一组完全可定制的重新着色（加上原始插件）到菜单背景的所有元素。超过2000万种潜在组合！*
+    - Seasonal Display Background: 季节性显示背景  × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/7479/7479-1609686905-1521493793.jpeg) <br> *将播放器菜单中的显示背景更改为季节性背景。*
+    - Animated Seasonal Display Background: 动画季节性显示背景 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/7603/7603-1610346965-558238041.gif) <br> *为Zilch的季节性显示背景mod添加动画。*
+    - Custom Picture Frames: 自定义相框  × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/10704/10704-1642433693-1393500921.png) <br> *允许您将游戏中的快照转换为带框的图片以挂在墙上。*
+    - Mini Bars: 怪物血条 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/8329/8329-1616452469-2115837746.png) <br> *一个健康条模组，为大部分怪物添加了自定义健康条。*
+    - Farmer Helper: 农民助手 Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/10179/10179-1637680496-1781470349.png) <br> *通过告诉您何时播种为时已晚，选择性地防止晚播，并在睡前警告需要照顾的植物和动物，从而提供帮助。*
+    - Seasonal Save Slots: 季节性存档插槽 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14382/14382-1667796047-184922302.png) <br> *添加季节性风格以在加载游戏菜单中保存插槽。*
+    - Yagisan - Custom NPCs for NPC Map Locations: 八木山 - NPC 地图位置的自定义 NPC <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/8174/8174-1655590258-1018331114.png) <br> *为大部分扩展地图添加npc头象*
+    - Better Mead Icons - BAGI Addon: 更好的蜂蜜酒图标 - 巴吉插件 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/11911/11911-1651693977-21958184.png) <br> *允许更好的工匠好图标加载自定义的花蜂蜜酒精灵。*
+
+---
+- 动画： ×
+    - [CP-A] Animated East Scarp Fish: 东坡崖鱼动画  <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/10913/10913-1643784738-1043028916.gif) <br> *为东斯卡普模组添加的鱼添加动画。*
+    - [CP-A] Animated Downtown Zuzu Items: 东坡崖物品动画 <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/9030/9030-1624913249-911774197.gif) <br> *这个模组，为祖祖市中心的物品制作动画！*
+    - [CP-A] Animated Slime Eggs and Loot: 动画史莱姆蛋和战利品 <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/5642/5642-1610664369-982189959.gif) <br> *动画所有5个史莱姆蛋，宝箱，珍珠，史莱姆，金色南瓜，虚空，太阳精华等。全部可配置！*
+    - Animated Cowboy Life Fish: 动画牛仔生命鱼 <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/11949/11949-1652175476-354876203.gif) <br> *为哈米奥的《牛仔生活扩展》模组中与鱼类相关的物品制作动画。*
+    - [CP-A] Animated More New Fish: 动画更多新鱼(美人鱼岛)  <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/5845/5845-1587341876-285939174.gif) <br> *为更多新鱼和美人鱼岛模组中的所有鱼和草料制作动画，全部可配置！*
+    - Animated Fish SVE: 动画鱼 SVE <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/6089/6089-1643783190-1529626896.gif) <br> *为星露谷扩展（SVE）的鱼制作动画。全部可配置！*
+    - Animated Ridgeside Village Fish: 动画山脊村鱼 <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/7353/7353-1651446085-856422962.gif) <br> *动画山脊村鱼。*
+    - Animated Lunna - Astray Fish: 动画月亮 - 误入歧途的鱼 <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/6974/6974-1601948162-1537721129.gif) <br> *为拉夫西兹的 Lunna - 误入歧途模组添加的 5 条鱼添加动画。*
+    - Aquarium Overhaul: 水族馆大修 <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/7984/7984-1614604544-1754944744.gif) <br> *水族馆大修，新装饰，精灵，动画等等！全部可配置。*
+    - [CP-A] Animated Mining Pack: 动画采矿包 <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/6099/6099-1610663899-248441006.gif) <br> *动画许多与挖掘相关的对象和项目，全部可配置！*
+    - Animated Furniture and Stuff: 动画家具和东西 <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/5662/5662-1585267451-1424374553.gif) <br> *动画很多家具，博物馆奖励和其他装饰品。全部可配置！*
+    - Animated Fish: 动画鱼 <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/5735/5735-1586192589-662583508.gif) <br> *为所有69条鱼和其他钓鱼相关物品制作动画，全部可配置！*
+    - Animated Food and Drinks: 动画食品和饮料 <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/5607/5607-1586998544-1595724035.gif) <br> *使食物和饮料动画化。总共 70 个项目，全部可配置！*
+    - Animated Deluxe UI: 动画豪华用户界面 <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/13700/13700-1662630541-188175618.gif.) <br> *您是否在查看您的 UI，例如：哇，这是非常静态的，我希望它移动了一点......不要再看了！大部分时间是静止的，但偶尔会动画化。*
+    - Animated golden clock: 动画金钟 <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/10554/10554-1641503303-161121557.gif) <br> *你为你的金钟付了一大堆钱——谁不想让它在阳光下闪闪发光，用金手装饰？这个模组免费增强了你的金钟的外观！！*
+    - Animation well: 动画井 <br>![image](https://staticdelivery.nexusmods.com/mods/1303/images/8340/8340-1616635185-1900875433.gif) <br> *用动画井代替标准井，迷你喷泉也装饰您的农场！*
+
+- 多人:
+    - SendItemsMultiplayer: 发送物品多人游戏  ? <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/13794/13794-1663269276-568251100.jpeg) <br> *G键，将物品发送到地图中的任何其他在线玩家。*
+    - Farm hand Finder:  多人游戏显示其他玩家头相 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/13153/13153-1660439903-1519161931.png) <br> *在屏幕上添加一个指南针，指向与您在同一区域的所有玩家 - 寻找朋友从未如此简单！（仅限多人游戏）*
