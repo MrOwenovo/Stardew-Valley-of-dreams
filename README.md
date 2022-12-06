@@ -14,11 +14,12 @@
 #### 更新:
 - 加入新mod: 
 - 删除mod: 
-  - Challenging PPJA SVE Bundles: 具有挑战性的社区中心捆绑包  ×
-  - Horse Flute Anywhere: 马笛随时可见 √
-  - NPC Vending Machines: NPC自动售货机 ×
-  - TehPers FestiveSlimes&core: 节日史莱姆  ×
-  - Pierre Sells Horse Flute: 皮埃尔卖马笛 Æ
+  - Challenging PPJA SVE Bundles: 具有挑战性的社区中心捆绑包  × (难度过大)
+  - Horse Flute Anywhere: 马笛随时可见 √ (用处不大)
+  - NPC Vending Machines: NPC自动售货机 × (破坏平衡,配置文件无法更改)
+  - TehPers FestiveSlimes&core: 节日史莱姆  ×(版本落后)
+  - Pierre Sells Horse Flute: 皮埃尔卖马笛 Æ(破坏平衡)
+  -  Stardew Valley Balance Overhaul: 星露谷平衡大修 ×(难度过大)
   
 
 <br>
@@ -316,7 +317,6 @@
   - Aquarism: 水族 - 沉浸式鱼塘
   - Quality Of Life - Immersive Tweaks: 生活质量 - 沉浸式调整 ×
   - Walk Of Life - Immersive Professions: 生活大道 - 沉浸式职业 ×
-  - Stardew Valley Balance Overhaul: 星露谷平衡大修 ×
   - Balloon Ride: 乘坐热气球 Æ
   - MobilePhone: 移动电话 √
   - TreeTransplant: 移植树  √
