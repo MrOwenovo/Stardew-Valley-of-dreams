@@ -58,6 +58,8 @@
 - Left Shift: 抱起宠物
 
 <br>
+模组图片和详情展示:https://github.com/MrOwenovo/Stardew-Valley-of-dreams/blob/main/modContent.md
+<br>
 
 #### 模组内容:√:已汉化 ×:无需汉化 Æ:个人汉化 ?待解决
 - 特色:
@@ -450,3 +452,6 @@
 - 多人:
   - SendItemsMultiplayer: 发送物品多人游戏  ?
   - Farm hand Finder:  多人游戏显示其他玩家头相 ×
+  
+  <br>
+  模组图片和详情展示:https://github.com/MrOwenovo/Stardew-Valley-of-dreams/blob/main/modContent.md
