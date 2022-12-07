@@ -1,0 +1,114 @@
+{
+	"Changes": [
+		{
+			"LogName": "Clint - Seasonal",
+			"Action": "EditImage",
+			"Target": "Portraits/Clint, Characters/Clint",
+			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{season}}{{ClintWork}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Clint - Winter Indoor/Outdoor",
+			"Action": "EditImage",
+			"Target": "Portraits/Clint, Characters/Clint",
+			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"Season": "Winter",
+                "LocationName |contains= Blacksmith": false,
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Clint - Festival",
+			"Action": "EditImage",
+			"Target": "Portraits/Clint, Characters/Clint",
+            "FromFile": "assets/{{TargetPathOnly}}/Festivals/{{Festival}}/{{TargetWithoutPath}}_{{Festival}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"FestivalOutfits": "True",
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Clint - Beach",
+			"Action": "EditImage",
+			"Target": "Portraits/Clint_Beach, Characters/Clint_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Beach/{{TargetWithoutPath}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		
+// NOSE OVERLAY
+		{
+			"LogName": "Clint - Seasonal Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Clint",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"NoNose": "false",
+			},
+		},
+		{
+			"LogName": "Clint - Beach Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Clint_Beach",
+            "FromFile": "assets/{{TargetPathOnly}}/Beach/{{TargetWithoutPath}}_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"NoNose": "false",
+			},
+		},
+		
+// MISCELLANEOUS		
+		{
+			"LogName": "Clint - Emoji",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+            "FromFile": "assets/{{NoNose}}/Random/emojis.png",
+			"FromArea": {"X": 54, "Y": 117, "Width": 9, "Height": 9},
+			"ToArea": {"X": 54, "Y": 117, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Clint - Clothes Therapy 1",
+			"Action": "EditImage",
+			"Target": "Characters/ClothesTherapyCharacters",
+			"FromFile": "assets/{{Target}}.png",
+			"FromArea": {"X": 0, "Y": 96, "Width": 64, "Height": 32},
+			"ToArea": {"X": 0, "Y": 96, "Width": 64, "Height": 32},
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Clint - Clothes Therapy 2",
+			"Action": "EditImage",
+			"Target": "Characters/ClothesTherapyCharacters",
+			"FromFile": "assets/{{Target}}.png",
+			"FromArea": {"X": 32, "Y": 160, "Width": 32, "Height": 32},
+			"ToArea": {"X": 32, "Y": 160, "Width": 32, "Height": 32},
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+	]
+}

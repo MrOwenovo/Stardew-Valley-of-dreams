@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.4" orientation="orthogonal" renderorder="right-down" width="40" height="60" tilewidth="16" tileheight="16" infinite="0" nextlayerid="11" nextobjectid="30">
+ <properties>
+  <property name="Outdoors" value="T"/>
+ </properties>
+ <tileset firstgid="1" name="Paths" tilewidth="16" tileheight="16" tilecount="36" columns="4">
+  <image source="paths.png" width="64" height="144"/>
+ </tileset>
+ <tileset firstgid="37" source="z_spring_daisyextras.tsx"/>
+ <tileset firstgid="1837" source="outdoors.tsx"/>
+ <tileset firstgid="3812" name="z_sucai2" tilewidth="16" tileheight="16" tilecount="48" columns="8">
+  <image source="sucai2.png" width="128" height="105"/>
+ </tileset>
+ <tileset firstgid="3860" name="z_spring_town" tilewidth="16" tileheight="16" tilecount="2304" columns="32">
+  <image source="spring_town.png" width="512" height="1152"/>
+  <tile id="159">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="191">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="223">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+  <tile id="931">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="932">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="963">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="964">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="6164" name="z_spring_beach" tilewidth="16" tileheight="16" tilecount="527" columns="17">
+  <image source="spring_beach.png" width="272" height="496"/>
+  <tile id="107">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="131">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="141">
+   <animation>
+    <frame tileid="141" duration="200"/>
+    <frame tileid="142" duration="200"/>
+    <frame tileid="143" duration="200"/>
+    <frame tileid="144" duration="200"/>
+    <frame tileid="145" duration="200"/>
+    <frame tileid="146" duration="200"/>
+    <frame tileid="147" duration="200"/>
+    <frame tileid="146" duration="200"/>
+    <frame tileid="145" duration="200"/>
+    <frame tileid="144" duration="200"/>
+    <frame tileid="143" duration="200"/>
+    <frame tileid="142" duration="200"/>
+    <frame tileid="141" duration="200"/>
+   </animation>
+  </tile>
+  <tile id="148">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="158">
+   <animation>
+    <frame tileid="158" duration="200"/>
+    <frame tileid="159" duration="200"/>
+    <frame tileid="160" duration="200"/>
+    <frame tileid="161" duration="200"/>
+    <frame tileid="162" duration="200"/>
+    <frame tileid="163" duration="200"/>
+    <frame tileid="164" duration="200"/>
+    <frame tileid="163" duration="200"/>
+    <frame tileid="162" duration="200"/>
+    <frame tileid="161" duration="200"/>
+    <frame tileid="160" duration="200"/>
+    <frame tileid="159" duration="200"/>
+    <frame tileid="158" duration="200"/>
+   </animation>
+  </tile>
+  <tile id="165">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="175">
+   <animation>
+    <frame tileid="175" duration="200"/>
+    <frame tileid="176" duration="200"/>
+    <frame tileid="177" duration="200"/>
+    <frame tileid="178" duration="200"/>
+    <frame tileid="179" duration="200"/>
+    <frame tileid="180" duration="200"/>
+    <frame tileid="181" duration="200"/>
+    <frame tileid="180" duration="200"/>
+    <frame tileid="179" duration="200"/>
+    <frame tileid="178" duration="200"/>
+    <frame tileid="177" duration="200"/>
+    <frame tileid="176" duration="200"/>
+    <frame tileid="175" duration="200"/>
+   </animation>
+  </tile>
+  <tile id="192">
+   <animation>
+    <frame tileid="192" duration="200"/>
+    <frame tileid="193" duration="200"/>
+    <frame tileid="194" duration="200"/>
+    <frame tileid="195" duration="200"/>
+    <frame tileid="196" duration="200"/>
+    <frame tileid="197" duration="200"/>
+    <frame tileid="198" duration="200"/>
+    <frame tileid="197" duration="200"/>
+    <frame tileid="196" duration="200"/>
+    <frame tileid="195" duration="200"/>
+    <frame tileid="194" duration="200"/>
+    <frame tileid="193" duration="200"/>
+    <frame tileid="192" duration="200"/>
+   </animation>
+  </tile>
+  <tile id="209">
+   <animation>
+    <frame tileid="209" duration="200"/>
+    <frame tileid="210" duration="200"/>
+    <frame tileid="211" duration="200"/>
+    <frame tileid="212" duration="200"/>
+    <frame tileid="213" duration="200"/>
+    <frame tileid="214" duration="200"/>
+    <frame tileid="215" duration="200"/>
+    <frame tileid="214" duration="200"/>
+    <frame tileid="213" duration="200"/>
+    <frame tileid="212" duration="200"/>
+    <frame tileid="211" duration="200"/>
+    <frame tileid="210" duration="200"/>
+    <frame tileid="209" duration="200"/>
+   </animation>
+  </tile>
+  <tile id="226">
+   <animation>
+    <frame tileid="226" duration="200"/>
+    <frame tileid="227" duration="200"/>
+    <frame tileid="228" duration="200"/>
+    <frame tileid="229" duration="200"/>
+    <frame tileid="230" duration="200"/>
+    <frame tileid="231" duration="200"/>
+    <frame tileid="232" duration="200"/>
+    <frame tileid="231" duration="200"/>
+    <frame tileid="230" duration="200"/>
+    <frame tileid="229" duration="200"/>
+    <frame tileid="228" duration="200"/>
+    <frame tileid="227" duration="200"/>
+    <frame tileid="226" duration="200"/>
+   </animation>
+  </tile>
+  <tile id="243">
+   <animation>
+    <frame tileid="243" duration="200"/>
+    <frame tileid="244" duration="200"/>
+    <frame tileid="245" duration="200"/>
+    <frame tileid="246" duration="200"/>
+    <frame tileid="247" duration="200"/>
+    <frame tileid="248" duration="200"/>
+    <frame tileid="249" duration="200"/>
+    <frame tileid="248" duration="200"/>
+    <frame tileid="247" duration="200"/>
+    <frame tileid="246" duration="200"/>
+    <frame tileid="245" duration="200"/>
+    <frame tileid="244" duration="200"/>
+    <frame tileid="243" duration="200"/>
+   </animation>
+  </tile>
+  <tile id="260">
+   <animation>
+    <frame tileid="260" duration="200"/>
+    <frame tileid="261" duration="200"/>
+    <frame tileid="262" duration="200"/>
+    <frame tileid="263" duration="200"/>
+    <frame tileid="264" duration="200"/>
+    <frame tileid="265" duration="200"/>
+    <frame tileid="266" duration="200"/>
+    <frame tileid="265" duration="200"/>
+    <frame tileid="264" duration="200"/>
+    <frame tileid="263" duration="200"/>
+    <frame tileid="262" duration="200"/>
+    <frame tileid="261" duration="200"/>
+    <frame tileid="260" duration="200"/>
+   </animation>
+  </tile>
+ </tileset>
+ <tileset firstgid="6691" name="z_spring_island_tilesheet_1" tilewidth="16" tileheight="16" tilecount="1280" columns="32">
+  <image source="spring_island_tilesheet_1.png" width="512" height="640"/>
+ </tileset>
+ <layer id="1" name="Back" width="40" height="60">
+  <data encoding="base64" compression="zlib">
+   eJydmk9OVE0UxXskZdgAaxCd9ApQEwa+6LyVfjh4CXNRgqNeQAMaJ2wAAZfADG2WYOLUDWhcglWxjp4+fW9VIclNf3a/9+pX9/+t9802RqPLKLMs96OMw2h0RLId5cn66Hu3Pnr5NEr6jP9+OadrLqN8Cqv3Qgbn+yTT/HkQpZffZhvLkvg6uWbX4RsbfHzvAa3tcR/J9foduK6IT/d66PB1DXyT/N+6Z9WTJ6eiu1fxuzf5t638eUx8e8Q35HUmxDc4DEPmtXRUErUt7JA496O8Fj71v7TeuyhvM9/cWWdu8E0aeNW2sAM4twt84/x86I51z8LfT+j7qcOHffSG/mAffB4W+LAX8NV012pT1rNlX95vSX+D8HkxehblYZTHUT5GuabfanGiua8jPaQ97Fb8T2O3JQbA+ygzXxeutex7Rvss2TfxcWxojE4K6yov63Vq8HFu2cqS7jsPfn4ZBzs2pg12s0T94yDznUpu2RIpxUfN924jmsPBp7mllW8Idt3wpKZTq0aX6lqNbx5W60ZLHvGuSTaYyD5Yf+qnkBY+L4doPE8NLq7Rej3z4U85vf6K40N9As/gPGLlFGZJNjiR62a5/2M+/CG/ef1VV+CriWUr5Asr/3l8N2t+fzU08N0hsX6vxT3z3RfOxPeg0f9UmO/eXZ+vFvdW/wxp4fsc5YshiPuvke1xlG93/zxP9V3q+y2+mfCV8stZ9h/OB4jPk+xLPyLXzyi/hA+CnKJc6L2uHD6udV59S77J/sPrXIQ/vW26Jj0Dz4O+b8JyT2Hlbq4fiGPto0v6Y/twXuuFcZH3ge95HtA8hLyC78Cmcwj7rce3mZ/v9UeJeVviAPsAX9LvZvDj3/M/9lsvPye9cN9i2egwMwxk/z60502Pj3t1Lz+DzapZamPt/W/DdyVxsZ/XfZDFy89WbrVicZv8oHf4rBz6KazqjeMCfKX+z8otqse0v+QLXNOsvP4hrOZRa/7g3qrW/1k64zhFHkQMJF/08vrC2K8XFy18HLsaGydZV+eZCX4D37F0zYLrOb9wXLTw3awtz2Kcu87DKtMi55J0X4kJ12t9U75afgE/226xthxjab57Tzp8HuVFlh36905YPntAX3hl8GEtK7/sCd9C1uV1OM95Zx/evKznB9Z8CU4vv2zSuvA/9Svr7KMv8E3lGu9crcX/av0l19nbnsHgfrYr7m/lQ90q1Q+dn3j+8PoWFm92a+FTn7LWqs1P187+/vpvZXY7KvDNHSbk62mBz5s/+rA6X1qz0ZjWajm/93RQ47Pmjxa+Lvyb5b3+BfXDq2/M581P3nk1BHVDZzeclaVrvPyi9UPP8hK31tkb4cQe+V2EVd90dhvTPaX8wr2v9iiWTnT+wB6vhc2rbxDuYzy+xdo/Nua01tT5RP2S5zj2a+5PmXHI+0i9b63+8oyW6txOWO6ZmQ0Myse9JGJTz++1loyz7rz6W6q7F2G13lpxY8UJZk61r/YwQ9adFx9zY10vF3p1DzI3+Lg/vRTd4XO3YF88E35Qq6dsZ40TztOsS093nFu8/DenfSR74n0Y92aWbi07W/4HvlPiw2/IE+cV+45lTcyTVk2xbG29V+yCrz9rPirZV9+nJjmu6ExzMPfzbN90j+YWaz4q2Xcw+NjWXrx47wz1+9L8ASnZl8/FUYvZ1siH+8HPRRYbfEPnN/gd16hSf8X78N5femdnGteoqdb5vdXHcIy08OlZoNb8GrP1jl3PD/iP127h68LyfIN1OA68PAnbeu9n/pePa4B1lqwzAHyS51+dfdnuen6lonx7wsc1QP3Pmnmnof29q+rP67WSlP7/CH6HybZhf7TmcL7WYz51+FCTn92CryMWrgO9w+dxW/rjOIG9ue6V5jfvHSb7o/o9bK18PT0j/f4bCkYfUg==
+  </data>
+ </layer>
+ <layer id="3" name="Buildings" width="40" height="60">
+  <data encoding="base64" compression="zlib">
+   eJy9WkGPFFUQbrzM28Mc0RF/gsnCijcvHHXBaAIn4LBHScAD8AfUwFHNJlxwhHgysrCEzQ4kKAkBDiAz6gGNxosedtTIX1CsSveX+aaoet29s2MllWZ7uvt973uvvlf1HkUxsa1eUWymorgqvl5dr1X/9uy63L/Smfhm9fdicD/n+k6f/r4kfrkz3Z7iGzlYfqvBd078fKd8l9tEe3p/t/ntpPgp8ffp3sDBDXvSKw7cFx8qXx0fT4QPfbU8oT173/KL91ccnu3Yok3FeUD8UcCdN77Kk+VFsYDXG+IbmTF+I8MfxlbbtP29lRlfbnMYzDPc/1b8MfGl9y5k8K6kaXyK62HV31V67ocMPrQZxYB3n8dx3ZmP34jfCfj7PZX9XWvIH7iwsQEcuL/qYLfzEP6j+E/B/PP6m+OPebIxqj6Wez/vKvvL49pEbzz+PB5y/HFsXKGxAZZncv9v8V0LRfGPXLdMDK3QHPY0R421ZZye72cT/oYVTxgb9L8nuF4Wfyp/vyjXfx28mMMe/zy22p72F+/hmb8y+FYzsaG+JDheE98vvlf8JQfvO+LvOt/oEz5oi/bX9vOFhRjfWhAb8GV596D4IfE3xfc5eN+T90843xg4/C05/Xwlgy/SkEhT3nLwfiC/fRh8g/lT7Vt2+vl6DT7mr19h8eY64pK1S/FelHufJV9vgG9caR845X6+XYOPY2pgsCA267QFY2BjGfg4Lpoa8HkagnY5NjW+7VpxoTO9RuN5zAfg47hAPDXFl9OQj7tF8Yn4p93n8SterG88Bh/Jvz/X9hcm+DguEE/K+YNOXp/7NRryZbd89iu57nE4AM88Bn253kzlN4CP4wLxpJxvZPT5YTVfcxpyt8J3r5vXFB6Dgfj3qfyGmqwfxYa4rCFT8aScP87os8aTVwtwbP1S4fu1m9cUHoPv5P6fqfwG25MKo8IZpgnnkT5v15gDT8f/SNPrBxtrNTiP9HlW03Y417M6OQjwQavBeaTPs5q2g3zC03SNbw/fZqXV4DzS51ltTDoDTUEM4+rh82rMeVikKU+r6x7CpzngF5QH/h8Wacp+imUYxpXzTczdSJ/bmq3zI005RLHM+Gx9ibkb6d+sZjUlZ6wrWKsPy/XIHPRvO+bxd1Kup9L89C8ynVunxc8Qp7Y+V+0+J9fzaWf0T9u8L998tco57L4JY7L5KfBxfa7afUmul9Ps+hfl/6rJR8WPOb8jD1ez9SWeye0NtTHO/+0aAY1YNOsH8nDGhjyMc8gHOxC/zJ+tMXgvw7rmq1b32tSXbfir21uLHPMO77epL5uazhnUFbwXif3VXK2H2g3vt6kvm1pUP9n9XG//1NZuXJfW1ZdNzaufoj0N9VWDbzu1Wxvz6ifUH15NvmbwebXbTppXP0V7GjZPjWo36NI8jOsPxAvvQ/M+dlS7QZfmaZw/r1fxatcamPJ4W/zr3kTvccawU/mftWdOnNi9Ohhqyxu9Ehf3I6rPZ7WeU6dH/KltEXfcj3nxt+TEySj55wt2HR7SmjIv/padONlM+fMFzk+xpuT4w7742bT9fAft4bwE+3Be/of8nuM94s/L686m/J6XZyNn/tnzVeZP436dnonyq1GK90XbzAnWO8Zqz9/AH6/nuf0hyx/m62KDsUY+b3MXe8bo8cfreW5/yGoV5iuPtYez7pwzwmf3hVDHR/nV2Om/58dTWfdwrcE5yoqzbiD/Y3zYw+f1PLc/pPNA94hzuRLcnrmtmd+jM2zGh3nXdB8f84DXAI6XfgavfRY6ZecI40N7XH/k8kHMA14DOAceBHPqkbnHzyAf5PMP4EN7XH/k8kHMA7tXm5vvbZ3xoT2uP8CNZ/Z8mnW/7kzOqzWs8/4p8kDOBZmbCB/Wcqs19v9ysDY2iSHLHxvnrOAiwoe13PLFfCpXdt7D7f64xZ8z5ITRfq893+d4HDlz3uMI/bPrJGL/Pw8EzSQ=
+  </data>
+ </layer>
+ <layer id="5" name="Front" width="40" height="60">
+  <data encoding="base64" compression="zlib">
+   eJztmb1OwzAQgLM1S/cMPAmwAI8AbDwHEogfCamIgQkoAokBCSRUNlZ+ZqR2hheAB+Gi9NTDje2zc7ZD6SdZsVonPl/uz06W2XnPGYMcWe9k2Qa0zY77vX2Pe5BFuHcJ2rLDM3ow9pgx/hv0dJlP+kNoX466M+nlCn67brB2KifFJKPPnFRfe3Dd71R6P7HofWth0t+BcbsO86prsv2uQvV+B+1eQM8lXNuRgrteH3AtOh/y8S1X8N2Y9Kr6ENowN+bgsyXtoCk0tiCvINsbMy5Jc8SY9wPGfLZEf9LEsPUmmGz9jCEzrk/lxnO9On9F36T/m3Sr+nJotvOqnRIfalK7SLMCcq1CW2P4uGsu8q1hYiFRDz10q+ug21welSeGbOeg235eXS/G/ZAMiix7LKr+sAX2q/IMsr0U07kuFDTH/+WYPmf2wXhM+yPB+Cyxzy/9NuQeZJah+9+UUNtKMWddzZFCJjo3QnPESJGJkz9C+4aaI2h+M+UPnVwp67/eWM4Y8cRUS3Leq9TZnI26Gn5eF/wvZqFOjXW2VucvKXOJDV2suy1+791wbFv3522tAVGuA7CJw0T+w7X9WDmlhHM2hGfQLu82xD5Firp1SMnK0afUmLbgYq+xYrApV+pip++3RJ/9GydX0n2RTl+p4y23Bg0d01z8xTRW9/1DGnXfWxd76t5tjO8fJpuiMofCdAZcyuZaB9vGq/UVB1Mupz7BsXubD+HZeEhUHcX8Bs7xXZ2OmuTJlOduP64fu2E=
+  </data>
+ </layer>
+ <layer id="7" name="Paths" width="40" height="60">
+  <data encoding="base64" compression="zlib">
+   eJztmU0PwyAIhntudzdZ////XHYwMUyRb1jS57IuVXxLQcUehy1N2edm2HgLxvo3Vr6Q+HnFLexnqWEFVdus3a5vhH4ubfjd6Ze+Ny7W8RGlG9PwIPdNhE+rvTcYs9X0UcjQHJnrEWPOfNiQe15k+PXhoSIedYB1LnPtZa03Z/B4VMa6cFcTZWrfjf0KUYGzyxet/yzrBUldF8FX65Ut4vj1WQXfQHrMV5tTqmO5rnF8P8ZQ5TM2rjbog1V/bH3xXGO63y8j+x4auTazcp46Lue8ubfXoPUHPCu3IPMsmTp235d2+1FxJfFx18bdH0TnikcsaeDOx9w2HjRwfa4aHj4+ltQTmm8qnP4Y2DmaxoYls+esUGPOmOmBseGpGebBeH0u7lVBOg96PQvH7rgnhXjMN5TvkmPb1f/IONiNNctpyjNqaiNME/ZOo9DETrZ2Khk6OfmTTVa+UonQRM3xWc6u9g9juw+sdw4R
+  </data>
+ </layer>
+ <layer id="9" name="AlwaysFront" width="40" height="60">
+  <data encoding="base64" compression="zlib">
+   eJzNWreS1TAUVWeaLZkB/H6BHHeXITTknNktyGkpiAU5LQUZGloaKKiYgc+AH2Ch5SMIDccz9jzN5V7pSrJszswZP9uyJUs3nKvdmdKYb+B3sMLNwphb4O3CeLENbbaDO8CdpP0DnE+DD+vrp3A8DZ4Bz9bXFuG4GFxiPbsGv9eC68D14C+M6zf4pxy2mY/rC8CFnjFyfUq4g/t3wXvg/brtZhy3gFvr8wM4HgQPgYfBCXDuwJh5YDkYvmsDrm8EN0X0yUH63uM4PwGerK9fwPEieAm8DF4BRzGuMXDcGt8RXD8KHlOssQ26Nr7vrWxpKbgMXA6uAB+DT8Cn4LO6/QTGNmmN71oh9yWBW5vJwv+9LhuO6UsCtzZXi+H3XgdvMO8IsWFNXzZsu3rErM1zRX+SDa/E71XC89q+tH4Ug1145+7E98b4kTZ2ncP9KdKmmdNRZX/Urujz1DcruOactp8mbZo53RM5r/R5zjdTfLmZ0/OR46PPc75pzznNbz5fpjkzFPR5X36h+U2bjypwtkMRaq8UNL+FQBPXNfb6Efc+gW+YNiFaiUIT1zX2+hn3voCzZ4WPwQWNLWjs9cWIMS/BVyP/3nPleFf+aBvvmbH5cnwb+SMFvhzP5Y8u4cvxje1w+NGyLedAqD7tEjH6tEto9WkXmCH1b4VYLZwDXP3b4C3G9K7ndeXq39S83ya4+jdVp2ohxQg6P7T+TdWpGrhihG9+UnUqBaclXTGCzo9Gi6aA05KuGEHnJ2aPIQSclgzxwZg9hhBwWjLEB0PqkrYg+aC2fs8NyQc1eyZ9ahffnkkf2sWu0117cRX60C60TnehD+2SUqd3AbtO19p+7pzCgbN9CblzCgfO9iXkzikcONvnYPt7lzlFixB/b9Clvcb4ey575eq3mH25XPbqqt9CEKKBbI0yBo6DqwveRrj6LTdsjbIX3AfuL3gb4eq3NuDSx5JGkWyE1m9tgOpjex0ljdKlTu6iRvXBlcttffy/5HJJx0qxMadOl3Qs9z8ZnN2n6PSvJR+3bUg6lsuNnN27dLqvNv5ZxsdtbW506XRfbTxnEB+3U/5m1UDj+ylx+7VynSRo96di4/YH5Tpp8BdWuDAR
+  </data>
+ </layer>
+ <objectgroup id="2" name="Back">
+  <object id="15" name="TileData" x="624" y="432" width="16" height="16">
+   <properties>
+    <property name="TouchAction" value="Warp Custom_DesertRoad_02_Brook 1 5"/>
+   </properties>
+  </object>
+  <object id="16" name="TileData" x="624" y="448" width="16" height="16">
+   <properties>
+    <property name="TouchAction" value="Warp Custom_DesertRoad_02_Brook 1 5"/>
+   </properties>
+  </object>
+  <object id="17" name="TileData" x="160" y="944" width="16" height="16">
+   <properties>
+    <property name="TouchAction" value="Warp Custom_DesertRoad_02 6 1"/>
+   </properties>
+  </object>
+  <object id="18" name="TileData" x="176" y="944" width="16" height="16">
+   <properties>
+    <property name="TouchAction" value="Warp Custom_DesertRoad_02 6 1"/>
+   </properties>
+  </object>
+  <object id="19" name="TileData" x="192" y="944" width="16" height="16">
+   <properties>
+    <property name="TouchAction" value="Warp Custom_DesertRoad_02 6 1"/>
+   </properties>
+  </object>
+  <object id="20" name="TileData" x="208" y="944" width="16" height="16">
+   <properties>
+    <property name="TouchAction" value="Warp Custom_DesertRoad_02 6 1"/>
+   </properties>
+  </object>
+  <object id="21" name="TileData" x="224" y="944" width="16" height="16">
+   <properties>
+    <property name="TouchAction" value="Warp Custom_DesertRoad_02 6 1"/>
+   </properties>
+  </object>
+  <object id="22" name="TileData" x="160" y="0" width="16" height="16">
+   <properties>
+    <property name="TouchAction" value="Warp Custom_DesertRoad_04 34 34"/>
+   </properties>
+  </object>
+  <object id="23" name="TileData" x="176" y="0" width="16" height="16">
+   <properties>
+    <property name="TouchAction" value="Warp Custom_DesertRoad_04 34 34"/>
+   </properties>
+  </object>
+  <object id="24" name="TileData" x="192" y="0" width="16" height="16">
+   <properties>
+    <property name="TouchAction" value="Warp Custom_DesertRoad_04 34 34"/>
+   </properties>
+  </object>
+  <object id="25" name="TileData" x="208" y="0" width="16" height="16">
+   <properties>
+    <property name="TouchAction" value="Warp Custom_DesertRoad_04 34 34"/>
+   </properties>
+  </object>
+  <object id="26" name="TileData" x="224" y="0" width="16" height="16">
+   <properties>
+    <property name="TouchAction" value="Warp Custom_DesertRoad_04 34 34"/>
+   </properties>
+  </object>
+  <object id="29" name="TileData" x="400" y="272" width="16" height="16">
+   <properties>
+    <property name="TouchAction" value="Warp Custom_DangerousCave 16 46"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="4" name="Buildings">
+  <object id="27" name="TileData" x="432" y="416" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;Lnh.Text.10&quot;"/>
+   </properties>
+  </object>
+  <object id="28" name="TileData" x="144" y="16" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;Lnh.Text.11&quot;"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="6" name="Front"/>
+ <objectgroup id="8" name="Paths"/>
+ <objectgroup id="10" name="AlwaysFront"/>
+</map>

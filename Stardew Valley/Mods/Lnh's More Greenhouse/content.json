@@ -1,0 +1,94 @@
+{
+    "Format": "1.25.0",
+
+    "CustomLocations": [
+		{
+			"Name": "Custom_GreenhouseLocation",
+			"FromMapFile": "assets/GreenhouseLocation.tmx"
+		},
+        {
+			"Name": "Custom_MoreGreenhouse",
+			"FromMapFile": "assets/MoreGreenhouse.tmx"
+		}
+	],
+
+    "Changes": [
+        {
+            "Action": "EditMap",
+            "Target": "Maps/BusStop",
+            "FromFile": "Assets/BusStop_GreenhouseLocation.tmx",
+            "ToArea": {
+                "X": 0,
+                "Y": 11,
+                "Width": 4,
+                "Height": 11
+            },
+            "MapProperties": {
+                "DayTiles": "Buildings 2 19 510",
+				"Light": "2 19 4",
+                "NightTiles": "Buildings 2 19 507"
+			},
+            "When":{
+                "HasMod |contains=Lnh.MoreFarmingAreas": false
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_WarpRoom1",
+            "FromFile": "Assets/GreenhouseLocation_Warp.tmx",
+            "FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 6,
+				"Height": 3
+			},
+            "ToArea": {
+                "X": 4,
+                "Y": 7,
+                "Width": 6,
+                "Height": 3
+            },
+            "MapProperties": {
+				"Light": "5 18 4 13 19 4 14 19 4 21 18 4 27 18 4 8 8 4"
+			},
+            "When":{
+                "HasMod |contains=Lnh.MoreFarmingAreas": true
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_GreenhouseLocation",
+            "FromFile": "Assets/GreenhouseLocation_Warp.tmx",
+            "FromArea": {
+				"X": 0,
+				"Y": 3,
+				"Width": 3,
+				"Height": 3
+			},
+            "ToArea": {
+                "X": 14,
+                "Y": 25,
+                "Width": 3,
+                "Height": 3
+            },
+            "When":{
+                "HasMod |contains=Lnh.MoreFarmingAreas": true
+            }
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/sucai",
+            "FromFile": "assets/sucai.png",
+            "When":{
+                "HasMod |contains=Lnh.MoreFarmingAreas": false
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+            "Custom_GreenhouseLocation": "16 .9 22 .9/396 .6 402 .9/404 .9 410 .9/418 .9 414 .9 283 .5/153 -1 145 -1 143 -1 137 -1 132 -1 706 -1 702 -1/153 -1 145 -1 144 -1 138 -1 132 -1 706 -1 704 -1 702 -1/143 -1 153 -1 140 -1 139 -1 137 -1 132 -1 706 -1 702 -1 699 -1 269 -1/699 -1 143 -1 153 -1 144 -1 141 -1 140 -1 132 -1 707 -1 702 -1 269 -1/378 .08 579 .1 588 .1 102 .15 390 .25 330 1"
+            }
+        }
+    ]
+}

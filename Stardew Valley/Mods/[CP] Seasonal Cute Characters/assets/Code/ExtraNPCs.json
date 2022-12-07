@@ -1,0 +1,656 @@
+{
+	"Changes": [
+		{
+            "LogName": "Miscellaneous Characters",
+            "Action": "EditImage",
+            "Target": "Portraits/Bouncer, Portraits/Grandpa, Characters/Bouncer, Characters/Dwarf, Characters/Governor, Characters/Henchman, Characters/LeahExFemale, Characters/LeahExMale, Characters/Marcello, Characters/Mariner",
+            "FromFile": "assets/{{Target}}.png",
+            "When":
+            {
+                "HasFile:{{FromFile}}": true,
+            }        
+		},
+		
+// Cursors
+
+		{  
+			"LogName": "Cursors 1 - Joja Employees",
+			"Action": "EditImage",
+			"Update": "OnLocationChange",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/{{NoNose}}/Random/Cursors_{{Season}}.png",
+			"FromArea": { "X": 0, "Y": 1391, "Width": 46, "Height": 29 },
+			"ToArea": { "X": 0, "Y": 1391, "Width": 46, "Height": 29 },
+			"When":
+            {
+                "HasFile:{{FromFile}}": true,
+            },
+		},
+		{  
+			"LogName": "Cursors 2 - Joja Employees",
+			"Action": "EditImage",
+			"Update": "OnLocationChange",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/{{NoNose}}/Random/Cursors_{{Season}}.png",
+			"FromArea": { "X": 68, "Y": 1391, "Width": 46, "Height": 29 },
+			"ToArea": { "X": 68, "Y": 1391, "Width": 46, "Height": 29 },
+			"When":
+            {
+                "HasFile:{{FromFile}}": true,
+            },
+		},
+		{  
+			"LogName": "Cursors 3 - News Programs",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"Update": "OnLocationChange",
+			"FromFile": "assets/{{NoNose}}/Random/Cursors_{{Season}}.png",
+			"FromArea": { "X": 413, "Y": 305, "Width": 253, "Height": 28 },
+			"ToArea": { "X": 413, "Y": 305, "Width": 253, "Height": 28 },
+			"When":
+            {
+                "HasFile:{{FromFile}}": true,
+            },
+		},
+
+// Desert
+
+		{  
+			"LogName": "Desert 1",
+			"Action": "EditImage",
+			"Target": "Maps/DesertTiles",
+			"Update": "OnLocationChange",
+			"FromFile": "assets/{{NoNose}}/Random/DesertTiles.png",
+			"FromArea": { "X": 96, "Y": 192, "Width": 30, "Height": 32 },
+			"ToArea": { "X": 96, "Y": 192, "Width": 30, "Height": 32 },
+			"When":
+            {
+                "HasFile:{{FromFile}}": true,
+            },
+		},
+		{  
+			"LogName": "Desert 2",
+			"Action": "EditImage",
+			"Target": "Maps/DesertTiles",
+			"Update": "OnLocationChange",
+			"FromFile": "assets/{{NoNose}}/Random/DesertTiles.png",
+			"FromArea": { "X": 226, "Y": 291, "Width": 29, "Height": 25 },
+			"ToArea": { "X": 226, "Y": 291, "Width": 29, "Height": 25 },
+			"When":
+            {
+                "HasFile:{{FromFile}}": true,
+            },
+		},
+		
+// Festivals
+
+        {   
+			"LogName": "Festival 1",
+            "Action": "EditImage",
+            "Target": "Maps/Festivals",
+            "FromFile": "assets/{{NoNose}}/Random/Festivals.png",
+            "FromArea": { "X": 336, "Y": 208, "Width": 96, "Height": 47 },
+            "ToArea": { "X": 336, "Y": 208, "Width": 96, "Height": 47 },
+			"When":
+            {
+                "HasFile:{{FromFile}}": true,
+            },
+		},			
+        {   
+			"LogName": "Festival 2",
+            "Action": "EditImage",
+            "Target": "Maps/Festivals",
+            "FromFile": "assets/{{NoNose}}/Random/Festivals.png",
+            "FromArea": { "X": 480, "Y": 208, "Width": 32, "Height": 35 },
+            "ToArea": { "X": 480, "Y": 208, "Width": 32, "Height": 35 },
+			"When":
+            {
+                "HasFile:{{FromFile}}": true,
+            },
+		},        
+		{   "LogName": "Festival 3",
+            "Action": "EditImage",
+            "Target": "Maps/Festivals",
+            "FromFile": "assets/{{NoNose}}/Random/Festivals.png",
+            "FromArea": { "X": 448, "Y": 117, "Width": 16, "Height": 59 },
+            "ToArea": { "X": 448, "Y": 117, "Width": 16, "Height": 59 },
+			"When":
+            {
+                "HasFile:{{FromFile}}": true,
+            },            
+		},			
+        {   
+			"LogName": "Festival 4",
+            "Action": "EditImage",
+            "Target": "Maps/Festivals",
+            "FromFile": "assets/{{NoNose}}/Random/Festivals.png",
+            "FromArea": { "X": 289, "Y": 129, "Width": 79, "Height": 31 },
+            "ToArea": { "X": 289, "Y": 129, "Width": 79, "Height": 31 },
+			"When":
+            {
+                "HasFile:{{FromFile}}": true,
+            },
+		},			
+        {   "LogName": "Festival 5",
+            "Action": "EditImage",
+            "Target": "Maps/Festivals",
+            "FromFile": "assets/{{NoNose}}/Random/Festivals.png",
+            "FromArea": { "X": 289, "Y": 129, "Width": 79, "Height": 31 },
+            "ToArea": {  "X": 289, "Y": 129, "Width": 79, "Height": 31 },
+			"When":
+            {
+                "HasFile:{{FromFile}}": true,
+            },
+		},			
+        {   "LogName": "Festival 6",
+            "Action": "EditImage",
+            "Target": "Maps/Festivals",
+            "FromFile": "assets/{{NoNose}}/Random/Festivals.png",
+            "FromArea": { "X": 289, "Y": 129, "Width": 79, "Height": 31 },
+            "ToArea": { "X": 289,  "Y": 129, "Width": 79, "Height": 31 },
+			"When":
+            {
+                "HasFile:{{FromFile}}": true,
+            },
+		},			
+        {   "LogName": "Festival 7",
+            "Action": "EditImage",
+            "Target": "Maps/Festivals",
+            "FromFile": "assets/{{NoNose}}/Random/Festivals.png",
+            "FromArea":  { "X": 274, "Y": 129, "Width": 13, "Height": 15 },
+            "ToArea": {  "X": 274, "Y": 129, "Width": 13, "Height": 15 },
+			"When":
+            {
+                "HasFile:{{FromFile}}": true,
+            },
+		},			
+        {   "LogName": "Festival 8",
+            "Action": "EditImage",
+            "Target": "Maps/Festivals",
+            "FromFile": "assets/{{NoNose}}/Random/Festivals.png",
+            "FromArea": { "X": 496, "Y": 0, "Width": 16, "Height": 50 },
+            "ToArea": { "X": 496, "Y": 0, "Width": 16, "Height": 50 },
+			"When":
+            {
+                "HasFile:{{FromFile}}": true,
+            },
+		},
+
+//Intro
+
+        {   "LogName": "Jojacorps Intro 1",
+            "Action": "EditImage",
+            "Target": "Minigames/jojacorps",
+            "FromFile": "assets/{{NoNose}}/Random/jojacorps.png",
+            "FromArea": { "X": 109, "Y": 680, "Width": 1010, "Height": 89 },
+            "ToArea": { "X": 109, "Y": 680, "Width": 1010, "Height": 89 },
+			"When":
+            {
+                "HasFile:{{FromFile}}": true,
+            },
+		},
+			
+        {   "LogName": "Jojacorps Intro 2",
+            "Action": "EditImage",
+            "Target": "Minigames/jojacorps",
+            "FromFile": "assets/{{NoNose}}/Random/jojacorps.png",
+            "FromArea": { "X": 342, "Y": 592, "Width": 78, "Height": 6 },
+            "ToArea": { "X": 342, "Y": 592, "Width": 78, "Height": 6 },
+			"When":
+            {
+                "HasFile:{{FromFile}}": true,
+            },
+		},
+            
+// Night Market
+
+        {   
+			"LogName": "Night Market 1",
+            "Action": "EditImage",
+            "Target": "Maps/night_market_tilesheet_objects",
+            "FromFile": "assets/{{NoNose}}/Random/nightmarket.png",
+            "FromArea": { "X": 0, "Y": 272, "Width": 96, "Height": 32 },
+            "ToArea": { "X": 0, "Y": 272, "Width": 96, "Height": 32 },
+			"When":
+            {
+                "HasFile:{{FromFile}}": true,
+            },
+		},			
+        {   
+			"LogName": "Night Market 2",
+            "Action": "EditImage",
+            "Target": "Maps/night_market_tilesheet_objects",
+            "FromFile": "assets/{{NoNose}}/Random/nightmarket.png",
+            "FromArea": { "X": 176, "Y": 288, "Width": 80, "Height": 16 },
+            "ToArea": { "X": 176, "Y": 288, "Width": 80, "Height": 16 },
+			"When":
+            {
+                "HasFile:{{FromFile}}": true,
+            },
+		},			
+        {   
+			"LogName": "Night Market 3",
+            "Action": "EditImage",
+            "Target": "Maps/night_market_tilesheet_objects",
+            "FromFile": "assets/{{NoNose}}/Random/nightmarket.png",
+            "FromArea": { "X": 224, "Y": 176, "Width": 16, "Height": 32 },
+            "ToArea": { "X": 224, "Y": 176, "Width": 16, "Height": 32 },
+			"When":
+            {
+                "HasFile:{{FromFile}}": true,
+            },
+		},			
+        {   
+			"LogName": "Night Market 4",
+            "Action": "EditImage",
+            "Target": "Maps/night_market_tilesheet_objects",
+            "FromFile": "assets/{{NoNose}}/Random/nightmarket.png",
+            "FromArea": { "X": 959, "Y": 58, "Width": 8, "Height": 8 },
+            "ToArea": { "X": 959, "Y": 58, "Width": 8, "Height": 8 },
+			"When":
+            {
+                "HasFile:{{FromFile}}": true,
+            },
+		},			
+        {   "LogName": "Night Market 5",
+            "Action": "EditImage",
+            "Target": "Maps/night_market_tilesheet_objects",
+            "FromFile": "assets/{{NoNose}}/Random/nightmarket.png",
+            "FromArea": { "X": 1056, "Y": 240, "Width": 32, "Height": 32 },
+            "ToArea": { "X": 1056, "Y": 240, "Width": 32, "Height": 32 },
+			"When":
+            {
+                "HasFile:{{FromFile}}": true,
+            },
+		},			
+        {   
+			"LogName": "Night Market 6",
+            "Action": "EditImage",
+            "Target": "Maps/night_market_tilesheet_objects",
+            "FromFile": "assets/{{NoNose}}/Random/nightmarket.png",
+            "FromArea": { "X": 315, "Y": 112, "Width": 8, "Height": 7 },
+            "ToArea": { "X": 315, "Y": 112, "Width": 8, "Height": 7 },
+			"When":
+            {
+                "HasFile:{{FromFile}}": true,
+            },
+		},
+
+//Sam Concert
+
+        {   
+			"LogName": "Sam Show Tiles 1",
+            "Action": "EditImage",
+            "Target": "Maps/samshowtiles",
+            "FromFile": "assets/{{NoNose}}/Random/samshowtiles.png",
+            "FromArea": { "X": 0, "Y": 192, "Width": 160, "Height": 32 },
+            "ToArea": { "X": 0, "Y": 192, "Width": 160, "Height": 32 },
+			"When":
+            {
+                "HasFile:{{FromFile}}": true,
+            },
+		},
+        {   
+			"LogName": "Sam Show Tiles 2",
+            "Action": "EditImage",
+            "Target": "Maps/samshowtiles",
+            "FromFile": "assets/{{NoNose}}/Random/samshowtiles.png",
+            "FromArea": { "X": 48, "Y": 0, "Width": 16, "Height": 96 },
+            "ToArea": { "X": 48, "Y": 0, "Width": 16, "Height": 96 },
+			"When":
+            {
+                "HasFile:{{FromFile}}": true,
+            },
+		},
+
+//Stadium
+
+        {   
+			"LogName": "Stadium Tiles 1",
+            "Action": "EditImage",
+            "Target": "Maps/stadium_tiles",
+            "FromFile": "assets/{{NoNose}}/Random/stadium.png",
+            "FromArea": { "X": 0, "Y": 208, "Width": 64, "Height": 96 },
+            "ToArea": { "X": 0, "Y": 208, "Width": 64, "Height": 96 },
+			"When":
+            {
+                "HasFile:{{FromFile}}": true,
+            },
+		},			
+        {   "LogName": "Stadium Tiles 2",
+            "Action": "EditImage",
+            "Target": "Maps/stadium_tiles",
+            "FromFile": "assets/{{NoNose}}/Random/stadium.png",
+            "FromArea": {  "X": 16, "Y": 176, "Width": 48, "Height": 32 },
+            "ToArea": { "X": 16, "Y": 176, "Width": 48, "Height": 32 },
+			"When":
+            {
+                "HasFile:{{FromFile}}": true,
+            },
+		},
+
+//Submarine
+
+        {   
+			"LogName": "Submarine 1",
+            "Action": "EditImage",
+            "Target": "Maps/submarine_tilesheet",
+            "FromFile": "assets/{{NoNose}}/Random/submarine.png",
+            "FromArea": { "X": 14, "Y": 125, "Width": 18, "Height": 36 },
+            "ToArea": {  "X": 14, "Y": 125, "Width": 18, "Height": 36 },
+			"When":
+            {
+                "HasFile:{{FromFile}}": true,
+            },
+		},
+			
+        {   
+			"LogName": "Submarine 2",
+            "Action": "EditImage",
+            "Target": "Maps/submarine_tilesheet",
+            "FromFile": "assets/{{NoNose}}/Random/submarine.png",
+            "FromArea": { "X": 192, "Y": 288, "Width": 64, "Height": 16 },
+            "ToArea": { "X": 192, "Y": 288, "Width": 64, "Height": 16 },
+			"When":
+            {
+                "HasFile:{{FromFile}}": true,
+            },
+		},
+            
+// Town Interior
+
+		{  
+			"LogName": "TownInterior 4 - Joja Cashier",
+            "Action": "EditImage",
+            "Update": "OnLocationChange",
+            "Target": "Maps/townInterior",
+            "FromFile": "assets/{{NoNose}}/Random/townInterior_{{Season}}.png",
+            "FromArea": { "X": 352, "Y": 944, "Width": 32, "Height": 26 },
+            "ToArea": { "X": 352, "Y": 944, "Width": 32, "Height": 26 },
+			"When":
+            {
+                "HasFile:{{FromFile}}": true,
+            },
+		},
+            
+//Movie Theater
+
+        {   
+			"LogName": "Movie Theater 1 - Moviegoers",
+            "Action": "EditImage",
+            "Update": "OnLocationChange",
+            "Target": "Maps/MovieTheater_TileSheet",
+            "FromFile": "assets/{{NoNose}}/Random/MovieTheater_{{Season}}.png",
+            "FromArea": { "X": 112, "Y": 192, "Width": 96,  "Height": 64 },
+            "ToArea": { "X": 112, "Y": 192, "Width": 96, "Height": 64 },
+			"When":
+            {
+                "HasFile:{{FromFile}}": true,
+            },
+		},			
+        {   
+			"LogName": "Movie Theater 2 - Cashier 1",
+            "Action": "EditImage",
+            "Update": "OnLocationChange",
+            "Target": "Maps/MovieTheater_TileSheet",
+            "FromFile": "assets/{{NoNose}}/Random/MovieTheater_{{Season}}.png",
+            "FromArea": { "X": 192, "Y": 176, "Width": 48, "Height": 16 },
+            "ToArea": { "X": 192, "Y": 176, "Width": 48, "Height": 16 },
+			"When":
+            {
+                "HasFile:{{FromFile}}": true,
+            },
+		},			
+        {   
+			"LogName": "Movie Theater 3 - Cashier 2",
+            "Action": "EditImage",
+            "Update": "OnLocationChange",
+            "Target": "Maps/MovieTheater_TileSheet",
+            "FromFile": "assets/{{NoNose}}/Random/MovieTheater_{{Season}}.png",
+            "FromArea": { "X": 240, "Y": 160, "Width": 16, "Height": 32 },
+            "ToArea": { "X": 240, "Y": 160, "Width": 16, "Height": 32 },
+			"When":
+            {
+                "HasFile:{{FromFile}}": true,
+            },
+		},
+		{   
+			"LogName": "Movie Theater 4 - Mayor",
+            "Action": "EditImage",
+			"Update": "OnLocationChange",
+            "Target": "Maps/MovieTheaterJoja_TileSheet",
+            "FromFile": "assets/{{NoNose}}/Random/MovieTheater_{{Season}}.png",
+            "FromArea": { "X": 208, "Y": 224, "Width": 16, "Height": 32 },
+            "ToArea": { "X": 208, "Y": 224, "Width": 16, "Height": 32 },
+			"When":
+            {
+                "HasFile:{{FromFile}}": true,
+            },
+		},
+        {   "LogName": "Movie Theater 5 - Balloon Guy",
+            "Action": "EditImage",
+            "Update": "OnLocationChange",
+            "Target": "Maps/MovieTheater_TileSheet",
+            "FromFile": "assets/{{NoNose}}/Random/MovieTheater_{{Season}}.png",
+            "FromArea": { "X": 16, "Y": 192, "Width": 16, "Height": 32 },
+            "ToArea": { "X": 16, "Y": 192, "Width": 16, "Height": 32 }},
+            
+//Movie Theater Joja
+
+        {   
+			"LogName": "Movie Theater Joja 1",
+            "Action": "EditImage",
+			"Update": "OnLocationChange",
+            "Target": "Maps/MovieTheaterJoja_TileSheet",
+            "FromFile": "assets/{{NoNose}}/Random/MovieTheaterJoja_{{Season}}.png",
+            "FromArea": { "X": 112, "Y": 192, "Width": 96, "Height": 64 },
+            "ToArea": { "X": 112, "Y": 192, "Width": 96, "Height": 64 },
+			"When":
+            {
+                "HasFile:{{FromFile}}": true,
+            },
+		},			
+        {   
+			"LogName": "Movie Theater Joja 2",
+            "Action": "EditImage",
+			"Update": "OnLocationChange",
+            "Target": "Maps/MovieTheaterJoja_TileSheet",
+            "FromFile": "assets/{{NoNose}}/Random/MovieTheaterJoja_{{Season}}.png",
+            "FromArea": { "X": 192, "Y": 176, "Width": 48, "Height": 16 },
+            "ToArea": { "X": 192, "Y": 176, "Width": 48, "Height": 16 },
+			"When":
+            {
+                "HasFile:{{FromFile}}": true,
+            },
+		},			
+        {   
+			"LogName": "Movie Theater Joja 3",
+            "Action": "EditImage",
+			"Update": "OnLocationChange",
+            "Target": "Maps/MovieTheaterJoja_TileSheet",
+            "FromFile": "assets/{{NoNose}}/Random/MovieTheaterJoja_{{Season}}.png",
+            "FromArea": { "X": 240, "Y": 160, "Width": 16, "Height": 32 },
+            "ToArea": { "X": 240, "Y": 160, "Width": 16, "Height": 32 },
+			"When":
+            {
+                "HasFile:{{FromFile}}": true,
+            },
+		},
+		{   
+			"LogName": "Movie Theater Joja 7 Mayor",
+            "Action": "EditImage",
+			"Update": "OnLocationChange",
+            "Target": "Maps/MovieTheaterJoja_TileSheet",
+            "FromFile": "assets/{{NoNose}}/Random/MovieTheaterJoja_{{Season}}.png",
+            "FromArea": { "X": 208, "Y": 224, "Width": 16, "Height": 32 },
+            "ToArea": { "X": 208, "Y": 224, "Width": 16, "Height": 32 },
+			"When":
+            {
+                "HasFile:{{FromFile}}": true,
+            },
+		},	
+        {   
+			"LogName": "Movie Theater Joja 8 balloon guy",
+            "Action": "EditImage",
+            "Update": "OnLocationChange",
+            "Target": "Maps/MovieTheater_TileSheet",
+            "FromFile": "assets/{{NoNose}}/Random/MovieTheaterJoja_{{Season}}.png",
+            "FromArea": { "X": 16, "Y": 192, "Width": 16, "Height": 32 },
+            "ToArea": { "X": 16, "Y": 192, "Width": 16, "Height": 32 },
+			"When":
+            {
+                "HasFile:{{FromFile}}": true,
+            },
+		},
+            
+//Temporary Sprites
+
+        {   
+			"LogName": "Temporary - Turban Guy 1",
+            "Action": "EditImage",
+            "Target": "LooseSprites/temporary_sprites_1",
+            "FromFile": "assets/{{NoNose}}/Random/turbanguy.png",
+            "PatchMode": "Overlay",
+            "ToArea": { "X": 0, "Y": 614, "Width": 180, "Height": 26 },
+			"When":
+            {
+                "HasFile:{{FromFile}}": true,
+            },
+		},
+        {   
+			"LogName": "Temporary - Turban Guy 2",
+            "Action": "EditImage",
+            "Target": "LooseSprites/temporary_sprites_1",
+            "FromFile": "assets/{{NoNose}}/Random/turbanguy2.png",
+            "PatchMode": "Overlay",
+            "ToArea": { "X": 354, "Y": 168, "Width": 64, "Height": 32 },
+			"When":
+            {
+                "HasFile:{{FromFile}}": true,
+            },
+		},			
+        {   
+			"LogName": "Temporary - Mermaid",
+            "Action": "EditImage",
+            "Target": "LooseSprites/temporary_sprites_1",
+            "FromFile": "assets/{{NoNose}}/Random/mermaid.png",
+            "PatchMode": "Overlay",
+            "ToArea": { "X": 193, "Y": 0, "Width": 15, "Height": 32 },
+			"When":
+            {
+                "HasFile:{{FromFile}}": true,
+            },
+		},
+            
+// Pirates Tilesheet
+
+        {   
+			"LogName": "Pirates - Drunk Pirate",
+            "Action": "EditImage",
+            "Target": "Maps/pirates_tilesheet",
+            "FromFile": "assets/{{NoNose}}/Random/pirates_tilesheet.png",
+            "FromArea": { "X": 241, "Y": 0, "Width": 47, "Height": 64 },
+            "ToArea": { "X": 241, "Y": 0, "Width": 47, "Height": 64 },
+			"When":
+            {
+                "HasFile:{{FromFile}}": true,
+            },
+		},
+        {   
+			"LogName": "Pirates - Barmaid Pirate",
+            "Action": "EditImage",
+            "Target": "Maps/pirates_tilesheet",
+            "FromFile": "assets/{{NoNose}}/Random/pirates_tilesheet.png",
+            "FromArea": { "X": 208, "Y": 96, "Width": 32, "Height": 32 },
+            "ToArea": { "X": 208, "Y": 96, "Width": 32, "Height": 32 },
+			"When":
+            {
+                "HasFile:{{FromFile}}": true,
+            },
+		},
+        {   
+			"LogName": "Pirates - Dandy Pirate left",
+            "Action": "EditImage",
+            "Target": "Maps/pirates_tilesheet",
+            "FromFile": "assets/{{NoNose}}/Random/pirates_tilesheet.png",
+            "FromArea": { "X": 144, "Y": 96, "Width": 16, "Height": 32 },
+            "ToArea": { "X": 144, "Y": 96, "Width": 16, "Height": 32 },
+			"When":
+            {
+                "HasFile:{{FromFile}}": true,
+            },
+		},
+        {   
+			"LogName": "Pirates - Dandy Pirate right",
+            "Action": "EditImage",
+            "Target": "Maps/pirates_tilesheet",
+            "FromFile": "assets/{{NoNose}}/Random/pirates_tilesheet.png",
+            "FromArea": { "X": 176, "Y": 96, "Width": 16, "Height": 32 },
+            "ToArea": { "X": 176, "Y": 96, "Width": 16, "Height": 32 },
+			"When":
+            {
+                "HasFile:{{FromFile}}": true,
+            },
+		},
+        {   
+			"LogName": "Pirates - Fight Pirates",
+            "Action": "EditImage",
+            "Target": "Maps/pirates_tilesheet",
+            "FromFile": "assets/{{NoNose}}/Random/pirates_tilesheet.png",
+            "FromArea": { "X": 129, "Y": 129, "Width": 62, "Height": 31 },
+            "ToArea": { "X": 129, "Y": 129, "Width": 62, "Height": 31 },
+			"When":
+            {
+                "HasFile:{{FromFile}}": true,
+            },
+		},
+        {   
+			"LogName": "Pirates - Glasses Pirate",
+            "Action": "EditImage",
+            "Target": "Maps/pirates_tilesheet",
+            "FromFile": "assets/{{NoNose}}/Random/pirates_tilesheet.png",
+            "FromArea": { "X": 160, "Y": 48, "Width": 16, "Height": 32 },
+            "ToArea": { "X": 160, "Y": 48, "Width": 16, "Height": 32 },
+			"When":
+            {
+                "HasFile:{{FromFile}}": true,
+            },
+		},
+        {   
+			"LogName": "Pirates - Black wood leg Pirate",
+            "Action": "EditImage",
+            "Target": "Maps/pirates_tilesheet",
+            "FromFile": "assets/{{NoNose}}/Random/pirates_tilesheet.png",
+            "FromArea": { "X": 96, "Y": 48, "Width": 32, "Height": 32 },
+            "ToArea": { "X": 96, "Y": 48, "Width": 32, "Height": 32 },
+			"When":
+            {
+                "HasFile:{{FromFile}}": true,
+            },
+		},
+        {   
+			"LogName": "Pirates - White wood leg Pirate upper",
+            "Action": "EditImage",
+            "Target": "Maps/pirates_tilesheet",
+            "FromFile": "assets/{{NoNose}}/Random/pirates_tilesheet.png",
+            "FromArea": { "X": 32, "Y": 96, "Width": 16, "Height": 32 },
+            "ToArea": { "X": 32, "Y": 96, "Width": 16, "Height": 32 },
+			"When":
+            {
+                "HasFile:{{FromFile}}": true,
+            },
+		},	
+        {   
+			"LogName": "Pirates - White wood leg Pirate lower",
+            "Action": "EditImage",
+            "Target": "Maps/pirates_tilesheet",
+            "FromFile": "assets/{{NoNose}}/Random/pirates_tilesheet.png",
+            "FromArea": { "X": 16, "Y": 112, "Width": 16, "Height": 32 },
+            "ToArea": { "X": 16, "Y": 112, "Width": 16, "Height": 32  },
+			"When":
+            {
+                "HasFile:{{FromFile}}": true,
+            },
+		},
+	]
+}

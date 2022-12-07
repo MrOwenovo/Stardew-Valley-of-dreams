@@ -1,0 +1,104 @@
+{
+    "Format": "1.25.0",
+
+    "CustomLocations": [
+		{
+			"Name": "Custom_MoreFarmingAreas_01",
+			"FromMapFile": "assets/MoreFarmingAreas_01.tmx"
+		},
+        {
+			"Name": "Custom_MoreFarmingAreas_02",
+			"FromMapFile": "assets/MoreFarmingAreas_02.tmx"
+		},
+        {
+			"Name": "Custom_MoreFarmingAreas_03",
+			"FromMapFile": "assets/MoreFarmingAreas_03.tmx"
+		},
+        {
+			"Name": "Custom_WarpRoom1",
+			"FromMapFile": "assets/WarpRoom1.tmx"
+		}
+	],
+
+    "Changes": [
+        {
+            "Action": "EditMap",
+            "Target": "Maps/BusStop",
+            "FromFile": "Assets/BusStop_Location.tmx",
+            "ToArea": {
+                "X": 0,
+                "Y": 11,
+                "Width": 4,
+                "Height": 11
+            },
+            "MapProperties": {
+                "DayTiles": "Buildings 2 19 510",
+				"Light": "2 19 4",
+                "NightTiles": "Buildings 2 19 507"
+			}
+        },
+        {
+			"Action": "EditMap",
+			"Target": "Maps/Custom_MoreFarmingAreas_02",
+			"FromFile": "assets/MoreFarmingAreas_02_day.tmx",
+			"PatchMode": "Overlay",
+            "When": {
+                "Time": "{{Range: 600, 1850}}",
+                "Weather": "Sun, Wind"
+			},
+            "Update": "OnTimeChange"
+		},
+        {
+			"Action": "EditMap",
+			"Target": "Maps/Custom_MoreFarmingAreas_02",
+			"FromFile": "assets/MoreFarmingAreas_02_night.tmx",
+			"PatchMode": "Overlay",
+            "When": {
+                "Time": "{{Range: 600, 1850}}",
+                "Weather": "Rain, Storm, Snow"
+			},
+            "Update": "OnTimeChange"
+		},
+        {
+			"Action": "EditMap",
+			"Target": "Maps/Custom_MoreFarmingAreas_02",
+			"FromFile": "assets/MoreFarmingAreas_02_night.tmx",
+			"PatchMode": "Overlay",
+            "When": {
+                "Time": "{{Range: 1900, 2500}}"
+			},
+            "Update": "OnTimeChange"
+		},
+        {
+            "Action": "Load",
+            "Target": "Maps/sucai",
+            "FromFile": "assets/sucai.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/z_crystal",
+            "FromFile": "assets/z_crystal.png"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+            "Custom_WarpRoom1": "16 .9 22 .9/396 .6 402 .9/404 .9 410 .9/418 .9 414 .9 283 .5/153 -1 145 -1 143 -1 137 -1 132 -1 706 -1 702 -1/153 -1 145 -1 144 -1 138 -1 132 -1 706 -1 704 -1 702 -1/143 -1 153 -1 140 -1 139 -1 137 -1 132 -1 706 -1 702 -1 699 -1 269 -1/699 -1 143 -1 153 -1 144 -1 141 -1 140 -1 132 -1 707 -1 702 -1 269 -1/378 .08 579 .1 588 .1 102 .15 390 .25 330 1"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+            "Custom_MoreFarmingAreas_01": "16 .9 22 .9/396 .6 402 .9/404 .9 410 .9/418 .9 414 .9 283 .5/153 -1 145 -1 143 -1 137 -1 132 -1 706 -1 702 -1/153 -1 145 -1 144 -1 138 -1 132 -1 706 -1 704 -1 702 -1/143 -1 153 -1 140 -1 139 -1 137 -1 132 -1 706 -1 702 -1 699 -1 269 -1/699 -1 143 -1 153 -1 144 -1 141 -1 140 -1 132 -1 707 -1 702 -1 269 -1/378 .08 579 .1 588 .1 102 .15 390 .25 330 1"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+            "Custom_MoreFarmingAreas_03": "372 .9 718 .1 719 .3 723 .3/372 .9 394 .5 718 .1 719 .3 723 .3/372 .9 718 .1 719 .3 723 .3/372 .4 392 .8 718 .05 719 .2 723 .2/129 -1 131 -1 147 -1 148 -1 152 -1 708 -1 267 -1/128 -1 130 -1 146 -1 149 -1 150 -1 152 -1 155 -1 708 -1 701 -1 267 -1/129 -1 131 -1 148 -1 150 -1 152 -1 154 -1 155 -1 705 -1 701 -1/708 -1 130 -1 131 -1 146 -1 147 -1 150 -1 151 -1 152 -1 154 -1 705 -1/384 .08 589 .09 102 .15 390 .25 330 1"
+            }
+        }
+    ]
+}

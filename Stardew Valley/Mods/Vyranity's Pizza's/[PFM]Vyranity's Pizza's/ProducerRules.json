@@ -1,0 +1,1812 @@
+[
+	//Dough Flattener
+	{
+	"ProducerName": "Dough Flattener",
+	"InputIdentifier": 246,
+	"InputStack": 1,
+	"MinutesUntilReady": 0,
+	"OutputIdentifier": "Pizza Bottom",
+	"Sounds": ["Ship"],
+	},
+
+
+	//Brick Pizza Oven
+
+	{
+	"ProducerName": "Brick Pizza Oven",
+	"InputIdentifier": 424,	//Cheese
+	"InputStack": 1,
+	"FuelIdentifier": 256,	//Tomato
+	"FuelStack": 1,
+	"AdditionalFuel": {
+	"Pizza Bottom": 1,
+	},
+	"MinutesUntilReady": 600,
+	"OutputIdentifier": "Pizza Margherita",
+	"Sounds": ["Ship"],
+	},
+
+	{
+	"ProducerName": "Brick Pizza Oven",
+	"InputIdentifier": "Mozzarella",
+	"InputStack": 1,
+	"FuelIdentifier": 256,	//Tomato
+	"AdditionalFuel": {
+	"Pizza Bottom": 1,
+	},
+	"MinutesUntilReady": 600,
+	"OutputIdentifier": "Mozzarella Pizza",
+	"Sounds": ["Ship"],
+	},
+
+	{
+	"ProducerName": "Brick Pizza Oven",
+	"InputIdentifier": 248,
+	"InputStack": 1,
+	"FuelIdentifier": 424,
+	"AdditionalFuel": {
+	"Pizza Bottom": 1,
+	},
+	"MinutesUntilReady": 600,
+	"OutputIdentifier": "Garlic Pizza",
+	"Sounds": ["Ship"],
+	},
+
+		//Pepperoni Pizza
+
+	{
+		"ProducerName": "Brick Pizza Oven",	//Nothing
+		"InputIdentifier": 684,	//Bug Meat
+		"FuelIdentifier": "Pizza Margherita",
+		"MinutesUntilReady": 60,
+		"OutputIdentifier": "Pepperoni Pizza",	//680
+		"Sounds": ["Ship"],
+	},
+
+		{
+		"ProducerName": "Brick Pizza Oven",	//Fresh Meat and Animal Husbandry
+		"InputIdentifier": "Beef",
+		"FuelIdentifier": "Pizza Margherita",
+		"MinutesUntilReady": 60,
+		"OutputIdentifier": "Pepperoni Pizza", //850
+		"OutputQuality": 1,
+		"Sounds": ["Ship"],
+	},
+
+	{
+		"ProducerName": "Brick Pizza Oven",	//Fresh Meat
+		"InputIdentifier": "Salami",
+		"FuelIdentifier": "Pizza Margherita",
+		"MinutesUntilReady": 60,
+		"OutputIdentifier": "Pepperoni Pizza",	//1300
+		"OutputPriceIncrement": 170,
+		"OutputQuality": 2,
+		"Sounds": ["Ship"],
+	},
+
+
+
+		//Hawaiian Pizza
+		{
+		"ProducerName": "Brick Pizza Oven",	//If nothing else is installed
+		"InputIdentifier": 832,								//Pineapple
+		"FuelIdentifier": "Pizza Margherita",
+		"AdditionalOutputs": [
+			{
+				"OutputIdentifier": "Hawaiian Pizza",
+				"RequiredFuel": { "684": 1 },
+				"OutputQuality": 0,
+			},
+		],
+		"MinutesUntilReady": 60,
+		"Sounds": ["Ship"],
+		},
+
+	{
+	"ProducerName": "Brick Pizza Oven",	//If Fresh Meat is installed
+	"InputIdentifier": 832,								//Pineapple
+	"FuelIdentifier": "Pizza Margherita",
+	"AdditionalOutputs": [
+		{
+			"OutputIdentifier": "Hawaiian Pizza",
+			"RequiredFuel": { "684": 1 },
+			"OutputQuality": 0,
+		},
+		{
+			"OutputIdentifier": "Hawaiian Pizza",
+			"RequiredFuel": { "Pork": 1 },
+			"OutputPriceIncrement": -140,
+			"OutputQuality": 1,
+		},
+		{
+			"OutputIdentifier": "Hawaiian Pizza",	//1380
+			"RequiredFuel": { "Ham": 1 },
+			"OutputPriceIncrement": -180,
+			"OutputQuality": 2,
+		},
+	],
+	"MinutesUntilReady": 60,
+	"Sounds": ["Ship"],
+	},
+
+	{
+	"ProducerName": "Brick Pizza Oven",	//If Animal Husbandry is installed
+	"InputIdentifier": 832,								//Pineapple
+	"FuelIdentifier": "Pizza Margherita",
+	"AdditionalOutputs": [
+		{
+			"OutputIdentifier": "Hawaiian Pizza",
+			"RequiredFuel": { "684": 1 },
+			"OutputQuality": 0,
+		},
+		{
+			"OutputIdentifier": "Hawaiian Pizza (Animal Husbandry)",
+			"RequiredFuel": { "Pork": 1 },
+			"OutputQuality": 0,
+		},
+	],
+	"MinutesUntilReady": 60,
+	"Sounds": ["Ship"],
+	},
+
+	{
+	"ProducerName": "Brick Pizza Oven",	//If Animal Husbandry and Fresh Meat are installed
+	"InputIdentifier": 832,								//Pineapple
+	"FuelIdentifier": "Pizza Margherita",
+	"AdditionalOutputs": [
+		{
+			"OutputIdentifier": "Hawaiian Pizza",
+			"RequiredFuel": { "684": 1 },
+			"OutputQuality": 0,
+		},
+		{
+			"OutputIdentifier": "Hawaiian Pizza",	//1380
+			"RequiredFuel": { "Ham": 1 },
+			"OutputPriceIncrement": -180,
+			"OutputQuality": 2,
+		},
+		{
+			"OutputIdentifier": "Hawaiian Pizza (Animal Husbandry)",
+			"RequiredFuel": { "Pork": 1 },
+			"OutputQuality": 0,
+		},
+	],
+	"MinutesUntilReady": 60,
+	"Sounds": ["Ship"],
+	},
+
+
+{
+"ProducerName": "Brick Pizza Oven",	//Fresh Meat
+"InputIdentifier": "Ham",
+"FuelIdentifier": 832,	//Pineapple
+"AdditionalFuel": {
+"Pizza Margherita": 1,
+},
+"MinutesUntilReady": 60,
+"OutputIdentifier": "Hawaiian Pizza",
+"OutputPriceIncrement": -180,
+"OutputQuality": 2,
+"Sounds": ["Ship"],
+},
+
+{
+"ProducerName": "Brick Pizza Oven",	//Fresh Meat Pork
+"InputIdentifier": "Pork",
+"FuelIdentifier":	832,	//Pineapple
+"AdditionalFuel": {
+"Pizza Margherita": 1,
+},
+"MinutesUntilReady": 60,
+"OutputIdentifier": "Hawaiian Pizza",
+"OutputPriceIncrement": -140,
+"OutputQuality": 1,
+"Sounds": ["Ship"],
+},
+
+{
+"ProducerName": "Brick Pizza Oven",	//Animal Husbandry Pork
+"InputIdentifier": "Pork",
+"FuelIdentifier":	832,	//Pineapple
+"AdditionalFuel": {
+"Pizza Margherita": 1,
+},
+"MinutesUntilReady": 60,
+"OutputIdentifier": "Hawaiian Pizza (Animal Husbandry)",
+"OutputQuality": 0,
+"Sounds": ["Ship"],
+},
+
+		//Cheese Pizza
+
+	{
+	"ProducerName": "Brick Pizza Oven",
+	"InputIdentifier": 426,	//Goat Cheese
+	"InputStack": 1,
+	"FuelIdentifier": "Mozzarella",
+	"FuelStack": 1,
+	"AdditionalFuel": {
+	"Pizza Margherita": 1,
+	},
+	"MinutesUntilReady": 60,
+	"OutputIdentifier": "Cheese Pizza",
+	"Sounds": ["Ship"],
+	},
+
+	{
+	"ProducerName": "Brick Pizza Oven",
+	"InputIdentifier": 426,	//Goat Cheese
+	"InputStack": 1,
+	"FuelIdentifier": 424,	//Cheese
+	"FuelStack": 1,
+	"AdditionalFuel": {
+	"Mozzarella Pizza": 1,
+	},
+	"MinutesUntilReady": 60,
+	"OutputIdentifier": "Cheese Pizza",
+	"Sounds": ["Ship"],
+	},
+
+		//Pizza Alla Diavola
+
+	{
+	"ProducerName": "Brick Pizza Oven",	//Nothing
+	"InputIdentifier": 260,		//Hot pepper
+	"InputStack": 1,
+	"FuelIdentifier": "Mozzarella Pizza",
+	"FuelStack": 1,
+	"AdditionalOutputs": [
+		{
+			"OutputIdentifier": "Pizza Alla Diavola",
+			"RequiredFuel": { "684": 1 },
+			"OutputQuality": 0,
+		},
+	],
+	"MinutesUntilReady": 60,
+	"Sounds": ["Ship"],
+	},
+
+	{
+	"ProducerName": "Brick Pizza Oven", //Animal Husbandry
+	"InputIdentifier": 260,		//Hot pepper
+	"InputStack": 1,
+	"FuelIdentifier": "Mozzarella Pizza",
+	"FuelStack": 1,
+	"AdditionalOutputs": [
+		{
+			"OutputIdentifier": "Pizza Alla Diavola",
+			"RequiredFuel": { "684": 1 },
+			"OutputQuality": 0,
+		},
+		{
+			"OutputIdentifier": "Pizza Alla Diavola",
+			"RequiredFuel": { "Beef": 1 },
+			"OutputQuality": 1,
+		},
+	],
+	"MinutesUntilReady": 60,
+	"Sounds": ["Ship"],
+	},
+
+	{
+	"ProducerName": "Brick Pizza Oven", //Fresh Meat
+	"InputIdentifier": 260,		//Hot pepper
+	"InputStack": 1,
+	"FuelIdentifier": "Mozzarella Pizza",
+	"FuelStack": 1,
+	"AdditionalOutputs": [
+		{
+			"OutputIdentifier": "Pizza Alla Diavola",
+			"RequiredFuel": { "684": 1 },
+			"OutputQuality": 0,
+		},
+		{
+			"OutputIdentifier": "Pizza Alla Diavola",
+			"RequiredFuel": { "Beef": 1 },
+			"OutputQuality": 1,
+		},
+		{
+			"OutputIdentifier": "Pizza Alla Diavola",
+			"RequiredFuel": { "Salami": 1 },
+			"OutputPriceIncrement": 170,
+			"OutputQuality": 2,
+		},
+	],
+	"MinutesUntilReady": 60,
+	"Sounds": ["Ship"],
+	},
+
+		//Pizza Pesto
+
+	{
+	"ProducerName": "Brick Pizza Oven",
+	"InputIdentifier": 247,	//Oil
+	"InputStack": 1,
+	"FuelIdentifier": 815,	//Tea Leaves
+	"FuelStack": 1,
+	"AdditionalFuel": {
+	"248": 1,								//Garlic
+	"Mozzarella": 1,
+	"Pizza Bottom": 1,
+	},
+	"MinutesUntilReady": 600,
+	"OutputIdentifier": "Pizza Pesto",
+	"Sounds": ["Ship"],
+	},
+
+		//Pizza Vegetariana
+
+	{
+	"ProducerName": "Brick Pizza Oven",
+	"InputIdentifier": 272,	//Eggplant
+	"InputStack": 1,
+	"FuelIdentifier": 260,	//Hot Pepper
+	"FuelStack": 1,
+	"AdditionalFuel": {
+	"Mozzarella Pizza": 1,
+	},
+	"MinutesUntilReady": 60,
+	"OutputIdentifier": "Pizza Vegetariana",
+	"Sounds": ["Ship"],
+	},
+
+		//Tuna Pizza
+
+	{
+	"ProducerName": "Brick Pizza Oven",
+	"InputIdentifier": 130,	//Tuna
+	"InputStack": 1,
+	"FuelIdentifier": 399,	//Spring Onion
+	"FuelStack": 1,
+	"AdditionalFuel": {
+	"Pizza Margherita": 1,
+	},
+	"MinutesUntilReady": 60,
+	"OutputIdentifier": "Tuna Pizza",
+	"Sounds": ["Ship"],
+	},
+
+		//Vegan Pizza
+
+	{
+	"ProducerName": "Brick Pizza Oven",
+	"InputIdentifier": 399,	//Spring Union
+	"InputStack": 1,
+	"FuelIdentifier": 260,	//Hot Pepper
+	"FuelStack": 1,
+	"AdditionalFuel": {
+	"404": 1,								//Common Mushroom
+	"Pizza Margherita": 1,
+	},
+	"MinutesUntilReady": 60,
+	"OutputIdentifier": "Vegan Pizza",
+	"Sounds": ["Ship"],
+	},
+
+
+		//Barbecue Chicken Pizza
+		{
+		"ProducerName": "Brick Pizza Oven",	//Nothing
+		"InputIdentifier": 382,	//Coal
+		"FuelIdentifier": 260,	//Hot Pepper
+		"AdditionalFuel": {
+		"399": 1,								//Spring Onion
+		"Mozzarella Pizza": 1,
+		},
+		"AdditionalOutputs": [
+			{
+				"OutputIdentifier": "Barbecue Chicken Pizza",	//1050
+				"RequiredFuel": { "684": 1 },
+				"OutputQuality": 0,
+			},
+		],
+		"MinutesUntilReady": 60,
+		"Sounds": ["Ship"],
+		},
+
+		{
+		"ProducerName": "Brick Pizza Oven",	//Fresh Meat
+		"InputIdentifier": 382,	//Coal
+		"FuelIdentifier": 260,	//Hot Pepper
+		"AdditionalFuel": {
+		"399": 1,								//Spring Onion
+		"Mozzarella Pizza": 1,
+		},
+		"AdditionalOutputs": [
+			{
+				"OutputIdentifier": "Barbecue Chicken Pizza",	//1050
+				"RequiredFuel": { "684": 1 },
+				"OutputQuality": 0,
+			},
+			{
+				"OutputIdentifier": "Barbecue Chicken Pizza",	//1200
+				"RequiredFuel": { "Chicken": 1 },
+				"OutputQuality": 1,
+				"OutputPriceIncrement": -90,
+			},
+		],
+		"MinutesUntilReady": 60,
+		"Sounds": ["Ship"],
+		},
+
+	{
+	"ProducerName": "Brick Pizza Oven",	//Animal Husbandry
+	"InputIdentifier": 382,	//Coal
+	"FuelIdentifier": 260,	//Hot Pepper
+	"AdditionalFuel": {
+	"399": 1,								//Spring Onion
+	"Mozzarella Pizza": 1,
+	},
+	"AdditionalOutputs": [
+		{
+			"OutputIdentifier": "Barbecue Chicken Pizza",	//1050
+			"RequiredFuel": { "684": 1 },
+			"OutputQuality": 0,
+		},
+		{
+			"OutputIdentifier": "Barbecue Chicken Pizza (Animal Husbandry)",	//1400
+			"RequiredFuel": { "Chicken": 1 },
+		},
+	],
+	"MinutesUntilReady": 60,
+	"Sounds": ["Ship"],
+	},
+
+	//Anchovy Pizza
+
+{
+"ProducerName": "Brick Pizza Oven",
+"InputIdentifier": 129,	//Anchovy
+"InputStack": 1,
+"AdditionalFuel": {
+"399": 1,								//Spring Onion
+"Pizza Margherita": 1,
+},
+"MinutesUntilReady": 60,
+"OutputIdentifier": "Anchovy Pizza",
+"Sounds": ["Ship"],
+},
+
+//Artichoke Pizza
+
+{
+"ProducerName": "Brick Pizza Oven",
+"InputIdentifier": 274,	//Artichoke
+"InputStack": 1,
+"AdditionalFuel": {
+"250": 1,								//Kale
+"Pizza Margherita": 1,
+},
+"AdditionalOutputs": [
+	{
+		"OutputIdentifier": "Artichoke Pizza",
+		"RequiredFuel": { "186": 1 },
+		"OutputPriceIncrement": -140,
+		"OutputQuality": 1,
+	},
+	{
+		"OutputIdentifier": "Artichoke Pizza",
+		"RequiredFuel": { "184": 1 },
+	},
+],
+"MinutesUntilReady": 60,
+"Sounds": ["Ship"],
+},
+
+//Golden Corn Pizza
+
+{
+"ProducerName": "Brick Pizza Oven",
+"InputIdentifier": 270,	//Corn
+"InputStack": 1,
+"AdditionalFuel": {
+"399": 1,								//Spring Onion
+"260": 1,								//Hot Pepper
+"Mozzarella Pizza": 1,
+},
+"MinutesUntilReady": 60,
+"OutputIdentifier": "Golden Corn Pizza",
+"Sounds": ["Ship"],
+},
+
+//Meatlover
+{
+"ProducerName": "Brick Pizza Oven",	//Animal Husbandry and Fresh Meat
+"InputIdentifier": "Chicken",
+"AdditionalFuel": {
+"Mozzarella Pizza": 1,
+},
+"AdditionalOutputs": [
+	{
+		"OutputIdentifier": "Meatlover (Animal Husbandry)",	//3000
+		"RequiredFuel": { "Beef": 1, "Pork": 1 },
+		"OutputQuality": 0,
+	},
+],
+"MinutesUntilReady": 60,
+"Sounds": ["Ship"],
+},
+
+{
+"ProducerName": "Brick Pizza Oven",	//Fresh Meat
+"InputIdentifier": "Chicken",
+"AdditionalFuel": {
+"Mozzarella Pizza": 1,
+},
+"AdditionalOutputs": [
+	{
+		"OutputIdentifier": "Meatlover",	//1200
+		"RequiredFuel": { "Beef": 1, "Pork": 1 },
+		"OutputQuality": 0,
+	},
+	{
+		"OutputIdentifier": "Meatlover",	//1600
+		"RequiredFuel": { "Salami": 1, "Pork": 1 },
+		"OutputPriceIncrement": -140,
+		"OutputQuality": 2,
+	},
+	{
+		"OutputIdentifier": "Meatlover",	//1400
+		"RequiredFuel": { "Beef": 1, "Ham": 1 },
+		"OutputPriceIncrement": -80,
+		"OutputQuality": 1,
+	},
+	{
+		"OutputIdentifier": "Meatlover",	//1800
+		"RequiredFuel": { "Salami": 1, "Ham": 1 },
+		"OutputPriceIncrement": -300,
+		"OutputQuality": 3,
+	},
+],
+"MinutesUntilReady": 60,
+"Sounds": ["Ship"],
+},
+
+{
+"ProducerName": "Brick Pizza Oven",	//Animal Husbandry and Fresh Meat
+"InputIdentifier": "Chicken",
+"AdditionalFuel": {
+"Mozzarella Pizza": 1,
+},
+"AdditionalOutputs": [
+	{
+		"OutputIdentifier": "Meatlover (Animal Husbandry)",	//3000
+		"RequiredFuel": { "Beef": 1, "Pork": 1 },
+		"OutputQuality": 0,
+	},
+	{
+		"OutputIdentifier": "Meatlover (Animal Husbandry)",	//3200
+		"RequiredFuel": { "Salami": 1, "Pork": 1 },
+		"OutputPriceIncrement": -440,
+		"OutputQuality": 1,
+	},
+	{
+		"OutputIdentifier": "Meatlover (Animal Husbandry)",	//3000
+		"RequiredFuel": { "Beef": 1, "Ham": 1 },
+		"OutputQuality": 0,
+	},
+	{
+		"OutputIdentifier": "Meatlover (Animal Husbandry)",	//3200
+		"RequiredFuel": { "Salami": 1, "Ham": 1 },
+		"OutputPriceIncrement": -440,
+		"OutputQuality": 1,
+	},
+],
+"MinutesUntilReady": 60,
+"Sounds": ["Ship"],
+},
+
+//New York Style Pizza
+
+{
+"ProducerName": "Brick Pizza Oven",
+"InputIdentifier": "Mozzarella Pizza",
+"InputStack": 1,
+"AdditionalFuel": {
+"815": 1,								//Tea Leaves
+},
+"MinutesUntilReady": 60,
+"OutputIdentifier": "New York Style Pizza",
+"Sounds": ["Ship"],
+},
+
+//Pepperoni Pizza Deluxe
+
+{
+"ProducerName": "Brick Pizza Oven",
+"InputIdentifier": "Pepperoni Pizza",
+"InputStack": 1,
+"AdditionalFuel": {
+"399": 1,								//Spring Onion
+"815": 1,								//Tea Leaves
+},
+"MinutesUntilReady": 60,
+"OutputIdentifier": "Pepperoni Deluxe Pizza",
+"Sounds": ["Ship"],
+},
+
+//Pizza Ai Funghi
+
+{
+"ProducerName": "Brick Pizza Oven",
+"InputIdentifier": 404,	//Common Mushroom
+"InputStack": 3,
+"AdditionalFuel": {
+"Pizza Margherita": 1,
+},
+"MinutesUntilReady": 60,
+"OutputIdentifier": "Pizza Ai Funghi",
+"Sounds": ["Ship"],
+},
+
+//Pizza Ai Funghi (Purple)
+
+{
+"ProducerName": "Brick Pizza Oven",
+"InputIdentifier": 422,	//Purple Mushroom
+"InputStack": 1,
+"AdditionalFuel": {
+"Pizza Margherita": 1,
+},
+"MinutesUntilReady": 60,
+"OutputIdentifier": "Pizza Ai Funghi (Purple)",
+"Sounds": ["Ship"],
+},
+
+//Pizza Shawarma
+
+{
+"ProducerName": "Brick Pizza Oven",
+"InputIdentifier": "Mutton",
+"InputStack": 1,
+"AdditionalFuel": {
+"Garlic Pizza": 1,
+},
+"MinutesUntilReady": 60,
+"OutputIdentifier": "Pizza Shawarma",
+"Sounds": ["Ship"],
+},
+
+{
+"ProducerName": "Brick Pizza Oven",
+"InputIdentifier": "Mutton",
+"InputStack": 1,
+"AdditionalFuel": {
+"Garlic Pizza": 1,
+},
+"MinutesUntilReady": 60,
+"OutputIdentifier": "Pizza Shawarma (Animal Husbandry)",
+"Sounds": ["Ship"],
+},
+
+//Potato Rosemary Pizza
+
+{
+"ProducerName": "Brick Pizza Oven",
+"InputIdentifier": 192,	//Potato
+"InputStack": 1,
+"AdditionalFuel": {
+"815": 1,								//Tea Leaves
+"Pizza Margherita": 1,
+},
+"MinutesUntilReady": 60,
+"OutputIdentifier": "Potato Rosemary Pizza",
+"Sounds": ["Ship"],
+},
+
+//Sausage Pizza
+
+{
+"ProducerName": "Brick Pizza Oven",
+"InputIdentifier": "Sausage",
+"InputStack": 1,
+"AdditionalFuel": {
+"Mozzarella Pizza": 1,
+},
+"MinutesUntilReady": 60,
+"OutputIdentifier": "Sausage Pizza",
+"Sounds": ["Ship"],
+},
+
+{
+"ProducerName": "Brick Pizza Oven",
+"InputIdentifier": "Summer Sausage",
+"InputStack": 1,
+"AdditionalFuel": {
+"Mozzarella Pizza": 1,
+},
+"MinutesUntilReady": 60,
+"OutputIdentifier": "Sausage Pizza",
+"Sounds": ["Ship"],
+},
+
+//Shellfish Pizza
+
+{
+"ProducerName": "Brick Pizza Oven",
+"InputIdentifier": 720,	//Shrimp
+"InputStack": 1,
+"AdditionalFuel": {
+"723": 1,								//Oyster
+"719": 1,								//Mussel
+"Pizza Margherita": 1,
+},
+"MinutesUntilReady": 60,
+"OutputIdentifier": "Shellfish Pizza",
+"Sounds": ["Ship"],
+},
+
+//Tomato Pizza
+
+{
+"ProducerName": "Brick Pizza Oven",
+"InputIdentifier": 256,	//Tomato
+"InputStack": 1,
+"AdditionalFuel": {
+"Mozzarella Pizza": 1,
+},
+"MinutesUntilReady": 60,
+"OutputIdentifier": "Tomato Pizza",
+"Sounds": ["Ship"],
+},
+
+
+		//Iron Pizza Oven
+
+		{
+		"ProducerName": "Iron Pizza Oven",
+		"InputIdentifier": 424,	//Cheese
+		"InputStack": 1,
+		"FuelIdentifier": 256,	//Tomato
+		"FuelStack": 1,
+		"AdditionalFuel": {
+		"Pizza Bottom": 1,
+		},
+		"MinutesUntilReady": 100,
+		"OutputIdentifier": "Pizza Margherita",
+		"Sounds": ["Ship"],
+		},
+
+		{
+		"ProducerName": "Iron Pizza Oven",
+		"InputIdentifier": "Mozzarella",
+		"InputStack": 1,
+		"FuelIdentifier": 256,	//Tomato
+		"AdditionalFuel": {
+		"Pizza Bottom": 1,
+		},
+		"MinutesUntilReady": 100,
+		"OutputIdentifier": "Mozzarella Pizza",
+		"Sounds": ["Ship"],
+		},
+
+		{
+		"ProducerName": "Iron Pizza Oven",
+		"InputIdentifier": 248,
+		"InputStack": 1,
+		"FuelIdentifier": 424,	//Tomato
+		"AdditionalFuel": {
+		"Pizza Bottom": 1,
+		},
+		"MinutesUntilReady": 100,
+		"OutputIdentifier": "Garlic Pizza",
+		"Sounds": ["Ship"],
+		},
+
+			//Pepperoni Pizza
+
+		{
+			"ProducerName": "Iron Pizza Oven",	//Nothing
+			"InputIdentifier": 684,	//Bug Meat
+			"FuelIdentifier": "Pizza Margherita",
+			"MinutesUntilReady": 10,
+			"OutputIdentifier": "Pepperoni Pizza",	//680
+			"Sounds": ["Ship"],
+		},
+
+			{
+			"ProducerName": "Iron Pizza Oven",	//Fresh Meat and Animal Husbandry
+			"InputIdentifier": "Beef",
+			"FuelIdentifier": "Pizza Margherita",
+			"MinutesUntilReady": 10,
+			"OutputIdentifier": "Pepperoni Pizza", //850
+			"OutputQuality": 1,
+			"Sounds": ["Ship"],
+		},
+
+		{
+			"ProducerName": "Iron Pizza Oven",	//Fresh Meat
+			"InputIdentifier": "Salami",
+			"FuelIdentifier": "Pizza Margherita",
+			"MinutesUntilReady": 10,
+			"OutputIdentifier": "Pepperoni Pizza",	//1300
+			"OutputPriceIncrement": 170,
+			"OutputQuality": 2,
+			"Sounds": ["Ship"],
+		},
+
+
+
+			//Hawaiian Pizza
+			{
+			"ProducerName": "Iron Pizza Oven",	//If nothing else is installed
+			"InputIdentifier": 832,								//Pineapple
+			"FuelIdentifier": "Pizza Margherita",
+			"AdditionalOutputs": [
+				{
+					"OutputIdentifier": "Hawaiian Pizza",
+					"RequiredFuel": { "684": 1 },
+					"OutputQuality": 0,
+				},
+			],
+			"MinutesUntilReady": 10,
+			"Sounds": ["Ship"],
+			},
+
+		{
+		"ProducerName": "Iron Pizza Oven",	//If Fresh Meat is installed
+		"InputIdentifier": 832,								//Pineapple
+		"FuelIdentifier": "Pizza Margherita",
+		"AdditionalOutputs": [
+			{
+				"OutputIdentifier": "Hawaiian Pizza",
+				"RequiredFuel": { "684": 1 },
+				"OutputQuality": 0,
+			},
+			{
+				"OutputIdentifier": "Hawaiian Pizza",
+				"RequiredFuel": { "Pork": 1 },
+				"OutputPriceIncrement": -140,
+				"OutputQuality": 1,
+			},
+			{
+				"OutputIdentifier": "Hawaiian Pizza",	//1380
+				"RequiredFuel": { "Ham": 1 },
+				"OutputPriceIncrement": -180,
+				"OutputQuality": 2,
+			},
+		],
+		"MinutesUntilReady": 10,
+		"Sounds": ["Ship"],
+		},
+
+		{
+		"ProducerName": "Iron Pizza Oven",	//If Animal Husbandry is installed
+		"InputIdentifier": 832,								//Pineapple
+		"FuelIdentifier": "Pizza Margherita",
+		"AdditionalOutputs": [
+			{
+				"OutputIdentifier": "Hawaiian Pizza",
+				"RequiredFuel": { "684": 1 },
+				"OutputQuality": 0,
+			},
+			{
+				"OutputIdentifier": "Hawaiian Pizza (Animal Husbandry)",
+				"RequiredFuel": { "Pork": 1 },
+				"OutputQuality": 0,
+			},
+		],
+		"MinutesUntilReady": 10,
+		"Sounds": ["Ship"],
+		},
+
+		{
+		"ProducerName": "Iron Pizza Oven",	//If Animal Husbandry and Fresh Meat are installed
+		"InputIdentifier": 832,								//Pineapple
+		"FuelIdentifier": "Pizza Margherita",
+		"AdditionalOutputs": [
+			{
+				"OutputIdentifier": "Hawaiian Pizza",
+				"RequiredFuel": { "684": 1 },
+				"OutputQuality": 0,
+			},
+			{
+				"OutputIdentifier": "Hawaiian Pizza",	//1380
+				"RequiredFuel": { "Ham": 1 },
+				"OutputPriceIncrement": -180,
+				"OutputQuality": 2,
+			},
+			{
+				"OutputIdentifier": "Hawaiian Pizza (Animal Husbandry)",
+				"RequiredFuel": { "Pork": 1 },
+				"OutputQuality": 0,
+			},
+		],
+		"MinutesUntilReady": 10,
+		"Sounds": ["Ship"],
+		},
+
+
+	{
+	"ProducerName": "Iron Pizza Oven",	//Fresh Meat
+	"InputIdentifier": "Ham",
+	"FuelIdentifier": 832,	//Pineapple
+	"AdditionalFuel": {
+	"Pizza Margherita": 1,
+	},
+	"MinutesUntilReady": 10,
+	"OutputIdentifier": "Hawaiian Pizza",
+	"OutputPriceIncrement": -180,
+	"OutputQuality": 2,
+	"Sounds": ["Ship"],
+	},
+
+	{
+	"ProducerName": "Iron Pizza Oven",	//Fresh Meat Pork
+	"InputIdentifier": "Pork",
+	"FuelIdentifier":	832,	//Pineapple
+	"AdditionalFuel": {
+	"Pizza Margherita": 1,
+	},
+	"MinutesUntilReady": 10,
+	"OutputIdentifier": "Hawaiian Pizza",
+	"OutputPriceIncrement": -140,
+	"OutputQuality": 1,
+	"Sounds": ["Ship"],
+	},
+
+	{
+	"ProducerName": "Iron Pizza Oven",	//Animal Husbandry Pork
+	"InputIdentifier": "Pork",
+	"FuelIdentifier":	832,	//Pineapple
+	"AdditionalFuel": {
+	"Pizza Margherita": 1,
+	},
+	"MinutesUntilReady": 10,
+	"OutputIdentifier": "Hawaiian Pizza (Animal Husbandry)",
+	"OutputQuality": 0,
+	"Sounds": ["Ship"],
+	},
+
+			//Cheese Pizza
+
+		{
+		"ProducerName": "Iron Pizza Oven",
+		"InputIdentifier": 426,	//Goat Cheese
+		"InputStack": 1,
+		"FuelIdentifier": "Mozzarella",
+		"FuelStack": 1,
+		"AdditionalFuel": {
+		"Pizza Margherita": 1,
+		},
+		"MinutesUntilReady": 10,
+		"OutputIdentifier": "Cheese Pizza",
+		"Sounds": ["Ship"],
+		},
+
+		{
+		"ProducerName": "Iron Pizza Oven",
+		"InputIdentifier": 426,	//Goat Cheese
+		"InputStack": 1,
+		"FuelIdentifier": 424,	//Cheese
+		"FuelStack": 1,
+		"AdditionalFuel": {
+		"Mozzarella Pizza": 1,
+		},
+		"MinutesUntilReady": 10,
+		"OutputIdentifier": "Cheese Pizza",
+		"Sounds": ["Ship"],
+		},
+
+			//Pizza Alla Diavola
+
+		{
+		"ProducerName": "Iron Pizza Oven",	//Nothing
+		"InputIdentifier": 260,		//Hot pepper
+		"InputStack": 1,
+		"FuelIdentifier": "Mozzarella Pizza",
+		"FuelStack": 1,
+		"AdditionalOutputs": [
+			{
+				"OutputIdentifier": "Pizza Alla Diavola",
+				"RequiredFuel": { "684": 1 },
+				"OutputQuality": 0,
+			},
+		],
+		"MinutesUntilReady": 10,
+		"Sounds": ["Ship"],
+		},
+
+		{
+		"ProducerName": "Iron Pizza Oven", //Animal Husbandry
+		"InputIdentifier": 260,		//Hot pepper
+		"InputStack": 1,
+		"FuelIdentifier": "Mozzarella Pizza",
+		"FuelStack": 1,
+		"AdditionalOutputs": [
+			{
+				"OutputIdentifier": "Pizza Alla Diavola",
+				"RequiredFuel": { "684": 1 },
+				"OutputQuality": 0,
+			},
+			{
+				"OutputIdentifier": "Pizza Alla Diavola",
+				"RequiredFuel": { "Beef": 1 },
+				"OutputQuality": 1,
+			},
+		],
+		"MinutesUntilReady": 10,
+		"Sounds": ["Ship"],
+		},
+
+		{
+		"ProducerName": "Iron Pizza Oven", //Fresh Meat
+		"InputIdentifier": 260,		//Hot pepper
+		"InputStack": 1,
+		"FuelIdentifier": "Mozzarella Pizza",
+		"FuelStack": 1,
+		"AdditionalOutputs": [
+			{
+				"OutputIdentifier": "Pizza Alla Diavola",
+				"RequiredFuel": { "684": 1 },
+				"OutputQuality": 0,
+			},
+			{
+				"OutputIdentifier": "Pizza Alla Diavola",
+				"RequiredFuel": { "Beef": 1 },
+				"OutputQuality": 1,
+			},
+			{
+				"OutputIdentifier": "Pizza Alla Diavola",
+				"RequiredFuel": { "Salami": 1 },
+				"OutputPriceIncrement": 170,
+				"OutputQuality": 2,
+			},
+		],
+		"MinutesUntilReady": 10,
+		"Sounds": ["Ship"],
+		},
+
+			//Pizza Pesto
+
+		{
+		"ProducerName": "Iron Pizza Oven",
+		"InputIdentifier": 247,	//Oil
+		"InputStack": 1,
+		"FuelIdentifier": 815,	//Tea Leaves
+		"FuelStack": 1,
+		"AdditionalFuel": {
+		"248": 1,								//Garlic
+		"Mozzarella": 1,
+		"Pizza Bottom": 1,
+		},
+		"MinutesUntilReady": 100,
+		"OutputIdentifier": "Pizza Pesto",
+		"Sounds": ["Ship"],
+		},
+
+			//Pizza Vegetariana
+
+		{
+		"ProducerName": "Iron Pizza Oven",
+		"InputIdentifier": 272,	//Eggplant
+		"InputStack": 1,
+		"FuelIdentifier": 260,	//Hot Pepper
+		"FuelStack": 1,
+		"AdditionalFuel": {
+		"Mozzarella Pizza": 1,
+		},
+		"MinutesUntilReady": 10,
+		"OutputIdentifier": "Pizza Vegetariana",
+		"Sounds": ["Ship"],
+		},
+
+			//Tuna Pizza
+
+		{
+		"ProducerName": "Iron Pizza Oven",
+		"InputIdentifier": 130,	//Tuna
+		"InputStack": 1,
+		"FuelIdentifier": 399,	//Spring Onion
+		"FuelStack": 1,
+		"AdditionalFuel": {
+		"Pizza Margherita": 1,
+		},
+		"MinutesUntilReady": 10,
+		"OutputIdentifier": "Tuna Pizza",
+		"Sounds": ["Ship"],
+		},
+
+			//Vegan Pizza
+
+		{
+		"ProducerName": "Iron Pizza Oven",
+		"InputIdentifier": 399,	//Spring Union
+		"InputStack": 1,
+		"FuelIdentifier": 260,	//Hot Pepper
+		"FuelStack": 1,
+		"AdditionalFuel": {
+		"404": 1,								//Common Mushroom
+		"Pizza Margherita": 1,
+		},
+		"MinutesUntilReady": 10,
+		"OutputIdentifier": "Vegan Pizza",
+		"Sounds": ["Ship"],
+		},
+
+
+			//Barbecue Chicken Pizza
+			{
+			"ProducerName": "Iron Pizza Oven",	//Nothing
+			"InputIdentifier": 382,	//Coal
+			"FuelIdentifier": 260,	//Hot Pepper
+			"AdditionalFuel": {
+			"399": 1,								//Spring Onion
+			"Mozzarella Pizza": 1,
+			},
+			"AdditionalOutputs": [
+				{
+					"OutputIdentifier": "Barbecue Chicken Pizza",	//1050
+					"RequiredFuel": { "684": 1 },
+					"OutputQuality": 0,
+				},
+			],
+			"MinutesUntilReady": 10,
+			"Sounds": ["Ship"],
+			},
+
+			{
+			"ProducerName": "Iron Pizza Oven",	//Fresh Meat
+			"InputIdentifier": 382,	//Coal
+			"FuelIdentifier": 260,	//Hot Pepper
+			"AdditionalFuel": {
+			"399": 1,								//Spring Onion
+			"Mozzarella Pizza": 1,
+			},
+			"AdditionalOutputs": [
+				{
+					"OutputIdentifier": "Barbecue Chicken Pizza",	//1050
+					"RequiredFuel": { "684": 1 },
+					"OutputQuality": 0,
+				},
+				{
+					"OutputIdentifier": "Barbecue Chicken Pizza",	//1200
+					"RequiredFuel": { "Chicken": 1 },
+					"OutputQuality": 1,
+					"OutputPriceIncrement": -90,
+				},
+			],
+			"MinutesUntilReady": 10,
+			"Sounds": ["Ship"],
+			},
+
+		{
+		"ProducerName": "Iron Pizza Oven",	//Animal Husbandry
+		"InputIdentifier": 382,	//Coal
+		"FuelIdentifier": 260,	//Hot Pepper
+		"AdditionalFuel": {
+		"399": 1,								//Spring Onion
+		"Mozzarella Pizza": 1,
+		},
+		"AdditionalOutputs": [
+			{
+				"OutputIdentifier": "Barbecue Chicken Pizza",	//1050
+				"RequiredFuel": { "684": 1 },
+				"OutputQuality": 0,
+			},
+			{
+				"OutputIdentifier": "Barbecue Chicken Pizza (Animal Husbandry)",	//1400
+				"RequiredFuel": { "Chicken": 1 },
+			},
+		],
+		"MinutesUntilReady": 10,
+		"Sounds": ["Ship"],
+		},
+
+		//Anchovy Pizza
+
+	{
+	"ProducerName": "Iron Pizza Oven",
+	"InputIdentifier": 129,	//Anchovy
+	"InputStack": 1,
+	"AdditionalFuel": {
+	"399": 1,								//Spring Onion
+	"Pizza Margherita": 1,
+	},
+	"MinutesUntilReady": 10,
+	"OutputIdentifier": "Anchovy Pizza",
+	"Sounds": ["Ship"],
+	},
+
+	//Artichoke Pizza
+
+	{
+	"ProducerName": "Iron Pizza Oven",
+	"InputIdentifier": 274,	//Artichoke
+	"InputStack": 1,
+	"AdditionalFuel": {
+	"250": 1,								//Kale
+	"Pizza Margherita": 1,
+	},
+	"AdditionalOutputs": [
+		{
+			"OutputIdentifier": "Artichoke Pizza",
+			"RequiredFuel": { "186": 1 },
+			"OutputPriceIncrement": -140,
+			"OutputQuality": 1,
+		},
+		{
+			"OutputIdentifier": "Artichoke Pizza",
+			"RequiredFuel": { "184": 1 },
+		},
+	],
+	"MinutesUntilReady": 10,
+	"Sounds": ["Ship"],
+	},
+
+	//Golden Corn Pizza
+
+	{
+	"ProducerName": "Iron Pizza Oven",
+	"InputIdentifier": 270,	//Corn
+	"InputStack": 1,
+	"AdditionalFuel": {
+	"399": 1,								//Spring Onion
+	"260": 1,								//Hot Pepper
+	"Mozzarella Pizza": 1,
+	},
+	"MinutesUntilReady": 10,
+	"OutputIdentifier": "Golden Corn Pizza",
+	"Sounds": ["Ship"],
+	},
+
+	//Meatlover
+	{
+	"ProducerName": "Iron Pizza Oven",	//Animal Husbandry and Fresh Meat
+	"InputIdentifier": "Chicken",
+	"AdditionalFuel": {
+	"Mozzarella Pizza": 1,
+	},
+	"AdditionalOutputs": [
+		{
+			"OutputIdentifier": "Meatlover (Animal Husbandry)",	//3000
+			"RequiredFuel": { "Beef": 1, "Pork": 1 },
+			"OutputQuality": 0,
+		},
+	],
+	"MinutesUntilReady": 10,
+	"Sounds": ["Ship"],
+	},
+
+	{
+	"ProducerName": "Iron Pizza Oven",	//Fresh Meat
+	"InputIdentifier": "Chicken",
+	"AdditionalFuel": {
+	"Mozzarella Pizza": 1,
+	},
+	"AdditionalOutputs": [
+		{
+			"OutputIdentifier": "Meatlover",	//1200
+			"RequiredFuel": { "Beef": 1, "Pork": 1 },
+			"OutputQuality": 0,
+		},
+		{
+			"OutputIdentifier": "Meatlover",	//1600
+			"RequiredFuel": { "Salami": 1, "Pork": 1 },
+			"OutputPriceIncrement": -140,
+			"OutputQuality": 2,
+		},
+		{
+			"OutputIdentifier": "Meatlover",	//1400
+			"RequiredFuel": { "Beef": 1, "Ham": 1 },
+			"OutputPriceIncrement": -80,
+			"OutputQuality": 1,
+		},
+		{
+			"OutputIdentifier": "Meatlover",	//1800
+			"RequiredFuel": { "Salami": 1, "Ham": 1 },
+			"OutputPriceIncrement": -300,
+			"OutputQuality": 3,
+		},
+	],
+	"MinutesUntilReady": 10,
+	"Sounds": ["Ship"],
+	},
+
+	{
+	"ProducerName": "Iron Pizza Oven",	//Animal Husbandry and Fresh Meat
+	"InputIdentifier": "Chicken",
+	"AdditionalFuel": {
+	"Mozzarella Pizza": 1,
+	},
+	"AdditionalOutputs": [
+		{
+			"OutputIdentifier": "Meatlover (Animal Husbandry)",	//3000
+			"RequiredFuel": { "Beef": 1, "Pork": 1 },
+			"OutputQuality": 0,
+		},
+		{
+			"OutputIdentifier": "Meatlover (Animal Husbandry)",	//3200
+			"RequiredFuel": { "Salami": 1, "Pork": 1 },
+			"OutputPriceIncrement": -440,
+			"OutputQuality": 1,
+		},
+		{
+			"OutputIdentifier": "Meatlover (Animal Husbandry)",	//3000
+			"RequiredFuel": { "Beef": 1, "Ham": 1 },
+			"OutputQuality": 0,
+		},
+		{
+			"OutputIdentifier": "Meatlover (Animal Husbandry)",	//3200
+			"RequiredFuel": { "Salami": 1, "Ham": 1 },
+			"OutputPriceIncrement": -440,
+			"OutputQuality": 1,
+		},
+	],
+	"MinutesUntilReady": 10,
+	"Sounds": ["Ship"],
+	},
+
+	//New York Style Pizza
+
+	{
+	"ProducerName": "Iron Pizza Oven",
+	"InputIdentifier": "Mozzarella Pizza",
+	"InputStack": 1,
+	"AdditionalFuel": {
+	"815": 1,								//Tea Leaves
+	},
+	"MinutesUntilReady": 10,
+	"OutputIdentifier": "New York Style Pizza",
+	"Sounds": ["Ship"],
+	},
+
+	//Pepperoni Pizza Deluxe
+
+	{
+	"ProducerName": "Iron Pizza Oven",
+	"InputIdentifier": "Pepperoni Pizza",
+	"InputStack": 1,
+	"AdditionalFuel": {
+	"399": 1,								//Spring Onion
+	"815": 1,								//Tea Leaves
+	},
+	"MinutesUntilReady": 10,
+	"OutputIdentifier": "Pepperoni Deluxe Pizza",
+	"Sounds": ["Ship"],
+	},
+
+	//Pizza Ai Funghi
+
+	{
+	"ProducerName": "Iron Pizza Oven",
+	"InputIdentifier": 404,	//Common Mushroom
+	"InputStack": 3,
+	"AdditionalFuel": {
+	"Pizza Margherita": 1,
+	},
+	"MinutesUntilReady": 10,
+	"OutputIdentifier": "Pizza Ai Funghi",
+	"Sounds": ["Ship"],
+	},
+
+	//Pizza Ai Funghi (Purple)
+
+	{
+	"ProducerName": "Iron Pizza Oven",
+	"InputIdentifier": 422,	//Purple Mushroom
+	"InputStack": 1,
+	"AdditionalFuel": {
+	"Pizza Margherita": 1,
+	},
+	"MinutesUntilReady": 10,
+	"OutputIdentifier": "Pizza Ai Funghi (Purple)",
+	"Sounds": ["Ship"],
+	},
+
+	//Pizza Shawarma
+
+	{
+	"ProducerName": "Iron Pizza Oven",
+	"InputIdentifier": "Mutton",
+	"InputStack": 1,
+	"AdditionalFuel": {
+	"Garlic Pizza": 1,
+	},
+	"MinutesUntilReady": 10,
+	"OutputIdentifier": "Pizza Shawarma",
+	"Sounds": ["Ship"],
+	},
+
+	{
+	"ProducerName": "Iron Pizza Oven",
+	"InputIdentifier": "Mutton",
+	"InputStack": 1,
+	"AdditionalFuel": {
+	"Garlic Pizza": 1,
+	},
+	"MinutesUntilReady": 10,
+	"OutputIdentifier": "Pizza Shawarma (Animal Husbandry)",
+	"Sounds": ["Ship"],
+	},
+
+	//Potato Rosemary Pizza
+
+	{
+	"ProducerName": "Iron Pizza Oven",
+	"InputIdentifier": 192,	//Potato
+	"InputStack": 1,
+	"AdditionalFuel": {
+	"815": 1,								//Tea Leaves
+	"Pizza Margherita": 1,
+	},
+	"MinutesUntilReady": 10,
+	"OutputIdentifier": "Potato Rosemary Pizza",
+	"Sounds": ["Ship"],
+	},
+
+	//Sausage Pizza
+
+	{
+	"ProducerName": "Iron Pizza Oven",
+	"InputIdentifier": "Sausage",
+	"InputStack": 1,
+	"AdditionalFuel": {
+	"Mozzarella Pizza": 1,
+	},
+	"MinutesUntilReady": 10,
+	"OutputIdentifier": "Sausage Pizza",
+	"Sounds": ["Ship"],
+	},
+
+	{
+	"ProducerName": "Iron Pizza Oven",
+	"InputIdentifier": "Summer Sausage",
+	"InputStack": 1,
+	"AdditionalFuel": {
+	"Mozzarella Pizza": 1,
+	},
+	"MinutesUntilReady": 10,
+	"OutputIdentifier": "Sausage Pizza",
+	"Sounds": ["Ship"],
+	},
+
+	//Shellfish Pizza
+
+	{
+	"ProducerName": "Iron Pizza Oven",
+	"InputIdentifier": 720,	//Shrimp
+	"InputStack": 1,
+	"AdditionalFuel": {
+	"723": 1,								//Oyster
+	"719": 1,								//Mussel
+	"Pizza Margherita": 1,
+	},
+	"MinutesUntilReady": 10,
+	"OutputIdentifier": "Shellfish Pizza",
+	"Sounds": ["Ship"],
+	},
+
+	//Tomato Pizza
+
+	{
+	"ProducerName": "Iron Pizza Oven",
+	"InputIdentifier": 256,	//Tomato
+	"InputStack": 1,
+	"AdditionalFuel": {
+	"Mozzarella Pizza": 1,
+	},
+	"MinutesUntilReady": 10,
+	"OutputIdentifier": "Tomato Pizza",
+	"Sounds": ["Ship"],
+	},
+
+	//Mozzarella Machine
+
+	{
+	"ProducerName": "Mozzarella Machine",
+	"InputIdentifier": 184,
+	"MinutesUntilReady": 1000,
+	"OutputIdentifier": "Mozzarella",
+	"Sounds": ["Ship"],
+	},
+	{
+	"ProducerName": "Mozzarella Machine",
+	"InputIdentifier": 186,
+	"MinutesUntilReady": 1000,
+	"OutputIdentifier": "Mozzarella",
+	"OutputStack": 2,
+	"Sounds": ["Ship"],
+	},
+
+
+	//Pizza Cutter
+
+	{
+	"ProducerName": "Pizza Cutter",
+	"InputIdentifier": "Pizza Margherita",
+	"InputPriceBased": true,
+	"MinutesUntilReady": 10,
+	"OutputIdentifier": "Sliced Pizza Margherita",
+	"KeepInputQuality": true,
+	"OutputPriceMultiplier": 0.15,
+	"OutputStack": 8,
+	"Sounds": ["Ship"],
+	},
+	{
+	"ProducerName": "Pizza Cutter",
+	"InputIdentifier": "Mozzarella Pizza",
+	"InputPriceBased": true,
+	"MinutesUntilReady": 10,
+	"OutputIdentifier": "Sliced Mozzarella Pizza",
+	"KeepInputQuality": true,
+	"OutputPriceMultiplier": 0.15,
+	"OutputStack": 8,
+	"Sounds": ["Ship"],
+	},
+	{
+	"ProducerName": "Pizza Cutter",
+	"InputIdentifier": "Barbecue Chicken Pizza",
+	"InputPriceBased": true,
+	"MinutesUntilReady": 10,
+	"OutputIdentifier": "Sliced Barbecue Chicken Pizza",
+	"KeepInputQuality": true,
+	"OutputPriceMultiplier": 0.15,
+	"OutputStack": 8,
+	"Sounds": ["Ship"],
+	},
+	{
+	"ProducerName": "Pizza Cutter",
+	"InputIdentifier": "Cheese Pizza",
+	"InputPriceBased": true,
+	"MinutesUntilReady": 10,
+	"OutputIdentifier": "Sliced Cheese Pizza",
+	"KeepInputQuality": true,
+	"OutputPriceMultiplier": 0.15,
+	"OutputStack": 8,
+	"Sounds": ["Ship"],
+	},
+	{
+	"ProducerName": "Pizza Cutter",
+	"InputIdentifier": "Hawaiian Pizza",
+	"InputPriceBased": true,
+	"MinutesUntilReady": 10,
+	"OutputIdentifier": "Sliced Hawaiian Pizza",
+	"KeepInputQuality": true,
+	"OutputPriceMultiplier": 0.15,
+	"OutputStack": 8,
+	"Sounds": ["Ship"],
+	},
+	{
+	"ProducerName": "Pizza Cutter",
+	"InputIdentifier": "Pepperoni Pizza",
+	"InputPriceBased": true,
+	"MinutesUntilReady": 10,
+	"OutputIdentifier": "Sliced Pepperoni Pizza",
+	"KeepInputQuality": true,
+	"OutputPriceMultiplier": 0.15,
+	"OutputStack": 8,
+	"Sounds": ["Ship"],
+	},
+	{
+	"ProducerName": "Pizza Cutter",
+	"InputIdentifier": "Pizza Alla Diavola",
+	"InputPriceBased": true,
+	"MinutesUntilReady": 10,
+	"OutputIdentifier": "Sliced Pizza Alla Diavola",
+	"KeepInputQuality": true,
+	"OutputPriceMultiplier": 0.15,
+	"OutputStack": 8,
+	"Sounds": ["Ship"],
+	},
+	{
+	"ProducerName": "Pizza Cutter",
+	"InputIdentifier": "Pizza Pesto",
+	"InputPriceBased": true,
+	"MinutesUntilReady": 10,
+	"OutputIdentifier": "Sliced Pizza Pesto",
+	"KeepInputQuality": true,
+	"OutputPriceMultiplier": 0.15,
+	"OutputStack": 8,
+	"Sounds": ["Ship"],
+	},
+	{
+	"ProducerName": "Pizza Cutter",
+	"InputIdentifier": "Pizza Vegetariana",
+	"InputPriceBased": true,
+	"MinutesUntilReady": 10,
+	"OutputIdentifier": "Sliced Pizza Vegetariana",
+	"KeepInputQuality": true,
+	"OutputPriceMultiplier": 0.15,
+	"OutputStack": 8,
+	"Sounds": ["Ship"],
+	},
+	{
+	"ProducerName": "Pizza Cutter",
+	"InputIdentifier": "Tuna Pizza",
+	"InputPriceBased": true,
+	"MinutesUntilReady": 10,
+	"OutputIdentifier": "Sliced Tuna Pizza",
+	"KeepInputQuality": true,
+	"OutputPriceMultiplier": 0.15,
+	"OutputStack": 8,
+	"Sounds": ["Ship"],
+	},
+	{
+	"ProducerName": "Pizza Cutter",
+	"InputIdentifier": "Vegan Pizza",
+	"InputPriceBased": true,
+	"MinutesUntilReady": 10,
+	"OutputIdentifier": "Sliced Vegan Pizza",
+	"KeepInputQuality": true,
+	"OutputPriceMultiplier": 0.15,
+	"OutputStack": 8,
+	"Sounds": ["Ship"],
+	},
+	{
+	"ProducerName": "Pizza Cutter",
+	"InputIdentifier": "Anchovy Pizza",
+	"InputPriceBased": true,
+	"MinutesUntilReady": 10,
+	"OutputIdentifier": "Sliced Anchovy Pizza",
+	"KeepInputQuality": true,
+	"OutputPriceMultiplier": 0.15,
+	"OutputStack": 8,
+	"Sounds": ["Ship"],
+	},
+	{
+	"ProducerName": "Pizza Cutter",
+	"InputIdentifier": "Artichoke Pizza",
+	"InputPriceBased": true,
+	"MinutesUntilReady": 10,
+	"OutputIdentifier": "Sliced Artichoke Pizza",
+	"KeepInputQuality": true,
+	"OutputPriceMultiplier": 0.15,
+	"OutputStack": 8,
+	"Sounds": ["Ship"],
+	},
+	{
+	"ProducerName": "Pizza Cutter",
+	"InputIdentifier": "Garlic Pizza",
+	"InputPriceBased": true,
+	"MinutesUntilReady": 10,
+	"OutputIdentifier": "Sliced Garlic Pizza",
+	"KeepInputQuality": true,
+	"OutputPriceMultiplier": 0.15,
+	"OutputStack": 8,
+	"Sounds": ["Ship"],
+	},
+	{
+	"ProducerName": "Pizza Cutter",
+	"InputIdentifier": "Golden Corn Pizza",
+	"InputPriceBased": true,
+	"MinutesUntilReady": 10,
+	"OutputIdentifier": "Sliced Golden Corn Pizza",
+	"KeepInputQuality": true,
+	"OutputPriceMultiplier": 0.15,
+	"OutputStack": 8,
+	"Sounds": ["Ship"],
+	},
+	{
+	"ProducerName": "Pizza Cutter",
+	"InputIdentifier": "Meatlover",
+	"InputPriceBased": true,
+	"MinutesUntilReady": 10,
+	"OutputIdentifier": "Sliced Meatlover",
+	"KeepInputQuality": true,
+	"OutputPriceMultiplier": 0.15,
+	"OutputStack": 8,
+	"Sounds": ["Ship"],
+	},
+	{
+	"ProducerName": "Pizza Cutter",
+	"InputIdentifier": "Meatlover (Animal Husbandry)",
+	"InputPriceBased": true,
+	"MinutesUntilReady": 10,
+	"OutputIdentifier": "Sliced Meatlover (Animal Husbandry)",
+	"KeepInputQuality": true,
+	"OutputPriceMultiplier": 0.15,
+	"OutputStack": 8,
+	"Sounds": ["Ship"],
+	},
+	{
+	"ProducerName": "Pizza Cutter",
+	"InputIdentifier": "New York Style Pizza",
+	"InputPriceBased": true,
+	"MinutesUntilReady": 10,
+	"OutputIdentifier": "Sliced New York Style Pizza",
+	"KeepInputQuality": true,
+	"OutputPriceMultiplier": 0.15,
+	"OutputStack": 8,
+	"Sounds": ["Ship"],
+	},
+	{
+	"ProducerName": "Pizza Cutter",
+	"InputIdentifier": "Pepperoni Deluxe Pizza",
+	"InputPriceBased": true,
+	"MinutesUntilReady": 10,
+	"OutputIdentifier": "Sliced Pepperoni Deluxe Pizza",
+	"KeepInputQuality": true,
+	"OutputPriceMultiplier": 0.15,
+	"OutputStack": 8,
+	"Sounds": ["Ship"],
+	},
+	{
+	"ProducerName": "Pizza Cutter",
+	"InputIdentifier": "Pizza Ai Funghi",
+	"InputPriceBased": true,
+	"MinutesUntilReady": 10,
+	"OutputIdentifier": "Sliced Pizza Ai Funghi",
+	"KeepInputQuality": true,
+	"OutputPriceMultiplier": 0.15,
+	"OutputStack": 8,
+	"Sounds": ["Ship"],
+	},
+	{
+	"ProducerName": "Pizza Cutter",
+	"InputIdentifier": "Pizza Ai Funghi (Purple)",
+	"InputPriceBased": true,
+	"MinutesUntilReady": 10,
+	"OutputIdentifier": "Sliced Pizza Ai Funghi (Purple)",
+	"KeepInputQuality": true,
+	"OutputPriceMultiplier": 0.15,
+	"OutputStack": 8,
+	"Sounds": ["Ship"],
+	},
+	{
+	"ProducerName": "Pizza Cutter",
+	"InputIdentifier": "Pizza Shawarma",
+	"InputPriceBased": true,
+	"MinutesUntilReady": 10,
+	"OutputIdentifier": "Sliced Pizza Shawarma",
+	"KeepInputQuality": true,
+	"OutputPriceMultiplier": 0.15,
+	"OutputStack": 8,
+	"Sounds": ["Ship"],
+	},
+	{
+	"ProducerName": "Pizza Cutter",
+	"InputIdentifier": "Pizza Shawarma (Animal Husbandry)",
+	"InputPriceBased": true,
+	"MinutesUntilReady": 10,
+	"OutputIdentifier": "Sliced Pizza Shawarma (Animal Husbandry)",
+	"KeepInputQuality": true,
+	"OutputPriceMultiplier": 0.15,
+	"OutputStack": 8,
+	"Sounds": ["Ship"],
+	},
+	{
+	"ProducerName": "Pizza Cutter",
+	"InputIdentifier": "Potato Rosemary Pizza",
+	"InputPriceBased": true,
+	"MinutesUntilReady": 10,
+	"OutputIdentifier": "Sliced Potato Rosemary Pizza",
+	"KeepInputQuality": true,
+	"OutputPriceMultiplier": 0.15,
+	"OutputStack": 8,
+	"Sounds": ["Ship"],
+	},
+	{
+	"ProducerName": "Pizza Cutter",
+	"InputIdentifier": "Sausage Pizza",
+	"InputPriceBased": true,
+	"MinutesUntilReady": 10,
+	"OutputIdentifier": "Sliced Sausage Pizza",
+	"KeepInputQuality": true,
+	"OutputPriceMultiplier": 0.15,
+	"OutputStack": 8,
+	"Sounds": ["Ship"],
+	},
+	{
+	"ProducerName": "Pizza Cutter",
+	"InputIdentifier": "Shellfish Pizza",
+	"InputPriceBased": true,
+	"MinutesUntilReady": 10,
+	"OutputIdentifier": "Sliced Shellfish Pizza",
+	"KeepInputQuality": true,
+	"OutputPriceMultiplier": 0.15,
+	"OutputStack": 8,
+	"Sounds": ["Ship"],
+	},
+	{
+	"ProducerName": "Pizza Cutter",
+	"InputIdentifier": "Tomato Pizza",
+	"InputPriceBased": true,
+	"MinutesUntilReady": 10,
+	"OutputIdentifier": "Sliced Tomato Pizza",
+	"KeepInputQuality": true,
+	"OutputPriceMultiplier": 0.15,
+	"OutputStack": 8,
+	"Sounds": ["Ship"],
+	},
+]

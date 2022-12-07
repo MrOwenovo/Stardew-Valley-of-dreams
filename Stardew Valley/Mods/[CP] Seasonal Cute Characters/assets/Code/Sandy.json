@@ -1,0 +1,54 @@
+{
+	"Changes": [
+		{
+			"LogName": "Sandy - Seasonal",
+			"Action": "EditImage",
+			"Target": "Portraits/Sandy, Characters/Sandy",
+			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{season}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Sandy - Festival",
+			"Action": "EditImage",
+			"Target": "Portraits/Sandy, Characters/Sandy",
+            "FromFile": "assets/{{TargetPathOnly}}/Festivals/{{Festival}}/{{TargetWithoutPath}}_{{Festival}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"FestivalOutfits": "True",
+			},
+			"Update": "OnLocationChange",
+		},
+		
+// NOSE OVERLAY
+		{
+			"LogName": "Sandy - Seasonal Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Sandy",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"NoNose": "false",
+			},
+		},
+		
+// MISCELLANEOUS		
+		{
+			"LogName": "Sandy - Emoji",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+            "FromFile": "assets/{{NoNose}}/Random/emojis.png",
+			"FromArea": {"X": 108, "Y": 99, "Width": 9, "Height": 9},
+			"ToArea": {"X": 108, "Y": 99, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+	]
+}

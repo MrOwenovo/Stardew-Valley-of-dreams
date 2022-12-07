@@ -1,0 +1,98 @@
+{
+	"Changes": [
+		{
+			"LogName": "Sebastian - Seasonal",
+			"Action": "EditImage",
+			"Target": "Portraits/Sebastian, Characters/Sebastian",
+			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Sebastian - Winter Indoor/Outdoor",
+			"Action": "EditImage",
+			"Target": "Portraits/Sebastian, Characters/Sebastian",
+			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+                "Season": "Winter",
+                "WinterIndoorOutdoorOutfits": "IndoorOutdoor",
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Sebastian - Festival",
+			"Action": "EditImage",
+			"Target": "Portraits/Sebastian, Characters/Sebastian",
+            "FromFile": "assets/{{TargetPathOnly}}/Festivals/{{Festival}}/{{TargetWithoutPath}}_{{Festival}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"FestivalOutfits": "True",
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Sebastian - Beach",
+			"Action": "EditImage",
+			"Target": "Portraits/Sebastian_Beach, Characters/Sebastian_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Beach/{{TargetWithoutPath}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		
+// NOSE OVERLAY
+		{
+			"LogName": "Sebastian - Seasonal Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Sebastian",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"NoNose": "false",
+			},
+		},
+		{
+			"LogName": "Sebastian - Beach Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Sebastian_Beach",
+            "FromFile": "assets/{{TargetPathOnly}}/Beach/{{TargetWithoutPath}}_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"NoNose": "false",
+			},
+		},
+		
+// MISCELLANEOUS		
+		{
+			"LogName": "Sebastian - Emoji",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+            "FromFile": "assets/{{NoNose}}/Random/emojis.png",
+			"FromArea": {"X": 72, "Y": 99, "Width": 9, "Height": 9},
+			"ToArea": {"X": 72, "Y": 99, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{  
+			"LogName": "Sebastian - Motorbike Cursors",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"Update": "OnLocationChange",
+			"FromFile": "assets/{{NoNose}}/Random/Cursors_{{Season}}.png",
+			"FromArea": { "X": 405, "Y": 1854, "Width": 47, "Height": 33 },
+			"ToArea": { "X": 405, "Y": 1854, "Width": 47, "Height": 33 },
+		},
+	]
+}

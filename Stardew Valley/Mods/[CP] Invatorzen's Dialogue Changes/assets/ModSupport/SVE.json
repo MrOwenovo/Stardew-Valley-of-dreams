@@ -1,0 +1,198 @@
+{
+    "Changes": [
+        //Changes for SDVE involving Sabrina -------------------------------------------------------------------------------------------	
+        //Robin event
+        {
+            "Action": "EditData",
+            "Target": "data/events/backwoods",
+            "Entries": {
+            "1000029_WonderfulJob": "pause 600/speak Robin \"很高兴听到这个消息!$1\"/pause 2000/speak Robin \"你爷爷在农场工作的时候，我还没来谷地。$0#$b#我想你爷爷退休的时候，萨布丽娜可能是两三岁左右。$5\"/pause 1500/speak Robin \"现在的农田太美了，真是不可思议。$1#$b#我记得在新闻中提到它的时候，我读到过它! 那是很久以前的事了。$0#$b#我希望你能再接受一次采访，@。从那时起，你已经取得了更大的进步。$1\"/pause 600/emote farmer 32/pause 200/emote Robin 32/pause 1250/speak Robin \"我要回家洗澡了。如果你需要什么，以后再来找我。$0\"/pause 500/globalFade/viewport -1000 -1000/pause 700/end dialogue Robin \"嘿，感谢你给我的所有生意，@.#$b#看到我的建筑物得到很好的利用，真是令人惊讶。$1\""
+            },
+            "When": {"Sabrina": "true"}
+        },
+    
+        //Abigail 12th event
+        {
+            "Action": "EditData",
+            "Target": "characters/dialogue/Abigail",
+            "Entries": {	
+            "abigail_event12": "我确实告诉了我妈妈，她很......震惊？$2#$b#她告诉我，我的想象力过于活跃，我只是看到了一些东西。她不把我当回事$9#$b#我还告诉了萨布丽娜。她对我笑了笑。$3",
+            },
+            "When": { "Sabrina": "true"}
+        },
+        
+        //String from maps fix for Sabrina
+        {
+            "Action": "EditData",
+            "Target": "Strings/StringsFromMaps",
+            "Entries": {
+            "Town-Fair.32": "这是萨布丽娜的摩托车。她开到这里来了？她的房子甚至没有那么远。",
+            "SebastianRoomSVE.5": "萨布丽娜的合成器"
+            },
+            "When": {"Sabrina": "true"}
+        },
+        
+        //Sabrina mature event
+        {
+            "Action": "EditData",
+            "Target": "data/events/mountain",
+            "Entries": {
+            "1000005/f Sebastian 1750/k 384882/w sunny/z winter/z fall/t 2030 2500": "spring_night_ambient/-500 -500/farmer 40 31 0 Sebastian 48 25 1/animate Sebastian false true 150 16 17 18 19 20 21 22 23 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16/pause 300/viewport 48 25 true/pause 1000/move farmer 0 -6 1/pause 500/emote farmer 8/pause 400/move farmer 6 0 1/pause 800/question fork0 \"#嘿，你还好吗？#你应该停止吸烟。这是不健康的.\"/fork 1000005_SaySomething/pause 500/speak Sebastian \"...$5#$b#不要告诉我该怎么做。走吧。$5\"/pause 500/friendship Sebastian -100/globalFade/viewport -1000 -1000/pause 700/end dialogue Sebastian \"你看。抽烟可以帮助我放松。你没有任何资格告诉我该做什么。#$e#%萨布丽娜没有理会你。\"",
+            "1000005_SaySomething": "pause 900/speak Sebastian \"...$2\"/pause 500/question fork0 \"#嘿，混蛋，你为什么不理我？#一切都好吗？\"/fork 1000005_EverythingOkay/pause 500/emote Sebastian 12/speak Sebastian \"...让我一个人呆着。$5#$b#你是个烦人精。$5\"/pause 250/emote farmer 28 true/pause 200/globalFade/viewport -1000 -1000/pause 700/friendship Sebastian -250/end dialogue Sebastian \"你看。有时我想一个人待着。我的生活很复杂。$0#$e#我不需要向你解释我自己。$5#$e#%萨布丽娜没有理会你。\"",
+            "1000005_EverythingOkay": "pause 1300/stopAnimation Sebastian/pause 500/move Sebastian 0 0 3/pause 500/speak Sebastian \"听着... 我现在有很多事情要考虑。我只是想一个人在外面想想。$0\"/pause 1000/move Sebastian 0 0 0/pause 500/emote Sebastian 28/pause 1000/move Sebastian 0 0 3/pause 500/speak Sebastian \"但也许... 我想和别人交谈可能会有帮助。$2\"/pause 500/question fork1 \"#你可以跟我说。#去找山姆或阿比盖尔.\"/fork 1000005_Friends/pause 500/emote Sebastian 12/pause 250/speak Sebastian \"好的，所以你可以离开...$5\"/pause 500/globalFade/viewport -1000 -1000/pause 700/friendship Sebastian -150/end dialogue Sebastian \"阿比盖尔和我聊了一会儿。这正是我需要的。$1\"",
+            "1000005_Friends": "pause 900/move Sebastian 0 0 1/pause 300/stopMusic/pause 1000/playMusic echos/pause 1200/speak Sebastian \"我昨晚做了一个... ...可怕的噩梦，关于我的父亲。不是德米特里厄斯。我的生父。$2#$b#我尽量不去想他。这只会让我想起不好的回忆。$2#$b#我妈妈和他离婚是有原因的。$2\"/pause 1000/move Sebastian 0 0 3/pause 500/speak Sebastian \"他有虐待行为，是个酒鬼，还是个赌徒。每当他输钱的时候，他就会把气撒在我和妈妈身上......$2#$b#把她所有的积蓄都拿去赌博了。他甚至偷了我在开始做网页设计之前的那份兼职工作的工资单。$2\"/pause 1500/speak Sebastian \"我的父亲从不接受拒绝的答案......$2\"/pause 1500/move Sebastian 0 0 1/pause 1000/speak Sebastian \"最后，妈妈受够了。她厌倦了他从我们这里偷走一切，所以她把我们的钱藏了起来。他...$0#$b#他不喜欢这样...$2\"/pause 1500/emote Sebastian 28/pause 2000/move Sebastian 0 0 2/pause 250/move Sebastian 0 0 3/pause 1300/speak Sebastian \"我们再也不会见到他了。摆脱困境的好办法。$0\"/pause 1300/emote Sebastian 40/pause 1600/speak Sebastian \"I... 我不知道我为什么要讲这个。我没有告诉任何人关于我父亲的事，甚至连马鲁也没有。$2\"/pause 1000/speak Sebastian \"...$2\"/pause 1000/speak Sebastian \"但你知道吗？我感觉就像从我的胸口卸下了20吨的重担，我又可以呼吸了。$0#$b#我对这件事已经感觉很糟糕了很久了。$2\"/pause 500/move Sebastian 0 0 3/pause 600/question fork1 \"#你在生活中经历了这么多......#我听了你说的大部分内容.\"/fork 1000005_Promise/pause 400/stopMusic/pause 400/emote Sebastian 12/speak Sebastian \"...离我远点，@。你真让人难以置信。$5\"/pause 500/globalFade/viewport -1000 -1000/pause 700/friendship Sebastian -750/end dialogue Sebastian \"...$5#$e#%萨布丽娜没有理会你。\"",
+            "1000005_Promise": "pause 750/speak Sebastian \"...$1\"/friendship Sebastian 100/pause 500/speak Sebastian \"我还要再思考一下。我还有很多事情需要处理。$2#$b#......谢谢你和我谈话。$2\"/pause 500/globalFade/viewport -1000 -1000/pause 1000/end dialogue Sebastian \"你知道......我告诉你的是我想带进坟墓的东西。$2#$b#你需要对我告诉你的事保密。$0#$e#%萨布丽娜笑了。你感觉到她对你更信任了。\""
+            },
+            "When": {"Sabrina": "true"}
+        },
+        
+        //Sam event
+        {
+            "Action": "EditData",
+            "Target": "data/events/saloon",
+            "Entries": {
+            "1000004/f Sam 1250/t 1300 1800": "none/-500 -500/farmer -200 -200 0 Sam 33 18 0 Wizard 7 6 1 MarlonFay 8 6 3 Gus 12 18 2/showFrame MarlonFay 12/animate Gus false true 500 18 19 20 19/viewport 33 18 true/skippable/playMusic cowboy_boss/playSound Cowboy_gunshot/pause 250/playSound Cowboy_gunshot/pause 250/playSound Cowboy_gunshot/pause 250/playSound Cowboy_gunshot/pause 250/playSound Cowboy_gunshot/pause 250/shake Sam 1000/textAboveHead Sam \"我已经是最后的生命了！？\"/playSound Cowboy_gunshot/pause 250/playSound cowboy_monsterhit/pause 100/playSound Cowboy_gunshot/pause 250/playSound Cowboy_gunshot/pause 250/playSound Cowboy_gunshot/pause 250/playSound Cowboy_gunshot/playSound Cowboy_monsterDie/pause 250/playSound cowboy_monsterhit/pause 100/playSound Cowboy_gunshot/pause 250/playSound Cowboy_gunshot/pause 150/playSound Cowboy_gunshot/pause 150/playSound Cowboy_gunshot/pause 250/playSound Cowboy_monsterDie/pause 250/playSound Cowboy_gunshot/pause 250/playSound Cowboy_gunshot/playSound Cowboy_monsterDie/pause 250/pause 250/playSound Cowboy_gunshot/pause 250/playSound cowboy_monsterhit/pause 100/playSound Cowboy_gunshot/pause 250/shake Sam 1000/textAboveHead Sam \"向左躲避... 向右躲避...\"/playSound Cowboy_gunshot/pause 250/playSound Cowboy_gunshot/pause 250/playSound Cowboy_gunshot/pause 250/playSound Cowboy_gunshot play/pause 250/playSound Cowboy_monsterDie/pause 250/playSound Cowboy_gunshot/pause 250/playSound Cowboy_gunshot play/pause 250/playSound Cowboy_monsterDie/playSound Cowboy_gunshot/playSound Cowboy_monsterDie/pause 250/pause 250/playSound Cowboy_gunshot/pause 250/playSound Cowboy_gunshot/pause 250/playSound Cowboy_gunshot/pause 250/playSound cowboy_powerup/pause 150/playSound Cowboy_gunshot/pause 250/playSound Cowboy_gunshot/pause 250/playSound cowboy_monsterhit/pause 100/playSound Cowboy_gunshot play/pause 250/playSound Cowboy_monsterDie/playSound Cowboy_gunshot/pause 250/pause 500/playSound cowboy_monsterhit/pause 250/shake Sam 1000/textAboveHead Sam \"他就快死了！！\"/playSound Cowboy_gunshot/pause 250/playSound Cowboy_gunshot/pause 250/playSound Cowboy_monsterDie/playSound Cowboy_gunshot/pause 250/playSound Cowboy_gunshot/pause 250/playSound Cowboy_gunshot/pause 250/playSound Cowboy_monsterDie/pause 250/playSound Cowboy_gunshot/pause 250/playSound Cowboy_gunshot/pause 250/textAboveHead Wizard \"不可能......不是另一个人.\"/playSound Cowboy_gunshot/pause 250/playSound cowboy_monsterhit/pause 100/playSound Cowboy_gunshot/pause 250/pause 250/playSound Cowboy_gunshot/pause 250/playSound Cowboy_gunshot/pause 250/playSound Cowboy_gunshot/pause 250/playSound cowboy_monsterhit/pause 100/playSound Cowboy_gunshot/pause 250/playSound Cowboy_gunshot/pause 250/playSound Cowboy_gunshot/pause 250/playSound Cowboy_gunshot/playSound Cowboy_monsterDie/pause 250/playSound cowboy_monsterhit/pause 100/playSound Cowboy_gunshot/pause 250/playSound Cowboy_gunshot/pause 150/playSound Cowboy_gunshot/pause 150/playSound Cowboy_gunshot/pause 250/playSound Cowboy_monsterDie/pause 250/playSound Cowboy_gunshot/pause 250/playSound cowboy_dead/playMusic none/pause 350/shake Sam 3000/speak Sam \"不!!!$8\"/emote Sam 12/pause 350/playSound doorClose/warp farmer 14 24/pause 300/textAboveHead Sam \"唉...\"/move farmer 0 -3 1/move farmer 6 0 0 true/pause 3000/textAboveHead Sam \"我差一点就能打败他了...\"/move farmer 0 -2 1/move farmer 6 0 1 true/pause 3000/textAboveHead Sam \"这是不可能的...\"/move farmer 5 0 0/move farmer 0 -1 1/pause 500/emote farmer 8/move Sam 0 0 3/playMusic jaunty/emote Sam 16/speak Sam \"嘿！没看到你！$8\"/pause 500/move Sam 0 0 0/pause 1000/textAboveHead MarlonFay \"...这是，马格努斯.\"/move Sam 0 0 3/pause 500/speak Sam \"在这上面花了太多的钱之后，我终于到了《草原之王的旅程》的最后一个阶段......结果被最后的Boss完全踩扁了。$2\"/pause 400/speak Sam \"$q -1 null#你对草原王有什么好办法吗？#$r -1 0 sam_event1#进入了后期阶段。这是个困难的游戏.#$r -1 0 sam_event2#我已经打败了它，并拥有了街机!#$r -1 0 sam_event3#我不玩街机游戏。它们是一种时间的浪费。\"/pause 1000/move Sam 0 0 0/pause 250/textAboveHead Wizard \"我将通知理事会...\"/emote Sam 40/speak Sam \"你知道制作这款游戏的开发者是来自松江梅沙市吗？他独自编码了整个游戏。他的名字是ConcernedMonkey.$1#$b#我在网上给他发过几次信息，问他打游戏的技巧，他总是回复! 我不知道还有哪个游戏开发者能像他一样酷!$0\"/pause 500/move Sam 0 0 3/pause 500/speak Sam \"弹吉他是我的爱好，我将尽力成为一名音乐家。$1#$b#但万一这不成功，我想学习编码作为备份。设计游戏会很酷。$0#$b#塞布丽娜是一个超级熟练的编码员! 她是一个自由职业者的网页设计师。我相信她可以帮助我开始学习。$1\"/pause 500/textAboveHead MarlonFay \"我相信那是最好的结果，我的朋友.\"/pause 500/move Sam 0 1 3/move farmer 0 0 2/move Sam -2 0 0/speak Sam \"趁着我口袋里还有硬币，我现在要出去了。$0#$b#当你不能再集中注意力时，继续玩街机游戏不是个好主意。$1#$b#你只是不断地尝试，尝试和花更多的钱--这就是他们如何得到你。$5\"/pause 500/move Sam 0 0 3/pause 500/move Sam 0 0 0/pause 250/textAboveHead Wizard \"直到我们下次见面，马龙.\"/pause 100/speak Sam \"和你聊天很开心，@！我会在翻牌的时候找你的。$1\"/pause 400/globalFade/viewport -1000 -1000/pause 700/friendship Sam 50/end"
+            },
+            "When": {"Sabrina": "true"}
+        },
+        
+        //Changes for SDVE involving Harriet ---------------------------------------------------------------------------------------
+        
+        //George event, references Harriet
+        {
+            "Action": "EditData",
+            "Target": "data/events/seedshop",
+            "Entries": {
+            "1000017_EverythingOkay": "pause 1000/emote George 28/pause 1400/speak George \"...我从哈里特那里得到了坏消息。$2\"/pause 800/move George 0 0 2/pause 500/playMusic echos/pause 500/animate George false true 999999 16/pause 1500/speak George \"我早上比平时更疼，但我觉得这不是什么大事。$2#$b#几天前，伊夫林强迫我去诊所。哈里特发现了囊肿，是......癌症的结果。$2\"/pause 300/emote farmer 60/pause 1200/move farmer 1 0 1/pause 650/speak George \"我告诉了艾芙琳和亚历克斯。他们不太接受这个消息......$2#$b#艾芙琳说，我们会在费恩吉尔共和国找到最好的外科医生来切除它们。$2#$b#哈里特还推荐了祖祖城的一些专家。$2\"/pause 1500/speak George \"说实话，我很害怕，@.$2#$b#在这种时候，我只能在向尤巴祈祷中找到慰藉。$2\"/pause 1000/stopAnimation George/pause 650/move George 0 0 0/pause 1300/speak George \"尤巴以前在我要求的时候帮助过我。我相信尤巴会借给我力量来度过难关。$0\"/pause 200/question fork1 \"#你有朋友和家人在这里支持你。#祈祷不会让事情变得更好.\"/fork 1000017_GetThroughThis/pause 500/stopMusic/pause 600/shake George 1000/emote George 28/pause 500/move George 0 0 3/pause 500/speak George \"...离开。$2#$b#跟你说话肯定没有帮助。$2\"/globalFade/viewport -1000 -1000/pause 700/friendship George -1000/end dialogue George \"不要改变我应该和不应该相信的东西，@.$0#$b#特别是当我刚告诉你我病得很重时......$2\""
+            },
+            "When": {"Harriet": "true"}
+        },
+        
+        //Jodi event, references Harriet
+        {
+            "Action": "EditData",
+            "Target": "characters/dialogue/Jodi",
+            "Entries": {
+            "jodi_event2": "谢谢你的主意，@.$2#$b#我会跟哈莉特谈这个问题。我相信她会很高兴为我们介绍人。$2"
+            },
+            "When": {"Harriet": "true"}
+        },
+        
+        //Jodi mature event, references Harriet
+        {
+            "Action": "EditData",
+            "Target": "data/events/town",
+            "Entries": { 
+            "1000018_TalkToMe": "pause 500/stopMusic/pause 1200/move Jodi 0 0 1/pause 800/speak Jodi \"...$2#$b#是肯特...$2#$b#我爱他，我很高兴他终于回家了，但是...$2\"/pause 1000/playMusic echos/pause 1100/speak Jodi \"自从他回来后，他就......他已经不是那个人了。$2#$b#他再也不笑了。他不愿意和我说话。他几乎无视文森特和山姆。他几乎不吃任何食物。我们没有...$2\"/pause 200/move Jodi 0 0 0/pause 250/emote Jodi 12/pause 600/move Jodi 0 0 1/pause 450/speak Jodi \"他对他所经历的一些恐怖事件有了一些了解。 他见过的东西。 他失去的朋友。 被捕时的经历...$2#$b#昨天，文森特在看动画片，不小心按了遥控器上的一个按钮，把电视弄成了静止的。$2#$b#肯特立即倒在了地上 然后把手放在头上...$2#$b#后来，他告诉我，在他的基地，电视屏幕会在警报响起之前进入静止状态。 当他们听到它时，每个人都知道他们必须掩护。$2\"/pause 200/emote Jodi 28/pause 200/speak Jodi \"哈里特给了他一些药，应该有助于缓解创伤后应激障碍的症状。$2#$b#我无法判断它是否有作用。$2\"/pause 600/move Jodi 0 0 0/pause 500/textAboveHead Jodi \"*哭泣*...\"/shake Jodi 1000/pause 500/emote farmer 60/pause 700/speak Jodi \"他伤得很重，我不知道如何帮助他，@。我感到很无助...$2\"/pause 500/speak Jodi \"$q -1 null#(我应该说什么)#$r -1 0 jodi_event1#肯特现在比以往更需要你.#$r -1 0 jodi_event2#你可能想在祖祖或松花江市寻找一个治疗师.\"/pause 750/move Jodi 0 0 0/pause 1000/move Jodi 0 0 1/pause 600/speak Jodi \"...$2#$b#我很抱歉，@。我把所有的东西都装在瓶子里，我可能说得太多了。$2#$b#谢谢你听我说。你、奥利维亚和卡罗琳是我最亲密的朋友，你们总是在我身边。$2.\"/pause 1500/speak Jodi \"我希望有一天我也能在你身边。$0\"/pause 500/speak Jodi \"$q -1 null#(我应该说什么)#$r -1 0 jodi_event3#如果你有任何需要，不要犹豫，请问.#$r -1 0 jodi_event4#通过共同努力，没有什么是你们两个不能完成的。\"/pause 1700/move Jodi 0 0 1/pause 500/speak Jodi \"我将遵循你给我的建议。$1\"/pause 750/move Jodi 0 0 0/pause 550/speak Jodi \"我需要给这些花浇完水，好吗？我以后再跟你谈。再次感谢你.$0\"/pause 500/globalFade/viewport -1000 -1000/pause 700/end dialogue Jodi \"谢谢你之前和我谈话，@。我知道该怎么做才能帮助肯特。我想事情很快就会好转。$0\""
+            },
+            "When": {"Harriet": "true"}
+        },
+        
+        //Olivia changes, references Harriet
+        {
+            "Action": "EditData",	 
+            "Target": "Characters/Dialogue/Olivia",
+            "Entries": { 
+            "fall_Mon8": "你工作得很辛苦，亲爱的! 哈里特医生提供的这种能量补剂将帮助你恢复精力。[349]$3#$e#祝你有个美好的一天!$1",
+            "winter_Sun": "我觉得我好像开始生病了。这个冬天异常寒冷。$2#$e#我需要去看望一下哈丽特。我们很幸运，在山谷里有一位经验丰富的医生。$0",
+            "winter_Sun8": "你还好吗，@？ 你看起来有点苍白。$6#$e#......确保你好好照顾你的健康，亲爱的。你可能想去看看哈丽特。$6#$e#我不希望你发生任何事情。$2"
+            },
+            "When": {"Harriet": "true"}
+        },
+        
+        {
+            "Action": "EditData",	 
+            "Target": "Characters/Dialogue/MarriageDialogueOlivia",
+            "Entries": { 
+            "Bad_2": "我感觉不舒服。我应该去看哈瑞特医生。$2#$b#你可能想远离，以防传染。$2"
+            },
+            "When": {"Harriet": "true"}
+        },
+        
+        //Sophia change, references Harriet
+        {
+            "Action": "EditData",	 
+            "Target": "Characters/Dialogue/Sophia",
+            "Entries": { 
+            "Hospital_6_17": "嗯，我正忙着从哈维医生那里拿药呢。$2"
+            },
+            "When": {"Harriet": "true"}
+        },
+        
+        //Victor change, references Harriet
+        {
+            "Action": "EditData",	 
+            "Target": "Characters/Dialogue/MarriageDialogueVictor",
+            "Entries": { 
+            "Outdoor_Victor": "我从哈里特医生那里为你买了一种健康补品。$1#$b#这将使你的身体充满活力，这样你就可以完成更多的工作。[349]$1#$e#祝你有个美好的一天!$3",
+            "Bad_4": "我想我昨天晚上生病了。我觉得很恶心。不要碰我，@.$2#$e#我不想让你也生病! 我今天会从哈丽特医生那里拿些药。$2"
+            },
+            "When": {"Harriet": "true"}
+        },
+        
+        //Olivia change, references Harriet
+        { 
+            //OLIVIA 6 HEART EVENT
+            "Action": "EditData",
+            "Target": "Data/Events/Saloon",
+            "Entries": {
+            "4000003/d Mon Tue Wed Thu Sat Sun/f Olivia 1500/t 1700 2200/w sunny": "Saloon1/-500 -500/farmer 14 24 0 Olivia 20 18 3 Victor 42 18 3 Sophia 8 20 0 Pierre 16 20 1 Susan 12 20 0 Andy 3 22 3 Caroline 17 20 3 Jodi 18 20 0 Willy 17 22 2 Clint 19 23 3 Shane 24 18 2 Robin 22 22 1 Wizard 7 6 1 MarlonFay 8 6 3 Demetrius 23 22 3 Lewis 9 22 3 Marnie 8 22 1 Pam 7 18 1 Elliott 4 19 2 Leah 2 20 1 Gus 10 18 2 Emily 14 17 0 Harvey 10 20 0 Haley 32 18 1 Alex 33 18 0 Sam 42 21 3 Sebastian 36 21 1 Abigail 40 18 1 Maru 14 20 0/skippable/positionOffset Haley 0 -20/animate Elliott false true 200 16 17 18 19 18 17 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16/animate Lewis false true 200 19 22 23 22 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19/animate Marnie false true 200 20 21 22 23 22 21 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20/animate Andy false true 100 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 25 26 27 27 27 27 27 26 25 24 24/animate Robin false true 500 20 21 22 21/animate Demetrius false true 500 24 25 26 25/animate Shane false true 200 20 21 22 23 22 21 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20/animate Sam true true 1000 34 4/animate Olivia false true 150 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 17 18 19 19 19 19 19 18 17 16 16 16 16 16 16/animate Victor false true 150 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 25 26 27 27 27 27 26 25 24 24 24 24 24 24 24 24/showFrame MarlonFay 12/pause 600/viewport 14 19 true/pause 150/playSound doorClose/skippable/pause 400/emote farmer 16/pause 500/move farmer 0 -3 0/pause 400/move Emily -1 0 0/pause 200/textAboveHead Maru \"请给我一个 '红月亮'!\"/pause 900/textAboveHead Haley \"小心!\"/shake Haley 1250/pause 600/move Emily 0 0 2/pause 900/textAboveHead Emily \"好的，马鲁!\"/pause 500/move Emily 2 0 0/pause 400/textAboveHead Gus \"谢谢，哈利特!\"/pause 800/shake Alex 1500/textAboveHead Alex \"啊! 我死了...\"/pause 700/shake Haley 500/pause 400/emote farmer 40 true/pause 300/textAboveHead Harvey \"谢谢，格斯.\"/pause 1250/speak Olivia \"@! 在这里，亲爱的!$1\"/move farmer 0 0 1/pause 600/move farmer 6 0 0 true/pause 800/textAboveHead Victor \"哈哈!\"/pause 2300/move Emily -1 0 0 true/pause 250/textAboveHead Lewis \"玛尼! 哈哈!\"/pause 200/shake Lewis 1250/pause 200/stopAnimation Olivia/move Olivia 0 0 2 true/speak Olivia \"今晚的酒馆座无虚席。我想我从来没有见过这么拥挤的地方。$1\"/pause 400/textAboveHead Caroline \"哈哈!\"/shake Caroline 1000/pause 400/speak Olivia \"艾米丽很快就会接受你的订单。$0#$b#当她看到我们时，我会为你招手。$1\"/pause 200/move Emily 0 1 2/pause 300/textAboveHead Emily \"马鲁，这里!\"/move farmer 0 -2 0/pause 500/speak Olivia \"这款酒来自蓝月亮葡萄园! 索菲亚制作了一些费恩吉尔共和国最好的葡萄酒，而且是在如此年轻的时候$1\"/pause 400/textAboveHead Pam \"格斯!!!\"/shake Pam 750/pause 600/move Gus 0 0 3/emote Gus 8 true/pause 400/move farmer 0 0 0/speak Olivia \"我非常不喜欢啤酒。它的味道像发霉的面包。$0#$b#我更喜欢干红葡萄酒。我有一个个人收藏，在我的地窖里装满了复古的瓶子。$3\"/pause 250/textAboveHead MarlonFay \"嗯... 我明白了.\"/pause 300/move Gus -1 0 3 true/pause 250/textAboveHead Maru \"谢谢你!\"/pause 250/speak Olivia \"位于蕨岛群岛的阳光葡萄园生产精致的环形水果酒。$1#$b#他们的瓶子每瓶售价5000G。比索菲亚的贵多了。$3\"/pause 300/emote farmer 16 true/pause 250/move Harvey 1 0 0 true/pause 500/textAboveHead Alex \"!!!\"/shake Alex 1000/pause 200/speak Olivia \"收集葡萄酒是我的一个昂贵的爱好。$1\"/pause 200/move Emily 4 0 1 true/pause 250/textAboveHead Gus \"过来，帕姆!\"/pause 300/move Olivia 0 0 3 true/pause 400/move farmer 0 0 3/move Gus 2 0 0/move Gus 0 -1 0 true/speak Emily \"对不起, @! 今晚我的手很忙。有这么多的人!$0\"/pause 300/textAboveHead Pierre \"哈哈!\"/shake Pierre 1000/pause 500/speak Emily \"你想喝什么？$1\"/move Gus 0 1 2/move Gus -2 0 3 true/speak Emily \"$q -1 null#*** ** **星落酒馆鸡尾酒菜单** ** ***#$r -1 0 emily_event1#'射击彗星' - 成分。威士忌，青柠汁，薄荷叶，糖#$r -1 0 emily_event2#'月球之光' - 成分。金酒，糖浆，青柠汁，气泡水#$r -1 0 emily_event3#'玫瑰星云'- 成分。伏特加，红莓汁，君度酒，青柠汁#$r -1 0 emily_event4#'大爆炸'- 成分。白朗姆酒，黑朗姆酒，桔子可乐，桔子糖浆，柠檬汁#$r -1 0 emily_event5#'红月亮' - 成分。龙舌兰酒，橙汁，格林纳丁糖浆\"/pause 250/textAboveHead Gus \"这儿，帕姆!\"/shake Haley 700/pause 300/speak Emily \"我马上带着你的饮料回来，@!$0\"/speed Emily 2/move Emily -4 0 3 true/pause 350/textAboveHead Marnie \"哦，我明白了!\"/pause 500/textAboveHead Pam \"谢谢!\"/shake Pam 700/pause 350/move Olivia 0 0 2 true/pause 500/move Emily 0 -1 0/pause 250/move farmer 0 0 0/pause 300/speak Olivia \"艾米丽是个出色的女服务员。我最喜欢的鸡尾酒是红月亮。$1#$b#不过我对今晚的酒很满意。$6\"/pause 300/textAboveHead Caroline \"哈哈!!\"/shake Caroline 1000/pause 500/textAboveHead Wizard \"现在是时候...\"/pause 500/shake Emily 500/pause 400/textAboveHead Sebastian \"更加努力!\"/pause 400/move Emily 0 1 2/move Emily 4 0 1 true/pause 800/move Gus 1 0 2 true/pause 400/move farmer 0 0 3/pause 500/move Olivia 0 0 3/pause 500/speak Emily \"给你，@！享受吧$1\"/pause 400/emote farmer 32/pause 200/move Emily 0 -1 0/move Emily -4 0 0 true/pause 400/move Olivia 0 0 2 true/pause 500/textAboveHead Lewis \"哈哈!!!\"/shake Lewis 800/move farmer 0 0 0/pause 500/speak Olivia \"哦！我占用了你所有的时间。$1#$b#你要去电玩室？$0#$b#维克多和其他人现在在那里。$3#$b#我很喜欢我们的谈话，亲爱的。祝你有一个美好的夜晚。$3\"/pause 300/emote farmer 32 true/pause 250/textAboveHead Pam \"另一个!\"/pause 650/move Gus 0 0 3 true/pause 300/emote Gus 16 true/pause 800/move farmer 8 0 1 true/pause 1000/move Olivia 0 0 3 true/pause 500/showFrame Olivia 16 true/pause 800/globalFade/viewport -1000 -1000/friendship Olivia 35/end position 33 18",
+            },
+            "When": {"Harriet": "true"}
+        },
+        
+        {       
+            //JODI MATURE EVENT
+            "Action": "EditData",
+            "Target": "data/events/town",
+            "Entries": { 
+            "1000018/f Jodi 2500/z spring/z fall/z winter/t 1000 1700/y 2/w sunny": "springtown/-500 -500/farmer 24 90 3 Jodi 13 90 0/pause 300/skippable/viewport 16 90 true/pause 250/playSound wateringCan/move farmer -5 0 3/playSound wateringCan/move farmer -4 0 3/pause 600/move Jodi 0 0 1/pause 200/emote Jodi 16/pause 150/speak Jodi \"你好，@.$1#$b#今天很热。在这样的高温下，花儿需要比平时更多的水。$1\"/pause 600/move Jodi -1 0 0/pause 600/playSound wateringCan/pause 600/speak Jodi \"浇水就可以了!$1\"/pause 1000/playSound wateringCan/pause 900/emote Jodi 28/pause 700/question fork1 \"#走开#你还好吗？\"/fork 1000018_TalkToMe/pause 500/speak Jodi \"...$2\"/pause 500/globalFade/viewport -1000 -1000/pause 700/end"
+            },
+            "When": {"Harriet": "true"}
+        },
+        
+        //Harvey change, references Harriet
+        {
+            "Action": "EditData",
+            "Target": "data/events/hospital",
+            "Entries": {
+            "1000003/f Harvey 1250/k 528052/p Harvey/t 900 1300": "jaunty/-500 -500/farmer 10 12 0 Harvey 2 5 0/pause 300/skippable/viewport 6 7 true/move farmer 0 -2 3/textAboveHead Harvey \"AE-134.01胶囊...\"/move farmer -5 0 0/doAction 5 9/pause 200/textAboveHead Harvey \"150mg 和 200mg...\"/move farmer 0 -5 3/move farmer -1 0 3/emote farmer 8/speak Harvey \"20个 250mg 胶囊. 每天两次，每次一粒，与食物一起服用，在早餐和晚餐后。避免饮酒。保持冷藏...$0\"/pause 500/move Harvey 0 0 1/emote Harvey 16/speak Harvey \"哦，@！我没看到你进来了！$8\"/pause 500/move Harvey 0 0 0/pause 1000/move Harvey 0 0 1/pause 500/speak Harvey \"我正在为格兰普顿的一个病人开处方。$1#$b#城市周围农村地区的一些人依赖这个诊所。$0#$b#你听到我自言自语了吗？这些信息是高度机密的。$5\"/pause 100/question fork0 \"你需要把这些信息保密。#我不会告诉任何人。#我为什么要保密？\"/fork 1000003_KeepSecret/pause 500/speak Harvey \"...@, 我以为你理解我对工作的认真态度。我对你感到很失望。$2\"/pause 1000/move Harvey 0 0 0/pause 500/speak Harvey \"我有工作要做。出去的时候请把门关上......$2\"/pause 500/globalFade/viewport -1000 -1000/pause 700/friendship Harvey -250/end dialogue Harvey \"...$5#$e#%哈里特看起来对我很失望.\"",
+            },
+            "When": {"Harriet": "true"}
+        },
+        
+        //Harvey change, references Harriet
+        {
+            "Action": "EditData",
+            "Target": "data/events/hospital",
+            "Entries": {
+            "1000003/f Harvey 1250/k 528052/p Harvey/t 900 1300": "jaunty/-500 -500/farmer 10 12 0 Harvey 2 5 0/pause 300/skippable/viewport 6 7 true/move farmer 0 -2 3/textAboveHead Harvey \"AE-134.01 胶囊...\"/move farmer -5 0 0/doAction 5 9/pause 200/textAboveHead Harvey \"150mg 和 200mg...\"/move farmer 0 -5 3/move farmer -1 0 3/emote farmer 8/speak Harvey \"20个 250mg 胶囊. 每天两次，每次一粒，与食物一起服用，在早餐和晚餐后。避免饮酒。保持冷藏...$0\"/pause 500/move Harvey 0 0 1/emote Harvey 16/speak Harvey \"哦，@！我没看到你进来了！$8\"/pause 500/move Harvey 0 0 0/pause 1000/move Harvey 0 0 1/pause 500/speak Harvey \"我正在为格兰普顿的一个病人开处方。$1#$b#城市周围农村地区的一些人依赖这个诊所。$0#$b#你听到我自言自语了吗？这些信息是高度机密的。$5\"/pause 100/question fork0 \"你需要把这些信息保密。#我不会告诉任何人。#我为什么要保密？\"/fork 1000003_KeepSecret/pause 500/speak Harvey \"...@, 我以为你理解我对工作的认真态度。我对你感到很失望。$2\"/pause 1000/move Harvey 0 0 0/pause 500/speak Harvey \"我有工作要做。出去的时候请把门关上...$2\"/pause 500/globalFade/viewport -1000 -1000/pause 700/friendship Harvey -250/end dialogue Harvey \"...$5#$e#%哈里特看起来对我很失望.\"",
+            },
+            "When": {"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true", "Harriet": "true"}
+        },
+        
+        //Changes for SDVE involving Shane ---------------------------------------------------------------------------------------
+        
+        //Marnie event 2, mentions Shane
+        {
+            "Action": "EditData",	 
+            "Target": "data/events/forest",
+            "Entries": { 
+            "1000510_MarnieMelon": "pause 200/speak Marnie \"谢恩最近承担了更多的牲畜责任，让我有更多时间照顾庄稼。$0#$b#感谢她的帮助。$1\"/pause 500/move Marnie 0 0 0/pause 800/move Marnie 0 0 1/pause 300/speak Marnie \"我在这里就要结束了，@。我很喜欢我们的谈话!$1\"/pause 200/globalFade/viewport -1000 -1000/pause 1200/friendship Marnie 50/end dialogue Marnie \"嗨，@。我很欣赏我们之前在我的花园里的聊天。$1\""
+            },
+            "When": {"Female Shane": "true"}
+        },
+    
+        //Morris mentions Shane
+        {
+        "Action": "EditData",	 
+        "Target": "Characters/Dialogue/Morris",
+        "Entries": { 
+            "Mon": "又一个富有成效的工作周开始了。我希望谢恩这周的表现比上一周好。$0#$e#我发誓那女孩一天比一天懒散。也许我会扣掉她的工资。$3",
+            "summer_Sat": "我昨天从那个叫亚历克斯的女孩那里购买了冰激凌。它很好吃。$1#$b#也许乔亚应该开始卖冰淇淋。也许有一个市场？$5",
+        },
+        "When": {"Female Shane": "true"}
+        },
+    
+    ]
+}

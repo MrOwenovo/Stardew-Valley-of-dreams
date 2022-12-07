@@ -1,0 +1,110 @@
+<html>
+<head>
+<title>Schedule</title>
+<style>
+
+body {background-color: #184f9a;}
+textarea, .buttons {font-weight: bold;}
+</style>
+</head>
+<body>
+<h1>Ayeisha's Very Basic Schedule Maker</h1>
+In Ayeisha's content.json there is a section for you to insert your own custom schedule if you want her to visit a custom NPC you wish her to deliver to.
+<form name="form" id="form">
+<img src="data:image/png;base64,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" />
+<select name="hour" id="hour">
+	<option value="6">6</option>  
+	<option value="7">7</option>  
+	<option value="8">8</option>  
+	<option value="9">9</option>  
+	<option value="10">10</option>  
+	<option value="11">11</option>  
+	<option value="12">12</option>  
+	<option value="13">13</option>  
+	<option value="14">14</option>  
+	<option value="15">15</option>  
+	<option value="16">16</option>  
+	<option value="17">17</option>
+	<option value="18">18</option>  
+	<option value="19">19</option>
+	<option value="20">20</option>
+	<option value="21">21</option>  
+	<option value="22">22</option>
+	<option value="23">23</option>  
+	<option value="24">24</option> 
+	<option value="25">25</option> 
+	<option value="26">26</option> 
+</select>
+<select name="minute" id="minute">
+	<option value="00">00</option>  
+	<option value="10">10</option>  
+	<option value="20">20</option>  
+	<option value="30">30</option>  
+	<option value="40">40</option>  
+	<option value="50">50</option>  
+</select>
+<select name="locations" id="locations">
+	<option value=" Custom_AyeishaVanRoad 3 11 0">Ayeisha's Van (HOME TIME)</option>  
+	<option value=" Town 51 64 0">Alex</option>
+	<option value=" Forest 70 74 0">Andy (SVE)</option>
+	<option value=" Town 95 82 0">Clint</option>  
+	<option value=" Beach 42 7 0">Elliot</option>  
+	<option value=" Town 41 72 0">Gus</option>  
+	<option value=" Town 21 90 0">Haley</option>  
+	<option value=" Town 8 89 0">Jodi</option>  
+	<option value=" Forest 100 34 0">Leah</option>  
+	<option value=" Town 56 87 0">Lewis</option>  
+	<option value=" Forest 89 24 0">Marnie</option>  
+	<option value=" Town 99 93 0">Museum</option>
+	<option value=" Town 67 53 0">Olivia (SVE)</option>		
+	<option value=" Town 68 71 0">Pam</option>  
+	<option value=" Town 46 57 0">Pierre</option>
+	<option value=" Mountain 9 27 0">Robin</option>
+	<option value=" Custom_BlueMoonVineyard 30 48 0">Sophia (SVE)</option>	
+	<option value=" Railroad 34 54 0">Susan (SVE)</option>
+	<option value=" Beach 27 34 0">Willy</option>
+	<option value=" Custom_ESVineyard 15 19 0">Vineyard (EastScarp)</option>
+	<option value=" Custom_EastScarpe 9 64 0">Cat Café (EastScarp)</option>
+	<option value=" Custom_EastScarpe 19 50 0">Aideen (EastScarp)</option>
+    <option value=" Custom_EastScarpe 30 57 0">Stirling (EastScarp)</option>
+	<option value=" Custom_EastScarpe 49 57 0">Yri (EastScarp)</option>
+	<option value=" Custom_EastScarpe 45 69 0">Inn (EastScarp)</option>
+	<option value=" Custom_EastScarpe 23 36 0">Vet (EastScarp)</option>
+	<option value=" Custom_EastScarpe 59 76 0">Lighthouse (EastScarp)</option>
+	<option value=" Custom_BoardingHouse_BackwoodsPlateau 50 12 0">Boarding House (BH)</option>
+	<option value=" Custom_BoardingHouse_BackwoodsPlateau 3 11 0">Sheila (BH)</option>
+	<option value=" YOURMAP XX YY D">YOUR MAP 1</option>
+	<option value=" YOURMAP XX YY D">YOUR MAP 2</option>
+	<option value=" YOURMAP XX YY D">YOUR MAP 3</option>
+	<option value=" YOURMAP XX YY D">YOUR MAP 4</option>
+	<option value=" YOURMAP XX YY D">YOUR MAP 5</option>
+</select>
+
+<select name="animation" id="animation">
+	<option value="">-no animation-</option>  
+	<option value=" Ayeisha_Deliver" selected>Ayeisha Deliver</option>  
+</select>
+
+  <input class="buttons" type="button" value="ADD" onclick="insertTime()">
+  <input class="buttons" type="reset" value="Reset">
+
+
+<script>
+function insertTime() {
+var loc = document.getElementById("locations").value;
+var hr = document.getElementById("hour").value;
+var mn = document.getElementById("minute").value;
+var an = document.getElementById("animation").value;
+
+if (document.getElementById("output").value == "@@ ") {
+document.getElementById("output").value = "@@ " + hr + mn + loc + an;
+}
+else{
+document.getElementById("output").value = document.getElementById("output").value + "/" + hr + mn + loc + an;
+  }
+}
+</script>
+<p>
+<textarea cols="100" rows="30" name="output" id="output">@@ </textarea>
+</form>
+</body>

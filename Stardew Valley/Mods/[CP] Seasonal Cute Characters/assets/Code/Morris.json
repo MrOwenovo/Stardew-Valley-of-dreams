@@ -1,0 +1,96 @@
+{
+	"Changes": [
+		{
+			"LogName": "Morris - Seasonal",
+			"Action": "EditImage",
+			"Target": "Portraits/Morris, Characters/Morris",
+			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		
+// NOSE OVERLAY
+		{
+			"LogName": "Morris - Seasonal Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Morris",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"NoNose": "false",
+			},
+		},
+		
+// MISCELLANEOUS		
+		{
+			"LogName": "Morris - Emoji",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+            "FromFile": "assets/{{NoNose}}/Random/emojis.png",
+			"FromArea": {"X": 99, "Y": 117, "Width": 9, "Height": 9},
+			"ToArea": {"X": 99, "Y": 117, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{  
+			"LogName": "Morris - Joja Employees Cursors",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/{{NoNose}}/Random/Cursors_{{Season}}.png",
+			"FromArea": { "X": 50, "Y": 1387, "Width": 14, "Height": 30 },
+			"ToArea": { "X": 0, "Y": 1387, "Width": 14, "Height": 30 },
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{  
+			"LogName": "Morris - Surprised Cursors",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/{{NoNose}}/Random/Cursors_{{Season}}.png",
+			"FromArea": { "X": 105, "Y": 1318, "Width": 13, "Height": 31 },
+			"ToArea": { "X": 105, "Y": 1318, "Width": 13, "Height": 31 },
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{  
+			"LogName": "Morris - Building Cursors",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/{{NoNose}}/Random/Cursors_{{Season}}.png",
+			"FromArea": { "X": 390, "Y": 1405, "Width": 36, "Height": 31 },
+			"ToArea": { "X": 390, "Y": 1405, "Width": 36, "Height": 31 },
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{   
+			"LogName": "Morris - Joja TownInteriors",
+            "Action": "EditImage",
+            "Update": "OnLocationChange",
+            "Target": "Maps/townInterior",
+            "FromFile": "assets/{{NoNose}}/Random/townInterior_{{Season}}.png",
+            "FromArea": { "X": 368, "Y": 1008, "Width": 48, "Height": 32 },
+            "ToArea": { "X": 368, "Y": 1008, "Width": 48, "Height": 32 }
+		},
+		{   
+			"LogName": "Morris - Joja Theater",
+            "Action": "EditImage",
+			"Update": "OnLocationChange",
+            "Target": "Maps/MovieTheaterJoja_TileSheet, Maps/MovieTheaterJoja_TileSheet_international",
+            "FromFile": "assets/{{NoNose}}/Random/MovieTheaterJoja_{{Season}}.png",
+            "FromArea": { "X": 16, "Y": 224, "Width": 16, "Height": 32 },
+            "ToArea": { "X": 16, "Y": 224, "Width": 16, "Height": 32 },
+		},
+	]
+}

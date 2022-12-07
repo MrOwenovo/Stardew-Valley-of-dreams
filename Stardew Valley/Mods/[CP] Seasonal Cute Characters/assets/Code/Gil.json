@@ -1,0 +1,52 @@
+{
+	"Changes": [
+		{
+			"LogName": "Gil - Seasonal",
+			"Action": "EditImage",
+			"Target": "Portraits/Gil",
+			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{season}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{   
+			"LogName": "Gil - TownInterior 1",
+            "Action": "EditImage",
+            "Update": "OnLocationChange",
+            "Target": "Maps/townInterior",
+            "FromFile": "assets/{{NoNose}}/Random/townInterior_{{Season}}.png",
+            "FromArea": { "X": 181, "Y": 624, "Width": 26, "Height": 64 },
+            "ToArea": { "X": 181, "Y": 624, "Width": 26, "Height": 64 },
+		},
+		{   
+			"LogName": "Gil - TownInterior 2",
+            "Action": "EditImage",
+            "Update": "OnLocationChange",
+            "Target": "Maps/townInterior",
+            "FromFile": "assets/{{NoNose}}/Random/townInterior_{{Season}}.png",
+            "FromArea": { "X": 214, "Y": 657, "Width": 24, "Height": 31 },
+            "ToArea": { "X": 214, "Y": 657, "Width": 24, "Height": 31 },
+		},
+		
+// MISCELLANEOUS	
+		{
+			"LogName": "Gil - Movie Theater",
+            "Action": "EditImage",
+            "Update": "OnLocationChange",
+            "Target": "Maps/MovieTheater_TileSheet",
+            "FromFile": "assets/{{NoNose}}/Random/MovieTheater_{{Season}}.png",
+            "FromArea": { "X": 228, "Y": 217, "Width": 21,  "Height": 29 },
+            "ToArea": { "X": 228, "Y": 217, "Width": 21,  "Height": 29 },
+		},
+		{
+			"LogName": "Gil - Joja Theater",
+            "Action": "EditImage",
+            "Update": "OnLocationChange",
+            "Target": "Maps/MovieTheaterJoja_TileSheet, Maps/MovieTheaterJoja_TileSheet_international",
+            "FromFile": "assets/{{NoNose}}/Random/MovieTheaterJoja_{{Season}}.png",
+            "FromArea": { "X": 228, "Y": 217, "Width": 21,  "Height": 29 },
+            "ToArea": { "X": 228, "Y": 217, "Width": 21,  "Height": 29 },
+		},			
+	]
+}

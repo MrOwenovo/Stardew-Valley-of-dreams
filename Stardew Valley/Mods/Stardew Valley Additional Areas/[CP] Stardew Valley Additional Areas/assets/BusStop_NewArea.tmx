@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.4" orientation="orthogonal" renderorder="right-down" width="2" height="6" tilewidth="16" tileheight="16" infinite="0" nextlayerid="9" nextobjectid="6">
+ <properties>
+  <property name="Outdoors" value="T"/>
+ </properties>
+ <tileset firstgid="1" name="outdoor" tilewidth="16" tileheight="16" tilecount="1975" columns="25">
+  <image source="spring_outdoorsTileSheet.png" width="400" height="1264"/>
+ </tileset>
+ <tileset firstgid="1976" name="Paths" tilewidth="16" tileheight="16" tilecount="36" columns="4">
+  <image source="paths.png" width="64" height="144"/>
+ </tileset>
+ <tileset firstgid="2012" name="z_townInterior" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="townInterior.png" width="512" height="1088"/>
+  <tile id="48">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer id="1" name="Back" width="2" height="6">
+  <data encoding="base64" compression="zlib">
+   eJzbwMDAsAGIWVkgWB6KFaEYxpeDYgBV8AKN
+  </data>
+ </layer>
+ <objectgroup id="2" name="Back">
+  <object id="1" name="TileData" x="0" y="32" width="16" height="16">
+   <properties>
+    <property name="TouchAction" value="Warp Custom_BusStop2 1 9"/>
+   </properties>
+  </object>
+  <object id="2" name="TileData" x="0" y="48" width="16" height="16">
+   <properties>
+    <property name="TouchAction" value="Warp Custom_BusStop2 1 9"/>
+   </properties>
+  </object>
+  <object id="3" name="TileData" x="0" y="64" width="16" height="16">
+   <properties>
+    <property name="TouchAction" value="Warp Custom_BusStop2 1 9"/>
+   </properties>
+  </object>
+  <object id="4" name="TileData" x="0" y="80" width="16" height="16">
+   <properties>
+    <property name="TouchAction" value="Warp Custom_BusStop2 1 11"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="3" name="Buildings" width="2" height="6">
+  <data encoding="base64" compression="zlib">
+   eJxTYGJg2M3IwLAFiFlZGMCAhwOT5gfSAkAMAEm0Afg=
+  </data>
+ </layer>
+ <objectgroup id="4" name="Buildings">
+  <object id="5" name="TileData" x="0" y="16" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;Text.31&quot;"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="5" name="Front" width="2" height="6">
+  <data encoding="base64" compression="zlib">
+   eJybzchAEgAAHW8AnQ==
+  </data>
+ </layer>
+ <objectgroup id="6" name="Front"/>
+ <layer id="7" name="AlwaysFront" width="2" height="6">
+  <data encoding="base64" compression="zlib">
+   eJxjYEAF+lDaA0onoskDABLgANk=
+  </data>
+ </layer>
+ <objectgroup id="8" name="AlwaysFront"/>
+</map>

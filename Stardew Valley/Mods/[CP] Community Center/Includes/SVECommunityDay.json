@@ -1,0 +1,67 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Characters/schedules/Jas",
+            "Entries": {
+                "22": "810 AnimalShop 24 15 2/920 AnimalShop 7 5 2 jas_read/1030 AnimalShop 16 17 3/1100 CommunityCenter 18 20 3 jas_read \"Strings\\schedules\\Jas:CommunityDay_Jas\"/1820 CommunityCenter 19 20 2 \"Strings\\schedules\\Jas:CommunityDay_Jas\"/1850 AnimalShop 2 7 3 jas_sleep"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/schedules/Vincent",
+            "Entries": {
+                "22": "830 SamHouse 1 6 1/940 SamHouse 10 22 0/1040 SamHouse 5 13 3/1130 CommunityCenter 14 20 1 vincent_read_right/1610 CommunityCenter 14 19 0/1650 CommunityCenter 14 20 1 vincent_read_right/1750 CommunityCenter 25 10 0/1820 SamHouse 9 22 3 vincent_sleep"
+            }
+        },
+        { //Spring Dialogue
+            "Action": "EditData",
+            "Target": "characters/dialogue/Vincent",
+            "When": {
+                "Season": "Spring",
+                "Season |contains=Summer, Fall, Winter": false
+            },
+            "Entries": {
+                "CommunityCenter_14_20": "{{i18n:CommunityDay.Vincent.1}}"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/schedules/Eloise",
+            "When": {
+                "HasMod": "Lemurkat.JacobEloise.CP"
+            },
+            "Entries": {
+                "22": "630 Custom_ESVetHouse 30 14 1/830 CommunityCenter 15 22 0 Eloise_kneel\"/1700 CommunityCenter 34 17 1/1750 Custom_ESVetHouse 31 5 0/2200 Custom_ESVetHouse 20 4"
+                //\"Strings\\schedules\\Eloise:CommunityDay_Eloise.{{random:01,02,03}}
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/schedules/Leo",
+            "When": {
+                "HasSeenEvent": "6497428"
+            },
+            "Entries": {
+                "22": "0 LeoTreeHouse 4 3 2/830 Mountain 30 9 3/1110 CommunityCenter 17 22 0 leo_sit_up \"Strings\\schedules\\Leo:CommunityDay_Leo\"/1720 CommunityCenter 17 22 3 \"Strings\\schedules\\Leo:CommunityDay_Leo\"/1750 LeoTreeHouse 4 3 2"
+            }
+        },
+        {    //HALEY Community Day Schedule
+            "Action": "EditData",
+            "Target": "characters/schedules/Haley",
+            "Entries": {
+            "22": "710 HaleyHouse 8 7 1/810 HaleyHouse 21 16 2/920 HaleyHouse 18 16 2/1010 HaleyHouse 6 16 0/1050 HaleyHouse 3 20 1/1120 CommunityCenter 10 19 0 \"Strings\\schedules\\Haley:CommunityDay_Haley\"/1400 CommunityCenter 10 27 3 \"Strings\\schedules\\Haley:CommunityDay_Haley\"/1440 CommunityCenter 11 26 0 \"Strings\\schedules\\Haley:CommunityDay_Haley\"/1520 CommunityCenter 11 26 3 \"Strings\\schedules\\Haley:CommunityDay_Haley\"/1610 CommunityCenter 12 26 2 \"Strings\\schedules\\Haley:CommunityDay_Haley\"/1820 HaleyHouse 2 5 2 haley_sleep"
+            }
+       }
+        /* {	"LogName": "EggFest Strings - Eloise", 
+            "Action": "EditData",
+            "Target": "Strings/schedules/Eloise",
+            "When": {   "HasMod |contains=Lemurkat.JacobEloise.CP":true },
+            "Entries": {
+                "CommunityDay_Eloise.01": "{{i18n:CommunityDay.Eloise.1}}",
+                "CommunityDay_Eloise.02": "{{i18n:CommunityDay.Eloise.2}}",
+                "CommunityDay_Eloise.03": "{{i18n:CommunityDay.Eloise.3}}",
+                }				
+                }*/
+    ]
+}

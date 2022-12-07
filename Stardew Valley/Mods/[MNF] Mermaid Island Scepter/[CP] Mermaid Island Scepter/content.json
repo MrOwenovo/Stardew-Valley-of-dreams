@@ -1,0 +1,29 @@
+{
+	"Format": "1.27.0",
+	"Changes": [
+		 {
+          "Action": "EditData",
+		  "LogName": "Fish Object Data",
+          "Target": "Data/ObjectInformation",
+          "Entries": {
+             "{{spacechase0.JsonAssets/ObjectId:Mermaid Island Scepter}}": "美人鱼岛传送法杖/0/-300/Quest/美人鱼岛传送法杖/可以传送至美人鱼岛。",
+    	}
+    },
+	{
+		"Action": "EditData",
+		"LogName": "Quests",
+      "Target": "Data/Quests",
+      "Entries": {
+		"1355601": "Basic/美人鱼岛传送法杖/莱纳斯需要一些材料制作这个法杖，使用后可以传送至美人鱼岛。/太阳精华，珊瑚，海蓝宝石各一个，加一条海鲢和一只鹦鹉螺（MNF更多鱼里的）给莱纳斯。/-1/-1/-1/-1/true.",
+        },
+        },	
+		{       
+	 "Action": "EditData",
+	 "LogName": "Mermaid Island Scepter",
+	 "Target": "data/events/mountain",
+	 "Entries": {
+ "1355602/n miscepter/e 9348571/i 393 1/i 768 1/i 62 1/i 1094 1/i 1120 1/t 600 1710": "jaunty/-1000 -1000/farmer 18 8 1 Linus 29 8 2/viewport 29 7 clamp true/move farmer 8 0 1/faceDirection Linus 3/speak Linus \"@! 你收到我的信了吗？$h\"/pause 400/move farmer 2 0 1/pause 500/showFrame 35/pause 500/speak Linus \"好，你把所有材料都找到了！$h\"/faceDirection farmer 1/emote farmer 8/emote Linus 32/speak Linus \"太好了，你在这等等我，我马上回来。\"/pause 500/faceDirection Linus 0/playSound grassyStep/warp Linus -10 -10/playMusic none/pause 1500/playSound crafting/pause 500/playSound hammer/pause 500/playSound stoneCrack/pause 500/playSound crafting/pause 800/playSound crafting/pause 1200/playSound hammer/pause 300/playSound hammer/pause 300/playSound stoneCrack/pause 300/playSound crafting/pause 600/playSound healSound/pause 1000/faceDirection Linus 2/warp Linus 29 7/move Linus 0 1 3/pause 500/removeItem 393/removeItem 768/removeItem 62/removeItem 1094/removeItem 1120/faceDirection farmer 2/pause 400/addObject 28 9 {{spacechase0.JsonAssets/ObjectId:Mermaid Island Scepter}}/pause 500/speak Linus \"拿着吧，这是给你的![{{spacechase0.JsonAssets/ObjectId:Mermaid Island Scepter}}]$h\"/removeObject 28 9/playSound reward/message \"你获得了 '美人鱼岛传送法杖'\"/emote farmer 16/removeQuest 1355601/pause 900/end",
+   },
+   },
+],
+}

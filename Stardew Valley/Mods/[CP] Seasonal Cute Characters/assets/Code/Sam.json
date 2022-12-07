@@ -1,0 +1,102 @@
+{
+	"Changes": [
+		{
+			"LogName": "Sam - Seasonal",
+			"Action": "EditImage",
+			"Target": "Portraits/Sam, Characters/Sam",
+			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Sam - Winter Indoor/Outdoor",
+			"Action": "EditImage",
+			"Target": "Portraits/Sam, Characters/Sam",
+			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+                "Season": "Winter",
+                "WinterIndoorOutdoorOutfits": "IndoorOutdoor",
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Sam - Festival",
+			"Action": "EditImage",
+			"Target": "Portraits/Sam, Characters/Sam",
+            "FromFile": "assets/{{TargetPathOnly}}/Festivals/{{Festival}}/{{TargetWithoutPath}}_{{Festival}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"FestivalOutfits": "True",
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Sam - Beach",
+			"Action": "EditImage",
+			"Target": "Portraits/Sam_Beach, Characters/Sam_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Beach/{{TargetWithoutPath}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+            "LogName": "Sam - Work",
+            "Action": "EditImage",
+            "Target": "Portraits/Sam, Characters/Sam",
+            "Update": "OnLocationChange",
+			"FromFile": "assets/{{Target}}/Sam_Work.png",
+            "When":
+            {
+                "HasFile:{{FromFile}}": true,
+				"ExtraOutfits": "True",
+				"SamWork": "True",
+            },
+        },	
+		
+// NOSE OVERLAY
+		{
+			"LogName": "Sam - Seasonal Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Sam",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"NoNose": "false",
+			},
+		},
+		{
+			"LogName": "Sam - Beach Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Sam_Beach",
+            "FromFile": "assets/{{TargetPathOnly}}/Beach/{{TargetWithoutPath}}_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"NoNose": "false",
+			},
+		},
+		
+// MISCELLANEOUS		
+		{
+			"LogName": "Sam - Emoji",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+            "FromFile": "assets/{{NoNose}}/Random/emojis.png",
+			"FromArea": {"X": 81, "Y": 99, "Width": 9, "Height": 9},
+			"ToArea": {"X": 81, "Y": 99, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+	]
+}

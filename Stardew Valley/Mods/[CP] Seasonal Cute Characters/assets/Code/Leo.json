@@ -1,0 +1,40 @@
+{
+	"Changes": [
+		{
+			"LogName": "Leo - Seasonal",
+			"Action": "EditImage",
+			"Target": "Portraits/ParrotBoy, Characters/ParrotBoy",
+			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{season}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Leo - Festival",
+			"Action": "EditImage",
+			"Target": "Portraits/ParrotBoy, Characters/ParrotBoy",
+            "FromFile": "assets/{{TargetPathOnly}}/Festivals/{{Festival}}/{{TargetWithoutPath}}_{{Festival}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"FestivalOutfits": "True",
+			},
+			"Update": "OnLocationChange",
+		},
+		
+// NOSE OVERLAY
+		{
+			"LogName": "Leo - Seasonal Nose",
+			"Action": "EditImage",
+			"Target": "Characters/ParrotBoy",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"NoNose": "false",
+			},
+		},
+	]
+}

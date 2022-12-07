@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.4" orientation="orthogonal" renderorder="right-down" width="15" height="16" tilewidth="16" tileheight="16" infinite="0" nextlayerid="11" nextobjectid="16">
+ <properties>
+  <property name="AmbientLight" value="150 130 100"/>
+  <property name="Music" value="clubloop"/>
+ </properties>
+ <tileset firstgid="1" name="Paths" tilewidth="16" tileheight="16" tilecount="36" columns="4">
+  <image source="paths.png" width="64" height="144"/>
+ </tileset>
+ <tileset firstgid="37" name="untitled tile sheet" tilewidth="16" tileheight="16" tilecount="368" columns="16">
+  <image source="DesertTiles.png" width="256" height="368"/>
+  <tile id="178">
+   <animation>
+    <frame tileid="178" duration="250"/>
+    <frame tileid="181" duration="250"/>
+    <frame tileid="184" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="179">
+   <animation>
+    <frame tileid="179" duration="250"/>
+    <frame tileid="182" duration="250"/>
+    <frame tileid="185" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="180">
+   <animation>
+    <frame tileid="180" duration="250"/>
+    <frame tileid="183" duration="250"/>
+    <frame tileid="186" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="201">
+   <animation>
+    <frame tileid="201" duration="500"/>
+    <frame tileid="202" duration="500"/>
+    <frame tileid="202" duration="500"/>
+   </animation>
+  </tile>
+  <tile id="202">
+   <animation>
+    <frame tileid="202" duration="500"/>
+    <frame tileid="202" duration="500"/>
+    <frame tileid="201" duration="500"/>
+   </animation>
+  </tile>
+  <tile id="281">
+   <animation>
+    <frame tileid="281" duration="200"/>
+    <frame tileid="281" duration="200"/>
+    <frame tileid="281" duration="200"/>
+    <frame tileid="281" duration="200"/>
+    <frame tileid="281" duration="200"/>
+    <frame tileid="281" duration="200"/>
+    <frame tileid="281" duration="200"/>
+    <frame tileid="281" duration="200"/>
+    <frame tileid="281" duration="200"/>
+    <frame tileid="283" duration="200"/>
+   </animation>
+  </tile>
+  <tile id="302">
+   <animation>
+    <frame tileid="302" duration="800"/>
+    <frame tileid="302" duration="800"/>
+    <frame tileid="302" duration="800"/>
+    <frame tileid="302" duration="800"/>
+    <frame tileid="302" duration="800"/>
+    <frame tileid="303" duration="800"/>
+   </animation>
+  </tile>
+  <tile id="318">
+   <animation>
+    <frame tileid="318" duration="800"/>
+    <frame tileid="318" duration="800"/>
+    <frame tileid="318" duration="800"/>
+    <frame tileid="318" duration="800"/>
+    <frame tileid="318" duration="800"/>
+    <frame tileid="319" duration="800"/>
+   </animation>
+  </tile>
+  <tile id="332">
+   <animation>
+    <frame tileid="332" duration="400"/>
+    <frame tileid="335" duration="400"/>
+    <frame tileid="332" duration="400"/>
+   </animation>
+  </tile>
+ </tileset>
+ <layer id="1" name="Back" width="15" height="16">
+  <data encoding="base64" compression="zlib">
+   eJxjYBh40MCIwMSAKYyU4UIc4skE9E3Ewp44jPBQ9Bclbh4s/sUFiFEDAJ10agM=
+  </data>
+ </layer>
+ <objectgroup id="2" name="Back">
+  <object id="1" name="TileData" x="112" y="240" width="16" height="16">
+   <properties>
+    <property name="TouchAction" value="Warp Custom_Tunnel1 31 7"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="3" name="Buildings" width="15" height="16">
+  <data encoding="base64" compression="zlib">
+   eJzLZWRgyCMD5wNxLRAXQ3EBDgyTb0HCtVDcDMXXGRgYbgDxTSBuYERgmDxIzwkGVL2ToXgCDgyTx2ZvHRAXATEI/IVQDApQcRBwgtLIAKaXHIBPry5QXI8RQpOi9w0Q2wLF7YDYHkn/PwYEjUvvHyD2BYr7AbE/FvnfaHq/AvE3JPfGAnEcEMfjcDeyXlYgzYakBpc/CfkXF8DmX30y4gmmV45EvY5Qfb1A3IcF90LN68ch34/HPphcLx41AMW2QbU=
+  </data>
+ </layer>
+ <objectgroup id="4" name="Buildings">
+  <object id="2" name="TileData" x="192" y="48" width="16" height="16">
+   <properties>
+    <property name="Action" value="ClubShop"/>
+   </properties>
+  </object>
+  <object id="3" name="TileData" x="16" y="64" width="16" height="16">
+   <properties>
+    <property name="Action" value="ClubComputer"/>
+   </properties>
+  </object>
+  <object id="4" name="TileData" x="32" y="64" width="16" height="16">
+   <properties>
+    <property name="Action" value="ClubComputer"/>
+   </properties>
+  </object>
+  <object id="5" name="TileData" x="64" y="64" width="16" height="16">
+   <properties>
+    <property name="Action" value="BuyQiCoins"/>
+   </properties>
+  </object>
+  <object id="6" name="TileData" x="112" y="64" width="16" height="16">
+   <properties>
+    <property name="Action" value="ClubSeller"/>
+   </properties>
+  </object>
+  <object id="7" name="TileData" x="112" y="96" width="16" height="16">
+   <properties>
+    <property name="Action" value="ClubCards"/>
+   </properties>
+  </object>
+  <object id="8" name="TileData" x="176" y="112" width="16" height="16">
+   <properties>
+    <property name="Action" value="ClubSlots"/>
+   </properties>
+  </object>
+  <object id="9" name="TileData" x="208" y="128" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;Club.2&quot;"/>
+   </properties>
+  </object>
+  <object id="10" name="TileData" x="32" y="144" width="16" height="16">
+   <properties>
+    <property name="Action" value="ClubCards 1000"/>
+   </properties>
+  </object>
+  <object id="11" name="TileData" x="48" y="144" width="16" height="16">
+   <properties>
+    <property name="Action" value="ClubCards 1000"/>
+   </properties>
+  </object>
+  <object id="12" name="TileData" x="112" y="144" width="16" height="16">
+   <properties>
+    <property name="Action" value="ClubCards 100"/>
+   </properties>
+  </object>
+  <object id="13" name="TileData" x="176" y="176" width="16" height="16">
+   <properties>
+    <property name="Action" value="ClubSlots"/>
+   </properties>
+  </object>
+  <object id="14" name="TileData" x="208" y="176" width="16" height="16">
+   <properties>
+    <property name="Action" value="ClubSlots"/>
+   </properties>
+  </object>
+  <object id="15" name="TileData" x="16" y="192" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;Club.1&quot;"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="5" name="Front" width="15" height="16">
+  <data encoding="base64" compression="zlib">
+   eJxjYBg4EMjIwBDESFjdSSh9HEksEagvCar3LVRMAMgPJsK8wQ7eQ+l3FJjxGo3/FIifUWAeLQHMn++RxHgoiEe+YZAGYCCPgF8As08LSA==
+  </data>
+ </layer>
+ <objectgroup id="6" name="Front"/>
+ <layer id="7" name="Paths" width="15" height="16">
+  <data encoding="base64" compression="zlib">
+   eJxjYBg4wAnFuOTw8allLyF7qGkvsQCX2/CppSXAFk/Ujg9qm4nPHkrV0MJecgEAe7MAtQ==
+  </data>
+ </layer>
+ <objectgroup id="8" name="Paths"/>
+ <layer id="9" name="AlwaysFront" width="15" height="16">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUDFUAAAPAAAE=
+  </data>
+ </layer>
+ <objectgroup id="10" name="AlwaysFront"/>
+</map>

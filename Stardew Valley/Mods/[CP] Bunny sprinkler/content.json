@@ -1,0 +1,44 @@
+{
+	"Format": "1.3",
+
+	"ConfigSchema": {
+        "EnableMod": {
+            "AllowValues": "true, false",		
+			"Default": "true"
+        }
+    },
+	"Changes": [
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/springobjects_{{season}}.png",
+			"FromArea": { "X": 368, "Y": 384, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 368, "Y": 384, "Width": 16, "Height": 16 }, 
+			"When": {
+				"EnableMod": "true",
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/springobjects_{{season}}.png",
+			"FromArea": { "X": 336, "Y": 400, "Width": 16, "Height": 32 },
+			"ToArea": { "X": 336, "Y": 400, "Width": 16, "Height": 32 }, 
+			"When": {
+				"EnableMod": "true",
+			}
+		},
+                {
+			
+                        "Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/springobjects_{{season}}.png",
+			"FromArea": { "X": 16, "Y": 608, "Width": 64, "Height": 16 },
+			"ToArea": { "X": 16, "Y": 608, "Width": 64, "Height": 16 }, 
+			"When": {
+				"EnableMod": "true", 
+                        }
+		}
+	]
+
+}

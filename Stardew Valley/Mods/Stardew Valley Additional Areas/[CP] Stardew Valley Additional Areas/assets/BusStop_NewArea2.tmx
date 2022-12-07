@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.4" orientation="orthogonal" renderorder="right-down" width="2" height="2" tilewidth="16" tileheight="16" infinite="0" nextlayerid="9" nextobjectid="3">
+ <properties>
+  <property name="Outdoors" value="T"/>
+ </properties>
+ <tileset firstgid="1" name="outdoor" tilewidth="16" tileheight="16" tilecount="1975" columns="25">
+  <image source="spring_outdoorsTileSheet.png" width="400" height="1264"/>
+ </tileset>
+ <layer id="1" name="Back" width="2" height="2">
+  <data encoding="base64" compression="zlib">
+   eJzbwMDAsAGIWVkgGAATtAFz
+  </data>
+ </layer>
+ <layer id="3" name="Buildings" width="2" height="2">
+  <data encoding="base64" compression="zlib">
+   eJyTZ2JgUABiH3YGhi2MDAwACRgBTA==
+  </data>
+ </layer>
+ <layer id="5" name="Front" width="2" height="2">
+  <data encoding="base64" compression="zlib">
+   eJwzZmdgmM3IAAcACvgA1w==
+  </data>
+ </layer>
+ <layer id="7" name="AlwaysFront" width="2" height="2">
+  <data encoding="base64" compression="zlib">
+   eJxjYIAAUSgNAAC4ABY=
+  </data>
+ </layer>
+ <objectgroup id="2" name="Back"/>
+ <objectgroup id="4" name="Buildings">
+  <object id="1" name="TileData" x="0" y="16" width="16" height="16">
+   <properties>
+    <property name="Action" value="Warp 1 10 Custom_BusStop2"/>
+   </properties>
+  </object>
+  <object id="2" name="TileData" x="16" y="16" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;Text.31&quot;"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="6" name="Front"/>
+ <objectgroup id="8" name="AlwaysFront"/>
+</map>

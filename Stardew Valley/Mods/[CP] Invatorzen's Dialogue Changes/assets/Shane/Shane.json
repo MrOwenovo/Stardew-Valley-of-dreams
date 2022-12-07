@@ -1,0 +1,213 @@
+{
+    "Changes": [
+
+        //Jas dialogue change
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Jas",
+            "Entries": {
+                "Sun10": "你知道吗？珊恩是我的教母。她是我父母的朋友。$s#$e#……他们都去世了。*啜泣*$s"
+            }
+        },
+          
+        //Marnie dialogue change
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Marnie",
+            "Entries": {
+                "Tue": "我的侄女珊恩已经在我这待了几个月了。#$e#不过她会帮我养鸡，所以也没什么可抱怨的。"
+            }
+        },
+          
+        //Marriage dialogue Shane change
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueShane",
+            "Entries": {
+                "Indoor_Day_4": "我可能会经常闷不作声，有时可能会看起来不太开心……但我实际上很感激你为我做的一切。我真是个幸运的女孩。$6",
+        "OneKid_3": "珊恩妈妈报到……$6#$e#哎……我已经变得又老又土了。"
+            }
+        },
+        
+        //Shane dialogue change
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Shane",
+            "Entries": {
+                "dumped_Guys": "%珊恩的眼神呆滞。他不会跟你说话。",
+        "JojaMart": "%珊恩正在努力工作。似乎没兴趣聊天。",
+        "event_room1": "嗯……这可得有个好剧本才行。也许下次再在酒吧见到埃琳娜的时候，向他请教下吧。$s"
+            }
+        },
+          
+        //Event change
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/AnimalShop",
+            "Entries": {
+                "3910674/f Shane 1000": "shaneTheme/-2000 -2000/farmer 18 18 1 Marnie 21 14 0 Jas 25 16 2 Shane -1000 -1000 2/skippable/specificTemporarySprite shanePassedOut/viewport 22 8 true/pause 2000/speak Marnie \"珊恩？\"/pause 2000/doAction 21 13/pause 500/move Marnie 0 -7 1/textAboveHead Marnie \"噢！ 亲爱的……\"/doAction 21 13/removeTile 21 13 Buildings/removeTile 21 12 Front/move farmer 3 0 0/faceDirection Jas 3 true/move farmer 0 -10 1/faceDirection Marnie 2/pause 500/speak Marnie \"@... @…… 你能帮忙吗？ 他正处于人生低潮。$s\"/pause 500/faceDirection farmer 0/pause 500/faceDirection farmer 1/move farmer 3 0 0/faceDirection Marnie 1 true/move farmer 0 -1 1/pause 1000/speak Shane \"不。。。$7\"/pause 2000/specificTemporarySprite waterShane/pause 250/playSound wateringCan/pause 1000/specificTemporarySprite waterShaneDone/warp Shane 25 7/textAboveHead Shane \"什……？！\"/jump Shane/shake Shane 2000/showFrame Shane 18/pause 3000/showFrame Shane 0/move farmer -1 0 1/faceDirection Shane 3/speak Marnie \"珊恩！ 你怎么了？ 你所能做的一切就是躲在房间忧郁地喝啤酒吗！$s\"/move Jas -4 0 0 true/pause 200/faceDirection Shane 2 true/pause 50/faceDirection Shane 1/emote Shane 12/shake Shane 1000/textAboveHead Shane \"...\"/pause 1500/speak Shane \"你不懂……\"/pause 1000/textAboveHead Marnie \"I'm worried...\"/move Jas 0 -8 1/speak Marnie \"你的计划是什么？ 你有想过未来吗？\"/faceDirection Shane 0/textAboveHead Shane \"计划？\"/pause 2000/speak Shane \"希望找到我的人生计划不需要花费很长时间……\"/jump Jas/pause 500/shake Jas 10000/speed Jas 4/textAboveHead Jas \"...*呜呜*...\"/move Jas 0 10 2 true/faceDirection Marnie 2/emote Marnie 28 true/faceDirection farmer 3/faceDirection Shane 1 true/pause 50/faceDirection Shane 2/pause 600/move Marnie 0 10 2 true/pause 1000/textAboveHead Shane \"贾斯……\"/pause 500/faceDirection farmer 1/pause 400/showFrame Shane 19/pause 1000/textAboveHead Shane \"对不起……\"/pause 3000/faceDirection Shane 1 true/showFrame Shane 4/pause 500/showFrame Shane 35/playSound thudStep/shake Shane 4000/pause 2000/end",
+                "3910974/f Shane 1700/e 3910975/p Shane": "shaneTheme/-2000 -2000/farmer -1000 -1000 1 Marnie 12 14 2 Jas 25 16 3 Shane -1000 -1000 0/skippable/showFrame Jas 22/viewport 13 14 clamp true/pause 2000/playSound doorClose/warp Shane 13 19/move Shane 0 -3 0/pause 500/speak Marnie \"嗨，珊恩…你今天看起来开心地有点不寻常。\"/pause 1000/speak Shane \"是的…我从小就没有感受过这种心情。$h\"/emote Marnie 8/move Marnie 1 0 2/speak Marnie \"让我猜一猜…格斯店里的罐装啤酒做大促销吗？$u\"/pause 500/playSound shwip/faceDirection Shane 1 true/pause 50/faceDirection Shane 2 true/pause 500/textAboveHead Shane \"其中一个…\"/pause 500/showFrame Shane 19/pause 1000/speak Shane \"事实上并不是。现在我已经改喝苏打水了…而且我觉得很好喝！$h\"/pause 500/showFrame Shane 0/pause 200/faceDirection Shane 1 true/pause 50/faceDirection Shane 0/speak Shane \"你知道的，我有时候会忘记我拥有真心朋友，大家都很关心我。#$b#让我知道我可以依赖他们…这使我没有那么脆弱。\"/pause 500/emote Marnie 32/viewport move 1 0 6000/move Shane 4 0 2/textAboveHead Marnie \"她看起来很耀眼！\"/move Shane 0 2 1/move Shane 4 0 0/move Shane 0 -2 1/speak Shane \"嗨，贾斯。我有东西要给你。$6\"/pause 500/showFrame Shane 26/specificTemporarySprite jasGift/playSound coin/pause 500/showFrame Shane 4/emote Jas 8 true/move Jas -2 0 3/pause 800/playSound woodWhack/specificTemporarySprite jasGiftOpen/pause 500/showFrame Jas 24/playSound yoba/pause 2000/speak Jas \"这…这是真的兔子宝石靴子！！$h\"/pause 200/speed Jas 6/jump Jas/move Jas -1 0 3/showFrame Jas 23/positionOffset Jas -2 1/pause 10/positionOffset Jas -2 0/pause 10/positionOffset Jas -2 0/pause 10/positionOffset Jas -2 0/showFrame Shane 18/pause 10/positionOffset Jas -2 0/pause 10/positionOffset Jas -2 0/pause 10/positionOffset Jas -2 0/pause 10/positionOffset Jas -2 0/pause 10/positionOffset Jas -2 0/pause 10/positionOffset Jas -2 0/pause 10/positionOffset Jas -2 0/pause 10/positionOffset Jas -2 0/pause 10/positionOffset Jas -2 0/pause 10/positionOffset Jas -2 0/pause 10/positionOffset Jas -2 0/pause 10/positionOffset Jas -2 1/pause 2000/viewport -2000 -2000/playMusic none/pause 1000/speak Jas \"但…但这很贵！$3#$b#你是怎么买到的？$3\"/pause 1000/speak Shane \"我现在已经减少了一些奢侈的习惯。现在我有更多能花的钱了！$h\"/pause 1000/end",
+                "3900074/f Shane 2000/e 2118991/p Shane": "distantBanjo/27 14/farmer 22 15 1 Jas 30 14 2 Shane -1000 -1000 0/skippable/pause 1000/faceDirection Jas 3/pause 400/jump Jas/pause 1500/move farmer 8 0 0/faceDirection Jas 2/pause 500/speak Jas \"珊恩姐在畜棚里。她说…她要我告诉你她想给你看点东西。\"/pause 500/faceDirection Jas 0/pause 500/playSound doorClose/warp Jas -1000 -1000/pause 800/move farmer 0 -1 0/playSound doorClose/warp farmer -1000 -1000/pause 1600/globalFade/viewport -2000 -2000/changeToTemporaryMap MarnieBarn false/viewport -2000 -2000/addTemporaryActor White_Chicken 16 16 8 5 2 false Animal chicken1/addTemporaryActor Blue_Chicken 16 16 8 9 3 false Animal chicken2/addTemporaryActor Blue_Chicken 16 16 7 7 1 false Animal chicken3/addTemporaryActor Blue_Chicken 16 16 14 11 3 false Animal chicken4/addTemporaryActor Blue_Chicken 16 16 9 11 2 false Animal chicken5/warp Shane 5 3/faceDirection Shane 0/animate Shane false true 500 32 33/viewport 7 3 true/pause 500/move chicken5 -1 0 2 true/pause 1000/move chicken2 3 0 1 true/pause 1500/move chicken4 0 1 2 true/pause 1000/speak Shane \"应该这样做…$6\"/pause 500/stopAnimation Shane/pause 500/faceDirection Shane 3 true/pause 50/faceDirection Shane 2/pause 1000/move Shane 0 1 2/move Shane 3 0 2/pause 1000/showFrame Shane 30/pause 500/playSound coin/showFrame Shane 29/warp chicken1 -100 -100/pause 500/showFrame Shane 28/move chicken3 0 -1 0 true/pause 1000/move chicken4 0 -1 0/pause 1000/speak Shane \"这里很适合你的母鸡居住…$8#$b#我们拥有全镇里最好的鸡蛋！$8#$b#新鲜而健康，蛋身是营养丰富的金黄色蛋黄。不像Joja那些鸡蛋苍白而恶心$8\"/move chicken2 -1 0 2/pause 1000/move chicken3 0 1 2/emote Shane 28/pause 1500/move chicken4 -1 0 3 true/pause 500/move chicken3 1 0 1 true/move chicken2 1 0 1 true/pause 500/speak Shane \"...*叹息*……$9#$b#……你懂的，查理…我曾经想… $9#$b#一个像我这样的女孩一直徘徊在绝望的边缘…你懂我说什么吗？$9#$b#……但我知道，你和其他母鸡从今往后会帮助我昂首向前…我明白的$9#$b#……怎么了…是压力太大了吗？*轻笑*$8\"/pause 500/playSound doorClose/warp Jas 3 8/move Jas 0 -1 0/move Jas 0 -3 1 true/pause 500/warp farmer 3 8/playSound doorClose/move farmer 0 -3 1 false/pause 1000/showFrame Shane 29/pause 500/move chicken2 0 -1 0 true/showFrame Shane 30/warp chicken1 8 5/playSound thudStep/pause 500/move chicken3 -1 0 3/showFrame Shane 0/faceDirection chicken3 2/pause 1000/faceDirection Shane 3/speak Shane \"喂，@……那么，你是怎么想的呢？$h\"/animate chicken1 false true 500 16 17/pause 500/animate chicken4 false true 700 16 17/advancedMove chicken2 false 0 -4 -2 0/move farmer 2 0 1/advancedMove chicken3 false -1 0 0 -2/move farmer 0 -1 1/move farmer 2 0 2/faceDirection Shane 2/speak Shane \"我的特别蓝色母鸡们…最近这几个月我已经开始秘密地饲养它们了。$6\"/faceDirection Shane 3/speak Shane \"我…好吧，我不会永远地生活在这里，而且我想要留给贾斯一点东西。我已经在教她怎么照料它们了。$6#$b#……我只想让自己在这世上活得并不仅像是一条水蛭。我想要贡献一些东西，即使是以这样很微不足道的方式。\"/move Jas 3 0 2/faceDirection Shane 2/pause 2000/showFrame Shane 19/pause 500/pause 1000/end"
+            }
+        },
+          
+        //Farm event change
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries": {
+                "2118991/e 3910975/t 600 800": "continue/64 15/farmer 64 16 2 Shane 64 18 0/pause 1500/skippable/speak Shane \"嘿……\"/pause 500/faceDirection Shane 1/pause 500/faceDirection Shane 0/speak Shane \"噢，伙计…… 嗯…… 怎么说？$s#$b#关于在悬崖上发生的事情，我很抱歉。 真是…… 令人尴尬……\"/pause 500/speak Shane \"$q -1 null#  #$r -1 10 event_apologize1#我很高兴我能帮到忙。#$r -1 -10 event_apologize2#你需要一个正式的警钟。#$r -1 10 event_apologize3#我很高兴你还活着。\"/pause 1000/faceDirection Shane 1/pause 1000/speak Shane \"我要去看心理医生。哈丽特让我与她的同事联系……$s\"/pause 500/faceDirection Shane 0/speak Shane \"无论如何……我只是想谢谢你照顾我。我想让你知道,我要从现在开始认真对待事情。#$b#我不想成为任何人的负担……\"/pause 1000/faceDirection Shane 1 true/pause 50/faceDirection Shane 2/pause 500/showFrame Shane 19/pause 2000/end",
+            }
+        },
+          
+        //Forest event change
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Forest",
+            "Entries": {
+            "3910975/f Shane 1500/e 3910674/t 900 2000/w rainy": "echos/-2000 -2000/farmer 83 92 2 Shane -3000 -3000 2 Harvey -3000 -3000 2/skippable/specificTemporarySprite shaneCliffs/viewport 83 99 clamp true/pause 1000/move farmer 0 5 2/pause 500/speak Shane \"...$7#$b#@...$7\"/pause 1000/showFrame farmer 4/pause 1000/speak Shane \"对……对不起……*打嗝*$7#$b#……$7#$b#我……我的人生……$7#$b#是个可悲的笑话……$7#$b#看着我……$7#$b#……$7#$b#我为什么要挣扎呢？ ……*抽咽*$7#$b#我根本掌控不了自己的人生……$7#$b#我只是……风中摇曳的一片垃圾…… *打嗝*$7#$b#……$7#$b#我最近经常来这里……往下看……$7#$b#这是控制我人生的最后一个机会…… 这些悬崖……$7#$b#……$7#$b#但…… 但…… *打嗝*…… 但是我太害怕，太焦虑。就像平时一样…… $7\"/pause 1000/showFrame farmer 0/pause 2000/speak Shane \"@…… 我的人生就是工作，睡觉，吃喝……到…… 到自我仇恨的沮丧心情。$7#$b#为什么我还要继续？ 告诉我…… 告…… 告诉我为什么我不应该现在马上从悬崖边上滚下去……$7\"/pause 1000/showFrame farmer 0/pause 1000/question shaneCliffs \"#因为有太多的留恋！#贾斯需要你。你就像她的母亲。#因为这会是一种罪恶。#这是你自己的决定。我只知道为了你我会一直在这里。\"/pause 500/pause 500/pause 500/pause 1000/speak Shane \"@...$7\"/pause 500/showFrame farmer 4/pause 1000/speak Shane \"……我想你应该带我去医院了。$7\"/pause 500/showFrame farmer 0/jump farmer/pause 1500/globalFade/viewport -1000 -1000/playMusic none/changeLocation Hospital/warp farmer 16 7/playMusic Hospital_Ambient/warp Harvey 16 6/faceDirection farmer 0/specificTemporarySprite shaneHospital/viewport 16 6 true/pause 2000/speak Harvey \"……我已经帮他清洗过胃部并且对她身体进行了再水化。她会好起来的。#$b#总之，庆幸你及时把她送到医院。\"/faceDirection Harvey 1/emote Harvey 28/speak Harvey \"酒精太多会对身体造成很大负担…… 但是现在我最担心的是她的心理健康……$s#$b#当她醒来时，我会和她聊聊关于她的治疗方案。我认识祖祖城的一个优秀心理学家……\"/pause 500/faceDirection farmer 1/pause 1000/speak Harvey \"有时，生活会很痛苦…#$b#但是未来总是充满美好和希望的。你得学会相信它。\"/pause 2000/end invisible Shane"
+            }
+        },
+
+        //Shane change?
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Saloon",
+            "Entries": {
+                "97/f Clint 750/t 1900 2300/d Tue Wed Thu Fri Sat Sun": "none/4 18/farmer 14 24 0 Clint 4 19 2 Emily 10 11 0 Gus 15 18 1 Shane 7 18 1/skippable/move farmer 0 -3 3/emote Clint 28/pause 500/move Clint 0 -1 3/move Clint -3 0 0/pause 500/playSound openBox/pause 150/playSound shiny4/pause 400/playMusic desolate/move Clint 3 0 2/move Clint 0 1 2/move farmer -3 0 0/move farmer 0 -1 3/faceDirection Shane 2 true/move farmer -3 0 3/faceDirection Shane 1 true/move farmer -3 0 3/faceDirection Clint 1/speak Clint \"您好， @……要不要和我坐一起？\"/pause 400/faceDirection farmer 0/pause 800/faceDirection farmer 3/faceDirection Clint 2/speak Clint \"让我跟你讲讲，我在想些什么吧。$u#$b#我没有什么男人缘， @…*唉*$s#$b#但和我打过交道的人，都知道我是个好人。真的！$u\"/pause 500/faceDirection farmer 0/emote farmer 28/pause 500/faceDirection farmer 3/speak Clint \"你是个女孩儿， @……^女孩子似乎都很喜欢你， @……\"/speak Clint \"$q 211 null#你能给我一些建议吗？^你有什么秘诀吗？#$r 211 25 event_advice1#靠你的能力和魅力打动男性#$r 211 25 event_advice1#做些疯狂的事情，让别人猜不透你#$r 211 0 event_advice2#表现得正常一点儿……做你自己就好#$r 211 25 event_advice1#把男人当女人一样对待\"/speed Emily 4/move Emily -6 0 2/speed Emily 2/move Emily 0 4 2/doAction 4 16/playSound openBox/stopMusic/move Emily 0 3 1/move Emily 1 0 2/move Emily 0 1 3/pause 400/pause 700/speak Emily \"嗨，克林特，今晚想来点儿什么？$h\"/pause 600/faceDirection Clint 1/pause 200/speak Clint \"正确！!\"/pause 300/speak Clint \"呃……我是说，请给我来个大份儿干酪。再多浇一份酱汁。$s#$b#...$u\"/faceDirection Clint 3/faceDirection Emily 2/pause 300/faceDirection Clint 2/speak Emily \"嗨 @.\"/pause 300/faceDirection farmer 0/faceDirection Clint 1/speak Clint \"额……*清嗓子*谢……谢谢，艾米丽。谢谢你……给我点单。#$b#那个，艾米丽？我……*吞口水*我在想……$h\"/pause 300/faceDirection Emily 3/emote Emily 8/pause 400/speak Emily \"克林特，怎么了？$u\"/pause 500/emote Clint 28/pause 1200/speak Clint \"…… 算了，没什么。$s\"/faceDirection Clint 0/playMusic sadpiano/pause 300/faceDirection Emily 2/pause 300/faceDirection Emily 3/pause 500/move Emily 0 -1 1/move Emily 1 0 1/faceDirection Shane 3/speak Emily \"嗨，珊恩！这是你的饮料。$h\"/pause 300/faceDirection Shane 1/pause 400/addObject 8 17 346/playSound woodyStep/pause 400/faceDirection Shane 3/pause 300/faceDirection Clint 1/speak Shane \"谢谢，艾米丽！$h#$b#那么……这会儿忙吗？\"/speak Emily \"还好！谢谢你的关心，珊恩！$h#$b#你有新的小鸡故事吗？\"/pause 600/emote Clint 28/pause 500/faceDirection Clint 2/pause 800/speak Clint \"*唉*$s#$b#我没救了……$s\"/end warpOut",
+            }
+        },
+
+        //Gender change
+        {
+            "Action": "EditData",
+            "Target": "Data/NPCDispositions",
+            "Entries": {
+                "Marnie": "adult/polite/outgoing/positive/female/not-datable/Lewis/Town/fall 18/Lewis '' Shane '外甥女' Jas '侄女'/AnimalShop 12 14/玛妮",
+                "Shane": "adult/rude/shy/negative/female/datable/null/Town/spring 20/Marnie '阿姨'/AnimalShop 25 6/珊恩"
+            }
+        },
+        
+        //Shane animation text change
+        {
+            "Action": "EditData",
+            "Target": "Strings/animationDescriptions",
+            "Entries": {
+                "shane_work": "%珊恩正在努力工作。她似乎没兴趣聊天."
+            }
+        },
+
+        //Town event
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "Entries": {
+                "3917584/f Shane 3500/O Shane/d Fri/t 800 1700": "distantBanjo/45 71/farmer 48 67 2 Marnie 52 71 0 Jas 51 71 0 Shane -100 -100 2/addConversationTopic shaneSaloon1 0/skippable/move farmer 0 3 2/warp Shane 45 71/playSound doorClose/faceDirection Marnie 3 true/faceDirection Jas 3 true/move Shane 0 1 2/pause 500/speak Shane \"呼……真好玩。$h#$b#好久没有像那样来上一盘了……嗝\"/pause 500/emote Marnie 28 true/emote Jas 28 true/emote farmer 28 true/pause 1000/speak Shane \"哎……我全身都是汗。最好快点回家。\"/advancedMove Shane false -10 0 0 -14 -10 0 0 -3 -10 0/move farmer 0 2 3 true/pause 3000/speak Marnie \"哦不……这看起来有点糟糕。$s\"/pause 500/faceDirection Jas 1/emote Jas 28/move Marnie 0 1 3 false/faceDirection Jas 2 true/move Marnie -3 0 3/faceDirection Jas 3 true/faceDirection farmer 1/speak Marnie \"@? 你最好盯着她一点……下次你看到她从酒吧里出来，你得说说她……$s\"/pause 1000/faceDirection farmer 2 true/pause 100/faceDirection farmer 3/pause 1000/end dialogue Shane \"没事吧，@？你一脸担忧的样子……\"",
+                "3917586/e 3917585/O Shane/A shaneSaloon2": "spring_day_ambient/45 71/farmer 47 71 1 Shane 37 72 1 Marnie 48 70 2/addWorldState shanePK/skippable/emote Shane 56 true/move Shane 8 0 0/pause 500/speak Shane \"好……我已经准备好下一局了！\"/pause 500/move Shane 0 -1 0/playSound doorClose/warp Shane -100 -100/pause 1000/faceDirection farmer 2 true/showFrame 0/emote farmer 12 true/emote Marnie 12/speak Marnie \"好了……我们抓她了个先行。现在来处理她把。深呼吸一口气……$s\"/move farmer 0 1 3/move farmer -2 0 0/move farmer 0 -1 0/playSound doorClose/warp farmer -100 -100/move Marnie 0 2 3/move Marnie -3 0 0/move Marnie 0 -1 0/playSound doorClose/warp Marnie -100 -100/fade/viewport -1000 -1000/changeLocation Saloon/warp Shane 33 18/warp Marnie 18 21/warp farmer 19 21/faceDirection Marnie 1 true/faceDirection farmer 1 true/positionOffset farmer 0 16/advancedMove farmer false 6 0 0 -2 8 0 4 10/advancedMove Marnie false 6 0 0 -2 8 0 4 10/specificTemporarySprite shaneSaloonCola/playMusic none/pause 3000/viewport 33 18 true/pause 800/playSound Cowboy_gunshot/pause 200/emote Shane 52 true/playSound Cowboy_gunshot/pause 200/playSound Cowboy_gunshot/pause 200/playSound Cowboy_gunshot/pause 160/playSound cowboy_monsterhit/pause 140/playSound Cowboy_gunshot/pause 170/shake Shane 500/playSound cowboy_monsterhit/pause 200/playSound Cowboy_monsterDie/pause 500/playSound cowboy_gunload/pause 700/playSound Cowboy_gunshot/shake Shane 500/pause 200/playSound Cowboy_gunshot/pause 160/playSound cowboy_monsterhit/pause 140/playSound Cowboy_gunshot/pause 170/playSound cowboy_monsterhit/jump Shane/pause 200/playSound Cowboy_monsterDie/pause 500/playSound cowboy_dead/jump Shane/pause 500/textAboveHead Shane \"啊啊!\"/pause 2000/playMusic distantBanjo/textAboveHead Shane \"就差一点……\"/pause 3000/faceDirection Shane 1 true/pause 100/faceDirection Shane 2/animate Shane false true 100 18/jump Shane/pause 500/stopAnimation Shane/showFrame Shane 0/emote Shane 16/speak Shane \"哎呦喂！我怎么有位观众啊。$h\"/faceDirection Marnie 1 true/faceDirection farmer 3/faceDirection Marnie 0 true/faceDirection farmer 0/speak Marnie \"珊恩……你就一直在这里干这事？$s\"/pause 500/speak Shane \"是啊！否则呢？$h\"/faceDirection Shane 1 true/pause 100/faceDirection Shane 0/speak Shane \"我完全迷上了这游戏……#$b#我忍不住一盘接一盘地玩下去……\"/pause 500/faceDirection Shane 1 true/pause 100/faceDirection Shane 2/pause 500/animate Shane false true 100 34/pause 500/speak Shane \"我甚至都排到全球排行榜的前三了……你说我是顶尖玩家之一都不为过。$h\"/pause 500/stopAnimation Shane/pause 100/move Marnie 0 -1 1/speak Marnie \"但是……这些罐子……$s\"/pause 500/faceDirection Shane 3/pause 200/emote Shane 8/speak Shane \"哦，那只是Joja可乐……是是是，我知道……这对我的牙齿不好。不过这能让我集中精神……\"/pause 1000/faceDirection Shane 2/pause 200/faceDirection Shane 3/faceDirection Shane 2/faceDirection Shane 3/speak Shane \"等等……你们是不是以为我在喝啤酒？$a\"/faceDirection Marnie 2/emote Marnie 28/faceDirection Shane 2/speak Shane \"@? 我都跟你说了我没在喝酒……$a\"/question fork0 \"#我们很担心你……#对不起，我应该相信你的\"/fork wewereworried/emote farmer 40/faceDirection Marnie 1/pause 1000/faceDirection Shane 2/emote Shane 40/speak Shane \"……没事，@。你们只是在关心我。我懂的。#$b#你看……我知道我一直不太完美……但是，我在努力做到最好……而且我会一直继续努力……所以你们不必担心我的。#$b#我的生活已经比以前好太多了。我已经不在阴暗的地方了……\"/pause 500/emote Marnie 20 true/emote farmer 20 true/pause 1300/faceDirection Shane 0/speak Shane \"说起来，我玩这个游戏的时候，会专注到没心思想别的事情。当我有“冲动”的时候这确实很有帮助……\"/faceDirection Shane 2/speak Shane \"总之……我就……呃……再玩一局就回家。行吗？\"/pause 1000/emote farmer 32/pause 1000/end dialogue Shane \"你们刚才进来看到我在街机前面的时候，肯定很疑惑吧！$h\""
+            }
+            },
+            
+        //Shane 14 heart event change continued
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Saloon",
+            "Entries": {
+                "wewereworried": "emote farmer 40/faceDirection Marnie 1/pause 1000/faceDirection Shane 2/emote Shane 12/speak Shane \"我是你的妻子……你应该相信我。我一直坦诚地告诉你我的问题。$a#$b#那个……我知道我还没从强行戒酒瘾中缓过来……但是，我在努力做到最好……而且我也健康多了。#$b#我的生活已经比以前好太多了。我已经不在阴暗的地方了……\"/pause 500/emote Marnie 20 true/emote farmer 20 true/pause 1300/faceDirection Shane 0/speak Shane \"说起来，我玩这个游戏时，会专注到没心思想别的事情。当我有“冲动”的时候这确实很有帮助……\"/faceDirection Shane 2/speak Shane \"总之……我就……呃……再玩一局就回家。行吗？\"/pause 500/emote farmer 32/pause 1000/end dialogue Shane \"你们刚才进来看到我在街机前面的时候，肯定很疑惑吧！$h\""
+            }
+        },
+
+        //Map text change
+        {
+            "Action": "EditData",
+            "Target": "Strings/StringsFromMaps",
+            "Entries": {
+              "AnimalShop.8": "看来她把收音机当闹钟在用。"
+            }
+        },
+          
+        //Secret note fixes	
+        {
+            "Action": "EditData",
+            "Target": "Data/SecretNotes",
+            "Entries": {
+                "7": "这是某人日记中的一页……^^……镇里只有少数几个“老”单身，他们都并不完美！哈维确实焦虑而软弱，但我知道他会成为一个忠诚专一的丈夫。他喜欢咖啡和腌菜。^^艾利欧特有些浮夸和矫情，但他的下巴确实很好看。他喜欢蟹黄糕和石榴。^^珊恩邋遢且反社会。但我认为她粗鲁的外在是一种保护机制，将她内心的柔软与世界隔离开来。她喜欢啤酒、披萨和爆炒青椒。"
+            }
+        },
+
+        //OW Sprite
+        {
+            "Action": "EditImage",
+            "Target": "Characters/Shane",
+            "FromFile": "assets/Shane/ShaneOW.png",
+        },
+
+        //Work sprite
+        {
+            "Action": "EditImage",
+            "Target": "Characters/Shane_JojaMart",
+            "FromFile": "assets/Shane/ShaneJojaOW.png",
+        },
+
+        //Changes Shane to female Shane when they put up the joja banner
+        {
+            "LogName": "Cursors",
+            "Action": "EditImage",
+            "Target": "LooseSprites/Cursors",
+            "FromFile": "assets/Cursors.png",
+            "ToArea":
+            {
+                "X": 0,
+                "Y": 1391,
+                "Width": 30,
+                "Height": 30
+            },
+            "FromArea":
+            {
+                "X": 0,
+                "Y": 1391,
+                "Width": 30,
+                "Height": 30
+            },
+            "PatchMode": "Replace"
+        },
+
+        //Changes "drunk passed out Shane" to "drunk passed out female Shane"
+        {
+            "LogName": "Cursors",
+            "Action": "EditImage",
+            "Target": "LooseSprites/Cursors",
+            "FromFile": "assets/Cursors.png",
+            "ToArea":
+            {
+                "X": 533,
+                "Y": 1864,
+                "Width": 19,
+                "Height": 27
+            },
+            "FromArea":
+            {
+                "X": 533,
+                "Y": 1864,
+                "Width": 19,
+                "Height": 27
+            },
+            "PatchMode": "Replace"
+        },
+
+        //Portrait
+        {
+            "Action": "EditImage",
+            "Target": "Portraits/Shane",
+            "FromFile": "assets/Shane/Shane.png",
+            "When": {"Shane's Portrait": "true" }
+        },
+
+        //Wedding sprite
+        {
+            "Action": "EditImage",
+            "Target": "Characters/Shane",
+            "FromFile": "assets/Shane/ShaneOW_Wedding.png",
+            "When": {"DayEvent": "wedding"}
+        },
+    ]
+}

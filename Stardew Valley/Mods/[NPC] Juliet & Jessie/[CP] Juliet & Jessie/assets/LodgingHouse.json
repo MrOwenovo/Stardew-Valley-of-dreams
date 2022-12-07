@@ -1,0 +1,173 @@
+{
+	"Changes": [
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Town",
+			"FromFile": "assets/Maps/Town-staircasePatch-vanilla.tmx",
+			"ToArea": {
+				"X": 32,
+				"Y": 0,
+				"Width": 7,
+				"Height": 13
+			},
+			"When": {
+				"HasMod |contains=DaisyNiko.SVR3": false
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Town",
+			"FromFile": "assets/Maps/Town-staircasePatch-SDR2.tmx",
+			"ToArea": {
+				"X": 32,
+				"Y": 0,
+				"Width": 7,
+				"Height": 13
+			},
+			"When": {
+				"HasMod |contains=DaisyNiko.SVR2": true,
+				"HasMod |contains=Karmylla.ImmersiveMaps": true,
+				"TownMap": "reimagined"
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Town",
+			"FromFile": "assets/Maps/Town-staircasePatch-SDR2.tmx",
+			"ToArea": {
+				"X": 32,
+				"Y": 0,
+				"Width": 7,
+				"Height": 13
+			},
+			"When": {
+				"HasMod |contains= DaisyNiko.SVR2": true,
+				"HasMod |contains=Karmylla.ImmersiveMaps": false
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Town",
+			"FromFile": "assets/Maps/Town-staircasePatch-Reimagined1.tmx",
+			"ToArea": {
+				"X": 32,
+				"Y": 0,
+				"Width": 7,
+				"Height": 13
+			},
+			"When": {
+				"HasMod |contains=DaisyNiko.StardewValleyReimagined": true
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Town",
+			"FromFile": "assets/Maps/Town-staircasePatch-SVE.tmx",
+			"ToArea": {
+				"X": 32,
+				"Y": 0,
+				"Width": 7,
+				"Height": 13
+			},
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Town",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"MapProperties",
+						"Warp"
+					],
+					"Value": "34 0 Custom_LK_ClearingHouse 24 29",
+					"Delimiter": " "
+				},
+			],
+			"When": {
+				"HasMod |contains= DaisyNiko.SVR3": false
+			}
+		},
+		{
+			"LogName": "Removes bushes from their path",
+			"Action": "EditMap",
+			"Target": "Maps/Town",
+			"MapTiles": [
+				{
+					"Position": {
+						"X": 33,
+						"Y": 15
+					},
+					"Layer": "Paths",
+					"Remove": true
+				}
+			],
+			"When": {
+				"HasMod |contains= DaisyNiko.SVR3": false
+			}
+		},
+		{
+			"LogName": "Adds the door warp into the house",
+			"Action": "EditMap",
+			"Target": "Maps/Custom_LK_ClearingHouse",
+			"MapTiles": [
+				{
+					"Position": {
+						"X": 25,
+						"Y": 13
+					},
+					"Layer": "Buildings",
+					"SetProperties": {
+						"Action": "Warp 13 23 Custom_LK_LodgingHouse"
+					}
+				}
+			]
+		},
+		// ************************* Reimagined 3 *****************************
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Town",
+			"FromFile": "assets/Maps/Town-staircasePatch-SVR3.tmx",
+			"ToArea": {
+				"X": 49,
+				"Y": 0,
+				"Width": 4,
+				"Height": 10
+			},
+			"When": {
+				"HasMod |contains=DaisyNiko.SVR3": true
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Town",
+			"TextOperations": [
+				{
+					"Operation": "Append",
+					"Target": [
+						"MapProperties",
+						"Warp"
+					],
+					"Value": "51 0 Custom_LK_ClearingHouse 24 29 52 0 Custom_LK_ClearingHouse 25 29",
+					"Delimiter": " "
+				}
+			],
+			"When": {
+				"HasMod |contains= DaisyNiko.SVR3": true
+			}
+		},
+		{ //Adjusts the warp in ClearingHouse
+			"Action": "EditMap",
+			"Target": "Maps/Custom_LK_ClearingHouse",
+			"MapProperties": {
+				"Warp": "23 30 Town 51 2 24 30 Town 51 2 25 30 Town 51 2 26 30 Town 52 2 27 30 Town 52 2 28 30 Town 52 2 29 30 Town 52 2"
+			},
+			"When": {
+				"HasMod |contains= DaisyNiko.SVR3": true
+			}
+		},
+	]
+}

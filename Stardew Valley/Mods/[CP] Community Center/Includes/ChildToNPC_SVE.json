@@ -1,0 +1,58 @@
+{
+    "Changes": [
+        // C H I L D   T O   N P C   S V E   C U T   F R O M   H E R E
+        {
+            "LogName": "firstChild Schedule ",
+            "Action": "EditData",
+            "Target": "Characters/schedules/{{Loe2run.ChildToNPC/FirstChildName}}",
+            "When": {
+                "HasSeenEvent": "191393",
+                "HasMod": "LemurKat.CommunityCenter.CP"
+            },
+            "Entries": {
+                "Tue": "730 Town 54 69 0 child_twirl \"Strings\\schedules\\{{Loe2run.ChildToNPC/FirstChildName}}:town.003\"/1000 CommunityCenter 14 21 1 child_fidget \"Strings\\schedules\\{{Loe2run.ChildToNPC/FirstChildName}}:school.000\"/1400 Town 83 98 3 \"Strings\\schedules\\{{Loe2run.ChildToNPC/FirstChildName}}:town.001\"/1620 Town 16 90 3 \"Strings\\schedules\\{{Loe2run.ChildToNPC/FirstChildName}}:afterschool.000\"/1740 SamHouse 12 23 0 \"Strings\\schedules\\{{Loe2run.ChildToNPC/FirstChildName}}:samhouse.001\"/1900 {{Loe2run.ChildToNPC/FirstChildBed}} child_sleep"
+            }
+        },
+        {
+            "LogName": "SecondChild Schedule ",
+            "Action": "EditData",
+            "Target": "Characters/schedules/{{Loe2run.ChildToNPC/SecondChildName}}",
+            "When": {
+                "HasSeenEvent": "191393",
+                "HasMod": "LemurKat.CommunityCenter.CP"
+            },
+            "Entries": {
+                "Tue": "830 CommunityCenter 18 21 3 \"Strings\\schedules\\{{Loe2run.ChildToNPC/SecondChildName}}:school.000\"/1410 Town 100 100 2 child_fidget \"Strings\\schedules\\{{Loe2run.ChildToNPC/SecondChildName}}:garden.000\"/1530 Town 22 63 0 child_ball/1900 {{Loe2run.ChildToNPC/SecondChildBed}} child_sleep"
+            }
+        },
+        // E N D   C U T   A N D   P A S T E
+        // *******************************************************//
+        // B A B Y S I T T E R   C U T   F R O M   H E R E
+        {
+            "LogName": "firstChild Schedule ",
+            "Action": "EditData",
+            "Target": "Characters/schedules/{{Loe2run.ChildToNPC/FirstChildName}}",
+            "When": {
+                "HasSeenEvent": "191393",
+                "HasMod": "LemurKat.CommunityCenter.CP"
+            },
+            "Entries": {
+                "Tue": "800 CommunityCenter 14 21 1/1400 Town 83 98 3/1620 Town 15 89 2/1740 SamHouse 3 5 2/2000 SamHouse 9 22 1 child_sleep"
+            }
+        },
+        {
+            "LogName": "SecondChild Schedule ",
+            "Action": "EditData",
+            "Target": "Characters/schedules/{{Loe2run.ChildToNPC/SecondChildName}}",
+            "When": {
+                "HasSeenEvent": "191393",
+                "HasMod": "LemurKat.CommunityCenter.CP"
+            },
+            "Entries": {
+                "Tue": "800 CommunityCenter  18 21 3/1400 Town 84 92 1/1620 Town 16 89 2/1750 AnimalShop 2 7 1 child_sleep"
+            }
+        },
+        // E N D   C U T   A N D   P A S T E
+        // **********************************************************//
+    ]
+}

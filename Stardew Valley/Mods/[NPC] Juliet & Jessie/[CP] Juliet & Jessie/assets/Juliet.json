@@ -1,0 +1,1327 @@
+{
+  "Changes": [
+    //Data for Social Menu
+    {
+      "LogName": "NPC Manifestation",
+      "Action": "EditData",
+      "Target": "Data/NPCDispositions",
+      "Entries": {
+        "Juliet": "adult/rude/outgoing/negative/female/not-datable/null/Town/spring 15/Gremlin '狗狗'/Custom_LK_LodgingHouse 22 6/朱丽叶"
+      }
+    },
+    {
+      "LogName": "Juliet will dance at Flower Dance",
+      "Action": "EditData",
+      "Target": "Data/NPCDispositions",
+      "Fields": {
+        "Juliet": {
+          "5": "datable"
+        }
+      },
+      "When": {
+        "DayEvent": "flower dance"
+      }
+    },
+    {
+      "LogName": "Juliet becomes datable",
+      "Action": "EditData",
+      "Target": "Data/NPCDispositions",
+      "Fields": {
+        "Juliet": {
+          "5": "datable"
+        }
+      },
+      "When": {
+        "HasDialogueAnswer": "639899"
+      }
+    },
+    {
+      "LogName": "NPC Gift Tastes",
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "Entries": {
+        "Juliet": "哇哦，简直不可思议！这会不会听起来有点讽刺啊？但我真的超爱这个！/376 420 614 651 731/嘿，这棒极了！等等，莫非你想要什么作为回报吗？/283 348 613 724 346 167/哇哦，棒极了。又是垃圾。你可真是太慷慨了。/-4 256 231/噢……不错……棒极了……你这个混蛋。/717 720 276/谢谢。它一定可以派上用场的。//"
+      }
+    },
+    // Juliet Loves Poppy, Red Mushroom, Green Tea, Poppyseed Muffin, Maple Bar
+    //Likes Wine, Apple, Maple Syrup, Beer, Joja cola?, holly
+    //Dislikes Tomato, fish, Eggplant Parmesan
+    //Hates Crab, Shrimp, Pumpkin
+    //Loads Juliet
+    {
+      "LogName": "NPC Sprite",
+      "Action": "Load",
+      "Target": "Characters/Juliet, portraits/Juliet",
+      "FromFile": "assets/{{Target}}/Juliet_base.png"
+    },
+    {
+      "LogName": "swimsuit sprites",
+      "Action": "EditImage",
+      "Target": "Characters/Juliet, Portraits/Juliet",
+      "FromFile": "assets/{{Target}}/Juliet_swimsuit.png",
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Beach",
+        "Season": "summer"
+      }
+    },
+    {
+      "LogName": "swimsuit sprites",
+      "Action": "Load",
+      "Target": "Characters/Juliet_Beach",
+      "FromFile": "assets/Characters/Juliet/Juliet_swimsuit.png"
+    },
+    {
+      "LogName": "swimsuit sprites",
+      "Action": "Load",
+      "Target": "Portraits/Juliet_Beach",
+      "FromFile": "assets/Portraits/Juliet/Juliet_swimsuit.png"
+    },
+    {
+      "LogName": "fall sprites",
+      "Action": "EditImage",
+      "Target": "Characters/Juliet, Portraits/Juliet",
+      "FromFile": "assets/{{Target}}/Juliet_fall.png",
+      "When": {
+        "Season": "fall"
+      }
+    },
+    {
+      "LogName": "winter sprites",
+      "Action": "EditImage",
+      "Target": "Characters/Juliet, Portraits/Juliet",
+      "FromFile": "assets/{{Target}}/Juliet_winter.png",
+      "When": {
+        "Season": "winter"
+      }
+    },
+    {
+      "LogName": "Theater Sprites",
+      "Action": "EditImage",
+      "Target": "Characters/Juliet, Portraits/Juliet",
+      "FromFile": "assets/{{Target}}/Juliet_theater.png",
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Custom_LK_TheaterBreakroom"
+      }
+    },
+    {
+      "LogName": "JojaMart Sprites",
+      "Action": "EditImage",
+      "Target": "Portraits/Juliet",
+      "FromFile": "assets/Portraits/Juliet/Juliet_Joja.png",
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "JojaMart"
+      }
+    },
+    {
+      "LogName": "JojaMart Sprites",
+      "Action": "Load",
+      "Target": "Portraits/Juliet_Joja",
+      "FromFile": "assets/Portraits/Juliet/Juliet_Joja.png"
+    },
+    {
+      "LogName": "JojaMart Sprites",
+      "Action": "Load",
+      "Target": "Characters/Juliet_Joja",
+      "FromFile": "assets/Characters/Juliet/Juliet_Joja.png"
+    },
+	{ //Kataryna
+      "LogName": "Juliet FortuneTeller",
+      "Action": "Load",
+      "Target": "Characters/Juliet_FortuneTeller",
+      "FromFile": "assets/Characters/Juliet/Juliet_FortuneTeller.png"
+    },
+    { //Kataryna
+      "LogName": "Juliet FortuneTeller",
+      "Action": "Load",
+      "Target": "Portraits/Juliet_FortuneTeller",
+      "FromFile": "assets/Portraits/Juliet/Juliet_FortuneTeller.png"
+    },
+    //Festivals
+    {
+      "LogName": "EggFestival",
+      "Action": "EditImage",
+      "Target": "Characters/Juliet",
+      "FromFile": "assets/Characters/Juliet_eggfest.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 16,
+        "Height": 128
+      },
+      "ToArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 16,
+        "Height": 128
+      },
+      "Update": "OnLocationChange",
+      "When": {
+        "DayEvent": "egg festival",
+        "LocationName": "Temp"
+      }
+    },
+    {
+      "LogName": "EggFestival",
+      "Action": "EditImage",
+      "Target": "Portraits/Juliet",
+      "FromFile": "assets/Portraits/Juliet_eggfest.png",
+      "Update": "OnLocationChange",
+      "When": {
+        "DayEvent": "egg festival",
+        "LocationName": "Temp"
+      }
+    },
+    {
+      "LogName": "FlowerFestival",
+      "Action": "EditImage",
+      "Target": "Characters/Juliet",
+      "FromFile": "assets/Characters/Juliet_flowerdance.png",
+      "Update": "OnLocationChange",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 16,
+        "Height": 128
+      },
+      "ToArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 16,
+        "Height": 128
+      },
+      "When": {
+        "LocationName": "Temp",
+        "DayEvent": "flower dance"
+      }
+    },
+    {
+      "LogName": "FlowerFestival",
+      "Action": "EditImage",
+      "Target": "Portraits/Juliet",
+      "FromFile": "assets/Portraits/Juliet_flowerdance.png",
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Temp",
+        "DayEvent": "flower dance"
+      }
+    },
+    {
+      "LogName": "Jellies",
+      "Action": "EditImage",
+      "Target": "Characters/Juliet",
+      "FromFile": "assets/Characters/Juliet_jellies.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 16,
+        "Height": 128
+      },
+      "ToArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 16,
+        "Height": 128
+      },
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Temp",
+        "DayEvent": "dance of the moonlight jellies"
+      }
+    },
+    {
+      "LogName": "Jellies",
+      "Action": "EditImage",
+      "Target": "Portraits/Juliet",
+      "FromFile": "assets/Portraits/Juliet_jellies.png",
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Temp",
+        "DayEvent": "dance of the moonlight jellies"
+      }
+    },
+    {
+      "LogName": "SDV fair",
+      "Action": "EditImage",
+      "Target": "Characters/Juliet",
+      "FromFile": "assets/Characters/Juliet_Fair.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 16,
+        "Height": 128
+      },
+      "ToArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 16,
+        "Height": 128
+      },
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Temp",
+        "DayEvent": "stardew valley fair"
+      }
+    },
+    {
+      "LogName": "SDV fair",
+      "Action": "EditImage",
+      "Target": "Portraits/Juliet",
+      "FromFile": "assets/Portraits/Juliet_Fair.png",
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Temp",
+        "DayEvent": "stardew valley fair"
+      }
+    },
+    {
+      "LogName": "Festival Sprites",
+      "Action": "EditImage",
+      "Target": "Characters/Juliet",
+      "FromFile": "assets/Characters/Juliet_{{Costume}}.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 16,
+        "Height": 128
+      },
+      "ToArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 16,
+        "Height": 128
+      },
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Temp",
+        "DayEvent": "spirit's eve"
+      }
+    },
+    {
+      "Logname": "Festival Sprites",
+      "Action": "EditImage",
+      "Target": "Portraits/Juliet",
+      "FromFile": "assets/Portraits/Juliet_{{Costume}}.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 64,
+        "Height": 64
+      },
+      "ToArea": {
+        "X": 0,
+        "Y": 448,
+        "Width": 64,
+        "Height": 64
+      },
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Temp",
+        "DayEvent": "spirit's eve"
+      }
+    },
+    {
+      "LogName": "Festival Sprites",
+      "Action": "EditImage",
+      "Target": "Characters/Juliet",
+      "FromFile": "assets/Characters/Juliet/Juliet_SpiritsEve.png",
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Custom_EastScarpeInn, Custom_EastScarpe",
+        "DayEvent": "spirit's eve"
+      }
+    },
+    {
+      "Logname": "Festival Sprites",
+      "Action": "EditImage",
+      "Target": "Portraits/Juliet",
+      "FromFile": "assets/Portraits/Juliet/Juliet_SpiritsEve.png",
+      "Update": "OnLocationChange",
+      "When": {
+        "LocationName": "Custom_EastScarpeInn, Custom_EastScarpe",
+        "DayEvent": "spirit's eve"
+      }
+    },
+    //Schedules
+    {
+      "LogName": "Schedule",
+      "Action": "Load",
+      "Target": "Characters/schedules/Juliet",
+      "FromFile": "assets/schedules/JulietSchedule.json",
+      "When": {
+        "HasSeenEvent |contains=191393": "false" //has not seen Community Center opening = Joja still eopn
+      }
+    },
+    {
+      "LogName": "Schedule",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Juliet",
+      "Entries": {
+        "rain": "GOTO Sun"
+      },
+      "When": {
+        "DayofWeek": "Sunday"
+      }
+    },
+    {
+      "LogName": "Schedule",
+      "Action": "Load",
+      "Target": "Characters/schedules/Juliet",
+      "FromFile": "assets/schedules/JulietScheduleJojaClosed.json",
+      "When": {
+        "HasSeenEvent |contains=191393": true, //Community Center made
+        "HasFlag |contains=ccMovieTheater": false //theater not built
+      }
+    },
+    {
+      "LogName": "Schedule",
+      "Action": "Load",
+      "Target": "Characters/schedules/Juliet",
+      "FromFile": "assets/schedules/JulietScheduleTheater.json",
+      "When": {
+        "HasFlag |contains=ccMovieTheater": true, //theater built
+        "HasFlag |contains=ccMovieTheaterJoja": false, //not Joja theater
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false //No SVE
+      }
+    },
+    {
+      "LogName": "Schedule",
+      "Action": "Load",
+      "Target": "Characters/schedules/Juliet",
+      "FromFile": "assets/schedules/JulietScheduleJojaClosed.json",
+      "When": {
+        "HasFlag |contains=ccMovieTheater": true, //theater built
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true, //has SVE
+        "HasSeenEvent |contains=191393": "true" //Joja closed
+      }
+    },
+    //changes schedule if you encourage her to play drums (ES not installed)
+    {
+      "LogName": "Schedule",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Juliet",
+      "Entries": {
+        "Sat": "700 Custom_LK_LodgingHouse 21 16 1/900 Custom_LK_ClearingHouse 16 7 3/1100 SamHouse 16 18 0 Juliet_drums/1500 Beach 44 35 2/1800 Saloon 42 20 3/2400 Custom_LK_LodgingHouse 27 6 2 Juliet_sleep"
+      },
+      "When": {
+        "HasDialogueAnswer": "8571103, 8571105"
+      }
+    },
+    //East Scarpe installed
+    {
+      "LogName": "Schedule - if East Scarpe installed",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Juliet",
+      "Entries": {
+        "Sat": "700 Custom_LK_LodgingHouse 21 16 3/900 Custom_LK_LodgingHouse 33 7 0 Juliet_drums/950 Custom_LK_ClearingHouse 25 20 2/1030 Custom_EastScarpe 21 102 0/1400 Custom_EastScarpe 56 41 2/1700 Saloon 42 21 3/2400 Custom_LK_LodgingHouse 27 6 2 Juliet_sleep"
+      },
+      "When": {
+        "HasSeenEvent": "86571101",
+        "HasMod": "LemurKat.EastScarpe.CP"
+      }
+    },
+    {
+      "LogName": "Schedule - if East Scarpe installed",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Gremlin",
+      "Entries": {
+        "Sat": "700 Custom_LK_LodgingHouse 19 22 0 Gremlin_sit/900 Custom_LK_ClearingHouse 19 19 1 square_3_3/1010 Custom_LK_ClearingHouse 24 20 2 Gremlin_sit/1030 Custom_EastScarpe 20 108 2 square_5_4/1330 Custom_EastScarpe 19 102 1/1400 Custom_EastScarpe 57 40 2/1700 Saloon 41 22 1 Gremlin_sit/2400 Custom_LK_LodgingHouse 22 6 2 Gremlin_sleep"
+      },
+      "When": {
+        "HasSeenEvent": "86571101",
+        "HasMod": "LemurKat.EastScarpe.CP"
+      }
+    },
+    //Dialogue
+    {
+      "LogName": "Dialogue",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/Juliet",
+      "FromFile": "assets/dialogue/JulietDialogue.json"
+    },
+    {
+      "LogName": "Dialogue",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/MarriageDialogueJuliet",
+      "FromFile": "assets/dialogue/MarriageDialogueJuliet.json"
+    },
+    {
+      "LogName": "Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogueJuliet",
+      "Entries": {
+        "Rainy_Night_5": "终于，你回家了！我好无聊……要和我窝在一起看部电影吗？#$b#我一直想看那部关于{{random: 仙女和哥布林如何坠入爱河的电影。, 恐龙僵尸的电影。, 王子和海盗女王的电影。}}$1"
+      }
+    },
+    {
+      "LogName": "Seasonal Joja Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Juliet",
+      "Entries": {
+        "JojaMart_Tue": "你对熟透了的多汁甜瓜感兴趣吗？就在第一排的最后，宝石群岛新鲜出产！$1"
+      },
+      "When": {
+        "Season": "summer"
+      }
+    },
+    {
+      "LogName": "Seasonal Joja Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Juliet",
+      "Entries": {
+        "JojaMart_Tue": "来点茄子种子怎么样？你知道姑娘和茄子有什么共同之处吗……？我们都深深爱着她们！$1"
+      },
+      "When": {
+        "Season": "fall"
+      }
+    },
+    {
+      "LogName": "Seasonal Joja Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Juliet",
+      "Entries": {
+        "JojaMart_Tue": "你一个人在农场上会不会感觉空虚寂寞冷啊？我们这里有热辣辣的美味辣椒酱！一定能让你从头暖和到……呃，你知道我说的是哪儿！$1"
+      },
+      "When": {
+        "Season": "winter"
+      }
+    },
+    {
+      "LogName": "Schedule Dialogue",
+      "Action": "Load",
+      "Target": "Strings/schedules/Juliet",
+      "FromFile": "assets/dialogue/ScheduleDialogueJuliet.json"
+    },
+    {
+      "LogName": "Rainy Day Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/rainy",
+      "Entries": {
+        "Juliet": "我喜欢雨的声音。你知道最好的地方是什么？下雨就不用去工作了！",
+        "Jessie": "真是美丽的一天，你觉得呢，@？我当然知道外面下雨了！植物们都很喜欢下雨，而且朱丽叶也因此不得不和我共度美好时光。$1"
+      }
+    },
+    //Animations   
+    {
+      "LogName": "Animations",
+      "Action": "EditData",
+      "Target": "Data/animationDescriptions",
+      "Entries": {
+        "Juliet_work": "12 24 24 24/16 16 16 17 17 18 18 19 19 18 18 18 19 19 19 18 18 18 19 19 19 17 17 20 20 20 20 20 20 21 21 21 20 20 20 22 22 20 20 22 22 20 20 21 21 21 21/24 24 24 12",
+        "Juliet_drums": "8/29 30 31/8",
+        "Juliet_sleep": "39/39/39",
+        "Juliet_yoyo": "0/32 32 33 33 34 34 35 35 35 35 35 35 35 35 35 35 35/0",
+        "Gremlin_sit": "4/16 16 16 16 17 17 17 17/4",
+        "Gremlin_sleep": "0/19/0"
+      }
+    },
+    {
+      "LogName": "Engagement Dialogue",
+      "Action": "EditData",
+      "Target": "Data/EngagementDialogue",
+      "Entries": {
+        "Juliet0": "嗯，最后几天的自由时间，该做些什么呢？噢，我是在开玩笑啦，@。我真的为婚礼很激动！",
+        "Juliet1": "嘿，@。我好像记得明天有什么事要做……但我记不太清楚了。#$b#开玩笑的！我们明天就要结婚了，以后你就只能和我黏在一起啦！"
+      }
+    },
+    //Changes Shane's schedule on rainy days
+    {
+      "LogName": "Schedule",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Shane",
+      "Entries": {
+        "rain": "700 Town 95 51 0/850 JojaMart 9 25 1/1700 Saloon 21 17 2 shane_drink/2300 AnimalShop 27 4 1 shane_sleep"
+      },
+      "When": {
+        "IsCommunityCenterComplete": false,
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+      }
+    },
+    //Events
+    {
+      "LogName": "Removes bushes from KIM",
+      "Action": "EditMap",
+      "Target": "Maps/Town",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 109,
+            "Y": 57
+          },
+          "Layer": "Paths",
+          "Remove": true
+        },
+        {
+          "Position": {
+            "X": 105,
+            "Y": 61
+          },
+          "Layer": "Paths",
+          "Remove": true
+        }
+      ],
+      "When": {
+        "HasMod": "Karmylla.ImmersiveMaps",
+        "HasSeenEvent |contains=86571101": false
+      }
+    },
+    //Loads Data/Events for areas without them (including some never used)
+    {
+      "LogName": "LodgingHouse Events",
+      "Action": "Load",
+      "Target": "Data/Events/Custom_LK_LodgingHouse",
+      "FromFile": "assets/events/LodgingHouse.json"
+    },
+    {
+      "LogName": "ClearingHouse Events",
+      "Action": "Load",
+      "Target": "Data/Events/Custom_LK_ClearingHouse",
+      "FromFile": "assets/events/ClearingHouse.json"
+    },
+    {
+      "LogName": "Joja Breakroom Events",
+      "Action": "Load",
+      "Target": "Data/Events/Custom_LK_JojaBreakroom",
+      "FromFile": "assets/events/JojaBreakroom.json"
+    },
+    {
+      "LogName": "Basement Events",
+      "Action": "Load",
+      "Target": "Data/Events/Custom_LK_LodgingHouseBasement",
+      "FromFile": "assets/events/LodgingHouseBasement.json"
+    },
+    {
+      "Logname": "JojaMart Events",
+      "Action": "Load",
+      "Target": "Data/Events/JojaMart",
+      "FromFile": "assets/events/JojaMart.json",
+      "When": {
+        "LoadJojaMart": true,
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP, Fellowclown.Nikolai": false
+      }
+    },
+    //4 and 8 heart events
+    {
+      "LogName": "Temp Actor Melon",
+      "Action": "Load",
+      "Target": "Characters/Melon",
+      "FromFile": "assets/img/melon.png"
+    },
+    {
+      "LogName": "Juliet 4 and 8-heart events",
+      "Action": "EditData",
+      "Target": "Data/Events/Town",
+      "Entries": {
+        "86571101/f Juliet 1000/t 1600 1800/d Sat Sun/w sunny": "none/-100 -100/Juliet 96 53 2 farmer 107 63 0/addTemporaryActor Gremlin 16 32 109 56 1 false/addConversationTopic JulietGremlin 3/animate Gremlin false true 300 22 22 23 23 23/skippable/viewport 100 59/playSound trashcan/move Juliet 0 3 1/pause 500/playSound dogWhining/jump Juliet 3/pause 500/emote Juliet 16/pause 500/playSound trashcan/pause 500/move Juliet 2 0 1/textAboveHead Juliet \"嘿，狗狗\"/move Juliet 2 0 1/pause 1000/move Juliet 2 0 1/pause 1000/textAboveHead Juliet \"别害怕\"/pause 1000/move farmer 0 -2 0/pause 500/stopAnimation Gremlin/pause 500/faceDirection Gremlin 3/shake Gremlin 250/showFrame Gremlin 18/pause 500/faceDirection Juliet 2/pause 500/speak Juliet \"别动！你会吓着她的。$5\"/pause 500/emote farmer 28/pause 500/playSound dog_bark/pause 500/shake Gremlin 250/playSound dog_bark/faceDirection Juliet 1/showFrame Juliet 26/pause 500/speak Juliet \"没事的，我们不会伤害你。这儿，我给你带了点东西。\"/addObject 104 56 641 0/pause 500/emote farmer 40/showFrame Gremlin 12/pause 500/playSound dog_pant/move Gremlin -1 0 3/pause 500/move Gremlin -1 0 3/pause 500/playSound dog_bark/textAboveHead Juliet \"没事的，姑娘\"/move Gremlin -2 0 1/animate Gremlin false true 250 26 27 26 27 12 12 12 12/advancedMove Juliet false -1 0 0 5 4 0/faceDirection Juliet 1/pause 1500/speak Juliet \"怎么了？是啊，这是Joja的肉，所以肯定都是水分和生长激素。但这不会伤害到她的。$3#$b#由巴，你就这么冲了过来，到底是在想什么啊？\"/pause 500/faceDirection farmer 3/emote farmer 40/speak Juliet \"$q 86571116 null#你差点把她吓跑了！#$r 8651116 25 Juliet_Gremlin_Apologise#抱歉……我不是故意要吓她的。#$r 8651116 0 Juliet_Gremlin_Charge#你说“冲过来”是什么意思？#$r 8651118 -50 Juliet_Gremlin_Pest#你应该抵制添加激素的有害肉类。\"/pause 500/fork 8651118 Juliet_Gremlin_Disgust/pause 500/faceDirection Juliet 0/faceDirection farmer 0/speak Juliet \"好吧，反正没造成什么后果，我也怪不着你，对吧？她已经在这里徘徊好几天了，可怜的小家伙。$2#$b#我正在试着让她信任我。只是每次莫里斯都会冲她扔垃圾，这样可起不到任何帮助。$5\"/removeSprite 104 56/stopAnimation Gremlin/showFrame Gremlin 0/pause 500/move Gremlin 0 2 2/pause 1000/emote Juliet 32/pause 500/move Gremlin 0 1 2/pause 1000/emote farmer 28/move Gremlin 0 1 2/textAboveHead Gremlin \"嗷呜呜呜？\"/pause 500/warp Gremlin -100 -100/showFrame Juliet 27/pause 1000/emote Juliet 20/pause 500/faceDirection farmer 3/emote farmer 32/pause 1000/end dialogue Juliet \"她跟着我回到了家，@……我想我现在也有狗了？$1\"",
+        "Juliet_Gremlin_Disgust": "pause 500/emote Juliet 12/pause 500/faceDirection Juliet 0/pause 1000/emote farmer 28/pause 500/speak Juliet \"%朱丽叶无视了你。\"/pause 1000/end",
+        "86571120/e 86571110/e 86571141/f Juliet 2000/p Juliet/w sunny": "continue/83 32/Juliet 94 25 1 farmer 94 34 0 {{bossGuy}} 94 45 0/skippable/addTemporaryActor Melon 16 16 -100 -100 0 false/animate Juliet false false 150 49 49 49 49 50 50 51/warp Melon 95 25/speed Melon 7/playSound throw/move Melon 6 0 0/warp Melon -100 -100/playSound slimedead/addObject 100 24 255 0/pause 500/animate Juliet false false 150 49 49 49 49 50 50 51/warp Melon 95 25/speed Melon 7/playSound throw/move Melon 6 0 0/warp Melon -100 -100/playSound slimedead/addObject 101 24 255 0/emote farmer 8/showFrame Juliet 49/pause 500/showFrame Juliet 50/move farmer 0 -7 0/pause 500/jump Juliet 2/showFrame Juliet 51/playSound slimedead/addObject 97 25 255 0/faceDirection Juliet 2/emote Juliet 12/speak Juliet \"你吓到我了！\"/quickQuestion #你在做什么？#你为什么要浪费甜瓜？#我很抱歉！(break)speak Juliet \"我看起来像是在做什么？$5\"(break)speak Juliet \"噢，放轻松，@。这又不是你农场出产的宝贵有机甜瓜。这些只是Joja的垃圾，就该被扔进垃圾堆里。\"(break)speak Juliet \"没关系。\"/pause 500/speak Juliet \"我好像明白为什么那些emo的家伙喜欢这么做了。这种感觉还挺爽的。比给它们上色能舒缓压力得多！#$b#你要来试试吗？\"/emote farmer 40/showFrame Juliet 49/pause 500/speed {{bossGuy}} 3/move {{bossGuy}} 0 -10 0/showFrame Juliet 50/jump {{bossGuy}} 3/pause 500/emote {{bossGuy}} 16/speed {{bossGuy}} 7/move {{bossGuy}} 0 -5 0/emote {{bossGuy}} 16/pause 500/speak {{bossGuy}} \"你在干嘛？！！$3\"/faceDirection farmer 2/faceDirection Juliet 2/jump Juliet 3/textAboveHead Juliet \"被发现了！快跑！\"/speed Juliet 3/move Juliet 0 -2 0 true/speed farmer 3/move farmer 0 -2 0 true/globalFade/viewport -2000 -2000/warp Juliet 46 33/warp farmer 45 33/warp {{bossGuy}} -100 -100/faceDirection Juliet 3/faceDirection farmer 1/positionOffset farmer 0 6/viewport 43 35/pause 500/faceDirection Juliet 1/pause 500/faceDirection Juliet 3/pause 500/textAboveHead Juliet \"呼！\"/speak Juliet \"简直太好笑了！你看到他脸上的表情了吗？\"/emote farmer 60/speak Juliet \"不过，呃，估计明天就该我受罪了。他总是这么扫兴。$5\"/pause 500/faceDirection Juliet 1/playMusic desolate/pause 500/emote Juliet 40/speak Juliet \"有时候我觉得自己就像一个装满痛苦和愤怒能量的水壶，@。$5#$b#我的每个毛孔都在沸腾，但我没法克制自己……$2#$b#拼命痛打架子鼓会有帮助……把这些甜瓜砸碎也行……#$b#但没有什么能真正抹去我心里的负罪感。$2\"/pause 500/shake Juliet 250/pause 500/move Juliet 3 0 1/pause 500/emote Juliet 28/pause 500/move farmer 3 0 1/pause 500/faceDirection Juliet 3/pause 500/emote Juliet 60/pause 500/speak Juliet \"由巴啊，听着，你不会想接着听我自怨自艾的。$5#$b# 知道自己没法改变过去发生的事……我必须在自己的内心找到救赎。但不说假话，这真是太艰难了。$2#$b#很幸运能有人站在身边支持着我。比如杰西，小妖精，还有你。$4\"/pause 500/emote farmer 20/speak Juliet \"谢谢你，@。谢谢你容忍我的废话连篇。$4\"/pause 500/emote Juliet 20/emote farmer 32/pause 400/speak Juliet \"好啦，也放纵得够了！#$b#想做点真正疯狂的事吗？我们跳进湖里裸泳吧！$1\"/pause 500/emote farmer 28/pause 1000/end",
+        "86571141/e 86571101/t 1700 2000": "nightTime/40 57/Juliet 41 57 0 Gremlin 42 57 3 farmer 30 58 1/skippable/pause 500/playSound dogWhining/pause 500/faceDirection Juliet 1/pause 500/showFrame Juliet 26/speak Juliet \"你不能和我一起住，姑娘。我……我照顾不了你。$2#$b#我太没用了。你说不定会被狐狸吃掉，或者生什么严重的病。$2#$b#算了吧，你和爱你的家人生活在一起会更好的。你以前也有家人，对吧？\"/shake Gremlin 450/move farmer 6 0 1/pause 500/faceDirection Juliet 1/speak Juliet \"好吧，一直站在这里也没什么意义。过来，姑娘，我给你弄点吃的东西。\"/pause 500/jump Gremlin 5/playSound dog_bark/move Gremlin 0 1 3/faceDirection Juliet 2/emote Juliet 16/speak Juliet \"你一直都在这儿看着吗？$5\"/pause 500/emote farmer 60/pause 500/emote Juliet 40/playSound dog_bark/pause 500/speak Juliet \"$q 86571103 null#好吧，我觉得你应该不会想再养只狗了，对吧？#$r 86571104 25 GremlinYes#当然愿意，她可爱极了！#$r 86571105 50 GremlinYours#我想她选择的是你，朱丽叶。#$r 86571105 -50 GremlinNo#不愿意，我为什么会想养狗？\"/fork 86571105 GremlinJules/pause 500/speak Juliet \"你会为了@当一只好狗狗的。对吧，姑娘？$2\"/pause 500/playSound dog_bark/faceDirection Juliet 1/pause 500/showFrame Juliet 26/speak Juliet \"去吧，姑娘，和@一起。他会好好照顾你的。$2^去吧，姑娘，和@一起。她会好好照顾你的。$2\"/pause 500/faceDirection Juliet 1/move Gremlin -4 0 3 true/faceDirection Juliet 3/showframe 34/playSound dog_pant/speak Juliet \"我会想念你的，姑娘。要照顾好她，@。$2\"/pause 2000/faceDirection Juliet 1/pause 500/faceDirection Gremlin 1/pause 500/playSound dogWhining/move Gremlin 4 0 3/playSound dog_bark/jump Juliet 5/faceDirection Juliet 2/speak Juliet \"你真的想和我一起住吗，姑娘？$4\"/pause 500/playSound dog_bark/faceDirection farmer 1/faceDirection Juliet 3/speak Juliet \"D你觉得……你觉得这样可以吗，@？我是说，我没法保证她不会被熊吃掉之类的。$4\"/pause 500/emote farmer 32/pause 500/switchEvent GremlinJules",
+        "GremlinJules": "pause 500/move Gremlin -1 0 0/faceDirection Juliet 2/speak Juliet \"我猜你得和我在一起生活了，姑娘。$4\"/pause 500/jump Gremlin 4/pause 500/playSound dog_bark/emote Gremlin 20/pause 500/emote Juliet 20/pause 500/speak Juliet \"我保证会照顾好你的。#$b#我想……我想我就叫你小妖精吧。你觉得怎样？$4\"/pause 500/playSound dog_bark/pause 200/warp Gremlin -100 -100/showFrame Juliet 27/pause 2000/end",
+        "6398311/e 6398310/d 1100 1600/A JulietParents": "{{season}}_day_ambient/-100 -100/Juliet 2 53 2 farmer 0 54 1 Lewis 27 67 1 Jessie 30 67 3/skippable/viewport 5 54 clamp true/addTemporaryActor Mr.Donaghue 16 32 29 66 2 true/addTemporaryActor Ms.Donaghue 16 32 28 66 2 true/pause 500/move farmer 2 0 0/emote farmer 16/pause 1000/speak Juliet \"他们来了。$2\"/emote Juliet 28/pause 1000/speak Juliet \"不开玩笑……我怕得要死。他们对我……的影响很大。我要么咬他们一口，要么转身就跑。$2#$b#可能两个都会。$2\"/quickQuestion #那就和我一起回农场吧！#你可以的！我相信你能行。#噢，得了，别这么矫情。(break)emote Juliet 20\\pause 500\\speak Juliet \"哈哈，我很乐意！谢谢你的邀请，不过恐怕我还是得婉拒了。$2\"(break)emote Juliet 20\\pause 500\\speak Juliet \"没想到你这么相信我，@。我都觉得自己配不上。\"(break)textAboveHead Juliet \"哈哈，没错！\"\\pause 500\\speak Juliet \"当然是我在无病呻吟！我就是这么面对事情的，宝贝。$1#$b#不过说真的……我需要一点勇气，@。$2\"/pause 1000/faceDirection Juliet 1/pause 1000/faceDirection Juliet 2/pause 500/speak Juliet \"好吧，总不能一直逃避下去。是时候面对审判了，或者是处刑……$2\"/pause 1000/emote Juliet 40/pause 1000/speak Juliet \"你也会一起来的吧，@？拜托了？$2\"/pause 500/emote farmer 56/pause 500/emote Juliet 60/pause 500/faceDirection Juliet 1/pause 1000/faceDirection farmer 1/pause 500/textAboveHead Juliet \"那我们走吧\"/pause 1000/fade/viewport -100 -100/warp Juliet 20 69/warp farmer 20 70/pause 1000/viewport 28 70/pause 1000/faceDirection Ms.Donaghue 1/faceDirection Mr.Donaghue 3/pause 500/textAboveHead Ms.Donaghue \"她迟到了！\"/speak Ms.Donaghue \"典型的小镇行为，毫无时间观念。$a\"/pause 1000/emote Lewis 12/pause 500/speak Ms.Donaghue \"我甚至觉得她根本不会来。有一件事可以肯定，朱丽叶从来都是不靠谱的那个人。\"/textAboveHead Jessie \"要有信心\"/faceDirection Juliet 2/faceDirection farmer 0/emote Juliet 28/pause 500/advancedMove Juliet false 8 0 4 1000/advancedMove farmer false 9 0 0 -1 4 1000/pause 6000/playMusic bigDrums/textAboveHead Ms.Donaghue \"朱丽叶\"/pause 1000/advancedMove Lewis false 0 7 1 0 1 1000/advancedMove Jessie false 0 7 -1 0 3 1000/faceDirection Ms.Donaghue 2/faceDirection Mr.Donaghue 2/speak Ms.Donaghue \"看来在这个小镇度过的时间稍微改变了你的作风。\"/pause 500/speak Juliet \"你们好，母亲，还有父亲。看来时间也没能改变你们的个性。#$b#很高兴你们从百忙之中抽空过来，就为了批评我。$a\"/pause 500/textAboveHead Mr.Donaghue \"朱丽叶！\"/pause 500/speak Mr.Donaghue \"听着，朱丽叶……别这样了，我的女孩。你应该高兴见到我们才对。我们要给你提供一个建议。\"/pause 1000/speak Juliet \"让我猜猜，是那种我不能拒绝的提议吗？\"/pause 1000/faceDirection Jessie 0/faceDirection Lewis 0/emote Mr.Donaghue 40/pause 1000/speak Mr.Donaghue \"你的母亲和我一致决定，是时候让可怜的内森安息了。#$b#虽然我们永远没法忘记你在那件事里扮演的角色，但我们已经准备好重新接纳你回到家族事业了。$2\"/faceDirection Ms. Donaghue 1/pause 1000/faceDirection Ms.Donaghue 2/move Ms.Donaghue 0 1 2/pause 400/speak Ms.Donaghue \"当然，有一些你必须要遵守的规则。#$b#你必须把这些离谱的穿环去掉。#$b#那让你看起来像个小镇上的荡妇。\"/pause 500/move Mr.Donaghue 0 1 2/speak Mr.Donaghue \"还有，你必须在一年之内完婚。托比乌斯·汉森对此表示了兴趣。#$b#他会是个讨人喜欢的女婿。介于你过去的所作所为，你应该尽可能地表现出尊重。$3\"/pause 1000/faceDirection Juliet 1/faceDirection farmer 3/emote Juliet 28/pause 1000/emote farmer 20/pause 1000/faceDirection Juliet 0/faceDirection farmer 0/textAboveHead Juliet \"不\"/stopMusic/pause 500/speak Juliet \"我不这么想。\"/pause 500/jump Mr.Donaghue 4 true/emote Mr.Donaghue 16 true/jump Ms.Donaghue 4 true/emote Ms.Donaghue 16 true/pause 1000/speak Mr.Donaghue \"我不记得我有问过你的意见。你今晚就得跟我们一起离开。要是你敢拒绝，你就是个傻瓜。$a\"/pause 500/faceDirection Juliet 1/faceDirection farmer 3/pause 1000/faceDirection Juliet 0/move Juliet 0 -1 0/faceDirection farmer 0/textAboveHead Juliet \"我不\"/pause 1000/speak Ms.Donaghue \"在我们为你做了这么多事以后，你竟然！\"/pause 1000/emote Juliet 12/move farmer 0 -1 0/speak Juliet \"你就从来没想过，为什么我和内森会变成那样吗？$a\"/playMusic desolate/speak Juliet \"我和内森只想让你们注意到我们！我们有书，有电视，还有严格到死的教师。所有那些用钱能买到的垃圾。$a#$b#但唯一能让你们注意到我们的事情，就只有该死的违法。$2\"/shake Juliet 500/textAboveHead Ms.Donaghue \"你在胡说什么\"/pause 500/speak Juliet \"你们把我送到小镇来作为惩罚，我接受。我活该。是我们搞砸了。最后我还活着，内森却死了。$2#$b#你们难道觉得我就不想念他吗？$2\"/pause 1000/speak Juliet \"由巴，每次想到他，我都很痛苦。$2#$b#但你们知道我在这里找到了什么吗？我找到了家人。一个真正的家庭。\"/faceDirection Juliet 1/faceDirection farmer 3/emote Juliet 60/speak Juliet \"那些能真正看到我的人，而不是把我当作一个耻辱。\"/textAboveHead Ms.Donaghue \"我从没把你当成耻辱！\"/speak Juliet \"那些人们帮助我找到了真正的自己。#$b#知道吗？我他妈的爱死那个真正的自己了！$1\"/pause 500/emote Mr.Donaghue 16/faceDirection Juliet 2/faceDirection farmer 2/move Juliet 0 1 2/pause 500/move farmer 0 1 2/speak Juliet \"杰西，刘易斯……\"/emote Lewis 16/emote Jessie 20/pause 500/advancedMove Lewis false 0 -4 -1 0 0 -2 1 1000/advancedMove Jessie false 0 -4 1 0 0 -2 3 1000/pause 500/faceDirection Juliet 1/faceDirection farmer 3/speak Juliet \"还有@。谢谢你。我爱你们。$4\"/emote farmer 32/pause 1000/faceDirection Juliet 0/faceDirection farmer 0/speak Juliet \"这里就是我的家，母亲，父亲。你们不能强迫我离开。\"/textAboveHead Mr.Donaghue \"我们凭什么不能！\"/faceDirection Lewis 0/faceDirection Jessie 0/pause 500/textAboveHead Jessie \"我们不会同意的\"/pause 1000/speak Ms.Donaghue \"你宁愿放弃自己的未来？放弃那些你可以继承的家族财产？#$b#就为了留在这个……这个可悲的小镇？$2\"/pause 1000/emote Lewis 12/stopMusic/pause 500/speak Juliet \"是的……这就是我的决定。\"/playMusic SettlingIn/speak Juliet \"而且知道吗？我也没有放弃什么。我可以自己掌握自己的未来！$1\"/move Juliet 0 -1 3/faceDirection Lewis 1/pause 500/speak Juliet \"有朝一日我会当上镇长。\"/jump Lewis 5/emote Lewis 28/pause 500/faceDirection Ms.Donaghue 1/faceDirection Mr.Donaghue 3/emote Ms.Donaghue 12/emote Lewis 8/pause 500/emote Mr.Donaghue 40/pause 1000/faceDirection Ms.Donaghue 2/faceDirection Mr.Donaghue 2/textAboveHead Ms.Donaghue \"很好\"/faceDirection Juliet 0/faceDirection farmer 0/speak Ms.Donaghue \"你已经做出了决定，如果你改变了主意，就打给我们的律师。$3\"/pause 1000/faceDirection Mr.Donaghue 3/faceDirection Ms.Donaghue 1/pause 500/textAboveHead Juliet \"我不会的\"/pause 2000/end",
+        //to see the real me. Something you two never bothered to even try and find."
+      }
+    },
+    // 6-heart event
+    {
+      "LogName": "Juliet 6-heart - jojaMart",
+      "Action": "EditData",
+      "Target": "Data/Events/JojaMart",
+      "Entries": {
+        "86571110/f Juliet 1500/e 86571101/d Sat Sun/t 0900 1700": "none/13 11/Juliet 2 8 1 Morris 4 8 3 farmer 2 13 0/skippable/pause 500/speak Juliet \"……反正都是要进垃圾桶的。你进这么多货又不是我的错！$5\"/emote Morris 12/emote Juliet 12/shake Juliet 350/faceDirection Juliet 0/textAboveHead Juliet \"去你的，莫里斯\"/speed Juliet 7/move Juliet 0 -4 0/warp Juliet -100 -100/playSound doorClose/speed farmer 5/move farmer 0 -5 1/textAboveHead Morris \"傲慢无礼的小混蛋！\"/emote farmer 40/speed farmer 5/move farmer 0 -4 0/warp farmer -100 -100/playSound doorClose/globalFade/viewport -2000 -2000/changeLocation Custom_LK_JojaBreakRoom/viewport -1000 -1000/warp Morris -100 -100/warp Juliet 2 5/faceDirection Juliet 1/advancedMove Juliet false 6 0 -6 0/viewport 11 7/textAboveHead Juliet \"蠢货……\"/pause 3000/emote Juliet 12/warp farmer 2 10/pause 500/move farmer 0 -2 0/showFrame Juliet 8/quickQuestion #你没事吧？#我能帮上你什么？#你都做了什么？#好吧，莫里斯就是个傻瓜，对吧？(break)jump Juliet\\faceDirection Juliet 2\\speak Juliet \"我看起来像没事的样子吗？$5\"(break)jump Juliet\\faceDirection Juliet 2\\speak Juliet \"别用那副招呼客人的语气跟我说话。$4\"(break)jump Juliet\\faceDirection Juliet 2\\speak Juliet \"噢，所以现在成了我的错吗，@？我还以为我们是朋友呢……$5\"(break)jump Juliet\\faceDirection Juliet 2\\speak Juliet \"说得简直太对了。$4\"/pause 500/faceDirection Juliet 0/speak Juliet \"我恨死他了。有时候我真希望我能就这么辞职不干。$5\"/question null \"#嗯……那你为什么不辞职呢？#什么也不说。\"/playMusic sappypiano/speak Juliet \"我没法辞职，行了吧？这都是我自作自受。而且我也配不上更好的待遇。$2#$b#你没有做过什么超级糟糕的事吗？让你恨不得时光倒流、重新开始这一天的事情？$2\"/pause 500/emote farmer 28/pause 500/speak Juliet \"没有吗？好吧，我做过。以防你想问，我并不想谈论那件事的细节。$2\"/pause 500/advancedMove Juliet false 4 0 -4 0/speak Juliet \"就算我不得不流落到这个偏远的小镇，在公司企业的手下干活，那又怎样？我轻易逃脱了那一切，但他没有。$2\"/pause 500/faceDirection Juliet 0/pause 500/move farmer 0 -2 0/move Juliet -1 0 3/shake Juliet 350/pause 500/quickQuestion #你做过什么？#我会陪着你的。#难道你杀过人？(break)emote Juliet 12\\speak Juliet \"那时我太过年轻，也太过愚蠢。虽然这也不能当作什么借口。$2#$b#还有，你听不懂“我不想谈论这件事”是什么意思吗？$5#$b#不过嘛，我想或早或晚你总会知道的。而且你也应该知道。$2\"(break)emote Juliet 40\\speak Juliet \"真的吗？你这么肯定吗，@？$3#$b#要是你听了完整的故事，你大概就不会这么想了。$5#$b#我想我还是告诉你吧。这样你就可以趁还有机会的时候溜之大吉了。$2\"(break)faceDirection Juliet 3\\pause 500\\shake Juliet 250\\speak Juliet \"不……不完全是……$2\"/pause 500/emote farmer 28/move Juliet 0 2 1/faceDirection farmer 2/speak Juliet \"简单来说：因为我……有人死了……$2#$b#那是一场意外……两个孩子在冲动的驱使下，因为廉价的伏特加酩酊大醉。他觉得这样很有意思……但现在没人笑得出来了。$2\"/pause 500/emote farmer 40/pause 500/speak Juliet \"他是我的哥哥，我的榜样。我宁愿和他一起走进该死的虚空。$2#$b#我本可以阻止他的。我本该阻止他的。但我却选择掺和进那场愚蠢的恶作剧里……最后一切都无法挽回。$2\"/pause 500/emote Juliet 40/pause 500/speak Juliet \"如今他为此付出了生命的代价，而我也不得不背井离乡。$2#$b#总之就是这样。我猜你现在要做出明智的选择了吧，从我身边走开。$2\"/question fork0 \"……#走开#留下安慰朱丽叶\"/fork WalkAway/pause 500/move farmer 0 1 3/positionOffset farmer -4 0/speak Juliet \"真的吗？你愿意和我呆在一起，即使……即使在知道了那些事之后？$4\"/pause 500/emote farmer 32/pause 500/showFrame farmer 89/positionOffset farmer -2 0/showFrame Juliet 48/positionOffset Juliet 4 0/speak Juliet \"谢谢你，@。这对我来说意味着很多。$4\"/emote Juliet 20/pause 1000/end"
+      },
+      "When": {
+        "HasSeenEvent |contains=191393": false
+      }
+    },
+    {
+      "LogName": "Juliet 6-heart - Community Center",
+      "Action": "EditData",
+      "Target": "Data/Events/Town",
+      "Entries": {
+        "86571110/f Juliet 1500/e 86571101/d Sat Sun/t 0900 1700": "none/54 26/Juliet 52 24 1 Lewis 54 24 3 farmer 52 29 0/skippable/pause 500/speak Juliet \"……反正都是要进垃圾桶的。你为自己的家庭晚宴买了太多东西，又不是我的错！$5\"/emote Lewis 12/emote Juliet 12/shake Juliet 350/faceDirection Juliet 0/textAboveHead Juliet \"去你的，刘易斯\"/speed Juliet 7/move Juliet 0 -4 0/warp Juliet -100 -100/playSound doorClose/speed farmer 5/move farmer 0 -5 1/textAboveHead Lewis \"傲慢无礼的小混蛋！\"/emote farmer 40/speed farmer 5/move farmer 0 -4 0/warp farmer -100 -100/playSound doorClose/globalFade/viewport -2000 -2000/changeLocation CommunityCenter/viewport -1000 -1000/warp Lewis -100 -100/warp Juliet 32 14/faceDirection Juliet 1/advancedMove Juliet false 6 0 -6 0/viewport 32 14/textAboveHead Juliet \"蠢货……\"/pause 3000/warp farmer 32 23/emote Juliet 12/move farmer 0 -4 0/pause 1500/move farmer 0 -2 0/showFrame Juliet 8/quickQuestion #你没事吧？#我能帮上你什么？#你都做了什么？#好吧，刘易斯就是个傻瓜，对吧？(break)jump Juliet\\faceDirection Juliet 2\\speak Juliet \"我看起来像没事的样子吗？$5\"(break)jump Juliet\\faceDirection Juliet 2\\speak Juliet \"别用那副招呼客人的语气跟我说话。$4\"(break)jump Juliet\\faceDirection Juliet 2\\speak Juliet \"噢，所以现在成了我的错吗，@？我还以为我们是朋友呢……$5\"(break)jump Juliet\\faceDirection Juliet 2\\speak Juliet \"说得简直太对了。$4\"/pause 500/faceDirection Juliet 0/speak Juliet \"我烦死他了。有时候我真希望我能就这么辞职不干。$5\"/question null \"#嗯……那你为什么不辞职呢？#什么也不说。\"/playMusic sappypiano/speak Juliet \"我没法辞职，行了吧？这都是我自作自受。而且我也配不上更好的待遇。$2#$b#你没有做过什么超级糟糕的事吗？让你恨不得时光倒流、重新开始这一天的事情？$2\"/pause 500/emote farmer 28/pause 500/speak Juliet \"没有吗？好吧，我做过。以防你想问，我并不想谈论那件事的细节。$2\"/pause 500/advancedMove Juliet false 4 0 -4 0/speak Juliet \"就算我不得不流落到这个偏远的小镇，还曾经在公司企业的手下干活，那又怎样？我轻易逃脱了那一切，但他没有。$2\"/pause 500/faceDirection Juliet 0/pause 500/move farmer 0 -2 0/move Juliet -1 0 3/shake Juliet 350/pause 500/quickQuestion #你做过什么？#我会陪着你的。#难道你杀过人？(break)emote Juliet 12\\speak Juliet \"那时我太过年轻，也太过愚蠢。虽然这也不能当作什么借口。$2#$b#还有，你听不懂“我不想谈论这件事”是什么意思吗？$5#$b#不过嘛，我想或早或晚你总会知道的。而且你也应该知道。$2\"(break)emote Juliet 40\\speak Juliet \"真的吗？你这么肯定吗，@？$3#$b#要是你听了完整的故事，你大概就不会这么想了。$5#$b#我想我还是告诉你吧。这样你就可以趁还有机会的时候溜之大吉了。$2\"(break)faceDirection Juliet 3\\pause 500\\shake Juliet 250\\speak Juliet \"不……不完全是……$2\"/pause 500/emote farmer 28/move Juliet 0 2 1/faceDirection farmer 2/speak Juliet \"简单来说：因为我……有人死了……$2#$b#那是一场意外……两个孩子在冲动的驱使下，因为廉价的伏特加酩酊大醉。他觉得这样很有意思……但现在没人笑得出来了。$2\"/pause 500/emote farmer 40/pause 500/speak Juliet \"他是我的哥哥，我的榜样。我宁愿和他一起走进该死的虚空。$2#$b#我本可以阻止他的。我本该阻止他的。但我却选择掺和进那场愚蠢的恶作剧里……最后一切都无法挽回。$2\"/pause 500/emote Juliet 40/pause 500/speak Juliet \"如今他为此付出了生命的代价，而我也不得不背井离乡。$2#$b#总之就是这样。我猜你现在要做出明智的选择了吧，从我身边走开。$2\"/question fork0 \"……#走开#留下安慰朱丽叶\"/fork WalkAway/pause 500/move farmer 0 1 3/positionOffset farmer -4 0/speak Juliet \"真的吗？你愿意和我呆在一起，即使……即使在知道了那些事之后？$4\"/pause 500/emote farmer 32/pause 500/showFrame farmer 89/positionOffset farmer -2 0/showFrame Juliet 48/positionOffset Juliet 4 0/speak Juliet \"谢谢你，@。这对我来说意味着很多。$4\"/emote Juliet 20/pause 1000/end",
+        "63984301/l ccMovieTheater/e 191393": "continue/96 53/Juliet 96 53 0 farmer 90 53 1 Jessie 71 53 1/addConversationTopic Juliet_JojaRuins 7/skippable/pause 1000/speak Juliet \"我今天早上来这里工作，结果发现……$2#$b#我知道，我恨这个地方。但它现在已经不在了。甚至和我一点关系也没有。$2\"/move farmer 5 0 1 true/speak Juliet \"由巴……我以后会怎么样？$2\"/faceDirection Juliet 3/speak Juliet \"你知道这是怎么回事吗，@？$a\"/quickQuestion #皮埃尔发表了一番振奋人心的演讲，把莫里斯赶出了小镇。#皮埃尔一拳把莫里斯打到了月球上！#谁在乎？能摆脱Joja那些垃圾就够了。#是因为经济衰退，也可能是因为战争。绝对就是这样。(break)emote Juliet 12\\pause 500\\speak Juliet \"噢……我就知道是他干的。小镇就这么点价值，哼。他一直想弄到这些钱。$5\"(break)emote Juliet 16\\pause 500\\speak Juliet \"你认真的？！你可别骗我。我真想看看那一幕。$1#$b#我就知道是他干的。小镇就这么点价值，哼。他一直想弄到这些钱。$5\"(break)emote Juliet 12\\pause 500\\friendship Juliet -50\\speak Juliet \"噢，你说得真好听啊，农夫。别忘了我也是Joja的。$5#$b#虽然到头来……这并不能代表什么。$2\"(break)emote Juliet 40\\pause 500\\speak Juliet \"是啊……我的家人们总在喋喋不休地谈论什么经济现状……虽然我从来搞不明白。$5#$b#或许我应该在学校里好好学习的。或者，你懂的，至少老老实实坐在教室里。$2#$b#总之……现在Joja不在了。$2\"/speak Juliet \"我从没想过这对我们来说意味着什么。像我这种被困在Joja机器里的人。$a\"/emote farmer 8/pause 1000/faceDirection Juliet 2/speak Juliet \"我以后会怎么样？噢，我想会有人来的。专门的那种家伙。他们会把我带回城里去……$2\"/pause 500/emote Juliet 40/pause 1000/speak Juliet \"……让我去另一家Joja超市工作，要不就把我扔进什么劳动救济所里。$5\"/move Juliet 2 0 1/pause 1000/advancedMove Jessie false 23 0/speak Juliet \"我才刚开始喜欢上这儿呢……$2#$b#我刚开始觉得这里有家的感觉。$2\"/pause 500/shake Juliet 1000/move farmer 2 0 1/showFrame 35/positionOffset farmer 8 0/shake Juliet 1000/pause 2000/textAboveHead Jessie \"朱丽叶？\"/faceDirection farmer 3/pause 500/faceDirection Juliet 3/move farmer 0 1 3/speak Jessie \"我不会让别人带走你的，朱丽叶。#$b#当然，除非你自己想要离开。$2\"/move Juliet -3 0 3/move farmer -2 0 3/move farmer 0 -1 0/textAboveHead Juliet \"真的吗？\"/pause 1000/faceDirection Juliet 0/faceDirection Jessie 0/pause 1000/textAboveHead Jessie \"真的。\"/pause 3000/end"
+      },
+      "When": {
+        "HasSeenEvent |contains=191393": true
+      }
+    },
+    {
+      "LogName": "Juliet 6-heart - Community Center",
+      "Action": "EditData",
+      "Target": "Data/Events/CommunityCenter",
+      "Entries": {
+        "WalkAway": "emote farmer 12/pause 500/move farmer 0 8 0 true/faceDirection Juliet 2/emote Juliet 28/warp farmer -100 -100/friendship Juliet -1000/speak Juliet \"再见……$s\"/faceDirection Juliet 0/shake Juliet 500/end dialogue Juliet \"你的选择是正确的，@。是我的话，我也会从那样的自己面前走开。\""
+      }
+    },
+    // 10 heart event
+    {
+      "Action": "Load",
+      "Target": "Maps/GTCemetery",
+      "FromFile": "assets/Maps/{{season}}_Cemetery.tmx"
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/crowLK",
+      "FromFile": "assets/img/crow.png"
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Farm",
+      "Entries": {
+        "86571130/f Juliet 2502/e 6398421/A Juliet_Prop/x Juliet_invite": "null",
+        "86571133/f Juliet 2502/e 502261/x Juliet_invite": "null",
+        "63984302/e 63984301/t 600 1200": "continue/64 15/farmer 64 16 2 Juliet 64 18 0/skippable/pause 1500/speak Juliet \"那个，嗨，@。之前的事不好意思，真希望你没有看到我的那副样子……呃，太羞耻了。$2\"/pause 500/emote Juliet 60/pause 1000/speak Juliet \"总而言之，我是来对你说……好吧，我是来向你道别的。拜拜，再见，撒由那拉，之类的。$2\"/pause 1000/emote farmer 28/pause 1000/faceDirection Juliet 2/pause 1000/faceDirection Juliet 0/speak Juliet \"噢，看你这副表情。你会想念我的吧？$2\"/pause 1000/emote farmer 40/pause 1000/speak Juliet \"哈，你猜怎么着！其实我不会走的！$1\"/jump farmer 3/emote farmer 12/speak Juliet \"杰西跟我的管理人谈了谈，还有刘易斯镇长。他们同意让我继续在这里做社区服务。#$b#没错，就是这样。我也要为社区而服务了！$1\"/emote farmer 32/pause 1000/speak Juliet \"总之，以后再见了，农夫！记得别到处乱扔垃圾啊，可以吧？\"/emote farmer 56/pause 1000/faceDirection Juliet 2/pause 1000/end",
+        //silent event to set HasSeenEvent if you are unable to trigger the above due to theater being finished before update installed
+        "63984302/k 63984301/n ccMovieTheater/e 191393":"none/-100 -100/farmer -1000 -1000 0/pause 50/end"  
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Farm",
+      "Entries": {
+        "6398420/e 191393/e 86571120/f Juliet 2000/t 600 1200": "continue/64 15/farmer 64 16 2 Juliet 64 18 0/skippable/pause 500/emote Juliet 32/speak Juliet \"嘿，@。#$b#话说不用和那群公司混蛋绑在一起以后，我也多了不少空闲时间。我想知道……嗯……\"/pause 500/faceDirection Juliet 1/pause 500/faceDirection Juliet 0/emote Juliet 28/pause 1500/speak Juliet \"……你愿意哪天和我一起庆祝一下我重获自由吗？$4\"/emote farmer 40/pause 500/speak Juliet \"是的，我是在邀请你约会。\"/pause 500/faceDirection Juliet 3/pause 500/faceDirection Juliet 0/speak Juliet \"你不用现在回答我。但要是你愿意接受我的邀请，就在晚上和我在海滩碰面。#$b#我们可以像那些矫情的浪漫分子一样欣赏夕阳日落。$4\"/pause 500/faceDirection Juliet 2/pause 500/emote Juliet 40/faceDirection Juliet 0/speak Juliet \"噢，还有，你能带上一瓶葡萄酒吗？年份无所谓！$1\"/pause 500/speak Juliet \"嗯，那就晚些时候见！\"/pause 500/emote farmer 32/faceDirection Juliet 2/pause 1000/end"
+      },
+      "When": {
+        "HasSeenEvent": "63984302"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/mail",
+      "Entries": {
+        "Juliet_invite": "嘿，亲爱的！^你猜怎么着？有关机构批准了我的假释，我准备去和格兰普顿的某个人谈谈。^千万别有负担，不过要是你能来陪着我，拉着我的手的话——字面上和心理上都是！-我很需要你的陪伴。^我会在下午五点以后出发。要是你愿意的话，和我在巴士站碰面，好吗？^- 朱丽叶 [#]朱丽叶的请求",
+        "Juliet_Vet": "嘿，@：^我听说东斯卡普有一位兽医，所以我打算带小妖精去检查检查。你想和我一起来吗？要是你愿意的话，下周哪天和我在兽医诊所那里碰面。我会很感激的！^向你致以问候，朱丽叶%item conversationTopic JulietVet 7 %%  [#]拜访兽医",
+        "Juliet_VetDone": "嘿，@：^总而言之，我去了一趟兽医那里。你不能来真是太遗憾了！他叫雅各布，人长得帅极了。话说回来，小妖精一切都好。感谢由巴。她只是有点太瘦了之类的。^他提出要给小妖精找个新家，但我决定留下她。反正杰西也很喜欢她嘛。^嗯，总之记得哪天来看我们哦。^ - 朱丽叶 [#]拜访兽医"
+      }
+    },
+    /* {
+      "Action": "EditData",
+      "Target": "Data/mail",
+      "Entries": {
+        "Juliet_invite": "嘿，亲爱的！^你猜怎么着？有关机构批准了我的假释，我准备去和格兰普顿的某个人谈谈。^千万别有负担，不过要是你能来陪着我，拉着我的手的话——字面上和心理上都是！-我很需要你的陪伴。^我会在下午五点以后出发。要是你愿意的话，和我在巴士站碰面，好吗？^- 朱丽叶 [#]朱丽叶的请求",
+        "Juliet_Vet": "嘿，@：^我听说东斯卡普有一位兽医，所以我打算带小妖精去检查检查。你想和我一起来吗？要是你愿意的话，下周哪天和我在兽医诊所那里碰面。我会很感激的！^向你致以问候，朱丽叶%item conversationTopic JulietVet 7 %%  [#]拜访兽医",
+        "Juliet_VetDone": "嘿，@：^总而言之，我去了一趟兽医那里。你不能来真是太遗憾了！他叫雅各布，人长得帅极了。话说回来，小妖精一切都好。感谢由巴。她只是有点太瘦了之类的。^他提出要给小妖精找个新家，但我决定留下她。反正杰西也很喜欢她嘛。^嗯，总之记得哪天来看我们哦。^ - 朱丽叶 [#]拜访兽医"
+      }
+    },*/
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/BusStop",
+      "Entries": {
+        "86571131/t 1700 1900/n Juliet_invite": "continue/12 11/farmer 12 19 0 Juliet 13 10 0/skippable/pause 500/move farmer 0 -4 0/faceDirection Juliet 2/emote Juliet 20/move farmer 0 -1 0/move Juliet 0 1 2/speak Juliet \"你来了！我是说，我当然知道你会来。因为没有人能对我说不，而且我已经成功引起了你的兴趣……不过还是……$1#$b#谢谢你，@。这对我来说很重要。$4\"/emote farmer 32/pause 1500/emote farmer 8/pause 1000/speak Juliet \"我们要去哪里？噢，是去拜访某个人……是时候让我的过去沉睡了。$2\"/faceDirection Juliet 3/speak Juliet \"来吧，我们得走了，把这事搞定。$2\"/pause 500/move farmer 0 -4 0/globalFade/viewport -1000 -1000/playMusic none/pause 800/playSound busDriveOff/pause 4000/changeToTemporaryMap GTCemetery false/speak Juliet \"该死……我好紧张……这是我第一次去见他。没错，我知道这很蠢，但是……$2\"/Message \"朱丽叶正在颤抖。\"/pause 1000/playSound busDoorOpen/speak Juliet \"好吧，我们到了……小镇死亡的中心..$2#$b#……格兰普顿墓园。$2\"/pause 500/warp Juliet 11 25/faceDirection Juliet 1/warp farmer 12 25/faceDirection farmer 0/playMusic {{season}}_day_ambient/viewport 17 17/advancedMove Juliet false 0 -10/move farmer 0 -10 0/pause 1000/faceDirection Juliet 1 true/faceDirection farmer 3 true/pause 500/speak Juliet \"不是你期待的那种吧？\"/emote farmer 32/pause 500/faceDirection Juliet 3/pause 500/faceDirection Juliet 1/speak Juliet \"真宁静啊，对吧？也有点无聊。我猜他一定不喜欢这里。\"/advancedMove Juliet false 0 -4 -2 0 -1 0/move farmer 0 -4 3/move farmer -3 0 0/viewport move 0 -2 2000 true/faceDirection farmer 3 true/faceDirection Juliet 0/pause 2500/faceDirection farmer 0/Message \"内森尼尔·唐纳修^上天早早将你夺去，但你永远活在我们心里。\"/pause 500/speak Juliet \"嘿，内特。对不起，我一直是个混蛋的妹妹。先是害得你死掉，又从铁轨上摔下来，导致自己被流放得远远的，所以我甚至不能来见你。$2#$b#总而言之，我现在来见你了，而且还带了人一起。$4\"/pause 500/faceDirection Juliet 1 true/faceDirection farmer 3 true/pause 500/emote Juliet 20/pause 500/faceDirection Juliet 0/speak Juliet \"是啊，生活也没那么糟糕。我遇见了很好的人，帮助我收拾起自己制造的一团乱麻。\"/pause 500/faceDirection Juliet 1/pause 400/faceDirection Juliet 0/speak Juliet \"总之，真可惜你没有这样的机会，内特。但我希望无论你在哪里，你最终都能找到自己的平静。$2#$b#要不就把世界搅个天翻地覆。$1#$b#这儿……我给你带了点东西。我知道挺烂的，你大概不会喜欢，要不下一个来看你的人也会把它弄坏。不过无论如何。\"/pause 500/addObject 8 10 562/pause 1500/faceDirection Juliet 1/pause 500/speak Juliet \"谢谢你和我一起，@。这……好吧，这对我来说真的意味着很多。$4\"/{{10HeartReact}}/addTemporaryActor crowLK 16 32 20 9 3 false/move crowLK -12 0 3/pause 1500/showFrame crowLK 16/playSound crow/pause 500/jump Juliet 2/pause 1000/animate crowLK false false 1000 16 17 16/faceDirection Juliet 0 true/faceDirection farmer 0 true/pause 500/emote Juliet 8/pause 4000/textAboveHead Juliet \"内森？\"/pause 1000/faceDirection farmer 3/emote farmer 16/playSound crow/faceDirection Juliet 1/pause 1000/emote Juliet 60/pause 3000/end dialogue Juliet \"是啊，我知道，大概只是一时的幻觉……我可不会相信我的哥哥变成乌鸦回来了。$4#$b#不过我还是情不自禁地希望，人死后面对的不是冰冷黑暗的虚空，而是有一些别的什么。$2\""
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Beach",
+      "Entries": {
+        "6398421/e 6398420/f Juliet 2000/t 1700 2300/w sunny/i 348": "ocean/36 36/Juliet 42 36 2 farmer 26 35 1/ambientLight 50 120 120/addConversationTopic Juliet_Prop 5/skippable/pause 500/move farmer 15 0 2 true/pause 1000/faceDirection Juliet 3/speak Juliet \"嘿，@。我不确定你会来，但我很高兴你来了。#$b#当然不只是因为你带了酒。$1#$b#不过你带了吧？$2\"/pause 500/emote farmer 32/addObject 41 33 348/showFrame 9/pause 1000/move Juliet 0 -1 3/removeSprite 41 33/removeItem 348/faceDirection farmer 1/pause 500/speak Juliet \"谢了，@。我就知道可以指望你的。\"/pause 500/faceDirection Juliet 0/playSound gulp/pause 500/faceDirection Juliet 2/pause 1000/emote Juliet 40/pause 500/emote farmer 8/pause 500/faceDirection Juliet 3/speak Juliet \"有些事我一直想跟你聊聊，@。#$b#不过首先……让我们先干一杯！\"/faceDirection farmer 2/showFrame farmer 90/pause 1000/farmerEat 348/pause 4000/pause 500/pause 500/faceDirection Juliet 3/faceDirection farmer 1/playMusic sappypiano/pause 500/speak Juliet \"你知道我不是什么好人，@。我搞砸了一切，做了很多蠢事，还伤害过我关心的人。$2\"/pause 500/emote farmer 8/pause 1500/speak Juliet \"但是……尽管如此，你还是陪在我的身边……那个，谢谢你。\"/pause 500/faceDirection Juliet 1/faceDirection farmer 1/pause 500/speak Juliet \"听着，我有东西想送给你。我知道这个传统蠢透了，而且你也可能拒绝。但是……$2\"/pause 500/faceDirection Juliet 3/pause 500/speak Juliet \"但是我还是想把它送给你，可以吗？[{{spacechase0.jsonAssets/ObjectId:Mystical Bouquet}}]$4\"/pause 500/emote Juliet 28/pause 500/emote farmer 40/pause 1500/speak Juliet \"所以，你怎么说，@？#$b#$q 639897 null#你愿意让我做你的女朋友吗？#$r 639899 100 Juliet_Date_Yes#当然愿意！#$r 639898 -250 Juliet_Date_No#有点尴尬……我们还是做朋友吧。#$r 639898 -500 Juliet_Date_HellNo#不行！我为什么会想和你约会啊？#$r 639896 0 Juliet_NoMarried#我受宠若惊……但我已经结婚了，所以不行。\"/fork 639899 Juliet_Dating/fork 639896 Juliet_Married/pause 500/faceDirection Juliet 1/move Juliet 2 0 1/speak Juliet \"反正这个传统也挺傻的。$2#$b#我现在想一个人待一会儿。$2\"/pause 500/faceDirection Juliet 3/pause 500/emote farmer 28/speak Juliet \"噢，别这样看着我，@。我是个大姑娘了，会往前看的。$5#$b#不过那个花束你留着吧。该死，要是你愿意的话就送给别人。没关系的。$2\"/emote farmer 60/pause 500/emote Juliet 32/pause 1000/end",
+        "Juliet_Dating": "pause 500/speak Juliet \"嘿，顺便说一句，@。要等你也送我花束以后，我们的关系才是正式的！$1#$b#现在，就让我们享受你美味的果酒，一起欣赏夕阳吧。你怎么看？$4\"/pause 500/faceDirection Juliet 2 true/faceDirection farmer 2 true/positionOffset Juliet -20 0/emote farmer 32/emote Juliet 20/pause 2000/end dialogue \"还有，别想着你能把同样的花束再送给我。那个是送给你的。你可以给我买一束新的！!$4",
+        "Juliet_Married": "pause 500/faceDirection Juliet 1/move Juliet 2 0 1/speak Juliet \"……我真的好尴尬。$2\"/pause 500/faceDirection Juliet 3/pause 500/emote farmer 28/speak Juliet \"又来了，朱丽叶，你竟然做出了这种事！你真是个傻瓜。$2#$b#朋友就挺好的。我们继续做朋友吧！#$b#还有，留着那束花吧，你可以把它送给%spouse！$1\"/emote farmer 60/pause 500/emote Juliet 32/pause 1000/end"
+      }
+    },
+    //14 heart event
+    {
+      "Action": "Include",
+      "FromFile": "assets/TalentShow.json"
+    },
+	//Parental Confrontation
+    {
+      "LogName": "Mother Sprite",
+      "Action": "Load",
+      "Target": "Characters/Ms.Donaghue, Characters/Mr.Donaghue, Portraits/Ms.Donaghue, Portraits/Mr.Donaghue",
+      "FromFile": "assets/{{target}}.png"
+    },
+    {
+      "LogName": "Juliet's parental visit",
+      "Action": "EditData",
+      "Target": "Data/Events/Custom_LK_ClearingHouse",
+      "Entries": {
+        "6398310/f Juliet 2500/f Jessie 2500/f Lewis 2000/e 6398444/o Juliet/w sunny/t 1200 1800": "{{season}}_day_ambient/25 16/Juliet -100 -100 0 Jessie 26 18 1 farmer 25 22 0 Gremlin 18 18 1/addConversationTopic JulietParents 5/skippable/advancedMove Gremlin true 3 0 0 1 1 1000 -3 0 0 -1/move farmer 0 -4 1/faceDirection Jessie 3/pause 500/speak Jessie \"下午好，@。很高兴见到你。#$b#要是你有空的话，介意进去和朱丽叶聊聊吗？#$b#我觉得她现在很需要朋友的陪伴。$2\"/emote farmer 8 /pause 500/speak Jessie \"今早她收到了一封信，然后就一直打架子鼓打到现在。$2#$b#我是不介意噪音啦，但我很担心她。$2\"/pause 500/emote farmer 56/pause 500/textAboveHead Jessie \"谢谢\"/pause 1000/faceDirection Jessie 0/move farmer 0 -4 0/pause 100/warp farmer -100 -100/playSound doorOpen/pause 2000/fade/viewport -200 -200/changeLocation Custom_LK_LodgingHouse/viewport -200 -200/switchEvent 6398310_2"
+      },
+      "When": {
+        "LoadESMap": "false"
+      }
+    },
+    {
+      "LogName": "Juliet's parental visit",
+      "Action": "EditData",
+      "Target": "Data/Events/Custom_LK_LodgingHouse",
+      "Entries": {
+        "6398310_2": "warp Jessie -100 -100/warp Gremlin -100 -100/playMusic heavy/viewport 26 8 clamp true/warp Juliet 28 7/animate Juliet false true 150 29 30 31/warp farmer 20 13/move farmer 7 0 0/emote farmer 28/pause 500/doAction 27 12/move farmer 0 -6 1/pause 500/message \"朱丽叶全身是汗，看起来精疲力尽。\"/pause 1000/stopMusic/stopAnimation Juliet/pause 500/faceDirection Juliet 3/message \"朱丽叶摘下了耳机。\"/shake Juliet 1000/speak Juliet \"噢，是你。\"/pause 500/quickQuestion #你以为是谁？冬日星精灵吗？#一切都还好吗？#你玩架子鼓多久了？(break)pause 500\\speak Juliet \"哈！这样不是很好吗？也许小精灵会带给我一张车票，然后我想去哪里就去哪里。\"(break)pause 500\\speak Juliet \"不……一切都糟透了。$2\"(break)pause 500\\speak Juliet \"你说今天吗？大概几个小时吧，也许更久。\"/shake Juliet 1000/pause 500/speak Juliet \"呃，我感觉胳膊都跟橡皮一样了。也许我应该早点停下来。$2#$b#反正这样也没用，他们还是要来这里……$a\"/pause 500/emote farmer 8/speak Juliet \"是我的父母。唐纳修爸爸和唐纳修妈妈。虽然他们从不允许我用这个称呼。$2#$b#毫无疑问，他们要来揪住我的脖子，把离群的小狗拖回群落了。$a\"/pause 500/faceDirection Juliet 0/emote Juliet 12/pause 1000/faceDirection Juliet 3/quickQuestion #说不定他们是来道歉的？#我们有办法阻止他们吗？#我不会让他们伤害你！(break)textAboveHead Juliet \"哈！\"\\speak Juliet \"这是我今天听过最好笑的话了。比起道歉，妈妈宁愿承认自己引发了戈特洛战争。$1\"(break)speak Juliet \"哈，我不觉得！一旦那两个人打定了什么主意，就没人能改变了。$2\"(break)speak Juliet \"哈，谢了，@！我很乐意看到你试着阻止他们。$1#$b#不过说真的，能有你作为我的同伴，对我来说意义重大。$4\"/pause 500/speak Juliet \"总之，他们这几天还不会来星露谷。所以……我就先尽量不去想这件事了吧。#$b#说不定在那之前我先会被外星人绑架，或者被棕熊吃掉。$1\"/emote farmer 28/pause 500/speak Juliet \"至于现在，我得去洗个澡。#$b#过会儿要一起出门玩吗？往屋顶上扔水果之类的？$1\"/pause 500/emote farmer 32/pause 1000/end"
+      }
+    },
+    //Gremlin
+    {
+      "LogName": "Gremlin Sprite",
+      "Action": "Load",
+      "Target": "Characters/Gremlin",
+      "FromFile": "assets/img/Gremlin.png"
+    },
+    {
+      "LogName": "Gremlin Portrait",
+      "Action": "Load",
+      "Target": "Portraits/Gremlin",
+      "FromFile": "assets/img/Gremlin_collar.png"
+    },
+    {
+      "LogName": "Gremlin Dialogue",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/Gremlin",
+      "FromFile": "assets/dialogue/GremlinDialogue.json",
+      "When": {
+        "HasSeenEvent": "86571141"
+      }
+    },
+    {
+      "LogName": "Gremlin Schedule",
+      "Action": "Load",
+      "Target": "Characters/schedules/Gremlin",
+      "FromFile": "assets/schedules/GremlinSchedule.json",
+      "When": {
+        "HasSeenEvent |contains=86571101": true,
+        "HasSeenEvent |contains=191393": false
+      }
+    },
+    {
+      "LogName": "Schedule",
+      "Action": "Load",
+      "Target": "Characters/schedules/Gremlin",
+      "FromFile": "assets/schedules/GremlinScheduleJojaClosed.json",
+      "When": {
+        "HasSeenEvent |contains=191393": true,
+        "HasFlag |contains=ccMovieTheater": false
+      }
+    },
+    {
+      "LogName": "Schedule",
+      "Action": "Load",
+      "Target": "Characters/schedules/Gremlin",
+      "FromFile": "assets/schedules/GremlinScheduleTheater.json",
+      "When": {
+        "HasSeenEvent |contains=191393": true,
+        "HasFlag |contains=ccMovieTheater": true
+      }
+    },
+    {
+      "LogName": "Gremlin's AntiSocial Flag",
+      "Action": "EditData",
+      "Target": "Data/AntiSocialNPCs",
+      "Entries": {
+        "Gremlin": true
+      },
+      "When": {
+        "HasSeenEvent |contains=86571101": true,
+        "HasMod": "SuperAardvark.AntiSocial"
+      }
+    },
+    {
+      "LogName": "NPC Manifestation",
+      "Action": "EditData",
+      "Target": "Data/NPCDispositions",
+      "Entries": {
+        "Gremlin": "child/neutral/shy/positive/female/not-datable/null/Town/null//Custom_LK_LodgingHouse 29 7/小妖精"
+      },
+      "When": {
+        "HasSeenEvent": "86571101",
+        "HasMod": "SuperAardvark.AntiSocial"
+      }
+    },
+    //movies!
+    //Adds Door Warp to backroom Theater
+    {
+      "LogName": "Adds door to sheet",
+      "Action": "EditImage",
+      "Target": "Maps/{{season}}_Town",
+      "FromFile": "assets/img/{{season}}_theaterDoor.png",
+      "ToArea": {
+        "X": 160,
+        "Y": 1104,
+        "Width": 16,
+        "Height": 32
+      },
+      "When": {
+        "HasMod |contains=Gweniaczek.WayBackPT": false
+      }
+    },
+    {
+      "LogName": "Adds door to sheet",
+      "Action": "EditImage",
+      "Target": "Maps/{{season}}_Town",
+      "FromFile": "assets/img/WayBack_DoorOV.png",
+      "PatchMode": "Overlay",
+      "ToArea": {
+        "X": 160,
+        "Y": 1104,
+        "Width": 16,
+        "Height": 32
+      },
+      "When": {
+        "HasMod |contains=Gweniaczek.WayBackPT": true
+      }
+    },
+    //adds Door Warp
+    {
+      "Action": "EditMap",
+      "Target": "Maps/Town-Theater",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 100,
+            "Y": 50
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "Warp 20 20 Custom_LK_TheaterBreakroom"
+          }
+        }
+      ]
+    },
+    //Concessions Clerk
+    {
+      "LogName": "Places Juliet into Theater",
+      "Action": "EditImage",
+      "Target": "Maps/MovieTheater_TileSheet",
+      "FromFile": "assets/img/JulietTheaterPatch.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 64,
+        "Height": 32
+      },
+      "ToArea": {
+        "X": 192,
+        "Y": 160,
+        "Width": 64,
+        "Height": 32
+      },
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+        "DayOfWeek": "Monday, Tuesday, Wednesday, Thursday"
+      }
+    },
+    {
+      "LogName": "Places Kevin into Theater",
+      "Action": "EditImage",
+      "Target": "Maps/MovieTheater_TileSheet",
+      "FromFile": "assets/img/JulietTheaterPatch.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 32,
+        "Width": 64,
+        "Height": 32
+      },
+      "ToArea": {
+        "X": 192,
+        "Y": 160,
+        "Width": 64,
+        "Height": 32
+      },
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+        "DayOfWeek": "Friday, Saturday, Sunday"
+      }
+    },
+    {
+      "LogName": "Places Kevin into Theater",
+      "Action": "EditImage",
+      "Target": "Maps/MovieTheater_TileSheet",
+      "FromFile": "assets/img/JulietTheaterPatch.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 32,
+        "Width": 64,
+        "Height": 32
+      },
+      "ToArea": {
+        "X": 192,
+        "Y": 160,
+        "Width": 64,
+        "Height": 32
+      },
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+        "DayOfWeek": "Tuesday, Thursday, Friday, Saturday, Sunday",
+        "spouse": "Juliet"
+      }
+    },
+    {
+      "LogName": "Places Kevin into Theater",
+      "Action": "EditImage",
+      "Target": "Maps/MovieTheater_TileSheet",
+      "FromFile": "assets/img/JulietTheaterPatch.png",
+      "FromArea": {
+        "X": 0,
+        "Y": 32,
+        "Width": 64,
+        "Height": 32
+      },
+      "ToArea": {
+        "X": 192,
+        "Y": 160,
+        "Width": 64,
+        "Height": 32
+      },
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+        "Weather": "rain"
+      }
+    },
+    //Compatibility Patches and Bonus stuff
+    {
+      "LogName": "Yoba Worship if Paul or Amelia are present",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Juliet",
+      "Entries": {
+        "Sun": "700 Custom_LK_LodgingHouse 21 16 1/900 Custom_LK_LodgingHouse 33 7 0/1100 SeedShop 37 22 0/1400 Town 95 51 0/1700 JojaMart 9 25 1 Juliet_work/2300 Town 34 10 2/2400 Custom_LK_LodgingHouse 27 6 2 Juliet_sleep"
+      },
+      "When": {
+        "HasMod": "Ginnyclaire.Paul, midnightsky550",
+        "IsCommunityCenterComplete": false
+      }
+    },
+    {
+      "LogName": "Yoba Worship if Paul or Amelia are present - post CC completion",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Juliet",
+      "Entries": {
+        "Sun": "700 Custom_LK_LodgingHouse 21 16 1/900 Custom_LK_LodgingHouse 33 7 0/1100 SeedShop 37 22 0/1400 Town 95 51 0/1700 Town 26 22 2 Juliet_yoyo/2300 Town 34 10 2/2400 Custom_LK_LodgingHouse 27 6 2 Juliet_sleep"
+      },
+      "When": {
+        "HasMod": "Ginnyclaire.Paul, midnightsky550",
+        "IsCommunityCenterComplete": true
+      }
+    },
+    {
+      "LogName": "Woman in a Painting",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Juliet",
+      "Entries": {
+        "CommunityCenter_Fri": "$1 Juliet_Painting#你检查过角落里的那扇门了吗，@？你绝对应该进去看看！$1$k#$e#那幅画真是古怪，对吧？无论你在房间的哪个角落，她的目光好像都跟随着你。$3",
+        "CommunityCenter_Mon": "有时候我听见有人在这里唱歌，@。但当我四处搜寻的时候，却发现一个人也没有。$2#$b#不过她的声音挺好听的。不知道她是谁？她还活着吗？$3"
+      },
+      "When": {
+        "HasMod": "MIDI.MysteriousWoman"
+      }
+    },
+    {
+      "LogName": "Jade",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Juliet",
+      "Entries": {
+        "Sun2": "你不害怕蜘蛛吧？我的室友翡翠，她喜欢各种怪怪的爬虫。所以你永远也不知道睡着以后耳朵里会钻进什么。",
+        "Sun4": "今天吃早饭的时候，翡翠的某位八条腿的朋友经过了餐桌。不说谎话，我几乎像个小姑娘一样尖叫了起来。#$b#杰西无动于衷地把它捡了起来——直接用手！——然后把它放走了！",
+        "Sun6": "翡翠又开始谈论精灵的事了。我是说，没错，世界上是有很多我们不知道的事情。但是我的话嘛，只要我没亲眼看见就不会相信，明白吗？",
+        "LodgingHouse_Sat": "嘿，@，你是来听我演奏的吗？希望今天翡翠没打算睡懒觉！$2"
+      },
+      "When": {
+        "HasMod": "malic.cp.jadeNPC"
+      }
+    },
+    {
+      "LogName": "Schedule",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Gremlin",
+      "Entries": {
+        "Mon": "620 Custom_LK_LodgingHouse 19 22 0 Gremlin_sit/700 Town 71 98 0 square_3_3/930 Town 53 25 2 square_5_5/1700 Custom_LK_LodgingHouse 17 22 2 Gremlin_sit/2200 Custom_LK_LodgingHouse 25 6 2 Gremlin_sleep",
+        "Fri": "620 Custom_LK_LodgingHouse 19 22 0 Gremlin_sit/700 Town 71 98 0 square_3_3/930 Town 53 25 2 square_5_5/1700 Custom_LK_LodgingHouse 17 22 2 Gremlin_sit/2200 Custom_LK_LodgingHouse 25 6 2 Gremlin_sleep",
+        "Sat": "700 Custom_LK_LodgingHouse 19 22 0 Gremlin_sit/900 Custom_LK_ClearingHouse 19 19 1 square_3_3/1310 Beach 43 35 2/1800 Saloon 42 22 3/2200 Custom_LK_LodgingHouse 25 6 2 Gremlin_sleep"
+      },
+      "When": {
+        "Spouse": "Juliet"
+      }
+    },
+    // Bonus events
+    //If East Scarpe installed, triggers within the 7 days of seeing Gremlin's second adoption scene. If not seen in that time, you will never see it.
+    {
+      "LogName": "Juliet visits the vet",
+      "Action": "EditData",
+      "Target": "Data/Events/Custom_ESVetHouse",
+      "Entries": {
+        "86571142/e 86571141/k 86571138/t 900 1700/d Tue": "none/7 14/Juliet 3 14 0 Gremlin 4 12 3 Jacob 5 12 3 farmer 5 20 0/animate Gremlin false true 240 16 17/skippable/pause 500/textAboveHead Juliet \"好姑娘\"/playSound dogWhining/pause 500/speak Jacob \"你会做个好姑娘的，对吧，小妖精？#$b#就快好了！只要再来一针……\"/pause 500/playSound dog_bark/pause 500/speak Juliet \"怎么样，医生？诊断结果如何？她还好吗？$2\"/pause 500/emote Juliet 28/move Gremlin -1 0 2/playSound dog_pant/move farmer 0 -2 0/doAction 5 17/pause 500/move farmer 0 -3 0/jump Juliet 5/playSound dog_bark/faceDirection Jacob 2/emote farmer 60/pause 500/speak Jacob \"不好意思……你不应该……$2\"/pause 500/speak Juliet \"没事的，医生。是我邀请的@。\"/faceDirection Juliet 1/speak Juliet \"你来晚了……$5#$b#……不过很高兴你能来。$4\"/pause 500/faceDirection Juliet 0/speak Juliet \"要是有人陪着我的话，我会感觉好得多，医生。万一有什么坏消息的话。$2#$b#是什么坏消息吗？她生病了？还是受伤了？$2\"/move farmer -1 0 0/move farmer 0 -1 3/faceDirection Juliet 1/emote Juliet 20/pause 1500/faceDirection Jacob 3/faceDirection farmer 0 true/faceDirection Juliet 0 true/faceDirection Gremlin 1/speak Jacob \"她体重不足，而且营养不良。看起来她独自生活了很久很久。$2\"/pause 500/speak Juliet \"噢，可怜的姑娘！$2\"/playSound dogWhining/emote Juliet 40/speak Jacob \"她会没事的。但她很幸运能有你找到她，朱丽叶。$2#$b#她需要有人能照顾她，爱着她。#$b#养狗是很大的一份责任。你准备好肩负起这份重担了吗？\"/pause 500/faceDirection Juliet 1/faceDirection farmer 3/speak Jacob \"当然，不要因为是你找到她的，你就觉得自己有义务做什么。#$b#我和当地的救助站有工作联系。我们可以为她找到完美的新家。\"/emote farmer 8/pause 500/faceDirection Juliet 0/pause 500/faceDirection Gremlin 2/playSound dog_pant/pause 500/speak Juliet \"不，我想要留下她，医生。她……她选择了我。而且我……好吧，我也选择了她。\"/jump Gremlin 3/move Gremlin 0 1 2/emote Gremlin 20/playSound dog_bark/emote Jacob 32/speak Jacob \"真是个好消息。而且狗能很好地判断一个人的品性，朱丽叶。#$b#虽然有点老套，但我相信你们遇见彼此是有原因的。$1\"/emote Juliet 20/pause 1000/end"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Farm",
+      "When": {
+        "HasMod": "LemurKat.JacobEloise.CP"
+      },
+      "Entries": {
+        "86571137/e 86571141/x Juliet_Vet true": "null",
+        "86571138/n Juliet_Vet/k 86571142/A JulietVet/x Juliet_VetDone": "null"
+      }
+    },
+    //If Stray Catfe installed
+    //Triggers on Juliet's birthday              
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/BusStop",
+      "When": {
+        "HasMod": "alistairweekend.TSCCharacters"
+      },
+      "Entries": {
+        "86571139/u 15/z winter/z summer/z fall": "jaunty/17 25/farmer 9 23 1 Juliet 21 23 3 Tabitha -100 -100 2 Theo -100 -100 3/skippable/move Juliet -5 0 3 true/move farmer 5 0 1 true/pause 2000/emote Juliet 32/pause 500/speak Juliet \"嘿，@，很高兴在这里见到你！\"/pause 500/emote farmer 8/pause 500/speak Juliet \"噢，生日那天还在工作也太惨了，所以我请了病假。$1#$b#总之，我决定去咖啡店好好犒劳一下自己。\"/emote farmer 40/move farmer 1 0 1/speak Juliet \"$q 86571140 null#你想和我一起来吗？#$r 86571141 50 Juliet_Bday_Y#听起来很棒！#$r 86571144 0 Juliet_Bday_N#算了吧，我很忙。#$r 86571145 -50 Juliet_Bday_W#不可能。而且你现在应该在工作才对。\"/fork 86571141 Juliet_Catfe/pause 500/speak Juliet \"好吧，那就以后再见。不过你错过了大好机会。#$b#他们的枫糖棒超级美味，就算死了也值得！$1\"/pause 500/move Juliet 0 6 2 true/faceDirection farmer 2/pause 500/emote farmer 60/pause 1000/end",
+        "Juliet_Catfe": "pause 500/speak Juliet \"你一定会喜欢那里的。他们的枫糖棒超级美味，就算死了也值得。#$b#要我为它杀人也愿意。我还没决定好！$1\"/pause 500/emote Juliet 20/move Juliet 0 4 2 true/move farmer 0 4 2 true/fade/viewport -1000 -1000/pause 2000/warp Juliet 6 24/warp farmer -100 -100/warp Tabitha 14 13/warp Theo 18 19/changeLocation CafeIndoors/viewport 11 17 true/move Juliet 0 -4 2/textAboveHead Tabitha \"嗨，朱丽叶！\"/warp farmer 6 24/move farmer 0 -2 2/faceDirection farmer 1/pause 1000/faceDirection farmer 3/speak Juliet \"欢迎来到流浪猫咖啡店。$1#$b#这里可真可爱啊，对吧？不过你要是为了猫才来的话，这里可没有猫。#$b#虚假广告，是啊，我知道。但这里的食物很美味，所以我可不会投诉它！\"/emote farmer 32/speak Juliet \"来吧，我们找个座位。\"/fade/viewport -1000 -1000/warp Juliet 5 17/faceDirection Juliet 2/warp farmer 3 19/faceDirection farmer 1/positionOffset farmer 0 -20/showframe 117/warp Tabitha 9 18/faceDirection Tabitha 3/viewport 8 17/pause 500/move Tabitha -3 0 3/speak Tabitha \"这不是朱丽叶吗，我最喜欢的客人！生日快乐！\"/speak Juliet \"噢，塔比，我打赌你跟每个女孩都这么说！$4\"/pause 500/emote Tabitha 60/pause 2000/speak Tabitha \"见到你也很高兴，@。我还不知道你们两个是朋友呢。\"/quickQuestion #朱丽叶很棒，我挺喜欢她的。#是啊，朱丽叶挺酷的。#我们不是朋友。我只是来吃东西的。(break)friendship Juliet 25\\faceDirection Juliet 3\\emote Juliet 20\\speak Juliet \"谢了，@。$4\"(break)friendship Juliet 10\\faceDirection Juliet 3\\emote Juliet 32\\speak Juliet \"谢了，@。$1\"(break)friendship Juliet -25\\emote Juliet 12\\speak Juliet \"我以后再也不会邀请你了。$5\"/faceDirection Juliet 2/pause 500/speak Tabitha \"好吧，希望你们能享受这里的食物！\"/pause 1000/fade/viewport -100 -100/farmerEat 731/message \"朱丽叶说得对，这里的枫糖棒简直美味得要死！\"/end"
+      }
+    },
+    //Juliet's schedule on her birthday
+    {
+      "LogName": "Schedule - Stray Catfe",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Juliet",
+      "When": {
+        "HasMod": "alistairweekend.TSCCharacters"
+      },
+      "Entries": {
+        "spring_15": "700 Custom_LK_LodgingHouse 21 21 3/900 Custom_LK_LodgingHouse 28 7 0 Juliet_drums/1100 CafeIndoors 5 15 1 \"Strings\\schedules\\Juliet:spring_17.100\"/1740 Saloon 42 20 3/2400 Custom_LK_LodgingHouse 22 6 2 Juliet_sleep"
+      }
+    },
+    {
+      "LogName": "Schedule - Stray Catfe",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Juliet",
+      "When": {
+        "HasMod": "alistairweekend.TSCCharacters",
+        "Season": "spring",
+        "Day": "15"
+      },
+      "Entries": {
+        "rain": "700 Custom_LK_LodgingHouse 21 21 3/900 Custom_LK_LodgingHouse 28 7 0 Juliet_drums/1100 CafeIndoors 5 15 1 \"Strings\\schedules\\Juliet:spring_17.100\"/1740 Saloon 42 20 3/2400 Custom_LK_LodgingHouse 22 6 2 Juliet_sleep"
+      }
+    },
+    //Gremlin schedule on Juliet's birthday   
+    {
+      "LogName": "Schedule - Stray Catfe",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Gremlin",
+      "When": {
+        "HasMod": "alistairweekend.TSCCharacters"
+      },
+      "Entries": {
+        "spring_15": "700 Custom_LK_LodgingHouse 19 22 0 Gremlin_sit/900 Custom_LK_ClearingHouse 19 19 1 square_3_3/1130 CafeOutdoors 21 16 2 square 10_3/1800 Saloon 42 22 3/2400 Custom_LK_LodgingHouse 25 6 2 Gremlin_sleep"
+      }
+    },
+    {
+      "LogName": "Schedule - Stray Catfe",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Gremlin",
+      "When": {
+        "HasMod": "alistairweekend.TSCCharacters",
+        "Season": "spring",
+        "Day": "15"
+      },
+      "Entries": {
+        "rain": "700 Custom_LK_LodgingHouse 19 22 0 Gremlin_sit/900 Custom_LK_ClearingHouse 19 19 1 square_3_3/1130 CafeOutdoors 21 16 2 square 10_3/1800 Saloon 42 22 3/2400 Custom_LK_LodgingHouse 25 6 2 Gremlin_sleep"
+      }
+    },
+    //Makes Fun Leave DIalogue more fun!
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogueJuliet",
+      "Entries": {
+        "funLeave_Juliet": "好吧，我该去赚点钱了，或者从哪里弄点。天知道刘易斯的钱是从哪儿来的？",
+        "funReturn_Juliet": "嗨，亲爱的，我回家了！想我了吗？$4"
+      },
+      "When": {
+        "DayOfWeek": "Monday"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogueJuliet",
+      "Entries": {
+        "funLeave_Juliet": "好吧，我该去赚点钱了，或者从哪里弄点。天知道我的工资是谁付的？$1"
+      },
+      "When": {
+        "DayOfWeek": "Monday",
+        "HasFlag |contains=ccMovieTheater": true,
+        "HasFlag |contains=ccMovieTheaterJoja": false,
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogueJuliet",
+      "Entries": {
+        "funLeave_Juliet": "等会见，亲爱的！别做什么连我都不会做的事！$1#$b#噢，这就给你足够大的空间了！",
+        "funReturn_Juliet": "杰西向你问好。她不想让我两手空空地回家。[230 222 207 208 205 200 196]"
+      },
+      "When": {
+        "DayOfWeek": "Wednesday"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogueJuliet",
+      "Entries": {
+        "funLeave_Juliet": "等会见，亲爱的！别做什么连我都不会做的事！$1#$b#噢，这就给你足够大的空间了！",
+        "funReturn_Juliet": "嘿，我一整天都在和可爱的鸟儿们玩耍。你今天过得如何？"
+      },
+      "When": {
+        "DayOfWeek": "Wednesday",
+        "HasFlag |contains=ccMovieTheater": true,
+        "HasFlag |contains=ccMovieTheaterJoja": false,
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogueJuliet",
+      "Entries": {
+        "funLeave_Juliet": "今天我打算向由巴坦诚我的灵魂。要我也为你说点好话吗？#$b#噢，我们一定能想出几个赎罪的方法。$4",
+        "funReturn_Juliet": "由巴向你问好。我还在回家的路上发现了这个。你觉得它代表着什么征兆吗？[376 420 422]#$b#是吧，我也不觉得。$1"
+      },
+      "When": {
+        "DayOfWeek": "Sunday"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogueJuliet",
+      "Entries": {
+        "Neutral_8": "我在想要不要弄个新纹身。#$b#或许纹一个{{Random: 吸血蝙蝠, 有毒的花束, 穿着芭蕾舞裙的霸王龙, 僵尸绵羊}}。#$b#你觉得呢？"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogueJuliet",
+      "When": {
+        "HasMod": "CopperSun.JojaSeedsJA"
+      },
+      "Entries": {
+        "JojaMart_Tue": "嘿，农夫@。打算种什么作物吗？我们这里有基因增强的品种！没错！不过希望它们不会让你长出两个脑袋。$7"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Forest",
+      "TextOperations": [
+        {
+          "Operation": "Append",
+          "Target": [
+            "Fields",
+            "3910975/f Shane 1500/e 3910674/t 900 2000/w rainy",
+            4
+          ],
+          "Value": "addConversationTopic Shane_6_heart 0",
+          "Delimiter": "/"
+        }
+      ]
+    },
+    {
+      "LogName": "Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Juliet",
+      "Entries": {
+        "Juliet_NoMarried": "噢，是啊，没错。你当然已经结婚了。$5#$b#你用不着说谎的，@。我可以接受拒绝。$2"
+      },
+      "When": {
+        "HasValue:{{spouse}}": "false"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "strings/StringsFromCSFiles",
+      "Entries": {
+        "Utility.cs.5367": "当@第一次来到鹈鹕镇时，没有人知道他能否融入社区……#$b#但从今天开始，@将像我们每个人一样，成为小镇的一份子！$h#$b#我很荣幸地宣布，在{1}{0}的这一天，@和朱丽叶结为连理。",
+        "Utility.cs.5369": "当@第一次来到鹈鹕镇时，没有人知道她能否融入社区……#$b#但从今天开始，@将像我们每个人一样，成为小镇的一份子！$h#$b#我很荣幸地宣布，在{1}{0}的这一天，@和朱丽叶结为连理。",
+        "Utility.cs.5371": "@……朱丽叶…… #$b# 作为鹈鹕镇的镇长，以及地区婚姻负责人，我现在宣布你们结为夫妻！$h",
+        "Utility.cs.5377": "@……朱丽叶…… #$b# 作为鹈鹕镇的镇长，以及地区婚姻负责人，我现在宣布你们结为妻子和……妻子！$h"
+      },
+      "When": {
+        "Relationship:Juliet": "Engaged"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Juliet",
+      "Entries": {
+        "Utility.cs.5367": "当@第一次来到鹈鹕镇时，没有人知道他能否融入社区……#$b#但从今天开始，@将像我们每个人一样，成为小镇的一份子！$h#$b#我很荣幸地宣布，在{1}{0}的这一天，@和朱丽叶结为连理。",
+        "Utility.cs.5369": "当@第一次来到鹈鹕镇时，没有人知道她能否融入社区……#$b#但从今天开始，@将像我们每个人一样，成为小镇的一份子！$h#$b#我很荣幸地宣布，在{1}{0}的这一天，@和朱丽叶结为连理。",
+        "Utility.cs.5371": "@……朱丽叶…… #$b# 作为鹈鹕镇的镇长，以及地区婚姻负责人，我现在宣布你们结为夫妻！$h",
+        "Utility.cs.5377": "@……朱丽叶…… #$b# 作为鹈鹕镇的镇长，以及地区婚姻负责人，我现在宣布你们结为妻子和……妻子！$h"
+      },
+      "When": {
+        "HasMod": "aedenthorn.CustomFixedDialogue"
+      }
+    },
+    /*******************************
+  A D D I T I O N A L  D I A L O G U E
+  **********************************/
+    {
+      "LogName": "Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Juliet",
+      "Entries": {
+        "refusal_no_heartsA": "哈，我，稳定下来？真是个荒唐的主意！$1",
+        "refusal_no_heartsB": "哎呀，你还真可爱啊。但是不行。",
+      },
+      "When": {
+        "query: {{Hearts:Juliet}} >= 8": true,
+        "HasMod": "misscoriel.UCRFix"
+      }
+    },
+    {
+      "LogName": "Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Juliet",
+      "Entries": {
+        "Mon2": "你抽烟吗，@？我曾经试过一次，不过你知道，感觉挺糟的。#$b#哈，我宁愿把辛苦赚来的钱花在其他事情上。",
+        "Mon4": "一定有什么能让这个宁静的小镇活跃起来的方法。#$b#唔……不知道刘易斯愿不愿意让我组织某个节日。哈，那一定很有意思。$1",
+        "summer_Thu": "只工作不玩耍，之类的……希望你能自己找到乐趣，农夫。$1#$b#毕竟你不再是坐在Joja办公桌后的奴隶了！",
+        "summer_Fri6": "这周末你想去海滩吗，@？是的，我打算欣赏欣赏当地的才艺。"
+      },
+      "When": {
+        "HasSeenEvent": "191393"
+      }
+    },
+    {
+      "LogName": "Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Juliet",
+      "Entries": {
+        "Mon8": "嘿，小鸡男谢恩最近看起来开心多了。我发誓，我几乎看见他笑了！#$b#看来他终于勾搭上适合自己的人了。嘿，对他们两者都是！"
+      },
+      "When": {
+        "HasSeenEvent": "5295016"
+      }
+    },
+    {
+      "LogName": "Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogue",
+      "Entries": {
+        "fall_Juliet": "早上好，亲爱的！我已经准备好迎接新的一天了！等会儿见！$1#$b#噢，这是给你的小礼物，让你不用太辛苦。我晚上给你准备了惊喜。$4[240]",
+      }
+    },
+    //Trigger 14-heart event without dating pathing: 
+    {
+      "LogName": "Talent Show Event starts",
+      "Action": "EditData",
+      "Target": "Data/Events/Farm",
+      "when": {
+        "HasDialogueAnswer": "639898, 639896",
+        "Relationship:Juliet |contains=Dating,Engaged, Married": false
+      },
+      "Entries": {
+        "6398443/f Juliet 2749/o Juliet/O {{spouse}}/t 600 1200": "playful/12 17/Juliet -100 -100 0 farmer 12 18 0/addConversationTopic Juliet_TalentShow 7/skippable/pause 500/speak Juliet \"噢，真好，你回家了。$1#$b#总之~我大概和镇长提了一嘴，说这里太无聊了。然后……你猜怎么着？\"/emote farmer 8/pause 500/speak Juliet \"我升职了！现在我是鹈鹕镇官方活动协调员了！\"/emote farmer 16/speak Juliet \"是啊，我敢肯定这个名头是他编出来的，他只是想把责任推到别人身上而已。不过谁在乎呢？#$b#现在我可以正大光明地组织活动来“活跃社区气氛”了。#$b#这是他的原话，不是我的。要我说的话，都是些装模做样的废话。其实就是办派对而已。我就把这叫作“派对”好了。$1\"/quickQuestion #听起来不错。你一定会做得很棒！#这可是很大一份责任啊。你确定自己准备好了吗？#他只是想摆脱你的纠缠而已。(break)emote Juliet 20\\speak Juliet \"是的，我也希望如此！这真是令人激动，对吧？\"(break)emote Juliet 12\\speak Juliet \"哈，看来我嫁给你就是让自己扫兴的。$5#$b#好吧，就算你不相信我，我也会证明你是错的。你就等着瞧吧！\"(break)emote Juliet 40\\speak Juliet \"噢，是啊，我知道。但这并不意味着我就不能搞出一番大事，把他惊得鞋子都掉下来。#$b#不是说我想这么做啦……我猜他一定有拇趾囊炎，要么就不爱剪脚指甲之类的。呕。$5\"/speak Juliet \"你会帮助我的，对吧？你就像小镇的力量源泉一样，大家都喜欢你。#$b#我吗？好吧，我只是个大嗓门的Joja姑娘而已。他们一定会拒绝我的。\"/emote farmer 60/speak Juliet \"真好，我就知道可以指望你的。我想要举办的是一场才艺演出，意在发掘所有人隐藏的才能。#$b#好吧，或许也用不着真的去“发掘”。但我们也不妨看看大家都会些什么，对吧？\"/emote farmer 56/pause 1000/speak Juliet \"所以，嘿，你有什么隐藏的才能吗，@？\"/pause 500/emote farmer 28/pause 1500/end"
+      }
+    },
+	{
+      "LogName": "Juliet reminds you of the event",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Juliet",
+      "When": {
+        "HasSeenEvent": "6398443",
+        "HasConversationTopic |contains=Juliet_TalentShow": false,
+        "HasFlag |contains=Juliet_TalentShowReminder": false,
+        "Relationship:Juliet |contains=Engaged, Married": false
+      },
+      "Entries": {
+        "{{season}}_{{day}}_2": "$1 Juliet_TalentShowReminder#嘿，农夫，别忘了才艺演出的事！就在今天下午的社区中心。#$b#可别错过乐子了！到时候肯定会大闹一场！当然是好的那种，而不是破坏性的——希望如此。$1"
+      }
+    },
+  ]
+}

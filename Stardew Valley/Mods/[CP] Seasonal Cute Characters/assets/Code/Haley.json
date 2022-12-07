@@ -1,0 +1,100 @@
+{
+	"Changes": [
+		{
+			"LogName": "Haley - Seasonal",
+			"Action": "EditImage",
+			"Target": "Portraits/Haley, Characters/Haley",
+			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Haley - Winter Indoor/Outdoor",
+			"Action": "EditImage",
+			"Target": "Portraits/Haley, Characters/Haley",
+			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+                "Season": "Winter",
+                "WinterIndoorOutdoorOutfits": "IndoorOutdoor",
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Haley - Festival",
+			"Action": "EditImage",
+			"Target": "Portraits/Haley, Characters/Haley",
+            "FromFile": "assets/{{TargetPathOnly}}/Festivals/{{Festival}}/{{TargetWithoutPath}}_{{Festival}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"FestivalOutfits": "True",
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Haley - Beach",
+			"Action": "EditImage",
+			"Target": "Portraits/Haley_Beach, Characters/Haley_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Beach/{{TargetWithoutPath}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		
+// NOSE OVERLAY
+		{
+			"LogName": "Haley - Seasonal Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Haley",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"NoNose": "false",
+			},
+		},
+		{
+			"LogName": "Haley - Beach Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Haley_Beach",
+            "FromFile": "assets/{{TargetPathOnly}}/Beach/{{TargetWithoutPath}}_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"NoNose": "false",
+			},
+		},
+		
+// MISCELLANEOUS		
+		{
+			"LogName": "Haley - Emoji",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+            "FromFile": "assets/{{NoNose}}/Random/emojis.png",
+			"FromArea": {"X": 36, "Y": 99, "Width": 9, "Height": 9},
+			"ToArea": {"X": 36, "Y": 99, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+            "LogName": "Cow Photos",
+            "Action": "EditImage",
+            "Target": "LooseSprites/cowPhotos, LooseSprites/cowPhotosWinter",
+            "FromFile": "assets/{{NoNose}}/Random/cowPhotos_{{Season}}.png",
+            "When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+            "Update": "OnLocationChange",
+        },
+	]
+}

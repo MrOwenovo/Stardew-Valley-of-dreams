@@ -1,0 +1,207 @@
+{
+
+"Format": "1.24.0",
+
+"Changes": [
+
+
+{
+		"Action": "EditData",
+		"Target": "Data/Events/Farm",
+
+		"Entries": {
+			
+			"90020001/z spring/z fall/z winter/x host_letter1": "null",
+			"90020002/z spring/z summer/z winter/x host_letter2": "null",
+			"90020003/z spring/z summer/z fall/x host_letter3": "null",
+			"90020004/z summer/z fall/z winter/n host_letter3/x host_letter4": "null",
+		},				
+},
+	  
+	   
+	{
+		"Action": "EditData",
+		"Target": "data/mail",
+		
+		"Entries": {
+		
+			"host_letter1": "嗨， @!你认识我的朋友桑迪吗?她住在沙漠里。她有一些树要出售，很适合在上面种西班牙苔藓!它非常适合用来做填充物，你甚至可以用一台织布机把它织成线!桑迪还有一个用西班牙苔藓制作可爱长毛绒的图案在出售——我敢打赌孩子们会喜欢它的!^--你的朋友, 艾米丽%item conversationTopic spanishmoss_for_sale 7 %%[#]Spanish Moss Available",
+			"host_letter2": "<这封信是用矮人语潦草地写的:>^伙计，我在外面觅食的时候发现了一些奇怪的植物，就把它们挂在树上卖了。如果你现在种植，到冬天，它们可能会足够大，可以容纳更多奇怪的植物。人类喜欢这些，对吧?^--矮人%item conversationTopic mistletoe_lichen_for_sale 7 %%[#]Mistletoe and Reindeer Lichen",
+			"host_letter3": "嗨， @! 如果你不想在冬天呆着，想在春天有所期待，为什么不买一棵这种专为种植空气凤梨而设计的棕榈树呢?如果你现在就开始种植，到了春天你就会有很多可爱的小空气植物了!^--桑迪%item conversationTopic airplant_for_sale 7 %%[#]Air Plant Trees Available",
+			"host_letter4": "你好，亲爱的。 你听说过香草兰花吗？ 它们被用来制作香草调味料，但它们也有如此可爱的花朵。 如果你决定从树上取下一个，我希望你做一个可爱的花盆把它放进去。如果你这样做了，我很想看看它。^--艾芙琳%item conversationTopic vanillaorchid_for_sale 7 %%[#]Vanilla Orchid Available",
+
+		},
+	},
+	
+	
+	{ 
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Jas",
+
+		"Entries": { "airplant_for_sale": "谢恩叔叔给我带来了一些空气凤梨！ 他说他们真的很容易照顾。 我想知道我能不能把它们养在玻璃容器里？$h",	},
+	},
+
+	{ 
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Shane",
+
+		"Entries": { "airplant_for_sale": "不要告诉贾斯，那是我从地上捡来的。 那棵树不会想念他们的，对吧？",	},
+	},	
+
+	{ 
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Emily",
+
+		"Entries": { "spanishmoss_for_sale": "如果你要用织布机做西班牙苔藓线，麻烦给我拿一些来!我很乐意在我的作品中使用它!$h",
+			     "airplant_for_sale": "空中凤梨并不像植物目录上宣传的那样是彩虹色。但是你可以用无毒的颜料来涂它们上色，没有问题。",	},
+	},
+	
+	{ 
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Evelyn",
+
+		"Entries": { "vanillaorchid_for_sale": "哦?你买了一棵适合种兰花的树吗?我相信它们在夏天看起来一定很可爱。$h",	},
+	},
+	
+	{ 
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Jade",
+		"When": { "HasMod |contains=malic.cp.jadeNPC": true, },
+
+		"Entries": { "spanishmoss_for_sale": "一个流行的神话说西班牙苔藓是恙虫的宿主，但事实并非如此。恙虫是地上的虫子，不是树上的。#$b#不过，如果不先清洗一下，我还是不会把它用作枕头填充物的。",	},
+	},
+	
+	{ 
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Demetrius",
+
+		"Entries": { "spanishmoss_for_sale": "西班牙苔藓是以发现者M. Spania的名字命名的，他是第一个把它带到芬吉尔的人。#$b#如果你种了一些，小心你让它扩散的程度——风很容易把它带到新的树上。",
+			     "mistletoe_lichen_for_sale": "槲寄生是一种附生植物——一种生长在树上的植物——但与大多数附生植物不同的是，它几乎完全是寄生的。",
+			     "airplant_for_sale": "凤梨几乎没有根系，因此它们适应于利用最少的水，类似于仙人掌和其他沙漠植物。",
+			     "vanillaorchid_for_sale": "人们从植物世界中发现可食用的东西令人印象深刻。 香草是由兰花种子制成的，藏红花来自番红花的雄蕊，甚至菜籽油是一种特制的欧洲油菜...#$b#是什么导致植物进化出如此多样的风味？",	},
+	},
+	
+	{ 
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Eloise",
+		"When": { "HasMod |contains=Lemurkat.JacobEloise.CP": true, },
+
+		"Entries": { "pumpkin_spice_madness": "槲寄生浆果对人真的有毒，但鸟儿喜欢它们！ 如果你种了一些，一定要为鸟儿留一些！$h",	},
+	},
+	
+	{ 
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Sandy",
+
+		"Entries": { "spanishmoss_for_sale": "你是来买树的吗@? 我在它们的幼苗水中加入了一些特殊的染料，这样你就可以分辨出它们和普通树的区别了！",
+			     "airplant_for_sale": "哦, @! 你是来找可爱的棕榈树的吗？ 它们很耐寒，但要确保它有足够的覆盖物来保暖！$h",
+			     "vanillaorchid_for_sale": "@! 你要为兰花种植一些寄主树，对吗？ 美丽的花朵绝对不会错！$h"	},
+	},
+	
+	{ 
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Pika",
+		"When": { "HasMod |contains=Rafseazz.RSVCP": true, },
+
+		"Entries": { "mistletoe_lichen_for_sale": "我不确定我是否理解格斯对青苔面包的热情……尽管调味适当，任何东西都可以是美味的。",	},
+	},
+
+	{ 
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Faye",
+		"When": { "HasMod |contains=Rafseazz.RSVCP": true, },
+
+		"Entries": { "spanishmoss_for_sale": "西班牙苔藓有如此出色的悬垂性。 我想将它的形状融入我正在制作的这款衣服的袖子中。$h",	},
+	},
+	
+	{ 
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Caroline",
+
+		"Entries": { "spanishmoss_for_sale": "有些人会将西班牙苔藓用于装饰目的。 我敢打赌，披在灯罩上看起来会很可爱的。",
+			     "mistletoe_lichen_for_sale": "你知道，我敢打赌，如果你有合适的机器来制作石蕊，你可以使用它作为肥料。 不过，我想它一定是一台非常奇怪的机器！",
+			     "airplant_for_sale": "我喜欢在我的茶室里种植空气植凤梨。 只要有它们，空气就会感觉更干净。",
+			     "vanillaorchid_for_sale": "如果您要在室内盆栽中种植兰花，最好使用空气流通充足的盆栽，这样土壤就不会太湿。"	},
+	},
+	
+	{ 
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Haley",
+
+		"Entries": { "airplant_for_sale": "艾米丽在窗台上放了一些“空气凤梨”。 我真的分不清他们是死是活....$a",	},
+	},
+	
+	{ 
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Wizard",
+
+		"Entries": { "mistletoe_lichen_for_sale": "槲寄生浆果含有剧毒，但它们的毒性也可以用来驱邪。 在适当的剂量下，毒药可以成为药物。",	},
+	},
+
+	{ 
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Leah",
+
+		"Entries": { "mistletoe_lichen_for_sale": "槲寄生是非常漂亮的装饰品。白色的浆果太美了! 白色的浆果太美了！#$b#如果你只想得到浆果，我想种子制作者可以很好地提取它们。",	},
+	},
+
+	{ 
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Marnie",
+
+		"Entries": { "mistletoe_lichen_for_sale": "冬天来了，我得想办法给动物弄些石蕊。 这对他们的饮食来说是一个很好的补充！",	},
+	},
+
+	{ 
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Penny",
+
+		"Entries": { "mistletoe_lichen_for_sale": "有趣的是，世界上有很多种文化认为槲寄生是一个重要的象征。 我想有些事情对所有人来说都是共通的。",	},
+	},
+
+	{ 
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Gus",
+
+		"Entries": { "mistletoe_lichen_for_sale": "你之前做过青苔面包吗，@? 只需要将一些石蕊扔在炉子里的一些热煤上几个小时。 质地和普通面包完全不同！$h",
+			     "vanillaorchid_for_sale": "香草很好吃，但提取种子真的很痛苦。 我敢打赌有一些机器可以为你做这件事，不是吗，@?"	},
+	},
+
+	{ 
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Linus",
+
+		"Entries": { "mistletoe_lichen_for_sale": "冬天我用西班牙苔藓做床上用品——只要把它切碎，你就会得到一些非常好的纤维。 如果你有一个削片机，为什么不试一试呢？",	},
+	},
+
+	{ 
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Lewis",
+
+		"Entries": { "mistletoe_lichen_for_sale": "在树上看到的石蕊让我想起了你爷爷给他的动物吃草的时候，他种了一些切碎的地衣来代替。#$b#我一直不明白他是怎么让它长大的……也许是他从北方农夫那里学来的。",	},
+	},
+
+	{ 
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Dwarf",
+
+		"Entries": { "mistletoe_lichen_for_sale": "如果我把它们从地上捡起来，我怎么知道这些是树植物呢？#$b#因为很显然，它们落在了我的头上。",	},
+	},
+
+	{ 
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Jodi",
+
+		"Entries": { "vanillaorchid_for_sale": "香草几乎是烘焙的必备原料，但我通常只从商店买瓶香草，而不是自己用榨油机榨。",	},
+	},
+
+	{ 
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Clint",
+		"When": { "HasMod |contains=Arknir.Lucikiel": true, },
+
+		"Entries": { "vanillaorchid": "艾米丽给我带了一朵兰花…但当豆荚成熟后，路西基尔把它们整个吃掉了，就像吃芦笋一样!我…我猜他喜欢嘎吱嘎吱的声音?$4",	},
+	},
+
+	]
+}

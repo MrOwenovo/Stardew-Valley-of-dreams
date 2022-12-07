@@ -1,0 +1,198 @@
+{
+	"Format": "1.28.0",
+	"ConfigSchema": {
+		"TumbleweedQuantity": {
+			"AllowValues": "many, few, none",
+			"Default": "many"
+		}
+	},
+	"DynamicTokens": [
+		{
+			"Name": "desertmap",
+			"Value": "Vanilla",
+		},	
+		{
+			"Name": "desertmap",
+			"Value": "SVE",
+			"When": {
+				"HasMod": "FlashShifter.StardewValleyExpandedCP"
+			}
+		},			
+		{
+			"Name": "foliage",
+			"Value": "vanilla",
+		},	
+		{
+			"Name": "foliage",
+			"Value": "simple",
+			"When": {
+				"HasMod": "Az.Foliage"
+			}
+		},
+		{
+			"Name": "recolour",
+			"Value": "vanilla",
+		},
+		{
+			"Name": "recolour",
+			"Value": "vibrant",
+			"When": {
+				"HasMod": "grapeponta.VibrantPastoralRecolor"
+			}
+		},
+		{
+			"Name": "recolour",
+			"Value": "earthy",
+			"When": {
+				"HasMod": "DaisyNiko.EarthyRecolour"
+			}
+		},
+		{
+			"Name": "recolour",
+			"Value": "starblue",
+			"When": {
+				"HasMod": "Lita.StarblueValley"
+			}
+		},
+	],
+	"Changes": [
+		{
+			"LogName": "Storm dialogue for Desert Trader",
+			"Action": "EditData",
+			"Target": "Strings/StringsFromCSFiles",
+			"Entries": {
+				"DesertTrader4_male": "骆驼今天脾气不好。她喜欢你是件好事。",
+				"DesertTrader4_female": "骆驼今天脾气不好。她喜欢你是件好事。",
+				"DesertTrader3": "来躲避暴风雨吧。我有些东西你可能会感兴趣。",
+				"DesertTrader2": "有人说风滚草是沙漠的灵魂。人们太愚蠢了!",
+				"DesertTrader1": "欢迎，勇敢的旅行者……在这样的天气冒险外出需要勇气。"
+			},
+			"When": {
+				"Weather": "Wind"
+			}
+		},
+		{
+			"LogName": "Storm dialogue for Sandy",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sandy",
+			"Entries": {
+				"Mon": "今天外面真是疯了!#$b#过来玩一会儿 ... 也许还可以看看我们的种子选择。$h",
+				"Tue": "在这样的日子里你要小心飞出来的椰子!不过，能抓到多少就拿多少。#$e#它们也很好吃。Heeee !~$h",
+				"Thu": "不要担心地上的沙子!我以后再吃。 #$e#无论如何……山谷里的天气怎么样?",
+				"Fri": "你在这里种地可不会有什么好运气，亲爱的。#$e#像这样的一天，你所有的庄稼都会被埋掉!$h",
+				"Sat": "这就跟你问声好！欢迎来到桑迪绿洲，卡利科沙漠的第一目的地!#$e#*小声说* 我听起来专业吗?$h#$e#一定要查看我们的季节性种子选择。#$e#你看起来真的…桑迪今天。来，尝尝这冰牛奶。 [184]#$e#好吃吧?$h",
+				"Sun": "这里总是阳光明媚，即使在冬天!#$e#即使是在沙尘暴期间，这是不公平的。$s"
+			},
+			"When": {
+				"Weather": "Wind"
+			}
+		},
+		{
+			"LogName": "Add Sandstorm layer 1",
+			"Action": "EditMap",
+			"Target": "Maps/Desert",
+			"FromFile": "assets/Desert_{{desertmap}}.tmx",
+			"Layer": "AlwaysFront1",
+			"When": {
+				"Weather": "Wind"
+			}
+		},
+		{
+			"LogName": "Animate terrain feature palms",
+			"Action": "EditImage",
+			"Target": "TerrainFeatures/tree_palm",
+			"FromFile": "assets/tree_palm_{{foliage}}_{{recolour}}.png",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 48,
+				"Height": 160
+			},
+			"ToArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 48,
+				"Height": 160
+			},
+			"AnimationFrameTime": 9,
+			"AnimationFrameCount": 8,
+			"When": {
+				"Weather": "Wind"
+			}
+		},
+
+
+{ "LogName": "Add Tumbleweeds at x 30 y 6 ", "Action": "EditMap", "Target": "Maps/Desert", "MapTiles": [ { "Position": { "X": 30, "Y": 6 }, "Layer": "Back", "SetProperties": { "CustomCompanions": "Spawn 1 inmognito.tumble.Tumbleweed" },},],  "When": { "Weather": "Wind","hasmod |contains=flashshifter.stardewvalleyexpandedcp": "false","TumbleweedQuantity": "many, few ", }, },
+{ "LogName": "Add Tumbleweeds at x 11 y 8 ", "Action": "EditMap", "Target": "Maps/Desert", "MapTiles": [ { "Position": { "X": 11, "Y": 8 }, "Layer": "Back", "SetProperties": { "CustomCompanions": "Spawn 1 inmognito.tumble.Tumbleweed" },},],  "When": { "Weather": "Wind","TumbleweedQuantity": "many", }, },
+{ "LogName": "Add Tumbleweeds at x 21 y 9 ", "Action": "EditMap", "Target": "Maps/Desert", "MapTiles": [ { "Position": { "X": 21, "Y": 9 }, "Layer": "Back", "SetProperties": { "CustomCompanions": "Spawn 1 inmognito.tumble.Tumbleweed" },},],  "When": { "Weather": "Wind","hasmod |contains=flashshifter.stardewvalleyexpandedcp": "false","TumbleweedQuantity": "many, few ", }, },
+{ "LogName": "Add Tumbleweeds at x 4 y 11 ", "Action": "EditMap", "Target": "Maps/Desert", "MapTiles": [ { "Position": { "X": 4, "Y": 11 }, "Layer": "Back", "SetProperties": { "CustomCompanions": "Spawn 1 inmognito.tumble.Tumbleweed" },},],  "When": { "Weather": "Wind","hasmod |contains=flashshifter.stardewvalleyexpandedcp": "false","TumbleweedQuantity": "many", }, },
+{ "LogName": "Add Tumbleweeds at x 16 y 12 ", "Action": "EditMap", "Target": "Maps/Desert", "MapTiles": [ { "Position": { "X": 16, "Y": 12 }, "Layer": "Back", "SetProperties": { "CustomCompanions": "Spawn 1 inmognito.tumble.Tumbleweed" },},],  "When": { "Weather": "Wind","TumbleweedQuantity": "many, few ", }, },
+{ "LogName": "Add Tumbleweeds at x 25 y 14 ", "Action": "EditMap", "Target": "Maps/Desert", "MapTiles": [ { "Position": { "X": 25, "Y": 14 }, "Layer": "Back", "SetProperties": { "CustomCompanions": "Spawn 1 inmognito.tumble.Tumbleweed" },},],  "When": { "Weather": "Wind","hasmod |contains=flashshifter.stardewvalleyexpandedcp": "false","TumbleweedQuantity": "many", }, },
+{ "LogName": "Add Tumbleweeds at x 44 y 15 ", "Action": "EditMap", "Target": "Maps/Desert", "MapTiles": [ { "Position": { "X": 44, "Y": 15 }, "Layer": "Back", "SetProperties": { "CustomCompanions": "Spawn 1 inmognito.tumble.Tumbleweed" },},],  "When": { "Weather": "Wind","hasmod |contains=flashshifter.stardewvalleyexpandedcp": "false","TumbleweedQuantity": "many, few ", }, },
+
+{ "LogName": "Add Tumbleweeds at x 46 y 18 ", "Action": "EditMap", "Target": "Maps/Desert", "MapTiles": [ { "Position": { "X": 46, "Y": 18 }, "Layer": "Back", "SetProperties": { "CustomCompanions": "Spawn 1 inmognito.tumble.Tumbleweed" },},],  "When": { "Weather": "Wind","hasmod |contains=flashshifter.stardewvalleyexpandedcp": "false","TumbleweedQuantity": "many, few ", }, },
+{ "LogName": "Add Tumbleweeds at x 9 y 20 ", "Action": "EditMap", "Target": "Maps/Desert", "MapTiles": [ { "Position": { "X": 9, "Y": 20 }, "Layer": "Back", "SetProperties": { "CustomCompanions": "Spawn 1 inmognito.tumble.Tumbleweed" },},],  "When": { "Weather": "Wind","hasmod |contains=flashshifter.stardewvalleyexpandedcp": "false","TumbleweedQuantity": "many", }, },
+{ "LogName": "Add Tumbleweeds at x 22 y 21 ", "Action": "EditMap", "Target": "Maps/Desert", "MapTiles": [ { "Position": { "X": 22, "Y": 21 }, "Layer": "Back", "SetProperties": { "CustomCompanions": "Spawn 1 inmognito.tumble.Tumbleweed" },},],  "When": { "Weather": "Wind","TumbleweedQuantity": "many, few ", }, },
+{ "LogName": "Add Tumbleweeds at x 5 y 23 ", "Action": "EditMap", "Target": "Maps/Desert", "MapTiles": [ { "Position": { "X": 5, "Y": 23 }, "Layer": "Back", "SetProperties": { "CustomCompanions": "Spawn 1 inmognito.tumble.Tumbleweed" },},],  "When": { "Weather": "Wind","hasmod |contains=flashshifter.stardewvalleyexpandedcp": "false","TumbleweedQuantity": "many", }, },
+{ "LogName": "Add Tumbleweeds at x 47 y 24 ", "Action": "EditMap", "Target": "Maps/Desert", "MapTiles": [ { "Position": { "X": 47, "Y": 24 }, "Layer": "Back", "SetProperties": { "CustomCompanions": "Spawn 1 inmognito.tumble.Tumbleweed" },},],  "When": { "Weather": "Wind","hasmod |contains=flashshifter.stardewvalleyexpandedcp": "false","TumbleweedQuantity": "many, few ", }, },
+{ "LogName": "Add Tumbleweeds at x 7 y 26 ", "Action": "EditMap", "Target": "Maps/Desert", "MapTiles": [ { "Position": { "X": 7, "Y": 26 }, "Layer": "Back", "SetProperties": { "CustomCompanions": "Spawn 1 inmognito.tumble.Tumbleweed" },},],  "When": { "Weather": "Wind","TumbleweedQuantity": "many", }, },
+{ "LogName": "Add Tumbleweeds at x 30 y 27 ", "Action": "EditMap", "Target": "Maps/Desert", "MapTiles": [ { "Position": { "X": 30, "Y": 27 }, "Layer": "Back", "SetProperties": { "CustomCompanions": "Spawn 1 inmognito.tumble.Tumbleweed" },},],  "When": { "Weather": "Wind","hasmod |contains=flashshifter.stardewvalleyexpandedcp": "false","TumbleweedQuantity": "many, few ", }, },
+{ "LogName": "Add Tumbleweeds at x 10 y 29 ", "Action": "EditMap", "Target": "Maps/Desert", "MapTiles": [ { "Position": { "X": 10, "Y": 29 }, "Layer": "Back", "SetProperties": { "CustomCompanions": "Spawn 1 inmognito.tumble.Tumbleweed" },},],  "When": { "Weather": "Wind","hasmod |contains=flashshifter.stardewvalleyexpandedcp": "false","TumbleweedQuantity": "many", }, },
+{ "LogName": "Add Tumbleweeds at x 40 y 30 ", "Action": "EditMap", "Target": "Maps/Desert", "MapTiles": [ { "Position": { "X": 40, "Y": 30 }, "Layer": "Back", "SetProperties": { "CustomCompanions": "Spawn 1 inmognito.tumble.Tumbleweed" },},],  "When": { "Weather": "Wind","TumbleweedQuantity": "many, few ", }, },
+{ "LogName": "Add Tumbleweeds at x 44 y 32 ", "Action": "EditMap", "Target": "Maps/Desert", "MapTiles": [ { "Position": { "X": 44, "Y": 32 }, "Layer": "Back", "SetProperties": { "CustomCompanions": "Spawn 1 inmognito.tumble.Tumbleweed" },},],  "When": { "Weather": "Wind","hasmod |contains=flashshifter.stardewvalleyexpandedcp": "false","TumbleweedQuantity": "many", }, },
+{ "LogName": "Add Tumbleweeds at x 8 y 33 ", "Action": "EditMap", "Target": "Maps/Desert", "MapTiles": [ { "Position": { "X": 8, "Y": 33 }, "Layer": "Back", "SetProperties": { "CustomCompanions": "Spawn 1 inmognito.tumble.Tumbleweed" },},],  "When": { "Weather": "Wind","hasmod |contains=flashshifter.stardewvalleyexpandedcp": "false","TumbleweedQuantity": "many, few ", }, },
+{ "LogName": "Add Tumbleweeds at x 14 y 35 ", "Action": "EditMap", "Target": "Maps/Desert", "MapTiles": [ { "Position": { "X": 14, "Y": 35 }, "Layer": "Back", "SetProperties": { "CustomCompanions": "Spawn 1 inmognito.tumble.Tumbleweed" },},],  "When": { "Weather": "Wind","TumbleweedQuantity": "many", }, },
+{ "LogName": "Add Tumbleweeds at x 28 y 36 ", "Action": "EditMap", "Target": "Maps/Desert", "MapTiles": [ { "Position": { "X": 28, "Y": 36 }, "Layer": "Back", "SetProperties": { "CustomCompanions": "Spawn 1 inmognito.tumble.Tumbleweed" },},],  "When": { "Weather": "Wind","hasmod |contains=flashshifter.stardewvalleyexpandedcp": "false","TumbleweedQuantity": "many, few ", }, },
+{ "LogName": "Add Tumbleweeds at x 5 y 38 ", "Action": "EditMap", "Target": "Maps/Desert", "MapTiles": [ { "Position": { "X": 5, "Y": 38 }, "Layer": "Back", "SetProperties": { "CustomCompanions": "Spawn 1 inmognito.tumble.Tumbleweed" },},],  "When": { "Weather": "Wind","hasmod |contains=flashshifter.stardewvalleyexpandedcp": "false","TumbleweedQuantity": "many", }, },
+{ "LogName": "Add Tumbleweeds at x 42 y 39 ", "Action": "EditMap", "Target": "Maps/Desert", "MapTiles": [ { "Position": { "X": 42, "Y": 39 }, "Layer": "Back", "SetProperties": { "CustomCompanions": "Spawn 1 inmognito.tumble.Tumbleweed" },},],  "When": { "Weather": "Wind","TumbleweedQuantity": "many, few ", }, },
+{ "LogName": "Add Tumbleweeds at x 28 y 41 ", "Action": "EditMap", "Target": "Maps/Desert", "MapTiles": [ { "Position": { "X": 28, "Y": 41 }, "Layer": "Back", "SetProperties": { "CustomCompanions": "Spawn 1 inmognito.tumble.Tumbleweed" },},],  "When": { "Weather": "Wind","hasmod |contains=flashshifter.stardewvalleyexpandedcp": "false","TumbleweedQuantity": "many", }, },
+{ "LogName": "Add Tumbleweeds at x 40 y 42 ", "Action": "EditMap", "Target": "Maps/Desert", "MapTiles": [ { "Position": { "X": 40, "Y": 42 }, "Layer": "Back", "SetProperties": { "CustomCompanions": "Spawn 1 inmognito.tumble.Tumbleweed" },},],  "When": { "Weather": "Wind","hasmod |contains=flashshifter.stardewvalleyexpandedcp": "false","TumbleweedQuantity": "many, few ", }, },
+
+{ "LogName": "Add Tumbleweeds at x 22 y 45 ", "Action": "EditMap", "Target": "Maps/Desert", "MapTiles": [ { "Position": { "X": 22, "Y": 45 }, "Layer": "Back", "SetProperties": { "CustomCompanions": "Spawn 1 inmognito.tumble.Tumbleweed" },},],  "When": { "Weather": "Wind","hasmod |contains=flashshifter.stardewvalleyexpandedcp": "false","TumbleweedQuantity": "many, few ", }, },
+{ "LogName": "Add Tumbleweeds at x 41 y 47 ", "Action": "EditMap", "Target": "Maps/Desert", "MapTiles": [ { "Position": { "X": 41, "Y": 47 }, "Layer": "Back", "SetProperties": { "CustomCompanions": "Spawn 1 inmognito.tumble.Tumbleweed" },},],  "When": { "Weather": "Wind","hasmod |contains=flashshifter.stardewvalleyexpandedcp": "false","TumbleweedQuantity": "many", }, },
+{ "LogName": "Add Tumbleweeds at x 16 y 48 ", "Action": "EditMap", "Target": "Maps/Desert", "MapTiles": [ { "Position": { "X": 16, "Y": 48 }, "Layer": "Back", "SetProperties": { "CustomCompanions": "Spawn 1 inmognito.tumble.Tumbleweed" },},],  "When": { "Weather": "Wind","TumbleweedQuantity": "many, few ", }, },
+{ "LogName": "Add Tumbleweeds at x 40 y 50 ", "Action": "EditMap", "Target": "Maps/Desert", "MapTiles": [ { "Position": { "X": 40, "Y": 50 }, "Layer": "Back", "SetProperties": { "CustomCompanions": "Spawn 1 inmognito.tumble.Tumbleweed" },},],  "When": { "Weather": "Wind","hasmod |contains=flashshifter.stardewvalleyexpandedcp": "false","TumbleweedQuantity": "many", }, },
+{ "LogName": "Add Tumbleweeds at x 13 y 51 ", "Action": "EditMap", "Target": "Maps/Desert", "MapTiles": [ { "Position": { "X": 13, "Y": 51 }, "Layer": "Back", "SetProperties": { "CustomCompanions": "Spawn 1 inmognito.tumble.Tumbleweed" },},],  "When": { "Weather": "Wind","hasmod |contains=flashshifter.stardewvalleyexpandedcp": "false","TumbleweedQuantity": "many, few ", }, },
+{ "LogName": "Add Tumbleweeds at x 46 y 53 ", "Action": "EditMap", "Target": "Maps/Desert", "MapTiles": [ { "Position": { "X": 46, "Y": 53 }, "Layer": "Back", "SetProperties": { "CustomCompanions": "Spawn 1 inmognito.tumble.Tumbleweed" },},],  "When": { "Weather": "Wind","TumbleweedQuantity": "many", }, },
+{ "LogName": "Add Tumbleweeds at x 3 y 54 ", "Action": "EditMap", "Target": "Maps/Desert", "MapTiles": [ { "Position": { "X": 3, "Y": 54 }, "Layer": "Back", "SetProperties": { "CustomCompanions": "Spawn 1 inmognito.tumble.Tumbleweed" },},],  "When": { "Weather": "Wind","hasmod |contains=flashshifter.stardewvalleyexpandedcp": "false","TumbleweedQuantity": "many, few ", }, },
+{ "LogName": "Add Tumbleweeds at x 16 y 37 ", "Action": "EditMap", "Target": "Maps/Desert", "MapTiles": [ { "Position": { "X": 16, "Y": 37 }, "Layer": "Back", "SetProperties": { "CustomCompanions": "Spawn 1 inmognito.tumble.Tumbleweed" },},],  "When": { "Weather": "Wind","hasmod |contains=flashshifter.stardewvalleyexpandedcp": "false","TumbleweedQuantity": "many", }, },
+{ "LogName": "Add Tumbleweeds at x 45 y 36 ", "Action": "EditMap", "Target": "Maps/Desert", "MapTiles": [ { "Position": { "X": 45, "Y": 36 }, "Layer": "Back", "SetProperties": { "CustomCompanions": "Spawn 1 inmognito.tumble.Tumbleweed" },},],  "When": { "Weather": "Wind","TumbleweedQuantity": "many, few ", }, },
+{ "LogName": "Add Tumbleweeds at x 43 y 60 ", "Action": "EditMap", "Target": "Maps/Desert", "MapTiles": [ { "Position": { "X": 43, "Y": 60 }, "Layer": "Back", "SetProperties": { "CustomCompanions": "Spawn 1 inmognito.tumble.Tumbleweed" },},],  "When": { "Weather": "Wind","hasmod |contains=flashshifter.stardewvalleyexpandedcp": "true","TumbleweedQuantity": "many", }, },
+{ "LogName": "Add Tumbleweeds at x 42 y 68 ", "Action": "EditMap", "Target": "Maps/Desert", "MapTiles": [ { "Position": { "X": 42, "Y": 68 }, "Layer": "Back", "SetProperties": { "CustomCompanions": "Spawn 1 inmognito.tumble.Tumbleweed" },},],  "When": { "Weather": "Wind","hasmod |contains=flashshifter.stardewvalleyexpandedcp": "true","TumbleweedQuantity": "many, few ", }, },
+{ "LogName": "Add Tumbleweeds at x 43 y 74 ", "Action": "EditMap", "Target": "Maps/Desert", "MapTiles": [ { "Position": { "X": 43, "Y": 74 }, "Layer": "Back", "SetProperties": { "CustomCompanions": "Spawn 1 inmognito.tumble.Tumbleweed" },},],  "When": { "Weather": "Wind","hasmod |contains=flashshifter.stardewvalleyexpandedcp": "true","TumbleweedQuantity": "many", }, },
+{ "LogName": "Add Tumbleweeds at x 39 y 77 ", "Action": "EditMap", "Target": "Maps/Desert", "MapTiles": [ { "Position": { "X": 39, "Y": 77 }, "Layer": "Back", "SetProperties": { "CustomCompanions": "Spawn 1 inmognito.tumble.Tumbleweed" },},],  "When": { "Weather": "Wind","hasmod |contains=flashshifter.stardewvalleyexpandedcp": "true","TumbleweedQuantity": "many, few ", }, },
+{ "LogName": "Add Tumbleweeds at x 46 y 80 ", "Action": "EditMap", "Target": "Maps/Desert", "MapTiles": [ { "Position": { "X": 46, "Y": 80 }, "Layer": "Back", "SetProperties": { "CustomCompanions": "Spawn 1 inmognito.tumble.Tumbleweed" },},],  "When": { "Weather": "Wind","hasmod |contains=flashshifter.stardewvalleyexpandedcp": "true","TumbleweedQuantity": "many", }, },
+{ "LogName": "Add Tumbleweeds at x 16 y 86 ", "Action": "EditMap", "Target": "Maps/Desert", "MapTiles": [ { "Position": { "X": 16, "Y": 86 }, "Layer": "Back", "SetProperties": { "CustomCompanions": "Spawn 1 inmognito.tumble.Tumbleweed" },},],  "When": { "Weather": "Wind","hasmod |contains=flashshifter.stardewvalleyexpandedcp": "true","TumbleweedQuantity": "many, few ", }, },
+{ "LogName": "Add Tumbleweeds at x 21 y 90 ", "Action": "EditMap", "Target": "Maps/Desert", "MapTiles": [ { "Position": { "X": 21, "Y": 90 }, "Layer": "Back", "SetProperties": { "CustomCompanions": "Spawn 1 inmognito.tumble.Tumbleweed" },},],  "When": { "Weather": "Wind","hasmod |contains=flashshifter.stardewvalleyexpandedcp": "true","TumbleweedQuantity": "many", }, },
+{ "LogName": "Add Tumbleweeds at x 27 y 97 ", "Action": "EditMap", "Target": "Maps/Desert", "MapTiles": [ { "Position": { "X": 27, "Y": 97 }, "Layer": "Back", "SetProperties": { "CustomCompanions": "Spawn 1 inmognito.tumble.Tumbleweed" },},],  "When": { "Weather": "Wind","hasmod |contains=flashshifter.stardewvalleyexpandedcp": "true","TumbleweedQuantity": "many, few ", }, },
+{ "LogName": "Add Tumbleweeds at x 37 y 106 ", "Action": "EditMap", "Target": "Maps/Desert", "MapTiles": [ { "Position": { "X": 37, "Y": 106 }, "Layer": "Back", "SetProperties": { "CustomCompanions": "Spawn 1 inmognito.tumble.Tumbleweed" },},],  "When": { "Weather": "Wind","hasmod |contains=flashshifter.stardewvalleyexpandedcp": "true","TumbleweedQuantity": "many", }, },
+{ "LogName": "Add Tumbleweeds at x 17 y 112 ", "Action": "EditMap", "Target": "Maps/Desert", "MapTiles": [ { "Position": { "X": 17, "Y": 112 }, "Layer": "Back", "SetProperties": { "CustomCompanions": "Spawn 1 inmognito.tumble.Tumbleweed" },},],  "When": { "Weather": "Wind","hasmod |contains=flashshifter.stardewvalleyexpandedcp": "true","TumbleweedQuantity": "many, few ", }, },
+{ "LogName": "Add Tumbleweeds at x 12 y 119 ", "Action": "EditMap", "Target": "Maps/Desert", "MapTiles": [ { "Position": { "X": 12, "Y": 119 }, "Layer": "Back", "SetProperties": { "CustomCompanions": "Spawn 1 inmognito.tumble.Tumbleweed" },},],  "When": { "Weather": "Wind","hasmod |contains=flashshifter.stardewvalleyexpandedcp": "true","TumbleweedQuantity": "many", }, },
+{ "LogName": "Add Tumbleweeds at x 47 y 127 ", "Action": "EditMap", "Target": "Maps/Desert", "MapTiles": [ { "Position": { "X": 47, "Y": 127 }, "Layer": "Back", "SetProperties": { "CustomCompanions": "Spawn 1 inmognito.tumble.Tumbleweed" },},],  "When": { "Weather": "Wind","hasmod |contains=flashshifter.stardewvalleyexpandedcp": "true","TumbleweedQuantity": "many, few ", }, },
+{ "LogName": "Add Tumbleweeds at x 15 y 135 ", "Action": "EditMap", "Target": "Maps/Desert", "MapTiles": [ { "Position": { "X": 15, "Y": 135 }, "Layer": "Back", "SetProperties": { "CustomCompanions": "Spawn 1 inmognito.tumble.Tumbleweed" },},],  "When": { "Weather": "Wind","hasmod |contains=flashshifter.stardewvalleyexpandedcp": "true","TumbleweedQuantity": "many", }, },
+{ "LogName": "Add Tumbleweeds at x 44 y 141 ", "Action": "EditMap", "Target": "Maps/Desert", "MapTiles": [ { "Position": { "X": 44, "Y": 141 }, "Layer": "Back", "SetProperties": { "CustomCompanions": "Spawn 1 inmognito.tumble.Tumbleweed" },},],  "When": { "Weather": "Wind","hasmod |contains=flashshifter.stardewvalleyexpandedcp": "true","TumbleweedQuantity": "many, few ", }, },
+{ "LogName": "Add Tumbleweeds at x 40 y 143 ", "Action": "EditMap", "Target": "Maps/Desert", "MapTiles": [ { "Position": { "X": 40, "Y": 143 }, "Layer": "Back", "SetProperties": { "CustomCompanions": "Spawn 1 inmognito.tumble.Tumbleweed" },},],  "When": { "Weather": "Wind","hasmod |contains=flashshifter.stardewvalleyexpandedcp": "true","TumbleweedQuantity": "many", }, },
+{ "LogName": "Add Tumbleweeds at x 13 y 148 ", "Action": "EditMap", "Target": "Maps/Desert", "MapTiles": [ { "Position": { "X": 13, "Y": 148 }, "Layer": "Back", "SetProperties": { "CustomCompanions": "Spawn 1 inmognito.tumble.Tumbleweed" },},],  "When": { "Weather": "Wind","hasmod |contains=flashshifter.stardewvalleyexpandedcp": "true","TumbleweedQuantity": "many, few ", }, },
+{ "LogName": "Add Tumbleweeds at x 53 y 151 ", "Action": "EditMap", "Target": "Maps/Desert", "MapTiles": [ { "Position": { "X": 53, "Y": 151 }, "Layer": "Back", "SetProperties": { "CustomCompanions": "Spawn 1 inmognito.tumble.Tumbleweed" },},],  "When": { "Weather": "Wind","hasmod |contains=flashshifter.stardewvalleyexpandedcp": "true","TumbleweedQuantity": "many", }, },
+{ "LogName": "Add Tumbleweeds at x 21 y 158 ", "Action": "EditMap", "Target": "Maps/Desert", "MapTiles": [ { "Position": { "X": 21, "Y": 158 }, "Layer": "Back", "SetProperties": { "CustomCompanions": "Spawn 1 inmognito.tumble.Tumbleweed" },},],  "When": { "Weather": "Wind","hasmod |contains=flashshifter.stardewvalleyexpandedcp": "true","TumbleweedQuantity": "many, few ", }, },
+{ "LogName": "Add Tumbleweeds at x 23 y 167 ", "Action": "EditMap", "Target": "Maps/Desert", "MapTiles": [ { "Position": { "X": 23, "Y": 167 }, "Layer": "Back", "SetProperties": { "CustomCompanions": "Spawn 1 inmognito.tumble.Tumbleweed" },},],  "When": { "Weather": "Wind","hasmod |contains=flashshifter.stardewvalleyexpandedcp": "true","TumbleweedQuantity": "many", }, },
+{ "LogName": "Add Tumbleweeds at x 22 y 169 ", "Action": "EditMap", "Target": "Maps/Desert", "MapTiles": [ { "Position": { "X": 22, "Y": 169 }, "Layer": "Back", "SetProperties": { "CustomCompanions": "Spawn 1 inmognito.tumble.Tumbleweed" },},],  "When": { "Weather": "Wind","hasmod |contains=flashshifter.stardewvalleyexpandedcp": "true","TumbleweedQuantity": "many, few ", }, },
+{ "LogName": "Add Tumbleweeds at x 23 y 177 ", "Action": "EditMap", "Target": "Maps/Desert", "MapTiles": [ { "Position": { "X": 23, "Y": 177 }, "Layer": "Back", "SetProperties": { "CustomCompanions": "Spawn 1 inmognito.tumble.Tumbleweed" },},],  "When": { "Weather": "Wind","hasmod |contains=flashshifter.stardewvalleyexpandedcp": "true","TumbleweedQuantity": "many", }, },
+{ "LogName": "Add Tumbleweeds at x 9 y 180 ", "Action": "EditMap", "Target": "Maps/Desert", "MapTiles": [ { "Position": { "X": 9, "Y": 180 }, "Layer": "Back", "SetProperties": { "CustomCompanions": "Spawn 1 inmognito.tumble.Tumbleweed" },},],  "When": { "Weather": "Wind","hasmod |contains=flashshifter.stardewvalleyexpandedcp": "true","TumbleweedQuantity": "many, few ", }, },
+{ "LogName": "Add Tumbleweeds at x 24 y 190 ", "Action": "EditMap", "Target": "Maps/Desert", "MapTiles": [ { "Position": { "X": 24, "Y": 190 }, "Layer": "Back", "SetProperties": { "CustomCompanions": "Spawn 1 inmognito.tumble.Tumbleweed" },},],  "When": { "Weather": "Wind","hasmod |contains=flashshifter.stardewvalleyexpandedcp": "true","TumbleweedQuantity": "many", }, },
+{ "LogName": "Add Tumbleweeds at x 50 y 198 ", "Action": "EditMap", "Target": "Maps/Desert", "MapTiles": [ { "Position": { "X": 50, "Y": 198 }, "Layer": "Back", "SetProperties": { "CustomCompanions": "Spawn 1 inmognito.tumble.Tumbleweed" },},],  "When": { "Weather": "Wind","hasmod |contains=flashshifter.stardewvalleyexpandedcp": "true","TumbleweedQuantity": "many, few ", }, },
+{ "LogName": "Add Tumbleweeds at x 22 y 206 ", "Action": "EditMap", "Target": "Maps/Desert", "MapTiles": [ { "Position": { "X": 22, "Y": 206 }, "Layer": "Back", "SetProperties": { "CustomCompanions": "Spawn 1 inmognito.tumble.Tumbleweed" },},],  "When": { "Weather": "Wind","hasmod |contains=flashshifter.stardewvalleyexpandedcp": "true","TumbleweedQuantity": "many", }, },
+{ "LogName": "Add Tumbleweeds at x 9 y 210 ", "Action": "EditMap", "Target": "Maps/Desert", "MapTiles": [ { "Position": { "X": 9, "Y": 210 }, "Layer": "Back", "SetProperties": { "CustomCompanions": "Spawn 1 inmognito.tumble.Tumbleweed" },},],  "When": { "Weather": "Wind","hasmod |contains=flashshifter.stardewvalleyexpandedcp": "true","TumbleweedQuantity": "many, few ", }, },
+{ "LogName": "Add Tumbleweeds at x 36 y 221 ", "Action": "EditMap", "Target": "Maps/Desert", "MapTiles": [ { "Position": { "X": 36, "Y": 221 }, "Layer": "Back", "SetProperties": { "CustomCompanions": "Spawn 1 inmognito.tumble.Tumbleweed" },},],  "When": { "Weather": "Wind","hasmod |contains=flashshifter.stardewvalleyexpandedcp": "true","TumbleweedQuantity": "many", }, },
+{ "LogName": "Add Tumbleweeds at x 50 y 233 ", "Action": "EditMap", "Target": "Maps/Desert", "MapTiles": [ { "Position": { "X": 50, "Y": 233 }, "Layer": "Back", "SetProperties": { "CustomCompanions": "Spawn 1 inmognito.tumble.Tumbleweed" },},],  "When": { "Weather": "Wind","hasmod |contains=flashshifter.stardewvalleyexpandedcp": "true","TumbleweedQuantity": "many, few ", }, },
+{ "LogName": "Add Tumbleweeds at x 9 y 247 ", "Action": "EditMap", "Target": "Maps/Desert", "MapTiles": [ { "Position": { "X": 9, "Y": 247 }, "Layer": "Back", "SetProperties": { "CustomCompanions": "Spawn 1 inmognito.tumble.Tumbleweed" },},],  "When": { "Weather": "Wind","hasmod |contains=flashshifter.stardewvalleyexpandedcp": "true","TumbleweedQuantity": "many", }, },
+{ "LogName": "Add Tumbleweeds at x 41 y 254 ", "Action": "EditMap", "Target": "Maps/Desert", "MapTiles": [ { "Position": { "X": 41, "Y": 254 }, "Layer": "Back", "SetProperties": { "CustomCompanions": "Spawn 1 inmognito.tumble.Tumbleweed" },},],  "When": { "Weather": "Wind","hasmod |contains=flashshifter.stardewvalleyexpandedcp": "true","TumbleweedQuantity": "many, few ", }, },
+
+
+
+
+
+
+
+	]
+}

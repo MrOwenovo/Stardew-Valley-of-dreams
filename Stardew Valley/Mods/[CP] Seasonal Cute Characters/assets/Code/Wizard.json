@@ -1,0 +1,54 @@
+{
+	"Changes": [
+		{
+			"LogName": "Wizard - Seasonal",
+			"Action": "EditImage",
+			"Target": "Portraits/Wizard, Characters/Wizard",
+			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{season}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		
+// NOSE OVERLAY
+		{
+			"LogName": "Wizard - Seasonal Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Wizard, Characters/KrobusRaven",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"NoNose": "false",
+			},
+		},
+		
+// MISCELLANEOUS		
+		{
+			"LogName": "Wizard - Emoji",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+            "FromFile": "assets/{{NoNose}}/Random/emojis.png",
+			"FromArea": {"X": 90, "Y": 108, "Width": 9, "Height": 9},
+			"ToArea": {"X": 90, "Y": 108, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Wizard - Krobus Raven",
+			"Action": "EditImage",
+			"Target": "Characters/KrobusRaven",
+			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Season}}.png",
+			"FromArea": {"X": 0, "Y": 64, "Width": 128, "Height": 39},
+			"ToArea": {"X": 0, "Y": 64, "Width": 128, "Height": 39},
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+	]
+}

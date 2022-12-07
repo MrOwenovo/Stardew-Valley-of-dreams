@@ -1,0 +1,451 @@
+{
+  "Changes": [	
+//Movie Invitation
+  		{
+      "Action": "EditData",
+      "Target": "Strings/Characters",	  
+		   "When": {
+		   "Season": "spring",
+		   "Day": "27",
+		   "Relationship:Haley |contains=Married": "false",
+		   "Relationship:Emily": "Friendly",
+		   },
+      "Entries": {
+		  "MovieInvite_Invited_Emily": "电影？为了庆祝我的生日吗？$6#$b#谢谢你……我很开心！我们电影院见。$1",
+     }
+    },
+  		{
+      "Action": "EditData",
+      "Target": "Strings/Characters",	  
+		   "When": {
+		   "Season": "spring",
+		   "Day": "27",
+		   "Relationship:Haley |contains=Married": "false",
+		   "Relationship:Emily": "Dating, Engaged",
+		   },
+      "Entries": {
+		  "MovieInvite_Invited_Emily": "电影？当然！我会去的！#$b#在生日时跟你去电影院约会……太美好了，我感觉自己在做梦。我们电影院见！$4",
+     }
+    },
+  		{
+      "Action": "EditData",
+      "Target": "Strings/Characters",	  
+		   "When": {
+		   "Season": "spring",
+		   "Day": "27",
+		   "Relationship:Haley |contains=Married": "false",
+		   "Relationship:Emily": "Married",
+		   },
+      "Entries": {
+		  "MovieInvite_Invited_Emily": "你为我的生日买了电影票？我当然乐意去！#$b#你真是太甜了……我爱你。**轻吻**$4",
+     }
+    },
+  		{
+      "Action": "EditData",
+      "Target": "Strings/Characters",	  
+		   "When": {
+		   "Season": "spring",
+		   "Day": "27",
+		   "Relationship:Haley |contains=Married": "true",
+		   },
+      "Entries": {
+		  "MovieInvite_Invited_Emily": "电影？当然……谢谢你为我特地准备！我们电影院见，好吗？",
+     }
+    },
+//Movie Reactions
+	    		{
+      "Action": "EditData",
+      "Target": "Data/MoviesReactions",	  
+		   "When": {
+		   "Season": "spring",
+		   "Day": "27",
+		   "Relationship:Haley |contains=Married": "false",
+		   "Relationship:Emily": "Friendly",
+		   },
+    "Entries":   {
+	"Emily":{
+    "NPCName": "Emily",
+    "Reactions": [
+      {
+        "Tag": "*",
+        "Response": "love",
+        "Whitelist": [],
+        "SpecialResponses": null,
+        "ID": "reaction_0"
+      },
+      {
+        "Tag": "love",
+        "Response": "like",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "谢谢你为我准备的庆生活动！我还以为今天只会跟平常一样上班呢……能出来透气太好了。"
+          },
+          "DuringMovie": null,
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "我喜欢这些以自然为题材的东西……生日时看尤其美好。谢谢你的邀请！"
+          }
+        },
+        "ID": "reaction_1"
+      },
+    ]
+  },
+	}
+			},
+			
+			
+	    		{
+      "Action": "EditData",
+      "Target": "Data/MoviesReactions",	  
+		   "When": {
+		   "Season": "spring",
+		   "Day": "27",
+		   "Relationship:Haley |contains=Married": "false",
+		   "Relationship:Emily": "Dating, Engaged",
+		   },
+    "Entries":   {
+	"Emily":{
+    "NPCName": "Emily",
+    "Reactions": [
+      {
+        "Tag": "*",
+        "Response": "love",
+        "Whitelist": [],
+        "SpecialResponses": null,
+        "ID": "reaction_0"
+      },
+      {
+        "Tag": "love",
+        "Response": "like",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "我走过来时觉得自己整个人轻飘飘的。#$e#或许我是太高兴了……我没想过会有如此美好的生日。$4"
+          },
+          "DuringMovie": null,
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "谢谢你为我准备了这个甜蜜的约会。我想我会一直记住这个生日……$4"
+          }
+        },
+        "ID": "reaction_1"
+      },
+    ]
+  },
+	}
+			},
+			
+			
+	    		{
+      "Action": "EditData",
+      "Target": "Data/MoviesReactions",	  
+		   "When": {
+		   "Season": "spring",
+		   "Day": "27",
+		   "Relationship:Haley |contains=Married": "false",
+		   "Relationship:Emily": "Married",
+		   },
+    "Entries":   {
+	"Emily":{
+    "NPCName": "Emily",
+    "Reactions": [
+      {
+        "Tag": "*",
+        "Response": "love",
+        "Whitelist": [],
+        "SpecialResponses": null,
+        "ID": "reaction_0"
+      },
+      {
+        "Tag": "love",
+        "Response": "like",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "亲爱的，我自备了一些健康小吃。你要来一些吗？"
+          },
+          "DuringMovie": null,
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "想到我们的农场里也有很多自然生物，我就很激动……我希望我们变老时，这些美丽的自然景色仍然保持完好。#$b#到时候我们仍会在一起的，对不对？$1"
+          }
+        },
+        "ID": "reaction_1"
+      },
+    ]
+  },
+	}
+			},
+			
+			
+	    		{
+      "Action": "EditData",
+      "Target": "Data/MoviesReactions",	  
+		   "When": {
+		   "Season": "spring",
+		   "Day": "27",
+		   "Relationship:Haley |contains=Married": "true",
+		   },
+    "Entries":   {
+	"Emily":{
+    "NPCName": "Emily",
+    "Reactions": [
+      {
+        "Tag": "*",
+        "Response": "love",
+        "Whitelist": [],
+        "SpecialResponses": null,
+        "ID": "reaction_0"
+      },
+      {
+        "Tag": "love",
+        "Response": "like",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "海莉知道我们来看电影了，对吧？我相信你一定待她很好。"
+          },
+          "DuringMovie": null,
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "谢谢！这是很棒的生日庆祝。#$b#替我向妹妹问好，好嘛？告诉她我想她了！"
+          }
+        },
+        "ID": "reaction_1"
+      },
+    ]
+  },
+	}
+			},
+		{
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Emily",	  
+      "Entries": {
+		
+//Emily->Haley
+ 				"spring_12": "后天是海莉的生日，就在蛋蛋节后一天。#$q 115321300/115321301 EmilyHaleybirthday_followup#我特地拜托我朋友从沙漠寄椰子过来……几乎每年都是这样。
+					#$r 115321300 10 EmilyHaleybirthday_A#只有你们两人庆祝吗？
+					#$r 115321301 10 EmilyHaleybirthday_B#每年都是椰子？",
+ 				"spring_12_2": "后天是海莉的生日，就在蛋蛋节后一天。#$q 115321300/115321301 EmilyHaleybirthday_followup#我特地拜托我朋友从沙漠寄椰子过来……几乎每年都是这样。
+					#$r 115321300 10 EmilyHaleybirthday_A#只有你们两人庆祝吗？
+					#$r 115321301 10 EmilyHaleybirthday_B#每年都是椰子？",
+					EmilyHaleybirthday_A: "对，不过爸妈的礼物也会在后天送到。#$b#他们虽然不在我们身边，但总是记挂着我们的事情。$1",
+					EmilyHaleybirthday_B: "对，我在沙漠的朋友很热心。每年都送来很棒的椰子！$1#$e#有一年，那位朋友因为觉得光吃椰子太腻而做成了椰汁汤给我们。#$b#我到现在还没法忘记海莉那失望又生气的样子……对于这种出于善意的不幸，我感到很抱歉。$2",
+ 		EmilyHaleybirthday_followup:"我特地拜托我朋友从沙漠寄椰子过来……几乎每年都是这样。",
+		
+ 				"spring_12_inlaw_Haley": "@，你好！海莉过得好吗？#$q 115320302/115320303 EmilyHaleybirthday_followup#这是我为海莉准备的生日礼物，可以麻烦你转交给她吗？
+					#$r 115320302 10 EmilyHaleyInlawbirthday_A#好的。
+					#$r 115320303 10 EmilyHaleyInlawbirthday_B#抱歉，我没空。",
+ 				"spring_12_2_inlaw_Haley": "@，你好！海莉过得好吗？#$q 115320302/115320303 EmilyHaleybirthday_followup#这是我为海莉准备的生日礼物，可以麻烦你转交给她吗？
+					#$r 115320302 10 EmilyHaleyInlawbirthday_A#好的。
+					#$r 115320303 10 EmilyHaleyInlawbirthday_B#抱歉，我没空。",
+					EmilyHaleyInlawbirthday_A: "谢谢，我还担心后天如果没空去农场该怎么办呢！$1#$b#[610]这是我自己做的水果色拉……要趁新鮮吃哦。$1#$e#海莉从小时候开始就很偏食。我希望她在农场里生活能变得健康一点。",
+					EmilyHaleyInlawbirthday_B: "噢……这样吗？$2#$b#抱歉，打扰你了。我会自己拿给她。$2",
+ 		EmilyHaleyInlawbirthday_followup:"我为海莉后天的生日准备了礼物……希望她会喜欢。",
+
+//Emily->Gus
+
+				"summer_7_1": "明天是格斯的生日。#$b#格斯不会因为自己生日就关店休息。他很敬重自己的工作。#$e#你问生日礼物？我做了些健康的卷心菜色拉，希望他会喜欢！$1",
+				"summer_7_2": "明天是格斯的生日。#$b#格斯不会因为自己生日就关店休息。他很敬重自己的工作。#$c .5#以前我曾经做过卷心菜色拉给他，但格斯似乎不太喜欢。这让我觉得有点抱歉……我只是希望他能吃得健康一点。#我为他编织了新的围裙。他的围裙时常需要换新的……我想这应该会是很实用的礼物！",
+				
+//Emily->Emily (Inlaw Haley)
+
+				"spring_27_inlaw_Haley": "@，你好！你是来为我祝贺的吗……？你太好了！#$e#海莉早上为我带来了非常可爱的生日礼物！是用你们农场的花瓣做的对吧？我能感受到当中的正面能量……实在让我非常高兴。$1#$c .5#海莉以前有些小任性……但是跟你在一起后她变得非常优秀。你们真是般配的一对。$1#我们父母回来后一定会为海莉的变化感到震惊。他们一定没法想象她现在是如何成熟又可靠！$1",
+				"spring_27_2_inlaw_Haley": "@，你好！你是来为我祝贺的吗……？你太好了！#$e#海莉早上为我带来了非常可爱的生日礼物！是用你们农场的花瓣做的对吧？我能感受到当中的正面能量……实在让我非常高兴。$1#$c .5#海莉以前有些小任性……但是跟你在一起后她变得非常优秀。你们真是般配的一对。$1#我们父母回来后一定会为海莉的变化感到震惊。他们一定没法想象她现在是如何成熟又可靠！$1",
+     }
+    },
+	 		{
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Emily",	  
+		"When": {
+		"HasFlag |contains=ccVault, jojaVault": "false"	,
+
+},
+      "Entries": {		
+		
+//Emily->Sandy
+ 				"fall_14": "明天是我朋友的生日……但是公交车还没修好，我没法去看她。$3#$c .5#镇长说小镇资金不够，所以这也没办法……我希望她在那天不会太寂寞。$2#我寄了生日礼物给她，但是可以的话还是想和她一起度过。我想一个人过生日一定很寂寞……$2",
+ 				"fall_14_2": "明天是我朋友的生日……但是公交车还没修好，我没法去看她。$3#$c .5#镇长说小镇资金不够，所以这也没办法……我希望她在那天不会太寂寞。$2#我寄了生日礼物给她，但是可以的话还是想和她一起度过。我想一个人过生日一定很寂寞……$2",
+     }
+    }, 
+  
+	 		{
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Emily",	  
+		"When": {
+		"HasFlag |contains=ccVault, jojaVault": "true",
+
+},
+      "Entries": {		
+		
+//Emily->Sandy
+ 				"fall_14": "明天是桑迪的生日，我会坐公交车到沙漠去看她……我已经跟格斯请假了。#$c .5 我们每年都会在这天游览沙漠……那里有很多美好的东西！$1#如果你工作能抽出空，来看我们好嘛？桑迪会很开心的！$1",
+ 				"fall_14_2": "明天是桑迪的生日，我会坐公交车到沙漠去看她……我已经跟格斯请假了。#$c .5 我们每年都会在这天游览沙漠……那里有很多美好的东西！$1#如果你工作能抽出空，来看我们好嘛？桑迪会很开心的！$1",
+     }
+    }, 
+  
+	 		{
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Emily",	  
+		"When": {
+		"Relationship:Emily": "Friendly",
+
+},
+      "Entries": {		
+ 				"spring_27": "噢……？$2#$b#抱歉，@！我刚才有点走神……我的父母从海外寄来了动物毛给我作生日礼物，我正在构思新的服装。$6#$c .5#他们现在环游世界旅行了，只有这些特别日子才会寄礼物回来。我有时候会想念他们，但同时也庆幸他们过得很好。#海莉从祖祖城订购了粉红色的蛋糕给我。那尝起来有点……不太健康。我大部分都让给她吃了。$2",
+ 				"spring_27_2": "噢……？$2#$b#抱歉，@！我刚才有点走神……我的父母从海外寄来了动物毛给我作生日礼物，我正在构思新的服装。$6#$c .5#他们现在环游世界旅行了，只有这些特别日子才会寄礼物回来。我有时候会想念他们，但同时也庆幸他们过得很好。#海莉从祖祖城订购了粉红色的蛋糕给我。那尝起来有点……不太健康。我大部分都让给她吃了。$2",
+     }
+    }, 
+  
+	 		{
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Emily",	  
+		"When": {
+		"Relationship:Emily": "Dating",
+
+},
+      "Entries": {		
+ 				"spring_27": "亲爱的……我就知道你不会忘了这一天！$1#$e#来，牵着我的手……$4#$b#我感受得到你的特别能量！这就是我最棒的生日礼物了。$1#$c .5#我告诉了父母我们在交往。他们让我向你问好……我真希望你们将来能见面，但他们似乎还没有回山谷的打算。#海莉主动承担了今天的家务。我觉得那女孩渐渐在改变……她将来肯定会长得越发优秀的。",
+ 				"spring_27_2": "亲爱的……我就知道你不会忘了这一天！$1#$e#来，牵着我的手……$4#$b#我感受得到你的特别能量！这就是我最棒的生日礼物了。$1#$c .5#我告诉了父母我们在交往。他们让我向你问好……我真希望你们将来能见面，但他们似乎还没有回山谷的打算。#海莉主动承担了今天的家务。我觉得那女孩渐渐在改变……她将来肯定会长得越发优秀的。",
+     }
+    }, 
+  
+	 		{
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Emily",	  
+		"When": {
+		"Relationship:Emily": "Engaged",
+
+},
+      "Entries": {		
+ 				"spring_27": "亲爱的……我就知道你不会忘了这一天！$1#$e#来，牵着我的手……$4#$b#我感受得到你的特别能量！这就是我最棒的生日礼物了。$1#$e#我告诉了父母我们订婚的消息。他们似乎没法出席我们的婚礼，但他们很为此高兴。我太期待今后的生活了！$1",
+ 				"spring_27_2": "亲爱的……我就知道你不会忘了这一天！$1#$e#来，牵着我的手……$4#$b#我感受得到你的特别能量！这就是我最棒的生日礼物了。$1#$e#我告诉了父母我们订婚的消息。他们似乎没法出席我们的婚礼，但他们很为此高兴。我太期待今后的生活了！$1",
+     }
+    }, 
+  
+  	{
+	        "Action": "EditData",
+        "Target": "Characters/Dialogue/MarriageDialogueEmily",
+		"When": {
+  		 "Hearts:Emily": "10, 11, 12, 13, 14"
+},
+        "Entries":
+        {		
+//Emily->HaleyMarried
+ 				"spring_13": "亲爱的，明天是海莉的生日。#$e#我拜托了我朋友从沙漠给她寄椰子，还做了一条漂亮的新裙子给她……我希望她会喜欢！$1#$e#我们从小就常常吵架，但是分开居住后我们的关系就越来越好了。#$b#这让我感觉很好……毕竟我们是血浓于水的家人，我们之间有种特殊的连结。#$e#如果明天你也到镇上的话，也去祝贺她一下，好吗？她肯定会高兴的。$1",
+ 				"spring_13_2": "亲爱的，明天是海莉的生日。#$e#我拜托了我朋友从沙漠给她寄椰子，还做了一条漂亮的新裙子给她……我希望她会喜欢！$1#$e#我们从小就常常吵架，但是分开居住后我们的关系就越来越好了。#$b#这让我感觉很好……毕竟我们是血浓于水的家人，我们之间有种特殊的连结。#$e#如果明天你也到镇上的话，也去祝贺她一下，好吗？她肯定会高兴的。$1",
+
+//Emily->EmilyMarried
+ 				"spring_26": "亲爱的，我今天一早就起床了。#$y '我刚跟鹦鹉聊天……牠祝福我生日快乐。_牠居然比我还早到！我明明想先祝你生日快乐的。_亲爱的，你在闹别扭嘛？你真可爱！$1*我其实不太在乎生日了……对我而言，能这样跟你住在一起，在美丽的农场里度过每一天，就是最美好的事情。$4_那该轮到我说了。我爱你，艾米莉。祝你生日快乐。_噢……！亲爱的，谢谢你。我也很爱你……能和你一起庆生是我最大的幸福。$4_是嘛？我完全忘了。_噢，亲爱的，你太不擅长说谎了……我看你的表情就知道了呢！$1*我其实不太在乎生日了……对我而言，能这样跟你住在一起，在美丽的农场里度过每一天，就是最美好的事情。$4'",
+ 				"spring_26_2": "亲爱的，我今天一早就起床了。#$y '我刚跟鹦鹉聊天……牠祝福我生日快乐。_牠居然比我还早到！我明明想先祝你生日快乐的。_亲爱的，你在闹别扭嘛？你真可爱！$1*我其实不太在乎生日了……对我而言，能这样跟你住在一起，在美丽的农场里度过每一天，就是最美好的事情。$4_那该轮到我说了。我爱你，艾米莉。祝你生日快乐。_噢……！亲爱的，谢谢你。我也很爱你……能和你一起庆生是我最大的幸福。$4_是嘛？我完全忘了。_噢，亲爱的，你太不擅长说谎了……我看你的表情就知道了呢！$1*我其实不太在乎生日了……对我而言，能这样跟你住在一起，在美丽的农场里度过每一天，就是最美好的事情。$4'",
+				
+//Emily->GusMarried
+ 				"summer_7": "亲爱的，明天是格斯的生日。#$e#我做了些健康的蛋糕，今天晚上我去酒馆帮忙时会拿给格斯。#$e#格斯就算生日也不会休息，我想他一直都是一个人过生日的。#$e#你知道吗？你来到这小镇前，我也一直以为我会独自一人度过余生。我无比庆幸这事没有成真。$4",
+ 				"summer_7_2": "亲爱的，明天是格斯的生日。#$e#我做了些健康的蛋糕，今天晚上我去酒馆帮忙时会拿给格斯。#$e#格斯就算生日也不会休息，我想他一直都是一个人过生日的。#$e#你知道吗？你来到这小镇前，我也一直以为我会独自一人度过余生。我无比庆幸这事没有成真。$4",
+
+//Emily->SandyMarried
+ 				"fall_14": "亲爱的，我明天会出趟远门，去沙漠探望我的朋友。#$e#我想你一定有光顾过她的店。明天她的店或许会关门……如果你需要什么，最好趁今天去买。#$e#如果你去她的店，先替我向她问声好，好吗？$1#$e#我今天会为她的生日礼物做最后的修改。我花了很多心思！$1",
+ 				"fall_14_2": "亲爱的，我明天会出趟远门，去沙漠探望我的朋友。#$e#我想你一定有光顾过她的店。明天她的店或许会关门……如果你需要什么，最好趁今天去买。#$e#如果你去她的店，先替我向她问声好，好吗？$1#$e#我今天会为她的生日礼物做最后的修改。我花了很多心思！$1",
+     }
+    },
+
+			{
+			"Action": "EditData",
+			"Target": "Strings/schedules/Emily",
+			"When": {
+			"Season": "spring",
+			"Day": "15",
+			},
+			"Entries": {
+			"marriage_Mon.000": "亲爱的，我刚跟海莉聊了几句。她似乎过了个不错的生日！$1",
+			}
+		},
+  			{
+			"Action": "EditData",
+			"Target": "Characters/schedules/Emily",
+			"When": {
+			"Season": "summer",
+			"Day": "1",
+            "ScheduleEdits": true,
+			},
+ 			"Entries": {
+			"spring": "900 HaleyHouse 16 5 2/1200 HaleyHouse 3 16 0 \"Strings\\schedules\\Emily:Haleybirthday\"/1530 Saloon 15 17 0 square_5_1_0/2430 HaleyHouse 21 4 1 emily_sleep",
+			  }
+		},		  	
+		 	
+			{
+			"Action": "EditData",
+			"Target": "Strings/schedules/Emily",
+			"When": {
+			"Season": "summer",
+			"Day": "1",
+			},
+			"Entries": {
+			"Haleybirthday": "你好，@。来看海莉吗？#$b#她前两天送了我非常棒的生日礼物……我真高兴她现在出落得这么优秀。#$e#你们一定要好好照顾对方……不要忘了健康饮食！$1",
+			}
+		},
+
+		{
+			"Action": "EditData",
+			"Target": "Strings/schedules/Emily",
+			"When": {
+			"Season": "summer",
+			"Day": "8",
+			},
+			"Entries": {
+			"marriage_Mon.002": "我刚把格斯的生日蛋糕交给他。他似乎很想念我天天来帮忙的日子。#$e#但我比较喜欢现在的生活！我真庆幸我们能结婚。$1",
+			}
+		},
+		
+		
+			{
+	        "Action": "EditData",
+        "Target": "Characters/Dialogue/MarriageDialogueEmily",
+		"When": {
+			"Season": "spring",
+			"Day": "15",
+},
+        "Entries":
+        {		
+		"funReturn_Emily": "我走后，海莉仍然把家里整理得井井有条的。#$e#我就知道她做得到……我很高兴她现在是个成熟又善良的女人了！$1",		
+     }
+    },
+			{
+	        "Action": "EditData",
+        "Target": "Characters/Dialogue/MarriageDialogueEmily",
+		"When": {
+			"Season": "summer",
+			"Day": "8",
+},
+        "Entries":
+        {		
+		"funReturn_Emily": "格斯似乎喜欢我给他的蛋糕。我还劝他要少喝点红酒。#$e#我希望我身边的人都健健康康，长命百岁。#$e#当然包括了你……亲爱的。$4",		
+     }
+    },
+			{
+	        "Action": "EditData",
+        "Target": "Characters/Dialogue/MarriageDialogueEmily",
+		"When": {
+			"Season": "fall",
+			"Day": "15",
+},
+        "Entries":
+        {		
+		"funReturn_Emily": "桑迪过得很好……沙漠也很有趣！#$e#我希望明年也能再去。不然桑迪太寂寞了。$1",		
+    }
+    },
+  ]
+}

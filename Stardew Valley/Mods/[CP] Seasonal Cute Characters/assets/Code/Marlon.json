@@ -1,0 +1,44 @@
+{
+	"Changes": [
+		{
+			"LogName": "Marlon - Seasonal",
+			"Action": "EditImage",
+			"Target": "Portraits/Marlon, Characters/Marlon",
+			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{season}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		
+// MISCELLANEOUS		
+		{
+			"LogName": "Marlon - Emoji",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+            "FromFile": "assets/{{NoNose}}/Random/emojis.png",
+			"FromArea": {"X": 72, "Y": 108, "Width": 9, "Height": 9},
+			"ToArea": {"X": 72, "Y": 108, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{   
+			"LogName": "Marlon - Movie Theater",
+            "Action": "EditImage",
+            "Target": "Maps/MovieTheater_TileSheet",
+            "FromFile": "assets/{{NoNose}}/Random/MovieTheater_{{Season}}.png",
+            "FromArea": { "X": 0, "Y": 192, "Width": 16, "Height": 32 },
+            "ToArea": { "X": 0, "Y": 192, "Width": 16, "Height": 32 },
+		},
+		{   
+			"LogName": "Marlon - Joja Theater",
+            "Action": "EditImage",
+            "Target": "Maps/MovieTheaterJoja_TileSheet, Maps/MovieTheaterJoja_TileSheet_international",
+            "FromFile": "assets/{{NoNose}}/Random/MovieTheaterJoja_{{Season}}.png",
+            "FromArea": { "X": 0, "Y": 192, "Width": 16, "Height": 32 },
+            "ToArea": { "X": 0, "Y": 192, "Width": 16, "Height": 32 },
+		},
+	]
+}

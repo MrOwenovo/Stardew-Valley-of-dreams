@@ -1,0 +1,640 @@
+{
+    "Format": "1.26.0",
+
+    "ConfigSchema": {
+		"EnableBusstopEntrance": {
+			"AllowValues": "true, false",
+			"Default": "true"
+		}
+    },
+
+    "DynamicTokens": [
+		{
+			"Name": "Backwoods_BrokenBridge",
+			"Value": "{{HasSeenEvent: currentPlayer, hostPlayer |contains=649812718}}"
+		},
+		{
+			"Name": "Beach_NewArea",
+			"Value": "{{HasSeenEvent: currentPlayer, hostPlayer |contains=649812719}}"
+		},
+        {
+			"Name": "WaterfallForest_N_NewArea",
+			"Value": "{{HasFlag: currentPlayer, hostPlayer |contains=ccBoilerRoom}}"
+		},
+        {
+			"Name": "Island_W_NewArea",
+			"Value": "{{HasFlag: currentPlayer, hostPlayer |contains=Island_Turtle}}"
+		}
+	],
+
+    "CustomLocations": [
+        {
+            "Name": "Custom_BusStop2",
+            "FromMapFile": "assets/BusStop2.tmx"
+        },
+        {
+            "Name": "Custom_WaterfallForest",
+            "FromMapFile": "assets/WaterfallForest.tmx"
+        },
+        {
+            "Name": "Custom_NewTreeHouse",
+            "FromMapFile": "assets/NewTreeHouse.tmx"
+        },
+        {
+            "Name": "Custom_Backwoods_N",
+            "FromMapFile": "assets/Backwoods_N.tmx"
+        },
+        {
+            "Name": "Custom_WaterfallForest_N",
+            "FromMapFile": "assets/WaterfallForest_N.tmx"
+        },
+        {
+            "Name": "Custom_NewFarm",
+            "FromMapFile": "assets/NewFarm.tmx"
+        },
+        {
+            "Name": "Custom_Backwoods_N_Cave",
+            "FromMapFile": "assets/Backwoods_N_Cave.tmx"
+        },
+        {
+            "Name": "Custom_Tunnel1",
+            "FromMapFile": "assets/Tunnel1.tmx"
+        },
+        {
+            "Name": "Custom_Summit",
+            "FromMapFile": "assets/Summit.tmx"
+        },
+        {
+            "Name": "Custom_WaterfallForest_N_Cave1",
+            "FromMapFile": "assets/WaterfallForest_N_Cave1.tmx"
+        },
+        {
+            "Name": "Custom_WaterfallForest_N_Cave2",
+            "FromMapFile": "assets/WaterfallForest_N_Cave2.tmx"
+        },
+        {
+            "Name": "Custom_SmallGifts",
+            "FromMapFile": "assets/SmallGifts.tmx"
+        },
+        {
+            "Name": "Custom_BeachSecret",
+            "FromMapFile": "assets/BeachSecret.tmx"
+        },
+        {
+            "Name": "Custom_JungleIsland_N",
+            "FromMapFile": "assets/JungleIsland_N.tmx"
+        },
+        {
+            "Name": "Custom_JungleIsland",
+            "FromMapFile": "assets/JungleIsland.tmx"
+        },
+        {
+            "Name": "Custom_JungleIsland_E",
+            "FromMapFile": "assets/JungleIsland_E.tmx"
+        },
+        {
+            "Name": "Custom_JungleIslandFarmHouse",
+            "FromMapFile": "assets/JungleIslandFarmHouse.tmx"
+        },
+        {
+            "Name": "Custom_JungleIsland_E_Woods",
+            "FromMapFile": "assets/JungleIsland_E_Woods.tmx"
+        },
+        {
+            "Name": "Custom_JungleIsland_NE",
+            "FromMapFile": "assets/JungleIsland_NE.tmx"
+        },
+        {
+            "Name": "Custom_JungleIsland_N_Beach",
+            "FromMapFile": "assets/JungleIsland_N_Beach.tmx"
+        },
+        {
+            "Name": "Custom_JungleIsland_N_Beach2",
+            "FromMapFile": "assets/JungleIsland_N_Beach2.tmx"
+        },
+        {
+            "Name": "Custom_JungleIsland_N_Beach2_Cave",
+            "FromMapFile": "assets/JungleIsland_N_Beach2_Cave.tmx"
+        },
+        {
+            "Name": "Custom_JungleIsland_E_Cave",
+            "FromMapFile": "assets/JungleIsland_E_Cave.tmx"
+        },
+        {
+            "Name": "Custom_Island_W_N",
+            "FromMapFile": "assets/Island_W_N.tmx"
+        },
+        {
+            "Name": "Custom_Club1",
+            "FromMapFile": "assets/Club1.tmx"
+        }
+    ],
+
+    "Changes": [
+        {
+            "Action": "EditMap",
+            "Target": "Maps/BusStop",
+            "FromFile": "Assets/BusStop_NewArea.tmx",
+            "ToArea": {
+                "X": 33,
+                "Y": 5,
+                "Width": 2,
+                "Height": 6
+            },
+            "When": {
+                "HasMod |contains=DaisyNiko.SVR3": false,
+                "HasMod |contains=none.WalkToGardenVillage": false,
+                "HasMod |contains=none.NightTown": false,
+                "EnableBusstopEntrance": true
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/BusStop",
+            "FromFile": "Assets/BusStop_NewArea1.tmx",
+            "ToArea": {
+                "X": 33,
+                "Y": 5,
+                "Width": 2,
+                "Height": 6
+            },
+            "When": {
+                "HasMod |contains=DaisyNiko.SVR3": true,
+                "EnableBusstopEntrance": true
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/BusStop",
+            "FromFile": "Assets/BusStop_NewArea2.tmx",
+            "ToArea": {
+                "X": 32,
+                "Y": 5,
+                "Width": 2,
+                "Height": 2
+            },
+            "When": {
+                "HasMod |contains=none.WalkToGardenVillage": true,
+                "EnableBusstopEntrance": true
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/BusStop",
+            "FromFile": "Assets/BusStop_NewArea2.tmx",
+            "ToArea": {
+                "X": 32,
+                "Y": 5,
+                "Width": 2,
+                "Height": 2
+            },
+            "When": {
+                "HasMod |contains=none.NightTown": true,
+                "EnableBusstopEntrance": true
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Backwoods",
+            "FromFile": "Assets/Backwoods_NewArea.tmx",
+            "ToArea": {
+                "X": 44,
+                "Y": 3,
+                "Width": 3,
+                "Height": 9
+            },
+            "When": {
+                "HasMod |contains=DaisyNiko.SVR3": false,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Backwoods",
+            "FromFile": "Assets/Backwoods_NewArea1.tmx",
+            "ToArea": {
+                "X": 11,
+                "Y": 0,
+                "Width": 4,
+                "Height": 9
+            },
+            "When": {
+                "HasMod |contains=DaisyNiko.SVR3": true
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Backwoods",
+            "FromFile": "Assets/Backwoods_NewArea2.tmx",
+            "ToArea": {
+                "X": 44,
+                "Y": 3,
+                "Width": 3,
+                "Height": 9
+            },
+            "When": {
+                "HasMod |contains=DaisyNiko.SVR3": false,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_Backwoods_N",
+            "FromFile": "Assets/Backwoods_N_Area.tmx",
+            "ToArea": {
+                "X": 19,
+                "Y": 39,
+                "Width": 2,
+                "Height": 1
+            },
+            "When": {
+                "HasMod |contains=DaisyNiko.SVR3": true
+            }
+        },  
+        
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Railroad",
+            "FromFile": "Assets/Railroad_NewArea.tmx",
+            "ToArea": {
+                "X": 0,
+                "Y": 51,
+                "Width": 3,
+                "Height": 9
+            },
+            "When": {
+                "HasMod |contains=DaisyNiko.SVR3": false
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Railroad",
+            "FromFile": "Assets/Railroad_NewArea1.tmx",
+            "ToArea": {
+                "X": 0,
+                "Y": 51,
+                "Width": 1,
+                "Height": 5
+            },
+            "When": {
+                "HasMod |contains=DaisyNiko.SVR3": true
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_WaterfallForest",
+            "FromFile": "Assets/WaterfallForest_Area1.tmx",
+            "ToArea": {
+                "X": 59,
+                "Y": 13,
+                "Width": 1,
+                "Height": 3
+            },
+            "When": {
+                "HasMod |contains=DaisyNiko.SVR3": true,
+                "Season": "summer",
+                "Day": "3"
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_WaterfallForest",
+            "FromFile": "Assets/WaterfallForest_Area2.tmx",
+            "ToArea": {
+                "X": 59,
+                "Y": 13,
+                "Width": 1,
+                "Height": 3
+            },
+            "When": {
+                "HasMod |contains=DaisyNiko.SVR3": false,
+                "Season": "summer",
+                "Day": "3"
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "FromFile": "Assets/Town_NewArea.tmx",
+            "ToArea": {
+                "X": 0,
+                "Y": 16,
+                "Width": 6,
+                "Height": 8
+            },
+            "When": {
+                "HasMod |contains=DaisyNiko.SVR3": false
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "FromFile": "Assets/Town_NewArea1.tmx",
+            "ToArea": {
+                "X": 0,
+                "Y": 12,
+                "Width": 2,
+                "Height": 8
+            },
+            "When": {
+                "HasMod |contains=DaisyNiko.SVR3": true
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_WaterfallForest",
+            "FromFile": "Assets/WaterfallForest_Area.tmx",
+            "ToArea": {
+                "X": 59,
+                "Y": 42,
+                "Width": 1,
+                "Height": 3
+            },
+            "When": {
+                "HasMod |contains=DaisyNiko.SVR3": true
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_WaterfallForest_N",
+            "FromFile": "Assets/WaterfallForest_N_NewArea.tmx",
+            "ToArea": {
+                "X": 29,
+                "Y": 20,
+                "Width": 3,
+                "Height": 4
+            },
+            "When": {
+                "WaterfallForest_N_NewArea": true
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_Backwoods_N",
+            "FromFile": "Assets/Backwoods_BrokenBridge.tmx",
+            "ToArea": {
+                "X": 17,
+                "Y": 8,
+                "Width": 6,
+                "Height": 1
+            },
+            "AddWarps": [
+                "13 5 Custom_Backwoods_N_Cave 5 18"
+                ],
+                "When": {
+                    "Backwoods_BrokenBridge": true
+                }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_WaterfallForest",
+            "FromFile": "Assets/NewFarmRoad.tmx",
+            "ToArea": {
+                "X": 0,
+                "Y": 18,
+                "Width": 1,
+                "Height": 4
+            },
+                "When": {
+                    "Backwoods_BrokenBridge": true
+                }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Beach",
+            "FromFile": "Assets/Beach_NewArea.tmx",
+            "ToArea": {
+                "X": 13,
+                "Y": 2,
+                "Width": 6,
+                "Height": 6
+            },
+            "When":{
+                "HasMod |contains=DaisyNiko.SVR3": false,
+                "Beach_NewArea": true
+
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Beach",
+            "FromFile": "Assets/Beach_NewArea1.tmx",
+            "ToArea": {
+                "X": 14,
+                "Y": 2,
+                "Width": 5,
+                "Height": 3
+            },
+            "When":{
+                "HasMod |contains=DaisyNiko.SVR3": true,
+                "Beach_NewArea": true
+
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Beach",
+            "FromFile": "Assets/Beach_NewArea2.tmx",
+            "ToArea": {
+                "X": 90,
+                "Y": 39,
+                "Width": 4,
+                "Height": 2
+            },
+                "When": {
+                    "HasMod |contains=flashshifter.GrampletonFields": false,
+                    "Beach_NewArea": true
+                }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Beach",
+            "FromFile": "Assets/Beach_NewArea3.tmx",
+            "ToArea": {
+                "X": 88,
+                "Y": 39,
+                "Width": 3,
+                "Height": 4
+            },
+                "When": {
+                    "HasMod |contains=flashshifter.GrampletonFields": true,
+                    "Beach_NewArea": true
+                }
+        },
+        {
+        "Action": "EditMap",
+        "Target": "Maps/Island_W",
+        "FromFile": "Assets/Island_W_NewArea.tmx",
+        "PatchMode": "Overlay",
+            "When": {
+                "Island_W_NewArea": true
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_Island_W_N",
+            "FromFile": "Assets/Island_W_N_NewArea.tmx",
+            "ToArea": {
+                "X": 8,
+                "Y": 39,
+                "Width": 5,
+                "Height": 1
+            },
+                "When": {
+                    "Island_W_NewArea": true
+                }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+            "Custom_Backwoods_N": "16 .9 22 .9 18 .9 20 .9/398 .9 396 .9 402 .9/404 .9 406 .9 408 .9 410 .9/412 .9 416 .9 418 .9 414 .9 283 .9/136 -1 698 -1 700 -1 142 -1 137 -1 269 -1 144 -1 141 -1 704 -1 702 -1 132 -1 139 -1 145 -1 699 -1 706 -1 138 -1 707 -1 143 -1/136 -1 698 -1 700 -1 142 -1 137 -1 269 -1 144 -1 140 -1 141 -1 704 -1 702 -1 132 -1 139 -1 145 -1 699 -1 706 -1 138 -1 707 -1 143 -1/136 -1 698 -1 700 -1 142 -1 137 -1 269 -1 144 -1 140 -1 141 -1 704 -1 702 -1 132 -1 139 -1 145 -1 699 -1 706 -1 138 -1 707 -1 143 -1/136 -1 698 -1 700 -1 142 -1 137 -1 269 -1 144 -1 140 -1 141 -1 704 -1 702 -1 132 -1 139 -1 145 -1 699 -1 706 -1 138 -1 707 -1 143 -1/378 .08 579 .1 588 .1 102 .15 390 .25 330 1"
+            }
+
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+            "Custom_WaterfallForest": "-1/-1/-1/-1/136 -1 698 -1 700 -1 142 -1 137 -1 269 -1 144 -1 141 -1 704 -1 702 -1 132 -1 139 -1 145 -1 699 -1 706 -1 138 -1 707 -1 143 -1/136 -1 698 -1 700 -1 142 -1 137 -1 269 -1 144 -1 140 -1 141 -1 704 -1 702 -1 132 -1 139 -1 145 -1 699 -1 706 -1 138 -1 707 -1 143 -1/136 -1 698 -1 700 -1 142 -1 137 -1 269 -1 144 -1 140 -1 141 -1 704 -1 702 -1 132 -1 139 -1 145 -1 699 -1 706 -1 138 -1 707 -1 143 -1/136 -1 698 -1 700 -1 142 -1 137 -1 269 -1 144 -1 140 -1 141 -1 704 -1 702 -1 132 -1 139 -1 145 -1 699 -1 706 -1 138 -1 707 -1 143 -1/378 .08 579 .1 588 .1 102 .15 390 .25 330 1"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+            "Custom_WaterfallForest_N": "-1/-1/-1/-1/136 -1 698 -1 700 -1 142 -1 137 -1 269 -1 144 -1 141 -1 704 -1 702 -1 132 -1 139 -1 145 -1 699 -1 706 -1 138 -1 707 -1 143 -1/136 -1 698 -1 700 -1 142 -1 137 -1 269 -1 144 -1 140 -1 141 -1 704 -1 702 -1 132 -1 139 -1 145 -1 699 -1 706 -1 138 -1 707 -1 143 -1/136 -1 698 -1 700 -1 142 -1 137 -1 269 -1 144 -1 140 -1 141 -1 704 -1 702 -1 132 -1 139 -1 145 -1 699 -1 706 -1 138 -1 707 -1 143 -1/136 -1 698 -1 700 -1 142 -1 137 -1 269 -1 144 -1 140 -1 141 -1 704 -1 702 -1 132 -1 139 -1 145 -1 699 -1 706 -1 138 -1 707 -1 143 -1/378 .08 579 .1 588 .1 102 .15 390 .25 330 1"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+            "Custom_NewFarm": "-1/-1/-1/-1/128 -1 129 -1 130 -1 131 -1 146 -1 147 -1 148 -1 149 -1 150 -1 151 -1 154 -1 155 -1 701 -1 705 -1 708 -1 267 -1/128 -1 129 -1 130 -1 131 -1 146 -1 147 -1 148 -1 149 -1 150 -1 151 -1 154 -1 155 -1 701 -1 705 -1 708 -1 267 -1/128 -1 129 -1 130 -1 131 -1 146 -1 147 -1 148 -1 149 -1 150 -1 151 -1 154 -1 155 -1 701 -1 705 -1 708 -1 267 -1/128 -1 129 -1 130 -1 131 -1 146 -1 147 -1 148 -1 149 -1 150 -1 151 -1 154 -1 155 -1 701 -1 705 -1 708 -1 267 -1/378 .08 579 .1 588 .1 102 .15 390 .25 330 1"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+            "Custom_Summit": "417 .2 454 .2/417 .2 454 .2/417 .2 454 .2/417 .2 454 .2/163 -1/159 -1/160 -1/775 -1/-1"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+            "Custom_JungleIsland": "-1/-1/-1/-1/149 -1 155 -1 130 -1 128 -1 267 -1 837 -1/149 -1 155 -1 130 -1 128 -1 267 -1 837 -1/149 -1 155 -1 130 -1 128 -1 267 -1 837 -1/149 -1 155 -1 130 -1 128 -1 267 -1 837 -1/791 .05 292 .05 774 .1 749 1 820 .1 821 .1 822 .1 823 .1 824 .1 825 .1 826 .1 827 .1 828 .1"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+            "Custom_JungleIsland_E": "-1/-1/-1/-1/149 -1 155 -1 130 -1 128 -1 267 -1 837 -1/149 -1 155 -1 130 -1 128 -1 267 -1 837 -1/149 -1 155 -1 130 -1 128 -1 267 -1 837 -1/149 -1 155 -1 130 -1 128 -1 267 -1 837 -1/791 .05 292 .05 774 .1 749 1 820 .1 821 .1 822 .1 823 .1 824 .1 825 .1 826 .1 827 .1 828 .1"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+            "Custom_JungleIsland_NE": "-1/-1/-1/-1/-1/-1/-1/-1/791 .05 292 .05 774 .1 749 1 820 .1 821 .1 822 .1 823 .1 824 .1 825 .1 826 .1 827 .1 828 .1"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+            "Custom_JungleIsland_N": "-1/-1/-1/-1/149 -1 155 -1 130 -1 128 -1 267 -1 837 -1/149 -1 155 -1 130 -1 128 -1 267 -1 837 -1/149 -1 155 -1 130 -1 128 -1 267 -1 837 -1/149 -1 155 -1 130 -1 128 -1 267 -1 837 -1/791 .05 292 .05 774 .1 749 1 820 .1 821 .1 822 .1 823 .1 824 .1 825 .1 826 .1 827 .1 828 .1"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+            "Custom_JungleIsland_N_Beach": "-1/-1/-1/-1/149 -1 155 -1 130 -1 128 -1 267 -1 837 -1/149 -1 155 -1 130 -1 128 -1 267 -1 837 -1/149 -1 155 -1 130 -1 128 -1 267 -1 837 -1/149 -1 155 -1 130 -1 128 -1 267 -1 837 -1/791 .05 292 .05 774 .1 749 1 820 .1 821 .1 822 .1 823 .1 824 .1 825 .1 826 .1 827 .1 828 .1"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+            "Custom_JungleIsland_N_Beach2": "-1/-1/-1/-1/149 -1 155 -1 130 -1 128 -1 267 -1 837 -1/149 -1 155 -1 130 -1 128 -1 267 -1 837 -1/149 -1 155 -1 130 -1 128 -1 267 -1 837 -1/149 -1 155 -1 130 -1 128 -1 267 -1 837 -1/791 .05 292 .05 774 .1 749 1 820 .1 821 .1 822 .1 823 .1 824 .1 825 .1 826 .1 827 .1 828 .1"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+            "Custom_JungleIsland_N_Beach2_Cave": "-1/-1/-1/-1/155 -1 130 -1 128 -1 267 -1 836 -1/155 -1 130 -1 128 -1 267 -1 836 -1/155 -1 130 -1 128 -1 267 -1 836 -1/155 -1 130 -1 128 -1 267 -1 836 -1/-1"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+            "Custom_Island_W_N": "-1/-1/-1/-1/149 -1 155 -1 130 -1 128 -1 267 -1 837 -1/149 -1 155 -1 130 -1 128 -1 267 -1 837 -1/149 -1 155 -1 130 -1 128 -1 267 -1 837 -1/149 -1 155 -1 130 -1 128 -1 267 -1 837 -1/791 .05 292 .05 774 .1 749 1 820 .1 821 .1 822 .1 823 .1 824 .1 825 .1 826 .1 827 .1 828 .1"
+            }
+        },
+        {
+			"Action":"EditData",
+			"Target":"Data/Events/Farm",
+			"Entries":{
+				"649812717/w sunny/t 600 2600":"archaeo/64 15/farmer 64 15 2 Lewis 64 16 0/pause 500/pause 500/speak Lewis \"{{i18n:Lewis_Events_01}}\"/pause 500/emote farmer 16/pause 500/speak Lewis \"{{i18n:Lewis_Events_02}}\"/pause 500/jump farmer/pause 500/speak Lewis \"{{i18n:Lewis_Events_03}}\"/pause 500/emote farmer 56/pause 500/speak Lewis \"{{i18n:Lewis_Events_04}}\"/pause 500/emote farmer 20/pause 300/speak Lewis \"[072]\"/pause 500/speak Lewis \"{{i18n:Lewis_Events_05}}\"/pause 1000/end"
+			}
+		},
+        {
+			"Action":"EditData",
+			"Target":"Data/Events/Farm",
+			"Entries":{
+				"649812718/w sunny/f Robin 1250/t 600 2600":"jaunty/64 15/farmer 64 15 2 Robin 64 16 0/pause 500/pause 500/speak Robin \"{{i18n:Robin_Events_01}}\"/pause 500/emote farmer 16/pause 500/speak Robin \"{{i18n:Robin_Events_02}}\"/pause 500/emote farmer 32/pause 500/speak Robin \"{{i18n:Robin_Events_03}}\"/pause 500/emote farmer 56/pause 500/speak Robin \"{{i18n:Robin_Events_04}}\"pause 500/speak Robin \"[074]\"/pause 500/emote farmer 20/pause 500/speak Robin \"{{i18n:Robin_Events_05}}\"/pause 1000/end"
+			}
+		},
+        {
+			"Action":"EditData",
+			"Target":"Data/Events/Farm",
+			"Entries":{
+				"649812719/w sunny/f Willy 1250/t 600 2600":"poppy/64 15/farmer 64 15 2 Willy 64 16 0/pause 500/pause 500/speak Willy \"{{i18n:Willy_Events_01}}\"/pause 500/emote farmer 16/pause 500/speak Willy \"{{i18n:Willy_Events_02}}\"/pause 500/jump farmer/pause 500/speak Willy \"{{i18n:Willy_Events_03}}\"/pause 500/emote farmer 20/pause 500/speak Willy \"{{i18n:Willy_Events_04}}\"/pause 500/emote farmer 32/pause 500/speak Willy \"[166]\"/pause 500/speak Willy \"{{i18n:Willy_Events_05}}\"/pause 1000/end"
+			}
+		},
+        {
+            "Action": "EditData",
+            "Target": "Strings/StringsFromMaps",
+            "Entries": {
+                "Text.1": "{{i18n:Text.1}}",
+                "Text.2": "{{i18n:Text.2}}",
+                "Text.3": "{{i18n:Text.3}}",
+                "Text.4": "{{i18n:Text.4}}",
+                "Text.5": "{{i18n:Text.5}}",
+                "Text.6": "{{i18n:Text.6}}",
+                "Text.7": "{{i18n:Text.7}}",
+                "Text.8": "{{i18n:Text.8}}",
+                "Text.9": "{{i18n:Text.9}}",
+                "Text.10": "{{i18n:Text.10}}",
+                "Text.11": "{{i18n:Text.11}}",
+                "Text.12": "{{i18n:Text.12}}",
+                "Text.13": "{{i18n:Text.13}}",
+                "Text.14": "{{i18n:Text.14}}",
+                "Text.15": "{{i18n:Text.15}}",
+                "Text.16": "{{i18n:Text.16}}",
+                "Text.17": "{{i18n:Text.17}}",
+                "Text.18": "{{i18n:Text.18}}",
+                "Text.19": "{{i18n:Text.19}}",
+                "Text.20": "{{i18n:Text.20}}",
+                "Text.21": "{{i18n:Text.21}}",
+                "Text.22": "{{i18n:Text.22}}",
+                "Text.23": "{{i18n:Text.23}}",
+                "Text.24": "{{i18n:Text.24}}",
+                "Text.25": "{{i18n:Text.25}}",
+                "Text.26": "{{i18n:Text.26}}",
+                "Text.27": "{{i18n:Text.27}}",
+                "Text.28": "{{i18n:Text.28}}",
+                "Text.29": "{{i18n:Text.29}}",
+                "Text.30": "{{i18n:Text.30}}",
+                "Text.31": "{{i18n:Text.31}}",
+                "Text.32": "{{i18n:Text.32}}"
+
+            }
+        }
+    ]
+}

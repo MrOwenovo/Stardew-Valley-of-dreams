@@ -1,0 +1,68 @@
+{
+	"Changes": [
+	
+// Birdie
+		{
+			"LogName": "Birdie - Slightly Cuter",
+			"Action": "EditImage",
+			"Target": "Portraits/Birdie, Characters/Birdie",
+			"FromFile": "assets/{{Target}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+                "SlightlyCuterBirdie": "True",
+			},
+		},
+		{
+			"LogName": "Birdie - Seasonal Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Birdie",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"NoNose": "false",
+			},
+		},
+		
+// Krobus
+		{
+            "LogName": "Krobus - Slightly Cuter",
+            "Action": "EditImage",
+            "Target": "Portraits/Krobus, Characters/Krobus",
+            "FromFile": "assets/{{Target}}.png",
+            "When":
+            {
+                "HasFile:{{FromFile}}": true,
+                "SlightlyCuterKrobus": "True",
+            }        
+		},
+		
+// Mr Qi
+		{
+            "LogName": "Mr Qi - Slightly Cuter",
+            "Action": "EditImage",
+            "Target": "Portraits/MrQi, Characters/MrQi",
+            "FromFile": "assets/{{Target}}.png",
+            "When":
+            {
+                "HasFile:{{FromFile}}": true,
+                "SlightlyCuterMrQi": "True",
+            }        
+		},
+		
+// Professor Snail
+		{
+            "LogName": "Professor Snail - Slightly Cuter",
+            "Action": "EditImage",
+            "Target": "Characters/SafariGuy",
+            "FromFile": "assets/{{Target}}.png",
+            "When":
+            {
+                "HasFile:{{FromFile}}": true,
+                "SlightlyCuterProfessorSnail": "True",
+            }        
+		},
+	]
+}

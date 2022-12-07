@@ -1,0 +1,130 @@
+{
+	"Changes": [
+		{
+			"LogName": "Demetrius - Seasonal",
+			"Action": "EditImage",
+			"Target": "Portraits/Demetrius, Characters/Demetrius",
+			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Demetrius - Winter Indoor/Outdoor",
+			"Action": "EditImage",
+			"Target": "Portraits/Demetrius, Characters/Demetrius",
+			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+                "Season": "Winter",
+                "WinterIndoorOutdoorOutfits": "IndoorOutdoor",
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Demetrius - Festival",
+			"Action": "EditImage",
+			"Target": "Portraits/Demetrius, Characters/Demetrius",
+            "FromFile": "assets/{{TargetPathOnly}}/Festivals/{{Festival}}/{{TargetWithoutPath}}_{{Festival}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"FestivalOutfits": "True",
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Demetrius - Beach Character",
+			"Action": "EditImage",
+			"Target": "Characters/Demetrius_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Beach/{{TargetWithoutPath}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Demetrius - Beach Portrait",
+			"Action": "EditImage",
+			"Target": "Portraits/Demetrius",
+			"FromFile": "assets/{{TargetPathOnly}}/Beach/Adds/{{TargetWithoutPath}}_Beach.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"LocationName": "IslandSouth, IslandWest, IslandEast, IslandNorth",
+				"Time": "{{Range: 1130, 1820}}",
+			},
+            "Update": "OnTimeChange, OnLocationChange",
+		},
+		
+// NOSE OVERLAY
+		{
+			"LogName": "Demetrius - Seasonal Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Demetrius",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"NoNose": "false",
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Demetrius - Festival Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Demetrius",
+            "FromFile": "assets/Characters/Festivals/SpiritsEve/{{TargetWithoutPath}}_SpiritsEve_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"NoNose": "false",
+				"FestivalOutfits": "True",
+				"Festival": "SpiritsEve",				
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Demetrius - Beach Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Demetrius_Beach",
+            "FromFile": "assets/{{TargetPathOnly}}/Beach/{{TargetWithoutPath}}_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"NoNose": "false",
+			},
+		},
+		
+// MISCELLANEOUS		
+		{
+			"LogName": "Demetrius - Emoji",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+            "FromFile": "assets/{{NoNose}}/Random/emojis.png",
+			"FromArea": {"X": 45, "Y": 117, "Width": 9, "Height": 9},
+			"ToArea": {"X": 45, "Y": 117, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Demetrius - Junimo Note",
+			"Action": "EditImage",
+			"Target": "LooseSprites/JunimoNote",
+			"FromFile": "assets/{{NoNose}}/Random/JunimoNote.png",
+			"FromArea": { "X": 384, "Y": 212, "Width": 32, "Height": 32 },
+			"ToArea": { "X": 384, "Y": 212, "Width": 32, "Height": 32 },
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+	]
+}

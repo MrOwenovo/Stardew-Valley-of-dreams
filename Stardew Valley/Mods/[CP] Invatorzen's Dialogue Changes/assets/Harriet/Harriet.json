@@ -1,0 +1,257 @@
+{
+    "Changes": [
+        
+        //Dialogue with Emily
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Emily",
+            "Entries": {
+                "summer_Sat": "不要太勉强自己了，不然可能会被送进哈丽特的诊所哦！"
+            }
+        },
+
+        //Dialogue with Harvey
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Harvey",
+            "Entries": {
+                "Introduction": "很高兴认识你。我是哈丽特，这里的医生。#$e#我为鹈鹕镇的居民提供常规的体检和医疗服务。这是个很有意义的工作。#$e#希望有天你也会觉得自己的工作很有意义。$h"
+            }
+        },
+
+        //Marriage dialogue changes
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueHarvey",
+            "Entries": {
+                "Outdoor_2": "我可能不是最令人兴奋的女孩，但我会在我的余生里对你忠诚。$l",
+                "OneKid_3": "我真喜欢当母亲的感觉！$h",
+                "TwoKids_3": "我深爱着你和孩子们，并且很幸福。我一直梦想着有个美满的家庭。$l#$e#我曾害怕一直单身……遇见你是我最大的幸运，我好爱你。$l",
+                "summer_1": "千万别晒伤了，亲爱的！那对你的皮肤来说很危险。$8#$e#作为你的妻子和医生，你的健康和安全是我第一优先考虑的事情！"
+            }
+        },
+
+        //Maru dialogue change
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Maru",
+            "Entries": {
+                "Wed": "周二和周四我会在哈丽特的诊所工作。#$b#她说她喜欢和我一起工作，万一医疗器械故障了我可以帮上大忙！$h#$e#当个农夫应该很轻松吧？",
+                "Wed8": "我周二和周四会去哈丽特的诊所上班。#$e#她人很好，但不是我喜欢的类型……",
+                "Event_Hospital_1": "她肯定能看出差别！这个样品全毁了！%fork$s",
+                "Event_Hospital_3": "你是对的。我应该告诉她真相。%fork$u"
+            }
+        },
+
+        //Hospital event change
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Hospital",
+            "Entries": {
+                "7/f Maru 1000/p Maru": "Hospital_Ambient/-1000 -1000/farmer -10000 -10000 0 Maru 9 15 3 Harvey 7 10 0/skippable/changeSprite Maru Hospital/changePortrait Maru Hospital/showFrame Maru 18/viewport 10 15/pause 4000/speak Maru \"*叹息*…我对于准备这些样本很不在行…$s\"/pause 2000/playSound doorClose/warp farmer 10 19/pause 100/playSound throw/showFrame Maru 17/shake Maru 2000/jump Maru/specificTemporarySprite maruBeaker/move farmer 0 -1 0/pause 1250/showFrame Maru 0/faceDirection Maru 2/pause 100/speak Maru \"啊！糟糕！$4\"/pause 600/showFrame Maru 16/pause 1000/speak Maru \"整份样本都被毁了……哈丽特会把我杀了……$s\"/pause 600/showFrame Maru 0/faceDirection Maru 0/pause 1500/faceDirection Maru 2/pause 400/speak Maru \"$q 38 null#@, 我应该怎么办？#$r 38 -50 Event_Hospital_1#J从地板上铲起来就好。她不会发现的#$r 39 -20 Event_Hospital_2#告诉哈丽特是我的错。#$r 38 50 Event_Hospital_3#告诉哈丽特，这纯属意外。\"/move Harvey 3 0 2/move Harvey 0 2 2/doAction 10 13/move Harvey 0 1 2/faceDirection Maru 1/speak Harvey \"发生了什么？我听到东西打碎的声音。\"/pause 500/speak Maru \"$p 38#我不小心摔碎了一份样本……真是对不起。$s|@ 进来后猛地一关门，吓得我打碎了一份样本。$u\"/fork toldTruth/move Harvey 0 2 3/emote Harvey 40/speak Harvey \"玛鲁，你不能把自己的问题推卸到别人身上。$a\"/pause 300/faceDirection Harvey 1/speak Harvey \"*唉*……我只好让病人再来采集一次样本了。$s#$b#这很可能会害得我们又亏损一个月……$s\"/pause 600/faceDirection Maru 2/pause 1000/showFrame Maru 16/pause 500/emote farmer 28/end",
+                "toldTruth": "move Harvey 0 2 3/speak Harvey \"玛鲁，谢谢你告诉我事实真相。#$b#不用担心样本的事情，我们会再采集一份。\"/pause 500/emote Harvey 32/pause 500/speak Maru \"谢谢你对我的包容，哈丽特医生。\"/pause 500/speak Harvey \"当然……你在这儿帮了我不少忙。没有你，我都不知道该怎么办！\"/pause 500/emote Maru 32/pause 1000/faceDirection Harvey 2/pause 500/emote Harvey 8/speak Harvey \"@？你的脸色有些苍白……你还好吗？\"/pause 500/faceDirection farmer 2/emote farmer 28/end",
+                "571102/f Harvey 2000": "Hospital_Ambient/-100 -100/farmer -200 -2000 0 Harvey 4 5 0/skippable/changeLocation HarveyRoom/showFrame Harvey 23/viewport 5 6 true/pause 1000/speak Harvey \"喂？喂？有谁在吗？$9\"/pause 1300/emote Harvey 40/speak Harvey \"我是H医生……这里是北纬52度东经43.5度……正在进行无线电呼叫……有人听到吗？$9\"/pause 2000/emote Harvey 40/pause 700/playSound newArtifact/message \"收到……地面的H医生……这里是黑鸟55Z。有事汇报吗？\"/showFrame Harvey 28/jump Harvey/pause 800/speak Harvey \"真有人听到了吗！？$10#$b#地面情报汇报：风速3KPH，风向西偏北36度。地面温度42度。湿度53%。H医生通话结束！$10\"/pause 300/playMusic kindadumbautumn/faceDirection Harvey 1 true/move Harvey 2 0 1/speak Harvey \"啊，我的脉搏在上升……$7\"/pause 400/playSound doorClose/warp farmer 6 12/move farmer 0 -3 0/faceDirection Harvey 2/speak Harvey \"@!\"/question fork1 \"#询问哈丽特她为何那么紧张。#假装一切正常。\"/fork normal/pause 500/speak Harvey \"啊，我正在进行无线电通讯……而我居然遇到了真正的飞行员！\"/emote Harvey 16/speak Harvey \"现在应该就能看到他从我们头顶飞过！\"/move Harvey 0 1 3/move Harvey -3 0 0/move Harvey 0 -2 0/speak Harvey \"快点，快过来！\"/speed farmer 4/move farmer 0 -3 3/speed farmer 4/move farmer -4 0 0/speed farmer 4/move farmer 0 -2 0/speed farmer 4/speak Harvey \"快看！!\"/globalFade/cutscene plane/viewport -1000 -1000/speak Harvey \"小时候，我的梦想就是当飞行员。\"/pause 1000/speak Harvey \"...但因为我视力不好，而且极度恐高，这个梦想已经渐渐暗淡了。$s\"/faceDirection Harvey 3/faceDirection farmer 1/viewport 5 6 true/pause 1600/emote farmer 28/speak Harvey \"没事的……不用替我遗憾。#$b#我长大了，能接受自己人生的定位了。不是所有人都能实现梦想的……人生就是这样的。\"/pause 1600/speak Harvey \"嘿，你来看看我的飞机模型。我刚刚完成新的TR-星鸟豪华版。$h\"/advancedMove Harvey false 0 2 16 0/faceDirection farmer 2/globalFade .003/viewport -1000 -1000/pause 500/end"
+            }
+        },
+
+        //Event with George
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/JoshHouse",
+            "Entries": {
+                "56/f Harvey 500/p George": "jaunty/16 18/farmer 9 24 0 George 16 18 1 Harvey 15 18 1/skippable/move farmer 0 -4 1/move farmer 1 0 1/speak Harvey \"好，乔治。我要你深吸一口气。\"/pause 700/speak Harvey \"嗯……请转过身来。\"/pause 300/faceDirection George 2/faceDirection George 3/speak Harvey \"乔治，我跟你说实话吧。你如果想健康长寿的话，就得改改你的生活方式。#$b#你得减少食盐的摄入量，并且适量锻炼一下你的手臂。\"/emote George 12/speak George \"嗯……我知道怎么做最好。你以为你是谁啊，敢对我的生活指手画脚？\"/pause 500/speak Harvey \"你问我是谁……我是你的医生，乔治。#$b#而我学了8年医，就是为了帮人们保持健康。\"/move farmer 0 -1 1/move farmer 5 0 0/faceDirection Harvey 2 true/faceDirection George 2/speak Harvey \"噢！#$b#对不起，你不能待在这里……检查时闲人免进。\"/faceDirection farmer 3/speak George \"别着急！我还要再听听这个年轻人的意见。^别着急！我还要再听听这位年轻女士的意见。\"/faceDirection farmer 1/speak Harvey \"那好……\"/speak Harvey \"$q 84 null#@, 你觉得乔治该怎么做？#$r 84 40 event_george1#乔治应该听从哈丽特医生的建议。#$r 85 -40 event_george2#乔治知道怎么做对他的身体最好。\"/faceDirection Harvey 1/faceDirection George 2/emote George 28/speak George \"好。我就照你说的做，医生。\"/pause 500/faceDirection Harvey 2/speak Harvey \"$p 84#谢谢你的帮助， @。我很感激。$h|你最好不要误导我的病人， @。请你以后记住这一点。\"/end"
+            }
+        },
+
+        //Mail changes
+        {
+            "Action": "EditData",
+            "Target": "Data/mail",
+            "Entries": {
+                "harveyBalloon": "@,^我想给你一个惊喜。在铁轨旁等我。 ^-哈丽特[#]哈丽特的惊喜",
+                "passedOut3_Billed": "@,^昨晚有人将你送到诊所了。你因中暑而晕倒！^你要照顾好自己，并在合适的时间及时睡觉。^你的医疗费是 {0}金。^^-哈丽特医生[#]来自哈丽特医生的办公室",
+                "passedOut3_NotBilled": "@,^昨晚有人将你送到诊所了。你因中暑而晕倒！^你要照顾好自己，并在合适的时间及时睡觉。^由于你没有钱，我向你提供免费的医疗服务。^^-哈丽特医生[#]哈丽特的免费医疗服务"
+            }
+        },
+
+        //Changes the gender/data
+        {
+            "Action": "EditData",
+            "Target": "Data/NPCDispositions",
+            "Entries": {
+                "Harvey": "adult/polite/shy/positive/female/datable/Maru/Town/winter 14//HarveyRoom 13 4/哈丽特"
+            }
+        },
+
+        //Caroline dialogue changes
+        {
+            "Action": "EditData",
+            "Target": "Strings/schedules/Caroline",
+            "Entries": {
+                "fall_25.002": "抱歉，我需要和哈丽特医生私下谈谈……$u"
+            }
+        },
+
+        //Demetrius dialogue changes
+        {
+            "Action": "EditData",
+            "Target": "Strings/schedules/Demetrius",
+            "Entries": {
+                "summer_25.001": "哈丽特医生，你读了最新一期的《生物医学》吗？里面有篇文章你可能会感兴趣。"
+            }
+        },
+
+        //Evelyn dialogue changes
+        {
+            "Action": "EditData",
+            "Target": "Strings/schedules/Evelyn",
+            "Entries": {
+                "23.000": "哦，亲爱的……最好让哈丽特医生给你检查一下。她可是个不错的小姑娘！行为端重点，就算是看在你老妻的份上。"
+            }
+        },
+
+        //Jas dialogue changes
+        {
+            "Action": "EditData",
+            "Target": "Strings/schedules/Jas",
+            "Entries": {
+                "winter_18.001": "哈丽特医生，能告诉我这东西怎么用吗？"
+            }
+        },
+
+        //Jodi dialogue change
+        {
+            "Action": "EditData",
+            "Target": "Strings/schedules/Jodi",
+            "Entries": {
+                "spring_11.002": "哈丽特医生？我有点担心文森特的个头。在这个年纪的小孩中，他会不会矮了点？"
+            }
+        },
+
+        //Leah dialogue change
+        {
+            "Action": "EditData",
+            "Target": "Strings/schedules/Leah",
+            "Entries": {
+                "spring_16.001": "我看起来健康吗，哈丽特医生？"
+            }
+        },
+
+        //Lewis dialogue change
+        {
+            "Action": "EditData",
+            "Target": "Strings/schedules/Lewis",
+            "Entries": {
+                "fall_9.000": "呃……哈丽特医生？你一定会保密的吧？"
+            }
+        },
+        
+        //Marnie dialogue change
+        {
+            "Action": "EditData",
+            "Target": "Strings/schedules/Marnie",
+            "Entries": {
+                "fall_18.000": "呃……哈丽特医生？你一定会保密的吧？",
+                "winter_18.002": "呃……哈丽特医生？你什么时候给她打针呢？我们能要两根棒棒糖吗？"
+            }
+        },
+
+        //Harriet change (Male sam)
+        {
+            "Action": "EditData",
+            "Target": "Strings/schedules/Sam",
+            "Entries": {
+            "fall_11.000": "今天我得去看医生姐姐了……非常好。$7",
+            "fall_11.001": "我是个健康的男孩，医生。我现在可以走了吗？好无聊啊。"
+            },
+            "When": {"Female Sam": "false" }
+        },
+      
+        //Harriet change (Female sam)
+        {
+            "Action": "EditData",
+            "Target": "Strings/schedules/Sam",
+            "Entries": {
+            "fall_11.000": "今天我得去看医生姐姐了……非常好。$7",
+            "fall_11.001": "我是个健康的女孩，医生。我现在可以走了吗？好无聊啊。"
+            },
+            "When": {"Female Sam": "true" }
+        },
+
+        //Animation text change
+        {
+            "Action": "EditData",
+            "Target": "Strings/animationDescriptions",
+            "Entries": {
+                "harvey_radio": "%哈丽特现在看起来很忙。"
+            },
+        },
+
+
+        //String text changes
+        {
+            "Action": "EditData",
+            "Target": "Strings/StringsFromCSFiles",
+            "Entries": {
+                "Event.cs.1068": "哈丽特医生收了我 {0}金用于医院就诊。",
+                "Event.cs.1070": "我没有钱，但哈丽特有义务免费救我。 ",
+                "MapPage.cs.11076": "哈丽特的诊所",
+                "ItemDeliveryQuest.cs.13446": "新鲜的{0}可以作为{1}的滋补品。如果你找到了，就把它交给我，我能很好地利用它。－哈丽特医生 "
+            },
+        },
+
+        //Harriet 14 heart event change. Specifically for the mustache.
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/FarmHouse",
+            "Entries": {
+                "3917626/f Harvey 3500/O Harvey/t 2000 2400/p Harvey/L": "harveys_theme_jazz/-1000 -1000/farmer -100 -100 0 Harvey 7 14 0/skippable/ambientLight 0 0 0/makeInvisible 4 14 6 1/specificTemporarySprite harveyKitchenSetup/viewport 7 14 true/pause 3000/showFrame Harvey 19/playSound clank/shake Harvey 200/pause 450/playSound clank/shake Harvey 200/pause 450/playSound clank/shake Harvey 200/pause 750/showFrame Harvey 53/pause 100/playSound sipTea/pause 1000/textAboveHead Harvey \"需要加盐……\"/stopAnimation Harvey/pause 800/move Harvey -1 0 0/pause 2000/showFrame Harvey 19/playSound bubbles/pause 1000/playSound bubbles/pause 2000/stopAnimation Harvey/move Harvey 1 0 0/pause 2000/playSound furnace/specificTemporarySprite harveyKitchenFlame/pause 500/jump Harvey/pause 500/textAboveHead Harvey \"烧起来了！\"/pause 500/speed Harvey 8/move Harvey -2 0 0/pause 100/speed Harvey 8/move Harvey 2 0 0/pause 100/speed Harvey 8/move Harvey -2 0 0/pause 100/speed Harvey 8/move Harvey 2 0 0/pause 3000/move Harvey 2 0 0/pause 500/showFrame Harvey 19/playSound openChest/pause 1000/textAboveHead Harvey \"嗯……\"/pause 3000/stopAnimation Harvey/move Harvey -2 0 0/pause 500/showFrame Harvey 19/textAboveHead Harvey \"加点这个……...\"/playSound dropItemInWater/pause 2000/stopAnimation Harvey/move Harvey -3 0 0/pause 1000/showFrame Harvey 19/playSound coin/pause 500/stopAnimation Harvey/move Harvey 3 0 0/pause 250/showFrame Harvey 19/pause 500/textAboveHead Harvey \"一些这个……\"/pause 600/playSound slosh/pause 2000/showFrame Harvey 53/pause 200/playSound sipTea/pause 2000/showFrame Harvey 4/jump Harvey/textAboveHead Harvey \"快！!\"/pause 2000/warp farmer 12 20/playSound doorClose/move farmer 0 -1 0/pause 500/stopAnimation Harvey/faceDirection Harvey 2/speak Harvey \"啊……你回来的正是时候，@！$h#$b#让我摆一下盘……\"/pause 300/fade/viewport -1000 -1000/pause 2000/playMusic none/pause 3000/makeInvisible 5 14 4 2/ambientLight 180 180 0/playMusic kindadumbautumn/showFrame Harvey 51/positionOffset Harvey -8 0/faceDirection farmer 1/showFrame 117/specificTemporarySprite harveyDinnerSet/pause 4000/speak Harvey \"你在农场工作得这么辛苦，我想给你做一顿特别的晚餐。\"/emote farmer 20/speak Harvey \"这是我自制的“天使之发·春之意面”……里面有蛤贝！$h\"/animate Harvey false true 300 51 52/pause 300/playSound eat/pause 600/playSound eat/pause 600/playSound eat/pause 500/animate Harvey false true 100 51/quickQuestion #好吃的要上天了#尝起来很健康#尝起来有点淡#尝起来有点焦了#尝起来有点硬#尝起来好像发霉了(break)speak Harvey \"要上天了，是吧？那肯定是“天使之发”！$h#$b#我很高兴你喜欢它！你应该得到最好的。$l\"(break)speak Harvey \"哦是的，我忘了提……这是“全麦”通心粉，而且有足够多的新鲜蔬菜。#$b#吃足健康食品是很重要的！我希望你能健康长寿……$l\"(break)speak Harvey \"哦，我就知道我该多加点盐。$s#$b#不过呢，起码你不会担心口渴了。$s\"(break)emote Harvey 28\\speak Harvey \"哦……我以为我把烧焦的那份给自己了。$s#$b#呃，我没看好平底锅，然后它着火了……抱歉，亲爱的。$s\"(break)jump Harvey\\pause 500\\speak Harvey \"啊……！哈哈。我猜可能是加了太多纤维在意大利面里。好吧，就当吃了额外的纤维，怎样？哈……（对不起亲爱的）$8\"(break)jump Harvey\\pause 400\\speak Harvey \"哦！呃……那多半是我淋在上面的松露油……$8#$b#你是指美味的食用菌……对吧，亲爱的？一定是这样的……哈哈。$8\"/pause 2000/animate Harvey false true 300 51 52/speak Harvey \"那么，跟我说说你今天都做了什么……\"/quickQuestion #我照看了农场#我在洞窟里挖掘#我一整天都在钓鱼#我在镇上跟人交谈#我什么事情都做了些#我记不起来了#我啥都没做(break)speak Harvey \"真好，我仍然可以看到你头发上的污垢！亲爱的，我真的很感谢你的辛勤工作。\"(break)speak Harvey \"这听起来很危险……你确定这样安全吗？$8#$b#我可不想之后让你躺在手术台上……$s#$b#但我不得不说，我喜欢这样勇敢的你……$l\"(break)speak Harvey \"在岸边度过宁静的一天，对吧？这听起来非常放松。#$b#我很高兴你在那里过得开心！$h\"(break)speak Harvey \"啊，那是好事。拥有积极的社交生活对大脑来说是健康的。#$b#但要记住，如果你需要和人交心，我会一直在你身边！$l\"(break)speak Harvey \"的确是这样。在这个山谷有很多事要做！……我知道你的工作非常辛苦。#$b#记得要劳逸结合！当你过于忙碌时，很容易因疲惫而搞坏身体。\"(break)speak Harvey \"啊……我也有这个问题。日子之间的界限会变得模糊……很难记得所有事情！\"(break)speak Harvey \"休息一天，没错吧？我很高兴你能这么做。#$b#唔，在一天的休息和丰盛的晚餐后，明天的你一定会重新充满能量的。\"/pause 1000/stopAnimation Harvey/showFrame Harvey 51/speak Harvey \"哇，我吃的很饱！这可真棒……\"/emote farmer 20/pause 1000/playMusic nightTime/speak Harvey \"我来洗碗……\"/pause 400/emote farmer 60/pause 250/speak Harvey \"别感觉不安……我喜欢为你做事情！这使我很快乐。\"/pause 1000/speak Harvey \"我知道我说过很多次了，但是……和你结婚是我遇到的最好的事情！$l\"/emote farmer 20/pause 1000/fade/viewport -100 -100/end dialogue Harvey \"真令人满足，我觉得会睡个好觉……\""
+            },
+        },
+
+        //Text changes from maps
+        {
+            "Action": "EditData",
+            "Target": "Strings/StringsFromMaps",
+            "Entries": {
+                "HarveyRoom.3": "这是哈丽特的飞机模型收藏。",
+        "HarveyRoom.4": "这是哈丽特的飞机模型收藏。",
+		"Hospital.3": "最好别把你的手放到那里面。里面都是用过的注射器、脏药签、还有哈丽特插到人们耳朵里的医用喷嘴。"
+            },
+            "When": {"Harriet": "true" }
+        },
+
+        //Secret note change
+        {
+            "Action": "EditData",
+            "Target": "Data/SecretNotes",
+            "Entries": {
+                "7": "这是某人日记中的一页……^^……镇里只有少数几个“老”单身，他们都并不完美！哈丽特确实焦虑而软弱，但我知道她会成为一个忠诚专一的妻子。她喜欢咖啡和腌菜。^^艾利欧特有些浮夸和矫情，但他的下巴确实很好看。他喜欢蟹黄糕和石榴。^^肖恩邋遢且反社会。但我认为他粗鲁的外在是一种保护机制，将他内心的柔软与世界隔离开来。他喜欢啤酒、披萨和爆炒青椒。"
+            },
+        },
+
+        //OW Sprite change
+        {
+            "Action": "EditImage",
+            "Target": "Characters/Harvey",
+            "FromFile": "assets/Harriet/HarrietOW.png"
+        },
+
+        //Portrait change
+        {
+            "Action": "EditImage",
+            "Target": "Portraits/Harvey",
+            "FromFile": "assets/Harriet/Harriet.png",
+            "When": {"Harriet's Portrait": "true"}
+        },
+
+        //Wedding fix
+        {
+            "Action": "EditImage",
+            "Target": "Characters/Harvey",
+            "FromFile": "assets/Harriet/HarrietOW_Wedding.png",
+            "When": {"DayEvent": "wedding"}
+        },
+
+    ]
+}

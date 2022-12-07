@@ -12,14 +12,17 @@
 <br>
 
 #### 更新:
-- 加入新mod: 
+- 加入新mod:
+
 - 删除mod: 
   - Challenging PPJA SVE Bundles: 具有挑战性的社区中心捆绑包  × (难度过大)
   - Horse Flute Anywhere: 马笛随时可见 √ (用处不大)
   - NPC Vending Machines: NPC自动售货机 × (破坏平衡,配置文件无法更改)
   - TehPers FestiveSlimes&core: 节日史莱姆  ×(版本落后)
   - Pierre Sells Horse Flute: 皮埃尔卖马笛 Æ(破坏平衡)
-  -  Stardew Valley Balance Overhaul: 星露谷平衡大修 ×(难度过大)
+  - Stardew Valley Balance Overhaul: 星露谷平衡大修 ×(难度过大)
+  - Out of Season Bonuses: 淡季奖金 × (版本落后)
+
   
 
 <br>
@@ -81,6 +84,9 @@
   - Boarding House Nut Butters: 寄宿公寓坚果黄油 Æ
   - Fruit Tree Honey: 果树蜂蜜 ×
   - Hugs and kisses：拥抱和亲吻 ×
+  - CP - Season Bunny sprinkler:  CP - 季节兔子洒水器 ×
+  - Ridgeside Village for Mobile Phone: 山脊村手机 √
+  - Zosa and Bonster's Recipes: 佐萨和邦斯特的食谱  √
 
 - 扩展:
   - Adventurer's Guild Expanded 1.0.15: 冒险家协会扩展 √
@@ -90,6 +96,8 @@
   - Lunna Astray: 伦娜 - 星露谷的误入歧途 √
   - Stardew Valley Expanded: SVE星露谷扩展 √
   - Stoffton: 斯托夫顿 √
+  - Krobus patio (seasonal): 科罗布斯的配偶露台 - 季节性 Æ
+  - Stardew Valley Expanded-image translation-Chinese: 星露谷展开图片翻译 √
 
 - 建筑:
   - Mini Obelisk: 迷你方尖碑 ×
@@ -107,11 +115,13 @@
   - (CC) SH's Wild Animals: 上海野生动物   ×
   - Farm Animal Facelift: 农场动物整容  ×
   - The Cowboy Life Expanded 1.4.5-Alpha: 牛仔生活扩展 √
+  - Ornithologist's Guild: 鸟类学家协会 √
 
 - 地图:
   - Desert: 步行到沙漠 √
   - Ridgeside Village: 里奇赛德村  √
   - Stardew Aquarium: 星露水族馆 Æ
+
 
 - 肖像:
   - BBBoong's Ridgeside Village mod All NPC portraits 2.2ver: 里奇赛德村肖像 ×
@@ -119,6 +129,16 @@
   - Aspen High Res Anime Portrait: 阿斯彭高分辨率动漫肖像 ×
   - HD Portraits: 高清人像(前置) ×
   - Seasonal Cute Characters: 季节性服装 - SVE的美感略微可爱 ×
+  - Ohodavi's Portraits for Rasmodia: 奥霍达维的《拉斯摩迪亚肖像》 ×
+  - [CP] Seasonal Cute Characters: [CP]季节性可爱人物   ×
+  - A seasonal high resolution anime portrait of Olivia:  SVE - 奥利维亚的季节性高分辨率动漫肖像 ×
+
+- 敌对:
+  - Boss Creatures: 头目生物 Æ
+
+- 音频:
+  - CM-Latale BGM for Lnh 的其他区域
+
 
 - 角色：
   - Ridgeside Village - NPC Adventures Addon: 里奇赛德村NPC历险记 √
@@ -130,6 +150,9 @@
   - SVE NPC Adventures: （SVE）星露谷扩展同伴 √
   - Toddlers Makeover: 幼儿改头换面 ×
   - CP Caroline's character redrew.hztired: CP卡罗琳的角色 redrew.hztired ×
+  - Romanceable Rasmodius SVE: 浪漫的拉斯莫迪乌斯 - SVE √
+  - Romanceable Rasmodius: 浪漫的拉斯莫迪乌斯 √
+  - Lavril NPC Adventures: 拉薇儿NPC历险记 √
 
 - 新角色:
   - NPC: Aspen - New Custom Dateable NPC: Aspen - 新的自定义可约会 Æ
@@ -138,6 +161,8 @@
   - Never Ending Adventure:  永无止境的冒险 √
   - Shay - New NPC: 谢伊 - 新NPC  √
   - College Boy Mike - Custom NPC: 大学男孩迈克 - 自定义NPC √
+  - Juliet and Jessie the Joja Clerks: 朱丽叶和乔贾店员杰西 √
+  - Ayeisha - The Postal Worker (Custom NPC): 阿耶莎 - 邮政工人（自定义NPC）√
 
 
 - 地点：
@@ -151,6 +176,12 @@
   - Town School Chinese: 镇校中文  √
   - Lumisteria Magic Field: 卢米斯特里亚魔法场 
   - Boarding House and Bus Stop Extension: 寄宿公寓和巴士站扩建 √
+  - Stardew Valley Additional Areas: 星露谷其他区域×
+  - Walk to the Desert from Additional area: 从附加区域步行到沙漠 ×
+  - Lnh's More Greenhouse: Lnh的更多温室 ×
+  - Lnh's More Farming Areas: Lnh的更多农业区 ×
+  - Beach Extension For Crab Pod: 螃蟹荚海滩扩建 ×
+  - Beach Additional Storage Space Area: 海滩额外存储空间区 ×
 
 - 模组工具(前置):  ×
   - [CP] DaisyNiko's Tilesheets: 黛西尼科的瓦片 ×
@@ -209,10 +240,15 @@
   - NPC Map Locations: NPC地图位置 ×
   - HD Portraits: 高清肖像 ×
   - Shop Tile Framework: 购买磁贴框架 ×
+  - CustomKissingMod: 定制接吻模组 ×
+  - Custom Achievements: 自定义成就 ×
 
 - 事件:
   - 约会之夜: Date night √
   - 配偶面对你死亡的反应: SpousesReactToDeath √
+  - CC仪式中的浪漫NPC: CC仪式中的浪漫NPC √
+  - Post Wedding Dates: 婚后日期 Æ
+  - Community Center Reimagined: 重新构想社区中心 √
 
 - 家具: 
   - 桌子设置(家具展示框架): Table Settings ×
@@ -224,6 +260,9 @@
   - Gervig91's Furniture: 格维格91的家具 Æ
   - [CF] Lumisteria Flower And Plant Set: Lumisteria花草套装 Æ
   - Bed Tweaks: 床调整 ×
+  - Kedi's Pets Furniture： 科迪宠物家具 Æ
+  - Kedi's Kids Furniture: 科迪儿童家具 Æ
+  - Recessed Fish Tank: 嵌入式鱼缸 Æ
 
 - 项目：
   - Joja可乐补货: [CP] Joja Cola Restock  ×
@@ -253,6 +292,14 @@
   - Dairy and Egg Product Overhaul: 乳制品和蛋制品大修 Æ
   - Makers of Stardew Vineyard packs of artisanal soda: 星露葡萄园包手工苏打水制造商 Æ
   - Trinkets To Treasures - Artifacts: 宝藏的小饰品 - 文物 Æ
+  - It is Butterscotch Time: 现在是奶油糖果时间 √
+  - Atelier Wildflour - Tea Pack： 工作室野面粉 - 茶包 Æ
+  - Farmer Family Recipes - Specialty Jams and Jellies： 农民家庭食谱 - 特色果酱和果冻 Æ
+  - BAGI - Better Artisan Good Icons For Bonster's Crops: BAGI - 邦斯特作物的更好工匠好图标 ×
+  - Mermaid Island Scepter: 美人鱼岛权杖 √
+  - (PFM) Flower Pack for Artisanal Soda Makers: （PFM）手工苏打水制造商的鲜花包×
+  - Floral Drinks: 花卉饮料 √
+  - Vyranity's Pizza's JA: 维兰尼蒂披萨 √
 
 
 - 视觉效果和图形:
@@ -286,6 +333,10 @@
   - BAGI and Mead Pack for MF and AC: BAGI 和米德包 ×(可去)
   - Seasonal Special Order Board Retexture: 季节性特别订单板纹理 ×
   - Better Artisan Good Icons for The Love of Cooking: 更好的工匠好图标的烹饪之爱 ×
+  - Fancy Artisan Goods Fix for Better Artisan Goods Icons: 花式工匠商品修复以获得更好的手工艺品图标 ×
+  - It's Tumbleweed Time: 风滚草时间 Æ
+  - Cuter Crops and Foraging： 更可爱的作物和觅食 ×
+  - Bonster's Crops and Recipes Retexture: 邦斯特的作物和食谱重新纹理 ×
 
 - 游戏机制:
   - npc普遍喜欢钻石: UniversallyLovedDiamonds Æ
@@ -335,6 +386,11 @@
   - Gift Rejection: 拒收礼品 ×
   - Solstice Winter Star: 冬至冬星扩充 √
   - The Love of Cooking: 对烹饪的热爱
+  - Ferngill Weathers：芬吉尔的气候 ?
+  - Dungeon Merchants: 地牢商人 ×
+  - Custom Crystalarium Mod: 定制水晶模组×
+  - Produce to Sapling - Bonster's Crops for PFM: 生产到树苗 - 邦斯特的PFM作物×
+  - Better Quality Increased Seeds - Bonster's Crops for PFM: 质量更好的增加种子 - 邦斯特用于PFM的作物×
 
 
 
@@ -345,11 +401,46 @@
   - 光环: Halo  Æ
   - Crop Hat: 作物帽(将作物戴在头上)  ×
   - Customize Wedding Attire: 定制婚纱(添加婚礼上穿什么)  Æ
+  - FS - Season of the Witch: FS - 女巫的季节 ×
+  - FS - Rino's Clothes: FS - 里诺的衣服1 ×
+  - Luo Li's top and skirt9 and hat: 罗莉的上衣和裙子9和帽子
+  - JA - Luo Li's top and skirt8 and hat: JA-罗莉的上衣和裙子8和帽子
+  - JA - Luo Li's top and skirt7 and hat: JA - 罗莉的上衣和裙子7和帽子
+  - JA- Luo Li's top and skirt6: JA-罗丽的上衣和裙子6
+  - JA- Luo Li's top and skirt5: JA-罗丽的上衣和裙子5
+  - JA- Luo Li's top and skirt4: JA-罗丽的上衣和裙子4
+  - JA- Luo Li's top and skirt3: JA-罗丽的上衣和裙子3
+  - JA- Luo Li's top and skirt2: JA-罗丽的上衣和裙子2
+  - JA- Luo Li's top and skirt: JA-罗丽的上衣和裙子
+  - 罗莉的服装6
+  - 罗莉的服装2
+  - 罗莉的鞋子
+  - Shawl cheongsam(JA): 猫毛披肩旗袍（JA）
+  - Blue Chicken Hat: 蓝鸡帽 Æ
+  - 乌西罗诺纳图斯头发和裙子 ×
+  - FS_Hatspack: 久也的帽子包×
+  - FS_accessoriespack: 久也的配件包×
+  - FS_hairstylespack: 圭也的发型包 ×
+  - The Teddy Edit: 泰迪编辑 Æ
+  - CP) Starkissed Skin Tones: 星吻肤色 ×
+  - Cozy Scarves: FS - 舒适围巾 ×
+  - Winter Solstice Hats: 冬至帽 ×
+  - Sweat emoji hat: 汗水表情符号帽子 √
+  - JA_Uniforms包: 所有游戏星露谷模组服装JA 科罗克的制服包
+  - CP - Coii's Girls Sets Pack: 科伊的女孩套装包 ×
+  - Coii's All Hats Pack: 科伊的帽子包 ×
+  - Hats Won't Mess Up Hair: 帽子不会弄乱头发 ×
+  - CP - Coii's Basic Shirts Pack:  Coii的基本款衬衫包 ×
+  - Tailor Mouse: PPJA - 裁缝Mouse_A DGA 服装店 √
+  - JA- Luo Li's top and skirt10: JA - 罗莉的上衣和裙子10
 
 - 对话:
   - CANON对话扩展: Stardew Valley Dialogue Expansion  √
   - Immersive Festival Dialogue: 沉浸节日对话  Æ
   - Immersive Saloon: 沉浸式沙龙  √  
+  - More Immersive NPC Birthday - Dialogue Expansion: 更身临其境的NPC生日 - 对话扩展 √
+  - Junimo Dialog 朱尼莫对话 √
+  - Realistic Writer Elliott: 现实主义作家艾略特√
   
 
 
@@ -362,6 +453,10 @@
   - Lucky Clover-JA- 幸运三叶草  Æ
   - Stardew Vineyard: 星露葡萄园 √
   - (JA) Cocoa Plant and Chocolate Cooking: 可可植物和巧克力烹饪（JA）√
+  - Wild Food Forage Expansion: 野生食物 - 牧草扩展模组 Æ
+  - Marshmallows in Stardew: 星露中的棉花糖 √
+  - Host Trees: 宿主树 √
+  - PPJA - Fresh Meat_An 'Alternative' Butcher Mod: PPJA - 新鲜Meat_An“另类”屠夫模组 √
 
 
 - 杂项:
@@ -386,6 +481,10 @@
   - WarpnetDeepwoods: 深木曲速网络集成 Æ
   - Stronger saplings: 更坚固的树苗 ×
   - Cold Pets: 宠物怕冷 ×
+  - Richside Village Achievement： 里奇赛德村成就 Æ
+  - Seasonal rainbow lollipop (lightning rod): 季节性彩虹棒棒糖（避雷针）×
+  - Heart Level Notifications: 心平通知 ?
+
 
 
 - 建筑物:
@@ -394,6 +493,8 @@
   - 卢浮宫 （GMM）:  Louvier Fromagerie (GMM) √
   - 格兰普尔顿制造商的市场信函 （GMM）: The Grampleton Maker's Market Letter (GMM)  Æ
   - Wear More Rings: 允许携带更多戒指  ×
+  - Pigeon Mailbox: 鸽子邮箱×
+  - Custom Obelisks: 定制方尖碑 ×
 
 - 钓鱼:
   - 更多新鱼: More New Fish  √
@@ -427,6 +528,8 @@
   - Seasonal Save Slots: 季节性存档插槽 ×
   - Yagisan - Custom NPCs for NPC Map Locations: 八木山 - NPC 地图位置的自定义 NPC
   - Better Mead Icons - BAGI Addon: 更好的蜂蜜酒图标 - 巴吉插件 ×
+  - Customisable Heart Relationship Icon: 可定制的心形关系图标 Æ
+  - MailboxMenu: 邮箱菜单 ?
 
 
 - 动画： ×

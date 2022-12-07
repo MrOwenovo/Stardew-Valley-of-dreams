@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.4" orientation="orthogonal" renderorder="right-down" width="23" height="21" tilewidth="16" tileheight="16" infinite="0" nextlayerid="11" nextobjectid="3">
+ <properties>
+  <property name="AmbientLight" value="90 90 35"/>
+  <property name="Music" value="Upper_Ambient"/>
+ </properties>
+ <tileset firstgid="1" name="cave" tilewidth="16" tileheight="16" tilecount="288" columns="16">
+  <image source="mine.png" width="256" height="288"/>
+  <tile id="137">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="138">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="139">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="140">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="153">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="154">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="155">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="169">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="170">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="171">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="172">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="289" name="paths" tilewidth="16" tileheight="16" tilecount="36" columns="4">
+  <image source="paths.png" width="64" height="144"/>
+ </tileset>
+ <layer id="1" name="Back" width="23" height="21">
+  <data encoding="base64" compression="zlib">
+   eJzNktENwCAIRJ2fuoEbOEDjCB2rv4ZwcFRNegk/eHlcwFLWNKbardPs+yCbyX2B8vzPVJYXMVcqYgvB6JNXAnZPsldzN6On5zaS7eW13qyel5tl6J447Aq8Qni83GgXX24asbOzKsHWN/f+J/Ja+96xD8TuG+ZoZXPpv8IouzOWi9h/1AvhU6iI
+  </data>
+ </layer>
+ <layer id="3" name="Buildings" width="23" height="21">
+  <data encoding="base64" compression="zlib">
+   eJzt0L9LAmEcx/HnbzPM/HlglCFqU0aR1mJq/lzSLVtc1aW9pb2lOSdHubXB/6G38Hzhi5504YkEPfCCO+5znw88jjHG2ZL54fshIoghjgSSKOB8Qz610p3yyIZxigyyCOEAeZRxq7ZkW56PbHfUvi+zd6r7BEVc4hppHKOENjrI2S3ZlfyZ7b5S2a7qvsA9qnhAA0208IQBbuyW7Eq+ZrvrKvusuivooW/WzwhjtSXbXnnJTlT3o0fnNudVdQ8D7n5X3S8Bd0/N7u7ENf93snpc8/fv5C3g7k/V/bGjXjELuM/Ll80vfO767dU981/8sw/f0pxgAQ==
+  </data>
+ </layer>
+ <layer id="5" name="Front" width="23" height="21">
+  <data encoding="base64" compression="zlib">
+   eJy1VbsOwjAM9NyqsBepMJcUdii0X8/IyGOAnYF/wFZt6WRUluKTTnk556SVc4mIGhrQM3fMvY5L5kL7NXOt/YyZwz5DA3EVs2UemEcaB+asXE4PPFsUCuY2SDsxuyDtNkjXkAdqj/3vqciCdAVloLagCNKtg3QFUp9RtSOIqp0UpCuQuvz3m3WGvr3Jp4l6V+ZNxxsa/qO1pGt37T8g/ldeOye+2+IFHbTy7cU3Xrr+dvGWx7cG9KXe5Tf/ueiep4tHr8G74rydb8ac07c/mbetYE7izSPxzuTm7Xzie0vmB8vEIo4=
+  </data>
+ </layer>
+ <layer id="7" name="Paths" width="23" height="21" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJxjYBjcQJNxoF0AAaS6g1ruHiz+HwWjYBQMDTBUy4yh6m5qAQCmUgD9
+  </data>
+ </layer>
+ <layer id="9" name="AlwaysFront" width="23" height="21">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAM+CNhaoNrDAwON4D4HhDTwPhRMApGwSgYBaNgUAAAlpcEOg==
+  </data>
+ </layer>
+ <objectgroup id="2" name="Back">
+  <object id="1" name="TileData" x="272" y="0" width="16" height="16">
+   <properties>
+    <property name="TouchAction" value="Warp Custom_NewFarm 29 56"/>
+   </properties>
+  </object>
+  <object id="2" name="TileData" x="80" y="304" width="16" height="16">
+   <properties>
+    <property name="TouchAction" value="Warp Custom_Backwoods_N 13 7"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="4" name="Buildings"/>
+ <objectgroup id="6" name="Front"/>
+ <objectgroup id="8" name="Paths"/>
+ <objectgroup id="10" name="AlwaysFront"/>
+</map>

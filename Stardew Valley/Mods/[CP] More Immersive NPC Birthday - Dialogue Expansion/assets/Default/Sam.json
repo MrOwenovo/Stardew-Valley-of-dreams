@@ -1,0 +1,743 @@
+{
+  "Changes": [    
+//Movie Invitation
+
+  		{
+      "Action": "EditData",
+      "Target": "Strings/Characters",	  
+		   "When": {
+		   "Relationship:Sam": "Friendly",
+		   "Season": "summer",
+		   "Day": "17",
+		   },
+      "Entries": {
+		  "MovieInvite_Invited_Sam": "看电影庆祝生日？#$b#当然！你太好了，我刚吃撑了想出门走走呢。我们电影院见！$1",
+     }
+    },
+	  		{
+      "Action": "EditData",
+      "Target": "Strings/Characters",	  
+		   "When": {
+		   "Relationship:Sam": "Dating, Engaged",
+		   "Season": "summer",
+		   "Day": "17",
+		   },
+      "Entries": {
+		  "MovieInvite_Invited_Sam": "你为我的生日搞到了电影院票？#$b#当然去！这太让人兴奋了……我们在电影院等！$1",
+     }
+    },
+  		{
+      "Action": "EditData",
+      "Target": "Strings/Characters",	  
+		   "When": {
+		   "Relationship:Sam": "Married",
+		   "Hearts:Sam": "10, 11, 12, 13, 14",
+		   "Season": "summer",
+		   "Day": "17",
+		   },
+      "Entries": {
+		  "MovieInvite_Invited_Sam": "电影？当然！#$b#我就知道你是最好的……我们电影院见！$1",
+     }
+    },
+//Movie Reaction
+
+    		{
+      "Action": "EditData",
+      "Target": "Data/MoviesReactions",	  
+		   "When": {
+		   "Relationship:Sam": "Friendly",
+		   "Season": "summer",
+		   "Day": "17",
+		   },
+    "Entries":   {
+	"Sam":{
+    "NPCName": "Sam",
+    "Reactions": [
+      {
+        "Tag": "summer_movie_0",
+        "Response": "love",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "嘿，西部电影。生日时看这个真不错。"
+          },
+          "DuringMovie": null,
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "谢谢你请我看免费电影！#$b#这部真不错，不是嘛？这个生日过得太愉快了。"
+          }
+        },
+        "ID": "reaction_5"
+      },
+		      {
+        "Tag": "summer_movie_1",
+        "Response": "love",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "嗯，生日时看电影！太棒了。$1#$b#我们进场前要不要先去玩一下娃娃机？每年温布斯上映时都有些很酷的奖品。"
+          },
+          "DuringMovie": null,
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "嘿……太有趣了，谢谢你邀请我。$1#$b#这部电影真是经典，我想买更多温布斯周边了。"
+          }
+        },
+        "ID": "reaction_1"
+      },
+    ]
+  },
+	}
+			},
+  
+    		{
+      "Action": "EditData",
+      "Target": "Data/MoviesReactions",	  
+		   "When": {
+		   "Relationship:Sam": "Dating, Engaged",
+		   "Season": "summer",
+		   "Day": "17",
+		   },
+    "Entries":   {
+	"Sam":{
+    "NPCName": "Sam",
+    "Reactions": [
+      {
+        "Tag": "summer_movie_0",
+        "Response": "love",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "我得小心别忘了买零食才行。难得的生日约会，我不想让自己饿着肚子。"
+          },
+          "DuringMovie": null,
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "这部电影比我想象中的好！我想玩一下原版游戏了。$1#$b#噢，这好像只有主机版和街机版。$2#$b#怎么办？我们找天去酒馆约会玩一把吗？"
+          }
+        },
+        "ID": "reaction_5"
+      },
+		      {
+        "Tag": "summer_movie_1",
+        "Response": "love",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "生日时能干点特别的事情庆祝真好。$1#$b#我的男朋友是世上最好的！$1^我的女朋友是世上最好的！$1"
+          },
+          "DuringMovie": null,
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "我本来想去娃娃机夹点奖品纪念这次约会的……但是那个人一直占着娃娃机。$2#$b#没关系，我们可以明年再来！对嘛？"
+          }
+        },
+        "ID": "reaction_1"
+      },
+    ]
+  },
+	}
+			},
+  
+    		{
+      "Action": "EditData",
+      "Target": "Data/MoviesReactions",	  
+		   "When": {
+		   "Relationship:Sam": "Married",
+		   "Hearts:Sam": "10, 11, 12, 13, 14",
+		   "Season": "summer",
+		   "Day": "17",
+		   },
+    "Entries":   {
+	"Sam":{
+    "NPCName": "Sam",
+    "Reactions": [
+      {
+        "Tag": "summer_movie_0",
+        "Response": "love",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "嘿，先过来一下，靠近点。#$b#谢谢你帮我安排这么棒的生日约会，甜心。我爱你。$4"
+          },
+          "DuringMovie": null,
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "我小时候一直梦想当个西部牛仔。#$b#噢，你怎么知道这是我几百个梦想里的其中一个？你太了解我了，甜心。$7"
+          }
+        },
+        "ID": "reaction_5"
+      },
+		      {
+        "Tag": "summer_movie_1",
+        "Response": "love",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "嘿，甜心。先来抱一个吗？我爱你。$4#$b#嗯，好，搞定！进场后我要专心看电影……这部电影是我心目中的最高杰作。$1"
+          },
+          "DuringMovie": null,
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "你对温布斯娃娃有兴趣吗？我敢说摆一个在家肯定很酷。#$b#噢……我不是在讨生日礼物啦。我们这样出门就是最好的生日礼物了。$4"
+          }
+        },
+        "ID": "reaction_1"
+      },
+    ]
+  },
+	}
+			},
+			
+//Sam Beach Dialogue
+
+
+  			{
+			"Action": "EditData",
+			"Target": "Characters/schedules/Sam",
+			"When": {
+			"Season": "summer",
+			"Day": "4",
+            "ScheduleEdits": true,
+			},
+ 			"Entries": {
+				"summer": "1000 SamHouse 15 13 0/1040 SamHouse 17 15 2 sam_guitar/1340 Beach 46 24 2 \"Strings\\schedules\\Sam:beachbirthday\"/1900 SamHouse 22 16 1/2100 SamHouse 22 13 1 sam_sleep",
+			}
+		},
+  
+  			{
+			"Action": "EditData",
+			"Target": "Characters/schedules/Sam",
+			"When": {
+			"HasSeenEvent |contains=6497428": "true",
+			"Season": "summer",
+			"Day": "26",
+            "ScheduleEdits": true,
+			},
+ 			"Entries": {
+				"summer": "1000 SamHouse 15 13 0/1040 SamHouse 17 15 2 sam_guitar/1340 Beach 46 24 2 \"Strings\\schedules\\Sam:beachbirthday\"/1900 SamHouse 22 16 1/2100 SamHouse 22 13 1 sam_sleep",
+			}
+		},
+  
+  			{
+			"Action": "EditData",
+			"Target": "Strings/schedules/Sam",
+			"When": {
+			"Season": "summer",
+			"Day": "4",
+			},
+			"Entries": {
+			"beachbirthday": "嗨。我在看着贾思和文森特……小孩子独自在海边玩还挺危险的。#$e#今天是贾思的生日。你有空的话也去祝福她怎么样？$1",
+			}
+		},
+  			{
+			"Action": "EditData",
+			"Target": "Strings/schedules/Sam",
+			"When": {
+			"HasSeenEvent |contains=6497428": "true",
+			"Season": "summer",
+			"Day": "26",
+			},
+			"Entries": {
+			"beachbirthday": "嗨。我在看着贾思和文森特……小孩子独自在海边玩还挺危险的。#$e#今天是那个小鸟男孩……雷欧的生日。你应该认识他吧？他跟文森特可以说是朋友了。",
+			}
+		},
+		
+
+//Sam Birthday-Saloon
+  			{
+			"Action": "EditData",
+			"Target": "Strings/animationDescriptions",
+			"When": {
+			"Season": "summer",
+		   "Relationship:Sam": "Friendly",
+			"Day": "19",
+			},
+			"Entries": {
+			"sam_pool": "嗨，@！我吃得好撑……生日太棒了，尤其是生日后的周五。$1#$e#我感觉今天能打出比平常好的成绩！$1",
+			}
+		},
+  			{
+			"Action": "EditData",
+			"Target": "Strings/animationDescriptions",
+			"When": {
+			"Season": "summer",
+		    "Relationship:Sam": "Dating, Engaged",
+			"Day": "19",
+			},
+			"Entries": {
+			"sam_pool": "嗨，@！我吃得好撑……生日太棒了，尤其是生日后的周五。$1#$e#我感觉今天能打出比平常好的成绩！$1#$e#今年我的目标是打倒塞巴斯蒂安……你来看看我能不能行？$1",
+			}
+		},		
+  			{
+			"Action": "EditData",
+			"Target": "Strings/schedules/Sam",
+			"When": {
+			"Season": "summer",
+			"Day": "19",
+		   "Relationship:Sam": "Married",
+		   "Hearts:Sam": "10, 11, 12, 13, 14",
+			},
+			"Entries": {
+			"marriage_Fri.001": "甜心！我在跟朋友们补庆祝我的生日。#$q 115321008/115321009 SamSaloonBirthday_followup#免费的披萨……你要不要来一点？
+					#$r 115321008 10 SamSaloonBirthday_A#好。
+					#$r 115321009 10 SamSaloonBirthday_B#我不饿，谢谢。",
+					SamSaloonBirthday_A: "来，拿着……这里人多，我就不喂你吃了。[206]$1",
+					SamSaloonBirthday_B: "是嘛？那我自己吃了。#$b#啊，太好吃了！$1",
+ 		SamSaloonBirthday_followup:"你有空的话可以坐那边看我打球？我感觉有你打气，今天肯定能打倒塞巴斯蒂安。",
+			}
+		},
+
+		//Abigail Birthday-Saloon
+  			{
+			"Action": "EditData",
+			"Target": "Strings/animationDescriptions",
+			"When": {
+			"Season": "fall",
+			"Day": "12",
+		    "Relationship:Sam": "Friendly",
+			},
+			"Entries": {
+			"sam_pool": "嗨，@！我们在朋友聚会……庆祝阿比盖尔的生日！#$e#格斯秋季特供的南瓜披萨太好吃了。披萨配什么馅料都很棒。$1#$e#所以……我感觉今天能打得比平常好。#$e#……好像还是不行。$2",
+			}
+		},
+		  			{
+			"Action": "EditData",
+			"Target": "Strings/animationDescriptions",
+			"When": {
+			"Season": "fall",
+			"Day": "12",
+		    "Relationship:Sam": "Dating, Engaged",
+			},
+			"Entries": {
+			"sam_pool": "嗨，@！我们在朋友聚会……庆祝阿比盖尔的生日！#$e#格斯秋季特供的南瓜披萨太好吃了。披萨配什么馅料都很棒。$1#$e#所以……我感觉今天能打得比平常好。#$e#……好像还是不行。$2#$e#可能是因为我太紧张了。我想让你看到我帅气的一面……$10",
+			}
+		},
+  			{
+			"Action": "EditData",
+			"Target": "Strings/schedules/Sam",
+			"When": {
+			"Season": "fall",
+			"Day": "12",
+  		    "Relationship:Sam": "Married",
+		   "Hearts:Sam": "10, 11, 12, 13, 14",
+			},
+			"Entries": {
+			"marriage_Fri.001": "甜心！我们这些老朋友在提前庆祝阿比盖尔的生日。#$q 115321012/115321013 AbigailSaloonBirthday_followup#免费的披萨……你要不要来一点？
+					#$r 115321012 10 AbigailSaloonBirthday_A#好。
+					#$r 115321013 10 AbigailSaloonBirthday_B#我不饿，谢谢。",
+					AbigailSaloonBirthday_A: "来，拿着……这里人多，我就不喂你吃了。[206]",
+					AbigailSaloonBirthday_B: "是嘛？那我自己吃了。#$b#啊，太好吃了！$1",
+ 		AbigailSaloonBirthday_followup:"我感觉我们认识很久了……能有老朋友真好。$1#$e#说起来我跟这棍子也是老朋友了。我怎么觉得自己毫无长进……$2",
+			}
+		},
+//Sebastian Birthday-Saloon
+  			{
+			"Action": "EditData",
+			"Target": "Strings/animationDescriptions",
+			"When": {
+			"Season": "winter",
+		   "Relationship:Sam": "Friendly",
+			"Day": "12",
+			},
+			"Entries": {
+			"sam_pool": "嗨，@！前两天是塞巴斯蒂安的生日，所以我们今天的聚会比平常豪华一点。#$e#我刚刚吃的披萨肯定能帮助我打倒塞巴斯蒂安……$1#$e#……嘿，你看到塞巴斯蒂安那笑容了嘛？我怀疑他今天是为了来取笑我有多菜才特地出门的。$2",
+			}
+		},
+  			{
+			"Action": "EditData",
+			"Target": "Strings/animationDescriptions",
+			"When": {
+			"Season": "winter",
+		    "Relationship:Sam": "Dating, Engaged",
+			"Day": "12",
+			},
+			"Entries": {
+			"sam_pool": "嗨，@！前两天是塞巴斯蒂安的生日，所以我们今天的聚会比平常豪华一点。$1#$e#你要看我玩吗？嗯，好吧……但是今天是塞巴斯蒂安生日，我会比平常放水一点儿。#$b#%传来塞巴斯蒂安的声音：你平常就很菜，好吗？#$b#嘿，塞巴斯蒂安！我在跟我的男朋友说话！不要插嘴行吗？$3^嘿，塞巴斯蒂安！我在跟我的女朋友说话！不要插嘴行吗？$3",
+			}
+		},		
+  			{
+			"Action": "EditData",
+			"Target": "Strings/schedules/Sam",
+			"When": {
+			"Season": "winter",
+			"Day": "12",
+		    "Relationship:Sam": "Married",
+		   "Hearts:Sam": "10, 11, 12, 13, 14",
+			},
+			"Entries": {
+			"marriage_Fri.001": "前两天是塞巴斯蒂安的生日，所以我们今天的聚会比平常豪华一点。#$q 115321010/115321011 SebastianSaloonBirthday_followup#免费的披萨……你要不要来一点？
+					#$r 115321010 10 SebastianSaloonBirthday_A#好。
+					#$r 115321011 10 SebastianSaloonBirthday_B#我不饿，谢谢。",
+					SebastianSaloonBirthday_A: "好，拿着。[206]#$b#然后这是附赠的……张开口，来。#$b#%传来塞巴斯蒂安的声音：要亲热的话回家去好吗？谢谢你们烦人的生日贺礼。#$b#噢，拜托，朋友。你羡慕的话可以发展一下自己的恋爱啊！$3",
+					SebastianSaloonBirthday_B: "是嘛？那我自己吃了。#$b#啊，太好吃了！$1",
+ 		SebastianSaloonBirthday_followup:"我跟朋友们再玩一会就回家。你忙的话可以先回去等我。",
+			}
+		},
+		
+//Saloon-Home Dialogue
+
+		
+	{
+	        "Action": "EditData",
+        "Target": "Characters/Dialogue/MarriageDialogueSam",
+		"When": {
+			"Season": "summer",
+			"Day": "19",
+},
+        "Entries":
+        {		
+		"funReturn_Sam": "能跟老朋友庆祝生日真好，我希望明年也能这样。#$b#然后还有你在身边……我想不出比这更美好的了！$1",		
+     }
+    },
+				
+	{
+	        "Action": "EditData",
+        "Target": "Characters/Dialogue/MarriageDialogueSam",
+		"When": {
+			"Season": "fall",
+			"Day": "12",
+},
+        "Entries":
+        {		
+		"funReturn_Sam": "能给老朋友庆祝生日真好。我希望明年也能这样。",		
+     }
+    },
+	
+			{
+	        "Action": "EditData",
+        "Target": "Characters/Dialogue/MarriageDialogueSam",
+		"When": {
+			"Season": "winter",
+			"Day": "12",
+},
+        "Entries":
+        {		
+		"funReturn_Sam": "能给老朋友庆祝生日真好。我希望明年也能这样。",		
+     }
+    },
+
+//Sam House SChedule Dialogue
+  			{
+			"Action": "EditData",
+			"Target": "Strings/schedules/Sam",
+			"When": {
+			"Season": "spring",
+			"Day": "5",
+		   "Hearts:Sam": "10, 11, 12, 13, 14",
+			},
+			"Entries": {
+			"marriage_Fri.000": "嗨。家里还是老样子……爸爸的状况时好时坏的。#$e#起码他好像喜欢我准备的生日礼物！$1",
+			}
+		},
+  			{
+			"Action": "EditData",
+			"Target": "Strings/schedules/Sam",
+			"When": {
+			"Season": "spring",
+			"Day": "12",
+		   "Hearts:Sam": "10, 11, 12, 13, 14",
+			},
+			"Entries": {
+			"marriage_Fri.000": "妈妈说文森特前两天的生日过得很开心。爸爸好像在这天比较振作了一些。",
+			}
+		},
+  			{
+			"Action": "EditData",
+			"Target": "Strings/schedules/Sam",
+			"When": {
+			"Season": "fall",
+			"Day": "12",
+		   "Hearts:Sam": "10, 11, 12, 13, 14",
+			},
+			"Entries": {
+			"marriage_Fri.000": "妈妈说文森特在她生日那天试着帮她的忙，这样挺好的。#$e#我其实想告诉妈妈，她可以让我们帮忙背负一下她的重担……但我说出口的话就好像在否定她的人生了，毕竟她大半辈子都在养育我们。$7#$b#所以……嗯，我不太说得出口。$7#$e#我是不是说太多啦？我明明只是回来吃免费午餐的！$1",
+			}
+		},
+		
+		
+		
+		
+		
+		
+//Sam->Sam	
+		{
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Sam",	  
+		"When": {
+		"Relationship:Sam": "Friendly",
+		"weather": "Sun",
+		"IsCommunityCenterComplete": "true",
+        "Penny-Sam": false,
+},
+      "Entries": {		
+                 "summer_17": "啊，生日真是好！$1#$y '我从起床前就闻到厨房里的食物香气。妈妈给我准备了很多吃的。_这天打算怎么过？_上班……$2*如果能放假玩一天会更加好……不过博物馆的工作也满有意思的。比乔家超市好多了。_都吃了些什么？_嗯，满满枫糖的甜甜圈、披萨，还有妈妈的砂锅鱼……还有啥来着？太多了我想不起来。反正都挺好吃。'",
+                 "summer_17_2": "啊，生日真是好！$1#$y '我从起床前就闻到厨房里的食物香气。妈妈给我准备了很多吃的。_这天打算怎么过？_上班……$2*如果能放假玩一天会更加好……不过博物馆的工作也满有意思的。比乔家超市好多了。_都吃了些什么？_嗯，满满枫糖的甜甜圈、披萨，还有妈妈的砂锅鱼……还有啥来着？太多了我想不起来。反正都挺好吃。'",
+     }
+    },
+				
+		{
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Sam",	  
+		"When": {
+		"Relationship:Sam": "Friendly",
+		"weather": "Sun",
+		"IsCommunityCenterComplete": "false",
+        "Penny-Sam": false,
+},
+      "Entries": {		
+                 "summer_17": "啊，生日真是好！$1#$y '我从起床前就闻到厨房里的食物香气。妈妈给我准备了很多吃的。_这天打算怎么过？_上班……$2*Joja是没有生日假这种东西吗？我想就是因为这样他们才会被叫作黑心企业的。$2_都吃了些什么？_嗯，满满枫糖的甜甜圈、披萨，还有妈妈的砂锅鱼……还有啥来着？太多了我想不起来。反正都挺好吃。'",
+                 "summer_17_2": "啊，生日真是好！$1#$y '我从起床前就闻到厨房里的食物香气。妈妈给我准备了很多吃的。_这天打算怎么过？_上班……$2*Joja是没有生日假这种东西吗？我想就是因为这样他们才会被叫作黑心企业的。$2_都吃了些什么？_嗯，满满枫糖的甜甜圈、披萨，还有妈妈的砂锅鱼……还有啥来着？太多了我想不起来。反正都挺好吃。'",
+     }
+    },
+
+		{
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Sam",	  
+		"When": {
+		"Relationship:Sam": "Engaged",
+		"weather": "Sun",
+		"IsCommunityCenterComplete": "true",
+},
+      "Entries": {		
+                 "summer_17": "啊，生日真是好！$1#$y '我从起床前就闻到厨房里的食物香气。妈妈给我准备了很多吃的。_这天打算怎么过？_上班……$2*如果能放假玩一天会更加好……不过博物馆的工作也满有意思的。比乔家超市好多了。_都吃了些什么？_嗯，满满枫糖的甜甜圈、披萨，还有妈妈的砂锅鱼……还有啥来着？太多了我想不起来。反正都挺好吃。#$e#而且我男朋友来帮我庆生了！$1^而且我女朋友来帮我庆生了！$1#b#来，抱一个……这才是我的生日礼物。$4'",
+                 "summer_17_2": "啊，生日真是好！$1#$y '我从起床前就闻到厨房里的食物香气。妈妈给我准备了很多吃的。_这天打算怎么过？_上班……$2*如果能放假玩一天会更加好……不过博物馆的工作也满有意思的。比乔家超市好多了。_都吃了些什么？_嗯，满满枫糖的甜甜圈、披萨，还有妈妈的砂锅鱼……还有啥来着？太多了我想不起来。反正都挺好吃。#$e#而且我男朋友来帮我庆生了！$1^而且我女朋友来帮我庆生了！$1#b#来，抱一个……这才是我的生日礼物。$4'",
+     }
+    },
+				
+		{
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Sam",	  
+		"When": {
+		"weather": "Sun",
+		"Relationship:Sam": "Engaged",
+		"IsCommunityCenterComplete": "true",
+},
+      "Entries": {		
+                 "summer_17": "啊，生日真是好！$1#$y '我从起床前就闻到厨房里的食物香气。妈妈给我准备了很多吃的。_这天打算怎么过？_上班……$2*如果能放假玩一天会更加好……不过博物馆的工作也满有意思的。比乔家超市好多了。$2*但是我未婚夫来帮我庆生了！来，抱一个……这才是我的生日礼物。^但是我未婚妻来帮我庆生了！来，抱一个……这才是我的生日礼物。_都吃了些什么？_嗯，满满枫糖的甜甜圈、披萨，还有妈妈的砂锅鱼……还有啥来着？太多了我想不起来。反正都挺好吃。*而且我未婚夫来帮我庆生了！^而且我未婚妻来帮我庆生了！$1*来，抱一个……这才是我的生日礼物。我太期待婚礼了。$4'",
+                 "summer_17_2": "啊，生日真是好！$1#$y '我从起床前就闻到厨房里的食物香气。妈妈给我准备了很多吃的。_这天打算怎么过？_上班……$2*如果能放假玩一天会更加好……不过博物馆的工作也满有意思的。比乔家超市好多了。$2*但是我未婚夫来帮我庆生了！来，抱一个……这才是我的生日礼物。^但是我未婚妻来帮我庆生了！来，抱一个……这才是我的生日礼物。_都吃了些什么？_嗯，满满枫糖的甜甜圈、披萨，还有妈妈的砂锅鱼……还有啥来着？太多了我想不起来。反正都挺好吃。*而且我未婚夫来帮我庆生了！^而且我未婚妻来帮我庆生了！$1*来，抱一个……这才是我的生日礼物。我太期待婚礼了。$4'",
+     }
+    },			
+		{
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Sam",	  
+		"When": {
+		"weather": "Sun",
+		"Relationship:Sam": "Dating",
+		"IsCommunityCenterComplete": "false",
+},
+      "Entries": {		
+                 "summer_17": "啊，生日真是好！$1#$y '我从起床前就闻到厨房里的食物香气。妈妈给我准备了很多吃的。_这天打算怎么过？_上班……$2*Joja是没有生日假这种东西吗？我想就是因为这样他们才会被叫作黑心企业的。$2*但是我男朋友来帮我庆生了！来，抱一个……这才是我的生日礼物。^但是我女朋友来帮我庆生了！来，抱一个……这才是我的生日礼物。_都吃了些什么？_嗯，满满枫糖的甜甜圈、披萨，还有妈妈的砂锅鱼……还有啥来着？太多了我想不起来。反正都挺好吃。*而且我男朋友来帮我庆生了！^而且我女朋友来帮我庆生了！$1*来，抱一个……这才是我的生日礼物。$4'",
+                 "summer_17_2": "啊，生日真是好！$1#$y '我从起床前就闻到厨房里的食物香气。妈妈给我准备了很多吃的。_这天打算怎么过？_上班……$2*Joja是没有生日假这种东西吗？我想就是因为这样他们才会被叫作黑心企业的。$2*但是我男朋友来帮我庆生了！来，抱一个……这才是我的生日礼物。^但是我女朋友来帮我庆生了！来，抱一个……这才是我的生日礼物。_都吃了些什么？_嗯，满满枫糖的甜甜圈、披萨，还有妈妈的砂锅鱼……还有啥来着？太多了我想不起来。反正都挺好吃。*而且我男朋友来帮我庆生了！^而且我女朋友来帮我庆生了！$1*来，抱一个……这才是我的生日礼物。$4'",
+     }
+    },	
+		{
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Sam",	  
+		"When": {
+		"weather": "Sun",
+		"Relationship:Sam": "Engaged",
+		"IsCommunityCenterComplete": "false",
+},
+      "Entries": {		
+                 "summer_17": "啊，生日真是好！$1#$y '我从起床前就闻到厨房里的食物香气。妈妈给我准备了很多吃的。_这天打算怎么过？_上班……$2*Joja是没有生日假这种东西吗？我想就是因为这样他们才会被叫作黑心企业的。$2*但是我未婚夫来帮我庆生了！来，抱一个……这才是我的生日礼物。^但是我未婚妻来帮我庆生了！来，抱一个……这才是我的生日礼物。_都吃了些什么？_嗯，满满枫糖的甜甜圈、披萨，还有妈妈的砂锅鱼……还有啥来着？太多了我想不起来。反正都挺好吃。*而且我未婚夫来帮我庆生了！^而且我未婚妻来帮我庆生了！$1*来，抱一个……这才是我的生日礼物。我太期待婚礼了。$4'",
+                 "summer_17_2": "啊，生日真是好！$1#$y '我从起床前就闻到厨房里的食物香气。妈妈给我准备了很多吃的。_这天打算怎么过？_上班……$2*Joja是没有生日假这种东西吗？我想就是因为这样他们才会被叫作黑心企业的。$2*但是我未婚夫来帮我庆生了！来，抱一个……这才是我的生日礼物。^但是我未婚妻来帮我庆生了！来，抱一个……这才是我的生日礼物。_都吃了些什么？_嗯，满满枫糖的甜甜圈、披萨，还有妈妈的砂锅鱼……还有啥来着？太多了我想不起来。反正都挺好吃。*而且我未婚夫来帮我庆生了！^而且我未婚妻来帮我庆生了！$1*来，抱一个……这才是我的生日礼物。我太期待婚礼了。$4'",
+     }
+    },			
+		{
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Sam",	  
+		"When": {
+			"Season": "summer",
+			"Day": "17",
+			"weather": "Rain, Storm",
+			"Relationship:Sam": "Friendly",
+		    "Relationship:Sebastian": "Friendly, Dating, Engaged",
+},
+      "Entries": {		
+                 "summer_17": "啊，生日真是好！$1#$b#我从起床前就闻到厨房里的食物香气。妈妈给我准备了很多吃的。#$e#而且下雨天就不用去上班了。太棒了。#$c .5#我感觉今天可以躺在家里看整天漫画……这天妈妈不会唠叨的。#我想我可以在家里跟塞巴斯蒂安打一整天联机游戏。然后周五见面时让他请我吃一顿……想想都兴奋。$1",
+                 "summer_17_2": "啊，生日真是好！$1#$b#我从起床前就闻到厨房里的食物香气。妈妈给我准备了很多吃的。#$e#而且下雨天就不用去上班了。太棒了。#$c .5#我感觉今天可以躺在家里看整天漫画……这天妈妈不会唠叨的。#我想我可以在家里跟塞巴斯蒂安打一整天联机游戏。然后周五见面时让他请我吃一顿……想想都兴奋。$1",
+     }
+    },
+				
+		{
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Sam",	  
+		"When": {
+			"Season": "summer",
+			"Day": "17",
+			"weather": "Rain, Storm",
+		   "Relationship:Sebastian": "Married",
+},
+      "Entries": {		
+                 "summer_17": "啊，生日真是好！$1#$b#我从起床前就闻到厨房里的食物香气。妈妈给我准备了很多吃的。#$e#不用上班是不错，但下雨有点无聊啊……我可能会在家弹弹结他。#$e#我敢说塞巴斯蒂安会很高兴就是了。我感觉他跟你在一起后变了不少。你有看出来嘛？$1",
+                 "summer_17_2": "啊，生日真是好！$1#$b#我从起床前就闻到厨房里的食物香气。妈妈给我准备了很多吃的。#$e#不用上班是不错，但下雨有点无聊啊……我可能会在家弹弹结他。#$e#我敢说塞巴斯蒂安会很高兴就是了。我感觉他跟你在一起后变了不少。你有看出来嘛？$1",
+     }
+    },
+		{
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Sam",	  
+		"When": {
+			"Season": "summer",
+			"Day": "17",
+			"weather": "Rain, Storm",
+		    "Relationship:Sam": "Dating, Engaged",
+},
+      "Entries": {		
+                 "summer_17": "啊，生日真是好！$1#$b#我从起床前就闻到厨房里的食物香气。妈妈给我准备了很多吃的。#$e#下雨天不用上班，我的爱人还来给我庆生……我觉得生活太美好了。#$b#来，抱一个。$4",
+                 "summer_17_2": "啊，生日真是好！$1#$b#我从起床前就闻到厨房里的食物香气。妈妈给我准备了很多吃的。#$e#下雨天不用上班，我的爱人还来给我庆生……我觉得生活太美好了。#$b#来，抱一个。$4",
+     }
+    },								
+    {
+        "Action": "EditData",
+        "Target": "Characters/Dialogue/Sam",
+        "Entries":
+        {
+//Sam->Abigail
+                 "fall_12": "你知道吗？明天秋13是阿比盖尔的生日。#$e#不过我们周六基本不会见面，所以都是周五酒馆之夜时，我和塞巴斯蒂安合钱请她吃顿好的。#$e#格斯那里的披萨超好吃！$1",
+                 "fall_12_2": "你知道吗？明天秋13是阿比盖尔的生日。#$e#不过我们周六基本不会见面，所以都是周五酒馆之夜时，我和塞巴斯蒂安合钱请她吃顿好的。#$e#格斯那里的披萨超好吃！$1",
+                 "fall_12_inlaw_Abigail": "明天是阿比盖尔的生……哎，你都和她结婚了，肯定知道啊。#$e#想好要给她什么礼物了吗？换我的话生日就会很想收到吃的。$1",
+                 "fall_12_2_inlaw_Abigail": "明天是阿比盖尔的生……哎，你都和她结婚了，肯定知道啊。#$e#想好要给她什么礼物了吗？换我的话生日就会很想收到吃的。$1",
+
+//Sam->Sebastian
+                 "winter_9": "嘿！你知道吗？$1#$q 115320000/115320001 samsebastianbirthday_followup#明天是塞巴斯蒂安的生日！#$r 115320000 10 samsebastianbirthday_A#你看起来很期待！#$r 115320001 10 samsebastianbirthday_B#会出去玩一趟吗？#$r 115320000 10 samsebastianbirthday_C#那我的生日呢？",
+                 "winter_9_2": "嘿！你知道吗？$1#$q 115320000/115320001 samsebastianbirthday_followup#明天是塞巴斯蒂安的生日！#$r 115320000 10 samsebastianbirthday_A#你看起来很期待！#$r 115320001 10 samsebastianbirthday_B#会出去玩一趟吗？#$r 115320000 10 samsebastianbirthday_C#那我的生日呢？",
+                    samsebastianbirthday_A: "是啊！这么阴郁的季节，节日越多越好不是吗？我最喜欢节日了。$1#$e#我都快不记得这是我们第几个一起过的生日了。大概搬来了多少年就多少个吧？",
+                    samsebastianbirthday_B: "我是很想这么做，但是塞巴斯蒂安他嫌冷不想出门啊。#$b#春天嫌太吵，夏天嫌太热，秋天……他好像还是不肯出门。#$b#那家伙果然只是单纯不爱出门而已吧。$1#$e#不过我们每周五周六都会见面，所以我也没啥好抱怨的啦。跟与自己不同的人交朋友很好玩吧？$1",
+                     samsebastianbirthday_C: "你的……？！$8#$b#说起来，我不知道你的生日啊，@！你为什么不告诉大家？！$8#$e#所以你的生日是什么时候？！你太神秘了吧，@！$8",
+        samsebastianbirthday_followup:"$p 115320000 我都快不记得这是我们第几个一起过的生日了。好期待啊。$1",
+
+ 				"winter_9_inlaw_Sebastian": "嘿，@！明天是塞巴斯蒂安的生日对吧？#$b##$q 115320008/115320009 SamSebastianbirthday_followup#你可以帮我把这个给他吗？应该算是……我送他的生日礼物。
+					#$r 115320008 10 SamSebastianInlawbirthday_A#好的。
+					#$r 115320009 0 SamSebastianInlawbirthday_B#抱歉，我没空。",
+ 				"winter_9_2_inlaw_Sebastian": "嘿，@！明天是塞巴斯蒂安的生日对吧？#$b##$q 115320008/115320009 SamSebastianbirthday_followup#你可以帮我把这个给他吗？应该算是……我送他的生日礼物。
+					#$r 115320008 10 SamSebastianInlawbirthday_A#好的。
+					#$r 115320009 0 SamSebastianInlawbirthday_B#抱歉，我没空。",
+					SamSebastianInlawbirthday_A: "谢了！我还在想是不是要特地到农场一趟呢。[227]#$e#我往年都是给他送游戏卡带的啦……但是我觉得结婚了的话应该会想跟另一半黏糊在一起多于打游戏吧？#$b#哈！帮我转告他生日快乐，还有周五见！$1",
+					SamSebastianInlawbirthday_B: "啊？真的假的……$8#$b#那好吧，我明天早上得去农场一趟了……想想都很冷。$2",
+ 		SamSebastianInlawbirthday_followup:"我明天早上得去农场一趟送他生日礼物……想想都很冷。",
+		
+//Sam->Kent
+                 "spring_3_1": "啊……明天是爸的生日。#$e#但他现在去海外了。我大概只能希望他过得还好……$2",
+                 "spring_3_2": "啊……明天是爸的生日。#$q 115320002/115320003 samKentbirthday_followup#但是爸回来后总是哪里怪怪的……我该怎么准备呢。
+                    #$r 115320002 10 samKentbirthday_A#以前是怎么庆祝的？
+                    #$r 115320003 10 samKentbirthday_B#准备些他爱吃的就好。食物可以解决一切烦恼。
+                    #$r 115320003 -5 samKentbirthday_C#假装忘记然后给他惊喜。",
+                    samKentbirthday_A: "以前？我想想啊……#$b#跟爸一起在沙滩玩、一起回旋踢、一起吃妈做的晚餐……#$b#怎么回想起来都是爸在陪我玩？哎啊……$2#$e#这么一想，我突然发现自己比起爸离开时还是长大了一些的。应该算好事吧。",
+                    samKentbirthday_B: "好主意！我也觉得人只要有吃的就会心情变好。$1#$e#下一个问题。我该进厨房吗？我怕我进去了的话妈会先崩溃。",
+                     samKentbirthday_C: "……你是不是没看过我爸是什么情况？我可没有蠢到开那种玩笑。$2",
+         samKentbirthday_followup:"爸回来后总是哪里怪怪的……我希望他能喜欢我准备的生日礼物。",
+        
+//Sam->Vincent
+                 "spring_9": "明天是文森特的生日。#$q 115320004/115320005 samVincentbirthday_followup#我还真有点期待！
+                    #$r 115320004 10 samVincentbirthday_A#小孩子长得很快。
+                    #$r 115320005 10 samVincentbirthday_B#你真疼爱他！
+                    #$r 115320005 10 samVincentbirthday_C#期待生日大餐吗？",
+                 "spring_9_2": "明天是文森特的生日。#$q 115320004/115320005 samVincentbirthday_followup#我还真有点期待！
+                    #$r 115320004 10 samVincentbirthday_A#小孩子长得很快。
+                    #$r 115320005 10 samVincentbirthday_B#你真疼爱他！
+                    #$r 115320005 10 samVincentbirthday_C#期待生日大餐吗？",
+                    samVincentbirthday_A: "对啊。我感觉昨天才趴在妈妈肚子上听他踢肚子呢，现在都那么大了。#$e#我想再过几年他就跟我一样高了。$1",
+                    samVincentbirthday_B: "还好啦，毕竟他挺可爱的啊。我想要对年幼的孩子好一点。#$e#毕竟爸很长一段时间都不在家，我希望我能稍微填补一下爸爸的空缺。#$b#虽然我也知道不可能完全取代。",
+                     samVincentbirthday_C: "说得对。妈每年在我俩生日时都很用心准备，你真该去我们家厨房看看那一大堆吃的。$1#$e#啊，说得我都有点饿了。我想我会去冰箱找点吃的。",
+         samVincentbirthday_followup:"我还真有点期待。",
+
+//Sam->Jodi
+                 "fall_10": "嗯……明天是妈的生日了。#$q 115320006/115320007 samJodibirthday_followup#我觉得我该做些什么让妈开心一下。
+                    #$r 115320006 10 samJodibirthday_A#你可以表演音乐！
+                    #$r 115320007 10 samJodibirthday_B#你可以帮忙做家务，让她放一天假。
+                    #$r 115320007 -10 samJodibirthday_C#你什么都不做就是最大的帮忙了。",
+                 "fall_10_2": "嗯……明天是妈的生日了。#$q 115320006/115320007 samJodibirthday_followup#我觉得我该做些什么让妈开心一下。
+                    #$r 115320006 10 samJodibirthday_A#你可以表演音乐！
+                    #$r 115320007 10 samJodibirthday_B#你可以帮忙做家务，让她放一天假。
+                    #$r 115320007 -10 samJodibirthday_C#你什么都不做就是最大的帮忙了。",
+                    samJodibirthday_A: "对……$1#$b#什么？！这太让人尴尬了吧？$8#$e#我大概早就过了那种给妈妈写生日贺卡的年龄了……$2#$b#我可能该像个有担当的大男孩，帮忙做下家务。$2#$e#我知道，我承认，我在家几乎不做家务，但我工作时也是做差不多的事啊，应该没什么问题吧。",
+                    samJodibirthday_B: "啊……好实用的提议。#$b#我觉得可以一试，希望不会是帮倒忙。#$b#或者其实我觉得啊，家里少打扫一天也没什么大不了的吧？反正用心打扫完又很快会脏。$1",
+                     samJodibirthday_C: "这样打击别人你开心吗？谢谢你了。$2#$e#我可能该像个有担当的大男孩，帮忙做下家务……**喃喃自语**$2",
+         samJodibirthday_followup:"我可能该像个有担当的大男孩，帮忙做下家务。",
+
+
+       }
+  
+    },
+	{
+	        "Action": "EditData",
+        "Target": "Characters/Dialogue/MarriageDialogueSam",
+		"When": {
+  		 "Hearts:Sam": "10, 11, 12, 13, 14"
+},
+        "Entries":
+        {		
+//Sam->SamMarried
+ 				"summer_17": "甜心！我昨天从睡前就很兴奋……$1#$y '今天实在太让我期待了。_生日快乐！_谢谢！我太高兴了。$2*{{Random: 我本来还想着要吃些什么……但是看到你我就感觉很饱了。*你知道为什么嘛？$4++ 我们今天做什么好？*如果你农活很忙，我会自己找乐子的……但我果然想要跟你一起度过今天。$4|inputSeparator=++}}_我也很期待为我最爱的老公庆生！生日快乐。_嘿，真的嘛？我太开心了，甜心。$4*要我说实话的话，就是跟你结婚后我每晚都很期待第二天的到来。你让我的生活处处都充满着惊喜。$1_期待什么？_嗯？挺会装傻的嘛，甜心！$3*来嘛，我想听你亲口说……$4'",
+ 				"summer_17_2": "甜心！我昨天从睡前就很兴奋……$1#$y '今天实在太让我期待了。_生日快乐！_谢谢！我太高兴了。$2*{{Random: 我本来还想着要吃些什么……但是看到你我就感觉很饱了。*你知道为什么嘛？$4++ 我们今天做什么好？*如果你农活很忙，我会自己找乐子的……但我果然想要跟你一起度过今天。$4|inputSeparator=++}}_我也很期待为我最爱的老公庆生！生日快乐。_嘿，真的嘛？我太开心了，甜心。$4*要我说实话的话，就是跟你结婚后我每晚都很期待第二天的到来。你让我的生活处处都充满着惊喜。$1_期待什么？_嗯？挺会装傻的嘛，甜心！$3*来嘛，我想听你亲口说……$4'",
+
+//Sam->JodiMarried
+ 				"fall_10": "明天是妈妈的生日。#$b#我明天应该不会出门……所以我前几天到镇上时在格斯那为妈妈预定了外烩。她应该会很高兴不用做饭。#$e#{{Random: 以前文森特都会来跟我商量要怎幺庆祝……或许今天他会给我打电话。#$e#那孩子还不太习惯没有我的生活，但我想他随着年纪增长会好起来的。这段过渡期不要对他太严苛，好嘛？++ 妈妈有时候是不是有点神神叨叨的？#$b#你不要太在意，甜心。那应该是妈妈释放压力的一种方式……我觉得她有点过度劳累。$7#$b#好啦，我承认结婚前就是我在给她增加工作！$1#$b#不过……嘿，我不知道，妈妈总是在默默承受。或许我和文森特是她的某种底线……她才会这样把我们拒于門外。$2#$e#但你不要这样，好嘛？记住我是你的丈夫。有什么不如意的，我们会一起承担。$7|inputSeparator=++}}",
+ 				"fall_10_2": "明天是妈妈的生日。#$b#我明天应该不会出门……所以我前几天到镇上时在格斯那为妈妈预定了外烩。她应该会很高兴不用做饭。#$e#{{Random: 以前文森特都会来跟我商量要怎幺庆祝……或许今天他会给我打电话。#$e#那孩子还不太习惯没有我的生活，但我想他随着年纪增长会好起来的。这段过渡期不要对他太严苛，好嘛？++ 妈妈有时候是不是有点神神叨叨的？#$b#你不要太在意，甜心。那应该是妈妈释放压力的一种方式……我觉得她有点过度劳累。$7#$b#好啦，我承认结婚前就是我在给她增加工作！$1#$b#不过……嘿，我不知道，妈妈总是在默默承受。或许我和文森特是她的某种底线……她才会这样把我们拒于門外。$2#$e#但你不要这样，好嘛？记住我是你的丈夫。有什么不如意的，我们会一起承担。$7|inputSeparator=++}}",
+
+//Sam->VincentMarried
+ 				"spring_9": "明天是文森特的生日。#$e#我准备早点起床，在他床边放下礼物。#$y '就像个冬日的老公公一样……听起来是不是很棒？_听起来很棒！_对吧？$1*不过你要是到镇上的话，能不能绕下路去祝福他一下？*他会高兴死的……如果有礼物就更加好！$1_为什么不直接送他？_嗯，大概因为……我们已经分开生活了？*文森特好不容易开始习惯这件事，我不想因为生日又让事情打回原形。我觉得现在的回家频率刚刚好。*噢，当然我会给他打电话祝贺……我真高兴他又顺利长了一岁。$1'",
+ 				"spring_9_2": "明天是文森特的生日。#$e#我准备早点起床，在他床边放下礼物。#$y '就像个冬日的老公公一样……听起来是不是很棒？_听起来很棒！_对吧？$1*不过你要是到镇上的话，能不能绕下路去祝福他一下？*他会高兴死的……如果有礼物就更加好！$1_为什么不直接送他？_嗯，大概因为……我们已经分开生活了？*文森特好不容易开始习惯这件事，我不想因为生日又让事情打回原形。我觉得现在的回家频率刚刚好。*噢，当然我会给他打电话祝贺……我真高兴他又顺利长了一岁。$1'",
+
+//Sam->SebastianMarried
+ 				"winter_9": "{{Random: 明天是塞巴斯蒂安的生日……我在考虑我该做什幺。#$b#往年我都是送他游戏卡带，但是自从婚后我就感觉……他比起打游戏应该有点更重要的事吧？#$b#比如说，约阿比盖尔出去……#$b#哈！我几乎看到他厌烦的脸了。他不喜欢别人管他太多。$1++ 明天是塞巴斯蒂安的生日，我为他预定了上好的礼物，明早会准时送到。#$b#你问我是什么？好吧，我只告诉你，甜心。#$b#厚厚一本《约会指南》！怎么样？$1#$e#你有听塞巴斯蒂安抱怨过他家里人嘛？他家庭结构有点复杂，这让他过得不太开心。#$b#{{Random: 所以我才建议他赶紧建立家庭搬出去啊……就像我们这样。哈哈。$1++ 或许我建议他约阿比盖尔出去是在闹他，但我是真心认为他该换个环境。#$b#我不觉得他们一家在那互相磨耗会有什幺好转……$2|inputSeparator=++}}|inputSeparator=++}}",
+ 				"winter_9_2": "{{Random: 明天是塞巴斯蒂安的生日……我在考虑我该做什幺。#$b#往年我都是送他游戏卡带，但是自从婚后我就感觉……他比起打游戏应该有点更重要的事吧？#$b#比如说，约阿比盖尔出去……#$b#哈！我几乎看到他厌烦的脸了。他不喜欢别人管他太多。$1++ 明天是塞巴斯蒂安的生日，我为他预定了上好的礼物，明早会准时送到。#$b#你问我是什么？好吧，我只告诉你，甜心。#$b#厚厚一本《约会指南》！怎么样？$1#$e#你有听塞巴斯蒂安抱怨过他家里人嘛？他家庭结构有点复杂，这让他过得不太开心。#$b#{{Random: 所以我才建议他赶紧建立家庭搬出去啊……就像我们这样。哈哈。$1++ 或许我建议他约阿比盖尔出去是在闹他，但我是真心认为他该换个环境。#$b#我不觉得他们一家在那互相磨耗会有什幺好转……$2|inputSeparator=++}}|inputSeparator=++}}",
+				
+//Sam->AbigailMarried
+ 				"fall_12": "明天是阿比盖尔的生日，我们会像往年一样在酒馆提前庆祝。#$b#你有空的话也来看看？说不定有免费的披萨。#$e#噢，其实是我和塞巴斯蒂安付的钱啦，不过对你来说是免费的！$1",
+ 				"fall_12_2": "明天是阿比盖尔的生日，我们会像往年一样在酒馆提前庆祝。#$b#你有空的话也来看看？说不定有免费的披萨。#$e#噢，其实是我和塞巴斯蒂安付的钱啦，不过对你来说是免费的！$1",
+     }
+    },
+
+	{
+	        "Action": "EditData",
+        "Target": "Characters/Dialogue/MarriageDialogueSam",
+		"When": {
+  		 "Hearts:Sam": "10, 11, 12, 13, 14",
+         "HavingChild |contains=Sam" :"false"
+},
+        "Entries":
+        {		
+//Sam->KentMarried
+ 				"spring_3": "明天是爸的生日。我买了些爸爱吃的东西，明天我会早点起床拿给他……希望他喜欢。#$e#爸爸回来后家里气氛变得有点压抑。$7#$b#我不是说爸爸回来是件坏事……但他与我记忆中的他有了很大的不同。$2#$e#长大后我学懂的事情就是你父母也只不过是普通人。他们有自己的烦恼……不像你小时候心目中想的那么完美。$7#$e#所以，嗯，我希望我送他的礼物能让他开心一点点。我们现在分开生活了，我能做到的也只有这些，不是嘛？#$b#……哎。说着都有点难受。你能抱抱我吗？$2",
+ 				"spring_3_2": "明天是爸的生日。我买了些爸爱吃的东西，明天我会早点起床拿给他……希望他喜欢。#$e#爸爸回来后家里气氛变得有点压抑。$7#$b#我不是说爸爸回来是件坏事……但他与我记忆中的他有了很大的不同。$2#$e#长大后我学懂的事情就是你父母也只不过是普通人。他们有自己的烦恼……不像你小时候心目中想的那么完美。$7#$e#所以，嗯，我希望我送他的礼物能让他开心一点点。我们现在分开生活了，我能做到的也只有这些，不是嘛？#$b#……哎。说着都有点难受。你能抱抱我吗？$2",
+     }
+    },
+		
+	{
+	        "Action": "EditData",
+        "Target": "Characters/Dialogue/MarriageDialogueSam",
+		"When": {
+  		 "Hearts:Sam": "10, 11, 12, 13, 14",
+		"HavingChild": "Sam"
+},
+        "Entries":
+        {		
+//Sam->KentMarried
+ 				"spring_4": "明天是爸的生日。我买了些爸爱吃的东西，明天我会早点起床拿给他……希望他喜欢。#$e#爸爸回来后家里气氛变得有点压抑。$7#$b#我不是说爸爸回来是件坏事……但他与我记忆中的他有了很大的不同。$2#$e#长大后我学懂的事情就是你父母也只不过是普通人。他们有自己的烦恼……不像你小时候心目中想的那么完美。$7#$e#但是我希望我的孩子能晚点注意到这事实，我想让他们的童年不留遗憾。#$b#更重要的是，我很享受当一个父亲！能跟心爱的人建立家庭感觉太棒了。$1",
+ 				"spring_4_2": "明天是爸的生日。我买了些爸爱吃的东西，明天我会早点起床拿给他……希望他喜欢。#$e#爸爸回来后家里气氛变得有点压抑。$7#$b#我不是说爸爸回来是件坏事……但他与我记忆中的他有了很大的不同。$2#$e#长大后我学懂的事情就是你父母也只不过是普通人。他们有自己的烦恼……不像你小时候心目中想的那么完美。$7#$e#但是我希望我的孩子能晚点注意到这事实，我想让他们的童年不留遗憾。#$b#更重要的是，我很享受当一个父亲！能跟心爱的人建立家庭感觉太棒了。$1",
+     }
+    },
+		
+
+  ]
+}

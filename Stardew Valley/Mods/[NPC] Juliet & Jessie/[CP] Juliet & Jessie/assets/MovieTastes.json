@@ -1,0 +1,232 @@
+{ 
+  "Changes": [
+    
+  {   "LogName": "Movie Theatre Default",
+      "Action": "EditData", 
+      "Target": "Data/MoviesReactions",	 
+          "Entries": {
+  //Juliet Movie Tastes          
+              "Juliet":   {
+                    "NPCName": "Juliet",
+                    "Reactions": [
+                      {   "Tag": "spring_movie_0",
+                          "Response": "like",
+                          "Whitelist": [],
+                          "SpecialResponses": {
+                                "BeforeMovie": {  
+                                      "ResponsePoint": null,
+                                      "Script": "",
+                                      "Text": "这是给孩子们看的电影吧，你认真的？"
+                                          },
+                                "DuringMovie": {
+                                      "ResponsePoint": "sprout_leave",
+                                      "Script": "/message \"朱丽叶似乎频频揉着眼睛。\"",
+                                      "Text": "该死的花粉过敏。我眼睛里进沙子了……$s"
+                                          },
+                                "AfterMovie": {
+                                      "ResponsePoint": null,
+                                      "Script": "",
+                                      "Text": "干嘛？我才没有哭呢。至少不会对着这种矫情的儿童片哭。别开玩笑了！$5"
+                                          }
+                               },
+                       "ID": "reaction_1"
+                         },
+                      {   "Tag": "fall_movie_1",
+                          "Response": "love",
+                          "Whitelist": [],
+                          "SpecialResponses": {
+                                "BeforeMovie": {
+                                      "ResponsePoint": null,
+                                      "Script": "",
+                                      "Text": "哦哦，希望这部电影里有很多血浆！"
+                                      },
+                                "DuringMovie": {
+                                      "ResponsePoint": null,
+                                      "Script": "/emote Juliet 20",
+                                      "Text": "你怕了吗？你看起来好像被吓到了！要我拉着你的手吗？$1"
+                                      },
+                                "AfterMovie": {
+                                      "ResponsePoint": null,
+                                      "Script": "",
+                                      "Text": "简直该死的好看！嘿，你知道我们现在该做什么吗？我们应该马上去黑漆漆的森林里散步。$1#$b#哈，@，看看你的表情！$1"
+                                          }
+                                    },
+                          "ID": "reaction_2"
+                          },
+                      {   "Tag": "fall_movie_0",
+                          "Response": "love",
+                          "Whitelist": [],
+                          "SpecialResponses": {
+                                "BeforeMovie": {
+                                      "ResponsePoint": null,
+                                      "Script": "",
+                                      "Text": "哦哦，我听说这部电影既怪诞又吓人！赶紧让我看看！"
+                                          },
+                                "DuringMovie": {
+                                      "ResponsePoint": null,
+                                      "Script": "/emote Juliet 20",
+                                      "Text": "真不错！"
+                                      },
+                                "AfterMovie": {
+                                      "ResponsePoint": null,
+                                      "Script": "",
+                                      "Text": "噢，我愿意再看一遍这部电影，然后再来一遍！说不定最终我能弄明白到底发生了什么！"
+                                    }
+                                },
+                          "ID": "reaction_3"
+                                    },
+                      {   "Tag": "winter_movie_1",
+                          "Response": "dislike",
+                          "Whitelist": [],
+                          "SpecialResponses": {
+                                "BeforeMovie": {
+                                      "ResponsePoint": null,
+                                      "Script": "",
+                                      "Text": "好吧……要是你坚持看这种矫情的节日片，那就这样吧。反正我可以打个盹。"
+                                      },
+                                "DuringMovie": {
+                                      "ResponsePoint": null,
+                                      "Script": "/message \"朱丽叶好像很无聊。\"",
+                                      "Text": ""
+                                      },
+                                "AfterMovie": {
+                                      "ResponsePoint": null,
+                                      "Script": "",
+                                      "Text": "*哈欠*真是一坨多愁善感、热气腾腾的牛粪啊。下次让我来选电影，行不？$5"
+                                      }
+                                },
+                            "ID": "reaction_4"
+                                  },
+                      {   "Tag": "*",
+                          "Response": "like",
+                          "Whitelist": [],
+                          "SpecialResponses": {
+                                "BeforeMovie": {
+                                      "ResponsePoint": null,
+                                      "Script": "",
+                                      "Text": "{{GenericMovieDialogue}}"
+                                      },
+                                "DuringMovie": null,
+                                "AfterMovie": {
+                                      "ResponsePoint": null,
+                                      "Script": "",
+                                      "Text": "好吧，我看得挺开心的。你呢？"
+                                      }
+                                },
+                          "ID": "reaction_0"
+                          }
+                      ]
+               },
+  //Jessie Movie Tastes
+            "Jessie":   {
+                  "NPCName": "Jessie",
+                        "Reactions": [
+                            {   "Tag": "spring_movie_1",
+                                "Response": "love",
+                                "Whitelist": [],
+                                "SpecialResponses": {
+                                      "BeforeMovie": {  
+                                            "ResponsePoint": null,
+                                            "Script": "",
+                                            "Text": "毋庸置疑，我们的世界非常美丽。我期待这部电影。"
+                                                    },
+                                      "DuringMovie": {
+                                            "ResponsePoint": null,
+                                            "Script": "/message \"(杰西专注地盯着屏幕。)\"",
+                                            "Text": ""
+                                            },
+                                      "AfterMovie": {
+                                            "ResponsePoint": null,
+                                            "Script": "",
+                                            "Text": "噢，我们居住的世界真是太不可思议了。"
+                                            }
+                                      },
+                                "ID": "reaction_1"
+                              },
+                            {   "Tag": "fall_movie_1",
+                                "Response": "hate",
+                                "Whitelist": [],
+                                "SpecialResponses": {
+                                      "BeforeMovie": {
+                                            "ResponsePoint": null,
+                                            "Script": "",
+                                            "Text": "朱丽叶是这部电影的狂热粉丝。我很爱她……但我不太相信她的口味！"
+                                              },
+                                      "DuringMovie": {
+                                            "ResponsePoint": null,
+                                            "Script": "/message \"(杰西紧紧闭上了眼睛。)\"",
+                                            "Text": ""
+                                              },
+                                      "AfterMovie": {
+                                            "ResponsePoint": null,
+                                            "Script": "",
+                                            "Text": "噢……我会做噩梦的……$s"
+                                        }
+                                  },
+                                "ID": "reaction_2"
+                              },
+                            {   "Tag": "fall_movie_0",
+                                "Response": "hate",
+                                "Whitelist": [],
+                                "SpecialResponses": {
+                                      "BeforeMovie": {
+                                            "ResponsePoint": null,
+                                            "Script": "",
+                                            "Text": "朱丽叶很喜欢这部电影……所以我有点担心。$2"
+                                                },
+                                      "DuringMovie": {
+                                            "ResponsePoint": null,
+                                            "Script": "",
+                                            "Text": ""
+                                            },
+                                      "AfterMovie": {
+                                            "ResponsePoint": null,
+                                            "Script": "",
+                                            "Text": "拜托别再带我来看恐怖片了。$2"
+                                          }
+                                      },
+                                "ID": "reaction_3"
+                                          },
+                            {   "Tag": "*",
+                                "Response": "like",
+                                "Whitelist": [],
+                                "SpecialResponses": {
+                                      "BeforeMovie": {
+                                            "ResponsePoint": null,
+                                            "Script": "",
+                                            "Text": "和你在一起看电影很开心。希望这里的鸟儿们也很开心。"
+                                            },
+                                      "DuringMovie": null,
+                                      "AfterMovie": {
+                                            "ResponsePoint": null,
+                                            "Script": "",
+                                            "Text": "谢谢你邀请我，@。我真的很喜欢。$1"
+                                            }
+                                      },
+                              "ID": "reaction_0"
+                              }
+                    ]
+                  }
+            }
+      },
+{   "LogName": "Movie Theatre - Concession Tastes Default",	
+    "Action": "EditData",	
+    "Target": "Data/ConcessionTastes", 
+    "Entries":  { 
+        "Juliet": {  
+            "Name": "Juliet",
+	      "LovedTags": [	"Sour Slimes",	"Personal Pizza",	"Nachos",		"Stardrop Sorbet",    "Black Licorice" ],
+	      "LikedTags": [  "Ice Cream Sandwich",	  "Popcorn",	  "Chocolate Popcorn"	],
+            "DislikedTags": [ "Hummus Snack Pack",  "Kale Smoothie",	  "Salmon Burger"    ] 
+                  },
+        "Jessie": {
+            "Name": "Jessie",
+            "LovedTags": [	"Stardrop Sorbet", "Jasmine Tea", "Panzanella Salad"   ],
+            "LikedTags": [  "Hummus Snack Pack", "Kale Smoothie", "Popcorn", "Chocolate Popcorn"	],
+            "DislikedTags": [ "Personal Pizza",	"Nachos",	"Ice Cream Sandwich",	"Salmon Burger"    ] 
+                  }
+           }
+       }
+
+  ]
+}

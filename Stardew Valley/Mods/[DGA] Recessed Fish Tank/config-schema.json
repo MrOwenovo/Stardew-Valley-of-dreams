@@ -1,0 +1,173 @@
+[
+//ラベル タイプとカラーの選択
+    {
+        "ElementType": "Label", //大項目
+        "Name": "Select Type and Color", //表示する文字
+        "Description": "You can change the appearance (Type) and color of each Fish Tank." //マウスオーバーの説明文
+        //各水槽の外観（タイプ）や色を変更することができます。
+    },
+    {
+        "ElementType": "Image", //画像を表示
+        "ImagePath": "Select_Type_and_Color.png",
+        "ImageScale": 1 //拡大率
+    },
+
+  //左上の部屋
+    {
+        "ElementType": "ConfigOption", //構成オプション
+        "Name": "(T) for Left upper Room",
+        "Description": "Recessed Fish Tank(Left upper Room) appearance settings.",
+        "ValueType": "String", //選択式の項目(ボックス)
+        "ValidValues": "High, Low", //選択表示名
+        "DefaultValue": "High" //設定のデフォルト
+    },
+    {
+        "ElementType": "ConfigOption", //構成オプション
+        "Name": "(C) for Left upper Room",
+        "Description": "Recessed Fish Tank(Left upper Room) color settings.",
+        "ValueType": "String", //選択式の項目(ボックス)
+        "ValidValues": "Default, Black, Blue, DarkGray", //選択表示名
+        "DefaultValue": "Default" //設定のデフォルト
+    },
+  //子供部屋
+    {
+        "ElementType": "ConfigOption", //構成オプション
+        "Name": "(T) for Child Room",
+        "Description": "Recessed Fish Tank(Child Room) appearance settings.",
+        "ValueType": "String", //選択式の項目(ボックス)
+        "ValidValues": "High, Low", //選択表示名
+        "DefaultValue": "High" //設定のデフォルト
+    },
+    {
+        "ElementType": "ConfigOption", //構成オプション
+        "Name": "(C) for Child Room",
+        "Description": "Recessed Fish Tank(Child Room) color settings.",
+        "ValueType": "String", //選択式の項目(ボックス)
+        "ValidValues": "Default, Black, Blue, DarkGray", //選択表示名
+        "DefaultValue": "Default" //設定のデフォルト
+    },
+  //右上の部屋
+    {
+        "ElementType": "ConfigOption", //構成オプション
+        "Name": "(T) for Right upper Room",
+        "Description": "Recessed Fish Tank(Right upper Room) appearance settings.",
+        "ValueType": "String", //選択式の項目(ボックス)
+        "ValidValues": "High, Low", //選択表示名
+        "DefaultValue": "High" //設定のデフォルト
+    },
+    {
+        "ElementType": "ConfigOption", //構成オプション
+        "Name": "(C) for Right upper Room",
+        "Description": "Recessed Fish Tank(Right upper Room) color settings.",
+        "ValueType": "String", //選択式の項目(ボックス)
+        "ValidValues": "Default, Black, Blue, DarkGray", //選択表示名
+        "DefaultValue": "Default" //設定のデフォルト
+    },
+  //真ん中の部屋
+    {
+        "ElementType": "ConfigOption", //構成オプション
+        "Name": "(T) for Center Room",
+        "Description": "Recessed Fish Tank(Center Room) appearance settings.",
+        "ValueType": "String", //選択式の項目(ボックス)
+        "ValidValues": "High, Low", //選択表示名
+        "DefaultValue": "High" //設定のデフォルト
+    },
+    {
+        "ElementType": "ConfigOption", //構成オプション
+        "Name": "(C) for Center Room",
+        "Description": "Recessed Fish Tank(Center Room) color settings.",
+        "ValueType": "String", //選択式の項目(ボックス)
+        "ValidValues": "Default, Black, Blue, DarkGray", //選択表示名
+        "DefaultValue": "Default" //設定のデフォルト
+    },
+  //下の部屋
+    {
+        "ElementType": "ConfigOption", //構成オプション
+        "Name": "(T) for Under Room",
+        "Description": "Recessed Fish Tank(Under Room) appearance settings.",
+        "ValueType": "String", //選択式の項目(ボックス)
+        "ValidValues": "High, Low", //選択表示名
+        "DefaultValue": "High" //設定のデフォルト
+    },
+    {
+        "ElementType": "ConfigOption", //構成オプション
+        "Name": "(C) for Under Room",
+        "Description": "Recessed Fish Tank(Under Room) color settings.",
+        "ValueType": "String", //選択式の項目(ボックス)
+        "ValidValues": "Default, Black, Blue, DarkGray", //選択表示名
+        "DefaultValue": "Default" //設定のデフォルト
+    },
+
+
+//改行用
+    {
+        "ElementType": "Paragraph", //通常テキスト
+        "Name": " " //表示する文字
+    },
+//改行用
+    {
+        "ElementType": "Paragraph", //通常テキスト
+        "Name": " " //表示する文字
+    },
+
+    {
+        "ElementType": "Label", //大項目
+        "Name": "No Background Display", //表示する文字
+        "Description": "The background of the aquarium is not displayed, allowing the wallpaper and wall furniture to come alive.
+This setting is valid only when Type[High] is set." //マウスオーバーの説明文
+    },
+
+    {
+        "ElementType": "Image", //画像を表示
+        "ImagePath": "No_Background_Display.png",
+        "ImageScale": 1 //拡大率
+    },
+
+//左上の部屋
+    {
+        "ElementType": "ConfigOption", //構成オプション
+        "Name": "(B) for Left upper Room", //オプション名
+        "Description": "Recessed Fish Tank(Left upper Room) settings.", //マウスオーバー説明文
+        "ValueType": "Boolean", //ON-OFFのチェックボックス
+        "DefaultValue": false //設定のデフォルト
+    },
+//子供部屋
+    {
+        "ElementType": "ConfigOption", //構成オプション
+        "Name": "(B) for Child Room", //オプション名
+        "Description": "Recessed Fish Tank(Child Room) settings.", //マウスオーバー説明文
+        "ValueType": "Boolean", //ON-OFFのチェックボックス
+        "DefaultValue": false //設定のデフォルト
+    },
+//右上の部屋
+    {
+        "ElementType": "ConfigOption", //構成オプション
+        "Name": "(B) for Right upper Room", //オプション名
+        "Description": "Recessed Fish Tank(Right upper Room) settings.", //マウスオーバー説明文
+        "ValueType": "Boolean", //ON-OFFのチェックボックス
+        "DefaultValue": false //設定のデフォルト
+    },
+//真ん中の部屋
+    {
+        "ElementType": "ConfigOption", //構成オプション
+        "Name": "(B) for Center Room", //オプション名
+        "Description": "Recessed Fish Tank(Center Room) settings.", //マウスオーバー説明文
+        "ValueType": "Boolean", //ON-OFFのチェックボックス
+        "DefaultValue": false //設定のデフォルト
+    },
+//下の部屋
+    {
+        "ElementType": "ConfigOption", //構成オプション
+        "Name": "(B) for Under Room", //オプション名
+        "Description": "Recessed Fish Tank(Under Room) settings.", //マウスオーバー説明文
+        "ValueType": "Boolean", //ON-OFFのチェックボックス
+        "DefaultValue": false //設定のデフォルト
+    },
+
+//改行用
+    {
+        "ElementType": "Paragraph", //通常テキスト
+        "Name": " " //表示する文字
+    },
+
+]

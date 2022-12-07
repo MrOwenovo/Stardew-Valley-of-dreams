@@ -1,0 +1,226 @@
+{
+  "Changes": [
+    {
+      "LogName": "NPC Manifestation",
+      "Action": "EditData",
+      "Target": "Data/NPCDispositions",
+      "Entries": {
+        "Jessie": "adult/polite/shy/positive/female/not-datable/null/Town/summer 1//Custom_LK_LodgingHouse 21 4/杰西"
+      }
+    },
+    {
+      "LogName": "NPC Gift Tastes",
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "Entries": {
+        "Jessie": "谢谢你！这正是我想要的东西！/222 230 254 281 282/谢谢你，我会好好珍惜的。/-81 -75 -79 350/抱歉，亲爱的，但我不太喜欢这个。/-6 206 424 426/不好意思，我觉得它……让人很不愉快。/-4 446/谢谢。它一定会派上用场的。//"
+       }
+    },
+    //Loves Rhubarb Pie, Red plate, Melon, Cranberries, Chanterelle
+    //Dislikes/Hates animal products (eggs, milk, fish), pizza 
+    {
+      "LogName": "NPC Sprite",
+      "Action": "Load",
+      "Target": "Characters/Jessie",
+      "FromFile": "assets/Characters/Jessie/Sprites.png"
+    },
+    {
+      "LogName": "NPC Portrait",
+      "Action": "Load",
+      "Target": "Portraits/Jessie",
+      "FromFile": "assets/Portraits/Jessie/Portraits.png"
+    },
+    {
+      "LogName": "Schedule",
+      "Action": "Load",
+      "Target": "Characters/schedules/Jessie",
+      "FromFile": "assets/schedules/JessieSchedule.json",
+      "When": {
+        "HasSeenEvent |contains=191393": false,
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+      }
+    },
+    {
+      "LogName": "Schedule",
+      "Action": "Load",
+      "Target": "Characters/schedules/Jessie",
+      "FromFile": "assets/schedules/JessieScheduleJojaClosed.json",
+      "When": {
+        "HasSeenEvent |contains=191393": true,
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+      }
+    },
+    {
+      "LogName": "Dialogue",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/Jessie",
+      "FromFile": "assets/dialogue/JessieDialogue.json"
+    },
+    {
+      "LogName": "Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Jessie",
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+      },
+      "Entries": {
+        "Sat": "天气这么好，呆在室内工作真是太可惜了。#$b#希望你能适应乡间的生活。",
+        "Sat4": "不得不说，@，在小镇上有个朋友的感觉很好。$4#$b#当你经常和草药打交道的时候……好吧，有些人就会用怀疑的眼光看着你。$2",
+        "Sun": "你周末花时间好好放松了吗，@？#$b#有时让自己慢下来也有好处。",
+        "Sun6": "你知道，即使在最艰难的时候，我的想象力也总能自由翱翔。"
+      }
+    },
+    {
+      "LogName": "Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Jessie",
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+        "Spouse": "Wizard"
+      },
+      "Entries": {
+        "spring_23_2": "希望你能在明天的节日上玩得开心。我吗？噢，我不会参加的。#$b#莱纳斯不需要我的陪伴了，而且我还有其他事要做。"
+      }
+    },
+    {
+      "LogName": "Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Jessie",
+      "When": {
+        "HasSeenEvent": "191393"
+      },
+      "Entries": {
+        "Sat": "天气这么好，呆在室内工作真是太可惜了。#$b#希望你能适应乡间的生活。",
+        "Sat4": "不得不说，@，在小镇上有个朋友的感觉很好。$4#$b#当你经常和草药打交道的时候……好吧，有些人就会用怀疑的眼光看着你。$2",
+        "Sun": "你周末花时间好好放松了吗，@？#$b#有时让自己慢下来也有好处。",
+        "Sun6": "你知道，即使在最艰难的时候，我的想象力也总能自由翱翔。"
+      }
+    },
+    {
+      "LogName": "Animations",
+      "Action": "EditData",
+      "Target": "Data/animationDescriptions",
+      "Entries": {
+        "Jessie_work": "0 12 24 24 24/20 20 20 20 20 20 21 21 21 20 20 20 22 22 20 20 22 22 20 20 21 21 21 21 20 20 20 23 23 23 20 20 20/24 24 24 12 0",
+        "Jessie_exercise": "0 18/16 16 16 16 16 17 17 17 17 16 16 16 16 16 16/18 0",
+        "Jessie_waterL": "25/25/25",
+        "Jessie_waterR": "26/26/26",
+        "Jessie_waterF": "27/27/27"
+      }
+    },
+    {
+      "LogName": "Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Jessie",
+      "Entries": {
+        "{{season}}_Wed6": "$1 Pregnant_Gift#你好，@。恭喜你有了即将到来的新生命。这个小玩意儿可能会有帮助。[351]$k#$e#希望一切顺利，@。"
+      },
+      "When": {
+        "Pregnant": "@{{playerName}}"
+      }
+    },
+    //Temp Actors and Maps 
+    {
+      "LogName": "NPC Sprite",
+      "Action": "Load",
+      "Target": "Characters/SlimeyBoi",
+      "FromFile": "assets/Img/SlimeyBoi.png"
+    },
+    {
+      "LogName": "NPC Sprite",
+      "Action": "Load",
+      "Target": "Characters/LexiMon",
+      "FromFile": "assets/Img/LexiMon.png"
+    },
+    {
+      "LogName": "NPC Sprite",
+      "Action": "Load",
+      "Target": "Maps/SunsetBeach",
+      "FromFile": "assets/Maps/SunsetBeach.tbin"
+    },
+    {
+      "LogName": "NPC Sprite",
+      "Action": "Load",
+      "Target": "Maps/SunsetBeach2",
+      "FromFile": "assets/Maps/SunsetBeach2.tbin"
+    },
+    //Jessie is gathering fiddlehead ferns in the Secret Woods
+    {
+      "LogName": "4 Heart Event",
+      "Action": "EditData",
+      "Target": "Data/Events/Woods",
+      "Entries": {
+        "6398002/f Jessie 1000/d sat sun/t 900 1400/w sunny": "woodsTheme/18 17/Jessie 18 18 2 farmer 29 13 3/addTemporaryActor SlimeyBoi 16 16 -100 -100 2 false/skippable/pause 500/move farmer -8 0 2/pause 1000/emote Jessie 56/pause 500/move farmer 0 4 3/faceDirection Jessie 1/pause 500/emote Jessie 32/pause 1500/speak Jessie \"噢，你好，@。我不知道其他人也会来这里。\"/pause 500/faceDirection Jessie 3/pause 500/faceDirection Jessie 1/speak Jessie \"这里真神奇啊，对吧？\"/pause 1000/quickQuestion #是的，的确如此。#你在这里做什么？#你不害怕史莱姆吗？#我只是来砍硬木的。(break)speak Jessie \"很高兴你也有这种感觉，@。\"(break)speak Jessie \"噢，我来收集{{GatherText}}\"(break)speak Jessie \"没有很怕。你不是来捕猎它们的吧？\"(break)speak Jessie \"啊，是的，硬木是非常有用的资源。这些古老树桩的生长速度快得令人惊讶。\"/stopMusic/pause 500/playSound slime/pause 500/emote farmer 16/warp SlimeyBoi 19 14/faceDirection farmer 0 true/faceDirection Jessie 0 true/playMusic XOR/animate SlimeyBoi false true 100 0 1 2 3 19 18 17 0 0 0/speed farmer 5/move farmer -2 0 0/move farmer 0 -1 0/textAboveHead Jessie \"别伤害她！\"/pause 500/emote farmer 8/move Jessie 0 -3 0 true/pause 500/emote farmer 28/pause 1500/stopAnimation SlimeyBoi 0/shake SlimeyBoi 480/pause 500/emote Jessie 56/pause 1500/playSound slime/move SlimeyBoi 0 -1 2/speak Jessie \"我们不是来伤害你的。$2\"/pause 500/shake SlimeyBoi 480/jump SlimeyBoi 5/speak Jessie \"和平相处。\"/jump SlimeyBoi 5/pause 500/move SlimeyBoi 0 -1 2/pause 1000/emote Jessie 56/move SlimeyBoi 0 -1 2/playSound slime/pause 500/move SlimeyBoi 0 -1 2/warp SlimeyBoi -100 -100/stopMusic/pause 1000/playMusic woodsTheme/move farmer 0 -1 3/faceDirection Jessie 1/speak Jessie \"$q 639870 null#……#$r 639871 25 JessieSlime_How#你是怎么做到的？能教教我吗？#$r 639872 -50 JessieSlime_Kill#那是只怪物！你应该让我杀了它的！\"/pause 500/speak Jessie \"想想这个问题，@：是什么造就了怪物？#$b#史莱姆们不是天然产生的，没错；它们身上有着虚空的印记，没错。但它们曾经也是友好和平的生灵。#$b#或许某一天，我们能帮助它们找到回去的路。不过在那之前……$2\"/pause 500/faceDirection Jessie 0/pause 500/speak Jessie \"我不会劝告你不再杀戮。毕竟它们也很危险，我能理解动手的必要性。$2#$b#不过拜托，不要把猎杀它们当成娱乐活动。$2\"/pause 500/faceDirection Jessie 1/pause 500/speak Jessie \"即使是这些被称作“怪物”的生灵，也需要我们的同情和尊重。$2\"/pause 500/emote farmer 60/pause 1000/end warpOut"
+      }
+    },
+	{
+      "LogName": "4 Heart Event - SVE version",
+      "Action": "EditData",
+      "Target": "Data/Events/Woods",
+      "Entries": {
+        "6398002/f Jessie 1000/d sat sun/t 900 1400/w sunny": "woodsTheme/49 56/Jessie 54 55 2 farmer 58 48 2/addTemporaryActor SlimeyBoi 16 16 -100 -100 2 false/skippable/pause 500/move farmer -4 0 2/pause 1000/emote Jessie 56/pause 500/move farmer 0 5 2/faceDirection Jessie 0/pause 500/emote Jessie 32/pause 1500/speak Jessie \"噢，你好，@。我不知道其他人也会来这里。\"/pause 500/faceDirection Jessie 3/pause 500/faceDirection Jessie 1/speak Jessie \"这里真神奇啊，对吧？\"/pause 1000/quickQuestion #是的，的确如此。#你在这里做什么？#你不害怕史莱姆吗？#我只是来砍硬木的。(break)speak Jessie \"很高兴你也有这种感觉，@。\"(break)speak Jessie \"噢，我来收集{{GatherText}}\"(break)speak Jessie \"没有很怕。你不是来捕猎它们的吧？\"(break)speak Jessie \"啊，是的，硬木是非常有用的资源。这些古老树桩的生长速度快得令人惊讶。\"/stopMusic/pause 500/playSound slime/pause 500/emote farmer 16/warp SlimeyBoi 50 54/faceDirection farmer 3 true/faceDirection Jessie 3 true/playMusic XOR/animate SlimeyBoi false true 100 0 1 2 3 19 18 17 0 0 0/speed farmer 5/move farmer -2 0 0/move farmer 0 1 3/textAboveHead Jessie \"别伤害她！\"/pause 500/emote farmer 8/move Jessie -3 0 3 true/pause 500/emote farmer 28/pause 1500/stopAnimation SlimeyBoi 0/shake SlimeyBoi 480/pause 500/emote Jessie 56/pause 1500/playSound slime/move SlimeyBoi 0 1 2/speak Jessie \"我们不是来伤害你的。$2\"/pause 500/shake SlimeyBoi 480/jump SlimeyBoi 5/speak Jessie \"和平相处。\"/jump SlimeyBoi 5/pause 500/move SlimeyBoi -2 0 2/pause 1000/emote Jessie 56/warp SlimeyBoi -100 -100/stopMusic/pause 1000/playMusic woodsTheme/move farmer -1 0 2/faceDirection Jessie 0/speak Jessie \"$q 639870 null#……#$r 639871 25 JessieSlime_How#你是怎么做到的？能教教我吗？#$r 639872 -50 JessieSlime_Kill#那是只怪物！你应该让我杀了它的！\"/pause 500/speak Jessie \"想想这个问题，@：是什么造就了怪物？#$b#史莱姆们不是天然产生的，没错；它们身上有着虚空的印记，没错。但它们曾经也是友好和平的生灵。#$b#或许某一天，我们能帮助它们找到回去的路。不过在那之前……$2\"/pause 500/faceDirection Jessie 0/pause 500/speak Jessie \"我不会劝告你不再杀戮。毕竟它们也很危险，我能理解动手的必要性。$2#$b#不过拜托，不要把猎杀它们当成娱乐活动。$2\"/pause 500/faceDirection Jessie 3/pause 500/faceDirection Jessie 0/speak Jessie \"即使是这些被称作“怪物”的生灵，也需要我们的同情和尊重。$2\"/pause 500/emote farmer 60/pause 1000/end warpOut"
+      },
+      "When": {
+				"HasMod": "FlashShifter.StardewValleyExpandedCP"
+			}
+    },
+    {
+      "LogName": "2 Heart Event",
+      "Action": "EditData",
+      "Target": "Data/Events/Custom_LK_ClearingHouse",
+      "Entries": {
+        "6398001/f Jessie 500/p Jessie/z winter": "spring2/22 20/farmer 24 22 0 Jessie 17 18 3/skippable/pause 500/emote Jessie 56/message \"有什么人正在哼歌。\"/pause 1000/move farmer 0 -3 3/pause 500/faceDirection Jessie 1/emote Jessie 32/move Jessie 0 1 1/pause 500/speak Jessie \"你好，@！今天天气真好啊，对吧！\"/move farmer -4 0 3 true/move Jessie 1 0 1 true/pause 500/emote farmer 32/pause 500/speak Jessie \"听说你给附近的人们留下了深刻印象。\"/pause 500/emote farmer 60/pause 500/speak Jessie \"我给你准备了一份小礼物。\"/emote farmer 8/move Jessie 1 0 1/pause 500/speak Jessie \"把手给我，@。 [{{JessGift}}]\"/playSound give_gift/speak Jessie \"这儿，一点小礼物，能够用来增长友谊。$1\"/pause 500/emote farmer 20/pause 1000/end"
+      },
+      "When": {
+        "LoadESMap": "false"
+      }
+    },
+    {
+      "LogName": "6 Heart Event",
+      "Action": "EditData",
+      "Target": "Data/Events/Mountain",
+      "Entries": {
+        "6398006/f Jessie 1500/f Linus 1500/e 191393/w sunny/t 1400 1800": "{{season}}_day_ambient/29 12/Jessie 28 9 1 Linus 30 9 3 farmer 18 9 1/skippable/pause 500/speak Jessie \"……Joja离开以后，大地的呼吸轻松了许多。\"/pause 500/speak Linus \"大地？的确如此。我的呼吸也轻松了不少。#$b#你能在那里生存这么久真是个奇迹，亲爱的。\"/shake Linus 240/pause 500/speak Jessie \"美无处不在，即使在那些消过毒的墙壁之间。#$b#美存在于每一句友好的问候，每个玩笑，或者彼此分享的笑容之中。$3\"/pause 500/speak Linus \"噢，你总能看到人们最好的一面，杰西女士。#$b#这是我钦佩你的很多地方之一。$1\"/pause 500/emote Linus 20/emote Jessie 60/move farmer 8 0 1/pause 500/speak Jessie \"说起钦佩……\"/faceDirection Jessie 3/speak Jessie \"晚上好，@。你把小镇从Joja的枷锁中解救了出来，现在是时候让她——还有我们——慢慢恢复生机了。\"/pause 500/quickQuestion #不好意思，我打扰你们了吗？#就算你丢了自己的工作吗？#小镇该怎么恢复生机？(break)speak Jessie \"噢，不，当然不会，@。我永远欢迎你！\"(break)speak Jessie \"希望你已经发现了这件事：除了工作以外，生活还有更丰富的一面，@。#$b#而且也有更好的方式实现人生价值。$1#$b#比如家庭，还有大地本身……\"\\faceDirection Jessie 1\\emote Jessie 32\\speak Jessie \"……还有友谊。这些能让人满足得多。$4\"(break)speak Jessie \"社区能治愈我们的小镇。它能让把我们聚集在一起的联系更加紧密。\"/pause 500/speak Linus \"Joja公司建立在贪婪之上，@。人们的欲望永无止境。$2#$b#它制造出了像莫里斯那样的人。$3\"/pause 500/speak Jessie \"不过像我们这样的人也诞生了，对吧？$1\"/emote Jessie 56/move Jessie 0 -1 2/move Jessie 1 0 2/speak Jessie \"来吧，和我们一起聊会天，@。$1\"/pause 500/move farmer 2 0 1/pause 500/speak Jessie \"为了食物、陪伴和已被讲述的故事。它们就是社区的基石。\"/pause 1500/end"
+      }
+    },
+    {
+      "LogName": "8 Heart Event",
+      "Action": "EditData",
+      "Target": "Data/Events/Custom_LK_LodgingHouse",
+      "Entries": {
+         "6398003/f Jessie 2000/t 0900 1400/d sat sun": "none/17 12/farmer 13 18 0 Jessie -100 -100 0/skippable/move farmer 0 -4 1/move farmer 4 0 1/playSound woodyStep/emote farmer 8/move farmer 4 0 0/move farmer 0 -1 0/playSound doorOpen/pause 500/fade/viewport -100 -100/warp farmer -1000 -1000/changeLocation Custom_LK_LodgingHouseBasement/viewport -100 -100/warp Jessie 3 6/playMusic desolate/viewport 10 6/textAboveHead Jessie \"噢，我的莱西\"/pause 1250/textAboveHead Jessie \"你在哪儿？\"/pause 1000/playSound stairsdown/pause 500/warp farmer 5 10/pause 1000/speak Jessie \"你好，@。欢迎来到我的地下室——这里有我最宝贵的秘密。\"/move farmer 0 -2 0/faceDirection farmer 1/pause 500/faceDirection farmer 0/pause 500/move farmer 0 -2 3/faceDirection Jessie 1/pause 500/emote farmer 8/pause 500/speak Jessie \"我知道你在想什么。我有过孩子吗？答案是否定的。\"/pause 500/faceDirection Jessie 3/pause 500/emote Jessie 40/pause 500/faceDirection Jessie 1/textAboveHead Jessie \"但也可以是“有”。\"/pause 2000/emote farmer 8/pause 500/speak Jessie \"曾经有一场可怕的风暴，狂风像负伤的野兽一样发出痛苦的嚎叫，暴雨如同愤怒的洪流。$2#$b#第二天早上，一切都陷入平息，好像暴风雨从未有过那样。#$b#但冥冥中有什么吸引我来到了海滩……\"/faceDirection Jessie 2/pause 1000/stopMusic/fade/viewport -100 -100/changeToTemporaryMap SunsetBeach/viewport -100 -100/warp farmer -1000 -1000/warp Jessie 27 15/playMusic ocean/viewport 15 10/move Jessie -12 0 3/pause 500/playSound junimoMeep1/pause 500/faceDirection Jessie 0/jump Jessie 5/emote Jessie 16/speed Jessie 5/move Jessie -1 0 0/move Jessie 0 -1 3/pause 500/playSound junimoMeep1/pause 500/emote Jessie 56/pause 1000/fade/viewport -100 -100/changeLocation Custom_LK_LodgingHouseBasement/warp farmer 5 7/faceDirection farmer 3/warp Jessie 3 7/faceDirection Jessie 1/stopMusic/playMusic desolate/viewport 10 6/pause 500/speak Jessie \"当然，我把她带回了家，那个浑身缠绕着海草的小小婴儿。$3\"/emote farmer 20/pause 500/speak Jessie \"我不敢告诉其他镇民这件事，他们不会理解的。=$2#$b#现在的很多镇民都是好人，不过那时候……大家都不相信超自然的事情。$2\"/move Jessie 0 1 3/pause 500/speak Jessie \"我尽我所能地拾荒觅食，把莱西当作自己的孩子养大。\"/move Jessie 0 -1 1/pause 500/speak Jessie \"我一直很喜欢孩子，@。要是一切不同的话——要是我没有成为现在的我的话——说不定我也会有自己的孩子。$2\"/pause 500/emote farmer 40/speak Jessie \"尽管如此，我也不会后悔自己选择的道路。\"/pause 500/speak Jessie \"我尽自己最大的努力养育了莱西。#$b#我教育莱西她不必成为人，但她要学会善良和仁慈。$3#$b#莱西长大了，她茁壮成长……但大海依旧萦绕在她的心头。#$b#这里没有她生存的余地……只有两个房间，我的花园，还有消过毒的水。$2\"/stopMusic/fade/viewport -1000 -1000/speak Jessie \"莱西长大以后离开了我。$2\"/changeToTemporaryMap SunsetBeach2/viewport -1000 -1000/addTemporaryActor LexiMon 16 32 15 14 3 true/warp Jessie 14 14/warp farmer -100 -100/viewport 15 10/pause 500/emote Jessie 56/emote LexiMon 20/faceDirection LexiMon 0/faceDirection Jessie 0/move LexiMon 0 -3 2/pause 500/faceDirection LexiMon 0/pause 500/warp LexiMon -100 -100/playSound dropItemInWater/pause 500/emote Jessie 20/pause 1500/fade/viewport -1000 -1000/changeLocation Custom_LK_LodgingHouseBasement/viewport -1000 -1000/warp Jessie 3 7/faceDirection Jessie 1/warp farmer 5 7/viewport 10 6/pause 500/speak Jessie \"希望莱西找到了她的同类。\"/pause 500/faceDirection Jessie 3/pause 500/emote farmer 60/faceDirection Jessie 1/speak Jessie \"莱西不是我亲生的孩子，但在我心里已经是了，@。$2#$b#没有一天我不想念她。其他人或许会把莱西当成动物，甚至是怪物。$5#$b#但莱西不是怪物。她只是一个需要爱的孩子。$4\"/pause 500/faceDirection Jessie 0/pause 1000/end"
+      }
+    },
+    {
+      "LogName": "Jessie and Vincent",
+      "Action": "EditData",
+      "Target": "Data/Events/Beach",
+      "Entries": {
+        "6398004/f Kent 50/p Vincent/e 191393/t 1700 1900": "continue/-100 -100/Vincent 43 24 2 farmer 27 22 2 Willy 27 25 0 Jessie 38 12 2/addMailReceived Jessie_Vincent/skippable/animate Vincent false true 500 18 19/specificTemporarySprite beachStuff/viewport 40 25 true/move Jessie 0 12 1/speak Jessie \"噢，你好，文森特。我能和你一起吗？\"/pause 500/stopAnimation Vincent 18/emote Vincent 40/pause 3000/textAboveHead Vincent \"好的。\"/pause 500/move Jessie 3 0 2/showFrame Jessie 32/pause 500/speak Jessie \"谢谢你。有时候我会来海滩收集贝壳。或者仅仅是来这里沉思。#$b#这里是个思考的好地方，你觉得呢？\"/pause 500/faceDirection Vincent 3/emote Vincent 40/pause 2000/speak Vincent \"妈妈说你是个女巫。\"/move Willy 0 5 2/warp Willy -100 -100/faceDirection farmer 1/pause 500/emote Jessie 60/pause 2000/speak Vincent \"但我觉得不是这样。潘妮小姐给我们读过关于女巫的书。女巫都很丑，而且没有头发，有些还有着绿色的皮肤和颜色滑稽的眼睛。#$b#但你并不丑陋，而且也不坏。你是个好人！所以说不定你能帮助我。\"/pause 500/emote Jessie 8/textAboveHead Jessie \"帮助你？\"/pause 500/speak Jessie \"我当然愿意帮助你。$2\"/pause 500/speak Vincent \"爸爸回来了，但他和我印象里的不一样了。$3#$b#以前我们会一起做有意思的事情，像是玩耍、奔跑和游泳，还有找小虫子之类的。$2#$b#现在他看起来总是很伤心。昨天我跳出来想给他惊喜的时候，他冲我大吼大叫。$2\"/pause 500/showFrame Vincent 18/speak Vincent \"真的很吓人！$2\"/pause 500/showFrame Vincent 19/move Jessie 1 0 2/showFrame Jessie 32/pause 500/speak Vincent \"所以我在想，如果你真的是女巫的话，你能让我的爸爸回来吗？$2\"/showFrame Vincent 12/pause 500/speak Jessie \"噢，文森特。其实并不需要什么魔药，也能让你的爸爸回来。\"/pause 500/textAboveHead Vincent \"噢……\"/pause 500/speak Jessie \"有一种特别的治疗方法，不过需要一点时间才能生效。\"/pause 500/speak Vincent \"真的吗？是什么咒语吗？$3\"/pause 500/speak Jessie \"不。我说的是爱。\"/jump Vincent 4/speak Vincent \"爱？啊呀。你说的是亲来亲去的那种？呃！$3\"/pause 500/speak Jessie \"并不需要亲吻，我保证！$1#$b#是另一种爱，通过拥抱和笑容就能展示出来。还有关心、有趣的游戏和故事。\"/pause 500/speak Vincent \"噢！但是我已经这么做过了。$3#$b#但他并没有因为这个好起来。$2\"/pause 500/speak Jessie \"还有一种特殊的成分，但恐怕不是什么好东西。$2\"/pause 500/speak Vincent \"是蜘蛛吗？$3\"/pause 1500/speak Jessie \"不！$1#$b#是时间。#$b#你的爸爸受伤了，文森特。但不是那种可以让医生用绷带治好的伤。$2#$b#你会感觉伤心害怕，甚至觉得他不再是你记忆中的爸爸了，这都很正常。$2#$b#但内心深处他还是你的爸爸，知道吗？他依旧深深爱着你。\"/pause 500/speak Vincent \"我知道……妈妈也是这么说的。$2#$b#谢谢你，杰西小姐。你以后还会到这里来，和我坐着聊天吗？\"/speak Jessie \"当然会的，文森特。\"/pause 500/jump Vincent 4/speak Vincent \"嘿，我有个好主意！你能教我几个咒语吗？#$b#比如可以让我的玩具自动整理好的那种？$1\"/pause 500/animate Jessie false true 500 33 34/showFrame farmer 20/pause 500/end"
+      }
+    },
+    {
+      "LogName": "Jessie and Lexi",
+      "Action": "EditData",
+      "Target": "Data/Events/Beach",
+      "Entries": {
+        "6398005/f Jessie 2500/e 6398003/p Jessie/w rainy": "ocean/85 39/Jessie 86 40 2 farmer 87 25 2/addTemporaryActor LexiMon 16 32 -100 -100 0 true/skippable/swimming LexiMon/pause 500/emote Jessie 56/pause 500/move farmer 0 15 2 true/pause 500/textAboveHead Jessie \"噢，莱西……\"/pause 2500/speak Jessie \"真希望我能知道你还活得好好的。$2\"/pause 1500/faceDirection Jessie 1/speak Jessie \"晚上好，@。没想到在这种天气里也能见到你。#$b#不过话说回来，农夫的工作应该永远做不完吧？#$b#就算不需要给植物浇水也是一样。\"/pause 500/emote farmer 32/pause 500/faceDirection farmer 3/pause 1500/emote farmer 8/pause 500/speak Jessie \"我？噢，我知道这样挺傻的。但每当下雨的时候……我都会希望莱西回家。\"/pause 500/faceDirection Jessie 2/faceDirection farmer 2/speak Jessie \"你大概已经听过那个传说了吧？偶尔可以在码头边看到的那个奇怪生物，说不定是一条人鱼？\"/faceDirection Jessie 1/pause 500/emote farmer 40/pause 500/speak Jessie \"莱西很怕生。而且镇民们都不喜欢怪物。$2#$b#所以我相信，要是莱西想回家的话，她一定会选择某个像这样的天气——大雨让很多镇民们选择留在家里。\"/pause 500/faceDirection Jessie 2/pause 500/speak Jessie \"莱西一直很喜欢听我唱歌，所以我经常唱给她听。我心里觉得，说不定歌声能让她找到回家的路。\"/pause 500/faceDirection Jessie 1/pause 500/speak Jessie \"你愿意和我一起唱歌吗，@？说不定我们两个在一起和声，可以让莱西不那么害怕。\"/{{MusicalInterlude}}/faceDirection Jessie 2/playMusic mermaidSong/pause 10000/playSound dropItemInWater/pause 500/stopMusic/warp LexiMon 86 46/faceDirection farmer 2/emote farmer 16/pause 2500/textAboveHead Jessie \"莱西……\"/pause 500/move LexiMon 0 -4 0/pause 500/emote LexiMon 20/pause 2000/end"
+      },
+      "When": {
+        "HasFlag": "beachBridgeFixed"
+      }
+    },
+    /*{
+      "LogName": "Schedule",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Jessie",
+      "Entries": {
+        "summer": "610 Custom_LK_LodgingHouse 18 14 2/900 Custom_LK_ClearingHouse 17 21 3 Jessie_waterL/1100 Custom_LK_ClearingHouse 12 13 2 Jessie_waterF/1230 Mountain 60 37 1/1600 Mountain 29 8 2/2000 Custom_LK_LodgingHouse 20 4 1"
+      },
+      "When": {
+        "HasSeenEvent |contains=191393": true,
+        "HasMod": "DSVTeam.DiverseSeasonalOutfits, DSVTeam.Marigold"
+      }
+    },*/
+  ]
+}

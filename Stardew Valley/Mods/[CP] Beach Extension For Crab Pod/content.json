@@ -1,0 +1,81 @@
+{
+	"Format": "1.24.0",
+	"ConfigSchema": {
+    "ScaffoldPattern": {
+      "AllowValues": "CenterScaffold, No_CenterScaffold",
+      "Default": "CenterScaffold",
+    },
+  },
+	
+	"Changes":
+	[
+	    {
+            "Action": "EditMap",
+            "Target": "Maps/Beach",
+			"FromFile": "assets/Boat.tmx",
+			"PatchMode": "Overlay",
+            "ToArea": { "X": 15, "Y": 37, "Width": 4, "Height": 3 },
+        },
+		
+		{
+            "Action": "EditMap",
+            "Target": "Maps/Beach",
+			"FromFile": "assets/BeachExtension_A.tmx",
+			"PatchMode": "Overlay",
+            "ToArea": { "X": 50, "Y": 37, "Width": 28, "Height": 11 },
+            "TextOperations": [
+            {
+             "Operation": "Append",
+             "Target": ["MapProperties", "DayTiles"],
+             "Value": "AlwaysFront 55 38 369",
+             "Delimiter": " ",
+            },
+            {
+             "Operation": "Append",
+             "Target": ["MapProperties", "Light"],
+             "Value": "55 38 4",
+             "Delimiter": " ",
+            },
+            {
+             "Operation": "Append",
+             "Target": ["MapProperties", "NightTiles"],
+             "Value": "AlwaysFront 55 38 368",
+             "Delimiter": " ",
+            },
+                       ],
+			"When": {
+				"ScaffoldPattern": "CenterScaffold"
+			},
+        },
+		{
+            "Action": "EditMap",
+            "Target": "Maps/Beach",
+			"FromFile": "assets/BeachExtension_B.tmx",
+			"PatchMode": "Overlay",
+            "ToArea": { "X": 50, "Y": 37, "Width": 28, "Height": 11 },
+            "TextOperations": [
+            {
+             "Operation": "Append",
+             "Target": ["MapProperties", "DayTiles"],
+             "Value": "AlwaysFront 55 38 369",
+             "Delimiter": " ",
+            },
+            {
+             "Operation": "Append",
+             "Target": ["MapProperties", "Light"],
+             "Value": "55 38 4",
+             "Delimiter": " ",
+            },
+            {
+             "Operation": "Append",
+             "Target": ["MapProperties", "NightTiles"],
+             "Value": "AlwaysFront 55 38 368",
+             "Delimiter": " ",
+            },
+                       ],
+			"When": {
+				"ScaffoldPattern": "No_CenterScaffold"
+			},
+        }
+	]
+}

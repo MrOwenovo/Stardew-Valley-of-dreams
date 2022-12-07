@@ -1,0 +1,170 @@
+/*
+
+
+
+<season><key>
+
+====<KEY>====
+ 
+<location>_<x>_<y>
+<location>_<dayName>
+<location><hearts>
+<location> 
+
+<season>_<key>_inlaw_<spouseName>
+<season>_<key>
+
+====<KEY>====
+
+<dayOfMonth>
+<dayOfMonth>_<firstOrLaterYear>
+<dayOfWeek><hearts>_<firstOrLaterYear>
+<dayOfWeek><hearts>
+<dayOfWeek>_<firstOrLaterYear>
+<dayOfWeek> 
+
+
+@ 	Farmer's name.   Example: Hi there @!
+%adj 	Random adjective. (Defined in StringsFromCSFiles.xnb)
+%noun 	Random noun. (Defined in StringsFromCSFiles.xnb)
+%place 	Random place name. (Defined in StringsFromCSFiles.xnb)
+%spouse 	The name of Farmer's spouse.
+%name 	A randomly-generated name.
+%firstnameletter 	The first half of the farmer's name (rounded down), like Nat if the farmer's name is Natalie.
+%time 	Current time.
+%band 	The name of Sam and Sebastian's band.
+%book 	The title of Elliott's book.
+%rival 	A random first name of the Farmer's gender from StringsFromCSFiles.xnb (keys Utility.cs.5499 through Utility.cs.5560). Will not match the Farmer's name.
+%pet 	The name of Farmer's pet.
+%farm 	Farm name.
+%favorite 	The Farmer's favorite thing.
+%kid1 	The name of Farmer's first child.
+%kid2 	The name of Farmer's second child. 
+
+
+
+$q <response IDs> <fallback>#<text> 	Show a dialogue box containing the given question text. If <response IDs> (a list delimited by /) contains an answer already given, the question is skipped (along with the rest of this dialogue line), and instead the dialogue entry identified by <fallback> will be appended to whatever precedes this $q command. The <fallback> dialogue typically uses a $p command to adjust the text based on the player's answer to this question. NOTE: dialogue questions must use unique IDs, similar to events. See the event data page for more information.
+$r <response ID> <friendship> <reaction>#<answer text> 	Define a response option to a $q question dialogue. <answer text> is the text shown. <response ID> is used to group responses for future reference (multiple answers can share an answer ID). <friendship> defines the change in friendship value, positive or negative, if this response is selected. <reaction> names the dialogue entry from the NPC's Content\Characters\Dialogue\*.xnb file that will be the NPC's reaction if this response is selected by the player.
+$p <response ID>#<match text>|<no-match text> 	Stands for "dialoguePrerequisite". Shows different text depending on whether the player gave a particular answer to a previously-asked question. If <response ID> matches an answer the player gave, <match text> is shown; otherwise, <no-match text> is shown. These texts, separated by |, can each contain multiple commands separated by #. This does not need to be the first command in the dialogue string.
+$b 	Indicates pauses in dialogue, where the player will need to click for the next part to load in a new dialogue box.
+$e 	Ends the current dialogue, closing the dialogue box and resuming player control. The dialogue following $e will require a new interaction with the NPC.
+$k 	TODO. Stands for "dialogueKill".
+$c <probability>#<text1>#<text2> 	Show <text1> with a <probability> between 0 and 1; otherwise, show <text2>. E.g. $c 0.9 for a 90% chance of <text1> and a 10% chance of <text2>. NOTE: Replacer commands (see below) do not work in <text1>. This does not need to be the first command in a dialogue string. It is unaffected by daily luck.
+$d <bus|joja|cc> 	dialogueDependingOnWorldState "Tue4": "$d <dependence>#|Dialogue when dependence value is true.|Dialogue in other situations.",
+The dependence can take one of three values: "bus": is the bus fixed?; "joja": is JoJa Mart in business?; "cc": has the Community Centre been completed? This command must start the dialogue string and does not allow for any other dialogue commands in the string.
+$y 	TODO. Stands for "dialogueQuickResponse"; A simpler form of question. Works like $q, but within one and the same text line. It doesn't have neither "dialoguePrerequisite" ($p) nor friendship point changes. It can be triggered indenitelly.
+Example: Penny: "$y 'Breakfast?_Yes please._Here you go._No, I'm good_More for me then!'"
+$1 <letter ID>#<1st-time text> #$e# <nth-time text> 	Creates a line of dialogue which the character will only see once (at most). <1st-time text> is shown only if <letter ID> has not been marked as sent yet (and this marks it as sent); otherwise, <nth-time text> is shown. <letter ID> should not correspond to an actual piece of mail (because it will not be sent), but it can be referenced by events or other dialogue lines.
+%fork 	Sets the the specialEventVariable1 variable, which can be checked by a later fork event command. Mainly useful in reaction dialogue for $q questions during events.
+[# # #] 	Gives the player a random item, from the pool 
+
+
+$h 	Switch the speaking character to their happy portrait.
+$s 	Switch the speaking character to their sad portrait.
+$u 	Switch the speaking character to their unique portrait.
+$l 	Switch the speaking character to their love portrait.
+$a 	Switch the speaking character to their angry portrait. 
+
+
+% 	Turns the dialogue box into a generic text box.
+Example: "%Abigail is lost in her music."
+
+*/
+
+
+{
+  "Introduction": "你好,你一定是那个新来的农民. 我是艾伊莎,我在芬吉尔邮政服务中心工作.我通常会在早上5点30分的时候到达你的家.$h",
+  "BeachNightMarket": "你看过美人鱼表演吗？它每年都在这里.$h",
+  "Custom_AyeishaVanRoad": "我希望我能把车停得更近些.",
+  "Town_35_56": "嘿！你怎么这么快就到了这个地方？你一直在使用模组作弊吗？！？！$u#$b#...还是我的日程安排中断了？试着睡一晚来解决我的问题,或者对着The Limey Dragon(作者本人)大喊大叫.",
+  "Saloon_15_20": "我今天下班很早,所以我回家在酒吧喝了一杯.#$b#别担心,这不是酗酒.$h",
+
+  
+/* Generic Days */
+  "Mon": "你好 @",
+  "Tue": "嘿 @",
+  "Wed": "嗨 @",
+  "Thu": "你好 @",
+  "Fri": "嘿 @",
+  "Sat": "嗨 @",
+  "Sun": "你好 @",
+  "Mon2": "你好@.你周末过得愉快吗?",
+  "Tue2": "你好.我希望乌鸦没有造成太大的破坏.",
+  "Wed2": "嗨,%farm农场打理的如何?",
+  "Thu2": "嘿@. 你有在享受天气吗?",
+  "Fri2": "你今天过得如何?",
+  "Mon4": "你的鞋子会很快就穿坏了吗?,我每年都会穿坏几双鞋,因为我每天都在走路.",
+  "Tue4": "你有没有看过《远离尘世》？#$b#如果我有足够的时间的话我会尽力去看的,因为这是我最喜欢的节目.",
+  "Wed4": "你有没有在你的农场里发现过什么东西？#$b#我读到过一些农民在他们的土地上发现了古老的遗物.$h",
+  "summer_Wed4": "我想我回家后会去看场电影.
+#$q 64270001/64270002 filmquestionfollowup#你有什么推荐的吗?
+#$r 64270001 10 filmquestion1#《拉里·科伯勒与神秘迷宫》
+#$r 64270001 20 filmquestion2#Natural Wonders: 《深海世界》
+#$r 64270002 -10 filmquestion3#《农夫南希和她的一大片土地》
+#$r 64270002 0 filmquestion4#我不知道.很抱歉.
+#$r 64270002 -50 filmquestion5#I think movies are really stupid.",
+filmquestion1: "谢谢,这是个不错的提议.$h",
+filmquestion2: "好主意！我喜欢自然纪录片.$h",
+filmquestion3: "呃...$s",
+filmquestion4: "没关系.等我回家再看电影指南.",
+filmquestion5: "哦...嗯...$s",
+filmquestionfollowup: "$p 642670001#上次我很喜欢你的建议.$h|我想我的猫会推荐你《蕨类植物的尾巴》.",
+  "Mon6": "$d cc#你在修复鹈鹕镇的社区中心方面做得很好.$h#$b#我很高兴它恢复了昔日的辉煌.$h|看到社区中心处于如此废弃的状态令人难过.#$b#希望有一天能够恢复如初.$s",
+  "Tue6": "我来自祖祖市的朋友瑞秋昨天给我烤了黑莓馅饼.真是美味.$h",
+  "Wed6": "昨天我在灌木丛旁发现了一条紫色短裤.$s#$b#太恶心了.我讨厌到处乱扔垃圾的人.$s",
+
+  "winter_Fri6": "你好 @！ 我一直想问你一些事情.
+#$q 64270003/64270004 itemscarryfollowup#你是怎么把这些作物和物品藏在身上的?
+#$r 64270003 5 itemscarryquestion1#抱歉,这是商业机密.
+#$r 64270003 5 itemscarryquestion2#可能和你藏那些信件和包裹的方法一样.
+#$r 64270004 -50 itemscarryquestion3#我不会告诉你的.",
+itemscarryquestion1: "你们这些农民和你们的秘密.",
+itemscarryquestion2: "哦？$u#$b#哦哦哦哈！ 我懂了!$h",
+itemscarryquestion3: "哦.$s",
+itemscarryfollowup: "$p 64270003#不过我知道你喜欢保守秘密.$h|然而上次我问你的方式有点直言不讳.$s",
+
+/*NOTE TO ANY TRANSLATORS 'Indaway' might be difficult to translate. It's a joke as it sounds like 'In the way'.*/
+
+  "fall_Mon8": ".我有一只新的宠物猫,我还需要给它起名字
+#$q 64270005/64270006/64270007 catnamefollowup#你觉得我应该给我的新猫取什么名字?
+#$r 64270005 15 catname0#奥斯卡
+#$r 64270005 15 catname1#跳跳虎
+#$r 64270006 5 catname2#印达威
+#$r 64270006 0 catname3#对不起,我不太擅长取名字.
+#$r 64270006 0 catname4#别问我,我给动物取的名字都是很粗鄙的.
+#$r 64270007 -250 catname5#我不会给你的傻宠物取名的.",
+catname0: "奥斯卡是个好主意.我会考虑的.",
+catname1: "跳跳虎是个好主意.我会考虑的.",
+catname2: "印达...$s#$b#哦,很有趣的.不,我想我不会那样叫她的.$h",
+catname3: "没关系.如果你想到了什么好名字,请告诉我.",
+catname4: "哦...我绝对不会希望她的名字是粗鄙的.",
+catname5: "...$a",
+catnamefollowup: "$p 64270005#我喜欢你的建议$h|如果你想到了什么名字,请告诉我.",
+
+  "Tue8": "哦嗨！我忘了把这个故事告诉你了.上周我在祖祖城银行碰到了一个老太太.#$e#她站在提款机旁边,让我帮她查一下她的余额.#$e#所以我把她制服了.$h",
+
+/*Dad Jokes*/
+  "Mon10": "我有告诉过你我用过旧手表做过皮带吗？#$b#这样的行为真的很浪费时间.$h",
+  "Wed10": "嘿！我告诉过你那天我把吸尘器放在乔家隔间上了吗？#$b#那样只是为了积攒灰尘.$h",
+
+/* Specific Days */
+  "spring_1_2": "新年快乐!",
+  "spring_2_1": "你在%farm农场的第一晚度过的如何?",
+  "spring_4_1": "我希望乔迪没事.今天是她丈夫的生日.$s",
+  "spring_14": "嗨@.你昨天去参加复活节了吗？我希望今年不要又在人们的邮箱里发现任何已经融化了的鸡蛋.$s",
+  "spring_24": "嗨@. 你要去参加花舞节吗？ 今天可真是美好的一天.",
+  "spring_25": "昨天你去参加花舞节了吗?",
+
+  "summer_1_1": "我希望你第一季度的庄稼生长得很好.",
+  "summer_9": "今天可能是我的生日,但我还是更喜欢我的工作.",
+  "summer_11": "每个人都应该去海滩上参加夏威夷宴会.",
+  "summer_28": "今晚是月光水母节.我今年应该会参加这次的节日.因为我听说月光水母很漂亮.",
+
+  "fall_3": "我喜欢每年这个时候树叶的颜色.",
+  "winter_1": "你知道科罗布斯是谁吗？我有一封奇怪的信.#$b#这是写给'失踪的科罗布斯的 - 1索阿'.#$b#这让我感到非常奇怪.$u",
+  "winter_7": "你明天要去冰雪节吗?",
+  "winter_15": "你要去夜市吗？#$b#我每年都会去那.我经常在那里为我的朋友和猫寻找到精美的礼物.",
+  "winter_17": "今晚是你去夜市的最后的机会.",
+  "winter_25": "嘿@.我今天很早就到各个地方送礼物了.哦,这是你的.[621]$h#$e#鹈鹕镇今年的装饰非常棒.$h#$e#很遗憾我不能留下来,但我和我的家人也有我们自己的安排.",
+
+ }

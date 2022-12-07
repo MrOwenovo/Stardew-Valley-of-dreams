@@ -1,0 +1,392 @@
+{
+	"Format": "1.18",
+	"ConfigSchema": {
+		//enable rainy day config
+		//May cause issues when enabled with SVE
+		"RainyDaySchedule": {
+			"AllowValues": "true, false",
+			"Default": "true"
+		},
+		//Enable school schedule. Disable this if Town School or Little Red School House is built.
+		"SchoolSchedule": {
+			"AllowValues": "true, false",
+			"Default": "true"
+		},
+		//Enable school schedules for the Farmer's kids. Only works if Babysitter or Farmers Children AND Child to NPC are installed
+		"FarmersChildren": {
+			"AllowValues": "true, false",
+			"Default": "true"
+		},
+		//Changes schedules for Penny and Gus. Should be compatible with SVE (unless that also changes their schedules)		
+		"CookingClass": {
+			"AllowValues": "true, false",
+			"Default": "true"
+		},
+		//Over-rides SVE's Community Center interior. WiLL cause schedule conflicts. Not compatible with 'Woman in a Painting.' 
+		"OverRideSVE": {
+			"AllowValues": "true, false",
+			"Default": "false"
+		}
+	},
+	"DynamicTokens": [
+		//Chooses randomly which of the Rainy Day schedules to change (changes every day, only activated when it rains)
+		{
+			"Name": "RainDay",
+			"Value": "{{Random:A,B,C,D,E,F}}"
+		},
+		{
+			"Name": "JadeEnd",
+			"Value": "Forest 40 11 2 jade_groundread",
+			"When": {
+				"HasMod |contains=malic.cp.jadeNPC": true
+			}
+		},
+		{
+			"Name": "JadeEnd",
+			"Value": "BoardingHouse 40 20 2 jade_groundread",
+			"When": {
+				"HasMod |contains=malic.cp.jadeNPC": true,
+				"HasMod |contains=BusStopExpansion": true
+			}
+		},
+		{
+			"Name": "JadeEnd",
+			"Value": "Custom_LK_LodgingHouse 16 16 1",
+			"When": {
+				"HasMod |contains=malic.cp.jadeNPC": true,
+				"HasMod |contains=LemurKat.JulietHouse.NPC": true
+			}
+		},
+		{
+			"Name": "PennyEnd",
+			"Value": "Trailer 4 9 1",
+		},
+		{ //Help Penny
+			"Name": "PennyEnd",
+			"Value": "PennysHouse 10 5 1",
+			"When": {
+				"HasMod": "Fellowclown.PennyUpgrade",
+				"HasDialogueAnswer |contains=77710": "true"
+			}
+		},
+		{ //Life Cycle
+			"Name": "PennyEnd",
+			"Value": "House1AC 20 5 1",
+			"When": {
+				"HasMod: |contains=nraittanna.LifeCycleAthanaeriMap": "true",
+				"HasSeenEvent": "59020025"
+			}
+		},
+		{
+			"Name": "PennyStart",
+			"Value": "Trailer 6 5 0",
+		},
+		{ //Help Penny
+			"Name": "PennyStart",
+			"Value": "PennysHouse 2 5 0",
+			"When": {
+				"HasMod": "Fellowclown.PennyUpgrade",
+				"HasDialogueAnswer |contains=77710": "true"
+			}
+		},
+		{ //Life Cycle
+			"Name": "PennyStart",
+			"Value": "House1AC 13 14 0",
+			"When": {
+				"HasMod: |contains=nraittanna.LifeCycleAthanaeriMap": "true",
+				"HasSeenEvent": "59020025"
+			}
+		},
+		// Changes Sam's end when he's married to Alissa 
+		/*{ //Life Cycle ES adjustment
+			"Name": "SamEnd",
+			"Value": "SamHouse <coordinates here>",
+			
+		},
+		{ //Life Cycle but with moved location to East Scarpe
+			"Name": "SamEnd",
+			"Value": "Custom_SamAlissaRivalHearts_AlissaHouse2 4 4 0",
+			"When": {
+				"HasMod": "SamAlissaRivalHearts",
+				"HasSeenEvent": "902207"
+			}
+		},*/
+	],
+	"Changes": [
+		//Stops NPCs walking through furniture in Community Center
+		{
+			"Action": "Load",
+			"Target": "Maps/CommunityCenter_Ruins",
+			"FromFile": "assets/CommunityCenter_Classroom.tmx",
+			"When": {
+				"HasSeenEvent": "191393",
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+			}
+		},
+		//Loads Community Center map if SVE not installed
+		{
+			"Action": "Load",
+			"Target": "Maps/CommunityCenter_Refurbished",
+			"FromFile": "assets/CommunityCenter_Classroom.tmx",
+			"When": {
+				"HasSeenEvent": "191393",
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/CommunityCenter_Refurbished",
+			"FromFile": "assets/CommunityCenter_Classroom_SVE.tmx",
+			"FromArea": {
+				"X": 8,
+				"Y": 16,
+				"Width": 12,
+				"Height": 8
+			},
+			"ToArea": {
+				"X": 8,
+				"Y": 16,
+				"Width": 12,
+				"Height": 8
+			},
+			"When": {
+				"HasSeenEvent": "191393",
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+				"OverRideSVE": false
+			}
+		},
+		//remove this before Uploading the mod. For trial purposes only		
+		//(Replaces the SVE map with this one)
+		//Doesn't work with Woman in a Painting
+		{
+			"Action": "EditMap",
+			"Target": "Maps/CommunityCenter_Ruins",
+			"FromFile": "assets/CommunityCenter_Classroom.tmx",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 70,
+				"Height": 30
+			},
+			"ToArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 70,
+				"Height": 30
+			},
+			"When": {
+				"HasSeenEvent": "191393",
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+				"OverRideSVE": true
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/CommunityCenter_Refurbished",
+			"FromFile": "assets/CommunityCenter_Classroom.tmx",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 70,
+				"Height": 30
+			},
+			"ToArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 70,
+				"Height": 30
+			},
+			"When": {
+				"HasSeenEvent": "191393",
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+				"OverRideSVE": true
+			}
+		},
+		/*Adjusts today's rainy day schedules
+O: Willy on Saturday, Linus any day, Penny and Maru on the weekend.
+A: Solarion Chronicles:		Sebastian, Sam, Abigail (and Clint on Fridays) play Solarian Chronicles. DONE
+B: Book group:		Jodi, Caroline, Jessie, (Marnie on Mondays/Tuesdays), Evelyn (randomise book discussions?) DONE NEEDS AN EVENT
+					Kids hanging out (not school day) DONE: Mondays with the Book club
+C: Dance Meditation: Leah, Emily, Elliott, Riley, Maru (occasionally)
+D: Music session:	D1: Sam with Penny or Sheila depending on Day of Week.
+					D2: Juliet, Denver, and occasionally Mike. (if installed)
+E: Poetry Club: Elliott, Emily, Leah and Isla (eventually, if installed)
+F: People not yet involved in anything: Demetrius, Pierre, George, Alex, Kent, Lewis, Pam, 
+*/
+		//Always on a rainy day
+		{
+			"Action": "Include",
+			"FromFile": "Includes/RainyDay0.json",
+			"When": {
+				"RainyDaySchedule": true,
+				"HasSeenEvent": "191393"
+			}
+		},
+		//Thursday morning cooking classes with Gus
+		//Even when it isn't raining, despite the name. 
+		{
+			"Action": "Include",
+			"FromFile": "Includes/RainyDay1.json",
+			"When": {
+				"CookingClass": true,
+				"HasSeenEvent": "191393"
+			}
+		},
+		//School Schedule
+		{
+			"Action": "Include",
+			"FromFile": "Includes/SchoolSchedule.json",
+			"When": {
+				"SchoolSchedule": true,
+				"HasSeenEvent": "191393",
+				//"HasSeenEvent |contains=9695001":false
+			}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "Includes/FarmersChildren.json",
+			"When": {
+				"FarmersChildren": true,
+				"HasSeenEvent": "191393"
+			}
+		},
+		//Chooses one randomly
+		{
+			"Action": "Include",
+			"FromFile": "Includes/RainyDay{{RainDay}}.json",
+			"When": {
+				"RainyDaySchedule": true,
+				"HasSeenEvent": "191393",
+				"Weather": "rain,storm"
+				//
+			}
+		},
+		//{{RainDay}}
+		//Special Events
+		//Friday before Egg Festival: Emily, Jas, Vincent, Penny, Haley, Clint and Eloise gather to paint eggs. Temporarily changes the map.
+		{
+			"Action": "Include",
+			"FromFile": "Includes/Eggfestival.json",
+			"When": {
+				"HasSeenEvent": "191393",
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+				"Season": "spring"
+			}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "Includes/SVECommunityDay.json",
+			"When": {
+				"HasSeenEvent": "191393",
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+			}
+		},
+		//(7777002 is the event for creating Town School)
+		/*
+Event codes:
+69660001: Clint approaches Solarion table
+69660002: CLint invited to play Solarion
+69660003: Penny asks Gus to teach her how to cook
+69660004: Jasper asks to join Gus's cooking class
+69660005: Emily invites farmer to come and paint eggs.
+69660006: Haley joins the poetry class
+69660015: Leo and Ellie
+*/
+		//Adds randomized Bulletin board
+		{
+			"Action": "EditMap",
+			"Target": "Maps/CommunityCenter_Refurbished",
+			"When": {
+				"HasSeenEvent": "191393"
+			},
+			"MapTiles": [
+				{
+					"Position": {
+						"X": 46,
+						"Y": 12
+					},
+					"Layer": "Buildings",
+					"SetProperties": {
+						"Action": "Message \"CCBulletinBoard.{{day}}\""
+					}
+				},
+				{
+					"Position": {
+						"X": 15,
+						"Y": 18
+					},
+					"Layer": "Buildings",
+					"SetProperties": {
+						"Action": "Message \"CC{{DayOfWeek}}.11\""
+					}
+				}
+			]
+		},
+		//.7 and .8 courtesy of Seryberyl
+		{
+			"LogName": "Strings from Maps",
+			"Action": "EditData",
+			"Target": "Strings/StringsFromMaps",
+			"Entries": {
+				//Bulletin Board
+				"CCBulletinBoard.1": "It all ADZ UP^^Want your add here?^^Contact me on Discord: lemurkat3754",
+				"CCBulletinBoard.2": "PEST CONTROL SPECIALISTS^Have slimes oozed into your basement? Does a monster lurk under your bed? Your friends at the Adventurer's Guild are here to help!^\"Free Quotes\"^^Call Marlon or Gil on XXX-XXXX.",
+				"CCBulletinBoard.3": "Need a break away from it all?^Visit Mermaid Island!^ Feast upon exotic fruit, soak your feet in the ocean, catch rare and exotic fish - and witness the most beautiful sunsets in the world.^Call N3XU5-1D-4216 to book your grand escape today!",
+				"CCBulletinBoard.4": "Band available to play in any venue, large or small. Competitive rates.^Call Sam on XXX-XXXX",
+				"CCBulletinBoard.5": "There's something weird going on in a lake in the woods, If you wish to check it out please don't hesitate to contact me^^Call N3XUS-1D-6626^^- Anonymous",
+				"CCBulletinBoard.6": "Cecilia Miller was last seen leaving her parent's home. Witnesses claim that she may have disappeared to the countryside.^^If you have any information on her whereabouts, please call N3XUS-1D-6246",
+				"CCBulletinBoard.7": "WANTED^^Used socks. Must be part of a mismatched pair and worn and washed at least once. Please ensure that no pair can be found. Socks whose pairs have been deliberately destroyed or displaced will not be accepted. We will know. Will pay 100G per sock.^^Please deposit socks between the roots of the big oak in Cindersap with your contact information. Payment for valid socks will be mailed the next day. Invalid socks will be returned.",
+				"CCBulletinBoard.8": "ASSISTANT WANTED^^For a research project. No experience needed. Must have an open mind, the ability to read and write while running, and tolerance for extreme temperatures. Weapons and training will be provided.^^Applicants may reply to this ad by calling XXX-XXXX",
+				"CCBulletinBoard.9": "Wish to own a beautiful new property by the sea? Then East Scarpe is the place for you!^^Offering seaside residences in a park-like environment, it is a haven for fisherman and families, whilst also being a short walk from Pelican Town's excellent library, and a longer jaunt to the town square.^^Apply by calling N3XU5-1D-5787 today!",
+				"CCBulletinBoard.10": "ARE YOU THE CATCH OF THE DAY?^^The Stardew Valley Aquarium seek competent anglers to help donate to their collection.^^If you can really reel them in, contact us at N3XU5-1D-6372",
+				"CCBulletinBoard.11": "Looking for new furniture sets to complement your decor? We have fabulous new styles available today!^^Call N3XU5-1D-{{random:4580, 4302, 4809}} to book a viewing.",
+				"CCBulletinBoard.12": "Seeking more exotic livestock?^Have you considered raising Guinea fowl?^They're pest control specialists and their eggs are delicious!^Contact us on N3XU5-1D-6928",
+				"CCBulletinBoard.13": "Several sightings of a huge hairy creature near the forest have recently been reported. We urge you to stay indoors at night and keep your livestock safe.^^Please report any strange happenings by calling N3XUS-1D-4594.",
+				"CCBulletinBoard.14": "Need a roof over your head?^^Joel's boarding house offers both short term and long term accomodation for anyone seeking the sanctuary of Stardew Valley.^^Call N3XU5-1D-4120 for more information.",
+				"CCBulletinBoard.15": "Are you tired of harvesting crops the regular way? Looking for some extra excitement on your farm? With a little \"help\" from a witch, your crops can come to beastly life and face you in glorious combat! Gain experience and reap valuable bonuses. To be connected with your local witch, call N3XU5-1D-6030 today!",
+				"CCBulletinBoard.16": "It all ADZ UP^^Want your add here?^^Contact me on Discord: lemurkat3754",
+				"CCBulletinBoard.17": "It all ADZ UP^^Want your add here?^^Contact me on Discord: lemurkat3754",
+				"CCBulletinBoard.18": "It all ADZ UP^^Want your add here?^^Contact me on Discord: lemurkat3754",
+				"CCBulletinBoard.19": "Are you brave of heart and strong of spirit? Yes? Then the Adventurer's Guild need YOU!^^The creatures of the void are becoming increasingly bold and possess a threat to the fine folk of Stardew Valley.^^If you feel you have what it takes to become a Defender of the Valley, call in at the Adventurer's Guild and speak to Marlon or Gill.^^*Recruitment will involve a physical test. The Adventurer's Guild are not responsible for loss of life or limb incurred during this process.",
+				"CCBulletinBoard.20": "It all ADZ UP^^Want your add here?^^Contact me on Discord: lemurkat3754",
+				"CCBulletinBoard.21": "Your friendly local television company is seeking new local talent for our public access channels. Get your neighbors involved with the community and discover what they have to tell you! To make sure you have these channels installed, call our service line at N3XU5-1D-5605.",
+				"CCBulletinBoard.22": "It all ADZ UP^^Want your add here?^^Contact me on Discord: lemurkat3754",
+				"CCBulletinBoard.23": "It all ADZ UP^^Want your add here?^^Contact me on Discord: lemurkat3754",
+				"CCBulletinBoard.24": "In search of your oldest and most well-loved poetry books. Please leave them down by the pier. I promise I will take the best care of them.^^There's a code scratched underneath: N3XU5-1D-6931",
+				"CCBulletinBoard.25": "It all ADZ UP^^Want your add here?^^Contact me on Discord: lemurkat3754",
+				"CCBulletinBoard.26": "It all ADZ UP^^Want your add here?^^Contact me on Discord: lemurkat3754",
+				"CCBulletinBoard.27": "MAKE BLOOMS, NOT WAR^^Calling all guerrilla gardeners, art activists and flower fiends! You can add a splash of color to any drab, underused patch of dirt in your area and help bring nature back into our lives. Contact Leah at N3XU5-1D-6228 for instructions!",
+				"CCBulletinBoard.28": "Looking for something new to spice up your taste buds? Want to add some variety to your culinary repertoire? Khadija's Recipe Shop has you covered! From fresh, rare, and exotic ingredients to specialized recipe books, our stock is never the same twice. Come visit our stall, now in Pelican Town! (Disclaimer: we do not sell snake meat, and never will. We apologize for the inconvenience).^^There's a small scribbled note at the bottom of the poster:^Also now selling weapons and blueprints. Weekends only. We don't carry snakeskin products either so don't bother asking.",
+				//Regular CC stuff
+				"CCMonday.11": "Lesson Plan: Ecology of the Valley:^^What is ecology?^Why is it important?^What is so special about Stardew Valley?",
+				"CCTuesday.11": "Lesson Plan: Ecology of the Valley:^^What is ecology?^Why is it important?^What is so special about Stardew Valley?",
+				"CCWednesday.11": "Lesson Plan: Stardew Valley ROCKS.^^How geology shaped the landscape.",
+				"CCThursday.11": "Lesson Plan: Reading Comprehension.",
+				"CCFriday.11": "Lesson Plan: Reading Comprehension.",
+				"CCSaturday.11": "Lesson Plan: Enjoy your weekend!",
+				"CCSunday.11": "Lesson Plan: Enjoy your weekend!",
+				"CommunityCenter.011": "Lesson Plan for the week:^Arithmetic^Literature^Science.",
+				"CommunityCenter.012": "Ouch, the poor spine!^^It's a time travelling romance. I wonder who left this here?",
+				"CommunityCenter.013": "It's a maths book. There are sketches of birds in the margins.",
+				"CommunityCenter.014": "Little Free Library^^This library belongs to everyone!^^Take a book, leave a book.",
+				"CommunityCenter.015": "It's a mix of textbooks and encylopedias.",
+				"CommunityCenter.016": "A battered and worn copy of the Solarion Chronicles, 6th edition.",
+				"CommunityCenter.017": "Oh, look at all these lovely pamphlets! There's one on walks around the Stardew area.^And here's one on shopping in Grampleton!",
+				"CommunityCenter.019": "\"A rose for my Velotte.\"^^What does it mean? There's a number etched underneath it: 6213",
+				"CommunityCenter.104": "It's a battered volume on weaving and dyeing, bristling with post-it notes."
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Strings/schedules/Jasper",
+			"When": {
+				"HasMod": "Lemurkat.NPCJasper"
+			},
+			"Entries": {
+				"Wednesday_Sch1": "{{i18n:Jasper.sch4}}",
+				"Wednesday_Sch2": "{{i18n:Jasper.sch5}}",
+				"Wednesday_Sch3": "{{i18n:Jasper.sch6}}"
+			}
+		},
+	]
+}

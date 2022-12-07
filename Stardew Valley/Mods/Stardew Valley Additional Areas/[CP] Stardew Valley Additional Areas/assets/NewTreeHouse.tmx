@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.4" orientation="orthogonal" renderorder="right-down" width="7" height="9" tilewidth="16" tileheight="16" infinite="0" nextlayerid="9" nextobjectid="2">
+ <properties>
+  <property name="DayTiles" value="Back 2 0 2 Buildings 2 1 9"/>
+  <property name="NightTiles" value="Back 2 0 48 Buildings 2 1 55"/>
+ </properties>
+ <tileset firstgid="1" name="untitled tile sheet" tilewidth="16" tileheight="16" tilecount="56" columns="7">
+  <image source="LeoTreeHouse_Tilesheet.png" width="112" height="128"/>
+ </tileset>
+ <tileset firstgid="57" name="p" tilewidth="16" tileheight="16" tilecount="36" columns="4">
+  <image source="paths.png" width="64" height="144"/>
+ </tileset>
+ <layer id="1" name="Back" width="7" height="9">
+  <data encoding="base64" compression="zlib">
+   eJxdyUUOAkEAAMHB3V0Xd0uw//+MOkCy4VCHTidCCElSpMmQJUeeAkVKlKlQpUadBk1atOnQpUefAUNGjJkwJWLGnAVLVqzZsGXHnsPXiTMXrtxi786DJy/esfdz/OsPnsIHRg==
+  </data>
+ </layer>
+ <objectgroup id="2" name="Back">
+  <object id="1" name="TileData" x="48" y="128" width="16" height="16">
+   <properties>
+    <property name="TouchAction" value="Warp Custom_WaterfallForest 44 39"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="3" name="Buildings" width="7" height="9">
+  <data encoding="base64" compression="zlib">
+   eJxjYCAMuICYG4h50MQF0PgiUFoMhzkyQCyLQ04ZSquiiWui8XWhtD4QG6DJmUBpMyzmM6LRIAAAynAB/g==
+  </data>
+ </layer>
+ <objectgroup id="4" name="Buildings"/>
+ <layer id="5" name="Front" width="7" height="9">
+  <data encoding="base64" compression="zlib">
+   eJxjYKA/MBoAO7EBABuMADM=
+  </data>
+ </layer>
+ <objectgroup id="6" name="Front"/>
+ <layer id="7" name="Paths" width="7" height="9">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAcONJZH7UAAFA0AIM=
+  </data>
+ </layer>
+ <objectgroup id="8" name="Paths"/>
+</map>

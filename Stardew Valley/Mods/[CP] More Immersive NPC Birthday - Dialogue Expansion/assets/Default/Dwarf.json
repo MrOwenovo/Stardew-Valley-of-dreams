@@ -1,0 +1,78 @@
+{
+  "Changes": [	
+  
+  	
+  		{
+      "Action": "EditData",
+      "Target": "Strings/Characters",	  
+		   "When": {
+		   "Season": "summer",
+		   "Day": "22",
+			"HasWalletItem":"DwarvishTranslationGuide",
+		   },
+      "Entries": {
+		  "MovieInvite_Invited_Dwarf": "生日电影？那是什么？#$b#行，就是带我去娱乐对吧？我肯定去！到时候见。",
+     }
+    },
+	
+
+    		{
+      "Action": "EditData",
+      "Target": "Data/MoviesReactions",	  
+		   "When": {
+		   "Season": "summer",
+		   "Day": "22",
+			"HasWalletItem":"DwarvishTranslationGuide",
+		   },
+    "Entries":   {
+	"Dwarf":{
+    "NPCName": "Dwarf",
+    "Reactions": [
+      {
+        "Tag": "*",
+        "Response": "love",
+        "Whitelist": [],
+        "SpecialResponses": null,
+        "ID": "reaction_0"
+      },
+      {
+        "Tag": "love",
+        "Response": "like",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "刚才进来时，有个老太太塞给了我糖果。那是什么意思？把我当成人类小孩了？"
+          },
+          "DuringMovie": {
+            "ResponsePoint": null,
+            "Script": "/message \"矮人似乎完全入迷了……\"",
+            "Text": ""
+          },
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "我喜欢这些灯光……让我想起我的家！#$b#什么，剧情？我根本听不懂人类在说什么。"
+          }
+        },
+        "ID": "reaction_1"
+      },
+    ]
+  },
+	}
+			},
+		{
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Dwarf",	  
+            "When": {
+			"HasWalletItem":"DwarvishTranslationGuide",
+            },	  
+      "Entries": {
+		"summer_22": "{{Random: 嘿。要买些什么嘛？#$b#……什么？你问我什么时候生日……？出生的日子吗？#$b#问这干嘛？我得想想。#$b#……夏22日吧。++ 嘿，你又来了。#$b#你问我生日时怎么庆祝？你看到这里有其他人嘛？我一直都自己一人。|inputSeparator=++}}#$e#问完了？那你要不要买东西？",
+		"summer_22_2": "{{Random: 嘿。要买些什么嘛？#$b#……什么？你问我什么时候生日……？出生的日子吗？#$b#问这干嘛？我得想想。#$b#……夏22日吧。++ 嘿，你又来了。#$b#你问我生日时怎么庆祝？你看到这里有其他人嘛？我一直都自己一人。|inputSeparator=++}}#$e#问完了？那你要不要买东西？",
+     }
+    },
+  
+  ]
+}

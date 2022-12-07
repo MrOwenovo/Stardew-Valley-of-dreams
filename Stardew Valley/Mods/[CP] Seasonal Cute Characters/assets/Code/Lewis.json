@@ -1,0 +1,138 @@
+{
+	"Changes": [
+		{
+			"LogName": "Lewis - Seasonal",
+			"Action": "EditImage",
+			"Target": "Portraits/Lewis, Characters/Lewis",
+			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Lewis - Winter Indoor/Outdoor",
+			"Action": "EditImage",
+			"Target": "Portraits/Lewis, Characters/Lewis",
+			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+                "Season": "Winter",
+                "WinterIndoorOutdoorOutfits": "IndoorOutdoor",
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Lewis - Festival",
+			"Action": "EditImage",
+			"Target": "Portraits/Lewis, Characters/Lewis",
+            "FromFile": "assets/{{TargetPathOnly}}/Festivals/{{Festival}}/{{TargetWithoutPath}}_{{Festival}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"FestivalOutfits": "True",
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Lewis - Beach Native",
+			"Action": "EditImage",
+			"Target": "Characters/Lewis_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Beach/{{TargetWithoutPath}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Lewis - Beach Add",
+			"Action": "EditImage",
+			"Target": "Portraits/Lewis, Characters/Lewis",
+			"FromFile": "assets/{{TargetPathOnly}}/Beach/Adds/{{TargetWithoutPath}}_Beach.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"LocationName": "IslandSouth, IslandWest, IslandEast, IslandNorth",
+				"Time": "{{Range: 1130, 1820}}",
+			},
+            "Update": "OnTimeChange, OnLocationChange",
+		},
+		
+// NOSE OVERLAY
+		{
+			"LogName": "Lewis - Seasonal Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Lewis",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"NoNose": "false",
+			},
+		},
+		{
+			"LogName": "Lewis - Beach Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Lewis_Beach",
+            "FromFile": "assets/{{TargetPathOnly}}/Beach/{{TargetWithoutPath}}_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"NoNose": "false",
+			},
+		},
+		
+// MISCELLANEOUS		
+		{
+			"LogName": "Lewis - Emoji 1",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+            "FromFile": "assets/{{NoNose}}/Random/emojis.png",
+			"FromArea": {"X": 54, "Y": 108, "Width": 9, "Height": 9},
+			"ToArea": {"X": 54, "Y": 108, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Lewis - Emoji 2",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+            "FromFile": "assets/{{NoNose}}/Random/emojis.png",
+			"FromArea": {"X": 90, "Y": 117, "Width": 9, "Height": 9},
+			"ToArea": {"X": 90, "Y": 117, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Lewis - Emoji 3",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+            "FromFile": "assets/{{NoNose}}/Random/emojis.png",
+			"FromArea": {"X": 108, "Y": 117, "Width": 9, "Height": 9},
+			"ToArea": {"X": 108, "Y": 117, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Lewis - Clothes Therapy",
+			"Action": "EditImage",
+			"Target": "Characters/ClothesTherapyCharacters",
+			"FromFile": "assets/{{Target}}.png",
+			"FromArea": {"X": 0, "Y": 64, "Width": 64, "Height": 32},
+			"ToArea": {"X": 0, "Y": 64, "Width": 64, "Height": 32},
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+	]
+}

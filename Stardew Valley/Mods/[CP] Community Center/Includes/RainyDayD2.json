@@ -1,0 +1,141 @@
+{
+    "Changes": [
+        //Loads schedule strings for Cecilia and Denver
+        /*{   "LogName": "Schedule Strings",  
+    "Action": "Load",  
+    "Target": "Strings/schedules/Denver, Strings/schedules/Cecilia",
+    "FromFile": "Includes/blank.json"
+	},*/
+        // Denver, Mike and Juliet gather to jam
+        {
+            "Action": "EditMap",
+            "Target": "Maps/CommunityCenter_refurbished",
+            "MapProperties": {
+                "Music": "heavy"
+            },
+            "When": {
+                "Weather": "rain,storm"
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/CommunityCenter_Refurbished",
+            "FromFile": "assets/CommunityCenter_Classroom_EggFest.tmx",
+            "When": {
+                "Weather": "rain"
+            },
+            "FromArea": {
+                "X": 25,
+                "Y": 18,
+                "Width": 2,
+                "Height": 2
+            },
+            "ToArea": {
+                "X": 25,
+                "Y": 18,
+                "Width": 2,
+                "Height": 2
+            }
+        },
+        {
+            "LogName": "Animation Descriptions",
+            "Action": "EditData",
+            "Target": "Data/animationDescriptions",
+            "Entries": {
+                "denver_perform": "25/25 25 25 26 26 26 25 25 25 26 26 26 25 25 25 26 26 26 25 25 25 26 26 26 25 25 25 26 26 26 25 25 25 26 26 26 25 25 25 26 26 26 25 25 25 26 26 26/25",
+                "mike_perform": "24/24 24 24 25 25 25 24 24 24 25 25 25 24 24 24 25 25 25 24 24 24 25 25 25 24 24 24/24"
+            }
+        },
+        {
+            "LogName": "Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Denver",
+            "Entries": {
+                "rain": "700 CommunityCenter 24 17 0/1000 CommunityCenter 24 18 denver_perform \"Strings\\schedules\\Denver:Guitar_{{Random:Gt1, Gt2, Gt3}}\"/1400 Town 49 101 2/1600 Town 47 88 0/1800 Saloon 1 18 0/2300 BoardingHouse 39 6 3"
+            }
+        },
+        {
+            "LogName": "Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Mike",
+            "When": {
+                "HasMod": "SYS.mike"
+            },
+            "Entries": {
+                "rain": "610 CommunityCenter 31 11 mike_read/950 CommunityCenter 27 17 0 mike_perform \"Strings\\schedules\\Mike:Guitar_{{Random:Gt1, Gt2, Gt3}}\"/1400 Saloon 11 20 0/1800 Beach 43 36 2/2200 Saloon 40 17 2"
+            }
+        },
+        {
+            "LogName": "Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Cecilia",
+            "When": {
+                "HasMod": "balverines.cecilia"
+            },
+            "Entries": {
+                "rain": "800 Town 44 90 2/900 CommunityCenter 28 16 2 cecilia_dance \"Strings\\schedules\\Cecilia:Guitar_{{Random:Gt1, Gt2, Gt3}}\"/1400 Town 9 60 0/2000 GhostHouse 4 5 0/2300 GhostHouse 12 4 1 cecilia_sleep"
+            }
+        },
+        {
+            "LogName": "Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Juliet",
+            "Entries": {
+                "rain": "650 Custom_LK_LodgingHouse 21 16 3/900 CommunityCenter 25 20 0 Juliet_drums \"Strings\\schedules\\Juliet:Guitar_{{Random:Gt1, Gt2, Gt3}}\"/1400 Town 95 51 0/1600 Custom_LK_LodgingHouse 17 17 0/2200 Custom_LK_LodgingHouse 27 6 2 Juliet_sleep"
+            }
+        },
+        {
+            "LogName": "Jamtime - Denver",
+            "Action": "EditData",
+            "Target": "Strings/schedules/Denver",
+            "Entries": {
+                "Guitar_Gt1": "{{i18n:RainyDayD2.Denver.1}}",
+                "Guitar_Gt2": "{{i18n:RainyDayD2.Denver.2}}",
+                "Guitar_Gt3": "{{i18n:RainyDayD2.Denver.3}}"
+            }
+        },
+        {
+            "LogName": "Jamtime - Mike",
+            "Action": "EditData",
+            "Target": "Strings/schedules/Mike",
+            "When": {
+                "HasMod": "SYS.mike"
+            },
+            "Entries": {
+                "Guitar_Gt1": "{{i18n:RainyDayD2.Mike.1}}",
+                "Guitar_Gt2": "{{i18n:RainyDayD2.Mike.2}}",
+                "Guitar_Gt3": "{{i18n:RainyDayD2.Mike.3}}"
+            }
+        },
+        {
+            "LogName": "Jamtime - Juliet",
+            "Action": "EditData",
+            "Target": "Strings/schedules/Juliet",
+            "Entries": {
+                "Guitar_Gt1": "{{i18n:RainyDayD2.Juliet.1}}",
+                "Guitar_Gt2": "{{i18n:RainyDayD2.Juliet.2}}",
+                "Guitar_Gt3": "{{i18n:RainyDayD2.Juliet.3}}"
+            }
+        },
+        {
+            "LogName": "Jamtime - Cecilia",
+            "Action": "EditData",
+            "Target": "Strings/schedules/Cecilia",
+            "When": {
+                "HasMod": "balverines.cecilia"
+            },
+            "Entries": {
+                "Guitar_Gt1": "{{i18n:RainyDayD2.Cecilia.1}}",
+                "Guitar_Gt2": "{{i18n:RainyDayD2.Cecilia.2}}",
+                "Guitar_Gt3": "{{i18n:RainyDayD2.Cecilia.3}}"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Linus",
+            "Entries": {
+                "CommunityCenter": "{{i18n:CommunityCenter.Linus.2}}"
+            }
+        }
+    ]
+}

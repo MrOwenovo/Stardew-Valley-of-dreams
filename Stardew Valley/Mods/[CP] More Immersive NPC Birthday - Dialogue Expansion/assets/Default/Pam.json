@@ -1,0 +1,284 @@
+{
+ "Changes": [	
+  
+  //Movie Invitation
+  		{
+      "Action": "EditData",
+      "Target": "Strings/Characters",	  
+		   "When": {
+		   "Relationship:Penny |contains=Married": "false",
+		   "Season": "spring",
+		   "Day": "18",
+		   },
+      "Entries": {
+		  "MovieInvite_Invited_Pam": "生日电影？你还挺懂得享受生活嘛，孩子……#$b#好吧，我没有拒绝免费电影的理由！我当然去。我们电影院见。$1",
+     }
+    },
+	  		{
+      "Action": "EditData",
+      "Target": "Strings/Characters",	  
+		   "When": {
+		   "Relationship:Penny |contains=Married": "true",
+		   "Season": "spring",
+		   "Day": "18",
+		   },
+      "Entries": {
+		  "MovieInvite_Invited_Pam": "你为我的生日准备了电影票？#$b#噢……抱歉，我只是还没习惯这种好事。#$b#我当然会去的。谢谢你为我特地准备，孩子。我们在电影院等吧。$1",
+     }
+    },
+	
+//MoviesReactions	
+
+    		{
+      "Action": "EditData",
+      "Target": "Data/MoviesReactions",	  
+		   "When": {
+		   "Relationship:Penny |contains=Married": "false",
+		   "Season": "spring",
+		   "Day": "18",
+		   },
+    "Entries":   {
+	"Pam":{
+    "NPCName": "Pam",
+    "Reactions": [
+      {
+        "Tag": "spring_movie_0",
+        "Response": "love",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{Random: 为又穷又老的潘姆庆祝生日……你可真是有趣的小孩。不过还是谢谢你。++ 我不明白为什么你会这么慷慨……大概有些人就是像你这样想要什么就有什么吧。还是谢谢你为我安排庆祝活动。|inputSeparator=++}}"
+          },
+          "DuringMovie": null,
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "这种故事很像我家小女孩会喜欢的。她喜欢这种光明又向上的故事。#$b#嘿，我不会说是因为我们家过得太苦了。即使这是事实。$4"
+          }
+        },
+        "ID": "reaction_0"
+      },
+      {
+        "Tag": "spring_movie_1",
+        "Response": "love",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{Random: 为又穷又老的潘姆庆祝生日……你可真是有趣的小孩。不过还是谢谢你。++ 我不明白为什么你会这么慷慨……大概有些人就是像你这样想要什么就有什么吧。还是谢谢你为我安排庆祝活动。|inputSeparator=++}}"
+          },
+          "DuringMovie": null,
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "这太益智了，我看到半途就没听旁白说话了。#$b#但那些风景和动物可不赖……要是拍更多鱼的镜头就好了！$1"
+          }
+        },
+        "ID": "reaction_1"
+      },
+    ]
+  },
+	}
+			},
+  
+    		{
+      "Action": "EditData",
+      "Target": "Data/MoviesReactions",	  
+		   "When": {
+		   "Relationship:Penny |contains=Married": "true",
+		   "Season": "spring",
+		   "Day": "18",
+		   },
+    "Entries":   {
+	"Pam":{
+    "NPCName": "Pam",
+    "Reactions": [
+      {
+        "Tag": "spring_movie_0",
+        "Response": "love",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{Random: 潘妮不在？行吧，我想这次的电影日肯定是你突然安排的。反正我早上也见过她了。++ 我曾经带潘妮去电影院……那时我还很年轻貌美。|inputSeparator=++}}"
+          },
+          "DuringMovie": null,
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "哈！我可懂那小树苗家人的心情了……送孩子离开家里，留下自己孤独一人。#$b#起码小树苗的妈妈看来没有混蛋前夫。"
+          }
+        },
+        "ID": "reaction_0"
+      },
+      {
+        "Tag": "spring_movie_1",
+        "Response": "love",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{Random: 潘妮不在？行吧，我想这次的电影日肯定是你突然安排的。反正我早上也见过她了。++ 我曾经带潘妮去电影院……那时我还很年轻貌美。|inputSeparator=++}}"
+          },
+          "DuringMovie": null,
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "我都当成观光电视节目来看了。#$b#嘿，等你有钱了，一定要带潘妮到这些地方走走看，懂吗？#$b#那女孩在这小镇土生土长。我可不想她一辈子都没看过外面的世界。"
+          }
+        },
+        "ID": "reaction_1"
+      },
+    ]
+  },
+	}
+			},
+  
+//Saloon Dialogue  
+	    {
+        "Action": "EditData",
+        "Target": "Characters/Dialogue/Pam",
+		   "When": {
+		   "Relationship:Penny |contains=Married": "false",
+		   "Season": "spring",
+		   "Day": "18",
+		   },
+        "Entries":
+        {
+			"Saloon_Thu": "嘿……我没想到格斯会请我喝免费的防风草汤！生活也不太坏嘛，嘿嘿……$1",
+       }
+    },	
+  
+	    {
+        "Action": "EditData",
+        "Target": "Characters/Dialogue/Pam",
+		   "When": {
+		   "Relationship:Penny |contains=Married": "true",
+		   "Season": "spring",
+		   "Day": "18",
+		   },
+        "Entries":
+        {
+			"Saloon_Thu": "干嘛？你来看我有没有喝得烂醉不成？$4#$b#我今天是来喝防风草汤的。我不是喝啤酒的心情。$4",
+       }
+    },	
+	    {
+        "Action": "EditData",
+        "Target": "Characters/Dialogue/Pam",
+		   "When": {
+		   "Relationship:Penny |contains=Married": "false",
+		   "Season": "summer",
+		   "Day": "8",
+		   },
+        "Entries":
+        {
+			"Saloon_Tue": "格斯！我来帮你庆生了！来两杯啤酒！$1",
+       }
+    },	
+  
+	    {
+        "Action": "EditData",
+        "Target": "Characters/Dialogue/Pam",
+		   "When": {
+		   "Relationship:Penny |contains=Married": "true",
+		   "Season": "summer",
+		   "Day": "8",
+		   },
+        "Entries":
+        {
+			"Saloon_Tue": "格斯说我该停止用庆生来当借口点酒喝了。#$b#哎……我想他是对的。潘妮不在了……我得照顾好自己才行。起码不能让事情变得更糟吧。$2#$b#所以我点了盘琉璃山药。那味道也不坏。",
+       }
+    },	
+
+	    {
+        "Action": "EditData",
+        "Target": "Characters/Dialogue/Pam",
+		   "When": {
+		   "Relationship:Penny |contains=Married": "false",
+		   "Season": "fall",
+		   "Day": "2",
+		   },
+        "Entries":
+        {
+			"Saloon_Tue": "潘妮……我的宝贝女儿……生日快乐……$2#$b#%潘姆没有任何反应。",
+       }
+    },	
+	
+	    {
+        "Action": "EditData",
+        "Target": "Characters/Dialogue/Pam",
+		   "When": {
+		   "Relationship:Penny |contains=Married": "true",
+		   "Season": "fall",
+		   "Day": "2",
+		   },
+        "Entries":
+        {
+			"Saloon_Tue": "{{Random: *嗝*……嘿，小孩，你在这种地方做什么？赶紧回家陪我的女儿！$3#$b#你最好给她个温暖的家庭。你要敢亏待她，我跟你没完……$3++ 我的小女孩完全不需要我了……我早知道有这一天。$2#$b#她不像我，她是那么的优秀……有着大好青春年华。$2#$b#我只是想让这天晚点来……我害怕被她抛下。多么自私的垃圾……*嗝*$2|inputSeparator=++}}",
+       }
+    },	
+	
+	
+//Normal Dialogue	
+	    {
+        "Action": "EditData",
+        "Target": "Characters/Dialogue/Pam",
+        "Entries":
+        {
+			
+//Pam->Pam	
+		"spring_18": "哈。今天几号来着？18号？#$b#很好，代表我又老一岁了。数字不断增加，生活却仍然那么糟，大概这就是人生。#$e#{{Random: 我晚上得去格斯那点两杯酒，不然根本活不下去。#$b#格斯最好看在我生日的份上，请我多喝两杯……呵呵！++ 我家小女孩好像昨天买了一堆东西回家。都是新鲜蔬菜，我还挺失望的。#$b#不过里面的防风草不错……我早上烤了一些来吃。呵呵。|inputSeparator=++}}",
+		"spring_18_2": "哈。今天几号来着？18号？#$b#很好，代表我又老一岁了。数字不断增加，生活却仍然那么糟，大概这就是人生。#$e#{{Random: 我晚上得去格斯那点两杯酒，不然根本活不下去。#$b#格斯最好看在我生日的份上，请我多喝两杯……呵呵！++ 我家小女孩好像昨天买了一堆东西回家。都是新鲜蔬菜，我还挺失望的。#$b#不过里面的防风草不错……我早上烤了一些来吃。呵呵。|inputSeparator=++}}",
+		"spring_18_inlaw_Penny": "嘿，孩子。你应该记得今天是什么日子对吧？不记得的话就算了。我也不指望有人在乎。#$b#早上潘妮去工作前给我拿来了她亲手煮的防风草汤。我必须说味道很好。你可真幸福啊，孩子。#$e#她没踏进过家门一步。她很聪明……肯定不会想知道家里多一团糟。#$e#{{Random: 我偶尔也会做些家务，因为也没人会帮我做了。#$b#但我没兴趣把家里打扫得一尘不染……只要到还能住人的程度就行了。++ 潘妮还在家里时，我把所有家事都推给她了。$4#$b#我不知道，或许只有看她做家事……知道她还在我掌控里，我才能安心。$4#$b#回想起来都觉得糟糕透顶。我总是这样依赖着些不健康的东西。$2#$b#但！她可不是你的家务机器。你最好全心全意宠爱她，知道了没？$3|inputSeparator=++}}",
+		"spring_18_2_inlaw_Penny": "嘿，孩子。你应该记得今天是什么日子对吧？不记得的话就算了。我也不指望有人在乎。#$b#早上潘妮去工作前给我拿来了她亲手煮的防风草汤。我必须说味道很好。你可真幸福啊，孩子。#$e#她没踏进过家门一步。她很聪明……肯定不会想知道家里多一团糟。#$e#{{Random: 我偶尔也会做些家务，因为也没人会帮我做了。#$b#但我没兴趣把家里打扫得一尘不染……只要到还能住人的程度就行了。++ 潘妮还在家里时，我把所有家事都推给她了。$4#$b#我不知道，或许只有看她做家事……知道她还在我掌控里，我才能安心。$4#$b#回想起来都觉得糟糕透顶。我总是这样依赖着些不健康的东西。$2#$b#但！她可不是你的家务机器。你最好全心全意宠爱她，知道了没？$3|inputSeparator=++}}",
+		
+		
+
+//Pam->Gus	
+		"summer_7": "你好，孩子。我昨天路过杂货店时看了门口的日历一眼，明天是格斯的生日。#$b#我得去光顾他，振兴一下他家的生意才行了！呵呵……$1#$e#{{Random: 格斯人挺不错的，他知道我家没钱，常常允许我赊帐。#$b#更重要的是，他做得一手好菜……哈哈。$1++ 到了我或者格斯这种年纪，早就不在乎这是第几个生日了。#$b#但有个能跟人讨好处的借口还是不错的。呵呵。$1|inputSeparator=++}}",
+		"summer_7_2": "你好，孩子。我昨天路过杂货店时看了门口的日历一眼，明天是格斯的生日。#$b#我得去光顾他，振兴一下他家的生意才行了！呵呵……$1#$e#{{Random: 格斯人挺不错的，他知道我家没钱，常常允许我赊帐。#$b#更重要的是，他做得一手好菜……哈哈。$1++ 到了我或者格斯这种年纪，早就不在乎这是第几个生日了。#$b#但有个能跟人讨好处的借口还是不错的。呵呵。$1|inputSeparator=++}}",
+		"summer_7_inlaw_Penny": "嘿，孩子。明天是格斯的生日……我要去支持他的酒馆。#$b#你要去祝贺格斯的话随你的意，但别让我看到你在酒馆逗留太久。#$b#{{Random: 那里可不是生活幸福美满的人该待的地方。++ 你家里还有漂亮又优秀的妻子在等你呢。|inputSeparator=++}}",
+		"summer_7_2_inlaw_Penny": "嘿，孩子。明天是格斯的生日……我要去支持他的酒馆。#$b#你要去祝贺格斯的话随你的意，但别让我看到你在酒馆逗留太久。#$b#{{Random: 那里可不是生活幸福美满的人该待的地方。++ 你家里还有漂亮又优秀的妻子在等你呢。|inputSeparator=++}}",
+		
+		
+//Pam->Penny
+ 				"fall_1": "嘿，孩子。明天是我宝贝女儿的生日。#$q 115320700/115320701 PamPennybirthday_followup#你知道我想说什么吗？
+					#$r 115320700 10 PamPennybirthday_A#我不知道。
+					#$r 115320701 10 PamPennybirthday_B#你准备了生日礼物？
+					#$r 115320701 -10 PamPennybirthday_C#你决定为了她戒酒？",
+ 				"fall_1_2": "嘿，孩子。明天是我宝贝女儿的生日。#$q 115320700/115320701 PamPennybirthday_followup#你知道我想说什么吗？
+					#$r 115320700 10 PamPennybirthday_A#我不知道。
+					#$r 115320701 10 PamPennybirthday_B#你准备了生日礼物？
+					#$r 115320701 -10 PamPennybirthday_C#你决定为了她戒酒？",
+					PamPennybirthday_A: "我的意思是。就算你不去祝福她，也千万别在这天给她添堵！知道了吗？",
+					PamPennybirthday_B: "什么？那是当然。我请格斯特制了虞美人籽松糕。#$e#那可不便宜。足够我喝两天的啤酒了。",
+ 					PamPennybirthday_C: "什么？这两件事完全不相干！$3#$e#你以为我是喜欢才整天泡酒吧的吗？$4#$b#我也想要有别的嗜好，但来来去去还是喝酒最适合我。$4",
+ 		PamPennybirthday_followup:"就算你不去祝福她，也千万别在这天给她添堵。知道了吗？",
+		
+ 				"fall_1_inlaw_Penny": "嘿，孩子……不对，我该说是儿子。^嘿，孩子……不对，我该说是女儿。#$b#$q 115320702/115320703 PamPennyInlawbirthday_followup#这是给潘妮的生日礼物。你帮我转交给她。
+					#$r 115320702 10 PamPennyInlawbirthday_A#好的。
+					#$r 115320702 10 PamPennyInlawbirthday_B#抱歉，我没空。",
+ 				"fall_1_2_inlaw_Penny":  "嘿，孩子……不对，我该说是儿子。^嘿，孩子……不对，我该说是女儿。#$b#$q 115320702/115320703 PamPennyInlawbirthday_followup#这是给潘妮的生日礼物。你帮我转交给她。
+					#$r 115320702 10 PamPennyInlawbirthday_A#好的。
+					#$r 115320702 0 PamPennyInlawbirthday_B#抱歉，我没空。",
+					PamPennyInlawbirthday_A: "在这。给我拿好。我觉得她在生日当天会比较想和你度过。你一定要让她过一个开心的生日，知道吗？[651]",
+					PamPennyInlawbirthday_B: "你有什么没空的？！你没有亏待我女儿吧？！$3#$b#$q 115320702/115320703 PamPennyInlawbirthday_followup#我警告你，小孩。你要敢对潘妮做些什么……
+					#$r 115320702 10 PamPennyInlawbirthday_BA#呃，你要真的这么坚持的话。好吧，我收下。
+					#$r 115320703 50 PamPennyInlawbirthday_BB#我是真的没空。你为什么不自己拿给她？
+					#$r 115320703 50 PamPennyInlawbirthday_BC#你该亲自拿给她，跟她见面。勇敢一点。她很爱你。",
+					PamPennyInlawbirthday_BA: "早点收下不就好了！你最好让她过个开心的生日。[651]$4",
+ 					PamPennyInlawbirthday_BB: "什么？我觉得那女孩不想见我！她跟你结婚后开心极了，不是吗！$3#$b#……$4#$b#行吧，刚才那话我自己听着都难堪……我想我是老毛病又犯了。我明早会来农场一趟，这样可以了吧？#$b#但我刚才可是认真的。你最好对潘妮好一点……别让她孤独了。$4",
+					PamPennyInlawbirthday_BC: "……什……？$4#$b#……$4#$b#行吧。我想你是对的……我只是不敢见她。我明天会亲自拿给她。$2#$b#这很难……但我该踏出第一步，对不对……？总不能只有那女孩的生活在向前进。$2",
+ 		PamPennyInlawbirthday_followup:"你记得明天是什么日子吧。我早上会到你们家一趟……去见我的女儿。#$e#我知道她为什么结婚后不肯踏入以前的家一步。我不怪她……她过得太苦了。$2",
+       }
+    },	
+
+
+  
+  ]
+}

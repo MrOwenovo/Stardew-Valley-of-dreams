@@ -1,0 +1,163 @@
+{
+  "Changes": [	
+ 
+//Movie Reactions
+			{
+      "Action": "EditData",
+      "Target": "Data/MoviesReactions",	  
+		   "When": {
+		   "Relationship:Emily |contains=Married": "false",
+		   "Season": "winter",
+		   "Day": "26",
+		   },
+    "Entries":   {
+	"Clint":{
+    "NPCName": "Clint",
+    "Reactions": [
+      {
+        "Tag": "winter_movie_0",
+        "Response": "love",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{Random: 生日时来个男生之夜，唔……我必须说还不错！$1^这……这不是生日约会，对嘛？我知道的……$4++ 我没想过这天居然会有人约我出门。谢谢你啊。$1|inputSeparator=++}}"
+          },
+          "DuringMovie": null,
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "农场生活可真辛苦啊……你这个冬天过得如何？我想你应该过得比他们好吧。$1"
+          }
+        },
+        "ID": "reaction_0"
+      },
+      {
+        "Tag": "winter_movie_1",
+        "Response": "like",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{Random: 生日时来个男生之夜，唔……我必须说还不错！$1^这……这不是生日约会，对嘛？我知道的……$4++ 我没想过这天居然会有人约我出门。谢谢你啊。$1|inputSeparator=++}}"
+          },
+          "DuringMovie": {
+            "ResponsePoint": "guyEnters",
+            "Script": "/emote Clint 8/message \"克林特皱着眉头。\"",
+            "Text": "她为什么喜欢那男的？女生都喜欢那型的吗？$3"
+          },
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "哇……我第一次看爱情片看得这么投入。$1#$b#虽然还是看不懂，但挺有趣的。谢谢你啊。$1"
+          }
+        },
+        "ID": "reaction_1"
+      },
+    ]
+  },
+	}
+			},	
+			{
+      "Action": "EditData",
+      "Target": "Data/MoviesReactions",	  
+		   "When": {
+		   "Relationship:Emily |contains=Married": "true",
+		   "Season": "winter",
+		   "Day": "26",
+		   },
+    "Entries":   {
+	"Clint":{
+    "NPCName": "Clint",
+    "Reactions": [
+      {
+        "Tag": "winter_movie_0",
+        "Response": "love",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{Random: 你知道吗？你真的是个好人……艾米莉选择你是正确的。#$b#呃，我只是有感而发。我没别的意思。$2++ 我不知道如果我像你这样事业成功又有妻子，还会不会为镇上的其他人安排生日电影？#$b#我想不会……大概这就说明了我为什么没法拥有你这样的生活。$2|inputSeparator=++}}"
+          },
+          "DuringMovie": null,
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "哇……我没想到有家室是这么辛苦的。$4#$b#你也得加油啊……可别穷得像他们那样过不了冬。$1"
+          }
+        },
+        "ID": "reaction_0"
+      },
+      {
+        "Tag": "winter_movie_1",
+        "Response": "like",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{Random: 你知道吗？你真的是个好人……艾米莉选择你是正确的。#$b#呃，我只是有感而发。我没别的意思。$2++ 我不知道如果我像你这样事业成功又有妻子，还会不会为镇上的其他人安排生日电影？#$b#我想不会……大概这就说明了我为什么没法拥有你这样的生活。$2|inputSeparator=++}}"
+          },
+          "DuringMovie": {
+            "ResponsePoint": "guyEnters",
+            "Script": "/emote Clint 8/message \"克林特皱着眉头。\"",
+            "Text": "你知道她为什么这么喜欢那家伙？你太厉害了……$3"
+          },
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "呃……我果然还是看不懂这种所谓的爱情片。$2#$b#但我知道你是个亲切的家伙……谢谢你邀请我啊。$1"
+          }
+        },
+        "ID": "reaction_1"
+      },
+    ]
+  },
+	}
+			},	
+  //Movie Invitation 
+  		{
+      "Action": "EditData",
+      "Target": "Strings/Characters",	  
+		   "When": {
+		   "Relationship:Emily |contains=Engaged, Married": "false",
+		   "Season": "winter",
+		   "Day": "26",
+		   },
+      "Entries": {
+		  "MovieInvite_Invited_Clint": "生日……电影？我没听错吧？$4#$b#当然好。等我把身上的煤灰清一下，换件衣服……$1#$b#呃，我是说，我准备一下就去。我们电影院见。$4",
+     }
+    },
+  		{
+      "Action": "EditData",
+      "Target": "Strings/Characters",	  
+		   "When": {
+		   "Relationship:Emily |contains=Engaged, Married": "true",
+		   "Season": "winter",
+		   "Day": "26",
+		   },
+      "Entries": {
+		  "MovieInvite_Invited_Clint": "生日电影？是不是艾米莉……#$b#呃，当我没说。$2#$b#我当然会去，谢谢你。我们电影院见。",
+     }
+    },
+  		{
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Clint",	  
+      "Entries": {
+	//Clint-Clint
+ 				"winter_26": "今天是我的生日。#$b#{{Random:但是也没人在乎，毕竟我没有朋友。**叹气**$2++ 大概我今天在酒馆会叫个豪华一点的菜……？#$b#就是……私人庆祝之类的。我不确定。|inputSeparator=++}}#$e#……噢，你还在啊？有什么事吗？",
+ 				"winter_26_2": "今天是我的生日。#$b#{{Random:但是也没人在乎，毕竟我没有朋友。**叹气**$2++ 大概我今天在酒馆会叫个豪华一点的菜……？#$b#就是……私人庆祝之类的。我不确定。|inputSeparator=++}}#$e#……噢，你还在啊？有什么事吗？",
+	//Clint-Emily
+ 				"spring_26": "你知道吗？明天是艾米莉的生日。#$b#噢……我只是在杂货店门前的日历里偶尔看到。我没有别的意思。$4#$e#{{Random:我希望格斯能让她放假好好开心一天，但是想到明天要是她不在酒馆，我就……哎，我太糟糕了。$2++ 我大概连祝她生日快乐，为她送上礼物的勇气都没有……$2|inputSeparator=++}}",
+ 				"spring_26_2": "你知道吗？明天是艾米莉的生日。#$b#噢……我只是在杂货店门前的日历里偶尔看到。我没有别的意思。$4#$e#{{Random:我希望格斯能让她放假好好开心一天，但是想到明天要是她不在酒馆，我就……哎，我太糟糕了。$2++ 我大概连祝她生日快乐，为她送上礼物的勇气都没有……$2|inputSeparator=++}}",
+ 				"spring_26_inlaw_Emily": "明天是艾米……噢，你当然知道了。#$e#祝福你们婚后生活愉快……**叹气**$2",
+ 				"spring_26_inlaw_Emily_2": "明天是艾米……噢，你当然知道了。#$e#祝福你们婚后生活愉快……**叹气**$2",
+	
+     }
+    },
+  
+  ]
+}

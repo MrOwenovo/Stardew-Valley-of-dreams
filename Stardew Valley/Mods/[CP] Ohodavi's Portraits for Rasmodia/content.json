@@ -1,0 +1,44 @@
+{
+	"Format": "1.28.0",
+	"ConfigSchema": {
+		"Name change hearts": {
+			"Section": "Set to the same value as in main Rasmodia mod",
+			"AllowValues": "0, 1, 2, 3, 4, 5, 6, 7, 8",
+			"Description": "This makes sure Shrine of Illusions event uses correct portraits",
+			"Default": "4",
+			},
+    }, 
+
+	"DynamicTokens": [
+		{
+			"Name": "RasmodiaName",
+			"Value": "Rasmodia",
+			"When": {
+				"query: {{Hearts:Wizard}} >= {{Name change hearts}}": true
+			}
+		},
+		{
+			"Name": "RasmodiaName",
+			"Value": "Witch",
+			"When": {
+				"query: {{Hearts:Wizard}} < {{Name change hearts}}": true
+			}
+		},
+	],
+	"Changes": [	
+
+// WITCH PORTRAIT
+		{
+          "Action": "EditImage",
+          "Target": "Portraits/Wizard",
+          "FromFile": "assets/Witch_Portrait.png"
+		},
+		
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/{{RasmodiaName}}",
+			"When": { "HasMod": "FlashShifter.StardewValleyExpandedCP" },
+			"FromFile": "assets/ShrinePortrait.png"
+		},
+	]
+}

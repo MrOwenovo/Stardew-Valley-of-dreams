@@ -1,0 +1,408 @@
+{
+    "Changes": [
+        //JULIET - SCHEDULE EDITS; DISABLED PARTS ARE IN RELEVANT FILES LISTED BELOW
+        /* EDITS in...
+      -CP: content.json, Juliet.json, Jessie.Json, Custom_LK_LodgingHouse.json; added SVE schedules, 
+        assets for recolors (atdsv OR rcti, AND/OR seasside, which should be noted as also 
+        including exteriors)/door patch (all)/gate removal (non-sve)
+        ^code is in place to make door patch (and recolors) SVE exclusive, if you so wish; 
+        if not, remove the TownMap "SVE" token from content.json
+      -TMX (Custom_LK_LodgingHouse): content.json
+      -JA (Potions): made it so the file wouldn't produce errors for the time being because it wasn't as disabled as intended
+      
+    */
+        {
+            "LogName": "Schedule - SVE",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Juliet",
+            "Entries": {
+                // second counter: 5, 25; first counter (conflicts with SVE's claire): 9, 25
+                "rain": "700 Custom_LK_LodgingHouse 21 21 3/1100 Custom_LK_LodgingHouse 7 18 0/1300 Custom_LK_LodgingHouse 28 7 0 Juliet_drums/1500 Town 92 51 2/1700 JojaMart 5 25 1 Juliet_work/2300 Town 35 20 2/2400 Custom_LK_LodgingHouse 22 6 2 Juliet_sleep",
+                "spring_17": "620 Custom_LK_LodgingHouse 21 21 3/900 Custom_LK_LodgingHouse 28 77 0 Juliet_drums/1000 Beach 44 35 2/1700 Town 25 23 2 Juliet_yoyo/2300 Custom_LK_LodgingHouse 22 6 2 Juliet_sleep",
+                "spring": "620 Custom_LK_LodgingHouse 21 21 3/a850 JojaMart 5 25 1 Juliet_work/1700 Town 25 23 2 Juliet_yoyo/2400 Custom_LK_LodgingHouse 22 6 2 Juliet_sleep",
+                "winter_17": "620 Custom_LK_LodgingHouse 21 21 3/a850 JojaMart 5 25 1 Juliet_work/1700 Beach 29 36 1 \"Strings\\schedules\\Juliet:winter_17.000\"/2400 Custom_LK_LodgingHouse 22 6 2 Juliet_sleep",
+                "Wed": "620 Custom_LK_LodgingHouse 21 21 3/a850 JojaMart 5 25 1 Juliet_work/1700 Town 26 23 2 Juliet_yoyo/2400 Custom_LK_LodgingHouse 22 6 2 Juliet_sleep",
+                "Sat": "700 Custom_LK_LodgingHouse 21 21 3/900 Custom_LK_LodgingHouse 28 7 0 Juliet_drums/1100 Custom_LK_ClearingHouse 16 7 3/1300 Beach 44 35 2/1800 Saloon 42 20 3/2400 Custom_LK_LodgingHouse 22 6 2 Juliet_sleep",
+                "Sun": "700 Custom_LK_LodgingHouse 21 21 3/900 Custom_LK_LodgingHouse 28 7 0 Juliet_drums/1100 SeedShop 38 22 0/1400 Town 100 60 2/1700 Town 25 23 2 Juliet_yoyo/2300 Town 34 10 2/2400 Custom_LK_LodgingHouse 22 6 2 Juliet_sleep",
+                "JojaMart_Replacement": "Town 26 22 2 Juliet_yoyo"
+            },
+            "When": {
+                "HasSeenEvent |contains=191393": "false",
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+            }
+        },
+        /* {
+      "LogName": "Schedule - SVE",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Juliet",
+      "Entries": {
+        "22": "620 Custom_LK_LodgingHouse 21 21 3/700 Town 95 51 0/850 JojaMart 12 28 1/1700 Town 25 22 2 Juliet_yoyo/2400 Custom_LK_LodgingHouse 22 6 2 Juliet_sleep"
+      },
+      "When": {
+        "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+        //Conditions for Joja Day here
+      }
+    },*/
+        {
+            "LogName": "Schedule - SVE version",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Juliet",
+            "Entries": {
+                // second counter: 5, 25; first counter (conflicts with SVE's claire): 9, 25
+                "spring": "620 Custom_LK_LodgingHouse 21 21 3/700 Town 72 100 2/930 CommunityCenter 14 5 0/1130 CommunityCenter 18 19 0/1430 CommunityCenter 23 19 3/1700 Town 25 23 2 Juliet_yoyo/2400 Custom_LK_LodgingHouse 22 6 2 Juliet_sleep",
+                "winter_17": "620 Custom_LK_LodgingHouse 21 21 3/700 Town 95 51 0/930 CommunityCenter 14 5 0/1130 CommunityCenter 18 19 0/1430 CommunityCenter 23 19 3/1700 Beach 36 33 1 \"Strings\\schedules\\Juliet:winter_17.100\"/2400 Custom_LK_LodgingHouse 22 6 2 Juliet_sleep",
+                "Wed": "620 Custom_LK_LodgingHouse 21 21 3/700 Town 95 51 0/930 CommunityCenter 14 5 0/1130 CommunityCenter 18 19 0/1430 CommunityCenter 23 19 3/1700 Town 26 23 2 Juliet_yoyo/2400 Custom_LK_LodgingHouse 22 6 2 Juliet_sleep",
+                "Sat": "700 Custom_LK_LodgingHouse 21 21 3/900 Custom_LK_LodgingHouse 28 7 0 Juliet_drums/1100 Custom_LK_ClearingHouse 16 7 3/1300 Beach 44 35 2/1800 Saloon 42 21 3/2400 Custom_LK_LodgingHouse 22 6 2 Juliet_sleep",
+                "Sun": "700 Custom_LK_LodgingHouse 21 21 3/900 Custom_LK_LodgingHouse 28 7 0 Juliet_drums/1100 SeedShop 38 22 0/1400 Town 100 60 2/1700 Town 26 22 2 Juliet_yoyo/2300 Town 35 20 2/2400 Custom_LK_LodgingHouse 22 6 2 Juliet_sleep",
+                "JojaMart_Replacement": "Town 26 23 2 Juliet_yoyo"
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasSeenEvent |contains=191393": true
+            }
+        },
+        {
+            "LogName": "Schedule",
+            "Action": "Load",
+            "Target": "Characters/schedules/Jessie",
+            "FromFile": "assets/schedules/JessieScheduleJojaClosed.json",
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+            }
+        },
+        {
+            "LogName": "Juliet 4-heart events",
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "Entries": {
+                "86571101/f Juliet 1000/t 1600 1800/d Sat Sun/w sunny": "none/-100 -100/Juliet 56 53 2 farmer 68 60 0/addTemporaryActor Gremlin 16 32 65 52 1 false/addConversationTopic JulietGremlin 3/animate Gremlin false true 300 22 22 23 23 23/skippable/viewport 66 57/playSound trashcan/pause 500/playSound dogWhining/jump Juliet 3/pause 500/emote Juliet 16/pause 500/playSound trashcan/pause 500/move Juliet 2 0 1/textAboveHead Juliet \"嘿，狗狗\"/move Juliet 2 0 1/pause 1000/move Juliet 2 0 1/pause 1000/textAboveHead Juliet \"别害怕\"/pause 1000/move farmer 0 -2 0/pause 500/stopAnimation Gremlin/pause 500/faceDirection Gremlin 3/shake Gremlin 250/showFrame Gremlin 18/pause 500/faceDirection Juliet 2/pause 500/speak Juliet \"别动！你会吓着她的。$5\"/pause 500/emote farmer 28/pause 500/playSound dog_bark/pause 500/shake Gremlin 250/playSound dog_bark/faceDirection Juliet 1/showFrame Juliet 26/pause 500/speak Juliet \"没事的，我们不会伤害你。这儿，我给你带了点东西。\"/addObject 63 53 641 0/pause 500/emote farmer 40/showFrame Gremlin 12/pause 500/playSound dog_pant/move Gremlin 0 1 3/pause 500/move Gremlin -1 0 3/pause 500/playSound dog_bark/textAboveHead Juliet \"没事的，姑娘\"/animate Gremlin false true 250 26 27 26 27 12 12 12 12/advancedMove Juliet false 0 1 5 0 0 4/pause 2500/speak Juliet \"怎么了？是啊，这是Joja的肉，所以肯定都是水分和生长激素。但这不会伤害到她的。$3#$b#由巴，你就这么冲了过来，到底是在想什么啊？\"/pause 500/faceDirection farmer 3/faceDirection Juliet 1/emote farmer 40/speak Juliet \"$q 86571116 null#你差点把她吓跑了！#$r 8651116 25 Juliet_Gremlin_Apologise#抱歉……我不是故意要吓她的。#$r 8651116 0 Juliet_Gremlin_Charge#你说“冲过来”是什么意思？#$r 8651118 -50 Juliet_Gremlin_Pest#你应该抵制添加激素的有害肉类。\"/pause 500/fork 8651118 Juliet_Gremlin_Disgust/pause 500/faceDirection Juliet 0/faceDirection farmer 0/speak Juliet \"好吧，反正没造成什么后果，我也怪不着你，对吧？她已经在这里徘徊好几天了，可怜的小家伙。$2#$b#我正在试着让她信任我。只是每次莫里斯都会冲她扔垃圾，这样可起不到任何帮助。$5\"/removeSprite 63 53/stopAnimation Gremlin/showFrame Gremlin 0/pause 500/move Gremlin 2 0 2/pause 1000/emote Juliet 32/pause 500/move Gremlin 0 2 2/pause 1000/emote farmer 28/move Gremlin 0 3 2/textAboveHead Gremlin \"嗷呜呜呜？\"/pause 500/warp Gremlin -100 -100/showFrame Juliet 27/pause 1000/emote Juliet 20/pause 500/faceDirection farmer 3/emote farmer 32/pause 1000/end dialogue Juliet \"她跟着我回到了家，@……我想我现在也有狗了？$1\""
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+            }
+        },
+        {
+            "LogName": "Juliet and Claire",
+            "Action": "EditData",
+            "Target": "Data/Events/Custom_LK_JojaBreakRoom",
+            "Entries": {
+                "6398445/t 900 1800/d Sat Sun": "none/-100 -100/Claire 4 6 2 Juliet -100 -100 0 farmer -100 -100 0/skippable/viewport 9 7/showFrame Claire 34/pause 500/playSound doorOpen/warp Juliet 2 11/move Juliet 0 -3 0/emote Claire 16/move Claire -1 0 2/pause 500/speak Claire \"噢，你好。你一定就是新来的姑娘吧。#$b#朱丽叶，对吗？\"/move Juliet 0 -2 1/faceDirection Claire 3/speak Juliet \"看来你做过功课了啊。真不错。$1#$b#嗯，莫里斯还真喜欢红头发的家伙，对吧？当然，我的发色不是天生的。$3\"/pause 500/emote Claire 40/pause 1500/speak Claire \"呃，总之，我叫克莱尔。#$b#嗯，要我带你四处看看吗？\"/pause 500/speak Juliet \"行啊，为什么不呢。#$b#嘿，你好像挺可爱的。来这里是图什么啊？\"/pause 500/emote Claire 8/speak Claire \"我……我不知道你在说什么。\"/pause 500/faceDirection Juliet 3/pause 500/faceDirection Juliet 1/speak Juliet \"被拖进这个……这个炼狱里。$2#$b#噢……噢，该死。你是自愿来这里工作的？$4\"/pause 500/speak Claire \"嗯，对啊，大概是这样。难道你不是吗？\"/pause 500/emote Juliet 60/pause 1500/speak Juliet \"呃……#$b#是啊，当然是了。我超爱Joja可乐，还有什么“加入我们，茁壮成长”之类的。没错。\"/pause 500/emote Juliet 28/pause 2000/emote Claire 40/pause 2000/playSound doorOpen/warp farmer 2 10/jump Juliet 4/jump Claire 4/faceDirection Juliet 2 true/faceDirection Claire 2 true/pause 1000/move farmer 0 -1 0/speak Juliet \"嘿，你就是那个农夫吧。听说你逃离了Joja的魔掌！所以，是什么让你来到了这里？\"/quickQuestion #清新的乡间空气。#我想要继承爷爷的遗产。#巴士啊，不然呢？#不关你的事。(break)speak Juliet \"哈，是的，这阵子很流行这么做，对吧？\"(break)speak Juliet \"真是个体面的选择！耕地还有挤奶之类的……我是不会这么做啦，不过我也能理解。\"(break)speak Juliet \"哈，挺会讽刺的啊。我喜欢你。$1\"(break)speak Juliet \"好吧，说的也有道理。那我就不打探别人的事了。\"/pause 500/speak Claire \"不好意思，@。其实你不该进来的。#$b#只有员工能进这里。$2\"/emote farmer 60/pause 500/speak Juliet \"总而言之，很高兴认识你，@。改天见。\"/faceDirection Juliet 1/speak Juliet \"我想我现在也该开始参观了。\"/emote Claire 32/faceDirection Claire 3/speak Claire \"没问题，朱丽叶……员工的柜子在这里……\"/pause 500/end dialogue Juliet \"可怜的克莱尔……那个叫莫里斯的家伙不想让你进员工休息室。$2#$b#看他那副样子，我还以为他把皇冠上的珠宝还是圣杯什么的藏在这里了呢。\""
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+            }
+        },
+        /*{ 
+  //It would be nice to have one that switched the roles if you had Juliet installed THEN added SVE. But unfprtunately I haven't quite figured out how to code that in yet. When - if - I do, there'll be a nice little easter egg.
+  "LogName": "Juliet and Claire - new reversed", 
+  "Action": "EditData", 
+  "Target": "Data/Events/JojaBreakRoom",
+  "Entries": {
+    "6398445/t 900 1800/f Juliet 250/d Sat Sun": "none/7 7/Juliet -100 -100 0 farmer -100 -100 0 Claire 5 6 2/skippable/showFrame Claire 34/pause 500/playSound doorOpen/warp Juliet 2 11/move Juliet 0 -3 0/emote Claire 16/move Claire -1 0 2/pause 500/speak Claire \"Oh, hello. I'm new here.#$b#You're Juliet, right? Morris told you'd show me the ropes.\"/move Juliet 0 -2 1/speak Juliet \"Oh, did he just. Typical...$5#$b#Morris really does like redheads, doesn't he? Of course, mine ain't natural.$3\"/pause 500/emote Claire 40/pause 1500/speak Claire \"Err, anyway, I'm Claire.#$b#Um, were you maybe going to show me around? What locker can I use?$2\"/pause 500/speak Juliet \"Yeh sure, of course.#$B#Hey, you seem sweet. What are you in for?\"/pause 500/emote Claire 8/speak Claire \"I... I don't know what you're talking about.\"/pause 500/faceDirection Juliet 3/pause 500/faceDirection Juliet 1/speak Juliet \"To be dragged into this ... this Joja purgatory.$2#$b#Oh... Oh crap. You're here by choice?$4\"/pause 500/speak Claire \"Well, yes. I suppose so. Aren't you?\"/pause 500/emote Juliet 60/pause 1500/speak Juliet \"Err..#$b#Yeah, yeah of course I am. Loving that Joja cola. Join Us Thrive. Yeah.\"/pause 500/emote Juliet 28/pause 2000/emote Claire 40/pause 2000/speak Juliet \"Okay, so a lock-\"/playSound doorOpen/warp farmer 2 11/jump Juliet 4/jump Claire 4/faceDirection Juliet 2 true/faceDirection Claire 2 true/pause 1000/move farmer 0 -1 0/speak Juliet \"Hey Claire, this is the local farmer.#$b# ,what can we do you for today? Come to pick up some genetically enhanced seeds?\"/quickQuestion #Yeh, Pierre's is closed.#I heard there was someone new in town.#I came to see you, Juliet.(break)speak Juliet \"Yep, good business sense... closing on Wednesdays.#$b#And he complains that they're running him out of town.\"(break)speak Juliet \"Hah, there's more than one new face in town, . Have you seen the cute girl with the pink hair yet?#$b#Things are changing around here, that's for sure!\"(break)speak Juliet \"
+      },
+  "When": { "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true, "Relationship:Juliet":"Friendly"  }
+      },*/
+        //Till sign fix - lights up the "2" (1 is also recolored and available, if needed)... any way to set this so it's only while she's around?
+        {
+            "LogName": "JojaMart till number sign fix",
+            "Action": "EditMap",
+            "Target": "Maps/JojaMart",
+            "FromFile": "assets/Maps/JojaMart-TillSignFix.tbin",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 1,
+                "Height": 1
+            },
+            "ToArea": {
+                "X": 5,
+                "Y": 22,
+                "Width": 1,
+                "Height": 1
+            },
+            "When": {
+                "IsCommunityCenterComplete": false,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+            }
+        },
+        {
+            "LogName": "Schedule - if East Scarpe installed",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Juliet",
+            "Entries": {
+                "Sat": "700 Custom_LK_LodgingHouse 21 21 3/900 Custom_LK_LodgingHouse 28 7 0 Juliet_drums/950 Custom_LK_ClearingHouse 25 20 2/1030 Custom_EastScarpe 21 102 0/1400 Custom_EastScarpe 56 41 2/1700 Saloon 42 21 3/2400 Custom_LK_LodgingHouse 22 6 2 Juliet_sleep"
+            },
+            "When": {
+                "HasSeenEvent": "86571101",
+                "HasMod": "LemurKat.EastScarpe.CP"
+            }
+        },
+        {
+            "LogName": "Yoba Worship if Paul or Amelia are present",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Juliet",
+            "Entries": {
+                "Sun": "700 Custom_LK_LodgingHouse 21 21 3/900 Custom_LK_LodgingHouse 28 7 0 Juliet_drums/1100 Beach 44 35/1330 SeedShop 37 22 0/1700 Town 16 61 1/2300 Town 35 20 2/2400 Custom_LK_LodgingHouse 22 6 2 Juliet_sleep"
+            },
+            "When": {
+                "HasMod": "Ginnyclaire.Paul, midnightsky550",
+                "IsCommunityCenterComplete": false
+            }
+        },
+        {
+            "LogName": "Yoba Worship if Paul or Amelia are present",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Juliet",
+            "Entries": {
+                "Sun": "700 Custom_LK_LodgingHouse 21 21 3/900 Custom_LK_LodgingHouse 28 7 0 Juliet_drums/1100 Beach 44 35/1330 SeedShop 37 22 0/1700 Town 16 61 1/2300 Town 35 20 2/2400 Custom_LK_LodgingHouse 22 6 2 Juliet_sleep"
+            },
+            "When": {
+                "HasMod": "Ginnyclaire.Paul, midnightsky550",
+                "IsCommunityCenterComplete": true
+            }
+        },
+        //Sells stuff at Juliet's till
+        {
+            "Action": "EditMap",
+            "Target": "Maps/JojaMart",
+            "When": {
+                "Day |contains=22": false,
+                "HasFlag |contains=ccMovieTheaterJoja": false
+            },
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 6,
+                        "Y": 24
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "JojaShop"
+                    }
+                },
+                {
+                    "Position": {
+                        "X": 6,
+                        "Y": 25
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "JojaShop"
+                    }
+                }
+            ]
+        },
+        //Juliet to work Theater if Joja Route in SVE
+        //Step one: Set up warps in Theater backroom map and add warp to the door
+        {
+            "LogName": "Adds warp to TheaterBreakRoom",
+            "Action": "EditMap",
+            "Target": "Maps/Custom_LK_TheaterBreakroom",
+            "MapProperties": {
+                "Warp": "21 22 Town 56 21 20 22 Town 56 21"
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasFlag |contains=ccMovieTheaterJoja": true
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Town-TheaterCC",
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 57,
+                        "Y": 19
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "Warp 21 20 Custom_LK_TheaterBreakroom"
+                    }
+                }
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasFlag |contains=ccMovieTheaterJoja": true
+            }
+        },
+        //Step two: Set up NPCWarp - does SVE already have one?
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "NPCWarp"
+                    ],
+                    "Value": "48 16 Custom_LK_TheaterBreakroom 2 11",
+                    "Delimiter": " "
+                },
+            ],
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasFlag |contains=ccMovieTheaterJoja": true
+            }
+        },
+        //Step three: set up Juliet's sprites to cover the character inside
+        {
+            "LogName": "Places Juliet into Theater",
+            "Action": "EditImage",
+            "Target": "Maps/MovieTheaterJoja_TileSheet, Maps/MovieTheaterJoja_TileSheet_international",
+            "FromFile": "assets/img/JulietTheaterPatch.png",
+            "FromArea": {
+                "X": 0,
+                "Y": 16,
+                "Width": 48,
+                "Height": 16
+            },
+            "ToArea": {
+                "X": 192,
+                "Y": 176,
+                "Width": 48,
+                "Height": 16
+            },
+            "When": {
+                "HasFlag |contains=ccMovieTheaterJoja": true,
+                "DayOfWeek": "Monday, Tuesday, Wednesday, Thursday, Friday"
+            }
+        },
+        {
+            "LogName": "Places Juliet into Theater",
+            "Action": "EditImage",
+            "Target": "Maps/MovieTheaterJoja_TileSheet, Maps/MovieTheaterJoja_TileSheet_international",
+            "FromFile": "assets/img/JulietTheaterPatch.png",
+            "FromArea": {
+                "X": 48,
+                "Y": 0,
+                "Width": 16,
+                "Height": 32
+            },
+            "ToArea": {
+                "X": 240,
+                "Y": 160,
+                "Width": 16,
+                "Height": 32
+            },
+            "When": {
+                "HasFlag |contains=ccMovieTheaterJoja": true,
+                "DayOfWeek": "Monday, Tuesday, Wednesday, Thursday, Friday"
+            }
+        },
+        //Step four: adjust Juliet schedule accordingly
+        {
+            "LogName": "Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Juliet",
+            "Entries": {
+                "spring": "620 Custom_LK_LodgingHouse 21 21 3/800 Custom_LK_TheaterBreakroom 8 18 1/1200 Custom_LK_TheaterBreakroom 8 7 2/1400 Custom_LK_TheaterBreakroom 14 5 0/1700 Town 25 23 2 Juliet_yoyo/2400 Custom_LK_LodgingHouse 22 6 2 Juliet_sleep",
+                "winter_17": "620 Custom_LK_LodgingHouse 21 21 3/800 Custom_LK_TheaterBreakroom 8 18 1/1200 Custom_LK_TheaterBreakroom 8 7 2/1400 Custom_LK_TheaterBreakroom 14 5 0/1700 Beach 29 36 2 \"Strings\\schedules\\Juliet:winter_17.200\"/2400 Custom_LK_LodgingHouse 22 6 2 Juliet_sleep",
+                "Wed": "620 Custom_LK_LodgingHouse 21 21 3/800 Custom_LK_TheaterBreakroom 8 18 1/1200 Custom_LK_TheaterBreakroom 8 8 2/1400 Custom_LK_TheaterBreakroom 14 5 0/1700 Town 26 23 2 Juliet_yoyo/2400 Custom_LK_LodgingHouse 22 6 2 Juliet_sleep",
+                "marriage_Mon": "700 Custom_LK_TheaterBreakroom 8 18 1/1200 Custom_LK_TheaterBreakroom 8 7 2/1400 Custom_LK_TheaterBreakroom 14 5 0/2100 BusStop -1 23 3",
+                "marriage_Wed": "700 Custom_LK_TheaterBreakroom 8 18 1/1200 Custom_LK_TheaterBreakroom 8 7 2/1400 Custom_LK_TheaterBreakroom 14 5 0/2100 BusStop -1 23 3",
+            },
+            "When": {
+                "HasFlag |contains=ccMovieTheaterJoja": true
+            }
+        },
+        {
+            "LogName": "Joja Day",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Juliet",
+            "Entries": {
+                "22": "620 Custom_LK_LodgingHouse 21 21 3/a850 JojaMart 12 28 1/1700 Town 25 22 2 Juliet_yoyo/2400 Custom_LK_LodgingHouse 22 6 2 Juliet_sleep"
+            },
+            "When": {
+                "HasSeenEvent |contains=502261": true,
+                "Day |contains=22": true
+            }
+        },
+        //Changes Theater BackRoom warps:
+        /* {
+      "Action": "EditMap",
+      "Target": "Custom_LK_TheaterBreakroom",
+      "MapProperties": {
+        "NPCWarp": "20 21 Town 52 20 21 21 Town 52 20",
+      },
+      "When": {
+        "HasFlag |contains=ccMovieTheater": true
+      }
+    },*/
+        //Remove tree from museum
+        /*{
+      "LogName": "Removes bush in front of Community Center",
+      "Action": "EditMap",
+      "Target": "Maps/Town",
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 57,
+            "Y": 22
+          },
+          "Layer": "Buildings",
+          "Remove": true
+        },
+        {
+          "Position": {
+            "X": 58,
+            "Y": 22
+          },
+          "Layer": "Buildings",
+          "Remove": true
+        },
+        {
+          "Position": {
+            "X": 59,
+            "Y": 22
+          },
+          "Layer": "Buildings",
+          "Remove": true
+        },
+        {
+          "Position": {
+            "X": 59,
+            "Y": 21
+          },
+          "Layer": "Front",
+          "Remove": true
+        },
+        {
+          "Position": {
+            "X": 59,
+            "Y": 20
+          },
+          "Layer": "Front",
+          "Remove": true
+        },
+      ]
+    },*/
+        {
+            "LogName": "Removes leaves in front of Community Center",
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "When": {
+                "IsJojaMartComplete": true
+            },
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 57,
+                        "Y": 21
+                    },
+                    "Layer": "Buildings",
+                    "Remove": true
+                },
+                {
+                    "Position": {
+                        "X": 58,
+                        "Y": 21
+                    },
+                    "Layer": "Buildings",
+                    "Remove": true
+                },
+            ]
+        }
+    ]
+}

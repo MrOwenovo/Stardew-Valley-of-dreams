@@ -1,0 +1,311 @@
+{
+   "Format": "1.28.0",
+
+   "ConfigSchema": {
+
+		"Enable this mod": { 
+                                    "AllowValues": "true,false" ,
+			            "Default": "true" ,
+			           },
+		"Storage Space Pattern": {
+			                  "AllowValues": "Roofed, No_roof, Scaffolding_only" ,
+			                  "Default": "Roofed" ,
+			                 },
+		"Scaffolding for swim mod": { 
+                                    "AllowValues": "true,false" ,
+			            "Default": "false" ,
+			           },
+                   },
+
+   "CustomLocations": [
+                       {
+                        "Name": "Custom_Beach_Storage_Space",
+                        "FromMapFile": "assets/Beach_Storage_Space.tmx",
+                       },
+                      ],
+
+   "Changes": [
+
+       {// 物置スペース 通常
+        "Action": "EditMap",
+        "Target": "Maps/Custom_Beach_Storage_Space",
+	"FromFile": "assets/Beach_Storage_Space_Roofed.tmx",
+	"PatchMode": "ReplaceByLayer",
+        "ToArea": { "X": 14, "Y": 0, "Width": 22, "Height": 16 },
+        "MapProperties":{ 
+                         "DayTiles": "AlwaysFront 32 8 369",
+                         "Light": "32 8 4",
+                         "NightTiles": "AlwaysFront 32 8 368",  
+                        },
+	"When": { "Enable this mod": "true" , "Storage Space Pattern": "Roofed" },
+       },
+
+       {// 物置スペースの屋根 無しver
+        "Action": "EditMap",
+        "Target": "Maps/Custom_Beach_Storage_Space",
+	"FromFile": "assets/Beach_Storage_Space_Noroof.tmx",
+	"PatchMode": "ReplaceByLayer",
+        "ToArea": { "X": 14, "Y": 0, "Width": 22, "Height": 16 },
+        "MapProperties":{ 
+                         "DayTiles": "AlwaysFront 32 8 369",
+                         "Light": "32 8 4",
+                         "NightTiles": "AlwaysFront 32 8 368",  
+                        },
+	"When": { "Enable this mod": "true" , "Storage Space Pattern": "No_roof" },
+       },
+
+       {// 物置スペース 足場のみver
+        "Action": "EditMap",
+        "Target": "Maps/Custom_Beach_Storage_Space",
+	"FromFile": "assets/Beach_Storage_Space_Scaffolding_Only.tmx",
+	"PatchMode": "ReplaceByLayer",
+        "ToArea": { "X": 14, "Y": 0, "Width": 22, "Height": 16 },
+	"When": { "Enable this mod": "true" , "Storage Space Pattern": "Scaffolding_only" },
+       },
+       {// 海に物置マップへの足場を追加(足場のみver)
+        "Action": "EditMap",
+        "Target": "Maps/Beach",
+	"FromFile": "assets/Beach_Storage_Space_Add.tmx",
+	"PatchMode": "ReplaceByLayer",
+        "ToArea": { "X": 61, "Y": 47, "Width": 6, "Height": 3 },
+	"When": { "Enable this mod": "true" , "Storage Space Pattern": "Scaffolding_only" },
+       },
+
+       {// 海に物置マップへの足場を追加
+        "Action": "EditMap",
+        "Target": "Maps/Beach",
+	"FromFile": "assets/Beach_Storage_Space_Add.tmx",
+	"PatchMode": "ReplaceByLayer",
+        "ToArea": { "X": 61, "Y": 47, "Width": 6, "Height": 3 },
+	"When": { "Enable this mod": "true" ,
+                  "Query: '{{Storage Space Pattern}}' = 'Scaffolding_only'": false },
+       },
+
+      {// 海に物置マップへのワープを追加
+        "Action": "EditMap",
+        "Target": "Maps/Beach",
+        "TextOperations": [
+            {
+             "Operation": "Append",
+             "Target": ["MapProperties", "Warp"],
+             "Value": "63 50 Custom_Beach_Storage_Space 24 1 64 50 Custom_Beach_Storage_Space 25 1",
+             "Delimiter": " ",
+            },
+                       ],
+	"When": { "Enable this mod": "true" ,
+                  "Query: '{{Storage Space Pattern}}' = 'Scaffolding_only'": false },
+       },
+
+       {// 海に物置マップへの足場を追加(足場のみの時)
+        "Action": "EditMap",
+        "Target": "Maps/Beach",
+	"FromFile": "assets/Beach_Storage_Space_Add_Scaffolding_Only.tmx",
+	"PatchMode": "ReplaceByLayer",
+        "ToArea": { "X": 61, "Y": 47, "Width": 6, "Height": 3 },
+	"When": { "Enable this mod": "true" , "Storage Space Pattern": "Scaffolding_only" },
+       },
+
+      {// 海に物置マップへのワープを追加(足場のみの時)
+        "Action": "EditMap",
+        "Target": "Maps/Beach",
+        "TextOperations": [
+            {
+             "Operation": "Append",
+             "Target": ["MapProperties", "Warp"],
+             "Value": "62 50 Custom_Beach_Storage_Space 23 1 63 50 Custom_Beach_Storage_Space 24 1 64 50 Custom_Beach_Storage_Space 25 1 65 50 Custom_Beach_Storage_Space 26 1",
+             "Delimiter": " ",
+            },
+                       ],
+	"When": { "Enable this mod": "true" , "Storage Space Pattern": "Scaffolding_only" },
+       },
+      {// 物置マップから海へのワープを追加(足場のみの時の両端追加分)
+        "Action": "EditMap",
+        "Target": "Maps/Custom_Beach_Storage_Space",
+        "TextOperations": [
+            {
+             "Operation": "Append",
+             "Target": ["MapProperties", "Warp"],
+             "Value": "23 -1 Beach 62 49 26 -1 Beach 65 49",
+             "Delimiter": " ",
+            },
+                       ],
+	"When": { "Enable this mod": "true" , "Storage Space Pattern": "Scaffolding_only" },
+       },
+
+// カモメ系 
+       {// 置物マップ 夏の日中にカモメのログを出す 左
+        "Action": "EditMap",
+        "Target": "Maps/Custom_Beach_Storage_Space",
+	"FromFile": "assets/Beach_Storage_Space_Seagull_LogL.tmx",
+	"PatchMode": "ReplaceByLayer",
+        "ToArea": { "X": 16, "Y": 7, "Width": 1, "Height": 1 },
+        "Update": "OnLocationChange",
+	"When": { "Enable this mod": "true" ,
+                  "Query: '{{Storage Space Pattern}}' = 'Scaffolding_only'": false ,
+                  "Season": "summer",
+                  "Time": "{{range:0600,1750}}" ,
+                  "Weather |contains=rain,storm": false },
+       },
+       {// 置物マップ 夏の日中にカモメのログを出す 真ん中１
+        "Action": "EditMap",
+        "Target": "Maps/Custom_Beach_Storage_Space",
+	"FromFile": "assets/Beach_Storage_Space_Seagull_LogD.tmx",
+	"PatchMode": "ReplaceByLayer",
+        "ToArea": { "X": 24, "Y": 13, "Width": 1, "Height": 1 },
+        "Update": "OnLocationChange",
+	"When": { "Enable this mod": "true"  ,
+                  "Query: '{{Storage Space Pattern}}' = 'Scaffolding_only'": false ,
+                  "Season": "summer",
+                  "Time": "{{range:0600,1750}}" ,
+                  "Weather |contains=rain,storm": false },
+       },
+       {// 置物マップ 夏の日中にカモメのログを出す 真ん中２
+        "Action": "EditMap",
+        "Target": "Maps/Custom_Beach_Storage_Space",
+	"FromFile": "assets/Beach_Storage_Space_Seagull_LogD.tmx",
+	"PatchMode": "ReplaceByLayer",
+        "ToArea": { "X": 25, "Y": 13, "Width": 1, "Height": 1 },
+        "Update": "OnLocationChange",
+	"When": { "Enable this mod": "true" ,
+                  "Query: '{{Storage Space Pattern}}' = 'Scaffolding_only'": false ,
+                  "Season": "summer",
+                  "Time": "{{range:0600,1750}}" ,
+                  "Weather |contains=rain,storm": false },
+       },
+
+       {// 置物マップ 夏の夜にカモメを消す 左
+        "Action": "EditMap",
+        "Target": "Maps/Custom_Beach_Storage_Space",
+	"FromFile": "assets/Beach_Storage_Space_Seagull_Erase.tmx",
+	"PatchMode": "ReplaceByLayer",
+        "ToArea": { "X": 9, "Y": 4, "Width": 2, "Height": 2 },
+        "Update": "OnLocationChange",
+	"When": { "Enable this mod": "true" ,
+                  "Season": "summer",
+                  "Time": "{{range:1800,2600}}" },
+       },
+       {// 置物マップ 夏の夜にカモメを消す 真ん中
+        "Action": "EditMap",
+        "Target": "Maps/Custom_Beach_Storage_Space",
+	"FromFile": "assets/Beach_Storage_Space_Seagull_Erase.tmx",
+	"PatchMode": "ReplaceByLayer",
+        "ToArea": { "X": 24, "Y": 15, "Width": 2, "Height": 2 },
+        "Update": "OnLocationChange",
+	"When": { "Enable this mod": "true" ,
+                  "Season": "summer",
+                  "Time": "{{range:1800,2600}}" },
+       },
+       {// 置物マップ 夏の悪天候にカモメを消す 左
+        "Action": "EditMap",
+        "Target": "Maps/Custom_Beach_Storage_Space",
+	"FromFile": "assets/Beach_Storage_Space_Seagull_Erase.tmx",
+	"PatchMode": "ReplaceByLayer",
+        "ToArea": { "X": 9, "Y": 4, "Width": 2, "Height": 2 },
+        "Update": "OnLocationChange",
+	"When": { "Enable this mod": "true" ,
+                  "Season": "summer",
+                  "Time": "{{range:0600,1750}}" ,
+                  "Weather |contains=rain,storm": true },
+       },
+       {// 置物マップ 夏の悪天候にカモメを消す 真ん中
+        "Action": "EditMap",
+        "Target": "Maps/Custom_Beach_Storage_Space",
+	"FromFile": "assets/Beach_Storage_Space_Seagull_Erase.tmx",
+	"PatchMode": "ReplaceByLayer",
+        "ToArea": { "X": 24, "Y": 15, "Width": 2, "Height": 2 },
+        "Update": "OnLocationChange",
+	"When": { "Enable this mod": "true" ,
+                  "Season": "summer",
+                  "Time": "{{range:0600,1750}}" ,
+                  "Weather |contains=rain,storm": true },
+       },
+
+// カモメ系 (足場オンリーの時)
+       {// 置物マップ 夏の日中にカモメのログを出す 左
+        "Action": "EditMap",
+        "Target": "Maps/Custom_Beach_Storage_Space",
+	"FromFile": "assets/Beach_Storage_Space_Seagull_LogL_SO.tmx",
+	"PatchMode": "ReplaceByLayer",
+        "ToArea": { "X": 15, "Y": 7, "Width": 1, "Height": 1 },
+        "Update": "OnLocationChange",
+	"When": { "Enable this mod": "true" ,
+                  "Storage Space Pattern": "Scaffolding_only" ,
+                  "Season": "summer",
+                  "Time": "{{range:0600,1750}}" ,
+                  "Weather |contains=rain,storm": false },
+       },
+       {// 置物マップ 夏の日中にカモメのログを出す 真ん中１
+        "Action": "EditMap",
+        "Target": "Maps/Custom_Beach_Storage_Space",
+	"FromFile": "assets/Beach_Storage_Space_Seagull_LogD_SO.tmx",
+	"PatchMode": "ReplaceByLayer",
+        "ToArea": { "X": 24, "Y": 14, "Width": 1, "Height": 1 },
+        "Update": "OnLocationChange",
+	"When": { "Enable this mod": "true"  ,
+                  "Storage Space Pattern": "Scaffolding_only" ,
+                  "Season": "summer",
+                  "Time": "{{range:0600,1750}}" ,
+                  "Weather |contains=rain,storm": false },
+       },
+       {// 置物マップ 夏の日中にカモメのログを出す 真ん中２
+        "Action": "EditMap",
+        "Target": "Maps/Custom_Beach_Storage_Space",
+	"FromFile": "assets/Beach_Storage_Space_Seagull_LogD_SO.tmx",
+	"PatchMode": "ReplaceByLayer",
+        "ToArea": { "X": 25, "Y": 14, "Width": 1, "Height": 1 },
+        "Update": "OnLocationChange",
+	"When": { "Enable this mod": "true" ,
+                  "Storage Space Pattern": "Scaffolding_only" ,
+                  "Season": "summer",
+                  "Time": "{{range:0600,1750}}" ,
+                  "Weather |contains=rain,storm": false },
+       },
+
+
+// Swim用
+       {//フェンス有りの２パターン
+        "Action": "EditMap",
+        "Target": "Maps/Custom_Beach_Storage_Space",
+	"FromFile": "assets/Beach_Storage_Space_Swim.tmx",
+	"PatchMode": "ReplaceByLayer",
+        "ToArea": { "X": 26, "Y": 0, "Width": 3, "Height": 4 },
+	"When": { "Enable this mod": "true" ,
+                  "Query: '{{Storage Space Pattern}}' = 'Scaffolding_only'": false ,
+                  "Scaffolding for swim mod": "true" },
+       },
+       {//足場のみのパターン
+        "Action": "EditMap",
+        "Target": "Maps/Custom_Beach_Storage_Space",
+	"FromFile": "assets/Beach_Storage_Space_Swim_SO.tmx",
+	"PatchMode": "ReplaceByLayer",
+        "ToArea": { "X": 26, "Y": 0, "Width": 3, "Height": 4 },
+	"When": { "Enable this mod": "true" ,
+                  "Storage Space Pattern": "Scaffolding_only" ,
+                  "Scaffolding for swim mod": "true" },
+       },
+
+
+
+
+      {// ロケーションデータ 魚 季節、発掘オブジェクト(null)
+        "Action": "EditData",
+        "Target": "Data/Locations",
+        "Entries": {
+                    "Custom_Beach_Storage_Space": "-1/-1/-1/-1/129 -1 131 -1 147 -1 148 -1 152 -1 708 -1 267 -1/128 -1 130 -1 146 -1 149 -1 150 -1 152 -1 155 -1 708 -1 701 -1 267 -1/129 -1 131 -1 148 -1 150 -1 152 -1 154 -1 155 -1 705 -1 701 -1/708 -1 130 -1 131 -1 146 -1 147 -1 150 -1 151 -1 152 -1 154 -1 705 -1/-1",
+                   },
+	"When": { "Enable this mod": "true" },
+      },
+
+
+      {// テキストボックス導入 翻訳関係
+        "Action":"EditData",
+        "Target":"Strings/StringsFromMaps",
+        "Entries":{
+                   "BeachASSA01":"{{i18n:BeachASSA01}}",
+                   "BeachASSA02":"{{i18n:BeachASSA02}}",
+                   "BeachASSA03":"{{i18n:BeachASSA03}}",
+                   "BeachASSA04":"{{i18n:BeachASSA04}}",
+               },
+       },
+  ]
+}

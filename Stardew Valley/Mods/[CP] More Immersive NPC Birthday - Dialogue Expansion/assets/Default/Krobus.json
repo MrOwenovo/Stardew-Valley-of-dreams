@@ -1,0 +1,176 @@
+{
+  "Changes": [	
+  
+  	
+//Movie Reactions
+	    		{
+      "Action": "EditData",
+      "Target": "Data/MoviesReactions",	  
+		   "When": {
+			"Relationship:Krobus": "Friendly", 
+		   "Season": "winter",
+		   "Day": "1",
+		   },
+    "Entries":   {
+	"Krobus":{
+    "NPCName": "Krobus",
+    "Reactions": [
+      {
+        "Tag": "winter_movie_0",
+        "Response": "like",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{Random: 你认得出我的吧？我是科罗布斯。$8#$b#嗯……你们人类出门庆祝时都做什么？我没看到人类蜷在角落，所以我想你们是不同的做法。$8++ 我平常无法理解为什么人类会把盯着闪烁灯光几小时视作＂娱乐＂。$8#$b#但今天……感觉有些特别。我想我会比平常更积极一点去尝试理解……$8|inputSeparator=++}}"
+          },
+          "DuringMovie": null,
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "嗯……你的农场在冬天也这么拮据的嘛？$8#$b#如果饿了，你可以到下水道来……我可以分你一些新鲜的虫子当晚餐。"
+          }
+        },
+        "ID": "reaction_0"
+      },
+      {
+        "Tag": "winter_movie_1",
+        "Response": "like",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{Random: 你认得出我的吧？我是科罗布斯。$8#$b#嗯……你们人类出门庆祝时都做什么？我没看到人类蜷在角落，所以我想你们是不同的做法。$8++ 我平常无法理解为什么人类会把盯着闪烁灯光几小时视作＂娱乐＂。$8#$b#但今天……感觉有些特别。我想我会比平常更积极一点去尝试理解……$8|inputSeparator=++}}"
+          },
+          "DuringMovie": null,
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": ""
+          }
+        },
+        "ID": "reaction_1"
+      },
+    ]
+  },
+	}
+			},
+
+	    		{
+      "Action": "EditData",
+      "Target": "Data/MoviesReactions",	  
+		   "When": {
+		   "Roommate": "Krobus",
+		   "Season": "winter",
+		   "Day": "1",
+		   },
+    "Entries":   {
+	"Krobus":{
+    "NPCName": "Krobus",
+    "Reactions": [
+      {
+        "Tag": "winter_movie_0",
+        "Response": "like",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{Random: 像这样……在特别的日子跟亲近的人出门娱乐，对你们人类有特别的意义是不？$8#$b#嗯……我好像开始理解了。$8++ 我有些紧张……希望没有人发现我不寻常。但是能跟你出门我很兴奋！$8|inputSeparator=++}}"
+          },
+          "DuringMovie": null,
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "星之果实似乎能给予你们人类超乎寻常的能量。$8#$b#对我们暗影人？嗯……没有什么效果。我们比较享受野山葵的香味。$8"
+          }
+        },
+        "ID": "reaction_0"
+      },
+      {
+        "Tag": "winter_movie_1",
+        "Response": "like",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{Random: 像这样……在特别的日子跟亲近的人出门娱乐，对你们人类有特别的意义是不？$8#$b#嗯……我好像开始理解了。$8++ 我有些紧张……希望没有人发现我不寻常。但是能跟你出门我很兴奋！$8|inputSeparator=++}}"
+          },
+          "DuringMovie": null,
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "人类喜欢探讨爱情，是不？#$b#跟你一起生活后，我偶尔也会想……那不时涌现的奇怪感觉是不是＂爱＂。#$b#我想我们继续在一起的话，我终有一天会搞懂的。哪怕那可能得花上很多年……"
+          }
+        },
+        "ID": "reaction_1"
+      },
+    ]
+  },
+	}
+  },
+  		{
+      "Action": "EditData",
+      "Target": "Strings/Characters",	  
+			"When": {
+			"Season": "winter",
+			"Day": "1",
+			"Relationship:Krobus": "Friendly", 
+		   },
+      "Entries": {
+		  "MovieInvite_Invited_Krobus": "生日电影？嗯……我出外会有风险，但是……好。我想去看看。#$b#我得准备一下，我们电影院见吧。",
+     }
+    },
+  		{
+      "Action": "EditData",
+      "Target": "Strings/Characters",	  
+		   "When": {
+		   "Season": "winter",
+		   "Day": "1",
+		   "Roommate": "Krobus",
+		   },
+      "Entries": {
+		  "MovieInvite_Invited_Krobus": "生日电影？噢，你们的庆祝方式……好。#$b#我们一起出门会很奇怪……你先去电影院等我吧。",
+     }
+    },
+	
+		{
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Krobus",	  
+      "Entries": {
+		
+ 				"winter_1": "{{Random: 今天的天气太棒了，阴阴沉沉的……好舒服。不过有些冷。++ 嗯……最近有些冷。我猜是入冬了，是不是？|inputSeparator=++}}#$b#$q 115321700/115321701 Krobusbirthday_followup#这让我想起我第一次拥有自我意识的时候。正好也是冬天的第一天。
+					#$r 115321700 30 Krobusbirthday_A#这是不是代表今天是你的生日？
+					#$r 115321700 30 Krobusbirthday_B#原来如此。生日快乐！",
+ 				"winter_1_2": "{{Random: 今天的天气太棒了，阴阴沉沉的……好舒服。不过有些冷。++ 嗯……最近有些冷。我猜是入冬了，是不是？|inputSeparator=++}}#$b#$q 115321700/115321701 Krobusbirthday_followup#这让我想起我第一次拥有自我意识的时候。正好也是冬天的第一天。
+					#$r 115321700 30 Krobusbirthday_A#这是不是代表今天是你的生日？
+					#$r 115321700 30 Krobusbirthday_B#原来如此。生日快乐！",
+					Krobusbirthday_A: "生日……？噢，对，你们人类是这么称呼出生的日子的。#$b#嗯……这听起来很棒，感觉我有些接近你们人类！我决定这天就是我的生日了。$1",
+					Krobusbirthday_B: "噢……？对，你们人类是这么称呼出生的日子的。#$b#谢谢你！我心里现在感觉暖暖的。你们人类被祝福生日时也是这样的感觉吗？$1",
+ 		Krobusbirthday_followup:"{{Random: 我很高兴能定下这天作我的生日。更高兴的是你来跟我说话。#$b#还是说你其实只是想买东西？那也可以……我知道你们很爱买东西。++ 你们人类在生日时是不是喜欢吃大餐庆祝？我也想试一试。#$b#嗯……我想我今天可以奖励自己一顿虫子大餐？下水道有很多这些优秀蛋白质！$7|inputSeparator=++}}",
+
+     }
+    },
+  
+		{
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogueKrobus",	  
+      "Entries": {
+		
+ 				"winter_1": "{{Random: 今天的天气太棒了，阴阴沉沉的……好舒服。不过有些冷。++ 嗯……最近有些冷。我猜是入冬了，是不是？|inputSeparator=++}}#$b#$q 115321700/115321701 Krobusbirthday_Marriedfollowup#这让我想起我第一次拥有自我意识的时候。正好也是冬天的第一天。
+					#$r 115321700 30 Krobusbirthday_A#这是不是代表今天是你的生日？
+					#$r 115321700 30 Krobusbirthday_B#原来如此。生日快乐！",
+ 				"winter_1_2": "{{Random: 今天的天气太棒了，阴阴沉沉的……好舒服。不过有些冷。++ 嗯……最近有些冷。我猜是入冬了，是不是？|inputSeparator=++}}#$b#$q 115321700/115321701 Krobusbirthday_Marriedfollowup#这让我想起我第一次拥有自我意识的时候。正好也是冬天的第一天。
+					#$r 115321700 30 Krobusbirthday_A#这是不是代表今天是你的生日？
+					#$r 115321700 30 Krobusbirthday_B#原来如此。生日快乐！",
+ 		Krobusbirthday_Marriedfollowup:"自从定下了今天是我的生日……每到这天我就有种特别的情绪。$4#$b#我不知道你们人类是怎么称呼这感觉的……期待？兴奋？$4#$b#$y '无论如何……我很享受这种特别的感觉。_生日快乐，科罗布斯！_噢……谢谢你！能跟别人庆祝生日真好。$1*{{Random: 我希望我的同族也可以理解这种喜悦……虽然这应该很困难。*我们的种族没有寿命概念。生日对我们来说没有意义。++ 我在书上看过，人类在这天会跟亲近的人一起度过。*……*我希望你今天没有很忙碌？$2*噢……没空也没关系的。我知道你有很多事情要忙！我会一个人待着。$1|inputSeparator=++}}_生日快乐，科罗布斯。能跟你住在一起我很幸福。_噢？！真、真的嘛……我也是！$4*我很高兴能交到你这个朋友，@。$1*或许我在你寿命耗尽后仍然会活上很久很久……但我一定不会忘记跟你度过的这些时光的。这是我的宝物！$1_我都忘了今天是你的生日……_噢……没关系，我们族人也没有过生日的习惯。这只是我……嗯……试图更了解人类而做的一个尝试。*不过你要是能祝贺我一下，我想我会很高兴的！$1'",
+		
+		
+     }
+    },
+  
+  ]
+}

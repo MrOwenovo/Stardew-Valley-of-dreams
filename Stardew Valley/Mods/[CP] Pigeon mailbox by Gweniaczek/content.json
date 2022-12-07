@@ -1,0 +1,89 @@
+{
+	"Format": "1.19",
+
+	"ConfigSchema": {
+		"mailoption":{"AllowValues": "1, 2, 3, 4",
+					"Default": "1"},
+		"mailExtra":{"AllowValues": "more, less",
+					"Default": "more"},
+		"FallColor":{"AllowValues": "1, 2",
+					"Default": "1",
+					"Description": "为了匹配重新着色mods有这个选项->绿色(1)橙色(2)" },
+		"RecolourOverwrite":{"AllowValues": "Vanilla, DNEarthyRecolour, Eemie's, FoliageRedone, Starblue, VibrantPastoral, WittilyNamed",
+					"AllowBlank": true,
+					"Default": "",
+					"Description": "如果您想手动更改重新上色调色板" },
+	},
+	
+	
+	"DynamicTokens": [
+	//checking what recolour is used
+		{
+		"Name": "Recolour",
+		"Value": "Vanilla",
+		},
+		{
+		"Name": "Recolour",
+		"Value": "DNEarthyRecolour",
+			"When": { "HasMod": "DaisyNiko.EarthyRecolour" },
+		},
+		{
+		"Name": "Recolour",
+		"Value": "Eemie's",
+			"When": { "HasMod": "minervamaga.CP.eemieMapRecolour" },
+		},
+		{
+		"Name": "Recolour",
+		"Value": "FoliageRedone",
+			"When": { "HasMod": "stardewfoliageredone" },
+		},{
+		"Name": "Recolour",
+		"Value": "Starblue",
+			"When": { "HasMod": "Lita.StarblueValley" },
+		},
+		{
+		"Name": "Recolour",
+		"Value": "VibrantPastoral",
+			"When": { "HasMod": "grapeponta.VibrantPastoralRecolor" },
+		},
+		{
+		"Name": "Recolour",
+		"Value": "WittilyNamed",
+			"When": { "HasMod": "Acerbicon.Recolor" },
+		},
+
+	//recolor overwrite
+		{
+		"Name": "Recolour",
+		"Value": "{{RecolourOverwrite}}",
+			"When": { "RecolourOverwrite |contains=Vanilla, DNEarthyRecolour, Eemie's, FoliageRedone, FoliageRedoneReshade, Starblue, VibrantPastoral, WittilyNamed": true },
+		},
+	//fall color overwrite
+		{
+		"Name": "Recolour",
+		"Value": "{{Recolour}}/{{FallColor}}",
+			"When": { "Recolour |contains=Eemie's, VibrantPastoral": true,
+					"Season": "fall" },
+		},
+	],
+
+	"Changes": [
+//Mailbox
+		{
+        "Action": "EditImage",
+        "Target": "Maps/{{season}}_outdoorsTileSheet",
+        "FromFile": "assets/{{Recolour}}/{{season}}_{{mailoption}}_{{mailExtra}}.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 32 },
+			"ToArea": { "X": 80, "Y": 1232, "Width": 16, "Height": 32 },
+        },
+		{
+        "Action": "EditImage",
+        "Target": "Maps/{{season}}_outdoorsTileSheet",
+		"FromFile": "assets/{{Recolour}}/{{season}}_{{mailoption}}_{{mailExtra}}.png",
+			"FromArea": { "X": 16, "Y": 0, "Width": 16, "Height": 32 },
+			"ToArea": { "X": 80, "Y": 1232, "Width": 16, "Height": 32 },
+			"When": { "Weather |contains=Rain, Storm, Snow": "true",
+					"mailoption |contains=1,2": "true" },
+        },
+     ]
+}

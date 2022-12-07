@@ -1,0 +1,155 @@
+[    //"furniture.YourFurniture.category"でカテゴリ(Type)のテキストにオーバーライド
+
+// ◆◆◆◆◆真ん中の部屋◆◆◆◆◆
+  {
+    "$ItemType": "Furniture", //作成する物のタイプ
+    "Type": "FishTank", //家具のタイプ
+    "ID": "Recessed_FishTank(Center-Room)", //ID(翻訳に使うキー)
+
+    "TankSwimmingCapacity": 17, //泳ぐ生き物
+    "TankGroundCapacity": 4, //底の生き物
+    "TankDecorationCapacity": -1, //装飾
+
+    "Configurations": [ //構成 
+                        {
+                          "Texture": "assets/CeR/RFT(Center-Room)_High_Default.png:1", //この構成のテクスチャ
+                          "FrontTexture": "assets/CeR/RFT(Center-Room)_High_Default.png:0", //FT
+                          "DisplaySize": { "X": 17, "Y": 4 }, //この家具の表示サイズ(タイル)
+                          "CollisionHeight": 1, //物理サイズの高さ(おそらく変則Xサイズは使用不可？)
+                        },
+                      ],
+
+    "DynamicFields": [
+
+                  //左上の部屋 背景あり
+                      //デフォルト
+                       {
+                         "Conditions": {                                 //CP方式の条件付け
+                                         "(T) for Center Room": "High",
+                                         "(C) for Center Room": "Default",
+                                         "(B) for Center Room": "false",
+                                       },
+
+                         "Configurations[ 0 ].Texture": "assets/CeR/RFT(Center-Room)_High_Default.png:1",
+                         "Configurations[ 0 ].FrontTexture": "assets/CeR/RFT(Center-Room)_High_Default.png:0",
+                       },
+                       {
+                         "Conditions": {                                 //CP方式の条件付け
+                                         "(T) for Center Room": "Low",
+                                         "(C) for Center Room": "Default",
+                                       },
+
+                         "Configurations[ 0 ].Texture": "assets/CeR/RFT(Center-Room)_Low_Default.png:1",
+                         "Configurations[ 0 ].FrontTexture": "assets/CeR/RFT(Center-Room)_Low_Default.png:0",
+                       },
+                      //ブラック
+                       {
+                         "Conditions": {                                 //CP方式の条件付け
+                                         "(T) for Center Room": "High",
+                                         "(C) for Center Room": "Black",
+                                         "(B) for Center Room": "false",
+                                       },
+
+                         "Configurations[ 0 ].Texture": "assets/CeR/RFT(Center-Room)_High_Black.png:1",
+                         "Configurations[ 0 ].FrontTexture": "assets/CeR/RFT(Center-Room)_High_Black.png:0",
+                       },
+                       {
+                         "Conditions": {                                 //CP方式の条件付け
+                                         "(T) for Center Room": "Low",
+                                         "(C) for Center Room": "Black",
+                                       },
+
+                         "Configurations[ 0 ].Texture": "assets/CeR/RFT(Center-Room)_Low_Black.png:1",
+                         "Configurations[ 0 ].FrontTexture": "assets/CeR/RFT(Center-Room)_Low_Black.png:0",
+                       },
+                      //ブルー
+                       {
+                         "Conditions": {                                 //CP方式の条件付け
+                                         "(T) for Center Room": "High",
+                                         "(C) for Center Room": "Blue",
+                                         "(B) for Center Room": "false",
+                                       },
+
+                         "Configurations[ 0 ].Texture": "assets/CeR/RFT(Center-Room)_High_Blue.png:1",
+                         "Configurations[ 0 ].FrontTexture": "assets/CeR/RFT(Center-Room)_High_Blue.png:0",
+                       },
+                       {
+                         "Conditions": {                                 //CP方式の条件付け
+                                         "(T) for Center Room": "Low",
+                                         "(C) for Center Room": "Blue",
+                                       },
+
+                         "Configurations[ 0 ].Texture": "assets/CeR/RFT(Center-Room)_Low_Blue.png:1",
+                         "Configurations[ 0 ].FrontTexture": "assets/CeR/RFT(Center-Room)_Low_Blue.png:0",
+                       },
+                      //ダークグレイ
+                       {
+                         "Conditions": {                                 //CP方式の条件付け
+                                         "(T) for Center Room": "High",
+                                         "(C) for Center Room": "DarkGray",
+                                         "(B) for Center Room": "false",
+                                       },
+
+                         "Configurations[ 0 ].Texture": "assets/CeR/RFT(Center-Room)_High_DarkGray.png:1",
+                         "Configurations[ 0 ].FrontTexture": "assets/CeR/RFT(Center-Room)_High_DarkGray.png:0",
+                       },
+                       {
+                         "Conditions": {                                 //CP方式の条件付け
+                                         "(T) for Center Room": "Low",
+                                         "(C) for Center Room": "DarkGray",
+                                       },
+
+                         "Configurations[ 0 ].Texture": "assets/CeR/RFT(Center-Room)_Low_DarkGray.png:1",
+                         "Configurations[ 0 ].FrontTexture": "assets/CeR/RFT(Center-Room)_Low_DarkGray.png:0",
+                       },
+
+                  //左上の部屋 背景なし
+                      //デフォルト
+                       {
+                         "Conditions": {                                 //CP方式の条件付け
+                                         "(T) for Center Room": "High",
+                                         "(C) for Center Room": "Default",
+                                         "(B) for Center Room": "true",
+                                       },
+
+                         "Configurations[ 0 ].Texture": "assets/CeR/RFT(Center-Room)_High_Default_NoBG.png:1",
+                         "Configurations[ 0 ].FrontTexture": "assets/CeR/RFT(Center-Room)_High_Default_NoBG.png:0",
+                       },
+                      //ブラック
+                       {
+                         "Conditions": {                                 //CP方式の条件付け
+                                         "(T) for Center Room": "High",
+                                         "(C) for Center Room": "Black",
+                                         "(B) for Center Room": "true",
+                                       },
+
+                         "Configurations[ 0 ].Texture": "assets/CeR/RFT(Center-Room)_High_Black_NoBG.png:1",
+                         "Configurations[ 0 ].FrontTexture": "assets/CeR/RFT(Center-Room)_High_Black_NoBG.png:0",
+                       },
+                      //ブルー
+                       {
+                         "Conditions": {                                 //CP方式の条件付け
+                                         "(T) for Center Room": "High",
+                                         "(C) for Center Room": "Blue",
+                                         "(B) for Center Room": "true",
+                                       },
+
+                         "Configurations[ 0 ].Texture": "assets/CeR/RFT(Center-Room)_High_Blue_NoBG.png:1",
+                         "Configurations[ 0 ].FrontTexture": "assets/CeR/RFT(Center-Room)_High_Blue_NoBG.png:0",
+                       },
+                      //ダークグレイ
+                       {
+                         "Conditions": {                                 //CP方式の条件付け
+                                         "(T) for Center Room": "High",
+                                         "(C) for Center Room": "DarkGray",
+                                         "(B) for Center Room": "true",
+                                       },
+
+                         "Configurations[ 0 ].Texture": "assets/CeR/RFT(Center-Room)_High_DarkGray_NoBG.png:1",
+                         "Configurations[ 0 ].FrontTexture": "assets/CeR/RFT(Center-Room)_High_DarkGray_NoBG.png:0",
+                       },
+                     ],
+  },
+
+
+]

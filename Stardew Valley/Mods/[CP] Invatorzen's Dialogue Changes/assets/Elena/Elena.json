@@ -1,0 +1,128 @@
+{
+    "Changes": [
+
+        //Elena dialogue changes
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Elliott",
+            "Entries": {
+                "Introduction": "啊，我们翘首以盼的新农民终于来啦……大家都在热议你哦！#$b#我是埃琳娜……我住在海边的小屋里。很高兴认识你。",
+        "event_boat1": "……我之前还担心你不会对我这种女人有感觉。$l^我也是。$l"
+            }
+        },
+
+        //Marriage dialogue Elena
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueElliott",
+            "Entries": {
+                "Indoor_Day_0": "自从我们在一起后，我更加注意照顾自己。曾经的单身生活对我来说不是很健康。",
+        "OneKid_3": "照顾孩子不是我的强项……但我会尽我最大的努力做个好妈妈。",
+		"TwoKids_1": "我之前带过%kid1，我发誓我听到了“妈……妈”的声音。$h",
+		"fall_26": "如果我在万灵节上狂饮两加仑南瓜啤酒你还会爱我吗？有时候女人会有原始的冲动……"
+            }
+        },
+
+        //Museum event changes
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/ArchaeologyHouse",
+            "Entries": {
+                "1848481/f Elliott 2000/t 1300 1900/n elliottReading": "breezy/14 11/Elliott 14 9 2 Pierre 10 13 1 Caroline 11 13 3 Marnie 11 15 1 Lewis 12 15 3 Sebastian 11 17 2 Abigail 12 18 3 Sam 10 18 1 Leah 15 15 0 Emily 16 16 2 Clint 15 17 1 Jodi 19 13 2 Robin 20 14 3 Demetrius 20 11 3 Maru 10 10 1 Penny 11 9 1 Gus 18 16 0 Shane 19 16 0 Willy 21 11 3 farmer 7 14 1/skippable/move farmer 6 0 0/move farmer 0 -1 0/move Elliott 0 4 3/faceDirection farmer 1/speak Elliott \"@我成功了！$h#$b#写完后我整个人都轻松多了……就像整个月没怎么上厕所却突然畅通无阻的感觉。\"/pause 800/faceDirection Elliott 2/pause 500/faceDirection Elliott 1/pause 500/faceDirection Elliott 3/pause 500/speak Elliott \"我得开始阅读了……祝我好运吧。$8\"/pause 700/move Elliott 0 -4 2/faceDirection farmer 0/pause 500/faceDirection Elliott 1/faceDirection Elliott 2/faceDirection Elliott 3/faceDirection Elliott 2/speak Elliott \"大家下午好。\"/pause 500/faceDirection Caroline 0 true/faceDirection Emily 0 true/textAboveHead Emily \"嗨！!\"/faceDirection Abigail 0/faceDirection Sebastian 0 true/faceDirection Lewis 0/faceDirection Sam 0 true/faceDirection Marnie 0/faceDirection Pierre 0 true/faceDirection Jodi 0/faceDirection Clint 0/speak Elliott \"我从小就想当一位作家。#$b#当我长大出外闯荡时，我就选择了移居到这里来。因为这个山谷的宁静之美深深地吸引住了我。我希望能够在这里获得创作的灵感。\"/showFrame Elliott 32/pause 200/showFrame Elliott 34/fork 958699 mysteryBook/fork 958700 romanceBook/speak Elliott \"经过无数个小时在书桌前奋斗后，我给你们带来了我的第一本创作：《亚索行星的兴旺史》……这是一本科幻小说，描述一个遥远的银河系延绵数千年的事迹。\"/animate Elliott false true 1000 33 33 34/pause 500/speak Elliott \"第一章．#$b#于禁指挥官踏上金碧辉煌的走道，身后的气阀门随之关闭。这是他第一次踏上亚索行星，所有14位同盟代表都被聚集在宏伟尖塔……\"/playMusic none/globalFade/viewport -100 -100/pause 1000/warp Sebastian -1000 -1000/warp Sam -1000 -1000/warp Abigail -1000 -1000/warp Jodi -1000 -1000/warp Robin -1000 -1000/warp Demetrius -1000 -1000/warp Shane -1000 -1000/warp Maru -1000 -1000/warp Pierre -1000 -1000/warp Caroline -1000 -1000/viewport 14 11 true/pause 1000/speak Elliott \"……当第七个月地平线沉下时，亚索行星会开始进行邪恶的转变……这是连于禁指挥官都完全没有料到的。\"/stopAnimation Elliott/showFrame Elliott 34/pause 800/speak Elliott \"阅读就到此为止。我会在前台出售亲笔签名版的书本。谢谢收听$h\"/faceDirection Lewis 3/faceDirection Marnie 1/faceDirection Emily 2 true/faceDirection Clint 1/move Elliott 0 4 3/faceDirection farmer 1/pause 600/speak Elliott \"感觉怎么样？\"/emote farmer 32/speak Elliott \"谢谢。$h#$b#其实我创造这本小说的灵感是来自于你。你还记得吗？#$b#所以我把这本书献给你……$l\"/move Elliott -1 0 3/emote Elliott 32/pause 1000/end"
+            }
+        },
+
+        //Saloon changes
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Saloon",
+            "Entries": {
+                "40/f Elliott 1000/p Gus/t 1500 2200": "playful/11 20/farmer 14 24 0 Elliott -30 -30 0 Clint 18 22 2 Marnie 9 22 3 Pam 7 18 1 Lewis 8 22 1 Pierre 4 22 2 Demetrius 3 23 1 Gus 14 18 2 Emily 16 18 3/skippable/move farmer 0 -3 3/faceDirection Pierre 1 true/move farmer -3 0 0/faceDirection Pierre 2 true/move farmer 0 -1 0/faceDirection Marnie 0 true/faceDirection Gus 3/speak Gus \"嗨 .我马上就来给您点单。\"/faceDirection Gus 2/move Emily 2 0 1/faceDirection Marnie 3 true/pause 800/move Emily -2 0 0/pause 1000/faceDirection Clint 3 true/move Emily 2 0 1/warp Elliott 14 24/playSound doorClose/pause 500/move Elliott 0 -3 3/faceDirection farmer 2 true/move Elliott -2 0 0/move Elliott 0 -1 0/faceDirection farmer 1/faceDirection Elliott 3/speak Elliott \"您好， @!真是巧啊！#$b#我刚写了八个小时的书，想来这里休息一下。$h\"/pause 400/faceDirection Elliott 1/speak Elliott \"酒保！请来两杯最好的麦芽酒！^酒保！我要你们最好的麦芽酒。再给这位女士来杯葡萄酒！\"/faceDirection Gus 3/faceDirection farmer 0/speak Gus \"...$u\"/move Gus 3 0 0/move Gus 0 -1 0/faceDirection Emily 2/playSound openBox/pause 400/playSound Milking/move Pam -6 0 0/move Gus 0 1 3/move Gus -5 0 2/faceDirection Elliott 0/pause 500/speak Gus \"给您，先生。$u\"/pause 500/faceDirection Elliott 3/faceDirection farmer 1/speak Elliott \"$q 28376 null#等等。让我们举杯庆祝一下！为了……#$r 28376 25 event_toast4#鹈鹕镇！#$r 28376 50 event_toast2#我们的友谊！#$r 28376 -10 event_toast1#我们的健康！#$r 28376 -50 event_toast3#你的命运！\"/faceDirection Elliott 2/faceDirection farmer 2/pause 900/showFrame Elliott 16/animate Elliott false false 120 16 17 18 19 19 18 18 19 19 18 18 19 19 18 18 19 19 18 18 17 16/pause 500/farmerEat 346/pause 900/pause 1100/stopAnimation farmer/faceDirection farmer 1/speak Elliott \"*打嗝*……劲儿好大啊……$h\"/pause 800/animate Elliott false false 400 20 21 22 21 20 21 22 21 20 21 22 21 20 21 22 21 16/pause 1000/faceDirection farmer 1/pause 800/faceDirection farmer 2/animate farmer false true 100 102 103/pause 1000/globalFade/viewport -1000 -1000/pause 600/stopAnimation farmer/end warpOut",	
+        "195013/f Shane 2500/f Sebastian 2500/f Sam 2500/f Harvey 2500/f Alex 2500/f Elliott 2500/o Abigail/o Penny/o Leah/o Emily/o Maru/o Haley/o Shane/o Harvey/o Sebastian/o Sam/o Elliott/o Alex/e 911526/e 528052/e 9581348/e 43/e 384882/e 233104/k 195099": "playful/-1000 -1000/farmer 27 19 1 Sam 36 20 1 Sebastian 37 193 Harvey 39 193 Shane 40 173 Elliott 41 193 Alex 42 20 3/animate Shane false true 200 20 20 20 20 20 20 20 20 20 20 21 22 23 24 24 24 24 23 22 21 20 20 20 20/move farmer 5 0 1 true/viewport 37 19 true/move false/pause 500/startJittering/faceDirection farmer3 true/animate farmer false true 100 94/jump farmer/pause 2000/stopAnimation farmer/showFrame farmer 0/stopJittering/playSound thudStep/faceDirection farmer 3 true/showFrame farmer 7 true/startJittering/faceDirection Sam 3 true/faceDirection Elliott 3 true/faceDirection Harvey 3 true/faceDirection Alex 3 true/faceDirection Shane 3 true/faceDirection Sebastian 3 true/textAboveHead Sam \"别跑那么快！\"/textAboveHead Alex \"别动！\"/textAboveHead Shane \"站住！\"/pause 3000/stopJittering/showFrame farmer 6 true/pause 500/faceDirection farmer 1/move farmer 3 0 1/playMusic none/emote farmer 28/pause 500/speak Sam \"呵，从没想过你所有的“女朋友”会出现在一个房间里吧，@?$a\"/pause 500/speak Harvey \"你骗取了我们所有人的爱…你真是太可怕了...$s^@...我还以为你想要和我结婚，共同组建家庭...我到底做错了什么？$s\"/pause 500/speak Shane \"我最后仅存的希望的碎片也彻底被毁了…可真得谢谢你啊，@。你现在高兴了吗？$s\"/pause 500/speak Alex \"@？我以为...我以为我们是“彼此的唯一”...你却只是在利用我？$s^你盯着*我*看什么？你以为我会来救你？$a\"/pause 500/speak Elliott \"唯独这次，我竟无言以对...$a\"/pause 500/playMusic wedding/speak Sam \"我们不会再忍受你的伤害了！$a^现在，我们都知道真相了！我们不会容忍这种事情！$a\"/textAboveHead Alex \"没错！\"/pause 500/speak Sebastian \"嗯？你还有什么要为自己辩解的？$a\"/pause 1000/question fork1 \"#对不起...我以前做错了。#各位，冷静一下！我可以解释...\"/fork choseToExplain/pause 500/textAboveHead Alex \"当然...\"/pause 500/speak Shane \"说得好听，但这事不能就这么算了...$a\"/pause 1000/playMusic none/speak Sam \"...我们已经决定了...对吗，伙伴们？$u\"/pause 500/speak Harvey \"…是的。$s\"/speak Elliott \"当然。$a\"/pause 1000/jump Sam/jump Sebastian/jump Elliott/jump Shane/jump Alex/jump Harvey/pause 1000/speak Sam \"我们都要疏远你！$a\"/faceDirection farmer3 true/animate farmer false true 100 94/jump farmer/playSound slimedead/pause 2000/fade/viewport -2000 -2000/dump guys 3/end warpOut",
+        "choseToExplain": "pause 100/textAboveHead Shane \"我深表怀疑...\"/pause 500/resetVariable/question fork2 \"#你们所有人都在逼我！让我说不出“不”！#皮埃尔向我施压！他想卖出更多花束！#（开始哭）\"/pause 100/fork crying/textAboveHead Sam \"骗子！\"/textAboveHead Alex \"对，没错！\"/speak Elliott \"不要把自己的错误归咎在别人身上！你只会继续失去我们的尊重...$a\"/pause 1000/faceDirection Sam3/playMusic none/speak Sam \"...我想我们已经决定了...对吗，女孩们？$u\"/pause 500/speak Harvey \"…是的。$s\"/speak Sebastian \"当然。$a\"/faceDirection Sam 3/pause 1000/jump Sam/jump Sebastian/jump Elliott/jump Shane/jump Alex/jump Harvey/pause 1000/jump Sam/jump Sebastian/jump Elliott/jump Shane/jump Alex/jump Harvey/pause 1000/jump Sam/jump Sebastian/jump Elliott/jump Shane/jump Alex/jump Harvey/pause 1000/speak Sam \"我们都要疏远你！$a\"/faceDirection farmer3 true/animate farmer false true 100 94/jump farmer/playSound slimedead/pause 2000/fade/viewport -2000 -2000/dump guys 4/end warpOut",
+        "crying": "pause 100/faceDirection farmer 0/emote farmer 28/pause 1000/emote Harvey 12 true/emote Sebastian 12 true/emote Shane 12 true/emote Sam 12 true/emote Elliott 12 true/emote Alex 12 true/speak Harvey \"没用的！这次别想再骗取我们的同情了！$a\"/speak Alex \"在我看来你只是又演了一场戏...$a^一如既往...$a\"/pause 100/speak Sebastian \"你需要为自己做过的事负责...$a\"/pause 1000/faceDirection Sam3/playMusic none/speak Sam \"...我想我们已经决定了...对吗，伙伴们？$u\"/pause 500/speak Harvey \"…是的。$s\"/speak Sebastian \"当然。$a\"/faceDirection Sam 3/pause 1000/jump Sam/jump Sebastian/jump Elliott/jump Shane/jump Alex/jump Harvey/pause 1000/jump Sam/jump Sebastian/jump Elliott/jump Shane/jump Alex/jump Harvey/pause 1000/jump Sam/jump Sebastian/jump Elliott/jump Shane/jump Alex/jump Harvey/pause 1000/speak Sam \"我们都要疏远你！$a\"/faceDirection farmer3 true/animate farmer false true 100 94/jump farmer/playSound slimedead/pause 2000/fade/viewport -2000 -2000/dump guys 4/end warpOut"
+            }
+        },
+        
+        //Mail changes
+        {
+            "Action": "EditData",
+            "Target": "Data/mail",
+            "Entries": {
+                "elliottBoat": "找一天晴朗的清晨到码头来找我。我有些话想和你说。 ^-埃琳娜[#]埃琳娜的笔记"
+            }
+        },
+
+        //Gender change
+        {
+            "Action": "EditData",
+            "Target": "Data/NPCDispositions",
+            "Entries": {
+                "Elliott": "adult/polite/neutral/neutral/female/datable/Leah/Town/fall 5/Willy ''/ElliottHouse 1 5/埃琳娜"
+            }
+        },
+
+        //Map string change
+        {
+            "Action": "EditData",
+            "Target": "Strings/Locations",
+            "Entries": {
+                "ElliottHouse_ElliottBook_Filled": "'{0}' 埃琳娜著……以此铭记{1}"
+            }
+        },
+          
+          //Map text changes
+        {
+            "Action": "EditData",
+            "Target": "Strings/StringsFromCSFiles",
+            "Entries": {
+                "MapPage.cs.11088": "埃琳娜的小屋",
+		"MapPage.cs.11168": "埃琳娜的小屋",
+		"TitleMenu.cs.11726": "埃琳娜的最新语录："
+            }
+        },
+
+        //Map text changes
+        {
+            "Action": "EditData",
+            "Target": "Strings/StringsFromMaps",
+            "Entries": {
+                "ElliottHouse3": "埃琳娜的办公桌。上面堆满了笔记和揉皱的纸团。",
+		"ElliottHouse.4": "看起来，埃琳娜打算种植一个盆栽。它看起来酷呆了！",
+		"ElliottHouse.6": "看起来，埃琳娜打算种植一个盆栽。它看起来酷呆了！"
+            }
+        },
+
+        //Secret note fix
+        {
+            "Action": "EditData",
+            "Target": "Data/SecretNotes",
+            "Entries": {
+                "7": "这是某人日记中的一页……^^……镇里只有少数几个“老”单身，他们都并不完美！哈维确实焦虑而软弱，但我知道他会成为一个忠诚专一的丈夫。他喜欢咖啡和腌菜。^^埃琳娜有些浮夸和矫情，但她的下巴确实很好看。她喜欢蟹黄糕和石榴。^^肖恩邋遢且反社会。但我认为他粗鲁的外在是一种保护机制，将他内心的柔软与世界隔离开来。他喜欢啤酒、披萨和爆炒青椒。"
+            }
+        },
+
+        //Elena sprite change
+        {
+            "Action": "EditImage",
+            "Target": "Characters/Elliott",
+            "FromFile": "assets/Elena/ElenaOW.png"
+        },
+
+        //Elena portrait change
+        {
+            "Action": "EditImage",
+            "Target": "Portraits/Elliott",
+            "FromFile": "assets/Elena/Elena.png",
+            "When": {"Elena's Portrait": "true" }
+        },
+
+        //Elena wedding fix
+        {
+            "Action": "EditImage",
+            "Target": "Characters/Elliott",
+            "FromFile": "assets/Elena/ElenaOW_Wedding.png",
+            "When": {"DayEvent": "wedding"}
+        },
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "Changes": [
+
+    // Sam comes here to jam alone
+    {   "Action": "Include",
+        "FromFile": "Includes/RainyDayD1.json",
+        "When":{
+            "HasMod |contains=balverines.Denver":false,
+            "HasMod |contains=LemurKat.JulietHouse.NPC":false
+                }
+    },
+    {   "Action": "Include",
+        "FromFile": "Includes/RainyDayD1.json",
+        "When":{
+            "HasMod |contains=balverines.Denver":false,
+            "HasMod |contains=LemurKat.JulietHouse.NPC":true
+                }
+    },
+    {   "Action": "Include",
+        "FromFile": "Includes/RainyDayD1.json",
+        "When":{
+            "HasMod |contains=LemurKat.JulietHouse.NPC":false,
+            "HasMod |contains=balverines.Denver":true
+                }
+    }, 
+    // 50% chance of Denver and Juliet gather to jam (with optional Cecilia and Mike)
+    {   "Action": "Include",
+        "FromFile": "Includes/RainyDay{{random:D1,D2}}.json",
+        "When":{
+            "HasMod |contains=balverines.Denver":true,
+            "HasMod |contains=LemurKat.JulietHouse.NPC":true
+                }
+        }
+    ]
+}

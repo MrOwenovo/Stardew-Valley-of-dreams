@@ -1,0 +1,158 @@
+{
+    "Changes": [
+        //Sets Sebastian, Sam and Abigail to visit the Community center on a randomised rainy day. It it happens to be a Friday, Clint will join them to play Solarian Chronicles.
+        {
+            "LogName": "Solarion Schedule - Abigail",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Abigail",
+            "Entries": {
+                "11": "GOTO rain2",
+                "11_6": "GOTO rain2",
+                "rain": "900 SeedShop 9 5 0/1100 SeedShop 13 20 0/1200 CommunityCenter 31 11 1 \"Strings\\schedules\\Abigail:Solarion_{{Random:So1,So2,So3|key=SolarChr}}\"/1900 SeedShop 6 4 0/2200 SeedShop 1 9 3 abigail_sleep",
+                "rain2": "900 SeedShop 34 5 0/1100 SeedShop 9 17 3/1200 CommunityCenter 31 11 1 \"Strings\\schedules\\Abigail:Solarion_{{Random:So1,So2,So3|key=SolarChr}}\"/1900 Saloon 42 17 2 abigail_sit_down/2200 SeedShop 1 9 3 abigail_sleep"
+            }
+        },
+        {
+            "LogName": "Solarion Schedule - Sam",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Sam",
+            "Entries": {
+                "rain": "1000 SamHouse 15 13 0/1100 SamHouse 17 15 2 sam_guitar/1200 CommunityCenter 35 12 3 \"Strings\\schedules\\Sam:Solarion_{{Random:So1,So2,So3|key=SolarChr}}\"/1900 SamHouse 22 16 1/2000 SamHouse 22 13 1 sam_sleep",
+                "rain2": "1000 SamHouse 15 13 0/1100 SamHouse 6 13 0/1200 CommunityCenter 35 12 3 \"Strings\\schedules\\Sam:Solarion_{{Random:So1,So2,So3|key=SolarChr}}\"/1900 Saloon 38 18 0/2200 SamHouse 22 13 1 sam_sleep"
+            }
+        },
+        {
+            "LogName": "Solarion Schedule - Seb",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Sebastian",
+            "Entries": {
+                "11": "GOTO rain2",
+                "11_6": "GOTO rain2",
+                "rain": "830 Beach 12 39 2/1200 CommunityCenter 33 10 2 \"Strings\\schedules\\Sebastian:Solarion_{{Random:So1,So2,So3|key=SolarChr}}\"/1900 SebastianRoom 11 9 1 sebastian_sleep",
+                "rain2": "1030 SebastianRoom 9 4 3 sebastian_computer/1200 CommunityCenter 33 10 2 \"Strings\\schedules\\Sebastian:Solarion_{{Random:So1,So2,So3|key=SolarChr}}\"/1900 Saloon 43 20 3/2200 SebastianRoom 11 9 1 sebastian_sleep"
+            }
+        },
+        {
+            "LogName": "Solarion Schedule - Darius",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Darius",
+            "When": {
+                "HasMod": "alexoflexo.darius",
+                "DayOfWeek": "Monday, Tuesday, Wednesday, Thursday, Saturday"
+            },
+            "Entries": {
+                "rain": "610 Custom_Darius_House 3 4 1/800 Custom_Darius_House 4 12 0 darius_cooking/830 Custom_Darius_House 13 11 2/1100 CommunityCenter 33 13 0 \"Strings\\schedules\\Darius:Solarion_{{Random:So1,So2,So3|key=SolarChr}}\"/1900 Custom_Darius_House 14 5 1 darius_gaming/2400 Custom_Darius_House 2 4 1 darius_sleep"
+            }
+        },
+        {
+            "LogName": "Solarion Schedule - Clint",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Clint",
+            "When": {
+                "DayOfWeek": "Friday",
+                "HasSeenEvent": "69660002"
+            },
+            "Entries": {
+                "Rain": "850 CommunityCenter 62 14 0 square_3_1_0/1400 CommunityCenter 33 13 0 \"Strings\\schedules\\Clint:Solarion_{{Random:So1,So2,So3|key=SolarChr}}\"/1900 Saloon 19 23 3/2400 Blacksmith 10 4 1 clint_sleep"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/CommunityCenter",
+            "Entries": {
+                "69660001/w rainy/p Sebastian/p Abigail/p Sam/p Clint": "Secret Gnomes/32 13/Sebastian 33 10 2 Abigail 31 11 1 Sam 35 12 3 farmer 25 17 0 Clint 37 14 0/skippable/move Clint -4 0 2 true/textAboveHead Sam \"{{i18n:69660001.1}}\"/pause 500/emote Clint 16/pause 1500/faceDirection Clint 0/pause 500/textAboveHead Clint \"{{i18n:69660001.2}}\"/pause 500/faceDirection Abigail 1/speak Abigail \"{{i18n:69660001.3}}\"/emote Sebastian 12/faceDirection Sam 2/move Clint 0 -1 0/faceDirection Sam 3/speak Sam \"{{i18n:69660001.4}}\"/pause 500/emote Clint 28/speak Clint \"{{i18n:69660001.5}}\"/emote Abigail 16/pause 500/emote Sebastian 36/move farmer 2 0 0/pause 1000/speak Sam \"{{i18n:69660001.6}}\"/emote Abigail 40/pause 500/speak Clint \"{{i18n:69660001.7}}\"/textAboveHead Abigail \"{{i18n:69660001.8}}\"/pause 500/speak Clint \"{{i18n:69660001.9}}\"/pause 500/speak Sam \"{{i18n:69660001.10}}\"/faceDirection Abigail 1/pause 500/emote Abigail 36/pause 500/speak Sam \"{{i18n:69660001.11}}\"/textAboveHead Clint \"{{i18n:69660001.12}}\"/pause 500/faceDirection Clint 3/emote Abigail 12/pause 500/speak Clint \"{{i18n:69660001.13}}\"/pause 500/faceDirection Clint 2/move Clint 0 5 2 true/move farmer 5 0 1 true/textAboveHead Sebastian \"{{i18n:69660001.14}}\"/pause 500/textAboveHead Abigail \"{{i18n:69660001.15}}\"/pause 500/speak Sam \"{{i18n:69660001.16}}\"/pause 500/faceDirection Clint 3/speak Clint \"{{i18n:69660001.17}}\"/pause 500/emote farmer 60/pause 500/speak Clint \"{{i18n:69660001.18}}\"/faceDirection Clint 0/emote Clint 28/pause 1000/move Clint 0 5 2 true/move farmer 0 -5 0 true/pause 3000/warp Clint -100 -100/pause 500/faceDirection Abigail 2/pause 500/speak Abigail \"{{i18n:69660001.19}}\"/fork 696602 PlaySolarion/fork 696604 ClintSolarion/pause 500/emote Sebastian 40/pause 1500/speak Sebastian \"{{i18n:69660001.20}}\"/speak Sam \"{{i18n:69660001.21}}\"/pause 500/faceDirection farmer 2/pause 500/end warpOut",
+                "PlaySolarion": "pause 500/speak Sam \"{{i18n:69660001.22}}\"/playSound newRecipe/pause 500/emote farmer 32/pause 500/speak Sebastian \"{{i18n:69660001.23}}\"/pause 1000/end warpOut",
+                "ClintSolarion": "pause 500/speak Sam \"{{i18n:69660001.24}}\"/emote Sebastian 40/pause 1000/speak Sebastian \"{{i18n:69660001.25}}\"/speak Abigail \"{{i18n:69660001.26}}\"/emote Sam 32/speak Sam \"{{i18n:69660001.27}}\"/pause 1000/end warpOut",
+                "69660002/w rainy/p Sebastian/p Abigail/p Sam/p Clint/q 696604": "Crystal Bells/33 13/Sebastian 33 10 2 Abigail 31 12 1 Sam 35 12 3 farmer 40 10 0 Clint 53 14 3/skippable/move Clint -16 0 3 true/pause 500/textAboveHead Abigail \"{{i18n:69660002.1}}\"/speak Sam \"{{i18n:69660002.2}}\"/pause 500/speak Abigail \"{{i18n:69660002.3}}\"/textAboveHead Sam \"{{i18n:69660002.4}}\"/move Clint -4 0 2 true/speak Sebastian \"{{i18n:69660002.5}}\"/pause 1500/pause 500/faceDirection Sam 2/jump Sam 4/textAboveHead Sam \"{{i18n:69660002.6}}\"/pause 1500/faceDirection Clint 0/textAboveHead Clint \"{{i18n:69660002.7}}\"/pause 500/faceDirection farmer 3/pause 500/speak Sam \"{{i18n:69660002.8}}\"/move Clint 0 -1 0/faceDirection Clint 3/emote Abigail 12/pause 1000/emote Clint 8/pause 1500/emote Abigail 40/pause 500/textAboveHead Sam \"{{i18n:69660002.9}}\"/pause 500/textAboveHead Abigail \"{{i18n:69660002.10}}\"/pause 500/faceDirection Abigail 2/speak Abigail \"{{i18n:69660002.11}}\"/pause 500/emote Clint 28/speak Clint \"{{i18n:69660002.12}}\"/faceDirection Clint 3/faceDirection Clint 1/faceDirection Clint 0/pause 500/speak Sebastian \"{{i18n:69660002.13}}\"/faceDirection Abigail 1/faceDirection Sam 3/playSound newRecipe/pause 500/speak Sebastian \"{{i18n:69660002.14}}\"/pause 500/speak Clint \"{{i18n:69660002.15}}\"/pause 500/emote Abigail 40/pause 1000/end dialogueWarpOut Abigail \"{{i18n:69660002.16}}\"",
+            }
+        },
+        {
+            "LogName": "Solarion Dialogue Abigail",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Abigail",
+            "Entries": {
+                "Solarion_Y": "{{i18n:solarion.Y}}",
+                "Solarion_N": "{{i18n:solarion.N}}",
+                "Solarion_B": "{{i18n:solarion.B}}",
+                "Solarion_Clint": "{{i18n:solarion.C}}"
+            }
+        },
+        {
+            "LogName": "Solarion Strings",
+            "Action": "EditData",
+            "Target": "Strings/schedules/Clint",
+            "Entries": {
+                "Solarion_So1": "{{i18n:RainyDayA.Clint.1}}",
+                "Solarion_So2": "{{i18n:RainyDayA.Clint.2}}",
+                "Solarion_So3": "{{i18n:RainyDayA.Clint.3}}"
+            }
+        },
+        {
+            "LogName": "Solarion Strings",
+            "Action": "EditData",
+            "Target": "Strings/schedules/Darius",
+            "When": {
+                "HasMod": "alexoflexo.darius"
+            },
+            "Entries": {
+                "Solarion_So1": "{{i18n:RainyDayA.Darius.1}}",
+                "Solarion_So2": "{{i18n:RainyDayA.Darius.2}}",
+                "Solarion_So3": "{{i18n:RainyDayA.Darius.3}}"
+            }
+        },
+        {
+            "LogName": "Solarion Strings",
+            "Action": "EditData",
+            "Target": "Strings/schedules/Abigail",
+            "Entries": {
+                "Solarion_So1": "{{i18n:RainyDayA.Abigail.1}}",
+                "Solarion_So2": "{{i18n:RainyDayA.Abigail.2}}",
+                "Solarion_So3": "{{i18n:RainyDayA.Abigail.3}}"
+            }
+        },
+        {
+            "LogName": "Solarion Strings",
+            "Action": "EditData",
+            "Target": "Strings/schedules/Sam",
+            "Entries": {
+                "Solarion_So1": "{{i18n:RainyDayA.Sam.1}}",
+                "Solarion_So2": "{{i18n:RainyDayA.Sam.2}}",
+                "Solarion_So3": "{{i18n:RainyDayA.Sam.3}}"
+            }
+        },
+        {
+            "LogName": "Solarion Strings",
+            "Action": "EditData",
+            "Target": "Strings/schedules/Sebastian",
+            "Entries": {
+                "Solarion_So1": "{{i18n:RainyDayA.Sebastian.1}}",
+                "Solarion_So2": "{{i18n:RainyDayA.Sebastian.2}}",
+                "Solarion_So3": "{{i18n:RainyDayA.Sebastian.3}}"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/CustomNPCExclusions",
+            "Entries": {
+                "Sam": "IslandVisit",
+                "Sebastian": "IslandVisit",
+                "Abigail": "IslandVisit"
+            },
+            "When": {
+                "Weather": "rain, storm"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/CustomNPCExclusions",
+            "Entries": {
+                "Clint": "IslandVisit"
+            },
+            "When": {
+                "Weather": "rain, storm",
+                "HasDialogueAnswer": "696604",
+                "DayOfWeek": "Friday"
+            }
+        }
+    ]
+}

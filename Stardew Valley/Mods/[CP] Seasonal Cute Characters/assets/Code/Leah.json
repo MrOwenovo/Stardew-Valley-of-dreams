@@ -1,0 +1,101 @@
+{
+	"Changes": [
+		{
+			"LogName": "Leah - Seasonal",
+			"Action": "EditImage",
+			"Target": "Portraits/Leah, Characters/Leah",
+			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Leah - Winter Indoor/Outdoor",
+			"Action": "EditImage",
+			"Target": "Portraits/Leah, Characters/Leah",
+			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+                "Season": "Winter",
+                "WinterIndoorOutdoorOutfits": "IndoorOutdoor",
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Leah - Festival",
+			"Action": "EditImage",
+			"Target": "Portraits/Leah, Characters/Leah",
+            "FromFile": "assets/{{TargetPathOnly}}/Festivals/{{Festival}}/{{TargetWithoutPath}}_{{Festival}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"FestivalOutfits": "True",
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Leah - Beach",
+			"Action": "EditImage",
+			"Target": "Portraits/Leah_Beach, Characters/Leah_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Beach/{{TargetWithoutPath}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Leah - Aerobics",
+			"Action": "EditImage",
+			"Target": "Characters/Leah",
+			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_Aerobics.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"AerobicsDay": "Harvey",
+			},
+			"Update": "OnLocationChange, OnTimeChange",
+		},
+		
+// NOSE OVERLAY
+		{
+			"LogName": "Leah - Seasonal Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Leah",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"NoNose": "false",
+			},
+		},
+		{
+			"LogName": "Leah - Beach Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Leah_Beach",
+            "FromFile": "assets/{{TargetPathOnly}}/Beach/{{TargetWithoutPath}}_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"NoNose": "false",
+			},
+		},
+		
+// MISCELLANEOUS		
+		{
+			"LogName": "Leah - Emoji",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+            "FromFile": "assets/{{NoNose}}/Random/emojis.png",
+			"FromArea": {"X": 27, "Y": 99, "Width": 9, "Height": 9},
+			"ToArea": {"X": 27, "Y": 99, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+	]
+}

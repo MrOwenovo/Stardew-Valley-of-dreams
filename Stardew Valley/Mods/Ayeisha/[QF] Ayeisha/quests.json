@@ -1,0 +1,61 @@
+{
+  "Format": "1.0",
+  "Quests": [
+    {
+      "Name": "ayeisha_emeraldring",
+      "Type": "LostItem",
+      "Title": "Lost Emerald Ring",
+      "Description": "艾伊莎丢失了她的戒指，她想找人帮忙找回戒指.",
+      "Objective": "找到艾伊莎的戒指",
+      "Reward": 300,
+      "Cancelable": false,
+      "Trigger": "Ayeisha {{ja:Ayeisha's Ring}} Forest 42 10", 
+      "ReactionText": "你找到了！非常感谢！我以为我永远失去了它.$h",
+      "FriendshipGain": {
+        "Ayeisha": 250
+      }
+    },
+    {
+      "Name": "ayeisha_windyday",
+      "Type": "LostItem",
+      "Title": "Missing Envelope",
+      "Description": "风把艾伊莎手里的信封吹走了，她想找人帮忙把它的信封找回来.",
+      "Objective": "寻找丢失的信封",
+      "Reward": 100,
+      "Cancelable": false,
+      "Trigger": "Ayeisha {{ja:Missing Envelope}} Mountain 68 24",
+      "ReactionText": "你找到了！谢谢！是时候由我来送出去了!$h",
+      "FriendshipGain": {
+        "Ayeisha": 50
+      }
+    },
+  ],
+  "Offers": [
+    {
+      "QuestName": "ayeisha_emeraldring",
+      "OfferedBy": "NPC",
+      "OfferDetails": {
+        "NpcName": "Ayeisha", 
+        "DialogueText": "你好.$s#$b#我把我的祖母绿戒指遗失在了某个地方.如果你找到了它,请告诉我.$s"
+      },
+      "When": {
+        "DaysOfWeek": "Friday",
+        "Seasons": "winter",
+        "QuestNeverCompleted": "yes",
+      }
+    },
+    {
+      "QuestName": "ayeisha_windyday",
+      "OfferedBy": "NPC",
+      "OfferDetails": {
+        "NpcName": "Ayeisha",
+        "DialogueText": "你好@$s#$b#风把我手里的信封吹走了,但我不知道它去了哪里.所以如果你找到了它,请帮我带回来.$s"
+      },
+      "When": {
+        "Seasons": "spring | fall",
+        "Weather": "cloudy",
+        "QuestNeverCompleted": "yes",
+      }
+    }
+  ]
+}

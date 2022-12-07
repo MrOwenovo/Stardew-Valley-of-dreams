@@ -1,0 +1,472 @@
+{
+  "Changes": [	
+  
+//MoviesReactions	
+    		{
+      "Action": "EditData",
+      "Target": "Data/MoviesReactions",	  
+		   "When": {
+		   "Relationship:Sebastian |contains=Engaged, Married": "false",
+		   "Relationship:Maru": "Friendly",
+		   "Season": "summer",
+		   "Day": "10",
+		   },
+    "Entries":   {
+	"Maru":{
+    "NPCName": "Maru",
+    "Reactions": [
+      {
+        "Tag": "summer_movie_0",
+        "Response": "love",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{Random: 能出门走走真好！生日时的电影院感觉特别棒。$1++ 我该点些电影小吃吗？或许可以点些豪华的……今天是特别的日子！$1|inputSeparator=++}}"
+          },
+          "DuringMovie": null,
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "特效有些超乎现实，但反正是电影嘛。#$b#这很好看，谢谢你邀请我！$1"
+          }
+        },
+        "ID": "reaction_0"
+      },
+      {
+        "Tag": "summer_movie_1",
+        "Response": "love",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{Random: 能出门走走真好！生日时的电影院感觉特别棒。$1++ 我该点些电影小吃吗？或许可以点些豪华的……今天是特别的日子！$1|inputSeparator=++}}"
+          },
+          "DuringMovie": null,
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "我喜欢科幻电影……这常常会启发我的灵感。#$b#或许有一天这些事情真的就会成了我们的日常生活……这太棒了！$1#$b#我想我今年也会继续潜心发明和研究。"
+          }
+        },
+        "ID": "reaction_1"
+      },
+    ]
+  },
+	}
+			},
+  
+    		{
+      "Action": "EditData",
+      "Target": "Data/MoviesReactions",	  
+		   "When": {
+		   "Relationship:Sebastian |contains=Engaged, Married": "false",
+		   "Relationship:Maru": "Dating, Engaged",
+		   "Season": "summer",
+		   "Day": "10",
+		   },
+    "Entries":   {
+	"Maru":{
+    "NPCName": "Maru",
+    "Reactions": [
+      {
+        "Tag": "summer_movie_0",
+        "Response": "love",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{Random: 我感觉我兴奋得像个小女孩。我没想过能在生日时跟最喜欢的人来电影约会……$4++ 我们该去夹些娃娃之类的吗？这看起来很有趣。希望娃娃机是空着的。|inputSeparator=++}}"
+          },
+          "DuringMovie": null,
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "西部的荒漠感觉很有趣。想想在里面的动植物……肯定有跟山谷里截然不同的生态系统。"
+          }
+        },
+        "ID": "reaction_0"
+      },
+      {
+        "Tag": "summer_movie_1",
+        "Response": "love",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{Random: 我感觉我兴奋得像个小女孩。我没想过能在生日时跟最喜欢的人来电影约会……$4++ 我们该去夹些娃娃之类的吗？这看起来很有趣。希望娃娃机是空着的。|inputSeparator=++}}"
+          },
+          "DuringMovie": null,
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "夏天很适合观星，我们说不定会真的看到这些生物居住的星球呢。#$b#我们下次可以再一起观星……这想想就很棒！$4"
+          }
+        },
+        "ID": "reaction_1"
+      },
+    ]
+  },
+	}
+			},
+			
+    		{
+      "Action": "EditData",
+      "Target": "Data/MoviesReactions",	  
+		   "When": {
+		   "Relationship:Sebastian |contains=Engaged, Married": "false",
+		   "Relationship:Maru": "Married",
+		   "Season": "summer",
+		   "Day": "10",
+		   },
+    "Entries":   {
+	"Maru":{
+    "NPCName": "Maru",
+    "Reactions": [
+      {
+        "Tag": "summer_movie_0",
+        "Response": "love",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{Random: 我真高兴你为我的生日准备了这么多！跟你结婚我真幸福。$1++ 能出门庆祝真是太好了！谢谢你，甜心。$1|inputSeparator=++}}"
+          },
+          "DuringMovie": null,
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "能出来舒展一下筋骨太棒了，是不是？#$b#我们好像常常都太忙于工作，这不太好。我想和你健康地百头偕老。$1"
+          }
+        },
+        "ID": "reaction_0"
+      },
+      {
+        "Tag": "summer_movie_1",
+        "Response": "love",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{Random: 我真高兴你为我的生日准备了这么多！跟你结婚我真幸福。$1++ 能出门庆祝真是太好了！谢谢你，甜心。$1|inputSeparator=++}}"
+          },
+          "DuringMovie": null,
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "我现在看这些电影就会想起玛丽尔达。#$b#说不定她真的在跟这些外太空生命体交流呢？这感觉太棒了。$4"
+          }
+        },
+        "ID": "reaction_1"
+      },
+    ]
+  },
+	}
+			},
+			
+    		{
+      "Action": "EditData",
+      "Target": "Data/MoviesReactions",	  
+		   "When": {
+		   "Relationship:Sebastian |contains=Engaged, Married": "true",
+		   "Relationship:Maru": "Friendly",
+		   "Season": "summer",
+		   "Day": "10",
+		   },
+    "Entries":   {
+	"Maru":{
+    "NPCName": "Maru",
+    "Reactions": [
+      {
+        "Tag": "summer_movie_0",
+        "Response": "love",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{Random: 哇……我没想过我会跟兄夫来看电影。但这也很有趣！$1^哇……我没想过我会跟嫂子来看电影。但这也很有趣！$1++ 早上我哥哥打电话来跟我道贺，然后又跟我的兄夫来看电影？^早上我哥哥打电话来跟我道贺，然后又跟我的嫂子来看电影？#$b#几年前的我肯定不敢相信这是真的……但这太棒了！|inputSeparator=++}}"
+          },
+          "DuringMovie": null,
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "啊……这些科幻情节太有趣了！我好奇是不是真的有这些外星生物，或许我总有一天会搞懂的。$1#$b#我最近鼓起勇气向我哥哥请教关于计算机的事情了，他还住在家里时肯定不会教我的。#$b#你肯定不敢相信这提升了多少效率！到家后替我向他问好，好吗？$1"
+          }
+        },
+        "ID": "reaction_0"
+      },
+      {
+        "Tag": "summer_movie_1",
+        "Response": "love",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{Random: 哇……我没想过我会跟兄夫来看电影。但这也很有趣！$1^哇……我没想过我会跟嫂子来看电影。但这也很有趣！$1++ 早上我哥哥打电话来跟我道贺，然后又跟我的兄夫来看电影？^早上我哥哥打电话来跟我道贺，然后又跟我的嫂子来看电影？#$b#几年前的我肯定不敢相信这是真的……但这太棒了！|inputSeparator=++}}"
+          },
+          "DuringMovie": null,
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "这部电影是游戏改编的？我几乎没玩过游戏……但它看起来很棒。$1#$b#我想我哥哥肯定对这些了解多了，是不是？"
+          }
+        },
+        "ID": "reaction_1"
+      },
+    ]
+  },
+	}
+			},
+  //Movie Invitation
+  		{
+      "Action": "EditData",
+      "Target": "Strings/Characters",	  
+		   "When": {
+		   "Relationship:Sebastian |contains=Engaged, Married": "false",
+		   "Relationship:Maru": "Friendly",
+		   "Season": "summer",
+		   "Day": "10",
+		   },
+      "Entries": {
+		  "MovieInvite_Invited_Maru": "生日电影？这听起来太棒了，谢谢你，@！$1#$b#我们在电影院见，好吗？我准备一下就来。",
+     }
+    },
+	  		{
+      "Action": "EditData",
+      "Target": "Strings/Characters",	  
+		   "When": {
+		   "Relationship:Sebastian |contains=Engaged, Married": "false",
+		   "Relationship:Maru": "Dating, Engaged",
+		   "Season": "summer",
+		   "Day": "10",
+		   },
+      "Entries": {
+		  "MovieInvite_Invited_Maru": "生日约会……？哇……你太浪漫了！$1#$b#当然，我会去的！我们在电影院等。$1",
+     }
+    },
+  		{
+      "Action": "EditData",
+      "Target": "Strings/Characters",	  
+		   "When": {
+		   "Relationship:Sebastian |contains=Engaged, Married": "false",
+		   "Relationship:Maru": "Married",
+		   "Season": "summer",
+		   "Day": "10",
+		   },
+      "Entries": {
+		  "MovieInvite_Invited_Maru": "你为我的生日准备了电影票？#$b#太好了，我正想问你今天有没有空呢！我们电影院见好不好？我准备一下就到。$1",
+     }
+    },
+	
+  		{
+      "Action": "EditData",
+      "Target": "Strings/Characters",	  
+		   "When": {
+		   "Relationship:Sebastian |contains=Engaged, Married": "true",
+		   "Season": "summer",
+		   "Day": "10",
+		   },
+      "Entries": {
+		  "MovieInvite_Invited_Maru": "哇，生日电影？谢谢你！我们在电影院等。$1#$b#这算是某种家庭聚会吗？我太兴奋了。感觉我和我的异父哥哥总算有些像普通兄妹的地方了……$1",
+     }
+    },
+  		
+		{
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Maru",	  
+		   "When": {
+           "Maru-Harvey": false, 
+		   "Relationship:Maru": "Friendly",
+		   },
+      "Entries": {
+ 				"summer_10": "嗨，@！嗯，你问我为什么好像很高兴？#$b#嘿，那是因为今天收到了很多礼物。爸妈送了我很好的原材料和工具组……潘妮特地为我做了爆炒青椒。$1#$b#生日真是快乐，不是吗？$1#$e#{{Random: 潘妮的爆炒青椒虽然很辣，但总感觉哪里有点苦苦的。#$b#我猜她是有她独特的调味方式。$2++ 其实如果我哥哥也愿意祝贺我一下，我会更加高兴……#$b#但现在我长大了，渐渐明白这好像是件不能勉强的事情。$2|inputSeparator=++}}",
+ 				"summer_10_2": "嗨，@！嗯，你问我为什么好像很高兴？#$b#嘿，那是因为今天收到了很多礼物。爸妈送了我很好的原材料和工具组……潘妮特地为我做了爆炒青椒。$1#$b#生日真是快乐，不是吗？$1#$e#{{Random: 潘妮的爆炒青椒虽然很辣，但总感觉哪里有点苦苦的。#$b#我猜她是有她独特的调味方式。$2++ 其实如果我哥哥也愿意祝贺我一下，我会更加高兴……#$b#但现在我长大了，渐渐明白这好像是件不能勉强的事情。$2|inputSeparator=++}}",
+     }
+    },
+		{
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Maru",	  
+		   "When": {
+		   "Relationship:Maru": "Dating, Engaged",
+		   },
+      "Entries": {
+ 				"summer_10": "嘿……@，你来看我吗？#$b#我太高兴了……你让我的生日变得无比完美！$4#$b#我们要坐下来聊聊吗？我想告诉你今天发生的事。$1#$e#爸妈送了我很好的原材料和工具，潘妮特地为我做了爆炒青椒。$1#$b#很高兴大家为我的生日准备了这么多。#$e#{{Random: 潘妮的爆炒青椒虽然很辣，但总感觉哪里有点苦苦的。#$b#我猜她是有她独特的调味方式。$2++ 其实如果我哥哥也愿意祝贺我一下，我会更加高兴……#$b#但现在我长大了，渐渐明白这好像是件不能勉强的事情。$2|inputSeparator=++}}",
+ 				"summer_10_2": "嘿……@，你来看我吗？#$b#我太高兴了……你让我的生日变得无比完美！$4#$b#我们要坐下来聊聊吗？我想告诉你今天发生的事。$1#$e#爸妈送了我很好的原材料和工具，潘妮特地为我做了爆炒青椒。$1#$b#很高兴大家为我的生日准备了这么多。#$e#{{Random: 潘妮的爆炒青椒虽然很辣，但总感觉哪里有点苦苦的。#$b#我猜她是有她独特的调味方式。$2++ 其实如果我哥哥也愿意祝贺我一下，我会更加高兴……#$b#但现在我长大了，渐渐明白这好像是件不能勉强的事情。$2|inputSeparator=++}}",
+		
+     }
+    },
+	    {
+        "Action": "EditData",
+        "Target": "Characters/Dialogue/Maru",
+        "Entries":
+        {
+//［Maru->Sebastian］
+ 				"winter_9": "明天是我哥哥的生日。#$q 115320110/115320111 MaruSebastianbirthday_followup#但我不确定他希不希望我们给他庆祝……
+					#$r 115320100 10 MaruSebastianbirthday_A#为什么？
+					#$r 115320101 10 MaruSebastianbirthday_B#你释出善意的话他肯定会开心的。
+					#$r 115320101 -30 MaruSebastianbirthday_C#他就是个怪咖。不用理他。",
+ 				"winter_9_2": "明天是我哥哥的生日。#$q 115320110/115320111 MaruSebastianbirthday_followup#但我不确定他希不希望我们给他庆祝……
+					#$r 115320100 10 MaruSebastianbirthday_A#为什么？
+					#$r 115320101 10 MaruSebastianbirthday_B#你释出善意的话他肯定会开心的。
+					#$r 115320101 -30 MaruSebastianbirthday_C#他就是个怪咖。不用理他。",
+					MaruSebastianbirthday_A: "他好像……不是很喜欢我。我不知道我是哪里惹到他了？$2#$e#我们小时候就常常打架，现在长大后他几乎完全不跟我说话了。$2",
+					MaruSebastianbirthday_B: "啊……我也希望是这样。$2#$e#但这么多年来，我每次对他友善，他都不给我好脸色看。我不知道我是哪里惹到他了……$2",
+ 					MaruSebastianbirthday_C: "喂！你怎么可以这样说我的家人？太没礼貌了！$5#$e#不管我们再多么疏远，我也不能接受你羞辱我的家人，@。$5",
+ 		MaruSebastianbirthday_followup:"但我不确定他希不希望我们给他庆祝……$2",
+ 				"winter_9_inlaw_Sebastian": "哦，嗨，@！#$b##$q 115320116/115320117 MaruSebastianbirthday_followup#你见到我哥哥的话可以把这给他吗？是我准备的生日礼物。
+					#$r 115320106 10 MaruSebastianInlawbirthday_A#好的。
+					#$r 115320107 10 MaruSebastianInlawbirthday_B#抱歉，我没空。",
+ 				"winter_9_2_inlaw_Sebastian": "哦，嗨，@！#$b##$q 115320116/115320117 MaruSebastianbirthday_followup#你见到我哥哥的话可以把这给他吗？是我准备的生日礼物。
+					#$r 115320106 10 MaruSebastianInlawbirthday_A#好的。
+					#$r 115320107 10 MaruSebastianInlawbirthday_B#抱歉，我没空。",
+					MaruSebastianInlawbirthday_A: "太好了！这给你！[84]$1#$b#我希望他喜欢……帮我转告他生日快乐！$1#$e#我其实不太确定他是不是喜欢这个……但我好像看到过他珍而重之地拿着这东西。#$b#我肯定你比我了解他多了！$1",
+					MaruSebastianInlawbirthday_B: "噢……是这样吗？你们都结婚了，我以为会天天见面……$2#$b#没关系，我明天自己拿给他。我希望他不会把我赶回去……#$b#他应该不会吧？我觉得他婚后好相处了不少。",
+ 		MaruSebastianInlawbirthday_followup:"我为他准备了生日礼物，希望不会把我赶回去……#$b#他应该不会吧？我觉得他婚后好相处了不少。",
+		
+//Maru>Robin
+ 				"fall_20": "我妈妈快要生日了！$1#$y '我特地从镇上的酒吧订制了意大利面，希望她会喜欢。_为什么不自己做？_我？我不太会做饭……我们家基本都是妈妈做的。*我觉得烹饪比做实验还要难。潘妮倒是很爱做菜……大概每人有不同的强弱项。$2_酒吧的意大利面很好吃。_对！格斯先生有他独制的酱料，不是吗？$1*虽然我很少去酒吧，但是我很赞同他的手艺。'",
+ 				"fall_20_2": "我妈妈快要生日了！$1#$y '我特地从镇上的酒吧订制了意大利面，希望她会喜欢。_为什么不自己做？_我？我不太会做饭……我们家基本都是妈妈做的。*我觉得烹饪比做实验还要难。潘妮倒是很爱做菜……大概每人有不同的强弱项。$2_酒吧的意大利面很好吃。_对！格斯先生有他独制的酱料，不是吗？$1*虽然我很少去酒吧，但是我很赞同他的手艺。'",
+		
+		
+//Maru>Maru
+				"summer_10_inlaw_Sebastian": "嗨，@！嗯，你问我为什么好像很高兴？#$b#嘿，那是因为今天收到了很多礼物。爸妈送了我很好的原材料和工具组……潘妮特地为我做了爆炒青椒。$1#$b#生日真是快乐，不是吗？$1#$e#{{Random: 潘妮的爆炒青椒虽然很辣，但总感觉哪里有点苦苦的。#$b#我猜她是有她独特的调味方式。$2++ 你知道吗？早上我哥哥打电话祝福我生日快乐了！$1#$b#我没想过他一直都记得……我想他跟你在一起后真的改变了很多，对吗？|inputSeparator=++}}",
+				"summer_10_2_inlaw_Sebastian": "嗨，@！嗯，你问我为什么好像很高兴？#$b#嘿，那是因为今天收到了很多礼物。爸妈送了我很好的原材料和工具组……潘妮特地为我做了爆炒青椒。$1#$b#生日真是快乐，不是吗？$1#$e#{{Random: 潘妮的爆炒青椒虽然很辣，但总感觉哪里有点苦苦的。#$b#我猜她是有她独特的调味方式。$2++ 你知道吗？早上我哥哥打电话祝福我生日快乐了！$1#$b#我没想过他一直都记得……我想他跟你在一起后真的改变了很多，对吗？|inputSeparator=++}}",
+ 				"summer_10_inlaw_Penny": "嗨，@！嗯，你问我为什么好像很高兴？#$b#嘿，那是因为今天收到了很多礼物。爸妈送了我很好的原材料和工具组，潘妮也送来了很有用的电池组……很高兴她婚后还记着我！$1#$b#生日真是快乐，不是吗？$1#$e#{{Random: 跟她结婚，你肯定很幸福吧？她是最好的女孩……你一定要和她好好过活。+ 其实如果我哥哥也愿意祝贺我一下，我会更加高兴……#$b#但现在我长大了，渐渐明白这好像是件不能勉强的事情。$2|inputSeparator=++}}",
+ 				"summer_10_2_inlaw_Penny": "嗨，@！嗯，你问我为什么好像很高兴？#$b#嘿，那是因为今天收到了很多礼物。爸妈送了我很好的原材料和工具组，潘妮也送来了很有用的电池组……很高兴她婚后还记着我！$1#$b#生日真是快乐，不是吗？$1#$e#{{Random: 跟她结婚，你肯定很幸福吧？她是最好的女孩……你一定要和她好好过活。+ 其实如果我哥哥也愿意祝贺我一下，我会更加高兴……#$b#但现在我长大了，渐渐明白这好像是件不能勉强的事情。$2|inputSeparator=++}}",
+
+//Maru->Demetrius 
+				"summer_18": "明天是我爸爸的生日。我爸爸对物质生活没什么追求，他只要能吃到些好吃的就很开心了。$c .5#比如草莓……那真的超好吃！我亲自认证的，嘿嘿。#比如大米布丁……我请格斯先生帮我准备的！",
+ 				"summer_18_2": "明天是我爸爸的生日。我爸爸对物质生活没什么追求，他只要能吃到些好吃的就很开心了。$c .5#比如草莓……那真的超好吃！我亲自认证的，嘿嘿。#比如大米布丁……我请格斯先生帮我准备的！",
+
+//Maru->Penny
+ 				"fall_1": "明天是潘妮的生日！我半个月前就订购了新书作生日礼物。$1#$b#$y '你要猜一下内容吗？_科学读物。_噢，她对这不太感兴趣……这得怪我，我想可能是我以前给她推荐科学杂志时太热情了。$2*我那时候比较不懂事，完全听不出她的婉拒……我现在不会再送她这些了。_奇幻小说。_对！她挺喜欢看这些的，对不对？$1*我自己很少看，所以我买了网上大家评价比较高的书。希望她会喜欢。$1_教师指南。_这个……作为生日礼物是不是太沉闷了？$2*工作固然重要，但生日轻松一下也不会有谁怪责的！$1'",
+ 				"fall_1_2": "明天是潘妮的生日！我半个月前就订购了新书作生日礼物。$1#$b#$y '你要猜一下内容吗？_科学读物。_噢，她对这不太感兴趣……这得怪我，我想可能是我以前给她推荐科学杂志时太热情了。$2*我那时候比较不懂事，完全听不出她的婉拒……我现在不会再送她这些了。_奇幻小说。_对！她挺喜欢看这些的，对不对？$1*我自己很少看，所以我买了网上大家评价比较高的书。希望她会喜欢。$1_教师指南。_这个……作为生日礼物是不是太沉闷了？$2*工作固然重要，但生日轻松一下也不会有谁怪责的！$1'",
+		
+
+//inlaw present 
+				"fall_1_inlaw_Penny": "噢，嗨，@！碰到你真好。$1#$q 115321108/115321109 MaruPennybirthday_followup#明天是潘妮的生日对吧？你可以帮我转交这个吗？
+					#$r 115321108 10 MaruPennyInlawbirthday_A#好的。
+					#$r 115321109 10 MaruPennyInlawbirthday_B#抱歉，我没空。",
+ 				"fall_1_2_inlaw_Penny": "噢，嗨，@！碰到你真好。$1#$q 115321108/115321109 MaruPennybirthday_followup#明天是潘妮的生日对吧？你可以帮我转交这个吗？
+					#$r 115321108 10 MaruPennyInlawbirthday_A#好的。
+					#$r 115321109 10 MaruPennyInlawbirthday_B#抱歉，我没空。",
+					MaruPennyInlawbirthday_A: "谢谢！这给你。我之前在矿山里偶尔拿到的，之后一直留着当作她的生日礼物。她一定会喜欢的！[72]$1#$e#这样我明天跟她致电一下就好啦，祝她生日快乐。真高兴她现在过得很幸福。$1",
+					MaruPennyInlawbirthday_B: "没……空？好吧，那我明天早上到农场一趟。$2#$b#你们感情应该还好吧？我希望潘妮一切都好……$2",
+ 		MaruPennyInlawbirthday_followup:"我之前在矿山里偶尔拿到了宝石……之后一直留着当作她的生日礼物。她一定会喜欢的。",
+				
+
+        }
+    },
+	
+	
+		{
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogueMaru",	  
+      "Entries": {
+		
+		"summer_10": "亲爱的，你总算醒了？我一直在等你醒来呢……#$b#$y '你一定知道今天是什么日子吧？_生日快乐。_谢谢，亲爱的！$1*我认识你前，一直无法想象我未来的老公会是什么样的。*我很高兴能遇到你，＠……你完全超乎我想象地好！$1_生日快乐，玛鲁。今年也能为你庆生，我很幸福。_噢……你太浪漫了，@！$4*我也是这么想的……我希望明年也可以和你庆祝。$4_该准备明天的百乐宴了。_呃……？就这样？没有别的了吗？*好吧，看来是我一个人瞎兴奋了……没什么。$2*@，你其实是记得的，对不对……？'",
+		"summer_10_2": "亲爱的，你总算醒了？我一直在等你醒来呢……#$b#$y '你一定知道今天是什么日子吧？_生日快乐。_谢谢，亲爱的！$1*我认识你前，一直无法想象我未来的老公会是什么样的。*我很高兴能遇到你，＠……你完全超乎我想象地好！$1_生日快乐，玛鲁。今年也能为你庆生，我很幸福。_噢……你太浪漫了，@！$4*我也是这么想的……我希望明年也可以和你庆祝。$4_该准备明天的百乐宴了。_呃……？就这样？没有别的了吗？*好吧，看来是我一个人瞎兴奋了……没什么。$2*@，你其实是记得的，对不对……？'",
+		  
+		"summer_18": "明天是爸爸的生日，我得别忘了早上要打电话跟他道贺。#$b#我相信他和妈妈会浪漫地庆祝一番。妈妈是很懂得享受的人！$1#$e#{{Random: 我们交往前爸爸是不是对你有些……呃，找麻烦？希望你不要介意。他只是有些在乎我，毕竟我是他唯一的女儿。#$b#而且我们现在顺利在一起了，不是嘛？$1++ 爸爸很学识渊博。他是位值得敬重的科学家……不过有时候比较不懂变通。#$b#他常常把妈妈气得半死，但他们还是感情很好。我很幸运能生在父母恩爱的家庭。$1|inputSeparator=++}}",
+		"summer_18_2": "明天是爸爸的生日，我得别忘了早上要打电话跟他道贺。#$b#我相信他和妈妈会浪漫地庆祝一番。妈妈是很懂得享受的人！$1#$e#{{Random: 我们交往前爸爸是不是对你有些……呃，找麻烦？希望你不要介意。他只是有些在乎我，毕竟我是他唯一的女儿。#$b#而且我们现在顺利在一起了，不是嘛？$1++ 爸爸很学识渊博。他是位值得敬重的科学家……不过有时候比较不懂变通。#$b#他常常把妈妈气得半死，但他们还是感情很好。我很幸运能生在父母恩爱的家庭。$1|inputSeparator=++}}",
+
+		"fall_1": "亲爱的，邮箱里如果看到书店的包裹，拿给我好吗？那是给潘妮的生日礼物，明天是她的生日。#$b#我希望她今年也会喜欢我为她挑的书！#$e#{{Random: 潘妮跟我从很久以前就是好朋友了。我在镇上没什么能聊得来的同龄女孩……潘妮是唯一会听我的话听得津津有味的人。#$b#她是个很好的女孩，我希望她有朝一日也能找到她命中注定的那个人，变得跟我一样幸福。++ 潘妮很少跟我谈她家里的事情，但她跟她妈妈住在一起似乎不太开心。#$b#我作为朋友，能为她做到的事很有限……只希望我送她的书能让她快乐起来。|inputSeparator=++}}",
+		"fall_1_2": "亲爱的，邮箱里如果看到书店的包裹，拿给我好吗？那是给潘妮的生日礼物，明天是她的生日。#$b#我希望她今年也会喜欢我为她挑的书！#$e#{{Random: 潘妮跟我从很久以前就是好朋友了。我在镇上没什么能聊得来的同龄女孩……潘妮是唯一会听我的话听得津津有味的人。#$b#她是个很好的女孩，我希望她有朝一日也能找到她命中注定的那个人，变得跟我一样幸福。++ 潘妮很少跟我谈她家里的事情，但她跟她妈妈住在一起似乎不太开心。#$b#我作为朋友，能为她做到的事很有限……只希望我送她的书能让她快乐起来。|inputSeparator=++}}",
+
+		"fall_20": "明天是妈妈的生日！我昨天到镇上时为她订了她最爱的意大利面，她肯定会喜欢的。#$b#亲爱的，你明天如果到镇上，也向她打个招呼好吗？我们已经是一家人了。$1#$e#{{Random: 妈妈是位很坚强的女性。我很引以为傲。#$b#我不是在吹牛！你看我们这漂亮的房子……她毫无疑问是世上最好的木匠。$1++ 尽管她不太了解机械和科学，妈妈还是一直都很支持我。没有她的话，我显然无法这么专心于做机器人。|inputSeparator=++}}",
+		"fall_20_2": "明天是妈妈的生日！我昨天到镇上时为她订了她最爱的意大利面，她肯定会喜欢的。#$b#亲爱的，你明天如果到镇上，也向她打个招呼好吗？我们已经是一家人了。$1#$e#{{Random: 妈妈是位很坚强的女性。我很引以为傲。#$b#我不是在吹牛！你看我们这漂亮的房子……她毫无疑问是世上最好的木匠。$1++ 尽管她不太了解机械和科学，妈妈还是一直都很支持我。没有她的话，我显然无法这么专心于做机器人。|inputSeparator=++}}",
+
+		"winter_9": "嘿，亲爱的！你醒了吗？$1#$b#我今早想起明天是我异父哥哥的生日。不过他讨厌我为他庆祝……加上我们现在分开生活了，所以我想假装不知道就行了？#$b#虽然这让人有些难过……$2#$e#{{Random: 我以前常常在想我哥哥为什么讨厌我。你知道，这种态度真的有些伤人。#$b#我不记得我做过什么开罪他的事。所以或许那只是他自己……呃，有些坎没跨过去？$2#$e#这只能等他自己哪天想通了。在那之前我都不打算再刺激他。++ 别担心，亲爱的。我妈妈会为他庆祝的。#$b#妈妈是家里唯一能与他交流的人了……他不知道为什么特别仇视我爸爸。|inputSeparator=++}}",
+		"winter_9_2": "嘿，亲爱的！你醒了吗？$1#$b#我今早想起明天是我异父哥哥的生日。不过他讨厌我为他庆祝……加上我们现在分开生活了，所以我想假装不知道就行了？#$b#虽然这让人有些难过……$2#$e#{{Random: 我以前常常在想我哥哥为什么讨厌我。你知道，这种态度真的有些伤人。#$b#我不记得我做过什么开罪他的事。所以或许那只是他自己……呃，有些坎没跨过去？$2#$e#这只能等他自己哪天想通了。在那之前我都不打算再刺激他。++ 别担心，亲爱的。我妈妈会为他庆祝的。#$b#妈妈是家里唯一能与他交流的人了……他不知道为什么特别仇视我爸爸。|inputSeparator=++}}",
+     }
+    },
+	
+		//Birthday Schedule Dialogue
+    			{
+			"Action": "EditData",
+			"Target": "Characters/schedules/Maru",
+			"When": {
+			"Season": "summer",
+			"Day": "15",
+            "ScheduleEdits": true,
+			},
+			"Entries": {
+				"Summer_Mon": "800 ScienceHouse 5 6 1 maru_tinker/1000 ScienceHouse 19 18 0/1310 Town 64 16 3 \"Strings\\schedules\\Maru:Maru_birthday_sitting\"/1830 ScienceHouse 5 6 1 maru_tinker/2300 ScienceHouse 2 4 3 maru_sleep",
+			}
+		},
+		
+
+  			{
+			"Action": "EditData",
+			"Target": "Strings/schedules/Maru",
+			"When": {
+			"Season": "summer",
+			"Day": "15",
+			},
+			"Entries": {
+			"Maru_birthday_sitting": "嗨，@。我在跟潘妮聊天。她上周为我生日做的新爆炒青椒很……独特。",
+			}
+		},
+		
+
+  			{
+			"Action": "EditData",
+			"Target": "Strings/schedules/Maru",
+			"When": {
+			"Season": "summer",
+			"Day": "15",
+			},
+			"Entries": {
+			"marriage_Mon.002": "亲爱的，你来看我吗？$1#$b#我在跟潘妮聊我上周的生日。百乐宴时我们没太多时间聊天。",
+			}
+		},
+		
+    			{
+			"Action": "EditData",
+			"Target": "Characters/schedules/Maru",
+			"When": {
+			"Season": "fall",
+			"Day": "4",
+            "ScheduleEdits": true,
+			},
+			"Entries": {
+				  "spring": "800 ScienceHouse 5 6 1 maru_tinker/1000 ScienceHouse 19 18 0/1000 Town 63 15 2 maru_sit_down \"Strings\\schedules\\Maru:Maru_birthday_sitting\"/1800 ScienceHouse 5 6 1 maru_tinker/2200 ScienceHouse 2 4 3 maru_sleep"
+			}
+		},
+		
+
+  			{
+			"Action": "EditData",
+			"Target": "Strings/schedules/Maru",
+			"When": {
+			"Season": "fall",
+			"Day": "4",
+			},
+			"Entries": {
+			"Maru_birthday_sitting": "嗨，@。我和潘妮每周都会抽些時間见面……我希望她喜欢我前幾天送的生日礼物！$1",
+			}
+		},
+		
+
+  			{
+			"Action": "EditData",
+			"Target": "Strings/schedules/Maru",
+			"When": {
+			"Season": "fall",
+			"Day": "8",
+			},
+			"Entries": {
+			"marriage_Mon.002": "婚后还能跟潘妮见面真是开心。我禁不住想要知道她上周生日过得如何了！$1",
+			}
+		},
+		
+  ]
+}

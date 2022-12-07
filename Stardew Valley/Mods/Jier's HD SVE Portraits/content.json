@@ -1,0 +1,667 @@
+{
+	"Format": "1.26.0",
+
+			"ConfigSchema": 
+		{
+			"Alesia_HD_portrait":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				}, 
+			"Andy_HD_portrait":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				}, 
+			"Axel_HD_portrait":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				}, 
+			"Brooklyn_HD_portrait":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				}, 
+			"Camilla_HD_portrait":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				}, 
+			"Chloe_HD_portrait":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				}, 
+			"Claire_HD_portrait":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				}, 
+			"Gunther_HD_portrait":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				}, 
+			"Isaac_HD_portrait":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				}, 
+			"Jace_HD_portrait":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				}, 
+			"Jolyne_HD_portrait":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				}, 
+			"Lance_HD_portrait":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				}, 
+			"Jadu_HD_portrait":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				}, 
+			"Magnus_HD_portrait":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				}, 
+			"Marlon_HD_portrait":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				}, 
+			"Martin_HD_portrait":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				}, 
+			"Mermaid_HD_portrait":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				}, 
+			"Morgan_HD_portrait":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				}, 
+			"Morris_HD_portrait":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				}, 
+			"Olivia_HD_portrait":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				}, 
+			"Scarlett_HD_portrait":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				}, 
+			"Sophia_HD_portrait":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				}, 
+			"Suki_HD_portrait":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				}, 
+			"Susan_HD_portrait":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				}, 
+			"Victor_HD_portrait":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				}, 
+			"Zoey_HD_portrait":
+				{
+				"AllowValues": "true,false",
+				"Default": "true",
+				}, 
+		},
+
+	"Changes": 
+	[
+
+		{
+		"Action": "Load",
+		"Target": "Mods/JierHDPortraits/Alesia",
+		"FromFile": "assets/{{TargetWithoutPath}}.png",
+		"When": {"Alesia_HD_portrait": "true"},
+        },
+        {
+		"Action": "Load",
+		"Target": "Mods/HDPortraits/Alesia",
+		"FromFile": "assets/Size256.json",
+		"When": {"Alesia_HD_portrait": "true"},
+	    },
+ 		{
+		"Action": "EditData",
+		"Target": "Mods/HDPortraits/Alesia",
+		"Entries": {
+				"Portrait": "Mods/JierHDPortraits/{{TargetWithoutPath}}",
+			},
+		"When":	{"Alesia_HD_portrait": "true"},
+		},
+
+		{
+		"Action": "Load",
+		"Target": "Mods/JierHDPortraits/Andy, Mods/JierHDPortraits/Andy_Beach",
+		"FromFile": "assets/{{TargetWithoutPath}}.png",
+		"When": {"Andy_HD_portrait": "true"},
+        },
+        {
+		"Action": "Load",
+		"Target": "Mods/HDPortraits/Andy, Mods/HDPortraits/Andy_Beach",
+		"FromFile": "assets/Size256.json",
+		"When": {"Andy_HD_portrait": "true"},
+	    },
+ 		{
+		"Action": "EditData",
+		"Target": "Mods/HDPortraits/Andy, Mods/HDPortraits/Andy_Beach",
+		"Entries": {
+				"Portrait": "Mods/JierHDPortraits/{{TargetWithoutPath}}",
+			},
+		"When":	{"Andy_HD_portrait": "true"},
+		},
+
+		{
+		"Action": "Load",
+		"Target": "Mods/JierHDPortraits/Axel",
+		"FromFile": "assets/{{TargetWithoutPath}}.png",
+		"When": {"Axel_HD_portrait": "true"},
+        },
+        {
+		"Action": "Load",
+		"Target": "Mods/HDPortraits/Axel",
+		"FromFile": "assets/Size256.json",
+		"When": {"Axel_HD_portrait": "true"},
+	    },
+ 		{
+		"Action": "EditData",
+		"Target": "Mods/HDPortraits/Axel",
+		"Entries": {
+				"Portrait": "Mods/JierHDPortraits/{{TargetWithoutPath}}",
+			},
+		"When":	{"Axel_HD_portrait": "true"},
+		},
+
+		{
+		"Action": "Load",
+		"Target": "Mods/JierHDPortraits/Camilla",
+		"FromFile": "assets/{{TargetWithoutPath}}.png",
+		"When": {"Camilla_HD_portrait": "true"},
+        },
+        {
+		"Action": "Load",
+		"Target": "Mods/HDPortraits/Camilla",
+		"FromFile": "assets/Size256.json",
+		"When": {"Camilla_HD_portrait": "true"},
+	    },
+ 		{
+		"Action": "EditData",
+		"Target": "Mods/HDPortraits/Camilla",
+		"Entries": {
+				"Portrait": "Mods/JierHDPortraits/{{TargetWithoutPath}}",
+			},
+		"When":	{"Camilla_HD_portrait": "true"},
+		},
+
+		{
+		"Action": "Load",
+		"Target": "Mods/JierHDPortraits/Chloe",
+		"FromFile": "assets/{{TargetWithoutPath}}.png",
+		"When": {"Chloe_HD_portrait": "true"},
+        },
+        {
+		"Action": "Load",
+		"Target": "Mods/HDPortraits/Chloe",
+		"FromFile": "assets/Size256.json",
+		"When": {"Chloe_HD_portrait": "true"},
+	    },
+ 		{
+		"Action": "EditData",
+		"Target": "Mods/HDPortraits/Chloe",
+		"Entries": {
+				"Portrait": "Mods/JierHDPortraits/{{TargetWithoutPath}}",
+			},
+		"When":	{"Chloe_HD_portrait": "true"},
+		},
+
+		{
+		"Action": "Load",
+		"Target": "Mods/JierHDPortraits/Claire, Mods/JierHDPortraits/Claire_Beach, Mods/JierHDPortraits/Claire_Joja, Mods/JierHDPortraits/Claire_Theater",
+		"FromFile": "assets/{{TargetWithoutPath}}.png",
+		"When": {"Claire_HD_portrait": "true"},
+        },
+        {
+		"Action": "Load",
+		"Target": "Mods/HDPortraits/Claire, Mods/HDPortraits/Claire_Beach, Mods/HDPortraits/Claire_Joja, Mods/HDPortraits/Claire_Theater",
+		"FromFile": "assets/Size256.json",
+		"When": {"Claire_HD_portrait": "true"},
+	    },
+ 		{
+		"Action": "EditData",
+		"Target": "Mods/HDPortraits/Claire, Mods/HDPortraits/Claire_Beach, Mods/HDPortraits/Claire_Joja, Mods/HDPortraits/Claire_Theater",
+		"Entries": {
+				"Portrait": "Mods/JierHDPortraits/{{TargetWithoutPath}}",
+			},
+		"When":	{"Claire_HD_portrait": "true"},
+		},
+
+		{
+		"Action": "Load",
+		"Target": "Mods/JierHDPortraits/GuntherSilvian",
+		"FromFile": "assets/Gunther.png",
+		"When": {"Gunther_HD_portrait": "true"},
+        },
+        {
+		"Action": "Load",
+		"Target": "Mods/HDPortraits/GuntherSilvian",
+		"FromFile": "assets/Size256.json",
+		"When": {"Gunther_HD_portrait": "true"},
+	    },
+ 		{
+		"Action": "EditData",
+		"Target": "Mods/HDPortraits/GuntherSilvian",
+		"Entries": {
+				"Portrait": "Mods/JierHDPortraits/{{TargetWithoutPath}}",
+			},
+		"When":	{"Gunther_HD_portrait": "true"},
+		},
+
+		{
+		"Action": "Load",
+		"Target": "Mods/JierHDPortraits/Isaac",
+		"FromFile": "assets/{{TargetWithoutPath}}.png",
+		"When": {"Isaac_HD_portrait": "true"},
+        },
+        {
+		"Action": "Load",
+		"Target": "Mods/HDPortraits/Isaac",
+		"FromFile": "assets/Size256.json",
+		"When": {"Isaac_HD_portrait": "true"},
+	    },
+ 		{
+		"Action": "EditData",
+		"Target": "Mods/HDPortraits/Isaac",
+		"Entries": {
+				"Portrait": "Mods/JierHDPortraits/{{TargetWithoutPath}}",
+			},
+		"When":	{"Isaac_HD_portrait": "true"},
+		},
+
+		{
+		"Action": "Load",
+		"Target": "Mods/JierHDPortraits/Jace",
+		"FromFile": "assets/{{TargetWithoutPath}}.png",
+		"When": {"Jace_HD_portrait": "true"},
+        },
+        {
+		"Action": "Load",
+		"Target": "Mods/HDPortraits/Jace",
+		"FromFile": "assets/Size256.json",
+		"When": {"Jace_HD_portrait": "true"},
+	    },
+ 		{
+		"Action": "EditData",
+		"Target": "Mods/HDPortraits/Jace",
+		"Entries": {
+				"Portrait": "Mods/JierHDPortraits/{{TargetWithoutPath}}",
+			},
+		"When":	{"Jace_HD_portrait": "true"},
+		},
+
+		{
+		"Action": "Load",
+		"Target": "Mods/JierHDPortraits/Jolyne",
+		"FromFile": "assets/{{TargetWithoutPath}}.png",
+		"When": {"Jolyne_HD_portrait": "true"},
+        },
+        {
+		"Action": "Load",
+		"Target": "Mods/HDPortraits/Jolyne",
+		"FromFile": "assets/Size256.json",
+		"When": {"Jolyne_HD_portrait": "true"},
+	    },
+ 		{
+		"Action": "EditData",
+		"Target": "Mods/HDPortraits/Jolyne",
+		"Entries": {
+				"Portrait": "Mods/JierHDPortraits/{{TargetWithoutPath}}",
+			},
+		"When":	{"Jolyne_HD_portrait": "true"},
+		},
+
+		{
+		"Action": "Load",
+		"Target": "Mods/JierHDPortraits/Lance, Mods/JierHDPortraits/Lance_Beach",
+		"FromFile": "assets/{{TargetWithoutPath}}.png",
+		"When": {"Lance_HD_portrait": "true"},
+        },
+        {
+		"Action": "Load",
+		"Target": "Mods/HDPortraits/Lance, Mods/HDPortraits/Lance_Beach",
+		"FromFile": "assets/Size256.json",
+		"When": {"Lance_HD_portrait": "true"},
+	    },
+ 		{
+		"Action": "EditData",
+		"Target": "Mods/HDPortraits/Lance, Mods/HDPortraits/Lance_Beach",
+		"Entries": {
+				"Portrait": "Mods/JierHDPortraits/{{TargetWithoutPath}}",
+			},
+		"When":	{"Lance_HD_portrait": "true"},
+		},
+
+		{
+		"Action": "Load",
+		"Target": "Mods/JierHDPortraits/Jadu",
+		"FromFile": "assets/{{TargetWithoutPath}}.png",
+		"When": {"Jadu_HD_portrait": "true"},
+        },
+        {
+		"Action": "Load",
+		"Target": "Mods/HDPortraits/Jadu",
+		"FromFile": "assets/Size256.json",
+		"When": {"Jadu_HD_portrait": "true"},
+	    },
+ 		{
+		"Action": "EditData",
+		"Target": "Mods/HDPortraits/Jadu",
+		"Entries": {
+				"Portrait": "Mods/JierHDPortraits/{{TargetWithoutPath}}",
+			},
+		"When":	{"Jadu_HD_portrait": "true"},
+		},
+
+		{
+		"Action": "Load",
+		"Target": "Mods/JierHDPortraits/Magnus",
+		"FromFile": "assets/{{TargetWithoutPath}}.png",
+		"When": {"Magnus_HD_portrait": "true"},
+        },
+        {
+		"Action": "Load",
+		"Target": "Mods/HDPortraits/Magnus",
+		"FromFile": "assets/Size256.json",
+		"When": {"Magnus_HD_portrait": "true"},
+	    },
+ 		{
+		"Action": "EditData",
+		"Target": "Mods/HDPortraits/Magnus",
+		"Entries": {
+				"Portrait": "Mods/JierHDPortraits/{{TargetWithoutPath}}",
+			},
+		"When":	{"Magnus_HD_portrait": "true"},
+		},
+
+		{
+		"Action": "Load",
+		"Target": "Mods/JierHDPortraits/MarlonFay",
+		"FromFile": "assets/Marlon.png",
+		"When": {"Marlon_HD_portrait": "true"},
+        },
+        {
+		"Action": "Load",
+		"Target": "Mods/HDPortraits/MarlonFay",
+		"FromFile": "assets/Size256.json",
+		"When": {"Marlon_HD_portrait": "true"},
+	    },
+ 		{
+		"Action": "EditData",
+		"Target": "Mods/HDPortraits/MarlonFay",
+		"Entries": {
+				"Portrait": "Mods/JierHDPortraits/{{TargetWithoutPath}}",
+			},
+		"When":	{"Marlon_HD_portrait": "true"},
+		},
+
+		{
+		"Action": "Load",
+		"Target": "Mods/JierHDPortraits/Martin, Mods/JierHDPortraits/Martin_Joja, Mods/JierHDPortraits/Martin_Theater",
+		"FromFile": "assets/{{TargetWithoutPath}}.png",
+		"When": {"Martin_HD_portrait": "true"},
+        },
+        {
+		"Action": "Load",
+		"Target": "Mods/HDPortraits/Martin, Mods/HDPortraits/Martin_Joja, Mods/HDPortraits/Martin_Theater",
+		"FromFile": "assets/Size256.json",
+		"When": {"Martin_HD_portrait": "true"},
+	    },
+ 		{
+		"Action": "EditData",
+		"Target": "Mods/HDPortraits/Martin, Mods/HDPortraits/Martin_Joja, Mods/HDPortraits/Martin_Theater",
+		"Entries": {
+				"Portrait": "Mods/JierHDPortraits/{{TargetWithoutPath}}",
+			},
+		"When":	{"Martin_HD_portrait": "true"},
+		},
+
+		{
+		"Action": "Load",
+		"Target": "Mods/JierHDPortraits/Mermaid",
+		"FromFile": "assets/{{TargetWithoutPath}}.png",
+		"When": {"Mermaid_HD_portrait": "true"},
+        },
+        {
+		"Action": "Load",
+		"Target": "Mods/HDPortraits/Mermaid",
+		"FromFile": "assets/Size256.json",
+		"When": {"Mermaid_HD_portrait": "true"},
+	    },
+ 		{
+		"Action": "EditData",
+		"Target": "Mods/HDPortraits/Mermaid",
+		"Entries": {
+				"Portrait": "Mods/JierHDPortraits/{{TargetWithoutPath}}",
+			},
+		"When":	{"Mermaid_HD_portrait": "true"},
+		},
+
+		{
+		"Action": "Load",
+		"Target": "Mods/JierHDPortraits/Morgan",
+		"FromFile": "assets/{{TargetWithoutPath}}.png",
+		"When": {"Morgan_HD_portrait": "true"},
+        },
+        {
+		"Action": "Load",
+		"Target": "Mods/HDPortraits/Morgan",
+		"FromFile": "assets/Size256.json",
+		"When": {"Morgan_HD_portrait": "true"},
+	    },
+ 		{
+		"Action": "EditData",
+		"Target": "Mods/HDPortraits/Morgan",
+		"Entries": {
+				"Portrait": "Mods/JierHDPortraits/{{TargetWithoutPath}}",
+			},
+		"When":	{"Morgan_HD_portrait": "true"},
+		},
+
+		{
+		"Action": "Load",
+		"Target": "Mods/JierHDPortraits/MorrisTod",
+		"FromFile": "assets/Morris.png",
+		"When": {"Morris_HD_portrait": "true"},
+        },
+        {
+		"Action": "Load",
+		"Target": "Mods/HDPortraits/MorrisTod",
+		"FromFile": "assets/Size256.json",
+		"When": {"Morris_HD_portrait": "true"},
+	    },
+ 		{
+		"Action": "EditData",
+		"Target": "Mods/HDPortraits/MorrisTod",
+		"Entries": {
+				"Portrait": "Mods/JierHDPortraits/{{TargetWithoutPath}}",
+			},
+		"When":	{"Morris_HD_portrait": "true"},
+		},
+
+		{
+		"Action": "Load",
+		"Target": "Mods/JierHDPortraits/Olivia, Mods/JierHDPortraits/Olivia_Beach",
+		"FromFile": "assets/{{TargetWithoutPath}}.png",
+		"When": {"Olivia_HD_portrait": "true"},
+        },
+        {
+		"Action": "Load",
+		"Target": "Mods/HDPortraits/Olivia, Mods/HDPortraits/Olivia_Beach",
+		"FromFile": "assets/Size256.json",
+		"When": {"Olivia_HD_portrait": "true"},
+	    },
+ 		{
+		"Action": "EditData",
+		"Target": "Mods/HDPortraits/Olivia, Mods/HDPortraits/Olivia_Beach",
+		"Entries": {
+				"Portrait": "Mods/JierHDPortraits/{{TargetWithoutPath}}",
+			},
+		"When":	{"Olivia_HD_portrait": "true"},
+		},
+
+		{
+		"Action": "Load",
+		"Target": "Mods/JierHDPortraits/Scarlett, Mods/JierHDPortraits/Scarlett_Beach, Mods/JierHDPortraits/Scarlett_Cosplay",
+		"FromFile": "assets/{{TargetWithoutPath}}.png",
+		"When": {"Scarlett_HD_portrait": "true"},
+        },
+        {
+		"Action": "Load",
+		"Target": "Mods/HDPortraits/Scarlett, Mods/HDPortraits/Scarlett_Beach, Mods/HDPortraits/Scarlett_Cosplay",
+		"FromFile": "assets/Size256.json",
+		"When": {"Scarlett_HD_portrait": "true"},
+	    },
+ 		{
+		"Action": "EditData",
+		"Target": "Mods/HDPortraits/Scarlett, Mods/HDPortraits/Scarlett_Beach, Mods/HDPortraits/Scarlett_Cosplay",
+		"Entries": {
+				"Portrait": "Mods/JierHDPortraits/{{TargetWithoutPath}}",
+			},
+		"When":	{"Scarlett_HD_portrait": "true"},
+		},
+
+		{
+		"Action": "Load",
+		"Target": "Mods/JierHDPortraits/Sophia, Mods/JierHDPortraits/Sophia_Beach, Mods/JierHDPortraits/Sophia_Makeup, Mods/JierHDPortraits/Sophia_Older, Mods/JierHDPortraits/Sophia_Older_Beach, Mods/JierHDPortraits/Sophia_Older_Makeup",
+		"FromFile": "assets/{{TargetWithoutPath}}.png",
+		"When": {"Sophia_HD_portrait": "true"},
+        },
+        {
+		"Action": "Load",
+		"Target": "Mods/HDPortraits/Sophia, Mods/HDPortraits/Sophia_Beach, Mods/HDPortraits/Sophia_Makeup, Mods/HDPortraits/Sophia_Older, Mods/HDPortraits/Sophia_Older_Beach, Mods/HDPortraits/Sophia_Older_Makeup",
+		"FromFile": "assets/Size256.json",
+		"When": {"Sophia_HD_portrait": "true"},
+	    },
+ 		{
+		"Action": "EditData",
+		"Target": "Mods/HDPortraits/Sophia, Mods/HDPortraits/Sophia_Beach, Mods/HDPortraits/Sophia_Makeup, Mods/HDPortraits/Sophia_Older, Mods/HDPortraits/Sophia_Older_Beach, Mods/HDPortraits/Sophia_Older_Makeup",
+		"Entries": {
+				"Portrait": "Mods/JierHDPortraits/{{TargetWithoutPath}}",
+			},
+		"When":	{"Sophia_HD_portrait": "true"},
+		},
+
+		{
+		"Action": "Load",
+		"Target": "Mods/JierHDPortraits/Suki, Mods/JierHDPortraits/Suki_IceFestival",
+		"FromFile": "assets/{{TargetWithoutPath}}.png",
+		"When": {"Suki_HD_portrait": "true"},
+        },
+        {
+		"Action": "Load",
+		"Target": "Mods/HDPortraits/Suki, Mods/HDPortraits/Suki_IceFestival",
+		"FromFile": "assets/Size256.json",
+		"When": {"Suki_HD_portrait": "true"},
+	    },
+ 		{
+		"Action": "EditData",
+		"Target": "Mods/HDPortraits/Suki, Mods/HDPortraits/Suki_IceFestival",
+		"Entries": {
+				"Portrait": "Mods/JierHDPortraits/{{TargetWithoutPath}}",
+			},
+		"When":	{"Suki_HD_portrait": "true"},
+		},
+
+		{
+		"Action": "Load",
+		"Target": "Mods/JierHDPortraits/Susan, Mods/JierHDPortraits/Susan_Beach",
+		"FromFile": "assets/{{TargetWithoutPath}}.png",
+		"When": {"Susan_HD_portrait": "true"},
+        },
+        {
+		"Action": "Load",
+		"Target": "Mods/HDPortraits/Susan, Mods/HDPortraits/Susan_Beach",
+		"FromFile": "assets/Size256.json",
+		"When": {"Susan_HD_portrait": "true"},
+	    },
+ 		{
+		"Action": "EditData",
+		"Target": "Mods/HDPortraits/Susan, Mods/HDPortraits/Susan_Beach",
+		"Entries": {
+				"Portrait": "Mods/JierHDPortraits/{{TargetWithoutPath}}",
+			},
+		"When":	{"Susan_HD_portrait": "true"},
+		},
+
+		{
+		"Action": "Load",
+		"Target": "Mods/JierHDPortraits/Victor, Mods/JierHDPortraits/Victor_Beach",
+		"FromFile": "assets/{{TargetWithoutPath}}.png",
+		"When": {"Victor_HD_portrait": "true"},
+        },
+        {
+		"Action": "Load",
+		"Target": "Mods/HDPortraits/Victor, Mods/HDPortraits/Victor_Beach",
+		"FromFile": "assets/Size256.json",
+		"When": {"Victor_HD_portrait": "true"},
+	    },
+ 		{
+		"Action": "EditData",
+		"Target": "Mods/HDPortraits/Victor, Mods/HDPortraits/Victor_Beach",
+		"Entries": {
+				"Portrait": "Mods/JierHDPortraits/{{TargetWithoutPath}}",
+			},
+		"When":	{"Victor_HD_portrait": "true"},
+		},
+
+		{
+		"Action": "Load",
+		"Target": "Mods/JierHDPortraits/Zoey",
+		"FromFile": "assets/{{TargetWithoutPath}}.png",
+		"When": {"Zoey_HD_portrait": "true"},
+        },
+        {
+		"Action": "Load",
+		"Target": "Mods/HDPortraits/Zoey",
+		"FromFile": "assets/Size256.json",
+		"When": {"Zoey_HD_portrait": "true"},
+	    },
+ 		{
+		"Action": "EditData",
+		"Target": "Mods/HDPortraits/Zoey",
+		"Entries": {
+				"Portrait": "Mods/JierHDPortraits/{{TargetWithoutPath}}",
+			},
+		"When":	{"Zoey_HD_portrait": "true"},
+		},
+
+	]
+}

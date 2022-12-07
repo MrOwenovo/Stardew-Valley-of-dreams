@@ -1,0 +1,325 @@
+{
+  "Format":"1.26.0",		
+  "ConfigSchema":{
+
+    //Turns on female Alex
+    "Female Alex":{
+      "AllowValues":"true, false",
+      "Default":"true",
+      "Section":"Alex",
+      "Description":"Changes the dialogue to refer to Alex as a girl."
+    },
+  
+    //Turns on female Alex Portrait				
+    "Alex's Portrait":{
+      "AllowValues":"true, false",
+      "Default":"false",
+      "Section":"Alex",
+      "Description":"Changes Alex's portrait. (Requires \"Female Alex\" to be on!)"
+    },
+
+    //Turns on Elena
+    "Elena":{
+      "AllowValues":"true, false",
+      "Default":"true",
+      "Section":"Elena",
+      "Description":"Changes the dialogue to refer to Elliott as a girl named Elena."
+    },
+  
+    //Turns on Elena's Portrait			
+    "Elena's Portrait":{
+      "AllowValues":"true, false",
+      "Default":"false",
+      "Section":"Elena",
+      "Description":"Changes Elliott's portrait into Elena's. (Requires \"Elena\" to be on!)"
+    },
+
+    //Turns on Harriet
+    "Harriet":{
+      "AllowValues":"true, false",
+      "Default":"true",
+      "Section":"Harriet",
+      "Description":"Changes the dialogue to refer to Harvey as a girl named Harriet."
+    },
+  
+    //Turns on Harriet's Portrait
+    "Harriet's Portrait":{
+      "AllowValues":"true, false",
+      "Default":"true",
+      "Section":"Harriet",
+      "Description":"Changes Harvey's portrait into Harriet's. (Requires \"Harriet\" to be on!)"
+    },
+
+    //Turns on Sabrina
+    "Sabrina":{
+      "AllowValues":"true, false",
+      "Default":"true",
+      "Section":"Sabrina",
+      "Description":"Changes the dialogue to refer to Sebastian as a girl named Sabrina."
+    },
+  
+    //Turns on Sabrina's Portrait
+    "Sabrina's Portrait":{
+      "AllowValues":"true, false",
+      "Default":"false",
+      "Section":"Sabrina",
+      "Description":"Changes Sebastian's portrait into Sabrina's. (Requires \"Sabrina\" to be on!)"
+    },
+
+    //Turns on Sam
+    "Female Sam":{
+      "AllowValues":"true, false",
+      "Default":"true",
+      "Section":"Sam",
+      "Description":"Changes the dialogue to refer to Sam as a girl."
+    },
+  
+    //Turns on Sam Portrait
+    "Sam's Portrait":{
+      "AllowValues":"true, false",
+      "Default":"false",
+      "Section":"Sam",
+      "Description":"Changes Sam's portrait. (Requires \"Female Sam\" to be on!)"
+    },
+
+    //Turns on female Shane
+    "Female Shane":{
+      "AllowValues":"true, false",
+      "Default":"true",
+      "Section":"Shane",
+      "Description":"Changes the dialogue to refer to Shane as a girl."
+    },
+
+    //Turns on female Shane Portrait
+    "Shane's Portrait":{
+      "AllowValues":"true, false",
+      "Default":"true",
+      "Section":"Shane",
+      "Description":"Changes Shane's portrait. (Requires \"Female Shane\" to be on!)"
+    },
+
+    //Changes adopted text to having a baby text
+    "AdoptionToSex":{
+      "AllowValues":"true, false",
+      "Default":"true",
+      "Section":"Misc.",
+      "Description":"Changes the text so that it asks if you want to have a kid. (Instead of adopting.)"
+    }, 
+},
+  
+  "Changes":[
+  // Default dialogue changes ---------------------------------------------------------------------------------------
+  // Fixes "friday" to "Friday"
+    {
+	  "Action":"EditData",
+	  "Target":"Characters/Dialogue/Abigail",
+	  "Entries":{
+		"Fri2":"We're all going to hang out in the saloon this evening. It's kind of like a Friday tradition, I guess.",
+      }
+    },
+	
+	//Caught dating everyone (Someone isn't female)
+    {
+      "Action":"EditData",
+      "Target":"Data/Events/Saloon",
+      "Entries":{
+         "195013/f Shane 2500/f Sebastian 2500/f Sam 2500/f Harvey 2500/f Alex 2500/f Elliott 2500/o Abigail/o Penny/o Leah/o Emily/o Maru/o Haley/o Shane/o Harvey/o Sebastian/o Sam/o Elliott/o Alex/e 911526/e 528052/e 9581348/e 43/e 384882/e 233104/k 195099": "playful/-1000 -1000/farmer 27 19 1 Sam 36 20 1 Sebastian 37 193 Harvey 39 193 Shane 40 173 Elliott 41 193 Alex 42 20 3/animate Shane false true 200 20 20 20 20 20 20 20 20 20 20 21 22 23 24 24 24 24 23 22 21 20 20 20 20/move farmer 5 0 1 true/viewport 37 19 true/move false/pause 500/startJittering/faceDirection farmer3 true/animate farmer false true 100 94/jump farmer/pause 2000/stopAnimation farmer/showFrame farmer 0/stopJittering/playSound thudStep/faceDirection farmer 3 true/showFrame farmer 7 true/startJittering/faceDirection Sam 3 true/faceDirection Elliott 3 true/faceDirection Harvey 3 true/faceDirection Alex 3 true/faceDirection Shane 3 true/faceDirection Sebastian 3 true/textAboveHead Sam \"别跑那么快！\"/textAboveHead Alex \"别动！\"/textAboveHead Shane \"站住！\"/pause 3000/stopJittering/showFrame farmer 6 true/pause 500/faceDirection farmer 1/move farmer 3 0 1/playMusic none/emote farmer 28/pause 500/speak Sam \"呵，从没想过你所有的“女朋友”会出现在一个房间里吧，@?$a\"/pause 500/speak Harvey \"你骗取了我们所有人的爱…你真是太可怕了...$s^@...我还以为你想要和我结婚，共同组建家庭...我到底做错了什么？$s\"/pause 500/speak Shane \"我最后仅存的希望的碎片也彻底被毁了…可真得谢谢你啊，@。你现在高兴了吗？$s\"/pause 500/speak Alex \"@？我以为...我以为我们是“彼此的唯一”...你却只是在利用我？$s^你盯着*我*看什么？你以为我会来救你？$a\"/pause 500/speak Elliott \"唯独这次，我竟无言以对...$a\"/pause 500/playMusic wedding/speak Sam \"我们不会再忍受你的伤害了！$a^现在，我们都知道真相了！我们不会容忍这种事情！$a\"/textAboveHead Alex \"没错！\"/pause 500/speak Sebastian \"嗯？你还有什么要为自己辩解的？$a\"/pause 1000/question fork1 \"#对不起...我以前做错了。#各位，冷静一下！我可以解释...\"/fork choseToExplain/pause 500/textAboveHead Alex \"当然...\"/pause 500/speak Shane \"说得好听，但这事不能就这么算了...$a\"/pause 1000/playMusic none/speak Sam \"...我们已经决定了...对吗，伙伴们？$u\"/pause 500/speak Harvey \"…是的。$s\"/speak Elliott \"当然。$a\"/pause 1000/jump Sam/jump Sebastian/jump Elliott/jump Shane/jump Alex/jump Harvey/pause 1000/speak Sam \"我们都要疏远你！$a\"/faceDirection farmer3 true/animate farmer false true 100 94/jump farmer/playSound slimedead/pause 2000/fade/viewport -2000 -2000/dump guys 3/end warpOut",
+        "choseToExplain": "pause 100/textAboveHead Shane \"我深表怀疑...\"/pause 500/resetVariable/question fork2 \"#你们所有人都在逼我！让我说不出“不”！#皮埃尔向我施压！他想卖出更多花束！#（开始哭）\"/pause 100/fork crying/textAboveHead Sam \"骗子！\"/textAboveHead Alex \"对，没错！\"/speak Elliott \"不要把自己的错误归咎在别人身上！你只会继续失去我们的尊重...$a\"/pause 1000/faceDirection Sam3/playMusic none/speak Sam \"...我想我们已经决定了...对吗，女孩们？$u\"/pause 500/speak Harvey \"…是的。$s\"/speak Sebastian \"当然。$a\"/faceDirection Sam 3/pause 1000/jump Sam/jump Sebastian/jump Elliott/jump Shane/jump Alex/jump Harvey/pause 1000/jump Sam/jump Sebastian/jump Elliott/jump Shane/jump Alex/jump Harvey/pause 1000/jump Sam/jump Sebastian/jump Elliott/jump Shane/jump Alex/jump Harvey/pause 1000/speak Sam \"我们都要疏远你！$a\"/faceDirection farmer3 true/animate farmer false true 100 94/jump farmer/playSound slimedead/pause 2000/fade/viewport -2000 -2000/dump guys 4/end warpOut",
+        "crying": "pause 100/faceDirection farmer 0/emote farmer 28/pause 1000/emote Harvey 12 true/emote Sebastian 12 true/emote Shane 12 true/emote Sam 12 true/emote Elliott 12 true/emote Alex 12 true/speak Harvey \"没用的！这次别想再骗取我们的同情了！$a\"/speak Alex \"在我看来你只是又演了一场戏...$a^一如既往...$a\"/pause 100/speak Sebastian \"你需要为自己做过的事负责...$a\"/pause 1000/faceDirection Sam3/playMusic none/speak Sam \"...我想我们已经决定了...对吗，伙伴们？$u\"/pause 500/speak Harvey \"…是的。$s\"/speak Sebastian \"当然。$a\"/faceDirection Sam 3/pause 1000/jump Sam/jump Sebastian/jump Elliott/jump Shane/jump Alex/jump Harvey/pause 1000/jump Sam/jump Sebastian/jump Elliott/jump Shane/jump Alex/jump Harvey/pause 1000/jump Sam/jump Sebastian/jump Elliott/jump Shane/jump Alex/jump Harvey/pause 1000/speak Sam \"我们都要疏远你！$a\"/faceDirection farmer3 true/animate farmer false true 100 94/jump farmer/playSound slimedead/pause 2000/fade/viewport -2000 -2000/dump guys 4/end warpOut"
+	  }
+    },
+	
+	//Caught dating everyone (Everyone is female)
+    {
+      "Action":"EditData",
+      "Target":"Data/Events/Saloon",
+      "Entries":{
+        "195013/f Shane 2500/f Sebastian 2500/f Sam 2500/f Harvey 2500/f Alex 2500/f Elliott 2500/o Abigail/o Penny/o Leah/o Emily/o Maru/o Haley/o Shane/o Harvey/o Sebastian/o Sam/o Elliott/o Alex/e 911526/e 528052/e 9581348/e 43/e 384882/e 233104/k 195099": "playful/-1000 -1000/farmer 27 19 1 Sam 36 20 1 Sebastian 37 193 Harvey 39 193 Shane 40 173 Elliott 41 193 Alex 42 20 3/animate Shane false true 200 20 20 20 20 20 20 20 20 20 20 21 22 23 24 24 24 24 23 22 21 20 20 20 20/move farmer 5 0 1 true/viewport 37 19 true/move false/pause 500/startJittering/faceDirection farmer3 true/animate farmer false true 100 94/jump farmer/pause 2000/stopAnimation farmer/showFrame farmer 0/stopJittering/playSound thudStep/faceDirection farmer 3 true/showFrame farmer 7 true/startJittering/faceDirection Sam 3 true/faceDirection Elliott 3 true/faceDirection Harvey 3 true/faceDirection Alex 3 true/faceDirection Shane 3 true/faceDirection Sebastian 3 true/textAboveHead Sam \"别跑那么快！\"/textAboveHead Alex \"别动！\"/textAboveHead Shane \"站住！\"/pause 3000/stopJittering/showFrame farmer 6 true/pause 500/faceDirection farmer 1/move farmer 3 0 1/playMusic none/emote farmer 28/pause 500/speak Sam \"呵，从没想过你所有的“女朋友”会出现在一个房间里吧，@?$a\"/pause 500/speak Harvey \"你骗取了我们所有人的爱…你真是太可怕了...$s^@...我还以为你想要和我结婚，共同组建家庭...我到底做错了什么？$s\"/pause 500/speak Shane \"我最后仅存的希望的碎片也彻底被毁了…可真得谢谢你啊，@。你现在高兴了吗？$s\"/pause 500/speak Alex \"@？我以为...我以为我们是“彼此的唯一”...你却只是在利用我？$s^你盯着*我*看什么？你以为我会来救你？$a\"/pause 500/speak Elliott \"唯独这次，我竟无言以对...$a\"/pause 500/playMusic wedding/speak Sam \"我们不会再忍受你的伤害了！$a^现在，我们都知道真相了！我们不会容忍这种事情！$a\"/textAboveHead Alex \"没错！\"/pause 500/speak Sebastian \"嗯？你还有什么要为自己辩解的？$a\"/pause 1000/question fork1 \"#对不起...我以前做错了。#各位，冷静一下！我可以解释...\"/fork choseToExplain/pause 500/textAboveHead Alex \"当然...\"/pause 500/speak Shane \"说得好听，但这事不能就这么算了...$a\"/pause 1000/playMusic none/speak Sam \"...我们已经决定了...对吗，伙伴们？$u\"/pause 500/speak Harvey \"…是的。$s\"/speak Elliott \"当然。$a\"/pause 1000/jump Sam/jump Sebastian/jump Elliott/jump Shane/jump Alex/jump Harvey/pause 1000/speak Sam \"我们都要疏远你！$a\"/faceDirection farmer3 true/animate farmer false true 100 94/jump farmer/playSound slimedead/pause 2000/fade/viewport -2000 -2000/dump guys 3/end warpOut",
+        "choseToExplain": "pause 100/textAboveHead Shane \"我深表怀疑...\"/pause 500/resetVariable/question fork2 \"#你们所有人都在逼我！让我说不出“不”！#皮埃尔向我施压！他想卖出更多花束！#（开始哭）\"/pause 100/fork crying/textAboveHead Sam \"骗子！\"/textAboveHead Alex \"对，没错！\"/speak Elliott \"不要把自己的错误归咎在别人身上！你只会继续失去我们的尊重...$a\"/pause 1000/faceDirection Sam3/playMusic none/speak Sam \"...我想我们已经决定了...对吗，女孩们？$u\"/pause 500/speak Harvey \"…是的。$s\"/speak Sebastian \"当然。$a\"/faceDirection Sam 3/pause 1000/jump Sam/jump Sebastian/jump Elliott/jump Shane/jump Alex/jump Harvey/pause 1000/jump Sam/jump Sebastian/jump Elliott/jump Shane/jump Alex/jump Harvey/pause 1000/jump Sam/jump Sebastian/jump Elliott/jump Shane/jump Alex/jump Harvey/pause 1000/speak Sam \"我们都要疏远你！$a\"/faceDirection farmer3 true/animate farmer false true 100 94/jump farmer/playSound slimedead/pause 2000/fade/viewport -2000 -2000/dump guys 4/end warpOut",
+        "crying": "pause 100/faceDirection farmer 0/emote farmer 28/pause 1000/emote Harvey 12 true/emote Sebastian 12 true/emote Shane 12 true/emote Sam 12 true/emote Elliott 12 true/emote Alex 12 true/speak Harvey \"没用的！这次别想再骗取我们的同情了！$a\"/speak Alex \"在我看来你只是又演了一场戏...$a^一如既往...$a\"/pause 100/speak Sebastian \"你需要为自己做过的事负责...$a\"/pause 1000/faceDirection Sam3/playMusic none/speak Sam \"...我想我们已经决定了...对吗，伙伴们？$u\"/pause 500/speak Harvey \"…是的。$s\"/speak Sebastian \"当然。$a\"/faceDirection Sam 3/pause 1000/jump Sam/jump Sebastian/jump Elliott/jump Shane/jump Alex/jump Harvey/pause 1000/jump Sam/jump Sebastian/jump Elliott/jump Shane/jump Alex/jump Harvey/pause 1000/jump Sam/jump Sebastian/jump Elliott/jump Shane/jump Alex/jump Harvey/pause 1000/speak Sam \"我们都要疏远你！$a\"/faceDirection farmer3 true/animate farmer false true 100 94/jump farmer/playSound slimedead/pause 2000/fade/viewport -2000 -2000/dump guys 4/end warpOut"
+	  },
+	  "When":{"Sabrina":"true", "Harriet":"true", "Elena":"true", "Female Shane":"true", "Female Alex":"true", "Female Sam":"true"}
+    },
+	
+	//Pool event (Everyone is female)
+	{
+      "Action":"EditData",
+      "Target":"Data/Events/Saloon",
+      "Entries":{
+		"195099/f Shane 2500/f Sebastian 2500/f Sam 2500/f Harvey 2500/f Alex 2500/f Elliott 2500/o Abigail/o Penny/o Leah/o Emily/o Maru/o Haley/o Shane/o Harvey/o Sebastian/o Sam/o Elliott/o Alex/e 911526/e 528052/e 9581348/e 43/e 384882/e 233104/i 446/k 195013": "playful/-1000 -1000/farmer 27 19 1 Sam 36 20 1 Sebastian 37 19 2 Harvey 39 19 2 Shane 40 17 2 Elliott 41 19 2 Alex 42 20 3/animate Shane false true 200 20 20 20 20 20 20 20 20 20 20 21 22 23 24 24 24 24 23 22 21 20 20 20 20/pause 1000/message \"出于某些原因，你决定把手放到口袋里\"/pause 500/message \"你摸着兔子的脚，感觉如释重负\"/move farmer 5 0 1 true/viewport 37 19 true/move false/pause 500/faceDirection Sam 3 true/faceDirection Elliott 3 true/faceDirection Harvey 3 true/faceDirection Alex 3 true/faceDirection Shane 3 true/faceDirection Sebastian 3 true/textAboveHead Sam \"嘿！!\"/textAboveHead Alex \"最近好吗？\"/textAboveHead Shane \"哦，你好\"/pause 2000/move farmer 3 0 1/emote farmer 32/pause 500/speak Harvey \"你来得正是时候，刚好赶上鹈鹕镇第一届八球锦标赛！\"/pause 500/speak Elliott \"别担心，我以前也没玩过。$h\"/pause 500/speak Shane \"很简单的，你只管猛击母球就对了…$h\"/pause 500/fade/viewport -1000 -1000/pause 1500/message \"你和伙伴们玩了一局桌球。\"/pause 1000/message \"毫无悬念，塞布瑞娜赢了...不过还是很有趣！\"/pause 500/end",
+	  },
+	  "When":{"Sabrina":"true", "Harriet":"true", "Elena":"true", "Female Shane":"true", "Female Alex":"true", "Female Sam":"true"}
+    },
+	
+	//Changes adoption dialogue
+    {
+      "Action":"EditData",
+      "Target":"Data/ExtraDialogue",
+      "Entries":{
+        "NewChild_Adoption":"一切都很顺利，现在小{0}是家庭的一部分,我们是非常幸运的."
+	  },
+	  "When":{"AdoptionToSex":"true" }
+    },   
+	
+	//Changes adoption message to try for baby messages
+    {
+      "Action":"EditData",
+      "Target":"Strings/Events",
+      "Entries":{
+        "BirthMessage_Adoption":"在夜里，你的妻子生下了一个婴儿 {0}..",
+        "HaveBabyQuestion_Adoption":"我们是否应该有一个孩子 {0}?",
+        "HavePlayerBabyQuestion_Adoption":"你是否想和 {0}一起生个孩子?"
+	  },
+	  "When":{"AdoptionToSex":"true" }
+    },
+	
+	//Changes dialogue for entering doors to be neutral
+    {
+      "Action":"EditData",
+      "Target":"Strings/Locations",
+      "Entries":{
+        "DoorUnlock_NotFriend_Male":"你和{0}不是足够好的朋友，不能进入他们的卧室,",
+        "DoorUnlock_NotFriend_Female":"你和{0}不是足够好的朋友，不能进入他们的卧室.",
+	    }
+    },
+	
+	//Dialogue changes to be neutral (this applies to the christmas event, and gifting)
+	//Changes dialogue so the new females can talk about being pregnant, and previously wearing a dress
+	//Changes fortune teller dialogue to refer to romantic interest as females
+	//Changes mayor's marriage dialogue to refer to the new females as "wife"
+	//Change's text in menu from "boyfriend", "husband", and "ex-husband" to be "girlfriend", "wife", and "ex-wife"
+    {
+      "Action":"EditData",
+      "Target":"Strings/StringsFromCSFiles",
+      "Entries":{
+        "Event.cs.1625":"啊，我又得穿上那件衣服？我想现在我们已经结婚了...... 好吧，好吧,$s",
+        "Event.cs.1740":"给{0}他们的秘密礼物？",
+        "Event.cs.1741":"给{0}他们的秘密礼物？",
+        "Event.cs.1815":"他们以为大家都忘了，但你却带着一份好礼物出现了,真是个好朋友,",
+        "Event.cs.1816":"他们以为大家都忘了，但你却带着一份好礼物出现了,真是个好朋友,",
+        "Event.cs.1820":"啊......的确如此,我看到你在一个房间里，和一位女士在谈话,",
+        "Event.cs.1831":"哦...,天很黑，我看到你和某位年轻女士,她看起来有点害羞，但很高兴能和你在一起,",
+        "Event.cs.1832":"哦...,天黑了，我看到你和某位年轻女士,她看起来很有希望，并渴望与你共度时光,",
+        "Event.cs.1837":"嗯......现在这位年轻女士的名字是什么？我相信它以'{0}'开头,",
+        "NPC.cs.4439":"我怀孕了......你不能自己做早餐吗？$s",
+        "NPC.cs.4440":"{0}，我们很快就会有一个孩子,$l",
+        "NPC.cs.4441":"{0}，我已经怀孕了,这不是很好吗？$l",
+        "NPC.cs.4443":"我想知道新的婴儿会给事情带来多大的变化？$s",
+        "Utility.cs.5371":"@...%spouse...,#$b#作为鹈鹕镇的镇长，以及婚姻印章的区域持有者，我现在宣布你们成为丈夫和妻子！$h",
+        "Utility.cs.5377":"@... %spouse... #$b# 作为鹈鹕镇的镇长，以及婚姻印章的区域持有者，我现在宣布你们是妻子和......嗯，妻子！$h",
+        "SocialPage.cs.11636":"（妻子）",
+        "SocialPage.cs.11639":"（女朋友）",
+        "SocialPage.cs.11642":"（前妻）"
+
+      }
+    },
+	
+	//Harriet + Elena
+	{
+      "Action":"EditData",
+      "Target":"Data/SecretNotes",
+      "Entries":{
+		"7":"这是某人日记中的一页......^^......镇上只有几个 '老'单身汉和单身女郎，而且没有一个是完美的! 哈丽特真的很焦虑，也很软弱，但我知道她会成为一个忠诚而专一的妻子,她喜欢咖啡和泡菜,^^爱莲娜有点轻浮和夸张，但她确实有一个漂亮的下巴,她喜欢螃蟹蛋糕和石榴,^^谢恩很乱，而且反社会,但我认为他粗暴的外表是一种防御机制，使他的软弱与世界隔绝,他喜欢啤酒、比萨饼和辣椒爆米花,"
+	  },
+	  "When":{"Harriet":"true", "Elena":"true"}
+    },
+	
+	//Harriet + Female Shane
+	{
+      "Action":"EditData",
+      "Target":"Data/SecretNotes",
+      "Entries":{
+		"7":"这是某人日记中的一页......^^......镇上只有几个 '老 '单身汉和单身女郎，而且没有一个是完美的! 哈丽特真的很焦虑，也很软弱，但我知道她会成为一个忠诚而专一的妻子。她喜欢咖啡和泡菜。^^埃利奥特有点装腔作势，夸夸其谈，但他确实有一个漂亮的下巴。他喜欢吃蟹饼和石榴。^^谢恩很乱，而且反社会。但我认为她粗暴的外表是一种防御机制，使她的柔软与世界隔绝。她喜欢啤酒、比萨饼和辣椒爆米花。"
+	  },
+	  "When":{"Harriet":"true", "Female Shane":"true"}
+    },
+	
+	//Elena + Female Shane
+	{
+      "Action":"EditData",
+      "Target":"Data/SecretNotes",
+      "Entries":{
+		"7":"这是某人日记中的一页......^^......镇上只有几个 '老'单身汉和单身女郎，而且没有一个是完美的! 哈维真的很焦虑，很软弱，但我知道他会成为一个忠诚的、专一的丈夫。他喜欢咖啡和泡菜。^^爱莲娜有点轻浮和夸张，但她确实有一个漂亮的下巴。她喜欢螃蟹蛋糕和石榴。^^谢恩很乱，反社会。但我认为她粗暴的外表是一种防御机制，使她的柔软与世界隔绝。她喜欢啤酒、比萨饼和辣椒爆米花。"
+	  },
+	  "When":{"Elena":"true", "Female Shane":"true"}
+    },
+	
+	//All female
+	{
+      "Action":"EditData",
+      "Target":"Data/SecretNotes",
+      "Entries":{
+		"7":"这是某人日记中的一页......^^......镇上只有几个 '老'的单身女郎，而且没有一个是完美的! 哈丽特真的很焦虑，也很软弱，但我知道她会成为一个忠诚而专一的妻子。她喜欢咖啡和泡菜。^^爱莲娜有点轻浮和夸张，但她确实有一个漂亮的下巴。她喜欢螃蟹蛋糕和石榴。^^谢恩很乱，而且反社会。但我认为她粗暴的外表是一种防御机制，使她的柔软与世界隔绝。她喜欢啤酒、比萨饼和辣椒爆米花。"
+	  },
+	  "When":{"Harriet":"true", "Elena":"true", "Female Shane":"true"}
+    },
+
+//Core mod
+  //Alex changes
+  {
+    "LogName":"Alex's Changes",
+    "Action":"Include",
+    "FromFile":"assets/Alex/Alex.json",
+    "When":{ "Female Alex":"true"}
+  },
+
+  //Elena changes
+  {
+    "LogName":"Alex's Changes",
+    "Action":"Include",
+    "FromFile":"assets/Elena/Elena.json",
+    "When":{ "Elena":"true"}
+  },
+
+  //Harriet changes
+  {
+    "LogName":"Harriet's Changes",
+    "Action":"Include",
+    "FromFile":"assets/Harriet/Harriet.json",
+    "When":{ "Harriet":"true"}
+  },
+
+  //Sabrina changes
+  {
+    "LogName":"Sabrina's Changes",
+    "Action":"Include",
+    "FromFile":"assets/Sabrina/Sabrina.json",
+    "When":{ "Sabrina":"true"}
+  },
+
+  //Sam changes
+  {
+    "LogName":"Sam's Changes",
+    "Action":"Include",
+    "FromFile":"assets/Sam/Sam.json",
+    "When":{ "Female Sam":"true"}
+  },
+
+  //Shane changes
+  {
+    "LogName":"Shane's Changes",
+    "Action":"Include",
+    "FromFile":"assets/Shane/Shane.json",
+    "When":{ "Female Shane":"true"}
+  },
+
+
+//Mod supports
+	//SVE
+	{
+    "LogName":"SVE's Dialogue",
+    "Action":"Include",
+    "FromFile":"assets/ModSupport/SVE.json",
+  "When":{ "HasMod |contains=FlashShifter.StardewValleyExpandedCP":"true"}
+  },
+
+  //NPCMapLocation
+  {
+    "LogName":"NPCMapLocation's Fix",
+    "Action":"Include",
+    "FromFile":"assets/ModSupport/NPCMapLocation.json",
+    "When":{ "HasMod:|contains=Bouhm.NPCMapLocations":"true"}
+  },
+  
+  ]
+}

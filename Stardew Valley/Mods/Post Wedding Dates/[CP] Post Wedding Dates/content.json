@@ -1,0 +1,184 @@
+
+{
+   "Format": "1.24.0",
+   "RepeatEvents": [107081,107082,107083, 107086, 107088, 107089],
+   "RepeatResponse": [1070832],
+   "CustomLocations": [
+      {
+        "Name": "Custom_FrozenLake",
+        "FromMapFile": "Assets/Maps/FrozenLake.tbin",
+      },
+   ],
+   //CONFIGURATION
+   "ConfigSchema": {
+        "Bath_TriggerTimes": {
+            "AllowValues": "600 1200, 1200 2000, 2000 2350",
+            "Default": "2000 2350"
+        },
+        "Bath_Chance": {
+            "AllowValues": "0, 0.25, 0.50, 0.75, 1",
+            "Default": "0.25",
+        },
+        "Bath_Seasons": {
+            "AllowMultiple": "true",
+            "Default": "fall, winter",
+        },
+        "Bath_Weekdays": {
+            "AllowMultiple": "true",
+            "Default": "Monday, Friday, Saturday",
+        },
+        "Summit_TriggerTimes": {
+            "AllowValues": "600 1200, 1200 2000, 2000 2350",
+            "Default": "1200 2000"
+        },
+        "Summit_Chance": {
+            "AllowValues": "0, 0.25, 0.50, 0.75, 1",
+            "Default": "0.25",
+        },
+        "Summit_Seasons": {
+            "AllowMultiple": "true",
+            "Default": "spring, summer, fall",
+        },
+        "Summit_Weekdays": {
+            "AllowMultiple": "true",
+            "Default": "Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday",
+        },
+        "SaloonDate_Chance": {
+            "AllowValues": "0, 0.10, 0.20, 0.30, 0.40",
+            "Default": "0.10",
+        },
+        "SaloonDate_Seasons": {
+            "AllowMultiple": "true",
+            "Default": "spring, summer, fall, winter",
+        },
+        "SaloonDate_Weekdays": {
+            "AllowMultiple": "true",
+            "Default": "Friday, Saturday",
+        },
+        "Picnic_Chance": {
+            "AllowValues": "0, 0.02, 0.04, 0.06, 0.08, 0.10",
+            "Default": "0.04",
+        },
+        "Picnic_Seasons": {
+            "AllowMultiple": "true",
+            "Default": "Spring, Summer, Fall",
+        },
+        "Picnic_Weekdays": {
+            "AllowMultiple": "true",
+            "Default": "Monday, Tuesday, Wednesday, Thursday, Friday",
+        },
+        "Ice_Chance": {
+            "AllowValues": "0, 0.02, 0.04, 0.06, 0.08, 0.10",
+            "Default": "0.04",
+        },
+        "Ice_Weekdays": {
+            "AllowMultiple": "true",
+            "Default": "Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday",
+        },
+   },
+   "Changes": [
+      //SALOON DIALOGUE
+      {
+         "LogName": "Ask Saloon date dialogue",
+         "Action": "EditData",
+         "Target": "Characters/Dialogue/{{Spouse}}",
+         "Entries": {
+            "yesSaloonDate":"I can't wait. I'll see you there!$l [quest:saloonDateQuest blams.PostWeddingDates.QF]",
+            "noSaloonDate":"Okay, maybe another time.#$b#Good luck today, @.$h",
+         },
+      },
+      //BATHHOUSE
+      {
+         "LogName": "Bathhouse date",
+         "Action": "EditData",
+         "Target": "Data/Events/BathHouse_Pool",
+         "Entries": {
+            "107081/O {{Spouse}}/t {{Bath_TriggerTimes}}/r {{Bath_Chance}}":"musicboxsong/-1000 -1000/farmer 9 29 3 {{Spouse}}_Beach 13 23 2/swimming {{Spouse}}_Beach/swimming farmer/skippable/viewport 13 27 true/pause 2000/playSound slosh/move {{Spouse}}_Beach 0 6 3/positionOffset {{Spouse}}_Beach 0 8/pause 700/emote {{Spouse}}_Beach 20/faceDirection farmer 1/emote farmer 20/playSound slosh/move farmer 3 0 1/pause 50/positionOffset {{Spouse}}_Beach -2 0/pause 50/positionOffset farmer 2 0/positionOffset {{Spouse}}_Beach -2 0/pause 50/eyes 1 -10000/positionOffset farmer 2 0/positionOffset {{Spouse}}_Beach -2 2/pause 50/eyes 1 -1000/positionOffset farmer 2 0/positionOffset {{Spouse}}_Beach -2 0/pause 50/positionOffset farmer 2 0/positionOffset {{Spouse}}_Beach -2 0/pause 50/eyes 1 -10000/positionOffset farmer 2 0/positionOffset {{Spouse}}_Beach -2 0/pause 50/positionOffset farmer 2 0/positionOffset {{Spouse}}_Beach -3 0/positionOffset farmer 4 0/specificTemporarySprite heart 13 29/pause 1200/globalFade/viewport -1000 -1000/pause 2000/stopSwimming {{Spouse}}_Beach/stopSwimming farmer/end warpOut",
+         },
+         "When": {
+            "Season": "{{Bath_Seasons}}",
+            "DayOfWeek": "{{Bath_Weekdays}}"
+         },
+      },
+      //SUMMIT
+      {
+        "LogName": "Summit date",
+        "Action": "EditData",
+        "Target": "Data/Events/Summit",
+        "Entries": {
+            "107082/O {{Spouse}}/t {{Summit_TriggerTimes}}/r {{Summit_Chance}}": "sweet/11 19/farmer 10 27 0 {{Spouse}} 11 27 0/skippable/move farmer 0 -12 0 true/move {{Spouse}} 0 -12 0 true/pause 7000/emote farmer 32 true/emote {{Spouse}} 32/viewport move 0 -1 5000 true/pause 5000/specificTemporarySprite heart 11 14/pause 2000/globalFade/viewport -1000 -1000/end warpout",
+            
+        },
+        "When": {
+            "Season": "{{Summit_Seasons}}",
+            "DayOfWeek": "{{Summit_Weekdays}}"
+        },
+      },
+      //SALOON ASK
+      {
+        "LogName": "Ask on Saloon Date",
+        "Action": "EditData",
+        "Target": "Data/Events/FarmHouse",
+        "Entries": {
+            "107083/O {{Spouse}}/l failedSaloonDate/t 600 900/r {{SaloonDate_Chance}}/L/F":"SettlingIn/-1000 -1000/farmer 8 14 3 {{Spouse}} 7 14 1/makeInvisible 8 14/viewport -100 -100 true unfreeze/pause 3000/speak {{Spouse}} \"Good morning, honey.$h#$b#We should do something special tonight.$h#$b#$q 1070831 null#Would you like to go to the saloon with me?#$r 1070831 10 yesSaloonDate#I would love to!#$r 1070832 0 noSaloonDate#Not tonight.\"/pause 600/emote farmer 32/globalFade/viewport -1000 -1000/end"
+        },
+        "When": {
+            "Season": "{{SaloonDate_Seasons}}",
+            "DayOfWeek": "{{SaloonDate_Weekdays}}",
+        }
+      },
+      //FAILED SALOON DATE
+      {
+        "LogName": "Did not show up to Saloon Date",
+        "Action": "EditData",
+        "Target": "Data/Events/FarmHouse",
+        "Entries": {
+            "107086/O {{Spouse}}/t 600 900/n failedSaloonDate/L":"none/-1000 -1000/farmer 10 14 3 {{Spouse}} 7 14 0/makeInvisible 10 14/viewport -100 -100 true unfreeze/move farmer -2 0 3/pause 2000/faceDirection {{Spouse}} 1/speak {{Spouse}} \"...$s#$b#You weren't at the saloon last night...$s\"/pause 600/emote farmer 16/question null \"...#I'm so sorry, I'll make it up to you!#I didn't mean to forget. It won't happen again.\"/pause 300/speak {{Spouse}} \"Ok.\"/addQuest 107087/globalFade/viewport -1000 -1000/end"
+        }
+      },
+      //SALOON DATE
+      {
+        "LogName": "Saloon date",
+        "Action": "EditData",
+        "Target": "Data/Events/Saloon",
+        "Entries": {
+            "107085/O {{Spouse}}/q 1070831/t 1700 2350":"Saloon1/-1000 -1000/farmer 14 24 0 {{Spouse}} 14 21 2 Marnie 9 22 3 Pam 7 18 1 Lewis 8 22 1 Gus 14 18 2/skippable/viewport 14 22 true/pause 2000/move farmer 0 -2 0/emote {{Spouse}} 20/fade/viewport 16 19 true/warp farmer 16 20/warp {{Spouse}} 17 20/faceDirection farmer 0/faceDirection {{Spouse}} 0/positionOffset farmer 0 10/fade unfade/pause 2000/farmerEat 224/emote {{Spouse}} 56/pause 600/faceDirection farmer 1/faceDirection {{Spouse}} 3/fade/viewport -1000 -1000/message \"You enjoy the rest of your date.\"/end dialogue {{Spouse}} \"I'm glad we got to unwind tonight. I love you.$l\"/end warpOut",
+        },
+      },
+      //APOLOGY QUEST
+      {
+        "LogName": "Apologize to Spouse quest",
+        "Action": "EditData",
+        "Target": "Data/Quests",
+        "Entries": {
+            "107087": "ItemDelivery/Apologize/You stood up your spouse at the saloon. A romantic gift should help make up for it./Give {{Spouse}} a bouquet/{{Spouse}} 458/-1/0/-1/false/For me?$h#$b#I love you too.$l"
+        },
+      },
+      //PICNIC DATE
+      {
+        "LogName": "Picnic date",
+        "Action": "EditData",
+        "Target": "Data/Events/Forest",
+        "Entries": {
+            "107088/O {{Spouse}}/t 600 1700/r {{Picnic_Chance}}/w sunny": "musicboxsong/-1000 -1000/farmer 71 40 2 {{Spouse}} 70 45 0/skippable/specificTemporarySprite pennyFieldTrip/viewport 71 45 true/pause 1000/emote farmer 16/move farmer 0 5 3/faceDirection {{Spouse}} 1/emote {{Spouse}} 32/pause 300/speak {{Spouse}} \"You work so hard for us every day...#$b#I wanted to surprise you with something.$l\"/pause 600/emote farmer 20/speak {{Spouse}} \"I brought your favorite so dig in!$h\"/pause 600/fade/viewport -1000 -1000/farmerEat 208/message \"Spending time with your spouse refilled some of your energy!\"/end",
+        },
+        "When": {
+            "Season": "{{Picnic_Seasons}}",
+            "DayOfWeek": "{{Picnic_Weekdays}}"
+        },
+      },
+      //Ice Skate Date
+      {
+        "LogName": "Ice Skate date",
+        "Action": "EditData",
+        "Target": "Data/Events/Forest",
+        "Entries": {
+            "107089/O {{Spouse}}/r {{Ice_Chance}}/t 600 1600/w sunny": "none/-1000 -1000/farmer 69 18 2 {{Spouse}} 70 23 0/skippable/changeToTemporaryMap Custom_FrozenLake/viewport 69 26 true/pause 1000/move farmer 0 5 1/pause 400/faceDirection {{Spouse}} 3/pause 200/speak {{Spouse}} \"I brought our skates! Are you ready?$h\"/emote farmer 32/showFrame 58/pause 800/faceDirection farmer 2/move farmer 0 3 2/shake {{Spouse}} 200/pause 400/faceDirection {{Spouse}} 2/move {{Spouse}} 0 1 2/pause 200/move farmer 1 0 0/move {{Spouse}} 0 1 2/pause 300/question null \"What should you do?#(Hold hands so neither of you fall)#(Have a race around the lake)\"/pause 500/emote {{Spouse}} 20/pause 600/fade/viewport -1000 -1000/message \"You had a great time on the ice and shared some hot chocolate together.\"/end",
+        },
+        "When": {
+            "DayOfWeek": "{{Ice_Weekdays}}",
+            "Season": "winter",
+        },
+      },
+   ]
+}

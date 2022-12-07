@@ -1,0 +1,142 @@
+{
+    "Changes": [
+        {
+            "LogName": "Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Emily",
+            "Entries": {
+                "Fri": "900 HaleyHouse 16 5 2/1000 CommunityCenter 10 26 0 \"Strings\\schedules\\Emily:Fri.000\"/1530 Saloon 15 17 0 square_5_1_0/2430 HaleyHouse 21 4 1 emily_sleep",
+            }
+        },
+        //Sets Clint to always go to the Community Center on a Friday, even if it's raining (sorry!)
+        {
+            "LogName": "Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Clint",
+            "When": {
+                "DayOfWeek": "Friday"
+            },
+            "Entries": {
+                "rain": "850 CommunityCenter 62 14 0 square_3_1_0/1700 Saloon 19 23 3/2400 Blacksmith 10 4 1 clint_sleep"
+            }
+        },
+        //Sets Willy to go to the Community Center on a Saturday if it's raining (a day he is normally closed)		
+        {
+            "LogName": "Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Willy",
+            "When": {
+                "DayOfWeek": "Saturday"
+            },
+            "Entries": {
+                "rain": "610 Beach 38 36 2 dick_fish/850 FishShop 5 4 2/1200 CommunityCenter 40 11 0/1700 Saloon 17 22 2 \"Strings\\schedules\\Willy:winter.000\"/2320 FishShop 4 4 2"
+            }
+        },
+        //Linus keeps himself warm and dry in the community center and cooks lunch		
+        {
+            "LogName": "Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Linus",
+            "Entries": {
+                "rain": "700 Tent 2 2 0/930 Mountain 25 5 1/1010 Tent 3 2 2/1040 CommunityCenter 5 5 0 square_5_1_0/1300 CommunityCenter 5 7 2/1500 Mountain 17 7 2/1900 Tent 2 2 2"
+            }
+        },
+        {
+            "LogName": "Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Marigold",
+            "Entries": {
+                "rain": "700 Tent 3 4 3/930 Mountain 23 7 1/1010 Tent 3 4 0/1040 CommunityCenter 9 5 3/1300 CommunityCenter 2 9 1/1500 Mountain 16 8 2/1900 Tent 3 4 0"
+            }
+        },
+        {
+            "LogName": "Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/LeoMainland",
+            "Entries": {
+                "rain": "700 LeoTreeHouse 2 2 0/1000 Tent 1 3 1 \"Strings\\schedules\\Leo:tent\"/1040 CommunityCenter 40 20 0 square 5_1_0 \"Strings\\schedules\\Leo:CC_{{random:FT1,FT2,FT3}}\"/1300 CommunityCenter 5 10 0/1500 LeoTreeHouse 2 5 3/2200 LeoTreeHouse 5 4 1 leo_sleep"
+            }
+        },
+        {
+            "LogName": "Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Leo",
+            "Entries": {
+                "rain": "700 LeoTreeHouse 2 2 0/1000 Tent 1 3 1 \"Strings\\schedules\\Leo:tent\"/1040 CommunityCenter 40 20 0 square 5_1_0 \"Strings\\schedules\\Leo:CC_{{random:FT1,FT2,FT3}}\"/1300 CommunityCenter 5 10 0/1500 LeoTreeHouse 2 5 3/2200 LeoTreeHouse 5 4 1 leo_sleep"
+            },
+            "When": {
+                "HasSeenEvent |contains=6497428": true
+            }
+        },
+        //Maru and Penny hang out together on raining saturdays and sundays
+        {
+            "LogName": "Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Maru",
+            "When": {
+                "DayOfWeek": "Saturday, Sunday"
+            },
+            "Entries": {
+                "rain": "800 ScienceHouse 5 6 1 maru_tinker/900 CommunityCenter 15 27 0/1600 ScienceHouse 5 6 1 maru_tinker/2200 ScienceHouse 2 4 3 maru_sleep"
+            }
+        },
+        {
+            "LogName": "Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Penny",
+            "When": {
+                "DayOfWeek": "Saturday, Sunday"
+            },
+            "Entries": {
+                "rain": "900 Trailer 5 5 0/1000 CommunityCenter 14 27 0/1600 Trailer 12 6 0 penny_dishes/1800 Trailer 4 4 2 penny_read/2100 Trailer 4 9 1 penny_sleep",
+                "rain2": "900 Trailer 5 5 0/1000 CommunityCenter 14 27 0/1600 Trailer 12 6 0 penny_dishes/1800 Trailer 4 4 2 penny_read/2100 Trailer 4 9 1 penny_sleep"
+            }
+        },
+        //Dialogue
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Gus",
+            "When": {
+                "DayOfWeek |contains=Thursday, Monday": false
+            },
+            "Entries": {
+                "CommunityCenter": "{{i18n:CommunityCenter.Gus.1}}"
+         
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Linus",
+	    "When":{"Weather":"rain"},
+            "Entries": {
+                "CommunityCenter": "{{i18n:CommunityCenter.Linus.1}}"
+    
+            }
+        },
+        {
+            "LogName": "Leo Strings",
+            "Action": "EditData",
+            "Target": "Strings/schedules/Leo",
+            "Entries": {
+                "CC_FT1": "{{i18n:RainyDay.Leo.1}}",
+                "CC_FT2": "{{i18n:RainyDay.Leo.2}}",
+                "CC_FT3": "{{i18n:RainyDay.Leo.3}}"
+            }
+        },
+        /*{   "Action": "EditData",  
+    "Target": "Characters/Dialogue/Penny",
+    "Entries": {
+        "CommunityCenter_Sat": "Mom's going to",
+        "CommunityCenter_Sun": ""
+        }
+    },
+{   "Action": "EditData",  
+    "Target": "Characters/Dialogue/Maru",
+    "Entries": {
+        "CommunityCenter_Sat": ""
+        "CommunityCenter_Sun": ""
+        }
+    },
+*/
+    ]
+}

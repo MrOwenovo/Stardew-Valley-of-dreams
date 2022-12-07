@@ -1,0 +1,973 @@
+{
+	"Format": "1.24.0",
+	"ConfigSchema": 
+	{
+		"CompleteUndergroundMysteries": {
+			"AllowValues": "true, false",
+			"Default": "false",
+			"Description": "完成收藏选项卡中的地下之谜成就。有关详细信息，请参阅mod说明。"
+		},
+	},
+	"Changes": 
+	[
+
+// STORY/QUEST ACHIEVEMENTS
+
+// Unlocked the Ridgeside Minecarts
+		{
+			"LogName": "Minecart Mayhem",
+			"Action": "EditData",
+			"Target": "custom_achievements_dictionary",
+			"Entries": {
+				"RSVMinecarts": {
+					"ID": "RSVMinecarts",
+					"name": "米尼加特·大混乱。",
+					"description": "修复里奇赛德的矿车。",
+					"achieved": false
+				}
+			},
+		},		
+        {
+			"LogName": "Minecart Mayhem",
+            "Action": "EditData",
+            "Target": "custom_achievements_dictionary",
+            "Fields":
+                {
+                    "RSVMinecarts": {
+                        "achieved": true
+                    }
+                },
+            "When":
+			{
+                "HasSeenEvent |contains= 75160191": true,
+            },
+			"Update": "OnDayStart, OnLocationChange, OnTimeChange"
+        },
+
+// Unlocked the Community Greenhouse
+		{
+			"LogName": "Radiant Restorer",
+			"Action": "EditData",
+			"Target": "custom_achievements_dictionary",
+			"Entries": {
+				"RSVCommunityGreenhouse": {
+					"ID": "RSVCommunityGreenhouse",
+					"name": "辐射恢复",
+					"description": "修复社区温室。",
+					"achieved": false
+				}
+			},
+		},		
+        {
+			"LogName": "Radiant Restorer",
+            "Action": "EditData",
+            "Target": "custom_achievements_dictionary",
+            "Fields":
+                {
+                    "RSVCommunityGreenhouse": {
+                        "achieved": true
+                    }
+                },
+            "When":
+			{
+                "HasSeenEvent |contains= 75160174": true,
+            },
+			"Update": "OnDayStart, OnLocationChange, OnTimeChange"
+        },
+
+// Unlocked the Phantom Greenhouse
+		{
+			"LogName": "Umbral Mender",
+			"Action": "EditData",
+			"Target": "custom_achievements_dictionary",
+			"Entries": {
+				"RSVPhantomGreenhouse": {
+					"ID": "RSVPhantomGreenhouse",
+					"name": "阴暗的修理者",
+					"description": "恢复幽灵温室。",
+					"achieved": false
+				}
+			},
+		},		
+        {
+			"LogName": "Umbral Mender",
+            "Action": "EditData",
+            "Target": "custom_achievements_dictionary",
+            "Fields":
+                {
+                    "RSVPhantomGreenhouse": {
+                        "achieved": true
+                    }
+                },
+            "When":
+			{
+                "HasSeenEvent |contains= 75160271": true,
+            },
+			"Update": "OnDayStart, OnLocationChange, OnTimeChange"
+        },
+
+// Completed the Preparations
+		{
+			"LogName": "Spirit Seeker",
+			"Action": "EditData",
+			"Target": "custom_achievements_dictionary",
+			"Entries": {
+				"RSVPreparations": {
+					"ID": "RSVPreparations",
+					"name": "精神的探索者",
+					"description": "完成准备工作。",
+					"achieved": false
+				}
+			},
+		},		
+        {
+			"LogName": "Spirit Seeker",
+            "Action": "EditData",
+            "Target": "custom_achievements_dictionary",
+            "Fields":
+                {
+                    "RSVPreparations": {
+                        "achieved": true
+                    }
+                },
+            "When":
+			{
+				"HasFlag": "RSV.CompleteDaiaQuest",
+            },
+			"Update": "OnDayStart, OnLocationChange, OnTimeChange"
+        },
+
+// Opened the Portal
+		{
+			"LogName": "Spirit Venturer",
+			"Action": "EditData",
+			"Target": "custom_achievements_dictionary",
+			"Entries": {
+				"RSVPortal": {
+					"ID": "RSVPortal",
+					"name": "精神冒险者",
+					"description": "打开通往灵魂王国的入口。",
+					"achieved": false
+				}
+			},
+		},		
+        {
+			"LogName": "Spirit Venturer",
+            "Action": "EditData",
+            "Target": "custom_achievements_dictionary",
+            "Fields":
+                {
+                    "RSVPortal": {
+                        "achieved": true
+                    }
+                },
+            "When":
+			{
+                "HasSeenEvent |contains= 75160256": true,
+            },
+			"Update": "OnDayStart, OnLocationChange, OnTimeChange"
+        },
+
+// Cleansed the Spirit Realm
+		{
+			"LogName": "Spirit Hero",
+			"Action": "EditData",
+			"Target": "custom_achievements_dictionary",
+			"Entries": {
+				"RSVSpiritRealm": {
+					"ID": "RSVSpiritRealm",
+					"name": "精神的英雄",
+					"description": "净化精神领域。",
+					"achieved": false
+				}
+			},
+		},		
+        {
+			"LogName": "Spirit Hero",
+            "Action": "EditData",
+            "Target": "custom_achievements_dictionary",
+            "Fields":
+                {
+                    "RSVSpiritRealm": {
+                        "achieved": true
+                    }
+                },
+            "When":
+			{
+                "HasSeenEvent |contains= 75160265": true,
+            },
+			"Update": "OnDayStart, OnLocationChange, OnTimeChange"
+        },
+
+// MISC ACHIEVEMENTS
+
+// Has seen Torts' secret
+		{
+			"LogName": "The Secret God",
+			"Action": "EditData",
+			"Target": "custom_achievements_dictionary",
+			"Entries": {
+				"RSVSecretGod": {
+					"ID": "RSVSecretGod",
+					"name": "神秘的神",
+					"description": "发现神秘的神。",
+					"achieved": false
+				}
+			},
+		},		
+        {
+			"LogName": "The Secret God",
+            "Action": "EditData",
+            "Target": "custom_achievements_dictionary",
+            "Fields":
+                {
+                    "RSVSecretGod": {
+                        "achieved": true
+                    }
+                },
+            "When":
+			{
+                "HasSeenEvent |contains= 75160287": true,
+            },
+			"Update": "OnDayStart, OnLocationChange, OnTimeChange"
+        },
+
+// Find the sewers
+		{
+			"LogName": "Underground Mysteries",
+			"Action": "EditData",
+			"Target": "custom_achievements_dictionary",
+			"Entries": {
+				"RSVSewers": {
+					"ID": "RSVSewers",
+					"name": "地下秘密",
+					"description": "在地下找一个隐蔽的地方。",
+					"achieved": false
+				}
+			},
+		},		
+        {
+			"LogName": "Underground Mysteries",
+            "Action": "EditData",
+            "Target": "custom_achievements_dictionary",
+            "Fields":
+                {
+                    "RSVSewers": {
+                        "achieved": true
+                    }
+                },
+            "When":
+			{
+                "Query: ('{{LocationName |contains= Custom_Ridgeside_RSVSewers}}' = 'true') OR ('{{CompleteUndergroundMysteries |contains= true}}' = 'true')": "true",
+            },
+			"Update": "OnDayStart, OnLocationChange, OnTimeChange"
+        },
+
+// Had a wedding reception or anniversary
+		{
+			"LogName": "Lover of Love",
+			"Action": "EditData",
+			"Target": "custom_achievements_dictionary",
+			"Entries": {
+				"RSVWedding": {
+					"ID": "RSVWedding",
+					"name": "爱的爱人",
+					"description": "在招待会或结婚周年纪念日庆祝你的婚礼。",
+					"achieved": false
+				}
+			},
+		},		
+        {
+			"LogName": "Lover of Love",
+            "Action": "EditData",
+            "Target": "custom_achievements_dictionary",
+            "Fields":
+                {
+                    "RSVWedding": {
+                        "achieved": true
+                    }
+                },
+            "When":
+			{
+                "HasSeenEvent |contains= 75160245, 75160248": true,
+            },
+			"Update": "OnDayStart, OnLocationChange, OnTimeChange"
+        },
+
+// Fully upgraded the summit farm
+		{
+			"LogName": "Peak Perfection",
+			"Action": "EditData",
+			"Target": "custom_achievements_dictionary",
+			"Entries": {
+				"RSVSummitFarm": {
+					"ID": "RSVSummitFarm",
+					"name": "峰完美",
+					"description": "完全升级隐藏农场。",
+					"achieved": false
+				}
+			},
+		},		
+        {
+			"LogName": "Peak Perfection",
+            "Action": "EditData",
+            "Target": "custom_achievements_dictionary",
+            "Fields":
+                {
+                    "RSVSummitFarm": {
+                        "achieved": true
+                    }
+                },
+            "When":
+			{
+                "HasFlag |contains= RSV.SummitHouseRedone": true,
+                "HasFlag |contains= RSV.ClimateControlled": true,
+                "HasFlag |contains= RSV.SummitSprinklers": true,
+                "HasFlag |contains= RSV.SummitOreArea": true,
+                "HasFlag |contains= RSV.ShedAdded": true,
+            },
+			"Update": "OnDayStart, OnLocationChange, OnTimeChange"
+        },
+
+// Get pranked by Keahi!
+		{
+			"LogName": "Get Stinkbugged",
+			"Action": "EditData",
+			"Target": "custom_achievements_dictionary",
+			"Entries": {
+				"RSVKeahiPrank": {
+					"ID": "RSVKeahiPrank",
+					"name": "臭气熏天!",
+					"description": "成为Ridgeside恶作剧大师的受害者。",
+					"achieved": false
+				}
+			},
+		},		
+        {
+			"LogName": "Get Stinkbugged",
+            "Action": "EditData",
+            "Target": "custom_achievements_dictionary",
+            "Fields":
+                {
+                    "RSVKeahiPrank": {
+                        "achieved": true
+                    }
+                },
+            "When":
+			{
+                "HasSeenEvent |contains= 75160082": true,
+            },
+			"Update": "OnDayStart, OnLocationChange, OnTimeChange"
+        },
+
+// Hear Grandma and Grandpa
+		{
+			"LogName": "Family Memories",
+			"Action": "EditData",
+			"Target": "custom_achievements_dictionary",
+			"Entries": {
+				"RSVGrandparents": {
+					"ID": "RSVGrandparents",
+					"name": "家庭的记忆",
+					"description": "听听你们祖父母的最后一句话。",
+					"achieved": false
+				}
+			},
+		},		
+        {
+			"LogName": "Family Memories",
+            "Action": "EditData",
+            "Target": "custom_achievements_dictionary",
+            "Fields":
+                {
+                    "RSVGrandparents": {
+                        "achieved": true
+                    }
+                },
+            "When":
+			{
+                "HasSeenEvent |contains= grandmaMessage": true,
+				"HasSeenEvent |contains= 558291": true
+            },
+			"Update": "OnDayStart, OnLocationChange, OnTimeChange"
+        },
+
+// Give Raeriyala 9 special offerings
+		/*{
+			"LogName": "Worshipper",
+			"Action": "EditData",
+			"Target": "custom_achievements_dictionary",
+			"Entries": {
+				"RSVRaeOffering": {
+					"ID": "RSVRaeOffering",
+					"name": "崇拜者",
+					"description": "向山灵奉献9件特殊物品。",
+					"achieved": false
+				}
+			},
+		},		
+        {
+			"LogName": "Worshipper",
+            "Action": "EditData",
+            "Target": "custom_achievements_dictionary",
+            "Fields":
+                {
+                    "RSVRaeOffering": {
+                        "achieved": true
+                    }
+                },
+            "When":
+			{
+                "HasSeenEvent |contains= sweetgemOffering": true,
+                "HasSeenEvent |contains= foxbloomOffering": true,
+                "HasSeenEvent |contains= haloOffering": true,
+                "HasSeenEvent |contains= candleOffering": true,
+                "HasSeenEvent |contains= frostOffering": true,
+                "HasSeenEvent |contains= musicboxOffering": true,
+                "HasSeenEvent |contains= heroOffering": true,
+                "HasSeenEvent |contains= oldluckyfoxtailOffering": true,
+                "HasSeenEvent |contains= prismaticOffering": true
+            },
+			"Update": "OnDayStart, OnLocationChange, OnTimeChange"
+        },*/
+
+// Visit the Spirit Realm on a lucky day
+		/*{
+			"LogName": "Lucky Stars",
+			"Action": "EditData",
+			"Target": "custom_achievements_dictionary",
+			"Entries": {
+				"RSVLuck": {
+					"ID": "RSVLuck",
+					"name": "幸运之星",
+					"description": "在灵魂非常快乐的夜晚参观灵魂王国。",
+					"achieved": false
+				}
+			},
+		},		
+        {
+			"LogName": "Lucky Stars",
+            "Action": "EditData",
+            "Target": "custom_achievements_dictionary",
+            "Fields":
+                {
+                    "RSVLuck": {
+                        "achieved": true
+                    }
+                },
+            "When":
+			{
+                "LocationName |contains= Custom_Ridgeside_RSVSpiritRealm": true,
+				"Query: {{DailyLuck}} > 0.07": true,
+				"Time": "{{Range: 1800, 2600}}"
+            },
+			"Update": "OnDayStart, OnLocationChange, OnTimeChange"
+        },*/
+
+// COLLECTION ACHIEVEMENTS
+
+// Has caught all the RSV fish
+		{
+			"LogName": "Ridgeside Trawler",
+			"Action": "EditData",
+			"Target": "custom_achievements_dictionary",
+			"Entries": {
+				"RSVFish": {
+					"ID": "RSVFish",
+					"name": "山脊边拖网渔船",
+					"description": "抓住每一条山脊边的鱼",
+					"achieved": false
+				}
+			},
+		},		
+        {
+			"LogName": "Ridgeside Trawler",
+            "Action": "EditData",
+            "Target": "custom_achievements_dictionary",
+            "Fields":
+                {
+                    "RSVFish": {
+                        "achieved": true
+                    }
+                },
+            "When":
+			{
+                "HasCaughtFish |contains= {{spacechase0.JsonAssets/ObjectId:Bladetail Sturgeon}}": true,
+				"HasCaughtFish |contains= {{spacechase0.JsonAssets/ObjectId:Caped Tree Frog}}": true,
+				"HasCaughtFish |contains= {{spacechase0.JsonAssets/ObjectId:Cardia Septal Jellyfish}}": true,
+				"HasCaughtFish |contains= {{spacechase0.JsonAssets/ObjectId:Crimson Spiked Clam}}": true,
+				"HasCaughtFish |contains= {{spacechase0.JsonAssets/ObjectId:Fairytale Lionfish}}": true,
+				"HasCaughtFish |contains= {{spacechase0.JsonAssets/ObjectId:Fixer Eel}}": true,
+				"HasCaughtFish |contains= {{spacechase0.JsonAssets/ObjectId:Golden Rose Fin}}": true,
+				"HasCaughtFish |contains= {{spacechase0.JsonAssets/ObjectId:Harvester Trout}}": true,
+				"HasCaughtFish |contains= {{spacechase0.JsonAssets/ObjectId:Lullaby Carp}}": true,
+				"HasCaughtFish |contains= {{spacechase0.JsonAssets/ObjectId:Pebble Back Crab}}": true,
+				"HasCaughtFish |contains= {{spacechase0.JsonAssets/ObjectId:Ridgeside Bass}}": true,
+				"HasCaughtFish |contains= {{spacechase0.JsonAssets/ObjectId:Ridge Bluegill}}": true,
+				"HasCaughtFish |contains= {{spacechase0.JsonAssets/ObjectId:Cutthroat Trout}}": true,
+				"HasCaughtFish |contains= {{spacechase0.JsonAssets/ObjectId:Deep Ridge Angler}}": true,
+				"HasCaughtFish |contains= {{spacechase0.JsonAssets/ObjectId:Mountain Redbelly Dace}}": true,
+				"HasCaughtFish |contains= {{spacechase0.JsonAssets/ObjectId:Mountain Whitefish}}": true,
+				"HasCaughtFish |contains= {{spacechase0.JsonAssets/ObjectId:Skulpin Fish}}": true,
+				"HasCaughtFish |contains= {{spacechase0.JsonAssets/ObjectId:Waterfall Snakehead}}": true,
+				"HasCaughtFish |contains= {{spacechase0.JsonAssets/ObjectId:Sockeye Salmon}}": true,
+				"HasMod |contains= spacechase0.JsonAssets": true
+            },
+			"Update": "OnDayStart, OnLocationChange, OnTimeChange"
+        },
+
+// Has bought all of the RSV recipes
+		{
+			"LogName": "Ridgeside Connoisseur",
+			"Action": "EditData",
+			"Target": "custom_achievements_dictionary",
+			"Entries": {
+				"RSVRecipes": {
+					"ID": "RSVRecipes",
+					"name": "山脊边的鉴赏家",
+					"description": "学习每一个山脊边的食谱。",
+					"achieved": false
+				}
+			},
+		},		
+        {
+			"LogName": "Ridgeside Connoisseur",
+            "Action": "EditData",
+            "Target": "custom_achievements_dictionary",
+            "Fields":
+                {
+                    "RSVRecipes": {
+                        "achieved": true
+                    }
+                },
+            "When":
+			{
+                "HasCookingRecipe |contains= {{spacechase0.JsonAssets/ObjectId:Apricot Juice}}": true,
+				"HasCookingRecipe |contains= {{spacechase0.JsonAssets/ObjectId:Arugula Roll}}": true,
+				"HasCookingRecipe |contains= {{spacechase0.JsonAssets/ObjectId:Autumnal Serenity}}": true,
+				"HasCookingRecipe |contains= {{spacechase0.JsonAssets/ObjectId:Autumn Dew Drop Juice}}": true,
+				"HasCookingRecipe |contains= {{spacechase0.JsonAssets/ObjectId:Clementine Cake}}": true,
+				"HasCookingRecipe |contains= {{spacechase0.JsonAssets/ObjectId:Clementine Juice}}": true,
+				"HasCookingRecipe |contains= {{spacechase0.JsonAssets/ObjectId:Cherry Berry Shakey}}": true,
+				"HasCookingRecipe |contains= {{spacechase0.JsonAssets/ObjectId:Crunchy Bagel}}": true,
+				"HasCookingRecipe |contains= {{spacechase0.JsonAssets/ObjectId:Fluffy Apple Crumble}}": true,
+				"HasCookingRecipe |contains= {{spacechase0.JsonAssets/ObjectId:Forage Souffle}}": true,
+				"HasCookingRecipe |contains= {{spacechase0.JsonAssets/ObjectId:Forest Halva}}": true,
+				"HasCookingRecipe |contains= {{spacechase0.JsonAssets/ObjectId:Fried Fish a la Ridge}}": true,
+				"HasCookingRecipe |contains= {{spacechase0.JsonAssets/ObjectId:Fried Mountain Greens}}": true,
+				"HasCookingRecipe |contains= {{spacechase0.JsonAssets/ObjectId:Ginger Arugula Fried Rice}}": true,
+				"HasCookingRecipe |contains= {{spacechase0.JsonAssets/ObjectId:Ginger Rangpur Meringue}}": true,
+				"HasCookingRecipe |contains= {{spacechase0.JsonAssets/ObjectId:Highland Blueberry Pie}}": true,
+				"HasCookingRecipe |contains= {{spacechase0.JsonAssets/ObjectId:Highland Ice Cream}}": true,
+				"HasCookingRecipe |contains= {{spacechase0.JsonAssets/ObjectId:Highland Revani}}": true,
+				"HasCookingRecipe |contains= {{spacechase0.JsonAssets/ObjectId:Holiday Ice}}": true,
+                "HasCookingRecipe |contains= {{spacechase0.JsonAssets/ObjectId:Honey Ginger Whitefish}}": true,
+				"HasCookingRecipe |contains= {{spacechase0.JsonAssets/ObjectId:Hundred Flavor Doughnut}}": true,
+				"HasCookingRecipe |contains= {{spacechase0.JsonAssets/ObjectId:Honey Glazed Salad}}": true,
+				"HasCookingRecipe |contains= {{spacechase0.JsonAssets/ObjectId:Jumpy Coffee Cake}}": true,
+				"HasCookingRecipe |contains= {{spacechase0.JsonAssets/ObjectId:Kedi Delight}}": true,
+				"HasCookingRecipe |contains= {{spacechase0.JsonAssets/ObjectId:Kek's Style Shortcake}}": true,
+				"HasCookingRecipe |contains= {{spacechase0.JsonAssets/ObjectId:Kek's Small Dream}}": true,
+				"HasCookingRecipe |contains= {{spacechase0.JsonAssets/ObjectId:Matcha Latte}}": true,
+				"HasCookingRecipe |contains= {{spacechase0.JsonAssets/ObjectId:Pillowsoft Cheezy Sandwich}}": true,
+				"HasCookingRecipe |contains= {{spacechase0.JsonAssets/ObjectId:Pink Frosted Sprinkled Doughnut}}": true,
+				"HasCookingRecipe |contains= {{spacechase0.JsonAssets/ObjectId:Pumpkin Darling Slice}}": true,
+				"HasCookingRecipe |contains= {{spacechase0.JsonAssets/ObjectId:Ridge Apple Cake}}": true,
+				"HasCookingRecipe |contains= {{spacechase0.JsonAssets/ObjectId:Ridge Fruity Plate}}": true,
+				"HasCookingRecipe |contains= {{spacechase0.JsonAssets/ObjectId:Ridge Mosaic Cake}}": true,
+				"HasCookingRecipe |contains= {{spacechase0.JsonAssets/ObjectId:Ridgeside Shaketini}}": true,
+				"HasCookingRecipe |contains= {{spacechase0.JsonAssets/ObjectId:Snow Bowl Surprise}}": true,
+				"HasCookingRecipe |contains= {{spacechase0.JsonAssets/ObjectId:Snowball Slurpee}}": true,
+				"HasCookingRecipe |contains= {{spacechase0.JsonAssets/ObjectId:Springtime Primetime}}": true,
+				"HasCookingRecipe |contains= {{spacechase0.JsonAssets/ObjectId:Strawberry Lover Pie}}": true,
+				"HasCookingRecipe |contains= {{spacechase0.JsonAssets/ObjectId:Summer Mountain Blessing}}": true,
+				"HasCookingRecipe |contains= {{spacechase0.JsonAssets/ObjectId:Summit Iced Tea}}": true,
+				"HasCookingRecipe |contains= {{spacechase0.JsonAssets/ObjectId:Sweet Cranberry Cheesecake}}": true,
+				"HasCookingRecipe |contains= {{spacechase0.JsonAssets/ObjectId:Tropic Mango Cake}}": true,
+				"HasCookingRecipe |contains= {{spacechase0.JsonAssets/ObjectId:Wild Apple Juice}}": true,
+				"HasCookingRecipe |contains= {{spacechase0.JsonAssets/ObjectId:Winter Night Feast}}": true,
+				"HasCookingRecipe |contains= {{spacechase0.JsonAssets/ObjectId:Zesty Tuna}}": true,
+				"HasMod |contains= spacechase0.JsonAssets": true
+            },
+			"Update": "OnDayStart, OnLocationChange, OnTimeChange"
+        },
+
+// Completed all special orders
+		{
+			"LogName": "Ridgeside Supporter",
+			"Action": "EditData",
+			"Target": "custom_achievements_dictionary",
+			"Entries": {
+				"RSVSpecialOrders": {
+					"ID": "RSVSpecialOrders",
+					"name": "山脊侧支架",
+					"description": "完成所有山脊侧的特殊任务。",
+					"achieved": false
+				}
+			},
+		},		
+        {
+			"LogName": "Ridgeside Supporter",
+            "Action": "EditData",
+            "Target": "custom_achievements_dictionary",
+            "Fields":
+                {
+                    "RSVSpecialOrders": {
+                        "achieved": true
+                    }
+                },
+            "When":
+			{
+                "HasFlag |contains= RSV.LennyHelped": true,
+                "HasFlag |contains= PikaSOLetter.temp": true,
+                "HasFlag |contains= RichardSOLetter": true,
+                "HasFlag |contains= MaiveSOLetter": true,
+                "HasFlag |contains= RSV.LolaHelped": true,
+                "HasFlag |contains= CarmenSOLetter": true,
+                "HasFlag |contains= BlairSOletter.temp": true,
+                "HasFlag |contains= RSV.EzekielHelped": true,
+                "HasFlag |contains= RSV.AguarHelped": true,
+                "HasFlag |contains= RSV.OlgaHelped": true,
+                "HasFlag |contains= MaddieSOLetter.temp": true,
+                "HasFlag |contains= RSV.FayePastel": true,
+                "HasFlag |contains= RSV.FayeJacket": true,
+                "HasFlag |contains= RSV.FayeMisc": true,
+                "HasFlag |contains= RSV.PikaSpring": true,
+                "HasFlag |contains= RSV.PikaSummer": true,
+                "HasFlag |contains= RSV.PikaFall": true,
+                "HasFlag |contains= RSV.PikaWinter": true
+            },
+			"Update": "OnDayStart, OnLocationChange, OnTimeChange"
+        },
+
+// FRIEND ACHIEVEMENTS
+
+// Befriended all the ninjas 
+		{
+			"LogName": "Ninja Accomplice",
+			"Action": "EditData",
+			"Target": "custom_achievements_dictionary",
+			"Entries": {
+				"RSVNinjaFriend": {
+					"ID": "RSVNinjaFriend",
+					"name": "忍者共犯",
+					"description": "和所有的忍者交朋友。",
+					"achieved": false
+				}
+			},
+		},		
+		{
+			"LogName": "Ninja Accomplice",
+			"Action": "EditData",
+			"Target": "custom_achievements_dictionary",
+			"Fields":
+				{
+					"RSVNinjaFriend": {
+						"achieved": true
+					}
+				},
+			"When":
+			{
+				"Hearts:Daia": "{{Range: 8, 14}}",
+				"Hearts:Jio": "{{Range: 8, 14}}",
+				"Hearts:Kiwi": "{{Range: 8, 10}}",
+			},
+			"Update": "OnDayStart, OnLocationChange, OnTimeChange"
+		},
+
+// Befriended all the Amethynes 
+		{
+			"LogName": "Amethyne Associate",
+			"Action": "EditData",
+			"Target": "custom_achievements_dictionary",
+			"Entries": {
+				"RSVAmethyneFriend": {
+					"ID": "RSVAmethyneFriend",
+					"name": "紫水晶合伙人",
+					"description": "结识紫水晶家族及其员工。",
+					"achieved": false
+				}
+			},
+		},		
+		{
+			"LogName": "Amethyne Associate",
+			"Action": "EditData",
+			"Target": "custom_achievements_dictionary",
+			"Fields":
+				{
+					"RSVAmethyneFriend": {
+						"achieved": true
+					}
+				},
+			"When":
+			{
+				"Hearts:Irene": "{{Range: 8, 14}}",
+				"Hearts:Maive": "{{Range: 8, 10}}",
+				"Hearts:Sonny": "{{Range: 8, 10}}",
+				"Hearts:Ariah": "{{Range: 8, 10}}",
+				"Hearts:Louie": "{{Range: 8, 10}}",
+			},
+			"Update": "OnDayStart, OnLocationChange, OnTimeChange"
+		},
+
+// Befriended all the bachelors 
+		{
+			"LogName": "Ridgeside Comrade",
+			"Action": "EditData",
+			"Target": "custom_achievements_dictionary",
+			"Entries": {
+				"RSVBachelorFriend": {
+					"ID": "RSVBachelorFriend",
+					"name": "山脊边同志",
+					"description": "成为里奇赛德所有合格单身汉的朋友。",
+					"achieved": false
+				}
+			},
+		},		
+		{
+			"LogName": "Ridgeside Comrade",
+			"Action": "EditData",
+			"Target": "custom_achievements_dictionary",
+			"Fields":
+				{
+					"RSVBachelorFriend": {
+						"achieved": true
+					}
+				},
+			"When":
+			{
+				"Hearts:Ian": "{{Range: 8, 14}}",
+				"Hearts:Jeric": "{{Range: 8, 14}}",
+				"Hearts:Kenneth": "{{Range: 8, 14}}",
+				"Hearts:Philip": "{{Range: 8, 14}}",
+				"Hearts:Sean": "{{Range: 8, 14}}",
+				"Hearts:Shiro": "{{Range: 8, 14}}",
+				"Hearts:Anton": "{{Range: 8, 14}}",
+				"Hearts:Jio": "{{Range: 8, 14}}",
+			},
+			"Update": "OnDayStart, OnLocationChange, OnTimeChange"
+		},
+
+// Befriended all the bachelorettes 
+		{
+			"LogName": "Ridgeside Companion",
+			"Action": "EditData",
+			"Target": "custom_achievements_dictionary",
+			"Entries": {
+				"RSVBacheloretteFriend": {
+					"ID": "RSVBacheloretteFriend",
+					"name": "山脊边同伴",
+					"description": "结识所有里奇赛德的合格单身女子。",
+					"achieved": false
+				}
+			},
+		},		
+		{
+			"LogName": "Ridgeside Companion",
+			"Action": "EditData",
+			"Target": "custom_achievements_dictionary",
+			"Fields":
+				{
+					"RSVBacheloretteFriend": {
+						"achieved": true
+					}
+				},
+			"When":
+			{
+				"Hearts:Alissa": "{{Range: 8, 14}}",
+				"Hearts:Blair": "{{Range: 8, 14}}",
+				"Hearts:Corine": "{{Range: 8, 14}}",
+				"Hearts:Flor": "{{Range: 8, 14}}",
+				"Hearts:Kiarra": "{{Range: 8, 14}}",
+				"Hearts:Maddie": "{{Range: 8, 14}}",
+				"Hearts:Ysabelle": "{{Range: 8, 14}}",
+				"Hearts:Daia": "{{Range: 8, 14}}",
+				"Hearts:Paula": "{{Range: 8, 14}}",
+			},
+			"Update": "OnDayStart, OnLocationChange, OnTimeChange"
+		},
+
+// Befriended all the kids 
+		{
+			"LogName": "Ridgeside Buddy",
+			"Action": "EditData",
+			"Target": "custom_achievements_dictionary",
+			"Entries": {
+				"RSVKidFriend": {
+					"ID": "RSVKidFriend",
+					"name": "山脊边巴迪",
+					"description": "和山脊边所有的孩子做朋友。",
+					"achieved": false
+				}
+			},
+		},		
+		{
+			"LogName": "Ridgeside Buddy",
+			"Action": "EditData",
+			"Target": "custom_achievements_dictionary",
+			"Fields":
+				{
+					"RSVKidFriend": {
+						"achieved": true
+					}
+				},
+			"When":
+			{
+				"Hearts:Ariah": "{{Range: 8, 10}}",
+				"Hearts:Keahi": "{{Range: 8, 10}}",
+				"Hearts:Louie": "{{Range: 8, 10}}",
+				"Hearts:Trinnie": "{{Range: 8, 10}}",
+				"Hearts:Undreya": "{{Range: 8, 10}}",
+				"Hearts:Yuuma": "{{Range: 8, 10}}",
+			},
+			"Update": "OnDayStart, OnLocationChange, OnTimeChange"
+		},
+
+// Get 5 hearts with every RSV NPC
+		{
+			"LogName": "Ridgeside Friend",
+			"Action": "EditData",
+			"Target": "custom_achievements_dictionary",
+			"Entries": {
+				"RSVTownFriend": {
+					"ID": "RSVTownFriend",
+					"name": "山脊边的朋友",
+					"description": "每一个友善的山脊边村民获得5颗心。",
+					"achieved": false
+				}
+			},
+		},		
+		{
+			"LogName": "Ridgeside Friend",
+			"Action": "EditData",
+			"Target": "custom_achievements_dictionary",
+			"Fields":
+				{
+					"RSVTownFriend": {
+						"achieved": true
+					}
+				},
+			"When":
+			{
+				"Hearts:Ian": "{{Range: 5, 14}}",
+				"Hearts:Jeric": "{{Range: 5, 14}}",
+				"Hearts:Kenneth": "{{Range: 5, 14}}",
+				"Hearts:Philip": "{{Range: 5, 14}}",
+				"Hearts:Sean": "{{Range: 5, 14}}",
+				"Hearts:Shiro": "{{Range: 5, 14}}",
+				"Hearts:Anton": "{{Range: 5, 14}}",
+				"Hearts:Jio": "{{Range: 5, 14}}",
+				"Hearts:Alissa": "{{Range: 5, 14}}",
+				"Hearts:Blair": "{{Range: 5, 14}}",
+				"Hearts:Corine": "{{Range: 5, 14}}",
+				"Hearts:Flor": "{{Range: 5, 14}}",
+				"Hearts:Kiarra": "{{Range: 5, 14}}",
+				"Hearts:Maddie": "{{Range: 5, 14}}",
+				"Hearts:Ysabelle": "{{Range: 5, 14}}",
+				"Hearts:Daia": "{{Range: 5, 14}}",
+				"Hearts:Paula": "{{Range: 5, 14}}",
+				"Hearts:Bert": "{{Range: 5, 10}}",
+				"Hearts:Carmen": "{{Range: 5, 10}}",
+				"Hearts:Ezekiel": "{{Range: 5, 10}}",
+				"Hearts:Faye": "{{Range: 5, 10}}",
+				"Hearts:Freddie": "{{Range: 5, 10}}",
+				"Hearts:Irene": "{{Range: 5, 10}}",
+				"Hearts:Kimpoi": "{{Range: 5, 10}}",
+				"Hearts:Kiwi": "{{Range: 5, 10}}",
+				"Hearts:Lenny": "{{Range: 5, 10}}",
+				"Hearts:Lola": "{{Range: 5, 10}}",
+				"Hearts:Lorenzo": "{{Range: 5, 10}}",
+				"Hearts:Maive": "{{Range: 5, 10}}",
+				"Hearts:Malaya": "{{Range: 5, 10}}",
+				"Hearts:Aguar": "{{Range: 5, 10}}",
+				"Hearts:Naomi": "{{Range: 5, 10}}",
+				"Hearts:Olga": "{{Range: 5, 10}}",
+				"Hearts:Pika": "{{Range: 5, 10}}",
+				"Hearts:Richard": "{{Range: 5, 10}}",
+				"Hearts:Shanice": "{{Range: 5, 10}}",
+				"Hearts:Sonny": "{{Range: 5, 10}}",
+				"Hearts:Ariah": "{{Range: 5, 10}}",
+				"Hearts:Keahi": "{{Range: 5, 10}}",
+				"Hearts:Louie": "{{Range: 5, 10}}",
+				"Hearts:Trinnie": "{{Range: 5, 10}}",
+				"Hearts:Undreya": "{{Range: 5, 10}}",
+				"Hearts:Yuuma": "{{Range: 5, 10}}", 
+			},
+			"Update": "OnDayStart, OnLocationChange, OnTimeChange"
+		},
+
+// Get full hearts with every RSV NPC
+		{
+			"LogName": "Ridgeside Beloved",
+			"Action": "EditData",
+			"Target": "custom_achievements_dictionary",
+			"Entries": {
+				"RSVTownBestFriend": {
+					"ID": "RSVTownBestFriend",
+					"name": "山脊边亲爱的",
+					"description": "与每一位友好的山脊边村民一起收获满满的心。",
+					"achieved": false
+				}
+			},
+		},		
+		{
+			"LogName": "Ridgeside Beloved",
+			"Action": "EditData",
+			"Target": "custom_achievements_dictionary",
+			"Fields":
+				{
+					"RSVTownBestFriend": {
+						"achieved": true
+					}
+				},
+			"When":
+			{
+				"Hearts:Ian": "{{Range: 8, 14}}",
+				"Hearts:Jeric": "{{Range: 8, 14}}",
+				"Hearts:Kenneth": "{{Range: 8, 14}}",
+				"Hearts:Philip": "{{Range: 8, 14}}",
+				"Hearts:Sean": "{{Range: 8, 14}}",
+				"Hearts:Shiro": "{{Range: 8, 14}}",
+				"Hearts:Anton": "{{Range: 8, 14}}",
+				"Hearts:Jio": "{{Range: 8, 14}}",
+				"Hearts:Alissa": "{{Range: 8, 14}}",
+				"Hearts:Blair": "{{Range: 8, 14}}",
+				"Hearts:Corine": "{{Range: 8, 14}}",
+				"Hearts:Flor": "{{Range: 8, 14}}",
+				"Hearts:Kiarra": "{{Range: 8, 14}}",
+				"Hearts:Maddie": "{{Range: 8, 14}}",
+				"Hearts:Ysabelle": "{{Range: 8, 14}}",
+				"Hearts:Daia": "{{Range: 8, 14}}",
+				"Hearts:Paula": "{{Range: 8, 14}}",
+				"Hearts:Bert": "10",
+				"Hearts:Carmen": "10",
+				"Hearts:Ezekiel": "10",
+				"Hearts:Faye": "10",
+				"Hearts:Freddie": "10",
+				"Hearts:Irene": "10",
+				"Hearts:Kimpoi": "10",
+				"Hearts:Kiwi": "10",
+				"Hearts:Lenny": "10",
+				"Hearts:Lola": "10",
+				"Hearts:Lorenzo": "10",
+				"Hearts:Maive": "10",
+				"Hearts:Malaya": "10",
+				"Hearts:Aguar": "10",
+				"Hearts:Naomi": "10",
+				"Hearts:Olga": "10",
+				"Hearts:Pika": "10",
+				"Hearts:Richard": "10",
+				"Hearts:Shanice": "10",
+				"Hearts:Sonny": "10",
+				"Hearts:Ariah": "10",
+				"Hearts:Keahi": "10",
+				"Hearts:Louie": "10",
+				"Hearts:Trinnie": "10",
+				"Hearts:Undreya": "10",
+				"Hearts:Yuuma": "10", 
+			},
+			"Update": "OnDayStart, OnLocationChange, OnTimeChange"
+		},
+
+    ]
+}

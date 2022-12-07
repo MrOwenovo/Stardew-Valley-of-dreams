@@ -1,0 +1,156 @@
+[    //"furniture.YourFurniture.category"でカテゴリ(Type)のテキストにオーバーライド
+
+// ◆◆◆◆◆下の部屋◆◆◆◆◆
+  {
+    "$ItemType": "Furniture", //作成する物のタイプ
+    "Type": "FishTank", //家具のタイプ
+    "ID": "Recessed_FishTank(Under-Room)", //ID(翻訳に使うキー)
+
+    "TankSwimmingCapacity": 3, //泳ぐ生き物
+    "TankGroundCapacity": 1, //底の生き物
+    "TankDecorationCapacity": 1, //装飾
+
+    "Configurations": [ //構成 
+                        {
+                          "Texture": "assets/UR/RFT(Under-Room)_High_Default.png:1", //この構成のテクスチャ
+                          "FrontTexture": "assets/UR/RFT(Under-Room)_High_Default.png:0", //FT
+                          "DisplaySize": { "X": 3, "Y": 4 }, //この家具の表示サイズ(タイル)
+                          "CollisionHeight": 1, //物理サイズの高さ(おそらく変則Xサイズは使用不可？)
+                          "SittingDirection": "Left", //向き
+                        },
+                      ],
+
+    "DynamicFields": [
+
+                  //左上の部屋 背景あり
+                      //デフォルト
+                       {
+                         "Conditions": {                                 //CP方式の条件付け
+                                         "(T) for Under Room": "High",
+                                         "(C) for Under Room": "Default",
+                                         "(B) for Under Room": "false",
+                                       },
+
+                         "Configurations[ 0 ].Texture": "assets/UR/RFT(Under-Room)_High_Default.png:1",
+                         "Configurations[ 0 ].FrontTexture": "assets/UR/RFT(Under-Room)_High_Default.png:0",
+                       },
+                       {
+                         "Conditions": {                                 //CP方式の条件付け
+                                         "(T) for Under Room": "Low",
+                                         "(C) for Under Room": "Default",
+                                       },
+
+                         "Configurations[ 0 ].Texture": "assets/UR/RFT(Under-Room)_Low_Default.png:1",
+                         "Configurations[ 0 ].FrontTexture": "assets/UR/RFT(Under-Room)_Low_Default.png:0",
+                       },
+                      //ブラック
+                       {
+                         "Conditions": {                                 //CP方式の条件付け
+                                         "(T) for Under Room": "High",
+                                         "(C) for Under Room": "Black",
+                                         "(B) for Under Room": "false",
+                                       },
+
+                         "Configurations[ 0 ].Texture": "assets/UR/RFT(Under-Room)_High_Black.png:1",
+                         "Configurations[ 0 ].FrontTexture": "assets/UR/RFT(Under-Room)_High_Black.png:0",
+                       },
+                       {
+                         "Conditions": {                                 //CP方式の条件付け
+                                         "(T) for Under Room": "Low",
+                                         "(C) for Under Room": "Black",
+                                       },
+
+                         "Configurations[ 0 ].Texture": "assets/UR/RFT(Under-Room)_Low_Black.png:1",
+                         "Configurations[ 0 ].FrontTexture": "assets/UR/RFT(Under-Room)_Low_Black.png:0",
+                       },
+                      //ブルー
+                       {
+                         "Conditions": {                                 //CP方式の条件付け
+                                         "(T) for Under Room": "High",
+                                         "(C) for Under Room": "Blue",
+                                         "(B) for Under Room": "false",
+                                       },
+
+                         "Configurations[ 0 ].Texture": "assets/UR/RFT(Under-Room)_High_Blue.png:1",
+                         "Configurations[ 0 ].FrontTexture": "assets/UR/RFT(Under-Room)_High_Blue.png:0",
+                       },
+                       {
+                         "Conditions": {                                 //CP方式の条件付け
+                                         "(T) for Under Room": "Low",
+                                         "(C) for Under Room": "Blue",
+                                       },
+
+                         "Configurations[ 0 ].Texture": "assets/UR/RFT(Under-Room)_Low_Blue.png:1",
+                         "Configurations[ 0 ].FrontTexture": "assets/UR/RFT(Under-Room)_Low_Blue.png:0",
+                       },
+                      //ダークグレイ
+                       {
+                         "Conditions": {                                 //CP方式の条件付け
+                                         "(T) for Under Room": "High",
+                                         "(C) for Under Room": "DarkGray",
+                                         "(B) for Under Room": "false",
+                                       },
+
+                         "Configurations[ 0 ].Texture": "assets/UR/RFT(Under-Room)_High_DarkGray.png:1",
+                         "Configurations[ 0 ].FrontTexture": "assets/UR/RFT(Under-Room)_High_DarkGray.png:0",
+                       },
+                       {
+                         "Conditions": {                                 //CP方式の条件付け
+                                         "(T) for Under Room": "Low",
+                                         "(C) for Under Room": "DarkGray",
+                                       },
+
+                         "Configurations[ 0 ].Texture": "assets/UR/RFT(Under-Room)_Low_DarkGray.png:1",
+                         "Configurations[ 0 ].FrontTexture": "assets/UR/RFT(Under-Room)_Low_DarkGray.png:0",
+                       },
+
+                  //左上の部屋 背景なし
+                      //デフォルト
+                       {
+                         "Conditions": {                                 //CP方式の条件付け
+                                         "(T) for Under Room": "High",
+                                         "(C) for Under Room": "Default",
+                                         "(B) for Under Room": "true",
+                                       },
+
+                         "Configurations[ 0 ].Texture": "assets/UR/RFT(Under-Room)_High_Default_NoBG.png:1",
+                         "Configurations[ 0 ].FrontTexture": "assets/UR/RFT(Under-Room)_High_Default_NoBG.png:0",
+                       },
+                      //ブラック
+                       {
+                         "Conditions": {                                 //CP方式の条件付け
+                                         "(T) for Under Room": "High",
+                                         "(C) for Under Room": "Black",
+                                         "(B) for Under Room": "true",
+                                       },
+
+                         "Configurations[ 0 ].Texture": "assets/UR/RFT(Under-Room)_High_Black_NoBG.png:1",
+                         "Configurations[ 0 ].FrontTexture": "assets/UR/RFT(Under-Room)_High_Black_NoBG.png:0",
+                       },
+                      //ブルー
+                       {
+                         "Conditions": {                                 //CP方式の条件付け
+                                         "(T) for Under Room": "High",
+                                         "(C) for Under Room": "Blue",
+                                         "(B) for Under Room": "true",
+                                       },
+
+                         "Configurations[ 0 ].Texture": "assets/UR/RFT(Under-Room)_High_Blue_NoBG.png:1",
+                         "Configurations[ 0 ].FrontTexture": "assets/UR/RFT(Under-Room)_High_Blue_NoBG.png:0",
+                       },
+                      //ダークグレイ
+                       {
+                         "Conditions": {                                 //CP方式の条件付け
+                                         "(T) for Under Room": "High",
+                                         "(C) for Under Room": "DarkGray",
+                                         "(B) for Under Room": "true",
+                                       },
+
+                         "Configurations[ 0 ].Texture": "assets/UR/RFT(Under-Room)_High_DarkGray_NoBG.png:1",
+                         "Configurations[ 0 ].FrontTexture": "assets/UR/RFT(Under-Room)_High_DarkGray_NoBG.png:0",
+                       },
+                     ],
+  },
+
+
+]

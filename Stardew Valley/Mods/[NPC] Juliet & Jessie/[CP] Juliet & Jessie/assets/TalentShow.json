@@ -1,0 +1,417 @@
+{
+    "Changes": [
+        {
+            "Action": "Load",
+            "Target": "Characters/albinoRabbit",
+            "FromFile": "assets/img/albinoRabbit.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/ClintMagician",
+            "FromFile": "assets/img/Clint_magician.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/ClintTophat",
+            "FromFile": "assets/img/Clint_Tophat.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/CommunityCenterJuliet",
+            "FromFile": "assets/Maps/CommunityCenter_Juliet.tmx"
+        },
+        //Juliet tells you about her new "promotion"
+        {
+            "LogName": "14-heart event starts",
+            "Action": "EditData",
+            "Target": "Data/Events/FarmHouse",
+            "Entries": {
+                "6398443/f Juliet 3500/O Juliet/t 1800 2200/L": "playful/12 17/Juliet -100 -100 0 farmer 12 18 0/addConversationTopic Juliet_TalentShow 7/skippable/pause 500/playSound doorOpen/warp Juliet 12 20/jump farmer 5/pause 500/faceDirection farmer 2/speak Juliet \"噢，真好，你回家了。$1#$b#总之~我大概和镇长提了一嘴，说这里太无聊了。然后……你猜怎么着？\"/emote farmer 8/pause 500/speak Juliet \"我升职了！现在我是鹈鹕镇官方活动协调员了！\"/emote farmer 16/speak Juliet \"是啊，我敢肯定这个名头是他编出来的，他只是想把责任推到别人身上而已。不过谁在乎呢？#$b#现在我可以正大光明地组织活动来“活跃社区气氛”了。#$b#这是他的原话，不是我的。要我说的话，都是些装模做样的废话。其实就是办派对而已。我就把这叫作“派对”好了。$1\"/quickQuestion #听起来不错。你一定会做得很棒！#这可是很大一份责任啊。你确定自己准备好了吗？#他只是想摆脱你的纠缠而已。(break)emote Juliet 20\\speak Juliet \"是的，我也希望如此！这真是令人激动，对吧？\"(break)emote Juliet 12\\speak Juliet \"哈，看来我嫁给你就是让自己扫兴的。$5#$b#好吧，就算你不相信我，我也会证明你是错的。你就等着瞧吧！\"(break)emote Juliet 40\\speak Juliet \"噢，是啊，我知道。但这并不意味着我就不能搞出一番大事，把他惊得鞋子都掉下来。#$b#不是说我想这么做啦……我猜他一定有拇趾囊炎，要么就不爱剪脚指甲之类的。呕。$5\"/speak Juliet \"你会帮助我的，对吧？你就像是小镇的力量源泉，大家都喜欢你。#$b#我吗？好吧，我只是个大嗓门的Joja姑娘而已。他们一定会拒绝我的。\"/emote farmer 60/speak Juliet \"真好，我就知道可以指望你的。我想要举办的是一场才艺演出，意在发掘所有人隐藏的才能。#$b#好吧，或许也用不着真的去“发掘”。但我们也不妨看看大家都会些什么，对吧？\"/emote farmer 56/pause 1500/end"
+            }
+        },
+        {
+            "LogName": "Juliet reminds you of the event",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueJuliet",
+            "When": {
+                "HasSeenEvent": "6398443",
+                "HasConversationTopic |contains=Juliet_TalentShow": false,
+                "HasFlag |contains=Juliet_TalentShowReminder": false,
+                "Relationship:Juliet":"Dating,Engaged, Married"
+            },
+            "Entries": {
+                "{{season}}_{{day}}": "$1 Juliet_TalentShowReminder#你好，亲爱的。别忘了才艺演出的事！我们今天下午在社区中心见。$1#$b#整个小镇都会去，所以别迟到了。$2",
+            }
+        },
+        {
+            "LogName": "14 heart event",
+            "Action": "EditData",
+            "Target": "Data/Events/CommunityCenter",
+            "Entries": {
+                "6398444/A Juliet_TalentShow/e 6398443/t 1200 1800": "playful/-100 -100/{{Juliet_SetUp}}/addConversationTopic Juliet_TalentShow2 7/skippable/changeToTemporaryMap CommunityCenterJuliet/viewport 32 17/faceDirection Juliet 2/textAboveHead Juliet \"你来了！\"/faceDirection Lewis 2/speed Juliet 5/move Juliet 0 5 2 true/speed farmer 5/move farmer 0 -5 0 true/speak Juliet \"也是时候了！大家都开始躁动不安了！$2#$b#要么这会是一场伟大的胜利，要么就是超乎想象的失败。我也不知道会怎样。\"/emote farmer 56/speak Juliet \"行吧，不管了。反正不管怎样，一定都会很有意思！#$b#好啦，让我们开始表演吧！\"/fade/viewport -100 -100/message \"请耐心等待布置完成\"/{{Juliet_MainEvent}}/viewport 32 13 true/pause 1000/speak Juliet \"嘿，大家好！欢迎来到鹈鹕镇有史以来第一届才艺表演。这里没有品头论足，没有胜利奖品，只有无尽的乐趣！\"/textAboveHead Abigail \"没有奖品？\"/pause 1000/textAboveHead Sebastian \"真差劲。\"/speak Juliet \"噢，还要感谢格斯和艾芙琳赞助的免费美食。\"/jump Gus 5/emote Evelyn 32/speak Juliet \"不过你们来这里不是听我唠叨的。所以，让我们开始吧！#$b#克林特，你是第一个！\"/jump Clint 5/move Juliet 0 2 0 true/stopMusic/move Clint 0 -1 0 true/playMusic WizardSong/fade/viewport -100 -100/warp Clint -50 -50/addTemporaryActor ClintMagician 16 32 32 11 2 true/addTemporaryActor ClintTophat 16 16 32 12 2 false/addTemporaryActor albinoRabbit 16 16 -50 -50 2 false/showFrame Haley 25/viewport 32 13 true/pause 500/emote ClintMagician 28/pause 500/textAboveHead Emily \"哇哦！克林特！\"/pause 3000/{{Clint_Heckle}}/shake ClintMagician 350/textAboveHead ClintMagician \"好的……\"/pause 500/animate ClintMagician false false 240 0 1 2 3/pause 1000/playSound healSound/screenFlash 2/warp ClintTophat -50 -50/warp albinoRabbit 32 12/pause 500/textAboveHead Vincent \"兔子！\"/emote Jas 20/jump albinoRabbit/emote albinoRabbit 16/faceDirection albinoRabbit 3/pause 500/faceDirection albinoRabbit 1/speed albinoRabbit 5/move albinoRabbit 5 0 3/warp albinoRabbit -50 -50/speak Jas \"我会保护你的，小兔子！\"/pause 500/{{Clint_Heckle2}}/pause 500/textAboveHead Wizard \"太业余了……\"/stopMusic/fade/viewport -100 -100/warp albinoRabbit 36 12/warp ClintMagician -50 -50/warp Clint 29 15/speak Juliet \"接下来是由长头发先生亲自创作的一首诗歌，有请艾利欧特！\"/playMusic sadpiano/warp Elliott 32 11/faceDirection Elliott 2/viewport 32 13 true/faceDirection Clint 1/faceDirection Emily 3/{{Clint_Heckle3}}/faceDirection Clint 0/faceDirection Emily 0/pause 500/speak Elliott \"先生们，女士们，下午好！今天我要朗诵一首爱情诗……#$b#题目叫作《礼物》。\"/pause 500/speak Elliott \"从最为明亮的冬日星，再到芳香馥郁的玫瑰仙子……\"/fade/emote Marnie 20/emote Maru 24/speak Elliott \"……而我终于找到了她。我会和她在一起，直到时间尽头，直到永远。$1\"/pause 2000/jump Juliet 5/move Juliet 0 -2 2/speak Juliet \"噢，你已经念完了！那真是……嗯……非常诗意。\"/emote Elliott 40/pause 500/fade/stopMusic/viewport -100 -100/warp Elliott 36 15/faceDirection Elliott 0/fade/viewport -100 -100/warp Emily 32 11/animate Emily false true 250 16 17 16 17 20 21 20 21 18 19 18 19 22 23 22 23/warp Leah 33 11/animate Leah false true 250 30 31/warp Juliet 34 13/faceDirection Juliet 0/viewport 32 13 true/playMusic event2/pause 4000/emote Clint 20/emote Elliott 56/animate Vincent false true 250 20 8 21 8/pause 2000/fade/stopMusic/viewport -100 -100/stopAnimation Emily/stopAnimation Leah/stopAnimation Vincent/warp Emily 30 15/faceDirection Emily 0/warp Leah 37 15/faceDirection Leah 0/warp Vincent 32 11/faceDirection Vincent 2/viewport 32 13 true/pause 500/speak Vincent \"什么样的树能被握在你的掌心？$3#$b#一只小老鼠！$1\"/animate Marnie false true 200 33 34/emote Jodi 20/textAboveHead Kent \"干得漂亮。\"/pause 1000/fade/viewport -100 -100/stopAnimation Marnie/warp Vincent 26 11/faceDirection Vincent 1/warp Willy 32 11/playMusic desolate/faceDirection Willy 2/viewport 32 13 true/pause 500/speak Willy \"……尽管他们之间的爱意并无虚假，但还不足以让她离开自己爱着的故乡。#$b#海洋的女儿露出忧伤的笑容，转过身，走进了海浪之中。#$b#从此她再也没有回来。然而那位渔夫依旧在码头上等待着她，直到两鬓斑白，盼望着她有朝一日能回来。$2\"/pause 1000/emote Jessie 20/faceDirection Vincent 1/textAboveHead Vincent \"这故事是真的吗？\"/pause 2500/emote Jodi 40/pause 1000/fade/stopMusic/viewport -100 -100/warp Willy 43 11/faceDirection Willy 3/warp Sam 32 11/faceDirection Sam 2 true/warp Sebastian 34 10/positionOffset Sebastian 20 -20/faceDirection Sebastian 2/warp Abigail 30 10/positionOffset Abigail 40 -24/faceDirection Abigail 2/speak Juliet \"现在，作为今晚的谢幕演出，让我们有请……$1\"/viewport 32 13 true/speak Sam \"大家好！我们是“哥布林毁灭者”！很高兴能在鹈鹕镇演出！#$b#不过要不是有朱丽叶，我们现在都不会在这里！#$b#过来这儿，朱丽叶！\"/pause 500/emote Juliet 60/pause 500/faceDirection Juliet 1 true/faceDirection farmer 3 true/emote farmer 32/pause 1500/move Juliet -1 0 2/pause 500/move Juliet 0 -2 2/textAboveHead Pam \"说点什么！\"/pause 500/emote Juliet 40/speak Juliet \"哎呀，你们也没人想听我说话。毕竟“哥布林毁灭者”都来了嘛！\"/faceDirection Juliet 3 true/faceDirection Sam 1 true/emote Juliet 56/pause 500/faceDirection Sam 2/speak Sam \"这首歌献给你，朱丽叶！\"/faceDirection Juliet 2/pause 500/playMusic heavy/textAboveHead Sam \"让我们摇滚起来！\"/animate Abigail false true 125 49 34 35 48/pause 2500/animate Sam false true 250 20 21/animate Sebastian false true 125 42 43 52 53/animate Vincent false true 250 20 8 21 8/animate Emily false true 250 16 17/animate Leah false true 250 30 31/animate Elliott false true 250 36 37/animate Maru false true 250 29 30/animate Robin false true 250 20 21 22/animate Demetrius false true 240 24 25 26/pause 7000/fade/viewport -100 -100/stopMusic/speak Juliet \"我想一切进行得很顺利，对吧？$1\"/end"
+                //jump Sam/pause 500/animate Sam false true 236 22 23/pause 2000/fade/stopAnimation Sam/stopAnimation Sebastian/stopAnimation Abigail/pause 700/animate Abigail false true 250 49 34 35 48/animate Sam false true 500 20 21/animate Sebastian false true 250 42 43 52 53/pause 3000/stopAnimation Demetrius/stopAnimation Robin/stopAnimation Sam/stopAnimation Sebastian/stopAnimation Abigail/pause 800/stopAnimation Vincent/stopAnimation Elliott/stopAnimation Leah/stopAnimation Maru/stopAnimation Emily/pause 1500/end"
+            }
+        },
+        // Tell Everyone about the event   
+        {
+            "LogName": "Tell Abigail",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Abigail",
+            "Entries": {
+        "Juliet_TalentShow": "隐藏的才能？好吧，我想我可以把长笛带上……或者去跟山姆和塞巴斯蒂安他们谈谈。#$b#是的，我同意加入！听着很有意思。$1",
+        "Juliet_TalentShow2": "是啊，朱丽叶这人挺酷的。"
+            }
+        },
+        {
+            "LogName": "Tell Alex",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Alex",
+            "Entries": {
+        "Juliet_TalentShow": "好吧，我没什么“隐藏”的才能。不过或许我可以展示一下我完美的格球技巧。#$b#你笑什么？$2"
+            }
+        },
+        {
+            "LogName": "Tell Caroline",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Caroline",
+            "Entries": {
+        "Juliet_TalentShow": "$1 Pierre_Opera#嗯……我不确定什么叫作“隐藏的才能”。但你可以问问皮埃尔关于歌剧演唱的事。#$b#噢，他还以为我不知道呢，不过这里的墙壁也没那么厚实！$1"
+            }
+        },
+        {
+            "LogName": "Tell Clint",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Clint",
+            "Entries": {
+        "Juliet_TalentShow": "你想让我站在所有人面前表演？噢……不行，我做不到。$4",
+        "Juliet_TalentShow2": "你觉得艾米丽喜欢我的表演吗？"
+            }
+        },
+        {
+            "LogName": "Tell Demetrius",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Demetrius",
+            "Entries": {
+        "Juliet_TalentShow": "可以向大家展示科学的重要性？噢，当然了，@。表演算我一个。"
+            }
+        },
+        {
+            "LogName": "Tell Emily",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Emily",
+            "Entries": {
+        "Juliet_TalentShow": "我隐藏的才能？$4#$b#噢，我还没准备好让大家都知道呢，至少不是现在！不过我一定能想出其他表演节目的，别担心！$1"
+            }
+        },
+        {
+            "LogName": "Tell Elliot",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Elliot",
+            "Entries": {
+        "Juliet_TalentShow": "……当最后一片叶子在树枝上枯萎时，它挣脱了束缚，在风中自由地起舞……#$b#我当然愿意参加你组织的才艺演出。不过是弹钢琴还是诗朗诵呢？真是难以抉择。"
+            }
+        },
+        {
+            "LogName": "Tell Evelyn",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Evelyn",
+            "Entries": {
+        "Juliet_TalentShow": "噢，才艺表演听起来是个好主意。正是小镇所需要的！#$b#我会烤一些巧克力饼干的！",
+        "Juliet_TalentShow2": "才艺表演真的很有意思，亲爱的。哪天我们应该再举办一次。#$b#或许我甚至可以拂去我舞鞋上的灰尘呢！$1"
+            }
+        },
+        {
+            "LogName": "Tell George",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/George",
+            "Entries": {
+        "Juliet_TalentShow": "才艺表演？哈，行吧，或许能让人笑上几声。#$b#你想知道我隐藏的才能？我没什么愿意在观众面前展示的。",
+        "Juliet_TalentShow2": "哼，完全不知所云，根本没有什么才能可言。不过那里的食物不错。"
+            }
+        },
+        {
+            "LogName": "Tell Harvey",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Harvey",
+            "Entries": {
+        "Juliet_TalentShow": "噢，恐怕没有人会对我隐藏的才能感兴趣。$4#$b#除非有人不小心把自己弄伤了。$2",
+        "Juliet_TalentShow2": "看来大家都玩得很开心。说不准明年我也会试试。"
+            }
+        },
+        {
+            "LogName": "Tell Haley",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Haley",
+            "Entries": {
+        "Juliet_TalentShow": "才艺表演？听起来挺有趣的……好吧，总比在家门附近闲逛更有意思。#$b#嘿，你们需要摄影师吗？$1",
+        "Juliet_TalentShow2": "我拍了不少好照片，@。真可惜我们没有本地的杂志。#$b#嗯……不过这是个好主意！"
+            }
+        },
+        {
+            "LogName": "Tell Gus",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Gus",
+            "Entries": {
+        "Juliet_TalentShow": "我并没有什么隐藏的才能！但是朱丽叶女士拜托我提供食物。$1",
+        "Juliet_TalentShow2": "这几天的生意有点冷清。估计是我又在才艺表演上提供了过多的食物。"
+            }
+        },
+        {
+            "LogName": "Tell Leah",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Leah",
+            "Entries": {
+        "Juliet_TalentShow": "木雕可不算什么观众喜闻乐见的才艺。至于举办展览--我还是更擅长那种事情。",
+        "Juliet_TalentShow2": "跳舞很有意思，而且罗宾似乎很欣赏我的雕刻技术。她还说可以委托给我几份工作！"
+            }
+        },
+        {
+            "LogName": "Tell Linus",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Linus",
+            "Entries": {
+        "Juliet_TalentShow": "能参加朱丽叶组织的才艺表演是我的荣幸，@。#$b#不过亲自表演？好吧，这就得好好考虑考虑了。",
+        "Juliet_TalentShow2": "看到所有人聚在一起真好。我能真正感觉到自己是社区的一份子了。"     
+            }
+        },
+        {
+            "LogName": "Tell Jodi",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Jodi",
+            "Entries": {
+        "Juliet_TalentShow": "朱丽叶要举办一次才艺表演？听着挺有意思的。#$b#噢，要把两个男孩养大的情况下，我可没有多少时间培养隐藏的才能。#$b#除非你把清洁也算在内……$2",
+        "Juliet_TalentShow2": "我为文森特自豪，他有勇气上台给大家讲笑话听。"
+            }
+        },
+        {
+            "LogName": "Tell Kent",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Kent",
+            "Entries": {
+        "Juliet_TalentShow": "才艺表演？听起来很有趣，我会去的。"
+            }
+        },
+        {
+            "LogName": "Tell Maru",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Maru",
+            "Entries": {
+        "Juliet_TalentShow": "噢，才艺表演！让我看看我能找出什么小玩意儿！$1#$b#你说“隐藏”的才能？噢……但这样就没那么有趣了！$3"
+            }
+        },
+        {
+            "LogName": "Tell Pam",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Pam",
+            "Entries": {
+        "Juliet_TalentShow": "嘿，孩子。不，我并没有什么隐藏的才能。#$b#除非你把驾驶技术也算在内。不过这个应该算不上吧，对不？",
+        "Juliet_TalentShow2": "要我说的话，这是一次不错的午后娱乐活动。"
+            }
+        },
+        {
+            "LogName": "Tell Pierre",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Pierre",
+            "Entries": {
+        "Juliet_TalentShow": "你想让我展示自己隐藏的才能？好吧，其实我以前挺擅长拳击的。#$b#如果有值得我出手的对手，我会去表演的！$1"
+            }
+        },
+        {
+            "LogName": "Tell Pierre",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Pierre",
+            "Entries": {
+        "Juliet_TalentShow": "你说我应该怎样？卡洛琳连这个都告诉你了？$3#$b#她有没有顺便提到她喜不喜欢我的歌剧表演啊？$2" 
+            },
+            "When": {
+                "HasFlag": "Pierre_Opera"
+            }
+        },
+        {
+            "LogName": "Lewis reacts",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Lewis",
+            "Entries": {
+        "Juliet_TalentShow": "很高兴看到朱丽叶能实现她的潜能。尽管牙尖嘴利，她工作还是很努力。",
+        "Juliet_TalentShow2": "不得不说，朱丽叶让我印象深刻。你影响了她很多，@。",
+                "JulietParents": "你听说了我收到的消息吗？多纳格夫妇即将来拜访鹈鹕镇。#$b#他们都是重要人物，而且非常富有——我们得给他们留下好印象才行。#$b#希望大家都能表现良好，尤其是朱丽叶……$2"		
+            }
+        },
+        {
+            "LogName": "Marnie reacts",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Marnie",
+            "Entries": {
+        "Juliet_TalentShow": "噢，才艺表演听上去是个好主意！#$b#我隐藏的才能？好吧，大概是给牛挤奶！",
+        "Juliet_TalentShow2": "真是个和大家聚在一起的愉快下午。我试着劝说谢恩也参加，但他拒绝了。#$b#啊，好吧，说不定他明年会参加。"
+            }
+        },
+        {
+            "LogName": "Tell Penny",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Penny",
+            "Entries": {
+        "Juliet_TalentShow": "你需要表演者？……我觉得我应该不行。给孩子们上课是一回事，不过在整个小镇面前演讲？噢，我做不到！$2",
+        "Juliet_TalentShow2": "文森特做得很好。他一整个星期都在试着给我们讲笑话。#$b#但我希望他对待学习的态度也能更加认真。$2"
+            }
+        },
+        {
+            "LogName": "Tell Robin",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Robin",
+            "Entries": {
+        "Juliet_TalentShow": "嗯，我不确定自己的才能会在舞台上表现得如何。#$b#你说“隐藏的才能”？噢，好吧，我可以试着想出点什么！",
+        "Juliet_TalentShow2": "莉亚做得很好，简直让我想考虑收个学徒了。" 
+            }
+        },
+        {
+            "LogName": "Tell Sam",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Sam",
+            "Entries": {
+        "Juliet_TalentShow": "可以让乐队聚在一起演出？简直太棒了！我加入！",
+        "Juliet_TalentShow2": "你的妻子真棒。我试着让她也来打鼓，但阿比盖尔没有退让。"
+            }
+        },
+        {
+            "LogName": "Tell Sebastian",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Sebastian",
+            "Entries": {
+        "Juliet_TalentShow": "是啊，我们当然会在你的才艺表演上演出。我没什么兴趣，但阿比盖尔和山姆硬拖着我参加。$2",
+        "Juliet_TalentShow2": "好吧，我承认。能在大家面前再次演出真的很有意思。"
+            }
+        },
+        {
+            "LogName": "Tell Shane",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Shane",
+            "Entries": {
+        "Juliet_TalentShow": "隐藏的才能？哈。不，我觉得我没有。$2",
+        "Juliet_TalentShow2": "贾斯玩得很高兴。至于我吗？好吧，那里的食物不错。"
+            },
+            "When": {
+                "HasSeenEvent |contains=3900074": false
+            }
+        },
+        {
+            "LogName": "Tell Shane",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Shane",
+            "Entries": {
+        "Juliet_TalentShow": "隐藏的才能？也许有吧，但我觉得查理不会喜欢那么多关注的$3",
+        "Juliet_TalentShow2": "你知道，我和朱丽叶当了很久的同事，但我从来没有真正了解过她。#$b#现在感觉有点可惜。她看起来是个挺不错的家伙。" 
+            },
+            "When": {
+                "HasSeenEvent |contains=3900074": true
+            }
+        },
+        {
+            "LogName": "Tell Willy",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Willy",
+            "Entries": {
+        "Juliet_TalentShow": "你需要表演者？噢，我正好有可以讲的故事！#$b#我跟你说过我那个爱上人鱼的朋友吗？#$b#没有吗？Well, I've got quite the treat for you!",
+        "Juliet_TalentShow2": "那位渔夫和他的人鱼妻子后来怎样了？噢……那就是另一个故事了！"
+            }
+        },
+        {
+            "LogName": "Tell Wizard",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Wizard",
+            "Entries": {
+        "Juliet_TalentShow": "你知道的，我不是那种可以雇佣去表演的法师……$1"
+            }
+        },
+        {
+            "LogName": "Tell Marlon",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarlonFay",
+            "Entries": {
+        "Juliet_TalentShow": "谢谢你邀请我，@。但恐怕我得婉言拒绝。#$b#我觉得我的才能不适合在社区中心展示。"
+            }
+        },
+        {
+            "LogName": "Tell Marlon",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Marlon",
+            "Entries": {
+        "Juliet_TalentShow": "谢谢你邀请我，孩子。但恐怕我得婉言拒绝。#$b#我觉得我的才能不适合在社区中心展示。",
+        "Juliet_TalentShow2": "不能怪大家，但这次演出有点平平无奇。"
+            }
+        },
+        {
+            "LogName": "Tell Gunther",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Gunther",
+            "Entries": {
+        "Juliet_TalentShow": "我没有什么隐藏的才能，但我这里有个漂亮的晶球。朱丽叶建议我帮忙装饰场地。"
+            }
+        },
+        {
+            "LogName": "Tell Juliet",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Juliet",
+            "Entries": {
+        "Juliet_TalentShow": "好的……镇长愿意让我们使用社区中心……所以……我要开始准备装饰了，再联系格斯提供饮食……#$b#呃，组织活动真是太复杂了，对吧？",
+        "Juliet_TalentShow2": "镇长希望我明年再举办一次才艺表演。所以我想这次活动应该挺成功的，对吧？$1"
+            }
+        },
+        {
+            "LogName": "Tell Jasper",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Jasper",
+            "Entries": {
+        "Juliet_TalentShow": "朱丽叶女士正在发掘我们的秘密才能？噢，我的才能实在太平凡了。#$b#好吧，我想我也可以讲一个关于哥布林的故事……或者去寻找那个旧骨笛……",
+            }
+        },
+        {
+            "LogName": "Tell Jessie",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Jessie",
+            "Entries": {
+        "Juliet_TalentShow": "我们的朱丽叶正在组织举办才艺表演？噢，我知道她总有一天会大放光芒。#$b#噢，不，不会有人想看我的秘密才能的。但我会在精神上支持她！$1"
+            }
+        },
+        {
+            "LogName": "Tell Vincent",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Vincent",
+            "Entries": {
+        "Juliet_TalentShow": "噢，真酷！不知道我能不能教我的蜗牛耍点把戏。哦哦，或者我也可以去讲笑话！$1#$b#你管假的面条叫什么？$3#$b#意面！懂了吗？$1",
+        "Juliet_TalentShow2": "真是太有意思了！不过要是我们下次还举办才艺表演的话，可不可以有奖品啊？$1"
+            }
+        },
+        {
+            "LogName": "Tell Jas",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Jas",
+            "Entries": {
+        "Juliet_TalentShow": "噢！在大家面前表演听起来有点吓人。",
+        "Juliet_TalentShow2": "克林特先生说可以让嗅嗅先生和我一起住！$1#$b#我们给他在畜棚里做了个小家！"
+            }
+        },
+        {
+            "LogName": "Tell Mr Ginger",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MisterGinger",
+            "Entries": {
+        "Juliet_TalentShow": "噢，对了，你的才艺表演秀。真滑稽。我什么都愿意为贾斯做，不过耍把戏？嗯……除非我有奶酪吃。$3",
+        "Juliet_TalentShow2": "真不错……所以贾斯现在有兔子了。不过它不太喜欢我，总是用怪怪的粉色眼睛盯着我看。#$b#我觉得它有可能是个吸血鬼。"
+            },
+            "When": {
+                "HasSeenEvent": "50706121",
+                "HasSeenEvent |contains=5295000": false
+            }
+        },
+        {
+            "LogName": "Tell Lucikiel",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Lucikiel",
+            "Entries": {
+        "Juliet_TalentShow": "我隐藏的才能可以把整个小镇夷为平地，让镇民们都像吓坏了的动物一样缩成一团。#$b#相信你更愿意让我在一边看着。",
+        "Juliet_TalentShow2": "他们都觉得那个把帽子变成兔子的戏法只是幻觉，聪明人的把戏。#$b#真是太天真了。"
+            }
+        }
+    ]
+}

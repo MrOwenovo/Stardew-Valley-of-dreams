@@ -1,0 +1,82 @@
+{
+  "Changes": [	
+  
+//Movie Reactions
+	    		{
+      "Action": "EditData",
+      "Target": "Data/MoviesReactions",	  
+		   "When": {
+		   "Season": "winter",
+		   "Day": "17",
+		   },
+    "Entries":   {
+	"Wizard":{
+    "NPCName": "Wizard",
+    "Reactions": [
+      {
+        "Tag": "winter_movie_0",
+        "Response": "like",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "元素精灵很好奇为什么生日对人类有这么重大的意义……"
+          },
+          "DuringMovie": null,
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "星之果实有着许多神秘的力量。但这部电影……几乎都只是世俗想象的创作而已。"
+          }
+        },
+        "ID": "reaction_0"
+      },
+      {
+        "Tag": "winter_movie_1",
+        "Response": "like",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "元素精灵很好奇为什么生日对人类有这么重大的意义……"
+          },
+          "DuringMovie": null,
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "爱情……对我而言太复杂了，也没什么钻研的价值。我选择对其敬而远之。"
+          }
+        },
+        "ID": "reaction_1"
+      },
+    ]
+  },
+	}
+			},
+
+  	
+  		{
+      "Action": "EditData",
+      "Target": "Strings/Characters",	  
+		   "When": {
+		   "Season": "winter",
+		   "Day": "17",
+		   },
+      "Entries": {
+		  "MovieInvite_Invited_Wizard": "生日庆祝？我没空。#$b#……等等。元素精灵对这种活动很好奇……#$b#行吧。等你到目的地了，我就会现身的。再会。",
+     }
+    },
+	
+		{
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Wizard",	  
+      "Entries": {
+		"winter_17": "生日？如果你问这副躯壳是什么时候降临于世的，那就是冬17日。#$e#{{Random: 我对这种世俗的节日没有兴趣。没什么事的话请不要打扰我。++ 镇长也来问过我这个问题。世俗的人们似乎对这种节日格外热衷。|inputSeparator=++}}",
+		"winter_17_2": "生日？如果你问这副躯壳是什么时候降临于世的，那就是冬17日。#$e#{{Random: 我对这种世俗的节日没有兴趣。没什么事的话请不要打扰我。++ 镇长也来问过我这个问题。世俗的人们似乎对这种节日格外热衷。|inputSeparator=++}}",
+     }
+    },
+  
+  ]
+}

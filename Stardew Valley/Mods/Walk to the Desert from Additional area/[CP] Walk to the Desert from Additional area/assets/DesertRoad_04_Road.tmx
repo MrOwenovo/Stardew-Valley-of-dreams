@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.4" orientation="orthogonal" renderorder="right-down" width="5" height="6" tilewidth="16" tileheight="16" infinite="0" nextlayerid="11" nextobjectid="61">
+ <properties>
+  <property name="Arch" value="124 .005 125 .004 126 .0003 127 .0003"/>
+  <property name="Debris" value="6 .02 3 8 .01 3 0 .03 4 2 .025 3"/>
+  <property name="Fall_Objects" value="88 .8 90 .8"/>
+  <property name="Fish" value="164 .2 165 .08 166 .001 142 .2 143 .02"/>
+  <property name="Outdoors" value="T"/>
+  <property name="Spring_Objects" value="88 .8 90 .8"/>
+  <property name="Summer_Objects" value="88 .8 90 .8"/>
+  <property name="Winter_Objects" value="88 .8 90 .8"/>
+ </properties>
+ <tileset firstgid="1" name="Paths" tilewidth="16" tileheight="16" tilecount="36" columns="4">
+  <image source="paths.png" width="64" height="144"/>
+ </tileset>
+ <tileset firstgid="37" source="outdoors.tsx"/>
+ <tileset firstgid="2012" name="z_sucai2" tilewidth="16" tileheight="16" tilecount="48" columns="8">
+  <image source="sucai2.png" width="128" height="105"/>
+ </tileset>
+ <tileset firstgid="2060" name="z_spring_island_tilesheet_1" tilewidth="16" tileheight="16" tilecount="1280" columns="32">
+  <image source="spring_island_tilesheet_1.png" width="512" height="640"/>
+ </tileset>
+ <tileset firstgid="3340" name="z_DesertTiles" tilewidth="16" tileheight="16" tilecount="368" columns="16">
+  <image source="DesertTiles.png" width="256" height="368"/>
+  <tile id="0">
+   <properties>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="16">
+   <properties>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="17">
+   <properties>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="18">
+   <properties>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="32">
+   <properties>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="33">
+   <properties>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="34">
+   <properties>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="35">
+   <properties>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="36">
+   <properties>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="48">
+   <properties>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="49">
+   <properties>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="50">
+   <properties>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="52">
+   <properties>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="64">
+   <properties>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="65">
+   <properties>
+    <property name="Diggable" value="T"/>
+    <property name="Spawnable" value="T"/>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="66">
+   <properties>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="67">
+   <properties>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="68">
+   <properties>
+    <property name="Diggable" value="T"/>
+    <property name="Spawnable" value="T"/>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="80">
+   <properties>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="81">
+   <properties>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="82">
+   <properties>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="91">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="92">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="93">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="94">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="95">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="96">
+   <properties>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="97">
+   <properties>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="98">
+   <properties>
+    <property name="Type" value="Dirt"/>
+   </properties>
+  </tile>
+  <tile id="107">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="108">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="109">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="110">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="111">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="123">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="124">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="125">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="126">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+   <animation>
+    <frame tileid="126" duration="1000"/>
+    <frame tileid="127" duration="1000"/>
+   </animation>
+  </tile>
+  <tile id="127">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+   <animation>
+    <frame tileid="127" duration="1000"/>
+    <frame tileid="126" duration="1000"/>
+   </animation>
+  </tile>
+  <tile id="139">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="140">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="141">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="143">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="155">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="156">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="171">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="172">
+   <properties>
+    <property name="Water" value="T"/>
+   </properties>
+  </tile>
+  <tile id="173">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="174">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="190">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+  <tile id="206">
+   <properties>
+    <property name="Type" value="Stone"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="3708" name="z_DesertTiles_Extended" tilewidth="16" tileheight="16" tilecount="33" columns="3">
+  <image source="DesertTiles_Extended.png" width="48" height="176"/>
+ </tileset>
+ <layer id="1" name="Back" width="5" height="6">
+  <data encoding="base64" compression="zlib">
+   eJybzcsABrOR6FNQNjK9C8pGpm9B2cg0NnWroGxkGgBdDw4C
+  </data>
+ </layer>
+ <layer id="3" name="Buildings" width="5" height="6">
+  <data encoding="base64" compression="zlib">
+   eJzrZoCAbiS6mw5iAF6KCcc=
+  </data>
+ </layer>
+ <layer id="5" name="Front" width="5" height="6">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgYAAAAeAAB
+  </data>
+ </layer>
+ <layer id="7" name="Paths" width="5" height="6">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgYAAAAeAAB
+  </data>
+ </layer>
+ <layer id="9" name="AlwaysFront" width="5" height="6">
+  <data encoding="base64" compression="zlib">
+   eJxjYKA9qOFFpUEAABF+ARM=
+  </data>
+ </layer>
+ <objectgroup id="2" name="Back">
+  <object id="42" name="TileData" x="0" y="80" width="16" height="16">
+   <properties>
+    <property name="TouchAction" value="Warp Desert 47 27"/>
+   </properties>
+  </object>
+  <object id="43" name="TileData" x="0" y="64" width="16" height="16">
+   <properties>
+    <property name="TouchAction" value="Warp Desert 47 27"/>
+   </properties>
+  </object>
+  <object id="44" name="TileData" x="0" y="48" width="16" height="16">
+   <properties>
+    <property name="TouchAction" value="Warp Desert 47 27"/>
+   </properties>
+  </object>
+  <object id="45" name="TileData" x="0" y="32" width="16" height="16">
+   <properties>
+    <property name="TouchAction" value="Warp Desert 47 27"/>
+   </properties>
+  </object>
+  <object id="46" name="TileData" x="0" y="16" width="16" height="16">
+   <properties>
+    <property name="TouchAction" value="Warp Desert 47 27"/>
+   </properties>
+  </object>
+  <object id="47" name="TileData" x="0" y="0" width="16" height="16">
+   <properties>
+    <property name="TouchAction" value="Warp Desert 47 27"/>
+   </properties>
+  </object>
+  <object id="49" name="TileData" x="32" y="80" width="16" height="16">
+   <properties>
+    <property name="TouchAction" value="Warp Desert 57 27"/>
+   </properties>
+  </object>
+  <object id="50" name="TileData" x="32" y="64" width="16" height="16">
+   <properties>
+    <property name="TouchAction" value="Warp Desert 57 27"/>
+   </properties>
+  </object>
+  <object id="51" name="TileData" x="32" y="48" width="16" height="16">
+   <properties>
+    <property name="TouchAction" value="Warp Desert 57 27"/>
+   </properties>
+  </object>
+  <object id="52" name="TileData" x="32" y="32" width="16" height="16">
+   <properties>
+    <property name="TouchAction" value="Warp Desert 57 27"/>
+   </properties>
+  </object>
+  <object id="53" name="TileData" x="32" y="16" width="16" height="16">
+   <properties>
+    <property name="TouchAction" value="Warp Desert 57 27"/>
+   </properties>
+  </object>
+  <object id="54" name="TileData" x="32" y="0" width="16" height="16">
+   <properties>
+    <property name="TouchAction" value="Warp Desert 57 27"/>
+   </properties>
+  </object>
+  <object id="55" name="TileData" x="64" y="80" width="16" height="16">
+   <properties>
+    <property name="TouchAction" value="Warp Custom_WTDR_GhostTown 1 36"/>
+   </properties>
+  </object>
+  <object id="56" name="TileData" x="64" y="64" width="16" height="16">
+   <properties>
+    <property name="TouchAction" value="Warp Custom_WTDR_GhostTown 1 36"/>
+   </properties>
+  </object>
+  <object id="57" name="TileData" x="64" y="48" width="16" height="16">
+   <properties>
+    <property name="TouchAction" value="Warp Custom_WTDR_GhostTown 1 36"/>
+   </properties>
+  </object>
+  <object id="58" name="TileData" x="64" y="32" width="16" height="16">
+   <properties>
+    <property name="TouchAction" value="Warp Custom_WTDR_GhostTown 1 36"/>
+   </properties>
+  </object>
+  <object id="59" name="TileData" x="64" y="16" width="16" height="16">
+   <properties>
+    <property name="TouchAction" value="Warp Custom_WTDR_GhostTown 1 36"/>
+   </properties>
+  </object>
+  <object id="60" name="TileData" x="64" y="0" width="16" height="16">
+   <properties>
+    <property name="TouchAction" value="Warp Custom_WTDR_GhostTown 1 36"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="4" name="Buildings"/>
+ <objectgroup id="6" name="Front"/>
+ <objectgroup id="8" name="Paths"/>
+ <objectgroup id="10" name="AlwaysFront"/>
+</map>

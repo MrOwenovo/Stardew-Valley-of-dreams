@@ -1,0 +1,403 @@
+{
+  "Changes": [	
+  
+  
+  			{
+			"Action": "EditData",
+			"Target": "Characters/schedules/Vincent",
+			"When": {
+			"Season": "summer",
+			"Day": "4",
+            "ScheduleEdits": true,
+			},
+ 			"Entries": {
+				"summer": "900 SamHouse 4 8 0/1100 SamHouse 2 15 2 vincent_play/1340 Beach 43 24 2 vincent_beach \"Strings\\schedules\\Vincent:beachbirthday\"/1900 SamHouse 4 8 0/2100 SamHouse 8 22 3 vincent_sleep",
+			}
+		},
+		
+  //Schedule Dialogue (Jas Birthday)
+  			{
+			"Action": "EditData",
+			"Target": "Strings/schedules/Vincent",
+			"When": {
+			"Season": "summer",
+			"Day": "4",
+			},
+			"Entries": {
+			"beachbirthday": "没下雨真的太好了。我们今天可以玩个够！$1",
+			}
+		},
+		
+  //Schedule Dialogue (Leo Birthday)
+
+  			{
+			"Action": "EditData",
+			"Target": "Characters/schedules/Vincent",
+			"When": {
+			"HasSeenEvent |contains=6497428": "true",
+			"Season": "summer",
+			"Day": "26",
+            "ScheduleEdits": true,
+			},
+ 			"Entries": {
+				"summer": "900 SamHouse 4 8 0/1100 SamHouse 2 15 2 vincent_play/1340 Beach 43 24 2 vincent_beach \"Strings\\schedules\\Vincent:beachbirthday\"/1900 SamHouse 4 8 0/2100 SamHouse 8 22 3 vincent_sleep",
+			}
+		},
+		  			{
+			"Action": "EditData",
+			"Target": "Strings/schedules/Vincent",
+			"When": {
+			"HasSeenEvent |contains=6497428": "true",
+			"Season": "summer",
+			"Day": "26",
+			},
+			"Entries": {
+			"beachbirthday": "雷欧好像喜欢我们准备的生日礼物。#$e#但是我想起暑假快要结束了……$2",
+			}
+		},
+		
+  
+  
+  
+  //Schedule Dialogue
+  			{
+			"Action": "EditData",
+			"Target": "Strings/animationDescriptions",
+			"When": {
+			"Season": "spring",
+			"Day": "10",
+		   "Relationship:Penny |contains=Married": "false",
+		   "Relationship:Sam |contains=Married": "false",
+			},
+			"Entries": {
+			"vincent_read_right": "潘妮小姐刚请我吃了她做的甜点，是我的生日礼物。#$b#我只告诉你……那好难吃。$3",
+			}
+		},
+
+  			{
+			"Action": "EditData",
+			"Target": "Strings/animationDescriptions",
+			"When": {
+			"Season": "spring",
+			"Day": "10",
+		   "Relationship:Penny |contains=Married": "true",
+		   "Relationship:Sam |contains=Married": "false",
+			},
+			"Entries": {
+			"vincent_read_right": "潘妮小姐说因为今天是我的生日，所以才更该学习……救我。$2",
+			}
+		},
+		
+  			{
+			"Action": "EditData",
+			"Target": "Strings/animationDescriptions",
+			"When": {
+			"Season": "spring",
+			"Day": "10",
+		   "Relationship:Penny |contains=Married": "false",
+		   "Relationship:Sam |contains=Married": "true",
+			},
+			"Entries": {
+			"vincent_read_right": "潘妮小姐今年做的饼干仍然很难吃……但是我全吃光了。#$b#因为是潘妮小姐特地为我做的！$1#$e#你做菜失败时，哥哥也有这样默默吃光嘛？$1#$b#噢，哥哥做失败的情况比较多？原来如此！#$b#%潘妮的声音：＂@，抱歉，但我们在阅读……＂#$b#抱歉……我们待会再聊。$2",
+			}
+		},
+		
+  			{
+			"Action": "EditData",
+			"Target": "Strings/animationDescriptions",
+			"When": {
+			"Season": "fall",
+			"Day": "2",
+		   "Relationship:Penny |contains=Married": "false",
+			},
+			"Entries": {
+			"vincent_read_right": "潘妮小姐很高兴地收下了我的生日礼物，然后让我们继续读书……$2",
+			}
+		},
+  			{
+			"Action": "EditData",
+			"Target": "Strings/animationDescriptions",
+			"When": {
+			"Season": "fall",
+			"Day": "2",
+		   "Relationship:Penny |contains=Married": "true",
+			},
+			"Entries": {
+			"vincent_read_right": "你是没有为潘妮小姐准备庆生活动嘛？为什么我们今天还要上课？$2",
+			}
+		},
+//Movie Invitation  
+  		{
+      "Action": "EditData",
+      "Target": "Strings/Characters",	  
+		   "When": {
+		   "Relationship:Sam |contains=Married": "false",
+		   "Season": "spring",
+		   "Day": "10",
+		   },
+      "Entries": {
+		  "MovieInvite_Invited_Vincent": "电影？因为今天是我的生日吗？！耶！那我先去电影院等你！",
+     }
+    },
+  		{
+      "Action": "EditData",
+      "Target": "Strings/Characters",  
+		   "When": {
+		   "Relationship:Sam |contains=Married": "true",
+		   "Season": "spring",
+		   "Day": "10",
+		   },
+      "Entries": {
+		  "MovieInvite_Invited_Vincent": "生日电影？耶，我去！#$b#哥哥会一起来吗？噢，不会？$3#$b#好吧，没关系……我们电影院见！",
+     }
+    },
+	
+	//Movie Reactions
+	    		{
+      "Action": "EditData",
+      "Target": "Data/MoviesReactions",	  
+		   "When": {
+		   "Season": "spring",
+		   "Day": "10",
+		   "Relationship:Sam |contains=Married": "false",
+		   },
+    "Entries":   {
+	"Vincent":{
+    "NPCName": "Vincent",
+    "Reactions": [
+      {
+        "Tag": "spring_movie_0",
+        "Response": "love",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "我好兴奋！我可以在座位上吃生日蛋糕吗？或者糖果！$1"
+          },
+          "DuringMovie": {
+            "ResponsePoint": null,
+            "Script": "/jump Vincent/pause 400/playSound reward/message \"文森特玩得很开心！\"",
+            "Text": ""
+          },
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "小树苗好厉害！我长大了也想要像他那样出外冒险。$1"
+          }
+        },
+        "ID": "reaction_0"
+      },
+      {
+        "Tag": "spring_movie_1",
+        "Response": "love",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "我好兴奋！我可以在座位上吃生日蛋糕吗？或者糖果！$1"
+          },
+          "DuringMovie": null,
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "我没有听旁白在说什么，我都在看影像。#$b#我觉得挺好玩的，我回去要跟哥哥说！$1"
+          }
+        },
+        "ID": "reaction_1"
+      },
+    ]
+  },
+	}
+			},
+
+			{
+      "Action": "EditData",
+      "Target": "Data/MoviesReactions",	  
+		   "When": {
+		   "Relationship:Sam |contains=Married": "true",
+		   "Season": "spring",
+		   "Day": "10",
+		   },
+    "Entries":   {
+	"Vincent":{
+    "NPCName": "Vincent",
+    "Reactions": [
+      {
+        "Tag": "spring_movie_0",
+        "Response": "love",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "真希望哥哥也可以来帮我庆生……他以前常常跟我出去玩。$3#$b#他在农场是不是很忙？所以都没空来看我了？$3#$b#噢，起码你还会来找我……你也算是我的哥哥吧！^噢，起码你还会来找我……你也算是我的姐姐吧！"
+          },
+          "DuringMovie": {
+            "ResponsePoint": null,
+            "Script": "/jump Vincent/pause 400/playSound reward/message \"文森特玩得很开心！\"",
+            "Text": ""
+          },
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "电影很好看！$1#$b#不过我从刚才就一直在想……小树苗的家人看到小树苗离开，会不会觉得有点孤单？#$b#就像我很开心哥哥结婚了，但也很想念他。$3"
+          }
+        },
+        "ID": "reaction_0"
+      },
+      {
+        "Tag": "spring_movie_1",
+        "Response": "love",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "真希望哥哥也可以来帮我庆生……他以前常常跟我出去玩。$3#$b#他在农场是不是很忙？所以都没空来看我了？$3#$b#噢，起码你还会来找我……你也算是我的哥哥吧！^噢，起码你还会来找我……你也算是我的姐姐吧！"
+          },
+          "DuringMovie": null,
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "我试着听旁白在说什么了！虽然我不太听得懂……但是我想到了好几个问题。明天上课时我或许可以问一下潘妮小姐。"
+          }
+        },
+        "ID": "reaction_1"
+      },
+    ]
+  },
+	}
+			},
+			
+//Normal Dialogue			
+	    {
+        "Action": "EditData",
+        "Target": "Characters/Dialogue/Vincent",
+        "Entries":
+        {
+			
+//Vincent->Penny
+ 				"fall_1": "前几天我趁着暑假还没结束时，跟哥哥去山里采了葡萄。#$b#我想送给潘妮小姐！她明天就生日了。$1#$e#{{Random: 葡萄好好吃，我忍不住吃了一点。但是大部分都还是给潘妮小姐的礼物。$1++ 我最喜欢吃葡萄了。潘妮小姐一定也会喜欢的！$1|inputSeparator=++}}",
+ 				"fall_1_2": "前几天我趁着暑假还没结束时，跟哥哥去山里采了葡萄。#$b#我想送给潘妮小姐！她明天就生日了。$1#$e#{{Random: 葡萄好好吃，我忍不住吃了一点。但是大部分都还是给潘妮小姐的礼物。$1++ 我最喜欢吃葡萄了。潘妮小姐一定也会喜欢的！$1|inputSeparator=++}}",
+ 				"fall_1_inlaw_Penny": "啊，@叔叔！你可以帮我把这转交给潘妮小姐吗？她明天生日！$1^啊，@姨姨！你可以帮我把这转交给潘妮小姐吗？她明天生日！$1#$b#[398]我是想明天上课时给她的……但是妈妈说男生给已婚女性送礼物不太恰当。是这样吗？#$e#那你也不可以送其他单身的人礼物噢！你一定要好好待潘妮小姐！$1",
+ 				"fall_1_2_inlaw_Penny": "啊，@叔叔！你可以帮我把这转交给潘妮小姐吗？她明天生日！$1^啊，@姨姨！你可以帮我把这转交给潘妮小姐吗？她明天生日！$1#$b#[398]我是想明天上课时给她的……但是妈妈说男生给已婚女性送礼物不太恰当。是这样吗？#$e#那你也不可以送其他单身的人礼物噢！你一定要好好待潘妮小姐！$1",
+
+//Vincent->Jodi
+ 				"fall_10": "明天是妈妈的生日！$1#$b#潘妮小姐说我要当个好孩子……让妈妈开心一点。$3#$q 115320400/115320401 VincentJodibirthday_followup#我该做什么好呢？
+					#$r 115320400 10 VincentJodibirthday_A#准备生日礼物。
+					#$r 115320401 10 VincentJodibirthday_B#准备生日大餐。
+					#$r 115320401 10 VincentJodibirthday_C#你做平常的自己就可以。",
+ 				"fall_10_2": "明天是妈妈的生日！$1#$b#潘妮小姐说我要当个好孩子……让妈妈开心一点。$3#$q 115320400/115320401 VincentJodibirthday_followup#我该做什么好呢？
+					#$r 115320400 10 VincentJodibirthday_A#准备生日礼物。
+					#$r 115320401 10 VincentJodibirthday_B#准备生日大餐。
+					#$r 115320401 10 VincentJodibirthday_C#你做平常的自己就可以。",
+					VincentJodibirthday_A: "噢！对！#$b#可是妈妈喜欢什么啊？$3#$e#妈妈好像没跟我说过她喜欢什么……这好奇怪噢。$3#$e#我想我要问一下哥哥。$3",
+					VincentJodibirthday_B: "大餐？！我没想过这个！$1#$e#可是妈妈说做饭好危险。$3#$e#我想我该跟哥哥商量……$3",
+ 					VincentJodibirthday_C: "真的吗？我就知道我一直是好孩子！$1#$e#可是还是想要给妈妈准备些特别的东西。#$e#我想我该跟哥哥商量……$3",
+ 		VincentJodibirthday_followup:"可是妈妈喜欢什么啊？我想我要问一下哥哥。$3",
+
+ 				"fall_10_inlaw_Sam": "妈妈明天要生日了。我想要帮妈妈的忙！可是我不太确定要做什么……{{Random: 我想我会打电话问一下哥哥。$3#$e#妈妈说我太常打电话给哥哥了，会打扰他的婚后生活……#$b#可是你不要介意好不好？我真的好想念他……我们现在没法像以前那样天天见面了。$2++ 我想我会做些以前哥哥会做的事情。$3#$e#哥哥搬走后妈妈好像有些……不开心？$3#$b#所以我想做些事情哄她开心。毕竟我现在是家里唯一的男孩了！$1#$e#你觉得哥哥知道我这么说会开心吗？帮我问候一下哥哥，好不好？|inputSeparator=++}}",
+ 				"fall_10_2_inlaw_Sam": "妈妈明天要生日了。我想要帮妈妈的忙！可是我不太确定要做什么……{{Random: 我想我会打电话问一下哥哥。$3#$e#妈妈说我太常打电话给哥哥了，会打扰他的婚后生活……#$b#可是你不要介意好不好？我真的好想念他……我们现在没法像以前那样天天见面了。$2++ 我想我会做些以前哥哥会做的事情。$3#$e#哥哥搬走后妈妈好像有些……不开心？$3#$b#所以我想做些事情哄她开心。毕竟我现在是家里唯一的男孩了！$1#$e#你觉得哥哥知道我这么说会开心吗？帮我问候一下哥哥，好不好？|inputSeparator=++}}",
+				
+//Vincent->Sam
+
+				"summer_16": "你好啊！明天是我哥哥的生日！$1#$e#我想要和哥哥玩，但是哥哥要上班。$2#$b#{{Random: 为什么生日也不能放假？好可怜。$3++ 妈妈买了一整盒的枫糖甜甜圈。我也可以吃……太棒了！$1|inputSeparator=++}}",
+				"summer_16_2": "你好啊！明天是我哥哥的生日！$1#$e#我想要和哥哥玩，但是哥哥要上班。$2#$b#{{Random: 为什么生日也不能放假？好可怜。$3++ 妈妈买了一整盒的枫糖甜甜圈。我也可以吃……太棒了！$1|inputSeparator=++}}",
+				"summer_16_inlaw_Sam": "你好！#$b#$y '我给哥哥准备了生日礼物……你可以代我给他嘛？_好。_谢谢！妈妈说农场太远，我不能去看哥哥……但是我好想早点给他礼物！[394]$1*这是我在海边捡到最漂亮的贝壳。我还以为要下周才能给哥哥了。*碰见你真好！$1_不行，我沒空。_……噢……$2*妈妈说农场太远，我不能去看哥哥……$2*那可能要等哥哥回家才能给他了……要等好久……＊抽泣＊",
+				"summer_16_2_inlaw_Sam": "你好！#$b#$y '我给哥哥准备了生日礼物……你可以代我给他嘛？_好。_谢谢！妈妈说农场太远，我不能去看哥哥……但是我好想早点给他礼物！[394]$1*这是我在海边捡到最漂亮的贝壳。我还以为要下周才能给哥哥了。*碰见你真好！$1_不行，我沒空。_……噢……$2*妈妈说农场太远，我不能去看哥哥……$2*那可能要等哥哥回家才能给他了……要等好久……＊抽泣＊",
+				
+				
+
+//Vincent->Kent			
+				"spring_3": "明天是爸爸生日，但是他不在我们身边。$3#$e#妈妈仍然会买蛋糕庆祝。我希望爸爸在外面也能吃到蛋糕！$1",
+				"spring_3_2": "明天是爸爸的生日。我在上课时画了爸爸的画。我希望他会喜欢！$1#$e#{{Random: 爸爸回来后很少说话。我不知道他是怎么了……？$3++ 我想让爸爸陪我玩一天……可是哥哥说爸爸现在有点状况不好，所以他会陪我玩。我觉得那也不坏。|inputSeparator=++}}",
+				"spring_3_inlaw_Sam": "你好！明天是爸爸生日，我会和妈妈去买蛋糕庆祝！#$e#以前是哥哥跟妈妈去买的，但是哥哥现在不跟我们一起住了，所以我会帮忙。#$b#你回家告诉哥哥好嘛？我已经是个大人了！$1#$e#{{Random: 哥哥搬走后爸爸比较常陪我玩了。我很高兴！$1++ 我感觉我开始有点习惯没有哥哥的生活了……但是每周见到他还是很让我高兴！|inputSeparator=++}}",
+				"spring_3_2_inlaw_Sam": "你好！明天是爸爸生日，我会和妈妈去买蛋糕庆祝！#$e#以前是哥哥跟妈妈去买的，但是哥哥现在不跟我们一起住了，所以我会帮忙。#$b#你回家告诉哥哥好嘛？我已经是个大人了！$1#$e#{{Random: 哥哥搬走后爸爸比较常陪我玩了。我很高兴！$1++ 我感觉我开始有点习惯没有哥哥的生活了……但是每周见到他还是很让我高兴！|inputSeparator=++}}",
+				
+//Vincent->Jas
+				"summer_3": "你好！明天是贾思的生日。$1#$e#我希望明天不要下雨，那我们就能去海滩玩，我也能把生日礼物交给她了。#$b#$y '噢，你要猜猜礼物是什么嘛？_超大的蛋糕。_噢……不对。妈妈不让我买蛋糕当生日礼物……她说我得靠自己给贾思准备礼物。$3_可爱的娃娃。_对！我不久前从土里找到了一个红红的娃娃。她应该会喜欢的！$1_新抓的虫子。_噢，我也想，但是贾思不喜欢虫子。*我不知道为什么？她每次都会把虫子放回原本的地方。$3'",
+				"summer_3_2": "你好！明天是贾思的生日。$1#$e#我希望明天不要下雨，那我们就能去海滩玩，我也能把生日礼物交给她了。#$b#$y '噢，你要猜猜礼物是什么嘛？_超大的蛋糕。_噢……不对。妈妈不让我买蛋糕当生日礼物……她说我得靠自己给贾思准备礼物。$3_可爱的娃娃。_对！我不久前从土里找到了一个红红的娃娃。她应该会喜欢的！$1_新抓的虫子。_噢，我也想，但是贾思不喜欢虫子。*我不知道为什么？她每次都会把虫子放回原本的地方。$3'",
+       }
+    },	
+
+//Vincent->Vincent
+		{
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Vincent",	  
+		"When": {
+		"HasSeenEvent |contains=6497428": "false",
+		"weather |contains=Rain, Storm": "false",
+},
+      "Entries": {		
+                 "spring_10": "今天是我的生日，妈妈给我做了很大很大的蛋糕！$1#$b#如果不用去学习就更好了……妈妈说不能因为这样就不去上课。$2#$e#不过这样我就能见到潘妮小姐和贾思了。我喜欢跟他们见面。",
+                 "spring_10_2": "今天是我的生日，妈妈给我做了很大很大的蛋糕！$1#$b#如果不用去学习就更好了……妈妈说不能因为这样就不去上课。$2#$e#不过这样我就能见到潘妮小姐和贾思了。我喜欢跟他们见面。",
+				"spring_10_inlaw_Sam": "你好！今天是我的生日！$1#$q 115321402/115321403 SamVincentInlawbirthday_followup#今天早上好像有人在我床边放了礼物盒，还亲了我的额头……我好奇那是谁？
+					#$r 115321402 10 SamVincentInlawbirthday_A#潘妮小姐。
+					#$r 115321403 10 SamVincentInlawbirthday_B#你哥哥。
+					#$r 115321403 10 SamVincentInlawbirthday_C#是我。",
+ 				"spring_10_2_inlaw_Sam": "你好！今天是我的生日！$1#$q 115321402/115321403 SamVincentInlawbirthday_followup#今天早上好像有人在我床边放了礼物盒，还亲了我的额头……我好奇那是谁？
+					#$r 115321402 10 SamVincentInlawbirthday_A#潘妮小姐。
+					#$r 115321403 10 SamVincentInlawbirthday_B#你哥哥。
+					#$r 115321403 10 SamVincentInlawbirthday_C#是我。",
+					SamVincentInlawbirthday_A: "潘妮小姐？！#$b#……哎，哎嘿嘿……我太高兴了！$1#$e#虽然不知道是谁，但是让我心里暖暖的。我很高兴！$1",
+					SamVincentInlawbirthday_B: "哥哥？不要骗我！$3#$b#早上哥哥跟我电话聊过了，他说不是他。#$e#虽然不知道是谁，但是让我心里暖暖的。我很高兴！$1",
+					SamVincentInlawbirthday_C: "是你？……真的嘛？#$b#我总觉得不是。而且这是不是代表我今天从你那里收不到礼物了……$3#$e#虽然不知道是谁，但是让我心里暖暖的。我很高兴！$1",
+ 		SamVincentInlawbirthday_followup:"虽然不知道是谁，但是让我心里暖暖的。我很高兴！$1",}
+    },
+  
+		{
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Vincent",	  
+		"When": {
+		"HasSeenEvent |contains=6497428": "false",
+		"weather": "Rain, Storm",
+},
+      "Entries": {		
+                 "spring_10": "今天是我的生日，妈妈给我做了很大很大的蛋糕！$1#$e#可惜今天下雨，不然就可以和贾思跟潘妮小姐一起庆祝了。$2",
+                 "spring_10_2": "今天是我的生日，妈妈给我做了很大很大的蛋糕！$1#$e#可惜今天下雨，不然就可以和贾思跟潘妮小姐一起庆祝了。$2",
+                 "spring_10_inlaw_Sam": "你好！今天是我的生日！$1#$e#$y '今天早上好像有人在我床边放了礼物盒，还亲了我的额头……我好奇那是谁？_潘妮小姐。_潘妮小姐？！*……哎，哎嘿嘿……我太高兴了！$1_你哥哥。_哥哥？不要骗我！*早上哥哥跟我电话聊过了，他说不是他。_是我。_是你？……真的嘛？*我总觉得不是。而且这是不是代表我今天从你那里收不到礼物了……$3'#$e#虽然不知道是谁，但是让我心里暖暖的。我很高兴！",
+                 "spring_10_2_inlaw_Sam": "你好！今天是我的生日！$1#$e#$y '今天早上好像有人在我床边放了礼物盒，还亲了我的额头……我好奇那是谁？_潘妮小姐。_潘妮小姐？！*……哎，哎嘿嘿……我太高兴了！$1_你哥哥。_哥哥？不要骗我！*早上哥哥跟我电话聊过了，他说不是他。_是我。_是你？……真的嘛？*我总觉得不是。而且这是不是代表我今天从你那里收不到礼物了……$3'#$e#虽然不知道是谁，但是让我心里暖暖的。我很高兴！",
+     }
+    },
+  
+		{
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Vincent",	  
+		"When": {
+		"HasSeenEvent |contains=6497428": "true",
+		"weather |contains=Rain, Storm": "false",
+},
+      "Entries": {		
+                 "spring_10": "今天是我的生日，妈妈给我做了很大很大的蛋糕！$1#$b#如果不用去学习就更好了……妈妈说不能因为这样就不去上课。$2#$e#不过这样我就能见到潘妮小姐和贾思了。我喜欢跟他们见面。#$b#噢，还有雷欧……我很高兴又多了新朋友！他送了一套超酷的衣服当我的生日礼物。$1",
+                 "spring_10_2": "今天是我的生日，妈妈给我做了很大很大的蛋糕！$1#$b#如果不用去学习就更好了……妈妈说不能因为这样就不去上课。$2#$e#不过这样我就能见到潘妮小姐和贾思了。我喜欢跟他们见面。#$b#噢，还有雷欧……我很高兴又多了新朋友！他送了一套超酷的衣服当我的生日礼物。$1",
+                 "spring_10_inlaw_Sam": "你好！今天是我的生日！$1#$e#$y '今天早上好像有人在我床边放了礼物盒，还亲了我的额头……我好奇那是谁？_潘妮小姐。_潘妮小姐？！*……哎，哎嘿嘿……我太高兴了！$1_你哥哥。_哥哥？不要骗我！*早上哥哥跟我电话聊过了，他说不是他。_是我。_是你？……真的嘛？*我总觉得不是。而且这是不是代表我今天从你那里收不到礼物了……$3'#$e#虽然不知道是谁，但是让我心里暖暖的。我很高兴！",
+                 "spring_10_2_inlaw_Sam": "你好！今天是我的生日！$1#$e#$y '今天早上好像有人在我床边放了礼物盒，还亲了我的额头……我好奇那是谁？_潘妮小姐。_潘妮小姐？！*……哎，哎嘿嘿……我太高兴了！$1_你哥哥。_哥哥？不要骗我！*早上哥哥跟我电话聊过了，他说不是他。_是我。_是你？……真的嘛？*我总觉得不是。而且这是不是代表我今天从你那里收不到礼物了……$3'#$e#虽然不知道是谁，但是让我心里暖暖的。我很高兴！",
+
+//Vincent->Leo
+				 "summer_25": "明天是雷欧的生日！$1#$b#他说过他喜欢贝壳……所以我和贾思合起来做了贝壳饰品。{{Random: 噢，我都是在收集贝壳。饰品是贾思做的。++ 我做饰品时弄坏太多材料了，贾思几乎发火了。|inputSeparator=++}}#$e#{{Random: 雷欧跟我们差满远的，但是我觉得他很有趣！他演小鸟演得好像哦！$1++ 我希望我可以去他的树屋里面玩，可是他好像不太想我去。潘妮小姐说他还在＂适应期＂……那是什么？$3|inputSeparator=++}}",
+				 "summer_25_2": "明天是雷欧的生日！$1#$b#他说过他喜欢贝壳……所以我和贾思合起来做了贝壳饰品。{{Random: 噢，我都是在收集贝壳。饰品是贾思做的。++ 我做饰品时弄坏太多材料了，贾思几乎发火了。|inputSeparator=++}}#$e#{{Random: 雷欧跟我们差满远的，但是我觉得他很有趣！他演小鸟演得好像哦！$1++ 我希望我可以去他的树屋里面玩，可是他好像不太想我去。潘妮小姐说他还在＂适应期＂……那是什么？$3|inputSeparator=++}}",
+     }
+    },
+  
+		{
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Vincent",	  
+		"When": {
+		"HasSeenEvent |contains=6497428": "true",
+		"weather": "Rain, Storm",
+},
+      "Entries": {		
+                 "spring_10": "今天是我的生日，妈妈给我做了很大很大的蛋糕！$1#$e#可惜今天下雨，不然就可以和贾思跟潘妮小姐一起庆祝了。$2#$b#噢，还有雷欧……我很高兴又多了新朋友！$1",
+                 "spring_10_2": "今天是我的生日，妈妈给我做了很大很大的蛋糕！$1#$e#可惜今天下雨，不然就可以和贾思跟潘妮小姐一起庆祝了。$2#$b#噢，还有雷欧……我很高兴又多了新朋友！$1",
+                 "spring_10_inlaw_Sam": "你好！今天是我的生日！$1#$e#$y '今天早上好像有人在我床边放了礼物盒，还亲了我的额头……我好奇那是谁？_潘妮小姐。_潘妮小姐？！*……哎，哎嘿嘿……我太高兴了！$1_你哥哥。_哥哥？不要骗我！*早上哥哥跟我电话聊过了，他说不是他。_是我。_是你？……真的嘛？*我总觉得不是。而且这是不是代表我今天从你那里收不到礼物了……$3'#$e#虽然不知道是谁，但是让我心里暖暖的。我很高兴！",
+                 "spring_10_2_inlaw_Sam": "你好！今天是我的生日！$1#$e#$y '今天早上好像有人在我床边放了礼物盒，还亲了我的额头……我好奇那是谁？_潘妮小姐。_潘妮小姐？！*……哎，哎嘿嘿……我太高兴了！$1_你哥哥。_哥哥？不要骗我！*早上哥哥跟我电话聊过了，他说不是他。_是我。_是你？……真的嘛？*我总觉得不是。而且这是不是代表我今天从你那里收不到礼物了……$3'#$e#虽然不知道是谁，但是让我心里暖暖的。我很高兴！",
+//Vincent->Leo
+				 "summer_25": "明天是雷欧的生日！$1#$b#他说过他喜欢贝壳……所以我和贾思合起来做了贝壳饰品。{{Random: 噢，我都是在收集贝壳。饰品是贾思做的。++ 我做饰品时弄坏太多材料了，贾思几乎发火了。|inputSeparator=++}}#$e#{{Random: 雷欧跟我们差满远的，但是我觉得他很有趣！他演小鸟演得好像哦！$1++ 我希望我可以去他的树屋里面玩，可是他好像不太想我去。潘妮小姐说他还在＂适应期＂……那是什么？$3|inputSeparator=++}}",
+				 "summer_25_2": "明天是雷欧的生日！$1#$b#他说过他喜欢贝壳……所以我和贾思合起来做了贝壳饰品。{{Random: 噢，我都是在收集贝壳。饰品是贾思做的。++ 我做饰品时弄坏太多材料了，贾思几乎发火了。|inputSeparator=++}}#$e#{{Random: 雷欧跟我们差满远的，但是我觉得他很有趣！他演小鸟演得好像哦！$1++ 我希望我可以去他的树屋里面玩，可是他好像不太想我去。潘妮小姐说他还在＂适应期＂……那是什么？$3|inputSeparator=++}}",
+      }
+    },
+  
+  ]
+}

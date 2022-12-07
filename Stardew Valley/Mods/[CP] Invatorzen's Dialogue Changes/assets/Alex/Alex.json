@@ -1,0 +1,157 @@
+{
+    "Changes": [
+
+        //Alex dialogue changes
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Alex",
+            "Entries": {
+                "Tue": "海滩是个值得一玩的好地方，在那里还能做个日光浴。#e#你得时常晒晒太阳，要不然肤色就会变得苍白。#$e#*唉* ……真希望镇上能多些男孩子，你明白我的意思吧？$s^嘿，有空就跟我去海边玩玩吧？你有泳装吗？",
+                "Wed": "今天挺适合打球的，对不对？$u#$e#$q 5/6 Wed_01_old#我还想叫你一起投投球，但你好像不怎么喜欢运动。^如果你是男孩子，我就约你打球了。#$r 6 0 Wed_01_02#^我站在旁边看就好了。#$r 5 15 Wed_01_01#我想和你打球！#$r 5 0 Wed_01_03#^（愤怒）你到底是什么意思？",
+                "Sat": "我的胳膊好酸啊，但对我这样的人来说，这正是取得进步的标志。#e#我昨天肯定做了一千个俯卧撑。",
+                "summer_Tue": "要是我的发型不受男孩们欢迎，我肯定会马上把它换掉。#$e#*唉* ……生活艰辛啊。",
+                "summer_Wed": "嘿，农家男孩儿，我有个问题想问你。^嘿，农家女孩儿，我有个问题想问你。#$b#$q 52/53 summer_Wed_01_old#你觉得我能成为职业选手吗？#$r 52 30 summer_Wed_01_01#^你一定会成为运动场上的传奇#$r 52 0 summer_Wed_01_02#^可能吧，你毕竟练习了那么久#$r 53 -50 summer_Wed_01_03#^别做梦了，你还是老老实实去做推销员吧",
+                "fall_Wed": "嘿，我能问你件事吗?^嘿，我想问你件事。#$e#$q 54/55 fall_Wed_01_old#你觉得我的发型怎么样？^你觉得男孩子会喜欢我的发型吗？#$r 54 30 fall_Wed_01_01#看起来挺时尚的。#$r 55 -30 fall_Wed_01_02#像头上长了蘑菇一样。",
+                "fall_Wed_01_old": "今天我头发上喷太多摩丝了。有点难受。#$e#别碰！#$e#……什么？",
+                "winter_Sat": "镇子里住了一些怪人。#$e#.……就像塞布瑞娜。为什么她总是穿黑色的衣服？#$e#真是搞不懂。"
+            }
+        },
+
+        //Evelyn dialogue changes
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Evelyn",
+            "Entries": {
+                "summer_Mon_inlaw_Alex": "我的孙女怎么样了？我想她住在农场里应该很开心。#$e#她应该得到幸福……她是个好女孩。",
+                "fall_Sat": "你们是爱莉克丝的朋友吗？#$e#她时常担心我会生病。"
+            }
+        },
+
+        //George dialogue change
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/George",
+            "Entries": {
+                "Wed": "爱莉克丝是我的孙女。我跟你说过吗？#$e#哈？没关系随意说。",
+                "Wed_inlaw_Alex": "现在你是我们家里的一分子了。我很高兴我的孙女娶到了这么好的丈夫。^两个女人怎么可以结婚呢？太不正常了……哼。可能是我'跟不上时代'了……",
+                "Wed10_inlaw_Alex": "现在你是我们家里的一分子了……我简直太骄傲了。^我承认，我觉得……两个女人在一起太奇怪了。但是我知道你是个很棒的年轻人，而且我知道你们俩相爱了……我已经改变我的想法了。"
+            }
+        },
+          
+        //Haley dialogue changes
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Haley",
+            "Entries": {
+                "Event_room1": "她？不！#$b#……我以前确实喜欢过爱莉克丝。但是现在不喜欢了！她太不成熟了。",
+                "winter_Sun6": "嗯，你要是见到爱莉克丝，麻烦跟她说声我今天很忙，好吗？#$e#谢谢你。"
+            }
+        },
+
+        //Marriage dialogue change
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MarriageDialogueAlex",
+            "Entries": {
+                "Rainy_Day_4": "或许我该开始看看书。既然我已经为人妻子，就不能变得笨头笨脑的！",
+                "Rainy_Night_1": "怎么样？我一天都带着那只旧格球。我可以自娱自乐……$u",
+                "Rainy_Night_2": "噢……这个味道？我吃了很多大蒜……我想努力保持健康……抱歉。$l",
+                "OneKid_0": "我还在努力适应全职妈妈的新生活。$h",
+                "OneKid_1": "小%kid1正在茁壮成长，就像他的妈咪一样。",
+                "OneKid_3": "怀孕可一点都不好玩。$s^不知道怀孕的感觉怎么样……?$h",
+                "spring_23": "噢……明天是花舞节，对吧？我今晚最好多做些运动保持身材。$9#$e#这身连衣裙太紧了……大家都会仔细看。"
+            }
+        },
+
+        //Had to move sprites for eating properly, fixed an empty frame from appearing
+        //Changed text in 14H event for Alex
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Saloon",
+            "Entries": {
+                "911526/f Alex 2500/t 1900 2200/n joshMessage": "gusviolin/-1000 -1000/farmer 5 5 1 Gus 10 6 2 Alex 9 5 3 Emily 9 17 2/skippable/showFrame 117/showFrame Alex 39/positionOffset farmer 12 8/positionOffset Alex -12 0/animate Gus false true 723 16 17/viewport 7 4 true/pause 23000/stopAnimation Gus/pause 1000/faceDirection Gus 3/speak Alex \"谢谢你，格斯。这太棒了。\"/move Gus 0 1 1/move Gus 1 0 2/move Gus 0 1 2/doAction 11 9/move Gus 0 3 1/move Gus 12 0 3 true/speak Alex \"这里真不错……我从没在这儿吃过饭。\"/pause 1000/emote Alex 40/speak Alex \"嗯，总之……我预订了这个包间，是为了和你聊聊……$l\"/warp Emily 11 11 true/playSound woodyStep/move Emily 0 -4 3/move Emily -4 0 0/move Emily 0 -1 0/speak Emily \"我端来了@先生的扁面条配奶油蘑菇酱。^这是女士点的蔬菜汤和胡桃沙拉。#$b#……还有爱莉克丝的烤牛排。^还有这位先生的烤牛排。\"/playSound woodyHit/specificTemporarySprite joshDinner/speak Alex \"谢谢.\"/move Emily 4 0 2/move Emily 0 5 1/move Emily 11 0 1 true/speak Alex \"那么，我想说的就是……$9\"/playMusic musicboxsong/speak Alex \"*咽口水*$s\"/pause 600/speak Alex \"那个……第一次见到你的时候，我就被你吸引了。我有点儿不好开口……但我从没对别人有过这种感觉。$l^第一次见到你的时候，我就觉得你好漂亮。$l#$b#一般情况下，就算我对某人动了心，那种感觉也会很快冷却……。$l^我一直在告诉自己“你不能对别的女孩儿有这种感觉”$l\"/pause 800/speak Alex \"...但对你的感觉却越来越强。^……但我的内心有不同的看法。$l\"/pause 400/emote Alex 40/pause 600/question fork1 \"#我再赞同不过了。#抱歉……我对你没感觉.\"/pause 400/fork rejectJosh/speak Alex \"...$l#$b#我不敢相信，对彼此说出这番话，居然要花这么长时间。.$l\"/emote Alex 32/pause 800/animate Alex false false 400 40 41 41 40 41 41 40 41 41 40 41 41 40/pause 800/playSound eat/pause 800/playSound eat/pause 800/playSound eat/pause 800/playSound gulp/pause 400/speak Alex \"嗯……这块牛排好棒。你能闻到香辣酱的味道吗？$10\"/eyes 1 -4000/animate Alex false false 400 40 41 41 40 41 41 40/pause 1000/specificTemporarySprite alexDiningDog/playSound dogWhining/pause 1000/globalFade/viewport -1000 -1000/pause 6000/end dialogue Alex \"...$l\"",
+                "3917590/n saloonSportsRoom/O Alex": "distantBanjo/-100 -100/farmer 31 20 0 Alex 32 7 0 Shane 33 8 0 Gus 34 8 0 Kent 35 8 0 George 36 7 0/skippable/specificTemporarySprite gridballGameTV/viewport 34 7 true/move farmer 0 -13 1 true/pause 1000/textAboveHead Alex \"干得好！\"/pause 600/jump Gus/pause 2000/textAboveHead George \"进球！!\"/pause 400/textAboveHead Alex \"走起来！\"/faceDirection Kent 3 true/faceDirection Gus 1 true/animate Gus false true 100 22/animate Kent false true 100 17/shake Gus 500/shake Kent 500/pause 500/textAboveHead George \"好样的！\"/pause 1000/stopAnimation Gus/stopAnimation Kent/faceDirection Kent 0 true/faceDirection Gus 0/pause 1000/faceDirection Alex 3/pause 400/speak Alex \"嘿，@！你做到了！$h\"/faceDirection Alex 1/speak Alex \"所以……你觉得呢？\"/pause 500/emote farmer 8/faceDirection Alex 3/speak Alex \"我一直在想……你知道我以前经常梦想有一天成为运动员吗？#$b#唔，最终结果是跟我想的有些不一样……$9#$b#不过别误会了！我还是很开心的！$h#$b#……但是我觉得如果能有一个地方可以让我们一起在外头看周日的比赛会很酷。格斯非常喜欢这个主意，他把他房子的里屋分出来一部分给我了！#$b#这样，我就可以用简单的办法，让我的“梦想”一直保持。\"/pause 500/emote farmer 32/pause 600/faceDirection George 3/speak George \"你做得很好，孩子。我本来是可以在家里看的，但来这里让我感觉自己又年轻了！$h\"/faceDirection Alex 1/speak Alex \"谢谢，爷爷\"/pause 500/speak Kent \"我很高兴能有个借口离开家，让我能够喘口气。\"/faceDirection Alex 2/pause 100/textAboveHead Shane \"我也一样\"/pause 1200/speak Gus \"我很开心。而且它对生意也有好处！$h#$b#虽然可能对珊恩的肝脏不太好……$s\"/pause 100/faceDirection Shane 2 true/animate Shane false true 100 18/jump Shane/pause 500/textAboveHead Shane \"嘿！!\"/pause 500/emote Alex 32/pause 2000/fade/viewport -1000 -1000/pause 400/message \"看来他们有了一个新的星期天常规活动。\"/pause 1000/message \"5,000 金花得很值！\"/pause 1000/end dialogue Alex \"再次感谢你的出资，@。对我来说这是一个有趣的项目，并且看起来大伙都很高兴！\""
+            }
+        },
+
+        //Gender change
+        {
+            "Action": "EditData",
+            "Target": "Data/NPCDispositions",
+            "Entries": {
+                "Evelyn": "adult/polite/outgoing/positive/female/not-datable/George/Town/winter 20/George '丈夫' Alex '孙女'/JoshHouse 3 17/艾芙琳",
+                "George": "adult/rude/neutral/negative/male/not-datable/Evelyn/Town/fall 24/Evelyn '妻子' Alex '孙子'/JoshHouse 16 22/乔治",
+                "Alex": "adult/rude/outgoing/positive/female/datable/Haley/Town/summer 13/George '爷爷' Evelyn '奶奶'/JoshHouse 19 5/爱莉克丝"
+            }
+        },
+
+        //Dialogue changes from maps
+        {
+            "Action": "EditData",
+            "Target": "Strings/StringsFromMaps",
+            "Entries": {
+                "BathHouse_MensLocker.4": "这个储物柜味道很难闻。",
+                "BathHouse_WomensLocker.4": "爱莉克丝的储物柜……门内贴有一堆健美运动员的图片。",
+                "JoshHouse.1": "妈妈-^如果你看到了这封信，那就说明我已经去世了。我很抱歉你不得不承受这一切。我爱你们两个人。^别太难过，我现在已经去了由巴那里。^我最后的要求：照顾好爱莉克丝。她需要一个家，需要能好好照顾她的家人。她是一个好孩子。^ 我爱你们，^克莱拉",
+                "JoshHouse.7": "你偷看了下爱莉克丝的抽屉。里面有衣服、发摩丝以及一个装着格球交易卡的盒子。",
+                "JoshHouse.8": "你偷看了下爱莉克丝的抽屉。里面有衣服、发摩丝以及一个装着格球交易卡的盒子。",
+                "JoshHouse.9": "这是爱莉克丝的格球头盔。她把它擦得很亮。"
+            }
+        },
+
+        //Sprite change
+        {
+            "Action": "EditImage",
+            "Target": "Characters/Alex",
+            "FromFile": "assets/Alex/AlexOW.png",
+        },
+
+        //Portrait change
+        {
+            "Action": "EditImage",
+            "Target": "Portraits/Alex",
+            "FromFile": "assets/Alex/Alex.png",
+            "When": {"Alex's Portrait": "true" }
+        },
+
+        //Wedding fix
+        {
+            "Action": "EditImage",
+            "Target": "Characters/Alex",
+            "FromFile": "assets/Alex/AlexOW_Wedding.png",
+            "When": {"DayEvent": "wedding"}
+        },
+
+        //Map change for Alex
+        //Changes the locker room
+        {
+            "LogName": "Women's Locker Change",
+            "Action": "EditMap",
+            "Target": "Maps/BathHouse_WomensLocker",
+            "FromFile": "assets/Alex/BathHouse_WomensLocker.tbin",
+            "FromArea": { "X": 16, "Y": 9, "Width": 12, "Height": 9},
+            "ToArea": { "X": 16, "Y": 9, "Width": 12, "Height": 9},
+            "PatchMode": "Replace"
+        },
+        
+        //Changes schedule for Alex during winter to go to womens locker
+        {
+            "Action": "EditData",
+            "Target": "Characters/schedules/Alex",
+            "Entries": {
+                "winter_17": "900 BathHouse_WomensLocker 21 14 2 alex_lift_weights/1500 Beach 27 24 1 \"Strings\\schedules\\Alex:winter_17.000\"/2400 JoshHouse 21 4 1 alex_sleep",
+                "winter": "900 BathHouse_WomensLocker 21 14 2 alex_lift_weights/1500 JoshHouse 14 5 2/1800 Town 53 69 0/1930 JoshHouse 8 19 2/2100 JoshHouse 17 5 0/2240 JoshHouse 21 4 1 alex_sleep"
+            }
+        },
+        
+        //Changes face when lifting weights at the BathHouse
+        {
+            "Action": "EditData",
+            "Target": "Strings/animationDescriptions",
+            "Entries": {
+                "alex_lift_weights": "呃......不能说话。$6"
+            }
+        },
+    
+    ]
+}

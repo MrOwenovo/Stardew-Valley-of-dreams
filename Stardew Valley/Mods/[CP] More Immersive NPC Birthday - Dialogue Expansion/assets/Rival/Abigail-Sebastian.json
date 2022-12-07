@@ -1,0 +1,119 @@
+{
+  "Changes": [	
+ 
+//Sebastian->Sebastian (Normal)	
+		{
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Sebastian",	  
+		   "When": {
+		   "Relationship:Sebastian": "Friendly",
+		   "Relationship:Abigail |contains=Engaged, Married": "false",
+		   "Relationship:Sam |contains=Engaged, Married": "false",
+		   "Relationship:Maru |contains=Engaged, Married": "false",		   
+		   },
+      "Entries": {
+				
+ 				"winter_10": "今天我又大一岁了。$0#$q 115320302/115320303 SebastianSebastianBirthday_followup#非常好……又提醒我在自己妈妈的房子里多寄居了一年。
+					#$r 115320302 10 SebastianSebastianBirthday_A#或许你妈妈很高兴你和她一起住！
+					#$r 115320303 10 SebastianSebastianBirthday_B#什么时候攒钱搬出去？
+					#$r 115320303 10 SebastianSebastianBirthday_C#你可以搬来我的农场！",
+ 				"winter_10_2": "今天我又大一岁了。$0#$q 115320302/115320303 SebastianSebastianBirthday_followup#非常好……又提醒我在自己妈妈的房子里多寄居了一年。
+					#$r 115320302 10 SebastianSebastianBirthday_A#或许你妈妈很高兴你和她一起住！
+					#$r 115320303 10 SebastianSebastianBirthday_B#什么时候攒钱搬出去？
+					#$r 115320303 0 SebastianSebastianBirthday_C#你可以搬来我的农场！",
+					SebastianSebastianBirthday_A: "你有什么根据这么说？说得好像你知道他们多喜欢玛鲁似的。$5#$e#好吧，今天是我的生日，或许我不该想这些烦心的事情……#$b#山姆给我送来了新的游戏卡带，阿比盖尔也拿了新的漫画给我。$0#$e#所以我起码还有朋友。$1",
+					SebastianSebastianBirthday_B: "我也想。但是这种乡村小镇你很难接到足够多的工作。$2#$e#好吧，今天是我的生日，或许我不该想这些烦心的事情……#$b#山姆给我送来了新的游戏卡带，阿比盖尔也拿了新的漫画给我。$0#$e#所以我起码还有朋友。$1",
+ 					SebastianSebastianBirthday_C: "……？$0#$b#这是你的生日笑话吗？谢谢你了。$0",
+ 		SebastianSebastianBirthday_followup:".",
+     }
+    },
+					
+//Sebastian->Sebastian (AbigailMarried)	
+		{
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Sebastian",	  
+		   "When": {
+		   "Relationship:Sebastian": "Friendly",
+		   "Relationship:Abigail": "Engaged, Married",
+		   "Relationship:Sam": "Friendly",
+		   "Relationship:Maru": "Friendly",
+		   },
+      "Entries": {
+				
+ 				"winter_10": "今天我又大一岁了。$0#$q 115320302/115320303 SebastianSebastianBirthday_followup#非常好……又提醒我在自己妈妈的房子里多寄居了一年。
+					#$r 115320302 10 SebastianSebastianBirthday_A#或许你妈妈很高兴你和她一起住！
+					#$r 115320303 10 SebastianSebastianBirthday_B#什么时候攒钱搬出去？
+					#$r 115320303 10 SebastianSebastianBirthday_C#你可以搬来我的农场！",
+ 				"winter_10_2": "今天我又大一岁了。$0#$q 115320302/115320303 SebastianSebastianBirthday_followup#非常好……又提醒我在自己妈妈的房子里多寄居了一年。
+					#$r 115320302 10 SebastianSebastianBirthday_A#或许你妈妈很高兴你和她一起住！
+					#$r 115320303 10 SebastianSebastianBirthday_B#什么时候攒钱搬出去？
+					#$r 115320303 0 SebastianSebastianBirthday_C#你可以搬来我的农场！",
+					SebastianSebastianBirthday_A: "你有什么根据这么说？说得好像你知道他们多喜欢玛鲁似的。$5#$e#好吧，今天是我的生日，或许我不该想这些烦心的事情……#$b#山姆给我送来了新的游戏卡带，阿比盖尔……自从跟你在一起后，就没怎么跟我来往了。#$e#她大概怕你吃醋，而我也不想被牵扯进你们情侣的那些破事之间，所以这样应该刚刚好。",
+					SebastianSebastianBirthday_B: "我也想。但是这种乡村小镇你很难接到足够多的工作。$2#$e#好吧，今天是我的生日，或许我不该想这些烦心的事情……#$b#山姆给我送来了新的游戏卡带，阿比盖尔……自从跟你在一起后，就没怎么跟我来往了。#$e#她大概怕你吃醋，而我也不想被牵扯进你们情侣的那些破事之间，所以这样应该刚刚好。",
+ 					SebastianSebastianBirthday_C: "我相当肯定你是在开玩笑……你该不会每个人都这么说吧？你都有阿比盖尔了。$5",
+ 		SebastianSebastianBirthday_followup:".",
+     }
+    },
+					
+										
+		    {
+        "Action": "EditData",
+        "Target": "Characters/Dialogue/Sebastian",
+		"When": {			
+		"Relationship:Sebastian |contains=Dating, Engaged": "false",
+		"Relationship:Abigail |contains=Dating, Engaged": "false",
+        },		
+        "Entries":
+        {
+//Sebastian->Abigail
+ 				"fall_12": "……明天是阿比盖尔生日。#$b#她之前跟我说过有想看的漫画……我会送她那个。#$e#她和我都不太喜欢人群。或许因为这样，我们有些共通的话题。",
+ 				"fall_12_2": "……明天是阿比盖尔生日。#$b#她之前跟我说过有想看的漫画……我会送她那个。#$e#她和我都不太喜欢人群。或许因为这样，我们有些共通的话题。",
+ 				"fall_12_inlaw_Abigail": "明天是……啊，都不用我说了吧。#$e#我们今晚会在酒馆庆祝，你喜欢的话可以来。#$b#但是拜托你们回家再亲热，谢谢你的合作。$5",
+ 				"fall_12_2_inlaw_Abigail": "明天是……啊，都不用我说了吧。#$e#我们今晚会在酒馆庆祝，你喜欢的话可以来。#$b#但是拜托你们回家再亲热，谢谢你的合作。$5",
+				
+				
+       }
+    },
+	
+		    {
+        "Action": "EditData",
+        "Target": "Characters/Dialogue/MarriageDialogueSebastian",
+        "Entries":
+        {		
+//Sebastian->AbigailMarried
+ 				"fall_12": "明天是阿比盖尔的生日，我、山姆和她今晚会在酒馆庆祝。#$e#算是我们老朋友在周五的传统……？#$b#你有空的话也可以来看看。能在家以外的地方见到你，我会感觉很好。$1",
+ 				"fall_12_2": "明天是阿比盖尔的生日，我、山姆和她今晚会在酒馆庆祝。#$e#算是我们老朋友在周五的传统……？#$b#你有空的话也可以来看看。能在家以外的地方见到你，我会感觉很好。$1",
+     }
+    },
+	
+  
+		{
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Abigail",	 
+		"When": {			
+		"Relationship:Sebastian |contains=Dating, Engaged": "false",
+		"Relationship:Abigail |contains=Dating, Engaged": "false",
+        },		
+      "Entries": {
+//Abigail-Sebastian
+ 				"winter_9": "明天是塞巴斯蒂安的生日。我给他带了些漫画，都是我的珍藏。#$e#《草原之王漫画版》……这样他看完后我就多了个人陪我打游戏了！$1#$b#我现在还没法通第一关……$2",
+ 				"winter_9_2": "明天是塞巴斯蒂安的生日。我给他带了些漫画，都是我的珍藏。#$e#《草原之王漫画版》……这样他看完后我就多了个人陪我打游戏了！$1#$b#我现在还没法通第一关……$2",
+ 				"winter_9_inlaw_Sebastian": "噢，嗨，塞巴斯蒂安还好嘛？#$e#你们明天肯定会盛大庆祝吧。周五我和山姆也会在酒馆办生日会……你记得来！$1",
+ 				"winter_9_2_inlaw_Sebastian": "噢，嗨，塞巴斯蒂安还好嘛？#$e#你们明天肯定会盛大庆祝吧。周五我和山姆也会在酒馆办生日会……你记得来！$1",
+     }
+    },
+  
+  
+		    {
+        "Action": "EditData",
+        "Target": "Characters/Dialogue/MarriageDialogueAbigail",
+        "Entries":
+        {		
+//Abigail->SebastianMarried
+ 				"winter_9": "我突然想起明天是塞巴斯蒂安的生日。#$e#我们以前满常待在一起的，跟山姆三个人出去玩。#$b#现在我们很少见面啦，不过周五应该还是会吃些好的庆祝庆祝。#$e#塞巴斯蒂安不喜欢跟人相处，我也是。#$b#不过自从认识你以后，我感觉我不是讨厌跟人相处！我只是不想待在讨厌的人身边而已。$1",
+ 				"winter_9_2": "我突然想起明天是塞巴斯蒂安的生日。#$e#我们以前满常待在一起的，跟山姆三个人出去玩。#$b#现在我们很少见面啦，不过周五应该还是会吃些好的庆祝庆祝。#$e#塞巴斯蒂安不喜欢跟人相处，我也是。#$b#不过自从认识你以后，我感觉我不是讨厌跟人相处！我只是不想待在讨厌的人身边而已。$1",
+     }
+    },
+	
+  ]
+}

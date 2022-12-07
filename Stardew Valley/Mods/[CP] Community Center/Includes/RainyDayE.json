@@ -1,0 +1,85 @@
+{
+    "Changes": [
+
+//afternoon Poetry Club        
+{   "LogName": "Schedule",  
+    "Action": "EditData",  
+    "Target": "Characters/schedules/Elliott",
+    "Entries": {
+        "rain": "800 ElliottHouse 1 5 0/1000 CommunityCenter 38 20 1 \"Strings\\schedules\\Elliott:PoetryClub_{{Random:PC1,PC2,PC3|key=PoetryClub}}\"/1700 ElliottHouse 7 7 2/2000 ElliottHouse 1 5 0/2400 ElliottHouse 13 4 1 elliott_sleep"
+                   }
+        },
+{   "LogName": "Schedule",  
+    "Action": "EditData",  
+    "Target": "Characters/schedules/Haley",
+    "Entries": {
+        "rain": "830 HaleyHouse 2 5 2 \"Strings\\schedules\\Haley:CCrain.000\"/1030 CommunityCenter 42 20 3 \"Strings\\schedules\\Haley:PoetryClub_{{Random:PC1,PC2,PC3|key=PoetryClub}}\"/1500 HaleyHouse 7 16 0/2200 HaleyHouse 1 5 3 haley_sleep"
+             }
+        },  
+{   "LogName": "Schedule",  
+    "Action": "EditData",  
+    "Target": "Characters/schedules/Leah",
+    "Entries": {
+        "rain": "900 CommunityCenter 39 19 leah_draw \"Strings\\schedules\\Leah:PoetryClub_{{Random:PC1,PC2,PC3|key=PoetryClub}}\"/1500 Saloon 2 20 1/2340 LeahHouse 2 4 3 leah_sleep",
+        "winter":"GOTO Fri"
+        }
+        },  
+{   "LogName": "Schedule",  
+    "Action": "EditData",  
+    "Target": "Characters/schedules/Isla",
+    "When": {   "HasMod": "PaperNautilus.Isla",
+                "DayOfWeek":"Monday, Tuesday, Wednesday, Thursday", 
+                "HasSeenEvent": "8205022"        },
+    "Entries": {
+        "rain": "610 UnderwaterCove 2 6 1/700 UnderwaterCove_Exterior 46 7 2 \"Strings\\schedules\\Isla:CoveExterior.001\"/730 UnderwaterCove_Exterior 43 11 2/800 ElliottHouse 1 6 0 \"Strings\\schedules\\Isla:Elliott.001\"/1000 CommunityCenter 41 19 \"Strings\\schedules\\Isla:PoetryClub_{{Random:PC1,PC2,PC3|key=PoetryClub}}\"/1700 UnderwaterCove_Exterior 46 7 2 Isla_Reading \"Strings\\schedules\\Isla:Reading.006\"/1900 UnderwaterCove 8 5 0 \"Strings\\schedules\\Isla:CoveInterior.001\"/2200 UnderwaterCove 2 6 1 Isla_Sleep"
+            }
+        }, 
+
+//Schedule Dialogue
+{	"LogName": "Poetry Strings - Elliott",
+    "Action": "EditData",
+    "Target": "Strings/schedules/Elliott",
+    "Entries": {
+        "PoetryClub_PC1": "{{i18n:RainyDayE.Elliott.1}}",
+        "PoetryClub_PC2": "{{i18n:RainyDayE.Elliott.2}}",
+        "PoetryClub_PC3": "{{i18n:RainyDayE.Elliott.3}}"
+            }
+        },
+{	"LogName": "Poetry Strings - Elliott",
+    "Action": "EditData",
+    "Target": "Strings/schedules/Leah",
+    "Entries": {
+        "PoetryClub_PC1": "{{i18n:RainyDayE.Leah.1}}",
+        "PoetryClub_PC2": "{{i18n:RainyDayE.Leah.2}}",
+        "PoetryClub_PC3": "{{i18n:RainyDayE.Leah.3}}"
+            }
+        },
+{	"LogName": "Poetry Strings - Haley",
+    "Action": "EditData",
+    "Target": "Strings/schedules/Haley",
+    "Entries": {
+        "CCrain.000": "{{i18n:RainyDayE.Haley.0}}",
+        "PoetryClub_PC1": "{{i18n:RainyDayE.Haley.1}}",
+        "PoetryClub_PC2": "{{i18n:RainyDayE.Haley.2}}",
+        "PoetryClub_PC3": "{{i18n:RainyDayE.Haley.3}}"
+            }
+        },
+{	"LogName": "Poetry Strings - Isla",
+    "Action": "EditData",
+    "Target": "Strings/schedules/Isla",
+    "When": {   "HasMod": "PaperNautilus.Isla"  },
+    "Entries": {
+        "PoetryClub_PC1": "{{i18n:RainyDayE.Isla.1}}",
+        "PoetryClub_PC2": "{{i18n:RainyDayE.Isla.2}}",
+        "PoetryClub_PC3": "{{i18n:RainyDayE.Isla.3}}"
+            }
+        },
+{   "Action": "EditData", 
+    "Target": "Data/Events/CommunityCenter",
+    "Entries":{ 
+        "69660006/p Haley/p Elliott/p Leah/w rainy": "50s/40 21/farmer 32 22 1 Elliott 38 20 1 Haley 39 19 2 Leah 42 20 3/skippable/pause 500/move farmer 0 -5 2 true/speak Elliott \"{{i18n:69660006.1}}\"/pause 500/speak Haley \"{{i18n:69660006.2}}\"/move farmer 5 0 2 true/pause 500/emote Elliott 60/speak Elliott \"{{i18n:69660006.3}}\"/speak Haley \"{{i18n:69660006.4}}\"/faceDirection Haley 0/speak Haley \"{{i18n:69660006.5}}\"/move farmer 0 2 1/quickQuestion {{i18n:69660006.6}}(break)emote Haley 20\\speak Haley \"{{i18n:69660006.7}}\"(break)emote Haley 12\\speak Elliott \"{{i18n:69660006.8}}\"(break)speak Haley \"{{i18n:69660006.9}}\"(break)speak Elliott \"{{i18n:69660006.10}}\"/pause 500/speak Leah \"{{i18n:69660006.11}}\"/speak Elliott \"{{i18n:69660006.12}}\"/faceDirection Haley 2/speak Elliott \"{{i18n:69660006.13}}\"/emote Haley 60/pause 1000/speak Haley \"{{i18n:69660006.14}}\"/speak Elliott \"{{i18n:69660006.15}}\"/pause 1000/speak Haley \"{{i18n:69660006.16}}\"/emote Haley 28/pause 1000/end" 
+            }
+        }
+
+    ]
+}

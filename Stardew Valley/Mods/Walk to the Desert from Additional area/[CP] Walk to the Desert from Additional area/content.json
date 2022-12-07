@@ -1,0 +1,412 @@
+{
+    "Format": "1.26.0",
+    "ConfigSchema": {
+		"UnlockDesert": {
+			"AllowValues": "true, false",
+			"Default": "false",
+            "Description": "Unlock the desert in advance."
+		}
+    },
+    "DynamicTokens": [
+		{
+			"Name": "DesertRoad_04_Road",
+			"Value": "{{HasFlag: currentPlayer, hostPlayer |contains=ccVault}}"
+		}
+	],
+    "CustomLocations": [
+        {
+            "Name": "Custom_DesertRoad_01",
+            "FromMapFile": "assets/DesertRoad_01.tmx"
+        },
+        {
+            "Name": "Custom_DesertRoad_02",
+            "FromMapFile": "assets/DesertRoad_02.tmx"
+        },
+        {
+            "Name": "Custom_DesertRoad_02_Brook",
+            "FromMapFile": "assets/DesertRoad_02_Brook.tmx"
+        },
+        {
+            "Name": "Custom_DesertRoad_03",
+            "FromMapFile": "assets/DesertRoad_03.tmx"
+        },
+        {
+            "Name": "Custom_DesertRoad_04",
+            "FromMapFile": "assets/DesertRoad_04.tmx"
+        },
+        {
+            "Name": "Custom_DangerousCave",
+            "FromMapFile": "assets/DangerousCave.tmx"
+        }
+    ],
+    "Changes": [
+        {
+            "Action": "Load",
+            "Target": "Maps/sucai2",
+            "FromFile": "assets/sucai2.png"
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_Backwoods_N",
+            "FromFile": "Assets/DesertRoad_01_Road.tmx",
+            "ToArea": {
+                "X": 0,
+                "Y": 17,
+                "Width": 6,
+                "Height": 11
+            },
+            "PatchMode": "Overlay",
+            "When": {
+				"HasMod |contains=Lnh.CustomMpas": true
+			}
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Backwoods",
+            "FromFile": "Assets/DesertRoad_01_Backwoods_Road.tmx",
+            "FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 12,
+				"Height": 8
+			},
+            "ToArea": {
+                "X": 0,
+                "Y": 14,
+                "Width": 12,
+                "Height": 8
+            },
+            "PatchMode": "Overlay",
+            "When": {
+				"HasMod |contains=Lnh.CustomMpas": false,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasMod |contains=DaisyNiko.SVR3": false
+			}
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Backwoods",
+            "FromFile": "Assets/DesertRoad_01_Backwoods_Road.tmx",
+            "FromArea": {
+				"X": 0,
+				"Y": 8,
+				"Width": 12,
+				"Height": 9
+			},
+            "ToArea": {
+                "X": 0,
+                "Y": 14,
+                "Width": 12,
+                "Height": 9
+            },
+            "PatchMode": "Overlay",
+            "When": {
+				"HasMod |contains=Lnh.CustomMpas": false,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasMod |contains=DaisyNiko.SVR3": false
+			}
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Backwoods",
+            "FromFile": "Assets/DesertRoad_01_Backwoods_Road.tmx",
+            "FromArea": {
+				"X": 12,
+				"Y": 0,
+				"Width": 4,
+				"Height": 5
+			},
+            "ToArea": {
+                "X": 0,
+                "Y": 22,
+                "Width": 4,
+                "Height": 5
+            },
+            "PatchMode": "Overlay",
+            "When": {
+				"HasMod |contains=Lnh.CustomMpas": false,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasMod |contains=DaisyNiko.SVR3": true
+			}
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_DesertRoad_01",
+            "FromFile": "Assets/DesertRoad_01_Backwoods_Road.tmx",
+            "FromArea": {
+				"X": 13,
+				"Y": 6,
+				"Width": 6,
+				"Height": 4
+			},
+            "ToArea": {
+                "X": 54,
+                "Y": 11,
+                "Width": 6,
+                "Height": 4
+            },
+            "PatchMode": "Overlay",
+            "When": {
+				"HasMod |contains=Lnh.CustomMpas": false,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasMod |contains=DaisyNiko.SVR3": false
+			}
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_DesertRoad_01",
+            "FromFile": "Assets/DesertRoad_01_Backwoods_Road.tmx",
+            "FromArea": {
+				"X": 13,
+				"Y": 11,
+				"Width": 6,
+				"Height": 4
+			},
+            "ToArea": {
+                "X": 54,
+                "Y": 11,
+                "Width": 6,
+                "Height": 4
+            },
+            "PatchMode": "Overlay",
+            "When": {
+				"HasMod |contains=Lnh.CustomMpas": false,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasMod |contains=DaisyNiko.SVR3": false
+			}
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_DesertRoad_01",
+            "FromFile": "Assets/DesertRoad_01_Backwoods_Road.tmx",
+            "FromArea": {
+				"X": 13,
+				"Y": 16,
+				"Width": 6,
+				"Height": 4
+			},
+            "ToArea": {
+                "X": 54,
+                "Y": 11,
+                "Width": 6,
+                "Height": 4
+            },
+            "PatchMode": "Overlay",
+            "When": {
+				"HasMod |contains=Lnh.CustomMpas": false,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasMod |contains=DaisyNiko.SVR3": true
+			}
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_DesertRoad_04",
+            "FromFile": "Assets/DesertRoad_04_Road.tmx",
+            "FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 1,
+				"Height": 6
+			},
+            "ToArea": {
+                "X": 0,
+                "Y": 15,
+                "Width": 1,
+                "Height": 6
+            },
+            "PatchMode": "Overlay",
+            "When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "DesertRoad_04_Road": true,
+                "UnlockDesert": false
+			}
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_DesertRoad_04",
+            "FromFile": "Assets/DesertRoad_04_Road.tmx",
+            "FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 1,
+				"Height": 6
+			},
+            "ToArea": {
+                "X": 0,
+                "Y": 15,
+                "Width": 1,
+                "Height": 6
+            },
+            "PatchMode": "Overlay",
+            "When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "UnlockDesert": true
+			}
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_DesertRoad_04",
+            "FromFile": "Assets/DesertRoad_04_Road.tmx",
+            "FromArea": {
+				"X": 2,
+				"Y": 0,
+				"Width": 1,
+				"Height": 6
+			},
+            "ToArea": {
+                "X": 0,
+                "Y": 15,
+                "Width": 1,
+                "Height": 6
+            },
+            "PatchMode": "Overlay",
+            "When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "DesertRoad_04_Road": true,
+                "UnlockDesert": false
+			}
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_DesertRoad_04",
+            "FromFile": "Assets/DesertRoad_04_Road.tmx",
+            "FromArea": {
+				"X": 2,
+				"Y": 0,
+				"Width": 1,
+				"Height": 6
+			},
+            "ToArea": {
+                "X": 0,
+                "Y": 15,
+                "Width": 1,
+                "Height": 6
+            },
+            "PatchMode": "Overlay",
+            "When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "UnlockDesert": true
+			}
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_DesertRoad_04",
+            "FromFile": "Assets/DesertRoad_04_Road.tmx",
+            "FromArea": {
+				"X": 4,
+				"Y": 0,
+				"Width": 1,
+				"Height": 6
+			},
+            "ToArea": {
+                "X": 69,
+                "Y": 15,
+                "Width": 1,
+                "Height": 6
+            },
+            "PatchMode": "Overlay",
+            "When": {
+				"HasMod |contains=Tarniyar.CP.WalkToDesert": true
+			}
+        },
+        {
+			"Action": "EditMap",
+			"Target": "Maps/Desert",
+			"AddWarps": [
+				"48 24 Custom_DesertRoad_04 1 18",
+				"48 25 Custom_DesertRoad_04 1 18",
+				"48 26 Custom_DesertRoad_04 1 18",
+				"48 27 Custom_DesertRoad_04 1 18",
+				"48 28 Custom_DesertRoad_04 1 18",
+				"48 29 Custom_DesertRoad_04 1 18"
+			],
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+			}
+		},
+        {
+			"Action": "EditMap",
+			"Target": "Maps/Desert",
+			"AddWarps": [
+                "58 23 Custom_DesertRoad_04 1 18",
+				"58 24 Custom_DesertRoad_04 1 18",
+				"58 25 Custom_DesertRoad_04 1 18",
+				"58 26 Custom_DesertRoad_04 1 18",
+				"58 27 Custom_DesertRoad_04 1 18",
+				"58 28 Custom_DesertRoad_04 1 18"
+			],
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+			}
+		},
+        {
+			"Action": "EditMap",
+			"Target": "Maps/Custom_WTDR_GhostTown",
+			"AddWarps": [
+				"0 33 Custom_DesertRoad_04 68 18",
+				"0 34 Custom_DesertRoad_04 68 18",
+				"0 35 Custom_DesertRoad_04 68 18",
+				"0 36 Custom_DesertRoad_04 68 18",
+				"0 37 Custom_DesertRoad_04 68 18"
+			],
+			"When": {
+				"HasMod |contains=Tarniyar.CP.WalkToDesert": true
+			}
+		},
+        {
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+            "Custom_DesertRoad_01": "-1/-1/-1/-1/153 -1 145 -1 143 -1 137 -1 132 -1 706 -1 702 -1 136 -1 142 -1 700 -1/153 -1 145 -1 144 -1 138 -1 132 -1 706 -1 704 -1 702 -1 136 -1 142 -1 698 -1/143 -1 153 -1 140 -1 139 -1 137 -1 132 -1 706 -1 702 -1 699 -1 269 -1 136 -1 142 -1 700 -1/699 -1 143 -1 153 -1 144 -1 141 -1 140 -1 132 -1 707 -1 702 -1 269 -1 136 -1 700 -1 698 -1/584 .08 378 .8 102 .8 390 .8 330 .8 579 .8 588 .8 102 .8 390 .8 378 .8 110 .8 583 .8 382.8 581 .8"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+            "Custom_DesertRoad_02": "-1/-1/-1/-1/153 -1 145 -1 143 -1 137 -1 132 -1 706 -1 702 -1 136 -1 142 -1 700 -1/153 -1 145 -1 144 -1 138 -1 132 -1 706 -1 704 -1 702 -1 136 -1 142 -1 698 -1/143 -1 153 -1 140 -1 139 -1 137 -1 132 -1 706 -1 702 -1 699 -1 269 -1 136 -1 142 -1 700 -1/699 -1 143 -1 153 -1 144 -1 141 -1 140 -1 132 -1 707 -1 702 -1 269 -1 136 -1 700 -1 698 -1/584 .08 378 .8 102 .8 390 .8 330 .8 579 .8 588 .8 102 .8 390 .8 378 .8 110 .8 583 .8 382.8 581 .8"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+            "Custom_DesertRoad_02_Brook": "-1/-1/-1/-1/153 -1 145 -1 143 -1 137 -1 132 -1 706 -1 702 -1 136 -1 142 -1 700 -1/153 -1 145 -1 144 -1 138 -1 132 -1 706 -1 704 -1 702 -1 136 -1 142 -1 698 -1/143 -1 153 -1 140 -1 139 -1 137 -1 132 -1 706 -1 702 -1 699 -1 269 -1 136 -1 142 -1 700 -1/699 -1 143 -1 153 -1 144 -1 141 -1 140 -1 132 -1 707 -1 702 -1 269 -1 136 -1 700 -1 698 -1/584 .08 378 .8 102 .8 390 .8 330 .8 579 .8 588 .8 102 .8 390 .8 378 .8 110 .8 583 .8 382.8 581 .8"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+            "Custom_DesertRoad_03": "-1/-1/-1/-1/129 -1 131 -1 147 -1 148 -1 152 -1 708 -1 267 -1/128 -1 130 -1 146 -1 149 -1 150 -1 152 -1 155 -1 708 -1 701 -1 267 -1/129 -1 131 -1 148 -1 150 -1 152 -1 154 -1 155 -1 705 -1 701 -1/708 -1 130 -1 131 -1 146 -1 147 -1 150 -1 151 -1 152 -1 154 -1 705 -1/584 .08 378 .8 102 .8 390 .8 330 .8 579 .8 588 .8 102 .8 390 .8 378 .8 110 .8 583 .8 382.8 581 .8"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+            "Custom_DesertRoad_04": "-1/-1/-1/-1/153 -1 164 -1 165 -1/153 -1 164 -1 165 -1/153 -1 164 -1 165 -1/153 -1 164 -1 165 -1/390 8 330 .8"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Strings/StringsFromMaps",
+            "Entries": {
+                "Lnh.Text.1": "{{i18n:Lnh.Text.1}}",
+                "Lnh.Text.2": "{{i18n:Lnh.Text.2}}",
+                "Lnh.Text.3": "{{i18n:Lnh.Text.3}}",
+                "Lnh.Text.4": "{{i18n:Lnh.Text.4}}",
+                "Lnh.Text.5": "{{i18n:Lnh.Text.5}}",
+                "Lnh.Text.6": "{{i18n:Lnh.Text.6}}",
+                "Lnh.Text.7": "{{i18n:Lnh.Text.7}}",
+                "Lnh.Text.8": "{{i18n:Lnh.Text.8}}",
+                "Lnh.Text.9": "{{i18n:Lnh.Text.9}}",
+                "Lnh.Text.10": "{{i18n:Lnh.Text.10}}",
+                "Lnh.Text.11": "{{i18n:Lnh.Text.11}}",
+                "Lnh.Text.12": "{{i18n:Lnh.Text.12}}",
+                "Lnh.Text.13": "{{i18n:Lnh.Text.13}}",
+                "Lnh.Text.14": "{{i18n:Lnh.Text.14}}"
+            }
+        }
+    ]
+}

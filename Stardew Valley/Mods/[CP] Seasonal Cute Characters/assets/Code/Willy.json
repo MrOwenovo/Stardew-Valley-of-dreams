@@ -1,0 +1,75 @@
+{
+	"Changes": [
+		{
+			"LogName": "Willy - Seasonal",
+			"Action": "EditImage",
+			"Target": "Portraits/Willy, Characters/Willy",
+			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Willy - Winter Indoor/Outdoor",
+			"Action": "EditImage",
+			"Target": "Portraits/Willy, Characters/Willy",
+			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+                "Season": "Winter",
+                "WinterIndoorOutdoorOutfits": "IndoorOutdoor",
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Willy - Festival",
+			"Action": "EditImage",
+			"Target": "Portraits/Willy, Characters/Willy",
+            "FromFile": "assets/{{TargetPathOnly}}/Festivals/{{Festival}}/{{TargetWithoutPath}}_{{Festival}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"FestivalOutfits": "True",
+			},
+			"Update": "OnLocationChange",
+		},
+		
+// NOSE OVERLAY
+		{
+			"LogName": "Willy - Seasonal Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Willy",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"NoNose": "false",
+			},
+		},
+		
+// MISCELLANEOUS		
+		{
+			"LogName": "Willy - Emoji",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+            "FromFile": "assets/{{NoNose}}/Random/emojis.png",
+			"FromArea": {"X": 81, "Y": 108, "Width": 9, "Height": 9},
+			"ToArea": {"X": 81, "Y": 108, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{   
+			"LogName": "Willy - Boat",
+            "Action": "EditImage",
+			"Update": "OnLocationChange",
+            "Target": "LooseSprites/WillysBoat",
+            "FromFile": "assets/{{NoNose}}/Random/WillysBoat_{{Season}}.png",
+            "ToArea": { "X": 173, "Y": 163, "Width": 16, "Height": 18 },
+		},
+	]
+}

@@ -20,6 +20,10 @@
     - Boarding House Nut Butters: 寄宿公寓坚果黄油 Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/6342/6342-1592958630-1202041373.png) <br> *增加了在工匠谷的黄油搅拌器中使用寄宿公寓可觅食物的坚果的兼容性*
     - Fruit Tree Honey: 果树蜂蜜 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/13780/13780-1663134718-576125596.png) <br> *可以用果树和花朵制作蜂蜜*
     - Hugs and kisses：拥抱和亲吻 × <br> *为星露谷的接吻功能提供了一定的灵活性*
+    - CP - Season Bunny sprinkler:  CP - 季节兔子洒水器 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14184/14184-1666351315-1513717348.png) <br> *把你的农场洒水器变成一只可爱的兔子，随季节变化*
+    - Ridgeside Village for Mobile Phone: 山脊村手机 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/9058/9058-1625346018-623325831.png) <br> *将边脊村加入手机*
+    - Zosa and Bonster's Recipes: 佐萨和邦斯特的食谱  √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/5203/5203-1579104953-521692598.png) <br> *有 20 种与香草兼容的食谱（和一种新成分）的集合*
+  
 ---
 - 扩展:
     - Adventurer's Guild Expanded 1.0.15: 冒险家协会扩展 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/12102/12102-1653086591-22091967.png) <br> *冒险家公会的扩展包，包括新任务、30+ 故事事件、新的浪漫 NPC，以及与友好的怪物交朋友并招募到您的农场生活的能力*
@@ -29,6 +33,9 @@
     - Lunna Astray: 伦娜 - 星露谷的误入歧途 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/6626/6626-1650350746-1314796341.png) <br> *Lunna，一个有着秘密过去的女孩，声称最初不是来自我们的土地，而是来自一个叫Umuwi的地方。她也受到巫师拉斯莫迪乌斯先生的照顾和监督！通过浪漫活动了解她的秘密，所有这些都是为了传达一个可以沉浸其中的故事！随着故事的到来，你还可以见到比安卡和拉斐尔！与Lunna相同的内容.*
     - Stardew Valley Expanded: SVE星露谷扩展 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/3753/3753-1669414251-1468128667.png) <br> *星露谷扩展是关注猿的星露谷的同人资料片。这个模组增加了 27 个新的 NPC、50 个地点、260 个角色事件、27 条鱼、重新构想的香草区、两张农场地图、反映所有变化的重新设计的世界地图、新音乐、任务线、物品、庄稼、节日和许多杂项添加！*
     - Stoffton: 斯托夫顿 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/11666/11666-1662648044-1096227066.jpeg) <br> *斯托夫顿是一个繁荣的磨坊小镇，位于鹈鹕镇以北。如果您安装了Fostoria，您可以步行访问Stoffton。否则，您可以乘坐巴士前往斯托夫顿。斯托夫顿包括两张大地图，总共39个新地点（包括11家商店），48个新NPC（包括14个求婚者），新的心脏事件等等。*
+    - Krobus patio (seasonal): 科罗布斯的配偶露台 - 季节性 Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/10225/10225-1638237575-2103417089.png) <br> *当Krobus是农民的室友时，为他添加一个配偶露台。*
+    - Stardew Valley Expanded-image translation-Chinese: 星露谷展开图片翻译 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/11209/11209-1646581010-2105296280.png) <br> *sve星露谷物语图片汉化版本。*
+
 ---
 - 建筑:
     - Mini Obelisk: 迷你方尖碑 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/12571/12571-1655647372-951735169.jpeg) <br> *方尖碑将被小型化以提高能见度。地板也可以详细改变。还有季节的外观。*
@@ -46,6 +53,7 @@
     - (CC) SH's Wild Animals: 上海野生动物   × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/9063/9063-1638969848-1016153741.jpeg) <br> *在游戏中添加一些野生动物。*
     - Farm Animal Facelift: 农场动物整容  × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/9057/9057-1630161629-699089166.png) <br> *每个谷仓+鸡舍动物的精灵更光滑！添加多个品种/颜色选项。现在有替代纹理和移动版本！*
     - The Cowboy Life Expanded 1.4.5-Alpha: 牛仔生活扩展 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/7176/7176-1656887811-1642309399.png) ![image](https://staticdelivery.nexusmods.com/mods/1303/images/7176/7176-1656773236-1285575281.png) ![image](https://staticdelivery.nexusmods.com/mods/1303/images/7176/7176-1656464678-192044496.png) <br> *通过新型牛、服装、武器和食物中的独特物品，以及游戏中的新对话和牲畜平衡，扩展了牛仔体验。*
+    - Ornithologist's Guild: 鸟类学家协会 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14510/14510-1668669919-260498119.png) <br> *鸟屋，双筒望远镜和新建筑可供探索！鸟类学家公会为星露谷带来了全新的观鸟体验，包括更新的鸟类机制、季节性鸟类、进度系统、新商店、拥有悲惨过去的 NPC 等等！*
 ---
 - 地图:
     - Desert: 步行到沙漠 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/8630/8630-1620657498-122598044.png) <br> *将鹈鹕镇与印花布沙漠连接起来,还增加了一个新商店，一个隐藏的NPC*
@@ -58,6 +66,15 @@
     - Aspen High Res Anime Portrait: 阿斯彭高分辨率动漫肖像 × <br> ![image](https://https:https://staticdelivery.nexusmods.com/mods/1303/images/13409/13409-1660870292-1706249399.png) <br> *自定义NPC的肖像模组 - 阿斯彭*
     - HD Portraits: 高清人像(前置) ×
     - Seasonal Cute Characters: 季节性服装 - SVE的美感略微可爱 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/5969/5969-1605594193-1600692641.png) <br> *为 SVE 添加季节性服装，使角色稍微可爱一些。*
+    - Ohodavi's Portraits for Rasmodia: 奥霍达维的《拉斯摩迪亚肖像》 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/13765/13765-1663090983-1543814657.png) <br> *来自奥霍达维动画肖像的女巫师现在针对浪漫的拉斯莫迪亚进行了一些编辑。*
+    - [CP] Seasonal Cute Characters: [CP]季节性可爱人物   × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/5450/5450-1665326075-1926092414.png) <br> *彻底修改所有角色精灵和肖像，以获得更可爱的美感*
+    - A seasonal high resolution anime portrait of Olivia:  SVE - 奥利维亚的季节性高分辨率动漫肖像 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/9522/9522-1630829043-142387162.png)
+---
+- 敌对:
+  - Boss Creatures: 头目生物 Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/5864/5864-1587545258-316041572.png) <br> *在地牢和星露谷周围生成 BOSS 生物。*
+---
+- 音频:
+  - CM-Latale BGM for Lnh 的其他区域
 ---
 - 角色：
     - Ridgeside Village - NPC Adventures Addon: 里奇赛德村NPC历险记 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/10968/10968-1644251546-1693751188.png) <br> *山脊村与NPC冒险的整合！*
@@ -69,14 +86,20 @@
     - SVE NPC Adventures: （SVE）星露谷扩展同伴 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/12477/12477-1655813358-1198594231.png) <br> *将 SVE NPC 添加到 NPC 冒险中，使他们成为可招募的同伴*
     - Toddlers Makeover: 幼儿改头换面 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/12257/12257-1654055693-1884325990.png) <br> *更换幼儿的形状，共四套*
     - CP Caroline's character redrew.hztired: CP卡罗琳的角色 redrew.hztired × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/6542/6542-1595871697-1338876108.png) <br> *更换卡罗琳移动像素图*
+    - Romanceable Rasmodius SVE: 浪漫的拉斯莫迪乌斯 - SVE √ <br> *与sve兼容*
+    - Romanceable Rasmodius: 浪漫的拉斯莫迪乌斯 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/3073/3073-1665067740-94644132.png) <br>*使巫师完全浪漫和结婚，完成 2、4、6、8 和 10 心事件。建立在干草的叙事大修模组的基础上，并与所有肖像模组完全兼容。*
+    - Lavril NPC Adventures: 拉薇儿NPC历险记 √ <br> *将拉薇儿加入npc历险记*
 ---
 - 新角色:
     - NPC: Aspen - New Custom Dateable NPC: Aspen - 新的自定义可约会 Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/6754/6754-1622257959-546544364.png) <br> *这个模组增加了一个名为“Aspen”的全新可约会 NPC，具有新的位置、许多心脏事件、不断变化的对话等等！*
     - [NPC] Lavril: 东坡崖新npc √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/10016/10016-1635729436-2142370591.gif) <br> *将拉薇儿添加到东斯卡普。一个神秘的年轻女孩和她闹鬼的玩具兔子在完全黑暗中醒来，过去的邪恶怪物和幽灵困扰着活人的领域......文森特也碰巧误入。一款可爱的独立恐怖角色扮演游戏。*
     - Always Raining in the Valley: 山谷里总是下雨 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/9999/9999-1636335286-953032134.png) <br> *一个温暖的自定义NPC迷你扩展，增加了斯特林，米娅和亨利，13个新食谱，事件和超过1000+对话。不会给山谷增加更多的雨水。为了东陡峭！*
-    - Never Ending Adventure:  永无止境的冒险 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/12369/12369-1667438280-1066337585.png) <br> *将“剑与巫术”的“剑”一半介绍给东斯卡普！与我们的常驻流氓马特奥成为朋友，因为他们踏上了他们惊心动魄的探险之旅，进入了一个全新的冒险时代*
+    - Never Ending Adv enture:  永无止境的冒险 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/12369/12369-1667438280-1066337585.png) <br> *将“剑与巫术”的“剑”一半介绍给东斯卡普！与我们的常驻流氓马特奥成为朋友，因为他们踏上了他们惊心动魄的探险之旅，进入了一个全新的冒险时代*
     - Shay - New NPC: 谢伊 - 新NPC  √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14260/14260-1667527526-861792492.png) <br> *谢恩的姐姐有点担心他，所以她会来镇上！*
     - College Boy Mike - Custom NPC: 大学男孩迈克 - 自定义NPC √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/6288/6288-1593679472-1768900009.png) <br> *一个名叫迈克的可结婚的自定义NPC。迈克是祖祖大学的一名大学生，他经常想知道自己的未来会怎样。他需要一个好朋友，一个他可以真正敞开心扉的人。他主修工程学，是格斯的侄子。包括144条线路，8个活动，节日和配偶房间！*
+    - Juliet and Jessie the Joja Clerks: 朱丽叶和乔贾店员杰西 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/10584/10584-1641700166-1854337070.png) <br> *中文翻译。在游戏里添加了两个名叫朱丽叶和杰西的新NPC，她们目前在Joja超市工作。*
+    - Ayeisha - The Postal Worker (Custom NPC): 阿耶莎 - 邮政工人（自定义NPC）√ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/6427/6427-1596453555-477531402.png) <br> *阿耶莎是一个新的NPC，为Ferngill邮政服务工作。这是她的早期版本，远未完成。*
+
 
 ---
 - 地点：
@@ -90,6 +113,13 @@
     - Town School : 镇校  √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/6317/6317-1592678573-1975803436.jpeg) <br> *现在我们有一所佩妮、文森特和贾斯的学校！一个新的NPC也将来到鹈鹕镇！*
     - Lumisteria Magic Field: 卢米斯特里亚魔法场 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/6700/6700-1598178871-1611729183.png) <br> *在新地点与一波又一波的怪物战斗。这个模组增加了一个新地点，魔术场。每天晚上，古老的魔法都会吸引一波又一波的怪物供您战斗。通往该位置的通道隐藏在矿井门口。*
     - Boarding House and Bus Stop Extension: 寄宿公寓和巴士站扩建 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/4120/4120-1602979417-737002373.png) <br> *在巴士站后面添加一个区域，里面有一个寄宿公寓、一个购买定制机器的商店、一个新的矿场和三个新的NPC。*
+    - Stardew Valley Additional Areas: 星露谷其他区域× <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/12838/12838-1657350182-2124525869.png) <br> *为星露谷增加了许多新地点，包括新的硬木桩区域，采矿区，林区，觅食区，种植区，钓鱼点，新地图，和一些等待你去发现的秘密区域，在新的岛内投放了15个金核桃，你可以找到它们吗？*
+    - Walk to the Desert from Additional area: 从附加区域步行到沙漠 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14241/14241-1666705696-875764663.png) <br> *这是另一个走向沙漠的mod，一共增加了6张新地图，在这些地图里可以觅食，可以砍伐树木，还有一个无限怪物的山洞。*
+    - Lnh's More Greenhouse: Lnh的更多温室 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14157/14157-1666087835-1991718.png) <br> *增加了一个额外的温室，可以放置30个铱洒水器，种植24棵树，有一个小型的温泉，可以恢复体力*
+    - Lnh's More Farming Areas: Lnh的更多农业区 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14148/14148-1666005504-530270809.png) <br> *增加了几个额外的种植区，种地人你值得拥有。*
+    - Beach Extension For Crab Pod: 螃蟹荚海滩扩建 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/11594/11594-1650170614-160138524.jpeg) <br> *在海滩上增加一个水产养殖场（蟹荚场）。*
+    - Beach Additional Storage Space Area: 海滩额外存储空间区 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14244/14244-1666792243-914101470.jpeg) <br> *在海上添加一个存储空间，从“螃蟹荚的海滩扩展”mod继续*
+
 ---
 - 模组工具(前置):  ×
     - [CP] DaisyNiko's Tilesheets: 黛西尼科的瓦片 ×
@@ -148,10 +178,16 @@
     - NPC Map Locations: NPC地图位置 ×
     - HD Portraits: 高清肖像 ×
     - Shop Tile Framework: 购买磁贴框架 ×
+    - CustomKissingMod: 定制接吻模组 ×
+    - Custom Achievements: 自定义成就 ×
 ---
 - 事件:
     - 约会之夜: Date night √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/11459/11459-1653439608-1171746423.png) <br> *https://staticdelivery.nexusmods.com/mods/1303/images/11459/11459-1653439608-1171746423.png*
     - 配偶面对你死亡的反应: SpousesReactToDeath √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/7493/7493-1609725536-657128401.png) <br> *容包，在矿井、骷髅洞或火山中“死亡”后添加过场动画，以增加您和您的配偶之间的戏剧性*
+    - Romance in CC rituals NPC: CC仪式中的浪漫NPC √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/13073/13073-1658719336-485223452.jpeg) <br> *可浪漫的里奇赛德村NPC将参加社区中心修复仪式。*
+    - Post Wedding Dates: 婚后日期 Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/10708/10708-1642449714-2021880136.jpeg) <br> *添加一些额外的约会过场动画与你的配偶*
+    - Community Center Reimagined: 重新构想社区中心 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/6966/6966-1602927034-587288035.png) <br> *完成了社区中心，现在几乎空无一人？现在，它确实将作为社区的核心发挥作用。*
+
 ---
 - 家具:
     - 桌子设置(家具展示框架): Table Settings × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/10884/10884-1643582771-1495419212.png) <br> *使用家具显示框架，您可以将物品放置在单个桌子上的多个位置*
@@ -163,6 +199,9 @@
     - Gervig91's Furniture: 格维格91的家具 Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/5791/5791-1586785695-1108459199.gif) <br> *在家具目录中添加了许多定制家具。包括很多动物！*
     - [CF] Lumisteria Flower And Plant Set: Lumisteria花草套装 Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/6077/6077-1589573317-1508147266.png) <br> *这个模组增加了50+家具。其中一些会随着季节而变化！*
     - Bed Tweaks: 床调整 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/10023/10023-1635664305-1129169255.png) <br> *允许您调整双人床的大小并更改床毯的透明度。*
+    - Kedi's Pets Furniture： 科迪宠物家具 Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14627/14627-1669650672-2027332633.png) <br> *为您的宠物添加一些甜美的家具！*
+    - Kedi's Kids Furniture: 科迪儿童家具 Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14612/14612-1669533911-624133922.png) <br> *在游戏中为您的孩子添加新家具！*
+    - Recessed Fish Tank: 嵌入式鱼缸 Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14673/14673-1670156589-1964848551.png) <br> *添加8个不同大小的嵌入式鱼缸。*
 ---
 - 项目：
     - Joja可乐补货: [CP] Joja Cola Restock  × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/7731/7731-1611063735-1026533765.png) <br> *为游戏添加各种joja苏打水，其中大部分可以从沙龙的自动售货机访问。*
@@ -192,6 +231,14 @@
     - Dairy and Egg Product Overhaul: 乳制品和蛋制品大修 Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/5870/5870-1587554087-838078986.png) <br> *添加由各自的原始动物产品生产的较大版本的奶酪和蛋黄酱。还根据鸡蛋质量添加不同品质的蛋黄酱。*
     - Makers of Stardew Vineyard packs of artisanal soda: 星露葡萄园包手工苏打水制造商 Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14436/14436-1668184265-772868931.png) <br> *将Stardew Vineyard葡萄酒味苏打水添加到手工苏打水制造商中 - 将葡萄酒鉴赏家的贪婪带入非酒精饮料市场，一次一杯苏打水。*
     - Trinkets To Treasures - Artifacts: 宝藏的小饰品 - 文物 Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14424/14424-1668070986-265459616.jpeg) <br> *允许你在为博物馆收集完所有文物后，对文物做更多的事情。有三台新机器，可以将游戏中的任何神器变成展示品，然后您可以将其放置在农舍中或出售，以获得比基础物品本身获得的更好的利润。*
+    - It is Butterscotch Time: 现在是奶油糖果时间 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/11897/11897-1651626611-1052620766.jpeg) <br> *添加奶油糖果和奶油糖果主题食谱！从工匠谷改为星露和拉法达克斯的棉花糖。*
+    - Atelier Wildflour - Tea Pack： 工作室野面粉 - 茶包 Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14667/14667-1670110004-551173479.png) <br> *添加茶壶和生产茶包和茶的能力*
+    - Farmer Family Recipes - Specialty Jams and Jellies： 农民家庭食谱 - 特色果酱和果冻 Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14224/14224-1666563087-1359388151.png) <br> *添加了许多新的果酱和果冻食谱，供您在星露谷烹饪*
+    - BAGI - Better Artisan Good Icons For Bonster's Crops: BAGI - 邦斯特作物的更好工匠好图标 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14050/14050-1665113012-1214445215.png) <br> *添加了对邦斯特作物的支持*
+    - Mermaid Island Scepter: 美人鱼岛权杖 √ <br> *添加一根权杖，将你传送到美人鱼岛*
+    - (PFM) Flower Pack for Artisanal Soda Makers: （PFM）手工苏打水制造商的鲜花包× <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/5258/5258-1580869817-1978511412.png) <br> *将香草和 PPJA 食用花卉苏打水添加到手工苏打水制造商模组中*
+    - Floral Drinks: 花卉饮料 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/13958/13958-1664376659-1222599154.png) <br> *用你的花制作美味的五颜六色的饮料。*
+    - Vyranity's Pizza's JA: 维兰尼蒂披萨 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/9215/9215-1628258385-28293229.png) <br> *这个模组增加了 60 个新的披萨相关物品和 5 个新机器！*
 
 ---
 - 视觉效果和图形:
@@ -225,6 +272,11 @@
     - BAGI and Mead Pack for MF and AC: BAGI 和米德包 ×(可去) <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14275/14275-1666994882-1480216874.jpeg) <br> *将水花和古作物中的花蜜制成的蜂蜜酒改造成各自的蜂蜜。还包括一个用于古代作物的“传统”风格的 BAGI 包，以及由 AC 的古代花卉制成的可选利口酒。*
     - Seasonal Special Order Board Retexture: 季节性特别订单板纹理 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14220/14220-1666540629-807900054.png) <br> *根据季节或事件更改特殊订单板的外观*
     - Better Artisan Good Icons for The Love of Cooking: 更好的工匠好图标的烹饪之爱 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/10174/10174-1637587648-1520949797.png) <br> *为《烹饪之恋》mod中的新作物中的工匠物品添加新图标*
+    - Fancy Artisan Goods Fix for Better Artisan Goods Icons: 花式工匠商品修复以获得更好的手工艺品图标 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/12732/12732-1665497257-636913023.png)
+    - It's Tumbleweed Time: 风滚草时间 Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14537/14537-1669507234-1884037345.png) <br> *在刮风的日子里将沙尘暴添加到沙漠地图中，包括吹沙、风滚草和动画棕榈树。*
+    - Cuter Crops and Foraging： 更可爱的作物和觅食 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/13652/13652-1669495375-1328024254.png) 
+    - Bonster's Crops and Recipes Retexture: 邦斯特的作物和食谱重新纹理 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/4435/4435-1567413164-351840509.png) 
+
 ---
 - 游戏机制:
     - npc普遍喜欢钻石: UniversallyLovedDiamonds Æ <br> *所有npc都喜欢钻石*
@@ -279,6 +331,12 @@
     - Gift Rejection: 拒收礼品 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14273/14273-1666965877-170490193.png) <br> *导致NPC扔出他们讨厌和/或不喜欢的礼物。不喜欢和讨厌的礼物之间的投掷距离不同。*
     - Solstice Winter Star: 冬至冬星扩充 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14272/14272-1666961360-580846225.png) <br> *让冬星盛宴成为一个更独特的节日，有新的艺术，新的对话，甚至新的礼物！*
     - The Love of Cooking: 对烹饪的热爱 <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/6830/6830-1609555627-1242322381.png) <br> *关于烹饪的一系列变化！从新的烹饪菜单、重新平衡的食谱、工具进度和新技能中进行选择！*
+    - Ferngill Weathers：芬吉尔的气候 ? <br> *添加天气*
+    - Dungeon Merchants: 地牢商人 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14630/14630-1669673861-1463032715.png) <br> *导致矮人和沙漠商人随机生成或在矿山和骷髅洞穴的特定楼层生成。*
+    - Custom Crystalarium Mod: 定制水晶模组× <br> *前置*
+    - Produce to Sapling - Bonster's Crops for PFM: 生产到树苗 - 邦斯特的PFM作物× <br>*与种子制造商与帮斯特作物整合*
+    - Better Quality Increased Seeds - Bonster's Crops for PFM: 质量更好的增加种子 - 邦斯特用于PFM的作物× 
+
 
 ---
 
@@ -289,11 +347,46 @@
     - 光环: Halo  Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/5516/5516-1583261482-579931780.png) <br> *添加光环作为帽子，可从帽子鼠标购买。*
     - Crop Hat: 作物帽(将作物戴在头上)  × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/11787/11787-1650773199-183089267.png) <br> *在帽子槽中装备种子会把种子变成一顶庄稼帽子。*
     - Customize Wedding Attire: 定制婚纱(添加婚礼上穿什么)  Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/10761/10761-1642830096-44959692.png) <br> *模组允许你选择你穿什么参加婚礼，无论是燕尾服、婚纱、普通衣服，还是游戏默认的。*
+    - FS - Season of the Witch: FS - 女巫的季节 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/12488/12488-1656318666-858056216.png)
+    - FS - Rino's Clothes: FS - 里诺的衣服1 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14065/14065-1665225571-444615447.png)
+    - Luo Li's top and skirt9 and hat: 罗莉的上衣和裙子9和帽子 <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14622/14622-1669628596-626305194.png)
+    - JA - Luo Li's top and skirt8 and hat: JA-罗莉的上衣和裙子8和帽子 <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14608/14608-1669450669-2069614929.png)
+    - JA - Luo Li's top and skirt7 and hat: JA - 罗莉的上衣和裙子7和帽子 <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14586/14586-1669361235-739590803.png)
+    - JA- Luo Li's top and skirt6: JA-罗丽的上衣和裙子6 <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14528/14528-1668825735-1407455446.png)
+    - JA- Luo Li's top and skirt5: JA-罗丽的上衣和裙子5 <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14467/14467-1668328873-579349075.png)
+    - JA- Luo Li's top and skirt4: JA-罗丽的上衣和裙子4 <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14456/14456-1668249751-1532764212.png)
+    - JA- Luo Li's top and skirt3: JA-罗丽的上衣和裙子3 <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14201/14201-1666448015-1991739479.png)
+    - JA- Luo Li's top and skirt2: JA-罗丽的上衣和裙子2 <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14185/14185-1666360593-922177281.png)
+    - JA- Luo Li's top and skirt: JA-罗丽的上衣和裙子 <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14146/14146-1665993141-922958938.png)
+    - Laurie's Costume6: 罗莉的服装6 <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/13957/13957-1664363067-910132464.png)
+    - Laurie's Costume2: 罗莉的服装2 <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/13586/13586-1661937812-311352784.png)
+    - Laurie's shoes: 罗莉的鞋子 <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/13618/13618-1662104829-812781705.png)
+    - Shawl cheongsam(JA): 猫毛披肩旗袍（JA） <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/13243/13243-1659518019-499242762.jpeg)
+    - Blue Chicken Hat: 蓝鸡帽 Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/12919/12919-1658625376-186939805.png)
+    - Usilononatus hair and skirt: 乌西罗诺纳图斯头发和裙子 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/12379/12379-1654524508-773049728.png)
+    - FS_Hatspack: 久也的帽子包× <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/11780/11780-1650718293-533765211.png)
+    - FS_accessoriespack: 久也的配件包× <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/12107/12107-1653140676-98469092.png)
+    - FS_hairstylespack: 圭也的发型包 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/11724/11724-1650297976-2015838730.png)
+    - The Teddy Edit: 泰迪编辑 Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/10165/10165-1637457879-969178366.png)
+    - CP) Starkissed Skin Tones: 星吻肤色 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/6901/6901-1600677985-1720468592.png)
+    - Cozy Scarves: FS - 舒适围巾 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/10102/10102-1636598406-1122009727.png)
+    - Winter Solstice Hats: 冬至帽 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/10137/10137-1637015323-297452977.png)
+    - Sweat emoji hat: 汗水表情符号帽子 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/9908/9908-1634456287-737857308.jpeg)
+    - JA_Uniforms包: 所有游戏星露谷模组服装JA 科罗克的制服包 <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/9859/9859-1633796639-1164505474.png)
+    - CP - Coii's Girls Sets Pack: 科伊的女孩套装包 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/2872/2872-1537908213-1653067374.png)
+    - Coii's All Hats Pack: 科伊的帽子包 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/2871/2871-1537905515-1764130280.png)
+    - Hats Won't Mess Up Hair: 帽子不会弄乱头发 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/2847/2847-1537365306-1596165793.png)
+    - CP - Coii's Basic Shirts Pack:  Coii的基本款衬衫包 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/2870/2870-1537904917-665831954.png)
+    - Tailor Mouse: PPJA - 裁缝Mouse_A DGA 服装店 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/4798/4798-1576292146-1891326543.png)
+    - JA- Luo Li's top and skirt10: JA - 罗莉的上衣和裙子10 <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14672/14672-1670155802-107564289.png)
 ---
 - 对话:
     - CANON对话扩展: Stardew Valley Dialogue Expansion  √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/2544/2544-1532238548-2030469797.png) <br> *在所有 34 个具有心脏水平的角色中添加了大约 2600 条新对话。*
     - Immersive Festival Dialogue: 沉浸节日对话  Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/2612/2612-1533367644-47998898.png) <br> *在节日活动中根据您的关系状态为角色添加对话！年复一年地参加音乐节，听到同样的老话从每个人的嘴里说出来，不管你们一起经历了什么，都会变得无聊！这个模组旨在解决这个问题 - 并使节日值得再次参加。*
     - Immersive Saloon: 沉浸式沙龙  √  <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14120/14120-1665961962-1163684634.png) <br> *为沙龙常客添加额外的对话，这样他们就不会每次都说同样的话。威利分享渔民和酒的联系！帕姆揭示了与佩妮的曲折过去！山姆和塞巴斯蒂安可能正在用游泳池调情！克林特实际上变得有趣了*
+    - More Immersive NPC Birthday - Dialogue Expansion: 更身临其境的NPC生日 - 对话扩展 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/11532/11532-1651036990-1255427340.png) <br> *這個MOD給全村民增添了相應的對話，讓你可以在生日前夕跟他們的親友討論生日禮物，在生日當天訪問壽星……甚至還有看電影的特殊對話和婚前婚後的對話變化！*
+    - Junimo Dialog 朱尼莫对话 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/8937/8937-1623660220-2031653092.png) <br> *您的Junimos将表达他们对生活，工作，天气，季节的想法，偶尔还会表达您！*
+    - Realistic Writer Elliott: 现实主义作家艾略特√ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/10243/10243-1638678384-1777754152.jpeg) <br> *艾略特的对话和事件调整和扩展增加了他的写作过程和职业生涯。*
 
 ---
 
@@ -306,6 +399,11 @@
     - Lucky Clover-JA- 幸运三叶草  Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/3568/3568-1551633025-1281680321.png) <br> *可以在春季种植幸运三叶草！它们需要 4 天才能生长，吃掉时运气很大。*
     - Stardew Vineyard: 星露葡萄园 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/5912/5912-1587848232-1002462095.png) <br> *几种酿酒葡萄品种可添加到您的农场中，以获得更强大的葡萄园！*
     - (JA) Cocoa Plant and Chocolate Cooking: 可可植物和巧克力烹饪（JA）√ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/8354/8354-1616832707-682629685.png) <br> *添加了生产可可豆的新作物，以及 9 种新的巧克力烹饪食谱！*
+    - Wild Food Forage Expansion: 野生食物 - 牧草扩展模组 Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14653/14653-1670000261-1059189803.png) <br> *为星露谷增加新的季节性觅食物和作物*
+    - Marshmallows in Stardew: 星露中的棉花糖 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/5157/5157-1578648508-1823397991.png) <br> *添加沼泽锦葵作物，棉花糖和其他美味佳肴等你去发现！*
+    - Host Trees: 宿主树 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/9002/9002-1628451213-1781142486.jpeg) <br> *星露谷的一些树木现在可以自己种植植物。包括独特的工匠商品、机器互动和 NPC 礼物口味。*
+    - PPJA - Fresh Meat_An 'Alternative' Butcher Mod: PPJA - 新鲜Meat_An“另类”屠夫模组 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/1721/1721-1574740788-247435353.png) <br> *当然，你可以把你的牛长大并宰杀它们，但植物替代品呢？*
+
 
 ---
 - 杂项:
@@ -329,7 +427,10 @@
     - WarpnetDeepwoods: 深木曲速网络集成 Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/10240/10240-1638393605-1900204461.png) <br> *允许您通过曲速网络翘曲到深林，就像您拥有树林方尖碑一样。*
     - Stronger saplings: 更坚固的树苗 × <br> *防止你用镰刀/近战武器意外杀死树苗。*
     - Cold Pets: 宠物怕冷 × <br> *宠物会在冬天在屋子里取暖*
-
+    - Richside Village Achievement： 里奇赛德村成就 Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14623/14623-1669633415-863738889.png) <br> *为你在里奇赛德村的成就添加了 22 个新的自定义成就*
+    - Seasonal rainbow lollipop (lightning rod): 季节性彩虹棒棒糖（避雷针）× <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14352/14352-1667564165-1785863584.jpeg) <br> *季节性彩虹棒棒糖避雷针，替换了避雷针。*
+    - Heart Level Notifications: 心平通知 ? <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/8655/8655-1620108666-696662973.png) <br> *在每天开始时通知玩家与任何社交村民的心，如果他们即将与任何村民失去一颗心，可以选择通知他们是否即将与任何村民失去一颗心*
+  
 ---
 - 建筑物:
     - 佩斯利新娘精品店: Paisley's Bridal Boutique (GMM) √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/11446/11446-1648378235-1656601487.png) <br> *为玩家提供一个临时精品店，用于购买在婚礼和/或花舞会上穿的正式帽子、衬衫和裤子。*
@@ -337,6 +438,11 @@
     - 卢浮宫 （GMM）:  Louvier Fromagerie (GMM) √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/13422/13422-1660813485-99559586.png) <br> *增加了一个临时奶酪店，供玩家购买各种传统的法国/西欧奶酪、生产商和食谱。格兰普尔顿制造商市场模组的一部分。*
     - 格兰普尔顿制造商的市场信函 （GMM）: The Grampleton Maker's Market Letter (GMM)  Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/13421/13421-1661325274-1188880842.png) <br> *格兰普尔顿制造商市场到达鹈鹕镇所需的信件。*
     - Wear More Rings: 允许携带更多戒指  × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/3214/3214-1574958986-1349579255.png) <br> *提高戒指上限到8个*
+    - Pigeon Mailbox: 鸽子邮箱× <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/4785/4785-1636402473-454813422.png) <br> *4 个季节性邮箱选项。*
+    - Custom Obelisks: 定制方尖碑 × <br> *前置*
+
+
+
 ---
 - 钓鱼:
     - 更多新鱼: More New Fish  √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/3578/3578-1562441995-2075573888.jpeg) <br> *模组为游戏添加了 140 条新鱼*
@@ -370,6 +476,8 @@
     - Seasonal Save Slots: 季节性存档插槽 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14382/14382-1667796047-184922302.png) <br> *添加季节性风格以在加载游戏菜单中保存插槽。*
     - Yagisan - Custom NPCs for NPC Map Locations: 八木山 - NPC 地图位置的自定义 NPC <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/8174/8174-1655590258-1018331114.png) <br> *为大部分扩展地图添加npc头象*
     - Better Mead Icons - BAGI Addon: 更好的蜂蜜酒图标 - 巴吉插件 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/11911/11911-1651693977-21958184.png) <br> *允许更好的工匠好图标加载自定义的花蜂蜜酒精灵。*
+    - Customisable Heart Relationship Icon: 可定制的心形关系图标 Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14643/14643-1669834901-1596106337.png) 
+    - MailboxMenu: 邮箱菜单 ? <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14439/14439-1668179940-1008262914.png) <br> *将邮箱的点击打开下一个机制替换为功能齐全的邮箱菜单，该菜单显示带有标题和可自定义信封图标的新邮件和旧邮件。*
 
 ---
 - 动画： ×

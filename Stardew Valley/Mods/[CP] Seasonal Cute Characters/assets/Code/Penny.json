@@ -1,0 +1,116 @@
+{
+	"Changes": [
+		{
+			"LogName": "Penny - Seasonal",
+			"Action": "EditImage",
+			"Target": "Portraits/Penny, Characters/Penny",
+			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Penny - Winter Indoor/Outdoor",
+			"Action": "EditImage",
+			"Target": "Portraits/Penny, Characters/Penny",
+			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+                "Season": "Winter",
+                "WinterIndoorOutdoorOutfits": "IndoorOutdoor",
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Penny - Festival",
+			"Action": "EditImage",
+			"Target": "Portraits/Penny, Characters/Penny",
+            "FromFile": "assets/{{TargetPathOnly}}/Festivals/{{Festival}}/{{TargetWithoutPath}}_{{Festival}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"FestivalOutfits": "True",
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Penny - Beach",
+			"Action": "EditImage",
+			"Target": "Portraits/Penny_Beach, Characters/Penny_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Beach/{{TargetWithoutPath}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		
+// NOSE OVERLAY
+		{
+			"LogName": "Penny - Seasonal Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Penny",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"NoNose": "false",
+			},
+		},
+		{
+			"LogName": "Penny - Festival Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Penny",
+            "FromFile": "assets/Characters/Festivals/SpiritsEve/{{TargetWithoutPath}}_SpiritsEve_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"NoNose": "false",
+				"FestivalOutfits": "True",
+				"Festival": "SpiritsEve",				
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Penny - Beach Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Penny_Beach",
+            "FromFile": "assets/{{TargetPathOnly}}/Beach/{{TargetWithoutPath}}_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"NoNose": "false",
+			},
+		},
+		
+// MISCELLANEOUS		
+		{
+			"LogName": "Penny - Emoji",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+            "FromFile": "assets/{{NoNose}}/Random/emojis.png",
+			"FromArea": {"X": 9, "Y": 99, "Width": 9, "Height": 9},
+			"ToArea": {"X": 9, "Y": 99, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+            "LogName": "Penny - Bathhouse Heart Event",
+            "Action": "EditImage",
+            "Target": "Characters/Penny",
+			"FromFile": "assets/Characters/Penny/Penny_Event.png",
+            "When":
+            {
+                "HasFile:{{FromFile}}": true, 
+                "LocationName": "BathHouse_Pool",
+            },
+            "Update": "OnLocationChange",
+        },
+	]
+}

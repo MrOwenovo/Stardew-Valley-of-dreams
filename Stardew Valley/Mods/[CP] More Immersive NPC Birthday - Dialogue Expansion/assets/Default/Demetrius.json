@@ -1,0 +1,180 @@
+{
+  "Changes": [	
+  
+  	
+//Movie Invitation  
+  		{
+      "Action": "EditData",
+      "Target": "Strings/Characters",	  
+		   "When": {
+		   "Relationship:Maru |contains=Married": "false",
+		   "Season": "summer",
+		   "Day": "19",
+		   },
+      "Entries": {
+		  "MovieInvite_Invited_Demetrius": "生日电影？你真贴心。谢谢，我们电影院见。",
+     }
+    },
+  		{
+      "Action": "EditData",
+      "Target": "Strings/Characters",  
+		   "When": {
+		   "Relationship:Maru |contains=Married": "true",
+		   "Season": "summer",
+		   "Day": "19",
+		   },
+      "Entries": {
+		  "MovieInvite_Invited_Demetrius": "生日电影？当然可以！谢谢你。玛鲁也会来吗？$1#$b#嗯……行吧，没关系，我们去也可以。电影院见。$2",
+     }
+    },
+
+
+//Movie Reactions
+	    		{
+      "Action": "EditData",
+      "Target": "Data/MoviesReactions",	  
+		   "When": {
+		   "Season": "summer",
+		   "Day": "19",
+		   "Relationship:Maru |contains=Married": "false",
+		   },
+    "Entries":   {
+	"Demetrius":{
+    "NPCName": "Demetrius",
+    "Reactions": [
+      {
+        "Tag": "summer_movie_0",
+        "Response": "love",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "谢谢你邀我来。无论是不是生日，看电影都是相当有趣的活动。"
+          },
+          "DuringMovie": null,
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "这部电影有太多违反物理定律的地方……所以我半途就改为思考当中的电影艺术和摄影技巧。也是不错的娱乐。"
+          }
+        },
+        "ID": "reaction_0"
+      },
+      {
+        "Tag": "summer_movie_1",
+        "Response": "love",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "谢谢你邀我来。无论是不是生日，看电影都是相当有趣的活动。"
+          },
+          "DuringMovie": null,
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "这部很有趣！我欣赏制作团队对未来的想象。想办法实现这些看似疯狂的点子正是我们科学家的工作。$1"
+          }
+        },
+        "ID": "reaction_1"
+      },
+    ]
+  },
+	}
+			},
+
+			{
+      "Action": "EditData",
+      "Target": "Data/MoviesReactions",	  
+		   "When": {
+		   "Relationship:Maru |contains=Married": "true",
+		   "Season": "summer",
+		   "Day": "19",
+		   },
+    "Entries":   {
+	"Demetrius":{
+    "NPCName": "Demetrius",
+    "Reactions": [
+      {
+        "Tag": "summer_movie_0",
+        "Response": "love",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "我希望玛鲁也能来为我庆祝生日……但跟你一起看也不错，或许这证明我们已经慢慢成为一家人了。"
+          },
+          "DuringMovie": null,
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "我看的时候，一直在内心草拟一篇论证这套电影中存在多少物理常识错误的论文……$3#$b#噢，抱歉，@。我看得很开心。请代我向玛鲁问好，告诉她爸爸想她了。"
+          }
+        },
+        "ID": "reaction_0"
+      },
+      {
+        "Tag": "summer_movie_1",
+        "Response": "love",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "我希望玛鲁也能来为我庆祝生日……但跟你一起看也不错，或许这证明我们已经慢慢成为一家人了。"
+          },
+          "DuringMovie": {
+            "ResponsePoint": null,
+			"DuringMovie": null,
+            "Text": ""
+          },
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "真是有趣的电影！毫无疑问是玛鲁会喜欢的电影。我们都对外太空的生命体很感兴趣。$1"
+          }
+        },
+        "ID": "reaction_1"
+      },
+    ]
+  },
+	}
+			},	
+	    {
+        "Action": "EditData",
+        "Target": "Characters/Dialogue/Demetrius",
+        "Entries":
+        {
+//［Demetrius->Sebastian］
+ 				"winter_9": "明天是塞巴斯蒂安的生日。罗宾从好几天前就在准备庆祝了。#$b#我？过往的经验告诉我，跟塞巴斯蒂安最好的相处方法就是互不相干。#$e#那男孩应该是社交——噢，罗宾劝我最好不要多说。她说不是每个人都喜欢被科学分析自己的内心世界。#$e#我不太理解她的意思，但她在这种事上通常都是对的，所以我在尝试着照她说的做。",
+    			"winter_9_2": "明天是塞巴斯蒂安的生日。罗宾从好几天前就在准备庆祝了。#$b#我？过往的经验告诉我，跟塞巴斯蒂安最好的相处方法就是互不相干。#$e#那男孩应该是社交——噢，罗宾劝我最好不要多说。她说不是每个人都喜欢被科学分析自己的内心世界。#$e#我不太理解她的意思，但她在这种事上通常都是对的，所以我在尝试着照她说的做。",
+ 				"winter_9_inlaw_Sebastian": "明天是塞巴斯蒂安的生日……哦，你当然是清楚的。#$e#你跟罗宾谈过了吗？她应该有些东西要给你。",
+ 				"winter_9_2_inlaw_Sebastian": "明天是塞巴斯蒂安的生日……哦，你当然是清楚的。#$e#你跟罗宾谈过了吗？她应该有些东西要给你。",
+
+//［Demetrius->Robin］
+  				"fall_20": "明天是我妻子的生日。#$b#我认为生日是很有意思的文化。每个人独一无二的节日……让人很感兴趣。#$e#噢，你问生日礼物？我准备了桃子。她喜欢饭后来一颗。#$e#那是温室种植的水果，但仍然很新鲜。",
+ 				"fall_20_2": "明天是我妻子的生日。#$b#我认为生日是很有意思的文化。每个人独一无二的节日……让人很感兴趣。#$e#噢，你问生日礼物？我准备了桃子。她喜欢饭后来一颗。#$e#那是温室种植的水果，但仍然很新鲜。",
+  				"fall_20_inlaw_Maru": "明天是我妻子的生日。#$b#我认为生日是很有意思的文化。每个人独一无二的节日……让人很感兴趣。#$e#我今年也为罗宾准备了桃子，但是缺了玛鲁总让我觉得好像缺了什么。$2#$b#嗯……我答应过自己不再抱怨，但我着实还是想念我的女儿。我希望她在你那过得都好。$5",
+ 				"fall_20_2_inlaw_Maru": "明天是我妻子的生日。#$b#我认为生日是很有意思的文化。每个人独一无二的节日……让人很感兴趣。#$e#我今年也为罗宾准备了桃子，但是缺了玛鲁总让我觉得好像缺了什么。$2#$b#嗯……我答应过自己不再抱怨，但我着实还是想念我的女儿。我希望她在你那过得都好。$5",
+
+//［Demetrius->Maru］
+ 				"summer_9": "明天是我女儿玛鲁的生日。我从祖祖城订购了上好的铱碇，我希望她会开心。$1#$c .5#想到我的小女孩又大一岁了，身为父亲真是心情复杂。#她一年比一年长得优秀，身为父亲我感到很自豪。$1",
+ 				"summer_9_2": "明天是我女儿玛鲁的生日。我从祖祖城订购了上好的铱碇，我希望她会开心。$1#$c .5#想到我的小女孩又大一岁了，身为父亲真是心情复杂。#她一年比一年长得优秀，身为父亲我感到很自豪。$1",
+ 				"summer_9_inlaw_Maru": "你好。你肯定知道明天是我女儿的生日吧？#$b#$y '这是我为她准备的生日礼物。麻烦你转交给她。_好的。_谢谢。罗宾说身为父母不应该整天打扰孩子的婚后生活……但我想在当天把礼物交给她。所以交托给你应该会是适当的做法。[337]$5*这是我订购的铱碇，应该会对她进行的研究很有帮助。_抱歉，我没空。_什么？你应该没有亏待玛鲁吧。$5*嗯……没关系，我明白农务很忙碌。$3*那好，我明天会拿给她……正好可以见她一面。$1'",
+ 				"summer_9_2_inlaw_Maru": "你好。你肯定知道明天是我女儿的生日吧？#$b#$y '这是我为她准备的生日礼物。麻烦你转交给她。_好的。_谢谢。罗宾说身为父母不应该整天打扰孩子的婚后生活……但我想在当天把礼物交给她。所以交托给你应该会是适当的做法。[337]$5*这是我订购的铱碇，应该会对她进行的研究很有帮助。_抱歉，我没空。_什么？你应该没有亏待玛鲁吧。$5*嗯……没关系，我明白农务很忙碌。$3*那好，我明天会拿给她……正好可以见她一面。$1'",
+
+//Demetrius->Demetrius
+ 				"summer_19": "你好，@。你知道今天是我出生的纪念日吗？#$b#噢，就是俗称的生日。在许多年前的今天我来到了世上。#$c .5#在这一天我通常会吃些好吃的，跟我的妻子女儿一起庆祝。跟其他人没什么分别吧？$1#我和罗宾习惯在这天晚上到酒馆放松一下，吃顿好的。星之果实餐吧的豆类火锅很让我满意。$1",
+ 				"summer_19_2": "你好，@。你知道今天是我出生的纪念日吗？#$b#噢，就是俗称的生日。在许多年前的今天我来到了世上。#$c .5#在这一天我通常会吃些好吃的，跟我的妻子女儿一起庆祝。跟其他人没什么分别吧？$1#我和罗宾习惯在这天晚上到酒馆放松一下，吃顿好的。星之果实餐吧的豆类火锅很让我满意。$1",
+ 				"summer_19_inlaw_Maru": "你好，儿子^你好，女儿。#$b#嗯……今天是我的生日。早上玛鲁就打电话来祝贺了。#$e#我还没习惯她不在身边的生日……但起码我知道她跟你结婚后过得很好。$5#$b#而且她下周一还是会回来看我。我着实有点期待。$1",
+ 				"summer_19_2_inlaw_Maru": "你好，儿子^你好，女儿。#$b#嗯……今天是我的生日。早上玛鲁就打电话来祝贺了。#$e#我还没习惯她不在身边的生日……但起码我知道她跟你结婚后过得很好。$5#$b#而且她下周一还是会回来看我。我着实有点期待。$1",
+		}
+    },
+
+	
+  
+  ]
+}

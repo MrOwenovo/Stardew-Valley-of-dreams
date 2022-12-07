@@ -1,0 +1,24 @@
+{
+    "Format": "1.24.0",
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/SpousePatios",
+            "Entries": {
+                "Krobus": "z_KrobusPatio_{{season}}/0/23 23 23 22 22 22 23 23 23 20 20 20/2 3"
+            }
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/z_KrobusPatio_{{season}}",
+            "FromFile": "assets/Maps/z_KrobusPatio_{{season}}.tbin"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Krobus",
+            "Entries":{
+                "patio_Krobus":"{{i18n: SpousePatio}}"
+            }
+        }
+    ]
+}

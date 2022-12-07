@@ -1,0 +1,159 @@
+{
+    "Changes": [
+
+//Woodworking with Robin
+
+{   "Action": "EditMap",
+	"Target": "Maps/CommunityCenter_Refurbished",
+	"FromFile": "assets/CommunityCenter_Classroom_EggFest.tmx",
+	"FromArea": { "X": 21, "Y": 26, "Width": 5, "Height": 4 },
+    "ToArea": { "X": 8, "Y": 20, "Width": 5, "Height": 4 },
+    "When": {   "weather":"rain, storm"   }
+    },
+
+{   "LogName": "Schedule",  
+    "Action": "EditData",  
+    "Target": "Characters/schedules/Robin",
+    "Entries": {	
+        "rain": "800 ScienceHouse 8 18 2/1400 CommunityCenter 8 21 1 \"Strings\\schedules\\Robin:Woodwork_{{Random:WW1,WW2,WW3|key=WoodWork}}\"/2000 ScienceHouse 21 4 1 robin_sleep"  }
+        },      
+{   "LogName": "Schedule",  
+    "Action": "EditData",  
+    "Target": "Characters/schedules/Jade",
+    "When": {   "HasMod":"malic.cp.jadeNPC" 	},
+    "Entries": {	
+        "rain": "900 CommunityCenter 23 9 jade_groundread/1630 CommunityCenter 9 23 0 \"Strings\\schedules\\Robin:Woodwork_Jade_{{Random:WW1,WW2,WW3}}\"/2000 {{JadeEnd}}"   }
+    },
+{   "LogName": "Schedule",  
+    "Action": "EditData",  
+    "Target": "Characters/schedules/Shane",
+    "Entries": {	
+            "rain": "900 AnimalShop 24 17 1/1000 AnimalShop 24 15 0/1100 AnimalShop 24 5 0/1200 AnimalShop 5 14 2/1400 AnimalShop 26 16 2/1430 CommunityCenter 11 20 2 \"Strings\\schedules\\Shane:Woodwork_{{Random:WW1,WW2,WW3|key=WoodWork}}\"/2000 AnimalShop 27 4 1 shane_sleep"
+        }
+    },
+{   "LogName": "Schedule",  
+    "Action": "EditData",  
+    "Target": "Characters/schedules/Jas",
+    "Entries": {	
+            "rain": "900 AnimalShop 7 5 0/1100 AnimalShop 16 16 2 square_3_3/1400 AnimalShop 25 17 1/1430 CommunityCenter 9 20 2 \"Strings\\schedules\\Jas:Woodwork_{{Random:WW1,WW2,WW3|key=WoodWork}}\"/2000 AnimalShop 1 7 3 jas_sleep"
+            }
+        },
+    //If a school day, Jas stays after class. Shane will (hopefully) join her.
+    {   "Action": "EditData",
+        "Target": "Characters/schedules/Jas",
+        "When": {   "DayOfWeek": "Tuesday, Wednesday, Friday",  "weather":"rain, storm"   },
+        "Entries": {
+            "9":    "GOTO rain",
+            "23":   "GOTO rain",
+            "rain": "900 CommunityCenter 18 20 3 jas_read/1620 CommunityCenter 9 20 2 \"Strings\\schedules\\Jas:Woodwork_{{Random:WW1,WW2,WW3|key=WoodWork}}\"/2000 AnimalShop 1 7 3 jas_sleep"
+            }
+        },
+
+{   "LogName": "Schedule",  
+    "Action": "EditData",  
+    "Target": "Characters/schedules/MisterGinger",
+    "When": {   "HasMod":"LemurKat.Mr.Ginger.NPC"   },
+    "Entries": {	
+            "rain": "800 AnimalShop 5 5 2 MrG_Grooming/1110 AnimalShop 7 16 2 MrG_Grooming/1400 AnimalShop 22 14 2/1430 CommunityCenter 13 19 2 MrG_Grooming \"Strings\\schedules\\MisterGinger:Woodwork_{{Random:WW1,WW2,WW3|key=WoodWork}}\"/2000 AnimalShop 3 5 2 MrG_Sleep"
+        }
+    },
+            {   "LogName": "Schedule",  
+                "Action": "EditData",  
+                "Target": "Characters/schedules/MisterGinger",
+                "When": {   "HasMod":"LemurKat.Tristan.CP", "HasSeenEvent":"5295002", "Spouse |contains=Shane":false   },
+                "Entries": {	
+                    "rain": "0800 Custom_ESHouse1 20 19 0/1100 Custom_ESHouse1 7 18 misterginger_knit/1200 CommunityCenter 13 19 2 misterginger_knit \"Strings\\schedules\\MisterGinger:Woodwork_{{Random:WW4,WW5,WW6}}/2000 Custom_ESHouse1 23 4 2 misterginger_sleep"
+                        }
+                },
+        {   "LogName": "Schedule",  
+            "Action": "EditData",  
+            "Target": "Characters/schedules/MisterGinger",
+            "When": {   "HasMod":"LemurKat.Tristan.CP", "HasSeenEvent":"5295000", "Spouse |contains=Shane":true   },
+            "Entries": {	
+                    "rain": "900 AnimalShop 24 17 1/1000 AnimalShop 24 15 0/1100 AnimalShop 24 5 0/1200 AnimalShop 5 14 2/1400 AnimalShop 26 16 2/1430 CommunityCenter 11 20 2 \"Strings\\schedules\\MisterGinger:Woodwork_{{Random:WW7,WW8,WW9}}/2000 Custom_ESHouse1 23 4 2 misterginger_sleep"
+                    }
+            },
+{   "LogName": "Schedule",  
+    "Action": "EditData",  
+    "Target": "Characters/schedules/Harvey",
+    "Entries": {	
+    "rain": "800 HarveyRoom 19 7 0/840 Hospital 6 15 2/1200 HarveyRoom 4 5 1 harvey_radio/1600 CommunityCenter 11 23 0 \"Strings\\schedules\\Harvey:Woodwork_{{Random:WW1,WW2,WW3|key=WoodWork}}/2000 HarveyRoom 13 4 1 harvey_sleep"
+        }
+    },
+
+//Schedule Dialogue    
+{	"LogName": "Woodwork class - Robin",
+    "Action": "EditData",
+    "Target": "Strings/schedules/Robin",
+    "Entries": {
+        "Woodwork_WW1": "{{i18n:RainyDayF.Robin.1}}",
+        "Woodwork_WW2": "{{i18n:RainyDayF.Robin.2}}",
+        "Woodwork_WW3": "{{i18n:RainyDayF.Robin.3}}"
+      }
+    },
+{	"LogName": "Woodwork class - Shane",
+    "Action": "EditData",
+    "Target": "Strings/schedules/Shane",
+    "Entries": {
+        "Woodwork_WW1": "{{i18n:RainyDayF.Shane.1}}",
+        "Woodwork_WW2": "{{i18n:RainyDayF.Shane.2}}",
+        "Woodwork_WW3": "{{i18n:RainyDayF.Shane.3}}"
+        }
+    },
+{	"LogName": "Woodwork class - Jas",
+    "Action": "EditData",
+    "Target": "Strings/schedules/Jas",
+    "Entries": {
+        "Woodwork_WW1": "{{i18n:RainyDayF.Jas.1}}",
+        "Woodwork_WW2": "{{i18n:RainyDayF.Jas.2}}",
+        "Woodwork_WW3": "{{i18n:RainyDayF.Jas.3}}"
+        }
+    },
+{	"LogName": "Woodwork class - Harvey",
+    "Action": "EditData",
+    "Target": "Strings/schedules/Harvey",
+    "Entries": {
+        "Woodwork_WW1": "{{i18n:RainyDayF.Harvey.1}}",
+        "Woodwork_WW2": "{{i18n:RainyDayF.Harvey.2}}",
+        "Woodwork_WW3": "{{i18n:RainyDayF.Harvey.3}}"
+        }
+    },
+{	"LogName": "Woodwork class - MisterGinger",
+    "Action": "EditData",
+    "Target": "Strings/schedules/MisterGinger",
+    "When": {   "HasMod":"LemurKat.Mr.Ginger.NPC", "HasSeenEvent |contains=50706121":false    },
+    "Entries": {
+        "Woodwork_WW1": "{{i18n:RainyDayF.MisterGinger0.1}}",
+        "Woodwork_WW2": "{{i18n:RainyDayF.MisterGinger0.2}}",
+        "Woodwork_WW3": "{{i18n:RainyDayF.MisterGinger0.3}}"
+                   }
+        },
+{	"LogName": "Woodwork class - MisterGinger",
+    "Action": "EditData",
+    "Target": "Strings/schedules/MisterGinger",
+    "When": {   "HasMod":"LemurKat.Mr.Ginger.NPC", "HasSeenEvent": "50706121"   },
+    "Entries": {
+        "Woodwork_WW1": "{{i18n:RainyDayF.MisterGinger.1}}",
+        "Woodwork_WW2": "{{i18n:RainyDayF.MisterGinger.2}}",
+        "Woodwork_WW3": "{{i18n:RainyDayF.MisterGinger.3}}",
+        "Woodwork_WW4": "{{i18n:RainyDayF.Tristan.4}}",
+        "Woodwork_WW5": "{{i18n:RainyDayF.Tristan.5}}",
+        "Woodwork_WW6": "{{i18n:RainyDayF.Tristan.6}}",
+        "Woodwork_WW7": "{{i18n:RainyDayF.Tristan.7}}",
+        "Woodwork_WW8": "{{i18n:RainyDayF.Tristan.8}}",
+        "Woodwork_WW9": "{{i18n:RainyDayF.Tristan.9}}"
+            }
+        },
+
+{	"LogName": "Woodwork class - Jade",
+    "Action": "EditData",
+    "Target": "Strings/schedules/Robin",
+    "When": {   "HasMod":"malic.cp.jadeNPC" 	},
+    "Entries": {
+        "Woodwork_Jade_WW1": "{{i18n:RainyDayF.Jade.1}}",
+        "Woodwork_Jade_WW2": "{{i18n:RainyDayF.Jade.2}}",
+        "Woodwork_Jade_WW3": "{{i18n:RainyDayF.Jade.3}}"
+            }
+        }
+    ]
+}

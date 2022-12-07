@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.4" orientation="orthogonal" renderorder="right-down" width="6" height="8" tilewidth="16" tileheight="16" infinite="0" nextlayerid="11" nextobjectid="4">
+ <properties>
+  <property name="Outdoors" value="T"/>
+ </properties>
+ <tileset firstgid="1" name="Landscape" tilewidth="16" tileheight="16" tilecount="1975" columns="25">
+  <image source="spring_outdoorsTileSheet.png" width="400" height="1264"/>
+ </tileset>
+ <tileset firstgid="1976" name="Paths" tilewidth="16" tileheight="16" tilecount="36" columns="4">
+  <image source="paths.png" width="64" height="144"/>
+ </tileset>
+ <tileset firstgid="2012" name="Town" tilewidth="16" tileheight="16" tilecount="2304" columns="32">
+  <image source="spring_town.png" width="512" height="1152"/>
+ </tileset>
+ <tileset firstgid="4316" name="z_townInterior" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="townInterior.png" width="512" height="1088"/>
+  <tile id="48">
+   <properties>
+    <property name="Passable" value="T"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer id="1" name="Back" width="6" height="8">
+  <data encoding="base64" compression="zlib">
+   eJyrZGRgqITiKiCuBeI6IEYH5IrXYsEg8WlY8HQgTgBiIygNwoZArIvER8cAwmsQWg==
+  </data>
+ </layer>
+ <objectgroup id="2" name="Back">
+  <object id="1" name="TileData" x="0" y="80" width="16" height="16">
+   <properties>
+    <property name="TouchAction" value="Warp Custom_WaterfallForest 58 42"/>
+   </properties>
+  </object>
+  <object id="2" name="TileData" x="0" y="96" width="16" height="16">
+   <properties>
+    <property name="TouchAction" value="Warp Custom_WaterfallForest 58 43"/>
+   </properties>
+  </object>
+  <object id="3" name="TileData" x="0" y="112" width="16" height="16">
+   <properties>
+    <property name="TouchAction" value="Warp Custom_WaterfallForest 58 44"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="3" name="Buildings" width="6" height="8">
+  <data encoding="base64" compression="zlib">
+   eJx7ycDAUMnIwMAExFVAvBeIQeAKkL4KxPuh9DWo+FsgfYARQb+HirMxMTCwMyFoDiaIuDyQVmBC0IpQcR5BTEyOOABNJA2O
+  </data>
+ </layer>
+ <objectgroup id="4" name="Buildings"/>
+ <layer id="5" name="Front" width="6" height="8">
+  <data encoding="base64" compression="zlib">
+   eJxLZ8AO0vGII2NC6qkF5jEyMMxnRNDbGSHiANKaBgg=
+  </data>
+ </layer>
+ <objectgroup id="6" name="Front"/>
+ <layer id="7" name="Paths" width="6" height="8">
+  <data encoding="base64" compression="zlib">
+   eJxjYBjaAAAAwAAB
+  </data>
+ </layer>
+ <objectgroup id="8" name="Paths"/>
+ <layer id="9" name="AlwaysFront" width="6" height="8">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgY8IqLgeE1EL8B4rdAnA4V5+JmYOAGYh4g5uVGqNcCsrWBWAeIdZHEATHfBXI=
+  </data>
+ </layer>
+ <objectgroup id="10" name="AlwaysFront"/>
+</map>

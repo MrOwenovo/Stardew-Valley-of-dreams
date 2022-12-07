@@ -1,0 +1,138 @@
+{
+	"Changes": [
+		{
+			"LogName": "Shane - Seasonal",
+			"Action": "EditImage",
+			"Target": "Portraits/Shane, Characters/Shane",
+			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Shane - Winter Indoor/Outdoor",
+			"Action": "EditImage",
+			"Target": "Portraits/Shane, Characters/Shane",
+			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+                "Season": "Winter",
+                "WinterIndoorOutdoorOutfits": "IndoorOutdoor",
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Shane - Festival",
+			"Action": "EditImage",
+			"Target": "Portraits/Shane, Characters/Shane",
+            "FromFile": "assets/{{TargetPathOnly}}/Festivals/{{Festival}}/{{TargetWithoutPath}}_{{Festival}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"FestivalOutfits": "True",
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Shane - Beach",
+			"Action": "EditImage",
+			"Target": "Portraits/Shane_Beach, Characters/Shane_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Beach/{{TargetWithoutPath}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+            "LogName": "Shane - Joja Sprite",
+            "Action": "EditImage",
+            "Target": "Characters/Shane_JojaMart",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{Season}}.png",
+			"When":
+            {
+                "HasFile:{{FromFile}}": true,
+            },
+        },
+		{
+            "LogName": "Shane - Joja Portrait",
+            "Action": "EditImage",
+            "Target": "Portraits/Shane",
+            "FromFile": "assets/Portraits/Shane/Shane_Joja.png",
+			"When":
+            {
+                "HasFile:{{FromFile}}": true,
+                "HasSeenEvent: currentPlayer |contains=191393": false,
+                "LocationName": "JojaMart",
+				"ExtraOutfits": "True",
+            },
+            "Update": "OnLocationChange",
+        },
+		
+// NOSE OVERLAY
+		{
+			"LogName": "Shane - Seasonal Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Shane, Characters/Shane_JojaMart",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"NoNose": "false",
+			},
+		},
+		{
+			"LogName": "Shane - Beach Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Shane_Beach",
+            "FromFile": "assets/{{TargetPathOnly}}/Beach/{{TargetWithoutPath}}_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"NoNose": "false",
+			},
+		},
+		
+// MISCELLANEOUS		
+		{
+			"LogName": "Shane - Emoji",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+            "FromFile": "assets/{{NoNose}}/Random/emojis.png",
+			"FromArea": {"X": 63, "Y": 99, "Width": 9, "Height": 9},
+			"ToArea": {"X": 63, "Y": 99, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{  
+			"LogName": "Shane - Drunk Cursors",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"Update": "OnLocationChange",
+			"FromFile": "assets/{{NoNose}}/Random/Cursors_{{Season}}.png",
+			"FromArea": { "X": 533, "Y": 1864, "Width": 19, "Height": 27 },
+			"ToArea": { "X": 533, "Y": 1864, "Width": 19, "Height": 27  },
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Shane Clothes Therapy Characters",
+			"Action": "EditImage",
+			"Target": "Characters/ClothesTherapyCharacters",
+			"FromFile": "assets/{{Target}}.png",
+			"FromArea": {"X": 0, "Y": 0, "Width": 64, "Height": 32},
+			"ToArea": {"X": 0, "Y": 0, "Width": 64, "Height": 32},
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+	]
+}

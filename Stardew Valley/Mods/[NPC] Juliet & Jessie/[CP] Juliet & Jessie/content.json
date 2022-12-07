@@ -1,0 +1,609 @@
+{
+        "Format": "1.23.0",
+        "CustomLocations": [
+                {
+                        "Name": "Custom_LK_ClearingHouse",
+                        "FromMapFile": "assets/Maps/ClearingHouse.tmx"
+                },
+                {
+                        "Name": "Custom_LK_LodgingHouse",
+                        "FromMapFile": "assets/Maps/LodgingHouseRev.tmx"
+                },
+                {
+                        "Name": "Custom_LK_JojaBreakRoom",
+                        "FromMapFile": "assets/Maps/JojaBreakRoom.tmx"
+                },
+                {
+                        "Name": "Custom_LK_TheaterBreakroom",
+                        "FromMapFile": "assets/Maps/TheaterBreakroom.tmx"
+                },
+                {
+                        "Name": "Custom_LK_LodgingHouseBasement",
+                        "FromMapFile": "assets/Maps/LodgingHouseBasement.tmx"
+                }
+        ],
+        "ConfigSchema": {
+                "LoadJojaMart": {
+                        "AllowValues": "true, false",
+                        "Default": "true"
+                },
+                "TownMap": {
+                        "AllowValues": "default, reimagined, SVE",
+                        "Default": "default"
+                }, //can remove SVE if recolor/door patch is left universal
+                "atdsdv": {
+                        "AllowValues": "none,standard, warm",
+                        "Default": "standard"
+                },
+                "alternateWallsNFloors": //for recolor compatibility (enabled does nothing and lets the mod proceed with standard load; ONLY FOR VANILLA)
+                {
+                        "AllowValues": "disabled, enabled",
+                        "Default": "disabled"
+                }
+        },
+        "DynamicTokens": [
+                //Loads ES Schedules if East Scarpe is installed but SVE is not
+                {
+                        "Name": "LoadESMap",
+                        "Value": "false"
+                },
+                {
+                        "Name": "LoadESMap",
+                        "Value": "true",
+                        "When": {
+                                "HasMod": "LemurKat.EastScarpe.CP"
+                        }
+                },
+                {
+                        "Name": "LoadESMap",
+                        "Value": "false",
+                        "When": {
+                                "HasMod": "FlashShifter.StardewValleyExpandedCP"
+                        }
+                },
+                //Is Juliet's Boss Lewis or Morris? 
+                {
+                        "Name": "bossGuy",
+                        "Value": "Lewis",
+                        "When": {
+                                "IsCommunityCenterComplete": true
+                        }
+                },
+                {
+                        "Name": "bossGuy",
+                        "Value": "Morris",
+                        "When": {
+                                "IsCommunityCenterComplete": false
+                        }
+                },
+                //Spirit's Eve Costume
+                {
+                        "Name": "Costume",
+                        "Value": "Pirate"
+                },
+                {
+                        "Name": "Costume",
+                        "Value": "Zombie",
+                        "When": {
+                                "Year": "1,3,5,7,11,13,17,19,23,27,31,37,43"
+                        }
+                },
+                //Determines what gifts Jessie can give in her 2-heart event
+                {
+                        "Name": "JessGift",
+                        "Value": "453"
+                },
+                {
+                        "Name": "JessGift",
+                        "Value": "{{JessGift}} 431",
+                        "When": {
+                                "Hearts:Haley": "0,1,2,3,4"
+                        }
+                },
+                {
+                        "Name": "JessGift",
+                        "Value": "{{JessGift}} 482",
+                        "When": {
+                                "Hearts:Shane": "0,1,2,3,4"
+                        }
+                },
+                {
+                        "Name": "JessGift",
+                        "Value": "{{JessGift}} 453",
+                        "When": {
+                                "Hearts:Penny": "0,1,2,3,4"
+                        }
+                },
+                {
+                        "Name": "JessGift",
+                        "Value": "{{JessGift}} 490",
+                        "When": {
+                                "Hearts:Abigail": "0,1,2,3,4"
+                        }
+                },
+                {
+                        "Name": "JessGift",
+                        "Value": "{{JessGift}} 745",
+                        "When": {
+                                "Hearts:Maru": "0,1,2,3,4"
+                        }
+                },
+                {
+                        "Name": "JessGift",
+                        "Value": "{{JessGift}} 802",
+                        "When": {
+                                "Hearts:Sam": "0,1,2,3,4"
+                        }
+                },
+                {
+                        "Name": "JessGift",
+                        "Value": "{{JessGift}} 433",
+                        "When": {
+                                "Hearts:Harvey": "0,1,2,3,4"
+                        }
+                },
+                //Recolor Configurations. This was done by 'The Help'
+                // this mod contains exteriors as well; atdsv token removed for people who want both this and atdsv
+                {
+                        "Name": "recolor",
+                        "Value": "vanilla",
+                        "When": {
+                                "HasMod |contains=Hesper.RusticCountrysideTownInterior": false,
+                                "HasMod |contains=minervamaga.CP.ATDSV": false
+                        }
+                },
+                {
+                        "Name": "recolor",
+                        "Value": "rusticInteriors",
+                        "When": {
+                                "HasMod |contains=Hesper.RusticCountrysideTownInterior": true,
+                                "HasMod |contains=minervamaga.CP.ATDSV": false
+                        }
+                },
+                {
+                        "Name": "recolor",
+                        "Value": "atdsdvStandard",
+                        "When": {
+                                "HasMod |contains=minervamaga.CP.ATDSV": true,
+                                "atdsdv": "standard"
+                        }
+                },
+                {
+                        "Name": "recolor",
+                        "Value": "atdsdvWarm",
+                        "When": {
+                                "HasMod |contains=minervamaga.CP.ATDSV": true,
+                                "atdsdv": "warm"
+                        }
+                },
+                {
+                        "Name": "recolor",
+                        "Value": "seasside",
+                        "When": {
+                                "HasMod |contains=rainkius.SeasideValley": true,
+                                "atdsdv": "none"
+                        }
+                },
+                //Dialogue For Jessie's 4-heart event
+                {
+                        "Name": "GatherText",
+                        "Value": "蕨菜。#$b#可能有些人不喜欢它的味道，但是蕨菜富含维生素和矿物质。#$b#不过，烹饪它们的时候要注意。一旦没有熟透……它们可能会导致消化不良。$2",
+                        "When": {
+                                "Season": "Summer"
+                        }
+                },
+                {
+                        "Name": "GatherText",
+                        "Value": "羊肚菌。#$b#它们对人们来说是美味佳肴，不过熊也这么认为。所以要小心谨慎！",
+                        "When": {
+                                "Season": "Spring"
+                        }
+                },
+                {
+                        "Name": "GatherText",
+                        "Value": "鸡油菌。#$b#它们不仅美味，也同样富含维生素和矿物质。",
+                        "When": {
+                                "Season": "Fall"
+                        }
+                },
+                {
+                        "Name": "GatherText",
+                        "Value": "冬青树。#$b#我不建议食用它的浆果，但冬青树叶对治疗冬日咳嗽和胸闷很有用。",
+                        "When": {
+                                "Season": "Winter"
+                        }
+                },
+                //Added flavour for Jessie's 10-heart event
+                {
+                        "Name": "MusicalInterlude",
+                        "Value": "pause 500/faceDirection farmer 3/emote farmer 32/pause 2500/faceDirection farmer 2/emote Jessie 56 true/emote farmer 56 true"
+                },
+                {
+                        "Name": "MusicalInterlude",
+                        "Value": "pause 500/faceDirection farmer 3/emote farmer 32/pause 2500/playSound dwop/showFrame 98/emote Jessie 16/pause 500/speak Jessie \"Oh! You have hidden talents, @!\"/pause 500/emote Jessie 56",
+                        "When": {
+                                "HasSeenEvent": "2"
+                        }
+                },
+                //Platonic or Romantic for Juliet's 10-heart event
+                {
+                        "Name": "10HeartReact",
+                        "Value": "emote Juliet 20/pause 1000"
+                },
+                {
+                        "Name": "10HeartReact",
+                        "Value": "animate Juliet false false 4500 28/animate farmer true false 4500 101/positionOffset farmer -10 0/positionOffset Juliet 10 0/textAboveHead Juliet \"<\"",
+                        "When": {
+                                "HasDialogueAnswer": "639899"
+                        }
+                },
+                {
+                        "Name": "GenericMovieDialogue",
+                        "Value": "站在柜台的这一边感觉真奇怪！嗨，凯文！",
+                        "When": {
+                                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+                        }
+                },
+                {
+                        "Name": "GenericMovieDialogue",
+                        "Value": "嘿，克莱尔！你看起来挺开心的。这样很适合你！",
+                        "When": {
+                                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+                        }
+                },
+                //14-heart Event Participants
+                {
+                        "Name": "Juliet_SetUp",
+                        "Value": "Marlon 28 8 2 Marnie 35 8 2"
+                },
+                {
+                        "Name": "Juliet_SetUp",
+                        "Value": "Marlon 28 8 2 Marnie 29 8 2",
+                        "When": {
+                                "HasSeenEvent": "50706110"
+                        }
+                },
+                {
+                        "Name": "Juliet_SetUp",
+                        "Value": "{{Juliet_SetUp}} Vincent 40 10 0 Jas 41 10 0 Willy 43 11 3 Penny 38 10 1 Lewis 33 11 1 Caroline 24 11 1 Jodi 25 11 3 Wizard 22 11 1 Alex 27 12 1 Haley 28 12 3 Kent 22 15 1 Gus 23 18 1 Pam 23 20 1 Harvey 26 21 0 Shane 29 19 3 Clint 27 17 2 Pierre 26 9 2 Emily 30 15 2 Gunther 30 18 0 Leah 34 17 1 Elliott 35 16 2 Robin 36 17 3 Sam 38 15 1 Abigail 39 14 2 Sebastian 40 15 3 Demetrius 43 15 3 Maru 46 13 0 Evelyn 39 19 2 George 40 19 2 Linus 42 20 3 Jessie 38 20 1 Juliet 32 11 3 farmer 32 23 0"
+                },
+                //Adds selected custom NPCs: Jasper, Tristan and Luckiel (if installed)
+                {
+                        "Name": "Juliet_SetUp",
+                        "Value": "{{Juliet_SetUp}} Jasper 43 12 3",
+                        "When": {
+                                "HasMod": "Lemurkat.NPCJasper"
+                        }
+                },
+                {
+                        "Name": "Juliet_SetUp",
+                        "Value": "{{Juliet_SetUp}} MisterGinger 43 16 3",
+                        "When": {
+                                "HasSeenEvent": "5295000",
+                                "HasMod": "Lemurkat.Tristan.CP"
+                        }
+                },
+                {
+                        "Name": "Juliet_SetUp",
+                        "Value": "{{Juliet_SetUp}} Lucikiel 28 21 0",
+                        "When": {
+                                "HasMod": "Arknir.Lucikiel"
+                        }
+                },
+                {
+                        "Name": "Juliet_SetUp",
+                        "Value": "{{Juliet_SetUp}} Jade 36 11 3",
+                        "When": {
+                                "HasMod": "malic.cp.jadeNPC"
+                        }
+                },
+                //Main Event Rearrangement, includes custom NPCs
+                {
+                        "Name": "Juliet_MainEvent",
+                        "Value": "warp Gunther 31 17 true/warp Jessie 39 15 true/faceDirection Jessie 3 true/warp Juliet 34 11 true/faceDirection Juliet 2 true/warp farmer 35 13 true/warp Vincent 26 11 true/faceDirection Vincent 1 true/warp Jas 37 12 true/faceDirection Jas 3 true/faceDirection Penny 3 true/warp Lewis 36 8 true/faceDirection Lewis 2 true/warp Caroline 25 10 true/faceDirection Jodi 1 true/warp Kent 22 14 true/warp Gus 25 14 true/warp Pam 26 16 true/faceDirection Pam 0 true/warp Harvey 24 13 true/faceDirection Harvey 1 true/warp Shane 38 13 true/warp Clint 28 15 true/faceDirection Clint 0 true/faceDirection Pierre 1 true/faceDirection Emily 0 true/warp Gunther 31 17 true/warp Leah 36 15 true/faceDirection Leah 0 true/warp Elliott 35 15 true/faceDirection Elliott 0 true/warp Robin 33 17 true/faceDirection Robin 0 true/warp Sam 32 14 true/faceDirection Sam 0 true/warp Abigail 31 14 true/faceDirection Abigail 0 true/warp Sebastian 33 14 true/faceDirection Sebastian 0 true/warp Demetrius 34 17 true/faceDirection Demetrius 0 true/warp Maru 42 12 true/faceDirection Maru 3 true/warp Evelyn 41 14 true/faceDirection Evelyn 3 true/warp George 40 14 true/faceDirection George 3 true/warp Linus 38 16 true/faceDirection Linus 0 true/warp Jessie 39 15 true/faceDirection Jessie 3 true/warp Juliet 34 11 true/faceDirection Juliet 2 false/warp farmer 35 13 false"
+                },
+                {
+                        "Name": "Juliet_MainEvent",
+                        "Value": "{{Juliet_MainEvent}}/warp Jasper 43 15/faceDirection Jasper 3",
+                        "When": {
+                                "HasMod": "Lemurkat.NPCJasper"
+                        }
+                },
+                {
+                        "Name": "Juliet_MainEvent",
+                        "Value": "{{Juliet_MainEvent}}/warp MisterGinger 43 13/faceDirection MisterGinger 3",
+                        "When": {
+                                "HasSeenEvent": "5295000",
+                                "HasMod": "LemurKat.Tristan.CP"
+                        }
+                },
+                {
+                        "Name": "Juliet_MainEvent",
+                        "Value": "{{Juliet_MainEvent}}/warp Lucikiel 29 17/faceDirection Lucikiel 0",
+                        "When": {
+                                "HasMod": "Arknir.Lucikiel"
+                        }
+                },
+                //Adds Lucikiel's reactions into 14-heart event
+                {
+                        "Name": "Clint_Heckle",
+                        "Value": "textAboveHead Pam \"继续！\""
+                },
+                {
+                        "Name": "Clint_Heckle",
+                        "Value": "textAboveHead Pam \"继续！\"/pause 500/emote Lucikiel 12/pause 500/textAboveHead Lucikiel \"让他们看看，胡子男！\"",
+                        "When": {
+                                "HasMod": "Arknir.Lucikiel"
+                        }
+                },
+                {
+                        "Name": "Clint_Heckle2",
+                        "Value": "textAboveHead Pam \"厉害……\""
+                },
+                {
+                        "Name": "Clint_Heckle2",
+                        "Value": "textAboveHead Lucikiel \"干得不错。\"",
+                        "When": {
+                                "HasMod": "Arknir.Lucikiel"
+                        }
+                },
+                {
+                        "Name": "Clint_Heckle3",
+                        "Value": "emote Emily 32/emote Clint 60"
+                },
+                {
+                        "Name": "Clint_Heckle3",
+                        "Value": "emote Emily 32/emote Clint 60/pause 500/emote Lucikiel 12",
+                        "When": {
+                                "HasMod": "Arknir.Lucikiel"
+                        }
+                }
+        ],
+        //These files contains the actual code for each NPC!
+        "Changes": [
+                {
+                        "Action": "Include",
+                        "FromFile": "assets/Jessie.json"
+                },
+                {
+                        "Action": "Include",
+                        "FromFile": "assets/Juliet.json"
+                },
+                {
+                        "Action": "Include",
+                        "FromFile": "assets/LodgingHouse.json",
+                        "When": {
+                                "LoadESMap": "false"
+                        }
+                },
+                {
+                        "Action": "Include",
+                        "FromFile": "assets/ES_LodgingHouse.json",
+                        "When": {
+                                "LoadESMap": "true"
+                        }
+                },
+                {
+                        "Action": "Include",
+                        "FromFile": "assets/MovieTastes.json"
+                },
+                {
+                        "Action": "Include",
+                        "FromFile": "assets/Festivals.json"
+                },
+                // SVE AND RECOLOR COMPATIBILITY EDIT: JOJAMART BACKDOOR
+                {
+                        "LogName": "JojaMart backdoor for SVE and optional interior recolors",
+                        "Action": "EditMap",
+                        "Target": "Maps/JojaMart",
+                        "FromFile": "assets/Maps/JojaMart-Backdoor-{{recolor}}.tmx",
+                        "FromArea": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 2,
+                                "Height": 5
+                        },
+                        "ToArea": {
+                                "X": 2,
+                                "Y": 1,
+                                "Width": 2,
+                                "Height": 5
+                        },
+                        "When": {
+                                "IsCommunityCenterComplete": false
+                        }
+                },
+                //Counter chance
+                {
+                        "LogName": "Changes out the counter",
+                        "Action": "EditMap",
+                        "Target": "Maps/JojaMart",
+                        "FromFile": "assets/Maps/JojaMart-Counter.tmx",
+                        "FromArea": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 2,
+                                "Height": 4
+                        },
+                        "ToArea": {
+                                "X": 8,
+                                "Y": 23,
+                                "Width": 2,
+                                "Height": 4
+                        },
+                        "When": {
+                                "IsCommunityCenterComplete": false,
+                                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+                        }
+                },
+                // Optional Universal Recolor Compat and Disabling Alternating Tiles
+                {
+                        "LogName": "Theater Breakroom - Alternate Walls and Floors",
+                        "Action": "EditMap",
+                        "Target": "Maps/Custom_LK_TheaterBreakroom",
+                        "FromFile": "assets/Maps/TheaterBreakroomAlternateWalls-enabled.tmx",
+                        "FromArea": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 22,
+                                "Height": 22
+                        },
+                        "ToArea": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 22,
+                                "Height": 22
+                        },
+                        "When": {
+                                "HasMod |contains=RusticCountry.wallsandfloors": false,
+                                "alternateWallsNFloors": "disabled"
+                        }
+                },
+                // Rustic Country Walls and Floors compatibility
+                {
+                        "LogName": "Theater Breakroom - Rustic Country Walls and Floors",
+                        "Action": "EditMap",
+                        "Target": "Maps/Custom_LK_TheaterBreakroom",
+                        "FromFile": "assets/Maps/TheaterBreakroom-rusticWalls.tmx",
+                        "FromArea": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 22,
+                                "Height": 22
+                        },
+                        "ToArea": {
+                                "X": 9,
+                                "Y": 26,
+                                "Width": 22,
+                                "Height": 22
+                        },
+                        "When": {
+                                "HasMod |contains=RusticCountry.wallsandfloors": true
+                        }
+                },
+                //EDITS END
+                {
+                        "LogName": "Add dirt tile underneath Joja to try and eliminate voiding issue.",
+                        "Action": "EditMap",
+                        "Target": "Maps/Town",
+                        "MapTiles": [
+                                {
+                                        "Position": {
+                                                "X": 95,
+                                                "Y": 50
+                                        },
+                                        "Layer": "Back",
+                                        "SetTileSheet": "Landscape",
+                                        "SetIndex": "153"
+                                }
+                        ]
+                },
+                {
+                        "Action": "EditData",
+                        "Target": "Strings/StringsFromMaps",
+                        "Entries": {
+                                "ClearingHouse.1": "似乎有只小甲虫住在这儿。",
+                                "ClearingHouse.2": "花园看起来被照料得很好。有人肯定为它感到骄傲。",
+                                "ClearingHouse.3": "噢……似乎是空的。狗狗呢？",
+                                "ClearingHouse.4": "虽然这些水晶看起来很劣质，但站在它们附近能让你感觉平静。真有意思。",
+                                "JojaBR.000": "自己洗碗",
+                                "JojaBR.001": "啥都没有",
+                                "JojaBR.002": "先清理再使用",
+                                "JojaBR.003": "锁上了。",
+                                "JojaBR.004": "朱丽叶的柜子上贴满了独角兽贴纸。有些正在做出粗鲁的手势，还有一只在往外吐彩虹。",
+                                "JojaBR.005": "“生产力提高”型终极Joja可乐。^（副作用可能包括：高血压，心脏病，糖尿病，蛀牙，以及对垃圾食品的食欲提高。）",
+                                "LodgingHouse.000": "厨房一尘不染，闻起来清新而干净。",
+                                "LodgingHouse.001": "你发现了一片遗失的拼图。它能够完美拼上！成功了！",
+                                "LodgingHouse.002": "有密码保护。再说了，到处搜寻也很不礼貌！",
+                                "LodgingHouse.003": "被调到了园艺频道。",
+                                "LodgingHouse.004": "夹在园丁手册和星露谷鸟类野外指南之中，有一本破旧的……哦哦……看来这里有人喜欢不太正经的文学！",
+                                "LodgingHouse.005": "这位艺术家还真喜欢色彩。或许有点太过了……",
+                                "LodgingHouse.006": "这是用来放松还是做瑜伽的？谁知道呢？",
+                                "LodgingHouse.007": "哇哦，朱丽叶显然很喜欢吵闹而充满怒火的音乐。",
+                                "LodgingHouse.008": "朱丽叶的口味十分广泛--有些标题让你脸红了起来。",
+                                "LodgingHouse.009": "各种关于草药学的书……还有咒语？莫非杰西还有什么没告诉你的事？",
+                                "LodgingHouse.010": "一系列园艺杂志，里面还夹了几本草药学标题的书。",
+                                "LodgingHouse.011": "破旧不堪的兔子用疲惫的双眼看着你。很多地方都被磨破了，还有这些……这些是咬痕吗？",
+                                "LodgingHouse.012": "你拂去了表面细细的灰尘，看见了杰西和……一个穿着戏服的孩子？照片是在晚上拍的，你看不清他们的面容。",
+                                "LodgingHouse.013": "这家人看起来一点也不像人类。他们是用晾衣架、绒球和羊毛做的。",
+                                "LodgingHouse.014": "一堆儿童经典著作。",
+                                "LodgingHouse.015": "只能播放DVD的设计，都是些孩子们喜欢的标题，关于家庭和友谊的电影。有利于身心健康。",
+                                "JulesMovie.1": "猫头鹰困倦地对你眨了眨眼睛。它看起来被喂得饱饱的。",
+                                "JulesMovie.2": "你伸出手，一只小鸟啄了你一口。哎呦！"
+                        }
+                },
+                // Adds the warp so that Juliet can enter the Theater Breakroom (non-SVE). 
+                {
+                        "Action": "EditMap",
+                        "Target": "Maps/Town",
+                        "MapProperties": {
+                                "NPCWarp": "90 43 Custom_LK_TheaterBreakroom 2 11"
+                        },
+                        "When": {
+                                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                                "HasFlag |contains=ccMovieTheater": true
+                        }
+                },
+                { //Adds spouse strings for the movie theater
+                        "Action": "EditData",
+                        "Target": "Strings/Characters",
+                        "Entries": {
+                                "MovieInvite_Spouse_Juliet": "{{Random:听起来不错！约会之夜！$1++噢，在小镇的夜晚来场约会！是时候狂野起来了！$1++嘿，我知道了——我们可以像那些年轻人一样，在影院的后排座位上亲热。$4|inputSeparator=++}}"
+                        }
+                },
+                //Juliet should refuse movie invitiations whilst she is working
+                {
+                        "LogName": "Movie Theatre Default",
+                        "Action": "EditData",
+                        "Target": "Data/MoviesReactions",
+                        "When": {
+                                "DayofWeek": "Monday, Tuesday, Wednesday, Thursday",
+                                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+                        },
+                        "Entries": {
+                                "Juliet": {
+                                        "NPCName": "Juliet",
+                                        "Reactions": [
+                                                {
+                                                        "Tag": "*",
+                                                        "Response": "reject",
+                                                        "Whitelist": [],
+                                                        "SpecialResponses": null,
+                                                        "ID": "reaction_0"
+                                                }
+                                        ]
+                                }
+                        }
+                },
+                //I said I wouldn't, but I did anyway... with a little help! (The Help didn't want credit :P) : SVE compatibility
+                //Sets Juliet as second teller for JojaMart, changes her schedule from working theater. For extra compatibility (not seen in this file), added a backroom to JojaMart with recolor support for every interior recolor mod that touches JojaMart (that the Help knows of).
+                {
+                        "Action": "Include",
+                        "FromFile": "assets/SVECompatibility.json",
+                        "When": {
+                                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+                        }
+                },
+                {
+                        "LogName": "NPC Exclusion antisocial NPCs",
+                        "Action": "EditData",
+                        "Target": "Data/CustomNPCExclusions",
+                        "Entries": {
+                                "Gremlin": "All"
+                        }
+                },
+                //Spouse Room
+                {
+                        "Action": "EditData",
+                        "Target": "Data/SpouseRooms",
+                        "Entries": {
+                                "Juliet": "Lemurkat_Juliet_SpouseRoom/0"
+                        }
+                },
+                {
+                        "Action": "Load",
+                        "Target": "Maps/Lemurkat_Juliet_SpouseRoom",
+                        "FromFile": "assets/Maps/SpouseRoomJulietRev.tmx"
+                }
+        ]
+}

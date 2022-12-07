@@ -1,0 +1,58 @@
+{
+	"Changes": [
+		{
+			"LogName": "Gunther - Seasonal",
+			"Action": "EditImage",
+			"Target": "Portraits/Gunther, Characters/Gunther",
+			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{season}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Gunther - Festival",
+			"Action": "EditImage",
+			"Target": "Portraits/Gunther, Characters/Gunther",
+            "FromFile": "assets/{{TargetPathOnly}}/Festivals/{{Festival}}/{{TargetWithoutPath}}_{{Festival}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"FestivalOutfits": "True",
+			},
+			"Update": "OnLocationChange",
+		},
+		
+// MISCELLANEOUS		
+		{
+			"LogName": "Gunther - Emoji",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+            "FromFile": "assets/{{NoNose}}/Random/emojis.png",
+			"FromArea": {"X": 27, "Y": 117, "Width": 9, "Height": 9},
+			"ToArea": {"X": 27, "Y": 117, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{   
+			"LogName": "Gunther - Movie Theater",
+            "Action": "EditImage",
+			"Update": "OnLocationChange",
+            "Target": "Maps/MovieTheater_TileSheet",
+            "FromFile": "assets/{{NoNose}}/Random/MovieTheater_{{Season}}.png",
+            "FromArea": { "X": 208, "Y": 192, "Width": 16, "Height": 32 },
+            "ToArea": { "X": 208, "Y": 192, "Width": 16, "Height": 32 },
+		},
+		{   
+			"LogName": "Gunther - Joja Theater",
+            "Action": "EditImage",
+			"Update": "OnLocationChange",
+            "Target": "Maps/MovieTheaterJoja_TileSheet",
+            "FromFile": "assets/{{NoNose}}/Random/MovieTheaterJoja_{{Season}}.png",
+            "FromArea": { "X": 208, "Y": 192, "Width": 16, "Height": 32 },
+            "ToArea": { "X": 208, "Y": 192, "Width": 16, "Height": 32 },
+		},
+	]
+}

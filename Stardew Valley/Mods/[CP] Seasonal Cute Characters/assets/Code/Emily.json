@@ -1,0 +1,129 @@
+{
+	"Changes": [
+		{
+			"LogName": "Emily - Seasonal",
+			"Action": "EditImage",
+			"Target": "Portraits/Emily, Characters/Emily",
+			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Emily - Winter Indoor/Outdoor",
+			"Action": "EditImage",
+			"Target": "Portraits/Emily, Characters/Emily",
+			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+                "Season": "Winter",
+                "WinterIndoorOutdoorOutfits": "IndoorOutdoor",
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Emily - Festival",
+			"Action": "EditImage",
+			"Target": "Portraits/Emily, Characters/Emily",
+            "FromFile": "assets/{{TargetPathOnly}}/Festivals/{{Festival}}/{{TargetWithoutPath}}_{{Festival}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"FestivalOutfits": "True",
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Emily - Beach",
+			"Action": "EditImage",
+			"Target": "Portraits/Emily_Beach, Characters/Emily_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Beach/{{TargetWithoutPath}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Emily - Aerobics",
+			"Action": "EditImage",
+			"Target": "Portraits/Emily, Characters/Emily",
+			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_Aerobics.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"AerobicsDay": "Regular, Harvey",
+			},
+			"Update": "OnLocationChange",
+		},
+		
+// NOSE OVERLAY
+		{
+			"LogName": "Emily - Seasonal Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Emily",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"NoNose": "false",
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Emily - Festival Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Emily",
+            "FromFile": "assets/Characters/Festivals/SpiritsEve/{{TargetWithoutPath}}_SpiritsEve_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"NoNose": "false",
+				"FestivalOutfits": "True",
+				"Festival": "SpiritsEve",				
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Emily - Beach Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Emily_Beach",
+            "FromFile": "assets/{{TargetPathOnly}}/Beach/{{TargetWithoutPath}}_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"NoNose": "false",
+			},
+		},
+		
+// MISCELLANEOUS		
+		{
+			"LogName": "Emily - Emoji",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+            "FromFile": "assets/{{NoNose}}/Random/emojis.png",
+			"FromArea": {"X": 45, "Y": 99, "Width": 9, "Height": 9},
+			"ToArea": {"X": 45, "Y": 99, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Emily - Junimo Note",
+			"Action": "EditImage",
+			"Target": "LooseSprites/JunimoNote",
+			"FromFile": "assets/{{NoNose}}/Random/JunimoNote.png",
+			"FromArea": { "X": 448, "Y": 212, "Width": 32, "Height": 32 },
+			"ToArea": { "X": 448, "Y": 212, "Width": 32, "Height": 32 },
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+	]
+}

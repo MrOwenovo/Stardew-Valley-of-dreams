@@ -1,0 +1,278 @@
+{
+  "Changes": [	
+  
+	//Movie Reactions
+	    		{
+      "Action": "EditData",
+      "Target": "Data/MoviesReactions",	  
+		   "When": {
+		   "Season": "winter",
+		   "Day": "14",
+			"Relationship:Harvey": "Friendly",
+		   },
+    "Entries":   {
+	"Harvey":{
+    "NPCName": "Harvey",
+    "Reactions": [
+      {
+        "Tag": "winter_movie_0",
+        "Response": "love",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{Random: 我在《祖祖城时报》上读过这部电影的影评后就一直很想来看。谢谢你！$1++ 谢谢你邀我来，我本来还以为只能自己度过生日了呢。#$b#我好奇能不能买些电影小吃？如果有卖健康的小吃就好了。|inputSeparator=++}}"
+          },
+          "DuringMovie": null,
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "我看的时候一直很担心这家人的健康。#$b#还好他们最后没事……虽然我很好奇星之果实的营养价值到底如何！$1"
+          }
+        },
+        "ID": "reaction_0"
+      },
+      {
+        "Tag": "winter_movie_1",
+        "Response": "love",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{Random: 我在《祖祖城时报》上读过这部电影的影评后就一直很想来看。谢谢你！$1++ 谢谢你邀我来，我本来还以为只能自己度过生日了呢。#$b#我好奇能不能买些电影小吃？如果有卖健康的小吃就好了。|inputSeparator=++}}"
+          },
+          "DuringMovie": null,
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "啊……这真是发人深省的好电影！#$b#爱情对我来说真的陌生又引人好奇……你觉得呢？$1"
+          }
+        },
+        "ID": "reaction_1"
+      },
+    ]
+  },
+	}
+			},
+  	
+	    		{
+      "Action": "EditData",
+      "Target": "Data/MoviesReactions",	  
+		   "When": {
+		   "Season": "winter",
+		   "Day": "14",
+		   "Relationship:Harvey": "Dating, Engaged",
+		   },
+    "Entries":   {
+	"Harvey":{
+    "NPCName": "Harvey",
+    "Reactions": [
+      {
+        "Tag": "winter_movie_0",
+        "Response": "love",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{Random: 我在你之前从来没有约会过……我想我有些紧张。**喘气**$4++ 呃……我们该直接进去吗？还是说先买些小吃，玩看看娃娃机？#$b#抱歉，我是不是表现得很奇怪……因为我一直都自己一个人来。$4|inputSeparator=++}}"
+          },
+          "DuringMovie": null,
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "你的农场没有这么生活艰难，是不是？#$b#如果你有什么需要，一定要告诉我……你绝不能饿肚子！$4"
+          }
+        },
+        "ID": "reaction_0"
+      },
+      {
+        "Tag": "winter_movie_1",
+        "Response": "love",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{Random: 我在你之前从来没有约会过……我想我有些紧张。**喘气**$4++ 呃……我们该直接进去吗？还是说先买些小吃，玩看看娃娃机？#$b#抱歉，我是不是表现得很奇怪……因为我一直都自己一个人来。$4|inputSeparator=++}}"
+          },
+          "DuringMovie": null,
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "爱情……我想我现在有些明白这是什么了。$4#$b#呃，我的意思是……我很高兴能和你一起看这部，@。今天对我而言意义重大。"
+          }
+        },
+        "ID": "reaction_1"
+      },
+    ]
+  },
+	}
+			},
+			
+	    		{
+      "Action": "EditData",
+      "Target": "Data/MoviesReactions",	  
+		   "When": {
+		   "Season": "winter",
+		   "Day": "14",
+		   "Relationship:Harvey": "Married",
+		   },
+    "Entries":   {
+	"Harvey":{
+    "NPCName": "Harvey",
+    "Reactions": [
+      {
+        "Tag": "winter_movie_0",
+        "Response": "love",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{Random: 你冷得脸都红透了！快过来，我这边很温暖。我不想你感冒。$4++ 在生日时看电影虽然只是小事，但真的让我感觉很幸福。谢谢你为我做的一切，@。$1|inputSeparator=++}}"
+          },
+          "DuringMovie": null,
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "很高兴最后他们一家都没事。$1#$b#我最近读了一些论文，上面说星之果实真的可以给人能量。#$b#如果我找到了，我一定会第一时间送给你的，亲爱的。我希望你可以一直强壮又健康。$4"
+          }
+        },
+        "ID": "reaction_0"
+      },
+      {
+        "Tag": "winter_movie_1",
+        "Response": "love",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{Random: 你冷得脸都红透了！快过来，我这边很温暖。我不想你感冒。$4++ 在生日时看电影虽然只是小事，但真的让我感觉很幸福。谢谢你为我做的一切，@。$1|inputSeparator=++}}"
+          },
+          "DuringMovie": null,
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "这是一部发人深省的电影。你觉得爱情是什么……？$4#$b#我想我现在找到答案了。那就是跟我最爱的人，每年都健健康康地来电影院庆祝生日……$4"
+          }
+        },
+        "ID": "reaction_1"
+      },
+    ]
+  },
+	}
+			},
+  //Movie Invitation
+
+  		{
+      "Action": "EditData",
+      "Target": "Strings/Characters",	  
+		   "When": {
+		   "Relationship:Harvey": "Friendly",
+		   "Season": "winter",
+		   "Day": "14",
+		   },
+      "Entries": {
+		  "MovieInvite_Invited_Harvey": "你为我准备了生日电影？#$b#你太亲切了……非常感谢你！我们电影院见。$1",
+     }
+    },
+	  		{
+      "Action": "EditData",
+      "Target": "Strings/Characters",	  
+		   "When": {
+		   "Relationship:Harvey": "Dating, Engaged",
+		   "Season": "winter",
+		   "Day": "14",
+		   },
+      "Entries": {
+		  "MovieInvite_Invited_Harvey": "电影约会？为了我的生日吗？#$b#哦……当然，我很乐意和你去！$4#$b#我想我得准备一下……我们在电影院见，好吗？$4",
+     }
+    },
+  		{
+      "Action": "EditData",
+      "Target": "Strings/Characters",	  
+		   "When": {
+		   "Relationship:Harvey": "Married",
+		   "Hearts:Harvey": "10, 11, 12, 13, 14",
+		   "Season": "winter",
+		   "Day": "14",
+		   },
+      "Entries": {
+		  "MovieInvite_Invited_Harvey": "生日电影？当然，亲爱的！#$b#很高兴你为我安排……你总是懂得怎么让我的生活充满乐趣。我们在电影院见，好吗？",
+     }
+    },
+		{
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Harvey",	  
+		   "When": {
+           "Maru-Harvey": false, 
+		   "Relationship:Harvey": "Friendly",
+		   },
+      "Entries": {
+		
+ 				"winter_14": "你好，@。我不知道这算不算是奢侈的烦恼，但今早艾芙琳女士为我的生日烤了巧克力蛋糕。#$b#q 115321800/115321801 HarveyHarveybirthday_followup#你愿意拿一点吗？这对我有点太多了。
+					#$r 115321800 10 HarveyHarveybirthday_A#好！
+					#$r 115321801 10 HarveyHarveybirthday_B#我也不爱吃蛋糕，不用了。",
+ 				"winter_14_2": "你好，@。我不知道这算不算是奢侈的烦恼，但今早艾芙琳女士为我的生日烤了巧克力蛋糕。#$b#q 115321800/115321801 HarveyHarveybirthday_followup#你愿意拿一点吗？这对我有点太多了。
+					#$r 115321800 10 HarveyHarveybirthday_A#好！
+					#$r 115321801 10 HarveyHarveybirthday_B#我也不爱吃蛋糕，不用了。",
+					HarveyHarveybirthday_A: "谢谢！艾芙琳女士的心意让我很高兴，但我身为医生，实在吃不太下这些充满糖和牛油的东西……我只要吃一点点就好了。[220]#$e#我没有家人或者朋友，所以艾芙琳女士为我庆祝让我很高兴。#$b#她说这是我平常对她和乔治先生看诊的感谢。每当这种时候我就觉得行医是件非常值得的事情！$1",
+					HarveyHarveybirthday_B: "啊……没关系，我可以理解的，这不太健康。我想我可以把它放进冰箱，花上一星期慢慢吃……$2#$e#这是艾芙琳女士的传统食谱。#$b#我知道这些传统食物就是这样的，也很感谢她为我庆祝的心意，但……实在不太能吃得下。$2",
+ 		HarveyHarveybirthday_followup:"我很感谢她为我庆祝的心意，但……实在不太能吃得下。$2",
+     }
+    },
+  
+		{
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Harvey",	  
+		   "When": {
+		   "Relationship:Harvey": "Dating",
+		   },
+      "Entries": {
+		
+ 				"winter_14": "@！你特地来看我吗？#$b#太感谢你了……你让今天成为了最棒的生日。$1#$b#q 115321800/115321801 HarveyHarveybirthday_followup#对了，艾芙琳女士为我送来了生日蛋糕。你想要吃一些吗？
+					#$r 115321800 10 HarveyHarveybirthday_A#好！
+					#$r 115321801 10 HarveyHarveybirthday_B#我也不爱吃蛋糕，不用了。",
+ 				"winter_14_2": "@！你特地来看我吗？#$b#太感谢你了……你让今天成为了最棒的生日。$1#$b#q 115321800/115321801 HarveyHarveybirthday_followup#对了，艾芙琳女士为我送来了生日蛋糕。你想要吃一些吗？
+					#$r 115321800 10 HarveyHarveybirthday_A#好！
+					#$r 115321801 10 HarveyHarveybirthday_B#我也不爱吃蛋糕，不用了。",
+					HarveyHarveybirthday_A: "太好了。我一个人吃实在太多了……还好有你在。[220]$1#$b#呃，你是抽空来看我的，对不对？那我想我该趁你还没去忙于工作时吃完这巧克力蛋糕。#$b#啊……这太甜了。$4",
+					HarveyHarveybirthday_B: "啊……没关系，这有些不健康！#$b#我也不希望你吃这些……你的健康对我来说很重要。#$b#因为我希望能和你长相厮守……$4",
+ 		HarveyHarveybirthday_followup:"对了，艾芙琳女士为我送来了生日蛋糕。#$b#你是抽空来看我的，对不对？那我想我该趁你还没去忙于工作时吃完这巧克力蛋糕。#$b#啊……这太甜了。$4",
+     }
+    },
+  
+		{
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Harvey",	  
+		   "When": {
+		   "Relationship:Harvey": "Engaged",
+		   },
+      "Entries": {
+		
+ 				"winter_14": "@！你特地来看我吗？#$b#太感谢你了……你让今天成为了最棒的生日。$1#$b#q 115321800/115321801 HarveyHarveybirthday_followup#对了，艾芙琳女士为我送来了生日蛋糕。你想要吃一些吗？
+					#$r 115321800 10 HarveyHarveybirthday_A#好！
+					#$r 115321801 10 HarveyHarveybirthday_B#我也不爱吃蛋糕，不用了。",
+ 				"winter_14_2": "@！你特地来看我吗？#$b#太感谢你了……你让今天成为了最棒的生日。$1#$b#q 115321800/115321801 HarveyHarveybirthday_followup#对了，艾芙琳女士为我送来了生日蛋糕。你想要吃一些吗？
+					#$r 115321800 10 HarveyHarveybirthday_A#好！
+					#$r 115321801 10 HarveyHarveybirthday_B#我也不爱吃蛋糕，不用了。",
+					HarveyHarveybirthday_A: "太好了。我一个人吃实在太多了……还好有你在。[220]$1#$b#呃，你是抽空来看我的，对不对？那我想我该趁你还没去忙于工作时吃完这巧克力蛋糕。#$b#啊……这太甜了。$4",
+					HarveyHarveybirthday_B: "啊……没关系，这有些不健康！#$b#我也不希望你吃这些……你的健康对我来说很重要。#$b#因为，你知道的。我们已经准备要一辈子在一起了……我很期待和你的婚礼。$4",
+ 		HarveyHarveybirthday_followup:"对了，艾芙琳女士为我送来了生日蛋糕。#$b#你是抽空来看我的，对不对？那我想我该趁你还没去忙于工作时吃完这巧克力蛋糕。#$b#啊……这太甜了。$4",
+     }
+    },
+  
+		{
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogueHarvey",	  
+      "Entries": {
+		"winter_14": "早上好啊，亲爱的。$1#$b#$y '我今天早起做了早餐。你要一起吃吗？_可是……今天是你的生日！生日快乐，哈维。_谢谢你，亲爱的！你不用感到抱歉……我想在这特别的一天与你度过，才会特地早起为你做饭。$1*我以前单身的时候，总是随便吃吃就算了……我告诉自己，因为我是医生，所以抽不出时间做饭是正常的。*但我其实只是有些自暴自弃……我孤独得太久了。$2*现在我有你在身边……我只想和你一起健康地活到永远。$4*来，拿好……我们一起吃吧！[201]$1_我很乐意！能跟你结婚是我人生中最幸福的事……祝你生日快乐，哈维。_啊……我感觉我说这话很多次了，没想到听起来是这么让人开心的！$4*谢谢你，亲爱的……这完全是我想对你说的话。我很高兴你选择了我。$4*现在让我们一起吃顿丰盛的早饭吧！健康的饮食能让我们长命百岁……我想永远和你在一起。[201]$1_不用了，我赶着出门。_呃……？这样啊，好的。$2*可是今天是我的生日……（叹气）$2'",
+		"winter_14_2": "早上好啊，亲爱的。$1#$b#$y '我今天早起做了早餐。你要一起吃吗？_可是……今天是你的生日！生日快乐，哈维。_谢谢你，亲爱的！你不用感到抱歉……我想在这特别的一天与你度过，才会特地早起为你做饭。$1*我以前单身的时候，总是随便吃吃就算了……我告诉自己，因为我是医生，所以抽不出时间做饭是正常的。*但我其实只是有些自暴自弃……我孤独得太久了。$2*现在我有你在身边……我只想和你一起健康地活到永远。$4*来，拿好……我们一起吃吧！[201]$1_我很乐意！能跟你结婚是我人生中最幸福的事……祝你生日快乐，哈维。_啊……我感觉我说这话很多次了，没想到听起来是这么让人开心的！$4*谢谢你，亲爱的……这完全是我想对你说的话。我很高兴你选择了我。$4*现在让我们一起吃顿丰盛的早饭吧！健康的饮食能让我们长命百岁……我想永远和你在一起。[201]$1_不用了，我赶着出门。_呃……？这样啊，好的。$2*可是今天是我的生日……（叹气）$2'",
+     }
+    },
+  ]
+}

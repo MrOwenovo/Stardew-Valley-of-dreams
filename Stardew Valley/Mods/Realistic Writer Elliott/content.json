@@ -1,0 +1,249 @@
+{
+
+"Format": "1.19.0",
+
+"Changes": [
+
+	{
+		"Action": "EditData",
+		"Target": "Data/Events/Farm",
+		"Entries": {
+//Triggers for penpal letters
+			"10243001/f Elliott 500/x elliott_penpal1": "null",
+			"10243002/f Elliott 1000/x elliott_penpal2": "null",
+			"10243003/f Elliott 1500/x elliott_penpal3": "null",
+			"10243004/f Elliott 2000/x elliott_penpal4": "null", }	
+	},
+
+// 14 heart event tweaks
+	{
+		"Action": "EditData",
+		"Target": "Data/Events/Farm",
+		"Entries": {
+
+  "3912125/f Elliott 3500/O Elliott/t 500 1500/p Elliott/U 8": "continue/-10000 -1000/farmer -100 -100 2 Elliott -100 -100 2/addConversationTopic ElliottGone1 0/addConversationTopic elliottGone 6/addWorldState elliottGone/skippable/warp Elliott 63 15/warp farmer -100 -100/faceDirection Elliott 2/showFrame Elliott 38/viewport 64 15 clamp true/pause 1000/pause 2000/playSound doorClose/warp farmer 64 15/positionOffset farmer 0 16/pause 500/faceDirection farmer 3/emote farmer 8/pause 500/showFrame Elliott 39/emote Elliott 16/pause 500/speak Elliott \"@! 我刚刚收到一个令人激动人心的消息!\"/pause 50/jump Elliott/pause 500/speak Elliott \"时间很紧……但我被邀请去为我的书做一次巡回阅读， '%book'!#$b#你知道这对一个初出茅庐的作家来说有多难得吗，@? 在这个时代，这样的营销几乎是闻所未闻的!$8\"/emote farmer 32/showFrame Elliott 0/faceDirection Elliott 1/pause 500/emote Elliott 28/pause 400/speak Elliott \"...我要出城一个星期。只会去祖祖市和格兰普顿以及周边地区，但是……你没事吧?$s\"/quickQuestion #是的，我会没事的。#我会非常高兴的!#别走！(break)emote Elliott 20\\speak Elliott \"我会非常想你的，亲爱的。#$b#当然，我会每天都给你写信的！\"\\emote farmer 20(break)jump Elliott\\pause 500\\speak Elliott \"哈……好主意。现在，别太激动...$8#$b#我一定会每天给你写信的。我会想念你的！\"(break)speak Elliott \"但是，亲爱的.......这对我来说是一个难得的机会。我得走了！$s#$b#请别让我为此感到内疚。我会每天给你写信，很快就会回来的。\"/pause 1000/animate Elliott true true 100 35/animate farmer true true 100 101/specificTemporarySprite heart 63 15/pause 2000/stopAnimation Elliott/showFrame Elliott 4/stopAnimation farmer/pause 500/speak Elliott \"我明天一大早就走...#$b#我需要打包行李了!$8\"/end dialogue Elliott \"别让我忘记我的梳子，我的发胶，我的细齿梳子，和我的石榴护发素!\"",
+			},				
+	},
+	  
+	{
+		"Action": "EditData",
+		"Target": "data/mail",	
+		"Entries": {
+// 14 heart letter tweaks
+  "elliottLetter2": "亲爱的@,^^第一次的阅读非常顺利!我还是有点兴奋，因为我终于可以做我从小就梦想的事了。观众有点少，但经营书店的女士是一个非常可爱的人，而且非常善解人意。她给我留了一些书，以备以后出售，我也对这些小书店的运作有了一些了解。也许有一天我们在鹈鹕镇也会有一个书店!^^再过几个小时，我就要出发去祖祖城了。如果昨天的阅读只是热身，那么接下来的阅读将是真正的一场硬仗……^^我非常想念你。记得要好好吃饭!对了，别忘了我放在冰箱里剩下的螃蟹蛋糕...^-爱你的,艾利欧特 %item conversationTopic ElliottGone3 0 %%[#]我丈夫的来信 2",
+
+  "elliottLetter3": "我的甜心 @,^^昨晚在祖祖市的经历真是太棒了!我的搭档是一位知名作家C. Sun，他也出版了另一本同类型的书。那么多人只为他们而来，却带走了我们的两本书!多么聪明的营销手段啊!这个C. Sun人真的太好了，不仅和一个初出茅庐的作者交谈，还给了我很多有用的建议。我们最终交换了电子邮件地址，并承诺要试读对方的下一部小说。如果我有一天也能像他一样出名，我希望我也能把它传递出去。^^目前我一个人在酒店房间里，吃着Joja的超值套餐，因为我要自己负责旅行费用……这应该叫“食物”吗?^^这应该被称为“食物”吗?^或者“可食用物质”?^我都不需要长时间思考^一定是后者^^我期待着很快回家。希望你喜欢螃蟹蛋糕。^^-爱你的,艾利欧特 %item conversationTopic ElliottGone4 0 %%[#]我丈夫的来信 3",
+
+  "elliottLetter5": "亲爱的@,^^昨晚的读书会只有我们四个人，都是初出茅庐或中游的作家。我们举行了关于类型和写作的小组讨论，之后我们四人去了当地的一家公司，花了将近半个晚上的时间讨论写作和行业。它让我意识到我们都在一起;正如威利所说，水涨船高。^^即使有了这些新朋友，我仍然渴望鹈鹕镇的宁静和农场的美丽。在城镇之间的长途旅行中，我闭上眼睛，想象着农场，以此自娱。我看到酒桶里流淌着香甜的葡萄酒，火炉里燃烧着珍贵的矿石，我们的小厨房里弥漫着肉桂和肉豆蔻的香味。有很多东西可以享受!^^只是不要在矿井里呆得太晚，亲爱的。那里很危险！如果你必须去……记得带大量的食物。^^-爱你的,艾利欧特 %item conversationTopic ElliottGone6 0 %%[#]我丈夫的来信 5",
+
+  "elliottLetter6": "亲爱的@,^^这将是我回家前的最后一封信。这是一次如此有教育意义并且令人欣慰的经历，我很高兴我去了。能遇到喜欢我工作的人，还能交到同龄人的新朋友(我将与他们保持联系，通过互联网，我也了解互联网的神奇——终于有理由不再那么害怕它了)，这让我感到很温暖。但我渴望回家。^^我期待着舒适的小房子，令人满意的农活，一顿家常菜，最重要的是，和你一起舒舒服服地躺在法兰绒被窝里。^^再见!^-爱你的,艾利欧特 %item conversationTopic ElliottGone7 0 %%[#]我丈夫的来信 6",
+
+//Penpal letters
+"elliott_penpal1":  "你好， @,^我刚刚完成了今天的写作，但我仍然有动笔的冲动，所以我想我应该写几封信。毕竟，找到与邻居的共同点只能帮助我理解人与人之间的联系。^^和你，@，我觉得我们的联系是，我们都逃离了世俗世界，来到这里追求我们的梦想。现在我们站在这里，我们的新事业才刚刚开始。^^如果你想知道我的进展，你只需要来拜访我。我的大门随时为你敞开。我也很想听听你的农业进展。^^--艾利欧特%item conversationTopic elliott_writing_letter1 7 %%[#]笔友艾利欧特",
+
+"elliott_penpal2": "你好， @,^你的农业最近进展如何?我已经习惯随身携带笔记本，这样我就可以在其他地方写作。有时到外面呼吸新鲜的海洋空气也会有帮助。你觉得你也受益于户外种植吗?你能从你的农场闻到海洋的味道吗?^^而我呢，我发现自己在努力完成我的草稿。我写下了我看到的最清晰的场景，我最渴望的场景，剩下的是将这些片段连接在一起的场景。我也必须找到他们身上值得我爱的东西。^--来自艾利欧特%item conversationTopic elliott_writing_letter2 7 %%[#]笔友艾利欧特 2",
+
+"elliott_penpal3": "你好， @!^I我忙着修改我的作品，需要休息一下。然后我就想到了你，还有我在这个地区的其他朋友。我多希望能和莉亚一起喝一杯格斯的自制啤酒，或者和威利一起钓鱼。或者和你在一起，听你在你的农场里养育的生命，无论是植物或动物，还是你自己的。不管你的海滩或农场有多漂亮，和朋友一起分享会更令人愉快。^^事实上，这让我有了一点顿悟——无论我多么喜欢对风景的描述和诗意的散文，如果没有吸引人的、完整的角色来填充风景，那就没什么意义了。嗯。我必须进一步考虑这个问题。也许我在这些修订上走错了方向.... ^你的朋友，艾利欧特%item conversationTopic elliott_writing_letter3 7 %%[#]笔友艾利欧特 3",
+
+"elliott_penpal4": "亲爱的@, 我发现，写书和卖书完全是两回事。我感觉自己像一条鱼在陆地上扑腾，试图弄清楚如何移动。现在，我的修改几乎完成了，我试图想出我的下一步，但一切似乎都是那么陌生和令人生畏。我知道我能写。在这之后，我也知道我可以编辑了。但我是否具备发行并获得成功的条件呢?^^我想我能做的就是一步一个脚印，提醒自己我有像你一样相信我的朋友。现在放弃就是对信仰的背叛。修改完成后我会通知你的， @. ^--你的朋友，艾利欧特%item conversationTopic elliott_writing_letter4 7 %%[#]笔友艾利欧特 4"
+		},
+	},
+
+	
+	{ 
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Elliott",
+		"Entries": { 
+// Vanilla tweaks 
+"Thu2": "我有点文思枯竭了，@....$s",
+"summer_Tue6": "我写作是希望通过时间和空间与他人建立联系.#$e#随着时间的推移，人们阅读和联系书面文字的方式可能会改变，但它们的普遍真理仍然存在。$h",
+"event_toast1": "谢谢你的鼓励。我明天一大早就出发。$h",
+"event_toast2": "谢谢你，@! 不仅仅是因为这本小说，还有更多!$h",
+"event_toast3": "来吧，@... 让我单独呆一会儿。$a", },
+	},
+
+
+// House updates
+	{ 
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Elliott",
+		"When": { "DayOfWeek": "Monday" },
+		"Entries": { 
+"ElliottHouse2": "一开始我不确定自己想写什么类型的故事。我阅读广泛，喜欢各种类型的作品。",
+"ElliottHouse4": "偶尔，我会先手写，然后再把它输入电脑。手写写作的行为有时会让想法以不同的方式流动。",
+"ElliottHouse6": "我不知道是不是每个作家都有这样的恐惧时刻，当他们打开自己的成品稿，惊呼“亲爱的尤巴，这是怎样的混乱?”'$s",
+"ElliottHouse8": "我根据我现在的草稿做了一个新的大纲。我很惊讶它与我最初的设想有了如此大的变化。",
+"ElliottHouse10": "我对要面对更多的编辑而感到紧张……但与真正理解这本书愿景的人一起工作是令人安心的。", } 
+	},
+
+	{ 
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Elliott",
+		"When": { "DayOfWeek": "Tuesday" },
+		"Entries": { 
+"ElliottHouse2": "我给自己设置了一个15分钟的计时器，在这段时间里只专注于写作。把它分成小块可以让它更容易处理。#$b#就像他们说的，你不能一次吃一头大象!$h",
+"ElliottHouse4": "我原以为开头是最难写的，但正是这个沼泽般的中间部分把我逼疯了。",
+"ElliottHouse6": "*叹气* 我想我得把今天的同义词词典放下了。$s",
+"ElliottHouse8": "I想到我的书还没出版就受到欢迎，我就很焦虑...$s",
+"ElliottHouse10": "我的书不会被所有人喜欢，但我相信一定有人需要这本书。#$b#反正这就是我一直在告诉自己的。$s",  } 
+	},
+
+	{ 
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Elliott",
+		"When": { "DayOfWeek": "Wednesday" },
+		"Entries": { 
+"ElliottHouse2": "描述是我最喜欢写的东西之一。我喜欢挑选每一个细节，就像一幅画的笔触。",
+"ElliottHouse4": "有时我觉得这些角色都在跟我说话。#$b#这一切都很好，直到他们决定将故事引向另一个方向....$s",
+"ElliottHouse6": "我尽量不去担心所有章节的长度是否相同。有时候它需要多少空间就需要多少空间。",
+"ElliottHouse8": "莉亚给我的书画了一个封面。这真的让我觉得有一天它会成为现实。",
+"ElliottHouse10": "作家们经常把他们的书称为他们的孩子，但即使是婴儿最终也会长大并离开巢穴。我必须记住，最终，它的成功将不在我的掌控之中。", } 
+	},
+
+	{ 
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Elliott",
+		"When": { "DayOfWeek": "Thursday" },
+		"Entries": { 
+"ElliottHouse2": "我认为写一部没有严肃情节的喜剧是非常困难的。你必须为特定的受众写文章，并深入了解这些受众。",
+"ElliottHouse4": "他们说，当你陷入困境时，做一些意想不到的事情。不过我只能说这么做可能会很危险。$s",
+"ElliottHouse6": "我把我的小说的一部分贴到一个评论小组征求意见。他们建议大声朗读我的对话，让它更自然。我以前都没想过这一点。",
+"ElliottHouse8": "经纪人给我寄来了个性化的拒绝信，说他们喜欢我的工作，但我的工作不适合他们。我觉得这是个好兆头。",
+"ElliottHouse10": "我对这些出版合同一无所知。我很高兴我有一个经纪人支持我。", } 
+	},
+
+	{ 
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Elliott",
+		"When": { "DayOfWeek": "Friday" },
+		"Entries": { 
+"ElliottHouse2": "一些作家说，他们会从一个想法开始，并遵循它的方向。但我发现，当我先记下一些笔记时，我的写作过程会进行得更好。",
+"ElliottHouse4": "故事中的每件事都需要有目的，但有时目的仅仅是我喜欢的东西。这就是为什么海洋在这本书中如此盛行。",
+"ElliottHouse6": "冈瑟给我打印了一份我的小说，这样我就可以用红笔进行编辑了。它的效果好得惊人!",
+"ElliottHouse8": "我又收到了一封拒绝信...$s#$b#好吧，我不会气馁的。毕竟有你在支持我。$h",
+"ElliottHouse10": "我的出版商会在他们的网站上预订的时候告诉我。据我所知，这些都很重要。", } 
+	},
+
+	{ 
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Elliott",
+		"When": { "DayOfWeek": "Saturday" },
+		"Entries": { 
+"ElliottHouse2": "我没有以我认识的人为原型塑造任何角色，但他们偶尔会有一些小怪癖，让我想起我的朋友。$h",
+"ElliottHouse4": "我的所有角色都从我身上借鉴了一些东西，但我不会说他们中的任何一个是我。写一个没有发生过的关于我自己的故事是非常奇怪的!",
+"ElliottHouse6": "当你有一个你喜欢的场景，但你意识到它实际上不适合书的其他部分时，这是令人沮丧的。我想这就是他们所说的“杀死你的宝贝”。",
+"ElliottHouse8": "我尽量不因为被拒绝而气馁。这并不意味着我的书很糟糕，它只是还没有找到它的灵魂伴侣。是的，这有点像约会.... $4",
+"ElliottHouse10": "我的经纪人说，我应该只做我喜欢的自我营销。真正卖书的东西，比如书店的交易，都是由出版商来完成的。#$b#我有点松了一口气，我不用去在网上宣传我的书了。$4", } 
+	},
+
+	{ 
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Elliott",
+		"When": { "DayOfWeek": "Sunday" },
+		"Entries": { 
+"ElliottHouse2": "我喜欢设置场景，但我必须记住角色对它的重要性。一幅画可能很美，但更重要的是，它必须吸引人的兴趣。",
+"ElliottHouse4": "为你的故事设定一个符合主题的结局是很难的。很多作家因为试图做一些意想不到的事情而失败。",
+"ElliottHouse6": "这本书的每一个字我都看了三遍，可我还是发现有错字。这怎么可能呢?$s",
+"ElliottHouse8": "写一本书很难，但把它浓缩成一个引人注目的250字的问题?这是不可能的。$s",
+"ElliottHouse10": "我真的不知道除了作者之外，还有这么多人参与到一本书的创作中来。想到我的书的销量也会支持到他们，我觉得很振奋。" },
+	},
+
+
+// Penpals CTs
+	{ 
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Leah",
+		"Entries": { "elliott_writing_letter1": "艾利欧特给我写了一封信!我知道他是个作家，但我不知道他的信竟然这么有诗意。我会把它留作灵感!$h",
+			 "elliott_writing_letter2": "艾利欧特给我写了一封信，里面有一些推荐的书。我认为我们对小说也有相似的品味。",
+			 "elliott_writing_letter3": "艾利欧特这次给我写了一首诗。我太喜欢它了！也许我可以把它刻成一个雕像，然后再送给他。$h",
+			 "elliott_writing_letter4": "艾利欧特总是给我发这么漂亮的描述，我开始在上面涂鸦作为回应。也许我下封信的时候也会附上一张!$h",	},
+	},	
+
+	{ 
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/George",
+		"Entries": { "elliott_writing_letter1": "醒来后发现海滩上的陌生人给我写了一封信。一堆乱七八糟的废话。#$b#我想，至少那不是一张账单。",
+			 "elliott_writing_letter2": "海滩上的那个男孩又给我寄了一封信。很多关于海洋的废话。不过这让我想找个时间再去海滩看看。",
+			 "elliott_writing_letter3": "那个叫艾利欧特的男孩一直给我写信。而且它们太长了……他一定在这上面花了不少功夫。也许……我应该回一封。",
+			 "elliott_writing_letter4": "艾利欧特的信今天到了!我想今天还不错。$h",	},
+	},
+	
+	{ 
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Willy",
+		"Entries": { "elliott_writing_letter1": "艾利欧特今早在我门缝里塞了一封信。我不能说我习惯有邻居，但他很有邻居的感觉。$h",
+			 "elliott_writing_letter2": "我不知道该怎么回复艾利欧特的最后一封信，所以我给他寄了一幅墨鱼版画。这是我跟我爸爸学的老技巧。也许我该送他一份新的。$h",
+			 "elliott_writing_letter3": "今天钓鱼不太走运，所以我给艾利欧特寄了一个我爸爸给我讲的关于美人鱼的小故事。艾利欧特后来告诉我，他真的很喜欢!也许这个老渔夫还会讲一两个关于鱼的故事。$h",
+			 "elliott_writing_letter4": "那天我去艾利欧特家的时候，他把我之前送的东西放在桌子上了!他说它们就像我钓到的鱼的小故事。$h",	},
+	},
+	
+	{ 
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Lenny",
+		"When": { "HasMod |contains=Rafseazz.RSVCP": true, },
+		"Entries": { "elliott_writing_letter1": "鹈鹕镇海滩上的那个人给我写了一封信。我不介意收到一个年轻帅哥的来信!$h",
+			 "elliott_writing_letter2": "我给艾利欧特回信的时候给他寄了一些我的书评，他看了!不过我不确定他是否喜欢。#$b#They might have been too... invigorating for such a mature, reserved man.$h",
+			 "elliott_writing_letter3": "艾利欧特问我对他写的一段情色戏的看法。怎么样?就当它得到了莱尼的认可吧!$h",
+			 "elliott_writing_letter4": "艾利欧特的信让我有了试着写点东西的心情，所以我把信寄给了他。不会像他那样好，但也许他会从中得到乐趣。$h",	},
+	},
+
+	{ 
+		"Action": "EditData",
+		"Target": "Characters/Dialogue/Flor",
+		"When": { "HasMod |contains=Rafseazz.RSVCP": true, },
+		"Entries": { "elliott_writing_letter1": "我收到一封来自鹈鹕镇的信。我读了三遍，想知道他为什么写信给我……也许我会再读一遍。",
+			 "elliott_writing_letter2": "我请了那位作家描述一下他的创作过程，我收到了一封很长的回信。这是一本令人着迷的读物。",
+			 "elliott_writing_letter3": "我想找个时间亲自去看看艾利欧特先生的写作。他的记录很有启发性，但直接观察也是一个很好的信息来源。",
+			 "elliott_writing_letter4": "我鼓起勇气把我的一篇论文寄给了艾利欧特先生。他说他必须读几遍才能理解，但他相当赞赏。$h",	},
+	},
+
+	
+	{ 
+		"Action": "EditData",
+		"Target": "Strings/Events",
+		"Entries": { "ElliottBook_mystery": "蓝色的海浪，蓝色的坟墓",
+ 			 "ElliottBook_romance": "茶花庄园的夫人",
+ 			 "ElliottBook_default": "银河高速公路"	},
+	},
+
+
+
+// 10 heart tweaks
+	{ 
+		"Action": "EditData",
+		"Target": "Data/Events/Beach",
+		"Entries": { "43/f Elliott 2500/w sunny/t 700 1300": "ocean/-1000 -1000/farmer 13 16 2 Elliott 13 27 1/specificTemporarySprite elliottBoat/skippable/viewport 17 26 clamp true/move farmer 0 8 2/faceDirection Elliott 0/speak Elliott \"嘿。\"/move farmer 0 2 2/faceDirection Elliott 1/faceDirection farmer 1/speak Elliott \"看……我把我家旁边那艘旧划艇修好了。很不错,不是吗?#$b#不过,威利做了很多的工作。$h\"/pause 500/faceDirection Elliott 0/pause 500/speak Elliott \"@... 你能荣幸和我一起参加她的第一次启航吗？$l\"/faceDirection farmer 2/question fork1 \"上船吗?#是的#不了\"/fork NoToElliott/globalFade/viewport -1000 -1000/changeToTemporaryMap ElliottSea/playSound wateringCan/pause 1000/playSound wateringCan/playMusic 50s/warp farmer 26 20/positionOffset farmer 0 8/warp Elliott 26 20/showFrame Elliott 25/positionOffset Elliott 0 60/viewport 25 20 true/pause 5000/speak Elliott \"我的书已经提交了…我最近找到了一个经纪人，经过更多的修改，它被拍卖了。#$b#你能想象吗?所有的大出版商，都在争着出版我的书?#$b#我现在正在做出版商想要的编辑工作。我知道这听起来像是修改了很多，但每一次都让这本书变得更好。#$b#马上就出来了……如果没有你的精神支持，我真的不可能做到。$l\"/pause 1000/speak Elliott \"写作对我来说就像呼吸一样，所以我永远不会放弃写作....$h#$b#但如果没有你，我不确定我是否有勇气真正出版。#$b#我很感激你相信我……在我的背后。而且，嗯...\"/pause 500/speak Elliott \"嗯... @? 我该怎么说呢...$8\"/emote Elliott 40/speak Elliott \"我们做朋友有一段时间了…但我……我不确定我对你是否还有那种感觉。$l\"/emote farmer 16/speak Elliott \"不!我不是说我想和你断绝关系!$8#$b#事实上……恰恰相反。$l\"/pause 1000/emote Elliott 40/pause 500/speak Elliott \"...让我想想，我该怎么说呢.......?$l#$b#这一次，我不知道该说什么了...\"/playMusic elliottPiano/pause 2500/showFrame Elliott 35/screenFlash 1/warp Elliott 26 20/positionOffset Elliott 24 8/positionOffset farmer -20 16/faceDirection farmer 1 true/showFrame 101/specificTemporarySprite heart 26 20/playSound dwop/pause 1500/startJittering/pause 700/speak Elliott \"$q -1 null#@? 你在发抖...$l#$r -1 50 event_boat1#我很高兴。#$r -1 -50 event_boat2#你让我很不舒服。请停止。\"/stopJittering/fork tooBold/pause 1800/globalFade/viewport -1000 -1000/speak Elliott \"我们最好在南风来之前回去。$l^哦哦……你身体的震动引起了一条深红色鱼的注意……我们最好离开这里。$l\"/pause 1400/speak Elliott \"从这里看山谷……它终于看起来像“家”了。\"/pause 4000/speak Elliott \"*叹气*... 多糟糕的一天啊...$l\"/end",
+"NoToElliott": "emote Elliott 16/pause 800/faceDirection Elliott 1/showFrame Elliott 31/pause 1000/emote Elliott 28/pause 600/speak Elliott \"明白了。$7\"/move farmer 0 -10 0 true/pause 800/end dialogue Elliott \"...$a\"",	},
+	},
+
+// 4 heart tweaks	
+	{ 
+		"Action": "EditData",
+		"Target": "Data/Events/Saloon",
+		"Entries": {  "40/f Elliott 1000/p Gus/t 1500 2200": "playful/11 20/farmer 14 24 0 Elliott -30 -30 0 Clint 18 22 2 Marnie 9 22 3 Pam 7 18 1 Lewis 8 22 1 Pierre 4 22 2 Demetrius 3 23 1 Gus 14 18 2 Emily 16 18 3/skippable/move farmer 0 -3 3/faceDirection Pierre 1 true/move farmer -3 0 0/faceDirection Pierre 2 true/move farmer 0 -1 0/faceDirection Marnie 0 true/faceDirection Gus 3/speak Gus \"你好,@. 请给我一分钟，好吗？\"/faceDirection Gus 2/move Emily 2 0 1/faceDirection Marnie 3 true/pause 800/move Emily -2 0 0/pause 1000/faceDirection Clint 3 true/move Emily 2 0 1/warp Elliott 14 24/playSound doorClose/pause 500/move Elliott 0 -3 3/faceDirection farmer 2 true/move Elliott -2 0 0/move Elliott 0 -1 0/faceDirection farmer 1/faceDirection Elliott 3/speak Elliott \"你好， @! 多么完美的时机！$h#$b#我写完小说的初稿了!一个完整的故事，我做到了!$h\"/pause 400/faceDirection Elliott 1/speak Elliott \"格斯,我的朋友!请来两杯你们最好的麦芽酒!\"/faceDirection Gus 3/faceDirection farmer 0/speak Gus \"当然可以。$h\"/move Gus 3 0 0/move Gus 0 -1 0/faceDirection Emily 2/playSound openBox/pause 400/playSound Milking/move Pam -6 0 0/move Gus 0 1 3/move Gus -5 0 2/faceDirection Elliott 0/pause 500/speak Gus \"恭喜你出了书，艾利欧特。$h\"/pause 500/faceDirection Elliott 3/faceDirection farmer 1/speak Elliott \"$q 28376 null#等待。我提议来干一杯!祝贺我...#$r 28376 25 event_toast4#来到鹈鹕镇！#$r 28376 50 event_toast2#为你的小说！#$r 28376 10 event_toast1#为了你的未来的重新改写!#$r 28376 -50 event_toast3#祝你倒霉!\"/faceDirection Elliott 2/faceDirection farmer 2/pause 900/showFrame Elliott 16/animate Elliott false false 120 16 17 18 19 19 18 18 19 19 18 18 19 19 18 18 19 19 18 18 17 16/pause 500/farmerEat 346/pause 900/pause 1100/stopAnimation farmer/faceDirection farmer 1/speak Elliott \"*嗝*... 太烈了...$h\"/pause 800/animate Elliott false false 400 20 21 22 21 20 21 22 21 20 21 22 21 20 21 22 21 16/pause 1000/faceDirection farmer 1/pause 800/faceDirection farmer 2/animate farmer false true 100 102 103/pause 1000/globalFade/viewport -1000 -1000/pause 600/stopAnimation farmer/end warpOut",	},
+	},
+	
+
+// 6 heart event tweaks
+	{ 
+		"Action": "EditData",
+		"Target": "Data/Events/ElliottHouse",
+		"Entries": {  "423502/f Elliott 1500/p Elliott": "elliottPiano/-200 -1000/farmer 3 9 0 Elliott 8 4 0/skippable/positionOffset Elliott 32 16/animate Elliott false true 400 25 26 26 27 27 26 26 25 26 27 27 26 26 25/pause 1000/viewport 8 4 true/pause 24000/stopAnimation Elliott/showFrame Elliott 24/move farmer 0 -3 0/move farmer 4 0 0/showFrame Elliott 28/pause 1000/speak Elliott \"啊…我以为有人在那里。$7\"/pause 1000/showFrame Elliott 30/animate Elliott false false 200 28 29 30/playSound dwop/pause 1000/question fork1 \"#那太棒了。#你弹了多久了?\"/fork howLong/pause 500/emote Elliott 32/speak Elliott \"谢谢你！我弹的不是很好，但是玩起来很有趣。$h\"/switchEvent elliottPianoJoin",
+  "howLong": "pause 500/resetVariable/speak Elliott \"哦，我不确定……我从小就开始接触钢琴。$7#$b#我不太擅长，但很有趣。\"/switchEvent elliottPianoJoin",
+  "elliottPianoJoin": "pause 800/showFrame Elliott 0/animate Elliott false true 220 0 1 2 3/playSound woodyStep/positionOffset Elliott 0 8/pause 120/positionOffset Elliott 0 8/pause 120/positionOffset Elliott 0 8/pause 120/positionOffset Elliott 0 8/pause 120/positionOffset Elliott 0 8/pause 120/positionOffset Elliott 0 8/stopAnimation Elliott/faceDirection Elliott 2/pause 500/move Elliott 1 0 1 true/faceDirection farmer 1/pause 1500/showFrame Elliott 31/pause 800/emote Elliott 28/pause 800/speak Elliott \"我一直在夜以继日地工作，试图完成我的修订……都快把我逼疯了@.$s\"/showFrame Elliott 4/pause 800/move Elliott -2 0 0/pause 800/speak Elliott \"偶尔弹一首曲子和写几封信是我给自己的唯一消遣。$7\"/pause 600/faceDirection Elliott 2/speak Elliott \"一旦完成，我就得提交给经纪人和编辑，然后等待回复……或者我可以尝试自行发行，但我完全不知道如何营销自己....#$b#我的银行账户也快没钱了。我攒了很多年才有了这个机会。#$b#我不想成为那种每天都要工作的作家。我希望我的时间和精力用于写作，而不是企业。$7#$b#有时我真希望我能扔掉这一切，成为像你一样的农夫。$h\"/pause 300/faceDirection farmer 0/question fork1 \"#你知道，做一个农夫也同样困难。#来农场住吧，我需要额外的帮助。\"/fork extraHelp/pause 500/emote Elliott 16/speak Elliott \"你是对的…那样说太不体贴了。$8\"/move Elliott 0 1 3/faceDirection farmer 1/speak Elliott \"我的意思是，我想离开这个黑暗、发霉的监狱，体验一点真实的生活……就这些。$s\"/animate Elliott true true 100 31/pause 800/emote Elliott 28/pause 500/speak Elliott \"*叹气*... 对不起,我这样的抱怨。我只是需要偶尔找个人说说话。$7\"/pause 500/stopAnimation Elliott/showFrame Elliott 4/pause 600/faceDirection Elliott 3/globalFade/viewport -1000 -1000/end",
+  "extraHelp": "pause 500/emote Elliott 16/speak Elliott \"真的吗？$8\"/faceDirection Elliott 1/pause 400/speak Elliott \"这听起来美妙……但我不能放弃我的小说。差不多了。$7\"/animate Elliott true true 100 31/pause 800/emote Elliott 28/pause 500/speak Elliott \"*叹气*... 对不起,我这样的抱怨。我只是需要偶尔找个人说说话。$7\"/pause 500/stopAnimation Elliott/showFrame Elliott 4/pause 600/faceDirection Elliott 3/globalFade/viewport -1000 -1000/end"
+			},
+	},
+
+
+// 8 heart event tweaks
+	{ 
+		"Action": "EditData",
+		"Target": "Data/Events/ArchaeologyHouse",
+		"Entries": { "1848481/f Elliott 2000/t 1300 1900/n elliottReading": "breezy/14 11/Elliott 14 9 2 Pierre 10 13 1 Caroline 11 13 3 Marnie 11 15 1 Lewis 12 15 3 Sebastian 11 17 2 Abigail 12 18 3 Sam 10 18 1 Leah 15 15 0 Emily 16 16 2 Clint 15 17 1 Jodi 19 13 2 Robin 20 14 3 Demetrius 20 11 3 Maru 10 10 1 Penny 11 9 1 Gus 18 16 0 Shane 19 16 0 Willy 21 11 3 farmer 6 14 1/skippable/move farmer 6 0 0/move farmer 0 -1 0/move Elliott 0 4 3/faceDirection farmer 1/speak Elliott \"@, 你成功了!$h#$b#读完我的书，我感到如释重负……就像从我的肩膀上卸下了一头大象。\"/pause 800/faceDirection Elliott 2/pause 500/faceDirection Elliott 1/pause 500/faceDirection Elliott 3/pause 500/speak Elliott \"好了，我最好开始阅读了……祝我好运吧。$8\"/pause 700/move Elliott 0 -4 2/faceDirection farmer 0/pause 500/faceDirection Elliott 1/faceDirection Elliott 2/faceDirection Elliott 3/faceDirection Elliott 2/speak Elliott \"大家下午好。\"/pause 500/faceDirection Caroline 0 true/faceDirection Emily 0 true/textAboveHead Emily \"嗨！\"/faceDirection Abigail 0/faceDirection Sebastian 0 true/faceDirection Lewis 0/faceDirection Sam 0 true/faceDirection Marnie 0/faceDirection Pierre 0 true/faceDirection Jodi 0/faceDirection Clint 0/speak Elliott \"我从小就梦想着成为一名作家。#$b#当我需要离开家开始自己的生活时，我搬到了这里。我被山谷的宁静之美所吸引，希望在这种田园诗般的氛围中沉思的日子能煽起文学的火焰。\"/showFrame Elliott 32/pause 200/showFrame Elliott 34/fork 958699 mysteryBook/fork 958700 romanceBook/speak Elliott \"在我的写字台上写了无数个小时之后，我向你们展示了我的第一部小说:《银河高速公路》……这是一部科幻史诗，讲述的是一名默默无闻的船长受命护送陷入困境的外星王子的故事。\"/animate Elliott false true 1000 33 33 34/pause 500/speak Elliott \"第一章。#$b#声音不会在太空中传播，但艾琳船长总能从骨子里*感觉到*宇宙飞船驶过时发出的隆隆声，呼应着她自己的“马洛纳弗”号飞船的叮当声和咕咕声。很快，她保证，他们很快就会找到一份好工作……\"/playMusic none/globalFade/viewport -100 -100/pause 1000/warp Jodi -1000 -1000/warp Robin -1000 -1000/warp Pierre -1000 -1000/warp Caroline -1000 -1000/viewport 14 11 true/pause 1000/speak Elliott \"'他们快追上我们了!”巴斯特·西尼亚王子喊道。“这个黏糊糊的桶不能再快一点吗?”“你可以抱怨马洛纳弗的速度，因为你不是我们被追赶的原因!”艾琳看着前方若隐若现的星云，它的颜色是对黑暗太空的明亮警告。他们*可能*会甩掉追赶他们的人……但这将是艰难的。\"/stopAnimation Elliott/showFrame Elliott 34/pause 800/speak Elliott \"好了，我的阅读到此结束。我希望它尽快出售。谢谢大家的聆听!$h\"/faceDirection Lewis 3/faceDirection Marnie 1/faceDirection Emily 2 true/faceDirection Clint 1/move Elliott 0 4 3/faceDirection farmer 1/pause 600/speak Elliott \"好吧，怎么样？\"/emote farmer 32/speak Elliott \"谢谢。$h#$b#你知道吗，我从你那里得到了写科幻小说的灵感。你还记得吗?#$b#这就是为什么我把这本书献给了你...$l\"/move Elliott -1 0 3/emote Elliott 32/pause 1000/end",
+  "mysteryBook": "pause 400/speak Elliott \"在我的写字台上写了无数个小时之后，我向您献上我的第一本书:《蓝色的波浪，蓝色的坟墓》……这是一本关于天堂岛上谋杀案的推理小说。\"/animate Elliott false true 1000 33 33 34/pause 500/speak Elliott \"第一章。#$b#当墨菲的尸体被冲上岸时，所有人最初都以为她终于回到了她深爱的大海。然而，她胸口的洞却说明了另一种情况。凯侦探心想，这样开始一个假期真是太好了。\"/playMusic none/globalFade/viewport -100 -100/pause 1000/warp Sam -1000 -1000/warp Jodi -1000 -1000/warp Maru -1000 -1000/warp Pierre -1000 -1000/warp Caroline -1000 -1000/viewport 14 11 true/pause 1000/speak Elliott \"“可你说那把刀无疑是在海里丢的。”亚历克西目瞪口呆地说。“我说这话时，你看到他们的表情了吗?”凯回答道。他们的表情告诉了我他们的言语无法表达的东西。凶器没有丢，亚历克西。就在这里，和凶手在一起。因为他们还会再次使用它。”\"/stopAnimation Elliott/showFrame Elliott 34/pause 800/speak Elliott \"好了，我的阅读到此结束。我希望它能够尽快出售。谢谢大家的聆听!$h\"/faceDirection Lewis 3/faceDirection Marnie 1/faceDirection Emily 2 true/faceDirection Clint 1/move Elliott 0 4 3/faceDirection farmer 1/pause 600/speak Elliott \"好吧，怎么样？\"/emote farmer 32/speak Elliott \"谢谢。$h#$b#你知道吗，我从你身上得到了创作悬疑小说的灵感。你还记得吗?#$b#这就是为什么我把这本书献给了你...$l\"/move Elliott -1 0 3/emote Elliott 32/pause 1000/end",
+  "romanceBook": "pause 400/speak Elliott \"在我的写字台上写了无数个小时之后，我把我的第一部小说:《茶花庄园的夫人》献给你……这是一个摄政时期的浪漫故事，讲述的是一个富有的女继承人遇到了一个来自城市的年轻新贵……\"/animate Elliott false true 1000 33 33 34/pause 500/speak Elliott \"第一章。#$b#“他们说，一个有钱的男人需要一个妻子，但他们从来没有说过，如果是妻子有钱，会发生什么。”克里斯蒂娜·汉密尔顿夫人在她的扇子后面叹了口气，并发誓她的前途——以及她的钱包——将永远关闭。\"/playMusic none/globalFade/viewport -100 -100/pause 1000/warp Sebastian -1000 -1000/warp Sam -1000 -1000/warp Demetrius -1000 -1000/warp Shane -1000 -1000/warp Pierre -1000 -1000/viewport 14 11 true/pause 1000/speak Elliott \".．.“可是如果有呢，克里斯蒂娜小姐?”阿黛尔的声音使她不寒而栗。“如果有人不在乎你的钱怎么办?”一个愿意把一切都抛到大海里的人，如果这意味着你可能会朝他们的方向看?你会怎么办，克里斯蒂娜小姐?”阿黛尔的话沉重地悬在他们之间，就像他们燃烧的眼睛一样紧张。“什么?”。\"/stopAnimation Elliott/showFrame Elliott 34/pause 800/speak Elliott \"好了，我的阅读到此结束。我希望它能够尽快出售。谢谢大家的聆听!$h\"/faceDirection Lewis 3/faceDirection Marnie 1/faceDirection Emily 2 true/faceDirection Clint 1/move Elliott 0 4 3/faceDirection farmer 1/pause 600/speak Elliott \"好吧，怎么样？\"/emote farmer 32/speak Elliott \"谢谢。$h#$b#你知道吗，我是从你那里得到写爱情小说的灵感的。你还记得吗?#$b#这就是为什么我把这本书献给了你...$l\"/move Elliott -1 0 3/emote Elliott 32/pause 1000/end",	},
+	},
+
+	]
+}

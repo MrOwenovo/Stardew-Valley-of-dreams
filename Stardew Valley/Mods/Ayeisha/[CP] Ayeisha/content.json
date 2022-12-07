@@ -1,0 +1,1319 @@
+{
+  "Format": "1.27.0",
+  "DynamicTokens": [
+//Tilesheet Tokens
+      {
+         "Name": "Tilesheet",
+         "Value": "vanilla"
+      },
+      {
+         "Name": "Tilesheet",
+         "Value": "earthyrecolour",
+         "When": {
+		"HasMod |contains=DaisyNiko.EarthyRecolour": true,
+	         }
+      },
+      {
+         "Name": "Tilesheet",
+         "Value": "starblue",
+         "When": {
+		"HasMod |contains=Lita.StarblueValley": true,
+	         }
+      },
+      {
+         "Name": "Tilesheet",
+         "Value": "wittilynamed",
+         "When": {
+		"HasMod |contains=Acerbicon.Recolor": true,
+	         }
+      },
+      {
+         "Name": "Tilesheet",
+         "Value": "foliageredone",
+         "When": {
+		"HasMod |contains=stardewfoliageredone": true,
+	         }
+      },
+      {
+         "Name": "Tilesheet",
+         "Value": "foliageredonereshade",
+         "When": {
+		"HasMod |contains=stardewfoliageredonereshade": true,
+	         }
+      },
+      {
+         "Name": "Tilesheet",
+         "Value": "flowervalley",
+         "When": {
+		"HasMod |contains=kaya.floralvalley": true,
+	         }
+      },
+      {
+         "Name": "Tilesheet",
+         "Value": "pastoral",
+         "When": {
+		"HasMod |contains=grapeponta.VibrantPastoralRecolor": true,
+	         }
+      },
+      {
+         "Name": "Tilesheet",
+         "Value": "yellog",
+         "When": {
+		"HasMod |contains=yri.ProjectYellogTownOverhaul": true,
+	         }
+      },
+      {
+         "Name": "Tilesheet",
+         "Value": "wayback-vanilla",
+         "When": {
+		"HasMod |contains=Gweniaczek.WayBackPT": true,
+	         }
+      },
+      {
+         "Name": "Tilesheet",
+         "Value": "wayback-vanilla",
+         "When": {
+		"HasMod |contains=Gweniaczek.WayBackPT": true,
+		"HasMod |contains=DaisyNiko.EarthyRecolour": true,
+	         }
+      },
+      {
+         "Name": "Tilesheet",
+         "Value": "wayback-foliageredone",
+         "When": {
+		"HasMod |contains=Gweniaczek.WayBackPT": true,
+		"HasMod |contains=stardewfoliageredone": true,
+	         }
+      },
+      {
+         "Name": "Tilesheet",
+         "Value": "wayback-foliageredonereshade",
+         "When": {
+		"HasMod |contains=Gweniaczek.WayBackPT": true,
+		"HasMod |contains=stardewfoliageredonereshade": true,
+	         }
+      },
+      {
+         "Name": "Tilesheet",
+         "Value": "wayback-wittilynamed",
+         "When": {
+		"HasMod |contains=Gweniaczek.WayBackPT": true,
+		"HasMod |contains=Acerbicon.Recolor": true,
+	         }
+      },
+      {
+         "Name": "Tilesheet",
+         "Value": "wayback-starblue",
+         "When": {
+		"HasMod |contains=Gweniaczek.WayBackPT": true,
+		"HasMod |contains=Lita.StarblueValley": true,
+	         }
+      },
+      {
+         "Name": "Tilesheet",
+         "Value": "wayback-pastoral",
+         "When": {
+		"HasMod |contains=Gweniaczek.WayBackPT": true,
+		"HasMod |contains=grapeponta.VibrantPastoralRecolor": true,
+	         }
+      },
+      {
+         "Name": "Tilesheet",
+         "Value": "wayback-eemie",
+         "When": {
+		"HasMod |contains=Gweniaczek.WayBackPT": true,
+		"HasMod |contains=minervamaga.CP.eemieMapRecolour": true,
+	         }
+      },
+
+//Map Patch Tokens
+      {
+         "Name": "Mappatch",
+         "Value": "vanilla"
+      },
+
+
+//Random Schedules
+// Vanilla
+      {
+         "Name": "PossibleSchedules",
+         "Value": "
+             610 Town 46 57 0 Ayeisha_Deliver/640 Town 51 64 0 Ayeisha_Deliver/700 Town 41 72 0 Ayeisha_Deliver/730 Town 21 90 0 Ayeisha_Deliver/820 Town 8 89 0 Ayeisha_Deliver/850 Forest 100 34 0 Ayeisha_Deliver/940 Forest 89 24 0 Ayeisha_Deliver/1010 Beach 42 7 0 Ayeisha_Deliver/1150 Beach 27 34 0 Ayeisha_Deliver/1240 Town 99 93 0 Ayeisha_Deliver/1420 Town 95 82 0 Ayeisha_Deliver/1450 Saloon 15 20 3 Ayeisha_Sit3/1640 Custom_AyeishaVanRoad 3 11 0
+             @@ 610 Town 46 57 0 Ayeisha_Deliver/640 Mountain 9 27 0 Ayeisha_Deliver/820 Town 51 64 0 Ayeisha_Deliver/1000 Town 68 71 0 Ayeisha_Deliver/1030 Town 21 90 0 Ayeisha_Deliver/1110 Forest 89 24 0 Ayeisha_Deliver/1210 Forest 100 34 0 Ayeisha_Deliver/1240 Beach 42 7 0 Ayeisha_Deliver/1420 Town 95 82 0 Ayeisha_Deliver/1530 Town 99 93 0 Ayeisha_Deliver/1600 Custom_AyeishaVanRoad 3 11 0
+             @@ 610 Town 41 72 0 Ayeisha_Deliver/640 Town 51 64 0 Ayeisha_Deliver/710 Town 68 71 0 Ayeisha_Deliver/740 Town 56 87 0 Ayeisha_Deliver/820 Town 99 93 0 Ayeisha_Deliver/910 Town 95 82 0 Ayeisha_Deliver/940 Beach 42 7 0 Ayeisha_Deliver/1050 Beach 27 34 0 Ayeisha_Deliver/1140 Town 21 90 0 Ayeisha_Deliver/1310 Town 8 89 0 Ayeisha_Deliver/1340 Forest 100 34 0 Ayeisha_Deliver/1420 Forest 89 24 0 Ayeisha_Deliver/1450 Custom_AyeishaVanRoad 3 11 0
+             @@ 610 Town 46 57 0 Ayeisha_Deliver/640 Mountain 9 27 0 Ayeisha_Deliver/820 Town 51 64 0 Ayeisha_Deliver/1000 Town 68 71 0 Ayeisha_Deliver/1030 Town 41 72 0 Ayeisha_Deliver/1110 Town 56 87 0 Ayeisha_Deliver/1150 Beach 42 7 0 Ayeisha_Deliver/1230 Town 99 93 0 Ayeisha_Deliver/1330 Town 8 89 0 Ayeisha_Deliver/1500 Forest 100 34 0 Ayeisha_Deliver/1540 Forest 89 24 0 Ayeisha_Deliver/1610 Custom_AyeishaVanRoad 3 11 0
+             @@ 610 Town 46 57 0 Ayeisha_Deliver/640 Town 51 64 0 Ayeisha_Deliver/700 Town 41 72 0 Ayeisha_Deliver/730 Town 56 87 0 Ayeisha_Deliver/810 Beach 42 7 0 Ayeisha_Deliver/850 Beach 27 34 0 Ayeisha_Deliver/940 Town 95 82 0 Ayeisha_Deliver/1120 Town 21 90 0 Ayeisha_Deliver/1240 Town 8 89 0 Ayeisha_Deliver/1310 Forest 89 24 0 Ayeisha_Deliver/1400 Forest 100 34 0 Ayeisha_Deliver/1420 Saloon 15 20 3 Ayeisha_Sit3/1620 Custom_AyeishaVanRoad 3 11 0
+         "
+      },
+// EastScarpe Only
+      {
+         "Name": "PossibleSchedules",
+         "Value": "
+             {{PossibleSchedules}}
+             @@ 610 Town 41 72 0 Ayeisha_Deliver/640 Town 56 87 0 Ayeisha_Deliver/720 Town 95 82 0 Ayeisha_Deliver/820 Custom_EastScarpe 14 65 0 Ayeisha_Deliver/1000 Custom_EastScarpe 19 50 0 Ayeisha_Deliver/1030 Custom_EastScarpe 49 57 0 Ayeisha_Deliver/1110 Custom_EastScarpe 45 69 0 Ayeisha_Deliver/1140 Custom_EastScarpe 23 36 0 Ayeisha_Deliver/1240 Custom_EastScarpe 59 76 0 Ayeisha_Deliver/1400 Town 99 93 0 Ayeisha_Deliver/1640 Town 21 90 0 Ayeisha_Deliver/1800 Custom_AyeishaVanRoad 3 11 0
+             @@ 610 Town 46 57 0 Ayeisha_Deliver/640 Town 99 93 0 Ayeisha_Deliver/800 Custom_EastScarpe 45 69 0 Ayeisha_Deliver/1010 Custom_EastScarpe 23 36 0 Ayeisha_Deliver/1100 Beach 42 7 0 Ayeisha_Deliver/1440 Town 8 89 0 Ayeisha_Deliver/1550 Forest 100 34 0 Ayeisha_Deliver/1640 Forest 89 24 0 Ayeisha_Deliver/1710 Custom_AyeishaVanRoad 3 11 0
+             @@ 610 Town 41 72 0 Ayeisha_Deliver/640 Town 21 90 0 Ayeisha_Deliver/720 Town 8 89 0 Ayeisha_Deliver/740 Town 56 87 0 Ayeisha_Deliver/840 Town 99 93 0 Ayeisha_Deliver/930 Custom_EastScarpe 14 65 0 Ayeisha_Deliver/1110 Custom_EastScarpe 19 50 0 Ayeisha_Deliver/1140 Custom_EastScarpe 45 69 0 Ayeisha_Deliver/1230 Custom_EastScarpe 49 57 0 Ayeisha_Deliver/1300 Custom_EastScarpe 23 36 0 Ayeisha_Deliver/1350 Beach 42 7 0 Ayeisha_Deliver/1720 Beach 27 34 0 Ayeisha_Deliver/1800 Custom_AyeishaVanRoad 3 11 0
+             @@ 610 Town 46 57 0 Ayeisha_Deliver/640 Mountain 9 27 0 Ayeisha_Deliver/820 Town 51 64 0 Ayeisha_Deliver/1000 Town 68 71 0 Ayeisha_Deliver/1040 Custom_EastScarpe 45 69 0 Ayeisha_Deliver/1330 Custom_EastScarpe 19 50 0 Ayeisha_Deliver/1420 Custom_EastScarpe 59 76 0 Ayeisha_Deliver/1540 Custom_AyeishaVanRoad 3 11 0
+             @@ 610 Town 68 71 0 Ayeisha_Deliver/700 Custom_EastScarpe 14 65 0 Ayeisha_Deliver/920 Custom_EastScarpe 19 50 0 Ayeisha_Deliver/950 Custom_EastScarpe 49 57 0 Ayeisha_Deliver/1030 Custom_EastScarpe 23 36 0 Ayeisha_Deliver/1120 Custom_EastScarpe 59 76 0 Ayeisha_Deliver/1240 Custom_EastScarpe 45 69 0 Ayeisha_Deliver/1340 Saloon 15 20 3 Ayeisha_Sit3/1750 Custom_AyeishaVanRoad 3 11 0
+         ",
+         "When": {
+	      "HasMod |contains=LemurKat.EastScarpe.CP": true,
+         }
+      },
+// SVE Only
+      {
+         "Name": "PossibleSchedules",
+         "Value": "
+             {{PossibleSchedules}}
+             @@ 610 Town 46 57 0 Ayeisha_Deliver/640 Town 51 64 0 Ayeisha_Deliver/710 Town 41 72 0 Ayeisha_Deliver/740 Town 68 71 0 Ayeisha_Deliver/820 Town 56 87 0 Ayeisha_Deliver/900 Town 99 93 0 Ayeisha_Deliver/950 Town 95 82 0 Ayeisha_Deliver/1020 Beach 42 7 0 Ayeisha_Deliver/1130 Beach 27 34 0 Ayeisha_Deliver/1220 Forest 89 24 0 Ayeisha_Deliver/1430 Forest 100 34 0 Ayeisha_Deliver/1500 Forest 70 74 0 Ayeisha_Deliver/1610 Custom_BlueMoonVineyard 30 48 0 Ayeisha_Deliver/1740 Custom_AyeishaVanRoad 3 11 0
+             @@ 610 Town 46 57 0 Ayeisha_Deliver/640 Town 67 53 0 Ayeisha_Deliver/710 Mountain 9 27 0 Ayeisha_Deliver/830 Town 68 71 0 Ayeisha_Deliver/1000 Town 56 87 0 Ayeisha_Deliver/1040 Beach 42 7 0 Ayeisha_Deliver/1120 Beach 27 34 0 Ayeisha_Deliver/1210 Town 99 93 0 Ayeisha_Deliver/1340 Town 21 90 0 Ayeisha_Deliver/1500 Forest 100 34 0 Ayeisha_Deliver/1550 Custom_BlueMoonVineyard 30 48 0 Ayeisha_Deliver/1740 Custom_AyeishaVanRoad 3 11 0
+             @@ 610 Town 41 72 0 Ayeisha_Deliver/640 Town 68 71 0 Ayeisha_Deliver/720 Town 99 93 0 Ayeisha_Deliver/820 Town 95 82 0 Ayeisha_Deliver/850 Town 67 53 0 Ayeisha_Deliver/950 Mountain 9 27 0 Ayeisha_Deliver/1110 Town 8 89 0 Ayeisha_Deliver/1340 Forest 89 24 0 Ayeisha_Deliver/1420 Forest 70 74 0 Ayeisha_Deliver/1540 Custom_AyeishaVanRoad 3 11 0
+         ",
+         "When": {
+	      "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+         }
+      },
+// SVE and EastScarpe
+      {
+         "Name": "PossibleSchedules",
+         "Value": "
+             {{PossibleSchedules}}
+             @@ 610 Custom_BlueMoonVineyard 30 48 0 Ayeisha_Deliver/750 Beach 42 7 0 Ayeisha_Deliver/840 Town 99 93 0 Ayeisha_Deliver/950 Custom_EastScarpe 14 65 0 Ayeisha_Deliver/1130 Custom_EastScarpe 19 50 0 Ayeisha_Deliver/1200 Custom_EastScarpe 45 69 0 Ayeisha_Deliver/1250 Custom_EastScarpe 49 57 0 Ayeisha_Deliver/1320 Custom_EastScarpe 23 36 0 Ayeisha_Deliver/1410 Custom_EastScarpe 59 76 0 Ayeisha_Deliver/1530 Custom_AyeishaVanRoad 3 11 0
+             @@ 610 Town 21 90 0 Ayeisha_Deliver/700 Forest 89 24 0 Ayeisha_Deliver/750 Forest 70 74 0 Ayeisha_Deliver/850 Town 56 87 0 Ayeisha_Deliver/1100 Custom_EastScarpe 45 69 0 Ayeisha_Deliver/1340 Custom_EastScarpe 49 57 0 Ayeisha_Deliver/1410 Custom_EastScarpe 19 50 0 Ayeisha_Deliver/1450 Custom_AyeishaVanRoad 3 11 0
+         ",
+         "When": {
+	      "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+	      "HasMod |contains=LemurKat.EastScarpe.CP": true,
+         }
+      },
+// SVE inc Susan
+      {
+         "Name": "PossibleSchedules",
+         "Value": "
+             {{PossibleSchedules}}
+             @@ 610 Town 51 64 0 Ayeisha_Deliver/640 Town 67 53 0 Ayeisha_Deliver/720 Mountain 9 27 0 Ayeisha_Deliver/840 Railroad 34 54 0 Ayeisha_Deliver/930 Town 56 87 0 Ayeisha_Deliver/1210 Beach 27 34 0 Ayeisha_Deliver/1320 Town 95 82 0 Ayeisha_Deliver/1500 Town 21 90 0 Ayeisha_Deliver/1620 Custom_AyeishaVanRoad 3 11 0
+             @@ 610 Railroad 34 54 0 Ayeisha_Deliver/830 Town 41 72 0 Ayeisha_Deliver/1100 Town 8 89 0 Ayeisha_Deliver/1150 Forest 89 24 0 Ayeisha_Deliver/1240 Forest 70 74 0 Ayeisha_Deliver/1350 Custom_BlueMoonVineyard 30 48 0 Ayeisha_Deliver/1520 Custom_AyeishaVanRoad 3 11 0
+         ",
+         "When": {
+	      "HasSeenEvent |contains=1000077": true,
+         }
+      },
+// Boarding House
+      {
+         "Name": "PossibleSchedules",
+         "Value": "
+             {{PossibleSchedules}}
+             @@ 610 Town 46 57 0 Ayeisha_Deliver/640 Town 51 64 0 Ayeisha_Deliver/700 Town 41 72 0 Ayeisha_Deliver/730 Town 56 87 0 Ayeisha_Deliver/810 Beach 42 7 0 Ayeisha_Deliver/850 Beach 27 34 0 Ayeisha_Deliver/940 Town 95 82 0 Ayeisha_Deliver/1120 Town 21 90 0 Ayeisha_Deliver/1240 Town 8 89 0 Ayeisha_Deliver/1310 Custom_BoardingHouse_BackwoodsPlateau 50 12 0 Ayeisha_Deliver/1500 Custom_BoardingHouse_BackwoodsPlateau 3 11 0 Ayeisha_Deliver/1550 Custom_AyeishaVanRoad 3 11 0
+             @@ 610 Town 46 57 0 Ayeisha_Deliver/640 Mountain 9 27 0 Ayeisha_Deliver/820 Town 51 64 0 Ayeisha_Deliver/1000 Town 68 71 0 Ayeisha_Deliver/1030 Town 41 72 0 Ayeisha_Deliver/1110 Town 56 87 0 Ayeisha_Deliver/1150 Beach 42 7 0 Ayeisha_Deliver/1230 Town 99 93 0 Ayeisha_Deliver/1330 Town 8 89 0 Ayeisha_Deliver/1500 Custom_BoardingHouse_BackwoodsPlateau 50 12 0 Ayeisha_Deliver/1650 Custom_BoardingHouse_BackwoodsPlateau 3 11 0 Ayeisha_Deliver/1740 Custom_AyeishaVanRoad 3 11 0
+             ",
+         "When": {
+	      "HasMod |contains=CPBoardingHouse": true,
+         }
+      },
+// BLANK FOR YOUR OWN USE - USE THIS TO ADD YOUR OWN RANDOM ROUTE
+      {
+         "Name": "PossibleSchedules",
+         "Value": "{{PossibleSchedules}}
+             //INSERT CUSTOM SCHEDULE HERE
+             //INSERT 2ND CUSTOM SCHEDULE HERE
+             //INSERT 3RD CUSTOM SCHEDULE HERE
+             //etc
+          ",
+         "When": {
+              "HasMod |contains=Author.SomeCoolMod": true,
+         }
+      },
+   ],
+   
+
+//////CUSTOM MAPS
+
+   "CustomLocations": [
+      {
+         "Name": "Custom_AyeishaVanRoad",
+         "FromMapFile": "assets/maps/vanilla/AyeishaVanRoad.tmx"
+      }
+   ],
+
+////////////////////////////////////////////MAIN MOD START
+
+  "Changes": [ 
+  
+  {    //Add custom tilesheets
+     "LogName": "Load Tilesheets", 
+     "Action": "Load",
+     "Target": "Maps/spring_z_mailboxes,Maps/summer_z_mailboxes,Maps/fall_z_mailboxes,Maps/winter_z_mailboxes,Maps/spring_z_vanfpsheet,Maps/summer_z_vanfpsheet,Maps/fall_z_vanfpsheet,Maps/winter_z_vanfpsheet",
+     "FromFile": "assets/images/tilesheets/{{Tilesheet}}/{{TargetWithoutPath}}.png",
+},
+
+//Add Ayeisha's Offset
+{
+      "LogName": "NPC Map Sprite Offset", 
+      "Action": "EditData",
+      "Target": "Mods/Bouhm.NPCMapLocations/NPCs",
+      "Entries": {
+        "Ayeisha": {"MarkerCropOffset": 1},
+        },
+        "When": {
+	  "HasMod |contains=Bouhm.NPCMapLocations": true,
+         }
+},
+
+//Ayeisha's Disposition
+      {
+      "LogName": "NPC Manifestation",
+      "Action": "EditData",
+      "Target": "Data/NPCDispositions",
+      "Entries": {
+        "Ayeisha": "adult/polite/neutral/positive/female/non-datable/null/Town/summer 9//Town 35 56/艾伊莎"
+      }
+    },
+
+//Ayeisha's Exclusions
+      {
+      "LogName": "NPC Exclusions",
+      "Action": "EditData",
+      "Target": "Data/CustomNPCExclusions",
+      "Entries": {
+            "Ayeisha": "冬星岛活动"
+         }
+      },
+
+///GIFT TASTES
+// Subject to change.
+
+    {
+      "LogName": "NPC Gift Tastes",
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "Entries": {
+            "Ayeisha": "非常感谢！我喜欢它! $l#/60 195 205 231 248 252 258 281 402 406 611/非常感谢.这真是太好了. $h#/-81 376 564/嗯……谢谢. $s#/64 72 190 280 727 728/我要把这个直接送到回收站. $a#/270/谢谢.//",
+      }
+    },
+
+
+//Ayeisha's Animations
+    {
+      "LogName": "NPC Animations",
+      "Action": "EditData",
+      "Target": "Data/animationdescriptions",
+      "Entries": {
+      "Ayeisha_Deliver": "8 8/19 19 19 19 19 19 19 19 19 19 8 8 8 8 8/8 8",
+      "Ayeisha_Sit1": "17/17/17",
+      "Ayeisha_Sit2": "16/16/16",
+      "Ayeisha_Sit3": "18/18/18",
+      }
+    },
+
+//Map Labels
+{
+      "LogName": "Map Labels",
+      "Action": "EditData",
+      "Target": "Strings/StringsFromMaps",
+      "Entries": {
+      "TheLimeyDragon.Ayeisha1": "-威利的鱼店-",
+      "TheLimeyDragon.Ayeisha2": "里面装着'艾利欧特'自己写的手稿.",
+      "TheLimeyDragon.Ayeisha3": "山路24#-木匠商店-",
+      "TheLimeyDragon.Ayeisha4": "-玛妮的牧场-",
+      "TheLimeyDragon.Ayeisha5": "-小屋-#下面刻着一个L.",
+      "TheLimeyDragon.Ayeisha6": "1 河路",
+      "TheLimeyDragon.Ayeisha7": "2 河路",
+      "TheLimeyDragon.Ayeisha8": "1 柳树巷 ",
+      "TheLimeyDragon.Ayeisha9": "2 柳树巷",
+      "TheLimeyDragon.Ayeisha10": "油漆已经锈掉了.",
+      "TheLimeyDragon.Ayeisha11": "邮件",
+      "TheLimeyDragon.Ayeisha12": "-市长庄园-",
+      "TheLimeyDragon.Ayeisha13": "星露谷博物馆和图书馆",
+      "TheLimeyDragon.Ayeisha14": "邮件和医药处方",
+	  }
+},
+
+//MAP CHANGES
+
+
+//==ADD WARPS==
+
+      {
+         "Action": "EditMap",
+         "Target": "Maps/BusStop",
+         "AddWarps": [
+		"33 6 Custom_AyeishaVanRoad 1 9",
+		"33 7 Custom_AyeishaVanRoad 1 10",
+		"33 8 Custom_AyeishaVanRoad 1 11",
+		"33 9 Custom_AyeishaVanRoad 1 12",
+		"32 10 Custom_AyeishaVanRoad 1 12",
+         ]
+      },
+
+//=======TOWN
+//-------GUS
+  {
+         "Action": "EditMap",
+         "Target": "Maps/Town",
+         "FromFile": "assets/maps/{{Mappatch}}/Mailboxes.tbin",
+         "FromArea": { "X": 1, "Y": 0, "Width": 1, "Height": 2 },
+         "ToArea": { "X": 41, "Y": 70, "Width": 1, "Height": 2 },
+  },
+  {
+         "Action": "EditMap",
+         "Target": "Maps/Town-EggFestival",
+         "FromFile": "assets/maps/{{Mappatch}}/Mailboxes_springfestival.tbin",
+         "FromArea": { "X": 1, "Y": 0, "Width": 1, "Height": 2 },
+         "ToArea": { "X": 41, "Y": 70, "Width": 1, "Height": 2 },
+  },
+  {
+         "Action": "EditMap",
+         "Target": "Maps/Town-Fair, Maps/Town-Halloween",
+         "FromFile": "assets/maps/{{Mappatch}}/Mailboxes_fallfestival.tbin",
+         "FromArea": { "X": 1, "Y": 0, "Width": 1, "Height": 2 },
+         "ToArea": { "X": 41, "Y": 70, "Width": 1, "Height": 2 },
+  },
+  {
+         "Action": "EditMap",
+         "Target": "Maps/Town-Christmas",
+         "FromFile": "assets/maps/{{Mappatch}}/Mailboxes_winterfestival.tbin",
+         "FromArea": { "X": 1, "Y": 0, "Width": 1, "Height": 2 },
+         "ToArea": { "X": 41, "Y": 70, "Width": 1, "Height": 2 },
+  },
+//-------CLINT
+  {
+         "Action": "EditMap",
+         "Target": "Maps/Town",
+         "FromFile": "assets/maps/{{Mappatch}}/Mailboxes.tbin",
+         "FromArea": { "X": 0, "Y": 2, "Width": 1, "Height": 1 },
+         "ToArea": { "X": 95, "Y": 81, "Width": 1, "Height": 1 },
+  },
+//-------PIERRE
+  {
+         "Action": "EditMap",
+         "Target": "Maps/Town",
+         "FromFile": "assets/maps/{{Mappatch}}/Mailboxes.tbin",
+         "FromArea": { "X": 0, "Y": 0, "Width": 1, "Height": 2 },
+         "ToArea": { "X": 46, "Y": 55, "Width": 1, "Height": 2 },
+  },
+  {
+         "Action": "EditMap",
+         "Target": "Maps/Town-EggFestival",
+         "FromFile": "assets/maps/{{Mappatch}}/Mailboxes_springfestival.tbin",
+         "FromArea": { "X": 0, "Y": 0, "Width": 1, "Height": 2 },
+         "ToArea": { "X": 46, "Y": 55, "Width": 1, "Height": 2 },
+  },
+  {
+         "Action": "EditMap",
+         "Target": "Maps/Town-Fair",
+         "FromFile": "assets/maps/{{Mappatch}}/Mailboxes_fallfestival.tbin",
+         "FromArea": { "X": 0, "Y": 0, "Width": 1, "Height": 2 },
+         "ToArea": { "X": 46, "Y": 55, "Width": 1, "Height": 2 },
+         "When": {
+		"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+	         }
+  },
+  {
+         "Action": "EditMap",
+         "Target": "Maps/Town-Fair",
+         "FromFile": "assets/maps/{{Mappatch}}/Mailboxes_fallfestivalSVE.tbin",
+         "FromArea": { "X": 0, "Y": 0, "Width": 1, "Height": 2 },
+         "ToArea": { "X": 46, "Y": 55, "Width": 1, "Height": 2 },
+         "When": {
+		"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+	         }
+  },
+  {
+         "Action": "EditMap",
+         "Target": "Maps/Town-Halloween",
+         "FromFile": "assets/maps/{{Mappatch}}/Mailboxes_fallfestival.tbin",
+         "FromArea": { "X": 0, "Y": 0, "Width": 1, "Height": 1 },
+         "ToArea": { "X": 46, "Y": 55, "Width": 1, "Height": 1 },
+  },
+  {
+         "Action": "EditMap",
+         "Target": "Maps/Town-Christmas",
+         "FromFile": "assets/maps/{{Mappatch}}/Mailboxes_winterfestival.tbin",
+         "FromArea": { "X": 0, "Y": 0, "Width": 1, "Height": 2 },
+         "ToArea": { "X": 46, "Y": 55, "Width": 1, "Height": 2 },
+  },
+//-------HARVEY
+  {
+         "Action": "EditMap",
+         "Target": "Maps/Town",
+         "FromFile": "assets/maps/{{Mappatch}}/Mailboxes.tbin",
+         "FromArea": { "X": 2, "Y": 0, "Width": 1, "Height": 3 },
+         "ToArea": { "X": 35, "Y": 54, "Width": 1, "Height": 3 },
+  },
+  {
+         "Action": "EditMap",
+         "Target": "Maps/Town-EggFestival",
+         "FromFile": "assets/maps/{{Mappatch}}/Mailboxes_springfestival.tbin",
+         "FromArea": { "X": 2, "Y": 0, "Width": 1, "Height": 3 },
+         "ToArea": { "X": 35, "Y": 54, "Width": 1, "Height": 3 },
+  },
+  {
+         "Action": "EditMap",
+         "Target": "Maps/Town-Fair, Maps/Town-Halloween",
+         "FromFile": "assets/maps/{{Mappatch}}/Mailboxes_fallfestival.tbin",
+         "FromArea": { "X": 2, "Y": 0, "Width": 1, "Height": 2 },
+         "ToArea": { "X": 35, "Y": 54, "Width": 1, "Height": 2 },
+  },
+  {
+         "Action": "EditMap",
+         "Target": "Maps/Town-Christmas",
+         "FromFile": "assets/maps/{{Mappatch}}/Mailboxes_winterfestival.tbin",
+         "FromArea": { "X": 2, "Y": 0, "Width": 1, "Height": 3 },
+         "ToArea": { "X": 35, "Y": 54, "Width": 1, "Height": 3 },
+  },
+  //-------ALEX
+  {
+         "Action": "EditMap",
+         "Target": "Maps/Town",
+         "FromFile": "assets/maps/{{Mappatch}}/Mailboxes.tbin",
+         "FromArea": { "X": 2, "Y": 2, "Width": 3, "Height": 2 },
+         "ToArea": { "X": 49, "Y": 62, "Width": 3, "Height": 2 },
+  },
+  {
+         "Action": "EditMap",
+         "Target": "Maps/Town-EggFestival",
+         "FromFile": "assets/maps/{{Mappatch}}/Mailboxes_springfestival.tbin",
+         "FromArea": { "X": 2, "Y": 2, "Width": 3, "Height": 2 },
+         "ToArea": { "X": 49, "Y": 62, "Width": 3, "Height": 2 },
+  },
+  {
+         "Action": "EditMap",
+         "Target": "Maps/Town-Fair, Maps/Town-Halloween",
+         "FromFile": "assets/maps/{{Mappatch}}/Mailboxes_fallfestival.tbin",
+         "FromArea": { "X": 2, "Y": 2, "Width": 3, "Height": 2 },
+         "ToArea": { "X": 49, "Y": 62, "Width": 3, "Height": 2 },
+         "When": {
+		"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+	         }
+  },
+  {
+         "Action": "EditMap",
+         "Target": "Maps/Town-Fair, Maps/Town-Halloween",
+         "FromFile": "assets/maps/{{Mappatch}}/Mailboxes.tbin",
+         "FromArea": { "X": 4, "Y": 2, "Width": 1, "Height": 1 },
+         "ToArea": { "X": 51, "Y": 62, "Width": 1, "Height": 1 },
+         "When": {
+		"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+	         }
+  },  
+  {
+         "Action": "EditMap",
+         "Target": "Maps/Town-Christmas",
+         "FromFile": "assets/maps/{{Mappatch}}/Mailboxes_winterfestival.tbin",
+         "FromArea": { "X": 2, "Y": 2, "Width": 3, "Height": 2 },
+         "ToArea": { "X": 49, "Y": 62, "Width": 3, "Height": 2 },
+  },
+  //-------PAM
+  {
+         "Action": "EditMap",
+         "Target": "Maps/Town",
+         "FromFile": "assets/maps/{{Mappatch}}/Mailboxes.tbin",
+         "FromArea": { "X": 6, "Y": 0, "Width": 1, "Height": 2 },
+         "ToArea": { "X": 68, "Y": 69, "Width": 1, "Height": 2 },
+  },
+  {
+         "Action": "EditMap",
+         "Target": "Maps/Town-EggFestival",
+         "FromFile": "assets/maps/{{Mappatch}}/Mailboxes_springfestival.tbin",
+         "FromArea": { "X": 6, "Y": 0, "Width": 1, "Height": 2 },
+         "ToArea": { "X": 68, "Y": 69, "Width": 1, "Height": 2 },
+  },
+  {
+         "Action": "EditMap",
+         "Target": "Maps/Town-Fair, Maps/Town-Halloween",
+         "FromFile": "assets/maps/{{Mappatch}}/Mailboxes_fallfestival.tbin",
+         "FromArea": { "X": 6, "Y": 0, "Width": 1, "Height": 2 },
+         "ToArea": { "X": 68, "Y": 69, "Width": 1, "Height": 2 },
+  },
+  {
+         "Action": "EditMap",
+         "Target": "Maps/Town-Christmas",
+         "FromFile": "assets/maps/{{Mappatch}}/Mailboxes_winterfestival.tbin",
+         "FromArea": { "X": 6, "Y": 0, "Width": 1, "Height": 2 },
+         "ToArea": { "X": 68, "Y": 69, "Width": 1, "Height": 2 },
+  },
+  
+  {
+         "Action": "EditMap",
+         "Target": "Maps/Town",
+         "FromFile": "assets/maps/{{Mappatch}}/Mailboxes.tbin",
+         "FromArea": { "X": 7, "Y": 0, "Width": 1, "Height": 2 },
+         "ToArea": { "X": 68, "Y": 69, "Width": 1, "Height": 2 },
+         "When": { "HasFlag": "pamHouseUpgrade" },
+  },
+    {
+         "Action": "EditMap",
+         "Target": "Maps/Town-EggFestival",
+         "FromFile": "assets/maps/{{Mappatch}}/Mailboxes_springfestival.tbin",
+         "FromArea": { "X": 7, "Y": 0, "Width": 1, "Height": 2 },
+         "ToArea": { "X": 68, "Y": 69, "Width": 1, "Height": 2 },
+         "When": { "HasFlag": "pamHouseUpgrade" },
+  },
+  {
+         "Action": "EditMap",
+         "Target": "Maps/Town-Fair, Maps/Town-Halloween",
+         "FromFile": "assets/maps/{{Mappatch}}/Mailboxes_fallfestival.tbin",
+         "FromArea": { "X": 7, "Y": 0, "Width": 1, "Height": 2 },
+         "ToArea": { "X": 68, "Y": 69, "Width": 1, "Height": 2 },
+         "When": { "HasFlag": "pamHouseUpgrade" },
+  },
+  {
+         "Action": "EditMap",
+         "Target": "Maps/Town-Christmas",
+         "FromFile": "assets/maps/{{Mappatch}}/Mailboxes_winterfestival.tbin",
+         "FromArea": { "X": 7, "Y": 0, "Width": 1, "Height": 2 },
+         "ToArea": { "X": 68, "Y": 69, "Width": 1, "Height": 2 },
+         "When": { "HasFlag": "pamHouseUpgrade" },
+  },
+  //-------HAYLEY
+  {
+         "Action": "EditMap",
+         "Target": "Maps/Town",
+         "FromFile": "assets/maps/{{Mappatch}}/Mailboxes.tbin",
+         "FromArea": { "X": 9, "Y": 0, "Width": 1, "Height": 2 },
+         "ToArea": { "X": 21, "Y": 88, "Width": 1, "Height": 2 },
+  },
+  {
+         "Action": "EditMap",
+         "Target": "Maps/Town-EggFestival",
+         "FromFile": "assets/maps/{{Mappatch}}/Mailboxes_springfestival.tbin",
+         "FromArea": { "X": 9, "Y": 0, "Width": 1, "Height": 2 },
+         "ToArea": { "X": 21, "Y": 88, "Width": 1, "Height": 2 },
+  },
+  {
+         "Action": "EditMap",
+         "Target": "Maps/Town-Fair, Maps/Town-Halloween",
+         "FromFile": "assets/maps/{{Mappatch}}/Mailboxes_fallfestival.tbin",
+         "FromArea": { "X": 9, "Y": 0, "Width": 1, "Height": 2 },
+         "ToArea": { "X": 21, "Y": 88, "Width": 1, "Height": 2 },
+  },
+  {
+         "Action": "EditMap",
+         "Target": "Maps/Town-Christmas",
+         "FromFile": "assets/maps/{{Mappatch}}/Mailboxes_winterfestival.tbin",
+         "FromArea": { "X": 9, "Y": 0, "Width": 1, "Height": 2 },
+         "ToArea": { "X": 21, "Y": 88, "Width": 1, "Height": 2 },
+  },
+  //-------JODI
+  {
+         "Action": "EditMap",
+         "Target": "Maps/Town",
+         "FromFile": "assets/maps/{{Mappatch}}/Mailboxes.tbin",
+         "FromArea": { "X": 3, "Y": 0, "Width": 1, "Height": 2 },
+         "ToArea": { "X": 8, "Y": 87, "Width": 1, "Height": 2 },
+  },
+  {
+         "Action": "EditMap",
+         "Target": "Maps/Town-EggFestival",
+         "FromFile": "assets/maps/{{Mappatch}}/Mailboxes_springfestival.tbin",
+         "FromArea": { "X": 3, "Y": 0, "Width": 1, "Height": 2 },
+         "ToArea": { "X": 8, "Y": 87, "Width": 1, "Height": 2 },
+  },
+  {
+         "Action": "EditMap",
+         "Target": "Maps/Town-Fair, Maps/Town-Halloween",
+         "FromFile": "assets/maps/{{Mappatch}}/Mailboxes_fallfestival.tbin",
+         "FromArea": { "X": 3, "Y": 0, "Width": 1, "Height": 2 },
+         "ToArea": { "X": 8, "Y": 87, "Width": 1, "Height": 2 },
+  },
+  {
+         "Action": "EditMap",
+         "Target": "Maps/Town-Christmas",
+         "FromFile": "assets/maps/{{Mappatch}}/Mailboxes_winterfestival.tbin",
+         "FromArea": { "X": 3, "Y": 0, "Width": 1, "Height": 2 },
+         "ToArea": { "X": 8, "Y": 87, "Width": 1, "Height": 2 },
+  },
+  //-------LEWIS
+  {
+         "Action": "EditMap",
+         "Target": "Maps/Town",
+         "FromFile": "assets/maps/{{Mappatch}}/Mailboxes.tbin",
+         "FromArea": { "X": 10, "Y": 0, "Width": 1, "Height": 2 },
+         "ToArea": { "X": 56, "Y": 85, "Width": 1, "Height": 2 },
+  },
+  {
+         "Action": "EditMap",
+         "Target": "Maps/Town-EggFestival",
+         "FromFile": "assets/maps/{{Mappatch}}/Mailboxes_springfestival.tbin",
+         "FromArea": { "X": 10, "Y": 0, "Width": 1, "Height": 2 },
+         "ToArea": { "X": 56, "Y": 85, "Width": 1, "Height": 2 },
+  },
+  {
+         "Action": "EditMap",
+         "Target": "Maps/Town-Fair, Maps/Town-Halloween",
+         "FromFile": "assets/maps/{{Mappatch}}/Mailboxes_fallfestival.tbin",
+         "FromArea": { "X": 10, "Y": 0, "Width": 1, "Height": 2 },
+         "ToArea": { "X": 56, "Y": 85, "Width": 1, "Height": 2 },
+  },
+  {
+         "Action": "EditMap",
+         "Target": "Maps/Town-Christmas",
+         "FromFile": "assets/maps/{{Mappatch}}/Mailboxes_winterfestival.tbin",
+         "FromArea": { "X": 10, "Y": 0, "Width": 1, "Height": 2 },
+         "ToArea": { "X": 56, "Y": 85, "Width": 1, "Height": 2 },
+  },
+  //-------MUSEUM (Moved so it's in the same position as SVE)
+  {
+         "Action": "EditMap",
+         "Target": "Maps/Town",
+         "FromFile": "assets/maps/{{Mappatch}}/Mailboxes.tbin",
+         "FromArea": { "X": 5, "Y": 2, "Width": 6, "Height": 2 },
+         "ToArea": { "X": 94, "Y": 91, "Width": 6, "Height": 2 },
+         "When": {
+		"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+	         }
+  },  
+  //=======MOUNTAIN  
+  {
+         "Action": "EditMap",
+         "Target": "Maps/Mountain",
+         "FromFile": "assets/maps/{{Mappatch}}/Mailboxes.tbin",
+         "FromArea": { "X": 5, "Y": 0, "Width": 1, "Height": 2 },
+         "ToArea": { "X": 9, "Y": 25, "Width": 1, "Height": 2 },
+  },
+  //=======FOREST
+  //-------MARNIE
+  {
+         "Action": "EditMap",
+         "Target": "Maps/Forest",
+         "FromFile": "assets/maps/{{Mappatch}}/Mailboxes.tbin",
+         "FromArea": { "X": 0, "Y": 4, "Width": 11, "Height": 3 },
+         "ToArea": { "X": 84, "Y": 22, "Width": 11, "Height": 3 },
+         "When": {
+		"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+	         }
+  },
+  {
+         "Action": "EditMap",
+         "Target": "Maps/Forest",
+         "FromFile": "assets/maps/{{Mappatch}}/Mailboxes.tbin",
+         "FromArea": { "X": 8, "Y": 0, "Width": 1, "Height": 2 },
+         "ToArea": { "X": 89, "Y": 22, "Width": 1, "Height": 2 },
+         "When": {
+		"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+	         }
+  },
+  {
+         "Action": "EditMap",
+         "Target": "Maps/Forest-IceFestival",
+         "FromFile": "assets/maps/{{Mappatch}}/Mailboxes_winterfestival.tbin",
+         "FromArea": { "X": 0, "Y": 4, "Width": 11, "Height": 3 },
+         "ToArea": { "X": 84, "Y": 22, "Width": 11, "Height": 3 },
+         "When": {
+		"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+	         }
+  },
+  //-------LEAH
+  {
+         "Action": "EditMap",
+         "Target": "Maps/Forest",
+         "FromFile": "assets/maps/{{Mappatch}}/Mailboxes.tbin",
+         "FromArea": { "X": 4, "Y": 0, "Width": 1, "Height": 2 },
+         "ToArea": { "X": 100, "Y": 32, "Width": 1, "Height": 2 },
+  },
+  {
+         "Action": "EditMap",
+         "Target": "Maps/Forest-IceFestival",
+         "FromFile": "assets/maps/{{Mappatch}}/Mailboxes_winterfestival.tbin",
+         "FromArea": { "X": 4, "Y": 0, "Width": 1, "Height": 2 },
+         "ToArea": { "X": 100, "Y": 32, "Width": 1, "Height": 2 },
+         "When": {
+		"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+	         }
+  },
+  //=======BEACH
+  //-------ELLIOTT
+  {
+         "Action": "EditMap",
+         "Target": "Maps/Beach",
+         "FromFile": "assets/maps/{{Mappatch}}/Mailboxes.tbin",
+         "FromArea": { "X": 1, "Y": 2, "Width": 1, "Height": 2 },
+         "ToArea": { "X": 42, "Y": 5, "Width": 1, "Height": 2 },
+  },
+  {
+         "Action": "EditMap",
+         "Target": "Maps/Beach-Jellies, Maps/Beach-NightMarket",
+         "FromFile": "assets/maps/{{Mappatch}}/Mailboxes_summerfestival.tbin",
+         "FromArea": { "X": 1, "Y": 2, "Width": 1, "Height": 2 },
+         "ToArea": { "X": 42, "Y": 5, "Width": 1, "Height": 2 },
+  },
+  {
+         "Action": "EditMap",
+         "Target": "Maps/Beach-Luau",
+         "FromFile": "assets/maps/{{Mappatch}}/Mailboxes_summerfestival.tbin",
+         "FromArea": { "X": 1, "Y": 2, "Width": 1, "Height": 1 },
+         "ToArea": { "X": 42, "Y": 5, "Width": 1, "Height": 1 },
+  },
+  //-------WILLY
+  {
+         "Action": "EditMap",
+         "Target": "Maps/Beach",
+         "FromFile": "assets/maps/{{Mappatch}}/Mailboxes.tbin",
+         "FromArea": { "X": 11, "Y": 0, "Width": 1, "Height": 2 },
+         "ToArea": { "X": 27, "Y": 32, "Width": 1, "Height": 2 },
+  },
+  {
+         "Action": "EditMap",
+         "Target": "Maps/Beach-Luau, Maps/Beach-Jellies, Maps/Beach-NightMarket",
+         "FromFile": "assets/maps/{{Mappatch}}/Mailboxes_summerfestival.tbin",
+         "FromArea": { "X": 11, "Y": 0, "Width": 1, "Height": 2 },
+         "ToArea": { "X": 27, "Y": 32, "Width": 1, "Height": 2 },
+  },
+  //-------GARDEN VILLAGE (Add FP Van)
+  {
+         "LogName": "Add GV Van", 
+         "Action": "EditMap",
+         "Target": "Maps/MainShops, Maps/Custom_MainShops",
+         "FromFile": "assets/maps/{{Mappatch}}/VanPatch.tmx",
+         "FromArea": { "X": 0, "Y": 0, "Width": 7, "Height": 4 },
+         "ToArea": { "X": 2, "Y": 17, "Width": 7, "Height": 4 },
+         "When": {
+		"HasMod |contains=Tarniyar.CP.GardenVillage": true,
+		"Query: {{Random: 1, 0}} = 1": true,
+	         }
+  },
+
+  //-------GARDEN VILLAGE (Remove FP Van)
+  {
+         "LogName": "Remove GV Van",
+         "Action": "EditMap",
+         "Target": "Maps/MainShops, Maps/Custom_MainShops",
+         "FromFile": "assets/maps/{{Mappatch}}/VanPatch.tmx",
+         "FromArea": { "X": 7, "Y": 0, "Width": 7, "Height": 4 },
+         "ToArea": { "X": 2, "Y": 17, "Width": 7, "Height": 4 },
+         "When": {
+		"HasMod |contains=Tarniyar.CP.GardenVillage": true,
+		"Query: {{Random: 1, 0}} = 1": true,
+	         }
+  },
+
+  //Unique Courtship Responses
+  {
+   "LogName": "Ayeisha's Gift Messages",
+   "Action": "EditData",
+   "Target": "Characters/Dialogue/Ayeisha",
+   "Entries": {
+	       "rejectNPCA": "这花束很漂亮,但是我是不会接受的.很抱歉.$s",
+	       "rejectNPCB": "你可以留着它.我不需要它.很抱歉.$s",
+	       "engageA": "你不是已经订婚了吗？另外你也不是我喜欢的类型.很抱歉.$s",
+	       "engageB": "你不是已经订婚了？况且,我也不能接受.很抱歉.$s",
+	       "marriedA": "你已经结婚了!$a",
+	       "marriedB": "你结婚了!$a",
+	       "refusal_no_heartsA": "对不起,你不是我喜欢的类型.$s", 
+	       "refusal_no_heartsB": "那样不行,对不起.$s",
+	       "birthdayLoveA": "为了我的生日？！$u#$b#哇！非常感谢.$l",
+	       "birthdayLoveB": "为了我的生日？$u#$b#这太棒了！非常感谢.$l",
+	       "birthdayLikeA": ".为了我的生日？$u#$b#这真是太好了.非常感谢.",
+	       "birthdayLikeB": "为了我的生日？$u#$b#谢谢,这太可爱了.",
+	       "birthdayDislikeA": "这是生日礼物吗？$s#$b#呃谢谢.$s",
+	       "birthdayDislikeB": "这是给我的生日礼物？$s#$b#呃谢谢.$s",
+	       "birthdayNeutralA": "谢谢你的生日礼物.",
+	       "birthdayNeutralB": "谢谢你的生日礼物.",
+              },
+   "When": {"HasMod |contains=misscoriel.UCRFix": true}
+  },
+
+//Rain Dialogue
+    {
+     "LogName": "Rainy Dialogue", 
+     "Action": "EditData", 
+     "Target": "Characters/Dialogue/Rainy",
+     "Entries": {
+        "Ayeisha": "我喜欢雨的气味和声音. 因为我觉得这样真的很让人放松.#$b#即使我经常在这样的环境中奔走.$h#$e#我想你也是经常需要在雨中工作的.",
+      },
+    },
+
+//Sprites 
+
+    {
+      "LogName": "NPC Sprite",
+      "Action": "Load",
+      "Target": "Characters/Ayeisha",
+      "FromFile": "assets/images/sprites/spritesheet-shorts.png",
+    },
+
+
+   {
+      "LogName": "NPC Sprite",
+      "Action": "EditImage",
+      "Target": "Characters/Ayeisha",
+      "FromFile": "assets/images/sprites/spritesheet-long.png",
+      "When": {
+		"Season": "Spring",
+		"Weather": "Wind, Rain, Storm",
+		}
+    },
+
+    {
+      "LogName": "NPC Sprite",
+      "Action": "EditImage",
+      "Target": "Characters/Ayeisha",
+      "FromFile": "assets/images/sprites/spritesheet-long.png",
+      "When": {
+		"Season": "Summer",
+		"Weather": "Rain, Storm"
+		}
+    },
+
+    {
+      "LogName": "NPC Sprite",
+      "Action": "EditImage",
+      "Target": "Characters/Ayeisha",
+      "FromFile": "assets/images/sprites/spritesheet-long.png",
+      "When": {
+		"Season": "Fall", 
+		"Weather": "Wind, Rain, Storm",
+		}
+    },
+
+    {
+      "LogName": "NPC Sprite",
+      "Action": "EditImage",
+      "Target": "Characters/Ayeisha",
+      "FromFile": "assets/images/sprites/spritesheet-long.png",
+      "When": {
+		"Season": "Winter",
+		}
+    },
+
+    {
+      "LogName": "Dialogue",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/Ayeisha",
+      "FromFile": "assets/dialogue/Dialogue.json",
+    },
+
+    {
+      "LogName": "NPC Portrait",
+      "Action": "Load",
+      "Target": "Portraits/Ayeisha",
+      "FromFile": "assets/images/portraits/portrait.png",
+    },
+
+    {
+      "LogName": "ScheduleBlank",
+      "Action": "Load",
+      "Target": "Characters/schedules/Ayeisha",
+      "FromFile": "assets/schedules/ScheduleAll.json",
+
+    },
+    {
+      "LogName": "Schedule strings Default",
+      "Action": "Load",
+      "Target": "Strings/schedules/Ayeisha",
+      "FromFile": "assets/schedules/ScheduleDialogue.json",
+     },
+
+//Schedule
+
+{
+    "LogName": "Schedule",
+    "Action": "EditData",
+    "Target": "Characters/schedules/Ayeisha",
+    "Entries": {
+        "spring": "{{Random: {{PossibleSchedules}} |inputSeparator=@@ }}",
+    }
+},
+
+//Film Snacks/Drinks
+
+    {
+      "LogName": "Concessions Tastes",
+      "Action": "EditData",
+      "Target": "Data/ConcessionTastes",
+      "Entries": {
+      "Ayeisha": {
+      "Name": "Ayeisha",
+      "LovedTags":["Chocolate Popcorn", "Jasmine Tea", "Panzanella Salad", "Personal Pizza", "Salted Peanuts", "Sour Slimes", "Star Cookie", "Truffle Popcorn"],
+      "LikedTags":["Apple Slices", "Black Licorice", "Cappuccino Mousse Cake", "Fries", "Ice Cream Sandwich", "Nachos", "Popcorn", "Stardrop Sorbet"],
+      "DislikedTags":["Cotton Candy", "Hummus Snack Pack", "Jawbreaker", "Joja Cola", "JojaCorn", "Kale Smoothie", "Rock Candy", "Salmon Burger"],
+                 }
+                 },
+    },
+
+//Film Reactions
+{
+  "Action": "EditData",
+  "Target": "Data/MoviesReactions",
+  "Entries": {
+  "Ayeisha": {
+    "NPCName": "Ayeisha",
+    "Reactions": [
+//Brave Little Sapling
+      {
+        "Tag": "spring_movie_0",
+        "Response": "like",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "这部电影看起来很可爱也很有趣"
+          },
+          "DuringMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "我喜欢动画风格的."
+          },
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "That was a really sweet movie."
+          }
+        },
+        "ID": "reaction_0"
+      },
+//Journey of the Praire King
+      {
+        "Tag": "summer_movie_0",
+        "Response": "love",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "我记得我玩过这个游戏,但是我不记得它的情节了."
+          },
+          "DuringMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "哈哈！这很棒! $h"
+          },
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "那部电影很棒！让我萌生了现在想再次玩游戏的想法!$h"
+          }
+        },
+        "ID": "reaction_1"
+      },
+//Mysterium
+      {
+        "Tag": "fall_movie_0",
+        "Response": "like",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "我对这部电影一无所知. 看起来很不寻常."
+          },
+          "DuringMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "这部电影很奇怪. $u"
+          },
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "那是一部非常奇怪的电影. 我有点喜欢它."
+          }
+        },
+        "ID": "reaction_2"
+      },
+//Mirale at Coldstar Ranch
+      {
+        "Tag": "winter_movie_0",
+        "Response": "dislike",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "我记得小时候在电视上看到过这个.我想我不太喜欢它,但也许我的口味已经变了."
+          },
+          "DuringMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": ""
+          },
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "你喜欢这个吗？我不认为我对这个的看法有什么悲哀的改变.$s"
+          }
+        },
+        "ID": "reaction_3"
+      },
+//Natural Wonders
+      {
+        "Tag": "spring_movie_1",
+        "Response": "love",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "我看到预告片就想看了.$h"
+          },
+          "DuringMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "这真的很有趣.$u"
+          },
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "谢谢你邀请我.我喜欢它!$h"
+          }
+        },
+        "ID": "reaction_4"
+      },
+//Wumbus
+      {
+        "Tag": "summer_movie_1",
+        "Response": "love",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "我喜欢科幻电影."
+          },
+          "DuringMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "哈哈哈哈.$h"
+          },
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "那部电影很搞笑.我玩得很开心.谢谢你邀请我. $h"
+          }
+        },
+        "ID": "reaction_5"
+      },
+//Howls in the Rain
+      {
+        "Tag": "fall_movie_1",
+        "Response": "dislike",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "我不太喜欢恐怖片,但我会尽量去尝试喜欢它的."
+          },
+          "DuringMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "... $6"
+          },
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "抱歉,我一点都不喜欢.大部分时间我都得闭上眼睛. $s"
+          }
+        },
+        "ID": "reaction_6"
+      },
+//Zuzu City Express
+      {
+        "Tag": "winter_movie_1",
+        "Response": "like",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "我很久没看黑白电影了.我想我从没看过这部电影."
+          },
+          "DuringMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "太棒了.我明白为什么它是经典了."
+          },
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "."
+          }
+        },
+        "ID": "reaction_7"
+      }
+     ]
+	}
+  }
+  },
+
+
+//DELIVERY EVENTS
+
+//--Pierre Secret Stash Delivery
+{
+	 "Action": "EditData",
+	 "Target": "data/events/seedshop",
+	 "Entries": {
+	 "64271002/f Pierre 1250/t 900 1700": "playful/6 21/farmer 12 27 3 Pierre 4 17 2 Caroline 10 17 0 Ayeisha 6 29 0/skippable/move Ayeisha 0 -8 0/speak Ayeisha \"嗨,皮埃尔！我有一个包裹要给你.\"/move Pierre 0 0 1/pause 500/move Pierre 0 0 2/pause 400/move Pierre 0 0 1/pause 300/move Pierre 0 0 2/pause 200/jump Pierre/textAboveHead Pierre \"!?!?\"/showFrame Pierre 16/shake Pierre 800/move Caroline 0 0 3/pause 1500/move Caroline 0 0 0/pause 800/speed Pierre 4/advancedMove Pierre false -2 0 0 2 4 0 0 1/pause 1600/speak Pierre \"谢谢你,艾伊莎.不过,下次你能不能小心谨慎一点.$s\"/advancedmove Caroline false 4 0 0 -5 4 0/speak Pierre \"因为...$4\"/pause 200/move Pierre 0 0 0/pause 400/move Pierre 0 0 2/speak Pierre \"...我有一些快递是需要保密的.$4\"/pause 300/speak Ayeisha \"当然可以.$h\"/move Ayeisha 0 9 2/pause 150/playSound doorClose/warp Ayeisha -100 -100/pause 500/speak Pierre \"现在我需要把这个藏起来.\"/globalFade/end position 6 29",
+	 },
+},
+
+//--Willy Magazine Delivery
+{
+	 "Action": "EditData",
+	 "Target": "data/events/fishshop",
+	 "Entries": {
+	 "64271003/f Willy 1250/t 900 1700/z summer": "distantBanjo/6 6/farmer 6 7 1 Willy 5 4 2 Ayeisha 5 9 0/skippable/move Ayeisha 0 -3 0/speak Ayeisha \"Hey Willy, I have some letters and your magazine subscription for you today.\"/speak Willy \"啊...这是我最喜欢的杂志,《芬吉尔垂钓者》.$h#$b#但是今天我能够帮到你什么吗?\"/speak Ayeisha \"事实上是有的.你有新鲜的沙丁鱼吗？我想要给我的猫送点小礼物.\"/speak Willy \"Give me a moment.\"/pause 100/showFrame Willy 25/pause 1000/showFrame Willy 0/speak Willy \"给你,两条新鲜的沙丁鱼.$h\"/speak Ayeisha \"谢谢威利.我需要支付你多少钱?\"/speak Willy \"没什么的,你需要支付的已经在我身上了.$h\"/speak Ayeisha \"哦,哇!谢谢.$h\"/speak Willy \"不客气.$h\"/move Ayeisha 0 3 2/playSound doorClose/warp Ayeisha -100 -100/globalFade/end position 5 9",
+	 },
+},
+
+//--Lewis Lucky Shorts Delivery
+{
+	 "Action": "EditData",
+	 "Target": "data/events/town",
+	 "Entries": {
+	 "64271004/f Lewis 1250/t 830 1400/w sunny/z winter": "distantBanjo/56 87/farmer 54 83 1 Lewis 65 86 4 Ayeisha 54 95 0/skippable/animate Lewis false true 500 16 17/move Ayeisha 0 -7 1/speak Ayeisha \"你好,刘易斯.我想这个包裹是给你的.\"/pause 200/stopAnimation Lewis 12/advancedMove Lewis false 0 2 -10 0/speak Ayeisha \"包裹上的标签已经损坏,但看起来像是你的地址.\"/pause 800/speak Ayeisha \"似乎来自幸运短裤C...\"/speak Lewis \"够了.$2\"/speak Lewis \"那就是我的.$5\"/speak Lewis \"谢谢.$2\"/pause 500/speed Lewis 4/advancedMove Lewis false 4 0 0 -2/pause 2000/playSound doorClose/warp Lewis -100 -100/globalFade/end",
+	 },
+},
+
+//--Gus Drink Samples Delivery
+{
+	 "Action": "EditData",
+	 "Target": "data/events/saloon",
+	 "Entries": {
+	 "64271005/f Gus 1250/t 1230 1500": "ragtime/14 17/farmer 9 22 1 Gus 14 18 2 Emily 10 17 0 Ayeisha 14 24 0/skippable/move Ayeisha 0 -4 0/speak Ayeisha \"嗨,格斯.我今天有一个大包裹要给你.\"/speak Gus \"太好了！我的免费饮料样品到了.$h#$b#你想不想尝一下并让我知道你的想法吗?\"/speak Ayeisha \"当然.\"/playSound gulp/playSound gulp/pause 1000/move Ayeisha 0 0 2/showFrame Ayeisha 20/emote Ayeisha 60/pause 1000/move Ayeisha 0 0 0/speak Ayeisha \"*呕哕*那是什么?!$6\"/move Emily 2 0 0/speak Gus \"花生酱苏打水.\"/speak Ayeisha \"Tasted more like mud soda.$s\"/speak Gus \"我很抱歉.$s#$b#让我用更好的东西来补偿你.\"/move Emily 2 0 0/speak Ayeisha \"谢了.我想我的休息时间比预计的提前了,可以休息5分钟了.\"/advancedMove Gus false 4 0 0 -1/move Ayeisha -1 0 1/showFrame Ayeisha 17/pause 1200/globalFade/end",
+	 },
+},
+
+
+//--Mister Gigner Fish Delivery
+{
+	"Action": "EditData",
+	"Target": "data/events/forest",
+	"Entries": {
+	"64271006/f MisterGinger 750/Hl Tristan_Returns/t 800 1400": "distantBanjo/90 23/farmer 83 23 1 MisterGinger 90 23 2 Ayeisha 97 24 4/skippable/animate MisterGinger false true 400 29 30 31/move Ayeisha -7 0 0/speak Ayeisha \"你好,姜先生.\"/stopAnimation MisterGinger 26/speak MisterGinger \"喵.\"/speak Ayeisha \"一只小鸟让我给你一个包裹.$h\"/speak MisterGinger \"喵??$l\"/speak Ayeisha \"我来帮你打开吧.\"/speak MisterGinger \"咪~噢!$h\"/speak Ayeisha \"哦,看！这是你最喜欢的鱼类之一,没有骨头哦!$h\"/speak MisterGinger \"喵喵喵!$l\"/emote MisterGinger 20/pause 1000/speak MisterGinger \"Mrr$6\"/speak Ayeisha \"我很高兴你喜欢它!$h\"/end",
+	},
+},
+
+//--Marnie Lew Lew Gift Delivery
+//50706110 is an event from 'The Ranch Expansion Marnie and Jas'
+{
+	"Action": "EditData",
+	"Target": "data/events/animalshop",
+	"Entries": {
+	"64271007/f Marnie 750/t 800 1150/k 50706110": "distantBanjo/13 16/farmer 17 16 3 Marnie 12 14 2 Ayeisha 13 19 0/skippable/move Ayeisha 0 -3 0/speak Ayeisha \"Morning Marnie.\"/speak Marnie \"早上好,艾伊莎.今天早上我能帮到你什么吗?\"/speak Ayeisha \"我今天有一个特快专递要给你.\"/pause 1000/speak Marnie \"特快专递?$s\"/pause 500/speak Marnie \"我有订购过什么东西吗?$s\"/pause 200/showFrame Ayeisha 19/playSound throwDownITem/pause 1000/showFrame Ayeisha 8/pause 500/speak Marnie \"啊哦哦哦...这是从刘刘那里送过来的.我已经告诉过他我不需要.$h\"/speak Ayeisha \"刘刘?$u\"/speak Marnie \"...$l#$b#我说的是刘刘吗?我的意思是...$u\"/speak Ayeisha \"没关系.你不用担心.我发誓我会保守秘密的.$h\"/pause 500/move Ayeisha 0 3 2/playSound doorClose/warp Ayeisha -100 -100/globalFade/end position 17 16",
+	},
+},
+
+//--Maru Heavy Package Delivery
+{
+	"Action": "EditData",
+	"Target": "data/events/mountain",
+	"Entries": {
+	"64271008/f Maru 1250/t 1200 1600/w sunny": "distantBanjo/10 25/farmer 12 26 3 Maru 8 23 2 Ayeisha 7 28 0/skippable/move Ayeisha 0 -2 0/speak Ayeisha \"下午好,玛鲁.\"/speak Maru \"嘿艾伊莎.#$b#哦！我的新包裹已经到了!$h\"/pause 400/move Ayeisha 0 0 1/pause 400/addObject 8 26 923/playSound axe/pause 800/move Ayeisha 0 0 0/pause 200/speak Ayeisha \"是的！#$b#我只希望你以后不要再订购更多沉重的包裹了.把他们背在身上很累.$s\"/speak Maru \"对不起,艾伊莎.我目前正在做几个项目.$s\"/pause 200/move Maru 0 0 3/pause 1000/move Maru 0 0 2/pause 200/speak Maru \"我有个想法！$u#$b#以后,您可以将我的所有包裹放在诊所.#$b#哈维不会介意的.$h\"/speak Ayeisha \"谢谢,这对我是一个很大的帮助.$h#$b#抱歉,但是我必须走了.我还有很多东西要送.希望你今天过得愉快.\"/speak Maru \"You too.\"/move Maru 0 0 3/move Ayeisha 0 2 0/textAboveHead Ayeisha \"你好{{PlayerName}}\"/move Ayeisha 5 0 0/move Ayeisha 0 8 0/globalFade/end position 12 26",
+	},
+},
+
+//--Jacob Animal Drug Delivery
+{
+	"Action": "EditData",
+	"Target": "data/events/Custom_ESVetHouse",
+	"Entries": {
+	"64271009/f Jacob 1250/t 1000 1100": "breezy/10 22/farmer 12 27 0 Jacob 5 23 2 Ayeisha 5 25 0 RichieTheMacaw 8 22 0/skippable/move farmer 0 -3 0/move farmer 2 0 3/speak Ayeisha \"...在这里签名.\"/pause 500/speak Ayeisha \"这里也是.\"/playSound parrot/speak RichieTheMacaw \"在这里签名！在这里签名!\"/pause 500/speak Ayeisha \"这里还有一个.\"/pause 500/speak Ayeisha \"就是这样.不需要其他东西. $h\"/speak Jacob \"谢谢你,艾伊莎,你是我的宝贝.我没有意识到我的恩诺沙星已经快用完了,直到发现的时候一切都太晚了.\"/speak Ayeisha \"没关系.我总是努力让你和哈维的紧急邮件先送达.#$b#我也总能看出需要送出的物品是兽药.#$b#如果是食物包,镇上所有的宠物都会跟着我的.$h\"/speak Jacob \"哈,是的,它们确实会那样做,不是吗?$h\"/pause 300/speak Jacob \"哦,趁我还没忘记,前几天我买了些新的猫食.#$b#午夜公主很喜欢它们,我相信你的猫也会喜欢的.$1\"/speak Ayeisha \"啊哦哦哦,谢谢你.你真是太好了. $l\"/playSound parrot/speak RichieTheMacaw \"哦,在这里!\"/speak Jacob \"谢谢你,里奇...抱歉,他只是因为访客的到来而感到兴奋.\"/pause 200/speak Ayeisha \"我必须赶紧走了.我还有更多东西要送.回头见,雅各布\"/speak Jacob \"谢谢艾伊莎.祝你过得愉快.\"/playSound parrot/speak RichieTheMacaw \"再见,宝贝!\"/move Ayeisha 7 0 2/move Ayeisha 0 2 2/playSound doorClose/warp Ayeisha -100 -100/globalFade/end position 14 24",
+	},
+},
+
+
+//Delivery Plan
+//Krobus - ???? Package by sewer
+//Clint - Blacksmith singles magazine
+//Hayley - F-Stop Monthly magazine
+//Sam - glitter bomb from Abigail
+
+
+
+//Love Token Deliveries
+{
+	 "LogName": "Love Token Deliveries",
+	 "Action": "EditData",
+	 "Target": "data/events/farm",
+	 "Entries": {
+//Vanilla
+	 "64272000/f Abigail 2125/D Abigail/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"早上好 @. 今天我有一个特别的快递要给你.\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"给你.[66]$h\"/showFrame Ayeisha 8/pause 400/message \"附上一张便条:\"/message \"'这是我爱你的象征 - 阿比盖尔 xxx'\"/end",
+	 "64272001/f Emily 2125/D Emily/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"早上好 @. 今天我有一个特别的快递给你.\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"给你.[62]$h\"/showFrame Ayeisha 8/pause 400/message \"附上一张便条:\"/message \"'这是我爱你的象征 - 艾米丽 xxx'\"/end",
+	 "64272002/f Haley 2125/D Haley/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"早上好 @. 今天我有一个特别的快递给你.\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"给你.[421]$h\"/showFrame Ayeisha 8/pause 400/message \"附上一张便条:\"/message \"'这是我爱你的象征 - 海莉 xxx'\"/end",
+	 "64272003/f Leah 2125/D Leah/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"早上好 @. 今天我有一个特别的快递给你.\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"给你.[348]$h\"/showFrame Ayeisha 8/pause 400/message \"附上一张便条:\"/message \"'这是我爱你的象征 - 莉亚 xxx'\"/end",
+	 "64272004/f Maru 2125/D Maru/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"早上好 @. 今天我有一个特别的快递给你.\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"给你.[72]$h\"/showFrame Ayeisha 8/pause 400/message \"附上一张便条:\"/message \"'这是我爱你的象征 - 玛鲁 xxx'\"/end",
+	 "64272005/f Penny 2125/D Penny/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"早上好 @. 今天我有一个特别的快递给你.\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"给你.[376]$h\"/showFrame Ayeisha 8/pause 400/message \"附上一张便条:\"/message \"'这是我爱你的象征 - 潘妮 xxx'\"/end",
+	 "64272006/f Alex 2125/D  Alex/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"早上好 @. 今天我有一个特别的快递给你.\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"给你.[446]$h\"/showFrame Ayeisha 8/pause 400/message \"附上一张便条:\"/message \"'这是我爱你的象征 - 亚历克斯 xxx'\"/end",
+	 "64272007/f Elliott 2125/D Elliott/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"早上好 @. 今天我有一个特别的快递给你.\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"给你.[444]$h\"/showFrame Ayeisha 8/pause 400/message \"附上一张便条:\"/message \"'这是我爱你的象征 - 艾利欧特 xxx'\"/end",
+	 "64272008/f Harvey 2125/D Harvey/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"早上好 @. 今天我有一个特别的快递给你.\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"给你.[348]$h\"/showFrame Ayeisha 8/pause 400/message \"附上一张便条:\"/message \"'这是我爱你的象征 - 哈维 xxx'\"/end",
+	 "64272009/f Sam 2125/D Sam/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"早上好 @. 今天我有一个特别的快递给你.\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"给你.[562]$h\"/showFrame Ayeisha 8/pause 400/message \"附上一张便条:\"/message \"'这是我爱你的象征 - 山姆 xxx'\"/end",
+	 "64272010/f Sebastian 2125/D Sebastian/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"早上好 @. 今天我有一个特别的快递给你.\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"给你.[84]$h\"/showFrame Ayeisha 8/pause 400/message \"附上一张便条:\"/message \"'这是我爱你的象征 - 塞巴斯蒂安 xxx'\"/end",
+	 "64272011/f Shane 2125/D Shane/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"早上好 @. 今天我有一个特别的快递给你.\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"给你.[446]$h\"/showFrame Ayeisha 8/pause 400/message \"附上一张便条:\"/message \"'这是我爱你的象征 - 谢恩 xxx'\"/end",
+//SVE 
+	 "64272012/f Claire 2125/D Claire/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"早上好 @. 今天我有一个特别的快递给你.\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"给你.[421]$h\"/showFrame Ayeisha 8/pause 400/message \"附上一张便条:\"/message \"'这是我爱你的象征 - 克莱尔 xxx'\"/end",
+	 "64272013/f Olivia 2125/D Olivia/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"早上好 @. 今天我有一个特别的快递给你.\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"给你.[348]$h\"/showFrame Ayeisha 8/pause 400/message \"附上一张便条:\"/message \"'这是我爱你的象征 - 奥利维亚 xxx'\"/end",
+	 "64272014/f Sophia 2125/D Sophia/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"早上好 @. 今天我有一个特别的快递给你.\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"给你.[595]$h\"/showFrame Ayeisha 8/pause 400/message \"附上一张便条:\"/message \"'这是我爱你的象征 - 索菲亚 xxx'\"/end",
+	 "64272015/f Victor 2125/D Victor/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"早上好 @. 今天我有一个特别的快递给你.\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"给你.[551]$h\"/showFrame Ayeisha 8/pause 400/message \"附上一张便条:\"/message \"'这是我爱你的象征 - 维克托 xxx'\"/end",
+	 "64272044/f Lance 2125/D Lance/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"早上好 @. 今天我有一个特别的快递给你.\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"给你.[797]$h\"/showFrame Ayeisha 8/pause 400/message \"附上一张便条:\"/message \"'这是我爱你的象征 - 兰斯 xxx'\"/end",
+//Ridgeside
+	 "64272016/f Alissa 2125/D Alissa/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"早上好 @. 今天我有一个特别的快递给你.\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"给你. [60]$h\"/showFrame Ayeisha 8/pause 400/message \"附上一张便条:\"/message \"'这是我爱你的象征 - 艾莉莎 xxx'\"/end",
+	 "64272017/f Corine 2125/D Corine/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"早上好 @. 今天我有一个特别的快递给你.\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"给你. [591]$h\"/showFrame Ayeisha 8/pause 400/message \"附上一张便条:\"/message \"'这是我爱你的象征 - 科琳 xxx'\"/end",
+	 "64272018/f Flor 2125/D Flor/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"早上好 @. 今天我有一个特别的快递给你.\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"给你. [64]$h\"/showFrame Ayeisha 8/pause 400/message \"附上一张便条:\"/message \"'这是我爱你的象征 - 弗洛尔 xxx'\"/end",
+	 "64272019/f Ian 2125/D Ian/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"早上好 @. 今天我有一个特别的快递给你.\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"给你. [446]$h\"/showFrame Ayeisha 8/pause 400/message \"附上一张便条:\"/message \"'这是我爱你的象征 - n. 伊恩 xxx'\"/end",
+	 "64272020/f Jeric 2125/D Jeric/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"早上好 @. 今天我有一个特别的快递给你.\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"给你. [597]$h\"/showFrame Ayeisha 8/pause 400/message \"附上一张便条:\"/message \"'这是我爱你的象征 - 杰里科 xxx'\"/end",
+	 "64272021/f Kenneth 2125/D Kenneth/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"早上好 @. 今天我有一个特别的快递给你.\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"给你. [338]$h\"/showFrame Ayeisha 8/pause 400/message \"附上一张便条:\"/message \"'这是我爱你的象征 - 肯尼斯 xxx'\"/end",
+	 "64272022/f Maddie 2125/D Maddie/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"早上好 @. 今天我有一个特别的快递给你.\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"给你. [586]$h\"/showFrame Ayeisha 8/pause 400/message \"附上一张便条:\"/message \"'这是我爱你的象征 - 玛蒂 xxx'\"/end",
+	 "64272023/f Philip 2125/D Philip/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"早上好 @. 今天我有一个特别的快递给你.\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"给你. [86]$h\"/showFrame Ayeisha 8/pause 400/message \"附上一张便条:\"/message \"'这是我爱你的象征 - 菲利普 xxx'\"/end",
+	 "64272024/f Shiro 2125/D Shiro/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"早上好 @. 今天我有一个特别的快递给你.\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"给你. [446]$h\"/showFrame Ayeisha 8/pause 400/message \"附上一张便条:\"/message \"'这是我爱你的象征 - 士郎 xxx'\"/end",
+	 "64272025/f Ysabelle 2125/D Ysabelle/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"早上好 @. 今天我有一个特别的快递给你.\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"给你. [72]$h\"/showFrame Ayeisha 8/pause 400/message \"附上一张便条:\"/message \"'这是我爱你的象征 - 伊莎贝尔 xxx'\"/end",
+	 "64272040/f Daia 2125/D Daia/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"早上好 @. 今天我有一个特别的快递给你.\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"给你.[64]$h\"/showFrame Ayeisha 8/pause 400/message \"附上一张便条:\"/message \"'这是我爱你的象征 - 黛雅 xxx'\"/end",
+	 "64272041/f Kiarra 2125/D Kiara/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"早上好 @. 今天我有一个特别的快递给你.\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"给你.[348]$h\"/showFrame Ayeisha 8/pause 400/message \"附上一张便条:\"/message \"'这是我爱你的象征 - 基亚拉 xxx'\"/end",
+	 "64272042/f Jio 2125/D Jio/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"早上好 @. 今天我有一个特别的快递给你.\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"给你.[797]$h\"/showFrame Ayeisha 8/pause 400/message \"附上一张便条:\"/message \"'这是我爱你的象征 - 吉奥 xxx'\"/end",
+	 "64272043/f Sean 2125/D Sean/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"早上好 @. 今天我有一个特别的快递给你.\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"给你.[348]$h\"/showFrame Ayeisha 8/pause 400/message \"附上一张便条:\"/message \"'这是我爱你的象征 - 肖恩 xxx'\"/end",
+//Boarding House
+	 "64272026/f Gregory 2125/D Gregory/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"早上好 @. 今天我有一个特别的快递给你.\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"给你. [82]$h\"/showFrame Ayeisha 8/pause 400/message \"附上一张便条:\"/message \"'这是我爱你的象征 - 格雷戈里 xxx'\"/end",
+	 "64272027/f Sheila 2125/D Sheila/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"早上好 @. 今天我有一个特别的快递给你.\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"给你. [459]$h\"/showFrame Ayeisha 8/pause 400/message \"附上一张便条:\"/message \"'这是我爱你的象征 - 希拉 xxx'\"/end",
+//Other
+	 "64272028/f John 2125/D John/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"早上好 @. 今天我有一个特别的快递给你.\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"给你. [348]$h\"/showFrame Ayeisha 8/pause 400/message \"附上一张便条:\"/message \"'这是我爱你的象征 - 约翰 xxx'\"/end",
+	 "64272029/f Nikolai 2125/D Nikolai/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"早上好 @. 今天我有一个特别的快递给你.\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"给你. [70]$h\"/showFrame Ayeisha 8/pause 400/message \"附上一张便条:\"/message \"'这是我爱你的象征 - 尼古拉 xxx'\"/end",
+	 "64272030/f Lyell 2125/D Lyell/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"早上好 @. 今天我有一个特别的快递给你.\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"给你. [84]$h\"/showFrame Ayeisha 8/pause 400/message \"附上一张便条:\"/message \"'这是我爱你的象征 - 莱伊尔 xxx'\"/end",
+	 "64272031/f Juliet 2125/D Juliet/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"早上好 @. 今天我有一个特别的快递给你.\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"给你. [272]$h\"/showFrame Ayeisha 8/pause 400/message \"附上一张便条:\"/message \"'这是我爱你的象征 - 朱丽叶 xxx'\"/end",
+	 "64272032/f Jasper 2125/D Jasper/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"早上好 @. 今天我有一个特别的快递给你.\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"给你. [72]$h\"/showFrame Ayeisha 8/pause 400/message \"附上一张便条:\"/message \"'这是我爱你的象征 - 贾斯伯 xxx'\"/end",
+	 "64272033/f Charlie 2125/D Charlie/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"早上好 @. 今天我有一个特别的快递给你.\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"给你. [64]$h\"/showFrame Ayeisha 8/pause 400/message \"附上一张便条:\"/message \"'这是我爱你的象征 - 查理 xxx'\"/end",
+	 "64272034/f Riley 2125/D Riley/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"早上好 @. 今天我有一个特别的快递给你.\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"给你. [104]$h\"/showFrame Ayeisha 8/pause 400/message \"附上一张便条:\"/message \"'这是我爱你的象征 - 莱利 xxx'\"/end",
+	 "64272035/f Jade 2125/D Jade/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"早上好 @. 今天我有一个特别的快递给你.\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"给你. [577]$h\"/showFrame Ayeisha 8/pause 400/message \"附上一张便条:\"/message \"'这是我爱你的象征 - 翡翠 xxx'\"/end",
+	 "64272036/f Delores 2125/D Delores/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"早上好 @. 今天我有一个特别的快递给你.\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"给你. [62]$h\"/showFrame Ayeisha 8/pause 400/message \"附上一张便条:\"/message \"'这是我爱你的象征 - 德洛莉丝 xxx'\"/end",
+	 "64272037/f Aspen 2125/D Aspen/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"早上好 @. 今天我有一个特别的快递给你.\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"给你. [595]$h\"/showFrame Ayeisha 8/pause 400/message \"附上一张便条:\"/message \"'这是我爱你的象征 - 阿斯彭 xxx'\"/end",
+	 "64272038/f Aideen 2125/D Aideen/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"早上好 @. 今天我有一个特别的快递给你.\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"给你. [597]$h\"/showFrame Ayeisha 8/pause 400/message \"附上一张便条:\"/message \"'这是我爱你的象征 - 艾登 xxx'\"/end",
+	 "64272039/f Stirling 2125/D Stirling/t 600 730/c 1": "50s/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/pause 1500/speak Ayeisha \"早上好 @. 今天我有一个特别的快递给你.\"/pause 500/showFrame Ayeisha 19/pause 800/playSound pickUpItem/speak Ayeisha \"给你. [421]$h\"/showFrame Ayeisha 8/pause 400/message \"附上一张便条:\"/message \"'这是我爱你的象征 - 斯特林 xxx'\"/end",
+	 },
+},
+
+//EVENTS
+//--Spring and Autumn  Seed Gift
+{
+	 "Action": "EditData",
+	 "Target": "data/events/farm",
+	 "Entries": {
+	 "64273000/f Ayeisha 1100/t 600 700/c 1/z summer/z fall/z winter": "Pink Petals/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/skippable/pause 1500/speak Ayeisha \"嗨@.我有一包剩下的蓝爵士种子,我想你可以利用它们.[429]\"/end",
+	 "64273001/f Ayeisha 1600/t 600 700/c 1/z spring/z summer/z winter": "kindadumbautumn/-200 -200/farmer 2 2 2 Ayeisha 3 3 0/skippable/pause 1500/speak Ayeisha \"你好@.我有一包备用的仙女玫瑰种子,我想你农场的蜜蜂会喜欢的.[425]\"/end",
+	 },
+},
+
+//MODIFIED VANILLA EVENTS
+//Alex Mailbox
+{
+	 "Action": "EditData",
+	 "Target": "data/events/town",
+	 "Entries": {
+	 "34/f Penny 500/t 900 1400/w sunny": "50s/49 64/farmer 43 64 1 Penny 59 69 1 George 51 64 0 Gus 37 70 3 Abigail -100 -100 2/skippable/pause 700/emote George 28/pause 500/speak George \"*叹息*... 我怎么才能拿到后面的那封信呢?$s\"/move Penny -1 0 0/move Penny 0 -5 3/move Penny -3 0 3/emote Penny 16/pause 300/speed Penny 4/move Penny -3 0 3/faceDirection George 1/pause 400/showFrame Penny 20/pause 400/speak Penny \"来,我来帮你拿,莫尔纳先生!\"/pause 400/speed Penny 2/move Penny 0 1 3/move Penny -2 0 0/move Penny 0 -1 1/positionOffset Penny 2 0/pause 50/showFrame Penny 5/positionOffset Penny 2 0/pause 50/showFrame Penny 4/positionOffset Penny 2 0/pause 50/showFrame Penny 5/positionOffset Penny 2 0/pause 50/showFrame Penny 4/showFrame Penny 21/move George 1 0 1 true/emote George 16/positionOffset Penny 2 0/pause 50/showFrame Penny 22/positionOffset Penny 2 0/pause 50/faceDirection Penny 1/move Penny 1 0 1/pause 400/faceDirection Penny 0/playSound openBox/pause 600/faceDirection George 3/faceDirection Penny 1/speak Penny \"这边请!$h\"/pause 300/emote George 12/speak George \"哼.我自己也能做到!而且我正打算自己去拿呢!$u#$b#你这是看不起我吗?\"/move farmer 6 0 1/pause 200/faceDirection George 3/emote George 8/faceDirection Penny 3/speak Penny \"$q 71 null#@? 你看到了吗?#$r 71 50 event_mail1#没错.你做了件好事,潘妮.#$r 71 -50 event_mail2#没错.我觉得你应该先问一声,而不是自己认为乔治需要帮助.#$r 71 0 event_mail3#我只是在散步,并且做我自己的事.\"/pause 400/faceDirection George 2/pause 800/showFrame George 16/pause 500/emote George 28/pause 1000/faceDirection Penny 1/speak George \"*叹息*...不,不...对不起,小姐.我不应该这么生气.$s\"/pause 500/faceDirection George 3/pause 400/speak George \"你能帮助我,真是太好了.\"/pause 400/speak Penny \"没关系,莫尔纳先生. 我明白.\"/warp Abigail 44 1/pause 500/move Abigail 0 8 2 true/move George 5 0 0 false/pause 550/move Abigail -18 0 2 true/warp George -100 -100/playSound doorClose/pause 600/emote Penny 28/pause 700/faceDirection Penny 3/playMusic spring_day_ambient/pause 600/speak Penny \"$q -1 null#看着自己慢慢变老,一定是一件痛苦的事...$u#$r -1 0 event_old1#我宁愿不去想它.#$r -1 0 event_old2#这只是生命的另一段旅程.#$r -1 0 event_old3#这就是为什么我们要尊重长辈.#$r -1 0 event_old4#I'd rather die young...\"/pause 500/emote Penny 40/faceDirection Penny 2/pause 500/faceDirection Penny 3/speak Penny \"嗯,和你聊天很有趣,@.我应该回去了.$u\"/showFrame Penny 20/pause 500/showFrame Penny 12/pause 900/move Penny 6 0 2 true/globalFade/viewport -1000 -1000/end",
+	 "502969/w sunny/f Linus 50/j 7/t 2000 2400": "nightTime/-1000 -1000/farmer 72 64 1 Linus 51 58 2 George -100 -100 2 Gus -100 -100 2/skippable/specificTemporarySprite linusLights/pause 800/viewport 55 64 true/pause 1000/move Linus 0 5 1/pause 1000/animate Linus false true 500 20 21/pause 500/playSound trashcanlid/pause 1000/playSound dirtyHit/pause 1000/playSound slimeHit/pause 1000/playSound dirtyHit/pause 1600/warp George 57 64/playSound doorClose/pause 600/stopAnimation Linus/showFrame Linus 22/jump Linus/shake Linus 1000/pause 1000/speed Linus 4/move Linus 0 -1 1/speed Linus 4/move Linus 2 0 3/faceDirection George 3/pause 500/emote George 12/move farmer -14 0 3 true/speak George \"呃...听起来那些浣熊又回来了.这些肮脏的小坏蛋...\"/proceedPosition farmer 58 64/faceDirection George 1/pause 500/speak George \"啊,你来得正是时候,孩子.^哦,你来得正是时候,小姐.#$b#你能帮我这位老人一个忙吗？你能去拐角处帮我吓跑那些浣熊吗？他们制造了一场真正的混乱.#$b#谢谢.确保你给他们一个很好的恐吓,让他们再也不会回来.\"/faceDirection George 0/playSound doorClose/warp George -100 -100/pause 500/move farmer -5 0 3 false/faceDirection Linus 2/faceDirection farmer 0/playMusic echos/pause 1000/showFrame Linus 19/pause 600/emote Linus 28/speak Linus \"是我...对不起.$s\"/pause 500/showFrame Linus 0/pause 800/move Linus -1 0 2/pause 800/showFrame Linus 19/pause 800/speak Linus \"我在这些罐头里发现了很多热腾腾的新鲜食物...如果我不拿,这些东西就会被浪费掉.\"/pause 500/move Linus -1 0 2/move Linus 0 2 1/faceDirection farmer 3/speak Linus \"$y '你觉得我做的有什么问题吗?_是的,很恶心._可能对你来说很恶心.对我来说,这是一种生活方式.我还没有生病.我只吃看起来新鲜的东西._不.浪费食物是可耻的._谢谢你, @. 我就知道你是个开明的人.我对我正在做的事情感觉很好.我没有伤害任何人.$h_是的,这是非法的. 那是乔治的私人财产._我不相信“私有财产”.另外,你想让我做什么？我需要这些食物来生存.求你发发慈悲吧.$s_不,但是你应该找份工作,别再揩别人的油了._*叹息*...不是每个人都适合以这种方式生存在这个世界.你不知道做我这样的人是什么感觉.我没有伤害任何人,我只是想以自己的方式生活.这有错吗?'\"/playMusic nightTime/pause 800/faceDirection Linus 3/pause 800/faceDirection Linus 1/speak Linus \"你可以回家了.我保证我不会再翻乔治的垃圾桶了了.#$b#你可以告诉他你永远吓跑了浣熊.\"/advancedMove Linus false -3 0 0 6/viewport move -1 1 5000/pause 500/move farmer -8 0 3/move farmer 0 1 3/move farmer -2 0 3/faceDirection Linus 3/pause 600/animate Linus true true 500 20 21/pause 1000/playSound slimeHit/pause 1000/playSound slimeHit/pause 800/warp Gus 45 71/playSound doorClose/advancedMove Gus false 0 1 3 0 0 -1/stopAnimation Linus/showFrame Linus 22/jump Linus/pause 1000/advancedMove Linus false 0 -2/proceedPosition Gus 48 71/playMusic none/speak Gus \"招待.$u\"/faceDirection Gus 0/shake Linus 2000/pause 1000/faceDirection Linus 2/pause 800/showFrame Linus 19/move Gus 0 -2 0 false/speak Gus \"我知道你在做什么,莱纳斯.$3\"/pause 500/emote Gus 40/pause 500/speak Gus \"如果你需要食物……就问我.我不想让鹈鹕镇的村民们挨饿.\"/pause 1000/showFrame Linus 0/pause 1000/speak Gus \"给你.我给你准备了一篮子西葫芦油炸团子.一定要用我的辣番茄酱蘸着吃！$h#$b#来吧...拿着他.\"/pause 1000/showFrame Linus 19/pause 600/globalFade/viewport -3000 -3000/end",
+	 }
+},
+
+//choseToBeKnown Path Fix
+{
+	 "Action": "EditData",
+	 "Target": "data/events/town",
+	 "Entries": {
+	 "choseToBeKnown": "pause 200/addConversationTopic pamHouseUpgrade/speak Robin \"行...我们走吧.\"/pause 500/move Robin 0 1 2/move farmer 0 2 2 true/move Robin 0 3 1 false/move Robin 2 0 1/move farmer 3 0 1/move farmer 0 1 1/faceDirection Pam 3/move Penny 0 -1 3/move Penny -1 0 3/speak Robin \"嗨,邻居...你的新房子真不错!$4\"/pause 250/playMusic musicboxsong/speak Pam \"罗宾...我...我不知道该说什么...$s#$b#这是一个梦想成真的故事...这是我一直想要的结局.$s\"/faceDirection Pam 2/animate Pam false true 100 25/pause 1000/animate Pam false true 150 26 27/pause 1000/speak Penny \"罗宾,非常感谢你...$s\"/speak Robin \"嘿,别谢我！这是@的主意...他还支付了所有的费用！^嗨不要谢我！这是@的主意...她也支付了所有的费用!\"/pause 100/stopAnimation Pam/showFrame Pam 12/pause 500/speak Penny \"@...这绝对令人难以置信...$7#$b#我...我不知道还能说什么...$s\"/stopAnimation Pam/faceDirection Pam 3/stopAnimation Penny/faceDirection Penny 3/pause 300/speak Pam \"@这一定花了一大笔钱...$s#$b#...老实说,这有点尴尬.我该如何报答你呢?$4\"/pause 300/question fork1 \"...#这是我送你的一个礼物...不需要偿还.#你可以从对潘妮好一点开始...\"/fork itsagift/pause 500/faceDirection Pam 2/showFrame Pam 25/pause 250/faceDirection Penny 2/speak Pam \"...我很抱歉.$s\"/pause 500/speak Pam \"你说什么我就做什么...$s\"/pause 500/animate Robin false true 150 34 35/pause 500/speak Penny \"妈妈...$s\"/faceDirection Pam 0/speak Penny \"别担心...我理解你为什么有时会生气.你的生活并不容易...$s\"/stopAnimation Robin/faceDirection Robin 1/speak Pam \"谢谢你,孩子.$h#$b#从现在开始我们会像一个真正的家庭的...你听到了吗?#$b#我不想再一直这么痛苦下去了...$s#$b#我要试着改变我的生活...\"/emote Penny 20/pause 100/animate Penny false true 200 0 1 2 3/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 500/positionOffset Penny 0 8/animate Penny false true 100 39/warp Pam -100 -100/playSound coin/pause 3000/fade/viewport -2000 -2000/pause 400/playMusic none/pause 1000/end",
+     "choseToBeKnown_pennySpouse": "pause 200/addConversationTopic pamHouseUpgrade/speak Robin \"行...我们走吧.\"/pause 500/move Robin 0 1 2/move farmer 0 2 2 true/move Robin 0 3 1 false/move Robin 2 0 1/move farmer 3 0 1/move farmer 0 1 1/faceDirection Pam 3/move Penny 0 -1 3/move Penny -1 0 3/speak Robin \"嗨,邻居...你的新房子真不错!$4\"/pause 250/playMusic musicboxsong/speak Pam \"罗宾...我...我不知道该说什么...$s#$b#这是一个梦想成真的故事...这是我一直想要的结局.$s\"/faceDirection Pam 2/animate Pam false true 100 25/pause 1000/animate Pam false true 150 26 27/pause 1000/speak Penny \"@? 你怎么在这儿?\"/speak Robin \"什么,你没告诉你妻子这件事, @?$u\"/faceDirection Robin 0/faceDirection farmer 2/pause 100/faceDirection Robin 1/speak Robin \"@ 想出了这个主意并支付了全部费用!\"/faceDirection farmer 1/stopAnimation Pam/showFrame Pam 12/pause 500/speak Penny \"@...你没必要这么做...#$b#但是,谢谢你.这对我意义重大.$s\"/stopAnimation Pam/faceDirection Pam 3/stopAnimation Penny/faceDirection Penny 3/pause 300/speak Pam \"@这一定花了一大笔钱...$s#$b#...老实说,这有点尴尬.我该如何报答你呢?$4\"/pause 300/question fork1 \"...#你是我的妈妈!不需要还款！#你可以从善待潘妮开始...\"/fork itsagift_pennySpouse/pause 500/faceDirection Pam 2/showFrame Pam 25/pause 250/faceDirection Penny 2/speak Pam \"...我很抱歉.$s\"/pause 500/speak Pam \"你说什么我就做什么...$s\"/pause 500/animate Robin false true 150 34 35/pause 500/speak Penny \"妈妈...$s\"/faceDirection Pam 0/speak Penny \"别担心...我理解你为什么有时会生气.你的生活并不容易...$s\"/stopAnimation Robin/faceDirection Robin 1/speak Pam \"谢谢你,孩子.$h#$b#从现在开始我们会像一个真正的家庭的...你听到了吗?#$b#我不想再一直这么痛苦下去了...$s#$b#我要试着改变我的生活...\"/emote Penny 20/pause 100/animate Penny false true 200 0 1 2 3/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 50/positionOffset Penny 0 2/pause 500/positionOffset Penny 0 8/animate Penny false true 100 39/warp Pam -100 -100/playSound coin/pause 3000/fade/viewport -2000 -2000/pause 400/playMusic none/pause 1000/end",
+	   }
+},
+
+
+  ]
+}
+

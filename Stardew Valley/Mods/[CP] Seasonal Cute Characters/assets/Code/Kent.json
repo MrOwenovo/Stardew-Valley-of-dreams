@@ -1,0 +1,66 @@
+{
+	"Changes": [
+		{
+			"LogName": "Kent - Seasonal",
+			"Action": "EditImage",
+			"Target": "Portraits/Kent, Characters/Kent",
+			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Kent - Winter Indoor/Outdoor",
+			"Action": "EditImage",
+			"Target": "Portraits/Kent, Characters/Kent",
+			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+                "Season": "Winter",
+                "WinterIndoorOutdoorOutfits": "IndoorOutdoor",
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Kent - Festival",
+			"Action": "EditImage",
+			"Target": "Portraits/Kent, Characters/Kent",
+            "FromFile": "assets/{{TargetPathOnly}}/Festivals/{{Festival}}/{{TargetWithoutPath}}_{{Festival}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"FestivalOutfits": "True",
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Kent - Beach Portrait",
+			"Action": "EditImage",
+			"Target": "Portraits/Kent, Characters/Kent",
+			"FromFile": "assets/{{TargetPathOnly}}/Beach/Adds/{{TargetWithoutPath}}_Beach.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"LocationName": "IslandSouth, IslandWest, IslandEast, IslandNorth",
+				"Time": "{{Range: 1130, 1820}}",
+			},
+            "Update": "OnTimeChange, OnLocationChange",
+		},
+		
+// NOSE OVERLAY
+		{
+			"LogName": "Kent - Seasonal Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Kent",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"NoNose": "false",
+			},
+		},
+	]
+}

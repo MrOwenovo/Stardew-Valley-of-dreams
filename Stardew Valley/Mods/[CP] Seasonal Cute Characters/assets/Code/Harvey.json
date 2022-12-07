@@ -1,0 +1,140 @@
+{
+	"Changes": [
+		{
+			"LogName": "Harvey - Seasonal",
+			"Action": "EditImage",
+			"Target": "Portraits/Harvey, Characters/Harvey",
+			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Harvey - Winter Indoor/Outdoor",
+			"Action": "EditImage",
+			"Target": "Portraits/Harvey, Characters/Harvey",
+			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+                "Season": "Winter",
+                "WinterIndoorOutdoorOutfits": "IndoorOutdoor",
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Harvey - Festival",
+			"Action": "EditImage",
+			"Target": "Portraits/Harvey, Characters/Harvey",
+            "FromFile": "assets/{{TargetPathOnly}}/Festivals/{{Festival}}/{{TargetWithoutPath}}_{{Festival}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"FestivalOutfits": "True",
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Harvey - Beach",
+			"Action": "EditImage",
+			"Target": "Portraits/Harvey_Beach, Characters/Harvey_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Beach/{{TargetWithoutPath}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Harvey - Aerobics",
+			"Action": "EditImage",
+			"Target": "Portraits/Harvey, Characters/Harvey",
+			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_Aerobics.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"AerobicsDay": "Harvey",
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+            "LogName": "Harvey - Labcoat",
+            "Action": "EditImage",
+            "Target": "Portraits/Harvey, Characters/Harvey",
+            "FromFile": "assets/{{Target}}/Harvey_Doctor.png",
+			"When":
+            {
+                "HasFile:{{FromFile}}": true,
+                "LocationName": "Hospital",
+				"ExtraOutfits": "True",
+            },
+            "Update": "OnLocationChange",
+        },
+		
+// NOSE OVERLAY
+		{
+			"LogName": "Harvey - Seasonal Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Harvey",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"NoNose": "false",
+			},
+		},
+		{
+			"LogName": "Harvey - Beach Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Harvey_Beach",
+            "FromFile": "assets/{{TargetPathOnly}}/Beach/{{TargetWithoutPath}}_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"NoNose": "false",
+			},
+		},
+		
+// MISCELLANEOUS			
+		{
+            "LogName": "Harvey - Mustache Overlay",
+            "Action": "EditImage",
+            "Target": "Portraits/Harvey",
+            "FromFile": "assets/{{Target}}/MustacheOverlay.png",
+            "PatchMode": "Overlay",
+			"When":
+            {
+                "HasFile:{{FromFile}}": true,
+                "HarveyFacialHair": "True",
+            },
+            "Update": "OnLocationChange",
+        },
+        {
+            "LogName": "Harvey - Mustache Overlay Beach",
+            "Action": "EditImage",
+            "Target": "Portraits/Harvey_Beach",
+            "FromFile": "assets/Portraits/Beach/Harvey_Beach_MustacheOverlay.png",
+            "PatchMode": "Overlay",
+			"When":
+            {
+                "HasFile:{{FromFile}}": true,
+                "HarveyFacialHair": "True",
+            },
+            "Update": "OnLocationChange",
+        },
+        {
+			"LogName": "Harvey - Emoji",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+            "FromFile": "assets/{{NoNose}}/Random/emojis.png",
+			"FromArea": {"X": 90, "Y": 99, "Width": 9, "Height": 9},
+			"ToArea": {"X": 90, "Y": 99, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+	]
+}

@@ -1,0 +1,220 @@
+{
+	"Format": "1.19.0",	
+	"ConfigSchema":
+	{
+		"PresetColourScheme":
+		{
+			"AllowValues": "Custom, Stardew, HarvestMoon, Bookstore, Fire, Floral, Halloween, Magic, Metallic, Monochrome, Nature, Ocean, Pastel, Rainforest, Sky, Ace, Aro, Bi, Gay, Lesbian, Nonbinary, Pan, Trans",
+			"Default": "Stardew",
+			"Description": "如果您想使用预先制作好的配色方案，请选择。选择“自定义”，如果你想单独配置每个心脏级别的颜色。",
+		},
+		"UseHMPresetInMineralTown":
+		{
+			"AllowValues": "True, False",
+			"Default": "True",
+			"Description": "切换你是否想自动切换到丰收月预设，同时在地图添加的欢迎到矿物小镇。",
+		},
+		"Keep10HeartStar":
+		{
+			"AllowValues": "Default, ColouredStar, ColouredHeart",
+			"Default": "Default",
+			"Description": "切换是否要将铱星图标保持在10颗心，或将其替换为彩色心或彩色星。",
+		},
+		"Custom0HeartColour":
+		{
+			"AllowValues": "Azure, Black, Blue, Bronze, Brown, Charcoal, CherryBlossom, Coral, Cream, Green, Grey, Indigo, Lavender, Lemon, Lilac, Lime, Magenta, Mint, Olive, Orange, Pink, Purple, Raspberry, Red, Rose, Silver, Teal, Turquoise, White, Yellow",
+			"Default": "Blue",
+			"Description": "选择0-1心形图标的颜色。",
+		},
+		"Custom2HeartColour":
+		{
+			"AllowValues": "Azure, Black, Blue, Bronze, Brown, Charcoal, CherryBlossom, Coral, Cream, Green, Grey, Indigo, Lavender, Lemon, Lilac, Lime, Magenta, Mint, Olive, Orange, Pink, Purple, Raspberry, Red, Rose, Silver, Teal, Turquoise, White, Yellow",
+			"Default": "Green",
+			"Description": "选择3-4颗心图标的颜色。",
+		},
+		"Custom4HeartColour":
+		{
+			"AllowValues": "Azure, Black, Blue, Bronze, Brown, Charcoal, CherryBlossom, Coral, Cream, Green, Grey, Indigo, Lavender, Lemon, Lilac, Lime, Magenta, Mint, Olive, Orange, Pink, Purple, Raspberry, Red, Rose, Silver, Teal, Turquoise, White, Yellow",
+			"Default": "Yellow",
+			"Description": "选择5-6个心形图标的颜色。",
+		},
+		"Custom6HeartColour":
+		{
+			"AllowValues": "Azure, Black, Blue, Bronze, Brown, Charcoal, CherryBlossom, Coral, Cream, Green, Grey, Indigo, Lavender, Lemon, Lilac, Lime, Magenta, Mint, Olive, Orange, Pink, Purple, Raspberry, Red, Rose, Silver, Teal, Turquoise, White, Yellow",
+			"Default": "Red",
+			"Description": "选择7-8心形图标的颜色。",
+		},
+		"Custom8HeartColour":
+		{
+			"AllowValues": "Azure, Black, Blue, Bronze, Brown, Charcoal, CherryBlossom, Coral, Cream, Green, Grey, Indigo, Lavender, Lemon, Lilac, Lime, Magenta, Mint, Olive, Orange, Pink, Purple, Raspberry, Red, Rose, Silver, Teal, Turquoise, White, Yellow",
+			"Default": "Purple",
+			"Description": "选择9-10颗心形图标的颜色。",
+		},
+		"Custom10HeartStarColour":
+		{
+			"AllowValues": "Azure, Black, Blue, Bronze, Brown, Charcoal, CherryBlossom, Coral, Cream, Green, Grey, Indigo, Lavender, Lemon, Lilac, Lime, Magenta, Mint, Olive, Orange, Pink, Purple, Raspberry, Red, Rose, Silver, Teal, Turquoise, White, Yellow",
+			"Default": "Purple",
+			"Description": "选择10颗心形星或心形图标的颜色。",
+		},
+	},
+	"Changes": [
+		{
+			"LogName": "0-2 Hearts Change",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "Assets/{{Custom0HeartColour}}.png",			
+			"ToArea": { "X": 140, "Y": 532, "Width": 44, "Height": 11 },
+			"PatchMode": "Overlay",
+			"When": 
+			{
+				"PresetColourScheme |contains= Custom": true,
+			}
+		},
+		{
+			"LogName": "3-4 Hearts Change",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "Assets/{{Custom2HeartColour}}.png",			
+			"ToArea": { "X": 140, "Y": 543, "Width": 44, "Height": 11 },
+			"PatchMode": "Overlay",
+			"When": 
+			{
+				"PresetColourScheme |contains= Custom": true,
+			}
+		},
+		{
+			"LogName": "5-6 Hearts Change",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "Assets/{{Custom4HeartColour}}.png",			
+			"ToArea": { "X": 140, "Y": 554, "Width": 44, "Height": 11 },
+			"PatchMode": "Overlay",
+			"When": 
+			{
+				"PresetColourScheme |contains= Custom": true,
+			}
+		},
+		{
+			"LogName": "7-8 Hearts Change",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "Assets/{{Custom6HeartColour}}.png",			
+			"ToArea": { "X": 140, "Y": 565, "Width": 44, "Height": 11 },
+			"PatchMode": "Overlay",
+			"When": 
+			{
+				"PresetColourScheme |contains= Custom": true,
+			}
+		},
+		{
+			"LogName": "9-10 Hearts Change",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "Assets/{{Custom8HeartColour}}.png",			
+			"ToArea": { "X": 140, "Y": 576, "Width": 44, "Height": 11 },
+			"PatchMode": "Overlay",
+			"When": 
+			{
+				"PresetColourScheme |contains= Custom": true,
+			}
+		},
+		{
+			"LogName": "10 Hearts Change - Heart",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "Assets/{{Custom10HeartStarColour}}.png",						
+			"ToArea": { "X": 270, "Y": 496, "Width": 9, "Height": 9 },
+			"FromArea": { "X": 12, "Y": 1, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"PresetColourScheme |contains= Custom": true,
+				"Keep10HeartStar": "ColouredHeart"
+			}
+		},
+		{
+			"LogName": "10 Hearts Change - Star",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "Assets/Star/{{Custom10HeartStarColour}}.png",						
+			"ToArea": { "X": 270, "Y": 496, "Width": 9, "Height": 9 },
+			"PatchMode": "Overlay",
+			"When": 
+			{
+				"PresetColourScheme |contains= Custom": true,
+				"Keep10HeartStar": "ColouredStar"
+			}
+		},
+		{
+			"LogName": "Preset Hearts Change",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "Assets/Presets/preset_{{PresetColourScheme}}.png",			
+			"ToArea": { "X": 140, "Y": 532, "Width": 44, "Height": 55 },
+			"PatchMode": "Overlay",
+			"When": 
+			{
+				"PresetColourScheme |contains= Custom": false,
+			}
+		},
+		{
+			"LogName": "Preset 10 Hearts Change",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "Assets/{{Custom10HeartStarColour}}.png",						
+			"ToArea": { "X": 270, "Y": 496, "Width": 9, "Height": 9 },
+			"FromArea": { "X": 12, "Y": 45, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"PresetColourScheme |contains= Custom": false,
+				"Keep10HeartStar": "ColouredHeart"
+			}
+		},
+		{
+			"LogName": "Mineral Town Hearts Change",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "Assets/Presets/preset_HarvestMoon.png",			
+			"ToArea": { "X": 140, "Y": 532, "Width": 44, "Height": 55 },
+			"PatchMode": "Overlay",
+			"When": 
+			{
+				"UseHMPresetInMineralTown": "True",
+				"LocationName |contains= Custom_HM_MineralBeach, Custom_HM_MineralBeachFalls, Custom_HM_MineralTidePool, Custom_HM_OceanSummit, Custom_HM_MineralTown, Custom_HM_MineralTownEntrance, Custom_HM_WoodCutter, Custom_HM_GoddessHill, Custom_HM_MountainLake, Custom_HM_MountainForest, Custom_HM_FlowerHill, Custom_HM_MountainSummit, Custom_HM_Highway, Custom_HM_UndergroundTunnel, Custom_HM_HighwayEntrance, Custom_HM_MountainSummitNight, Custom_HM_OceanSummitNight, Custom_HM_HighwayNight, Custom_HM_MountainSummitRainy, Custom_HM_OceanSummitRainy, Custom_HM_HighwayRainy, Custom_HM_MountainSummitRainyNight, Custom_HM_OceanSummitRainyNight, Custom_HM_HighwayRainyNight, Custom_HM_WoodCutterInterior, Custom_HM_DoctorHouseInterior, Custom_HM_CarterHouseInterior, Custom_HM_ChurchInterior, Custom_HM_HospitalFirstFloor, Custom_HM_HospitalSecondFloor, Custom_HM_JeffMarket, Custom_HM_EllenHouse, Custom_HM_MayorHouse, Custom_HM_MountainMine, Custom_HM_LibraryHouse, Custom_HM_LibraryHouseSecFloor, Custom_HM_Library, Custom_HM_LibrarySecFloor, Custom_HM_Inn, Custom_HM_InnNight, Custom_HM_InnSecFloor, Custom_HM_InnKitchen, Custom_HM_WineryStorage, Custom_HM_WineryGreenHouse, Custom_HM_AjaWinery, Custom_HM_AjaWinerySecFloor, Custom_HM_BlackSmith, Custom_HM_BlackSmithWorkshop, Custom_HM_PoultryInterior, Custom_HM_PoultrySecFloor, Custom_HM_YodelInterior, Custom_HM_YodelSecFloor, Custom_HM_SpriteHutInterior, Custom_HM_SnackShack, Custom_HM_ZackHouse, Custom_HM_MountainTent, Custom_HM_MineralGuild, Custom_HM_MineralCoop, Custom_HM_MineralBarn": true,
+				"HasMod |contains= MineralTownArchitects.MineralTown": true
+			},
+			"Update": "OnLocationChange"
+		},
+		{
+			"LogName": "Mineral Town 10 Hearts - Heart",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "Assets/Red.png",								
+			"ToArea": { "X": 270, "Y": 496, "Width": 9, "Height": 9 },
+			"FromArea": { "X": 12, "Y": 1, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"UseHMPresetInMineralTown": "True",
+				"Keep10HeartStar": "ColouredHeart",
+				"LocationName |contains= Custom_HM_MineralBeach, Custom_HM_MineralBeachFalls, Custom_HM_MineralTidePool, Custom_HM_OceanSummit, Custom_HM_MineralTown, Custom_HM_MineralTownEntrance, Custom_HM_WoodCutter, Custom_HM_GoddessHill, Custom_HM_MountainLake, Custom_HM_MountainForest, Custom_HM_FlowerHill, Custom_HM_MountainSummit, Custom_HM_Highway, Custom_HM_UndergroundTunnel, Custom_HM_HighwayEntrance, Custom_HM_MountainSummitNight, Custom_HM_OceanSummitNight, Custom_HM_HighwayNight, Custom_HM_MountainSummitRainy, Custom_HM_OceanSummitRainy, Custom_HM_HighwayRainy, Custom_HM_MountainSummitRainyNight, Custom_HM_OceanSummitRainyNight, Custom_HM_HighwayRainyNight, Custom_HM_WoodCutterInterior, Custom_HM_DoctorHouseInterior, Custom_HM_CarterHouseInterior, Custom_HM_ChurchInterior, Custom_HM_HospitalFirstFloor, Custom_HM_HospitalSecondFloor, Custom_HM_JeffMarket, Custom_HM_EllenHouse, Custom_HM_MayorHouse, Custom_HM_MountainMine, Custom_HM_LibraryHouse, Custom_HM_LibraryHouseSecFloor, Custom_HM_Library, Custom_HM_LibrarySecFloor, Custom_HM_Inn, Custom_HM_InnNight, Custom_HM_InnSecFloor, Custom_HM_InnKitchen, Custom_HM_WineryStorage, Custom_HM_WineryGreenHouse, Custom_HM_AjaWinery, Custom_HM_AjaWinerySecFloor, Custom_HM_BlackSmith, Custom_HM_BlackSmithWorkshop, Custom_HM_PoultryInterior, Custom_HM_PoultrySecFloor, Custom_HM_YodelInterior, Custom_HM_YodelSecFloor, Custom_HM_SpriteHutInterior, Custom_HM_SnackShack, Custom_HM_ZackHouse, Custom_HM_MountainTent, Custom_HM_MineralGuild, Custom_HM_MineralCoop, Custom_HM_MineralBarn": true,
+				"HasMod |contains= MineralTownArchitects.MineralTown": true
+			},
+			"Update": "OnLocationChange"
+		},
+		{
+			"LogName": "Mineral Town 10 Hearts - Star",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "Assets/Star/Red.png",			
+			"ToArea": { "X": 270, "Y": 496, "Width": 9, "Height": 9 },
+			"FromArea": { "X": 12, "Y": 45, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"UseHMPresetInMineralTown": "True",
+				"Keep10HeartStar": "ColouredStar",
+				"LocationName |contains= Custom_HM_MineralBeach, Custom_HM_MineralBeachFalls, Custom_HM_MineralTidePool, Custom_HM_OceanSummit, Custom_HM_MineralTown, Custom_HM_MineralTownEntrance, Custom_HM_WoodCutter, Custom_HM_GoddessHill, Custom_HM_MountainLake, Custom_HM_MountainForest, Custom_HM_FlowerHill, Custom_HM_MountainSummit, Custom_HM_Highway, Custom_HM_UndergroundTunnel, Custom_HM_HighwayEntrance, Custom_HM_MountainSummitNight, Custom_HM_OceanSummitNight, Custom_HM_HighwayNight, Custom_HM_MountainSummitRainy, Custom_HM_OceanSummitRainy, Custom_HM_HighwayRainy, Custom_HM_MountainSummitRainyNight, Custom_HM_OceanSummitRainyNight, Custom_HM_HighwayRainyNight, Custom_HM_WoodCutterInterior, Custom_HM_DoctorHouseInterior, Custom_HM_CarterHouseInterior, Custom_HM_ChurchInterior, Custom_HM_HospitalFirstFloor, Custom_HM_HospitalSecondFloor, Custom_HM_JeffMarket, Custom_HM_EllenHouse, Custom_HM_MayorHouse, Custom_HM_MountainMine, Custom_HM_LibraryHouse, Custom_HM_LibraryHouseSecFloor, Custom_HM_Library, Custom_HM_LibrarySecFloor, Custom_HM_Inn, Custom_HM_InnNight, Custom_HM_InnSecFloor, Custom_HM_InnKitchen, Custom_HM_WineryStorage, Custom_HM_WineryGreenHouse, Custom_HM_AjaWinery, Custom_HM_AjaWinerySecFloor, Custom_HM_BlackSmith, Custom_HM_BlackSmithWorkshop, Custom_HM_PoultryInterior, Custom_HM_PoultrySecFloor, Custom_HM_YodelInterior, Custom_HM_YodelSecFloor, Custom_HM_SpriteHutInterior, Custom_HM_SnackShack, Custom_HM_ZackHouse, Custom_HM_MountainTent, Custom_HM_MineralGuild, Custom_HM_MineralCoop, Custom_HM_MineralBarn": true,
+				"HasMod |contains= MineralTownArchitects.MineralTown": true
+			},
+			"Update": "OnLocationChange"
+		},
+    ]
+}

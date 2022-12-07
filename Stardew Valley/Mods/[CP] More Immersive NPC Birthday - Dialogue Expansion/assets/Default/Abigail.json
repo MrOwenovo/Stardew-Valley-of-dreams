@@ -1,0 +1,407 @@
+{
+  "Changes": [	
+
+//Saloon Schedule Dialogue-Pierre
+  			{
+			"Action": "EditData",
+			"Target": "Characters/schedules/Abigail",
+			"When": {
+			"Season": "spring",
+			"Day": "26",
+            "ScheduleEdits": true,
+			},
+ 			"Entries": {
+    "Fri": "900 SeedShop 34 5 0/1100 SeedShop 9 17 3/1500 Saloon 42 17 2 abigail_sit_down \"Strings\\schedules\\Abigail:saloon\"/2100 SeedShop 1 9 3 abigail_sleep",
+			}
+		},
+  			{
+			"Action": "EditData",
+			"Target": "Strings/schedules/Abigail",
+			"When": {
+			"Season": "spring",
+			"Day": "26",
+			},
+			"Entries": {
+			"saloon": "噢，嗨。我还在回味今天我爸的生日蛋糕。巧克力蛋糕太好吃了！$1",
+			"marriage_Fri.000": "以前我在爸生日那天都在吃妈妈做的巧克力蛋糕。我结婚后妈妈好像不再做了。",
+			"marriage_Fri.001": "亲爱的！你见过我爸了嘛？我今天早上溜回家，往他枕底放了一块水晶。#$e#那有助眠的魔力，他今晚应该会睡得死死的！$1",
+			}
+		},
+		
+//Saloon Schedule Dialogue-Sam
+  			{
+			"Action": "EditData",
+			"Target": "Characters/schedules/Abigail",
+			"When": {
+			"Season": "summer",
+			"Day": "19",
+            "ScheduleEdits": true,
+			},
+ 			"Entries": {
+			"Fri": "900 SeedShop 34 5 0/1100 SeedShop 9 17 3/1500 Saloon 42 17 2 abigail_sit_down \"Strings\\schedules\\Abigail:saloon\"/2100 SeedShop 1 9 3 abigail_sleep",
+			}
+		},
+  			{
+			"Action": "EditData",
+			"Target": "Strings/schedules/Abigail",
+			"When": {
+			"Season": "summer",
+			"Day": "19",
+			},
+			"Entries": {
+			"saloon": "嗨，@！我们在给山姆庆祝生日。特别订制的超大披萨和一整箱乔家可乐！$1#$e#虽然我不懂乔家可乐有什么好喝的。我感觉山姆是镇上唯一会用那自动售卖机的人了。$2",
+			"marriage_Fri.001": "能给老朋友庆祝生日真高兴。山姆还是那么爱吃……什么都没变！$h",
+			}
+		},
+
+//Saloon Schedule Dialogue-Abigail
+  			{
+			"Action": "EditData",
+			"Target": "Characters/schedules/Abigail",
+			"When": {
+			"Season": "fall",
+			"Day": "12",
+            "ScheduleEdits": true,
+			},
+ 			"Entries": {
+    "Fri": "900 SeedShop 34 5 0/1100 SeedShop 9 17 3/1500 Saloon 42 17 2 abigail_sit_down \"Strings\\schedules\\Abigail:saloon\"/2100 SeedShop 1 9 3 abigail_sleep",
+			}
+		},
+  			{
+			"Action": "EditData",
+			"Target": "Strings/schedules/Abigail",
+			"When": {
+			"Season": "fall",
+			"Day": "12",
+			},
+			"Entries": {
+			"saloon": "今天是我的生日会！$1#$e#噢，实际的生日是在明天。不过我们今天才会聚在一起，所以顺便庆祝了。$3#$b#我觉得这样挺好的……就象是连续过两天生日！$1",
+			"marriage_Fri.000": "**小声**我看到妈妈拿出巧克力蛋糕……但是我会假装不知道！$1",
+			"marriage_Fri.001": "你来找我了？我真开心！$1#$e#老朋友在给我办生日会。当然实际的生日是在明天。#$e#所以……你应该已经帮我准备好了吧？我很期待明天！$1",
+			}
+		},
+
+//Saloon Schedule Dialogue-Sebastian
+  			{
+			"Action": "EditData",
+			"Target": "Characters/schedules/Abigail",
+			"When": {
+			"Season": "winter",
+			"Day": "12",
+            "ScheduleEdits": true,
+			},
+ 			"Entries": {
+    "Fri": "900 SeedShop 34 5 0/1100 SeedShop 9 17 3/1500 Saloon 42 17 2 abigail_sit_down \"Strings\\schedules\\Abigail:saloon\"/2100 SeedShop 1 9 3 abigail_sleep",
+			}
+		},
+  			{
+			"Action": "EditData",
+			"Target": "Strings/schedules/Abigail",
+			"When": {
+			"Season": "winter",
+			"Day": "12",
+			},
+			"Entries": {
+			"saloon": "今天是塞巴斯蒂安的生日会。#$e#我们喜欢在酒馆给朋友庆祝生日，算是传统中的传统。#$e#今天的餐点是我和山姆出钱的……但是我不打算为山姆点的披萨付钱。#$e#你问为什么？当然是因为那些东西都只有山姆在吃。$3",
+			"marriage_Fri.001": "你来找我嘛？我真高兴！$1#$e#要跟我坐一起看山姆和塞巴斯蒂安比赛嘛？山姆菜到不行的技术很具娱乐性。$1#$b#%传来山姆的声音：嘿，小姐！说得太直接了吧！#$b#有什么所谓？今天是塞巴斯蒂安的庆祝会，当然是他出风头了！$1",
+			}
+		},
+				
+//Movie Invitaion
+  		{
+      "Action": "EditData",
+      "Target": "Strings/Characters",	  
+		   "When": {
+		   "Relationship:Abigail": "Friendly",
+		   "Season": "fall",
+		   "Day": "13",
+		   },
+      "Entries": {
+		  "MovieInvite_Invited_Abigail": "生日的免费电影？太棒了！$1#$b#秋天的电影都很酷，不是嘛？我去准备一下，我们电影院见！$1",
+     }
+    },
+	  		{
+      "Action": "EditData",
+      "Target": "Strings/Characters",	  
+		   "When": {
+		   "Relationship:Abigail": "Dating, Engaged",
+		   "Season": "fall",
+		   "Day": "13",
+		   },
+      "Entries": {
+		  "MovieInvite_Invited_Abigail": "生日的电影约会？当然去！我爱死你了，@！$1#$b#我准备一下就去，我们电影院见。我敢说是很酷的电影。$1",
+     }
+    },
+  		{
+      "Action": "EditData",
+      "Target": "Strings/Characters",	  
+		   "When": {
+		   "Relationship:Abigail": "Married",
+		   "Season": "fall",
+		   "Day": "13",
+		   },
+      "Entries": {
+		  "MovieInvite_Invited_Abigail": "生日时看电影约会，太好了！$1#$b#我听很多人说结婚后都会过得很无聊……对我们来说这完全不适用，对嘛？#$b#嘿嘿，我们电影院见！我得去准备一下。$1",
+     }
+    },
+	
+//Movie Reaction-Friendly
+
+    		{
+      "Action": "EditData",
+      "Target": "Data/MoviesReactions",	  
+		   "When": {
+		   "Relationship:Abigail": "Friendly",
+		   "Season": "fall",
+		   "Day": "13",
+		   },
+    "Entries":   {
+	"Abigail":{
+    "NPCName": "Abigail",
+    "Reactions": [
+      {
+        "Tag": "*",
+        "Response": "love",
+        "Whitelist": [],
+        "SpecialResponses": null,
+        "ID": "reaction_0"
+      },
+      {
+        "Tag": "love",
+        "Response": "like",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "生日、好吃的东西配上恐怖电影……我想不出比这更完美的组合了！$h"
+          },
+          "DuringMovie": {
+            "ResponsePoint": null,
+            "Script": "/shake Abigail 3000/pause 500/message \"阿比盖尔在笑！\"",
+            "Text": "哈哈！并不可怕，但我喜欢。$h"
+          },
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{Random: 今天真开心！谢谢你邀我来，@。这毫无疑问是我最棒的生日之一！$h++ 那边的娃娃机好像有些很酷的东西。夹个回去摆在家里应该会很有趣。#$b#噢，或者爸爸会铁青了脸叫我搬走……那也蛮有趣的！$1|inputSeparator=++}}"
+          }
+        },
+        "ID": "reaction_4"
+      },
+    ]
+  },
+	}
+			},
+  
+//Movie Reaction-Dating
+
+    		{
+      "Action": "EditData",
+      "Target": "Data/MoviesReactions",	  
+		   "When": {
+		   "Relationship:Abigail": "Dating, Engaged",
+		   "Season": "fall",
+		   "Day": "13",
+		   },
+    "Entries":   {
+	"Abigail":{
+    "NPCName": "Abigail",
+    "Reactions": [
+      {
+        "Tag": "horror",
+        "Response": "love",
+        "Whitelist": [],
+        "SpecialResponses": null,
+        "ID": "reaction_0"
+      },
+      {
+        "Tag": "love",
+        "Response": "like",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "生日、恐怖电影再加上喜欢的人……还有比这更好的嘛？$h"
+          },
+          "DuringMovie": {
+            "ResponsePoint": null,
+            "Script": "/shake Abigail 3000/pause 500/message \"阿比盖尔在笑！\"",
+            "Text": "哈哈！并不可怕，但我喜欢。$h"
+          },
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{Random: 我刚才是不是在电影院笑得太开心了？抱歉！我实在太开心了！$1++ 今天的约会好棒啊……我们下次什幺时候再来？#$b#就算不是生日，也可以出来玩的对吧？$4|inputSeparator=++}}"
+          }
+        },
+        "ID": "reaction_4"
+      },
+    ]
+  },
+	}
+			},
+    //Movie Reaction-Married
+
+    		{
+      "Action": "EditData",
+      "Target": "Data/MoviesReactions",	  
+		   "When": {
+		   "Relationship:Abigail": "Married",
+		   "Season": "fall",
+		   "Day": "13",
+		   },
+    "Entries":   {
+	"Abigail":{
+    "NPCName": "Abigail",
+    "Reactions": [
+      {
+        "Tag": "horror",
+        "Response": "love",
+        "Whitelist": [],
+        "SpecialResponses": null,
+        "ID": "reaction_0"
+      },
+      {
+        "Tag": "love",
+        "Response": "like",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "嗯……在我最喜欢的季节里，跟最喜欢的人去电影院，看最喜欢的电影！$h#$b#哎，怎么都只有最喜欢？我肯定是结婚后人变傻了。$4"
+          },
+          "DuringMovie": {
+            "ResponsePoint": null,
+            "Script": "/shake Abigail 3000/pause 500/message \"阿比盖尔在笑！\"",
+            "Text": "哈哈！并不可怕，但我喜欢。$h"
+          },
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{Random: 今天真开心……我们明年也来看，好嘛？$1++ 你觉得这里面演的都是真的嘛？你去冒险的时间比我多，我想你肯定比我清楚！|inputSeparator=++}}"
+          }
+        },
+        "ID": "reaction_4"
+      },
+    ]
+  },
+	}
+			},
+  
+		{
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Abigail",	  
+      "Entries": {
+		
+//Abigail-Pierre
+ 				"spring_25": "你知道嘛？明天是爸爸的生日。#$e#我感觉没多少人知道。也没多少人在乎不是嘛？连他本人也不是很在意。#$b#不过我会记得的……因为每逢有人生日，我就有蛋糕吃！$1#$q 115321104/115321105 AbigailPierrebirthday_followup#不是嘛？
+					#$r 115321104 10 AbigailPierrebirthday_A#所以你只负责吃吗？
+					#$r 115321105 10 AbigailPierrebirthday_B#你爸爸工作那么辛苦，还没人在意，真可怜。
+					#$r 115321105 -20 AbigailPierrebirthday_C#谁让你爸爸只顾赚钱，他活该。",
+ 				"spring_25_2": "你知道嘛？明天是爸爸的生日。#$e#我感觉没多少人知道。也没多少人在乎不是嘛？连他本人也不是很在意。#$b#不过我会记得的……因为每逢有人生日，我就有蛋糕吃！$1#$q 115321104/115321105 AbigailPierrebirthday_followup#不是嘛？
+					#$r 115321104 10 AbigailPierrebirthday_A#所以你只负责吃吗？
+					#$r 115321105 10 AbigailPierrebirthday_B#你爸爸工作那么辛苦，还没人在意，真可怜。
+					#$r 115321105 -20 AbigailPierrebirthday_C#谁让你爸爸只顾赚钱，他活该。",
+					AbigailPierrebirthday_A: "对！没错！我最喜欢巧克力蛋糕了！$1",
+					AbigailPierrebirthday_B: "也不是没人在意，起码我妈会一直记着。$8#$e#不过要是连我妈都不在意，我想世上就真的没人在意了。$9",
+ 					AbigailPierrebirthday_C: "嘿，也不要这么说好嘛。你以为我们家是百万富翁不用工作？$3#$e#我觉得你这样随便说人有点没礼貌。$3",
+ 		AbigailPierrebirthday_followup:"我最喜欢巧克力蛋糕了。$1",
+//Abigail->Sam
+ 				"summer_16": "嗨，@。#$b#$q 115321100/115321101 AbigailSambirthday_followup#我今早想起来了一件事……明天是山姆的生日。
+					#$r 115321100 10 AbigailSambirthday_A#记得好清楚！
+					#$r 115321101 10 AbigailSambirthday_B#你们要出来庆祝吗？
+					#$r 115321101 10 AbigailSambirthday_C#准备生日礼物了吗？",
+ 				"summer_16_2": "嗨，@。#$b#$q 115321100/115321101 AbigailSambirthday_followup#我今早想起来了一件事……明天是山姆的生日。
+					#$r 115321100 10 AbigailSambirthday_A#记得好清楚！
+					#$r 115321101 10 AbigailSambirthday_B#你们要出来庆祝吗？
+					#$r 115321101 10 AbigailSambirthday_C#准备生日礼物了吗？",
+					AbigailSambirthday_A: "嗯……毕竟日历就挂在我们家门前。$6#$e#我们也算认识满久的了。这镇上同龄人不多，不是嘛？$6#$e#山姆还挺好说话的，只是有点……我不知道。吵闹？$6#$b#我想这是他的特点。他跟我不大一样。$6#$e#所以我们今年大概还是一贯的庆祝方式……周五的时候在酒馆点份特大的披萨！$1",
+					AbigailSambirthday_B: "噢……我们除了周五都不会见面，毕竟彼此都很忙。$6#$b#尤其山姆还在乔家超市工作过……我爸要是看到我们见面肯定要发狂。$6#$e#啊，虽然我不会在意我爸说些什么啦。谁在乎？$9#$e#所以我们今年大概还是一贯的庆祝方式……周五的时候在酒馆点份特大的披萨！$1",
+ 					AbigailSambirthday_C: "一定要礼物嘛？我觉得还有别的庆祝方式。$6#$e#好吧，其实是我们曾经在礼物上闹过一点不愉快……$6#$b#我是说，我是主机党，他是掌机党。水火不容，不是嘛？$9#$e#所以我们今年大概还是一贯的庆祝方式……周五的时候在酒馆点份特大的披萨！$1",
+ 		AbigailSambirthday_followup:"我今早想起来了一件事……明天是山姆的生日。",
+//Abigail-Caroline
+ 				"winter_6": "嗯……明天是妈妈的生日。#$q 115321102/115321103 AbigailCarolinebirthday_followup#我在想该怎么办……我跟妈妈的关系最近有点尴尬。
+					#$r 115321102 10 AbigailCarolinebirthday_A#送她一些花！
+					#$r 115321103 10 AbigailCarolinebirthday_B#陪她在茶室喝个茶？
+					#$r 115321103 -30 AbigailCarolinebirthday_C#因为你正在反抗期？",
+ 				"winter_6_2": "嗯……明天是妈妈的生日。#$q 115321102/115321103 AbigailCarolinebirthday_followup#我在想该怎么办……我跟妈妈的关系最近有点尴尬。
+					#$r 115321102 10 AbigailCarolinebirthday_A#送她一些花！
+					#$r 115321103 10 AbigailCarolinebirthday_B#陪她在茶室喝个茶？
+					#$r 115321103 -30 AbigailCarolinebirthday_C#因为你正在反抗期？",
+					AbigailCarolinebirthday_A: "妈妈是很喜欢花没错……可是这大冬天的要去哪里搞来花？$2#$e#噢，慢着。#$b#我好像在山里见过……跟我的发色一样紫的漂亮花朵。#$b#好！我这就去！$1",
+					AbigailCarolinebirthday_B: "噢……听起来就好无聊。**打哈欠**$3#$b#我几乎不去她的茶室。$3#$e#不过，嗯……$2#$b#一年一次的话……#$b#要是能带上我的豚鼠大卫的话……！$1",
+ 					AbigailCarolinebirthday_C: "哈？我们家的事情不是什么一句反抗期就可以带过的好嘛。$5#$e#你真是没礼貌……跟你说这些的我是个白痴。$5",
+ 		AbigailCarolinebirthday_followup:"我在想该怎么办……我跟妈妈的关系最近有点尴尬。$2",
+		
+     }
+    },
+  
+  
+  
+//Abigail->Abigail
+		    {
+        "Action": "EditData",
+        "Target": "Characters/Dialogue/Abigail",
+		   "When": {
+		   "Relationship:Abigail": "Friendly",
+		   },
+        "Entries":
+        {		
+ 				"fall_13": "@，你好啊。#$b#闻到这南瓜香了吗？还有这浓浓的巧克力香味……哎，生日太棒了。$1#$e#{{Random: 爸爸从他的货品里给我留了两个最好的南瓜。我必须说以我爸来说，这已经是很慷慨的生日礼物了。$1++ 今年的蛋糕也是妈妈手制的。三层充满黏糊糊巧克力糖浆的蛋糕……那是世上最棒的！$1|inputSeparator=++}}#$e#不过总觉得还有点不太满足。我可以期待你嘛，@？$1",
+ 				"fall_13_2": "@，你好啊。#$b#闻到这南瓜香了吗？还有这浓浓的巧克力香味……哎，生日太棒了。$1#$e#{{Random: 爸爸从他的货品里给我留了两个最好的南瓜。我必须说以我爸来说，这已经是很慷慨的生日礼物了。$1++ 今年的蛋糕也是妈妈手制的。三层充满黏糊糊巧克力糖浆的蛋糕……那是世上最棒的！$1|inputSeparator=++}}#$e#不过总觉得还有点不太满足。我可以期待你嘛，@？$1",
+				
+     }
+    },
+		    {
+        "Action": "EditData",
+        "Target": "Characters/Dialogue/Abigail",
+		   "When": {
+		   "Relationship:Abigail": "Dating",
+		   },
+        "Entries":
+        {		
+ 				"fall_13": "@，你来看我吗？太好了，我从昨晚睡前就一直想你会不会来找我呢……$4#$b#噢，我是说……我很高兴今天能见到你！我们做些什么好呢？要坐下来聊天吗？$1#$e#{{Random: 我爸每年在这天都会为我留两个最棒的南瓜。他总是唠唠叨叨的，不过我知道他很在乎我。#$b#别告诉他这是我说的。我这些话只告诉你。++ 我从小时候就在这天吃妈妈做的巧克力蛋糕了。虽然现在越来越多新潮的蛋糕……但我还是觉得这怀旧的味道是最棒的。#$b#妈妈每次都唠叨着给我做。我觉得她还挺宠我的！$1|inputSeparator=++}}#$e#噢，我有没有碍着你工作？抱歉，跟你聊天我太开心了……你忙的话去忙你的吧！$4",
+ 				"fall_13_2": "@，你来看我吗？太好了，我从昨晚睡前就一直想你会不会来找我呢……$4#$b#噢，我是说……我很高兴今天能见到你！我们做些什么好呢？要坐下来聊天吗？$1#$e#{{Random: 我爸每年在这天都会为我留两个最棒的南瓜。他总是唠唠叨叨的，不过我知道他很在乎我。#$b#别告诉他这是我说的。我这些话只告诉你。++ 我从小时候就在这天吃妈妈做的巧克力蛋糕了。虽然现在越来越多新潮的蛋糕……但我还是觉得这怀旧的味道是最棒的。#$b#妈妈每次都唠叨着给我做。我觉得她还挺宠我的！$1|inputSeparator=++}}#$e#噢，我有没有碍着你工作？抱歉，跟你聊天我太开心了……你忙的话去忙你的吧！$4",
+				
+     }
+    },
+		    {
+        "Action": "EditData",
+        "Target": "Characters/Dialogue/Abigail",
+		   "When": {
+		   "Relationship:Abigail": "Engaged",
+		   },
+        "Entries":
+        {		
+ 				"fall_13": "@，你来看我吗？#$b#太好了，我从昨晚睡前就一直想你会不会来找我呢……$4#$b#噢，我是说……我很高兴今天能见到你！我们做些什么好呢？要坐下来聊天吗？$1#$e#妈妈好像还无法相信我要嫁人了，做蛋糕时有些心不在焉的。#$b#不过……我太期待和你的婚礼了！我很早以前就一直梦想着这一天……$4",
+ 				"fall_13_2": "@，你来看我吗？#$b#太好了，我从昨晚睡前就一直想你会不会来找我呢……$4#$b#噢，我是说……我很高兴今天能见到你！我们做些什么好呢？要坐下来聊天吗？$1#$e#妈妈好像还无法相信我要嫁人了，做蛋糕时有些心不在焉的。#$b#不过……我太期待和你的婚礼了！我很早以前就一直梦想着这一天……$4",
+				
+     }
+    },
+	
+		    {
+        "Action": "EditData",
+        "Target": "Characters/Dialogue/MarriageDialogueAbigail",
+        "Entries":
+        {		
+//Abigail->CarolineMarried
+ 				"winter_6": "明天是妈妈的生日，我明天早上可能起床出门去采点花给她。#$b#我会尽量在早上回来，但是如果看到我不在家，不要惊慌，好嘛？#$e#在冬天只有蕃红花会开，我想把那送给妈妈。#$b#那跟我的发色一模一样，所以她说不定看着就会觉得我在她身边。#$e#{{Random: 噢，妈妈会这么想念我嘛？我不确定。$3++ 而且我可能会带上大卫二世一起去！牠和大卫好久没见面了！$1|inputSeparator=++}}",
+ 				"winter_6_2": "明天是妈妈的生日，我明天早上可能起床出门去采点花给她。#$b#我会尽量在早上回来，但是如果看到我不在家，不要惊慌，好嘛？#$e#在冬天只有蕃红花会开，我想把那送给妈妈。#$b#那跟我的发色一模一样，所以她说不定看着就会觉得我在她身边。#$e#{{Random: 噢，妈妈会这么想念我嘛？我不确定。$3++ 而且我可能会带上大卫二世一起去！牠和大卫好久没见面了！$1|inputSeparator=++}}",
+//Abigail->PierreMarried
+ 				"spring_25": "明天是爸爸的生日。#$b#对于爸爸，我没什么好担心的，肯定又是在开店。#$e#{{Random: 我好奇妈妈会不会做蛋糕庆祝……以前我总是很期待这天，反正我不会放过任何让妈妈做蛋糕的机会。++ 我或许会想办法作弄一下爸爸……噢，不行，我现在是个妻子了！我该成熟一点。$3|inputSeparator=++}}#$e#嗯……但普通的生日礼物实在太无聊了。就在他枕头下放两块野山葵如何？他肯定很惊喜！**窃笑**$1",
+ 				"spring_25_2": "明天是爸爸的生日。#$b#对于爸爸，我没什么好担心的，肯定又是在开店。#$e#{{Random: 我好奇妈妈会不会做蛋糕庆祝……以前我总是很期待这天，反正我不会放过任何让妈妈做蛋糕的机会。++ 我或许会想办法作弄一下爸爸……噢，不行，我现在是个妻子了！我该成熟一点。$3|inputSeparator=++}}#$e#嗯……但普通的生日礼物实在太无聊了。就在他枕头下放两块野山葵如何？他肯定很惊喜！**窃笑**$1",
+//Abigail->SamMarried
+ 				"summer_16": "明天是山姆的生日了，不过……嗯，好像没什么特别要干的。#$b#噢，当然周五我们还是会庆祝一番。#$e#以前我觉得三个人去酒馆玩只是个打发无聊的传统……现在却觉得这单纯是件好玩的事情。#$b#大概是因为我现在的生活一点都不无聊了！$1",
+ 				"summer_16_2": "明天是山姆的生日了，不过……嗯，好像没什么特别要干的。#$b#噢，当然周五我们还是会庆祝一番。#$e#以前我觉得三个人去酒馆玩只是个打发无聊的传统……现在却觉得这单纯是件好玩的事情。#$b#大概是因为我现在的生活一点都不无聊了！$1",
+//Abigail->AbigailMarried
+ 				"fall_13": "亲爱的！我从几天前就开始期待了……$1#$b#$y '你肯定知道今天是什么日子吧？_生日快乐！_嗯！我就是在等这句！$1*还有呢？你一定给我准备了惊喜吧……我一直相信着你哦，亲爱的！$4_阿比盖尔，生日快乐。我爱你。_噢，天啊！你太直接了，@。$4*我……我也很爱……$4*呃，为什么我就是不好意思说出口？我真是没用。$2*总之，我也很喜欢你……你对我来说是最重要的，好嘛？谢谢你为我庆祝……$4_周六？_噢……你非得要这样嘛？我真的期待了好久。$2*再给你一次机会！$1'",
+ 				"fall_13_2": "亲爱的！我从几天前就开始期待了……$1#$b#$y '你肯定知道今天是什么日子吧？_生日快乐！_嗯！我就是在等这句！$1*还有呢？你一定给我准备了惊喜吧……我一直相信着你哦，亲爱的！$4_阿比盖尔，生日快乐。我爱你。_噢，天啊！你太直接了，@。$4*我……我也很爱……$4*呃，为什么我就是不好意思说出口？我真是没用。$2*总之，我也很喜欢你……你对我来说是最重要的，好嘛？谢谢你为我庆祝……$4_周六？_噢……你非得要这样嘛？我真的期待了好久。$2*再给你一次机会！$1'",
+				
+     }
+    },
+	
+  ]
+}

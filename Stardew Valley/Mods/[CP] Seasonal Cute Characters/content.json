@@ -1,0 +1,1019 @@
+// I dont know what I'm doing
+// This is all guess work
+
+
+{
+    "Format": "1.28.0",
+    "DynamicTokens": [
+
+        // Standard Dynamic Tokens
+
+        {
+            "Name": "IndoorVariant", // Default
+            "Value": "",
+            "When":
+            {
+                "Season": "Spring, Summer, Fall",
+            }
+        },
+        {
+            "Name": "IndoorVariant", // Indoors Only
+            "Value": "_Indoor",
+            "When":
+            {
+                "Season": "Winter",
+                "WinterIndoorOutdoorOutfits": "IndoorOnly",
+            }
+        },
+        {
+            "Name": "IndoorVariant", // Outdoors Only
+            "Value": "_Outdoor",
+            "When":
+            {
+                "Season": "Winter",
+                "WinterIndoorOutdoorOutfits": "OutdoorOnly",
+            }
+        },
+        {
+            "Name": "IndoorVariant", // Indoors Switch
+            "Value": "_Indoor",
+            "When":
+            {
+                "IsOutdoors": "false",
+                "Season": "Winter",
+                "WinterIndoorOutdoorOutfits": "IndoorOutdoor",
+            }
+        },
+        {
+            "Name": "IndoorVariant", // Outdoors Switch
+            "Value": "_Outdoor",
+            "When":
+            {
+                "IsOutdoors": "true",
+                "Season": "Winter",
+                "WinterIndoorOutdoorOutfits": "IndoorOutdoor",
+            }
+        },
+        {
+            "Name": "Festival",
+            "Value": "",
+        },
+        {
+            "Name": "Festival",
+            "Value": "FlowerDance",
+            "When":
+            {
+                "DayEvent": "flower dance",
+                "LocationName": "Forest, temp"
+            }
+        },
+        {
+            "Name": "Festival",
+            "Value": "SpiritsEve",
+            "When":
+            {
+                "DayEvent": "spirit's eve",
+                "LocationName": "town, temp"
+            }
+        },
+        {
+			"Name": "AerobicsDay",
+			"Value": "",
+		},
+        {
+			"Name": "AerobicsDay",
+			"Value": "Regular",
+			"When":
+			{
+				"DayOfWeek": "Tuesday",
+                "LocationName": "SeedShop",
+                "ExtraOutfits": "True",
+                "Weather": "sun, wind, snow",
+			},
+		},
+        {
+			"Name": "AerobicsDay",
+			"Value": "Harvey",
+			"When":
+			{
+				"Time": "{{Range: 1100, 1500}}",
+				"Hearts:Harvey": "{{range: 6, 14}}",
+                "LocationName": "SeedShop",
+                "ExtraOutfits": "True",
+                "HasSeenEvent: currentPlayer |contains=58": false,
+			},
+		},
+        {
+            "Name": "ClintWork",
+            "Value": "_Work",
+        },
+        {
+            "Name": "ClintWork",
+            "Value": "",
+            "When":
+            {
+                "ExtraOutfits": "True",
+                "LocationName |contains= Blacksmith": false,
+            }
+        },
+        {
+			"Name": "SamWork",
+			"Value": "",
+		},
+        {
+			"Name": "SamWork",
+			"Value": "True",
+			"When":
+			{
+				"HasSeenEvent: currentPlayer |contains=191393": false,
+                "LocationName": "JojaMart",
+				"DayOfWeek": "Monday, Wednesday,"
+			},
+		},
+        {
+			"Name": "SamWork",
+			"Value": "True",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+                "HasSeenEvent: currentPlayer |contains=191393": true,
+                "LocationName": "ArchaeologyHouse",
+				"DayOfWeek": "Monday, Wednesday,"
+			},
+		},
+
+    ],
+
+    "ConfigSchema":
+    {
+
+        "HarveyFacialHair":
+        {
+            "AllowValues": "True, False",
+            "Default": "True"
+        },
+        "NoNose":
+        {
+            "AllowValues": "True, False",
+            "Default": "True"
+        },
+        "FestivalOutfits":
+        {
+            "AllowValues": "True, False",
+            "Default": "True"
+        },
+        "WinterIndoorOutdoorOutfits":
+		{
+			"AllowValues": "IndoorOutdoor, IndoorOnly, OutdoorOnly",
+			"Default": "IndoorOutdoor",
+		},
+        "ExtraOutfits":
+        {
+            "AllowValues": "True, False",
+            "Default": "True"
+        },
+        "MaruGlasses":
+        {
+            "AllowValues": "True, False",
+            "Default": "True"
+        },
+        "FarmerBase":
+        {
+            "AllowValues": "True, False",
+            "Default": "True"
+        },
+		"FemaleShoes":
+        {
+            "AllowValues": "Flat, Dainty",
+            "Default": "Flat"
+        },				
+		"SeasonalFarmerBases":
+        {
+            "AllowValues": "True, False",
+            "Default": "False"
+        },
+		"ShirtSpring":
+        {
+            "AllowValues": "ColdWeather, WarmWeather, False",
+            "Default": "WarmWeather"
+        },
+		"ShirtSummer":
+        {
+            "AllowValues": "ColdWeather, WarmWeather, False",
+            "Default": "WarmWeather"
+        },
+		"ShirtFall":
+        {
+            "AllowValues": "ColdWeather, WarmWeather, False",
+            "Default": "ColdWeather"
+        },
+		"ShirtWinter":
+        {
+            "AllowValues": "ColdWeather, WarmWeather, False",
+            "Default": "ColdWeather"
+        },
+		"ShoesSpring":
+        {
+            "AllowValues": "ColdWeather, WarmWeather, False",
+            "Default": "ColdWeather"
+        },
+		"ShoesSummer":
+        {
+            "AllowValues": "ColdWeather, WarmWeather, False",
+            "Default": "WarmWeather"
+        },
+		"ShoesFall":
+        {
+            "AllowValues": "ColdWeather, WarmWeather, False",
+            "Default": "WarmWeather"
+        },
+		"ShoesWinter":
+        {
+            "AllowValues": "ColdWeather, WarmWeather, False",
+            "Default": "ColdWeather"
+        },
+		"IslandSummerClothes":
+        {
+            "AllowValues": "True, False",
+            "Default": "True"
+        },		
+        "SlightlyCuterAbigail":
+        {
+			"AllowValues": "True, False",
+			"Default": "True",
+		},	
+		"SlightlyCuterAlex":
+        {
+			"AllowValues": "True, False",
+			"Default": "True",
+		},	
+		"SlightlyCuterBirdie":
+        {
+			"AllowValues": "True, False",
+			"Default": "True",
+		},	
+		"SlightlyCuterCaroline":
+        {
+			"AllowValues": "True, False",
+			"Default": "True",
+		},		
+		"SlightlyCuterClint":
+        {
+			"AllowValues": "True, False",
+			"Default": "True",
+		},
+		"SlightlyCuterDemetrius":
+        {
+			"AllowValues": "True, False",
+			"Default": "True",
+		},
+		"SlightlyCuterElliott":
+        {
+			"AllowValues": "True, False",
+			"Default": "True",
+		},
+		"SlightlyCuterEmily":
+        {
+			"AllowValues": "True, False",
+			"Default": "True",
+		},
+		"SlightlyCuterEvelyn":
+        {
+			"AllowValues": "True, False",
+			"Default": "True",
+		},
+		"SlightlyCuterGeorge":
+        {
+			"AllowValues": "True, False",
+			"Default": "True",
+		},
+		"SlightlyCuterGil":
+        {
+			"AllowValues": "True, False",
+			"Default": "True",
+		},	
+		"SlightlyCuterGunther":
+        {
+			"AllowValues": "True, False",
+			"Default": "True",
+		},
+		"SlightlyCuterGus":
+        {
+			"AllowValues": "True, False",
+			"Default": "True",
+		},
+		"SlightlyCuterHaley":
+        {
+			"AllowValues": "True, False",
+			"Default": "True",
+		},
+		"SlightlyCuterHarvey":
+        {
+			"AllowValues": "True, False",
+			"Default": "True",
+		},
+		"SlightlyCuterJas":
+        {
+			"AllowValues": "True, False",
+			"Default": "True",
+		},
+		"SlightlyCuterJodi":
+        {
+			"AllowValues": "True, False",
+			"Default": "True",
+		},
+		"SlightlyCuterKent":
+        {
+			"AllowValues": "True, False",
+			"Default": "True",
+		},	
+		"SlightlyCuterKrobus":
+        {
+			"AllowValues": "True, False",
+			"Default": "True",
+		},	
+		"SlightlyCuterLeah":
+        {
+			"AllowValues": "True, False",
+			"Default": "True",
+		},
+		"SlightlyCuterLeo":
+        {
+			"AllowValues": "True, False",
+			"Default": "True",
+		},
+		"SlightlyCuterLewis":
+        {
+			"AllowValues": "True, False",
+			"Default": "True",
+		},
+		"SlightlyCuterLinus":
+        {
+			"AllowValues": "True, False",
+			"Default": "True",
+		},
+		"SlightlyCuterMarlon":
+        {
+			"AllowValues": "True, False",
+			"Default": "True",
+		},
+		"SlightlyCuterMarnie":
+        {
+			"AllowValues": "True, False",
+			"Default": "True",
+		},	
+		"SlightlyCuterMaru":
+        {
+			"AllowValues": "True, False",
+			"Default": "True",
+		},
+		"SlightlyCuterMorris":
+        {
+			"AllowValues": "True, False",
+			"Default": "True",
+		},	
+		"SlightlyCuterMrQi":
+        {
+			"AllowValues": "True, False",
+			"Default": "True",
+		},	
+		"SlightlyCuterPam":
+        {
+			"AllowValues": "True, False",
+			"Default": "True",
+		},
+		"SlightlyCuterPenny":
+        {
+			"AllowValues": "True, False",
+			"Default": "True",
+		},	
+		"SlightlyCuterPierre":
+        {
+			"AllowValues": "True, False",
+			"Default": "True",
+		},	
+		"SlightlyCuterProfessorSnail":
+        {
+			"AllowValues": "True, False",
+			"Default": "True",
+		},
+		"SlightlyCuterRobin":
+        {
+			"AllowValues": "True, False",
+			"Default": "True",
+		},
+		"SlightlyCuterSam":
+        {
+			"AllowValues": "True, False",
+			"Default": "True",
+		},
+		"SlightlyCuterSandy":
+        {
+			"AllowValues": "True, False",
+			"Default": "True",
+		},
+		"SlightlyCuterSebastian":
+        {
+			"AllowValues": "True, False",
+			"Default": "True",
+		},
+		"SlightlyCuterShane":
+        {
+			"AllowValues": "True, False",
+			"Default": "True",
+		},
+		"SlightlyCuterVincent":
+        {
+			"AllowValues": "True, False",
+			"Default": "True",
+		},
+		"SlightlyCuterWilly":
+        {
+			"AllowValues": "True, False",
+			"Default": "True",
+		},
+		"SlightlyCuterWizard":
+        {
+			"AllowValues": "True, False",
+			"Default": "True",
+		},	
+		"SlightlyCuterExtraNPCs":
+        {
+			"AllowValues": "True, False",
+			"Default": "True",
+		},																							
+    },
+
+    "Changes": [
+
+// Farmer Changes
+
+      {  "LogName": "Farmer base changes",
+		 "Action": "EditImage",
+         "Update": "OnLocationChange",
+		 "Target": "characters/farmer/farmer_base, characters/farmer/farmer_base_bald",
+         "FromFile": "assets/{{NoNose}}/farmer/{{TargetWithoutPath}}.png",
+         "FromArea": { "X": 0, "Y": 0, "Width": 96, "Height": 672 },
+         "ToArea": { "X": 0, "Y": 0, "Width": 96, "Height": 672  },		 
+		 "When": {"FarmerBase": "True" }},
+		 
+      {  "LogName": "Farmer changes shoes spring",
+		 "Action": "EditImage",
+         "Update": "OnLocationChange",
+		 "Target": "characters/farmer/farmer_base, characters/farmer/farmer_base_bald",
+         "FromFile": "assets/{{NoNose}}/farmer/{{TargetWithoutPath}}_{{ShoesSpring}}.png",
+         "FromArea": { "X": 0, "Y": 0, "Width": 96, "Height": 672 },
+         "ToArea": { "X": 0, "Y": 0, "Width": 96, "Height": 672  },		 
+		 "When": {"FarmerBase": "True", "SeasonalFarmerBases": "True", "HasFile:{{FromFile}}": true,"Season": "spring" }},
+
+      {  "LogName": "Farmer changes shoes summer",
+		 "Action": "EditImage",
+         "Update": "OnLocationChange",
+		 "Target": "characters/farmer/farmer_base, characters/farmer/farmer_base_bald",
+         "FromFile": "assets/{{NoNose}}/farmer/{{TargetWithoutPath}}_{{ShoesSummer}}.png",
+         "FromArea": { "X": 0, "Y": 0, "Width": 96, "Height": 672 },
+         "ToArea": { "X": 0, "Y": 0, "Width": 96, "Height": 672  },		 
+		 "When": {"FarmerBase": "True", "SeasonalFarmerBases": "True", "HasFile:{{FromFile}}": true,"Season": "summer"}},
+
+      {  "LogName": "Farmer changes shoes fall",
+		 "Action": "EditImage",
+         "Update": "OnLocationChange",
+		 "Target": "characters/farmer/farmer_base, characters/farmer/farmer_base_bald",
+         "FromFile": "assets/{{NoNose}}/farmer/{{TargetWithoutPath}}_{{ShoesFall}}.png",
+         "FromArea": { "X": 0, "Y": 0, "Width": 96, "Height": 672 },
+         "ToArea": { "X": 0, "Y": 0, "Width": 96, "Height": 672  },		 
+		 "When": {"FarmerBase": "True", "SeasonalFarmerBases": "True", "HasFile:{{FromFile}}": true,"Season": "Fall"}},
+
+      {  "LogName": "Farmer changes shoes winter",
+		 "Action": "EditImage",
+         "Update": "OnLocationChange",
+		 "Target": "characters/farmer/farmer_base, characters/farmer/farmer_base_bald",
+         "FromFile": "assets/{{NoNose}}/farmer/{{TargetWithoutPath}}_{{ShoesWinter}}.png",
+         "FromArea": { "X": 0, "Y": 0, "Width": 96, "Height": 672 },
+         "ToArea": { "X": 0, "Y": 0, "Width": 96, "Height": 672  },		 
+		 "When": {"FarmerBase": "True", "SeasonalFarmerBases": "True", "HasFile:{{FromFile}}": true,"Season": "winter"}},
+
+      {  "LogName": "Farmer changes shirt Spring",
+		 "Action": "EditImage",
+         "Update": "OnLocationChange",
+		 "Target": "characters/farmer/farmer_base, characters/farmer/farmer_base_bald",
+         "FromFile": "assets/{{NoNose}}/farmer/{{TargetWithoutPath}}_{{ShirtSpring}}.png",
+         "FromArea": { "X": 97, "Y": 0, "Width": 191, "Height": 672 },
+         "ToArea": { "X": 97, "Y": 0, "Width": 191, "Height": 672  },		 
+		 "When": {"FarmerBase": "True", "SeasonalFarmerBases": "True", "HasFile:{{FromFile}}": true, "Season": "spring"}},
+
+      {  "LogName": "Farmer changes shirt Summer",
+		 "Action": "EditImage",
+         "Update": "OnLocationChange",
+		 "Target": "characters/farmer/farmer_base, characters/farmer/farmer_base_bald",
+         "FromFile": "assets/{{NoNose}}/farmer/{{TargetWithoutPath}}_{{ShirtSummer}}.png",
+         "FromArea": { "X": 97, "Y": 0, "Width": 191, "Height": 672 },
+         "ToArea": { "X": 97, "Y": 0, "Width": 191, "Height": 672  },		 
+		 "When": {"FarmerBase": "True", "SeasonalFarmerBases": "True", "HasFile:{{FromFile}}": true, "Season": "summer"}},
+
+      {  "LogName": "Farmer changes shirt fall",
+		 "Action": "EditImage",
+         "Update": "OnLocationChange",
+		 "Target": "characters/farmer/farmer_base, characters/farmer/farmer_base_bald",
+         "FromFile": "assets/{{NoNose}}/farmer/{{TargetWithoutPath}}_{{ShirtFall}}.png",
+         "FromArea": { "X": 97, "Y": 0, "Width": 191, "Height": 672 },
+         "ToArea": { "X": 97, "Y": 0, "Width": 191, "Height": 672  },		 
+		 "When": {"FarmerBase": "True", "SeasonalFarmerBases": "True", "HasFile:{{FromFile}}": true, "Season": "fall"}},
+
+      {  "LogName": "Farmer changes shirt winter",
+		 "Action": "EditImage",
+         "Update": "OnLocationChange",
+		 "Target": "characters/farmer/farmer_base, characters/farmer/farmer_base_bald",
+         "FromFile": "assets/{{NoNose}}/farmer/{{TargetWithoutPath}}_{{ShirtWinter}}.png",
+         "FromArea": { "X": 97, "Y": 0, "Width": 191, "Height": 672 },
+         "ToArea": { "X": 97, "Y": 0, "Width": 191, "Height": 672  },		 
+		 "When": {"FarmerBase": "True", "SeasonalFarmerBases": "True", "HasFile:{{FromFile}}": true, "Season": "winter"}},
+
+ 	  {  "LogName": "Farmer island clothing",
+		 "Action": "EditImage",
+         "Update": "OnLocationChange",
+		 "Target": "characters/farmer/farmer_base, characters/farmer/farmer_base_bald",
+         "FromFile": "assets/{{NoNose}}/farmer/{{TargetWithoutPath}}_WarmWeather.png",
+		 "When": {"FarmerBase": "True", "SeasonalFarmerBases": "True", "IslandSummerClothes": "True", "HasFile:{{FromFile}}": true, "LocationName": "IslandWest, IslandNorth, IslandSouth, IslandEast, IslandHut, IslandFarmHouse, IslandFieldOffice, Caldera, VolcanoDungeon0, VolcanoDungeon1, VolcanoDungeon2, VolcanoDungeon3, VolcanoDungeon4, VolcanoDungeon5, VolcanoDungeon6, VolcanoDungeon7, VolcanoDungeon8, VolcanoDungeon9, QiNutRoom, IslandFarmCave, IslandNorthCave1, IslandSouthEastCave, IslandShrine, IslandSouthEast"}},	 		 
+
+// Farmer female
+
+      {  "LogName": "Farmer base changes",
+		 "Action": "EditImage",
+         "Update": "OnLocationChange",
+		 "Target": "characters/farmer/farmer_girl_base, characters/farmer/farmer_girl_base_bald",
+         "FromFile": "assets/{{NoNose}}/farmer/{{TargetWithoutPath}}_{{FemaleShoes}}.png",
+         "FromArea": { "X": 0, "Y": 0, "Width": 96, "Height": 672 },
+         "ToArea": { "X": 0, "Y": 0, "Width": 96, "Height": 672  },		 
+		 "When": {"FarmerBase": "True" }},
+		 
+      {  "LogName": "Farmer changes shoes spring",
+		 "Action": "EditImage",
+         "Update": "OnLocationChange",
+		 "Target": "characters/farmer/farmer_girl_base, characters/farmer/farmer_girl_base_bald",
+         "FromFile": "assets/{{NoNose}}/farmer/{{TargetWithoutPath}}_{{ShoesSpring}}_{{FemaleShoes}}.png",
+         "FromArea": { "X": 0, "Y": 0, "Width": 96, "Height": 672 },
+         "ToArea": { "X": 0, "Y": 0, "Width": 96, "Height": 672  },		 
+		 "When": {"FarmerBase": "True", "SeasonalFarmerBases": "True", "HasFile:{{FromFile}}": true,"Season": "spring" }},
+
+      {  "LogName": "Farmer changes shoes summer",
+		 "Action": "EditImage",
+         "Update": "OnLocationChange",
+		 "Target": "characters/farmer/farmer_girl_base, characters/farmer/farmer_girl_base_bald",
+         "FromFile": "assets/{{NoNose}}/farmer/{{TargetWithoutPath}}_{{ShoesSummer}}_{{FemaleShoes}}.png",
+         "FromArea": { "X": 0, "Y": 0, "Width": 96, "Height": 672 },
+         "ToArea": { "X": 0, "Y": 0, "Width": 96, "Height": 672  },		 
+		 "When": {"FarmerBase": "True", "SeasonalFarmerBases": "True", "HasFile:{{FromFile}}": true,"Season": "summer"}},
+
+      {  "LogName": "Farmer changes shoes fall",
+		 "Action": "EditImage",
+         "Update": "OnLocationChange",
+		 "Target": "characters/farmer/farmer_girl_base, characters/farmer/farmer_girl_base_bald",
+         "FromFile": "assets/{{NoNose}}/farmer/{{TargetWithoutPath}}_{{ShoesFall}}_{{FemaleShoes}}.png",
+         "FromArea": { "X": 0, "Y": 0, "Width": 96, "Height": 672 },
+         "ToArea": { "X": 0, "Y": 0, "Width": 96, "Height": 672  },		 
+		 "When": {"FarmerBase": "True", "SeasonalFarmerBases": "True", "HasFile:{{FromFile}}": true,"Season": "Fall"}},
+
+      {  "LogName": "Farmer changes shoes winter",
+		 "Action": "EditImage",
+         "Update": "OnLocationChange",
+		 "Target": "characters/farmer/farmer_girl_base, characters/farmer/farmer_girl_base_bald",
+         "FromFile": "assets/{{NoNose}}/farmer/{{TargetWithoutPath}}_{{ShoesWinter}}_{{FemaleShoes}}.png",
+         "FromArea": { "X": 0, "Y": 0, "Width": 96, "Height": 672 },
+         "ToArea": { "X": 0, "Y": 0, "Width": 96, "Height": 672  },		 
+		 "When": {"FarmerBase": "True", "SeasonalFarmerBases": "True", "HasFile:{{FromFile}}": true,"Season": "winter"}},
+
+      {  "LogName": "Farmer changes shirt Spring",
+		 "Action": "EditImage",
+         "Update": "OnLocationChange",
+		 "Target": "characters/farmer/farmer_girl_base, characters/farmer/farmer_girl_base_bald",
+         "FromFile": "assets/{{NoNose}}/farmer/{{TargetWithoutPath}}_{{ShirtSpring}}_{{FemaleShoes}}.png",
+         "FromArea": { "X": 97, "Y": 0, "Width": 191, "Height": 672 },
+         "ToArea": { "X": 97, "Y": 0, "Width": 191, "Height": 672  },		 
+		 "When": {"FarmerBase": "True", "SeasonalFarmerBases": "True", "HasFile:{{FromFile}}": true, "Season": "spring"}},
+
+      {  "LogName": "Farmer changes shirt Summer",
+		 "Action": "EditImage",
+         "Update": "OnLocationChange",
+		 "Target": "characters/farmer/farmer_girl_base, characters/farmer/farmer_girl_base_bald",
+         "FromFile": "assets/{{NoNose}}/farmer/{{TargetWithoutPath}}_{{ShirtSummer}}_{{FemaleShoes}}.png",
+         "FromArea": { "X": 97, "Y": 0, "Width": 191, "Height": 672 },
+         "ToArea": { "X": 97, "Y": 0, "Width": 191, "Height": 672  },		 
+		 "When": {"FarmerBase": "True", "SeasonalFarmerBases": "True", "HasFile:{{FromFile}}": true, "Season": "summer"}},
+
+      {  "LogName": "Farmer changes shirt fall",
+		 "Action": "EditImage",
+         "Update": "OnLocationChange",
+		 "Target": "characters/farmer/farmer_girl_base, characters/farmer/farmer_girl_base_bald",
+         "FromFile": "assets/{{NoNose}}/farmer/{{TargetWithoutPath}}_{{ShirtFall}}_{{FemaleShoes}}.png",
+         "FromArea": { "X": 97, "Y": 0, "Width": 191, "Height": 672 },
+         "ToArea": { "X": 97, "Y": 0, "Width": 191, "Height": 672  },		 
+		 "When": {"FarmerBase": "True", "SeasonalFarmerBases": "True", "HasFile:{{FromFile}}": true, "Season": "fall"}},
+
+      {  "LogName": "Farmer changes shirt winter",
+		 "Action": "EditImage",
+         "Update": "OnLocationChange",
+		 "Target": "characters/farmer/farmer_girl_base, characters/farmer/farmer_girl_base_bald",
+         "FromFile": "assets/{{NoNose}}/farmer/{{TargetWithoutPath}}_{{ShirtWinter}}_{{FemaleShoes}}.png",
+         "FromArea": { "X": 97, "Y": 0, "Width": 191, "Height": 672 },
+         "ToArea": { "X": 97, "Y": 0, "Width": 191, "Height": 672  },		 
+		 "When": {"FarmerBase": "True", "SeasonalFarmerBases": "True", "HasFile:{{FromFile}}": true, "Season": "winter"}},
+
+ 	  {  "LogName": "Farmer island clothing",
+		 "Action": "EditImage",
+         "Update": "OnLocationChange",
+		 "Target": "characters/farmer/farmer_girl_base, characters/farmer/farmer_girl_base_bald",
+         "FromFile": "assets/{{NoNose}}/farmer/{{TargetWithoutPath}}_WarmWeather__{{FemaleShoes}}.png",
+		 "When": {"FarmerBase": "True", "SeasonalFarmerBases": "True", "IslandSummerClothes": "True", "HasFile:{{FromFile}}": true, "LocationName": "IslandWest, IslandNorth, IslandSouth, IslandEast, IslandHut, IslandFarmHouse, IslandFieldOffice, Caldera, VolcanoDungeon0, VolcanoDungeon1, VolcanoDungeon2, VolcanoDungeon3, VolcanoDungeon4, VolcanoDungeon5, VolcanoDungeon6, VolcanoDungeon7, VolcanoDungeon8, VolcanoDungeon9, QiNutRoom, IslandFarmCave, IslandNorthCave1, IslandSouthEastCave, IslandShrine, IslandSouthEast"}},
+
+
+// Misc & Extra NPCs
+		
+		{  
+			"LogName": "Misc NPCs Seasonal Include",
+			"Action": "Include",
+			"FromFile": "assets/Code/MiscNPCs.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			}
+		},
+		{  
+			"LogName": "Extra NPCs Seasonal Include",
+			"Action": "Include",
+			"FromFile": "assets/Code/ExtraNPCs.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				"SlightlyCuterExtraNPCs": "True",
+			}
+		},
+		
+// Seasonal Character Includes
+
+		{  
+			"LogName": "Abigail Seasonal Include",
+			"Action": "Include",
+			"FromFile": "assets/Code/Abigail.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				"SlightlyCuterAbigail": "True",
+			}
+		},
+		{  
+			"LogName": "Alex Seasonal Include",
+			"Action": "Include",
+			"FromFile": "assets/Code/Alex.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				"SlightlyCuterAlex": "True",
+			}
+		},
+		{  
+			"LogName": "Caroline Seasonal Include",
+			"Action": "Include",
+			"FromFile": "assets/Code/Caroline.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				"SlightlyCuterCaroline": "True",
+			}
+		},
+		{  
+			"LogName": "Clint Seasonal Include",
+			"Action": "Include",
+			"FromFile": "assets/Code/Clint.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				"SlightlyCuterClint": "True",
+			}
+		},
+		{  
+			"LogName": "Demetrius Seasonal Include",
+			"Action": "Include",
+			"FromFile": "assets/Code/Demetrius.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				"SlightlyCuterDemetrius": "True",
+			}
+		},
+		{  
+			"LogName": "Elliott Seasonal Include",
+			"Action": "Include",
+			"FromFile": "assets/Code/Elliott.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				"SlightlyCuterElliott": "True",
+			}
+		},
+		{  
+			"LogName": "Emily Seasonal Include",
+			"Action": "Include",
+			"FromFile": "assets/Code/Emily.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				"SlightlyCuterEmily": "True",
+			}
+		},
+		{  
+			"LogName": "Evelyn Seasonal Include",
+			"Action": "Include",
+			"FromFile": "assets/Code/Evelyn.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				"SlightlyCuterEvelyn": "True",
+			}
+		},
+		{  
+			"LogName": "George Seasonal Include",
+			"Action": "Include",
+			"FromFile": "assets/Code/George.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				"SlightlyCuterGeorge": "True",
+			}
+		},
+		{  
+			"LogName": "Gil Seasonal Include",
+			"Action": "Include",
+			"FromFile": "assets/Code/Gil.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				"SlightlyCuterGil": "True",
+			}
+		},
+		{  
+			"LogName": "Gunther Seasonal Include",
+			"Action": "Include",
+			"FromFile": "assets/Code/Gunther.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				"SlightlyCuterGunther": "True",
+				"HasMod |contains= FlashShifter.StardewValleyExpandedCP": false,
+			}
+		},
+		{  
+			"LogName": "Gus Seasonal Include",
+			"Action": "Include",
+			"FromFile": "assets/Code/Gus.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				"SlightlyCuterGus": "True",
+			}
+		},
+		{  
+			"LogName": "Haley Seasonal Include",
+			"Action": "Include",
+			"FromFile": "assets/Code/Haley.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				"SlightlyCuterHaley": "True",
+			}
+		},
+		{  
+			"LogName": "Harvey Seasonal Include",
+			"Action": "Include",
+			"FromFile": "assets/Code/Harvey.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				"SlightlyCuterHarvey": "True",
+			}
+		},
+		{  
+			"LogName": "Jas Seasonal Include",
+			"Action": "Include",
+			"FromFile": "assets/Code/Jas.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				"SlightlyCuterJas": "True",
+			}
+		},
+		{  
+			"LogName": "Jodi Seasonal Include",
+			"Action": "Include",
+			"FromFile": "assets/Code/Jodi.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				"SlightlyCuterJodi": "True",
+			}
+		},
+		{  
+			"LogName": "Kent Seasonal Include",
+			"Action": "Include",
+			"FromFile": "assets/Code/Kent.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				"SlightlyCuterKent": "True",
+			}
+		},
+		{  
+			"LogName": "Leah Seasonal Include",
+			"Action": "Include",
+			"FromFile": "assets/Code/Leah.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				"SlightlyCuterLeah": "True",
+			}
+		},
+		{  
+			"LogName": "Leo Seasonal Include",
+			"Action": "Include",
+			"FromFile": "assets/Code/Leo.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				"SlightlyCuterLeo": "True",
+			}
+		},
+		{  
+			"LogName": "Lewis Seasonal Include",
+			"Action": "Include",
+			"FromFile": "assets/Code/Lewis.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				"SlightlyCuterLewis": "True",
+			}
+		},
+		{  
+			"LogName": "Linus Seasonal Include",
+			"Action": "Include",
+			"FromFile": "assets/Code/Linus.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				"SlightlyCuterLinus": "True",
+			}
+		},
+		{  
+			"LogName": "Marlon Seasonal Include",
+			"Action": "Include",
+			"FromFile": "assets/Code/Marlon.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				"SlightlyCuterMarlon": "True",
+				"HasMod |contains= FlashShifter.StardewValleyExpandedCP": false,
+			}
+		},
+		{  
+			"LogName": "Marnie Seasonal Include",
+			"Action": "Include",
+			"FromFile": "assets/Code/Marnie.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				"SlightlyCuterMarnie": "True",
+			}
+		},
+		{  
+			"LogName": "Maru Seasonal Include",
+			"Action": "Include",
+			"FromFile": "assets/Code/Maru.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				"SlightlyCuterMaru": "True",
+			}
+		},
+		{  
+			"LogName": "Morris Seasonal Include",
+			"Action": "Include",
+			"FromFile": "assets/Code/Morris.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				"SlightlyCuterMorris": "True",
+				"HasMod |contains= FlashShifter.StardewValleyExpandedCP": false,
+			}
+		},
+		{  
+			"LogName": "Pam Seasonal Include",
+			"Action": "Include",
+			"FromFile": "assets/Code/Pam.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				"SlightlyCuterPam": "True",
+			}
+		},
+		{  
+			"LogName": "Penny Seasonal Include",
+			"Action": "Include",
+			"FromFile": "assets/Code/Penny.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				"SlightlyCuterPenny": "True",
+			}
+		},
+		{  
+			"LogName": "Pierre Seasonal Include",
+			"Action": "Include",
+			"FromFile": "assets/Code/Pierre.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				"SlightlyCuterPierre": "True",
+			}
+		},
+		{  
+			"LogName": "Robin Seasonal Include",
+			"Action": "Include",
+			"FromFile": "assets/Code/Robin.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				"SlightlyCuterRobin": "True",
+			}
+		},
+		{  
+			"LogName": "Sam Seasonal Include",
+			"Action": "Include",
+			"FromFile": "assets/Code/Sam.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				"SlightlyCuterSam": "True",
+			}
+		},
+		{  
+			"LogName": "Sandy Seasonal Include",
+			"Action": "Include",
+			"FromFile": "assets/Code/Sandy.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				"SlightlyCuterSandy": "True",
+			}
+		},
+		{  
+			"LogName": "Sebastian Seasonal Include",
+			"Action": "Include",
+			"FromFile": "assets/Code/Sebastian.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				"SlightlyCuterSebastian": "True",
+			}
+		},
+		{  
+			"LogName": "Shane Seasonal Include",
+			"Action": "Include",
+			"FromFile": "assets/Code/Shane.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				"SlightlyCuterShane": "True",
+			}
+		},
+		{  
+			"LogName": "Vincent Seasonal Include",
+			"Action": "Include",
+			"FromFile": "assets/Code/Vincent.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				"SlightlyCuterVincent": "True",
+			}
+		},
+		{  
+			"LogName": "Willy Seasonal Include",
+			"Action": "Include",
+			"FromFile": "assets/Code/Willy.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				"SlightlyCuterWilly": "True",
+			}
+		},
+		{  
+			"LogName": "Wizard Seasonal Include",
+			"Action": "Include",
+			"FromFile": "assets/Code/Wizard.json",
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+				"SlightlyCuterWizard": "True",
+			}
+		},
+		
+    ]
+}

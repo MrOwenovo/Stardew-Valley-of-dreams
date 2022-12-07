@@ -1,0 +1,64 @@
+- 加入新mod:
+    - CP - Season Bunny sprinkler:  CP - 季节兔子洒水器 ×
+    - Krobus patio (seasonal): 科罗布斯的配偶露台 - 季节性 Æ
+    - Ohodavi's Portraits for Rasmodia: 奥霍达维的《拉斯摩迪亚肖像》 ×
+    - [CP] Seasonal Cute Characters: [CP]季节性可爱人物   ×
+    - A seasonal high resolution anime portrait of Olivia:  SVE - 奥利维亚的季节性高分辨率动漫肖像 ×
+    - Romanceable Rasmodius SVE: 浪漫的拉斯莫迪乌斯 - SVE √
+    - Romanceable Rasmodius: 浪漫的拉斯莫迪乌斯 √
+    - Juliet and Jessie the Joja Clerks: 朱丽叶和乔贾店员杰西 √
+    - CustomKissingMod: 定制接吻模组 ×
+    - Custom Achievements: 自定义成就 ×
+    - CC仪式中的浪漫NPC: CC仪式中的浪漫NPC √
+    - Kedi's Pets Furniture： 科迪宠物家具 Æ
+    - Kedi's Kids Furniture: 科迪儿童家具 Æ
+    - Fancy Artisan Goods Fix for Better Artisan Goods Icons: 花式工匠商品修复以获得更好的手工艺品图标 ×
+    - It's Tumbleweed Time: 风滚草时间 Æ
+    - Ferngill Weathers：芬吉尔的气候 ?
+    - Out of Season Bonuses: 淡季奖金 ×
+    - Dungeon Merchants: 地牢商人 ×
+    - More Immersive NPC Birthday - Dialogue Expansion: 更身临其境的NPC生日 - 对话扩展 √
+    - Junimo Dialog 朱尼莫对话 √
+    - Richside Village Achievement： 里奇赛德村成就 Æ
+    - Seasonal rainbow lollipop (lightning rod): 季节性彩虹棒棒糖（避雷针）×
+    - Heart Level Notifications: 心平通知 ?
+    - Customisable Heart Relationship Icon: 可定制的心形关系图标 Æ
+    - MailboxMenu: 邮箱菜单 ?
+    - Ornithologist's Guild: 鸟类学家协会 √
+    - Ridgeside Village for Mobile Phone: 山脊村手机 √
+    - Zosa and Bonster's Recipes: 佐萨和邦斯特的食谱  √
+    - Stardew Valley Expanded-image translation-Chinese: 星露谷展开图片翻译 √
+    - Lavril NPC Adventures: 拉薇儿NPC历险记 √
+    - Boss Creatures: 头目生物 Æ
+    - CM-Latale BGM for Lnh 的其他区域
+    - Ayeisha - The Postal Worker (Custom NPC): 阿耶莎 - 邮政工人（自定义NPC）√
+    - Stardew Valley Additional Areas: 星露谷其他区域×
+    - Walk to the Desert from Additional area: 从附加区域步行到沙漠 ×
+    - Lnh's More Greenhouse: Lnh的更多温室 ×
+    - Lnh's More Farming Areas: Lnh的更多农业区 ×
+    - Beach Extension For Crab Pod: 螃蟹荚海滩扩建 ×
+    - Beach Additional Storage Space Area: 海滩额外存储空间区 ×
+    - Post Wedding Dates: 婚后日期 Æ
+    - Community Center Reimagined: 重新构想社区中心 √
+    - Recessed Fish Tank: 嵌入式鱼缸 Æ
+    - Trinkets To Treasures - Artifacts: 宝藏的小饰品 - 文物 Æ
+    - It is Butterscotch Time: 现在是奶油糖果时间 √
+    - Atelier Wildflour - Tea Pack： 工作室野面粉 - 茶包 Æ
+    - Farmer Family Recipes - Specialty Jams and Jellies： 农民家庭食谱 - 特色果酱和果冻 Æ
+    - BAGI - Better Artisan Good Icons For Bonster's Crops: BAGI - 邦斯特作物的更好工匠好图标 ×
+    - Mermaid Island Scepter: 美人鱼岛权杖 √
+    - (PFM) Flower Pack for Artisanal Soda Makers: （PFM）手工苏打水制造商的鲜花包×
+    - Floral Drinks: 花卉饮料 √
+    - Vyranity's Pizza's JA: 维兰尼蒂披萨 √
+    - Cuter Crops and Foraging： 更可爱的作物和觅食 ×
+    - Bonster's Crops and Recipes Retexture: 邦斯特的作物和食谱重新纹理 ×
+    - Custom Crystalarium Mod: 定制水晶模组×
+    - Produce to Sapling - Bonster's Crops for PFM: 生产到树苗 - 邦斯特的PFM作物×
+    - Better Quality Increased Seeds - Bonster's Crops for PFM: 质量更好的增加种子 - 邦斯特用于PFM的作物×
+    - JA- Luo Li's top and skirt10: JA - 罗莉的上衣和裙子10
+    - Realistic Writer Elliott: 现实主义作家艾略特√
+    - Marshmallows in Stardew: 星露中的棉花糖 √
+    - Host Trees: 宿主树 √
+    - PPJA - Fresh Meat_An 'Alternative' Butcher Mod: PPJA - 新鲜Meat_An“另类”屠夫模组 √
+    - Pigeon Mailbox: 鸽子邮箱×
+    - Custom Obelisks: 定制方尖碑 ×

@@ -1,0 +1,269 @@
+{
+  "Changes": [	
+  
+  	
+	//Movie Reactions
+	    		{
+      "Action": "EditData",
+      "Target": "Data/MoviesReactions",	  
+		   "When": {
+		   "Season": "winter",
+		   "Day": "23",
+			"Relationship:Leah": "Friendly",
+		   },
+    "Entries":   {
+	"Leah":{
+    "NPCName": "Leah",
+    "Reactions": [
+      {
+        "Tag": "winter_movie_0",
+        "Response": "love",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{Random: 啊……室内太暖和了！$1#$b#谢谢你邀我来。进场前要先买些小食吗？我希望也有卖些健康的小食。++ 我还挺喜欢看电影的。这是各种艺术的结晶，每幕都是很多人的创作心血。|inputSeparator=++}}"
+          },
+          "DuringMovie": null,
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "我还挺理解他们这苦况的……冬天确实没有多少野果。$2#$b#还好星露谷在冬天仍然是有野菜的。不然我或许要像他们这样了。#$b#我开玩笑呢。$1"
+          }
+        },
+        "ID": "reaction_0"
+      },
+      {
+        "Tag": "winter_movie_1",
+        "Response": "love",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{Random: 啊……室内太暖和了！$1#$b#谢谢你邀我来。进场前要先买些小食吗？我希望也有卖些健康的小食。++ 我还挺喜欢看电影的。这是各种艺术的结晶，每幕都是很多人的创作心血。|inputSeparator=++}}"
+          },
+          "DuringMovie": null,
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "这部真不错……我喜欢这些艺术上的留白。就象是提供了一张空画布一样，可以随我自由思考。这很棒！$1"
+          }
+        },
+        "ID": "reaction_1"
+      },
+    ]
+  },
+	}
+			},
+  	
+	    		{
+      "Action": "EditData",
+      "Target": "Data/MoviesReactions",	  
+		   "When": {
+		   "Season": "winter",
+		   "Day": "23",
+		   "Relationship:Leah": "Dating, Engaged",
+		   },
+    "Entries":   {
+	"Leah":{
+    "NPCName": "Leah",
+    "Reactions": [
+      {
+        "Tag": "winter_movie_0",
+        "Response": "love",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{Random: 你冷吗？我知道你很强壮，但还是会担心你。我们要不要点杯热饮暖暖身？$4++ 生日时来场电影约会真是太棒了。我喜欢鉴赏艺术。$1|inputSeparator=++}}"
+          },
+          "DuringMovie": null,
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "你的农场在冬天也这么拮据吗？不会？那就好。#$b#自从我们交往后，我，呃……常常想象农场里的生活。我很好奇那会是什么样的。$4"
+          }
+        },
+        "ID": "reaction_0"
+      },
+      {
+        "Tag": "winter_movie_1",
+        "Response": "love",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{Random: 你冷吗？我知道你很强壮，但还是会担心你。我们要不要点杯热饮暖暖身？$4++ 生日时来场电影约会真是太棒了。我喜欢鉴赏艺术。$1|inputSeparator=++}}"
+          },
+          "DuringMovie": null,
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "我曾经有段时间对爱情这种东西敬而远之。#$b#现在？我又重新体验到这有多甜蜜了……$4"
+          }
+        },
+        "ID": "reaction_1"
+      },
+    ]
+  },
+	}
+			},
+			
+	    		{
+      "Action": "EditData",
+      "Target": "Data/MoviesReactions",	  
+		   "When": {
+		   "Season": "winter",
+		   "Day": "23",
+		   "Relationship:Leah": "Married",
+		   },
+    "Entries":   {
+	"Leah":{
+    "NPCName": "Leah",
+    "Reactions": [
+      {
+        "Tag": "winter_movie_0",
+        "Response": "love",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{Random: 能像这样两人来电影院看场生日电影真好。我一直就是想要这种平淡的幸福。$1++ 亲爱的，你知道吗？我刚才来电影院的路上一直在观察小镇的风景。#$b#有些新芽已经悄悄地长出来了……春天近了。我真期待跟你一起迎接新的一年。$1|inputSeparator=++}}"
+          },
+          "DuringMovie": null,
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "星之果实真的这么神奇嘛？我在这区的传说里常常听到它的名字。#$b#如果我有机会得到它，我一定会跟你分享，亲爱的。就像电影里的一家人一样……跟爱人分享的果实是最好吃的。$1"
+          }
+        },
+        "ID": "reaction_0"
+      },
+      {
+        "Tag": "winter_movie_1",
+        "Response": "love",
+        "Whitelist": [],
+        "SpecialResponses": {
+          "BeforeMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "{{Random: 能像这样两人来电影院看场生日电影真好。我一直就是想要这种平淡的幸福。$1++ 亲爱的，你知道吗？我刚才来电影院的路上一直在观察小镇的风景。#$b#有些新芽已经悄悄地长出来了……春天近了。我真期待跟你一起迎接新的一年。$1|inputSeparator=++}}"
+          },
+          "DuringMovie": null,
+          "AfterMovie": {
+            "ResponsePoint": null,
+            "Script": "",
+            "Text": "你看完有什么感想吗？我一直在想你的事情……爱情真是太美妙了，是不是？$4#$b#遇到你前，我从未有这样的感觉。$4"
+          }
+        },
+        "ID": "reaction_1"
+      },
+    ]
+  },
+	}
+			},
+  //Movie Invitation
+
+  		{
+      "Action": "EditData",
+      "Target": "Strings/Characters",	  
+		   "When": {
+		   "Relationship:Leah": "Friendly",
+		   "Season": "winter",
+		   "Day": "23",
+		   },
+      "Entries": {
+		  "MovieInvite_Invited_Leah": "生日电影？哇……谢谢你！你真是个很好的朋友，@。我们电影院见，好吗？",
+     }
+    },
+	  		{
+      "Action": "EditData",
+      "Target": "Strings/Characters",	  
+		   "When": {
+		   "Relationship:Leah": "Dating, Engaged",
+		   "Season": "winter",
+		   "Day": "23",
+		   },
+      "Entries": {
+		  "MovieInvite_Invited_Leah": "生日约会？你真贴心……当然，我会和你去的！$1#$b#嗯……我想我该准备一下。我们电影院见，好吗？$4",
+     }
+    },
+  		{
+      "Action": "EditData",
+      "Target": "Strings/Characters",	  
+		   "When": {
+		   "Relationship:Leah": "Married",
+		   "Hearts:Leah": "10, 11, 12, 13, 14",
+		   "Season": "winter",
+		   "Day": "23",
+		   },
+      "Entries": {
+		  "MovieInvite_Invited_Leah": "你为我的生日准备了电影？谢谢你，我当然去！$1#$b#我曾经以为婚姻会磨灭掉所有生活情调的，很高兴这不适用于我们身上。我们电影院见吧。$4",
+     }
+    },
+	
+	
+//Normal Dialogue	
+		{
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Leah",	  
+	   "When": {
+	   "Relationship:Leah": "Friendly",
+	   },
+      "Entries": {
+		
+		"winter_23": "@，你好啊。冬天农场还好嘛？我想你肯定很期待春天了。#$b#今天早上我都留在家里画画，画从我家床上看出去的景色。室内壁炉的火光和外面雪景的白光互相辉映……真是太美了。#$b#这是我搬来这小镇时就下定决心要做的事。每年生日的时候在自己的小屋画一幅画。$1#$e#{{Random: 以前还住在城市时，很难有机会一个人静下心享受四周的风景。#$b#抛弃一切搬来这里，对我来说是个很需要勇气的决定……但我一点都不后悔！$1++ 我希望这些画可以纪录下我住在这里的轨迹。#$b#我还决定每年都要尝试用不同的颜料……算是我给自己的一点小挑战。今年用的是{{Random: 水彩++ 粉彩++ 蜡笔++ 铅笔++ 油画|inputSeparator=++}}！$1|inputSeparator=++}}",
+		"winter_23_2": "@，你好啊。冬天农场还好嘛？我想你肯定很期待春天了。#$b#今天早上我都留在家里画画，画从我家床上看出去的景色。室内壁炉的火光和外面雪景的白光互相辉映……真是太美了。#$b#这是我搬来这小镇时就下定决心要做的事。每年生日的时候在自己的小屋画一幅画。$1#$e#{{Random: 以前还住在城市时，很难有机会一个人静下心享受四周的风景。#$b#抛弃一切搬来这里，对我来说是个很需要勇气的决定……但我一点都不后悔！$1++ 我希望这些画可以纪录下我住在这里的轨迹。#$b#我还决定每年都要尝试用不同的颜料……算是我给自己的一点小挑战。今年用的是{{Random: 水彩++ 粉彩++ 蜡笔++ 铅笔++ 油画|inputSeparator=++}}！$1|inputSeparator=++}}",
+		  
+		  
+     }
+    },
+  
+		{
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Leah",	  
+	   "When": {
+	   "Relationship:Leah": "Dating",
+	   },
+      "Entries": {
+		  
+		"winter_23": "@，你特地来看我吗？谢谢你！#$b#我今早起来一直在想你和农场的事情……或许这冷天让我有些眷恋人的体温。$4#$e#今天早上我都留在家里画画，画从我家床上看出去的景色。室内壁炉的火光和外面雪景的白光互相辉映……真是太美了。#$b#这是我搬来这小镇时就下定决心要做的事。每年生日的时候为自己的小屋画一幅画。$1#$e#你对画画有兴趣吗？这常常被认为是门槛很高的活动，但其实只要把你心里想的画出来就行了。#$b#我希望哪天可以和你一起画画，这肯定很棒。$1",
+		"winter_23_2": "@，你特地来看我吗？谢谢你！#$b#我今早起来一直在想你和农场的事情……或许这冷天让我有些眷恋人的体温。$4#$e#今天早上我都留在家里画画，画从我家床上看出去的景色。室内壁炉的火光和外面雪景的白光互相辉映……真是太美了。#$b#这是我搬来这小镇时就下定决心要做的事。每年生日的时候为自己的小屋画一幅画。$1#$e#你对画画有兴趣吗？这常常被认为是门槛很高的活动，但其实只要把你心里想的画出来就行了。#$b#我希望哪天可以和你一起画画，这肯定很棒。$1",
+		  
+		  
+     }
+    },
+		{
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Leah",	  
+	   "When": {
+	   "Relationship:Leah": "Engaged",
+	   },
+      "Entries": {
+		  
+		"winter_23": "@，你特地来看我吗？谢谢你！#$b#我今早起来一直在想你和农场的事情……或许这冷天让我有些眷恋人的体温。$4#$e#今天早上我都留在家里画画，这大概会是我最后一幅画小木屋的画了。#$b#以后这天我都会改画在农场里的画……我肯定那也会是很美的风景。$4",
+		"winter_23_2": "@，你特地来看我吗？谢谢你！#$b#我今早起来一直在想你和农场的事情……或许这冷天让我有些眷恋人的体温。$4#$e#今天早上我都留在家里画画，这大概会是我最后一幅画小木屋的画了。#$b#以后这天我都会改画在农场里的画……我肯定那也会是很美的风景。$4",
+		  
+		  
+     }
+    },
+		{
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/MarriageDialogueLeah",	  
+      "Entries": {
+		  
+  
+		"winter_23": "亲爱的，早上好啊。#$b#我头上有雪花吗？噢，大概是因为我刚到外面写生了。$1#$b#$y '这是我每年的习惯……你知道的吧？_当然。生日快乐，莉娅！_谢谢，亲爱的！{{Random: 你一定得看看我画的画。$1*想想，画中的一切都是你一手开拓出来的……这幅画就象是我和你的孩子。$4++ 我很高兴能和你一起庆祝生日。*我们今天做些什么好呢？希望你工作不会太忙碌。$1|inputSeparator=++}}_当然……这是我爱你的理由之一。生日快乐，莉娅。_哇……你什么时候这么懂得说情话的？$4*谢谢你，亲爱的。我真的很感谢你愿意尊重我的爱好。*以前这份不被理解的感觉折磨了我很久……所幸我最后做了正确的决定，搬到了正确的地方，遇到了正确的人。*现在我觉得非常幸福！$1_哦。我要出门了。_什……这么快？*呃，好吧。我知道你农务很忙是不是？不要忙坏了身体。我一个人待着没关系的。$2'",
+		"winter_23_2": "亲爱的，早上好啊。#$b#我头上有雪花吗？噢，大概是因为我刚到外面写生了。$1#$b#$y '这是我每年的习惯……你知道的吧？_当然。生日快乐，莉娅！_谢谢，亲爱的！{{Random: 你一定得看看我画的画。$1*想想，画中的一切都是你一手开拓出来的……这幅画就象是我和你的孩子。$4++ 我很高兴能和你一起庆祝生日。*我们今天做些什么好呢？希望你工作不会太忙碌。$1|inputSeparator=++}}_当然……这是我爱你的理由之一。生日快乐，莉娅。_哇……你什么时候这么懂得说情话的？$4*谢谢你，亲爱的。我真的很感谢你愿意尊重我的爱好。*以前这份不被理解的感觉折磨了我很久……所幸我最后做了正确的决定，搬到了正确的地方，遇到了正确的人。*现在我觉得非常幸福！$1_哦。我要出门了。_什……这么快？*呃，好吧。我知道你农务很忙是不是？不要忙坏了身体。我一个人待着没关系的。$2'",
+		  
+		  
+     }
+    },
+  
+  ]
+}

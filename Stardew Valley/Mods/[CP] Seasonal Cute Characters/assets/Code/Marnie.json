@@ -1,0 +1,113 @@
+{
+	"Changes": [
+		{
+			"LogName": "Marnie - Seasonal",
+			"Action": "EditImage",
+			"Target": "Portraits/Marnie, Characters/Marnie",
+			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Marnie - Winter Indoor/Outdoor",
+			"Action": "EditImage",
+			"Target": "Portraits/Marnie, Characters/Marnie",
+			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+                "Season": "Winter",
+                "WinterIndoorOutdoorOutfits": "IndoorOutdoor",
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Marnie - Festival",
+			"Action": "EditImage",
+			"Target": "Portraits/Marnie, Characters/Marnie",
+            "FromFile": "assets/{{TargetPathOnly}}/Festivals/{{Festival}}/{{TargetWithoutPath}}_{{Festival}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"FestivalOutfits": "True",
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Marnie - Beach",
+			"Action": "EditImage",
+			"Target": "Portraits/Marnie_Beach, Characters/Marnie_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Beach/{{TargetWithoutPath}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Marnie - Aerobics",
+			"Action": "EditImage",
+			"Target": "Portraits/Marnie, Characters/Marnie",
+			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_Aerobics.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"AerobicsDay": "Regular, Harvey",
+			},
+			"Update": "OnLocationChange, OnTimeChange",
+		},
+		
+// MISCELLANEOUS		
+		{
+			"LogName": "Marnie - Emoji",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+            "FromFile": "assets/{{NoNose}}/Random/emojis.png",
+			"FromArea": {"X": 0, "Y": 108, "Width": 9, "Height": 9},
+			"ToArea": {"X": 0, "Y": 108, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{  
+			"LogName": "Marnie - Dancing",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"Update": "OnLocationChange",
+			"FromFile": "assets/{{NoNose}}/Random/Cursors_{{Season}}.png",
+			"FromArea": { "X": 558, "Y": 1425, "Width": 60, "Height": 26 },
+			"ToArea": { "X": 558, "Y": 1425, "Width": 60, "Height": 26 },
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{   
+			"LogName": "Marnie - Secret Notes",
+            "Action": "EditImage",
+            "Target": "TileSheets/SecretNotesImages",
+            "FromFile": "assets/{{NoNose}}/Random/SecretNotesImages.png",
+            "FromArea": { "X": 147, "Y": 90, "Width": 17, "Height": 27 },
+            "ToArea": { "X": 147, "Y": 90, "Width": 17, "Height": 27 },
+            "When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Marnie - Junimo Note",
+			"Action": "EditImage",
+			"Target": "LooseSprites/JunimoNote",
+            "FromFile": "assets/{{NoNose}}/Random/JunimoNote.png",
+			"FromArea": { "X": 480, "Y": 212, "Width": 32, "Height": 32 },
+			"ToArea": { "X": 480, "Y": 212, "Width": 32, "Height": 32 },
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+
+	]
+}

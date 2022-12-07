@@ -1,0 +1,135 @@
+{
+    "Changes": [
+        // Emily, the kids and some of the others gather to paint eggs
+        {
+            "Action": "EditMap",
+            "Target": "Maps/CommunityCenter_Refurbished",
+            "FromFile": "assets/CommunityCenter_Classroom_EggFest.tmx",
+            "FromArea": {
+                "X": 7,
+                "Y": 14,
+                "Width": 14,
+                "Height": 15
+            },
+            "ToArea": {
+                "X": 7,
+                "Y": 14,
+                "Width": 14,
+                "Height": 15
+            },
+            "When": {
+                "Season": "spring",
+                "Day": "12"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries": {
+                "69660005/e 191393/z summer/z winter/z fall/u 6/t 600 900": "continue/64 15/farmer 64 16 2 Emily 64 18 0/pause 1500/speak Emily \"{{i18n:69660005.1}}\"/pause 500/emote farmer 16/pause 1500/speak Emily \"{{i18n:69660005.2}}\"/pause 500/faceDirection Emily 2/pause 1500/end"
+            }
+        },
+        //Adjusts their schedules for the day
+        {
+            "Action": "EditData",
+            "Target": "Characters/schedules/Jas",
+            "Entries": {
+                "spring_12": "820 CommunityCenter 18 20 3 \"Strings\\schedules\\Jas:spring_{{random:1201,1202,1203 |key=EggFest}}\"/1400 Town 85 103 2/1620 Town 16 91 0/1750 AnimalShop 4 7 2/2100 AnimalShop 1 7 3 jas_sleep"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/schedules/Vincent",
+            "Entries": {
+                "spring_12": "900 CommunityCenter 14 20 1 \"Strings\\schedules\\Vincent:spring_{{random:1201,1202,1203 |key=EggFest}}\"/1400 Town 83 100 3/1620 Town 15 90 1/1740 SamHouse 4 8 0/2000 SamHouse 8 22 3 vincent_sleep"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/schedules/Eloise",
+            "When": {
+                "HasMod": "Lemurkat.JacobEloise.CP"
+            },
+            "Entries": {
+                "spring_12": "630 Town 100 95 1 \"Strings\\schedules\\Eloise:schoolday.004\"/900 CommunityCenter 17 25 3 \"Strings\\schedules\\Eloise:spring_{{random:1201,1202,1203 |key=EggFest}}\"/1400 Town 88 103 2/1640 Custom_EastScarpe 19 68 1/1800 Custom_ESVetHouse 24 15 0/2100 Custom_ESVetHouse 33 23 2"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/schedules/Haley",
+            "Entries": {
+                "spring_12": "900 CommunityCenter 9 23 0 \"Strings\\schedules\\Haley:spring_{{random:1201,1202,1203 |key=EggFest}}\"/1400 Town 23 22 2/1630 HaleyHouse 19 16 0 square_5_1_0/2000 HaleyHouse 5 7 0 square_5_5/2230 HaleyHouse 1 5 3 haley_sleep"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/schedules/Penny",
+            "Entries": {
+                "spring_12": "830 Trailer 6 5 0/900 CommunityCenter 11 20 2 \"Strings\\schedules\\Penny:spring_{{random:1201,1202,1203 |key=EggFest}}\"/1400 Town 88 100 2/1620 Town 17 90 3 penny_wave_left/1750 Forest 92 20 3 penny_wave_left/1830 Trailer 4 9 1 penny_sleep"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/schedules/Clint",
+            "Entries": {
+                "spring_12": "830 CommunityCenter 13 26 1 \"Strings\\schedules\\Clint:spring_{{random:1201,1202,1203 |key=EggFest}}\"/1400 CommunityCenter 62 14 0 square_3_1_0/1700 Saloon 19 23 3/2400 Blacksmith 10 4 1 clint_sleep"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/schedules/Emily",
+            "Entries": {
+                "spring_12": "900 CommunityCenter 16 19 2 \"Strings\\schedules\\Emily:spring_{{random:1201,1202,1203 |key=EggFest}}\"/1530 Saloon 15 17 0 square_5_1_0/2430 HaleyHouse 21 4 1 emily_sleep"
+            }
+        },
+        //Changes Emily's Egg Fest dialogue to indicate that she's not painting them alone
+        {
+            "LogName": "Egg Festival Dialogue",
+            "Action": "EditData",
+            "Target": "data/festivals/spring13",
+            "When": {
+                "HasSeenEvent": "69660006"
+            },
+            "Entries": {
+                "Emily": "{{i18n:EggFest.Emily}}"
+            }
+        },
+        {
+            "LogName": "EggFest Strings - Jas",
+            "Action": "EditData",
+            "Target": "Strings/schedules/Jas, Strings/schedules/Vincent, Strings/schedules/Clint, Strings/schedules/Emily, Strings/schedules/Penny, Strings/schedules/Haley ",
+            "Entries": {
+                "spring_1201": "{{i18n:spring12.{{TargetWithoutPath}}.1}}",
+                "spring_1202": "{{i18n:spring12.{{TargetWithoutPath}}.2}}",
+                "spring_1203": "{{i18n:spring12.{{TargetWithoutPath}}.3}}"
+            }
+        },
+        {
+            "LogName": "EggFest Strings - Eloise",
+            "Action": "EditData",
+            "Target": "Strings/schedules/Eloise",
+            "When": {
+                "HasMod |contains=Lemurkat.JacobEloise.CP": true
+            },
+            "Entries": {
+                "schoolday.004": "{{i18n:spring12.Eloise.0}}",
+                "spring_1201": "{{i18n:spring12.Eloise.1}}",
+                "spring_1202": "{{i18n:spring12.Eloise.2}}",
+                "spring_1203": "{{i18n:spring12.Eloise.3}}"
+            }
+        },
+        {
+            "LogName": "EggFest Strings - Clint",
+            "Action": "EditData",
+            "Target": "Strings/schedules/Clint",
+            "When": {
+                "HasMod|contains=Lemurkat.JacobEloise.CP": true
+            },
+            "Entries": {
+                "spring_1201": "{{i18n:spring12.Clint.4}}",
+                "spring_1202": "{{i18n:spring12.Clint.5}}",
+                "spring_1203": "{{i18n:spring12.Clint.6}}"
+            }
+        }
+    ]
+}

@@ -1,0 +1,125 @@
+{
+	"Changes": [
+		{
+			"LogName": "Pam - Seasonal",
+			"Action": "EditImage",
+			"Target": "Portraits/Pam, Characters/Pam",
+			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Pam - Winter Indoor/Outdoor",
+			"Action": "EditImage",
+			"Target": "Portraits/Pam, Characters/Pam",
+			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_{{season}}{{IndoorVariant}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+                "Season": "Winter",
+                "WinterIndoorOutdoorOutfits": "IndoorOutdoor",
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Pam - Festival",
+			"Action": "EditImage",
+			"Target": "Portraits/Pam, Characters/Pam",
+            "FromFile": "assets/{{TargetPathOnly}}/Festivals/{{Festival}}/{{TargetWithoutPath}}_{{Festival}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"FestivalOutfits": "True",
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Pam - Beach",
+			"Action": "EditImage",
+			"Target": "Portraits/Pam_Beach, Characters/Pam_Beach",
+			"FromFile": "assets/{{TargetPathOnly}}/Beach/{{TargetWithoutPath}}.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{
+			"LogName": "Pam - Aerobics",
+			"Action": "EditImage",
+			"Target": "Characters/Pam",
+			"FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_Aerobics.png",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"AerobicsDay": "Harvey",
+			},
+			"Update": "OnLocationChange, OnTimeChange",
+		},
+		
+// NOSE OVERLAY
+		{
+			"LogName": "Pam - Seasonal Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Pam",
+            "FromFile": "assets/{{Target}}/{{TargetWithoutPath}}_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"NoNose": "false",
+			},
+		},
+		{
+			"LogName": "Pam - Festival Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Pam",
+            "FromFile": "assets/Characters/Festivals/SpiritsEve/{{TargetWithoutPath}}_SpiritsEve_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"NoNose": "false",
+				"FestivalOutfits": "True",
+				"Festival": "SpiritsEve",				
+			},
+			"Update": "OnLocationChange",
+		},
+		{
+			"LogName": "Pam - Beach Nose",
+			"Action": "EditImage",
+			"Target": "Characters/Pam_Beach",
+            "FromFile": "assets/{{TargetPathOnly}}/Beach/{{TargetWithoutPath}}_nose.png",
+            "PatchMode": "Overlay",
+			"When":
+			{
+				"HasFile:{{FromFile}}": true,
+				"NoNose": "false",
+			},
+		},
+		
+// MISCELLANEOUS		
+		{
+			"LogName": "Pam - Emoji",
+			"Action": "EditImage",
+			"Target": "LooseSprites/emojis",
+            "FromFile": "assets/{{NoNose}}/Random/emojis.png",
+			"FromArea": {"X": 36, "Y": 108, "Width": 9, "Height": 9},
+			"ToArea": {"X": 36, "Y": 108, "Width": 9, "Height": 9},
+			"When": 
+			{
+				"HasFile:{{FromFile}}": true,
+			},
+		},
+		{  
+			"LogName": "Pam - Bus",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"Update": "OnLocationChange",
+			"FromFile": "assets/{{NoNose}}/Random/Cursors_{{Season}}.png",
+			"FromArea": { "X": 387, "Y": 1311, "Width": 11, "Height": 19 },
+			"ToArea": { "X": 387, "Y": 1311, "Width": 11, "Height": 19 },
+		},
+	]
+}

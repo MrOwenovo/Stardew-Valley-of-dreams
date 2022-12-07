@@ -1,0 +1,64 @@
+{
+	"Changes": [
+		// Jas Dialogue
+        {
+            "LogName": "Dialogue Jas",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Jas",
+            "Entries": {
+                "fall_Mon8": "You know the woman in the tower? She's a witch.#$b#Aunt Marnie told me I shouldn't talk to her, but she must be lonely, living in that tower all by herself.#$b#Mr. Ginger visits her sometimes.",
+                "winter_Mon10": "Do you think Ms. Rasmodia is anything like Chrestomanci$3?#$b#How do I know her name? Mr. Ginger told me!$1#$b#Oh, I know _cats_ can't talk. But Mr. Ginger is more than a cat.#$b#What is he then? That's a secret!",
+            }
+        },
+		// Mr. Ginger Dialogue
+		{
+            "LogName": "Dialogue 6-hearts",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MisterGinger",
+            "When": {
+                "HasSeenEvent |contains=50706121": true
+				},
+            "Entries": {
+				"MrG_Fairytale": "$p 910#You know the story of the Frog Prince? I asked Ras if that would work...She said 'no'.$2|Hey, if you fall out of a tree, do YOU land on your feet? Thought not! Superior species over here.$4",
+                "winter_Sun10": "Ras doesn't have many friends, but I've seen her with that recluse in the woods.#$b#You know, Linus? The man that smells like rich earth and fish-meat.",
+                "spring_Sun_inlaw_Wizard": "I'm glad Ras is no longer alone. Although I'm sure you'll find her company gets tiresome in large doses.",
+                "Sun": "Rasmodia proves quite acceptable company. Why yes, you are too, @. Acceptable. Quite acceptable.$1",
+			}
+		},
+		
+		{
+            "Action": "EditData",
+            "Target": "Data/mail",
+			"When": { "Spouse |contains=Wizard": false },
+            "Entries": {
+				"Wizard_CatTalk": "Greetings young adept,^ Our mutual acquaintance has requested your presence in my tower, after the hours of darkness. Please bring a fragment of the Void. ^    -M. Rasmodia, Witch.[#]An invitation",
+            },
+        },
+		
+		{
+            "Action": "EditData",
+            "Target": "Data/mail",
+			"When": { "Spouse |contains=Wizard": true  },
+            "Entries": {
+				"Wizard_CatTalk": "Greetings my love,^ Our mutual acquaintance has requested your presence in my tower, after the hours of darkness. Please bring a fragment of the Void. ^    - Rasmodia[#]An invitation",
+            },
+        },
+		
+		{
+			"Action": "EditData",
+			"Target": "Data/EngagementDialogue",
+			"Entries": {
+				"MisterGinger1": "Do you doubt me, @? Everything is under control. I have contacts, you know.$1#$b#Well, _a_ contact, and that's Ras. But she's pretty good at getting stuff sorted.$4",
+			},
+		},
+		
+		{
+			//6-heart Event
+			"Action": "EditData",
+			"Target": "Data/Events/WizardHouse",
+			"Entries": {
+				"50706121/f MisterGinger 1500/t 1800 2400/Hl Tristan_Returns/n Wizard_CatTalk/i 769": "WizardSong/-1000 -1000/farmer -100 -100 0 Wizard 3 17 2 MisterGinger 2 17 1/removeItem 769/skippable/viewport 8 19 true/pause 1000/faceDirection Wizard 3/speak Wizard \"I'm sorry I cannot help you with your more pressing problem, Trix. But perhaps... well, none of us can know what the future holds.\"/pause 500/playSound cat/pause 250/speak Wizard \"Oh yes, correct, except for Madame Welwick, but she's staying mute on this particular topic.\"/pause 500/playSound cat/pause 1000/playSound cat/speak Wizard \"I know, I know. But patience, they say, is a virtue, and perhaps... well perhaps tonight will set the cogs in motion... the wheel turning...\"/playSound cat/pause 250/speak Wizard \"Okay, yes, I'm waffling again. I've been alone too long, my friend.\"/pause 500/playSound stoneStep/faceDirection MisterGinger 2/faceDirection Wizard 2/pause 250/speak Wizard \"And right on time. Our guest has arrived.\"/pause 500/playSound doorOpen/warp farmer 9 24/move farmer 0 -4 0/pause 250/speak Wizard \"Hello @, I'm pleased you could join us.\"/move farmer -2 0 3/move farmer 0 -3 3/pause 500/playSound cat/pause 250/faceDirection Wizard 3/speak Wizard \"Yes, yes I know. Please, patience!\"/pause 500/faceDirection Wizard 1/speak Wizard \"Have you brought the item requested, @?\"/pause 500/move farmer -3 0 3/pause 250/playSound coin/speak Wizard \"Excellent, this should fulfil my requirements precisely. Let us begin!#$b#What are we brewing? Oh, that's a surprise.$h\"/move Wizard 0 2 2/faceDirection farmer 2/faceDirection MisterGinger 1/pause 500/speak Wizard \"Right, here we go: an ounce of powdered stardust. A dram of pigeon's blood. The petals of a fairy rose.#$b#And, thanks to you, @, the final ingredient, the coup de grace: a fragment of darkness, a splinter from the heart of the void...\"/pause 250/playSound cat/speak Wizard \"You get the idea!$h\"/pause 500/playSound dropItemInWater/move farmer 0 2 2/pause 250/showFrame Wizard 18/showFrame 96/pause 1000/speak Wizard \"Here. Drink up. I know last time was less than pleasant, but the benefit outweighs the cost, does it not?$h\"/pause 800/emote farmer 28/faceDirection MisterGinger 1/playSound cat/pause 500/showFrame Wizard 19/pause 800/showFrame farmer 90/faceDirection Wizard 2/pause 1000/farmerEat 184/pause 4000/playSound gulp/move farmer 0 -1 2/animate farmer false true 350 104 105/pause 4000/globalFade .008/viewport -1000 -1000/stopAnimation farmer/faceDirection farmer 2/warp MisterGinger 5 18/warp Wizard 3 18 1/faceDirection Wizard 1/faceDirection MisterGinger 3/playMusic none/pause 500/viewport 8 19 true/pause 500/speak MisterGinger \"@? @!$2\"/pause 500/speak MisterGinger \"Hello? @? Did it work?$2\"/pause 500/emote Wizard 8/pause 500/speak MisterGinger \"@? Are you okay?\"/pause 250/quickQuestion #I can't feel my feet.#Oh look, a talking cat!#It needed a slice of lemon.#That's the last time I'm drinking anything you offer!(break)emote Wizard 40\\speak Wizard \"I must say, that's rather an unexpected side effect, but I'm sure it'll wear off in no time.#$b#No time at all\"(break)speak MisterGinger \"It worked! It actually worked. Sorry I doubted you, Ras.$4\"(break)speak MisterGinger \"Hey Ras, sounds like someone appreciates your culinary talents!\"(break)speak Wizard \"You say that now, @, but you cannot deny that my brews are quite beneficial.\"/pause 500/faceDirection farmer 1/pause 500/emote farmer 16/speak MisterGinger \"Hey, @. It's great to have someone else to talk to.#$b#I mean, Ras is fine - but she's a bit tail-in-the-air, don't you think?...$1\"/pause 250/emote Wizard 12/pause 500/speak Wizard \"I can hear you, you know. Kitty.\"/pause 250/speak MisterGinger \"Kitty... She knows I hate that name. So demeaning. Like I'm some sort of common house pet.$5#$b#Please don't ever call me kitty, @.$1\"/emote farmer 32/pause 1000/end dialogue MisterGinger \"Anyone can talk to animals, but it takes a special kind of person to _listen_ to them.#$b#Yes, that's a compliment. Don't get used to them. I've got a reputation to uphold, you know.\"",
+			},
+		},
+	]
+}
