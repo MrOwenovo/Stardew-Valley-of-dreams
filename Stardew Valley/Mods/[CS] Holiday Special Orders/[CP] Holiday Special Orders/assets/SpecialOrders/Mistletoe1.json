@@ -1,0 +1,97 @@
+{
+    "Changes": [
+        
+		{
+			"Action": "EditData",
+            "Target": "Strings/SpecialOrderStrings",
+			
+			"Entries": {
+				"Holiday_Mistletoe1_Title": "圣诞之吻",
+				"Holiday_Mistletoe1_Body": "空气中弥漫着浪漫，但恐怕还少了些什么。谁能帮我拿些槲寄生来?这是恋爱中的年轻人该做的事。",
+				"Holiday_Mistletoe1_Objective1": "送12枝槲寄生到伊芙琳家。",
+			},
+		},
+		
+		{
+			"Action": "EditData",
+            "Target": "Data/Mail",
+			
+			"Entries": {
+			
+				"Holiday_Mistletoe1_Letter": "致 @,^^非常感谢你送来了槲寄生。现在一定会是一个浪漫的季节!甚至乔治的眼睛里也有特别的光芒。我给你烤了些饼干表示感谢。^^   - 伊芙琳%item object 223 24 %%[#]克罗布斯的感谢",
+			
+			},
+		},
+		
+		{
+			"Action": "EditMap",
+            "Target": "Maps/JoshHouse",
+			"MapTiles": [
+					{
+					   "Position": { "X": 19, "Y": 21},
+					   "Layer": "Buildings",
+					   "SetProperties": { "Action": "DropBox AlexHouse", },
+					},
+					
+					{
+					   "Position": { "X": 20, "Y": 21},
+					   "Layer": "Buildings",
+					   "SetProperties": { "Action": "DropBox AlexHouse", },
+					},
+			],
+		},
+		
+		{ 
+            "Action": "EditData",
+            "Target": "Data/SpecialOrders",
+            "Entries": {
+                "Holiday.Mistletoe1": { 
+                    "Name": "[Holiday_Mistletoe1_Title]",
+                    "Requester": "Evelyn", 
+                    "Duration": "TwoWeeks", 
+                    "Repeatable": "True", 
+					"RequiredTags": "season_winter, knows_Dwarf", 
+                    "OrderType": "", 
+                    "SpecialRule": "", 
+                    "Text": "[Holiday_Mistletoe1_Body]",
+                    "ItemToRemoveOnEnd": null,
+                    "MailToRemoveOnEnd": null,  
+                    
+                    "Objectives": [
+						  {
+							"Type": "Donate",
+							"Text": "[Holiday_Mistletoe1_Objective1]",
+							"RequiredCount": "12",
+							"Data": {
+								"DropBox": "AlexHouse", 
+                                "DropBoxGameLocation": "JoshHouse", 
+                                "DropBoxIndicatorLocation": "19.5 21",
+							  "AcceptedContextTags": "item_mistletoe_clump",
+							},
+						  },                        
+                    ],
+                    "Rewards": [
+                        {
+                            "Type": "Money",
+                            "Data": {
+                                "Amount": "3000",
+                            }
+                        },
+                        {
+                            "Type": "Mail",
+                            "Data": {
+                                "MailReceived": "Holiday_Mistletoe1_Letter",
+								"NoLetter": "false",
+                            }
+                        },
+						{
+							"Type": "Friendship",
+							"Data": { "Amount": "100", }
+						},
+                    ]
+                }
+            }
+        },
+],
+
+}

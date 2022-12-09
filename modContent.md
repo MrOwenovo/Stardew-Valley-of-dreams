@@ -23,6 +23,8 @@
     - CP - Season Bunny sprinkler:  CP - 季节兔子洒水器 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14184/14184-1666351315-1513717348.png) <br> *把你的农场洒水器变成一只可爱的兔子，随季节变化*
     - Ridgeside Village for Mobile Phone: 山脊村手机 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/9058/9058-1625346018-623325831.png) <br> *将边脊村加入手机*
     - Zosa and Bonster's Recipes: 佐萨和邦斯特的食谱  √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/5203/5203-1579104953-521692598.png) <br> *有 20 种与香草兼容的食谱（和一种新成分）的集合*
+    - Baker's Life: 贝克的一生  √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/5213/5213-1661507579-155458545.png) <br> *为游戏添加了 73 种新的工匠商品，如蛋糕、饼干、馅饼等和两台新机器。加入面包师的生活！*
+    - Chocolatier: 巧克力制造商 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/5403/5403-1581736740-2014049140.png) <br> *为游戏添加 37 种新的手工巧克力商品，以及一台新的定制机器来制作它们。情人节快乐！*
   
 ---
 - 扩展:
@@ -180,6 +182,10 @@
     - Shop Tile Framework: 购买磁贴框架 ×
     - CustomKissingMod: 定制接吻模组 ×
     - Custom Achievements: 自定义成就 ×
+    - Daily Special Orders: 每日特别订单 ×
+    - Custom Community Centre: 海关社区中心 ×
+    - Dynamic Map Tiles: 动态地图磁贴 ×
+
 ---
 - 事件:
     - 约会之夜: Date night √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/11459/11459-1653439608-1171746423.png) <br> *https://staticdelivery.nexusmods.com/mods/1303/images/11459/11459-1653439608-1171746423.png*
@@ -187,6 +193,7 @@
     - Romance in CC rituals NPC: CC仪式中的浪漫NPC √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/13073/13073-1658719336-485223452.jpeg) <br> *可浪漫的里奇赛德村NPC将参加社区中心修复仪式。*
     - Post Wedding Dates: 婚后日期 Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/10708/10708-1642449714-2021880136.jpeg) <br> *添加一些额外的约会过场动画与你的配偶*
     - Community Center Reimagined: 重新构想社区中心 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/6966/6966-1602927034-587288035.png) <br> *完成了社区中心，现在几乎空无一人？现在，它确实将作为社区的核心发挥作用。*
+    - Events Expansion: 活动扩展 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/9042/9042-1625219040-1636542171.png) <br> *为村民增加了新的心脏事件，目前有24个新的心脏事件。*
 
 ---
 - 家具:
@@ -239,6 +246,7 @@
     - (PFM) Flower Pack for Artisanal Soda Makers: （PFM）手工苏打水制造商的鲜花包× <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/5258/5258-1580869817-1978511412.png) <br> *将香草和 PPJA 食用花卉苏打水添加到手工苏打水制造商模组中*
     - Floral Drinks: 花卉饮料 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/13958/13958-1664376659-1222599154.png) <br> *用你的花制作美味的五颜六色的饮料。*
     - Vyranity's Pizza's JA: 维兰尼蒂披萨 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/9215/9215-1628258385-28293229.png) <br> *这个模组增加了 60 个新的披萨相关物品和 5 个新机器！*
+    - Aquilegia's Sweet Tooth： 阿奎莱吉亚的甜食 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/1897/1897-1617637402-522768931.png) <br> *这个模组在游戏中增加了 65 种新食谱和 2 种新的工匠商品，包括饼干、蛋糕、冰淇淋、糖浆等等！*
 
 ---
 - 视觉效果和图形:
@@ -276,6 +284,8 @@
     - It's Tumbleweed Time: 风滚草时间 Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14537/14537-1669507234-1884037345.png) <br> *在刮风的日子里将沙尘暴添加到沙漠地图中，包括吹沙、风滚草和动画棕榈树。*
     - Cuter Crops and Foraging： 更可爱的作物和觅食 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/13652/13652-1669495375-1328024254.png) 
     - Bonster's Crops and Recipes Retexture: 邦斯特的作物和食谱重新纹理 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/4435/4435-1567413164-351840509.png) 
+    - Colored Crystalariums: 彩色水晶馆 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14428/14428-1668114533-1641869793.png) <br> *根据内部的宝石对水晶馆进行着色。*
+
 
 ---
 - 游戏机制:
@@ -336,6 +346,8 @@
     - Custom Crystalarium Mod: 定制水晶模组× <br> *前置*
     - Produce to Sapling - Bonster's Crops for PFM: 生产到树苗 - 邦斯特的PFM作物× <br>*与种子制造商与帮斯特作物整合*
     - Better Quality Increased Seeds - Bonster's Crops for PFM: 质量更好的增加种子 - 邦斯特用于PFM的作物× 
+    - Ice Tiles: 冰砖 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14688/14688-1670348300-1772320640.png) <br> *使用动态地图图块使冬季冰块变得滑溜溜。*
+    - Chest Preview: 宝箱预览 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/13946/13946-1664368887-738837627.png) <br> *宝箱预览提供宝箱物品的预览，无需打开宝箱*
 
 
 ---
@@ -379,6 +391,7 @@
     - CP - Coii's Basic Shirts Pack:  Coii的基本款衬衫包 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/2870/2870-1537904917-665831954.png)
     - Tailor Mouse: PPJA - 裁缝Mouse_A DGA 服装店 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/4798/4798-1576292146-1891326543.png)
     - JA- Luo Li's top and skirt10: JA - 罗莉的上衣和裙子10 <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14672/14672-1670155802-107564289.png)
+    - More Short Hair: 更多 短发 × ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14695/14695-1670387019-905808768.png) 
 ---
 - 对话:
     - CANON对话扩展: Stardew Valley Dialogue Expansion  √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/2544/2544-1532238548-2030469797.png) <br> *在所有 34 个具有心脏水平的角色中添加了大约 2600 条新对话。*
@@ -403,6 +416,7 @@
     - Marshmallows in Stardew: 星露中的棉花糖 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/5157/5157-1578648508-1823397991.png) <br> *添加沼泽锦葵作物，棉花糖和其他美味佳肴等你去发现！*
     - Host Trees: 宿主树 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/9002/9002-1628451213-1781142486.jpeg) <br> *星露谷的一些树木现在可以自己种植植物。包括独特的工匠商品、机器互动和 NPC 礼物口味。*
     - PPJA - Fresh Meat_An 'Alternative' Butcher Mod: PPJA - 新鲜Meat_An“另类”屠夫模组 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/1721/1721-1574740788-247435353.png) <br> *当然，你可以把你的牛长大并宰杀它们，但植物替代品呢？*
+    - SSaturn's Tropical Farm: S土星的热带农场 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/5585/5585-1588366163-572959764.png) <br> *为您的农场种植热带作物和树木*
 
 
 ---
@@ -430,6 +444,23 @@
     - Richside Village Achievement： 里奇赛德村成就 Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14623/14623-1669633415-863738889.png) <br> *为你在里奇赛德村的成就添加了 22 个新的自定义成就*
     - Seasonal rainbow lollipop (lightning rod): 季节性彩虹棒棒糖（避雷针）× <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14352/14352-1667564165-1785863584.jpeg) <br> *季节性彩虹棒棒糖避雷针，替换了避雷针。*
     - Heart Level Notifications: 心平通知 ? <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/8655/8655-1620108666-696662973.png) <br> *在每天开始时通知玩家与任何社交村民的心，如果他们即将与任何村民失去一颗心，可以选择通知他们是否即将与任何村民失去一颗心*
+    - Into the Game (Save Loaded Notifier): 进入游戏（保存加载的通知程序）× <br> *有没有错过星露谷已经完成加载到你的世界，因为它需要太长时间？好吧，这个模组在加载完成后会向你吹口哨！*
+    - Immersive Shops - Pierre's: 沉浸式商店 - 皮埃尔 × <br> ![image](https://cdn.discordapp.com/attachments/866329786610876446/866363239545831444/Spring1.gif) <br> *皮埃尔”旨在通过根据季节和您玩了多少天来改变商店货架的内容，从而为皮埃尔的杂货店增添视觉多样性。此外，玩家现在可以直接从皮埃尔的货架上购买物品，这是一种对皮埃尔的物品栏进行分类的简单方法。货架上的库存可作为视觉指示器，指示您可以在相应的货架上购买哪种商品。物品仍然可以直接从皮埃尔购买。*
+    - Gus' Recipe Book: 格斯的食谱书 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/9066/9066-1625451528-888571775.png) <br> *通过将食谱书添加到星滴沙龙，将食谱与格斯的商店库存分开。玩家可以从书中购买食谱，而不是格斯。支持多个模组。*
+    - Coconut Addon: 椰子插件 Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/8462/8462-1617897748-1524495058.png) <br> *添加：椰子树+树苗，4椰子食谱，（可选）种子制造商从椰子制作树苗*
+    - Anniversary on Calendar: 日历上的周年纪念日 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/8351/8351-1618749092-240704722.jpeg) <br> *将玩家的结婚纪念日和孩子的生日添加到游戏日历中。在日历上查看即将到来的季节。*
+    - Start with 5 Rain Totems: 从5个雨图腾开始 Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/11200/11200-1646499000-928299626.png) <br> *用 5 个雨图腾开始您的新游戏*
+    - Holiday Special Orders: 假日特别订单 Æ<br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/10410/10410-1640154197-2092090741.png) <br> *模组为您的游戏添加了九个新的特殊订单，以获得最大的圣诞节/光明节/冬至乐趣。其中八个订单在冬季可用，一个在秋季可用。*
+    - Start with 5 salads: 从5份沙拉开始 Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/11180/11180-1646697787-1368767142.png) <br> *用5份沙拉开始你的新游戏*
+    - StrawBerry Blossom: 草莓花 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/7622/7622-1610521109-1088140592.png) <br> *在基本作物中使用草莓！将添加由草莓制成的菜肴*
+    - SSaturn's Oriental Kitchen: 西星东方厨房 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/6010/6010-1590504042-275598078.png) <br> *烹饪食谱旨在补充现有的作物模组，包括 SSaturn 的热带农场、邦斯特的作物和/或 PPJA 包。*
+    - Aquilegia's Sweet Tooth： 阿奎莱吉亚的甜食 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/1897/1897-1617637402-522768931.png) <br> *这个模组在游戏中增加了 65 种新食谱和 2 种新的工匠商品，包括饼干、蛋糕、冰淇淋、糖浆等等！*
+    - Alex's Frozen Treats: 亚历克斯的冷冻零食 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/5240/5240-1579461084-429336986.png) <br> *一家提供更多冷冻零食的商店，冰淇淋摊位的营业时间也延长了。需要购买磁贴框架和内容补丁程序以及包含额外零食的各种 JA 包。与Khadija的食谱商店兼容。*
+    - Non Destructive NPCs: NPC不破坏物品 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/5176/5176-1578865280-1599614067.png) <br> *使NPC不破坏玩家在其路径中放置的物体。相反，他们会停下来，瞪着它，然后穿过它。*
+    - Darker wet soil: 较深的潮湿土壤 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/5169/5169-1578794716-319045300.png) <br> *只做一件事 - 使潮湿的耕作土壤变暗。这样可以更轻松地分辨哪些瓷砖已经浇水！*
+    - Go To Bed: 去睡觉 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/4967/4967-1577132638-1254402518.png) <br> *让你和你的配偶同时上床睡觉。*
+    - PPJA Icon Pack for Better Artisan Goods Icons: PPJA 图标包，用于更好的工匠商品图标 ×<br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/2925/2925-1574732132-1333792989.png) <br> *更好的工匠商品图标的内容包，旨在与 PPJA 集合配对。包括默认裁剪和星滴裁剪的可选下载。*
+  
   
 ---
 - 建筑物:
@@ -478,6 +509,20 @@
     - Better Mead Icons - BAGI Addon: 更好的蜂蜜酒图标 - 巴吉插件 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/11911/11911-1651693977-21958184.png) <br> *允许更好的工匠好图标加载自定义的花蜂蜜酒精灵。*
     - Customisable Heart Relationship Icon: 可定制的心形关系图标 Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14643/14643-1669834901-1596106337.png) 
     - MailboxMenu: 邮箱菜单 ? <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14439/14439-1668179940-1008262914.png) <br> *将邮箱的点击打开下一个机制替换为功能齐全的邮箱菜单，该菜单显示带有标题和可自定义信封图标的新邮件和旧邮件。*
+    - Colored Seeds: 彩色种子 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/3774/3774-1555177469-882199938.png) <br> *根据种子生长的季节改变种子的颜色。*
+    - Family Planning: 计划生育 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/4515/4515-1569450429-1783498018.png) <br> *计划生育允许您自定义可以生育的最大孩子数量及其性别。您也可以与室友（即Krobus）一起收养孩子。*
+    - Animated Inventory Tabs: 动画库存选项卡 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/10644/10644-1642121901-1316717307.gif) <br> *这个模组用动画标签替换了静态物品栏标签！*
+    - Wallet Items - Animated and Described: 钱包项目 - 动画和描述 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/10763/10763-1642848808-826199202.gif) <br> *你有没有看过你的钱包物品并想知道，这些是做什么的？不要再看了！这会为钱包项目添加动画和描述！也可配置！*
+    - Animated Pet Icons: 动画宠物图标 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/10392/10392-1639996267-211098132.gif) <br> *用动画版本替换所有三只猫，所有三只狗以及出现在库存底部附近的马图标！*
+    - Better Artisan Good Icons Fix: 更好的工匠好图标修复 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/9366/9366-1665432381-1609110307.png) <br> *添加“更好的工匠好图标”中缺少的图标。*
+    - Community Center Helper: 社区中心助手 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/6893/6893-1600567640-1532485823.png) <br> *添加游戏内建议，当您将鼠标悬停在捆绑包菜单中的社区中心物品上时，可以在何处查找这些物品。*
+    - Show Item Quality: 显示项目质量 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/6311/6311-1592620899-1312225569.jpeg) <br> *当您收获庄稼、收集动物产品、收集草料、捕鱼和清空机器时，在 HUD 弹出窗口中显示星星品质。*
+    - Fish Preview: 鱼预览 ? <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/6303/6303-1592360149-1519067909.jpeg) <br> *在您捕获鱼类时显示鱼类的预览！*
+    - BirthdayToday : 生日今天 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/11578/11578-1649336216-381194240.png) <br> *每天早上，如果有人过生日，您都会收到HUD或聊天消息。*
+    - Ridgeside Village Better Artisan Good Icons: 山脊村更好的工匠好图标 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/11552/11552-1649165395-1718660240.png) <br> *改变岭滨谷工匠的果树果实好图标;即葡萄酒和果冻*
+    - XP Display: XP 显示器 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/11089/11089-1645448706-140842509.png) <br> *显示达到每个技能的下一个级别的进度。*
+    - Too Many Animals: 动物太多 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/11033/11033-1644972304-1655604876.png) <br> *使玛妮的动物商店菜单分页，以便您可以查看所有改装的动物。*
+    - Community Kitchen: 社区厨房 √ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/9851/9851-1633829909-1149006838.png) <br> *为社区中心增加一个新的厨房区域！现在附带了重新混合的捆绑包，以及完成所有捆绑包的全新奖励......*
 
 ---
 - 动画： ×
@@ -501,3 +546,5 @@
 - 多人:
     - SendItemsMultiplayer: 发送物品多人游戏  ? <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/13794/13794-1663269276-568251100.jpeg) <br> *G键，将物品发送到地图中的任何其他在线玩家。*
     - Farm hand Finder:  多人游戏显示其他玩家头相 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/13153/13153-1660439903-1519161931.png) <br> *在屏幕上添加一个指南针，指向与您在同一区域的所有玩家 - 寻找朋友从未如此简单！（仅限多人游戏）*
+    - Multiplayer Speech Bubbles: 多人语音气泡 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/2192/2192-1526512816-934344765.gif) <br> *使用聊天框时在角色上方添加语音气泡。适用于多人游戏或单人游戏，具有多种选择。*
+    - Multi-User Chests: 多用户宝箱 × *允许多人同时使用一个宝箱*

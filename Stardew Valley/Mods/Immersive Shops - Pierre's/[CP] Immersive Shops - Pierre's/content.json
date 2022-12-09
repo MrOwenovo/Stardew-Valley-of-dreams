@@ -1,0 +1,337 @@
+	{
+		"Format": "1.23.0",
+		"Changes": [
+		//	Fruit Boxes Start
+		{
+			"Action": "EditMap",
+			"Target": "Maps/SeedShop",
+			"FromFile": "assets/Maps/SeedStore.tmx",
+			"FromArea": { "X": 0, "Y": 0, "Width": 1, "Height": 7 },
+			"ToArea": { "X": 1, "Y": 18, "Width": 1, "Height": 7 },
+			"PatchMode": "Overlay"
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/SeedShop",
+			"FromFile": "assets/Maps/SeedStore.tmx",
+			"FromArea": { "X": 1, "Y": 0, "Width": 2, "Height": 3 },
+			"ToArea": { "X": 3, "Y": 20, "Width": 2, "Height": 3 },
+		},
+		{	// Seed Shelf
+			"Action": "EditImage",
+			"Target": "Maps/townInterior",
+			"FromFile": "assets/Maps/Shelves.png",
+			"FromArea": { "X": 352, "Y": 0, "Width": 16, "Height": 48 },
+			"ToArea": { "X": 400, "Y": 384, "Width": 16, "Height": 48 },
+			"Update": "OnLocationChange",
+			"When": {
+				"Season": "Spring",
+				"LocationName": "SeedShop",
+				"HasMod |contains=donko.ISPierre.Recolor": false
+			}
+		}, 
+		{	//Center Bins
+			"Action": "EditImage",
+			"Target": "Maps/townInterior",
+			"FromFile": "assets/Maps/Shelves.png",
+			"FromArea": { "X": 288, "Y": 0, "Width": 32, "Height": 48 },
+			"ToArea": { "X": 416, "Y": 416, "Width": 32, "Height": 48 },
+			"Update": "OnLocationChange",
+			"When": {
+				"Season": "Spring",
+				"LocationName": "SeedShop",
+				"HasMod |contains=donko.ISPierre.Recolor": false
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/townInterior",
+			"FromFile": "assets/Maps/Shelves.png",
+			"FromArea": { "X": 224, "Y": 0, "Width": 16, "Height": 80 },
+			"ToArea": { "X": 400, "Y": 432, "Width": 16, "Height": 80 },
+			"Update": "OnLocationChange",
+			"When": {
+				"Season": "Spring",
+				"LocationName": "SeedShop",
+				"HasMod |contains=donko.ISPierre.Recolor": false
+			}
+		},
+		{	// Seed Shelf
+			"Action": "EditImage",
+			"Target": "Maps/townInterior",
+			"FromFile": "assets/Maps/Shelves.png",
+			"FromArea": { "X": 368, "Y": 0, "Width": 16, "Height": 48 },
+			"ToArea": { "X": 400, "Y": 384, "Width": 16, "Height": 48 },
+			"Update": "OnLocationChange",
+			"When": {
+				"Season": "Summer",
+				"LocationName": "SeedShop",
+				"HasMod |contains=donko.ISPierre.Recolor": false
+			}
+		},
+		{	//Center Bins
+			"Action": "EditImage",
+			"Target": "Maps/townInterior",
+			"FromFile": "assets/Maps/Shelves.png",
+			"FromArea": { "X": 320, "Y": 0, "Width": 32, "Height": 48 },
+			"ToArea": { "X": 416, "Y": 416, "Width": 32, "Height": 48 },
+			"Update": "OnLocationChange",
+			"When": {
+				"Season": "Summer",
+				"LocationName": "SeedShop",
+				"HasMod |contains=donko.ISPierre.Recolor": false
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/townInterior",
+			"FromFile": "assets/Maps/Shelves.png",
+			"FromArea": { "X": 240, "Y": 0, "Width": 16, "Height": 80 },
+			"ToArea": { "X": 400, "Y": 432, "Width": 16, "Height": 80 },
+			"Update": "OnLocationChange",
+			"When": {
+				"Season": "Summer",
+				"LocationName": "SeedShop",
+				"HasMod |contains=donko.ISPierre.Recolor": false
+			}
+		}, 
+		{
+			"Action": "EditImage",
+			"Target": "Maps/townInterior",
+			"FromFile": "assets/Maps/Shelves.png",
+			"FromArea": { "X": 192, "Y": 0, "Width": 32, "Height": 32 },
+			"ToArea": { "X": 192, "Y": 1024, "Width": 32, "Height": 32 },
+			"Update": "OnLocationChange",
+			"When": {
+				"Season": "Summer",
+				"LocationName": "SeedShop",
+				"HasMod |contains=donko.ISPierre.Recolor": false
+			}
+		},
+		{	// Seed Shelf
+			"Action": "EditImage",
+			"Target": "Maps/townInterior",
+			"FromFile": "assets/Maps/Shelves.png",
+			"FromArea": { "X": 384, "Y": 0, "Width": 16, "Height": 48 },
+			"ToArea": { "X": 400, "Y": 384, "Width": 16, "Height": 48 },
+			"Update": "OnLocationChange",
+			"When": {
+				"Season": "Fall",
+				"LocationName": "SeedShop",
+				"HasMod |contains=donko.ISPierre.Recolor": false
+			}
+		},
+		{	//Center Bins
+			"Action": "EditImage",
+			"Target": "Maps/townInterior",
+			"FromFile": "assets/Maps/Shelves.png",
+			"FromArea": { "X": 288, "Y": 48, "Width": 32, "Height": 48 },
+			"ToArea": { "X": 416, "Y": 416, "Width": 32, "Height": 48 },
+			"Update": "OnLocationChange",
+			"When": {
+				"Season": "Fall",
+				"LocationName": "SeedShop",
+				"HasMod |contains=donko.ISPierre.Recolor": false
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/townInterior",
+			"FromFile": "assets/Maps/Shelves.png",
+			"FromArea": { "X": 256, "Y": 0, "Width": 16, "Height": 80 },
+			"ToArea": { "X": 400, "Y": 432, "Width": 16, "Height": 80 },
+			"Update": "OnLocationChange",
+			"When": {
+				"Season": "Fall",
+				"LocationName": "SeedShop",
+				"HasMod |contains=donko.ISPierre.Recolor": false
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/townInterior",
+			"FromFile": "assets/Maps/Shelves.png",
+			"FromArea": { "X": 192, "Y": 32, "Width": 32, "Height": 32 },
+			"ToArea": { "X": 192, "Y": 1024, "Width": 32, "Height": 32 },
+			"Update": "OnLocationChange",
+			"When": {
+				"Season": "Fall",
+				"LocationName": "SeedShop",
+				"HasMod |contains=donko.ISPierre.Recolor": false
+			}
+		},
+		{	// Seed Shelf
+			"Action": "EditImage",
+			"Target": "Maps/townInterior",
+			"FromFile": "assets/Maps/Shelves.png",
+			"FromArea": { "X": 400, "Y": 0, "Width": 16, "Height": 48 },
+			"ToArea": { "X": 400, "Y": 384, "Width": 16, "Height": 48 },
+			"Update": "OnLocationChange",
+			"When": {
+				"Season": "Winter",
+				"LocationName": "SeedShop",
+				"HasMod |contains=donko.ISPierre.Recolor": false
+			}
+		},
+		{	//Center Bins
+			"Action": "EditImage",
+			"Target": "Maps/townInterior",
+			"FromFile": "assets/Maps/Shelves.png",
+			"FromArea": { "X": 320, "Y": 48, "Width": 32, "Height": 48 },
+			"ToArea": { "X": 416, "Y": 416, "Width": 32, "Height": 48 },
+			"Update": "OnLocationChange",
+			"When": {
+				"Season": "Winter",
+				"LocationName": "SeedShop",
+				"HasMod |contains=donko.ISPierre.Recolor": false
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/townInterior",
+			"FromFile": "assets/Maps/Shelves.png",
+			"FromArea": { "X": 272, "Y": 0, "Width": 16, "Height": 80 },
+			"ToArea": { "X": 400, "Y": 432, "Width": 16, "Height": 80 },
+			"Update": "OnLocationChange",
+			"When": {
+				"Season": "Winter",
+				"LocationName": "SeedShop",
+				"HasMod |contains=donko.ISPierre.Recolor": false
+			}
+		}, 
+		{
+			"Action": "EditImage",
+			"Target": "Maps/townInterior",
+			"FromFile": "assets/Maps/Shelves.png",
+			"FromArea": { "X": 192, "Y": 64, "Width": 32, "Height": 32 },
+			"ToArea": { "X": 192, "Y": 1024, "Width": 32, "Height": 32 },
+			"Update": "OnLocationChange",
+			"When": {
+				"Season": "Winter",
+				"LocationName": "SeedShop",
+				"HasMod |contains=donko.ISPierre.Recolor": false
+			}
+		},
+		//	Fruit Boxes End
+		
+		//	Fertilizer Shelves Start
+		{
+			"Action": "EditMap",
+			"Target": "Maps/SeedShop",
+			"FromFile": "assets/Maps/SeedStore.tmx",
+			"FromArea": { "X": 3, "Y": 4, "Width": 2, "Height": 6 },
+			"ToArea": { "X": 10, "Y": 24, "Width": 2, "Height": 6 },
+			"When": {
+				"Query: {{DaysPlayed}} > 14": true
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/townInterior",
+			"FromFile": "assets/Maps/Shelves.png",
+			"FromArea": { "X": 64, "Y": 48, "Width": 32, "Height": 48 },
+			"ToArea": { "X": 96, "Y": 992, "Width": 32, "Height": 48 },
+			"PatchMode": "Overlay",
+			"Update": "OnLocationChange",
+			"When": {
+				"Query: {{DaysPlayed}} <= 14" : true,
+				"LocationName": "SeedShop",
+				"HasMod |contains=donko.ISPierre.Recolor": false
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/townInterior",
+			"FromFile": "assets/Maps/Shelves.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 32, "Height": 96 },
+			"ToArea": { "X": 96, "Y": 944, "Width": 32, "Height": 96 },
+			"PatchMode": "Overlay",
+			"Update": "OnLocationChange",
+			"When": {
+				"Query: {{DaysPlayed}} > 14 AND {{DaysPlayed}} <= 112" : true,
+				"LocationName": "SeedShop",
+				"HasMod |contains=donko.ISPierre.Recolor": false
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/townInterior",
+			"FromFile": "assets/Maps/Shelves.png",
+			"FromArea": { "X": 32, "Y": 0, "Width": 32, "Height": 96 },
+			"ToArea": { "X": 96, "Y": 944, "Width": 32, "Height": 96 },
+			"PatchMode": "Overlay",
+			"Update": "OnLocationChange",
+			"When": {
+				"Query: {{DaysPlayed}} > 112": true,
+				"LocationName": "SeedShop",
+				"HasMod |contains=donko.ISPierre.Recolor": false
+			}
+		},
+		//	Fertilizer Shelves End
+		
+		//	Spice Shelves Start
+		{
+			"Action": "EditMap",
+			"Target": "Maps/SeedShop",
+			"FromFile": "assets/Maps/SeedStore.tmx",
+			"FromArea": { "X": 3, "Y": 0, "Width": 6, "Height": 4 },
+			"ToArea": { "X": 10, "Y": 19, "Width": 6, "Height": 4 }
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/townInterior",
+			"FromFile": "assets/Maps/Shelves.png",
+			"FromArea": { "X": 64, "Y": 0, "Width": 96, "Height": 48 },
+			"ToArea": { "X": 416, "Y": 752, "Width": 96, "Height": 48 },
+			"Update": "OnLocationChange",
+			"When": {
+				"HasMod": "paradigmnomad.morefood",
+				"LocationName": "SeedShop",
+				"HasMod |contains=donko.ISPierre.Recolor": false
+			}
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/townInterior",
+			"FromFile": "assets/Maps/Shelves.png",
+			"FromArea": { "X": 64, "Y": 48, "Width": 96, "Height": 48 },
+			"ToArea": { "X": 416, "Y": 752, "Width": 96, "Height": 48 },
+			"Update": "OnLocationChange",
+			"When": {
+				"LocationName": "SeedShop",
+				"HasMod |contains=paradigmnomad.morefood": false,
+				"HasMod |contains=donko.ISPierre.Recolor": false
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/SeedShop",
+			"FromFile": "assets/Maps/SeedStore.tmx",
+			"FromArea": { "X": 3, "Y": 0, "Width": 6, "Height": 1 },
+			"ToArea": { "X": 10, "Y": 19, "Width": 6, "Height": 1 },
+		},
+		//	Spice Shelves End
+		
+		//	Decoration Shelves Start
+		{
+			"Action": "EditMap",
+			"Target": "Maps/SeedShop",
+			"FromFile": "assets/Maps/SeedStore.tmx",
+			"FromArea": { "X": 7, "Y": 4, "Width": 2, "Height": 6 },
+			"ToArea": { "X": 14, "Y": 24, "Width": 2, "Height": 6 },
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/townInterior",
+			"FromFile": "assets/Maps/Shelves.png",
+			"FromArea": { "X": 160, "Y": 0, "Width": 32, "Height": 96 },
+			"ToArea": { "X": 128, "Y": 928, "Width": 32, "Height": 96 },
+			"Update": "OnLocationChange",
+			"When": {
+				"LocationName": "SeedShop",
+				"HasMod |contains=donko.ISPierre.Recolor": false
+			}
+		}
+		//Decoration Shelves End
+	]
+}

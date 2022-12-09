@@ -1,0 +1,84 @@
+{
+    "Changes": [
+        
+		{
+			"Action": "EditData",
+            "Target": "Strings/SpecialOrderStrings",
+			
+			"Entries": {
+				"Holiday_Spiceberries1_Title": "古老的传统",
+				"Holiday_Spiceberries1_Body": "Winterstar只是卖玩具的借口！我们需要恢复这个小镇的传统，比如赠送香料浆果。",
+				"Holiday_Spiceberries1_Objective1": "赠送12种香料浆果。",
+			},
+		},
+		
+		{
+	
+			"Action": "EditData",
+			"Target": "Data/Events/Farm",
+
+			"Entries": {
+				"26434578/u 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20/z spring/z fall/z winter/x spiceberries_warning_letter": "null",
+			},
+				
+		},
+		
+		{
+			"Action": "EditData",
+            "Target": "Data/Mail",
+			
+			"Entries": {
+			
+				"Holiday_Spiceberries1_Letter": "@,^^你让一个老人微笑了。看到人们在下雪和夜晚变长的时候恰当地交换对温暖日子的回忆是件好事。谢谢^^-乔治%item conversationTopic SpiceBerryGiftsCT 7 %%[#]格鲁夫谢谢",
+				
+				"spiceberries_warning_letter": "@,^^我突然想到，像你这样的城市孩子可能不知道我们在鹈鹕镇是怎么做的。趁着浆果还未成熟的时候采集大量的香料浆果，你听到了吗？SPICE BERRIES，而不是Winterstar水果。只有合适的冬季礼物。^^- 乔治%item conversationTopic SpiceBerryGatheringCT 7 %%[#]冬季香料浆果",
+			
+			},
+		},
+		
+		
+		{ 
+            "Action": "EditData",
+            "Target": "Data/SpecialOrders",
+            "Entries": {
+                "Holiday.Spiceberries1": { 
+                    "Name": "[Holiday_Spiceberries1_Title]",
+                    "Requester": "George", 
+                    "Duration": "Week", 
+                    "Repeatable": "False", 
+					"RequiredTags": "season_winter", 
+                    "OrderType": "", 
+                    "SpecialRule": "", 
+                    "Text": "[Holiday_Spiceberries1_Body]",
+                    "ItemToRemoveOnEnd": null,
+                    "MailToRemoveOnEnd": null,  
+                    
+                    "Objectives": [
+						  {
+							"Type": "Gift",
+							"Text": "[Holiday_Spiceberries1_Objective1]",
+							"RequiredCount": "12",
+							"Data": {
+							  "AcceptedContextTags": "item_spice_berry",
+							}
+						  }						  
+                    ],
+                    "Rewards": [
+                        {
+                            "Type": "Mail",
+                            "Data": {
+                                "MailReceived": "Holiday_Spiceberries1_Letter",
+								"NoLetter": "false",
+                            }
+                        },
+						{
+							"Type": "Friendship",
+							"Data": { "Amount": "250", }
+						},
+                    ]
+                }
+            }
+        },
+],
+
+}

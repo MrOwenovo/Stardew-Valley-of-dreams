@@ -1,0 +1,130 @@
+{
+    "Changes": [
+        
+		{
+			"Action": "EditData",
+            "Target": "Strings/SpecialOrderStrings",
+			
+			"Entries": {
+				"Holiday_Eggnog1_Title": "圣诞派对",
+				"Holiday_Eggnog1_Body": "没有像圣诞派对那样的派对，但没有我传统的蛋酒就没有派对！我马上需要六杯饮料的配料，包括六个新鲜鸡蛋。",
+				"Holiday_Eggnog1_Objective0": "收集6个鸡蛋。",
+				"Holiday_Eggnog1_Objective1": "将6个鸡蛋送到沙龙冰箱.",
+				"Holiday_Eggnog1_Objective2": "将6瓶牛奶送到沙龙冰箱。",
+				"Holiday_Eggnog1_Objective3": "将3袋糖送到沙龙冰箱。",
+				"Holiday_Eggnog1_Objective4": "将3瓶香草香精送到沙龙。",
+			},
+		},
+		
+		{
+			"Action": "EditData",
+            "Target": "Data/Mail",
+			
+			"Entries": {
+			
+				"Holiday_Eggnog1_Letter": "致 @,^^圣诞晚会大获成功!多亏了你高质量的食材，我的蛋酒让那些平常的嫌疑犯(你知道是谁)没有喝得烂醉。我想你可能会喜欢一些派对剩菜。别担心，它们在冰箱里放了一晚上!^^   - 格斯%item object 733 12 %%[#]A Smashing Success",
+			
+			},
+		},
+		
+		
+		{ 
+            "Action": "EditData",
+            "Target": "Data/SpecialOrders",
+            "Entries": {
+                "Holiday.Eggnog1": { 
+                    "Name": "[Holiday_Eggnog1_Title]",
+                    "Requester": "Gus", 
+                    "Duration": "Week", 
+                    "Repeatable": "True", 
+					"RequiredTags": "season_winter, knows_Sandy", 
+                    "OrderType": "", 
+                    "SpecialRule": "", 
+                    "Text": "[Holiday_Eggnog1_Body]",
+                    "ItemToRemoveOnEnd": null,
+                    "MailToRemoveOnEnd": null,  
+                    
+                    "Objectives": [
+						  {
+							"Type": "Collect",
+							"Text": "[Holiday_Eggnog1_Objective0]",
+							"RequiredCount": "6",
+							"Data": {
+							  "AcceptedContextTags": "egg_item"
+							}
+						  },
+						  
+						  {
+							"Type": "Donate",
+							"Text": "[Holiday_Eggnog1_Objective1]",
+							"RequiredCount": "6",
+							"Data": {
+									  "DropBox": "GusFridge",
+									  "DropBoxGameLocation": "Saloon",
+									  "DropBoxIndicatorLocation": "18 15",
+									  "MinimumCapacity": "30",
+									  "AcceptedContextTags": "egg_item"
+									},
+						  }, 
+						  {
+							"Type": "Donate",
+							"Text": "[Holiday_Eggnog1_Objective2]",
+							"RequiredCount": "6",
+							"Data": {
+									  "DropBox": "GusFridge",
+									  "DropBoxGameLocation": "Saloon",
+									  "DropBoxIndicatorLocation": "18 15",
+									  "MinimumCapacity": "30",
+									  "AcceptedContextTags": "milk_item"
+									},
+						  },
+							{
+							"Type": "Donate",
+							"Text": "[Holiday_Eggnog1_Objective3]",
+							"RequiredCount": "3",
+							"Data": {
+									  "DropBox": "GusFridge",
+									  "DropBoxGameLocation": "Saloon",
+									  "DropBoxIndicatorLocation": "18 15",
+									  "MinimumCapacity": "30",
+									  "AcceptedContextTags": "item_sugar"
+									},
+						  },
+						  {
+							"Type": "Donate",
+							"Text": "[Holiday_Eggnog1_Objective4]",
+							"RequiredCount": "3",
+							"Data": {
+									  "DropBox": "GusFridge",
+									  "DropBoxGameLocation": "Saloon",
+									  "DropBoxIndicatorLocation": "18 15",
+									  "MinimumCapacity": "30",
+									  "AcceptedContextTags": "item_vanilla_flavoring"
+									},
+						  },
+                    ],
+                    "Rewards": [
+                        {
+                            "Type": "Money",
+                            "Data": {
+                                "Amount": "4500",
+                            }
+                        },
+                        {
+                            "Type": "Mail",
+                            "Data": {
+                                "MailReceived": "Holiday_Eggnog1_Letter",
+								"NoLetter": "false",
+                            }
+                        },
+						{
+							"Type": "Friendship",
+							"Data": { "Amount": "100", }
+						},
+                    ]
+                }
+            }
+        },
+],
+
+}

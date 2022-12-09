@@ -1,0 +1,28 @@
+{
+	"Name": "Firefly1",
+	"Type": "Flying",
+	"TravelSpeed": 0, // Speed at which the companion follows the player
+	"SpawnOffsetX": 0, // X offset (from player) of where to spawn | Note: Negative values will spawn to left of player, positive will spawn to right of player
+	"SpawnOffsetY": 0, // Y offset (from player) of where to spawn | Note: Negative values will spawn above player head, positive will spawn below player head
+//	"EnableSpawnAtDayStart": true,
+	"MaxDistanceBeforeTeleport": -1, 
+	"IdleBehavior": "Nothing",
+	//"EnableBreathing": true,
+	"IsPrismatic": true,
+  // Optional parameter, handles if the companion gives off a light
+	"Light": {
+		"Color": [ 250, 183, 25, 200 ], //[ 238, 181, 29, 255 ], // RGBA value of the light
+		"Radius": 1.5, // Radius of the light to give off
+		"OffsetX": 9, // Optional parameter, X offset (from top left corner of the companion) for light spawning point | Note: Use half of FrameSizeWidth to get the X center point
+		"OffsetY": 0, // Optional parameter, Y offset (from top left corner of the companion) for light spawning point | Note: Use half of FrameSizeHeight to get the Y center point
+		"PulseSpeed": 3000, // Optional parameter, amount of time to iterate between Radius to PulseMinRadius
+		"PulseMinRadius": 1.0, // Optional parameter, minimum radius to shrink to during pulsing | Default 0
+	},
+	"FrameSizeWidth": 16,
+	"FrameSizeHeight": 16,
+	"UniformAnimation": {
+		"StartingFrame": 0,
+		"NumberOfFrames": 1,
+		"Duration": 5000,
+	}
+}

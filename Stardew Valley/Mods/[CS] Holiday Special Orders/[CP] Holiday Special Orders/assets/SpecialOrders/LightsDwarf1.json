@@ -1,0 +1,92 @@
+{
+    "Changes": [
+        
+		{
+			"Action": "EditData",
+            "Target": "Strings/SpecialOrderStrings",
+			
+			"Entries": {
+				"Holiday_LightsDwarf1_Title": "点燃地雷",
+				"Holiday_LightsDwarf1_Body": "Uanot ussutus upup。Yenn ool hat hosn punexutol。(需要太阳精华。将为快速送货付费。)",
+				"Holiday_LightsDwarf1_Objective1": "送30个太阳精华到矮人家。",
+			},
+		},
+		
+		{
+			"Action": "EditData",
+            "Target": "Data/Mail",
+			
+			"Entries": {
+			
+				"Holiday_LightsDwarf1_Letter": "^   谢谢你的灯。通常我会自己去抓，但最近这些怪物比平时更有攻击性。请尽快光临。我想和你分享一些东西。%item dwarflightsCT 7 %%[#]矮人语谢谢",
+			
+			},
+		},
+		
+		{
+			"Action": "EditMap",
+            "Target": "Maps/Mine",
+			"MapTiles": [
+					{
+					   "Position": { "X": 41, "Y": 6},
+					   "Layer": "Buildings",
+					   "SetProperties": { "Action": "DropBox DwarfCave", },
+					},
+					
+			],
+		},
+		
+		{ 
+            "Action": "EditData",
+            "Target": "Data/SpecialOrders",
+            "Entries": {
+                "Holiday.LightsDwarf1": { 
+                    "Name": "[Holiday_LightsDwarf1_Title]",
+                    "Requester": "Dwarf", 
+                    "Duration": "ThreeDays", 
+                    "Repeatable": "False", 
+					"RequiredTags": "season_winter, knows_Dwarf", 
+                    "OrderType": "", 
+                    "SpecialRule": "", 
+                    "Text": "[Holiday_LightsDwarf1_Body]",
+                    "ItemToRemoveOnEnd": null,
+                    "MailToRemoveOnEnd": null,  
+                    
+                    "Objectives": [
+						  {
+							"Type": "Donate",
+							"Text": "[Holiday_LightsDwarf1_Objective1]",
+							"RequiredCount": "30",
+							"Data": {
+								"DropBox": "DwarfCave", 
+                                "DropBoxGameLocation": "Mine", 
+                                "DropBoxIndicatorLocation": "41 6",
+							  "AcceptedContextTags": "item_solar_essence",
+							},
+						  }, 						  
+                    ],
+                    "Rewards": [
+                        {
+                            "Type": "Money",
+                            "Data": {
+                                "Amount": "2000",
+                            }
+                        },
+                        {
+                            "Type": "Mail",
+                            "Data": {
+                                "MailReceived": "Holiday_LightsDwarf1_Letter",
+								"NoLetter": "false",
+                            }
+                        },
+						{
+							"Type": "Friendship",
+							"Data": { "Amount": "250", }
+						},
+                    ]
+                }
+            }
+        },
+],
+
+}

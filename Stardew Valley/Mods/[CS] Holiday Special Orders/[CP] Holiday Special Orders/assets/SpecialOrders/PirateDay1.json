@@ -1,0 +1,104 @@
+{
+    "Changes": [
+        
+		{
+			"Action": "EditData",
+            "Target": "Strings/SpecialOrderStrings",
+			
+			"Entries": {
+				"Holiday_PirateDay1_Title": "像海盗一样喝酒",
+				"Holiday_PirateDay1_Body": "Arrr，我们正在庆祝我们回到这些水域，但发现自己一滴也没有！有人能解渴吗？新鲜酿造，在地窖中陈酿，混合在水果饮料中，配上一把小伞——我们会拿走你所有的！",
+				"Holiday_PirateDay1_Objective0": "收集12种酒精饮料。",
+				"Holiday_PirateDay1_Objective1": "向海盗洞穴运送50杯酒精饮料。",
+			},
+		},
+		
+		{
+			"Action": "EditData",
+            "Target": "Data/Mail",
+			
+			"Entries": {
+			
+				"Holiday_PirateDay1_Letter": "@,^^多亏了你的精心准备，这些咸海狗又一次成为了爽朗的海盗，随时准备在海上航行，与海豚一起狂欢！将自己视为船员的荣誉成员。^^   - 船长Greenlegs %item furniture 1900 %%[#]提升颜色",
+			
+			},
+		},
+		
+		{
+			"Action": "EditMap",
+            "Target": "Maps/IslandSouthEastCave",
+			"MapTiles": [
+					{
+					   "Position": { "X": 27, "Y": 8},
+					   "Layer": "Buildings",
+					   "SetProperties": { "Action": "DropBox HolidayCaveBox", },
+					},
+					{
+					   "Position": { "X": 27, "Y": 9},
+					   "Layer": "Buildings",
+					   "SetProperties": { "Action": "DropBox HolidayCaveBox", },
+					},
+			],
+		},
+		
+		{ 
+            "Action": "EditData",
+            "Target": "Data/SpecialOrders",
+            "Entries": {
+                "Holiday.PirateDay1": { 
+                    "Name": "[Holiday_PirateDay1_Title]",
+                    "Requester": "Pirates", 
+                    "Duration": "TwoWeeks", 
+                    "Repeatable": "True", 
+					"RequiredTags": "season_summer, mail_Island_Resort", 
+                    "OrderType": "", 
+                    "SpecialRule": "", 
+                    "Text": "[Holiday_PirateDay1_Body]",
+                    "ItemToRemoveOnEnd": null,
+                    "MailToRemoveOnEnd": null,  
+                    
+                    "Objectives": [
+						  {
+							"Type": "Collect",
+							"Text": "[Holiday_PirateDay1_Objective0]",
+							"RequiredCount": "12",
+							"Data": {
+							  "AcceptedContextTags": "alcohol_item"
+							}
+						  },
+						  
+						  {
+							"Type": "Donate",
+							"Text": "[Holiday_PirateDay1_Objective1]",
+							"RequiredCount": "50",
+							"Data": {
+									  "DropBox": "HolidayCaveBox",
+									  "DropBoxGameLocation": "IslandSouthEastCave",
+									  "DropBoxIndicatorLocation": "27 8.5",
+									  "MinimumCapacity": "30",
+									  "AcceptedContextTags": "alcohol_item"
+									},
+						  }, 
+						  
+                    ],
+                    "Rewards": [
+                        {
+                            "Type": "Money",
+                            "Data": {
+                                "Amount": "15000",
+                            }
+                        },
+                        {
+                            "Type": "Mail",
+                            "Data": {
+                                "MailReceived": "Holiday_PirateDay1_Letter",
+								"NoLetter": "false",
+                            }
+                        },
+                    ]
+                }
+            }
+        },
+],
+
+}

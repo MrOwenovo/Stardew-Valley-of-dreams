@@ -1,0 +1,349 @@
+{
+	"Format": "1.22",
+	"ConfigSchema": {
+			"WalletInfoVerbose": {"AllowValues": "true, false", "Default": "true"}, 		
+			"WalletItemsAnimated": {"AllowValues": "true, false", "Default": "true"},
+			"VanillaDescriptions": {"AllowValues": "true, false", "Default": "false"},
+					},
+	"Changes": [
+		{
+		"Action": "EditData",
+		"Target": "Strings/StringsFromCSFiles",
+		"Entries": {
+			"SkillsPage.cs.11587":
+"Dwarvish Translation Guide
+
+Allows you to speak and understand the Dwarven 
+language.",
+
+			"SkillsPage.cs.11588": 
+"Rusty Key
+
+A big old rusty key that might be able to open
+a creepy sewer door...",
+
+			"SkillsPage.cs.11589": 
+"Club Card
+
+Gives you to access the Casino in the Oasis.",
+
+			"SkillsPage.cs.11590": 
+"Special Charm
+
+A magical trinket that permanently increases your
+daily luck by a noticable amount.",
+
+			"SkillsPage.cs.11591": 
+"Skull Key
+
+Unlocks the door to the Skull Cavern Mines in the
+Calico Desert.",
+
+			"SkillsPage.cs.magnifyingglass": 
+"Magnifying Glass
+
+Gives you the ability to find 'Secret Notes'!",
+
+			"KeyToTheTown":
+"Key To The Town
+
+Allows you to access all buildings in town 
+at any time of the day.",
+				},
+		"When": {
+			"WalletInfoVerbose": "false",
+			"VanillaDescriptions": "false"
+				}
+		},
+		{
+		"Action": "EditData",
+		"Target": "Strings/Objects",
+		"Entries": {
+			"DarkTalisman":
+"Dark Talisman
+
+Used to open the passage at the northeast end 
+of the Railroad.",
+
+			"MagicInk":
+"Magic Ink
+
+An arcane item that allows you to purchase new farm 
+buildings from a book on a stand in the Wizard's Tower.",
+
+			"BearPaw":
+"Bear's Knowledge
+
+Increases the sell price of Blackberries and 
+Salmonberries.",
+
+			"SpringOnionBugs":
+"Spring Onion Mastery
+
+Increases the sell price of Spring Onions.",
+				},
+		"When": {
+			"WalletInfoVerbose": "false",
+			"VanillaDescriptions": "false"
+				}
+		},
+		{
+		"Action": "EditData",
+		"Target": "Strings/StringsFromCSFiles",
+		"Entries": {
+			"SkillsPage.cs.11587":
+"Dwarvish Translation Guide
+
+Unlocks the ability to speak to the Dwarf in The
+Mines and the Dwarf in the Volcano Dungeon allowing
+you to access their shops.",
+
+			"SkillsPage.cs.11588": 
+"Rusty Key
+
+Unlocks the gate at the southern edge of 
+Cindersap Forest allowing you to access 
+The Sewers.",
+
+			"SkillsPage.cs.11589": 
+"Club Card
+
+Give to the bouncer to allow you to access the
+Casino in the back of the Oasis in the Calico Desert.",
+
+			"SkillsPage.cs.11590": 
+"Special Charm
+
+A magical trinket that permanently increases 
+your daily luck. Daily luck ranges from -0.07 
+to 0.07. This trinket adds 0.025 to whatever 
+your luck is that day.",
+
+			"SkillsPage.cs.11591": 
+"Skull Key
+
+Unlocks the door to the Skull Cavern Mines in the
+Calico Desert and also unlocks the Junimo Kart 
+game machine in The Stardrop Saloon.",
+
+			"SkillsPage.cs.magnifyingglass": 
+"Magnifying Glass
+
+Gives you the ability to find 'Secret Notes'! These 
+can be found by tilling soil, chopping trees, mining,
+fishing, or even killing monsters. These notes reveal
+rare and useful information, and can be reviewed in
+your collections tab.",
+
+			"KeyToTheTown":
+"Key To The Town
+
+Allows you to access all buildings in town at any time 
+of the day. The key does not function at homes outside 
+of Pelican Town (eg. Leah's Cottage, Elliott's Cabin, 
+the Movie Theater, and the Oasis in Calico Desert).",
+				},
+		"When": {
+			"WalletInfoVerbose": "true",
+			"VanillaDescriptions": "false"
+				}
+		},
+		{
+		"Action": "EditData",
+		"Target": "Strings/Objects",
+		"Entries": {
+			"DarkTalisman":
+"Dark Talisman
+
+Used to open the passage at the northeast end 
+of the Railroad allowing you to access the 
+Witch's Swamp, and the Witch's Hut beyond.",
+
+			"MagicInk":
+"Magic Ink
+
+An arcane item that allows you to purchase 
+new farm buildings from a book on a stand in 
+the Wizard's Tower. 
+
+The new farm buildings include: the obelisks, 
+the Junimo Hut, and the Gold Clock.",
+
+			"BearPaw":
+"Bear's Knowledge
+
+Blackberries and Salmonberries sold by you
+are worth three times as much. Artisan Goods made
+from those berries DO NOT increase in sale price.",
+
+			"SpringOnionBugs":
+"Spring Onion Mastery
+
+Spring Onions sold by you are worth five times as 
+much. Artisan Goods made from Spring Onions DO NOT 
+increase in sale price.",
+				},
+		"When": {
+			"WalletInfoVerbose": "true",
+			"VanillaDescriptions": "false"
+				}
+		},
+		{
+		"Action": "EditData",
+		"Target": "Strings/StringsFromCSFiles",
+		"Entries": {	
+			"SkillsPage.cs.11591": 
+"Skull Key
+
+A key with a skull on the top, is there somewhere
+you've seen a door with a skull?",
+					},
+		"When": {
+			"HasActiveQuest": "19",
+			"VanillaDescriptions": "false"
+				},
+		"Update":"OnTimeChange"
+		},
+		{
+		"Action": "EditData",
+		"Target": "Strings/Objects",
+		"Entries": {	
+			"DarkTalismanDescription": "You've found the Dark Talisman! It's covered in bug slime...",
+			"MagicInkDescription": "You've found the Wizard's lost Magic Ink! Better return it to him.",
+			"MagnifyingGlassDescription": "You received the Magnifying Glass! You now have the ability to find 'Secret Notes'. These notes reveal rare and useful information, and can be reviewed in your collections tab.",
+			"SpecialCharmDescription": "You received the Special Charm! You feel an aura of good fortune surrounding you (luck is permanently increased)!",
+					},
+		"When": {"VanillaDescriptions": "false"},
+		},		
+		{
+		"Action": "EditData",
+		"Target": "Strings/StringsFromCSFiles",
+		"Entries": {	
+			"SpecialItem.cs.13092": "You've found the Skull Key! You're not sure what it's for, but it seems important. It's been added to your wallet.",
+			"SpecialItem.cs.13090": "Under a piece of wood, you found a Club Card! You're not sure what it's for, but it seems important. It's been added to your wallet.",
+					},
+		"When": {"VanillaDescriptions": "false"},
+		},		
+	   	{
+			"LogName": "UI Dwarvish Translation Guide",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/Dwarvish Translation Guide.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 128, "Y": 320, "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 9,
+			"AnimationFrameCount": 72,
+			"When": {"WalletItemsAnimated": "true"}
+		},
+	   	{
+			"LogName": "UI Rusty Key",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/Rusty Key.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 144, "Y": 320, "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 9,
+			"AnimationFrameCount": 45,
+			"When": {"WalletItemsAnimated": "true"}
+		},
+	   	{
+			"LogName": "UI Club Card",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/Club Card.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 160, "Y": 320, "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 7,
+			"AnimationFrameCount": 60,
+			"When": {"WalletItemsAnimated": "true"}
+		},
+	   	{
+			"LogName": "UI Special Charm",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/Special Charm.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 176, "Y": 320, "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 6,
+			"AnimationFrameCount": 60,
+			"When": {"WalletItemsAnimated": "true"}
+		},
+	   	{
+			"LogName": "UI Skull Key",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/Skull Key.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 192, "Y": 320, "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 10,
+			"AnimationFrameCount": 20,
+			"When": {"WalletItemsAnimated": "true"}
+		},
+	   	{
+			"LogName": "UI Magnifying Glass",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/Magnifying Glass.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 208, "Y": 320, "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 8,
+			"AnimationFrameCount": 50,
+			"When": {"WalletItemsAnimated": "true"}
+		},
+	   	{
+			"LogName": "UI Dark Talisman",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/Dark Talisman.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 224, "Y": 320, "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 7,
+			"AnimationFrameCount": 75,
+			"When": {"WalletItemsAnimated": "true"}
+		},
+	   	{
+			"LogName": "UI Magic Ink",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/Magic Ink.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 240, "Y": 320, "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 7,
+			"AnimationFrameCount": 40,
+			"When": {"WalletItemsAnimated": "true"}
+		},
+	   	{
+			"LogName": "UI Bear's Knowledge",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/Bear's Knowledge.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 192, "Y": 336, "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 4,
+			"AnimationFrameCount": 90,
+			"When": {"WalletItemsAnimated": "true"}
+		},
+	   	{
+			"LogName": "UI Spring Onion Mastery",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/Spring Onion Mastery.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 208, "Y": 336, "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 7,
+			"AnimationFrameCount": 102,
+			"When": {"WalletItemsAnimated": "true"}
+		},
+	   	{
+			"LogName": "UI Key To The Town",
+			"Action": "EditImage",
+			"Target": "Maps/springobjects",
+			"FromFile": "assets/Key To The Town.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 0, "Y": 608, "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 6,
+			"AnimationFrameCount": 40,
+			"When": {"WalletItemsAnimated": "true"}
+		}
+	]
+}

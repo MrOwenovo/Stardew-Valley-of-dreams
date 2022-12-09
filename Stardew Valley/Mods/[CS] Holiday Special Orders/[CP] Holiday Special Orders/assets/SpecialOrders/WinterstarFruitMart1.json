@@ -1,0 +1,102 @@
+{
+    "Changes": [
+        
+		{
+			"Action": "EditData",
+            "Target": "Strings/SpecialOrderStrings",
+			
+			"Entries": {
+				"Holiday_WinterstarFruitMart1_Title": "冬季之星待售",
+				"Holiday_WinterstarFruitMart1_Body": "本地企业采购有机种植的产品为冬星销售展示。货到付款。",
+				"Holiday_WinterstarFruitMart1_Objective1": "收集12个冬星水果",
+				"Holiday_WinterstarFruitMart1_Objective2": "送12个冬星水果给JojaMart的莫里斯。",
+			},
+		},
+		
+		{
+			"Action": "EditData",
+            "Target": "Data/Mail",
+			
+			"Entries": {
+			
+				"Holiday_WinterstarFruitMart1_Letter": "致 @,^^感谢您最近向JojaMart交付了一打（12）Winterstar水果。您的税务记录已包含收据。感谢您的帮助，祝温特之星快乐^^诚挚的，^Sharon，Joja Co.特别订单部^^^（附上一张手写的纸条，上面写着“不多，但我最近采购了一些新奇的帽子，我亲自请Morris为您储备一些。圣诞快乐! -夏尔')[#]冬季之星水果收据",
+			},
+		},
+			
+		{
+			"Action": "EditMap",
+            "Target": "Maps/JojaMart",
+			"MapTiles": [
+					{
+					   "Position": { "X": 19, "Y": 24},
+					   "Layer": "Buildings",
+					   "SetProperties": { "Action": "DropBox MorrisDesk", },
+					},
+					
+					{
+					   "Position": { "X": 19, "Y": 25},
+					   "Layer": "Buildings",
+					   "SetProperties": { "Action": "DropBox MorrisDesk", },
+					},
+			],
+		},	
+			
+			
+		{ 
+            "Action": "EditData",
+            "Target": "Data/SpecialOrders",
+            "Entries": {
+                "Holiday.WinterstarFruitMart1": { 
+                    "Name": "[Holiday_WinterstarFruitMart1_Title]",
+                    "Requester": "Morris", 
+                    "Duration": "Month", 
+                    "Repeatable": "True", 
+					"RequiredTags": "season_winter, event_502261", 
+                    "OrderType": "", 
+                    "SpecialRule": "", 
+                    "Text": "[Holiday_WinterstarFruitMart1_Body]",
+                    "ItemToRemoveOnEnd": null,
+                    "MailToRemoveOnEnd": null,  
+                    
+                    "Objectives": [
+						  {
+							"Type": "Collect",
+							"Text": "[Holiday_WinterstarFruitMart1_Objective1]",
+							"RequiredCount": "12",
+							"Data": {
+							  "AcceptedContextTags": "item_winterstar_fruit_(joja)",
+							},
+						  }, 
+						{
+                           "Type": "Donate",
+                            "Text": "[Holiday_WinterstarFruitMart1_Objective2]",
+                            "RequiredCount": "12",
+                            "Data": {
+                                "DropBox": "MorrisDesk", 
+                                "DropBoxGameLocation": "JojaMart", 
+                                "DropBoxIndicatorLocation": "19 24",
+                                "AcceptedContextTags": "item_winterstar_fruit_(joja)",
+                            },
+                        }, 						  
+                    ],
+                    "Rewards": [
+                        {
+                            "Type": "Money",
+                            "Data": {
+                                "Amount": "12000",
+                            }
+                        },
+                        {
+                            "Type": "Mail",
+                            "Data": {
+                                "MailReceived": "Holiday_WinterstarFruitMart1_Letter",
+								"NoLetter": "false",
+                            }
+                        },
+                    ]
+                }
+            }
+        },
+],
+
+}

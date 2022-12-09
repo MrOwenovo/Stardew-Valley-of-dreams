@@ -1,0 +1,92 @@
+{
+    "Changes": [
+        
+		{
+			"Action": "EditData",
+            "Target": "Strings/SpecialOrderStrings",
+			
+			"Entries": {
+				"Holiday_LightsKrobus1_Title": "点亮下水道",
+				"Holiday_LightsKrobus1_Body": "需要谨慎来源的太阳能精华。请尽快发货。",
+				"Holiday_LightsKrobus1_Objective1": "给下水道送30瓶太阳能精华。",
+			},
+		},
+		
+		{
+			"Action": "EditData",
+            "Target": "Data/Mail",
+			
+			"Entries": {
+			
+				"Holiday_LightsKrobus1_Letter": "致 @,^^谢谢你的送货。每年的这个时候，点亮我们的家是影子人的一个重要传统，但对我来说，去矿井参观很困难。我希望你很快会来。^^    -Krobus%item krobuslightsCT 7 %%[#]Krobus的感谢",
+			
+			},
+		},
+		
+		{
+			"Action": "EditMap",
+            "Target": "Maps/Sewer",
+			"MapTiles": [
+					{
+					   "Position": { "X": 28, "Y": 18},
+					   "Layer": "Buildings",
+					   "SetProperties": { "Action": "DropBox KrobusSewer", },
+					},
+					
+			],
+		},
+		
+		{ 
+            "Action": "EditData",
+            "Target": "Data/SpecialOrders",
+            "Entries": {
+                "Holiday.LightsKrobus1": { 
+                    "Name": "[Holiday_LightsKrobus1_Title]",
+                    "Requester": "Krobus", 
+                    "Duration": "ThreeDays", 
+                    "Repeatable": "False", 
+					"RequiredTags": "season_winter, knows_Krobus", 
+                    "OrderType": "", 
+                    "SpecialRule": "", 
+                    "Text": "[Holiday_LightsKrobus1_Body]",
+                    "ItemToRemoveOnEnd": null,
+                    "MailToRemoveOnEnd": null,  
+                    
+                    "Objectives": [
+						  {
+							"Type": "Donate",
+							"Text": "[Holiday_LightsKrobus1_Objective1]",
+							"RequiredCount": "30",
+							"Data": {
+								"DropBox": "KrobusSewer", 
+                                "DropBoxGameLocation": "Sewer", 
+                                "DropBoxIndicatorLocation": "28 18",
+							  "AcceptedContextTags": "item_solar_essence",
+							},
+						  }, 						  
+                    ],
+                    "Rewards": [
+                        {
+                            "Type": "Money",
+                            "Data": {
+                                "Amount": "2000",
+                            }
+                        },
+                        {
+                            "Type": "Mail",
+                            "Data": {
+                                "MailReceived": "Holiday_LightsKrobus1_Letter",
+								"NoLetter": "false",
+                            }
+                        },
+						{
+							"Type": "Friendship",
+							"Data": { "Amount": "250", }
+						},
+                    ]
+                }
+            }
+        },
+],
+
+}

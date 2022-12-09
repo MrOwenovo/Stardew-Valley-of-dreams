@@ -8,6 +8,8 @@
 - 正在开发成就和任务系统，以指引玩家游玩
 - 删除 跳过钓鱼动画/显示梯子位置/沙漠电梯/拖拉机
 - 不定期更新整合包
+- 你死后可以去冒险家协会，半价买回自己丢失的物品
+- 买食谱不需要再找酒馆的格斯，而是找格斯左边的食物书
 
 <br>
 
@@ -22,6 +24,7 @@
   - Pierre Sells Horse Flute: 皮埃尔卖马笛 Æ(破坏平衡)
   - Stardew Valley Balance Overhaul: 星露谷平衡大修 ×(难度过大)
   - Out of Season Bonuses: 淡季奖金 × (版本落后)
+  - Save Anywher: 随时保存 ×(出现bug)
 
   
 
@@ -59,6 +62,7 @@
 - L: 待办事项
 - F2: 购买季节性干草堆
 - Left Shift: 抱起宠物
+- F4 与玩家交易
 
 <br>
 模组图片和详情展示:https://github.com/MrOwenovo/Stardew-Valley-of-dreams/blob/main/modContent.md
@@ -89,6 +93,8 @@
   - CP - Season Bunny sprinkler:  CP - 季节兔子洒水器 ×
   - Ridgeside Village for Mobile Phone: 山脊村手机 √
   - Zosa and Bonster's Recipes: 佐萨和邦斯特的食谱  √
+  - Baker's Life: 贝克的一生  √
+  - Chocolatier: 巧克力制造商 √
 
 - 扩展:
   - Adventurer's Guild Expanded 1.0.15: 冒险家协会扩展 √
@@ -244,6 +250,10 @@
   - Shop Tile Framework: 购买磁贴框架 ×
   - CustomKissingMod: 定制接吻模组 ×
   - Custom Achievements: 自定义成就 ×
+  - Daily Special Orders: 每日特别订单 ×
+  - Custom Community Centre: 海关社区中心 ×
+  - Dynamic Map Tiles: 动态地图磁贴 ×
+
 
 - 事件:
   - 约会之夜: Date night √
@@ -251,6 +261,7 @@
   - CC仪式中的浪漫NPC: CC仪式中的浪漫NPC √
   - Post Wedding Dates: 婚后日期 Æ
   - Community Center Reimagined: 重新构想社区中心 √
+  - Events Expansion: 活动扩展 √
 
 - 家具: 
   - 桌子设置(家具展示框架): Table Settings ×
@@ -339,6 +350,9 @@
   - It's Tumbleweed Time: 风滚草时间 Æ
   - Cuter Crops and Foraging： 更可爱的作物和觅食 ×
   - Bonster's Crops and Recipes Retexture: 邦斯特的作物和食谱重新纹理 ×
+  - Colored Crystalariums: 彩色水晶馆 ×
+  - Coconut Addon: 椰子插件 
+
 
 - 游戏机制:
   - npc普遍喜欢钻石: UniversallyLovedDiamonds Æ
@@ -393,6 +407,8 @@
   - Custom Crystalarium Mod: 定制水晶模组×
   - Produce to Sapling - Bonster's Crops for PFM: 生产到树苗 - 邦斯特的PFM作物×
   - Better Quality Increased Seeds - Bonster's Crops for PFM: 质量更好的增加种子 - 邦斯特用于PFM的作物×
+  - Ice Tiles: 冰砖 × 
+  - Chest Preview: 宝箱预览 ×
 
 
 
@@ -435,6 +451,7 @@
   - CP - Coii's Basic Shirts Pack:  Coii的基本款衬衫包 ×
   - Tailor Mouse: PPJA - 裁缝Mouse_A DGA 服装店 √
   - JA- Luo Li's top and skirt10: JA - 罗莉的上衣和裙子10
+  - More Short Hair: 更多 短发 ×
 
 - 对话:
   - CANON对话扩展: Stardew Valley Dialogue Expansion  √
@@ -459,6 +476,7 @@
   - Marshmallows in Stardew: 星露中的棉花糖 √
   - Host Trees: 宿主树 √
   - PPJA - Fresh Meat_An 'Alternative' Butcher Mod: PPJA - 新鲜Meat_An“另类”屠夫模组 √
+  - SSaturn's Tropical Farm: S土星的热带农场 √
 
 
 - 杂项:
@@ -486,6 +504,22 @@
   - Richside Village Achievement： 里奇赛德村成就 Æ
   - Seasonal rainbow lollipop (lightning rod): 季节性彩虹棒棒糖（避雷针）×
   - Heart Level Notifications: 心平通知 ?
+  - Into the Game (Save Loaded Notifier): 进入游戏（保存加载的通知程序）× <br> 
+  - Immersive Shops - Pierre's: 沉浸式商店 - 皮埃尔 ×
+  - Gus' Recipe Book: 格斯的食谱书 ×
+  - Coconut Addon: 椰子插件 Æ
+  - Anniversary on Calendar: 日历上的周年纪念日 √
+  - Start with 5 Rain Totems: 从5个雨图腾开始 Æ
+  - Holiday Special Orders: 假日特别订单 Æ
+  - Start with 5 salads: 从5份沙拉开始 Æ
+  - StrawBerry Blossom: 草莓花 √
+  - SSaturn's Oriental Kitchen: 西星东方厨房 √
+  - Aquilegia's Sweet Tooth： 阿奎莱吉亚的甜食 √
+  - Alex's Frozen Treats: 亚历克斯的冷冻零食 ×
+  - Non Destructive NPCs: NPC不破坏物品 ×
+  - Darker wet soil: 较深的潮湿土壤 ×
+  - Go To Bed: 去睡觉 ×
+  - PPJA Icon Pack for Better Artisan Goods Icons: PPJA 图标包，用于更好的工匠商品图标 ×
 
 
 
@@ -532,6 +566,22 @@
   - Better Mead Icons - BAGI Addon: 更好的蜂蜜酒图标 - 巴吉插件 ×
   - Customisable Heart Relationship Icon: 可定制的心形关系图标 Æ
   - MailboxMenu: 邮箱菜单 ?
+  - Colored Seeds: 彩色种子 ×
+  - Family Planning: 计划生育 ×
+  - Animated Inventory Tabs: 动画库存选项卡 ×
+  - Wallet Items - Animated and Described: 钱包项目 - 动画和描述 ×
+  - Animated Pet Icons: 动画宠物图标 ×
+  - Better Artisan Good Icons Fix: 更好的工匠好图标修复 ×
+  - Community Center Helper: 社区中心助手 √
+  - Show Item Quality: 显示项目质量 ×
+  - Fish Preview: 鱼预览 ?
+  - BirthdayToday √: 生日今天
+  - Ridgeside Village Better Artisan Good Icons: 山脊村更好的工匠好图标 ×
+  - XP Display: XP 显示器 ×
+  - Too Many Animals: 动物太多 ×
+  - Community Kitchen: 社区厨房 √
+
+
 
 
 - 动画： ×
@@ -555,6 +605,8 @@
 - 多人:
   - SendItemsMultiplayer: 发送物品多人游戏  ?
   - Farm hand Finder:  多人游戏显示其他玩家头相 ×
+  - Multiplayer Speech Bubbles: 多人语音气泡 ×
+  - Multi-User Chests: 多用户宝箱 ×
   
   <br>
   模组图片和详情展示:https://github.com/MrOwenovo/Stardew-Valley-of-dreams/blob/main/modContent.md

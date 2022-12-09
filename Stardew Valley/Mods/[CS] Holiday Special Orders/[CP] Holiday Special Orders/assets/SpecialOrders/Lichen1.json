@@ -1,0 +1,97 @@
+{
+    "Changes": [
+        
+		{
+			"Action": "EditData",
+            "Target": "Strings/SpecialOrderStrings",
+			
+			"Entries": {
+				"Holiday_Lichen1_Title": "驯鹿需要食物!",
+				"Holiday_Lichen1_Body": "圣诞老人很快就会带着他的驯鹿来这里了，但我担心它们在环球飞行时会饿肚子。你能给猛冲，舞者，腾跃，雌狐，彗星，丘比特，唐纳，闪电战和鲁道夫带点吃的吗?",
+				"Holiday_Lichen1_Objective1": "送9束驯鹿地衣到玛妮的烟囱里。",
+			},
+		},
+		
+		{
+			"Action": "EditData",
+            "Target": "Data/Mail",
+			
+			"Entries": {
+			
+				"Holiday_Lichen1_Letter": "@,^^谢谢你的比喻!玛妮阿姨说这对驯鹿来说再合适不过了!谢恩叔叔说圣诞老人和驯鹿会很安静，我不会看到他们，但我要熬夜!^^   - 贾斯%item conversationTopic holiday_reindeerlichen 7 %%[#]满足驯鹿",
+			
+			},
+		},
+		
+		{
+			"Action": "EditMap",
+            "Target": "Maps/AnimalShop",
+			"MapTiles": [
+					{
+					   "Position": { "X": 3, "Y": 14},
+					   "Layer": "Buildings",
+					   "SetProperties": { "Action": "DropBox MarnieChimney", },
+					},
+					
+					{
+					   "Position": { "X": 4, "Y": 14},
+					   "Layer": "Buildings",
+					   "SetProperties": { "Action": "DropBox MarnieChimney", },
+					},
+			],
+		},
+		
+		{ 
+            "Action": "EditData",
+            "Target": "Data/SpecialOrders",
+            "Entries": {
+                "Holiday.Lichen1": { 
+                    "Name": "[Holiday_Lichen1_Title]",
+                    "Requester": "Jas", 
+                    "Duration": "TwoWeeks", 
+                    "Repeatable": "False", 
+					"RequiredTags": "season_winter, knows_Dwarf", 
+                    "OrderType": "", 
+                    "SpecialRule": "", 
+                    "Text": "[Holiday_Lichen1_Body]",
+                    "ItemToRemoveOnEnd": null,
+                    "MailToRemoveOnEnd": null,  
+                    
+                    "Objectives": [
+						  {
+							"Type": "Donate",
+							"Text": "[Holiday_Lichen1_Objective1]",
+							"RequiredCount": "9",
+							"Data": {
+								"DropBox": "MarnieChimney", 
+                                "DropBoxGameLocation": "AnimalShop", 
+                                "DropBoxIndicatorLocation": "3.5 14",
+							  "AcceptedContextTags": "item_reindeer_lichen",
+							},
+						  },                        
+                    ],
+                    "Rewards": [
+                        {
+                            "Type": "Money",
+                            "Data": {
+                                "Amount": "500",
+                            }
+                        },
+                        {
+                            "Type": "Mail",
+                            "Data": {
+                                "MailReceived": "Holiday_Lichen1_Letter",
+								"NoLetter": "false",
+                            }
+                        },
+						{
+							"Type": "Friendship",
+							"Data": { "Amount": "150", }
+						},
+                    ]
+                }
+            }
+        },
+],
+
+}

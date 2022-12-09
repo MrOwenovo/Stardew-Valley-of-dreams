@@ -1,0 +1,96 @@
+{
+    "Changes": [
+        
+		{
+			"Action": "EditData",
+            "Target": "Strings/SpecialOrderStrings",
+			
+			"Entries": {
+				"Holiday_LuckyClover1_Title": "有点运气",
+				"Holiday_LuckyClover1_Body": "冒险进入矿井并监视山谷是一件冒险的事情，我宁愿公会有一些额外的运气。如果有人种植幸运三叶草，我们很乐意拥有它们。",
+				"Holiday_LuckyClover1_Objective1": "收集24个幸运三叶草",
+				"Holiday_LuckyClover1_Objective2": "给冒险家公会送24个幸运三叶草.",
+			},
+		},
+		
+		{
+			"Action": "EditData",
+            "Target": "Data/Mail",
+			
+			"Entries": {
+			
+				"Holiday_LuckyClover1_Letter": "@,^^谢谢你的三叶草。运气好的话，这些会保护我们公会成员的安全。当然，不能忘记鹈鹕镇最著名的冒险家!吉尔给你做了些东西，如果你顺便去商店我有新鞋卖。提供这些的人说他是从一个小妖精那里得到的，如果你能相信的话。^^   -马龙%item object 204 3 %%[#]好运连连",
+			},
+		},
+			
+		{
+			"Action": "EditMap",
+            "Target": "Maps/AdventureGuild",
+			"MapTiles": [
+					{
+					   "Position": { "X": 3, "Y": 12},
+					   "Layer": "Buildings",
+					   "SetProperties": { "Action": "DropBox HolidayGuildBox", },
+					},
+			],
+		},	
+			
+			
+		{ 
+            "Action": "EditData",
+            "Target": "Data/SpecialOrders",
+            "Entries": {
+                "Holiday.LuckyClover1": { 
+                    "Name": "[Holiday_LuckyClover1_Title]",
+                    "Requester": "Marlon", 
+                    "Duration": "TwoWeeks", 
+                    "Repeatable": "True", 
+					"RequiredTags": "season_spring", 
+                    "OrderType": "", 
+                    "SpecialRule": "", 
+                    "Text": "[Holiday_LuckyClover1_Body]",
+                    "ItemToRemoveOnEnd": null,
+                    "MailToRemoveOnEnd": null,  
+                    
+                    "Objectives": [
+						  {
+							"Type": "Collect",
+							"Text": "[Holiday_LuckyClover1_Objective1]",
+							"RequiredCount": "24",
+							"Data": {
+							  "AcceptedContextTags": "item_lucky_clover",
+							},
+						  }, 
+						{
+                           "Type": "Donate",
+                            "Text": "[Holiday_LuckyClover1_Objective2]",
+                            "RequiredCount": "24",
+                            "Data": {
+                                "DropBox": "HolidayGuildBox", 
+                                "DropBoxGameLocation": "AdventureGuild", 
+                                "DropBoxIndicatorLocation": "3 12",
+                                "AcceptedContextTags": "item_lucky_clover",
+                            },
+                        }, 						  
+                    ],
+                    "Rewards": [
+                        {
+                            "Type": "Money",
+                            "Data": {
+                                "Amount": "3500",
+                            }
+                        },
+                        {
+                            "Type": "Mail",
+                            "Data": {
+                                "MailReceived": "Holiday_LuckyClover1_Letter",
+								"NoLetter": "false",
+                            }
+                        },
+                    ]
+                }
+            }
+        },
+],
+
+}

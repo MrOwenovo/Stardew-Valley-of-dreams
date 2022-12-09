@@ -1,0 +1,109 @@
+{
+    "Changes": [
+        
+		{
+			"Action": "EditData",
+            "Target": "Strings/SpecialOrderStrings",
+			
+			"Entries": {
+				"Holiday_Hanukkah1_Title": "灯节",
+				"Holiday_Hanukkah1_Body": "光明节就要到了，但如果我们找不到更多的火把，那将是一个黑暗的八夜!请尽量多送。陶土做陀螺也会很受欢迎。",
+				"Holiday_Hanukkah1_Objective1": "送100支火把到市长家。",
+				"Holiday_Hanukkah1_Objective2": "把12块粘土送到市长家。",
+			},
+		},
+		
+		{
+			"Action": "EditData",
+            "Target": "Data/Mail",
+			
+			"Entries": {
+			
+				"Holiday_Hanukkah1_Letter": "致 @,^^多亏了你，我们可以连续烧8个晚上的灯，之后还能烧更多!我就知道你靠得住。^^-刘易斯^^PS:孩子们也玩得很开心。%item bigobject 19 %%[#]点亮夜晚",
+			
+			},
+		},
+		
+		{
+			"Action": "EditMap",
+            "Target": "Maps/ManorHouse",
+			"MapTiles": [
+					{
+					   "Position": { "X": 5, "Y": 4},
+					   "Layer": "Buildings",
+					   "SetProperties": { "Action": "DropBox MayorHouse", },
+					},
+					
+					{
+					   "Position": { "X": 6, "Y": 4},
+					   "Layer": "Buildings",
+					   "SetProperties": { "Action": "DropBox MayorHouse", },
+					},
+			],
+		},
+		
+		{ 
+            "Action": "EditData",
+            "Target": "Data/SpecialOrders",
+            "Entries": {
+                "Holiday.Hanukkah1": { 
+                    "Name": "[Holiday_Hanukkah1_Title]",
+                    "Requester": "Lewis", 
+                    "Duration": "ThreeDays", 
+                    "Repeatable": "True", 
+					"RequiredTags": "season_winter", 
+                    "OrderType": "", 
+                    "SpecialRule": "", 
+                    "Text": "[Holiday_Hanukkah1_Body]",
+                    "ItemToRemoveOnEnd": null,
+                    "MailToRemoveOnEnd": null,  
+                    
+                    "Objectives": [
+						  {
+							"Type": "Donate",
+							"Text": "[Holiday_Hanukkah1_Objective1]",
+							"RequiredCount": "100",
+							"Data": {
+								"DropBox": "MayorHouse", 
+                                "DropBoxGameLocation": "ManorHouse", 
+                                "DropBoxIndicatorLocation": "5.5 4",
+							  "AcceptedContextTags": "item_torch",
+							},
+						  }, 
+						{
+							"Type": "Donate",
+							"Text": "[Holiday_Hanukkah1_Objective2]",
+							"RequiredCount": "12",
+							"Data": {
+								"DropBox": "MayorHouse", 
+                                "DropBoxGameLocation": "ManorHouse", 
+                                "DropBoxIndicatorLocation": "5.5 4",
+							  "AcceptedContextTags": "item_clay",
+							},
+						  }, 						  
+                    ],
+                    "Rewards": [
+                        {
+                            "Type": "Money",
+                            "Data": {
+                                "Amount": "2000",
+                            }
+                        },
+                        {
+                            "Type": "Mail",
+                            "Data": {
+                                "MailReceived": "Holiday_Hanukkah1_Letter",
+								"NoLetter": "false",
+                            }
+                        },
+						{
+							"Type": "Friendship",
+							"Data": { "Amount": "100", }
+						},
+                    ]
+                }
+            }
+        },
+],
+
+}

@@ -1,0 +1,88 @@
+{
+    "Changes": [
+        
+		{
+			"Action": "EditData",
+            "Target": "Strings/SpecialOrderStrings",
+			
+			"Entries": {
+				"Holiday_Pinecones1_Title": "种植圣诞树",
+				"Holiday_Pinecones1_Body": "当地的圣诞树农场最近遭遇了干旱、火灾和一群破坏性流氓的游荡。它需要立即种植更多的树木，否则下一季就没有什么可供孩子们装饰的了！",
+				"Holiday_Pinecones1_Objective1": "收集20个松果。",
+				"Holiday_Pinecones1_Objective2": "把20个松果送到罗宾家.",
+			},
+		},
+		
+		{
+			"Action": "EditData",
+            "Target": "Data/Mail",
+			
+			"Entries": {
+			
+				"Holiday_Pinecones1_Letter": "嘿 @,^^谢谢你送松果！这些将对圣诞树农场和所有喜欢为节日装饰的人产生巨大的影响。谁知道呢，也许你的一棵松果会成为市中心的下一棵冬星树！^^  -罗宾%item furniture 1440 %%[#]圣诞节已保存",
+			
+			},
+		},
+			
+		{ 
+            "Action": "EditData",
+            "Target": "Data/SpecialOrders",
+            "Entries": {
+                "Holiday.Pinecones1": { 
+                    "Name": "[Holiday_Pinecones1_Title]",
+                    "Requester": "Robin", 
+                    "Duration": "Week", 
+                    "Repeatable": "False", 
+					"RequiredTags": "season_fall", 
+                    "OrderType": "", 
+                    "SpecialRule": "", 
+                    "Text": "[Holiday_Pinecones1_Body]",
+                    "ItemToRemoveOnEnd": null,
+                    "MailToRemoveOnEnd": null,  
+                    
+                    "Objectives": [
+						  {
+							"Type": "Collect",
+							"Text": "[Holiday_Pinecones1_Objective1]",
+							"RequiredCount": "20",
+							"Data": {
+							  "AcceptedContextTags": "item_pine_cone",
+							},
+						  }, 
+						{
+							"Type": "Donate",
+							"Text": "[Holiday_Pinecones1_Objective2]",
+							"RequiredCount": "20",
+							"Data": {
+								"DropBox": "RobinWood",
+								"DropBoxGameLocation": "ScienceHouse",
+								"DropBoxIndicatorLocation": "10.5 18",
+								"AcceptedContextTags": "item_pine_cone",
+							},
+						  }, 						  
+                    ],
+                    "Rewards": [
+                        {
+                            "Type": "Money",
+                            "Data": {
+                                "Amount": "2000",
+                            }
+                        },
+                        {
+                            "Type": "Mail",
+                            "Data": {
+                                "MailReceived": "Holiday_Pinecones1_Letter",
+								"NoLetter": "false",
+                            }
+                        },
+						{
+							"Type": "Friendship",
+							"Data": { "Amount": "100", }
+						},
+                    ]
+                }
+            }
+        },
+],
+
+}

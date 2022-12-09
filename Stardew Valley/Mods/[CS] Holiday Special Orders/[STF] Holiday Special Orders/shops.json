@@ -1,0 +1,105 @@
+{
+	"VanillaShops": 
+	[
+	
+		
+	{
+		"ShopName": "JojaShop",
+		"ItemStocks": [
+			{
+				"ItemType": "Hat",
+				"ItemNames": [ "Magic Santa Hat" ],
+				"IsRecipe": "false",
+				"StockPrice": 1000,
+				"When": [ "n Holiday_WinterstarFruitMart1_Letter" ],
+			}, 
+		],
+	}, 
+
+	{
+		"ShopName": "HatMouse",
+		"ItemStocks": [
+			{
+				"ItemType": "Hat",
+				"ItemNames": [ "Magic Santa Hat" ],
+				"IsRecipe": "false",
+				"StockPrice": 1000,
+				"When": [ "n Holiday_WinterstarFruitBlackmarket1_Letter", "n Holiday_WinterstarFruitMart1_Letter" ],
+			}, 
+		],
+	},
+	
+	{
+		"ShopName": "DesertTrader",
+		"ItemStocks": [
+			{
+			  "StockPrice": 0,
+			  "ItemType": "Object",
+			  "ItemNames": ["Air Plant", "Mistletoe Clump", "Reindeer Lichen", "Spanish Moss", "Vanilla Orchid",  ],
+			  "Stock": 5,
+			  "MaxNumItemsSoldInItemStock": 1,
+			  "StockItemCurrency": "Quartz",
+			  "StockCurrencyStack": 3,
+			  "When": [ "SeededRandom 574 Day 0.00 0.25", ],
+			},
+			
+			{
+			  "StockPrice": 0,
+			  "ItemType": "Object",
+			  "ItemNames": ["Air Plant", "Mistletoe Clump", "Reindeer Lichen", "Spanish Moss", "Vanilla Orchid",  ],
+			  "Stock": 5,
+			  "MaxNumItemsSoldInItemStock": 1,
+			  "StockItemCurrency": "Fire Quartz",
+			  "StockCurrencyStack": 3,
+			  "When": [ "SeededRandom 574 Day 0.25 0.50", ],
+			},
+			
+			{
+			  "StockPrice": 0,
+			  "ItemType": "Object",
+			  "ItemNames": ["Air Plant", "Mistletoe Clump", "Reindeer Lichen", "Spanish Moss", "Vanilla Orchid",  ],
+			  "Stock": 5,
+			  "MaxNumItemsSoldInItemStock": 1,
+			  "StockItemCurrency": "Frozen Tear",
+			  "StockCurrencyStack": 3,
+			  "When": [ "SeededRandom 574 Day 0.50 0.75", ],
+			},
+			
+			{
+			  "StockPrice": 0,
+			  "ItemType": "Object",
+			  "ItemNames": ["Air Plant", "Mistletoe Clump", "Reindeer Lichen", "Spanish Moss", "Vanilla Orchid",  ],
+			  "Stock": 5,
+			  "MaxNumItemsSoldInItemStock": 1,
+			  "StockItemCurrency": "Earth Crystal",
+			  "StockCurrencyStack": 3,
+			  "When": [ "SeededRandom 574 Day 0.75 1.00", ],
+			},
+		],
+	},
+	
+	{
+		"ShopName": "MarlonShop",
+		"ItemStocks": [
+			{
+				"ItemType": "Boot",
+				"ItemNames": [ "Leprechaun Shoes" ],
+				"IsRecipe": "false",
+				"StockPrice": 1000,
+				"When": [ "n Holiday_LuckyClover1_Letter" ],
+			}, 
+			
+			{
+				"ItemType": "Object",
+				"ItemNames": [ "Lucky Clover" ],
+				"IsRecipe": "false",
+				"StockPrice": 2000,
+				"When": [ "n Holiday_LuckyClover1_Letter" ],
+			},
+		],
+	},
+	
+	
+	],
+
+}

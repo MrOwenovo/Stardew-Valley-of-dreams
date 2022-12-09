@@ -1,0 +1,76 @@
+{
+    "Changes": [
+        
+		{
+			"Action": "EditData",
+            "Target": "Strings/SpecialOrderStrings",
+			
+			"Entries": {
+				"Holiday_Ghosts1_Title": "驱魔",
+				"Holiday_Ghosts1_Body": "我最近的能量读数显示不安的灵魂聚集在矿井里。幽灵之夜近在眼前，我很担心Jas和Vincent。有谁能帮这些鬼魂安息吗?",
+				"Holiday_Ghosts1_Objective1": "杀死44个鬼魂.",
+			},
+		},
+		
+		{
+			"Action": "EditData",
+            "Target": "Data/Mail",
+			
+			"Entries": {
+			
+				"Holiday_Ghosts1_Letter": "@,^^  非常感谢你为那些不安的灵魂所做的一切。我已经能感受到当地的能量让我平静下来。^^嘿，也许你也可以用格斯在密室里的这台机器做点什么。每当夏天或秋天下雨，它就会发出奇怪的声音，海莉确信它被诅咒了。^^  - 艾米丽 + %item bigobject 219 %%[#]我不怕鬼",
+			
+			},
+		},
+			
+		{ 
+            "Action": "EditData",
+            "Target": "Data/SpecialOrders",
+            "Entries": {
+                "Holiday.Ghosts1": { 
+                    "Name": "[Holiday_Ghosts1_Title]",
+                    "Requester": "Emily", 
+                    "Duration": "Week", 
+                    "Repeatable": "False", 
+					"RequiredTags": "season_fall, mail_WizardReward, mail_WizardReward2", 
+                    "OrderType": "", 
+                    "SpecialRule": "", 
+                    "Text": "[Holiday_Ghosts1_Body]",
+                    "ItemToRemoveOnEnd": null,
+                    "MailToRemoveOnEnd": null,  
+                    
+                    "Objectives": [
+						  {
+							"Type": "Slay",
+							"Text": "[Holiday_Ghosts1_Objective1]",
+							"RequiredCount": "44",
+							"Data": {
+							  "TargetName": "Ghost",
+							},
+						  },  						  
+                    ],
+                    "Rewards": [
+                        {
+                            "Type": "Money",
+                            "Data": {
+                                "Amount": "4400",
+                            }
+                        },
+                        {
+                            "Type": "Mail",
+                            "Data": {
+                                "MailReceived": "Holiday_Ghosts1_Letter",
+								"NoLetter": "false",
+                            }
+                        },
+						{
+							"Type": "Friendship",
+							"Data": { "Amount": "100", }
+						},
+                    ]
+                }
+            }
+        },
+],
+
+}

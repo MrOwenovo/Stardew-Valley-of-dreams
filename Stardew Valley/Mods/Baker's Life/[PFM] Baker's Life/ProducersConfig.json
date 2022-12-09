@@ -1,0 +1,21 @@
+[
+	{
+		"ProducerName": "Baker's Oven",
+		"AlternateFrameProducing": true, 
+		"AlternateFrameWhenReady": false,
+		"DisableBouncingAnimationWhileWorking": true,
+	},
+	{
+		"ProducerName": "Baker's Mixer",
+		"AlternateFrameProducing": false, 
+		"AlternateFrameWhenReady": false,
+		"DisableBouncingAnimationWhileWorking": true,
+		"ProducingAnimation": {
+			"RelativeFrameIndex": [1,2,3],
+			"FrameInterval": 15,
+		},
+		"ReadyAnimation": {
+			"RelativeFrameIndex": [4], //big-craftable-5
+		},
+	},
+]	

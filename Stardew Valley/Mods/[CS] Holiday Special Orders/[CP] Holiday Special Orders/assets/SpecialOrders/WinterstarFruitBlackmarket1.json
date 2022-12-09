@@ -1,0 +1,102 @@
+{
+    "Changes": [
+        
+		{
+			"Action": "EditData",
+            "Target": "Strings/SpecialOrderStrings",
+			
+			"Entries": {
+				"Holiday_WinterstarFruitBlackmarket1_Title": "冬季明星出售",
+				"Holiday_WinterstarFruitBlackmarket1_Body": "当地企业为冬季之星销售展示采购有机种植的产品。货到付款。",
+				"Holiday_WinterstarFruitBlackmarket1_Objective1": "收集12颗冬星果实.",
+				"Holiday_WinterstarFruitBlackmarket1_Objective2": "将12颗冬季之星水果送到黑市。",
+			},
+		},
+		
+		{
+			"Action": "EditData",
+            "Target": "Data/Mail",
+			
+			"Entries": {
+			
+				"Holiday_WinterstarFruitBlackmarket1_Letter": "致 @,^^感谢您最近向JojaCo交付了一打（12）Winterstar水果。您的税务记录已包含收据。感谢您的帮助，祝温特之星快乐^^此致，^Sharon，Joja Co.特别订单部^^^（附上了一张手写的纸条。上面写着“不多，但我最近采购了一些新奇的帽子，我亲自要求Morris为您储备一些，尽管他声称“帽子老鼠”妨碍了发货。圣诞快乐！ -夏尔')[#]冬季之星水果收据",
+			},
+		},
+			
+		{
+			"Action": "EditMap",
+            "Target": "Maps/Tunnel",
+			"MapTiles": [
+					{
+					   "Position": { "X": 25, "Y": 7},
+					   "Layer": "Buildings",
+					   "SetProperties": { "Action": "DropBox Blackmarket", },
+					},
+					
+					{
+					   "Position": { "X": 26, "Y": 7},
+					   "Layer": "Buildings",
+					   "SetProperties": { "Action": "DropBox Blackmarket", },
+					},
+			],
+		},
+			
+			
+		{ 
+            "Action": "EditData",
+            "Target": "Data/SpecialOrders",
+            "Entries": {
+                "Holiday.WinterstarFruitBlackmarket1": { 
+                    "Name": "[Holiday_WinterstarFruitBlackmarket1_Title]",
+                    "Requester": "Morris", 
+                    "Duration": "Month", 
+                    "Repeatable": "True", 
+					"RequiredTags": "season_winter, event_191393", 
+                    "OrderType": "", 
+                    "SpecialRule": "", 
+                    "Text": "[Holiday_WinterstarFruitBlackmarket1_Body]",
+                    "ItemToRemoveOnEnd": null,
+                    "MailToRemoveOnEnd": null,  
+                    
+                    "Objectives": [
+						  {
+							"Type": "Collect",
+							"Text": "[Holiday_WinterstarFruitBlackmarket1_Objective1]",
+							"RequiredCount": "12",
+							"Data": {
+							  "AcceptedContextTags": "item_winterstar_fruit_(joja)",
+							},
+						  }, 
+						{
+                           "Type": "Donate",
+                            "Text": "[Holiday_WinterstarFruitBlackmarket1_Objective2]",
+                            "RequiredCount": "12",
+                            "Data": {
+                                "DropBox": "Blackmarket", 
+                                "DropBoxGameLocation": "Tunnel", 
+                                "DropBoxIndicatorLocation": "25.5 7",
+                                "AcceptedContextTags": "item_winterstar_fruit_(joja)",
+                            },
+                        }, 						  
+                    ],
+                    "Rewards": [
+                        {
+                            "Type": "Money",
+                            "Data": {
+                                "Amount": "15000",
+                            }
+                        },
+                        {
+                            "Type": "Mail",
+                            "Data": {
+                                "MailReceived": "Holiday_WinterstarFruitBlackmarket1_Letter",
+								"NoLetter": "false",
+                            }
+                        },
+                    ]
+                }
+            }
+        },
+],
+
+}

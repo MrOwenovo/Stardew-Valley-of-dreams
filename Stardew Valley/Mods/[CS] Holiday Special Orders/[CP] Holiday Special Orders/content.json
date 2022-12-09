@@ -1,0 +1,106 @@
+{
+
+"Format": "1.22.0",
+
+"ConfigSchema": { 
+  
+		"DelayNewOrders": {"AllowValues": "True, False",
+		"Description": "在大多数不可重复的特殊订单完成之前，节日订单不会出现在黑板上。默认值为FALSE。",
+		"Default": "False"},
+		
+  },
+  
+  "DynamicTokens": [
+      {
+         "Name": "OrdersDone",
+         "Value": "False"
+      },
+      { // list does not include Pam's Juice or Evelyn's Gift because those are spring-only
+	    // list does not include Willy's tropical fish since it's island-only
+         "Name": "OrdersDone",
+         "Value": "True",
+         "When": {
+            "HasFlag": "willyBugWadCutscene",
+			"HasFlag": "pierreQualityCrops",
+			"HasFlag": "robinDeluxeBed",
+			"HasFlag": "emilyStones",
+			"HasFlag": "WizardReward2",
+			"HasFlag": "linusTrashCleanup",
+			"HasFlag": "WizardReward",
+			"HasFlag": "guntherBones",
+         }
+      }
+   ],
+
+"Changes": [
+
+	{ //Vanilla special orders
+        "Action": "Include",
+        "FromFile": "assets/SpecialOrders/Pinecones1.json, assets/SpecialOrders/Hanukkah1.json, assets/SpecialOrders/Spiceberries1.json, assets/SpecialOrders/Ghosts1.json, assets/SpecialOrders/PirateDay1.json",
+		"When": { "Query: '{{OrdersDone}}' = 'True' OR '{{DelayNewOrders}}' = 'False' ": true },
+    },
+	
+	{ //Custom Companions special orders
+        "Action": "Include",
+        "FromFile": "assets/SpecialOrders/LightsDwarf1.json, assets/SpecialOrders/LightsKrobus1.json",
+		"When": { "HasMod": "PeacefulEnd.CustomCompanions", "Query: '{{OrdersDone}}' = 'True' OR '{{DelayNewOrders}}' = 'False' ": true  }, 
+    },
+
+	{ //Host Trees special orders
+        "Action": "Include",
+        "FromFile": "assets/SpecialOrders/Eggnog1.json, assets/SpecialOrders/Lichen1.json, assets/SpecialOrders/Mistletoe1.json",
+		"When": { "HasMod": "tiakall.hosttrees", "Query: '{{OrdersDone}}' = 'True' OR '{{DelayNewOrders}}' = 'False' ": true },  
+    },
+	
+	{ //Host Trees alternate special orders
+        "Action": "Include",
+        "FromFile": "assets/SpecialOrders/Eggnog2.json,",
+		"When": { "HasMod |contains=tiakall.hosttrees": false, "Query: '{{OrdersDone}}' = 'True' OR '{{DelayNewOrders}}' = 'False' ": true },  
+    },
+	
+	{ //Lucky Clover special orders
+        "Action": "Include",
+        "FromFile": "assets/SpecialOrders/LuckyClover1.json",
+		"When": { "HasMod": "Fish.LuckyClover", "Query: '{{OrdersDone}}' = 'True' OR '{{DelayNewOrders}}' = 'False' ": true },  
+    },
+	
+	{ //Joja Seeds special orders
+        "Action": "Include",
+        "FromFile": "assets/SpecialOrders/WinterstarFruitMart1.json,",
+		"When": { "HasMod": "CopperSun.JojaSeedsJA", "Query: '{{OrdersDone}}' = 'True' OR '{{DelayNewOrders}}' = 'False' ": true },  
+    },
+	
+	{ //Joja Seeds special orders + Blackmarket
+        "Action": "Include",
+        "FromFile": "assets/SpecialOrders/WinterstarFruitBlackmarket1.json,",
+		"When": { "HasMod": "CopperSun.JojaSeedsJA", "HasMod": "CopperSun.JojaBlackmarketCP", "Query: '{{OrdersDone}}' = 'True' OR '{{DelayNewOrders}}' = 'False' ": true},  
+    },
+	
+	{ //dialog for order rewards
+        "Action": "Include",
+        "FromFile": "assets/conversationtopics.json",
+    },
+	
+	{ //custom companions rewards
+        "Action": "Include",
+        "FromFile": "assets/customcompanions.json",
+		"When": { "HasMod": "PeacefulEnd.CustomCompanions", }, 
+    },
+	
+	{ //gift reactions for spice berries in winter
+        "Action": "Include",
+        "FromFile": "assets/SpiceBerryReactions.json",
+		"When": { "Query: '{{Season}}' = 'winter'": true, }
+    },
+
+	{ //Add hat for reward if you do Winterfruit quest
+		"Action": "EditData",
+		"Target": "Data/Hats",
+		"Entries": {
+						"{{spacechase0.JsonAssets/HatId:Magic Santa Hat}}": "神奇圣诞老人帽/它闪耀着棱镜般的能量。/false/true/Prismatic",
+		},
+		"When": { "HasMod": "CopperSun.JojaSeedsJA",  }, 
+	},
+	
+]
+}

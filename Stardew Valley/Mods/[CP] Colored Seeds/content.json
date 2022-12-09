@@ -1,0 +1,245 @@
+{
+  "Format": "1.3",
+  
+   "ConfigSchema": {
+     "ChangeCoffee": {"AllowValues": "True, False"},
+     "ChangeSunflower": {"AllowValues": "True, False"},
+	 "ChangeCactus": {"AllowValues": "False, True"},
+	 "ChangeAncient": {"AllowValues": "True, False"},
+	 "ChangeRare": {"AllowValues": "True, False"},
+	 "ChangeTea": {"AllowValues": "True, False"},
+	 "ChangeRice": {"AllowValues": "True, False"},
+     "ChangeTaro": {"AllowValues": "True, False"},
+     "ChangeQi": {"AllowValues": "True, False"},
+     "ChangeFiber": {"AllowValues": "True, False"},
+   },
+  
+  "Changes": [
+	   
+       // Amaranth
+       {
+          "Action": "EditImage",
+		  "PatchMode": "Replace",
+          "Target": "Maps/springobjects",
+          "FromFile": "assets/colored-seeds.png",
+          "FromArea": { "X": 176, "Y": 192, "Width": 16, "Height": 16 }, 
+          "ToArea": { "X": 176, "Y": 192, "Width": 16, "Height": 16 },
+        },
+		// Grapes, Hops
+		{
+          "Action": "EditImage",
+		  "PatchMode": "Replace",
+          "Target": "Maps/springobjects",
+          "FromFile": "assets/colored-seeds.png",
+          "FromArea": { "X": 208, "Y": 192, "Width": 32, "Height": 16 }, 
+          "ToArea": { "X": 208, "Y": 192, "Width": 32, "Height": 16 },
+        },
+		// Fairy Rose
+		{
+          "Action": "EditImage",
+		  "PatchMode": "Replace",
+          "Target": "Maps/springobjects",
+          "FromFile": "assets/colored-seeds.png",
+          "FromArea": { "X": 272, "Y": 272, "Width": 16, "Height": 16 }, 
+          "ToArea": { "X": 272, "Y": 272, "Width": 16, "Height": 16 },
+        },
+		// Tulip
+		{
+          "Action": "EditImage",
+		  "PatchMode": "Replace",
+          "Target": "Maps/springobjects",
+          "FromFile": "assets/colored-seeds.png",
+          "FromArea": { "X": 304, "Y": 272, "Width": 16, "Height": 16 }, 
+          "ToArea": { "X": 304, "Y": 272, "Width": 16, "Height": 16 },
+        },
+		// Jazz
+		{
+          "Action": "EditImage",
+		  "PatchMode": "Replace",
+          "Target": "Maps/springobjects",
+          "FromFile": "assets/colored-seeds.png",
+          "FromArea": { "X": 336, "Y": 272, "Width": 16, "Height": 16 }, 
+          "ToArea": { "X": 336, "Y": 272, "Width": 16, "Height": 16 },
+        },
+		// Sunflower
+		{
+          "Action": "EditImage",
+		  "PatchMode": "Replace",
+          "Target": "Maps/springobjects",
+          "FromFile": "assets/colored-seeds.png",
+          "FromArea": { "X": 368, "Y": 272, "Width": 16, "Height": 16 }, 
+          "ToArea": { "X": 368, "Y": 272, "Width": 16, "Height": 16 },		  
+		  "When": {
+		  "ChangeSunflower": "True",
+		  }
+        },
+		// Coffee
+		{
+          "Action": "EditImage",
+		  "PatchMode": "Replace",
+          "Target": "Maps/springobjects",
+          "FromFile": "assets/colored-seeds.png",
+          "FromArea": { "X": 16, "Y": 288, "Width": 16, "Height": 16 }, 
+          "ToArea": { "X": 16, "Y": 288, "Width": 16, "Height": 16 },
+		  "When": {
+		  "ChangeCoffee": "True",
+		  }
+        },
+		// Poppy
+		{
+          "Action": "EditImage",
+		  "PatchMode": "Replace",
+          "Target": "Maps/springobjects",
+          "FromFile": "assets/colored-seeds.png",
+          "FromArea": { "X": 336, "Y": 288, "Width": 16, "Height": 16 }, 
+          "ToArea": { "X": 336, "Y": 288, "Width": 16, "Height": 16 },
+        },
+		// Spangle
+		{
+          "Action": "EditImage",
+		  "PatchMode": "Replace",
+          "Target": "Maps/springobjects",
+          "FromFile": "assets/colored-seeds.png",
+          "FromArea": { "X": 368, "Y": 288, "Width": 16, "Height": 16 }, 
+          "ToArea": { "X": 368, "Y": 288, "Width": 16, "Height": 16 },
+        },
+		// Parsnip - Melon
+		{
+          "Action": "EditImage",
+		  "PatchMode": "Replace",
+          "Target": "Maps/springobjects",
+          "FromFile": "assets/colored-seeds.png",
+          "FromArea": { "X": 256, "Y": 304, "Width": 128, "Height": 16 }, 
+          "ToArea": { "X": 256, "Y": 304, "Width": 128, "Height": 16 },
+        },
+		// Tomato - Winter 
+		{
+          "Action": "EditImage",
+		  "PatchMode": "Replace",
+          "Target": "Maps/springobjects",
+          "FromFile": "assets/colored-seeds.png",
+          "FromArea": { "X": 0, "Y": 320, "Width": 304, "Height": 16 }, 
+          "ToArea": { "X": 0, "Y": 320, "Width": 304, "Height": 16 },
+        },
+		// Ancient 
+		{
+          "Action": "EditImage",
+		  "PatchMode": "Replace",
+          "Target": "Maps/springobjects",
+          "FromFile": "assets/colored-seeds.png",
+          "FromArea": { "X": 304, "Y": 320, "Width": 16, "Height": 16 }, 
+          "ToArea": { "X": 304, "Y": 320, "Width": 16, "Height": 16 },
+		  "When": {
+		  "ChangeAncient": "True",
+		  }
+		 },
+		 // Rare 
+		{
+          "Action": "EditImage",
+		  "PatchMode": "Replace",
+          "Target": "Maps/springobjects",
+          "FromFile": "assets/colored-seeds.png",
+          "FromArea": { "X": 176, "Y": 224, "Width": 16, "Height": 16 }, 
+          "ToArea": { "X": 176, "Y": 224, "Width": 16, "Height": 16 },
+		  "When": {
+		  "ChangeRare": "True",
+		  }
+		 },
+		// Strawberry
+		{
+          "Action": "EditImage",
+		  "PatchMode": "Replace",
+          "Target": "Maps/springobjects",
+          "FromFile": "assets/colored-seeds.png",
+          "FromArea": { "X": 16, "Y": 496, "Width": 16, "Height": 16 }, 
+          "ToArea": { "X": 16, "Y": 496, "Width": 16, "Height": 16 },
+        },
+		// Cactus
+		{
+          "Action": "EditImage",
+		  "PatchMode": "Replace",
+          "Target": "Maps/springobjects",
+          "FromFile": "assets/colored-seeds.png",
+          "FromArea": { "X": 160, "Y": 528, "Width": 16, "Height": 16 }, 
+          "ToArea": { "X": 160, "Y": 528, "Width": 16, "Height": 16 },
+		  "When": {
+		  "ChangeCactus": "True",
+		  }
+        },
+		// 1.4 Stuff
+		{
+          "Action": "EditImage",
+		  "PatchMode": "Replace",
+          "Target": "Maps/springobjects",
+          "FromFile": "assets/colored-seeds.png",
+          "FromArea": { "X": 176, "Y": 160, "Width": 16, "Height": 16 }, 
+          "ToArea": { "X": 176, "Y": 160, "Width": 16, "Height": 16 },
+		  "When": {
+		  "ChangeTea": "True",
+		  }
+        },
+		{
+          "Action": "EditImage",
+		  "PatchMode": "Replace",
+          "Target": "Maps/springobjects",
+          "FromFile": "assets/colored-seeds.png",
+          "FromArea": { "X": 144, "Y": 176, "Width": 16, "Height": 16 }, 
+          "ToArea": { "X": 144, "Y": 176, "Width": 16, "Height": 16 },
+		  "When": {
+		  "ChangeRice": "True",
+		  }
+        },
+            
+          // Patch 1.5
+          // Pineapple            
+        {
+          "Action": "EditImage",
+		  "PatchMode": "Replace",
+          "Target": "Maps/springobjects",
+          "FromFile": "assets/colored-seeds.png",
+          "FromArea": { "X": 272, "Y": 544, "Width": 16, "Height": 16 }, 
+          "ToArea": { "X": 272, "Y": 544, "Width": 16, "Height": 16 }
+        },       
+            
+          // Taro              
+        {
+          "Action": "EditImage",
+		  "PatchMode": "Replace",
+          "Target": "Maps/springobjects",
+          "FromFile": "assets/colored-seeds.png",
+          "FromArea": { "X": 240, "Y": 544, "Width": 16, "Height": 16 }, 
+          "ToArea": { "X": 240, "Y": 544, "Width": 16, "Height": 16 },
+		  "When": {
+		  "ChangeTaro": "True",
+		  }
+        },
+      
+          
+          // Fiber              
+        {
+          "Action": "EditImage",
+		  "PatchMode": "Replace",
+          "Target": "Maps/springobjects",
+          "FromFile": "assets/colored-seeds.png",
+          "FromArea": { "X": 336, "Y": 576, "Width": 16, "Height": 16 }, 
+          "ToArea": { "X": 336, "Y": 576, "Width": 16, "Height": 16 },
+		  "When": {
+		  "ChangeFiber": "True",
+		  }
+        },
+      
+        // Qi              
+        {
+          "Action": "EditImage",
+		  "PatchMode": "Replace",
+          "Target": "Maps/springobjects",
+          "FromFile": "assets/colored-seeds.png",
+          "FromArea": { "X": 32, "Y": 592, "Width": 16, "Height": 16 }, 
+          "ToArea": { "X": 32, "Y": 592, "Width": 16, "Height": 16 },
+		  "When": {
+		  "ChangeQi": "True",
+		  }
+        },
+    ]
+}
+
