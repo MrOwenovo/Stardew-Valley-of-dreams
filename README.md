@@ -15,7 +15,7 @@
 
 #### 更新:
 - 加入新mod:
-
+    https://github.com/MrOwenovo/Stardew-Valley-of-dreams/blob/main/newMod.md
 - 删除mod: 
   - Challenging PPJA SVE Bundles: 具有挑战性的社区中心捆绑包  × (难度过大)
   - Horse Flute Anywhere: 马笛随时可见 √ (用处不大)
