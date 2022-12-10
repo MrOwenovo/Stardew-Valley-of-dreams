@@ -10,6 +10,7 @@
 - 不定期更新整合包
 - 你死后可以去冒险家协会，半价买回自己丢失的物品
 - 买食谱不需要再找酒馆的格斯，而是找格斯左边的食物书
+- [image](https://img.gejiba.com/image/EIgvS3)
 
 <br>
 
@@ -313,6 +314,7 @@
   - (PFM) Flower Pack for Artisanal Soda Makers: （PFM）手工苏打水制造商的鲜花包×
   - Floral Drinks: 花卉饮料 √
   - Vyranity's Pizza's JA: 维兰尼蒂披萨 √
+  - Atelier Wildflour Coffee Pack: 工作室野面粉咖啡包 
 
 
 - 视觉效果和图形:
