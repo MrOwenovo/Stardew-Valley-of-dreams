@@ -357,7 +357,6 @@
     - 季节性帽子与时尚感(整合时尚感): [FS] Seasonal Hats × <br> *同上*
     - 给npc送帽子: NCF Hats  × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/13941/13941-1664285464-1451384463.png) <br> *使用NPC服装框架，让你将帽子（和面具）赠送给NPC，他们会戴上。*
     - 光环: Halo  Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/5516/5516-1583261482-579931780.png) <br> *添加光环作为帽子，可从帽子鼠标购买。*
-    - Crop Hat: 作物帽(将作物戴在头上)  × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/11787/11787-1650773199-183089267.png) <br> *在帽子槽中装备种子会把种子变成一顶庄稼帽子。*
     - Customize Wedding Attire: 定制婚纱(添加婚礼上穿什么)  Æ <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/10761/10761-1642830096-44959692.png) <br> *模组允许你选择你穿什么参加婚礼，无论是燕尾服、婚纱、普通衣服，还是游戏默认的。*
     - FS - Season of the Witch: FS - 女巫的季节 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/12488/12488-1656318666-858056216.png)
     - FS - Rino's Clothes: FS - 里诺的衣服1 × <br> ![image](https://staticdelivery.nexusmods.com/mods/1303/images/14065/14065-1665225571-444615447.png)

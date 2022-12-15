@@ -26,6 +26,7 @@
   - Stardew Valley Balance Overhaul: 星露谷平衡大修 ×(难度过大)
   - Out of Season Bonuses: 淡季奖金 × (版本落后)
   - Save Anywher: 随时保存 ×(出现bug)
+  - Crop head (在保存事件中冲突)
 
   
 
@@ -419,7 +420,6 @@
   - 季节性帽子与时尚感(整合时尚感): [FS] Seasonal Hats ×
   - 给npc送帽子: NCF Hats  ×
   - 光环: Halo  Æ
-  - Crop Hat: 作物帽(将作物戴在头上)  ×
   - Customize Wedding Attire: 定制婚纱(添加婚礼上穿什么)  Æ
   - FS - Season of the Witch: FS - 女巫的季节 ×
   - FS - Rino's Clothes: FS - 里诺的衣服1 ×
